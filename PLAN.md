@@ -84,6 +84,17 @@ Pipeline and transactions are two views of the same Housing Records, not separat
 
 **Property types (decided):** The structure covers all housing types (apartments, condos, townhomes, single-family, etc.). v1 includes a sample record of each type to prove the structure, then goes deep on apartments first. Each type has its own public sources.
 
+## Field ideas (parked until the fields discussion)
+
+Captured as they come up; not a final list.
+- Housing type (apartment, condo, townhome, single-family, etc.)
+- Affordability: deed-restricted units and their AMI levels, as part of the unit mix
+- Population served: senior, student, family, farmworker, educator/workforce, supportive housing, etc.
+- Approval type: e.g., by-right/ministerial (SB 35 / SB 423), builder's remedy, density bonus, standard discretionary, specific plan
+- Images: 1 to 5 per record, each with its source and credit like any other fact. Clip images from articles as they're processed. **Decided:** news images stay in the private archive; the public site shows only safe images (own photos, public agency documents, developer press kits, openly licensed). Idea: when no safe image exists, show our own rough massing sketch, labeled illustrative. Open: how the sketch is made (see copyright note in chat: derive from public facts, not by tracing a copyrighted photo).
+- **Decided:** stick to what's legal for now; no blurred or traced copyrighted images. Frosted-glass styling and massing sketches to be revisited once Paul sees examples.
+- **Decided:** image placeholders distinguish two cases: (1) "copyrighted image exists" icon, linking to the source where it can be viewed; (2) "no image available."
+
 ## 1. Users and use cases
 
 **First user:** Paul.
