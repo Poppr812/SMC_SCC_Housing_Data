@@ -1,6 +1,6 @@
-# FIELDS: v1 record field list (DRAFT for Paul's markup)
+# FIELDS: v1 record field list
 
-Drafted 2026-11-02. Every field below holds one or more **claims**, each with its source(s), per PLAN.md §0. Fields marked **[category]** use a fixed list of labels; each label has a definition. Everything else is a number, date, name, or text.
+Drafted and approved by Paul 2026-11-02. Every field below holds one or more **claims**, each with its source(s), per PLAN.md §0. Fields marked **[category]** use a fixed list of labels; each label has a definition. Everything else is a number, date, name, or text.
 
 **Minimum to create a record:** name, at least one parcel, product type, status, and one source.
 
