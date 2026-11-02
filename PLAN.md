@@ -6,6 +6,14 @@ Rollout: San Mateo County → Santa Clara County → San Francisco → full Peni
 
 ## Vision
 
+**Thesis (draft, 2026-11-02):** Developing, selling, buying, or investing in real estate in these counties? See what recent projects have been entitled, designed, built, financed, and sold, and who the players are, all from public records.
+
+**Audience = the parties (2026-11-02):** every role in the Parties section is a potential user: developers, owners, architects, engineers, landscape architects, interior designers, contractors, property managers, lenders, equity investors, buyers, sellers, brokers. They'd use it to find comparable projects, see who's active, find business, and see (and help correct) their own projects' records.
+
+**Value proposition (2026-11-02):** It's about people. The database is useful, and can eventually make money, to the extent it helps people do their work: find work for themselves, and make their projects and themselves successful. The data serves that end. (How it makes money is undecided; the data itself stays free and open under ODbL.)
+
+**Marketing theme (draft, 2026-11-02):** "Find your next project and the people behind every deal. If you develop, design, build, finance, buy, sell, or broker real estate in San Mateo and Santa Clara Counties, see who's doing what, from public records." Marketing language, separate from the README's plain description.
+
 A free, open-source, crowdsourced, wiki-style housing database: a publicly accessible database of publicly available information, or information volunteered by knowledgeable parties who are sharing it publicly and legally. Contributors identify themselves when they post a data point, and edits are moderated. (Early thinking; to be developed.)
 
 **Current focus:** the database and access structure, so Paul can see how it looks and feels. Contributor management, moderation, and copyright handling for archived sources are deferred until they come up.
@@ -97,8 +105,13 @@ Pipeline and transactions are two views of the same Housing Records, not separat
 - 2026-11-02: Standard export columns (18): record ID, name, housing type, record kind, status, jurisdiction, address, APNs, total units, restricted units, recorded owner, developer, cost-or-price basis, total cost / sale price, per unit (calculated), main lender, latest event date, record link. Loan amounts and the full financing breakdown stay in the comprehensive export.
 - 2026-11-02: Map hover card approved as-is (image box, name, place, units, status).
 - 2026-11-02: **Mockup phase complete.** Next: parcel data, then record fields.
+- 2026-11-02: Map shows only parcels that have records (as in the mockup); no county-wide parcel layer. **Purpose clarified:** the site is for researching related product types and competitive projects, not for retrieving parcel maps. Parcels anchor records; they aren't a product feature.
 - 2026-11-02: Empty field wording: "No current report logged".
 - 2026-11-02: Calculated values approved: small "calculated" tag plus the math on one gray line. Drop the "Inputs are sourced above" sentence.
+
+## Fields
+
+- **2026-11-02: Categories with defined labels, plus project notes.** Records use categories (starting with core product types), and each label needs a written definition. Terms like wrap vs. flat vs. podium mean different things to different people, and those projects still compete, so construction details (wood frame, metal stud, podium, Type V / III / I, etc.) are not categories. They go in a **Construction notes** section on the project, sourced, and keyword-searchable.
 
 ## Field ideas (parked until the fields discussion)
 
