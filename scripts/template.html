@@ -44,8 +44,16 @@ aside h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(
 .arow label{flex:1}
 .caret{border:none;background:none;cursor:pointer;width:18px;padding:0;font-size:12px;color:var(--gray)}
 .kids[hidden]{display:none}
-.leaflet-bar a.tool{font-size:16px;line-height:30px;width:30px;height:30px;color:var(--ink)}
-.leaflet-bar a.tool.on{background:var(--navy);color:#fff}
+.selmenu{white-space:normal}
+.selmenu .opt{display:block;width:100%;text-align:left;border:none;background:none;padding:6px 4px;border-radius:5px;cursor:pointer;font:inherit;font-size:13px;color:var(--ink)}
+.selmenu .opt:hover,.selmenu .opt.on{background:#EEF2F7}
+.selmenu .opt small{display:block;color:var(--gray);font-size:11px;margin-top:1px}
+.selmenu .addr{padding:6px 4px}
+.selmenu input{font:inherit;font-size:13px;padding:5px 7px;border:1px solid var(--rule);border-radius:5px}
+.btn.sm{font-size:12px;padding:4px 9px}
+.areanote{display:none;font-size:12px;color:var(--ink);background:#FFF6DB;border:1px solid #E8C766;border-radius:5px;padding:6px 8px;margin:2px 0 6px;white-space:normal}
+#areaMenu.paused .areanote{display:block}
+#areaMenu.paused .arow,#areaMenu.paused .kids{opacity:.45;pointer-events:none}
 .map-drawing{cursor:crosshair!important}
 .map-drawing .leaflet-interactive{cursor:crosshair!important}
 .hint{position:absolute;z-index:900;left:50%;top:10px;transform:translateX(-50%);background:var(--ink);color:#fff;font-size:12px;padding:5px 10px;border-radius:5px;display:none;pointer-events:none}
@@ -133,11 +141,25 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div class="dd" id="ddArea"><button type="button" id="areaBtn">All areas</button>
       <div class="menu" id="areaMenu" style="min-width:260px"></div></div>
   </div>
-  <div class="ctl"><span>Radius from address <span style="font-size:11px">(or use the map tools)</span></span>
-    <div style="display:flex;gap:5px;align-items:center">
-      <input type="text" id="radAddr" placeholder="e.g. 1650 S Delaware St, San Mateo" style="width:220px">
-      <input type="number" id="radMi" value="10" min="0.5" step="0.5" style="width:60px" title="miles"><span style="color:var(--gray)">mi</span>
-    </div>
+  <div class="ctl">Select area
+    <div class="dd" id="ddSel"><button type="button" id="selBtn">Whole map</button>
+      <div class="menu selmenu" id="selMenu" style="min-width:320px">
+        <div class="addr"><b>From an address</b>
+          <div style="display:flex;gap:5px;align-items:center;margin:5px 0">
+            <input type="text" id="radAddr" placeholder="e.g. 1650 S Delaware St, San Mateo" style="flex:1;min-width:0">
+            <input type="number" id="radMi" value="10" min="0.5" step="0.5" style="width:58px" title="miles"><span class="muted">mi</span>
+          </div>
+          <div style="display:flex;gap:6px">
+            <button type="button" class="btn sm" id="goAddr">Use address</button>
+            <button type="button" class="btn ghost sm" id="pickBtn">Pick point on map</button>
+          </div>
+        </div>
+        <hr>
+        <button type="button" class="opt" id="drawRadBtn">◯ Draw a radius<small>Press at the center and drag outward</small></button>
+        <button type="button" class="opt" id="drawFenceBtn">⬠ Draw a fence<small>Click points; click the first point or double-click to close</small></button>
+        <hr>
+        <button type="button" class="opt" id="clearSel">✕ Clear selected area</button>
+      </div></div>
   </div>
   <div class="spacer"></div>
   <div class="ctl">My saved searches
@@ -219,7 +241,7 @@ function plainValue(key,v){return fmtValue(key,v).replace(/&amp;/g,"&").replace(
 const SHORT={"Condominiums":"Condos","Mixed product":"Mixed"};const short=t=>SHORT[t]||t;
 const typesMenu=$("#typesMenu");
 typesMenu.innerHTML=Object.keys(REG.product_types).map(t=>`<label title="${esc(REG.product_types[t])}"><input type="checkbox" value="${esc(t)}" checked> ${esc(short(t))}<span class="cnt" data-t="${esc(t)}"></span></label>`).join("");
-$("#areaMenu").innerHTML=Object.entries(REG.areas).map(([county,areas])=>
+$("#areaMenu").innerHTML='<div class="areanote">Selected area is active: only records inside it are shown. City and county picks are paused until you clear it.</div>'+Object.entries(REG.areas).map(([county,areas])=>
   `<div class="arow"><button type="button" class="caret" data-county="${esc(county)}" title="Show cities">▸</button><label class="grp"><input type="checkbox" class="cty" data-county="${esc(county)}" checked> ${esc(county)}<span class="cnt" data-a="__c:${esc(county)}"></span></label></div>
    <div class="kids" data-county="${esc(county)}" hidden>${areas.map(a=>`<label class="sub"><input type="checkbox" class="ar" data-county="${esc(county)}" value="${esc(a)}" checked>${esc(a)}<span class="cnt" data-a="${esc(a)}"></span></label>`).join("")}</div>`).join("");
 document.querySelectorAll("#areaMenu .caret").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=document.querySelector(`#areaMenu .kids[data-county="${b.dataset.county}"]`);k.hidden=!k.hidden;b.textContent=k.hidden?"▸":"▾"});
@@ -260,7 +282,9 @@ function labelDropdowns(){
   $("#typesBtn").textContent=s.types.length===n?"All types":s.types.length?s.types.map(short).join(", "):"None";
   const np=s.statuses.length,all=PIPELINE.length;
   const ar=[...document.querySelectorAll("#areaMenu .ar:checked")].map(i=>i.value);
-  $("#areaBtn").textContent=!s.areas?"All areas":!ar.length?"None":ar.length<=2?ar.join(", "):`${ar.length} areas`;
+  $("#areaBtn").textContent=SHAPE?"Paused (selected area)":!s.areas?"All areas":!ar.length?"None":ar.length<=2?ar.join(", "):`${ar.length} areas`;
+  $("#areaMenu").classList.toggle("paused",!!SHAPE);
+  $("#selBtn").textContent=!SHAPE?"Whole map":SHAPE.t==="p"?`Fence (${SHAPE.pts.length} points)`:SHAPE.addr?`${SHAPE.mi} mi from ${SHAPE.addr.split(",")[0]}`:`${SHAPE.mi} mi radius`;
   const pipe=np===all?"Pipeline":np?`Pipeline (${np} of ${all})`:"";
   $("#viewsBtn").textContent=[pipe,s.sales?"Sales":""].filter(Boolean).join(", ")||"None";
 }
@@ -272,7 +296,7 @@ const isSale=r=>r.kinds.includes("transaction");
 /* skip "area" or "status" to leave that filter out, so its menu can show counts */
 function matches(r,s,skip){const kw=s.kw.toLowerCase();
   return (skip==="type"||s.types.includes(r.summary.product_type))&&(!kw||r.search.includes(kw))&&inShape(r)
-    &&(skip==="area"||!s.areas||s.areas.includes(r.summary.area))
+    &&(skip==="area"||SHAPE||!s.areas||s.areas.includes(r.summary.area))
     &&(skip==="status"||(isPipe(r)&&s.statuses.includes(r.summary.status))||(s.sales&&isSale(r)))}
 function filtered(){const s=getState();return RECORDS.filter(r=>matches(r,s))}
 function updateCounts(){
@@ -318,7 +342,18 @@ $("#ddArea").addEventListener("change",()=>{syncCounty();render()});
 const radMi=()=>Math.max(0.5,+$("#radMi").value||10);
 $("#radMi").addEventListener("change",()=>{if(SHAPE&&SHAPE.t==="c"){SHAPE.mi=radMi();render()}});
 $("#radAddr").addEventListener("keydown",e=>{if(e.key==="Enter")geocode()});
-$("#radAddr").addEventListener("change",geocode);
+$("#goAddr").onclick=geocode;
+const closeMenus=()=>document.querySelectorAll(".dd").forEach(x=>x.classList.remove("open"));
+$("#pickBtn").onclick=()=>{closeMenus();setMode("pick")};
+$("#drawRadBtn").onclick=()=>{closeMenus();setMode("dragradius")};
+$("#drawFenceBtn").onclick=()=>{closeMenus();setMode("draw")};
+$("#clearSel").onclick=()=>{closeMenus();clearShape()};
+async function reverseFill(lat,lng){
+  try{const j=await (await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&zoom=18&lat=${lat}&lon=${lng}`)).json();const a=j.address||{};
+    const line=[[a.house_number,a.road].filter(Boolean).join(" "),a.city||a.town||a.village||a.hamlet].filter(Boolean).join(", ");
+    if(line&&SHAPE&&SHAPE.t==="c"&&SHAPE.lat===lat){SHAPE.addr=line;$("#radAddr").value=line;labelDropdowns();safeReplace(location.pathname+location.search+stateToHash())}}
+  catch(e){}
+}
 async function geocode(){
   const q=$("#radAddr").value.trim();if(!q)return;
   try{const j=await (await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q+", CA"))).json();
@@ -334,10 +369,12 @@ function setMode(m){
   MODE=m;DRAFT=[];draftLayer.clearLayers();
   map.getContainer().classList.toggle("map-drawing",!!m);
   m==="draw"?map.doubleClickZoom.disable():map.doubleClickZoom.enable();
-  document.querySelectorAll(".leaflet-bar a.tool").forEach(a=>a.classList.toggle("on",a.dataset.t===m));
-  hint(m==="radius"?"Click the map to set a radius center · Esc to cancel":m==="draw"?"Click to add points · click the first point or double-click to finish · Esc to cancel":"");
+  m==="dragradius"?map.dragging.disable():map.dragging.enable();
+  hint(m==="pick"?"Click the map to pick the center point · Esc to cancel"
+    :m==="dragradius"?"Press at the center and drag outward to size the radius · Esc to cancel"
+    :m==="draw"?"Click to add points · click the first point or double-click to finish · Esc to cancel":"");
 }
-function setRadius(lat,lng,addr){SHAPE={t:"c",lat,lng,mi:radMi(),addr:addr||""};if(!addr)$("#radAddr").value="";setMode(null);render();map.fitBounds(L.latLng(lat,lng).toBounds(SHAPE.mi*1609.34*2),{padding:[20,20]})}
+function setRadius(lat,lng,addr,fit=true){SHAPE={t:"c",lat,lng,mi:radMi(),addr:addr||""};if(!addr)$("#radAddr").value="";setMode(null);render();if(fit)map.fitBounds(L.latLng(lat,lng).toBounds(SHAPE.mi*1609.34*2),{padding:[20,20]})}
 function finishDraw(){if(DRAFT.length<3){toast("A boundary needs at least 3 points");return}SHAPE={t:"p",pts:DRAFT.map(p=>[+p[0].toFixed(6),+p[1].toFixed(6)])};$("#radAddr").value="";setMode(null);render()}
 function clearShape(){SHAPE=null;$("#radAddr").value="";setMode(null);render()}
 function drawShape(){
@@ -353,30 +390,27 @@ function drawShape(){
   ctr.on("dragend",()=>{$("#radAddr").value="";SHAPE.addr="";render()});
   h.on("dragend",()=>render());
 }
-const Tools=L.Control.extend({options:{position:"topleft"},onAdd(){
-  const d=L.DomUtil.create("div","leaflet-bar");
-  d.innerHTML='<a href="#" class="tool" data-t="radius" title="Radius: click a point for a circle (miles box sets the size), then drag the edge to resize">◯</a><a href="#" class="tool" data-t="draw" title="Draw a boundary: click points, then click the first point or double-click">⬠</a><a href="#" class="tool" data-t="clear" title="Clear radius or boundary">✕</a>';
-  L.DomEvent.disableClickPropagation(d);
-  d.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();const t=a.dataset.t;t==="clear"?clearShape():setMode(MODE===t?null:t)});
-  return d}});
-map.addControl(new Tools());
 function redrawDraft(){draftLayer.clearLayers();if(!DRAFT.length)return;
   L.polyline(DRAFT,{color:"#17304F",weight:2,dashArray:"4 4"}).addTo(draftLayer);
   DRAFT.forEach((p,i)=>{const m=L.circleMarker(p,{radius:i?4:7,color:"#17304F",weight:2,fillColor:"#fff",fillOpacity:1}).addTo(draftLayer);
     if(i===0)m.on("click",e=>{L.DomEvent.stop(e);finishDraw()})})}
 map.on("click",e=>{
-  if(MODE==="radius"){setRadius(e.latlng.lat,e.latlng.lng);return}
+  if(MODE==="pick"){setRadius(e.latlng.lat,e.latlng.lng);reverseFill(e.latlng.lat,e.latlng.lng);return}
   if(MODE==="draw"){DRAFT.push([e.latlng.lat,e.latlng.lng]);redrawDraft()}
 });
+let DRAG=null;
+map.on("mousedown",e=>{if(MODE!=="dragradius")return;DRAG={c:e.latlng,circle:L.circle(e.latlng,{...SHAPE_STYLE,radius:1,interactive:false}).addTo(draftLayer)}});
+map.on("mousemove",e=>{if(!DRAG)return;const mi=miles({lat:DRAG.c.lat,lng:DRAG.c.lng},{lat:e.latlng.lat,lng:e.latlng.lng});DRAG.circle.setRadius(mi*1609.34);hint(`Radius ${mi.toFixed(1)} mi · release to set`)});
+map.on("mouseup",e=>{if(!DRAG)return;const mi=Math.max(0.5,+miles({lat:DRAG.c.lat,lng:DRAG.c.lng},{lat:e.latlng.lat,lng:e.latlng.lng}).toFixed(1));const c=DRAG.c;DRAG=null;$("#radMi").value=mi;setRadius(c.lat,c.lng,"",false)});
 map.on("dblclick",()=>{if(MODE==="draw"){DRAFT.pop();finishDraw()}});
 map.on("contextmenu",e=>{
-  const p=L.popup({closeButton:false,className:"ctxmenu"}).setLatLng(e.latlng).setContent('<a data-a="r">10-mile radius here</a><a data-a="d">Start a boundary here</a>'+(SHAPE?'<a data-a="x">Clear radius / boundary</a>':'')).openOn(map);
+  const p=L.popup({closeButton:false,className:"ctxmenu"}).setLatLng(e.latlng).setContent('<a data-a="r">10-mile radius here</a><a data-a="d">Start a fence here</a>'+(SHAPE?'<a data-a="x">Clear selected area</a>':'')).openOn(map);
   p.getElement().querySelectorAll("a").forEach(a=>a.onclick=()=>{map.closePopup();const k=a.dataset.a;
-    if(k==="r"){$("#radMi").value=10;setRadius(e.latlng.lat,e.latlng.lng)}
+    if(k==="r"){$("#radMi").value=10;setRadius(e.latlng.lat,e.latlng.lng);reverseFill(e.latlng.lat,e.latlng.lng)}
     if(k==="d"){setMode("draw");DRAFT=[[e.latlng.lat,e.latlng.lng]];redrawDraft()}
     if(k==="x")clearShape()});
 });
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&MODE)setMode(null)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&MODE){DRAG=null;setMode(null)}});
 
 /* ---------- saved searches ---------- */
 function loadSaved(){const list=store("smc_saved")||[];$("#saved").innerHTML='<option value="">'+(list.length?"Choose…":"(none yet)")+'</option>'+list.map((s,i)=>`<option value="${i}">${esc(s.name)}</option>`).join("")}
