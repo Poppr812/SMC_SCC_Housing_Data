@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMC Housing Data</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+<style>
+:root{
+  --ink:#1C2430; --navy:#17304F; --gold:#D9A21B; --teal:#1B7F8C; --purple:#6B4FA0; --orange:#D2691E;
+  --gray:#6B7480; --rule:#DDE3EA; --bg:#F6F7F4; --card:#FFFFFF;
+}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--teal)}
+header{background:var(--navy);color:#fff;padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+header h1{font-size:17px;margin:0;font-weight:600}
+.badge{background:var(--gold);color:var(--ink);font-size:12px;font-weight:600;padding:2px 8px;border-radius:10px}
+header .sub{font-size:12px;opacity:.8}
+.bar{background:var(--card);border-bottom:1px solid var(--rule);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+.ctl{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--gray)}
+.ctl select,.ctl input[type=text],.ctl input[type=search],.ctl input[type=number]{font:inherit;font-size:13px;color:var(--ink);padding:5px 7px;border:1px solid var(--rule);border-radius:5px;background:#fff}
+.dd{position:relative}
+.dd>button{font:inherit;font-size:13px;padding:5px 9px;border:1px solid var(--rule);border-radius:5px;background:#fff;min-width:170px;text-align:left;cursor:pointer;color:var(--ink)}
+.dd .menu{display:none;position:absolute;z-index:1001;top:100%;left:0;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:6px 10px;box-shadow:0 6px 20px rgba(0,0,0,.12);min-width:200px;max-height:320px;overflow:auto}
+.dd.open .menu{display:block}
+.menu label{display:flex;gap:6px;align-items:center;padding:3px 0;color:var(--ink);font-size:13px;white-space:nowrap}
+.btn{font:inherit;font-size:13px;padding:6px 11px;border-radius:5px;border:1px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer}
+.btn.ghost{background:#fff;color:var(--navy)}
+.spacer{flex:1}
+main{display:grid;grid-template-columns:1fr 340px;height:calc(100vh - 118px);min-height:420px}
+#map{height:100%}
+aside{border-left:1px solid var(--rule);background:var(--card);overflow:auto}
+aside h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray);margin:12px 14px 6px}
+.item{border-top:1px solid var(--rule);padding:10px 14px;cursor:pointer}
+.item:hover{background:#F1F4F8}
+.item b{display:block}
+.pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;color:#fff;margin-right:4px}
+.muted{color:var(--gray);font-size:12px}
+.legend{padding:8px 14px;font-size:12px;color:var(--gray);border-top:1px solid var(--rule)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.thumb{display:flex;gap:8px;align-items:center;min-width:220px}
+.thumb .img{width:56px;height:56px;border-radius:6px;flex:none;display:flex;align-items:center;justify-content:center}
+.ph-copy{background:#EEE7F7;color:var(--purple);border:1px dashed var(--purple)}
+.ph-none{background:#EEF1F4;color:var(--gray);border:1px dashed #B8C0CA}
+#rec{display:none;position:fixed;inset:0;background:rgba(20,28,40,.45);z-index:2000;overflow:auto}
+#rec.show{display:block}
+.sheet{max-width:920px;margin:28px auto;background:var(--card);border-radius:10px;padding:22px 26px 30px;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.sheet .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.sheet h2{margin:2px 0 4px;font-size:22px}
+.sheet h3{font-size:14px;text-transform:uppercase;letter-spacing:.04em;color:var(--navy);border-bottom:2px solid var(--navy);padding-bottom:3px;margin:22px 0 8px}
+.imgs{display:flex;gap:10px;margin:14px 0 4px;flex-wrap:wrap}
+.imgs .img{width:150px;height:100px;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:12px;padding:8px;text-decoration:none}
+.imgs .img svg{margin-bottom:4px}
+table.facts{width:100%;border-collapse:collapse}
+table.facts td{border-top:1px solid var(--rule);padding:7px 6px;vertical-align:top}
+table.facts td:first-child{width:30%;color:var(--gray)}
+sup.fn a{font-size:10px;text-decoration:none;background:#E6F2F3;color:var(--teal);border-radius:4px;padding:0 3px;margin-left:2px}
+.derived{font-size:12px;color:var(--gray);margin-top:2px}
+.tag{font-size:10px;text-transform:uppercase;letter-spacing:.05em;border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:middle}
+.tag.calc{background:#E4E9F2;color:var(--navy)}
+.clarify{font-size:12px;color:var(--gray);text-decoration:underline dotted;cursor:pointer;background:none;border:none;padding:0;margin-left:6px;font-family:inherit}
+.ask{display:none;font-size:12px;color:var(--gray);margin-top:4px;padding-left:10px;border-left:2px solid var(--rule)}
+.ask.show{display:block}
+ol.events{list-style:none;padding:0;margin:0}
+ol.events li{border-left:3px solid var(--teal);padding:3px 0 8px 12px;margin-left:4px}
+ol.events li b{display:inline-block;min-width:110px}
+.src{border-top:1px solid var(--rule);padding:8px 0;font-size:13px}
+.src .id{display:inline-block;min-width:26px;font-weight:600;color:var(--teal)}
+.hist{font-size:12px;color:var(--gray)}
+details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;margin-top:18px}
+.note{background:#F1F4F8;border-radius:6px;padding:8px 10px;font-size:12px;color:var(--gray);margin-top:14px}
+#exp{display:none;position:fixed;inset:0;background:rgba(20,28,40,.45);z-index:2100}
+#exp.show{display:flex;align-items:center;justify-content:center}
+#exp .box{background:#fff;border-radius:10px;padding:20px 22px;width:min(520px,92vw);max-height:90vh;overflow:auto}
+#exp h3{margin:0 0 10px}
+#exp fieldset{border:1px solid var(--rule);border-radius:6px;margin:10px 0;padding:8px 12px}
+#exp legend{font-size:12px;color:var(--gray)}
+#exp label{display:block;padding:3px 0}
+#customCats{margin-left:22px;display:none}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:8px 14px;border-radius:6px;font-size:13px;z-index:3000;display:none}
+footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);border-top:1px solid var(--rule)}
+@media (max-width:760px){
+  main{grid-template-columns:1fr;grid-template-rows:55vh auto;height:auto}
+  aside{border-left:none;border-top:1px solid var(--rule)}
+  .sheet{margin:0;border-radius:0;padding:16px}
+}
+@media print{
+  header,.bar,main,#exp,footer,.noprint{display:none!important}
+  #rec{position:static;background:none;display:block!important}
+  .sheet{box-shadow:none;margin:0;max-width:none;padding:0}
+  a{color:var(--ink)}
+  .src a::after{content:" (" attr(href) ")";font-size:10px;color:#555;word-break:break-all}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SMC Housing Data</h1>
+  <span class="badge">v1 PREVIEW</span>
+  <span class="sub" id="headSub"></span>
+</header>
+
+<div class="bar">
+  <div class="ctl">Keyword
+    <input type="search" id="kw" placeholder="e.g. podium, Pyatok, MHP" style="width:190px">
+  </div>
+  <div class="ctl">Product types
+    <div class="dd" id="ddTypes"><button type="button" id="typesBtn">All types</button>
+      <div class="menu" id="typesMenu"></div></div>
+  </div>
+  <div class="ctl">Show
+    <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline + transactions</button>
+      <div class="menu">
+        <label><input type="checkbox" value="pipeline" checked> Development pipeline</label>
+        <label><input type="checkbox" value="transaction" checked> Sales &amp; refinancings</label>
+      </div></div>
+  </div>
+  <div class="ctl">Area
+    <select id="area"></select>
+  </div>
+  <div class="ctl"><label style="flex-direction:row;display:flex;gap:5px;align-items:center;color:var(--ink)"><input type="checkbox" id="useRadius"> Radius from address</label>
+    <div style="display:flex;gap:5px">
+      <input type="text" id="radAddr" placeholder="e.g. 1650 S Delaware St, San Mateo" style="width:220px" disabled>
+      <input type="number" id="radMi" value="3" min="0.5" step="0.5" style="width:60px" disabled title="miles">
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="ctl">My saved searches
+    <select id="saved"><option value="">(none yet)</option></select>
+  </div>
+  <button class="btn ghost" id="saveBtn" type="button">Save search</button>
+  <button class="btn ghost" id="linkBtn" type="button">Copy link</button>
+  <button class="btn" id="expBtn" type="button">Export…</button>
+</div>
+
+<main>
+  <div id="map"></div>
+  <aside>
+    <h2 id="count">Records</h2>
+    <div id="list"></div>
+    <div class="legend" id="legend"></div>
+  </aside>
+</main>
+<footer>Data: public records, each fact linked to its source · Data license ODbL · Code license MIT · Parcel data: County of San Mateo, provided as-is · <a href="https://github.com/Poppr812/SMC_SCC_Housing_Data" target="_blank" rel="noopener">GitHub</a></footer>
+
+<div id="rec"><div class="sheet" id="sheet"></div></div>
+
+<div id="exp"><div class="box">
+  <h3>Export selection</h3>
+  <div class="muted" id="expCount"></div>
+  <fieldset><legend>Fields</legend>
+    <label><input type="radio" name="scope" value="standard" checked> Standard: the most common fields</label>
+    <label><input type="radio" name="scope" value="comprehensive"> Comprehensive: every field, every claim, every source</label>
+    <label><input type="radio" name="scope" value="custom"> Custom: pick categories</label>
+    <div id="customCats"></div>
+  </fieldset>
+  <fieldset><legend>Format</legend>
+    <label><input type="radio" name="fmt" value="xlsx" checked> Excel (.xlsx)</label>
+    <label><input type="radio" name="fmt" value="csv"> CSV</label>
+    <label style="color:var(--gray)"><input type="radio" name="fmt" value="gsheet" disabled> Google Sheet (stage 2: needs sign-in)</label>
+  </fieldset>
+  <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+    <button class="btn ghost" type="button" id="expCancel">Cancel</button>
+    <button class="btn" type="button" id="expGo">Download</button>
+  </div>
+</div></div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const REG = DATA.registry, SOURCES = DATA.sources, RECORDS = DATA.records;
+const SITE_URL = "https://poppr812.github.io/SMC_SCC_Housing_Data/";
+const STATUS_COLOR = {"Proposed":"#8A93A0","Approved":"#1B7F8C","Permitted":"#2F6DB5","Under construction":"#D2691E","Lease-up / selling":"#D9A21B","Existing":"#6B4FA0","Inactive":"#B8C0CA"};
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=n=>"$"+Math.round(n).toLocaleString("en-US");
+const num=n=>(+n).toLocaleString("en-US");
+function toast(m){const t=$("#toast");t.textContent=m;t.style.display="block";clearTimeout(t._h);t._h=setTimeout(()=>t.style.display="none",2600)}
+function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k)||"null");localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+function safeReplace(u){try{history.replaceState(null,"",u)}catch(e){}}
+const ICON_COPY='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M13.6 10.6a2 2 0 1 0 0 2.8"/></svg>';
+const ICON_NONE='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 16l5-5 4 4 3-3 6 6"/><path d="M4 4l16 16"/></svg>';
+
+function fmtValue(key,v){
+  const f=REG.facts[key]; if(!f)return esc(v);
+  switch(f.kind){
+    case "money": return money(v);
+    case "int": return num(v);
+    case "num": return esc(v);
+    case "catmulti": return esc(v.join(", "));
+    case "mix": return REG.mix_keys.filter(k=>v[k]).map(k=>`${v[k]} × ${k==="studio"?"studio":k.toUpperCase()}`).join(" · ");
+    case "ami": return v.map(x=>`${x.count} @ ${x.ami}% AMI`).join(" · ");
+    default: return esc(v);
+  }
+}
+function plainValue(key,v){return fmtValue(key,v).replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"')}
+
+/* ---------- filters ---------- */
+const typesMenu=$("#typesMenu");
+typesMenu.innerHTML=Object.keys(REG.product_types).map(t=>`<label title="${esc(REG.product_types[t])}"><input type="checkbox" value="${esc(t)}" checked> ${esc(t)}</label>`).join("");
+$("#area").innerHTML=["Whole county",...REG.jurisdictions].map(a=>`<option>${esc(a)}</option>`).join("");
+$("#headSub").textContent=`${RECORDS.length} records from public sources · San Mateo County · built ${DATA.built}`;
+$("#legend").innerHTML=Object.entries(STATUS_COLOR).map(([s,c])=>`<div><span class="dot" style="background:${c}"></span>${esc(s)}</div>`).join("")+'<div style="margin-top:6px">Outlines are county parcels (County of San Mateo GIS).</div>';
+document.querySelectorAll(".dd>button").forEach(b=>b.onclick=e=>{e.stopPropagation();const d=b.parentElement;document.querySelectorAll(".dd").forEach(x=>x!==d&&x.classList.remove("open"));d.classList.toggle("open")});
+document.addEventListener("click",e=>{if(!e.target.closest(".dd"))document.querySelectorAll(".dd").forEach(x=>x.classList.remove("open"))});
+
+let radiusCenter=null;
+function getState(){return{
+  kw:$("#kw").value.trim(),
+  types:[...typesMenu.querySelectorAll("input:checked")].map(i=>i.value),
+  views:[...document.querySelectorAll("#ddViews input:checked")].map(i=>i.value),
+  area:$("#area").value,
+  radius:$("#useRadius").checked?{addr:$("#radAddr").value,mi:+$("#radMi").value}:null}}
+function setState(s){
+  $("#kw").value=s.kw||"";
+  typesMenu.querySelectorAll("input").forEach(i=>i.checked=!s.types||s.types.includes(i.value));
+  document.querySelectorAll("#ddViews input").forEach(i=>i.checked=!s.views||s.views.includes(i.value));
+  if(s.area)$("#area").value=s.area;
+  $("#useRadius").checked=!!s.radius;
+  if(s.radius){$("#radAddr").value=s.radius.addr||"";$("#radMi").value=s.radius.mi||3}
+  syncRadiusInputs();
+}
+function stateToHash(){return "#q="+encodeURIComponent(btoa(unescape(encodeURIComponent(JSON.stringify(getState())))))}
+function hashToState(){const m=location.hash.match(/#q=([^&]+)/);if(!m)return null;try{return JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))))}catch(e){return null}}
+function syncRadiusInputs(){const on=$("#useRadius").checked;$("#radAddr").disabled=!on;$("#radMi").disabled=!on}
+function labelDropdowns(){
+  const s=getState(),n=Object.keys(REG.product_types).length;
+  $("#typesBtn").textContent=s.types.length===n?"All types":s.types.length?s.types.join(", "):"None";
+  $("#viewsBtn").textContent=s.views.length===2?"Pipeline + transactions":s.views.length?(s.views[0]==="pipeline"?"Pipeline only":"Transactions only"):"None";
+}
+function miles(a,b){const R=3958.8,t=Math.PI/180,dLat=(b.lat-a.lat)*t,dLng=(b.lng-a.lng)*t;const h=Math.sin(dLat/2)**2+Math.cos(a.lat*t)*Math.cos(b.lat*t)*Math.sin(dLng/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
+function filtered(){
+  const s=getState(),kw=s.kw.toLowerCase();
+  return RECORDS.filter(r=>s.types.includes(r.summary.product_type)
+    &&r.kinds.some(k=>s.views.includes(k))
+    &&(s.area==="Whole county"||s.area===r.summary.jurisdiction)
+    &&(!kw||r.search.includes(kw))
+    &&(!s.radius||!radiusCenter||miles(radiusCenter,r)<=s.radius.mi));
+}
+
+/* ---------- map ---------- */
+const map=L.map("map").setView([37.53,-122.36],10);
+L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors"}).addTo(map);
+const layer=L.layerGroup().addTo(map);let radiusCircle=null;
+const colorOf=r=>STATUS_COLOR[r.summary.status]||"#8A93A0";
+function imgBox(r,small){
+  const im=r.images[0];
+  if(im&&im.kind==="copyright"){const S=SOURCES[im.src];
+    return small?`<div class="img ph-copy">${ICON_COPY}</div>`:`<a class="img ph-copy" href="${esc(S.url)}" target="_blank" rel="noopener">${ICON_COPY}<b>Copyrighted image exists</b><span>View at source (${esc(S.publisher.split(" (")[0])})</span></a>`}
+  return small?`<div class="img ph-none">${ICON_NONE}</div>`:`<div class="img ph-none">${ICON_NONE}<b>No image available</b><span>Own photo, agency document, or press kit welcome</span></div>`;
+}
+function thumbHTML(r){const s=r.summary;return `<div class="thumb">${imgBox(r,true)}<div><b>${esc(r.name)}</b><div class="muted">${esc(s.community||s.jurisdiction)}${s.total_units!=null?" · "+num(s.total_units)+" units":""}</div><span class="pill" style="background:${colorOf(r)}">${esc(s.status)}</span><div class="muted" style="margin-top:3px">Click for full record</div></div></div>`}
+function render(){
+  labelDropdowns();layer.clearLayers();
+  const rs=filtered();
+  rs.forEach(r=>{
+    const c=colorOf(r);
+    r.parcels.forEach(p=>{if(p.outline){const poly=L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:c,weight:2,fillOpacity:.25}).addTo(layer);poly.bindTooltip(thumbHTML(r),{direction:"top",opacity:1});poly.on("click",()=>openRecord(r.id))}});
+    const mk=L.circleMarker([r.lat,r.lng],{radius:9,color:"#fff",weight:2,fillColor:c,fillOpacity:1}).addTo(layer);
+    mk.bindTooltip(thumbHTML(r),{direction:"top",offset:[0,-8],opacity:1});mk.on("click",()=>openRecord(r.id));
+  });
+  if(radiusCircle){map.removeLayer(radiusCircle);radiusCircle=null}
+  const s=getState();
+  if(s.radius&&radiusCenter)radiusCircle=L.circle([radiusCenter.lat,radiusCenter.lng],{radius:s.radius.mi*1609.34,color:"#1B7F8C",weight:1,fillOpacity:.05}).addTo(map);
+  $("#count").textContent=`${rs.length} record${rs.length===1?"":"s"} match`;
+  $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${esc(r.name)}</b><span class="pill" style="background:${colorOf(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.total_units!=null?" · "+num(r.summary.total_units)+" units":""} · ${esc(r.summary.product_type)}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
+  document.querySelectorAll(".item[data-id]").forEach(el=>{el.onclick=()=>openRecord(el.dataset.id);el.onmouseenter=()=>{const r=RECORDS.find(x=>x.id===el.dataset.id);map.panTo([r.lat,r.lng])}});
+  safeReplace(location.pathname+location.search+stateToHash());
+}
+["#kw"].forEach(s=>$(s).addEventListener("input",render));
+typesMenu.addEventListener("change",render);
+$("#ddViews").addEventListener("change",render);
+$("#area").addEventListener("change",render);
+$("#radMi").addEventListener("change",render);
+$("#useRadius").addEventListener("change",()=>{syncRadiusInputs();if(!$("#useRadius").checked)radiusCenter=null;render()});
+$("#radAddr").addEventListener("keydown",e=>{if(e.key==="Enter")geocode()});
+$("#radAddr").addEventListener("change",geocode);
+async function geocode(){
+  const q=$("#radAddr").value.trim();if(!q)return;
+  try{const j=await (await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q+", San Mateo County, CA"))).json();
+    if(j[0]){radiusCenter={lat:+j[0].lat,lng:+j[0].lon};map.setView([radiusCenter.lat,radiusCenter.lng],12);render()}else toast("Address not found")}
+  catch(e){toast("Address lookup unavailable")}
+}
+
+/* ---------- saved searches ---------- */
+function loadSaved(){const list=store("smc_saved")||[];$("#saved").innerHTML='<option value="">'+(list.length?"Choose…":"(none yet)")+'</option>'+list.map((s,i)=>`<option value="${i}">${esc(s.name)}</option>`).join("")}
+$("#saveBtn").onclick=()=>{const name=prompt("Name this search:","My search "+new Date().toLocaleDateString());if(!name)return;const list=store("smc_saved")||[];list.push({name,hash:stateToHash()});store("smc_saved",list);loadSaved();toast("Saved in this browser. The link also works anywhere.")};
+$("#saved").onchange=e=>{const list=store("smc_saved")||[];const s=list[+e.target.value];if(!s)return;location.hash=s.hash;applyHash()};
+$("#linkBtn").onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link copied. It reopens this exact search.")}catch(e){prompt("Copy this link:",location.href)}};
+function applyHash(){const s=hashToState();if(s){setState(s);if(s.radius&&s.radius.addr)geocode()}render()}
+
+/* ---------- record page ---------- */
+let CUR=null;
+function fn(srcs){return (srcs||[]).map(s=>`<sup class="fn"><a href="#src-${s}" title="${esc(SOURCES[s].title)}">${CUR.srcLabels[s]}</a></sup>`).join("")}
+function askHTML(r,label,q){
+  const id="q"+Math.random().toString(36).slice(2,8);
+  const issue="https://github.com/Poppr812/SMC_SCC_Housing_Data/issues/new?title="+encodeURIComponent(r.id+": "+label)+"&body="+encodeURIComponent(q+"\n\nPlease include a source if you have one.");
+  return `<button class="clarify noprint" type="button" onclick="document.getElementById('${id}').classList.toggle('show')">Know more?</button><div class="ask noprint" id="${id}">${esc(q)} <a href="${issue}" target="_blank" rel="noopener">Share what you know</a></div>`;
+}
+function factHTML(r,key,f){
+  const cl=f.claims;
+  if(f.combine)return cl.map(c=>fmtValue(key,c.value)+fn(c.src)).join("; ");
+  if(cl.length===1){const c=cl[0];return fmtValue(key,c.value)+fn(c.src)+(c.note?`<div class="derived">${esc(c.note)}</div>`:"")}
+  if(f.best!=null){const b=cl[f.best],rest=cl.filter((_,i)=>i!==f.best);return `${fmtValue(key,b.value)}${fn(b.src)} <span class="muted">Other sources indicate ${rest.map(c=>fmtValue(key,c.value)+fn(c.src)).join(", ")}.</span>`}
+  return `Possibly ${cl.map(c=>fmtValue(key,c.value)+fn(c.src)).join(" or ")}. <span class="muted">See sources below.</span>`+(f.question?askHTML(r,REG.facts[key].label,f.question):"");
+}
+const row=(l,v)=>`<tr><td>${esc(l)}</td><td>${v}</td></tr>`;
+function sectionRows(r,sec){
+  let h="";
+  if(sec==="Location"){
+    h+=row("Parcel number(s) (APN)",r.parcels.map(p=>p.apn+fn(p.src)).join("<br>"));
+    h+=row("Address(es)",r.addresses.map(a=>esc(a.text)+fn(a.src)).join("<br>"));
+  }
+  Object.entries(REG.facts).filter(([k,f])=>f.section===sec&&r.facts[k]).forEach(([k,f])=>{h+=row(f.label,factHTML(r,k,r.facts[k]))});
+  Object.entries(REG.calcs).filter(([k,c])=>c.section===sec&&r.calcs[k]).forEach(([k,c])=>{const x=r.calcs[k];h+=row(c.label,`${money(x.value)}<span class="tag calc">calculated</span><div class="derived">= ${esc(x.how)}</div>`)});
+  if(sec==="Units & building"&&r.construction_notes.length)h+=row("Construction notes",r.construction_notes.map(n=>esc(n.text)+fn(n.src)).join("<br>"));
+  return h;
+}
+function partiesRows(r){
+  let h="";
+  const order=REG.party_roles;
+  [...r.parties].sort((a,b)=>order.indexOf(a.role)-order.indexOf(b.role)).forEach(p=>{
+    const who=esc(p.company)+(p.contact?` · ${esc(p.contact)}`:"")+(p.linkedin?` · <a href="${esc(p.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`:"");
+    h+=row(p.role==="Other"?(p.other_role||"Other"):p.role,who+fn(p.src));
+  });
+  if(r.events.some(e=>e.type==="Sale")&&!r.parties.some(p=>p.role==="Seller"))h+=row("Seller",'<span class="muted">No current report logged</span>');
+  return h;
+}
+function financingRows(r){
+  let h="";const done=new Set();
+  r.financing.forEach(x=>{
+    if(x.group){if(done.has(x.group))return;done.add(x.group);
+      const g=r.financing.filter(y=>y.group===x.group);
+      h+=row(x.type,`Possibly ${g.map(y=>esc(y.provider)+(y.amount?" ("+money(y.amount)+")":"")+fn(y.src)).join(" or ")}. <span class="muted">See sources below.</span>`+((r.groups[x.group]||{}).question?askHTML(r,x.type,r.groups[x.group].question):""));
+      return;}
+    h+=row(x.type,`${esc(x.provider)}${x.program?" · "+esc(x.program):""}${x.amount?" · "+money(x.amount):""}${x.date?` <span class="muted">(${esc(x.date)})</span>`:""}${fn(x.src)}`);
+  });
+  return h;
+}
+function openRecord(id){
+  const r=RECORDS.find(x=>x.id===id);if(!r)return;CUR=r;
+  const secs=REG.sections.map(sec=>{
+    let rows=sec==="Parties"?partiesRows(r):sectionRows(r,sec);
+    if(sec==="Financing & transactions")rows+=financingRows(r);
+    if(sec==="Approvals & timeline"){
+      const tl=r.events.length?`<ol class="events" style="margin-top:8px">${r.events.map(e=>`<li${e.estimated?' style="border-left-style:dashed;opacity:.8"':""}><b>${esc(e.date)}</b>${esc(e.label)}${e.estimated?' <span class="muted">(estimated)</span>':""}${fn(e.src)}</li>`).join("")}</ol>`:"";
+      return (rows||tl)?`<h3>${esc(sec)}</h3>${rows?`<table class="facts">${rows}</table>`:""}${tl}`:"";
+    }
+    if(sec==="Basics")return "";
+    return rows?`<h3>${esc(sec)}</h3><table class="facts">${rows}</table>`:"";
+  }).join("");
+  const basics=sectionRows(r,"Basics");
+  const used=Object.keys(r.srcLabels);
+  $("#sheet").innerHTML=`
+   <div class="top">
+     <div><div class="muted">${r.id} · ${esc(r.summary.product_type)} · ${esc(r.summary.community||r.summary.jurisdiction)}</div><h2>${esc(r.name)}</h2>
+       <span class="pill" style="background:${colorOf(r)}">${esc(r.summary.status)}</span></div>
+     <div class="noprint" style="display:flex;gap:8px">
+       <button class="btn ghost" type="button" onclick="window.print()">Download PDF</button>
+       <button class="btn" type="button" onclick="closeRecord()">Close ✕</button>
+     </div>
+   </div>
+   <div class="imgs">${(r.images.length?r.images:[{kind:"none"}]).map((im,i)=>imgBox({images:[im]},false)).join("")}</div>
+   <h3>Basics</h3><table class="facts">${basics}</table>
+   ${secs}
+   <h3>Sources</h3>
+   ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
+     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(S.url)}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)} · ${s}<br>Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.copyright?"private archive (copyrighted)":"public archive"} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":"pending"}</div></div>`}).join("")}
+   <details><summary>Edit history (provenance)</summary>
+     <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
+   </details>
+   <div class="note">Every fact links to the public source behind it. Where sources differ, each is shown. Data license: ODbL.</div>`;
+  $("#rec").classList.add("show");$("#rec").scrollTop=0;
+  safeReplace(location.pathname+location.search+stateToHash()+"&r="+id);
+}
+function closeRecord(){$("#rec").classList.remove("show");safeReplace(location.pathname+location.search+stateToHash())}
+$("#rec").addEventListener("click",e=>{if(e.target.id==="rec")closeRecord()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeRecord();$("#exp").classList.remove("show")}});
+
+/* ---------- export ---------- */
+const CATS=[...REG.sections.filter(s=>s!=="Basics"),"Timeline","Construction notes","Sources"];
+$("#customCats").innerHTML=CATS.map(c=>`<label><input type="checkbox" value="${esc(c)}" checked> ${esc(c)}</label>`).join("");
+document.querySelectorAll('input[name=scope]').forEach(i=>i.onchange=()=>{$("#customCats").style.display=$('input[name=scope]:checked').value==="custom"?"block":"none"});
+$("#expBtn").onclick=()=>{$("#expCount").textContent=`${filtered().length} record(s) in the current selection.`;$("#exp").classList.add("show")};
+$("#expCancel").onclick=()=>$("#exp").classList.remove("show");
+function claimsText(r,key,f){
+  const L=s=>"["+s.map(x=>r.srcLabels[x]).join(",")+"]";
+  if(f.combine||f.claims.length===1)return f.claims.map(c=>plainValue(key,c.value)+" "+L(c.src)+(c.note?" ("+c.note+")":"")).join("; ");
+  if(f.best!=null)return plainValue(key,f.claims[f.best].value)+" "+L(f.claims[f.best].src)+"; other sources: "+f.claims.filter((_,i)=>i!==f.best).map(c=>plainValue(key,c.value)+" "+L(c.src)).join(", ");
+  return "Possibly "+f.claims.map(c=>plainValue(key,c.value)+" "+L(c.src)).join(" or ");
+}
+function rowsFor(scope,cats){
+  return filtered().map(r=>{
+    const s=r.summary;
+    if(scope==="standard")return {"Record ID":r.id,"Name":r.name,"Product type":s.product_type,"Record kind":r.kinds.map(k=>k==="pipeline"?"Development pipeline":"Sale / refinance").join("; "),"Status":s.status,"Jurisdiction":s.jurisdiction,"Address":r.addresses.map(a=>a.text).join("; "),"APN(s)":r.parcels.map(p=>p.apn).join("; "),"Total units":s.total_units??"","Restricted units":s.restricted_units??"","Recorded owner":s.owner||"","Developer":s.developer||"","Cost or price basis":s.cost_basis||"","Total cost / sale price":s.cost??"","Per unit (calculated)":s.per_unit??"","Main lender":s.main_lender||"","Latest event date":s.latest_event||"","Record URL":SITE_URL+"#r="+r.id};
+    const want=scope==="comprehensive"?CATS:cats;const L=x=>"["+x.map(y=>r.srcLabels[y]).join(",")+"]";
+    const o={"Record ID":r.id,"Name":r.name};
+    Object.entries(REG.facts).filter(([k,f])=>f.section==="Basics"&&r.facts[k]).forEach(([k,f])=>o[f.label]=claimsText(r,k,r.facts[k]));
+    REG.sections.filter(sec=>sec!=="Basics"&&want.includes(sec)).forEach(sec=>{
+      if(sec==="Location"){o["APN(s)"]=r.parcels.map(p=>p.apn+" "+L(p.src)).join("; ");o["Address(es)"]=r.addresses.map(a=>a.text+" "+L(a.src)).join("; ");o["Latitude"]=+r.lat.toFixed(6);o["Longitude"]=+r.lng.toFixed(6)}
+      Object.entries(REG.facts).filter(([k,f])=>f.section===sec&&r.facts[k]).forEach(([k,f])=>o[f.label]=claimsText(r,k,r.facts[k]));
+      Object.entries(REG.calcs).filter(([k,c])=>c.section===sec&&r.calcs[k]).forEach(([k,c])=>o[c.label+" (calculated)"]=money(r.calcs[k].value)+" = "+r.calcs[k].how);
+      if(sec==="Parties")REG.party_roles.forEach(role=>{const ps=r.parties.filter(p=>p.role===role);if(ps.length)o[role==="Other"?"Other parties":role]=ps.map(p=>(p.other_role?p.other_role+": ":"")+p.company+(p.contact?" ("+p.contact+")":"")+(p.linkedin?" "+p.linkedin:"")+" "+L(p.src)).join("; ")});
+      if(sec==="Financing & transactions")o["Financing sources"]=r.financing.map(x=>x.type+": "+x.provider+(x.program?" · "+x.program:"")+(x.amount?" · "+money(x.amount):"")+(x.date?" · "+x.date:"")+" "+L(x.src)+(x.group?" (sources differ)":"")).join(" | ");
+    });
+    if(want.includes("Timeline"))o["Timeline"]=r.events.map(e=>e.date+": "+e.label+(e.estimated?" (estimated)":"")+" "+L(e.src)).join(" | ");
+    if(want.includes("Construction notes"))o["Construction notes"]=r.construction_notes.map(n=>n.text+" "+L(n.src)).join("; ");
+    if(want.includes("Sources"))o["Sources"]=Object.keys(r.srcLabels).map(x=>r.srcLabels[x]+" = "+x+": "+SOURCES[x].title+", "+SOURCES[x].publisher+", "+SOURCES[x].url).join(" | ");
+    return o;
+  });
+}
+const NUM_COLS={"Total units":"#,##0","Restricted units":"#,##0","Total cost / sale price":"$#,##0","Per unit (calculated)":"$#,##0","Latitude":"0.000000","Longitude":"0.000000"};
+function styleSheet(ws,cols,rows,urlCols){
+  ws.columns=cols.map(c=>{const longest=Math.max(c.length,...rows.map(r=>String(r[c]??"").length));return {header:c,key:c,width:Math.min(Math.max(longest+2,10),urlCols.includes(c)?42:60)}});
+  rows.forEach(r=>{const o={};cols.forEach(c=>{let v=r[c];if(NUM_COLS[c]&&v!==""&&v!=null&&!isNaN(+v))v=+v;o[c]=v??""});ws.addRow(o)});
+  const head=ws.getRow(1);head.height=22;
+  head.eachCell(cell=>{cell.font={bold:true,color:{argb:"FFFFFFFF"},name:"Arial",size:10};cell.fill={type:"pattern",pattern:"solid",fgColor:{argb:"FF17304F"}};cell.alignment={vertical:"middle",wrapText:true}});
+  ws.eachRow((row,i)=>{if(i===1)return;
+    row.eachCell({includeEmpty:true},(cell,ci)=>{const c=cols[ci-1];cell.font={name:"Arial",size:10};cell.alignment={vertical:"top",wrapText:true};cell.border={bottom:{style:"hair",color:{argb:"FFDDE3EA"}}};
+      if(NUM_COLS[c])cell.numFmt=NUM_COLS[c];
+      if(urlCols.includes(c)&&String(cell.value).startsWith("http")){const u=String(cell.value);cell.value={text:u,hyperlink:u};cell.font={name:"Arial",size:10,color:{argb:"FF1B7F8C"},underline:true}}});
+    if(i%2===0)row.eachCell({includeEmpty:true},cell=>{cell.fill={type:"pattern",pattern:"solid",fgColor:{argb:"FFF6F7F4"}}});
+  });
+  ws.views=[{state:"frozen",xSplit:2,ySplit:1}];
+  ws.autoFilter={from:{row:1,column:1},to:{row:1,column:cols.length}};
+}
+async function buildXlsx(rows,cols,srcRows,fname){
+  const wb=new ExcelJS.Workbook();wb.creator="SMC Housing Data";
+  styleSheet(wb.addWorksheet("Records"),cols,rows,["Record URL"]);
+  const sc=["ID","Title","Publisher","Date","Type","URL","Retrieved","Wayback"];
+  const ss=wb.addWorksheet("Sources");styleSheet(ss,sc,srcRows,["URL"]);ss.views=[{state:"frozen",xSplit:1,ySplit:1}];
+  const buf=await wb.xlsx.writeBuffer();
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=fname+".xlsx";a.click();
+}
+$("#expGo").onclick=()=>{
+  const scope=$('input[name=scope]:checked').value,fmt=$('input[name=fmt]:checked').value;
+  const cats=[...document.querySelectorAll("#customCats input:checked")].map(i=>i.value);
+  const rows=rowsFor(scope,cats);if(!rows.length){toast("Nothing to export");return}
+  const cols=[...new Set(rows.flatMap(r=>Object.keys(r)))];
+  const fname=`smc_housing_${scope}_${new Date().toISOString().slice(0,10)}`;
+  if(fmt==="xlsx"){
+    if(!window.ExcelJS){toast("Excel library didn't load (needs internet)");return}
+    const used=[...new Set(filtered().flatMap(r=>Object.keys(r.srcLabels)))];
+    buildXlsx(rows,cols,used.map(k=>{const v=SOURCES[k];return {ID:k,Title:v.title,Publisher:v.publisher,Date:v.date||"",Type:v.type,URL:v.url,Retrieved:v.retrieved,Wayback:v.wayback||"not yet archived"}}),fname);
+  }else{
+    const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
+    const csv=[cols.map(q).join(","),...rows.map(r=>cols.map(c=>q(r[c])).join(","))].join("\r\n");
+    const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+csv],{type:"text/csv"}));a.download=fname+".csv";a.click();
+  }
+  $("#exp").classList.remove("show");toast("Export downloaded");
+};
+
+/* ---------- start ---------- */
+loadSaved();
+const s0=hashToState();if(s0)setState(s0);
+render();
+const rm=location.hash.match(/r=(SMC-\d{6})/);if(rm)openRecord(rm[1]);
+</script>
+</body>
+</html>

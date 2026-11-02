@@ -109,6 +109,16 @@ Pipeline and transactions are two views of the same Housing Records, not separat
 - 2026-11-02: Empty field wording: "No current report logged".
 - 2026-11-02: Calculated values approved: small "calculated" tag plus the math on one gray line. Drop the "Inputs are sourced above" sentence.
 
+## v1 build (started 2026-11-02)
+
+- `data/records/SMC-######.json`: one file per record, per FIELDS.md
+- `data/sources/SRC-######.json`: one file per source; records cite these IDs; each record page renumbers them S1, S2…
+- `scripts/schema.py`: field registry (labels and definitions); `scripts/template.html`: the site; `scripts/build.py`: validates every record and writes `docs/`
+- Run `python scripts/build.py` after any data change; it stops with a list of problems if a record breaks the rules (missing source, undefined label, bad APN, etc.). Stdlib only, no pandas.
+- GitHub Pages serves `docs/` from `main`. Excel export is built in the browser (ExcelJS).
+- Conflicting financing entries share a `group` (with a clarifying question); conflicting facts have multiple claims and optional `best`; complementary claims use `combine`.
+- "Reported financing total" excludes short-term loans (construction, bridge, predevelopment) so construction and permanent money isn't double-counted.
+
 ## Fields
 
 - **2026-11-02: Categories with defined labels, plus project notes.** Records use categories (starting with core product types), and each label needs a written definition. Terms like wrap vs. flat vs. podium mean different things to different people, and those projects still compete, so construction details (wood frame, metal stud, podium, Type V / III / I, etc.) are not categories. They go in a **Construction notes** section on the project, sourced, and keyword-searchable.

@@ -1,0 +1,1418 @@
+{
+ "built": "2026-11-02",
+ "registry": {
+  "sections": [
+   "Basics",
+   "Location",
+   "Units & building",
+   "Affordability",
+   "Approvals & timeline",
+   "Parties",
+   "Financing & transactions"
+  ],
+  "facts": {
+   "product_type": {
+    "section": "Basics",
+    "label": "Product type",
+    "kind": "cat",
+    "options": {
+     "Apartments": "Multifamily rental, 5+ units, one owner",
+     "Condominiums": "Multifamily units sold individually",
+     "Townhomes": "Attached homes with their own ground-level entry, for sale or rent",
+     "Single-family": "Detached homes, including small-lot detached",
+     "Mixed product": "A project combining two or more of the above"
+    }
+   },
+   "status": {
+    "section": "Basics",
+    "label": "Status",
+    "kind": "cat",
+    "options": {
+     "Proposed": "Application filed or publicly announced; not yet approved",
+     "Approved": "Entitlements granted; no building permit yet",
+     "Permitted": "Building permit issued; construction not started",
+     "Under construction": "Construction started",
+     "Lease-up / selling": "Complete, now leasing or selling initial units",
+     "Existing": "Built and stabilized; the record tracks sales and refinancings",
+     "Inactive": "Withdrawn, denied, expired, or stalled"
+    }
+   },
+   "population": {
+    "section": "Basics",
+    "label": "Population served",
+    "kind": "catmulti",
+    "options": {
+     "Senior": "Age-restricted (55+ or 62+)",
+     "Student": "Built or leased for students",
+     "Workforce / educator": "Targeted to employees or a profession",
+     "Farmworker": "Units set aside for agricultural workers",
+     "Supportive": "Permanent supportive housing, services on site",
+     "Family": "Affordable family housing"
+    }
+   },
+   "jurisdiction": {
+    "section": "Location",
+    "label": "Jurisdiction",
+    "kind": "cat",
+    "options": {
+     "Atherton": "",
+     "Belmont": "",
+     "Brisbane": "",
+     "Burlingame": "",
+     "Colma": "",
+     "Daly City": "",
+     "East Palo Alto": "",
+     "Foster City": "",
+     "Half Moon Bay": "",
+     "Hillsborough": "",
+     "Menlo Park": "",
+     "Millbrae": "",
+     "Pacifica": "",
+     "Portola Valley": "",
+     "Redwood City": "",
+     "San Bruno": "",
+     "San Carlos": "",
+     "San Mateo": "",
+     "South San Francisco": "",
+     "Woodside": "",
+     "Unincorporated": ""
+    }
+   },
+   "community": {
+    "section": "Location",
+    "label": "Community / area",
+    "kind": "text",
+    "options": null
+   },
+   "site_area_acres": {
+    "section": "Location",
+    "label": "Site area (acres)",
+    "kind": "num",
+    "options": null
+   },
+   "total_units": {
+    "section": "Units & building",
+    "label": "Total units",
+    "kind": "int",
+    "options": null
+   },
+   "unit_mix": {
+    "section": "Units & building",
+    "label": "Unit mix",
+    "kind": "mix",
+    "options": null
+   },
+   "avg_unit_sf": {
+    "section": "Units & building",
+    "label": "Average unit size (sq ft)",
+    "kind": "int",
+    "options": null
+   },
+   "residential_sf": {
+    "section": "Units & building",
+    "label": "Residential area (sq ft)",
+    "kind": "int",
+    "options": null
+   },
+   "commercial_sf": {
+    "section": "Units & building",
+    "label": "Commercial area (sq ft)",
+    "kind": "int",
+    "options": null
+   },
+   "stories": {
+    "section": "Units & building",
+    "label": "Stories",
+    "kind": "int",
+    "options": null
+   },
+   "parking_spaces": {
+    "section": "Units & building",
+    "label": "Parking spaces",
+    "kind": "int",
+    "options": null
+   },
+   "year_built": {
+    "section": "Units & building",
+    "label": "Year built",
+    "kind": "int",
+    "options": null
+   },
+   "affordability_type": {
+    "section": "Affordability",
+    "label": "Affordability type",
+    "kind": "cat",
+    "options": {
+     "Market-rate": "No deed-restricted units",
+     "Mixed-income": "Some deed-restricted units (inclusionary or density bonus)",
+     "100% affordable": "All units deed-restricted except manager units",
+     "Below-market (unrestricted)": "Below-market rents by owner policy, no deed restriction"
+    }
+   },
+   "restricted_by_ami": {
+    "section": "Affordability",
+    "label": "Restricted units by income",
+    "kind": "ami",
+    "options": null
+   },
+   "market_rate_units": {
+    "section": "Affordability",
+    "label": "Market-rate units",
+    "kind": "int",
+    "options": null
+   },
+   "restriction_term_years": {
+    "section": "Affordability",
+    "label": "Restriction term (years)",
+    "kind": "int",
+    "options": null
+   },
+   "affordability_notes": {
+    "section": "Affordability",
+    "label": "Affordability notes",
+    "kind": "text",
+    "options": null
+   },
+   "approval_type": {
+    "section": "Approvals & timeline",
+    "label": "Approval type",
+    "kind": "catmulti",
+    "options": {
+     "Discretionary": "Standard city or county review and approval",
+     "Streamlined / ministerial": "By-right state streamlining (SB 35, SB 423, AB 2011, etc.)",
+     "Builder's remedy": "Filed under the Housing Accountability Act builder's remedy",
+     "Density bonus": "Uses the state density bonus law",
+     "Specific / master plan": "Approved under an area plan or development agreement"
+    }
+   },
+   "planning_file": {
+    "section": "Approvals & timeline",
+    "label": "Planning file / case number",
+    "kind": "text",
+    "options": null
+   },
+   "total_development_cost": {
+    "section": "Financing & transactions",
+    "label": "Total development cost",
+    "kind": "money",
+    "options": null
+   },
+   "sale_price": {
+    "section": "Financing & transactions",
+    "label": "Sale price",
+    "kind": "money",
+    "options": null
+   },
+   "cap_rate": {
+    "section": "Financing & transactions",
+    "label": "Cap rate (%)",
+    "kind": "num",
+    "options": null
+   },
+   "grm": {
+    "section": "Financing & transactions",
+    "label": "Gross rent multiplier",
+    "kind": "num",
+    "options": null
+   }
+  },
+  "calcs": {
+   "cost_per_unit": {
+    "section": "Financing & transactions",
+    "label": "Cost per unit"
+   },
+   "cost_per_sf": {
+    "section": "Financing & transactions",
+    "label": "Cost per sq ft"
+   },
+   "price_per_unit": {
+    "section": "Financing & transactions",
+    "label": "Price per unit"
+   },
+   "price_per_sf": {
+    "section": "Financing & transactions",
+    "label": "Price per sq ft"
+   },
+   "financing_total": {
+    "section": "Financing & transactions",
+    "label": "Reported financing total"
+   }
+  },
+  "mix_keys": [
+   "studio",
+   "1br",
+   "2br",
+   "3br",
+   "4br+"
+  ],
+  "product_types": {
+   "Apartments": "Multifamily rental, 5+ units, one owner",
+   "Condominiums": "Multifamily units sold individually",
+   "Townhomes": "Attached homes with their own ground-level entry, for sale or rent",
+   "Single-family": "Detached homes, including small-lot detached",
+   "Mixed product": "A project combining two or more of the above"
+  },
+  "statuses": {
+   "Proposed": "Application filed or publicly announced; not yet approved",
+   "Approved": "Entitlements granted; no building permit yet",
+   "Permitted": "Building permit issued; construction not started",
+   "Under construction": "Construction started",
+   "Lease-up / selling": "Complete, now leasing or selling initial units",
+   "Existing": "Built and stabilized; the record tracks sales and refinancings",
+   "Inactive": "Withdrawn, denied, expired, or stalled"
+  },
+  "jurisdictions": [
+   "Atherton",
+   "Belmont",
+   "Brisbane",
+   "Burlingame",
+   "Colma",
+   "Daly City",
+   "East Palo Alto",
+   "Foster City",
+   "Half Moon Bay",
+   "Hillsborough",
+   "Menlo Park",
+   "Millbrae",
+   "Pacifica",
+   "Portola Valley",
+   "Redwood City",
+   "San Bruno",
+   "San Carlos",
+   "San Mateo",
+   "South San Francisco",
+   "Woodside",
+   "Unincorporated"
+  ],
+  "party_roles": [
+   "Developer",
+   "Co-developer / partner",
+   "Recorded owner",
+   "General contractor",
+   "Architect",
+   "Structural engineer",
+   "Civil engineer",
+   "Landscape architect",
+   "Interior designer",
+   "Property manager",
+   "Lender",
+   "Equity partner",
+   "Buyer",
+   "Seller",
+   "Broker",
+   "Other"
+  ],
+  "financing_types": {
+   "Predevelopment loan": "Early-stage loan for design, entitlements, site control",
+   "Acquisition loan": "Loan to buy land or an existing building",
+   "Construction loan": "Short-term loan during construction",
+   "Permanent loan": "Long-term first mortgage after completion",
+   "Bridge loan": "Short-term loan between other financing events",
+   "Tax-exempt bonds": "Private activity bonds or other tax-exempt issues",
+   "Taxable bonds": "Taxable bond tranches",
+   "Tax-credit equity (4%)": "LIHTC equity from the 4% program",
+   "Tax-credit equity (9%)": "LIHTC equity from the competitive 9% program",
+   "State tax-credit equity": "California state LIHTC equity",
+   "State soft loan": "HCD and other state programs",
+   "Local soft loan": "City or county gap financing",
+   "Federal grant / loan": "HOME, CDBG, and similar federal funds",
+   "FHLB AHP": "Federal Home Loan Bank Affordable Housing Program",
+   "Seller financing": "Seller carryback or land-lease structures",
+   "Deferred developer fee": "Developer fee left in the deal as a source",
+   "Sponsor / GP equity": "Cash equity from the developer or general partner",
+   "Private equity": "Investor or joint-venture equity",
+   "Other": "Anything else; described in the program name"
+  },
+  "debt_types": [
+   "Acquisition loan",
+   "Bridge loan",
+   "Construction loan",
+   "Permanent loan",
+   "Predevelopment loan",
+   "Seller financing",
+   "Tax-exempt bonds",
+   "Taxable bonds"
+  ],
+  "event_types": [
+   "Application filed",
+   "Approved",
+   "Permit issued",
+   "Construction start",
+   "Completion",
+   "Lease-up start",
+   "Stabilized",
+   "Sale",
+   "Refinance",
+   "Other"
+  ]
+ },
+ "sources": {
+  "SRC-000001": {
+   "id": "SRC-000001",
+   "title": "CTCAC Project Staff Report, CA-25-042 (Cypress Point)",
+   "publisher": "California Tax Credit Allocation Committee",
+   "date": "2025-06-18",
+   "type": "Government document",
+   "url": "https://www.treasurer.ca.gov/ctcac/meeting/2025/0618/staff/CA-25-042.pdf",
+   "retrieved": "2026-10-03",
+   "wayback": "2026-03-26",
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-000002": {
+   "id": "SRC-000002",
+   "title": "Cypress Point Affordable Housing Community Project",
+   "publisher": "San Mateo County Planning & Building",
+   "date": null,
+   "type": "Government web page",
+   "url": "https://www.smcgov.org/planning/cypress-point-affordable-housing-community-project",
+   "retrieved": "2026-10-03",
+   "wayback": "2026-01-25",
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-000003": {
+   "id": "SRC-000003",
+   "title": "71 affordable homes under construction in coastal San Mateo County",
+   "publisher": "MidPen Housing",
+   "date": "2026-09",
+   "type": "Developer press release",
+   "url": "https://www.midpen-housing.org/news-and-happenings/media-center/71-affordable-homes-under-construction-in-coastal-san-mateo-county/",
+   "retrieved": "2026-10-03",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-000004": {
+   "id": "SRC-000004",
+   "title": "Construction underway for Moss Beach affordable housing",
+   "publisher": "San Mateo Daily Journal (Holly Rusch)",
+   "date": "2026-09-26",
+   "type": "News article",
+   "url": "https://www.smdailyjournal.com/news/local/construction-underway-for-moss-beach-affordable-housing-71-unit-cypress-point-development-slated-for-september/article_d1598afc-7b51-4c3d-a354-f50ed0efe208.html",
+   "retrieved": "2026-10-03",
+   "wayback": "2026-09-28",
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-000005": {
+   "id": "SRC-000005",
+   "title": "Active Parcels, APN 037-022-070",
+   "publisher": "San Mateo County GIS",
+   "date": "2026-10-03",
+   "type": "Government dataset",
+   "url": "https://gis.smcgov.org/maps/rest/services/Common/ACTIVE_PARCELS_APN/MapServer/0/query?where=APN%3D%27037022070%27&outFields=*&f=html",
+   "retrieved": "2026-10-03",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-000006": {
+   "id": "SRC-000006",
+   "title": "SMCBOE, County Superintendent and HEART partner to purchase educator workforce housing",
+   "publisher": "San Mateo County Office of Education",
+   "date": "2026-09",
+   "type": "Government press release",
+   "url": "https://www.smcoe.org/p/~board/san-mateo-county-office-of-education-news/post/smcboe-county-superintendent-of-schools-and-heart-partner-to-purchase-educator-workforce-housing",
+   "retrieved": "2026-10-03",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-000007": {
+   "id": "SRC-000007",
+   "title": "San Mateo County acquires apartment building for educator housing",
+   "publisher": "The Almanac",
+   "date": "2026-09-15",
+   "type": "News article",
+   "url": "https://www.almanacnews.com/housing/2026/09/15/san-mateo-county-acquires-apartment-building-for-educator-housing/",
+   "retrieved": "2026-10-03",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-000008": {
+   "id": "SRC-000008",
+   "title": "San Mateo County housing project to provide homes for local educators",
+   "publisher": "Bay City News / Local News Matters (Nicole Tingson)",
+   "date": "2026-09-28",
+   "type": "News article",
+   "url": "https://localnewsmatters.org/2026/09/28/san-mateo-educator-housing/",
+   "retrieved": "2026-10-03",
+   "wayback": "2026-09-28",
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-000009": {
+   "id": "SRC-000009",
+   "title": "Negotiated sales, May 27, 2026 (HEART-SV Series 2026A/B)",
+   "publisher": "The Bond Buyer",
+   "date": "2026-05-27",
+   "type": "Trade listing",
+   "url": "https://www.bondbuyer.com/market-data/negotiated-sales/2026/05/27",
+   "retrieved": "2026-10-03",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-000010": {
+   "id": "SRC-000010",
+   "title": "Active Parcels, APN 035-200-120",
+   "publisher": "San Mateo County GIS",
+   "date": "2026-10-03",
+   "type": "Government dataset",
+   "url": "https://gis.smcgov.org/maps/rest/services/Common/ACTIVE_PARCELS_APN/MapServer/0/query?where=APN%3D%27035200120%27&outFields=*&f=html",
+   "retrieved": "2026-10-03",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  }
+ },
+ "records": [
+  {
+   "id": "SMC-000001",
+   "name": "Cypress Point",
+   "parcels": [
+    {
+     "apn": "037-022-070",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-000005",
+      "SRC-000001"
+     ],
+     "outline": [
+      [
+       -122.51542188314347,
+       37.53246853898301
+      ],
+      [
+       -122.51686377504873,
+       37.53310929890446
+      ],
+      [
+       -122.516888560931,
+       37.533123133307605
+      ],
+      [
+       -122.51691016535247,
+       37.533140013624866
+      ],
+      [
+       -122.51692800673527,
+       37.533159484786886
+      ],
+      [
+       -122.51694160340637,
+       37.53318101971061
+      ],
+      [
+       -122.51695058539735,
+       37.53320403712171
+      ],
+      [
+       -122.51695627294417,
+       37.5332283097704
+      ],
+      [
+       -122.51696586581909,
+       37.5332692546263
+      ],
+      [
+       -122.51697265251353,
+       37.53329821843157
+      ],
+      [
+       -122.51699722471675,
+       37.53340308001824
+      ],
+      [
+       -122.51701770010946,
+       37.53349046514536
+      ],
+      [
+       -122.51702562824423,
+       37.53352430143458
+      ],
+      [
+       -122.51705455638007,
+       37.53364775799505
+      ],
+      [
+       -122.51707912881378,
+       37.53375261956085
+      ],
+      [
+       -122.51709960437415,
+       37.53384000376963
+      ],
+      [
+       -122.51712813667753,
+       37.533958528160234
+      ],
+      [
+       -122.51713631807228,
+       37.53399251871742
+      ],
+      [
+       -122.51731384798597,
+       37.534729986700576
+      ],
+      [
+       -122.51727760329018,
+       37.53480589636088
+      ],
+      [
+       -122.51726522435779,
+       37.53483182385417
+      ],
+      [
+       -122.5172411689987,
+       37.53488220491958
+      ],
+      [
+       -122.51712919646691,
+       37.53511671373468
+      ],
+      [
+       -122.51711599806941,
+       37.535137500026586
+      ],
+      [
+       -122.51709856711993,
+       37.53515620494611
+      ],
+      [
+       -122.51707740959804,
+       37.535172288057446
+      ],
+      [
+       -122.51705313650041,
+       37.53518528373002
+      ],
+      [
+       -122.51702644957362,
+       37.53519481760615
+      ],
+      [
+       -122.5169981199667,
+       37.53520061237551
+      ],
+      [
+       -122.51696896710325,
+       37.53520250165685
+      ],
+      [
+       -122.51693983381762,
+       37.53520043132649
+      ],
+      [
+       -122.51691156144295,
+       37.53519445904427
+      ],
+      [
+       -122.5168849684633,
+       37.53518476002804
+      ],
+      [
+       -122.51686082410436,
+       37.535171613086185
+      ],
+      [
+       -122.51682114038626,
+       37.535145786154054
+      ],
+      [
+       -122.51623825921091,
+       37.534929579429736
+      ],
+      [
+       -122.51633144773226,
+       37.53479492892186
+      ],
+      [
+       -122.51560658332703,
+       37.53447671664771
+      ],
+      [
+       -122.51515378492584,
+       37.534277493574436
+      ],
+      [
+       -122.51470072618577,
+       37.53407863827105
+      ],
+      [
+       -122.51433828166195,
+       37.53391955455784
+      ],
+      [
+       -122.51450475344693,
+       37.5336790264672
+      ],
+      [
+       -122.5149913960813,
+       37.53297642766858
+      ],
+      [
+       -122.51509133584364,
+       37.53283213593809
+      ],
+      [
+       -122.51532822055792,
+       37.53249012213352
+      ],
+      [
+       -122.51533491936357,
+       37.53248217702212
+      ],
+      [
+       -122.51534324900747,
+       37.532475279149786
+      ],
+      [
+       -122.51535295482074,
+       37.53246963657084
+      ],
+      [
+       -122.51536374269962,
+       37.5324654219652
+      ],
+      [
+       -122.51537528673127,
+       37.53246276169278
+      ],
+      [
+       -122.51538723489871,
+       37.53246173749791
+      ],
+      [
+       -122.5153992236398,
+       37.53246238085196
+      ],
+      [
+       -122.51541089137295,
+       37.53246467091923
+      ],
+      [
+       -122.51542188314347,
+       37.53246853898301
+      ]
+     ]
+    }
+   ],
+   "addresses": [
+    {
+     "text": "Carlos St & Sierra St, Moss Beach, CA 94038",
+     "src": [
+      "SRC-000002"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "kind": "copyright",
+     "src": "SRC-000004"
+    }
+   ],
+   "facts": {
+    "product_type": {
+     "claims": [
+      {
+       "value": "Apartments",
+       "src": [
+        "SRC-000001"
+       ]
+      }
+     ]
+    },
+    "status": {
+     "claims": [
+      {
+       "value": "Under construction",
+       "src": [
+        "SRC-000004",
+        "SRC-000003"
+       ]
+      }
+     ]
+    },
+    "population": {
+     "claims": [
+      {
+       "value": [
+        "Family",
+        "Farmworker"
+       ],
+       "src": [
+        "SRC-000001",
+        "SRC-000003"
+       ]
+      }
+     ]
+    },
+    "jurisdiction": {
+     "claims": [
+      {
+       "value": "Unincorporated",
+       "src": [
+        "SRC-000005"
+       ]
+      }
+     ]
+    },
+    "community": {
+     "claims": [
+      {
+       "value": "Moss Beach",
+       "src": [
+        "SRC-000002"
+       ]
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 10.875,
+       "src": [
+        "SRC-000002"
+       ]
+      }
+     ]
+    },
+    "total_units": {
+     "claims": [
+      {
+       "value": 71,
+       "src": [
+        "SRC-000001",
+        "SRC-000004"
+       ],
+       "note": "70 restricted + 1 manager's unit"
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "studio": 0,
+        "1br": 16,
+        "2br": 37,
+        "3br": 18,
+        "4br+": 0
+       },
+       "src": [
+        "SRC-000001"
+       ]
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "100% affordable",
+       "src": [
+        "SRC-000001"
+       ]
+      }
+     ]
+    },
+    "restricted_by_ami": {
+     "claims": [
+      {
+       "value": [
+        {
+         "count": 14,
+         "ami": 30
+        },
+        {
+         "count": 11,
+         "ami": 40
+        },
+        {
+         "count": 11,
+         "ami": 45
+        },
+        {
+         "count": 11,
+         "ami": 50
+        },
+        {
+         "count": 23,
+         "ami": 60
+        }
+       ],
+       "src": [
+        "SRC-000001"
+       ]
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 0,
+       "src": [
+        "SRC-000001"
+       ]
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary"
+       ],
+       "src": [
+        "SRC-000002"
+       ],
+       "note": "LCP amendment, rezoning, coastal development permit"
+      }
+     ]
+    },
+    "planning_file": {
+     "claims": [
+      {
+       "value": "PLN2018-00264",
+       "src": [
+        "SRC-000002"
+       ]
+      }
+     ]
+    },
+    "total_development_cost": {
+     "claims": [
+      {
+       "value": 75495000,
+       "src": [
+        "SRC-000001"
+       ]
+      }
+     ]
+    }
+   },
+   "construction_notes": [
+    {
+     "text": "16 two-story residential buildings",
+     "src": [
+      "SRC-000001"
+     ]
+    }
+   ],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "MidPen Housing Corp.",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000001"
+     ]
+    },
+    {
+     "role": "Recorded owner",
+     "company": "MP Moss Beach Associates LP",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000005"
+     ]
+    },
+    {
+     "role": "General contractor",
+     "company": "Devcon Construction",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000003"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Pyatok",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000003"
+     ]
+    },
+    {
+     "role": "Property manager",
+     "company": "MidPen Property Management",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000001"
+     ]
+    }
+   ],
+   "financing": [
+    {
+     "provider": "Wells Fargo",
+     "type": "Construction loan",
+     "program": null,
+     "amount": null,
+     "date": null,
+     "src": [
+      "SRC-000003"
+     ],
+     "group": "construction_lender"
+    },
+    {
+     "provider": "U.S. Bank",
+     "type": "Construction loan",
+     "program": null,
+     "amount": 41280000,
+     "date": null,
+     "src": [
+      "SRC-000001"
+     ],
+     "group": "construction_lender"
+    },
+    {
+     "provider": "U.S. Bank",
+     "type": "Permanent loan",
+     "program": null,
+     "amount": 5717000,
+     "date": null,
+     "src": [
+      "SRC-000001"
+     ]
+    },
+    {
+     "provider": "San Mateo County",
+     "type": "Local soft loan",
+     "program": "County affordable housing funds",
+     "amount": 21360000,
+     "date": null,
+     "src": [
+      "SRC-000001"
+     ]
+    },
+    {
+     "provider": "California HCD",
+     "type": "State soft loan",
+     "program": "Multifamily Housing Program (MHP)",
+     "amount": 13150000,
+     "date": null,
+     "src": [
+      "SRC-000001"
+     ]
+    },
+    {
+     "provider": "California HCD",
+     "type": "State soft loan",
+     "program": "Joe Serna Jr. Farmworker Housing Grant",
+     "amount": 4720000,
+     "date": null,
+     "src": [
+      "SRC-000001"
+     ]
+    },
+    {
+     "provider": "Tax-credit investor",
+     "type": "Other",
+     "program": "Federal + state LIHTC equity ($2.5M/yr federal, $8.33M state credits)",
+     "amount": 29740000,
+     "date": null,
+     "src": [
+      "SRC-000001"
+     ]
+    }
+   ],
+   "groups": {
+    "construction_lender": {
+     "question": "Which bank provided the construction loan for Cypress Point?"
+    }
+   },
+   "events": [
+    {
+     "date": "2021-03-12",
+     "type": "Approved",
+     "label": "Coastal Commission certifies LCP amendment",
+     "src": [
+      "SRC-000002"
+     ]
+    },
+    {
+     "date": "2025-06-18",
+     "type": "Other",
+     "label": "CTCAC tax-credit award (CA-25-042)",
+     "src": [
+      "SRC-000001"
+     ]
+    },
+    {
+     "date": "2025-12",
+     "type": "Construction start",
+     "label": "Construction starts",
+     "src": [
+      "SRC-000004"
+     ]
+    },
+    {
+     "date": "2026-09-10",
+     "type": "Other",
+     "label": "Framing celebration",
+     "src": [
+      "SRC-000003"
+     ]
+    },
+    {
+     "date": "2027-09",
+     "type": "Completion",
+     "label": "Estimated completion",
+     "src": [
+      "SRC-000004"
+     ],
+     "estimated": true
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-03",
+     "by": "Paul via Claude",
+     "action": "Record created from sources SRC-000001 to SRC-000005"
+    },
+    {
+     "date": "2026-10-03",
+     "by": "Paul via Claude",
+     "action": "Parcel outline and owner verified against County GIS"
+    },
+    {
+     "date": "2026-11-02",
+     "by": "Paul via Claude",
+     "action": "Converted to the v1 record format"
+    }
+   ],
+   "srcLabels": {
+    "SRC-000005": "S1",
+    "SRC-000001": "S2",
+    "SRC-000002": "S3",
+    "SRC-000004": "S4",
+    "SRC-000003": "S5"
+   },
+   "lat": 37.53387739918785,
+   "lng": -122.51640705617798,
+   "calcs": {
+    "cost_per_unit": {
+     "value": 1063310,
+     "how": "Total development cost $75,495,000 ÷ 71 total units"
+    },
+    "financing_total": {
+     "value": 74687000,
+     "how": "$5,717,000 + $21,360,000 + $13,150,000 + $4,720,000 + $29,740,000 (excludes short-term construction, bridge and predevelopment loans); compares with a $75,495,000 total development cost"
+    }
+   },
+   "kinds": [
+    "pipeline"
+   ],
+   "summary": {
+    "product_type": "Apartments",
+    "status": "Under construction",
+    "jurisdiction": "Unincorporated",
+    "community": "Moss Beach",
+    "total_units": 71,
+    "restricted_units": 70,
+    "owner": "MP Moss Beach Associates LP",
+    "developer": "MidPen Housing Corp.",
+    "cost_basis": "Total development cost",
+    "cost": 75495000,
+    "per_unit": 1063310,
+    "main_lender": "Possibly Wells Fargo or U.S. Bank",
+    "latest_event": "2026-09-10"
+   },
+   "search": "cypress point moss beach unincorporated 037-022-070 carlos st & sierra st, moss beach, ca 94038 apartments under construction [\"family\", \"farmworker\"] unincorporated moss beach 10.875 71 70 restricted + 1 manager's unit {\"studio\": 0, \"1br\": 16, \"2br\": 37, \"3br\": 18, \"4br+\": 0} 100% affordable [{\"count\": 14, \"ami\": 30}, {\"count\": 11, \"ami\": 40}, {\"count\": 11, \"ami\": 45}, {\"count\": 11, \"ami\": 50}, {\"count\": 23, \"ami\": 60}] 0 [\"discretionary\"] lcp amendment, rezoning, coastal development permit pln2018-00264 75495000 16 two-story residential buildings developer midpen housing corp. recorded owner mp moss beach associates lp general contractor devcon construction architect pyatok property manager midpen property management wells fargo construction loan u.s. bank construction loan u.s. bank permanent loan san mateo county local soft loan county affordable housing funds california hcd state soft loan multifamily housing program (mhp) california hcd state soft loan joe serna jr. farmworker housing grant tax-credit investor other federal + state lihtc equity ($2.5m/yr federal, $8.33m state credits) coastal commission certifies lcp amendment ctcac tax-credit award (ca-25-042) construction starts framing celebration estimated completion"
+  },
+  {
+   "id": "SMC-000002",
+   "name": "Azara (educator housing)",
+   "parcels": [
+    {
+     "apn": "035-200-120",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-000010"
+     ],
+     "outline": [
+      [
+       -122.30765142836152,
+       37.55560909574853
+      ],
+      [
+       -122.30856768987245,
+       37.55497468051008
+      ],
+      [
+       -122.30886652104391,
+       37.55524822598806
+      ],
+      [
+       -122.30795025869162,
+       37.55588264263571
+      ],
+      [
+       -122.30765142836152,
+       37.55560909574853
+      ]
+     ]
+    }
+   ],
+   "addresses": [
+    {
+     "text": "1650 S. Delaware St, San Mateo, CA 94402",
+     "src": [
+      "SRC-000010",
+      "SRC-000006"
+     ]
+    }
+   ],
+   "images": [],
+   "facts": {
+    "product_type": {
+     "claims": [
+      {
+       "value": "Apartments",
+       "src": [
+        "SRC-000006"
+       ]
+      }
+     ]
+    },
+    "status": {
+     "claims": [
+      {
+       "value": "Existing",
+       "src": [
+        "SRC-000006"
+       ]
+      }
+     ]
+    },
+    "population": {
+     "claims": [
+      {
+       "value": [
+        "Workforce / educator"
+       ],
+       "src": [
+        "SRC-000006"
+       ]
+      }
+     ]
+    },
+    "jurisdiction": {
+     "claims": [
+      {
+       "value": "San Mateo",
+       "src": [
+        "SRC-000010"
+       ]
+      }
+     ]
+    },
+    "total_units": {
+     "claims": [
+      {
+       "value": 74,
+       "src": [
+        "SRC-000006",
+        "SRC-000008"
+       ]
+      }
+     ]
+    },
+    "year_built": {
+     "claims": [
+      {
+       "value": 2021,
+       "src": [
+        "SRC-000006"
+       ]
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Below-market (unrestricted)",
+       "src": [
+        "SRC-000006"
+       ]
+      }
+     ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "Units become below-market as they turn over; one- and two-bedroom units",
+       "src": [
+        "SRC-000006"
+       ]
+      },
+      {
+       "value": "About 25% below market on average",
+       "src": [
+        "SRC-000007"
+       ]
+      }
+     ],
+     "combine": true
+    },
+    "sale_price": {
+     "claims": [
+      {
+       "value": 54750000,
+       "src": [
+        "SRC-000007"
+       ]
+      }
+     ]
+    }
+   },
+   "construction_notes": [],
+   "parties": [
+    {
+     "role": "Buyer",
+     "company": "HEART-SV (HEART of San Mateo County)",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000006",
+      "SRC-000010"
+     ]
+    },
+    {
+     "role": "Recorded owner",
+     "company": "HEART-SV",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000010"
+     ]
+    },
+    {
+     "role": "Other",
+     "other_role": "Partner",
+     "company": "San Mateo County Office of Education",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-000006"
+     ]
+    }
+   ],
+   "financing": [
+    {
+     "provider": "HEART-SV bondholders",
+     "type": "Other",
+     "program": "Series 2026A senior bonds; underwriter RBC; due 6/1/2061",
+     "amount": 49450000,
+     "date": "2026-05-28",
+     "src": [
+      "SRC-000009"
+     ]
+    },
+    {
+     "provider": "HEART-SV bondholders",
+     "type": "Other",
+     "program": "Series 2026B subordinate bonds",
+     "amount": 5900000,
+     "date": "2026-05-28",
+     "src": [
+      "SRC-000009"
+     ]
+    },
+    {
+     "provider": "San Mateo County Office of Education",
+     "type": "Local soft loan",
+     "program": "30-year loan",
+     "amount": 8000000,
+     "date": null,
+     "src": [
+      "SRC-000007"
+     ]
+    }
+   ],
+   "groups": {},
+   "events": [
+    {
+     "date": "2026-05-28",
+     "type": "Other",
+     "label": "HEART-SV bonds dated (Series 2026A/B)",
+     "src": [
+      "SRC-000009"
+     ]
+    },
+    {
+     "date": "2026-09",
+     "type": "Sale",
+     "label": "Acquisition by HEART-SV announced",
+     "src": [
+      "SRC-000006",
+      "SRC-000007"
+     ]
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-03",
+     "by": "Paul via Claude",
+     "action": "Record created from sources SRC-000006 to SRC-000010"
+    },
+    {
+     "date": "2026-10-03",
+     "by": "Paul via Claude",
+     "action": "Parcel outline and owner verified against County GIS"
+    },
+    {
+     "date": "2026-11-02",
+     "by": "Paul via Claude",
+     "action": "Converted to the v1 record format"
+    }
+   ],
+   "srcLabels": {
+    "SRC-000010": "S1",
+    "SRC-000006": "S2",
+    "SRC-000008": "S3",
+    "SRC-000007": "S4",
+    "SRC-000009": "S5"
+   },
+   "lat": 37.555428661220596,
+   "lng": -122.30825897449238,
+   "calcs": {
+    "price_per_unit": {
+     "value": 739865,
+     "how": "Sale price $54,750,000 ÷ 74 total units"
+    },
+    "financing_total": {
+     "value": 63350000,
+     "how": "$49,450,000 + $5,900,000 + $8,000,000; compares with a $54,750,000 sale price"
+    }
+   },
+   "kinds": [
+    "transaction"
+   ],
+   "summary": {
+    "product_type": "Apartments",
+    "status": "Existing",
+    "jurisdiction": "San Mateo",
+    "community": "",
+    "total_units": 74,
+    "restricted_units": null,
+    "owner": "HEART-SV",
+    "developer": "",
+    "cost_basis": "Sale price",
+    "cost": 54750000,
+    "per_unit": 739865,
+    "main_lender": "HEART-SV bondholders (Series 2026A senior bonds; underwriter RBC; due 6/1/2061)",
+    "latest_event": "2026-09"
+   },
+   "search": "azara (educator housing) san mateo 035-200-120 1650 s. delaware st, san mateo, ca 94402 apartments existing [\"workforce / educator\"] san mateo 74 2021 below-market (unrestricted) units become below-market as they turn over; one- and two-bedroom units about 25% below market on average 54750000 buyer heart-sv (heart of san mateo county) recorded owner heart-sv other partner san mateo county office of education heart-sv bondholders other series 2026a senior bonds; underwriter rbc; due 6/1/2061 heart-sv bondholders other series 2026b subordinate bonds san mateo county office of education local soft loan 30-year loan heart-sv bonds dated (series 2026a/b) acquisition by heart-sv announced"
+  }
+ ]
+}
