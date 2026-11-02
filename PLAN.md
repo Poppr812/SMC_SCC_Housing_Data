@@ -84,6 +84,20 @@ Pipeline and transactions are two views of the same Housing Records, not separat
 
 **Property types (decided):** The structure covers all housing types (apartments, condos, townhomes, single-family, etc.). v1 includes a sample record of each type to prove the structure, then goes deep on apartments first. Each type has its own public sources.
 
+## Mockup feedback (SMC_Housing_mockup.html, built 2026-10-03)
+
+- 2026-11-02: Graphics and layout approved ("fantastic"). Keep the overall look: filter bar, map with parcel outlines, side list, pop-up record page.
+- 2026-11-02: Record page approved: summary sheet layout, sources grouped at the bottom, short S1/S2 tags next to each fact. Pop-up stays; each record keeps its own shareable link.
+- 2026-11-02: **Conflicts must be understated, not alarming.** No yellow box, no "under review" or "check flagged" language. The page should read as factual, not as a task list of unfinished work. Display inline, plain text, e.g.: "Lender: possibly Wells Fargo [S3] or U.S. Bank [S1]. See sources below." Same principle for other flags (e.g., Azara's funding-vs-price gap).
+  - **Resolution flow:** a viewer who clicks through is asked the specific clarifying question (e.g., "Which bank provided the construction loan?"). If answered and verified, the display updates to e.g. "U.S. Bank [S1], verified by Happy Giraffe on Nov 2. Other sources indicate Wells Fargo involvement [S3]." Contributor answers are stage 2 (accounts/moderation); v1 can route answers by email or GitHub.
+  - **A contributor's answer is another claim, not a ruling.** The database collects and presents what each source says; it does not declare a definitive answer. A verified contributor answer is shown alongside the other claims with its attribution, not as the final word.
+- 2026-11-02: Image placeholders approved as-is (size, position at top, purple "copyrighted image exists" vs gray "no image available").
+- 2026-11-02: Filters: keep the current bar, and add an **advanced filter** that lets people filter on any field however they want. Design to be worked out (open).
+- 2026-11-02: **Excel export must open ready to read**, with no reformatting by the user: column widths sized to content, styled and frozen header row, autofilter, wrapped text, number and currency formats, clickable links, and a Sources tab formatted the same way. (Mockup used SheetJS, which can't style; switch to a library that can, e.g. ExcelJS.) Updated mockup with ExcelJS approved 2026-11-02 ("opened well").
+- 2026-11-02: Standard export columns (19): record ID, name, housing type, record kind, status, jurisdiction, address, APNs, total units, restricted units, recorded owner, developer, cost-or-price basis, total cost / sale price, per unit (calculated), main lender, main loan amount, latest event date, record link. Full financing breakdown stays in the comprehensive export.
+- 2026-11-02: Empty field wording: "No current report logged".
+- 2026-11-02: Calculated values approved: small "calculated" tag plus the math on one gray line. Drop the "Inputs are sourced above" sentence.
+
 ## Field ideas (parked until the fields discussion)
 
 Captured as they come up; not a final list.
