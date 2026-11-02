@@ -69,6 +69,8 @@ def validate(r, sources):
     for p in r.get("parcels", []):
         if not APN_RE.match(p.get("apn", "")):
             c.err(f"APN {p.get('apn')!r} not in ###-###-### form")
+        if not p.get("outline"):
+            c.err(f"parcel {p.get('apn')} has no outline; run: python scripts/parcels.py fill {r.get('id')}")
         c.src(p.get("src"), f"parcel {p.get('apn')}")
     for a in r.get("addresses", []):
         c.src(a.get("src"), f"address {a.get('text')}")
@@ -100,6 +102,10 @@ def validate(r, sources):
                 c.err(f"{key}: unit mix keys must be {schema.MIX_KEYS}")
             if kind == "ami" and not all(isinstance(x, dict) and "count" in x and "ami" in x for x in v):
                 c.err(f"{key}: entries need count and ami")
+    jur = (r.get("facts", {}).get("jurisdiction") or {}).get("claims", [{}])[0].get("value")
+    com = (r.get("facts", {}).get("community") or {}).get("claims", [{}])[0].get("value")
+    if jur == "Unincorporated" and com not in schema.UNINCORPORATED:
+        c.err(f"unincorporated record needs facts.community set to one of schema.UNINCORPORATED (got {com!r})")
     for n in r.get("construction_notes", []):
         c.src(n.get("src"), "construction note")
     for p in r.get("parties", []):
@@ -134,6 +140,31 @@ def best(f):
     if f.get("best") is not None:
         return cl[f["best"]]["value"]
     return None
+
+
+def units_display(f):
+    """'71', or '1,014–1,514' when sources give different counts and none is flagged best."""
+    if f is None:
+        return ""
+    b = best(f)
+    if isinstance(b, int):
+        return f"{b:,}"
+    nums = [c["value"] for c in f["claims"] if isinstance(c["value"], int)]
+    if not nums:
+        return ""
+    lo, hi = min(nums), max(nums)
+    return f"{lo:,}" if lo == hi else f"{lo:,}–{hi:,}"
+
+
+def units_range(f):
+    """[low, high] unit count for totals: the best value twice, or the spread of the claims."""
+    if f is None:
+        return None
+    b = best(f)
+    if isinstance(b, int):
+        return [b, b]
+    nums = [c["value"] for c in f["claims"] if isinstance(c["value"], int)]
+    return [min(nums), max(nums)] if nums else None
 
 
 def process(r, sources):
@@ -214,7 +245,12 @@ def process(r, sources):
         "status": statuses,
         "jurisdiction": best(facts.get("jurisdiction")) or "",
         "community": best(facts.get("community")) or "",
+        "county": "San Mateo County",
+        "area": (f"Unincorporated ({best(facts.get('community'))})" if best(facts.get("jurisdiction")) == "Unincorporated"
+                 else best(facts.get("jurisdiction")) or ""),
         "total_units": units,
+        "units_display": units_display(facts.get("total_units")),
+        "units_range": units_range(facts.get("total_units")),
         "restricted_units": sum(x["count"] for x in ami) if ami else None,
         "owner": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Recorded owner"),
         "developer": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Developer"),
@@ -250,6 +286,12 @@ def main():
     sources = load("sources", SRC_RE)
     records = load("records", ID_RE)
     errors = [e for r in records.values() for e in validate(r, sources)]
+    seen = {}
+    for r in records.values():
+        for p in r.get("parcels", []):
+            if p.get("apn") in seen and seen[p["apn"]] != r["id"]:
+                errors.append(f"{r['id']}: APN {p['apn']} is already in {seen[p['apn']]} (possible duplicate project)")
+            seen.setdefault(p.get("apn"), r["id"])
     if errors:
         print("Build stopped. Fix these first:")
         for e in errors:

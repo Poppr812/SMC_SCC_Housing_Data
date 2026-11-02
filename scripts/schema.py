@@ -53,6 +53,24 @@ JURISDICTIONS = [
     "San Carlos", "San Mateo", "South San Francisco", "Woodside", "Unincorporated",
 ]
 
+# Unincorporated communities (census-designated places and named areas). A record whose
+# jurisdiction is "Unincorporated" must name one of these in facts.community.
+UNINCORPORATED = [
+    "Broadmoor", "Burlingame Hills", "Devonshire", "El Granada", "Emerald Lake Hills",
+    "Highlands-Baywood Park", "Kensington Square", "La Honda", "Ladera", "Loma Mar",
+    "Montara", "Moss Beach", "North Fair Oaks", "Pescadero", "Princeton", "San Gregorio",
+    "Sequoia Tract", "West Menlo Park",
+]
+
+# Counties with data, in display order. Area menu: county > cities + "Unincorporated (community)".
+COUNTIES = {"San Mateo County": {"prefix": "SMC"}}
+
+
+def area_options(county):
+    cities = [j for j in JURISDICTIONS if j != "Unincorporated"]
+    return cities + [f"Unincorporated ({c})" for c in UNINCORPORATED]
+
+
 EVENT_TYPES = [
     "Application filed", "Approved", "Permit issued", "Construction start",
     "Completion", "Lease-up start", "Stabilized", "Sale", "Refinance", "Other",
@@ -150,6 +168,7 @@ def registry():
         "product_types": PRODUCT_TYPES,
         "statuses": STATUSES,
         "jurisdictions": JURISDICTIONS,
+        "areas": {c: area_options(c) for c in COUNTIES},
         "party_roles": PARTY_ROLES,
         "financing_types": FINANCING_TYPES,
         "debt_types": sorted(DEBT_TYPES),

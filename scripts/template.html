@@ -31,7 +31,7 @@ header .sub{font-size:12px;opacity:.8}
 .btn.ghost{background:#fff;color:var(--navy)}
 .spacer{flex:1}
 main{display:grid;grid-template-columns:1fr 340px;height:calc(100vh - 118px);min-height:420px}
-#map{height:100%}
+#map{height:100%;position:relative}
 aside{border-left:1px solid var(--rule);background:var(--card);overflow:auto}
 aside h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray);margin:12px 14px 6px}
 .item{border-top:1px solid var(--rule);padding:10px 14px;cursor:pointer}
@@ -39,7 +39,20 @@ aside h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(
 .item b{display:block}
 .pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;color:#fff;margin-right:4px}
 .muted{color:var(--gray);font-size:12px}
-.legend{padding:8px 14px;font-size:12px;color:var(--gray);border-top:1px solid var(--rule)}
+.menu .sub{padding-left:22px}
+.arow{display:flex;align-items:center;gap:2px}
+.arow label{flex:1}
+.caret{border:none;background:none;cursor:pointer;width:18px;padding:0;font-size:12px;color:var(--gray)}
+.kids[hidden]{display:none}
+.leaflet-bar a.tool{font-size:16px;line-height:30px;width:30px;height:30px;color:var(--ink)}
+.leaflet-bar a.tool.on{background:var(--navy);color:#fff}
+.map-drawing{cursor:crosshair!important}
+.map-drawing .leaflet-interactive{cursor:crosshair!important}
+.hint{position:absolute;z-index:900;left:50%;top:10px;transform:translateX(-50%);background:var(--ink);color:#fff;font-size:12px;padding:5px 10px;border-radius:5px;display:none;pointer-events:none}
+.ctxmenu a{display:block;padding:3px 0;cursor:pointer}
+.menu .cnt{margin-left:auto;padding-left:14px;color:var(--gray);font-variant-numeric:tabular-nums}
+.menu .grp{font-weight:600}
+.menu hr{border:none;border-top:1px solid var(--rule);margin:6px 0}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .thumb{display:flex;gap:8px;align-items:center;min-width:220px}
 .thumb .img{width:56px;height:56px;border-radius:6px;flex:none;display:flex;align-items:center;justify-content:center}
@@ -112,20 +125,18 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div class="dd" id="ddTypes"><button type="button" id="typesBtn">All types</button>
       <div class="menu" id="typesMenu"></div></div>
   </div>
-  <div class="ctl">Show
-    <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline + transactions</button>
-      <div class="menu">
-        <label><input type="checkbox" value="pipeline" checked> Development pipeline</label>
-        <label><input type="checkbox" value="transaction" checked> Sales &amp; refinancings</label>
-      </div></div>
+  <div class="ctl"><span>Show <span style="font-size:11px">(Pipeline, Sales)</span></span>
+    <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline, Sales</button>
+      <div class="menu" id="showMenu"></div></div>
   </div>
   <div class="ctl">Area
-    <select id="area"></select>
+    <div class="dd" id="ddArea"><button type="button" id="areaBtn">All areas</button>
+      <div class="menu" id="areaMenu" style="min-width:260px"></div></div>
   </div>
-  <div class="ctl"><label style="flex-direction:row;display:flex;gap:5px;align-items:center;color:var(--ink)"><input type="checkbox" id="useRadius"> Radius from address</label>
-    <div style="display:flex;gap:5px">
-      <input type="text" id="radAddr" placeholder="e.g. 1650 S Delaware St, San Mateo" style="width:220px" disabled>
-      <input type="number" id="radMi" value="3" min="0.5" step="0.5" style="width:60px" disabled title="miles">
+  <div class="ctl"><span>Radius from address <span style="font-size:11px">(or use the map tools)</span></span>
+    <div style="display:flex;gap:5px;align-items:center">
+      <input type="text" id="radAddr" placeholder="e.g. 1650 S Delaware St, San Mateo" style="width:220px">
+      <input type="number" id="radMi" value="10" min="0.5" step="0.5" style="width:60px" title="miles"><span style="color:var(--gray)">mi</span>
     </div>
   </div>
   <div class="spacer"></div>
@@ -138,11 +149,10 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 </div>
 
 <main>
-  <div id="map"></div>
+  <div id="map"><div class="hint" id="hint"></div></div>
   <aside>
     <h2 id="count">Records</h2>
     <div id="list"></div>
-    <div class="legend" id="legend"></div>
   </aside>
 </main>
 <footer>Data: public records, each fact linked to its source · Data license ODbL · Code license MIT · Parcel data: County of San Mateo, provided as-is · <a href="https://github.com/Poppr812/SMC_SCC_Housing_Data" target="_blank" rel="noopener">GitHub</a></footer>
@@ -175,7 +185,10 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 const DATA = /*__DATA__*/null;
 const REG = DATA.registry, SOURCES = DATA.sources, RECORDS = DATA.records;
 const SITE_URL = "https://poppr812.github.io/SMC_SCC_Housing_Data/";
-const STATUS_COLOR = {"Proposed":"#8A93A0","Approved":"#1B7F8C","Permitted":"#2F6DB5","Under construction":"#D2691E","Lease-up / selling":"#D9A21B","Existing":"#6B4FA0","Inactive":"#B8C0CA"};
+const PIPELINE = ["Proposed","Approved","Permitted","Under construction","Lease-up / selling","Inactive"];
+const STATUS_COLOR = {"Inactive":"#9AA3AD","Proposed":"#E8C21A","Approved":"#EE8A2E","Permitted":"#E2648F","Under construction":"#2E9E5B","Lease-up / selling":"#2F6DB5"};
+const SALES_COLOR = "#6B4FA0";
+const DARK_TEXT = new Set(["#E8C21A"]);
 
 /* ---------- helpers ---------- */
 const $=s=>document.querySelector(s);
@@ -203,98 +216,174 @@ function fmtValue(key,v){
 function plainValue(key,v){return fmtValue(key,v).replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"')}
 
 /* ---------- filters ---------- */
+const SHORT={"Condominiums":"Condos","Mixed product":"Mixed"};const short=t=>SHORT[t]||t;
 const typesMenu=$("#typesMenu");
-typesMenu.innerHTML=Object.keys(REG.product_types).map(t=>`<label title="${esc(REG.product_types[t])}"><input type="checkbox" value="${esc(t)}" checked> ${esc(t)}</label>`).join("");
-$("#area").innerHTML=["Whole county",...REG.jurisdictions].map(a=>`<option>${esc(a)}</option>`).join("");
+typesMenu.innerHTML=Object.keys(REG.product_types).map(t=>`<label title="${esc(REG.product_types[t])}"><input type="checkbox" value="${esc(t)}" checked> ${esc(short(t))}<span class="cnt" data-t="${esc(t)}"></span></label>`).join("");
+$("#areaMenu").innerHTML=Object.entries(REG.areas).map(([county,areas])=>
+  `<div class="arow"><button type="button" class="caret" data-county="${esc(county)}" title="Show cities">▸</button><label class="grp"><input type="checkbox" class="cty" data-county="${esc(county)}" checked> ${esc(county)}<span class="cnt" data-a="__c:${esc(county)}"></span></label></div>
+   <div class="kids" data-county="${esc(county)}" hidden>${areas.map(a=>`<label class="sub"><input type="checkbox" class="ar" data-county="${esc(county)}" value="${esc(a)}" checked>${esc(a)}<span class="cnt" data-a="${esc(a)}"></span></label>`).join("")}</div>`).join("");
+document.querySelectorAll("#areaMenu .caret").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=document.querySelector(`#areaMenu .kids[data-county="${b.dataset.county}"]`);k.hidden=!k.hidden;b.textContent=k.hidden?"▸":"▾"});
+function syncCounty(){document.querySelectorAll("#areaMenu .cty").forEach(c=>{const ks=[...document.querySelectorAll(`#areaMenu .ar[data-county="${c.dataset.county}"]`)],n=ks.filter(i=>i.checked).length;c.checked=n===ks.length;c.indeterminate=n>0&&n<ks.length})}
+document.querySelectorAll("#areaMenu .cty").forEach(c=>c.addEventListener("change",()=>{document.querySelectorAll(`#areaMenu .ar[data-county="${c.dataset.county}"]`).forEach(i=>i.checked=c.checked)}));
 $("#headSub").textContent=`${RECORDS.length} records from public sources · San Mateo County · built ${DATA.built}`;
-$("#legend").innerHTML=Object.entries(STATUS_COLOR).map(([s,c])=>`<div><span class="dot" style="background:${c}"></span>${esc(s)}</div>`).join("")+'<div style="margin-top:6px">Outlines are county parcels (County of San Mateo GIS).</div>';
+$("#showMenu").innerHTML=`<label class="grp"><input type="checkbox" id="pipeAll" checked> Development pipeline</label>`
+  +PIPELINE.map(s=>`<label class="sub"><input type="checkbox" class="st" value="${esc(s)}" checked><span class="dot" style="background:${STATUS_COLOR[s]}"></span>${esc(s)}<span class="cnt" data-c="${esc(s)}"></span></label>`).join("")
+  +`<hr><label class="grp"><input type="checkbox" id="salesChk" checked><span class="dot" style="background:${SALES_COLOR}"></span>Sales &amp; refinancings<span class="cnt" data-c="__sales"></span></label>`;
+function syncPipeAll(){const st=[...document.querySelectorAll("#showMenu .st")],n=st.filter(i=>i.checked).length;const a=$("#pipeAll");a.checked=n===st.length;a.indeterminate=n>0&&n<st.length}
+$("#pipeAll").addEventListener("change",e=>{document.querySelectorAll("#showMenu .st").forEach(i=>i.checked=e.target.checked)});
 document.querySelectorAll(".dd>button").forEach(b=>b.onclick=e=>{e.stopPropagation();const d=b.parentElement;document.querySelectorAll(".dd").forEach(x=>x!==d&&x.classList.remove("open"));d.classList.toggle("open")});
 document.addEventListener("click",e=>{if(!e.target.closest(".dd"))document.querySelectorAll(".dd").forEach(x=>x.classList.remove("open"))});
 
-let radiusCenter=null;
-function getState(){return{
+let SHAPE=null; /* {t:"c",lat,lng,mi,addr} radius | {t:"p",pts:[[lat,lng],...]} boundary */
+function getState(){const ar=[...document.querySelectorAll("#areaMenu .ar")];return{
   kw:$("#kw").value.trim(),
   types:[...typesMenu.querySelectorAll("input:checked")].map(i=>i.value),
-  views:[...document.querySelectorAll("#ddViews input:checked")].map(i=>i.value),
-  area:$("#area").value,
-  radius:$("#useRadius").checked?{addr:$("#radAddr").value,mi:+$("#radMi").value}:null}}
+  statuses:[...document.querySelectorAll("#showMenu .st:checked")].map(i=>i.value),
+  sales:$("#salesChk").checked,
+  areas:ar.every(i=>i.checked)?null:ar.filter(i=>i.checked).map(i=>i.value),
+  shape:SHAPE}}
 function setState(s){
   $("#kw").value=s.kw||"";
   typesMenu.querySelectorAll("input").forEach(i=>i.checked=!s.types||s.types.includes(i.value));
-  document.querySelectorAll("#ddViews input").forEach(i=>i.checked=!s.views||s.views.includes(i.value));
-  if(s.area)$("#area").value=s.area;
-  $("#useRadius").checked=!!s.radius;
-  if(s.radius){$("#radAddr").value=s.radius.addr||"";$("#radMi").value=s.radius.mi||3}
-  syncRadiusInputs();
+  document.querySelectorAll("#showMenu .st").forEach(i=>i.checked=!s.statuses||s.statuses.includes(i.value));
+  $("#salesChk").checked=s.sales!==false;
+  syncPipeAll();
+  document.querySelectorAll("#areaMenu .ar").forEach(i=>i.checked=!s.areas||s.areas.includes(i.value));
+  syncCounty();
+  SHAPE=s.shape||null;
+  if(SHAPE&&SHAPE.t==="c"){$("#radMi").value=SHAPE.mi;$("#radAddr").value=SHAPE.addr||""}
 }
 function stateToHash(){return "#q="+encodeURIComponent(btoa(unescape(encodeURIComponent(JSON.stringify(getState())))))}
 function hashToState(){const m=location.hash.match(/#q=([^&]+)/);if(!m)return null;try{return JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))))}catch(e){return null}}
-function syncRadiusInputs(){const on=$("#useRadius").checked;$("#radAddr").disabled=!on;$("#radMi").disabled=!on}
 function labelDropdowns(){
   const s=getState(),n=Object.keys(REG.product_types).length;
-  $("#typesBtn").textContent=s.types.length===n?"All types":s.types.length?s.types.join(", "):"None";
-  $("#viewsBtn").textContent=s.views.length===2?"Pipeline + transactions":s.views.length?(s.views[0]==="pipeline"?"Pipeline only":"Transactions only"):"None";
+  $("#typesBtn").textContent=s.types.length===n?"All types":s.types.length?s.types.map(short).join(", "):"None";
+  const np=s.statuses.length,all=PIPELINE.length;
+  const ar=[...document.querySelectorAll("#areaMenu .ar:checked")].map(i=>i.value);
+  $("#areaBtn").textContent=!s.areas?"All areas":!ar.length?"None":ar.length<=2?ar.join(", "):`${ar.length} areas`;
+  const pipe=np===all?"Pipeline":np?`Pipeline (${np} of ${all})`:"";
+  $("#viewsBtn").textContent=[pipe,s.sales?"Sales":""].filter(Boolean).join(", ")||"None";
 }
 function miles(a,b){const R=3958.8,t=Math.PI/180,dLat=(b.lat-a.lat)*t,dLng=(b.lng-a.lng)*t;const h=Math.sin(dLat/2)**2+Math.cos(a.lat*t)*Math.cos(b.lat*t)*Math.sin(dLng/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
-function filtered(){
-  const s=getState(),kw=s.kw.toLowerCase();
-  return RECORDS.filter(r=>s.types.includes(r.summary.product_type)
-    &&r.kinds.some(k=>s.views.includes(k))
-    &&(s.area==="Whole county"||s.area===r.summary.jurisdiction)
-    &&(!kw||r.search.includes(kw))
-    &&(!s.radius||!radiusCenter||miles(radiusCenter,r)<=s.radius.mi));
+function inPoly(lat,lng,pts){let ins=false;for(let i=0,j=pts.length-1;i<pts.length;j=i++){const [yi,xi]=pts[i],[yj,xj]=pts[j];if(((yi>lat)!==(yj>lat))&&(lng<(xj-xi)*(lat-yi)/(yj-yi)+xi))ins=!ins}return ins}
+function inShape(r){if(!SHAPE)return true;if(SHAPE.t==="c")return miles(SHAPE,r)<=SHAPE.mi;return inPoly(r.lat,r.lng,SHAPE.pts)}
+const isPipe=r=>PIPELINE.includes(r.summary.status);
+const isSale=r=>r.kinds.includes("transaction");
+/* skip "area" or "status" to leave that filter out, so its menu can show counts */
+function matches(r,s,skip){const kw=s.kw.toLowerCase();
+  return (skip==="type"||s.types.includes(r.summary.product_type))&&(!kw||r.search.includes(kw))&&inShape(r)
+    &&(skip==="area"||!s.areas||s.areas.includes(r.summary.area))
+    &&(skip==="status"||(isPipe(r)&&s.statuses.includes(r.summary.status))||(s.sales&&isSale(r)))}
+function filtered(){const s=getState();return RECORDS.filter(r=>matches(r,s))}
+function updateCounts(){
+  const s=getState(),b=RECORDS.filter(r=>matches(r,s,"status")),a=RECORDS.filter(r=>matches(r,s,"area")),ty=RECORDS.filter(r=>matches(r,s,"type"));
+  document.querySelectorAll("#typesMenu .cnt").forEach(el=>{el.textContent=ty.filter(r=>r.summary.product_type===el.dataset.t).length});
+  document.querySelectorAll("#showMenu .cnt").forEach(el=>{const k=el.dataset.c;el.textContent=k==="__sales"?b.filter(isSale).length:b.filter(r=>isPipe(r)&&r.summary.status===k).length});
+  document.querySelectorAll("#areaMenu .cnt").forEach(el=>{const k=el.dataset.a;el.textContent=k.startsWith("__c:")?a.filter(r=>r.summary.county===k.slice(4)).length:a.filter(r=>r.summary.area===k).length});
 }
 
 /* ---------- map ---------- */
 const map=L.map("map").setView([37.53,-122.36],10);
 L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors"}).addTo(map);
-const layer=L.layerGroup().addTo(map);let radiusCircle=null;
-const colorOf=r=>STATUS_COLOR[r.summary.status]||"#8A93A0";
+const layer=L.layerGroup().addTo(map),shapeLayer=L.layerGroup().addTo(map);
+const colorOf=r=>STATUS_COLOR[r.summary.status]||SALES_COLOR;
+const pillStyle=r=>`background:${colorOf(r)};color:${DARK_TEXT.has(colorOf(r))?"#1C2430":"#fff"}`;
 function imgBox(r,small){
   const im=r.images[0];
   if(im&&im.kind==="copyright"){const S=SOURCES[im.src];
     return small?`<div class="img ph-copy">${ICON_COPY}</div>`:`<a class="img ph-copy" href="${esc(S.url)}" target="_blank" rel="noopener">${ICON_COPY}<b>Copyrighted image exists</b><span>View at source (${esc(S.publisher.split(" (")[0])})</span></a>`}
   return small?`<div class="img ph-none">${ICON_NONE}</div>`:`<div class="img ph-none">${ICON_NONE}<b>No image available</b><span>Own photo, agency document, or press kit welcome</span></div>`;
 }
-function thumbHTML(r){const s=r.summary;return `<div class="thumb">${imgBox(r,true)}<div><b>${esc(r.name)}</b><div class="muted">${esc(s.community||s.jurisdiction)}${s.total_units!=null?" · "+num(s.total_units)+" units":""}</div><span class="pill" style="background:${colorOf(r)}">${esc(s.status)}</span><div class="muted" style="margin-top:3px">Click for full record</div></div></div>`}
+function thumbHTML(r){const s=r.summary;return `<div class="thumb">${imgBox(r,true)}<div><b>${esc(r.name)}</b><div class="muted">${esc(s.community||s.jurisdiction)}${s.units_display?" · "+s.units_display+" units":""}</div><span class="pill" style="${pillStyle(r)}">${esc(s.status)}</span><div class="muted" style="margin-top:3px">Click for full record</div></div></div>`}
 function render(){
-  labelDropdowns();layer.clearLayers();
+  labelDropdowns();updateCounts();layer.clearLayers();
   const rs=filtered();
   rs.forEach(r=>{
     const c=colorOf(r);
-    r.parcels.forEach(p=>{if(p.outline){const poly=L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:c,weight:2,fillOpacity:.25}).addTo(layer);poly.bindTooltip(thumbHTML(r),{direction:"top",opacity:1});poly.on("click",()=>openRecord(r.id))}});
+    r.parcels.forEach(p=>{if(p.outline){const poly=L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:c,weight:2,fillOpacity:.25}).addTo(layer);poly.bindTooltip(thumbHTML(r),{direction:"top",opacity:1});poly.on("click",e=>{if(MODE){return}openRecord(r.id)})}});
     const mk=L.circleMarker([r.lat,r.lng],{radius:9,color:"#fff",weight:2,fillColor:c,fillOpacity:1}).addTo(layer);
-    mk.bindTooltip(thumbHTML(r),{direction:"top",offset:[0,-8],opacity:1});mk.on("click",()=>openRecord(r.id));
+    mk.bindTooltip(thumbHTML(r),{direction:"top",offset:[0,-8],opacity:1});mk.on("click",e=>{if(MODE){return}openRecord(r.id)});
   });
-  if(radiusCircle){map.removeLayer(radiusCircle);radiusCircle=null}
-  const s=getState();
-  if(s.radius&&radiusCenter)radiusCircle=L.circle([radiusCenter.lat,radiusCenter.lng],{radius:s.radius.mi*1609.34,color:"#1B7F8C",weight:1,fillOpacity:.05}).addTo(map);
-  $("#count").textContent=`${rs.length} record${rs.length===1?"":"s"} match`;
-  $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${esc(r.name)}</b><span class="pill" style="background:${colorOf(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.total_units!=null?" · "+num(r.summary.total_units)+" units":""} · ${esc(r.summary.product_type)}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
+  drawShape();
+  const ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
+  $("#count").textContent=`${rs.length} record${rs.length===1?"":"s"} match`+(ur.length?` (${lo===hi?num(lo):num(lo)+"–"+num(hi)} units)`:"");
+  $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${esc(r.name)}</b><span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.units_display?" · "+r.summary.units_display+" units":""} · ${esc(short(r.summary.product_type))}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
   document.querySelectorAll(".item[data-id]").forEach(el=>{el.onclick=()=>openRecord(el.dataset.id);el.onmouseenter=()=>{const r=RECORDS.find(x=>x.id===el.dataset.id);map.panTo([r.lat,r.lng])}});
   safeReplace(location.pathname+location.search+stateToHash());
 }
 ["#kw"].forEach(s=>$(s).addEventListener("input",render));
 typesMenu.addEventListener("change",render);
-$("#ddViews").addEventListener("change",render);
-$("#area").addEventListener("change",render);
-$("#radMi").addEventListener("change",render);
-$("#useRadius").addEventListener("change",()=>{syncRadiusInputs();if(!$("#useRadius").checked)radiusCenter=null;render()});
+$("#ddViews").addEventListener("change",()=>{syncPipeAll();render()});
+$("#ddArea").addEventListener("change",()=>{syncCounty();render()});
+const radMi=()=>Math.max(0.5,+$("#radMi").value||10);
+$("#radMi").addEventListener("change",()=>{if(SHAPE&&SHAPE.t==="c"){SHAPE.mi=radMi();render()}});
 $("#radAddr").addEventListener("keydown",e=>{if(e.key==="Enter")geocode()});
 $("#radAddr").addEventListener("change",geocode);
 async function geocode(){
   const q=$("#radAddr").value.trim();if(!q)return;
-  try{const j=await (await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q+", San Mateo County, CA"))).json();
-    if(j[0]){radiusCenter={lat:+j[0].lat,lng:+j[0].lon};map.setView([radiusCenter.lat,radiusCenter.lng],12);render()}else toast("Address not found")}
+  try{const j=await (await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q+", CA"))).json();
+    if(j[0]){setRadius(+j[0].lat,+j[0].lon,q)}else toast("Address not found")}
   catch(e){toast("Address lookup unavailable")}
 }
+
+/* ---------- map tools: radius, boundary, clear ---------- */
+let MODE=null,DRAFT=[];const draftLayer=L.layerGroup().addTo(map);
+const SHAPE_STYLE={color:"#17304F",weight:2,dashArray:"6 4",fillOpacity:.06};
+function hint(m){const h=$("#hint");h.textContent=m||"";h.style.display=m?"block":"none"}
+function setMode(m){
+  MODE=m;DRAFT=[];draftLayer.clearLayers();
+  map.getContainer().classList.toggle("map-drawing",!!m);
+  m==="draw"?map.doubleClickZoom.disable():map.doubleClickZoom.enable();
+  document.querySelectorAll(".leaflet-bar a.tool").forEach(a=>a.classList.toggle("on",a.dataset.t===m));
+  hint(m==="radius"?"Click the map to set a radius center · Esc to cancel":m==="draw"?"Click to add points · click the first point or double-click to finish · Esc to cancel":"");
+}
+function setRadius(lat,lng,addr){SHAPE={t:"c",lat,lng,mi:radMi(),addr:addr||""};if(!addr)$("#radAddr").value="";setMode(null);render();map.fitBounds(L.latLng(lat,lng).toBounds(SHAPE.mi*1609.34*2),{padding:[20,20]})}
+function finishDraw(){if(DRAFT.length<3){toast("A boundary needs at least 3 points");return}SHAPE={t:"p",pts:DRAFT.map(p=>[+p[0].toFixed(6),+p[1].toFixed(6)])};$("#radAddr").value="";setMode(null);render()}
+function clearShape(){SHAPE=null;$("#radAddr").value="";setMode(null);render()}
+function drawShape(){
+  shapeLayer.clearLayers();if(!SHAPE)return;
+  if(SHAPE.t==="p"){L.polygon(SHAPE.pts,{...SHAPE_STYLE,interactive:false}).addTo(shapeLayer);return}
+  const c=L.circle([SHAPE.lat,SHAPE.lng],{...SHAPE_STYLE,radius:SHAPE.mi*1609.34,interactive:false}).addTo(shapeLayer);
+  const edge=()=>L.latLng(SHAPE.lat,c.getBounds().getEast());
+  const ic=L.divIcon({className:"",html:'<div style="width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid #17304F"></div>',iconSize:[12,12],iconAnchor:[6,6]});
+  const ctr=L.marker([SHAPE.lat,SHAPE.lng],{icon:ic,draggable:true,title:"Drag to move"}).addTo(shapeLayer);
+  const h=L.marker(edge(),{icon:ic,draggable:true,title:"Drag to resize"}).addTo(shapeLayer);
+  ctr.on("drag",e=>{SHAPE.lat=e.latlng.lat;SHAPE.lng=e.latlng.lng;c.setLatLng(e.latlng);h.setLatLng(edge())});
+  h.on("drag",e=>{SHAPE.mi=Math.max(0.5,+(miles(SHAPE,{lat:e.latlng.lat,lng:e.latlng.lng})).toFixed(1));$("#radMi").value=SHAPE.mi;c.setRadius(SHAPE.mi*1609.34)});
+  ctr.on("dragend",()=>{$("#radAddr").value="";SHAPE.addr="";render()});
+  h.on("dragend",()=>render());
+}
+const Tools=L.Control.extend({options:{position:"topleft"},onAdd(){
+  const d=L.DomUtil.create("div","leaflet-bar");
+  d.innerHTML='<a href="#" class="tool" data-t="radius" title="Radius: click a point for a circle (miles box sets the size), then drag the edge to resize">◯</a><a href="#" class="tool" data-t="draw" title="Draw a boundary: click points, then click the first point or double-click">⬠</a><a href="#" class="tool" data-t="clear" title="Clear radius or boundary">✕</a>';
+  L.DomEvent.disableClickPropagation(d);
+  d.querySelectorAll("a").forEach(a=>a.onclick=e=>{e.preventDefault();const t=a.dataset.t;t==="clear"?clearShape():setMode(MODE===t?null:t)});
+  return d}});
+map.addControl(new Tools());
+function redrawDraft(){draftLayer.clearLayers();if(!DRAFT.length)return;
+  L.polyline(DRAFT,{color:"#17304F",weight:2,dashArray:"4 4"}).addTo(draftLayer);
+  DRAFT.forEach((p,i)=>{const m=L.circleMarker(p,{radius:i?4:7,color:"#17304F",weight:2,fillColor:"#fff",fillOpacity:1}).addTo(draftLayer);
+    if(i===0)m.on("click",e=>{L.DomEvent.stop(e);finishDraw()})})}
+map.on("click",e=>{
+  if(MODE==="radius"){setRadius(e.latlng.lat,e.latlng.lng);return}
+  if(MODE==="draw"){DRAFT.push([e.latlng.lat,e.latlng.lng]);redrawDraft()}
+});
+map.on("dblclick",()=>{if(MODE==="draw"){DRAFT.pop();finishDraw()}});
+map.on("contextmenu",e=>{
+  const p=L.popup({closeButton:false,className:"ctxmenu"}).setLatLng(e.latlng).setContent('<a data-a="r">10-mile radius here</a><a data-a="d">Start a boundary here</a>'+(SHAPE?'<a data-a="x">Clear radius / boundary</a>':'')).openOn(map);
+  p.getElement().querySelectorAll("a").forEach(a=>a.onclick=()=>{map.closePopup();const k=a.dataset.a;
+    if(k==="r"){$("#radMi").value=10;setRadius(e.latlng.lat,e.latlng.lng)}
+    if(k==="d"){setMode("draw");DRAFT=[[e.latlng.lat,e.latlng.lng]];redrawDraft()}
+    if(k==="x")clearShape()});
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&MODE)setMode(null)});
 
 /* ---------- saved searches ---------- */
 function loadSaved(){const list=store("smc_saved")||[];$("#saved").innerHTML='<option value="">'+(list.length?"Choose…":"(none yet)")+'</option>'+list.map((s,i)=>`<option value="${i}">${esc(s.name)}</option>`).join("")}
 $("#saveBtn").onclick=()=>{const name=prompt("Name this search:","My search "+new Date().toLocaleDateString());if(!name)return;const list=store("smc_saved")||[];list.push({name,hash:stateToHash()});store("smc_saved",list);loadSaved();toast("Saved in this browser. The link also works anywhere.")};
 $("#saved").onchange=e=>{const list=store("smc_saved")||[];const s=list[+e.target.value];if(!s)return;location.hash=s.hash;applyHash()};
 $("#linkBtn").onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link copied. It reopens this exact search.")}catch(e){prompt("Copy this link:",location.href)}};
-function applyHash(){const s=hashToState();if(s){setState(s);if(s.radius&&s.radius.addr)geocode()}render()}
+function applyHash(){const s=hashToState();if(s)setState(s);render()}
 
 /* ---------- record page ---------- */
 let CUR=null;
@@ -361,7 +450,7 @@ function openRecord(id){
   $("#sheet").innerHTML=`
    <div class="top">
      <div><div class="muted">${r.id} · ${esc(r.summary.product_type)} · ${esc(r.summary.community||r.summary.jurisdiction)}</div><h2>${esc(r.name)}</h2>
-       <span class="pill" style="background:${colorOf(r)}">${esc(r.summary.status)}</span></div>
+       <span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span></div>
      <div class="noprint" style="display:flex;gap:8px">
        <button class="btn ghost" type="button" onclick="window.print()">Download PDF</button>
        <button class="btn" type="button" onclick="closeRecord()">Close ✕</button>
@@ -385,44 +474,44 @@ $("#rec").addEventListener("click",e=>{if(e.target.id==="rec")closeRecord()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeRecord();$("#exp").classList.remove("show")}});
 
 /* ---------- export ---------- */
-const CATS=[...REG.sections.filter(s=>s!=="Basics"),"Timeline","Construction notes","Sources"];
+const CATS=[...REG.sections.filter(s=>s!=="Basics"),"Timeline","Construction notes"];
 $("#customCats").innerHTML=CATS.map(c=>`<label><input type="checkbox" value="${esc(c)}" checked> ${esc(c)}</label>`).join("");
 document.querySelectorAll('input[name=scope]').forEach(i=>i.onchange=()=>{$("#customCats").style.display=$('input[name=scope]:checked').value==="custom"?"block":"none"});
 $("#expBtn").onclick=()=>{$("#expCount").textContent=`${filtered().length} record(s) in the current selection.`;$("#exp").classList.add("show")};
 $("#expCancel").onclick=()=>$("#exp").classList.remove("show");
 function claimsText(r,key,f){
-  const L=s=>"["+s.map(x=>r.srcLabels[x]).join(",")+"]";
-  if(f.combine||f.claims.length===1)return f.claims.map(c=>plainValue(key,c.value)+" "+L(c.src)+(c.note?" ("+c.note+")":"")).join("; ");
-  if(f.best!=null)return plainValue(key,f.claims[f.best].value)+" "+L(f.claims[f.best].src)+"; other sources: "+f.claims.filter((_,i)=>i!==f.best).map(c=>plainValue(key,c.value)+" "+L(c.src)).join(", ");
-  return "Possibly "+f.claims.map(c=>plainValue(key,c.value)+" "+L(c.src)).join(" or ");
+  const L=()=>"";
+  if(f.combine||f.claims.length===1)return f.claims.map(c=>plainValue(key,c.value)+L(c.src)+(c.note?" ("+c.note+")":"")).join("; ");
+  if(f.best!=null)return plainValue(key,f.claims[f.best].value)+L(f.claims[f.best].src)+"; other sources: "+f.claims.filter((_,i)=>i!==f.best).map(c=>plainValue(key,c.value)+L(c.src)).join(", ");
+  return "Possibly "+f.claims.map(c=>plainValue(key,c.value)+L(c.src)).join(" or ");
 }
 function rowsFor(scope,cats){
   return filtered().map(r=>{
     const s=r.summary;
-    if(scope==="standard")return {"Record ID":r.id,"Name":r.name,"Product type":s.product_type,"Record kind":r.kinds.map(k=>k==="pipeline"?"Development pipeline":"Sale / refinance").join("; "),"Status":s.status,"Jurisdiction":s.jurisdiction,"Address":r.addresses.map(a=>a.text).join("; "),"APN(s)":r.parcels.map(p=>p.apn).join("; "),"Total units":s.total_units??"","Restricted units":s.restricted_units??"","Recorded owner":s.owner||"","Developer":s.developer||"","Cost or price basis":s.cost_basis||"","Total cost / sale price":s.cost??"","Per unit (calculated)":s.per_unit??"","Main lender":s.main_lender||"","Latest event date":s.latest_event||"","Record URL":SITE_URL+"#r="+r.id};
-    const want=scope==="comprehensive"?CATS:cats;const L=x=>"["+x.map(y=>r.srcLabels[y]).join(",")+"]";
+    if(scope==="standard")return {"Record ID":r.id,"Name":r.name,"Product type":s.product_type,"Record kind":r.kinds.map(k=>k==="pipeline"?"Development pipeline":"Sale / refinance").join("; "),"Status":s.status,"Jurisdiction":s.jurisdiction,"Address":r.addresses.map(a=>a.text).join("; "),"APN(s)":r.parcels.map(p=>p.apn).join("; "),"Total units":s.total_units??s.units_display??"","Restricted units":s.restricted_units??"","Recorded owner":s.owner||"","Developer":s.developer||"","Cost or price basis":s.cost_basis||"","Total cost / sale price":s.cost??"","Per unit (calculated)":s.per_unit??"","Main lender":s.main_lender||"","Latest event date":s.latest_event||"","Record URL":SITE_URL+"#r="+r.id};
+    const want=scope==="comprehensive"?CATS:cats;const L=()=>"";
     const o={"Record ID":r.id,"Name":r.name};
     Object.entries(REG.facts).filter(([k,f])=>f.section==="Basics"&&r.facts[k]).forEach(([k,f])=>o[f.label]=claimsText(r,k,r.facts[k]));
     REG.sections.filter(sec=>sec!=="Basics"&&want.includes(sec)).forEach(sec=>{
-      if(sec==="Location"){o["APN(s)"]=r.parcels.map(p=>p.apn+" "+L(p.src)).join("; ");o["Address(es)"]=r.addresses.map(a=>a.text+" "+L(a.src)).join("; ");o["Latitude"]=+r.lat.toFixed(6);o["Longitude"]=+r.lng.toFixed(6)}
+      if(sec==="Location"){o["APN(s)"]=r.parcels.map(p=>p.apn+L(p.src)).join("; ");o["Address(es)"]=r.addresses.map(a=>a.text+L(a.src)).join("; ");o["Latitude"]=+r.lat.toFixed(6);o["Longitude"]=+r.lng.toFixed(6)}
       Object.entries(REG.facts).filter(([k,f])=>f.section===sec&&r.facts[k]).forEach(([k,f])=>o[f.label]=claimsText(r,k,r.facts[k]));
       Object.entries(REG.calcs).filter(([k,c])=>c.section===sec&&r.calcs[k]).forEach(([k,c])=>o[c.label+" (calculated)"]=money(r.calcs[k].value)+" = "+r.calcs[k].how);
-      if(sec==="Parties")REG.party_roles.forEach(role=>{const ps=r.parties.filter(p=>p.role===role);if(ps.length)o[role==="Other"?"Other parties":role]=ps.map(p=>(p.other_role?p.other_role+": ":"")+p.company+(p.contact?" ("+p.contact+")":"")+(p.linkedin?" "+p.linkedin:"")+" "+L(p.src)).join("; ")});
-      if(sec==="Financing & transactions")o["Financing sources"]=r.financing.map(x=>x.type+": "+x.provider+(x.program?" · "+x.program:"")+(x.amount?" · "+money(x.amount):"")+(x.date?" · "+x.date:"")+" "+L(x.src)+(x.group?" (sources differ)":"")).join(" | ");
+      if(sec==="Parties")REG.party_roles.forEach(role=>{const ps=r.parties.filter(p=>p.role===role);if(ps.length)o[role==="Other"?"Other parties":role]=ps.map(p=>(p.other_role?p.other_role+": ":"")+p.company+(p.contact?" ("+p.contact+")":"")+(p.linkedin?" "+p.linkedin:"")+L(p.src)).join("; ")});
+      if(sec==="Financing & transactions")o["Financing sources"]=r.financing.map(x=>x.type+": "+x.provider+(x.program?" · "+x.program:"")+(x.amount?" · "+money(x.amount):"")+(x.date?" · "+x.date:"")+L(x.src)+(x.group?" (sources differ)":"")).join(" | ");
     });
-    if(want.includes("Timeline"))o["Timeline"]=r.events.map(e=>e.date+": "+e.label+(e.estimated?" (estimated)":"")+" "+L(e.src)).join(" | ");
-    if(want.includes("Construction notes"))o["Construction notes"]=r.construction_notes.map(n=>n.text+" "+L(n.src)).join("; ");
-    if(want.includes("Sources"))o["Sources"]=Object.keys(r.srcLabels).map(x=>r.srcLabels[x]+" = "+x+": "+SOURCES[x].title+", "+SOURCES[x].publisher+", "+SOURCES[x].url).join(" | ");
+    if(want.includes("Timeline"))o["Timeline"]=r.events.map(e=>e.date+": "+e.label+(e.estimated?" (estimated)":"")+L(e.src)).join(" | ");
+    if(want.includes("Construction notes"))o["Construction notes"]=r.construction_notes.map(n=>n.text+L(n.src)).join("; ");
     return o;
   });
 }
 const NUM_COLS={"Total units":"#,##0","Restricted units":"#,##0","Total cost / sale price":"$#,##0","Per unit (calculated)":"$#,##0","Latitude":"0.000000","Longitude":"0.000000"};
 function styleSheet(ws,cols,rows,urlCols){
-  ws.columns=cols.map(c=>{const longest=Math.max(c.length,...rows.map(r=>String(r[c]??"").length));return {header:c,key:c,width:Math.min(Math.max(longest+2,10),urlCols.includes(c)?42:60)}});
+  ws.columns=cols.map(c=>{const longest=Math.max(c.length,...rows.map(r=>String(r[c]??"").length));return {header:c,key:c,width:Math.min(Math.max(longest+2,10),40)}});
   rows.forEach(r=>{const o={};cols.forEach(c=>{let v=r[c];if(NUM_COLS[c]&&v!==""&&v!=null&&!isNaN(+v))v=+v;o[c]=v??""});ws.addRow(o)});
   const head=ws.getRow(1);head.height=22;
   head.eachCell(cell=>{cell.font={bold:true,color:{argb:"FFFFFFFF"},name:"Arial",size:10};cell.fill={type:"pattern",pattern:"solid",fgColor:{argb:"FF17304F"}};cell.alignment={vertical:"middle",wrapText:true}});
   ws.eachRow((row,i)=>{if(i===1)return;
+    row.height=27; /* fixed at two lines; full text stays in the cell */
     row.eachCell({includeEmpty:true},(cell,ci)=>{const c=cols[ci-1];cell.font={name:"Arial",size:10};cell.alignment={vertical:"top",wrapText:true};cell.border={bottom:{style:"hair",color:{argb:"FFDDE3EA"}}};
       if(NUM_COLS[c])cell.numFmt=NUM_COLS[c];
       if(urlCols.includes(c)&&String(cell.value).startsWith("http")){const u=String(cell.value);cell.value={text:u,hyperlink:u};cell.font={name:"Arial",size:10,color:{argb:"FF1B7F8C"},underline:true}}});
@@ -434,7 +523,7 @@ function styleSheet(ws,cols,rows,urlCols){
 async function buildXlsx(rows,cols,srcRows,fname){
   const wb=new ExcelJS.Workbook();wb.creator="SMC Housing Data";
   styleSheet(wb.addWorksheet("Records"),cols,rows,["Record URL"]);
-  const sc=["ID","Title","Publisher","Date","Type","URL","Retrieved","Wayback"];
+  const sc=["ID","Title","Publisher","Date","Type","URL","Retrieved","Wayback","Used by"];
   const ss=wb.addWorksheet("Sources");styleSheet(ss,sc,srcRows,["URL"]);ss.views=[{state:"frozen",xSplit:1,ySplit:1}];
   const buf=await wb.xlsx.writeBuffer();
   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=fname+".xlsx";a.click();
@@ -447,8 +536,8 @@ $("#expGo").onclick=()=>{
   const fname=`smc_housing_${scope}_${new Date().toISOString().slice(0,10)}`;
   if(fmt==="xlsx"){
     if(!window.ExcelJS){toast("Excel library didn't load (needs internet)");return}
-    const used=[...new Set(filtered().flatMap(r=>Object.keys(r.srcLabels)))];
-    buildXlsx(rows,cols,used.map(k=>{const v=SOURCES[k];return {ID:k,Title:v.title,Publisher:v.publisher,Date:v.date||"",Type:v.type,URL:v.url,Retrieved:v.retrieved,Wayback:v.wayback||"not yet archived"}}),fname);
+    const recs=filtered(),used=[...new Set(recs.flatMap(r=>Object.keys(r.srcLabels)))].sort();
+    buildXlsx(rows,cols,used.map(k=>{const v=SOURCES[k];return {ID:k,Title:v.title,Publisher:v.publisher,Date:v.date||"",Type:v.type,URL:v.url,Retrieved:v.retrieved,Wayback:v.wayback||"not yet archived","Used by":recs.filter(r=>r.srcLabels[k]).map(r=>r.id).join(", ")}}),fname);
   }else{
     const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
     const csv=[cols.map(q).join(","),...rows.map(r=>cols.map(c=>q(r[c])).join(","))].join("\r\n");
