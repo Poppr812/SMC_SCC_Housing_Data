@@ -94,7 +94,9 @@ Pipeline and transactions are two views of the same Housing Records, not separat
 - 2026-11-02: Image placeholders approved as-is (size, position at top, purple "copyrighted image exists" vs gray "no image available").
 - 2026-11-02: Filters: keep the current bar, and add an **advanced filter** that lets people filter on any field however they want. Design to be worked out (open).
 - 2026-11-02: **Excel export must open ready to read**, with no reformatting by the user: column widths sized to content, styled and frozen header row, autofilter, wrapped text, number and currency formats, clickable links, and a Sources tab formatted the same way. (Mockup used SheetJS, which can't style; switch to a library that can, e.g. ExcelJS.) Updated mockup with ExcelJS approved 2026-11-02 ("opened well").
-- 2026-11-02: Standard export columns (19): record ID, name, housing type, record kind, status, jurisdiction, address, APNs, total units, restricted units, recorded owner, developer, cost-or-price basis, total cost / sale price, per unit (calculated), main lender, main loan amount, latest event date, record link. Full financing breakdown stays in the comprehensive export.
+- 2026-11-02: Standard export columns (18): record ID, name, housing type, record kind, status, jurisdiction, address, APNs, total units, restricted units, recorded owner, developer, cost-or-price basis, total cost / sale price, per unit (calculated), main lender, latest event date, record link. Loan amounts and the full financing breakdown stay in the comprehensive export.
+- 2026-11-02: Map hover card approved as-is (image box, name, place, units, status).
+- 2026-11-02: **Mockup phase complete.** Next: parcel data, then record fields.
 - 2026-11-02: Empty field wording: "No current report logged".
 - 2026-11-02: Calculated values approved: small "calculated" tag plus the math on one gray line. Drop the "Inputs are sourced above" sentence.
 
