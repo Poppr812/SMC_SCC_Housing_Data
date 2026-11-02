@@ -109,6 +109,12 @@ DEBT_TYPES = {
     "Bridge loan", "Tax-exempt bonds", "Taxable bonds", "Seller financing",
 }
 
+SOURCE_TYPES = [
+    "Government document", "Government web page", "Government press release", "Government dataset",
+    "Application document", "Developer press release", "Developer web page", "News article",
+    "Trade publication", "Trade listing",
+]
+
 # Facts: key -> (section, label, kind, options). kind: cat, catmulti, text, int, num, money, mix, ami
 SECTIONS = ["Basics", "Location", "Units & building", "Affordability",
             "Approvals & timeline", "Parties", "Financing & transactions"]

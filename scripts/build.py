@@ -286,6 +286,9 @@ def main():
     sources = load("sources", SRC_RE)
     records = load("records", ID_RE)
     errors = [e for r in records.values() for e in validate(r, sources)]
+    errors += [f"{s['id']}: source type {s.get('type')!r} not in schema.SOURCE_TYPES" for s in sources.values() if s.get("type") not in schema.SOURCE_TYPES]
+    cited = set(json.dumps(list(records.values())).split('"'))
+    errors += [f"{sid}: source is not cited by any record (delete it or cite it)" for sid in sources if sid not in cited]
     seen = {}
     for r in records.values():
         for p in r.get("parcels", []):
