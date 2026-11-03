@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <style>
 :root{
   --ink:#1C2430; --navy:#17304F; --gold:#D9A21B; --teal:#1B7F8C; --purple:#6B4FA0; --orange:#D2691E;
@@ -102,6 +103,25 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 #exp label{display:block;padding:3px 0}
 #customCats{margin-left:22px;display:none}
 .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:8px 14px;border-radius:6px;font-size:13px;z-index:3000;display:none}
+.hbtn{font:inherit;font-size:13px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:5px;padding:4px 10px;cursor:pointer}
+.hbtn:hover{background:rgba(255,255,255,.12)}
+.modal{display:none;position:fixed;inset:0;background:rgba(20,28,40,.45);z-index:2200}
+.modal.show{display:flex;align-items:center;justify-content:center}
+.modal .box{background:#fff;border-radius:10px;padding:20px 22px;width:min(460px,92vw);max-height:90vh;overflow:auto}
+.modal h3{margin:0 0 6px}
+.modal label.f{display:block;font-size:12px;color:var(--gray);margin:9px 0 0}
+.modal label.f input,.modal label.f select,.modal label.f textarea{display:block;width:100%;box-sizing:border-box;margin-top:3px;font:inherit;font-size:13px;color:var(--ink);padding:6px 8px;border:1px solid var(--rule);border-radius:5px}
+.modal label.chk{display:flex;gap:7px;align-items:flex-start;font-size:12px;margin:10px 0 4px}
+.modal .row2{display:flex;gap:8px}.modal .row2>*{flex:1}
+.modal .acts{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
+.modal .lnk{background:none;border:none;color:var(--teal);cursor:pointer;font:inherit;font-size:12px;padding:0;text-decoration:underline}
+.modal .msg{font-size:12px;margin-top:8px;color:var(--navy)}
+.adm table{width:100%;border-collapse:collapse;font-size:12px}
+.adm th{text-align:left;background:#EEF2F7;padding:4px 6px;position:sticky;top:0}
+.adm td{border-bottom:1px solid var(--rule);padding:4px 6px;vertical-align:top}
+.adm .wrap{max-height:340px;overflow:auto;border:1px solid var(--rule);border-radius:6px}
+.adm .kpis{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+.adm .kpi{background:#F6F7F4;border-radius:6px;padding:8px 12px;font-size:12px;color:var(--gray)}.adm .kpi b{display:block;font-size:20px;color:var(--ink)}
 footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);border-top:1px solid var(--rule)}
 @media (max-width:760px){
   main{grid-template-columns:1fr;grid-template-rows:55vh auto;height:auto}
@@ -123,6 +143,9 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <h1>Housing Comps</h1>
   <span class="badge">v1 PREVIEW</span>
   <span class="sub" id="headSub"></span>
+  <span class="spacer"></span>
+  <button class="hbtn" type="button" id="contribTop">Add or correct info</button>
+  <button class="hbtn" type="button" id="acctBtn">Sign in</button>
 </header>
 
 <div class="bar">
@@ -177,7 +200,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div id="list"></div>
   </aside>
 </main>
-<footer>Data: public records, each fact linked to its source · Data license ODbL · Code license MIT · Parcel data: County of San Mateo, provided as-is · <a href="https://github.com/Poppr812/SMC_SCC_Housing_Data" target="_blank" rel="noopener">GitHub</a></footer>
+<footer>Data: public records, each fact linked to its source · Data license ODbL · Code license MIT · Parcel data: County of San Mateo, provided as-is · <a href="https://github.com/Poppr812/SMC_SCC_Housing_Data" target="_blank" rel="noopener">GitHub</a> · <a href="#" id="privLink">Privacy</a></footer>
 
 <div id="rec"><div class="sheet" id="sheet"></div></div>
 
@@ -199,6 +222,27 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <button class="btn ghost" type="button" id="expCancel">Cancel</button>
     <button class="btn" type="button" id="expGo">Download</button>
   </div>
+</div></div>
+
+<div class="modal" id="acct"><div class="box" id="acctBox"></div></div>
+
+<div class="modal" id="contrib"><div class="box">
+  <h3>Add or correct info</h3>
+  <div class="muted" id="cbFor"></div>
+  <label class="f">Source link (article, staff report, agenda, listing, press release)<input type="url" id="cbUrl" placeholder="https://"></label>
+  <label class="f">What you know<textarea id="cbText" rows="5" placeholder="e.g. Construction started March 2026; the general contractor is ..."></textarea></label>
+  <label class="f">Credit me as<select id="cbCredit"><option value="alias">My alias</option><option value="name">My name and company</option><option value="none">Don't show my name</option></select></label>
+  <label class="chk"><input type="checkbox" id="cbOk"> This information is public, or mine to share publicly, and nothing in it is confidential.</label>
+  <div class="muted" style="font-size:12px">Every submission is reviewed before it appears. Facts are shown with their source; facts you state yourself are credited as you choose above.</div>
+  <div class="acts"><button class="btn ghost" type="button" onclick="$('#contrib').classList.remove('show')">Cancel</button><button class="btn" type="button" id="cbGo">Send for review</button></div>
+</div></div>
+
+<div class="modal" id="priv"><div class="box">
+  <h3>Privacy</h3>
+  <p style="font-size:13px">Housing Comps keeps a log of how the site is used: sign-ins, searches and search areas, records opened, saved searches, contributions and exports. Visitors who aren't signed in are logged under a random browser ID; signed-in activity is tied to the account.</p>
+  <p style="font-size:13px">The log is used to run and improve the site and to understand who uses it. It is visible only to the site owner. Your email is never shown publicly, and your information is not sold. Contributions are credited the way you choose.</p>
+  <p style="font-size:13px">To see or delete what's stored about you, email the site owner.</p>
+  <div class="acts"><button class="btn" type="button" onclick="$('#priv').classList.remove('show')">Close</button></div>
 </div></div>
 
 <div class="toast" id="toast"></div>
@@ -329,6 +373,7 @@ function imgBox(r,small){
 }
 function thumbHTML(r){const s=r.summary;return `<div class="thumb">${imgBox(r,true)}<div><b>${esc(r.name)}</b><div class="muted">${esc(s.community||s.jurisdiction)}${s.units_display?" · "+s.units_display+" units":""}</div><span class="pill" style="${pillStyle(r)}">${esc(s.status)}</span><div class="muted" style="margin-top:3px">Click for full record</div></div></div>`}
 function render(){
+  trackSearch();
   labelDropdowns();updateCounts();layer.clearLayers();
   const rs=filtered();
   rs.forEach(r=>{
@@ -437,9 +482,21 @@ map.on("contextmenu",e=>{
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&MODE){DRAG=null;setMode(null)}});
 
 /* ---------- saved searches ---------- */
-function loadSaved(){const list=store("smc_saved")||[];$("#saved").innerHTML='<option value="">'+(list.length?"Choose…":"(none yet)")+'</option>'+list.map((s,i)=>`<option value="${i}">${esc(s.name)}</option>`).join("")}
-$("#saveBtn").onclick=()=>{const name=prompt("Name this search:","My search "+new Date().toLocaleDateString());if(!name)return;const list=store("smc_saved")||[];list.push({name,hash:stateToHash()});store("smc_saved",list);loadSaved();toast("Saved in this browser. The link also works anywhere.")};
-$("#saved").onchange=e=>{const list=store("smc_saved")||[];const s=list[+e.target.value];if(!s)return;location.hash=s.hash;applyHash()};
+let SAVED=[];
+async function loadSaved(){
+  if(USER&&sb){
+    const local=store("smc_saved")||[]; /* searches saved in this browser before accounts existed move into the account once */
+    if(local.length){const {error}=await sb.from("saved_searches").insert(local.map(s=>({name:s.name,state:{hash:s.hash}})));if(!error)store("smc_saved",[])}
+    const {data}=await sb.from("saved_searches").select("id,name,state").order("created_at",{ascending:false});SAVED=data||[];
+  }else SAVED=[];
+  $("#saved").innerHTML='<option value="">'+(!USER?"(sign in to save)":SAVED.length?"Choose…":"(none yet)")+'</option>'+SAVED.map((s,i)=>`<option value="${i}">${esc(s.name)}</option>`).join("");
+}
+$("#saveBtn").onclick=()=>requireLogin("Sign in to save searches to your account.",async()=>{
+  const name=prompt("Name this search:","My search "+new Date().toLocaleDateString());if(!name)return;
+  const {error}=await sb.from("saved_searches").insert({name,state:{hash:stateToHash()}});
+  if(error){toast("Couldn't save: "+error.message);return}
+  track("save_search",{name});loadSaved();toast("Saved to your account.")});
+$("#saved").onchange=e=>{const s=SAVED[+e.target.value];if(!s)return;location.hash=s.state.hash;applyHash();track("open_saved",{name:s.name})};
 $("#linkBtn").onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link copied. It reopens this exact search.")}catch(e){prompt("Copy this link:",location.href)}};
 function applyHash(){const s=hashToState();if(s)setState(s);render()}
 
@@ -448,8 +505,7 @@ let CUR=null;
 function fn(srcs){return (srcs||[]).map(s=>`<sup class="fn"><a href="#src-${s}" title="${esc(SOURCES[s].title)}">${CUR.srcLabels[s]}</a></sup>`).join("")}
 function askHTML(r,label,q){
   const id="q"+Math.random().toString(36).slice(2,8);
-  const issue="https://github.com/Poppr812/SMC_SCC_Housing_Data/issues/new?title="+encodeURIComponent(r.id+": "+label)+"&body="+encodeURIComponent(q+"\n\nPlease include a source if you have one.");
-  return `<button class="clarify noprint" type="button" onclick="document.getElementById('${id}').classList.toggle('show')">Know more?</button><div class="ask noprint" id="${id}">${esc(q)} <a href="${issue}" target="_blank" rel="noopener">Share what you know</a></div>`;
+  return `<button class="clarify noprint" type="button" onclick="document.getElementById('${id}').classList.toggle('show')">Know more?</button><div class="ask noprint" id="${id}">${esc(q)} <a href="#" data-topic="${esc(label+": "+q)}" onclick="openContrib(CUR,this.dataset.topic);return false">Share what you know</a></div>`;
 }
 function factHTML(r,key,f){
   const cl=f.claims;
@@ -510,6 +566,7 @@ function openRecord(id){
      <div><div class="muted">${r.id} · ${esc(r.summary.product_type)} · ${esc(r.summary.community||r.summary.jurisdiction)}</div><h2>${esc(r.name)}</h2>
        <span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span></div>
      <div class="noprint" style="display:flex;gap:8px">
+       <button class="btn ghost" type="button" onclick="openContrib(CUR)">Add or correct info</button>
        <button class="btn ghost" type="button" onclick="window.print()">Download PDF</button>
        <button class="btn" type="button" onclick="closeRecord()">Close ✕</button>
      </div>
@@ -524,7 +581,7 @@ function openRecord(id){
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
    <div class="note">Every fact links to the public source behind it. Where sources differ, each is shown. Data license: ODbL.</div>`;
-  $("#rec").classList.add("show");$("#rec").scrollTop=0;
+  $("#rec").classList.add("show");$("#rec").scrollTop=0;track("record_view",{id:r.id,name:r.name});
   safeReplace(location.pathname+location.search+stateToHash()+"&r="+id);
 }
 function closeRecord(){$("#rec").classList.remove("show");safeReplace(location.pathname+location.search+stateToHash())}
@@ -535,7 +592,7 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeRecord();$("#e
 const CATS=[...REG.sections.filter(s=>s!=="Basics"),"Timeline","Construction notes"];
 $("#customCats").innerHTML=CATS.map(c=>`<label><input type="checkbox" value="${esc(c)}" checked> ${esc(c)}</label>`).join("");
 document.querySelectorAll('input[name=scope]').forEach(i=>i.onchange=()=>{$("#customCats").style.display=$('input[name=scope]:checked').value==="custom"?"block":"none"});
-$("#expBtn").onclick=()=>{$("#expCount").textContent=`${filtered().length} record(s) in the current selection.`;$("#exp").classList.add("show")};
+$("#expBtn").onclick=()=>{$("#expCount").textContent=`${filtered().length} record(s) in the current selection.`+(USER?"":` Without an account: up to ${LIMIT.standard} records (Standard) or ${LIMIT.comprehensive} (with sources).`);$("#exp").classList.add("show")};
 $("#expCancel").onclick=()=>$("#exp").classList.remove("show");
 function claimsText(r,key,f){
   const L=()=>"";
@@ -624,6 +681,9 @@ $("#expGo").onclick=()=>{
   const scope=$('input[name=scope]:checked').value,fmt=$('input[name=fmt]:checked').value;
   const cats=[...document.querySelectorAll("#customCats input:checked")].map(i=>i.value);
   const rows=rowsFor(scope,cats);if(!rows.length){toast("Nothing to export");return}
+  if(!USER&&rows.length>LIMIT[scope]){$("#exp").classList.remove("show");
+    requireLogin(`Exports of more than ${LIMIT[scope]} records${scope==="standard"?"":" with source references"} need a free account. Your selection has ${rows.length}.`,()=>$("#expBtn").click());return}
+  track("export",{scope,fmt,count:rows.length,ids:rows.length<=60?filtered().map(r=>r.id):undefined});
   const cols=[...new Set(rows.flatMap(r=>Object.keys(r)))].filter(c=>!c.startsWith("_"));
   const fname=`housing_comps_${scope}_${new Date().toISOString().slice(0,10)}`;
   if(fmt==="xlsx"){
@@ -639,11 +699,159 @@ $("#expGo").onclick=()=>{
   $("#exp").classList.remove("show");toast("Export downloaded");
 };
 
+/* ---------- accounts, contributions, activity log (Supabase) ---------- */
+const SB_URL="https://ucfunwumhmpuywizckyq.supabase.co",SB_KEY="sb_publishable_fojbSnUm2APVZbmvW4XHPQ_BfHp391I";
+const sb=window.supabase?window.supabase.createClient(SB_URL,SB_KEY,{auth:{flowType:"pkce",detectSessionInUrl:true,persistSession:true}}):null;
+const LIMIT={standard:20,comprehensive:5,custom:5};
+const ROLES=["Developer","Owner / investor","Lender / capital","Broker","Architect / engineer","Contractor","Consultant","Public agency","Nonprofit / advocate","Journalist / researcher","Other"];
+let USER=null,PROFILE=null,PENDING=null;
+const SESSION_ID=(()=>{let s=store("hc_sid");if(!s){s=Math.random().toString(36).slice(2,10)+Date.now().toString(36);store("hc_sid",s)}return s})();
+function track(event,detail){if(!sb)return;sb.from("activity").insert({event,detail:detail||null,session_id:SESSION_ID,user_id:USER?USER.id:null,page:location.pathname}).then(()=>{})}
+var trackT=null,lastQ="";
+function trackSearch(){clearTimeout(trackT);trackT=setTimeout(()=>{const s=getState(),q=JSON.stringify(s);if(q===lastQ)return;const first=!lastQ;lastQ=q;if(first)return;
+  track("search",{kw:s.kw||undefined,types:s.types.length===Object.keys(REG.product_types).length?"all":s.types,statuses:s.statuses,tx:s.tx,areas:s.areas||"all",shape:s.shape||undefined,results:filtered().length})},2500)}
+
+function requireLogin(reason,then){if(!sb){toast("Sign-in isn't available right now");return}if(USER){then();return}PENDING=then;acctView("signin",reason)}
+const who=p=>p?(p.alias||p.name||p.email):"";
+function acctLabel(){$("#acctBtn").textContent=USER?(who(PROFILE)||USER.email):"Sign in"}
+async function loadProfile(){PROFILE=null;if(!USER)return;const {data}=await sb.from("profiles").select("*").eq("id",USER.id).maybeSingle();PROFILE=data}
+function acctMsg(m){const e=$("#acctMsg");if(e)e.textContent=m||""}
+function acctView(mode,reason){
+  const B=$("#acctBox"),why=reason?`<div class="msg" style="margin:0 0 6px">${esc(reason)}</div>`:"";
+  const roleOpts=v=>'<option value="">Choose…</option>'+ROLES.map(r=>`<option${r===v?" selected":""}>${esc(r)}</option>`).join("");
+  if(mode==="signin")B.innerHTML=`<h3>Sign in</h3>${why}
+    <label class="f">Email<input type="email" id="aEmail" autocomplete="email"></label>
+    <label class="f">Password<input type="password" id="aPass" autocomplete="current-password"></label>
+    <div class="acts" style="justify-content:space-between"><button class="lnk" type="button" id="aForgot">Forgot password?</button>
+      <span><button class="btn ghost" type="button" id="aCancel">Cancel</button> <button class="btn" type="button" id="aGo">Sign in</button></span></div>
+    <div class="msg" id="acctMsg"></div>
+    <p style="font-size:13px;margin:14px 0 0">New here? <button class="lnk" type="button" id="aToUp">Create a free account</button> · <button class="lnk" type="button" id="aMagic">Email me a sign-in link</button></p>`;
+  if(mode==="signup")B.innerHTML=`<h3>Create a free account</h3>${why}
+    <div class="muted" style="font-size:12px">Browsing is free. An account lets you save searches, contribute, and export larger selections.</div>
+    <label class="f">Email<input type="email" id="aEmail" autocomplete="email"></label>
+    <label class="f">Password (8+ characters)<input type="password" id="aPass" autocomplete="new-password"></label>
+    <div class="row2"><label class="f">Name<input type="text" id="aName" autocomplete="name"></label><label class="f">Alias (shown on credits)<input type="text" id="aAlias"></label></div>
+    <div class="row2"><label class="f">Company<input type="text" id="aCo" autocomplete="organization"></label><label class="f">Role<select id="aRole">${roleOpts("")}</select></label></div>
+    <label class="chk"><input type="checkbox" id="aPriv"> I've read the <a href="#" onclick="$('#priv').classList.add('show');return false">privacy note</a>: the site logs sign-ins, searches, records opened and exports.</label>
+    <div class="acts"><button class="btn ghost" type="button" id="aCancel">Cancel</button><button class="btn" type="button" id="aGo">Create account</button></div>
+    <div class="msg" id="acctMsg"></div>
+    <p style="font-size:13px;margin:14px 0 0">Already have an account? <button class="lnk" type="button" id="aToIn">Sign in</button></p>`;
+  if(mode==="profile"){const P=PROFILE||{};B.innerHTML=`<h3>Your account</h3><div class="muted">${esc(USER.email)}</div>
+    <div class="row2"><label class="f">Name<input type="text" id="aName" value="${esc(P.name||"")}"></label><label class="f">Alias (shown on credits)<input type="text" id="aAlias" value="${esc(P.alias||"")}"></label></div>
+    <div class="row2"><label class="f">Company<input type="text" id="aCo" value="${esc(P.company||"")}"></label><label class="f">Role<select id="aRole">${roleOpts(P.role||"")}</select></label></div>
+    <label class="f">LinkedIn (optional)<input type="url" id="aLi" value="${esc(P.linkedin||"")}"></label>
+    <div class="acts" style="justify-content:space-between"><span>${P.is_admin?'<button class="btn ghost" type="button" id="aAdmin">Admin</button> ':""}<button class="btn ghost" type="button" id="aOut">Sign out</button></span>
+      <span><button class="btn ghost" type="button" id="aCancel">Close</button> <button class="btn" type="button" id="aSave">Save</button></span></div>
+    <div class="msg" id="acctMsg"></div>`}
+  $("#acct").classList.add("show");
+  const on=(id,f)=>{const e=document.getElementById(id);if(e)e.onclick=f};
+  const val=id=>(document.getElementById(id)||{}).value?.trim()||"";
+  on("aCancel",()=>{PENDING=null;$("#acct").classList.remove("show")});
+  on("aToUp",()=>acctView("signup",reason));on("aToIn",()=>acctView("signin",reason));
+  on("aGo",async()=>{const email=val("aEmail"),password=$("#aPass").value;if(!email||!password){acctMsg("Enter your email and password.");return}
+    if(mode==="signup"){
+      if(password.length<8){acctMsg("Use at least 8 characters for the password.");return}
+      if(!$("#aPriv").checked){acctMsg("Please confirm you've read the privacy note.");return}
+      const {data,error}=await sb.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname,data:{name:val("aName"),alias:val("aAlias"),company:val("aCo"),role:val("aRole")}}});
+      if(error){acctMsg(error.message);return}
+      if(!data.session)acctMsg("Check your email for a link to confirm your account, then sign in.");
+    }else{const {error}=await sb.auth.signInWithPassword({email,password});if(error)acctMsg(error.message)}});
+  on("aMagic",async()=>{const email=val("aEmail");if(!email){acctMsg("Enter your email first.");return}
+    const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+location.pathname,shouldCreateUser:false}});
+    acctMsg(error?error.message:"Check your email for a sign-in link.")});
+  on("aForgot",async()=>{const email=val("aEmail");if(!email){acctMsg("Enter your email first.");return}
+    const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname});
+    acctMsg(error?error.message:"Check your email for a link to set a new password.")});
+  on("aSave",async()=>{const {error}=await sb.from("profiles").update({name:val("aName"),alias:val("aAlias"),company:val("aCo"),role:val("aRole"),linkedin:val("aLi")}).eq("id",USER.id);
+    if(error){acctMsg(error.message);return}await loadProfile();acctLabel();acctMsg("Saved.")});
+  on("aOut",async()=>{track("sign_out");await sb.auth.signOut();$("#acct").classList.remove("show");toast("Signed out")});
+  on("aAdmin",()=>{$("#acct").classList.remove("show");openAdmin()});
+}
+$("#acctBtn").onclick=()=>USER?acctView("profile"):acctView("signin");
+$("#privLink").onclick=e=>{e.preventDefault();$("#priv").classList.add("show")};
+if(sb)sb.auth.onAuthStateChange((ev,session)=>{
+  USER=session?session.user:null;
+  setTimeout(async()=>{ /* outside the auth callback, per supabase-js guidance */
+    await loadProfile();acctLabel();loadSaved();
+    if(ev==="SIGNED_IN"){
+      if(/[?&]code=/.test(location.search))safeReplace(location.pathname+location.hash);
+      if($("#acct").classList.contains("show")){$("#acct").classList.remove("show");toast("Signed in as "+(who(PROFILE)||USER.email))}
+      if(PENDING){const f=PENDING;PENDING=null;f()}
+      track("sign_in",{email:USER.email});
+    }
+    if(ev==="PASSWORD_RECOVERY"){const pw=prompt("Choose a new password (8+ characters):");if(pw&&pw.length>=8){const {error}=await sb.auth.updateUser({password:pw});toast(error?error.message:"Password updated")}}
+  },0);
+});
+
+let CB={};
+function openContrib(rec,topic){requireLogin("Sign in to add or correct information. Contributions are reviewed and credited.",()=>{
+  CB={rec:rec||null,topic:topic||null};
+  $("#cbFor").textContent=rec?`${rec.id} · ${rec.name}`+(topic?` · ${topic}`:""):"A new project, sale or refinancing, or any correction";
+  $("#cbUrl").value="";$("#cbText").value="";$("#cbOk").checked=false;$("#contrib").classList.add("show")})}
+$("#contribTop").onclick=()=>openContrib(null);
+$("#cbGo").onclick=async()=>{
+  const url=$("#cbUrl").value.trim(),txt=$("#cbText").value.trim();
+  if(!url&&!txt){toast("Add a source link or what you know");return}
+  if(!$("#cbOk").checked){toast("Please confirm the information is public or yours to share");return}
+  const {error}=await sb.from("contributions").insert({record_id:CB.rec?CB.rec.id:null,topic:CB.topic,source_url:url||null,details:txt||null,public_ok:true,credit_as:$("#cbCredit").value});
+  if(error){toast("Couldn't send: "+error.message);return}
+  track("contribute",{record:CB.rec?CB.rec.id:null});$("#contrib").classList.remove("show");toast("Thank you. It's in the review queue.")};
+
+/* ---------- admin (site owner only; the database refuses everyone else) ---------- */
+let ADM=null;
+async function openAdmin(){
+  if(!PROFILE||!PROFILE.is_admin)return;
+  const [p,c,a]=await Promise.all([sb.from("profiles").select("*").order("created_at",{ascending:false}),
+    sb.from("contributions").select("*").order("created_at",{ascending:false}),
+    sb.from("activity").select("*").order("created_at",{ascending:false}).limit(2000)]);
+  if(p.error||c.error||a.error){toast("Admin data unavailable: "+(p.error||c.error||a.error).message);return}
+  ADM={users:p.data,contribs:c.data,acts:a.data};renderAdmin();
+}
+function renderAdmin(){
+  const {users,contribs,acts}=ADM,byId=Object.fromEntries(users.map(u=>[u.id,u]));
+  const dt=s=>new Date(s).toLocaleString([], {month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
+  const actor=a=>a.user_id&&byId[a.user_id]?esc(byId[a.user_id].email):`<span class="muted">visitor ${esc((a.session_id||"").slice(0,6))}</span>`;
+  const sum=a=>{const d=a.detail||{};if(a.event==="record_view")return esc(d.id+" · "+d.name);if(a.event==="export")return esc(`${d.scope} · ${d.fmt} · ${d.count} records`);
+    if(a.event==="search")return esc([d.kw&&`"${d.kw}"`,d.areas!=="all"&&d.areas&&("areas: "+d.areas.join(", ")),d.shape&&(d.shape.t==="c"?`${d.shape.mi} mi from ${d.shape.addr||d.shape.lat.toFixed(3)+", "+d.shape.lng.toFixed(3)}`:"fence"),d.types!=="all"&&d.types&&("types: "+d.types.join(", ")),`${d.results} results`].filter(Boolean).join(" · "));
+    return esc(d.name||d.email||d.record||"")};
+  const wk=Date.now()-7*864e5,recent=acts.filter(a=>new Date(a.created_at)>wk);
+  const stat=(u,e)=>acts.filter(a=>a.user_id===u.id&&a.event===e).length;
+  const last=u=>{const x=acts.find(a=>a.user_id===u.id);return x?dt(x.created_at):""};
+  $("#sheet").innerHTML=`<div class="adm">
+   <div class="top"><div><div class="muted">Visible only to the site owner</div><h2>Admin</h2></div>
+     <div class="noprint" style="display:flex;gap:8px"><button class="btn ghost" type="button" onclick="openAdmin()">Refresh</button><button class="btn ghost" type="button" onclick="adminXlsx()">Download Excel</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
+   <div class="kpis"><div class="kpi"><b>${users.length}</b>accounts</div><div class="kpi"><b>${contribs.filter(c=>c.status==="new").length}</b>contributions to review</div>
+     <div class="kpi"><b>${new Set(recent.map(a=>a.session_id)).size}</b>visitors, last 7 days</div><div class="kpi"><b>${recent.filter(a=>a.event==="search").length}</b>searches, last 7 days</div>
+     <div class="kpi"><b>${recent.filter(a=>a.event==="export").length}</b>exports, last 7 days</div></div>
+   <h3>Contributions</h3><div class="wrap"><table><tr><th>When</th><th>From</th><th>Record</th><th>Source / details</th><th>Credit</th><th>Status</th></tr>
+    ${contribs.map(c=>{const u=byId[c.user_id]||{};return `<tr><td>${dt(c.created_at)}</td><td>${esc(u.name||"")} ${u.alias?"("+esc(u.alias)+")":""}<br><span class="muted">${esc(u.email||"")}${u.company?" · "+esc(u.company):""}${u.role?" · "+esc(u.role):""}</span></td>
+      <td>${c.record_id?`<a href="#" onclick="openRecord('${esc(c.record_id)}');return false">${esc(c.record_id)}</a>`:"new / general"}${c.topic?`<br><span class="muted">${esc(c.topic)}</span>`:""}</td>
+      <td>${c.source_url?`<a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.source_url)}</a><br>`:""}${esc(c.details||"")}</td><td>${esc(c.credit_as||"")}</td>
+      <td><select onchange="setContribStatus(${c.id},this.value)">${["new","accepted","entered","declined"].map(s=>`<option${s===c.status?" selected":""}>${s}</option>`).join("")}</select></td></tr>`}).join("")||'<tr><td colspan="6" class="muted">None yet</td></tr>'}</table></div>
+   <h3>Accounts</h3><div class="wrap"><table><tr><th>Email</th><th>Name / alias</th><th>Company · role</th><th>Joined</th><th>Last active</th><th>Searches</th><th>Records viewed</th><th>Exports</th></tr>
+    ${users.map(u=>`<tr><td>${esc(u.email||"")}${u.is_admin?' <span class="tag">admin</span>':""}</td><td>${esc(u.name||"")}${u.alias?" ("+esc(u.alias)+")":""}</td><td>${esc([u.company,u.role].filter(Boolean).join(" · "))}</td><td>${dt(u.created_at)}</td><td>${last(u)}</td><td>${stat(u,"search")}</td><td>${stat(u,"record_view")}</td><td>${stat(u,"export")}</td></tr>`).join("")}</table></div>
+   <h3>Activity (latest ${acts.length})</h3><div class="wrap"><table><tr><th>When</th><th>Who</th><th>Event</th><th>Detail</th></tr>
+    ${acts.slice(0,500).map(a=>`<tr><td>${dt(a.created_at)}</td><td>${actor(a)}</td><td>${esc(a.event.replace("_"," "))}</td><td>${sum(a)}</td></tr>`).join("")}</table></div>
+  </div>`;
+  $("#rec").classList.add("show");$("#rec").scrollTop=0;
+}
+async function setContribStatus(id,status){const {error}=await sb.from("contributions").update({status}).eq("id",id);if(error){toast(error.message);return}const c=ADM.contribs.find(x=>x.id===id);if(c)c.status=status;toast("Marked "+status)}
+async function adminXlsx(){
+  if(!window.ExcelJS||!ADM)return;const {users,contribs,acts}=ADM,byId=Object.fromEntries(users.map(u=>[u.id,u]));
+  const wb=new ExcelJS.Workbook();wb.creator="Housing Comps";
+  const sheet=(name,rows)=>{if(rows.length)styleSheet(wb.addWorksheet(name),Object.keys(rows[0]),rows,[])};
+  sheet("Accounts",users.map(u=>({Email:u.email||"",Name:u.name||"",Alias:u.alias||"",Company:u.company||"",Role:u.role||"",LinkedIn:u.linkedin||"",Joined:u.created_at.slice(0,10)})));
+  sheet("Contributions",contribs.map(c=>({Date:c.created_at.slice(0,16).replace("T"," "),From:(byId[c.user_id]||{}).email||"",Record:c.record_id||"",Topic:c.topic||"",Source:c.source_url||"",Details:c.details||"",Credit:c.credit_as||"",Status:c.status})));
+  sheet("Activity",acts.map(a=>({When:a.created_at.slice(0,19).replace("T"," "),Who:a.user_id&&byId[a.user_id]?byId[a.user_id].email:"visitor "+(a.session_id||"").slice(0,6),Event:a.event,Detail:JSON.stringify(a.detail||{})})));
+  const buf=await wb.xlsx.writeBuffer();const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf]));a.download=`housing_comps_admin_${new Date().toISOString().slice(0,10)}.xlsx`;a.click();
+}
+
 /* ---------- start ---------- */
 loadSaved();
 const s0=hashToState();if(s0)setState(s0);
 render();
 const rm=location.hash.match(/r=(SMC-\d{6})/);if(rm)openRecord(rm[1]);
+track("visit",{referrer:document.referrer||undefined});
 </script>
 </body>
 </html>
