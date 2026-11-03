@@ -19,7 +19,7 @@ STATUSES = {
     "Under construction": "Construction started",
     "Lease-up / selling": "Complete, now leasing or selling initial units",
     "Existing": "Built and stabilized; the record tracks sales and refinancings",
-    "Inactive": "Withdrawn, denied, expired, or stalled",
+    "Inactive pipeline": "Withdrawn or denied, or no recorded movement for over 5 years. A working label for comps research, not a legal status",
 }
 
 POPULATIONS = {

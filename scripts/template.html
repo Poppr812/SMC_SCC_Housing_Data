@@ -168,8 +168,8 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div class="dd" id="ddTypes"><button type="button" id="typesBtn">All types</button>
       <div class="menu" id="typesMenu"></div></div>
   </div>
-  <div class="ctl"><span>Show <span style="font-size:11px">(Pipeline, Transactions)</span></span>
-    <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline, Transactions</button>
+  <div class="ctl"><span>Show <span style="font-size:11px">(Pipeline, Transactions, Existing)</span></span>
+    <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline, Transactions, Existing</button>
       <div class="menu" id="showMenu"></div></div>
   </div>
   <div class="ctl">Search by jurisdiction
@@ -265,10 +265,13 @@ const DATA = /*__DATA__*/null;
 const REG = DATA.registry, SOURCES = DATA.sources, RECORDS = DATA.records;
 const SITE_URL = "https://poppr812.github.io/SMC_SCC_Housing_Data/";
 const ARCH_URL = "https://github.com/Poppr812/SMC_SCC_Housing_Archive/blob/main/"; /* private repo: links open only for the owner */
-const PIPELINE = ["Proposed","Approved","Permitted","Under construction","Lease-up / selling","Inactive"];
-const STATUS_COLOR = {"Inactive":"#9AA3AD","Proposed":"#E8C21A","Approved":"#EE8A2E","Permitted":"#E2648F","Under construction":"#2E9E5B","Lease-up / selling":"#2F6DB5"};
+const PIPELINE = ["Proposed","Approved","Permitted","Under construction","Lease-up / selling","Inactive pipeline"];
+const STATUS_COLOR = {"Inactive pipeline":"#FFFFFF","Proposed":"#E8C21A","Approved":"#EE8A2E","Permitted":"#E2648F","Under construction":"#2E9E5B","Lease-up / selling":"#2F6DB5"};
 const SALES_COLOR = "#6B4FA0";
-const DARK_TEXT = new Set(["#E8C21A"]);
+const EXISTING_COLOR = "#9AA3AD";
+const WHITE_EDGE = "#5B6570"; /* white dots and pills need an outline to show on the map and page */
+const DARK_TEXT = new Set(["#E8C21A","#FFFFFF"]);
+const whiteEdge = c=>c==="#FFFFFF"?`;box-shadow:inset 0 0 0 1px ${WHITE_EDGE}`:"";
 
 /* ---------- helpers ---------- */
 const $=s=>document.querySelector(s);
@@ -307,10 +310,11 @@ function syncCounty(){document.querySelectorAll("#areaMenu .cty").forEach(c=>{co
 document.querySelectorAll("#areaMenu .cty").forEach(c=>c.addEventListener("change",()=>{document.querySelectorAll(`#areaMenu .ar[data-county="${c.dataset.county}"]`).forEach(i=>i.checked=c.checked)}));
 $("#headSub").textContent=`${RECORDS.length} records from public sources · San Mateo County · built ${DATA.built}`;
 $("#showMenu").innerHTML=`<label class="grp"><input type="checkbox" id="pipeAll" checked> Development pipeline</label>`
-  +PIPELINE.map(s=>`<label class="sub"><input type="checkbox" class="st" value="${esc(s)}" checked><span class="dot" style="background:${STATUS_COLOR[s]}"></span>${esc(s)}<span class="cnt" data-c="${esc(s)}"></span></label>`).join("")
+  +PIPELINE.map(s=>`<label class="sub"><input type="checkbox" class="st" value="${esc(s)}" checked><span class="dot" style="background:${STATUS_COLOR[s]}${whiteEdge(STATUS_COLOR[s])}"></span>${esc(s)}<span class="cnt" data-c="${esc(s)}"></span></label>`).join("")
   +`<hr><label class="grp"><input type="checkbox" id="txAll" checked><span class="dot" style="background:${SALES_COLOR}"></span>Transactions</label>`
   +`<label class="sub"><input type="checkbox" class="tx" value="sale" checked>Sales<span class="cnt" data-c="__sale"></span></label>`
-  +`<label class="sub"><input type="checkbox" class="tx" value="refi" checked>Refinancings<span class="cnt" data-c="__refi"></span></label>`;
+  +`<label class="sub"><input type="checkbox" class="tx" value="refi" checked>Refinancings<span class="cnt" data-c="__refi"></span></label>`
+  +`<hr><label class="grp"><input type="checkbox" id="exAll" checked><span class="dot" style="background:${EXISTING_COLOR}"></span>Existing housing stock<span class="cnt" data-c="__existing"></span></label>`;
 function syncGroup(all,kids){const st=[...document.querySelectorAll(kids)],n=st.filter(i=>i.checked).length;const a=$(all);a.checked=n===st.length;a.indeterminate=n>0&&n<st.length}
 function syncPipeAll(){syncGroup("#pipeAll","#showMenu .st");syncGroup("#txAll","#showMenu .tx")}
 $("#pipeAll").addEventListener("change",e=>{document.querySelectorAll("#showMenu .st").forEach(i=>i.checked=e.target.checked)});
@@ -324,12 +328,15 @@ function getState(){const ar=[...document.querySelectorAll("#areaMenu .ar")];ret
   types:[...typesMenu.querySelectorAll("input:checked")].map(i=>i.value),
   statuses:[...document.querySelectorAll("#showMenu .st:checked")].map(i=>i.value),
   tx:[...document.querySelectorAll("#showMenu .tx:checked")].map(i=>i.value),
+  existing:$("#exAll").checked,
   areas:ar.every(i=>i.checked)?null:ar.filter(i=>i.checked).map(i=>i.value),
   shape:SHAPE}}
 function setState(s){
   $("#kw").value=s.kw||"";
   typesMenu.querySelectorAll("input").forEach(i=>i.checked=!s.types||s.types.includes(i.value));
-  document.querySelectorAll("#showMenu .st").forEach(i=>i.checked=!s.statuses||s.statuses.includes(i.value));
+  const sts=s.statuses&&s.statuses.map(x=>x==="Inactive"?"Inactive pipeline":x); /* older links used the old name */
+  document.querySelectorAll("#showMenu .st").forEach(i=>i.checked=!sts||sts.includes(i.value));
+  $("#exAll").checked=s.existing!==false;
   const tx=s.tx||(s.sales===false?[]:["sale","refi"]); /* older links stored a single "sales" flag */
   document.querySelectorAll("#showMenu .tx").forEach(i=>i.checked=tx.includes(i.value));
   syncPipeAll();
@@ -352,7 +359,7 @@ function labelDropdowns(){
   $("#selCoords").textContent=ll?`Center: ${ll}`:"";
   const pipe=np===all?"Pipeline":np?`Pipeline (${np} of ${all})`:"";
   const txl=s.tx.length===2?"Transactions":s.tx[0]==="sale"?"Sales":s.tx[0]==="refi"?"Refinancings":"";
-  $("#viewsBtn").textContent=[pipe,txl].filter(Boolean).join(", ")||"None";
+  $("#viewsBtn").textContent=[pipe,txl,s.existing&&"Existing"].filter(Boolean).join(", ")||"None";
 }
 function miles(a,b){const R=3958.8,t=Math.PI/180,dLat=(b.lat-a.lat)*t,dLng=(b.lng-a.lng)*t;const h=Math.sin(dLat/2)**2+Math.cos(a.lat*t)*Math.cos(b.lat*t)*Math.sin(dLng/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
 function inPoly(lat,lng,pts){let ins=false;for(let i=0,j=pts.length-1;i<pts.length;j=i++){const [yi,xi]=pts[i],[yj,xj]=pts[j];if(((yi>lat)!==(yj>lat))&&(lng<(xj-xi)*(lat-yi)/(yj-yi)+xi))ins=!ins}return ins}
@@ -364,12 +371,12 @@ const txMatch=(r,tx)=>tx.some(k=>r.kinds.includes(k));
 function matches(r,s,skip){const kw=s.kw.toLowerCase();
   return (skip==="type"||s.types.includes(r.summary.product_type))&&(!kw||r.search.includes(kw))&&inShape(r)
     &&(skip==="area"||SHAPE||!s.areas||s.areas.includes(r.summary.area))
-    &&(skip==="status"||(isPipe(r)&&s.statuses.includes(r.summary.status))||txMatch(r,s.tx))}
+    &&(skip==="status"||(isPipe(r)&&s.statuses.includes(r.summary.status))||txMatch(r,s.tx)||(s.existing&&r.kinds.includes("existing")))}
 function filtered(){const s=getState();return RECORDS.filter(r=>matches(r,s))}
 function updateCounts(){
   const s=getState(),b=RECORDS.filter(r=>matches(r,s,"status")),a=RECORDS.filter(r=>matches(r,s,"area")),ty=RECORDS.filter(r=>matches(r,s,"type"));
   document.querySelectorAll("#typesMenu .cnt").forEach(el=>{el.textContent=ty.filter(r=>r.summary.product_type===el.dataset.t).length});
-  document.querySelectorAll("#showMenu .cnt").forEach(el=>{const k=el.dataset.c;el.textContent=k==="__sale"||k==="__refi"?b.filter(r=>r.kinds.includes(k.slice(2))).length:b.filter(r=>isPipe(r)&&r.summary.status===k).length});
+  document.querySelectorAll("#showMenu .cnt").forEach(el=>{const k=el.dataset.c;el.textContent=k.startsWith("__")?b.filter(r=>r.kinds.includes(k.slice(2))).length:b.filter(r=>isPipe(r)&&r.summary.status===k).length});
   document.querySelectorAll("#areaMenu .cnt").forEach(el=>{const k=el.dataset.a;el.textContent=k.startsWith("__c:")?a.filter(r=>r.summary.county===k.slice(4)).length:a.filter(r=>r.summary.area===k).length});
 }
 
@@ -377,8 +384,8 @@ function updateCounts(){
 const map=L.map("map").setView([37.53,-122.36],10);
 L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors"}).addTo(map);
 const layer=L.layerGroup().addTo(map),shapeLayer=L.layerGroup().addTo(map);
-const colorOf=r=>STATUS_COLOR[r.summary.status]||SALES_COLOR;
-const pillStyle=r=>`background:${colorOf(r)};color:${DARK_TEXT.has(colorOf(r))?"#1C2430":"#fff"}`;
+const colorOf=r=>STATUS_COLOR[r.summary.status]||(r.kinds.includes("existing")?EXISTING_COLOR:SALES_COLOR);
+const pillStyle=r=>`background:${colorOf(r)};color:${DARK_TEXT.has(colorOf(r))?"#1C2430":"#fff"}${whiteEdge(colorOf(r))}`;
 function imgBox(r,small){
   const im=r.images[0];
   if(im&&im.kind==="copyright"){const S=SOURCES[im.src];
@@ -391,9 +398,9 @@ function render(){
   labelDropdowns();updateCounts();layer.clearLayers();
   const rs=filtered();
   rs.forEach(r=>{
-    const c=colorOf(r);
-    r.parcels.forEach(p=>{if(p.outline){const poly=L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:c,weight:2,fillOpacity:.25}).addTo(layer);poly.bindTooltip(thumbHTML(r),{direction:"top",opacity:1});poly.on("click",e=>{if(MODE){return}openRecord(r.id)})}});
-    const mk=L.circleMarker([r.lat,r.lng],{radius:9,color:"#fff",weight:2,fillColor:c,fillOpacity:1}).addTo(layer);
+    const c=colorOf(r),white=c==="#FFFFFF";
+    r.parcels.forEach(p=>{if(p.outline){const poly=L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:white?WHITE_EDGE:c,weight:2,fillOpacity:.25}).addTo(layer);poly.bindTooltip(thumbHTML(r),{direction:"top",opacity:1});poly.on("click",e=>{if(MODE){return}openRecord(r.id)})}});
+    const mk=L.circleMarker([r.lat,r.lng],{radius:9,color:white?WHITE_EDGE:"#fff",weight:2,fillColor:c,fillOpacity:1}).addTo(layer);
     mk.bindTooltip(thumbHTML(r),{direction:"top",offset:[0,-8],opacity:1});mk.on("click",e=>{if(MODE){return}openRecord(r.id)});
   });
   drawShape();
@@ -579,7 +586,7 @@ function openRecord(id){
   $("#sheet").innerHTML=`
    <div class="top">
      <div><div class="muted">${r.id} · ${esc(r.summary.product_type)} · ${esc(r.summary.community||r.summary.jurisdiction)}</div><h2>${esc(r.name)}</h2>
-       <span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span></div>
+       <span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span>${r.summary.stale_since?`<span class="muted">No recorded movement since ${esc(r.summary.stale_since)}</span>`:""}</div>
      <div class="noprint" style="display:flex;gap:8px">
        <button class="btn ghost" type="button" onclick="openContrib(CUR)">Add or correct info</button>
        <button class="btn ghost" type="button" onclick="window.print()">Download PDF</button>

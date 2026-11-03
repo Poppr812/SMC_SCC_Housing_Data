@@ -20,7 +20,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 DOCS = ROOT / "docs"
 
-PIPELINE_STATUSES = {"Proposed", "Approved", "Permitted", "Under construction", "Lease-up / selling", "Inactive"}
+PIPELINE_STATUSES = {"Proposed", "Approved", "Permitted", "Under construction", "Lease-up / selling", "Inactive pipeline"}
+STALE_YEARS = 5  # no recorded movement for this long: shown as Inactive pipeline
+STALE_STATUSES = {"Proposed", "Approved", "Permitted"}
 SHORT_TERM = {"Predevelopment loan", "Construction loan", "Bridge loan"}
 EQUITY = {"Tax-credit equity (4%)", "Tax-credit equity (9%)", "State tax-credit equity",
           "Sponsor / GP equity", "Private equity", "Deferred developer fee"}
@@ -130,6 +132,14 @@ def validate(r, sources):
     return c.errors
 
 
+def is_stale(latest, today):
+    """latest is YYYY, YYYY-MM or YYYY-MM-DD; a partial date counts as the end of that period."""
+    if not latest:
+        return False
+    full = latest + {4: "-12-31", 7: "-31"}.get(len(latest), "")
+    return full < f"{today.year - STALE_YEARS}-{today:%m-%d}"
+
+
 def best(f):
     """The value to use in summaries: single claim, flagged best, else None."""
     if f is None:
@@ -221,6 +231,10 @@ def process(r, sources):
         calcs["financing_total"] = {"value": tot, "how": " + ".join(m(x["amount"]) for x in long_term) + excl + basis}
 
     statuses = best(facts["status"])
+    dated = [e["date"] for e in r.get("events", []) if not e.get("estimated")]
+    stale_since = max(dated) if dated and statuses in STALE_STATUSES and is_stale(max(dated), date.today()) else ""
+    if stale_since:
+        statuses = "Inactive pipeline"
     kinds = []
     if statuses in PIPELINE_STATUSES:
         kinds.append("pipeline")
@@ -231,6 +245,8 @@ def process(r, sources):
         kinds.append("refi")
     if "sale" in kinds or "refi" in kinds:
         kinds.append("transaction")
+    elif statuses == "Existing":
+        kinds.append("existing")
 
     debt = [x for x in r.get("financing", []) if x["type"] not in EQUITY and x.get("amount")]
     main_lender = ""
@@ -243,7 +259,6 @@ def process(r, sources):
             main_lender = top["provider"] + (f" ({top['program']})" if top.get("program") else "")
 
     ami = best(facts.get("restricted_by_ami"))
-    dated = [e["date"] for e in r.get("events", []) if not e.get("estimated")]
     use_price = price is not None and ("transaction" in kinds or tdc is None)
     summary = {
         "product_type": best(facts["product_type"]),
@@ -264,6 +279,7 @@ def process(r, sources):
         "per_unit": (calcs.get("price_per_unit") if use_price else calcs.get("cost_per_unit") or {}).get("value") if (price or tdc) and units else None,
         "main_lender": main_lender,
         "latest_event": max(dated) if dated else "",
+        "stale_since": stale_since,
     }
 
     words = [r["name"], summary["community"], summary["jurisdiction"]]
