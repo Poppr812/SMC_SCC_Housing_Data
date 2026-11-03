@@ -70,11 +70,11 @@ drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created after insert on auth.users
   for each row execute function public.handle_new_user();
 
--- users may not promote themselves
+-- users may not promote themselves (the SQL editor has no auth.uid(), so the owner can still set it there)
 create or replace function public.keep_admin_flag() returns trigger
 language plpgsql security definer set search_path = public as $$
 begin
-  if not public.is_admin() then new.is_admin := old.is_admin; end if;
+  if auth.uid() is not null and not public.is_admin() then new.is_admin := old.is_admin; end if;
   return new;
 end $$;
 drop trigger if exists profiles_keep_admin on public.profiles;
