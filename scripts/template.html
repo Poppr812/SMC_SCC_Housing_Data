@@ -185,7 +185,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <h3>Export selection</h3>
   <div class="muted" id="expCount"></div>
   <fieldset><legend>Fields</legend>
-    <label><input type="radio" name="scope" value="standard" checked> Standard: the most common fields</label>
+    <label><input type="radio" name="scope" value="standard" checked> Standard: a clean comp table (name, units, value per unit, status, transaction date, distance) with average, minimum and maximum</label>
     <label><input type="radio" name="scope" value="comprehensive"> Comprehensive: every field, every claim, every source</label>
     <label><input type="radio" name="scope" value="custom"> Custom: pick categories</label>
     <div id="customCats"></div>
@@ -546,7 +546,14 @@ function claimsText(r,key,f){
 function rowsFor(scope,cats){
   return filtered().map(r=>{
     const s=r.summary;
-    if(scope==="standard")return {"Record ID":r.id,"Name":r.name,"Product type":s.product_type,"Record kind":r.kinds.filter(k=>k!=="transaction").map(k=>({pipeline:"Development pipeline",sale:"Sale",refi:"Refinancing"})[k]).join("; "),"Status":s.status,"Jurisdiction":s.jurisdiction,"Address":r.addresses.map(a=>a.text).join("; "),"APN(s)":r.parcels.map(p=>p.apn).join("; "),"Total units":s.total_units??s.units_display??"","Restricted units":s.restricted_units??"","Recorded owner":s.owner||"","Developer":s.developer||"","Cost or price basis":s.cost_basis||"","Total cost / sale price":s.cost??"","Per unit (calculated)":s.per_unit??"","Main lender":s.main_lender||"","Latest event date":s.latest_event||"","Record URL":SITE_URL+"#r="+r.id};
+    if(scope==="standard"){
+      /* comp table: one line per record; distance is from the search-area center when a radius is set */
+      const tx=r.events.filter(e=>e.type==="Sale"||e.type==="Refinance").sort((a,b)=>a.date<b.date?1:-1)[0];
+      const o={"Name":r.name,"Units":s.total_units??s.units_display??"","Value per unit":s.per_unit??"",
+        "Value basis":s.per_unit==null?"":s.cost_basis==="Sale price"?"Sale price":"Dev. cost",
+        "Pipeline status":isPipe(r)?s.status:"","Transaction":tx?(tx.type==="Sale"?"Sale":"Refinance"):"","Transaction date":tx?tx.date:""};
+      if(SHAPE&&SHAPE.t==="c")o["Distance (mi)"]=+miles(SHAPE,r).toFixed(1);
+      o._url=SITE_URL+"#r="+r.id;return o}
     const want=scope==="comprehensive"?CATS:cats;const L=()=>"";
     const o={"Record ID":r.id,"Name":r.name};
     Object.entries(REG.facts).filter(([k,f])=>f.section==="Basics"&&r.facts[k]).forEach(([k,f])=>o[f.label]=claimsText(r,k,r.facts[k]));
@@ -565,10 +572,18 @@ function rowsFor(scope,cats){
     if(want.includes("Timeline"))o["Timeline"]=r.events.map(e=>e.date+": "+e.label+(e.estimated?" (estimated)":"")+L(e.src)).join(" | ");
     if(want.includes("Construction notes"))o["Construction notes"]=r.construction_notes.map(n=>n.text+L(n.src)).join("; ");
     return o;
-  });
+  }).sort((a,b)=>scope==="standard"&&a["Distance (mi)"]!=null?a["Distance (mi)"]-b["Distance (mi)"]:0);
 }
+const COMP_STATS=["Units","Value per unit","Distance (mi)"];
+function compSummary(rows,cols){
+  /* Average / Minimum / Maximum over the numeric comp columns; text values (e.g. a unit range) are skipped */
+  const vals=c=>rows.map(r=>r[c]).filter(v=>typeof v==="number");
+  const f={Average:v=>v.reduce((a,b)=>a+b,0)/v.length,Minimum:v=>Math.min(...v),Maximum:v=>Math.max(...v)};
+  return Object.entries(f).map(([k,fn])=>{const o={Name:k};COMP_STATS.filter(c=>cols.includes(c)).forEach(c=>{const v=vals(c);o[c]=v.length?fn(v):""});return o});
+}
+const centerNote=()=>SHAPE&&SHAPE.t==="c"?`Distance measured from ${SHAPE.addr?SHAPE.addr+" ":""}(${fmtLL(SHAPE.lat,SHAPE.lng)})`:"";
 const CALC_AFTER={total_development_cost:["cost_per_unit","cost_per_sf"],sale_price:["price_per_unit","price_per_sf"]};
-const NUM_COLS={"Total units":"#,##0","Restricted units":"#,##0","Total cost / sale price":"$#,##0","Per unit (calculated)":"$#,##0","Latitude":"0.000000","Longitude":"0.000000"};
+const NUM_COLS={"Units":"#,##0","Value per unit":"$#,##0","Distance (mi)":"0.0","Total units":"#,##0","Restricted units":"#,##0","Total cost / sale price":"$#,##0","Per unit (calculated)":"$#,##0","Latitude":"0.000000","Longitude":"0.000000"};
 Object.entries(REG.facts).forEach(([k,f])=>{if(f.kind==="money")NUM_COLS[f.label]="$#,##0"});
 Object.values(REG.calcs).forEach(c=>NUM_COLS[c.label+" (calculated)"]="$#,##0");
 function styleSheet(ws,cols,rows,urlCols){
@@ -586,9 +601,20 @@ function styleSheet(ws,cols,rows,urlCols){
   ws.views=[{state:"frozen",xSplit:2,ySplit:1}];
   ws.autoFilter={from:{row:1,column:1},to:{row:1,column:cols.length}};
 }
-async function buildXlsx(rows,cols,srcRows,fname){
+async function buildXlsx(rows,cols,srcRows,fname,scope){
   const wb=new ExcelJS.Workbook();wb.creator="SMC Housing Data";
-  styleSheet(wb.addWorksheet("Records"),cols,rows,["Record URL"]);
+  const ws=wb.addWorksheet("Records");styleSheet(ws,cols,rows,["Record URL"]);
+  if(scope==="standard"){
+    const n=rows.length,letter=c=>String.fromCharCode(65+cols.indexOf(c));
+    rows.forEach((r,i)=>{const cell=ws.getRow(i+2).getCell(1);cell.value={text:r.Name,hyperlink:r._url};cell.font={name:"Arial",size:10,color:{argb:"FF1B7F8C"},underline:true}});
+    const sum=compSummary(rows,cols);ws.addRow([]);
+    sum.forEach((s,k)=>{const row=ws.addRow(cols.map(c=>c==="Name"?s.Name:COMP_STATS.includes(c)&&s[c]!==""
+        ?{formula:`${s.Name==="Average"?"AVERAGE":s.Name==="Minimum"?"MIN":"MAX"}(${letter(c)}2:${letter(c)}${n+1})`,result:s[c]}:""));
+      row.eachCell({includeEmpty:true},(cell,ci)=>{const c=cols[ci-1];cell.font={name:"Arial",size:10,bold:true};if(NUM_COLS[c])cell.numFmt=NUM_COLS[c];
+        cell.fill={type:"pattern",pattern:"solid",fgColor:{argb:"FFEEF2F7"}};if(k===0)cell.border={top:{style:"thin",color:{argb:"FF17304F"}}}})});
+    if(centerNote()){ws.addRow([]);ws.addRow([centerNote()]).getCell(1).font={name:"Arial",size:9,italic:true,color:{argb:"FF6B7280"}}}
+    ws.views=[{state:"frozen",xSplit:1,ySplit:1}];
+  }
   const sc=["ID","Title","Publisher","Date","Type","URL","Retrieved","Wayback","Used by"];
   const ss=wb.addWorksheet("Sources");styleSheet(ss,sc,srcRows,["URL"]);ss.views=[{state:"frozen",xSplit:1,ySplit:1}];
   const buf=await wb.xlsx.writeBuffer();
@@ -598,15 +624,16 @@ $("#expGo").onclick=()=>{
   const scope=$('input[name=scope]:checked').value,fmt=$('input[name=fmt]:checked').value;
   const cats=[...document.querySelectorAll("#customCats input:checked")].map(i=>i.value);
   const rows=rowsFor(scope,cats);if(!rows.length){toast("Nothing to export");return}
-  const cols=[...new Set(rows.flatMap(r=>Object.keys(r)))];
+  const cols=[...new Set(rows.flatMap(r=>Object.keys(r)))].filter(c=>!c.startsWith("_"));
   const fname=`smc_housing_${scope}_${new Date().toISOString().slice(0,10)}`;
   if(fmt==="xlsx"){
     if(!window.ExcelJS){toast("Excel library didn't load (needs internet)");return}
     const recs=filtered(),used=[...new Set(recs.flatMap(r=>Object.keys(r.srcLabels)))].sort();
-    buildXlsx(rows,cols,used.map(k=>{const v=SOURCES[k];return {ID:k,Title:v.title,Publisher:v.publisher,Date:v.date||"",Type:v.type,URL:v.url,Retrieved:v.retrieved,Wayback:v.wayback||"not yet archived","Used by":recs.filter(r=>r.srcLabels[k]).map(r=>r.id).join(", ")}}),fname);
+    buildXlsx(rows,cols,used.map(k=>{const v=SOURCES[k];return {ID:k,Title:v.title,Publisher:v.publisher,Date:v.date||"",Type:v.type,URL:v.url,Retrieved:v.retrieved,Wayback:v.wayback||"not yet archived","Used by":recs.filter(r=>r.srcLabels[k]).map(r=>r.id).join(", ")}}),fname,scope);
   }else{
     const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
-    const csv=[cols.map(q).join(","),...rows.map(r=>cols.map(c=>q(r[c])).join(","))].join("\r\n");
+    const extra=scope==="standard"?[{},...compSummary(rows,cols).map(s=>{const o={...s};COMP_STATS.forEach(c=>{if(typeof o[c]==="number")o[c]=+o[c].toFixed(c==="Distance (mi)"?1:0)});return o}),...(centerNote()?[{},{Name:centerNote()}]:[])]:[];
+    const csv=[cols.map(q).join(","),...rows.concat(extra).map(r=>cols.map(c=>q(r[c])).join(","))].join("\r\n");
     const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+csv],{type:"text/csv"}));a.download=fname+".csv";a.click();
   }
   $("#exp").classList.remove("show");toast("Export downloaded");
