@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SMC Housing Data</title>
+<title>Housing Comps</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
@@ -120,7 +120,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 <body>
 
 <header>
-  <h1>SMC Housing Data</h1>
+  <h1>Housing Comps</h1>
   <span class="badge">v1 PREVIEW</span>
   <span class="sub" id="headSub"></span>
 </header>
@@ -602,7 +602,7 @@ function styleSheet(ws,cols,rows,urlCols){
   ws.autoFilter={from:{row:1,column:1},to:{row:1,column:cols.length}};
 }
 async function buildXlsx(rows,cols,srcRows,fname,scope){
-  const wb=new ExcelJS.Workbook();wb.creator="SMC Housing Data";
+  const wb=new ExcelJS.Workbook();wb.creator="Housing Comps";
   const ws=wb.addWorksheet("Records");styleSheet(ws,cols,rows,["Record URL"]);
   if(scope==="standard"){
     const n=rows.length,letter=c=>String.fromCharCode(65+cols.indexOf(c));
@@ -625,7 +625,7 @@ $("#expGo").onclick=()=>{
   const cats=[...document.querySelectorAll("#customCats input:checked")].map(i=>i.value);
   const rows=rowsFor(scope,cats);if(!rows.length){toast("Nothing to export");return}
   const cols=[...new Set(rows.flatMap(r=>Object.keys(r)))].filter(c=>!c.startsWith("_"));
-  const fname=`smc_housing_${scope}_${new Date().toISOString().slice(0,10)}`;
+  const fname=`housing_comps_${scope}_${new Date().toISOString().slice(0,10)}`;
   if(fmt==="xlsx"){
     if(!window.ExcelJS){toast("Excel library didn't load (needs internet)");return}
     const recs=filtered(),used=[...new Set(recs.flatMap(r=>Object.keys(r.srcLabels)))].sort();
