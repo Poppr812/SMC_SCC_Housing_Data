@@ -141,26 +141,24 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div class="dd" id="ddArea"><button type="button" id="areaBtn">All areas</button>
       <div class="menu" id="areaMenu" style="min-width:260px"></div></div>
   </div>
-  <div class="ctl">Select area
+  <div class="ctl">Search area
     <div class="dd" id="ddSel"><button type="button" id="selBtn">Whole map</button>
-      <div class="menu selmenu" id="selMenu" style="min-width:320px">
-        <div class="addr"><b>From an address or coordinates</b>
-          <div style="display:flex;gap:5px;align-items:center;margin:5px 0">
-            <input type="text" id="radAddr" placeholder="1650 S Delaware St, San Mateo  or  37.5630, -122.3255" style="flex:1;min-width:0">
-            <input type="number" id="radMi" value="10" min="0.5" step="0.5" style="width:58px" title="miles"><span class="muted">mi</span>
+      <div class="menu selmenu" id="selMenu" style="min-width:330px">
+        <button type="button" class="opt" id="pickBtn">⌖ Pick a point<small>Click the map to center the radius below</small></button>
+        <div class="addr">
+          <div style="display:flex;gap:5px;align-items:center">
+            <input type="text" id="radAddr" placeholder="or type an address or coordinates" style="flex:1;min-width:0">
+            <input type="number" id="radMi" value="10" min="0.5" step="0.5" style="width:56px" title="radius in miles"><span class="muted">mi</span>
+            <button type="button" class="btn sm" id="goAddr">Go</button>
           </div>
-          <div style="display:flex;gap:6px">
-            <button type="button" class="btn sm" id="goAddr">Use this</button>
-            <button type="button" class="btn ghost sm" id="pickBtn">Pick point on map</button>
-            <button type="button" class="btn ghost sm" id="gpsBtn">Use my location</button>
-          </div>
-          <div class="muted" id="selCoords" style="font-size:11px;margin-top:6px"></div>
+          <div class="muted" id="selCoords" style="font-size:11px;margin-top:5px"></div>
         </div>
+        <button type="button" class="opt" id="gpsBtn">◉ Use my location<small>Center the radius on this device's GPS</small></button>
         <hr>
         <button type="button" class="opt" id="drawRadBtn">◯ Draw a radius<small>Press at the center and drag outward</small></button>
         <button type="button" class="opt" id="drawFenceBtn">⬠ Draw a fence<small>Click points; click the first point or double-click to close</small></button>
         <hr>
-        <button type="button" class="opt" id="clearSel">✕ Clear selected area</button>
+        <button type="button" class="opt" id="clearSel">✕ Clear search area</button>
       </div></div>
   </div>
   <div class="spacer"></div>
@@ -243,7 +241,7 @@ function plainValue(key,v){return fmtValue(key,v).replace(/&amp;/g,"&").replace(
 const SHORT={"Condominiums":"Condos","Mixed product":"Mixed"};const short=t=>SHORT[t]||t;
 const typesMenu=$("#typesMenu");
 typesMenu.innerHTML=Object.keys(REG.product_types).map(t=>`<label title="${esc(REG.product_types[t])}"><input type="checkbox" value="${esc(t)}" checked> ${esc(short(t))}<span class="cnt" data-t="${esc(t)}"></span></label>`).join("");
-$("#areaMenu").innerHTML='<div class="areanote">Selected area is active: only records inside it are shown. City and county picks are paused until you clear it.</div>'+Object.entries(REG.areas).map(([county,areas])=>
+$("#areaMenu").innerHTML='<div class="areanote">A search area is active: only records inside it are shown. City and county picks are paused until you clear it.</div>'+Object.entries(REG.areas).map(([county,areas])=>
   `<div class="arow"><button type="button" class="caret" data-county="${esc(county)}" title="Show cities">▸</button><label class="grp"><input type="checkbox" class="cty" data-county="${esc(county)}" checked> ${esc(county)}<span class="cnt" data-a="__c:${esc(county)}"></span></label></div>
    <div class="kids" data-county="${esc(county)}" hidden>${areas.map(a=>`<label class="sub"><input type="checkbox" class="ar" data-county="${esc(county)}" value="${esc(a)}" checked>${esc(a)}<span class="cnt" data-a="${esc(a)}"></span></label>`).join("")}</div>`).join("");
 document.querySelectorAll("#areaMenu .caret").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=document.querySelector(`#areaMenu .kids[data-county="${b.dataset.county}"]`);k.hidden=!k.hidden;b.textContent=k.hidden?"▸":"▾"});
@@ -289,7 +287,7 @@ function labelDropdowns(){
   $("#typesBtn").textContent=s.types.length===n?"All types":s.types.length?s.types.map(short).join(", "):"None";
   const np=s.statuses.length,all=PIPELINE.length;
   const ar=[...document.querySelectorAll("#areaMenu .ar:checked")].map(i=>i.value);
-  $("#areaBtn").textContent=SHAPE?"Paused (selected area)":!s.areas?"All areas":!ar.length?"None":ar.length<=2?ar.join(", "):`${ar.length} areas`;
+  $("#areaBtn").textContent=SHAPE?"Paused (search area)":!s.areas?"All areas":!ar.length?"None":ar.length<=2?ar.join(", "):`${ar.length} areas`;
   $("#areaMenu").classList.toggle("paused",!!SHAPE);
   const ll=SHAPE&&SHAPE.t==="c"?fmtLL(SHAPE.lat,SHAPE.lng):"";
   $("#selBtn").textContent=!SHAPE?"Whole map":SHAPE.t==="p"?`Fence (${SHAPE.pts.length} points)`:SHAPE.addr?`${SHAPE.mi} mi from ${SHAPE.addr.split(",")[0]} (${ll})`:`${SHAPE.mi} mi from ${ll}`;
@@ -430,7 +428,7 @@ map.on("mousemove",e=>{if(!DRAG)return;const mi=miles({lat:DRAG.c.lat,lng:DRAG.c
 map.on("mouseup",e=>{if(!DRAG)return;const mi=Math.max(0.5,+miles({lat:DRAG.c.lat,lng:DRAG.c.lng},{lat:e.latlng.lat,lng:e.latlng.lng}).toFixed(1));const c=DRAG.c;DRAG=null;$("#radMi").value=mi;setRadius(c.lat,c.lng,"",false)});
 map.on("dblclick",()=>{if(MODE==="draw"){DRAFT.pop();finishDraw()}});
 map.on("contextmenu",e=>{
-  const p=L.popup({closeButton:false,className:"ctxmenu"}).setLatLng(e.latlng).setContent('<a data-a="r">10-mile radius here</a><a data-a="d">Start a fence here</a>'+(SHAPE?'<a data-a="x">Clear selected area</a>':'')).openOn(map);
+  const p=L.popup({closeButton:false,className:"ctxmenu"}).setLatLng(e.latlng).setContent('<a data-a="r">10-mile radius here</a><a data-a="d">Start a fence here</a>'+(SHAPE?'<a data-a="x">Clear search area</a>':'')).openOn(map);
   p.getElement().querySelectorAll("a").forEach(a=>a.onclick=()=>{map.closePopup();const k=a.dataset.a;
     if(k==="r"){$("#radMi").value=10;setRadius(e.latlng.lat,e.latlng.lng);reverseFill(e.latlng.lat,e.latlng.lng)}
     if(k==="d"){setMode("draw");DRAFT=[[e.latlng.lat,e.latlng.lng]];redrawDraft()}
