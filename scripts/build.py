@@ -224,7 +224,12 @@ def process(r, sources):
     kinds = []
     if statuses in PIPELINE_STATUSES:
         kinds.append("pipeline")
-    if statuses == "Existing" or any(e["type"] in ("Sale", "Refinance") for e in r.get("events", [])):
+    ev_types = {e["type"] for e in r.get("events", [])}
+    if "Sale" in ev_types:
+        kinds.append("sale")
+    if "Refinance" in ev_types:
+        kinds.append("refi")
+    if "sale" in kinds or "refi" in kinds:
         kinds.append("transaction")
 
     debt = [x for x in r.get("financing", []) if x["type"] not in EQUITY and x.get("amount")]
