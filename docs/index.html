@@ -144,15 +144,17 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <div class="ctl">Select area
     <div class="dd" id="ddSel"><button type="button" id="selBtn">Whole map</button>
       <div class="menu selmenu" id="selMenu" style="min-width:320px">
-        <div class="addr"><b>From an address</b>
+        <div class="addr"><b>From an address or coordinates</b>
           <div style="display:flex;gap:5px;align-items:center;margin:5px 0">
-            <input type="text" id="radAddr" placeholder="e.g. 1650 S Delaware St, San Mateo" style="flex:1;min-width:0">
+            <input type="text" id="radAddr" placeholder="1650 S Delaware St, San Mateo  or  37.5630, -122.3255" style="flex:1;min-width:0">
             <input type="number" id="radMi" value="10" min="0.5" step="0.5" style="width:58px" title="miles"><span class="muted">mi</span>
           </div>
           <div style="display:flex;gap:6px">
-            <button type="button" class="btn sm" id="goAddr">Use address</button>
+            <button type="button" class="btn sm" id="goAddr">Use this</button>
             <button type="button" class="btn ghost sm" id="pickBtn">Pick point on map</button>
+            <button type="button" class="btn ghost sm" id="gpsBtn">Use my location</button>
           </div>
+          <div class="muted" id="selCoords" style="font-size:11px;margin-top:6px"></div>
         </div>
         <hr>
         <button type="button" class="opt" id="drawRadBtn">◯ Draw a radius<small>Press at the center and drag outward</small></button>
@@ -284,7 +286,9 @@ function labelDropdowns(){
   const ar=[...document.querySelectorAll("#areaMenu .ar:checked")].map(i=>i.value);
   $("#areaBtn").textContent=SHAPE?"Paused (selected area)":!s.areas?"All areas":!ar.length?"None":ar.length<=2?ar.join(", "):`${ar.length} areas`;
   $("#areaMenu").classList.toggle("paused",!!SHAPE);
-  $("#selBtn").textContent=!SHAPE?"Whole map":SHAPE.t==="p"?`Fence (${SHAPE.pts.length} points)`:SHAPE.addr?`${SHAPE.mi} mi from ${SHAPE.addr.split(",")[0]}`:`${SHAPE.mi} mi radius`;
+  const ll=SHAPE&&SHAPE.t==="c"?fmtLL(SHAPE.lat,SHAPE.lng):"";
+  $("#selBtn").textContent=!SHAPE?"Whole map":SHAPE.t==="p"?`Fence (${SHAPE.pts.length} points)`:SHAPE.addr?`${SHAPE.mi} mi from ${SHAPE.addr.split(",")[0]} (${ll})`:`${SHAPE.mi} mi from ${ll}`;
+  $("#selCoords").textContent=ll?`Center: ${ll}`:"";
   const pipe=np===all?"Pipeline":np?`Pipeline (${np} of ${all})`:"";
   $("#viewsBtn").textContent=[pipe,s.sales?"Sales":""].filter(Boolean).join(", ")||"None";
 }
@@ -348,6 +352,18 @@ $("#pickBtn").onclick=()=>{closeMenus();setMode("pick")};
 $("#drawRadBtn").onclick=()=>{closeMenus();setMode("dragradius")};
 $("#drawFenceBtn").onclick=()=>{closeMenus();setMode("draw")};
 $("#clearSel").onclick=()=>{closeMenus();clearShape()};
+$("#gpsBtn").onclick=()=>{
+  if(!navigator.geolocation){toast("Location isn't available in this browser");return}
+  toast("Finding your location…");
+  navigator.geolocation.getCurrentPosition(p=>{closeMenus();const{latitude:la,longitude:lo}=p.coords;setRadius(la,lo);reverseFill(la,lo)},
+    ()=>toast("Location not available (permission denied or no signal)"),{enableHighAccuracy:true,timeout:15000});
+};
+function fmtLL(la,lo){return `${la.toFixed(4)}, ${lo.toFixed(4)}`}
+function parseCoords(q){
+  const m=q.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/)||q.match(/^\s*\(?\s*(-?\d{1,2}(?:\.\d+)?)\s*[,\s]\s*(-?\d{1,3}(?:\.\d+)?)\s*\)?\s*$/);
+  if(!m)return null;const la=+m[1],lo=+m[2];
+  return Math.abs(la)<=90&&Math.abs(lo)<=180?[la,lo]:null;
+}
 async function reverseFill(lat,lng){
   try{const j=await (await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&zoom=18&lat=${lat}&lon=${lng}`)).json();const a=j.address||{};
     const line=[[a.house_number,a.road].filter(Boolean).join(" "),a.city||a.town||a.village||a.hamlet].filter(Boolean).join(", ");
@@ -356,6 +372,8 @@ async function reverseFill(lat,lng){
 }
 async function geocode(){
   const q=$("#radAddr").value.trim();if(!q)return;
+  const c=parseCoords(q);
+  if(c){setRadius(c[0],c[1]);reverseFill(c[0],c[1]);return}
   try{const j=await (await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q+", CA"))).json();
     if(j[0]){setRadius(+j[0].lat,+j[0].lon,q)}else toast("Address not found")}
   catch(e){toast("Address lookup unavailable")}
@@ -383,11 +401,12 @@ function drawShape(){
   const c=L.circle([SHAPE.lat,SHAPE.lng],{...SHAPE_STYLE,radius:SHAPE.mi*1609.34,interactive:false}).addTo(shapeLayer);
   const edge=()=>L.latLng(SHAPE.lat,c.getBounds().getEast());
   const ic=L.divIcon({className:"",html:'<div style="width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid #17304F"></div>',iconSize:[12,12],iconAnchor:[6,6]});
-  const ctr=L.marker([SHAPE.lat,SHAPE.lng],{icon:ic,draggable:true,title:"Drag to move"}).addTo(shapeLayer);
+  const pin=L.divIcon({className:"",html:'<svg width="26" height="36" viewBox="0 0 26 36"><path d="M13 1C6.4 1 1 6.3 1 12.9 1 22 13 35 13 35s12-13 12-22.1C25 6.3 19.6 1 13 1z" fill="#17304F" stroke="#fff" stroke-width="2"/><circle cx="13" cy="13" r="4.5" fill="#fff"/></svg>',iconSize:[26,36],iconAnchor:[13,35]});
+  const ctr=L.marker([SHAPE.lat,SHAPE.lng],{icon:pin,draggable:true,title:"Drag to move the center"}).addTo(shapeLayer);
   const h=L.marker(edge(),{icon:ic,draggable:true,title:"Drag to resize"}).addTo(shapeLayer);
   ctr.on("drag",e=>{SHAPE.lat=e.latlng.lat;SHAPE.lng=e.latlng.lng;c.setLatLng(e.latlng);h.setLatLng(edge())});
   h.on("drag",e=>{SHAPE.mi=Math.max(0.5,+(miles(SHAPE,{lat:e.latlng.lat,lng:e.latlng.lng})).toFixed(1));$("#radMi").value=SHAPE.mi;c.setRadius(SHAPE.mi*1609.34)});
-  ctr.on("dragend",()=>{$("#radAddr").value="";SHAPE.addr="";render()});
+  ctr.on("dragend",()=>{$("#radAddr").value="";SHAPE.addr="";render();reverseFill(SHAPE.lat,SHAPE.lng)});
   h.on("dragend",()=>render());
 }
 function redrawDraft(){draftLayer.clearLayers();if(!DRAFT.length)return;
