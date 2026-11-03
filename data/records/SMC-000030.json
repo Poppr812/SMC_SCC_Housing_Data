@@ -165,9 +165,17 @@
           "src": [
             "SRC-000610"
           ],
-          "note": "Building permit issued 2024-07-03"
+          "note": "Building permit issued 2024-07-03 (status as of the 2024 APR)"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001000"
+          ],
+          "note": "City celebrated completion on 2026-09-16; 125 households to move in"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -185,7 +193,8 @@
         {
           "value": 1.5,
           "src": [
-            "SRC-000611"
+            "SRC-000611",
+            "SRC-001000"
           ]
         }
       ]
@@ -196,7 +205,8 @@
           "value": 125,
           "src": [
             "SRC-000610",
-            "SRC-000611"
+            "SRC-000611",
+            "SRC-001000"
           ]
         }
       ]
@@ -212,7 +222,8 @@
             "4br+": 0
           },
           "src": [
-            "SRC-000611"
+            "SRC-000611",
+            "SRC-001000"
           ]
         }
       ]
@@ -347,6 +358,14 @@
       "src": [
         "SRC-000610"
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "type": "Completion",
+      "label": "City celebrates completion of 125 affordable homes",
+      "src": [
+        "SRC-001000"
+      ]
     }
   ],
   "history": [
@@ -354,6 +373,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from HCD APR Table A2 data and the sources listed"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Status set to Lease-up / selling and completion event added from City of Belmont completion post (SRC-001000); earlier Permitted claim kept"
     }
   ]
 }

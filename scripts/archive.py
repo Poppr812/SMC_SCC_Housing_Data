@@ -63,26 +63,54 @@ def archive(sid):
     folder = os.path.join(ARCHIVE, sid)
     os.makedirs(folder, exist_ok=True)
 
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    raw = urllib.request.urlopen(req, timeout=40).read()
-    open(os.path.join(folder, sid + ".html"), "wb").write(raw)
-    t = Text()
-    t.feed(raw.decode("utf-8", "replace"))
+    t, raw = Text(), b""
+    html_path, pdf = os.path.join(folder, sid + ".html"), os.path.join(folder, sid + ".pdf")
+    if os.path.exists(pdf):
+        os.remove(pdf)  # never fingerprint a leftover from an earlier, interrupted run
+    try:  # some sites refuse scripted downloads; the browser print below may still work
+        raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=40).read()
+    except Exception as e:
+        print(f"  {sid}  page download refused ({e}); trying the browser print only")
+    is_pdf = raw[:4] == b"%PDF"  # the source itself is a PDF document: keep it as is
+    if is_pdf:
+        open(pdf, "wb").write(raw)
+        if os.path.exists(html_path):
+            os.remove(html_path)
+    elif raw:
+        open(html_path, "wb").write(raw)
+        t.feed(raw.decode("utf-8", "replace"))
     open(os.path.join(folder, sid + ".txt"), "w", encoding="utf-8").write(
-        f"{src['title']}\n{src['publisher']} · {src.get('date') or ''}\n{url}\n\n{t.text()}\n")
+        f"{src['title']}\n{src['publisher']} · {src.get('date') or ''}\n{url}\n\n"
+        + ("(The source is a PDF document; see the PDF in this folder.)" if is_pdf else t.text()) + "\n")
 
-    pdf = os.path.join(folder, sid + ".pdf")
-    browser = next(b for b in BROWSERS if os.path.exists(b))
-    with tempfile.TemporaryDirectory() as profile:  # throwaway profile, never the user's own
-        subprocess.run([browser, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
-                        f"--user-data-dir={profile}", "--virtual-time-budget=15000",
-                        f"--print-to-pdf={pdf}", url], check=True, timeout=120,
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    browsers = [] if is_pdf else [b for b in BROWSERS if os.path.exists(b)]
+    # the live page in Edge, then Chrome, then the saved copy (for sites that block automated browsers)
+    targets = [(b, url) for b in browsers] + [(b, "file:///" + html_path.replace("\\", "/")) for b in browsers[:1] if raw]
+    for browser, target in targets:
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as profile:  # throwaway profile, never the user's own
+            try:
+                subprocess.run([browser, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
+                                f"--user-data-dir={profile}", "--virtual-time-budget=20000",
+                                f"--print-to-pdf={pdf}", target], timeout=150,
+                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            except subprocess.TimeoutExpired:
+                pass
+        if os.path.exists(pdf) and os.path.getsize(pdf) > 5000:
+            break
+    if not (os.path.exists(pdf) and os.path.getsize(pdf) > 5000):
+        raise RuntimeError("no browser produced a PDF")
     sha = hashlib.sha256(open(pdf, "rb").read()).hexdigest()
 
+    local_only = os.path.getsize(pdf) > 95 * 1024 * 1024  # GitHub refuses files over 100 MB: keep on this computer only
+    if local_only:
+        ign = os.path.join(ARCHIVE, ".gitignore")
+        rel = f"{sid}/{sid}.pdf"
+        if rel not in (open(ign, encoding="utf-8").read().split() if os.path.exists(ign) else []):
+            open(ign, "a", encoding="utf-8").write(rel + "\n")
     now = datetime.datetime.now().isoformat(timespec="seconds")
     json.dump({"id": sid, "title": src["title"], "publisher": src["publisher"], "date": src.get("date"),
-               "url": url, "captured": now, "pdf_sha256": sha, "pdf_bytes": os.path.getsize(pdf)},
+               "url": url, "captured": now, "pdf_sha256": sha, "pdf_bytes": os.path.getsize(pdf),
+               "local_only": local_only},
               open(os.path.join(folder, "meta.json"), "w", encoding="utf-8"), indent=2)
 
     src["sha256"] = sha
