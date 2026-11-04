@@ -26,8 +26,9 @@ STALE_STATUSES = {"Proposed", "Approved", "Permitted"}
 SHORT_TERM = {"Predevelopment loan", "Construction loan", "Bridge loan"}
 EQUITY = {"Tax-credit equity (4%)", "Tax-credit equity (9%)", "State tax-credit equity",
           "Sponsor / GP equity", "Private equity", "Deferred developer fee"}
-APN_RE = re.compile(r"^\d{3}-\d{3}-\d{3}$")
-ID_RE = re.compile(r"^SMC-\d{6}$")
+APN_RE = {"SMC": re.compile(r"^\d{3}-\d{3}-\d{3}$"), "SCC": re.compile(r"^\d{3}-\d{2}-\d{3}$")}
+ID_RE = re.compile(r"^(SMC|SCC)-\d{6}$")
+COUNTY_BY_PREFIX = {v["prefix"]: k for k, v in schema.COUNTIES.items()}
 SRC_RE = re.compile(r"^SRC-\d{6}$")
 
 
@@ -69,8 +70,8 @@ def validate(r, sources):
     if not r.get("parcels"):
         c.err("needs at least one parcel")
     for p in r.get("parcels", []):
-        if not APN_RE.match(p.get("apn", "")):
-            c.err(f"APN {p.get('apn')!r} not in ###-###-### form")
+        if not APN_RE[r["id"][:3]].match(p.get("apn", "")):
+            c.err(f"APN {p.get('apn')!r} is not in this county's form")
         if not p.get("outline"):
             c.err(f"parcel {p.get('apn')} has no outline; run: python scripts/parcels.py fill {r.get('id')}")
         c.src(p.get("src"), f"parcel {p.get('apn')}")
@@ -106,8 +107,11 @@ def validate(r, sources):
                 c.err(f"{key}: entries need count and ami")
     jur = (r.get("facts", {}).get("jurisdiction") or {}).get("claims", [{}])[0].get("value")
     com = (r.get("facts", {}).get("community") or {}).get("claims", [{}])[0].get("value")
-    if jur == "Unincorporated" and com not in schema.UNINCORPORATED:
-        c.err(f"unincorporated record needs facts.community set to one of schema.UNINCORPORATED (got {com!r})")
+    county = schema.COUNTIES[COUNTY_BY_PREFIX[r["id"][:3]]]
+    if jur == "Unincorporated" and com not in county["unincorporated"]:
+        c.err(f"unincorporated record needs facts.community set to one of this county's communities (got {com!r})")
+    if jur and jur != "Unincorporated" and jur not in county["cities"]:
+        c.err(f"jurisdiction {jur!r} is not in {COUNTY_BY_PREFIX[r['id'][:3]]}")
     for n in r.get("construction_notes", []):
         c.src(n.get("src"), "construction note")
     for p in r.get("parties", []):
@@ -286,7 +290,7 @@ def process(r, sources):
         "status": statuses,
         "jurisdiction": best(facts.get("jurisdiction")) or "",
         "community": best(facts.get("community")) or "",
-        "county": "San Mateo County",
+        "county": COUNTY_BY_PREFIX[r["id"][:3]],
         "area": (f"Unincorporated ({best(facts.get('community'))})" if best(facts.get("jurisdiction")) == "Unincorporated"
                  else best(facts.get("jurisdiction")) or ""),
         "total_units": units,

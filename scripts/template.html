@@ -313,7 +313,7 @@ $("#areaMenu").innerHTML='<div class="areanote">A boundary is active: only recor
 document.querySelectorAll("#areaMenu .caret").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=document.querySelector(`#areaMenu .kids[data-county="${b.dataset.county}"]`);k.hidden=!k.hidden;b.textContent=k.hidden?"▸":"▾"});
 function syncCounty(){document.querySelectorAll("#areaMenu .cty").forEach(c=>{const ks=[...document.querySelectorAll(`#areaMenu .ar[data-county="${c.dataset.county}"]`)],n=ks.filter(i=>i.checked).length;c.checked=n===ks.length;c.indeterminate=n>0&&n<ks.length})}
 document.querySelectorAll("#areaMenu .cty").forEach(c=>c.addEventListener("change",()=>{document.querySelectorAll(`#areaMenu .ar[data-county="${c.dataset.county}"]`).forEach(i=>i.checked=c.checked)}));
-$("#headSub").textContent=`${RECORDS.length} records from public sources · San Mateo County · built ${DATA.built}`;
+$("#headSub").textContent=`${RECORDS.length} records from public sources · San Mateo and Santa Clara Counties · built ${DATA.built}`;
 $("#showMenu").innerHTML=`<label class="grp"><input type="checkbox" id="pipeAll" checked> Development pipeline</label>`
   +PIPELINE.map(s=>`<label class="sub"><input type="checkbox" class="st" value="${esc(s)}" checked><span class="dot" style="background:${STATUS_COLOR[s]}${whiteEdge(STATUS_COLOR[s])}"></span>${esc(s)}<span class="cnt" data-c="${esc(s)}"></span></label>`).join("")
   +`<hr><label class="grp"><input type="checkbox" id="txAll" checked><span class="dot" style="background:${SALES_COLOR}"></span>Transactions</label>`
@@ -386,7 +386,7 @@ function updateCounts(){
 }
 
 /* ---------- map ---------- */
-const map=L.map("map").setView([37.53,-122.36],10);
+const map=L.map("map").setView([37.4,-122.05],9);
 L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors"}).addTo(map);
 const layer=L.layerGroup().addTo(map),shapeLayer=L.layerGroup().addTo(map);
 const colorOf=r=>STATUS_COLOR[r.summary.status]||(r.kinds.includes("existing")?EXISTING_COLOR:SALES_COLOR);
@@ -908,7 +908,8 @@ function unitsOf(rs){const u=rs.map(r=>r.summary.units_range).filter(Boolean),lo
 function reportArea(s){
   if(SHAPE&&SHAPE.t==="c")return `${SHAPE.mi}-mile radius around ${SHAPE.addr||fmtLL(SHAPE.lat,SHAPE.lng)}`;
   if(SHAPE)return "Drawn boundary";
-  if(!s.areas)return "San Mateo County";
+  if(!s.areas)return "San Mateo and Santa Clara Counties";
+  const whole=Object.entries(REG.areas).find(([,a])=>a.length===s.areas.length&&a.every(x=>s.areas.includes(x)));if(whole)return whole[0];
   return s.areas.length<=3?s.areas.join(", "):`${s.areas.length} jurisdictions`;
 }
 function openPipeline(silent){
@@ -1028,7 +1029,7 @@ const hash0=location.hash; /* render rewrites the URL, so read record and report
 const s0=hashToState();if(s0)setState(s0);
 render();
 if(AUTH_ERR)acctView("signin",BAD_LINK);
-const rm=hash0.match(/r=(SMC-\d{6})/);if(rm)openRecord(rm[1]);
+const rm=hash0.match(/r=((?:SMC|SCC)-\d{6})/);if(rm)openRecord(rm[1]);
 if(/[#&]rep=1/.test(hash0))openPipeline(true);
 track("visit",{referrer:document.referrer||undefined});
 </script>

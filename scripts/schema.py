@@ -46,29 +46,43 @@ APPROVAL_TYPES = {
     "Specific / master plan": "Approved under an area plan or development agreement",
 }
 
-JURISDICTIONS = [
+SMC_CITIES = [
     "Atherton", "Belmont", "Brisbane", "Burlingame", "Colma", "Daly City",
     "East Palo Alto", "Foster City", "Half Moon Bay", "Hillsborough", "Menlo Park",
     "Millbrae", "Pacifica", "Portola Valley", "Redwood City", "San Bruno",
-    "San Carlos", "San Mateo", "South San Francisco", "Woodside", "Unincorporated",
+    "San Carlos", "San Mateo", "South San Francisco", "Woodside",
 ]
+SCC_CITIES = [
+    "Campbell", "Cupertino", "Gilroy", "Los Altos", "Los Altos Hills", "Los Gatos",
+    "Milpitas", "Monte Sereno", "Morgan Hill", "Mountain View", "Palo Alto",
+    "San Jose", "Santa Clara", "Saratoga", "Sunnyvale",
+]
+JURISDICTIONS = SMC_CITIES + SCC_CITIES + ["Unincorporated"]
 
 # Unincorporated communities (census-designated places and named areas). A record whose
 # jurisdiction is "Unincorporated" must name one of these in facts.community.
-UNINCORPORATED = [
+SMC_UNINCORPORATED = [
     "Broadmoor", "Burlingame Hills", "Devonshire", "El Granada", "Emerald Lake Hills",
     "Highlands-Baywood Park", "Kensington Square", "La Honda", "Ladera", "Loma Mar",
     "Montara", "Moss Beach", "North Fair Oaks", "Pescadero", "Princeton", "San Gregorio",
-    "Sequoia Tract", "West Menlo Park",
+    "Sequoia Tract", "West Menlo Park", "Other San Mateo County",
 ]
+SCC_UNINCORPORATED = [
+    "Alum Rock", "Burbank", "Cambrian Park", "East Foothills", "Fruitdale", "Lexington Hills",
+    "Loyola", "San Martin", "Stanford", "Other Santa Clara County",
+]
+UNINCORPORATED = SMC_UNINCORPORATED + SCC_UNINCORPORATED
 
 # Counties with data, in display order. Area menu: county > cities + "Unincorporated (community)".
-COUNTIES = {"San Mateo County": {"prefix": "SMC"}}
+COUNTIES = {
+    "San Mateo County": {"prefix": "SMC", "cities": SMC_CITIES, "unincorporated": SMC_UNINCORPORATED},
+    "Santa Clara County": {"prefix": "SCC", "cities": SCC_CITIES, "unincorporated": SCC_UNINCORPORATED},
+}
 
 
 def area_options(county):
-    cities = [j for j in JURISDICTIONS if j != "Unincorporated"]
-    return cities + [f"Unincorporated ({c})" for c in UNINCORPORATED]
+    c = COUNTIES[county]
+    return c["cities"] + [f"Unincorporated ({u})" for u in c["unincorporated"]]
 
 
 EVENT_TYPES = [
