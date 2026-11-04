@@ -1,6 +1,6 @@
 {
   "id": "SCC-000095",
-  "name": "Monterey and Madrone Apartments",
+  "name": "Village at Madrone (Monterey and Madrone Apartments)",
   "parcels": [
     {
       "apn": "726-36-059",
@@ -221,6 +221,13 @@
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "18730 Miner Ln, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-001924"
+      ]
     }
   ],
   "images": [],
@@ -246,8 +253,18 @@
             "SRC-001135"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001924",
+            "SRC-001893",
+            "SRC-001925"
+          ],
+          "note": "Built and open as Village at Madrone: listing says built 2024; property site takes applications; city guide lists 249 units."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -379,6 +396,15 @@
       "src": [
         "SRC-001615"
       ]
+    },
+    {
+      "text": "This project now operates as Village at Madrone, 18730 Miner Ln (the city guide uses 1110 Monterey Rd). No page names it as Monterey and Madrone; the match is by place and count: 249 units on Miner Ln, the same as the JEMCOR project at Monterey Road and Madrone Parkway on APN 726-36-059. The September 2025 city guide says all occupancies except two units are filled by county referrals, so Existing may fit better than Lease-up.",
+      "src": [
+        "SRC-001893",
+        "SRC-001924",
+        "SRC-001925",
+        "SRC-001926"
+      ]
     }
   ],
   "parties": [
@@ -498,6 +524,15 @@
       "src": [
         "SRC-001135"
       ]
+    },
+    {
+      "date": "2024",
+      "type": "Completion",
+      "label": "Year built per rental listing (Village at Madrone)",
+      "src": [
+        "SRC-001925"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -508,6 +543,11 @@
     },
     {
       "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-04",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
     }

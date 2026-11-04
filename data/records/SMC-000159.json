@@ -1,6 +1,6 @@
 {
   "id": "SMC-000159",
-  "name": "Hill Street/El Camino Real Affordable Housing\nLINC Housing",
+  "name": "The Corners at Belmont (Hill Street / El Camino Real)",
   "parcels": [
     {
       "apn": "045-163-070",
@@ -66,8 +66,17 @@
             "SRC-001142"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001939",
+            "SRC-001940"
+          ],
+          "note": "Linc Housing \"announced the start of construction of The Corners at Belmont\" (June 2025). A January 2026 site visit at 900 El Camino Real found the lower floors built."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -205,6 +214,19 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "text": "The project is now called The Corners at Belmont. No source read reports completion or leasing as of this check.",
+      "src": [
+        "SRC-001939",
+        "SRC-001940"
+      ]
+    },
+    {
+      "text": "The June 2025 announcement names a Bank of America construction loan, with no amount given. The CTCAC plan on this record shows Wells Fargo as construction lender ($22,047,526).",
+      "src": [
+        "SRC-001939"
+      ]
     }
   ],
   "parties": [
@@ -215,6 +237,24 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Precision General Commercial Contractors",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001939"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Linc Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001939"
       ]
     }
   ],
@@ -384,6 +424,24 @@
       "src": [
         "SRC-001142"
       ]
+    },
+    {
+      "date": "2025-06",
+      "type": "Construction start",
+      "label": "Linc Housing announced start of construction",
+      "src": [
+        "SRC-001939"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026",
+      "type": "Completion",
+      "label": "Due late summer or early fall 2026",
+      "src": [
+        "SRC-001939"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -394,6 +452,11 @@
     },
     {
       "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-04",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
     }

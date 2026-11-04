@@ -1,6 +1,6 @@
 {
   "id": "SCC-000206",
-  "name": "797 South Almaden Avenue",
+  "name": "Lupina (797 South Almaden Avenue)",
   "parcels": [
     {
       "apn": "264-34-077",
@@ -122,8 +122,18 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001934",
+            "SRC-001935",
+            "SRC-001936"
+          ],
+          "note": "Construction Review, 2026-02-03: \"Construction has officially begun on Lupina\" at 797 Almaden Avenue."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -274,6 +284,20 @@
       "src": [
         "SRC-001662"
       ]
+    },
+    {
+      "text": "The project is now called Lupina.",
+      "src": [
+        "SRC-001934",
+        "SRC-001935",
+        "SRC-001936"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports $53.3 million from JPMorgan Chase and a $28.9 million loan from Santa Clara County, with full construction nearly $100 million. The JPMorgan figure matches the Chase tax-exempt construction loan in the CTCAC plan on this record ($53,314,000). The county figure is higher than the Measure A and NPLH rows together ($25,350,000).",
+      "src": [
+        "SRC-001937"
+      ]
     }
   ],
   "parties": [
@@ -311,6 +335,17 @@
       "linkedin": null,
       "src": [
         "SRC-001662"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Helix Electric",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Electrical contractor",
+      "src": [
+        "SRC-001934",
+        "SRC-001935"
       ]
     }
   ],
@@ -483,6 +518,15 @@
       "estimated": true
     },
     {
+      "date": "2025-11",
+      "type": "Other",
+      "label": "Construction financing reported secured",
+      "src": [
+        "SRC-001937"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-11-13",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -491,11 +535,40 @@
       ]
     },
     {
+      "date": "2026-02",
+      "type": "Construction start",
+      "label": "Construction begun; electrical contractor reports breaking ground February 2",
+      "src": [
+        "SRC-001934",
+        "SRC-001935"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04",
+      "type": "Other",
+      "label": "Public groundbreaking celebration",
+      "src": [
+        "SRC-001936"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2027-07",
       "type": "Completion",
       "label": "Expected completion per CTCAC staff report",
       "src": [
         "SRC-001662"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028",
+      "type": "Completion",
+      "label": "Projected completion in 2028",
+      "src": [
+        "SRC-001934",
+        "SRC-001935"
       ],
       "estimated": true
     },
@@ -522,6 +595,11 @@
     },
     {
       "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-04",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
     }
