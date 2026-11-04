@@ -891,10 +891,19 @@ async function adminXlsx(){
 /* ---------- pipeline report ---------- */
 function deliveryOf(r){
   const ev=r.events.filter(e=>e.type==="Completion"||e.type==="Lease-up start");
-  if(r.summary.status==="Lease-up / selling"||ev.some(e=>!e.estimated))return {label:"Delivered",bucket:"Already delivered"};
-  if(!ev.length)return {label:"Not stated",bucket:"Not stated"};
-  const y=ev.map(e=>e.date.slice(0,4)).sort().pop();return {label:y+" (est.)",bucket:y};
+  if(r.summary.status==="Lease-up / selling"||ev.some(e=>!e.estimated))return "Delivered";
+  return ev.length?ev.map(e=>e.date.slice(0,4)).sort().pop()+" (est.)":""; /* only what a source states; blank otherwise */
 }
+function pipelineXlsx(rs,radius,area){
+  if(!window.ExcelJS){toast("Excel library didn't load (needs internet)");return}
+  if(!USER&&rs.length>LIMIT.standard){requireLogin(`Exports of more than ${LIMIT.standard} records need a free account. This report has ${rs.length}.`,()=>openPipeline(true));return}
+  const rows=rs.map(r=>{const m=r.summary,u=m.units_range;return {"Project":r.name,"Stage":m.status,"Units":u&&u[0]===u[1]?u[0]:m.units_display||"","Type":short(m.product_type),"Developer / applicant":developerOf(r),"Delivery (source-stated)":deliveryOf(r),"Your delivery date":"","Last movement":m.latest_event||"",...(radius?{"Distance (mi)":+miles(SHAPE,r).toFixed(1)}:{}),"Record URL":SITE_URL+"#r="+r.id}});
+  const wb=new ExcelJS.Workbook();wb.creator="Housing Comps";
+  const ws=wb.addWorksheet("Pipeline");styleSheet(ws,Object.keys(rows[0]),rows,["Record URL"]);ws.views=[{state:"frozen",xSplit:1,ySplit:1}];
+  track("export",{scope:"pipeline",fmt:"xlsx",count:rows.length,area});
+  wb.xlsx.writeBuffer().then(buf=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=`housing_comps_pipeline_${new Date().toISOString().slice(0,10)}.xlsx`;a.click()});
+}
+const developerOf=r=>r.summary.developer||(r.parties.find(x=>x.other_role==="Applicant")||{}).company||"";
 function unitsOf(rs){const u=rs.map(r=>r.summary.units_range).filter(Boolean),lo=u.reduce((a,x)=>a+x[0],0),hi=u.reduce((a,x)=>a+x[1],0);return {lo,hi,text:lo===hi?num(lo):`${num(lo)}–${num(hi)}`}}
 function reportArea(s){
   if(SHAPE&&SHAPE.t==="c")return `${SHAPE.mi}-mile radius around ${SHAPE.addr||fmtLL(SHAPE.lat,SHAPE.lng)}`;
@@ -913,29 +922,25 @@ function openPipeline(silent){
   const share=rs=>total.hi?unitsOf(rs).hi/total.hi:0;
   const stageRows=PIPELINE.filter(x=>x!=="Inactive pipeline").map(x=>[x,stage([x])]).filter(x=>x[1].length);
   const types=Object.keys(REG.product_types).map(x=>[x,active.filter(r=>r.summary.product_type===x)]).filter(x=>x[1].length).sort((a,b)=>unitsOf(b[1]).hi-unitsOf(a[1]).hi);
-  const buckets={};active.forEach(r=>{(buckets[deliveryOf(r).bucket]=buckets[deliveryOf(r).bucket]||[]).push(r)});
-  const delivery=Object.entries(buckets).sort(([a],[b])=>{const o=k=>k==="Already delivered"?"0":k==="Not stated"?"9":k;return o(a)<o(b)?-1:1});
-  const stated=active.filter(r=>deliveryOf(r).bucket!=="Not stated").length;
   const rowsTable=(head,rows)=>`<div class="wrap"><table><tr><th>${head}</th><th>Projects</th><th>Units</th><th style="width:38%">Share of units</th></tr>${rows.map(([k,rs])=>`<tr><td>${esc(k)}</td><td>${rs.length}</td><td>${unitsOf(rs).text}</td><td><span class="bar" style="width:${share(rs)*70}%"></span>${Math.round(share(rs)*100)}%</td></tr>`).join("")}</table></div>`;
-  const listTable=rs=>`<div class="wrap"><table><tr><th>Project</th><th>Stage</th><th>Units</th><th>Type</th><th>Developer / applicant</th><th>Delivery</th><th>Last movement</th>${radius?"<th>Miles</th>":""}</tr>${rs.map(r=>{const m=r.summary;return `<tr><td><a href="${SITE_URL}#r=${r.id}" target="_blank" rel="noopener">${esc(r.name)}</a></td><td>${esc(m.status)}</td><td>${esc(m.units_display||"Not stated")}</td><td>${esc(short(m.product_type))}</td><td>${esc(m.developer||(r.parties.find(x=>x.other_role==="Applicant")||{}).company||"")}</td><td>${esc(deliveryOf(r).label)}</td><td>${esc(m.latest_event||"")}</td>${radius?`<td>${dist(r).toFixed(1)}</td>`:""}</tr>`}).join("")}</table></div>`;
+  const listTable=rs=>`<div class="wrap"><table><tr><th>Project</th><th>Stage</th><th>Units</th><th>Type</th><th>Developer / applicant</th><th>Delivery</th><th>Last movement</th>${radius?"<th>Miles</th>":""}</tr>${rs.map(r=>{const m=r.summary;return `<tr><td><a href="${SITE_URL}#r=${r.id}" target="_blank" rel="noopener">${esc(r.name)}</a></td><td>${esc(m.status)}</td><td>${esc(m.units_display||"Not stated")}</td><td>${esc(short(m.product_type))}</td><td>${esc(developerOf(r))}</td><td>${esc(deliveryOf(r))}</td><td>${esc(m.latest_event||"")}</td>${radius?`<td>${dist(r).toFixed(1)}</td>`:""}</tr>`}).join("")}</table></div>`;
   const places=[...new Set(all.map(r=>r.summary.jurisdiction))].sort(),cov=REG.coverage||{};
   const covered=places.filter(j=>cov[j]),partial=places.filter(j=>!cov[j]);
   const filt=[s.kw&&`keyword "${s.kw}"`,s.types.length<Object.keys(REG.product_types).length&&("types: "+s.types.map(short).join(", ")),s.statuses.length<PIPELINE.length&&("stages: "+s.statuses.join(", "))].filter(Boolean);
   $("#sheet").innerHTML=`<div class="adm">
    <div class="top"><div><div class="muted">Pipeline report · data as of ${esc(DATA.built)}</div><h2>${esc(area)}</h2>${filt.length?`<div class="muted">Filtered to ${esc(filt.join("; "))}</div>`:""}</div>
-     <div class="noprint" style="display:flex;gap:8px"><button class="btn ghost" type="button" onclick="window.print()">Download PDF</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
+     <div class="noprint" style="display:flex;gap:8px"><button class="btn ghost" id="repXlsx" type="button">Download Excel</button><button class="btn ghost" type="button" onclick="window.print()">Download PDF</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
    <div class="kpis">${kpi("units in pipeline",active)}${kpi("units under construction",stage(["Under construction"]))}${kpi("units approved or permitted",stage(["Approved","Permitted"]))}${kpi("units proposed",stage(["Proposed"]))}</div>
    <h3>By stage</h3>${rowsTable("Stage",stageRows)}
-   <h3>Expected delivery</h3>${rowsTable("Year",delivery)}
-   <div class="muted" style="font-size:12px;margin-top:4px">Only dates a source states. ${stated} of ${active.length} projects have one; "est." is the source's estimate, not ours.</div>
    <h3>By product type</h3>${rowsTable("Type",types)}
    <h3>Projects (${active.length})</h3>${listTable(active)}
    ${inactive.length?`<h3>Inactive pipeline (${inactive.length}, not in totals)</h3>${listTable(inactive)}`:""}
    <h3>Coverage</h3><div style="font-size:13px">
      ${covered.map(j=>`<p style="margin:0 0 6px"><b>${esc(j)}:</b> ${esc(cov[j])}</p>`).join("")}
      ${partial.length?`<p style="margin:0 0 6px"><b>${esc(partial.join(", "))}:</b> partial. Projects found through leads and public sources; this is not a complete list.</p>`:""}
-     <p class="muted" style="margin:0">Stages are working labels for comps research, not legal status. Unit counts are as stated by sources and may be maximums for phased or master-planned projects. A boundary may also touch places with no records here yet. Every figure links back to its sources on the project's record.</p></div>
+     <p class="muted" style="margin:0">Stages are working labels for comps research, not legal status. Unit counts are as stated by sources and may be maximums for phased or master-planned projects. A boundary may also touch places with no records here yet. Delivery shows only what a source states, and "est." is the source's estimate, not ours. Blank means no source states a date. Every figure links back to its sources on the project's record.</p></div>
   </div>`;
+  $("#repXlsx").onclick=()=>pipelineXlsx([...active,...inactive],radius,area);
   $("#rec").classList.add("show");$("#rec").scrollTop=0;
   safeReplace(location.pathname+location.search+stateToHash()+"&rep=1");
   if(!silent)track("pipeline_report",{area,count:active.length,units:total.hi});
