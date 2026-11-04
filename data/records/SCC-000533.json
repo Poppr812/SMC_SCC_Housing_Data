@@ -180,8 +180,16 @@
           "src": [
             "SRC-001487"
           ]
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001749"
+          ],
+          "note": "Planning Commission approved October 27, 2025"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -232,6 +240,17 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PLNG-2023-0302",
+          "src": [
+            "SRC-001750"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -242,15 +261,50 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "The True Life Companies",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001750"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Dick's Lakewood Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001750"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2025-10-27",
+      "type": "Approved",
+      "label": "Planning Commission approval",
+      "src": [
+        "SRC-001749"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000040",
-  "name": "Town Center",
+  "name": "Sunnyvale Town Center Block 18 Subblock 3 South (200 S Taaffe St)",
   "parcels": [
     {
       "apn": "209-35-032",
@@ -379,7 +379,8 @@
         {
           "value": 479,
           "src": [
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001739"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -390,7 +391,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -423,6 +425,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 12,
+          "src": [
+            "SRC-001739"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -434,7 +447,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "STC Ventures LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001739"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -460,6 +484,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

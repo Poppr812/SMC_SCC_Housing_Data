@@ -1,6 +1,6 @@
 {
   "id": "SCC-000263",
-  "name": "2079 S White Rd",
+  "name": "Pleasant Hills (2079 South White Road)",
   "parcels": [
     {
       "apn": "649-23-001",
@@ -87,8 +87,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 1716,
+          "src": [
+            "SRC-001859"
+          ],
+          "note": "1,374 market-rate and 342 affordable. The imported 64 looks like a report error."
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -110,7 +118,37 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Terrascape Ventures LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001859"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Duino Family Parts LP",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001859"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lakeside Community LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named project party (SJ Build tracker)",
+      "src": [
+        "SRC-001860"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -128,6 +166,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

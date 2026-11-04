@@ -1,6 +1,6 @@
 {
   "id": "SCC-000060",
-  "name": "14200 Union Av",
+  "name": "Cambrian Park Village (Cambrian Park Plaza)",
   "parcels": [
     {
       "apn": "419-08-012",
@@ -87,6 +87,12 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "14420 Union Ave, San Jose, CA",
+      "src": [
+        "SRC-001806"
+      ]
     }
   ],
   "images": [],
@@ -141,9 +147,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 428,
+          "src": [
+            "SRC-001805"
+          ],
+          "note": "Article: 428 residential units plus 27 ADUs, a 229-key hotel and a 110-bed assisted living facility."
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -167,7 +180,28 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Kimco Realty Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001805"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Weingarten Investors",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named project party (SJ Build tracker)",
+      "src": [
+        "SRC-001806"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -198,6 +232,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

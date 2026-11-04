@@ -90,8 +90,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001827"
+          ],
+          "note": "Planning Director approved, April 2023 article."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -111,8 +119,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 206,
+          "src": [
+            "SRC-001828"
+          ],
+          "note": "H20-049: 7 stories, 206 units."
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -134,7 +150,28 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "KCR Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project sponsor",
+      "src": [
+        "SRC-001827"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Evershine XVII LP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named project party (SJ Build tracker)",
+      "src": [
+        "SRC-001828"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -145,6 +182,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2023-04",
+      "type": "Approved",
+      "label": "Planning Director approval",
+      "src": [
+        "SRC-001827"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -152,6 +198,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

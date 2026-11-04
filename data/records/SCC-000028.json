@@ -1,6 +1,6 @@
 {
   "id": "SCC-000028",
-  "name": "2610 El Camino Real",
+  "name": "Moonlite Center (2610 El Camino Real)",
   "parcels": [
     {
       "apn": "290-06-020",
@@ -199,8 +199,16 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-001719"
+          ],
+          "note": "Two condominium buildings, one rental building, 159 townhomes, per 2025 article"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -237,7 +245,8 @@
         {
           "value": 590,
           "src": [
-            "SRC-001530"
+            "SRC-001530",
+            "SRC-001718"
           ],
           "note": "City item, Sept. 2026: 590 units and 15,000 sq ft commercial"
         }
@@ -264,7 +273,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Toll Brothers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001719"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Sherman Clay Group (Moonlite Associates LLC)",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner per news",
+      "src": [
+        "SRC-001720"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -275,6 +304,24 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "type": "Other",
+      "label": "Planning Commission item continued to November 18, 2026",
+      "src": [
+        "SRC-001721"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Other",
+      "label": "Applicant asked to remove item from November 17, 2026 council meeting and renotice for a future meeting",
+      "src": [
+        "SRC-001718"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -282,6 +329,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     },
     {
       "date": "2026-11-03",

@@ -103,7 +103,8 @@
         {
           "value": 256,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001812"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -114,7 +115,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -158,7 +160,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Vivji Mani / Urban Villas LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named project party (SJ Build tracker)",
+      "src": [
+        "SRC-001812"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -189,6 +202,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

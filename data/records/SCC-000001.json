@@ -1,6 +1,6 @@
 {
   "id": "SCC-000001",
-  "name": "450 W Santa Clara St",
+  "name": "Downtown West Mixed-Use Plan (Google)",
   "parcels": [
     {
       "apn": "259-38-132",
@@ -114,8 +114,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001766"
+          ],
+          "note": "Article: City Council approved the plan in late May 2021. CEQAnet lists notices of determination received 5/28/2021 and 6/14/2021."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -156,9 +164,31 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "CEQAnet: up to 5,900 residential units, up to 7.3 million sq ft of office, file nos. GP19-009, PDC19-039, PD19-029. Matched to this record by file number PD19-029.",
+      "src": [
+        "SRC-001767"
+      ]
+    },
+    {
+      "text": "October 2023 article describes the masterplan as paused while the downtown office economy recovers.",
+      "src": [
+        "SRC-001768"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Google",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001766"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -169,6 +199,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2021-05",
+      "type": "Approved",
+      "label": "City Council approved the plan",
+      "src": [
+        "SRC-001766"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -176,6 +215,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

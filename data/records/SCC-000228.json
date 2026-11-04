@@ -1,6 +1,6 @@
 {
   "id": "SCC-000228",
-  "name": "7245 Bark Ln",
+  "name": "Bark Lane Residential Project",
   "parcels": [
     {
       "apn": "372-24-011",
@@ -42,6 +42,12 @@
       "text": "7245 Bark Ln, San Jose, CA",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "7201 Bark Lane, San Jose, CA",
+      "src": [
+        "SRC-001846"
       ]
     }
   ],
@@ -108,9 +114,25 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "Matched on street and unit count (85); source address 7201 vs imported 7245.",
+      "src": [
+        "SRC-001846"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Swenson Builders",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001846"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -128,6 +150,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

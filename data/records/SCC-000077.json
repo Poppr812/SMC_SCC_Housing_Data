@@ -101,6 +101,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001731"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -112,7 +123,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Summerhill Apartment Communities",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001731"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Pactron Ventures",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001731"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -123,6 +154,15 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2023-03-15",
+      "type": "Approved",
+      "label": "Architectural Review approved at Development Review Hearing",
+      "src": [
+        "SRC-001732"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-05-30",
@@ -138,6 +178,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -167,11 +167,13 @@
         {
           "value": 106,
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-001735"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -182,6 +184,17 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001736"
+          ],
+          "note": ""
         }
       ]
     }
@@ -195,7 +208,17 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Charities Housing Development Corporation of Santa Clara County",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001735"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -221,6 +244,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

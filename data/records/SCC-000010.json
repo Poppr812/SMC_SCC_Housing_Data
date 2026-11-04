@@ -1,6 +1,6 @@
 {
   "id": "SCC-000010",
-  "name": "605 E Evelyn Ave",
+  "name": "The Hadley (555 E Evelyn Ave)",
   "parcels": [
     {
       "apn": "161-15-018",
@@ -112,11 +112,13 @@
         {
           "value": 471,
           "src": [
-            "SRC-001101"
+            "SRC-001101",
+            "SRC-001688"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -138,9 +140,26 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "Architect page lists 525 & 769 E Evelyn Ave, 471 units, client Prometheus, completed 2023. City report lists 525, 531, 555, 565, 569 and 769 E Evelyn. Status left unchanged; if completion in 2023 holds, this record may be out of scope.",
+      "src": [
+        "SRC-001689"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Prometheus",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Client of architect",
+      "src": [
+        "SRC-001689"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -169,6 +188,15 @@
       ]
     },
     {
+      "date": "2023",
+      "type": "Completion",
+      "label": "Completed 2023, per architect project page",
+      "src": [
+        "SRC-001689"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-05-31",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
@@ -182,6 +210,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

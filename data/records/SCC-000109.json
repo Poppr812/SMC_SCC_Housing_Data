@@ -141,6 +141,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001742"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -152,7 +163,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Prometheus Real Estate Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001742"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "1150 Kifer LP",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001742"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -171,6 +202,15 @@
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "date": "2023-12-05",
+      "type": "Other",
+      "label": "City Council acted on LIUNA appeal; item recorded as approved",
+      "src": [
+        "SRC-001742"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -178,6 +218,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

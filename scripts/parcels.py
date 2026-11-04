@@ -6,6 +6,7 @@
     python scripts/parcels.py apn 037-022-070             show one parcel
     python scripts/parcels.py apn 254-29-028 --scc
     python scripts/parcels.py at 37.56 -122.32            parcel at a point (add --scc for Santa Clara)
+    python scripts/parcels.py near 37.56 -122.32          parcels within 120 m of a point (add --scc for Santa Clara)
     python scripts/parcels.py fill SMC-000003             verify a record's APNs and fill missing outlines
 
 `fill` stops with an error if any APN in the record isn't an active county parcel.
@@ -142,6 +143,15 @@ def main():
     elif cmd == "at":
         p = lookup(county, point=(float(args[1]), float(args[2])))
         print(f"{p['apn']}  {p['situs']}  owner: {p['owner']}" if p else "No parcel there.")
+    elif cmd == "near":
+        lat, lng = float(args[1]), float(args[2])
+        if county == "SCC":
+            show_scc(scc_query(f"apn IS NOT NULL AND within_circle(the_geom,{lat},{lng},120)", limit=30))
+        else:
+            data = _get(SMC_URL, {"outFields": SMC_FIELDS, "returnGeometry": "false", "f": "json", "where": "1=1", "resultRecordCount": "30",
+                                  "geometry": f"{lng},{lat}", "geometryType": "esriGeometryPoint", "inSR": "4326",
+                                  "spatialRel": "esriSpatialRelIntersects", "distance": "120", "units": "esriSRUnit_Meter"})
+            show_smc(data.get("features", []))
     elif cmd == "fill":
         path = RECORDS / f"{arg}.json"
         rec = json.loads(path.read_text(encoding="utf-8"))

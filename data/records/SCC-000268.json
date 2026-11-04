@@ -1,6 +1,6 @@
 {
   "id": "SCC-000268",
-  "name": "17 Boston Av",
+  "name": "1881 West San Carlos Street",
   "parcels": [
     {
       "apn": "274-16-049",
@@ -39,6 +39,40 @@
           37.3241405
         ]
       ]
+    },
+    {
+      "apn": "274-16-051",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9279023,
+          37.3235501
+        ],
+        [
+          -121.9279646,
+          37.3235483
+        ],
+        [
+          -121.9281545,
+          37.323546
+        ],
+        [
+          -121.928161,
+          37.3238947
+        ],
+        [
+          -121.927905,
+          37.3238933
+        ],
+        [
+          -121.9279023,
+          37.3235501
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -54,6 +88,12 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "1881 West San Carlos Street, San Jose, CA",
+      "src": [
+        "SRC-001865"
       ]
     }
   ],
@@ -125,9 +165,25 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "Matched on Boston Avenue frontage and 61 condominiums; source address differs from imported 17 Boston Av. Parcel 274-16-051 is county data for 1881 W San Carlos St. Plan also has 246 senior units.",
+      "src": [
+        "SRC-001865"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Lori Greymont",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001865"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -158,6 +214,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

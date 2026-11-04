@@ -1,6 +1,6 @@
 {
   "id": "SMC-000126",
-  "name": "Ridge at Masonic",
+  "name": "The Ridge at Ralston (678 Ralston Ave)",
   "parcels": [
     {
       "apn": "040-313-280",
@@ -109,11 +109,20 @@
         {
           "value": 65,
           "src": [
-            "SRC-001141"
+            "SRC-001141",
+            "SRC-001667"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 63,
+          "src": [
+            "SRC-001755"
+          ],
+          "note": "63 affordable units at 951 Old County Road only, eight stories; this record also holds 678 Ralston"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -144,6 +153,22 @@
             "SRC-001142"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 30,
+            "2br": 18,
+            "3br": 17,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001667"
+          ]
         }
       ]
     }
@@ -179,6 +204,12 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "text": "Split: The Ridge on Masonic (951 Old County Rd, APN 040-313-430) now has its own record. The 951 Old County address and combined state rows remain here as imported.",
+      "src": [
+        "SRC-001667"
+      ]
     }
   ],
   "parties": [
@@ -197,6 +228,24 @@
       "contact": null,
       "linkedin": null,
       "other_role": "Developer of The Ridge at Ralston component",
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "CRP Affordable Housing and Community Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001755"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "CRP Affordable Housing and Community Development LLC",
+      "contact": null,
+      "linkedin": null,
       "src": [
         "SRC-001667"
       ]
@@ -231,6 +280,24 @@
       "src": [
         "SRC-001142"
       ]
+    },
+    {
+      "date": "2026-06",
+      "type": "Construction start",
+      "label": "Construction expected to begin",
+      "src": [
+        "SRC-001667"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028-03",
+      "type": "Completion",
+      "label": "Completion expected",
+      "src": [
+        "SRC-001667"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -238,6 +305,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     },
     {
       "date": "2026-11-03",

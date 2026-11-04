@@ -76,8 +76,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001801"
+          ],
+          "note": "SJ Build states 605 S 2nd Street is under construction, undated. Single secondary source, no news confirmation found."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -164,7 +172,17 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Roygbiv Real Estate",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001802"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -195,6 +213,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

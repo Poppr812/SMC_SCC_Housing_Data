@@ -1,6 +1,6 @@
 {
   "id": "SCC-000044",
-  "name": "Ensemble 2302 Calle del Mundo",
+  "name": "Mainline North Apartments (2310 Calle Del Mundo)",
   "parcels": [
     {
       "apn": "097-46-034",
@@ -134,8 +134,17 @@
             "SRC-001102"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001915",
+            "SRC-001914"
+          ],
+          "note": "Grand opening Jan. 14, 2026; residents living there by July 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -163,8 +172,17 @@
             "SRC-001106"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 151,
+          "src": [
+            "SRC-001915",
+            "SRC-001603"
+          ],
+          "note": "The 451 figure appears to combine Parkside (301), now its own record"
         }
-      ]
+      ],
+      "best": 2
     },
     "affordability_type": {
       "claims": [
@@ -212,6 +230,19 @@
       "src": [
         "SRC-001621"
       ]
+    },
+    {
+      "text": "These parties come from the 151-unit affordable building at 2310 Calle Del Mundo, which this record merges with the Ensemble building. ZAEN is the original project developer per the report.",
+      "src": [
+        "SRC-001724"
+      ]
+    },
+    {
+      "text": "Split: Parkside (2301 Calle Del Mundo, 301 market-rate units) now has its own record. CTCAC lists APN 097-46-024 for Mainline North, not in county data.",
+      "src": [
+        "SRC-001603",
+        "SRC-001914"
+      ]
     }
   ],
   "parties": [
@@ -223,6 +254,42 @@
       "other_role": "Developer of Mainline North Apartments component",
       "src": [
         "SRC-001621"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "USA Properties (Mainline North 701, L.P.)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001724"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "ZAEN Partners LLC (Ensemble)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001724"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "USA Properties Fund",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001915"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "The Pinyon Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001915"
       ]
     }
   ],
@@ -260,6 +327,15 @@
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2026-01-14",
+      "type": "Completion",
+      "label": "Grand opening",
+      "src": [
+        "SRC-001915"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -267,6 +343,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     },
     {
       "date": "2026-11-03",

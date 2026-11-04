@@ -51,8 +51,16 @@
             "SRC-001101"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-001696"
+          ],
+          "note": "City item describes a seven-story, 366-unit residential apartment development"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -96,6 +104,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001696"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -106,7 +125,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "320 Logue, LLC",
+      "contact": "Lisa Phyfe",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001696"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -124,6 +154,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

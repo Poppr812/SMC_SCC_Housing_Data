@@ -14,7 +14,7 @@ Batch format (source keys are local to the file):
            "events": [{"date": "", "type": "", "label": "", "src": ["k1"], "estimated": false}],
            "financing": [{"type": "", "provider": "", "program": null, "amount": 1, "date": null, "src": ["k1"]}],
            "notes": [{"text": "", "src": ["k1"]}]}],
-  "updates": [{"id": "SCC-000012", "name": "better project name",
+  "updates": [{"id": "SCC-000012", "name": "better project name", "apns": ["more parcels for this project"],
                "claims": {"total_units": [{"value": 300, "src": ["k1"], "note": "", "best": true}]},
                "parties": [...], "events": [...], "financing": [...], "addresses": [...], "notes": [...],
                "checked_against_city": true}]
@@ -184,6 +184,21 @@ def main():
         if errs:
             problems.append(f"update {rid}: " + "; ".join(errs))
             continue
+        added = []
+        for a in u.get("apns") or []:
+            hit = parcels.lookup(rid[:3], apn=a)
+            if not hit or not hit["outline"]:
+                errs.append(f"APN {a} is not a parcel in county data")
+            elif apn_owner.get(parcels.digits(hit["apn"]), rid) != rid:
+                errs.append(f"APN {a} is already in {apn_owner[parcels.digits(hit['apn'])]}")
+            elif parcels.digits(hit["apn"]) not in apn_owner:
+                added.append(hit)
+        if errs:
+            problems.append(f"update {rid}: " + "; ".join(errs))
+            continue
+        for h in added:
+            r["parcels"].append({"apn": h["apn"], "from": None, "to": None, "src": r["parcels"][0]["src"], "outline": h["outline"]})
+            apn_owner[parcels.digits(h["apn"])] = rid
         if u.get("name"):
             r["name"] = u["name"]
         for key, cl in (u.get("claims") or {}).items():

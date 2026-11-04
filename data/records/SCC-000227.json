@@ -114,7 +114,8 @@
         {
           "value": 85,
           "src": [
-            "SRC-001101"
+            "SRC-001101",
+            "SRC-001703"
           ],
           "note": "Units in the application as reported"
         }
@@ -143,7 +144,28 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Taylor Morrison of CA, LLC",
+      "contact": "Mark Currington",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001704"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "DeNardi Wang Homes",
+      "contact": "Kevin DeNardi",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001703"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -182,6 +204,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

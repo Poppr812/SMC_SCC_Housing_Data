@@ -122,8 +122,16 @@
             "SRC-001101"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001709"
+          ],
+          "note": "City Council approved 6-0 on March 10, 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -142,7 +150,8 @@
           "src": [
             "SRC-001101",
             "SRC-001313",
-            "SRC-001314"
+            "SRC-001314",
+            "SRC-001709"
           ],
           "note": "Units in the application as reported"
         },
@@ -344,6 +353,15 @@
       "estimated": false
     },
     {
+      "date": "2026-03-10",
+      "type": "Approved",
+      "label": "City Council approval, 6-0",
+      "src": [
+        "SRC-001709"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-03-11",
       "type": "Other",
       "label": "CEQA Notice of Exemption filed",
@@ -358,6 +376,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     },
     {
       "date": "2026-11-03",

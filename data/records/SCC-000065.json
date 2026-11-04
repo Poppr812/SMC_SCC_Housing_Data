@@ -225,7 +225,8 @@
         {
           "value": 371,
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-001727"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -236,7 +237,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -269,6 +271,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001727"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -280,7 +293,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Greystar GP II, LLC",
+      "contact": "David Moore",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001727"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "GS Tasman East Subsidiary, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001727"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -322,6 +355,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -135,7 +135,8 @@
         {
           "value": 198,
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-001734"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -146,7 +147,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -157,6 +159,17 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 21,
+          "src": [
+            "SRC-001734"
+          ],
+          "note": ""
         }
       ]
     }
@@ -170,7 +183,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Ensemble Investments",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001734"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -189,6 +213,15 @@
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2024-02-20",
+      "type": "Approved",
+      "label": "City Council approved Vesting Tentative Map",
+      "src": [
+        "SRC-001734"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -196,6 +229,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

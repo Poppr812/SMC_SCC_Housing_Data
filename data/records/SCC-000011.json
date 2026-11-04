@@ -1,6 +1,6 @@
 {
   "id": "SCC-000011",
-  "name": "101 Lena Way",
+  "name": "North of California Street Master Plan (2580-2590 California St)",
   "parcels": [
     {
       "apn": "148-18-015",
@@ -303,8 +303,16 @@
             "SRC-001110"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 632,
+          "src": [
+            "SRC-001690"
+          ],
+          "note": "Council report at the June 2018 hearing: 632 apartments and up to 20,000 sq ft commercial. No source opened explains the 925 state figure."
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -346,7 +354,17 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001690"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -385,6 +403,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

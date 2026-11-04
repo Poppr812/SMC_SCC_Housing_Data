@@ -1,6 +1,6 @@
 {
   "id": "SCC-000076",
-  "name": "400 Saratoga Av",
+  "name": "Pruneridge Apartments (400 Saratoga Ave)",
   "parcels": [
     {
       "apn": "294-45-055",
@@ -663,8 +663,16 @@
             "SRC-001106"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 316,
+          "src": [
+            "SRC-001730"
+          ],
+          "note": "316 apartments per May 2025 Notice of Preparation of a Draft EIR"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -674,6 +682,17 @@
             "SRC-001106"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001730"
+          ],
+          "note": ""
         }
       ]
     }
@@ -686,7 +705,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Demmon Partners",
+      "contact": "Mitch McKinzie",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001730"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -697,6 +727,15 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2025-05-12",
+      "type": "Other",
+      "label": "Notice of Preparation of Draft EIR received by State Clearinghouse",
+      "src": [
+        "SRC-001730"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -704,6 +743,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

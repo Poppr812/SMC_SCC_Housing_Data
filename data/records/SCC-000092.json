@@ -118,8 +118,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-001811"
+          ],
+          "note": "SJ Build tracker lists this file as Withdrawn; single secondary source, not confirmed with the city."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -139,6 +147,13 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 220,
+          "src": [
+            "SRC-001811"
+          ],
+          "note": "SP22-031 per SJ Build: six-story, 100% affordable, 220 units."
         }
       ]
     },
@@ -162,7 +177,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Maracor Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named project party (SJ Build tracker)",
+      "src": [
+        "SRC-001811"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -180,6 +206,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

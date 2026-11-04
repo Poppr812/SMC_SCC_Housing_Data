@@ -145,8 +145,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 198,
+          "src": [
+            "SRC-001795"
+          ],
+          "note": "70 N 27th St only, file SP22-004. This record also carries 486 W San Carlos St (file SP20-019), which is SCC-000479."
         }
-      ]
+      ],
+      "best": 2
     },
     "affordability_type": {
       "claims": [
@@ -188,9 +196,35 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "SJ Build: 70-80 N 27th Street, six stories, 198 units, Approved, special use permit expires 05/31/2027. The Permitted status here comes from the 486 W San Carlos file.",
+      "src": [
+        "SRC-001795"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Vicky Ching",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001796"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "HC Investment",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named project party (SJ Build tracker)",
+      "src": [
+        "SRC-001795"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -229,6 +263,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

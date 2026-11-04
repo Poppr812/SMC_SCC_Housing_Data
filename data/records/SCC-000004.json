@@ -523,6 +523,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001710"
+          ],
+          "note": "Five five-story buildings"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -533,10 +544,29 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Irvine Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001711"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-04-22",
+      "type": "Application filed",
+      "label": "Irvine Company filed File Nos. PLN24-00160 and PLN24-00213",
+      "src": [
+        "SRC-001710"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-03-25",
       "type": "Approved",
@@ -560,6 +590,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     },
     {
       "date": "2026-11-03",
