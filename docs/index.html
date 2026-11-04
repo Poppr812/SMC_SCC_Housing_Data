@@ -283,7 +283,8 @@ const money=n=>"$"+Math.round(n).toLocaleString("en-US");
 const num=n=>(+n).toLocaleString("en-US");
 function toast(m){const t=$("#toast");t.textContent=m;t.style.display="block";clearTimeout(t._h);t._h=setTimeout(()=>t.style.display="none",2600)}
 function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k)||"null");localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
-function safeReplace(u){try{history.replaceState(null,"",u)}catch(e){}}
+var AUTH_PENDING=/access_token=/.test(location.hash); /* leave the URL alone until the sign-in client has read its token */
+function safeReplace(u){if(AUTH_PENDING)return;try{history.replaceState(null,"",u)}catch(e){}}
 const ICON_COPY='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M13.6 10.6a2 2 0 1 0 0 2.8"/></svg>';
 const ICON_NONE='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 16l5-5 4 4 3-3 6 6"/><path d="M4 4l16 16"/></svg>';
 
@@ -726,7 +727,12 @@ $("#expGo").onclick=()=>{
 
 /* ---------- accounts, contributions, activity log (Supabase) ---------- */
 const SB_URL="https://ucfunwumhmpuywizckyq.supabase.co",SB_KEY="sb_publishable_fojbSnUm2APVZbmvW4XHPQ_BfHp391I";
-const sb=window.supabase?window.supabase.createClient(SB_URL,SB_KEY,{auth:{flowType:"pkce",detectSessionInUrl:true,persistSession:true}}):null;
+/* email links must work in any browser (phone mail apps open their own), so no browser-bound PKCE flow */
+const BAD_LINK="That email link has expired or was already used. Enter your email and request a new one.";
+const AUTH_ERR=new URLSearchParams(location.hash.slice(1)).get("error_description")||new URLSearchParams(location.search).get("error_description");
+if(AUTH_ERR)safeReplace(location.pathname);
+var RECOVERING=false,OLD_CODE=/[?&]code=/.test(location.search);
+const sb=window.supabase?window.supabase.createClient(SB_URL,SB_KEY,{auth:{flowType:"implicit",detectSessionInUrl:true,persistSession:true}}):null;
 const LIMIT={standard:20,comprehensive:5,custom:5};
 const ROLES=["Developer","Owner / investor","Lender / capital","Broker","Architect / engineer","Contractor","Consultant","Public agency","Nonprofit / advocate","Journalist / researcher","Other"];
 let USER=null,PROFILE=null,PENDING=null;
@@ -751,6 +757,11 @@ function acctView(mode,reason){
       <span><button class="btn ghost" type="button" id="aCancel">Cancel</button> <button class="btn" type="button" id="aGo">Sign in</button></span></div>
     <div class="msg" id="acctMsg"></div>
     <p style="font-size:13px;margin:14px 0 0">New here? <button class="lnk" type="button" id="aToUp">Create a free account</button> · <button class="lnk" type="button" id="aMagic">Email me a sign-in link</button></p>`;
+  if(mode==="recover")B.innerHTML=`<h3>Set a new password</h3>
+    <label class="f">New password (8+ characters)<input type="password" id="aNew" autocomplete="new-password"></label>
+    <label class="f">Type it again<input type="password" id="aNew2" autocomplete="new-password"></label>
+    <div class="acts"><button class="btn" type="button" id="aSetPw">Save password</button></div>
+    <div class="msg" id="acctMsg"></div>`;
   if(mode==="signup")B.innerHTML=`<h3>Create a free account</h3>${why}
     <div class="muted" style="font-size:12px">Browsing is free. An account lets you save searches, contribute, and export larger selections.</div>
     <label class="f">Email<input type="email" id="aEmail" autocomplete="email"></label>
@@ -787,6 +798,9 @@ function acctView(mode,reason){
   on("aForgot",async()=>{const email=val("aEmail");if(!email){acctMsg("Enter your email first.");return}
     const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname});
     acctMsg(error?error.message:"Check your email for a link to set a new password.")});
+  on("aSetPw",async()=>{const pw=$("#aNew").value;if(pw.length<8){acctMsg("Use at least 8 characters.");return}if(pw!==$("#aNew2").value){acctMsg("The two passwords don't match.");return}
+    const {error}=await sb.auth.updateUser({password:pw});if(error){acctMsg(error.message);return}
+    RECOVERING=false;$("#acct").classList.remove("show");toast("Password updated. You're signed in.")});
   on("aSave",async()=>{const {error}=await sb.from("profiles").update({name:val("aName"),alias:val("aAlias"),company:val("aCo"),role:val("aRole"),linkedin:val("aLi")}).eq("id",USER.id);
     if(error){acctMsg(error.message);return}await loadProfile();acctLabel();acctMsg("Saved.")});
   on("aOut",async()=>{track("sign_out");await sb.auth.signOut();$("#acct").classList.remove("show");toast("Signed out")});
@@ -796,15 +810,16 @@ $("#acctBtn").onclick=()=>USER?acctView("profile"):acctView("signin");
 $("#privLink").onclick=e=>{e.preventDefault();$("#priv").classList.add("show")};
 if(sb)sb.auth.onAuthStateChange((ev,session)=>{
   USER=session?session.user:null;
+  if(AUTH_PENDING){AUTH_PENDING=false;if(!session){safeReplace(location.pathname);acctView("signin",BAD_LINK)}}
+  if(ev==="PASSWORD_RECOVERY"){RECOVERING=true;acctView("recover")}
+  if(OLD_CODE){OLD_CODE=false;safeReplace(location.pathname+location.hash);if(!session)acctView("signin",BAD_LINK)}
   setTimeout(async()=>{ /* outside the auth callback, per supabase-js guidance */
     await loadProfile();acctLabel();loadSaved();
     if(ev==="SIGNED_IN"){
-      if(/[?&]code=/.test(location.search))safeReplace(location.pathname+location.hash);
-      if($("#acct").classList.contains("show")){$("#acct").classList.remove("show");toast("Signed in as "+(who(PROFILE)||USER.email))}
+      if($("#acct").classList.contains("show")&&!RECOVERING){$("#acct").classList.remove("show");toast("Signed in as "+(who(PROFILE)||USER.email))}
       if(PENDING){const f=PENDING;PENDING=null;f()}
       track("sign_in",{email:USER.email});
     }
-    if(ev==="PASSWORD_RECOVERY"){const pw=prompt("Choose a new password (8+ characters):");if(pw&&pw.length>=8){const {error}=await sb.auth.updateUser({password:pw});toast(error?error.message:"Password updated")}}
   },0);
 });
 
@@ -951,6 +966,7 @@ function renderReport(all){
 loadSaved();
 const s0=hashToState();if(s0)setState(s0);
 render();
+if(AUTH_ERR)acctView("signin",BAD_LINK);
 const rm=location.hash.match(/r=(SMC-\d{6})/);if(rm)openRecord(rm[1]);
 track("visit",{referrer:document.referrer||undefined});
 </script>
