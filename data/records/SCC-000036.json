@@ -1,6 +1,6 @@
 {
   "id": "SCC-000036",
-  "name": "315 Las Animas Avenue",
+  "name": "Park 315",
   "parcels": [
     {
       "apn": "835-05-006",
@@ -67,8 +67,16 @@
             "SRC-001115"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-001433"
+          ],
+          "note": "Townhouse buildings plus mid-rise apartments; 287 townhome units per SF YIMBY"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -78,8 +86,15 @@
             "SRC-001115"
           ],
           "note": "State report shows the application approved"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001433"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -110,19 +125,84 @@
             "SRC-001115"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "AS 23-21",
+          "src": [
+            "SRC-001433"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001433"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "106 rental units for low-income households",
+          "src": [
+            "SRC-001433"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001433"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 27.55,
+          "src": [
+            "SRC-001433"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001115"
       ]
+    },
+    {
+      "text": "SF YIMBY (Feb 2026) reports 287 of the 530 units in 33 townhome structures.",
+      "src": [
+        "SRC-001434"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Gandolfi Investments, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001433"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -140,6 +220,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

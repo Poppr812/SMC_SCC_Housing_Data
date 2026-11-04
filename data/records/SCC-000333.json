@@ -1,6 +1,6 @@
 {
   "id": "SCC-000333",
-  "name": "McCllelan Townhomes",
+  "name": "McClellan Townhomes",
   "parcels": [
     {
       "apn": "359-13-019",
@@ -87,11 +87,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001100"
+            "SRC-001100",
+            "SRC-001509"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -108,7 +110,8 @@
         {
           "value": 27,
           "src": [
-            "SRC-001100"
+            "SRC-001100",
+            "SRC-001509"
           ],
           "note": "Units in the application as reported"
         }
@@ -124,20 +127,69 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "4 of 27 townhomes affordable",
+          "src": [
+            "SRC-001509"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001509"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "20865 McClellan Road LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001509"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects Inc",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001509"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-10-17",
+      "type": "Application filed",
+      "label": "Formal application filed",
+      "src": [
+        "SRC-001509"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-11-07",
       "type": "Application filed",
@@ -152,6 +204,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

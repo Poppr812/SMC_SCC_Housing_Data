@@ -1,6 +1,6 @@
 {
   "id": "SCC-000293",
-  "name": "1040 E El Camino Real",
+  "name": "1040-1060 East El Camino Real",
   "parcels": [
     {
       "apn": "313-04-026",
@@ -122,11 +122,13 @@
           "value": "Approved",
           "src": [
             "SRC-001118",
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001523"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -144,7 +146,8 @@
         {
           "value": 46,
           "src": [
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001522"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -192,7 +195,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Balboa Retail Partners",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001522"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -218,6 +232,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

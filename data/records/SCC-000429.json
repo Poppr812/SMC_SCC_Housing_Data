@@ -92,11 +92,13 @@
         {
           "value": "Single-family",
           "src": [
-            "SRC-001126"
+            "SRC-001126",
+            "SRC-001309"
           ],
           "note": "State category: single-family detached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -127,8 +129,16 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 13,
+          "src": [
+            "SRC-001309"
+          ],
+          "note": "13 new single-family homes on 13 lots; 16 counting three additional dwelling units"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -150,7 +160,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Steel Bridge Homes Palo Alto",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001309"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Ponderosa Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001309"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -168,6 +197,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

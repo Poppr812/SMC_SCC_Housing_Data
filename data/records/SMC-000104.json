@@ -1,6 +1,6 @@
 {
   "id": "SMC-000104",
-  "name": "Essex",
+  "name": "7 S. Linden Avenue (Essex)",
   "parcels": [
     {
       "apn": "014-074-010",
@@ -175,8 +175,15 @@
             "SRC-001113"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001342"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -197,8 +204,16 @@
             "SRC-001113"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 558,
+          "src": [
+            "SRC-001342"
+          ],
+          "note": "City map, updated October 2026. Earlier imported count was 543"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -229,13 +244,39 @@
             "SRC-001113"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "P22-0024, B22-2353",
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.22,
+          "src": [
+            "SRC-001342"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001112",
         "SRC-001113"
@@ -251,6 +292,15 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Essex Property Trust, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
+      ]
     }
   ],
   "financing": [],
@@ -263,6 +313,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2023-03",
+      "type": "Approved",
+      "label": "Entitled",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-03-16",
@@ -286,6 +345,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

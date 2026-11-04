@@ -1,6 +1,6 @@
 {
   "id": "SCC-000249",
-  "name": "Monterey - City Ventures (The Gates)",
+  "name": "The Gates (Monterey-City Ventures)",
   "parcels": [
     {
       "apn": "764-65-002",
@@ -100,8 +100,15 @@
             "SRC-001135"
           ],
           "note": "State category: single-family attached"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001444"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -112,8 +119,15 @@
             "SRC-001135"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001444"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -138,11 +152,13 @@
         {
           "value": 49,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001444"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -173,16 +189,38 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "GPA2021-0005, ZA2021-0006, SD2021-0006, SR2023-0010, EA2021-0016",
+          "src": [
+            "SRC-001444"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.82,
+          "src": [
+            "SRC-001444"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131",
         "SRC-001135"
+      ]
+    },
+    {
+      "text": "Mixed use with five commercial units. City lists pre-subdivision APNs 764-10-013 and -015.",
+      "src": [
+        "SRC-001444"
       ]
     }
   ],
@@ -220,6 +258,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

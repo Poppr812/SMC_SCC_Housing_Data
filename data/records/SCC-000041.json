@@ -1,9 +1,9 @@
 {
   "id": "SCC-000041",
-  "name": "1099 S Bascom Ave",
+  "name": "1099 South Bascom Avenue",
   "parcels": [
     {
-      "apn": "282-11-029",
+      "apn": "282-11-019",
       "from": null,
       "to": null,
       "src": [
@@ -11,28 +11,24 @@
       ],
       "outline": [
         [
-          -121.9327273,
-          37.3067467
+          -121.9319644,
+          37.3064545
         ],
         [
-          -121.9327272,
-          37.3067271
+          -121.9319629,
+          37.3063446
         ],
         [
-          -121.9327245,
-          37.3065407
+          -121.9327219,
+          37.3063426
         ],
         [
-          -121.9330995,
-          37.3065397
+          -121.9327234,
+          37.3064525
         ],
         [
-          -121.9331004,
-          37.3067457
-        ],
-        [
-          -121.9327273,
-          37.3067467
+          -121.9319644,
+          37.3064545
         ]
       ]
     }
@@ -87,6 +83,13 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 474,
+          "src": [
+            "SRC-001382"
+          ],
+          "note": "April 2025 article."
         }
       ]
     },
@@ -100,6 +103,38 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001382"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001382"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 191,
+          "src": [
+            "SRC-001382"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -110,7 +145,17 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Architect",
+      "company": "b9 Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001382"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -128,6 +173,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

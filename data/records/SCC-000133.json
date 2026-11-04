@@ -71,6 +71,13 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "text": "3727-3737 and 3773-3783 El Camino Real, 378-400 Madeline Court, 388 Curtner Avenue, Palo Alto",
+      "src": [
+        "SRC-001276",
+        "SRC-001277"
+      ]
     }
   ],
   "images": [],
@@ -94,8 +101,16 @@
             "SRC-001126"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001277"
+          ],
+          "note": "City Council action May 11, 2026 per Notice of Exemption"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -115,30 +130,172 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 183,
+          "src": [
+            "SRC-001276",
+            "SRC-001277",
+            "SRC-001278"
+          ],
+          "note": "24PLN-00161; related SB 330 filing 24PLN-00048 described 169 units"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
         {
           "value": "24PLN-00161",
           "src": [
-            "SRC-001126"
+            "SRC-001126",
+            "SRC-001276"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001276",
+            "SRC-001278"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 124,
+            "2br": 45,
+            "3br": 14,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001278"
+          ],
+          "note": "1BR count is 24 junior one-bedrooms plus 100 one-bedrooms"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 215,
+          "src": [
+            "SRC-001276",
+            "SRC-001278"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 156800,
+          "src": [
+            "SRC-001278"
+          ],
+          "note": "About; total about 318,290 sq ft including garage"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001277",
+            "SRC-001276"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "23 of 183 units for low-income households (13%)",
+          "src": [
+            "SRC-001277",
+            "SRC-001278"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001276",
+            "SRC-001277"
+          ],
+          "note": "CEQA statutory exemption under AB 130 (PRC 21080.66)"
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "text": "City and state notices list four parcels to be merged: APNs 132-41-019, 132-41-020, 132-41-083, 132-41-084. The record carries only 132-41-083.",
+      "src": [
+        "SRC-001276",
+        "SRC-001277"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Sares Regis Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001278"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Vittoria Management",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001277"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001278"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001278"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -149,6 +306,15 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2026-05-11",
+      "type": "Approved",
+      "label": "City Council approval",
+      "src": [
+        "SRC-001277"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -156,6 +322,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

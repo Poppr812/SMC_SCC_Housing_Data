@@ -80,11 +80,13 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001134"
+            "SRC-001134",
+            "SRC-001552"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -94,8 +96,16 @@
             "SRC-001134"
           ],
           "note": "State report shows the application approved"
+        },
+        {
+          "value": "Permitted",
+          "src": [
+            "SRC-001552"
+          ],
+          "note": "Master permits BLD-2025-1824 and -1825 issued 2026-09-08"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -132,13 +142,24 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Jahanian",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -149,6 +170,15 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Permit issued",
+      "label": "Master permits for two 4-unit townhouse buildings",
+      "src": [
+        "SRC-001552"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -156,6 +186,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

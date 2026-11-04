@@ -1,6 +1,6 @@
 {
   "id": "SCC-000150",
-  "name": "50 Los Gatos-Saratoga Rd",
+  "name": "Solana (former Los Gatos Lodge)",
   "parcels": [
     {
       "apn": "529-24-001",
@@ -101,8 +101,16 @@
             "SRC-001121"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001588"
+          ],
+          "note": "Announced before the date: developer said it would break ground 2025-11-04. No later source opened"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -120,7 +128,8 @@
         {
           "value": 155,
           "src": [
-            "SRC-001121"
+            "SRC-001121",
+            "SRC-001554"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -131,14 +140,16 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001121"
+            "SRC-001121",
+            "SRC-001554"
           ]
         }
       ]
@@ -164,18 +175,46 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120",
         "SRC-001121"
       ]
+    },
+    {
+      "text": "26 below-market units.",
+      "src": [
+        "SRC-001554"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "SummerHill Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001589"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -194,6 +233,15 @@
       "src": [
         "SRC-001121"
       ]
+    },
+    {
+      "date": "2025-11-04",
+      "type": "Construction start",
+      "label": "Announced groundbreaking date",
+      "src": [
+        "SRC-001588"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -201,6 +249,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

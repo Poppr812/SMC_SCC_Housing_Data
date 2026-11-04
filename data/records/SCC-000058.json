@@ -1,6 +1,6 @@
 {
   "id": "SCC-000058",
-  "name": "156 California Ave",
+  "name": "156 California Avenue",
   "parcels": [
     {
       "apn": "124-28-045",
@@ -91,8 +91,16 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 390,
+          "src": [
+            "SRC-001284"
+          ],
+          "note": "Main application 24PLN-00100; SB 330 filing 24PLN-00071 and original builder's remedy plan were 382"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -104,17 +112,81 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 14,
+          "src": [
+            "SRC-001284"
+          ],
+          "note": "Tallest of three towers (12, 14, 12) in 24PLN-00100; original plan had a 17-story tower"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.43,
+          "src": [
+            "SRC-001284"
+          ],
+          "note": "Lot A 1.14 acres plus Lot B 0.29 acre"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001285"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Original plan: 77 units at 80% AMI. Alternative under Council review: 50 affordable units",
+          "src": [
+            "SRC-001285"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001284"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Redco Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001285"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -125,6 +197,16 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "Other",
+      "label": "City Council discussion of two development options; outcome not stated on the city page",
+      "src": [
+        "SRC-001284",
+        "SRC-001285"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -132,6 +214,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

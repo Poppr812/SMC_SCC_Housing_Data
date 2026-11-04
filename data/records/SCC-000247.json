@@ -123,8 +123,16 @@
             "SRC-001134"
           ],
           "note": "State category: single-family attached"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001586"
+          ],
+          "note": "74 townhome-style condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -168,17 +176,56 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001549"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "text": "City status Decision Rendered, last updated 2026-07-07; a Notice of Exemption was posted 2026-06-26. Neither source opened states an approval date.",
+      "src": [
+        "SRC-001586"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Sullivan Land Development LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001586"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ross Green Valley II",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Other party undertaking the project",
+      "src": [
+        "SRC-001586"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -196,6 +243,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

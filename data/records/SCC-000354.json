@@ -1,6 +1,6 @@
 {
   "id": "SCC-000354",
-  "name": "25 Peebles Avenue",
+  "name": "Peebles Square (25 Peebles Avenue)",
   "parcels": [
     {
       "apn": "726-41-065",
@@ -99,8 +99,15 @@
             "SRC-001131"
           ],
           "note": "State category: single-family detached"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001448"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -110,8 +117,16 @@
             "SRC-001131"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001448"
+          ],
+          "note": "Planning Entitlements Approved"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -128,11 +143,13 @@
         {
           "value": 20,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001448"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -142,19 +159,36 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2024-0006, SR2024-0009, EA2024-0006",
+          "src": [
+            "SRC-001448"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Peebles Square, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001448"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -165,6 +199,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2025-10-28",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolution 25-16)",
+      "src": [
+        "SRC-001448"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -172,6 +215,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

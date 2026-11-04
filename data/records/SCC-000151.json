@@ -1,113 +1,7 @@
 {
   "id": "SCC-000151",
-  "name": "270 Sunol St",
+  "name": "777 West San Carlos",
   "parcels": [
-    {
-      "apn": "244-17-046",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.8965026,
-          37.4020214
-        ],
-        [
-          -121.8966893,
-          37.4020132
-        ],
-        [
-          -121.8966986,
-          37.4021476
-        ],
-        [
-          -121.8965119,
-          37.4021558
-        ],
-        [
-          -121.8965073,
-          37.4020886
-        ],
-        [
-          -121.8965026,
-          37.4020214
-        ]
-      ]
-    },
-    {
-      "apn": "244-17-047",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.8964933,
-          37.401887
-        ],
-        [
-          -121.89668,
-          37.4018788
-        ],
-        [
-          -121.8966893,
-          37.4020132
-        ],
-        [
-          -121.8965026,
-          37.4020214
-        ],
-        [
-          -121.896498,
-          37.4019542
-        ],
-        [
-          -121.8964933,
-          37.401887
-        ]
-      ]
-    },
-    {
-      "apn": "244-17-048",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.8965079,
-          37.401753
-        ],
-        [
-          -121.8966708,
-          37.4017458
-        ],
-        [
-          -121.89668,
-          37.4018788
-        ],
-        [
-          -121.8964933,
-          37.401887
-        ],
-        [
-          -121.8964856,
-          37.4017749
-        ],
-        [
-          -121.8965093,
-          37.4017738
-        ],
-        [
-          -121.8965079,
-          37.401753
-        ]
-      ]
-    },
     {
       "apn": "261-39-045",
       "from": null,
@@ -188,7 +82,7 @@
       ]
     },
     {
-      "text": "278  Sunol St, San Jose, CA",
+      "text": "278 Sunol St, San Jose, CA",
       "src": [
         "SRC-001099",
         "SRC-001107"
@@ -295,6 +189,68 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 50,
+            "1br": 25,
+            "2br": 39,
+            "3br": 40,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 102,
+              "ami": 30
+            },
+            {
+              "count": 16,
+              "ami": 50
+            },
+            {
+              "count": 35,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001623"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 136203207,
+          "src": [
+            "SRC-001623"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -304,10 +260,107 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CTCAC CA-22-536: The project, 777 West San Carlos , located at 266 & 270 Sunol Street & 777 West San Carlos in San Jose, requested and is being recommended for a reservation of $6,157,840 in annual federal tax credits and $19,913,930 in total state tax credits to finance the new construction of 153 units of housing serving families with rents affordable to households earning 30%-60% of area median income (AMI).",
+      "src": [
+        "SRC-001623"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Danco Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001623"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Pacific Western Bank - Tax-Exempt",
+      "program": null,
+      "amount": 70700000,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Pacific Western Bank - Taxable",
+      "program": null,
+      "amount": 1800000,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Pacific Western Bank",
+      "program": null,
+      "amount": 15100000,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose Funds",
+      "program": null,
+      "amount": 19125000,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Measure A Funds",
+      "program": null,
+      "amount": 29720215,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "Developer Fee",
+      "program": null,
+      "amount": 1700000,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 275449,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 70282543,
+      "date": null,
+      "src": [
+        "SRC-001623"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -327,6 +380,15 @@
       ]
     },
     {
+      "date": "2022-11-30",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-22-536)",
+      "src": [
+        "SRC-001623"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-06-15",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -340,6 +402,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

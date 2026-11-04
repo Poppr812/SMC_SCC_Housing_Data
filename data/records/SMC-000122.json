@@ -1,6 +1,6 @@
 {
   "id": "SMC-000122",
-  "name": "240 El Camino Real",
+  "name": "240 El Camino Real (Dunkin' Donuts site)",
   "parcels": [
     {
       "apn": "045-316-130",
@@ -47,6 +47,12 @@
       "src": [
         "SRC-001140"
       ]
+    },
+    {
+      "text": "240 & 260 El Camino Real (227 Laurel Street), San Carlos, CA",
+      "src": [
+        "SRC-001253"
+      ]
     }
   ],
   "images": [],
@@ -67,7 +73,8 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001140"
+            "SRC-001140",
+            "SRC-001253"
           ],
           "note": "State report shows an application with no approval reported"
         }
@@ -88,7 +95,8 @@
         {
           "value": 157,
           "src": [
-            "SRC-001140"
+            "SRC-001140",
+            "SRC-001253"
           ],
           "note": "Units in the application as reported"
         }
@@ -104,11 +112,110 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001253"
+          ],
+          "note": "Page says 6-7 stories"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 147,
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.09,
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 228705,
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 64,
+            "1br": 64,
+            "2br": 25,
+            "3br": 4,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 138,
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "13 very low, 6 low income",
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001253"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001140"
       ]
@@ -123,6 +230,16 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Prometheus Real Estate Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001253"
+      ]
     }
   ],
   "financing": [],
@@ -135,6 +252,33 @@
       "src": [
         "SRC-001140"
       ]
+    },
+    {
+      "date": "2025-10-16",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application",
+      "src": [
+        "SRC-001253"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03",
+      "type": "Application filed",
+      "label": "Formal application (Cycle 1)",
+      "src": [
+        "SRC-001253"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10",
+      "type": "Other",
+      "label": "Cycle 3 submittal",
+      "src": [
+        "SRC-001253"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -142,6 +286,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

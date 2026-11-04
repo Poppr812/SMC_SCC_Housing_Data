@@ -1,6 +1,6 @@
 {
   "id": "SCC-000177",
-  "name": "14288 Capri Dr",
+  "name": "Vista Capri (14288 Capri Dr)",
   "parcels": [
     {
       "apn": "406-30-016",
@@ -55,8 +55,15 @@
             "SRC-001120"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-001591"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -87,8 +94,16 @@
             "SRC-001120"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 119,
+          "src": [
+            "SRC-001591"
+          ],
+          "note": "Town's current count"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -100,17 +115,55 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 13,
+          "src": [
+            "SRC-001592"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "text": "24 below-market units per the Town. Town and developer are in litigation (Case No. 25CV462276). Earlier 175- and 95-unit proposals expired.",
+      "src": [
+        "SRC-001554"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Los Gatos LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001592"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -128,6 +181,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

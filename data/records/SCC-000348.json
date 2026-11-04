@@ -1,6 +1,6 @@
 {
   "id": "SCC-000348",
-  "name": "Edes - Alcini (TTLC MH LLC)",
+  "name": "Edes-Alcini (TTLC Morgan Hill)",
   "parcels": [
     {
       "apn": "767-18-046",
@@ -57,8 +57,15 @@
             "SRC-001135"
           ],
           "note": "State category: single-family attached"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001447"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -66,11 +73,13 @@
           "value": "Approved",
           "src": [
             "SRC-001131",
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001447"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -88,11 +97,13 @@
         {
           "value": 21,
           "src": [
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001447"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -123,13 +134,39 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2022-0001, SR2022-0001, EA2022-001",
+          "src": [
+            "SRC-001447"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001447"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.1,
+          "src": [
+            "SRC-001447"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131",
         "SRC-001135"
@@ -162,6 +199,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

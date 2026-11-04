@@ -1,137 +1,7 @@
 {
   "id": "SCC-000345",
-  "name": "301/317 Moorpark Wy",
+  "name": "301-323 Moorpark Way",
   "parcels": [
-    {
-      "apn": "161-05-003",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.0614437,
-          37.3849386
-        ],
-        [
-          -122.0614792,
-          37.38483
-        ],
-        [
-          -122.0615442,
-          37.3846307
-        ],
-        [
-          -122.0617662,
-          37.3846777
-        ],
-        [
-          -122.0620324,
-          37.3847341
-        ],
-        [
-          -122.0622985,
-          37.3847904
-        ],
-        [
-          -122.0626312,
-          37.3848609
-        ],
-        [
-          -122.0628374,
-          37.3849046
-        ],
-        [
-          -122.0623903,
-          37.3851353
-        ],
-        [
-          -122.0614437,
-          37.3849386
-        ]
-      ]
-    },
-    {
-      "apn": "161-05-004",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.0613862,
-          37.3851149
-        ],
-        [
-          -122.0614322,
-          37.3849739
-        ],
-        [
-          -122.0614437,
-          37.3849386
-        ],
-        [
-          -122.0623903,
-          37.3851353
-        ],
-        [
-          -122.0621302,
-          37.3852695
-        ],
-        [
-          -122.0613862,
-          37.3851149
-        ]
-      ]
-    },
-    {
-      "apn": "161-05-005",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.0613862,
-          37.3851149
-        ],
-        [
-          -122.0621302,
-          37.3852695
-        ],
-        [
-          -122.0618525,
-          37.3854129
-        ],
-        [
-          -122.0618037,
-          37.3854357
-        ],
-        [
-          -122.0617532,
-          37.3854546
-        ],
-        [
-          -122.0617014,
-          37.3854694
-        ],
-        [
-          -122.0616486,
-          37.3854801
-        ],
-        [
-          -122.0612913,
-          37.3854059
-        ],
-        [
-          -122.0613862,
-          37.3851149
-        ]
-      ]
-    },
     {
       "apn": "161-05-006",
       "from": null,
@@ -275,6 +145,12 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "301, 309, 317 and 323 Moorpark Way and 301 Sylvan Avenue, Mountain View",
+      "src": [
+        "SRC-001334"
+      ]
     }
   ],
   "images": [],
@@ -285,11 +161,13 @@
           "value": "Single-family",
           "src": [
             "SRC-001101",
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-001334"
           ],
           "note": "State category: single-family detached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -367,7 +245,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Dividend Homes, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001334"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -393,6 +282,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

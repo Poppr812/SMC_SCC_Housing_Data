@@ -1,9 +1,9 @@
 {
   "id": "SCC-000214",
-  "name": "2420 S Winchester Blvd",
+  "name": "VTA Winchester Station Housing (2400 S Winchester Blvd)",
   "parcels": [
     {
-      "apn": "412-02-003",
+      "apn": "412-02-029",
       "from": null,
       "to": null,
       "src": [
@@ -11,36 +11,92 @@
       ],
       "outline": [
         [
+          -121.948643,
+          37.2787924
+        ],
+        [
+          -121.9486257,
+          37.278826
+        ],
+        [
+          -121.9485518,
+          37.2789696
+        ],
+        [
+          -121.9484419,
+          37.2791116
+        ],
+        [
+          -121.9484483,
+          37.2791145
+        ],
+        [
+          -121.9484863,
+          37.2791322
+        ],
+        [
+          -121.9483384,
+          37.2793232
+        ],
+        [
+          -121.9483364,
+          37.2793273
+        ],
+        [
+          -121.948335,
+          37.2793317
+        ],
+        [
+          -121.9483344,
+          37.2793362
+        ],
+        [
+          -121.9483346,
+          37.2793408
+        ],
+        [
+          -121.9483356,
+          37.2793453
+        ],
+        [
+          -121.9483373,
+          37.2793495
+        ],
+        [
+          -121.9483398,
+          37.2793534
+        ],
+        [
+          -121.9483428,
+          37.2793568
+        ],
+        [
+          -121.9483464,
+          37.2793596
+        ],
+        [
+          -121.9483504,
+          37.2793618
+        ],
+        [
+          -121.9483547,
+          37.2793633
+        ],
+        [
+          -121.9483593,
+          37.279364
+        ],
+        [
           -121.9483638,
           37.2793639
-        ],
-        [
-          -121.9496181,
-          37.2793484
-        ],
-        [
-          -121.9496216,
-          37.2797631
-        ],
-        [
-          -121.9480076,
-          37.2797831
-        ],
-        [
-          -121.947919,
-          37.2797842
-        ],
-        [
-          -121.9478726,
-          37.2797847
         ],
         [
           -121.9481977,
           37.2793659
         ],
         [
-          -121.9483638,
-          37.2793639
+          -121.948643,
+          37.2787924
         ]
       ]
     }
@@ -51,6 +107,12 @@
       "src": [
         "SRC-001134",
         "SRC-001143"
+      ]
+    },
+    {
+      "text": "2400 S Winchester Blvd",
+      "src": [
+        "SRC-001551"
       ]
     }
   ],
@@ -133,18 +195,72 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "City says 6 stories, with four residential levels"
+        },
+        {
+          "value": 5,
+          "src": [
+            "SRC-001581"
+          ],
+          "note": "2024 news report"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "Index address read 2420 S Winchester; the city case PLN-2024-29 is at 2400 S Winchester Blvd on the VTA station property. The city moved this case to its inactive list and shows it as Project Closed, last updated 2024-12-05. The city's data does not say how it was decided.",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Related California",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001581"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "PATH Ventures",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001581"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "VTA",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -170,6 +286,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

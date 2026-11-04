@@ -1,6 +1,6 @@
 {
   "id": "SCC-000117",
-  "name": "Marina",
+  "name": "Marina Plaza",
   "parcels": [
     {
       "apn": "326-34-043",
@@ -96,6 +96,12 @@
         "SRC-001100",
         "SRC-001137"
       ]
+    },
+    {
+      "text": "10145 N. De Anza Blvd and 10118 Bandley Dr, Cupertino",
+      "src": [
+        "SRC-001507"
+      ]
     }
   ],
   "images": [],
@@ -118,11 +124,13 @@
           "value": "Approved",
           "src": [
             "SRC-001100",
-            "SRC-001137"
+            "SRC-001137",
+            "SRC-001507"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -140,7 +148,8 @@
         {
           "value": 206,
           "src": [
-            "SRC-001137"
+            "SRC-001137",
+            "SRC-001507"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -181,14 +190,25 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100",
         "SRC-001137"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Larry Wang, Tectonic Builders Corp.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001507"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -207,6 +227,15 @@
       "src": [
         "SRC-001137"
       ]
+    },
+    {
+      "date": "2022-12-12",
+      "type": "Approved",
+      "label": "City Council final action",
+      "src": [
+        "SRC-001507"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -214,6 +243,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

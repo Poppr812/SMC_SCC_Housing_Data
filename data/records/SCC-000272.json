@@ -1,9 +1,9 @@
 {
   "id": "SCC-000272",
-  "name": "911 E Duane Av",
+  "name": "911 Duane Avenue",
   "parcels": [
     {
-      "apn": "205-12-002",
+      "apn": "205-12-004",
       "from": null,
       "to": null,
       "src": [
@@ -11,44 +11,60 @@
       ],
       "outline": [
         [
-          -122.0030584,
-          37.3888212
+          -122.0042178,
+          37.3885432
         ],
         [
-          -122.00354,
-          37.3888085
+          -122.0048705,
+          37.388526
         ],
         [
-          -122.0035288,
-          37.3885614
+          -122.0048716,
+          37.3886675
         ],
         [
-          -122.0037018,
-          37.3885569
+          -122.0048726,
+          37.3888049
         ],
         [
-          -122.0037426,
-          37.3895176
+          -122.0048737,
+          37.3889423
         ],
         [
-          -122.0036969,
-          37.3895188
+          -122.0048747,
+          37.3890796
         ],
         [
-          -122.0035043,
-          37.3895239
+          -122.0048758,
+          37.389217
         ],
         [
-          -122.0033116,
-          37.389529
+          -122.0048769,
+          37.3893543
         ],
         [
-          -122.003088,
-          37.3895349
+          -122.004878,
+          37.3894876
         ],
         [
-          -122.0030584,
-          37.3888212
+          -122.0046602,
+          37.3894934
+        ],
+        [
+          -122.0044675,
+          37.3894985
+        ],
+        [
+          -122.0042749,
+          37.3895036
+        ],
+        [
+          -122.0042586,
+          37.389504
+        ],
+        [
+          -122.0042178,
+          37.3885432
         ]
       ]
     }
@@ -79,11 +95,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001118"
+            "SRC-001118",
+            "SRC-001521"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -103,8 +121,16 @@
             "SRC-001118"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 67,
+          "src": [
+            "SRC-001521"
+          ],
+          "note": "55 townhomes and 12 flats; April 2026 city item"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -114,6 +140,12 @@
             "SRC-001118"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLNG-2024-0083",
+          "src": [
+            "SRC-001521"
+          ]
         }
       ]
     }
@@ -124,9 +156,26 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "text": "City item lists APNs 205-12-001, -002, -003 and -004.",
+      "src": [
+        "SRC-001521"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Paul Meuser",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001521"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -144,6 +193,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

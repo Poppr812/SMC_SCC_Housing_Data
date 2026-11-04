@@ -1,6 +1,6 @@
 {
   "id": "SCC-000124",
-  "name": "1565 Mabury Rd",
+  "name": "Berryessa BART Affordable Housing",
   "parcels": [
     {
       "apn": "254-17-113",
@@ -143,6 +143,12 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "825 Berryessa Station Way",
+      "src": [
+        "SRC-001397"
+      ]
     }
   ],
   "images": [],
@@ -168,8 +174,15 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001397"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -187,7 +200,8 @@
         {
           "value": 195,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001397"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -198,7 +212,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001397"
           ]
         }
       ]
@@ -224,6 +239,78 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 10,
+          "src": [
+            "SRC-001397"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 63,
+            "1br": 25,
+            "2br": 54,
+            "3br": 53,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 50,
+              "ami": 30
+            },
+            {
+              "count": 92,
+              "ami": 50
+            },
+            {
+              "count": 51,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001666"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 162592874,
+          "src": [
+            "SRC-001666"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -233,10 +320,164 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CTCAC CA-25-638: Berryessa TOD, located at 1565 Mabury Road in San Jose on a 0.8 acre site, requested and is being recommended for a reservation of $5,698,379 in annual federal tax credits and $82,584,672 of tax-exempt bond cap to finance the new construction of 195 units of housing, consisting of 193 restricted rental units and 2 unrestricted manager's units.",
+      "src": [
+        "SRC-001666"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Affirmed Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001397"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "HA Builder Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001397"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001397"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Bumb Family",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001397"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "State soft loan",
+      "provider": "California Strategic Growth Council",
+      "program": "Affordable Housing and Sustainable Communities",
+      "amount": 38500000,
+      "date": null,
+      "src": [
+        "SRC-001397"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "CDLAC allocation",
+      "program": "Tax-exempt bond cap recommended in staff report",
+      "amount": 82584672,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Tax-Exempt",
+      "amount": 82584672,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Taxable",
+      "amount": 14427757,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": "Tax-Exempt",
+      "amount": 42344703,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "HCD",
+      "program": "AHSC",
+      "amount": 29000000,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Housing Accelerator Fund",
+      "program": null,
+      "amount": 15499884,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": null,
+      "amount": 11115000,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": null,
+      "amount": 9898877,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 3961739,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 50772671,
+      "date": null,
+      "src": [
+        "SRC-001666"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -254,6 +495,51 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-08-05",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-25-638)",
+      "src": [
+        "SRC-001666"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026",
+      "type": "Construction start",
+      "label": "Article gives both May and June 2026",
+      "src": [
+        "SRC-001397"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01",
+      "type": "Construction start",
+      "label": "Expected construction start per CTCAC staff report",
+      "src": [
+        "SRC-001666"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028",
+      "type": "Completion",
+      "label": "Expected as early as spring 2028",
+      "src": [
+        "SRC-001397"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028-01",
+      "type": "Completion",
+      "label": "Expected completion per CTCAC staff report",
+      "src": [
+        "SRC-001666"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -261,6 +547,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

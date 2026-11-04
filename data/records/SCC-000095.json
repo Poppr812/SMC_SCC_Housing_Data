@@ -1,6 +1,6 @@
 {
   "id": "SCC-000095",
-  "name": "Monterey-Miner (Jemcor Dev)]",
+  "name": "Monterey and Madrone Apartments",
   "parcels": [
     {
       "apn": "726-36-059",
@@ -296,6 +296,68 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 70,
+            "2br": 116,
+            "3br": 63,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 25,
+              "ami": 30
+            },
+            {
+              "count": 25,
+              "ami": 50
+            },
+            {
+              "count": 196,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001615"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 124455933,
+          "src": [
+            "SRC-001615"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -305,10 +367,97 @@
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "CTCAC CA-21-744: Monterey and Madrone Apartments, located at 18960 Monterey Street in Morgan Hill, requested and is being recommended for a reservation of $5,531,422 in annual federal tax credits to finance the new construction of 246 units of housing serving large families with rents affordable to households earning 30- 60% of area median income (AMI).",
+      "src": [
+        "SRC-001615"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "JEMCOR Development Partners, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001615"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - Tax Exempt",
+      "program": null,
+      "amount": 62500000,
+      "date": null,
+      "src": [
+        "SRC-001615"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - Recycled Bonds",
+      "program": null,
+      "amount": 15000000,
+      "date": null,
+      "src": [
+        "SRC-001615"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - Taxable",
+      "program": null,
+      "amount": 13654030,
+      "date": null,
+      "src": [
+        "SRC-001615"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": null,
+      "amount": 66300000,
+      "date": null,
+      "src": [
+        "SRC-001615"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Lease Up Income",
+      "program": null,
+      "amount": 778448,
+      "date": null,
+      "src": [
+        "SRC-001615"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 10513396,
+      "date": null,
+      "src": [
+        "SRC-001615"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 46864089,
+      "date": null,
+      "src": [
+        "SRC-001615"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -328,6 +477,15 @@
       ]
     },
     {
+      "date": "2021-12-08",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-21-744)",
+      "src": [
+        "SRC-001615"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-09-20",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -341,6 +499,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

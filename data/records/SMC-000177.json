@@ -70,7 +70,8 @@
           "value": "Approved",
           "src": [
             "SRC-001104",
-            "SRC-001105"
+            "SRC-001105",
+            "SRC-001158"
           ],
           "note": "State report shows entitlement approval"
         }
@@ -92,7 +93,8 @@
         {
           "value": 14,
           "src": [
-            "SRC-001105"
+            "SRC-001105",
+            "SRC-001158"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -104,7 +106,7 @@
           "note": "Units in the application as reported"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -115,16 +117,39 @@
             "SRC-001105"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "UPR-10-22-15907, DR-2-23-16093",
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.25,
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001104",
         "SRC-001105"
+      ]
+    },
+    {
+      "text": "City list describes this as an office conversion at 1784 Sullivan Avenue and prints APN 006-254-030, the same APN it gives for 141 Third Avenue. This record is on 008-082-180.",
+      "src": [
+        "SRC-001158"
       ]
     }
   ],
@@ -136,6 +161,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Nelson Tong",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Developer/contact per city list",
+      "src": [
+        "SRC-001158"
       ]
     }
   ],
@@ -151,6 +186,15 @@
       ]
     },
     {
+      "date": "2022-10-06",
+      "type": "Application filed",
+      "label": "Intake date on city list",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-03-27",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -164,6 +208,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

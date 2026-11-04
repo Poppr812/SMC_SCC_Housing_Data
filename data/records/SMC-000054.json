@@ -396,8 +396,16 @@
             "SRC-000819"
           ],
           "note": "City approval December 2021; $183M construction loan closed July 2025; site cleared and flattened as of mid-2025"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001342",
+            "SRC-001359"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -427,11 +435,14 @@
             "SRC-000822",
             "SRC-000818",
             "SRC-000820",
-            "SRC-000821"
+            "SRC-000821",
+            "SRC-001342",
+            "SRC-001359"
           ],
           "note": "Building One 294 units; Building Two 186 units"
         }
-      ]
+      ],
+      "best": 0
     },
     "residential_sf": {
       "claims": [
@@ -453,7 +464,9 @@
             "SRC-000822",
             "SRC-000818",
             "SRC-000820",
-            "SRC-000821"
+            "SRC-000821",
+            "SRC-001342",
+            "SRC-001359"
           ]
         }
       ]
@@ -503,6 +516,12 @@
           "src": [
             "SRC-000821"
           ]
+        },
+        {
+          "value": "60 deed-restricted affordable units",
+          "src": [
+            "SRC-001359"
+          ]
         }
       ],
       "question": "Is the affordable count 48 low-income units (10%, per the 2021 CEQA document) or 60 units at 80-100% AMI (per 2022-2025 reports)?"
@@ -518,6 +537,31 @@
             "SRC-000822"
           ],
           "note": "General Plan amendment to Downtown Transit Core, rezone to Planned Development, Downtown Station Area Specific Plan amendment, design review, density bonus"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 98,
+            "1br": 228,
+            "2br": 140,
+            "3br": 14
+          },
+          "src": [
+            "SRC-001359"
+          ]
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "P18-0074, B23-0874, B23-0673",
+          "src": [
+            "SRC-001342"
+          ]
         }
       ]
     }
@@ -541,6 +585,13 @@
       "src": [
         "SRC-000821",
         "SRC-000818"
+      ]
+    },
+    {
+      "text": "City map names The Hanover Company as developer; SF YIMBY (September 2026) names Trammell Crow Residential.",
+      "src": [
+        "SRC-001342",
+        "SRC-001359"
       ]
     }
   ],
@@ -641,6 +692,15 @@
       "src": [
         "SRC-000821"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "The Hanover Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
+      ]
     }
   ],
   "financing": [
@@ -676,6 +736,15 @@
       ]
     },
     {
+      "date": "2022-01",
+      "type": "Approved",
+      "label": "Entitled",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-06",
       "type": "Sale",
       "label": "Trammell Crow Residential acquires the entitled land from PS Business Parks for $63M",
@@ -691,6 +760,15 @@
         "SRC-000820",
         "SRC-000818"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Completion",
+      "label": "SF YIMBY: move-ins likely before the end of 2027",
+      "src": [
+        "SRC-001359"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -698,6 +776,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from trade press leads and the sources listed (SRC-000818 to SRC-000822, SRC-000831)"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

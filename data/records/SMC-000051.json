@@ -115,10 +115,14 @@
         {
           "value": "Under construction",
           "src": [
-            "SRC-000808"
+            "SRC-000808",
+            "SRC-001349",
+            "SRC-001340",
+            "SRC-001350"
           ]
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -138,6 +142,12 @@
             "SRC-000808",
             "SRC-000809"
           ]
+        },
+        {
+          "value": 3.196,
+          "src": [
+            "SRC-001350"
+          ]
         }
       ]
     },
@@ -147,10 +157,13 @@
           "value": 320,
           "src": [
             "SRC-000808",
-            "SRC-000809"
+            "SRC-000809",
+            "SRC-001340",
+            "SRC-001350"
           ]
         }
-      ]
+      ],
+      "best": 0
     },
     "unit_mix": {
       "claims": [
@@ -194,7 +207,9 @@
           "value": 4030,
           "src": [
             "SRC-000808",
-            "SRC-000809"
+            "SRC-000809",
+            "SRC-001340",
+            "SRC-001350"
           ]
         }
       ]
@@ -205,7 +220,8 @@
           "value": 7,
           "src": [
             "SRC-000808",
-            "SRC-000809"
+            "SRC-000809",
+            "SRC-001350"
           ]
         }
       ]
@@ -226,7 +242,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-000808"
+            "SRC-000808",
+            "SRC-001340"
           ]
         }
       ]
@@ -237,6 +254,12 @@
           "value": "50 units deed-restricted for low-income households; AMI tiers not published",
           "src": [
             "SRC-000808"
+          ]
+        },
+        {
+          "value": "50 low income units (80% AMI) for 55 years",
+          "src": [
+            "SRC-001340"
           ]
         }
       ]
@@ -253,6 +276,16 @@
           "note": "City of Burlingame approval; CEQA Class 32 infill categorical exemption"
         }
       ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -266,6 +299,12 @@
       "text": "Project includes a new city park at the end of Ingold Road",
       "src": [
         "SRC-000808"
+      ]
+    },
+    {
+      "text": "City page lists Planning Commission approval as October 10, 2020, and an expiration date of December 20, 2027.",
+      "src": [
+        "SRC-001350"
       ]
     }
   ],
@@ -320,6 +359,24 @@
       ]
     },
     {
+      "date": "2023-07-10",
+      "type": "Other",
+      "label": "Amendment approved, 298 to 302 units",
+      "src": [
+        "SRC-001350"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-09",
+      "type": "Other",
+      "label": "Amendment approved, 302 to 320 units",
+      "src": [
+        "SRC-001350"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-12-17",
       "type": "Other",
       "label": "CEQA notice of exemption filed for the 320-unit project",
@@ -350,6 +407,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from trade press leads and the sources listed (SRC-000808 to SRC-000810)"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

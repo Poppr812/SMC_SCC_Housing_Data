@@ -1,6 +1,6 @@
 {
   "id": "SCC-000378",
-  "name": "CROSSWINDS PHASE 1",
+  "name": "Crosswinds (Half-Dividend)",
   "parcels": [
     {
       "apn": "728-30-019",
@@ -93,8 +93,15 @@
             "SRC-001135"
           ],
           "note": "State category: single-family attached"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-001436"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -104,8 +111,15 @@
             "SRC-001135"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001436"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -125,8 +139,16 @@
             "SRC-001135"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 269,
+          "src": [
+            "SRC-001436"
+          ],
+          "note": "Whole project; the 14 was one phase's permit batch"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -136,15 +158,57 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2020-0003, SR2020-0010, EA2020-0007",
+          "src": [
+            "SRC-001436"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001436"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "40 below-market-rate units",
+          "src": [
+            "SRC-001436"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 31,
+          "src": [
+            "SRC-001436"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001135"
+      ]
+    },
+    {
+      "text": "56 single-family, 64 duets, 149 condominiums. City lists APNs 728-30-001 to -004; this record's parcel is a later lot in Phase 1.",
+      "src": [
+        "SRC-001436"
       ]
     }
   ],
@@ -174,6 +238,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

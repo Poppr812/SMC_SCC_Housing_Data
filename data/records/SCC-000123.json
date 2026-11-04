@@ -66,8 +66,16 @@
             "SRC-001126"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001288"
+          ],
+          "note": "Notice of Determination gives approval date of August 17, 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -87,8 +95,18 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 228,
+          "src": [
+            "SRC-001287",
+            "SRC-001288",
+            "SRC-001289"
+          ],
+          "note": "Earlier SB 330 filing 24PLN-00011 was 198"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -100,17 +118,144 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001287",
+            "SRC-001288"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 19,
+            "1br": 121,
+            "2br": 63,
+            "3br": 25,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001288",
+            "SRC-001289"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 284,
+          "src": [
+            "SRC-001289"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.0,
+          "src": [
+            "SRC-001289"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001288"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "30 below-market-rate units (13%)",
+          "src": [
+            "SRC-001288",
+            "SRC-001289"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001287",
+            "SRC-001288"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "text": "State notice lists two parcels to be merged: APNs 147-05-102 and 147-05-012. The record carries only 147-05-102.",
+      "src": [
+        "SRC-001288"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Acclaim Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001288",
+        "SRC-001289"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Matt Hengehold / Hengehold Trucks",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-001289"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T-Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001289"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "RHAA",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001289"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -121,6 +266,15 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2026-08-17",
+      "type": "Approved",
+      "label": "Approval date per CEQA Notice of Determination",
+      "src": [
+        "SRC-001288"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -128,6 +282,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

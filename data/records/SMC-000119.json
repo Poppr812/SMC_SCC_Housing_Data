@@ -1,77 +1,7 @@
 {
   "id": "SMC-000119",
-  "name": "1870 El Camino Real",
+  "name": "1870-1876 El Camino Real",
   "parcels": [
-    {
-      "apn": "025-150-160",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.3847135,
-          37.5968229
-        ],
-        [
-          -122.3850284,
-          37.5965922
-        ],
-        [
-          -122.3852759,
-          37.5968023
-        ],
-        [
-          -122.3852827,
-          37.596809
-        ],
-        [
-          -122.385288,
-          37.5968166
-        ],
-        [
-          -122.3852919,
-          37.5968247
-        ],
-        [
-          -122.385294,
-          37.5968332
-        ],
-        [
-          -122.3852945,
-          37.5968418
-        ],
-        [
-          -122.3852932,
-          37.5968505
-        ],
-        [
-          -122.3852903,
-          37.5968588
-        ],
-        [
-          -122.3852857,
-          37.5968667
-        ],
-        [
-          -122.3852797,
-          37.5968739
-        ],
-        [
-          -122.3852723,
-          37.5968802
-        ],
-        [
-          -122.3850087,
-          37.5970734
-        ],
-        [
-          -122.3847135,
-          37.5968229
-        ]
-      ]
-    },
     {
       "apn": "025-150-190",
       "from": null,
@@ -149,6 +79,12 @@
       "src": [
         "SRC-001132"
       ]
+    },
+    {
+      "text": "1870-1876 El Camino Real",
+      "src": [
+        "SRC-001348"
+      ]
     }
   ],
   "images": [],
@@ -172,8 +108,17 @@
             "SRC-001132"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001340",
+            "SRC-001348"
+          ],
+          "note": "City lists under Approved Projects; building permit steps not yet marked"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -190,11 +135,14 @@
         {
           "value": 169,
           "src": [
-            "SRC-001132"
+            "SRC-001132",
+            "SRC-001340",
+            "SRC-001348"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -206,13 +154,82 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001348"
+          ],
+          "note": "City states 7 stories; height 7 to 8 stories depending on street frontage"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.14,
+          "src": [
+            "SRC-001348"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "17 moderate income units (120% AMI) for 55 years",
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001348"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001132"
+      ]
+    },
+    {
+      "text": "City page gives an expiration date of November 24, 2026.",
+      "src": [
+        "SRC-001348"
       ]
     }
   ],
@@ -234,6 +251,16 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Prime Investors Group, LLC",
+      "contact": "Ryan Chang",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001348"
+      ]
     }
   ],
   "financing": [],
@@ -246,6 +273,24 @@
       "src": [
         "SRC-001132"
       ]
+    },
+    {
+      "date": "2020-10-26",
+      "type": "Approved",
+      "label": "Planning Commission approval",
+      "src": [
+        "SRC-001348"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-11-13",
+      "type": "Other",
+      "label": "Planning Commission approved amendment to design",
+      "src": [
+        "SRC-001348"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -253,6 +298,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

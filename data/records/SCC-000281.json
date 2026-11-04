@@ -1,6 +1,6 @@
 {
   "id": "SCC-000281",
-  "name": "501 Almaden Ave",
+  "name": "501 South Almaden Avenue",
   "parcels": [
     {
       "apn": "264-31-111",
@@ -78,8 +78,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001411"
+          ],
+          "note": "New SB 35 plan; no approval reported."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -99,15 +107,24 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 99,
+          "src": [
+            "SRC-001411"
+          ],
+          "note": "Up from 53."
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001411"
           ]
         }
       ]
@@ -132,6 +149,34 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 67,
+            "1br": 31,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001411"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001411"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -142,7 +187,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Satellite Affordable Housing Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001411"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Leddy Maytum Stacy Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001411"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -160,6 +224,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

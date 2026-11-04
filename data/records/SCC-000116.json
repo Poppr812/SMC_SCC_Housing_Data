@@ -1,6 +1,6 @@
 {
   "id": "SCC-000116",
-  "name": "439 S 4th St",
+  "name": "439-451 South 4th Street",
   "parcels": [
     {
       "apn": "467-47-096",
@@ -47,6 +47,12 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "text": "451 South 4th Street",
+      "src": [
+        "SRC-001395"
+      ]
     }
   ],
   "images": [],
@@ -70,8 +76,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001395"
+          ],
+          "note": "New proposal by a new owner; a similar plan was approved in 2024 under the prior owner."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -91,8 +105,16 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 368,
+          "src": [
+            "SRC-001395"
+          ],
+          "note": "Estimated 368 affordable units plus four manager units."
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -102,6 +124,37 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 25,
+          "src": [
+            "SRC-001395"
+          ],
+          "note": "Approximately."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.5,
+          "src": [
+            "SRC-001395"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001395"
+          ]
         }
       ]
     }
@@ -114,7 +167,17 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "American Housing Co. (oWow)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001395"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -132,6 +195,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

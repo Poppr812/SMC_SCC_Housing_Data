@@ -1,6 +1,6 @@
 {
   "id": "SCC-000307",
-  "name": "1380 W Campbell Ave",
+  "name": "1380/1400 W Campbell Ave",
   "parcels": [
     {
       "apn": "404-01-004",
@@ -83,6 +83,12 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "text": "1400 W Campbell Ave",
+      "src": [
+        "SRC-001549"
+      ]
     }
   ],
   "images": [],
@@ -95,8 +101,16 @@
             "SRC-001134"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Six three-story townhome buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -127,8 +141,16 @@
             "SRC-001134"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 40,
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "City's current description"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -140,17 +162,46 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001549"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "text": "City status Decision Rendered, last updated 2026-10-30; the data does not say what the decision was.",
+      "src": [
+        "SRC-001549"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Madrone Ventures Inc",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001549"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -168,6 +219,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

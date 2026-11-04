@@ -1,6 +1,6 @@
 {
   "id": "SCC-000137",
-  "name": "800 San Antonio Rd",
+  "name": "800-814 San Antonio Road",
   "parcels": [
     {
       "apn": "147-03-038",
@@ -55,6 +55,12 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "808 San Antonio Rd, Palo Alto",
+      "src": [
+        "SRC-001290"
+      ]
     }
   ],
   "images": [],
@@ -80,8 +86,17 @@
             "SRC-001127"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001290",
+            "SRC-001291"
+          ],
+          "note": "Replacement 174-unit rezoning is under review; prior 75-unit approval was not built"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -109,16 +124,26 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 174,
+          "src": [
+            "SRC-001290",
+            "SRC-001291"
+          ],
+          "note": "Current rezoning 25PLN-00225. Earlier: 75 rental units approved, not built; 76 ownership units 23PLN-00010; 120 units prescreening"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001127"
+            "SRC-001127",
+            "SRC-001290",
+            "SRC-001291"
           ]
         }
       ]
@@ -129,6 +154,12 @@
           "value": "15 deed-restricted units reported to the state",
           "src": [
             "SRC-001127"
+          ]
+        },
+        {
+          "value": "25 below-market-rate units: 14 very low, 6 low, 5 moderate income",
+          "src": [
+            "SRC-001291"
           ]
         }
       ]
@@ -142,20 +173,96 @@
             "SRC-001127"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "25PLN-00225",
+          "src": [
+            "SRC-001290"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001290",
+            "SRC-001291"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 202,
+          "src": [
+            "SRC-001291"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.88,
+          "src": [
+            "SRC-001290",
+            "SRC-001291"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126",
         "SRC-001127"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Timespace Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001291"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "TS 800 SA LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (prescreening; the city page spells it TS 800 SA LCC)",
+      "src": [
+        "SRC-001292"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Lowney Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001291"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "HMH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001291"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -174,6 +281,15 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2026-05-07",
+      "type": "Other",
+      "label": "Architectural Review Board study session scheduled",
+      "src": [
+        "SRC-001291"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -181,6 +297,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

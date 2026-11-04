@@ -1,9 +1,9 @@
 {
   "id": "SCC-000275",
-  "name": "15349 Los Gatos Blvd",
+  "name": "Genuine Automotive (15349 & 15367 Los Gatos Blvd)",
   "parcels": [
     {
-      "apn": "424-19-048",
+      "apn": "424-19-049",
       "from": null,
       "to": null,
       "src": [
@@ -11,40 +11,28 @@
       ],
       "outline": [
         [
+          -121.9583599,
+          37.2457504
+        ],
+        [
           -121.9584552,
           37.2456223
-        ],
-        [
-          -121.9585292,
-          37.2455147
-        ],
-        [
-          -121.9585996,
-          37.2454047
-        ],
-        [
-          -121.958666,
-          37.2452923
-        ],
-        [
-          -121.9587286,
-          37.2451776
-        ],
-        [
-          -121.959409,
-          37.2453868
-        ],
-        [
-          -121.9597483,
-          37.2454911
         ],
         [
           -121.9588452,
           37.2459334
         ],
         [
-          -121.9584552,
-          37.2456223
+          -121.9585147,
+          37.2460953
+        ],
+        [
+          -121.958254,
+          37.2458874
+        ],
+        [
+          -121.9583599,
+          37.2457504
         ]
       ]
     }
@@ -55,6 +43,12 @@
       "src": [
         "SRC-001120",
         "SRC-001121"
+      ]
+    },
+    {
+      "text": "15367 Los Gatos Blvd",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -111,7 +105,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001121"
+            "SRC-001121",
+            "SRC-001554"
           ]
         }
       ]
@@ -141,10 +136,16 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120",
         "SRC-001121"
+      ]
+    },
+    {
+      "text": "8 below-market units.",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -174,6 +175,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

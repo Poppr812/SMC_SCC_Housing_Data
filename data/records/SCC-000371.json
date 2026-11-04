@@ -1,6 +1,6 @@
 {
   "id": "SCC-000371",
-  "name": "325 Franklin St",
+  "name": "333 Franklin Street",
   "parcels": [
     {
       "apn": "158-12-069",
@@ -46,6 +46,12 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "333 Franklin Street, Mountain View",
+      "src": [
+        "SRC-001332"
       ]
     }
   ],
@@ -101,9 +107,16 @@
             "SRC-001101"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 11,
+          "src": [
+            "SRC-001332"
+          ],
+          "note": "11 apartments plus two detached ADUs; SF YIMBY counts 13. Replaces an eight-unit complex"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -116,6 +129,39 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001332",
+            "SRC-001333"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.17,
+          "src": [
+            "SRC-001333"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001332"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -125,9 +171,37 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "Matched by APN 158-12-069. State notice names Jenny Kang as project architect; SF YIMBY names Hau-Ching Liao as designer.",
+      "src": [
+        "SRC-001332",
+        "SRC-001333"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Silicon Valley Custom Homes Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001333"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David Chao",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-001333"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -146,6 +220,15 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2026-06-25",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-001332"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -153,6 +236,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

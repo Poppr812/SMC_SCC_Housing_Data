@@ -1,6 +1,6 @@
 {
   "id": "SMC-000114",
-  "name": "1766 El Camino Real",
+  "name": "Revery (1766 El Camino Real)",
   "parcels": [
     {
       "apn": "025-161-110",
@@ -111,36 +111,6 @@
           37.5948143
         ]
       ]
-    },
-    {
-      "apn": "026-161-110",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.3646524,
-          37.5831746
-        ],
-        [
-          -122.364891,
-          37.5829052
-        ],
-        [
-          -122.365032,
-          37.5829843
-        ],
-        [
-          -122.3647935,
-          37.5832537
-        ],
-        [
-          -122.3646524,
-          37.5831746
-        ]
-      ]
     }
   ],
   "addresses": [
@@ -182,8 +152,17 @@
             "SRC-001133"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001353",
+            "SRC-001349"
+          ],
+          "note": "City: \"constructed and occupied\"; listed under Built Projects. Stabilization not stated"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -201,11 +180,14 @@
         {
           "value": 311,
           "src": [
-            "SRC-001133"
+            "SRC-001133",
+            "SRC-001353",
+            "SRC-001349"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -238,11 +220,61 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001353"
+          ],
+          "note": "Project page"
+        },
+        {
+          "value": 7,
+          "src": [
+            "SRC-001349"
+          ],
+          "note": "City list page"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.7,
+          "src": [
+            "SRC-001353"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 319,
+          "src": [
+            "SRC-001353"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001353"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001132",
         "SRC-001133"
@@ -266,6 +298,34 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Carmel Partners",
+      "contact": "Greg Pasquali",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001353"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Carmel Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001354"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "TCA Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001353"
       ]
     }
   ],
@@ -302,6 +362,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

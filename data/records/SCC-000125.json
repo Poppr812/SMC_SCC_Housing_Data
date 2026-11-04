@@ -1,6 +1,6 @@
 {
   "id": "SCC-000125",
-  "name": "515-545 N Whisman Rd",
+  "name": "515-545 N Whisman Rd Rowhouses",
   "parcels": [
     {
       "apn": "160-54-002",
@@ -52,11 +52,13 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001101"
+            "SRC-001101",
+            "SRC-001320"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -100,6 +102,26 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001320"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.0,
+          "src": [
+            "SRC-001320"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -110,7 +132,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Stonelex A., LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001320"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -121,6 +154,15 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2026-03-11",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-001320"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -128,6 +170,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

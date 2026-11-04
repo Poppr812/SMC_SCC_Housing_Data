@@ -147,11 +147,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001100"
+            "SRC-001100",
+            "SRC-001512"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -168,7 +170,8 @@
         {
           "value": 6,
           "src": [
-            "SRC-001100"
+            "SRC-001100",
+            "SRC-001512"
           ],
           "note": "Units in the application as reported"
         }
@@ -184,17 +187,47 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "2 affordable units",
+          "src": [
+            "SRC-001512"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Nageshawara Vempaty",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001512"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Acadia Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001512"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -212,6 +245,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

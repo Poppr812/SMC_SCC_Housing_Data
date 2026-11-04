@@ -1,6 +1,6 @@
 {
   "id": "SCC-000209",
-  "name": "DIANA-VALLEY OAK PARTNERS",
+  "name": "Diana-Walk (Diana-Valley Oak)",
   "parcels": [
     {
       "apn": "726-12-001",
@@ -129,11 +129,13 @@
         {
           "value": "Approved",
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001443"
           ],
           "note": "State report shows the application approved"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -164,15 +166,37 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SR2024-0019, SD2024-0009, EA2024-0014",
+          "src": [
+            "SRC-001443"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001443"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
+      ]
+    },
+    {
+      "text": "City also lists APN 726-12-004.",
+      "src": [
+        "SRC-001443"
       ]
     }
   ],
@@ -187,6 +211,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2025-07-08",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolutions 25-07, 25-08)",
+      "src": [
+        "SRC-001443"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -194,6 +227,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

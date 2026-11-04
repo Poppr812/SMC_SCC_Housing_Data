@@ -1,6 +1,6 @@
 {
   "id": "SCC-000165",
-  "name": "401-606 Valley Way",
+  "name": "600 Valley Way",
   "parcels": [
     {
       "apn": "022-28-022",
@@ -175,6 +175,12 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "text": "600 Valley Way",
+      "src": [
+        "SRC-001601"
+      ]
     }
   ],
   "images": [],
@@ -184,11 +190,13 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001124"
+            "SRC-001124",
+            "SRC-001601"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -216,7 +224,8 @@
         {
           "value": 134,
           "src": [
-            "SRC-001124"
+            "SRC-001124",
+            "SRC-001601"
           ],
           "note": "Units in the application as reported"
         }
@@ -232,6 +241,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001601"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -240,9 +259,25 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "text": "The CEQA listing gives APNs 222-80-25, 222-80-24 and 222-80-22, which do not match this record's parcel or the county format. It does not state an approval date.",
+      "src": [
+        "SRC-001601"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Sobrato Organization",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001601"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -253,6 +288,15 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "date": "2026-06-23",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption posted",
+      "src": [
+        "SRC-001601"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -260,6 +304,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

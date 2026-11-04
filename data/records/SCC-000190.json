@@ -1,6 +1,6 @@
 {
   "id": "SCC-000190",
-  "name": "HUNTINGTON",
+  "name": "Huntington (DeNova Homes, Monterey-Kerley)",
   "parcels": [
     {
       "apn": "726-62-007",
@@ -75,6 +75,12 @@
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "19380 Monterey Road, Morgan Hill, CA",
+      "src": [
+        "SRC-001437"
+      ]
     }
   ],
   "images": [],
@@ -88,8 +94,15 @@
             "SRC-001135"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001437"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -100,8 +113,15 @@
             "SRC-001135"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001437"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -126,11 +146,13 @@
         {
           "value": 93,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001437"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -149,6 +171,12 @@
           "src": [
             "SRC-001135"
           ]
+        },
+        {
+          "value": "14 affordable units",
+          "src": [
+            "SRC-001422"
+          ]
         }
       ]
     },
@@ -161,20 +189,62 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SR2021-0014, SD2021-0004, EA2021-0012",
+          "src": [
+            "SRC-001437"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001437"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.6,
+          "src": [
+            "SRC-001437"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "Marketed as Huntington, 93 townhome-styled condominiums by DeNova Homes. City lists pre-subdivision APNs 726-42-001 and -002.",
+      "src": [
+        "SRC-001438"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "DeNova Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001437"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -208,6 +278,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

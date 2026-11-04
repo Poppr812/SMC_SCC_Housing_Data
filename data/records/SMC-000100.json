@@ -1,6 +1,6 @@
 {
   "id": "SMC-000100",
-  "name": "JUHSD Staff Housing",
+  "name": "Serramonte Del Rey Campus Redevelopment (JUHSD)",
   "parcels": [
     {
       "apn": "091-211-230",
@@ -280,8 +280,16 @@
             "SRC-001105"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001158"
+          ],
+          "note": "City list: all entitlements approved; City Council approved Feb. 26, 2024. The earlier Permitted claim comes from state report rows for the separate 122-unit staff housing project on this APN"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -306,7 +314,9 @@
         {
           "value": 1235,
           "src": [
-            "SRC-001104"
+            "SRC-001104",
+            "SRC-001158",
+            "SRC-001168"
           ],
           "note": "Units in the application as reported"
         }
@@ -330,6 +340,13 @@
           "src": [
             "SRC-001105"
           ]
+        },
+        {
+          "value": "City list: no Affordable Housing Plan has been submitted/approved. CEQA notice: 20% affordable.",
+          "src": [
+            "SRC-001158",
+            "SRC-001168"
+          ]
         }
       ]
     },
@@ -342,16 +359,47 @@
             "SRC-001105"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "GPA-04-21-14998, PD-04-21-14997, DR-04-21-15000, SUB-04-21-14999",
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 22.0,
+          "src": [
+            "SRC-001158",
+            "SRC-001168"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001104",
         "SRC-001105"
+      ]
+    },
+    {
+      "text": "This APN also carried a separate 122-unit Faculty and Staff Housing project (SCH 2019119065). The state-report rows in this record mix the two projects.",
+      "src": [
+        "SRC-001169",
+        "SRC-001168"
+      ]
+    },
+    {
+      "text": "San Mateo County AHF predevelopment pipeline, September 2024: Serramonte del Rey (Eden): 87 total units, 40% at 15-30% AMI and 60% at 31-60% AMI. The affordable component of this site, recorded as a note.",
+      "src": [
+        "SRC-001649"
       ]
     }
   ],
@@ -364,9 +412,41 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Jefferson Union High School District",
+      "contact": "Tina Van Raaphorst",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001158",
+        "SRC-001168"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Eden",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Developer of affordable component",
+      "src": [
+        "SRC-001649"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County",
+      "program": "Affordable Housing Fund commitment as of July 2024",
+      "amount": 300000,
+      "date": "2024-07",
+      "src": [
+        "SRC-001649"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -392,6 +472,24 @@
       "src": [
         "SRC-001105"
       ]
+    },
+    {
+      "date": "2021-04-23",
+      "type": "Application filed",
+      "label": "Intake date on city list",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-02-26",
+      "type": "Approved",
+      "label": "City Council approved",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -399,6 +497,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,53 +1,7 @@
 {
   "id": "SMC-000147",
-  "name": "111 San Bruno Ave",
+  "name": "111 San Bruno Avenue W",
   "parcels": [
-    {
-      "apn": "020-121-350",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4116017,
-          37.6296464
-        ],
-        [
-          -122.4119144,
-          37.6295299
-        ],
-        [
-          -122.4119222,
-          37.6295438
-        ],
-        [
-          -122.4119705,
-          37.6296299
-        ],
-        [
-          -122.4120571,
-          37.6295984
-        ],
-        [
-          -122.4120591,
-          37.6296894
-        ],
-        [
-          -122.4120606,
-          37.6297605
-        ],
-        [
-          -122.4117364,
-          37.629879
-        ],
-        [
-          -122.4116017,
-          37.6296464
-        ]
-      ]
-    },
     {
       "apn": "020-121-360",
       "from": null,
@@ -162,11 +116,13 @@
           "value": "Approved",
           "src": [
             "SRC-001129",
-            "SRC-001123"
+            "SRC-001123",
+            "SRC-001346"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -191,18 +147,21 @@
         {
           "value": 46,
           "src": [
-            "SRC-001129"
+            "SRC-001129",
+            "SRC-001346"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001123"
+            "SRC-001123",
+            "SRC-001346"
           ]
         }
       ]
@@ -213,6 +172,12 @@
           "value": "11 deed-restricted units reported to the state",
           "src": [
             "SRC-001123"
+          ]
+        },
+        {
+          "value": "7 affordable units",
+          "src": [
+            "SRC-001346"
           ]
         }
       ]
@@ -228,11 +193,41 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.41,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2670,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001129",
         "SRC-001123"
@@ -256,6 +251,26 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "L. P. Construction Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Construction contact",
+      "src": [
+        "SRC-001346"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "San Bruno Development LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001358"
       ]
     }
   ],
@@ -284,6 +299,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

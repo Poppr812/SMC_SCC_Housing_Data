@@ -1,109 +1,7 @@
 {
   "id": "SCC-000213",
-  "name": "1320 Diana Ave Morgan Hill",
+  "name": "North Diana (1220-1320 Diana Ave)",
   "parcels": [
-    {
-      "apn": "728-17-013",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.6330726,
-          37.1375374
-        ],
-        [
-          -121.6328203,
-          37.1371123
-        ],
-        [
-          -121.6326909,
-          37.1368944
-        ],
-        [
-          -121.6327477,
-          37.1369826
-        ],
-        [
-          -121.6328095,
-          37.1370673
-        ],
-        [
-          -121.6328762,
-          37.1371483
-        ],
-        [
-          -121.6329476,
-          37.1372252
-        ],
-        [
-          -121.6330234,
-          37.1372978
-        ],
-        [
-          -121.6331033,
-          37.1373658
-        ],
-        [
-          -121.6342464,
-          37.1382946
-        ],
-        [
-          -121.6342526,
-          37.1383
-        ],
-        [
-          -121.6342578,
-          37.1383063
-        ],
-        [
-          -121.6342619,
-          37.1383135
-        ],
-        [
-          -121.6342646,
-          37.1383213
-        ],
-        [
-          -121.634266,
-          37.1383295
-        ],
-        [
-          -121.6342659,
-          37.1383377
-        ],
-        [
-          -121.6342644,
-          37.1383458
-        ],
-        [
-          -121.6342615,
-          37.1383536
-        ],
-        [
-          -121.6342573,
-          37.1383607
-        ],
-        [
-          -121.634252,
-          37.138367
-        ],
-        [
-          -121.6342457,
-          37.1383723
-        ],
-        [
-          -121.6337843,
-          37.1387362
-        ],
-        [
-          -121.6330726,
-          37.1375374
-        ]
-      ]
-    },
     {
       "apn": "728-17-015",
       "from": null,
@@ -153,68 +51,6 @@
           37.1361697
         ]
       ]
-    },
-    {
-      "apn": "728-17-037",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.6312588,
-          37.1357419
-        ],
-        [
-          -121.6312811,
-          37.1357333
-        ],
-        [
-          -121.6314295,
-          37.1356762
-        ],
-        [
-          -121.6317904,
-          37.1355375
-        ],
-        [
-          -121.6318491,
-          37.1355149
-        ],
-        [
-          -121.6320641,
-          37.135877
-        ],
-        [
-          -121.6326719,
-          37.1369013
-        ],
-        [
-          -121.6327177,
-          37.1369741
-        ],
-        [
-          -121.6327672,
-          37.1370445
-        ],
-        [
-          -121.6328203,
-          37.1371123
-        ],
-        [
-          -121.6330726,
-          37.1375374
-        ],
-        [
-          -121.6324621,
-          37.1377696
-        ],
-        [
-          -121.6312588,
-          37.1357419
-        ]
-      ]
     }
   ],
   "addresses": [
@@ -249,11 +85,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001114"
+            "SRC-001114",
+            "SRC-001431"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -297,17 +135,77 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "9 duplexes (18 units) affordable to low-income households",
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 21.4,
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "text": "County: 89 parcels, 68 single-family homes, 9 duplexes (18 units) and two existing homes. County also lists APN 728-17-014.",
+      "src": [
+        "SRC-001431"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "North Diana, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001431"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -325,6 +223,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

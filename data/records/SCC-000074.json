@@ -1,6 +1,6 @@
 {
   "id": "SCC-000074",
-  "name": "777 Sunnyvale Saratoga",
+  "name": "777 Sunnyvale Saratoga Road",
   "parcels": [
     {
       "apn": "201-36-002",
@@ -73,11 +73,13 @@
           "value": "Approved",
           "src": [
             "SRC-001118",
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001514"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -105,9 +107,16 @@
             "SRC-001118"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 242,
+          "src": [
+            "SRC-001513"
+          ],
+          "note": "80 townhomes and 162 apartments"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "affordability_type": {
       "claims": [
@@ -149,9 +158,26 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "SF YIMBY reported in October 2025 that a Milrose Properties affiliate reached a deal to buy the site for $44.3 million.",
+      "src": [
+        "SRC-001515"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Valley Oak Partners, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001513"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -177,6 +203,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

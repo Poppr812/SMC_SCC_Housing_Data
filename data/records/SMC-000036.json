@@ -80,8 +80,16 @@
             "SRC-000639"
           ],
           "note": "Building permit issued 2025-07-17"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001355"
+          ],
+          "note": "City list section: Under Construction"
         }
-      ]
+      ],
+      "best": 1
     },
     "population": {
       "claims": [
@@ -126,10 +134,13 @@
             "SRC-000638",
             "SRC-000639",
             "SRC-000640",
-            "SRC-000641"
+            "SRC-000641",
+            "SRC-001355",
+            "SRC-001356"
           ]
         }
-      ]
+      ],
+      "best": 0
     },
     "unit_mix": {
       "claims": [
@@ -145,6 +156,17 @@
             "SRC-000640",
             "SRC-000641"
           ]
+        },
+        {
+          "value": {
+            "studio": 30,
+            "1br": 10,
+            "2br": 30,
+            "3br": 27
+          },
+          "src": [
+            "SRC-001356"
+          ]
         }
       ]
     },
@@ -156,6 +178,13 @@
             "SRC-000641"
           ],
           "note": "Approximate"
+        },
+        {
+          "value": 125766,
+          "src": [
+            "SRC-001356"
+          ],
+          "note": "Includes amenity space and podium"
         }
       ]
     },
@@ -164,7 +193,8 @@
         {
           "value": 7,
           "src": [
-            "SRC-000641"
+            "SRC-000641",
+            "SRC-001356"
           ]
         }
       ]
@@ -174,7 +204,9 @@
         {
           "value": 63,
           "src": [
-            "SRC-000641"
+            "SRC-000641",
+            "SRC-001355",
+            "SRC-001356"
           ]
         }
       ]
@@ -243,6 +275,13 @@
           "src": [
             "SRC-000638"
           ]
+        },
+        {
+          "value": "10 very low income, 66 low income, 19 moderate",
+          "src": [
+            "SRC-001355",
+            "SRC-001356"
+          ]
         }
       ]
     },
@@ -279,6 +318,16 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "2024-17",
+          "src": [
+            "SRC-001356"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -286,6 +335,12 @@
       "text": "Seven stories, 93 feet: two-story concrete podium with five wood-frame floors",
       "src": [
         "SRC-000641"
+      ]
+    },
+    {
+      "text": "CTCAC CA-24-703: Broadway Meadows, located at 1301 Broadway in Millbrae on a 0.67 acre site, requested and is being recommended for a reservation of $4,290,469 in annual federal tax credits and $46,000,000 of tax-exempt bond cap to finance the new construction of 97 units of housing, consisting of 96 restricted rental units and 1 unrestricted manager's unit.",
+      "src": [
+        "SRC-001654"
       ]
     }
   ],
@@ -390,6 +445,16 @@
         "SRC-000640",
         "SRC-000642"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "AMG and Associates, LLC",
+      "contact": "Matthew Ramos",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001356"
+      ]
     }
   ],
   "financing": [
@@ -481,6 +546,15 @@
       ]
     },
     {
+      "date": "2025-06",
+      "type": "Construction start",
+      "label": "Expected construction start per CTCAC staff report",
+      "src": [
+        "SRC-001654"
+      ],
+      "estimated": true
+    },
+    {
       "date": "2025-07-17",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -503,6 +577,16 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from HCD APR Table A2 data and the sources listed"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

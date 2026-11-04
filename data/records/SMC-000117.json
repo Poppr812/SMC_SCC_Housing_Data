@@ -67,15 +67,24 @@
             "SRC-001104"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001158"
+          ],
+          "note": "City list: mixed-use condominium building"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
         {
           "value": "Proposed",
           "src": [
-            "SRC-001104"
+            "SRC-001104",
+            "SRC-001158"
           ],
           "note": "State report shows an application with no approval reported"
         }
@@ -99,8 +108,15 @@
             "SRC-001104"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 185,
+          "src": [
+            "SRC-001158"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -110,15 +126,38 @@
             "SRC-001104"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SUB-05-21-015047, UPR-05-21-015048, DR-05-21-015049",
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.48,
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001104"
+      ]
+    },
+    {
+      "text": "City list gives APNs 005-061-010, 020, 030, 040, 050, 060 and 070. This record holds only 005-061-010.",
+      "src": [
+        "SRC-001158"
       ]
     }
   ],
@@ -130,6 +169,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lamar Zhao",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Developer/contact per city list",
+      "src": [
+        "SRC-001158"
       ]
     }
   ],
@@ -143,6 +192,24 @@
       "src": [
         "SRC-001104"
       ]
+    },
+    {
+      "date": "2021-05-25",
+      "type": "Application filed",
+      "label": "Intake date on city list",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-07-24",
+      "type": "Other",
+      "label": "City Council tabled",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -150,6 +217,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

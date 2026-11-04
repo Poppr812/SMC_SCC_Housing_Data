@@ -1,6 +1,6 @@
 {
   "id": "SMC-000128",
-  "name": "ENGVALL",
+  "name": "The Range Residential Development (2101 Sneath Lane)",
   "parcels": [
     {
       "apn": "019-270-260",
@@ -275,11 +275,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001129"
+            "SRC-001129",
+            "SRC-001346"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -299,8 +301,16 @@
             "SRC-001129"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 130,
+          "src": [
+            "SRC-001346"
+          ],
+          "note": "City list. Earlier imported count was 118"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -312,13 +322,29 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 20.43,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001129"
+      ]
+    },
+    {
+      "text": "City describes 130 single-family units (standard, small-lot and attached) with a park, open space and private roads. City lists APNs 019-270-260 and 019-270-270.",
+      "src": [
+        "SRC-001346"
       ]
     }
   ],
@@ -350,6 +376,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

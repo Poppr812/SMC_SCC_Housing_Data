@@ -1,9 +1,9 @@
 {
   "id": "SCC-000012",
-  "name": "1265 Pear Av",
+  "name": "Pear Village (1255 Pear Ave)",
   "parcels": [
     {
-      "apn": "116-14-028",
+      "apn": "116-14-144",
       "from": null,
       "to": null,
       "src": [
@@ -11,58 +11,80 @@
       ],
       "outline": [
         [
-          -122.0735102,
-          37.4166445
+          -122.0754385,
+          37.4153386
         ],
         [
-          -122.0735116,
-          37.4154323
+          -122.0735118,
+          37.4152547
         ],
         [
-          -122.0738989,
-          37.4154492
+          -122.0734973,
+          37.4142376
         ],
         [
-          -122.0738989,
-          37.4154906
+          -122.0735008,
+          37.4142378
         ],
         [
-          -122.0738981,
-          37.4166477
+          -122.0735018,
+          37.413356
         ],
         [
-          -122.0735102,
-          37.4166445
-        ]
-      ]
-    },
-    {
-      "apn": "116-14-095",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.0738981,
-          37.4166477
+          -122.0754583,
+          37.4134419
         ],
         [
-          -122.0738989,
-          37.4154906
+          -122.0754552,
+          37.4143911
         ],
         [
-          -122.0742845,
-          37.4155078
+          -122.0754958,
+          37.4143928
         ],
         [
-          -122.07428,
-          37.4166509
+          -122.0754929,
+          37.4152976
         ],
         [
-          -122.0738981,
-          37.4166477
+          -122.0754913,
+          37.415305
+        ],
+        [
+          -122.0754886,
+          37.415312
+        ],
+        [
+          -122.0754847,
+          37.4153185
+        ],
+        [
+          -122.0754799,
+          37.4153244
+        ],
+        [
+          -122.0754742,
+          37.4153294
+        ],
+        [
+          -122.0754679,
+          37.4153335
+        ],
+        [
+          -122.0754609,
+          37.4153365
+        ],
+        [
+          -122.0754536,
+          37.4153384
+        ],
+        [
+          -122.075446,
+          37.4153391
+        ],
+        [
+          -122.0754385,
+          37.4153386
         ]
       ]
     }
@@ -75,7 +97,7 @@
       ]
     },
     {
-      "text": "1265  Pear Av, Mountain View, CA",
+      "text": "1265 Pear Av, Mountain View, CA",
       "src": [
         "SRC-001110"
       ]
@@ -135,8 +157,16 @@
             "SRC-001110"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 635,
+          "src": [
+            "SRC-001328"
+          ],
+          "note": "220 in south parcel building, 415 in north parcel; index figure of 879 is not explained by this source"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -146,6 +176,39 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 15.0,
+          "src": [
+            "SRC-001328"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 841500,
+          "src": [
+            "SRC-001328"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 231210,
+          "src": [
+            "SRC-001328"
+          ],
+          "note": "Office"
         }
       ]
     }
@@ -158,7 +221,44 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "The Sobrato Organization",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001328"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Devcon Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001328"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001328"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001328"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -192,6 +292,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

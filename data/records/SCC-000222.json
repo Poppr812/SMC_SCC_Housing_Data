@@ -121,11 +121,13 @@
           "value": "Mixed product",
           "src": [
             "SRC-001134",
-            "SRC-001143"
+            "SRC-001143",
+            "SRC-001551"
           ],
           "note": "State categories: 5+, SFA, SFD"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -158,8 +160,16 @@
             "SRC-001143"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 108,
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "City total: 18 detached homes and 90 townhomes. The state report's 88 matches the Phase I grading permit"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -190,20 +200,49 @@
             "SRC-001143"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2023-164",
+          "src": [
+            "SRC-001551"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001551"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134",
         "SRC-001143"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Sullivan",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -224,6 +263,24 @@
       ]
     },
     {
+      "date": "2024-11-26",
+      "type": "Permit issued",
+      "label": "Grading for 88 units, Phase I",
+      "src": [
+        "SRC-001552"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-27",
+      "type": "Permit issued",
+      "label": "Master permit for 18 homes in 108-unit project",
+      "src": [
+        "SRC-001552"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-08-21",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -237,6 +294,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -63,6 +63,12 @@
       "src": [
         "SRC-001132"
       ]
+    },
+    {
+      "text": "2, 12 and 16 Park Road",
+      "src": [
+        "SRC-001352"
+      ]
     }
   ],
   "images": [],
@@ -72,11 +78,13 @@
         {
           "value": "Apartments",
           "src": [
-            "SRC-001132"
+            "SRC-001132",
+            "SRC-001340"
           ],
           "note": "State category 5+ units, rental tenure"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -86,8 +94,17 @@
             "SRC-001132"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001340",
+            "SRC-001352"
+          ],
+          "note": "Planning Commission approved May 26, 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -104,11 +121,14 @@
         {
           "value": 144,
           "src": [
-            "SRC-001132"
+            "SRC-001132",
+            "SRC-001340",
+            "SRC-001352"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -120,11 +140,83 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001352"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.99,
+          "src": [
+            "SRC-001352"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 140,
+          "src": [
+            "SRC-001352"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "6 very low income (50% AMI) and 6 moderate income (120% AMI) units for 55 years",
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001352"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001132"
       ]
@@ -139,6 +231,16 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Windy Hill Property Ventures",
+      "contact": "Jamie D'Alessandro",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001352"
+      ]
     }
   ],
   "financing": [],
@@ -151,6 +253,15 @@
       "src": [
         "SRC-001132"
       ]
+    },
+    {
+      "date": "2026-05-26",
+      "type": "Approved",
+      "label": "Planning Commission approval",
+      "src": [
+        "SRC-001352"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -158,6 +269,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

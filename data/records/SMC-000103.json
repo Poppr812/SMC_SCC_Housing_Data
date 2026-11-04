@@ -1,6 +1,6 @@
 {
   "id": "SMC-000103",
-  "name": "WOODLAND PROJECT",
+  "name": "Woodland Park Euclid Improvements",
   "parcels": [
     {
       "apn": "063-282-090",
@@ -86,8 +86,16 @@
             "SRC-001111"
           ],
           "note": "State report shows the application approved"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001194"
+          ],
+          "note": "City status: Approved and Under Construction. As of June 26, 2025 demolition was complete and rough grading continuing; vertical construction was to begin the next year"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -104,11 +112,13 @@
         {
           "value": 550,
           "src": [
-            "SRC-001111"
+            "SRC-001111",
+            "SRC-001195"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -120,13 +130,30 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001195"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001111"
+      ]
+    },
+    {
+      "text": "Demolishes 161 existing units (2022 entitlement). City lists 14 APNs: 063-281-020, -030, -040, -100, -110 and 063-282-010 through -090.",
+      "src": [
+        "SRC-001195",
+        "SRC-001194"
       ]
     }
   ],
@@ -139,17 +166,43 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Sand Hill Properties / Woodland Park Communities",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001194"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2022-11-15",
+      "type": "Approved",
+      "label": "City Council approves 2022 design permit (DR19-028) for 605 units",
+      "src": [
+        "SRC-001195"
+      ]
+    },
+    {
       "date": "2024-06-24",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001111"
+      ]
+    },
+    {
+      "date": "2024-07-16",
+      "type": "Approved",
+      "label": "City Council approves amendment reducing to 550 units",
+      "src": [
+        "SRC-001195"
       ]
     }
   ],
@@ -158,6 +211,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

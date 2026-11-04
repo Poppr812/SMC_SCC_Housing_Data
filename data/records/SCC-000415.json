@@ -1,6 +1,6 @@
 {
   "id": "SCC-000415",
-  "name": "EDMUNDSON-PANCAL",
+  "name": "Edmundson-Pancal",
   "parcels": [
     {
       "apn": "767-21-015",
@@ -125,19 +125,28 @@
             "SRC-001131"
           ],
           "note": "State categories: SFA, SFD"
+        },
+        {
+          "value": "Single-family",
+          "src": [
+            "SRC-001453"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
         {
           "value": "Approved",
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001453"
           ],
           "note": "State report shows the application approved"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -154,11 +163,13 @@
         {
           "value": 8,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001453"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -168,13 +179,29 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2024-0010, EA2024-0015, SR2024-0021",
+          "src": [
+            "SRC-001453"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001453"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
       ]
@@ -191,6 +218,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2025-05-13",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolution 25-05)",
+      "src": [
+        "SRC-001453"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -198,6 +234,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

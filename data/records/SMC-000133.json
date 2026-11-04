@@ -1,37 +1,7 @@
 {
   "id": "SMC-000133",
-  "name": "BERTOLUCCI'S REDEVELOPMENT",
+  "name": "Bertolucci's Redevelopment",
   "parcels": [
-    {
-      "apn": "012-314-070",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4082011,
-          37.6567362
-        ],
-        [
-          -122.408331,
-          37.6563658
-        ],
-        [
-          -122.4084974,
-          37.6564027
-        ],
-        [
-          -122.4083675,
-          37.6567731
-        ],
-        [
-          -122.4082011,
-          37.6567362
-        ]
-      ]
-    },
     {
       "apn": "012-314-080",
       "from": null,
@@ -107,6 +77,12 @@
         "SRC-001112",
         "SRC-001113"
       ]
+    },
+    {
+      "text": "209 and 213 Lux Avenue",
+      "src": [
+        "SRC-001342"
+      ]
     }
   ],
   "images": [],
@@ -129,11 +105,13 @@
           "value": "Approved",
           "src": [
             "SRC-001112",
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -151,11 +129,13 @@
         {
           "value": 99,
           "src": [
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -188,11 +168,42 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.58,
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1500,
+          "src": [
+            "SRC-001342"
+          ],
+          "note": "Restaurant"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001112",
         "SRC-001113"
@@ -208,6 +219,15 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Peter Sodini",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
+      ]
     }
   ],
   "financing": [],
@@ -220,6 +240,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2022-12",
+      "type": "Approved",
+      "label": "Entitled",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-12-15",
@@ -235,6 +264,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

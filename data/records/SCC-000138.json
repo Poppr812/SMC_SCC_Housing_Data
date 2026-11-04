@@ -1,6 +1,6 @@
 {
   "id": "SCC-000138",
-  "name": "2215 Tennant Av, Morgan Hill",
+  "name": "Chiala (2215 & 2880 Tennant Ave)",
   "parcels": [
     {
       "apn": "817-20-008",
@@ -91,11 +91,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001114"
+            "SRC-001114",
+            "SRC-001431"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -126,8 +128,15 @@
             "SRC-001114"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 222,
+          "src": [
+            "SRC-001431"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -139,20 +148,98 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "46 units deed-restricted to low-income households",
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 52,
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "text": "County also lists APN 817-20-010.",
+      "src": [
+        "SRC-001431"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "The Latala Group LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Fountain Oaks Ranch, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001431"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-04-28",
+      "type": "Application filed",
+      "label": "Formal SB 330 application submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-10-08",
       "type": "Application filed",
@@ -167,6 +254,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

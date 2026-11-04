@@ -116,11 +116,13 @@
           "value": "Lease-up / selling",
           "src": [
             "SRC-000720",
-            "SRC-000701"
+            "SRC-000701",
+            "SRC-001349"
           ],
           "note": "Opened in 2026"
         }
-      ]
+      ],
+      "best": 0
     },
     "population": {
       "claims": [
@@ -153,11 +155,13 @@
           "src": [
             "SRC-000720",
             "SRC-000721",
-            "SRC-000722"
+            "SRC-000722",
+            "SRC-001349"
           ],
           "note": "68 affordable + 1 on-site manager's unit"
         }
-      ]
+      ],
+      "best": 0
     },
     "unit_mix": {
       "claims": [
@@ -192,7 +196,8 @@
           "value": 8,
           "src": [
             "SRC-000721",
-            "SRC-000722"
+            "SRC-000722",
+            "SRC-001349"
           ]
         }
       ]
@@ -213,7 +218,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-000721"
+            "SRC-000721",
+            "SRC-001349"
           ]
         }
       ]
@@ -234,6 +240,44 @@
         }
       ],
       "question": "Are 18 or 23 units set aside for formerly homeless veterans and extremely low-income households?"
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 20
+            },
+            {
+              "count": 11,
+              "ami": 30
+            },
+            {
+              "count": 16,
+              "ami": 40
+            },
+            {
+              "count": 29,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 73829434,
+          "src": [
+            "SRC-001636"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -253,6 +297,12 @@
       "text": "Replaces a closed car wash",
       "src": [
         "SRC-000721"
+      ]
+    },
+    {
+      "text": "CTCAC CA-23-450: Eucalyptus Grove Apartments, located at 1875 California Drive in Burlingame, requested and is being recommended for a reservation of $3,091,584 in annual federal tax credits and $10,727,825 in total state tax credits to finance the new construction of 68 units of housing serving families with rents affordable to households earning 20%-50% of area median income (AMI).",
+      "src": [
+        "SRC-001636"
       ]
     }
   ],
@@ -373,10 +423,109 @@
       "src": [
         "SRC-000722"
       ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Tax-Exempt",
+      "amount": 37774909,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Taxable",
+      "amount": 15687922,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": "Tax-Exempt",
+      "amount": 7386448,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Burlingame",
+      "program": null,
+      "amount": 1432138,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": null,
+      "amount": 5698107,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "VHHP HCD",
+      "program": null,
+      "amount": 7000000,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "MHP HCD",
+      "program": null,
+      "amount": 15000000,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 1300000,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 36012741,
+      "date": null,
+      "src": [
+        "SRC-001636"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2023-05-10",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-23-450)",
+      "src": [
+        "SRC-001636"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-03-28",
       "type": "Construction start",
@@ -408,6 +557,16 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from local newspaper leads (2025-2026) and the sources listed"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

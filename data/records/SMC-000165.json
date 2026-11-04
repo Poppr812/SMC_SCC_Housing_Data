@@ -1,6 +1,6 @@
 {
   "id": "SMC-000165",
-  "name": "Village EPA",
+  "name": "Village One (1201 Runnymede)",
   "parcels": [
     {
       "apn": "063-271-090",
@@ -121,11 +121,13 @@
         {
           "value": 20,
           "src": [
-            "SRC-001111"
+            "SRC-001111",
+            "SRC-001209"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -156,13 +158,29 @@
             "SRC-001147"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "TPM23-001; DR23-001; TRP23-013",
+          "src": [
+            "SRC-001209"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001209"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001111",
         "SRC-001147"
@@ -177,6 +195,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Village One LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001209"
       ]
     }
   ],
@@ -205,6 +233,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

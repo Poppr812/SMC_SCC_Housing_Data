@@ -131,7 +131,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-001330"
           ]
         }
       ]
@@ -168,8 +169,29 @@
       ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Charities Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001330"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "City of Mountain View",
+      "program": null,
+      "amount": 11300000,
+      "date": "2024-12-17",
+      "src": [
+        "SRC-001330"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -187,6 +209,24 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2026-12",
+      "type": "Construction start",
+      "label": "Slated start",
+      "src": [
+        "SRC-001330"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028-08",
+      "type": "Completion",
+      "label": "Expected completion",
+      "src": [
+        "SRC-001330"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -194,6 +234,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

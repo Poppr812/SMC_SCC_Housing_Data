@@ -129,10 +129,12 @@
           "value": "Approved",
           "src": [
             "SRC-000825",
-            "SRC-000823"
+            "SRC-000823",
+            "SRC-001342"
           ]
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -149,7 +151,8 @@
         {
           "value": 1.63,
           "src": [
-            "SRC-000824"
+            "SRC-000824",
+            "SRC-001342"
           ]
         }
       ]
@@ -159,7 +162,8 @@
         {
           "value": 292,
           "src": [
-            "SRC-000824"
+            "SRC-000824",
+            "SRC-001342"
           ],
           "note": "2022 project description"
         },
@@ -172,7 +176,7 @@
           "note": "After the April 2025 design review modification"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "residential_sf": {
       "claims": [
@@ -191,7 +195,8 @@
           "value": 8,
           "src": [
             "SRC-000824",
-            "SRC-000823"
+            "SRC-000823",
+            "SRC-001342"
           ]
         }
       ]
@@ -219,6 +224,16 @@
             "SRC-000825"
           ],
           "note": "Sustainable Communities Environmental Assessment (2022); design review modification approved 2025"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "P20-0082",
+          "src": [
+            "SRC-001342"
+          ]
         }
       ]
     }
@@ -272,6 +287,14 @@
   "groups": {},
   "events": [
     {
+      "date": "2022",
+      "type": "Approved",
+      "label": "Original 292-unit plans approved",
+      "src": [
+        "SRC-000823"
+      ]
+    },
+    {
       "date": "2022-05-02",
       "type": "Other",
       "label": "CEQA Sustainable Communities Environmental Assessment circulated (292 units)",
@@ -280,12 +303,13 @@
       ]
     },
     {
-      "date": "2022",
+      "date": "2022-08",
       "type": "Approved",
-      "label": "Original 292-unit plans approved",
+      "label": "Original entitlement",
       "src": [
-        "SRC-000823"
-      ]
+        "SRC-001342"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-04-24",
@@ -301,6 +325,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from trade press leads and the sources listed (SRC-000823 to SRC-000825, SRC-000832)"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

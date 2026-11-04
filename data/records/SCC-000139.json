@@ -1,6 +1,6 @@
 {
   "id": "SCC-000139",
-  "name": "2165 The Alameda",
+  "name": "Cloud The Alameda",
   "parcels": [
     {
       "apn": "230-18-033",
@@ -102,8 +102,16 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 172,
+          "src": [
+            "SRC-001681"
+          ],
+          "note": "CTCAC CA-26-578 is the later document."
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -136,6 +144,60 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 14,
+            "1br": 156,
+            "2br": 2,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001681"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 37,
+              "ami": 30
+            },
+            {
+              "count": 10,
+              "ami": 50
+            },
+            {
+              "count": 2,
+              "ami": 60
+            },
+            {
+              "count": 121,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001681"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 84741343,
+          "src": [
+            "SRC-001681"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -145,10 +207,117 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CTCAC CA-26-578: Cloud The Alameda, located at 2165 The Alameda in San Jose on a 0.55 acre site, requested and is being recommended for a reservation of $3,724,007 in annual federal tax credits and $22,508,503 of tax-exempt bond cap to finance the new construction of 172 units of housing, consisting of 170 restricted rental units and 2 unrestricted manager's units.",
+      "src": [
+        "SRC-001681"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Cloud Apartments, Inc",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001681"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "CDLAC allocation",
+      "program": "Tax-exempt bond cap recommended in staff report",
+      "amount": 22508503,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Cal Bank & Trust",
+      "program": "Tax-Exempt",
+      "amount": 22508503,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Cal Bank & Trust",
+      "program": "Taxable",
+      "amount": 36014192,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Cal Bank & Trust",
+      "program": "Tax-Exempt",
+      "amount": 22508000,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Cal Bank & Trust",
+      "program": "Taxable",
+      "amount": 14117000,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "BAHIF",
+      "program": null,
+      "amount": 10000000,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "BAHIF Accrued Interest",
+      "program": null,
+      "amount": 796679,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 5820770,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 31498894,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -166,6 +335,33 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-26-578)",
+      "src": [
+        "SRC-001681"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2027-02",
+      "type": "Construction start",
+      "label": "Expected construction start per CTCAC staff report",
+      "src": [
+        "SRC-001681"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028-06",
+      "type": "Completion",
+      "label": "Expected completion per CTCAC staff report",
+      "src": [
+        "SRC-001681"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -173,6 +369,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000323",
-  "name": "143-151 Main Street",
+  "name": "Cafe Dio (143-151 E Main St)",
   "parcels": [
     {
       "apn": "529-28-001",
@@ -47,6 +47,12 @@
       "src": [
         "SRC-001120",
         "SRC-001121"
+      ]
+    },
+    {
+      "text": "143-151 E Main St",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -103,7 +109,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001121"
+            "SRC-001121",
+            "SRC-001554"
           ]
         }
       ]
@@ -129,14 +136,32 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120",
         "SRC-001121"
+      ]
+    },
+    {
+      "text": "6 below-market units. An earlier 26-unit proposal here expired.",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -153,6 +178,15 @@
       ]
     },
     {
+      "date": "2025-05-27",
+      "type": "Approved",
+      "label": "Town Council approval",
+      "src": [
+        "SRC-001554"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-05-30",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -166,6 +200,21 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcel corrected: the state report's APN didn't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcel corrected: the state report's APN didn't match the project address"
     }
   ]
 }

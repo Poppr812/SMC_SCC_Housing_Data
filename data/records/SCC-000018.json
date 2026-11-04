@@ -1,57 +1,7 @@
 {
   "id": "SCC-000018",
-  "name": "35 S 2nd St",
+  "name": "Fountain Alley (35 South Second Street)",
   "parcels": [
-    {
-      "apn": "373-08-002",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.0157308,
-          37.2971187
-        ],
-        [
-          -122.0157297,
-          37.2968018
-        ],
-        [
-          -122.0165163,
-          37.2967979
-        ],
-        [
-          -122.0165251,
-          37.2972622
-        ],
-        [
-          -122.01643,
-          37.2972632
-        ],
-        [
-          -122.0162237,
-          37.2972655
-        ],
-        [
-          -122.0160174,
-          37.2972663
-        ],
-        [
-          -122.0158104,
-          37.2972671
-        ],
-        [
-          -122.0157314,
-          37.2972674
-        ],
-        [
-          -122.0157308,
-          37.2971187
-        ]
-      ]
-    },
     {
       "apn": "467-22-121",
       "from": null,
@@ -175,7 +125,8 @@
         {
           "value": 768,
           "src": [
-            "SRC-001099"
+            "SRC-001099",
+            "SRC-001376"
           ],
           "note": "Units in the application as reported"
         }
@@ -193,6 +144,75 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-001376"
+          ],
+          "note": "Two towers of 27 and 28 stories."
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 177,
+            "1br": 413,
+            "2br": 152,
+            "3br": 26,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001376"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.25,
+          "src": [
+            "SRC-001376"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 10700,
+          "src": [
+            "SRC-001376"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001376"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001376"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -204,7 +224,35 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Westbank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001376"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Urban Community",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001376"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Bjarke Ingels Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001376"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -223,6 +271,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-12-17",
+      "type": "Other",
+      "label": "Revised plans before Planning Director Hearing; outcome not reported in source",
+      "src": [
+        "SRC-001376"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -230,6 +287,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

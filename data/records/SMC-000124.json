@@ -1,57 +1,7 @@
 {
   "id": "SMC-000124",
-  "name": "ROTARY GARDENS",
+  "name": "Rotary Gardens",
   "parcels": [
-    {
-      "apn": "012-175-010",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4085996,
-          37.6576611
-        ],
-        [
-          -122.4086655,
-          37.6574761
-        ],
-        [
-          -122.4088316,
-          37.6575135
-        ],
-        [
-          -122.4089978,
-          37.657551
-        ],
-        [
-          -122.409164,
-          37.6575884
-        ],
-        [
-          -122.4090322,
-          37.6579583
-        ],
-        [
-          -122.408866,
-          37.6579209
-        ],
-        [
-          -122.4086998,
-          37.6578835
-        ],
-        [
-          -122.4085337,
-          37.6578461
-        ],
-        [
-          -122.4085996,
-          37.6576611
-        ]
-      ]
-    },
     {
       "apn": "012-175-260",
       "from": null,
@@ -135,11 +85,13 @@
           "value": "Approved",
           "src": [
             "SRC-001112",
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -157,7 +109,8 @@
         {
           "value": 144,
           "src": [
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -168,7 +121,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -177,6 +131,13 @@
           "src": [
             "SRC-001113"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001342"
+          ],
+          "note": "City describes both buildings' units as affordable"
         }
       ]
     },
@@ -199,16 +160,50 @@
             "SRC-001113"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "P23-0082 / B26-0729",
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001342"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001112",
         "SRC-001113"
+      ]
+    },
+    {
+      "text": "Retail: 3,388 SF at 500 Linden and 560 SF at 522 Linden.",
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    {
+      "text": "CTCAC CA-26-410: Rotary Gardens, located at 500 Linden Avenue in South San Francisco on a 0.49 acre site, requested $3,651,611 in annual federal tax credits but is being recommended for $3,385,453 in annual federal tax credits and $20,562,128 of tax-exempt bond cap to finance the new construction of 80 units of housing, consisting of 79 restricted rental units and 1 unrestricted manager's unit. Recorded as a note because this funding covers Rotary Gardens (80 units), which may be one component of this record.",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "text": "San Mateo County AHF predevelopment pipeline, September 2024: Rotary Gardens (Beacon Dev.): 79 total units, 25% at 15-30% AMI and 75% at 31-60% AMI.",
+      "src": [
+        "SRC-001649"
       ]
     }
   ],
@@ -221,9 +216,39 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Beacon Development",
+      "contact": "Peggy Lichthart",
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "HumanGood Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Developer of Rotary Gardens component",
+      "src": [
+        "SRC-001674"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County",
+      "program": "Affordable Housing Fund commitment as of July 2024",
+      "amount": 6607842,
+      "date": "2024-07",
+      "src": [
+        "SRC-001649"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -233,6 +258,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2025-07",
+      "type": "Approved",
+      "label": "Entitled",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-07-02",
@@ -248,6 +282,21 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

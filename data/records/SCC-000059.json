@@ -1,6 +1,6 @@
 {
   "id": "SCC-000059",
-  "name": "Milpitas Business Park - Phase I",
+  "name": "Murphy Village",
   "parcels": [
     {
       "apn": "083-19-012",
@@ -526,11 +526,13 @@
         {
           "value": "Mixed product",
           "src": [
-            "SRC-001124"
+            "SRC-001124",
+            "SRC-001599"
           ],
           "note": "State categories: 5+, SFA, SFD"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -561,8 +563,16 @@
             "SRC-001124"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 791,
+          "src": [
+            "SRC-001599"
+          ],
+          "note": "All phases: 174 detached homes, 381 townhomes, 236 apartments. The index's 381 is the townhome count"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -574,6 +584,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 38.5,
+          "src": [
+            "SRC-001599"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -582,9 +602,25 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "text": "The 236 apartments are a five-story, 100 percent affordable building.",
+      "src": [
+        "SRC-001599"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Toll Brothers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001599"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -595,6 +631,33 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "date": "2026-09-25",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR",
+      "src": [
+        "SRC-001599"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2028",
+      "type": "Construction start",
+      "label": "Late 2028 estimate",
+      "src": [
+        "SRC-001600"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2032",
+      "type": "Completion",
+      "label": "Estimated as early as 2032",
+      "src": [
+        "SRC-001600"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -602,6 +665,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

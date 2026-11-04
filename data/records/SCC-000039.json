@@ -1,6 +1,6 @@
 {
   "id": "SCC-000039",
-  "name": "2830 N 1st St",
+  "name": "2830 North First Street",
   "parcels": [
     {
       "apn": "101-30-006",
@@ -484,6 +484,37 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001381"
+          ],
+          "note": "Market-rate building; affordable building is three."
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001381"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 360,
+          "src": [
+            "SRC-001381"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -492,9 +523,34 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "Article (updated June 2, 2025) says plans were paused and the property put on the market.",
+      "src": [
+        "SRC-001381"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "BXP",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001381"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001381"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -512,6 +568,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

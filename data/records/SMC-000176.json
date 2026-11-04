@@ -1,209 +1,7 @@
 {
   "id": "SMC-000176",
-  "name": "Lees Buffet",
+  "name": "271 El Camino Real",
   "parcels": [
-    {
-      "apn": "020-406-590",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4100199,
-          37.6190172
-        ],
-        [
-          -122.4102068,
-          37.6189142
-        ],
-        [
-          -122.4102531,
-          37.6189722
-        ],
-        [
-          -122.4102993,
-          37.6190303
-        ],
-        [
-          -122.4101095,
-          37.6191348
-        ],
-        [
-          -122.4100647,
-          37.619076
-        ],
-        [
-          -122.4100199,
-          37.6190172
-        ]
-      ]
-    },
-    {
-      "apn": "020-406-690",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4102416,
-          37.6193126
-        ],
-        [
-          -122.4104382,
-          37.6192043
-        ],
-        [
-          -122.4104696,
-          37.6192437
-        ],
-        [
-          -122.4104844,
-          37.6192623
-        ],
-        [
-          -122.4105307,
-          37.6193203
-        ],
-        [
-          -122.4103269,
-          37.6194326
-        ],
-        [
-          -122.4102842,
-          37.6193726
-        ],
-        [
-          -122.4102416,
-          37.6193126
-        ]
-      ]
-    },
-    {
-      "apn": "020-406-700",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4103269,
-          37.6194326
-        ],
-        [
-          -122.4105307,
-          37.6193203
-        ],
-        [
-          -122.410577,
-          37.6193783
-        ],
-        [
-          -122.4103695,
-          37.6194926
-        ],
-        [
-          -122.4103269,
-          37.6194326
-        ]
-      ]
-    },
-    {
-      "apn": "020-406-730",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4103695,
-          37.6194926
-        ],
-        [
-          -122.410577,
-          37.6193783
-        ],
-        [
-          -122.4106001,
-          37.6194073
-        ],
-        [
-          -122.4106232,
-          37.6194363
-        ],
-        [
-          -122.4106695,
-          37.6194944
-        ],
-        [
-          -122.4107158,
-          37.6195524
-        ],
-        [
-          -122.4104974,
-          37.6196726
-        ],
-        [
-          -122.4104548,
-          37.6196126
-        ],
-        [
-          -122.4104121,
-          37.6195526
-        ],
-        [
-          -122.4103695,
-          37.6194926
-        ]
-      ]
-    },
-    {
-      "apn": "020-406-790",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.4099392,
-          37.6189114
-        ],
-        [
-          -122.4101239,
-          37.6188096
-        ],
-        [
-          -122.4101605,
-          37.6188562
-        ],
-        [
-          -122.4101836,
-          37.6188852
-        ],
-        [
-          -122.4102068,
-          37.6189142
-        ],
-        [
-          -122.4100199,
-          37.6190172
-        ],
-        [
-          -122.4099751,
-          37.6189584
-        ],
-        [
-          -122.4099392,
-          37.6189114
-        ]
-      ]
-    },
     {
       "apn": "020-406-870",
       "from": null,
@@ -281,11 +79,13 @@
         {
           "value": "Approved",
           "src": [
-            "SRC-001123"
+            "SRC-001123",
+            "SRC-001346"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -305,15 +105,24 @@
             "SRC-001123"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 35,
+          "src": [
+            "SRC-001346"
+          ],
+          "note": "City list. Earlier imported count was 23"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001123"
+            "SRC-001123",
+            "SRC-001346"
           ]
         }
       ]
@@ -324,6 +133,12 @@
           "value": "3 deed-restricted units reported to the state",
           "src": [
             "SRC-001123"
+          ]
+        },
+        {
+          "value": "6 affordable units; two accessory dwelling units",
+          "src": [
+            "SRC-001346"
           ]
         }
       ]
@@ -338,13 +153,39 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.57,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001123"
+      ]
+    },
+    {
+      "text": "City lists APNs 020-406-730, -700, -690, -870, -590 and -790.",
+      "src": [
+        "SRC-001346"
       ]
     }
   ],
@@ -356,6 +197,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Tectonic Builders Corp.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Construction contact",
+      "src": [
+        "SRC-001346"
       ]
     }
   ],
@@ -376,6 +227,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

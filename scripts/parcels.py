@@ -13,6 +13,7 @@
 import json
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -25,8 +26,14 @@ RECORDS = Path(__file__).resolve().parent.parent / "data" / "records"
 
 
 def _get(url, params):
-    with urllib.request.urlopen(url + "?" + urllib.parse.urlencode(params), timeout=60) as r:
-        return json.load(r)
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(url + "?" + urllib.parse.urlencode(params), timeout=60) as r:
+                return json.load(r)
+        except OSError:  # county servers time out now and then
+            if attempt == 3:
+                raise
+            time.sleep(5 * (attempt + 1))
 
 
 def smc_query(where=None, geometry=False, limit=25, point=None):

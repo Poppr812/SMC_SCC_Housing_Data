@@ -1,6 +1,6 @@
 {
   "id": "SCC-000198",
-  "name": "60 W Hamilton Av",
+  "name": "Cleveland Commons",
   "parcels": [
     {
       "apn": "305-21-003",
@@ -109,16 +109,25 @@
             "SRC-001134"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 92,
+          "src": [
+            "SRC-001551",
+            "SRC-001683"
+          ],
+          "note": "A 2026 modification reduced the project from 101 to 92 units"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "affordability_type": {
       "claims": [
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001143"
+            "SRC-001143",
+            "SRC-001551"
           ]
         }
       ]
@@ -142,21 +151,293 @@
             "SRC-001143"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2024-51, PLN-2026-18, BLD-2026-1176",
+          "src": [
+            "SRC-001552"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001552"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-001551"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001549"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 91,
+            "2br": 0,
+            "3br": 1,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001683"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 25,
+              "ami": 30
+            },
+            {
+              "count": 8,
+              "ami": 40
+            },
+            {
+              "count": 46,
+              "ami": 50
+            },
+            {
+              "count": 2,
+              "ami": 60
+            },
+            {
+              "count": 10,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001683"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 67784299,
+          "src": [
+            "SRC-001683"
+          ],
+          "note": "Total sources in CTCAC staff report."
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "Building permit application BLD-2026-1176 was pending review on the city's list.",
+      "src": [
+        "SRC-001552"
+      ]
+    },
+    {
+      "text": "CTCAC CA-26-627: Cleveland Commons, located at 60 West Hamilton Avenue in Campbell on a 1.21 acre site, requested and is being recommended for a reservation of $2,818,910 in annual federal tax credits, $7,050,757 in total state tax credits, and $17,080,193 of tax-exempt bond cap to finance the new construction of 92 units of housing, consisting of 91 restricted rental units and 1 unrestricted manager's unit.",
+      "src": [
+        "SRC-001683"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Charities Housing",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001549"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Charities Housing Development Corp",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001683"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "CDLAC allocation",
+      "program": "Tax-exempt bond cap recommended in staff report",
+      "amount": 17080193,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Tax-Exempt",
+      "amount": 17080193,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Taxable",
+      "amount": 30399441,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "CalHFA",
+      "program": "Tax-Exempt",
+      "amount": 17080000,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "CalHFA",
+      "program": "Taxable",
+      "amount": 1661000,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "CalHFA",
+      "program": "MIP",
+      "amount": 5460000,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "PLHA",
+      "amount": 1306789,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "IDD",
+      "amount": 2000000,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Seller financing",
+      "provider": "Seller Carryback",
+      "program": null,
+      "amount": 3900000,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Accrued Interest",
+      "program": null,
+      "amount": 339432,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Waived Impact Fees",
+      "program": null,
+      "amount": 987160,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 4130844,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General Partner Equity",
+      "program": null,
+      "amount": 100,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 30918974,
+      "date": null,
+      "src": [
+        "SRC-001683"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -174,6 +455,33 @@
       "src": [
         "SRC-001143"
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-26-627)",
+      "src": [
+        "SRC-001683"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2027-02",
+      "type": "Construction start",
+      "label": "Expected construction start per CTCAC staff report",
+      "src": [
+        "SRC-001683"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027-05",
+      "type": "Completion",
+      "label": "Expected completion per CTCAC staff report",
+      "src": [
+        "SRC-001683"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -181,6 +489,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

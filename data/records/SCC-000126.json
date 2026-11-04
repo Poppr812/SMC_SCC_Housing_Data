@@ -1,6 +1,6 @@
 {
   "id": "SCC-000126",
-  "name": "3355  Almaden Ex",
+  "name": "Novelle Senior Living",
   "parcels": [
     {
       "apn": "451-09-067",
@@ -91,7 +91,7 @@
   ],
   "addresses": [
     {
-      "text": "3355  Almaden Ex, San Jose, CA",
+      "text": "3355 Almaden Ex, San Jose, CA",
       "src": [
         "SRC-001107"
       ]
@@ -124,8 +124,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001398"
+          ],
+          "note": "Completed and opened the prior year; lease-up not described."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -142,7 +150,8 @@
         {
           "value": 195,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001398"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -158,6 +167,28 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001398"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-001398"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -166,9 +197,43 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "text": "166 assisted living and 29 memory care units.",
+      "src": [
+        "SRC-001398"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Columbia Pacific Advisors",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001398"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "SRM Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001398"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Welltower Inc",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001398"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -187,6 +252,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-08",
+      "type": "Sale",
+      "label": "Sold for just under $100 million, cash",
+      "src": [
+        "SRC-001398"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -194,6 +268,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

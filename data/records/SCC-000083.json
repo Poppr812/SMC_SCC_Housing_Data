@@ -79,6 +79,12 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "text": "3963 and 3977 Fabian Way, Palo Alto",
+      "src": [
+        "SRC-001282"
+      ]
     }
   ],
   "images": [],
@@ -123,8 +129,17 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 273,
+          "src": [
+            "SRC-001282",
+            "SRC-001283"
+          ],
+          "note": "Reduced plans; SB 330 filings proposed 292 (24PLN-00111) and 350 (24PLN-00112); a 350-unit builder's remedy alternative is tolled per SF YIMBY"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -136,17 +151,133 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001282",
+            "SRC-001283"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 43,
+            "1br": 155,
+            "2br": 66,
+            "3br": 9,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001283"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 332,
+          "src": [
+            "SRC-001282",
+            "SRC-001283"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 224100,
+          "src": [
+            "SRC-001283"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001282"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "9% of units at very low income: 12 on site, remainder paid through impact fees",
+          "src": [
+            "SRC-001282"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001282",
+            "SRC-001283"
+          ],
+          "note": "SB 330 and State Density Bonus Law"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "text": "Related SB 330 filings cover 3997, 3977 and 3963 Fabian Way. County parcels for those addresses include 127-37-004 and 127-37-006; the record carries only 127-37-003.",
+      "src": [
+        "SRC-001282"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Juno Realty Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001283"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "TCA Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001283"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "EPT Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001283"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -157,6 +288,15 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Other",
+      "label": "Architectural Review Board review scheduled",
+      "src": [
+        "SRC-001283"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -164,6 +304,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

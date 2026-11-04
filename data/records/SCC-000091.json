@@ -1,6 +1,6 @@
 {
   "id": "SCC-000091",
-  "name": "635 Campbell Technology Pkwy",
+  "name": "635-695 Campbell Technology Pkwy",
   "parcels": [
     {
       "apn": "412-29-015",
@@ -151,6 +151,12 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "text": "635-695 Campbell Technology Pkwy",
+      "src": [
+        "SRC-001549"
+      ]
     }
   ],
   "images": [],
@@ -160,11 +166,13 @@
         {
           "value": "Mixed product",
           "src": [
-            "SRC-001134"
+            "SRC-001134",
+            "SRC-001549"
           ],
           "note": "State categories: SFA, SFD"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -195,8 +203,16 @@
             "SRC-001134"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 290,
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "City's current description"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -212,13 +228,30 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "text": "City status Under Review, last updated 2026-09-30.",
+      "src": [
+        "SRC-001549"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Bay West",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001549"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -236,6 +269,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

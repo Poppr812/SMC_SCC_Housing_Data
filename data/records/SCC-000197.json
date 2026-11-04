@@ -1,37 +1,7 @@
 {
   "id": "SCC-000197",
-  "name": "3980 El Camino Real",
+  "name": "Buena Vista Mobile Home Park (3980 El Camino Real)",
   "parcels": [
-    {
-      "apn": "120-27-074",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.1597509,
-          37.4426645
-        ],
-        [
-          -122.1599752,
-          37.4424382
-        ],
-        [
-          -122.1601103,
-          37.4425234
-        ],
-        [
-          -122.159886,
-          37.4427496
-        ],
-        [
-          -122.1597509,
-          37.4426645
-        ]
-      ]
-    },
     {
       "apn": "137-11-103",
       "from": null,
@@ -163,8 +133,16 @@
             "SRC-001127"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-001305"
+          ],
+          "note": "City page, December 2025 update: Housing Authority found the 61-unit redevelopment no longer feasible as envisioned; current work is a park infrastructure upgrade. A future apartment building is still being evaluated."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -223,7 +201,7 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126",
         "SRC-001127"
@@ -256,6 +234,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

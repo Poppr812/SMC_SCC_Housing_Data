@@ -1,6 +1,6 @@
 {
   "id": "SCC-000282",
-  "name": "405 Alberto Way",
+  "name": "Alberto Way (401-409 Alberto Way)",
   "parcels": [
     {
       "apn": "529-23-018",
@@ -91,6 +91,12 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "text": "401-409 Alberto Way",
+      "src": [
+        "SRC-001597"
+      ]
     }
   ],
   "images": [],
@@ -100,11 +106,13 @@
         {
           "value": "Condominiums",
           "src": [
-            "SRC-001120"
+            "SRC-001120",
+            "SRC-001597"
           ],
           "note": "State category 5+ units, for-sale tenure"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -135,8 +143,16 @@
             "SRC-001120"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 55,
+          "src": [
+            "SRC-001597"
+          ],
+          "note": "Application filed 2026-08-14; the earlier 52-unit filing at 405 Alberto Way is listed as Expired"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -146,13 +162,19 @@
             "SRC-001120"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-26-021, M-26-010, U-26-007",
+          "src": [
+            "SRC-001597"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120"
       ]
@@ -169,6 +191,15 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Application filed",
+      "label": "New 55-unit application",
+      "src": [
+        "SRC-001597"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -176,6 +207,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

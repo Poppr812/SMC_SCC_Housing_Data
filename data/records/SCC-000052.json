@@ -1,6 +1,6 @@
 {
   "id": "SCC-000052",
-  "name": "451 El Camino Real",
+  "name": "University Station",
   "parcels": [
     {
       "apn": "230-09-020",
@@ -159,6 +159,12 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "451-475 El Camino Real, Santa Clara",
+      "src": [
+        "SRC-001531"
+      ]
     }
   ],
   "images": [],
@@ -182,8 +188,16 @@
             "SRC-001106"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001532"
+          ],
+          "note": "Council adopted EIR, prezone and map Sept. 22, 2026; annexation application still in process and other items continued"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -203,8 +217,16 @@
             "SRC-001106"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 408,
+          "src": [
+            "SRC-001531"
+          ],
+          "note": "297 apartments and 111 townhomes per SF YIMBY"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -226,7 +248,36 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Bixby Land Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001533"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Morley Bros",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001533"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001533"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -237,6 +288,15 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "type": "Approved",
+      "label": "City Council approved map and prezone",
+      "src": [
+        "SRC-001532"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -244,6 +304,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

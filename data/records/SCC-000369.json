@@ -1,9 +1,9 @@
 {
   "id": "SCC-000369",
-  "name": "960 Michael Dr",
+  "name": "960 & 972 Michael Dr",
   "parcels": [
     {
-      "apn": "412-10-038",
+      "apn": "412-10-065",
       "from": null,
       "to": null,
       "src": [
@@ -11,72 +11,32 @@
       ],
       "outline": [
         [
-          -121.9323268,
-          37.2860422
-        ],
-        [
-          -121.9323229,
-          37.2858362
+          -121.9327172,
+          37.2860036
         ],
         [
           -121.9327133,
           37.2858306
         ],
         [
+          -121.9331553,
+          37.2858243
+        ],
+        [
+          -121.9331167,
+          37.2860954
+        ],
+        [
+          -121.9327836,
+          37.2860103
+        ],
+        [
+          -121.9327506,
+          37.2860043
+        ],
+        [
           -121.9327172,
           37.2860036
-        ],
-        [
-          -121.9326934,
-          37.2860072
-        ],
-        [
-          -121.9326703,
-          37.2860136
-        ],
-        [
-          -121.9326481,
-          37.2860226
-        ],
-        [
-          -121.9326293,
-          37.2860342
-        ],
-        [
-          -121.9326124,
-          37.2860484
-        ],
-        [
-          -121.9325976,
-          37.2860647
-        ],
-        [
-          -121.932587,
-          37.2860824
-        ],
-        [
-          -121.9325818,
-          37.2860962
-        ],
-        [
-          -121.9325784,
-          37.2861106
-        ],
-        [
-          -121.9325771,
-          37.2861253
-        ],
-        [
-          -121.9325777,
-          37.2861401
-        ],
-        [
-          -121.9323287,
-          37.2861383
-        ],
-        [
-          -121.9323268,
-          37.2860422
         ]
       ]
     }
@@ -88,6 +48,12 @@
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "972 Michael Dr",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
   "images": [],
@@ -98,11 +64,13 @@
           "value": "Townhomes",
           "src": [
             "SRC-001134",
-            "SRC-001143"
+            "SRC-001143",
+            "SRC-001551"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -173,14 +141,31 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "16 townhomes replacing two duplexes. The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-01-22. The city's data does not say how it was decided.",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Maesumi",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -206,6 +191,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

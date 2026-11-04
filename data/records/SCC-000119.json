@@ -1,6 +1,6 @@
 {
   "id": "SCC-000119",
-  "name": "Bellarmino",
+  "name": "Bellarmino Place and Alvarado Park",
   "parcels": [
     {
       "apn": "261-42-080",
@@ -55,6 +55,12 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "text": "237 Race Street",
+      "src": [
+        "SRC-001396"
+      ]
     }
   ],
   "images": [],
@@ -78,8 +84,16 @@
             "SRC-001107"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001396"
+          ],
+          "note": "Both buildings have opened; lease-up not described."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -112,6 +126,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001396"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -120,9 +144,46 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "text": "237 and 253 Race Street: Bellarmino Place 116 units, Alvarado Park 90 senior units.",
+      "src": [
+        "SRC-001396"
+      ]
+    },
+    {
+      "text": "CTCAC CA-22-001: Bellarmino Place, located at 230, 246, 250, and 260 Grand Avenue, and 253, 245 Race Street in San Jose, requested and is being recommended for a reservation of $2,500,000 in annual federal tax credits to finance the new construction of 115 units of housing serving large families with rents affordable to households earning 30%-60% of area median income (AMI). Recorded as a note because this funding covers Bellarmino Place (116 units), which may be one component of this record.",
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "text": "CTCAC CA-23-007: Alvarado Park, located at 237 Race Street in San Jose, requested and is being recommended for a reservation of $2,500,000 in annual federal tax credits to finance the new construction of 89 units of housing serving seniors with rents affordable to households earning 30%-60% of area median income (AMI). Recorded as a note because this funding covers Alvarado Park (90 units), which may be one component of this record.",
+      "src": [
+        "SRC-001618"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Santa Clara County Housing Authority",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001396"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "The John Stewart Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001396"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -143,12 +204,30 @@
       ]
     },
     {
+      "date": "2024",
+      "type": "Completion",
+      "label": "Bellarmino Place opened fall 2024",
+      "src": [
+        "SRC-001396"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-03-21",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-09",
+      "type": "Completion",
+      "label": "Alvarado Park opened mid-September 2025",
+      "src": [
+        "SRC-001396"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -156,6 +235,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

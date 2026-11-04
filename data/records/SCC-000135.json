@@ -1,9 +1,9 @@
 {
   "id": "SCC-000135",
-  "name": "15300 Los Gatos Blvd",
+  "name": "ACE Hardware property (15300 & 15330 Los Gatos Blvd)",
   "parcels": [
     {
-      "apn": "424-17-035",
+      "apn": "424-17-036",
       "from": null,
       "to": null,
       "src": [
@@ -11,60 +11,92 @@
       ],
       "outline": [
         [
+          -121.956302,
+          37.2472563
+        ],
+        [
+          -121.9562041,
+          37.2468993
+        ],
+        [
           -121.956177,
           37.2468003
-        ],
-        [
-          -121.95616,
-          37.2467383
-        ],
-        [
-          -121.9561114,
-          37.2465612
-        ],
-        [
-          -121.9561759,
-          37.2465484
-        ],
-        [
-          -121.956239,
-          37.2465297
-        ],
-        [
-          -121.9563001,
-          37.2465053
-        ],
-        [
-          -121.9563587,
-          37.2464754
-        ],
-        [
-          -121.9564144,
-          37.2464403
-        ],
-        [
-          -121.9564666,
-          37.2464003
-        ],
-        [
-          -121.956515,
-          37.2463556
-        ],
-        [
-          -121.956559,
-          37.2463067
-        ],
-        [
-          -121.9566334,
-          37.2463433
         ],
         [
           -121.9563458,
           37.2468599
         ],
         [
-          -121.956177,
-          37.2468003
+          -121.9566334,
+          37.2463433
+        ],
+        [
+          -121.956559,
+          37.2463067
+        ],
+        [
+          -121.95659,
+          37.2462621
+        ],
+        [
+          -121.9566958,
+          37.246092
+        ],
+        [
+          -121.9567062,
+          37.2460804
+        ],
+        [
+          -121.9567183,
+          37.2460706
+        ],
+        [
+          -121.9567317,
+          37.2460629
+        ],
+        [
+          -121.9567463,
+          37.2460574
+        ],
+        [
+          -121.9567615,
+          37.2460543
+        ],
+        [
+          -121.956777,
+          37.2460536
+        ],
+        [
+          -121.9567924,
+          37.2460555
+        ],
+        [
+          -121.9568074,
+          37.2460597
+        ],
+        [
+          -121.9570843,
+          37.2461575
+        ],
+        [
+          -121.9568912,
+          37.2464758
+        ],
+        [
+          -121.9572285,
+          37.2465952
+        ],
+        [
+          -121.9567362,
+          37.2472364
+        ],
+        [
+          -121.9563168,
+          37.2473099
+        ],
+        [
+          -121.956302,
+          37.2472563
         ]
       ]
     }
@@ -74,6 +106,12 @@
       "text": "15300 Los Gatos Blvd, Los Gatos, CA",
       "src": [
         "SRC-001120"
+      ]
+    },
+    {
+      "text": "15330 Los Gatos Blvd",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -116,11 +154,20 @@
         {
           "value": 175,
           "src": [
-            "SRC-001120"
+            "SRC-001120",
+            "SRC-001554"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 182,
+          "src": [
+            "SRC-001594"
+          ],
+          "note": "2024 news report on The Arya"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -130,19 +177,53 @@
             "SRC-001120"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-24-018, U-24-007, M-24-009",
+          "src": [
+            "SRC-001593"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "text": "35 below-market units; Town list status Incomplete. Town also lists APN 424-17-036.",
+      "src": [
+        "SRC-001593"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Arya Properties LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001594"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -160,6 +241,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

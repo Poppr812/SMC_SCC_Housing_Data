@@ -1,6 +1,6 @@
 {
   "id": "SCC-000007",
-  "name": "300 S 1st St",
+  "name": "300 South First Street",
   "parcels": [
     {
       "apn": "467-46-081",
@@ -38,6 +38,12 @@
       "text": "300 S 1st St, San Jose, CA",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "345 South Second Street",
+      "src": [
+        "SRC-001373"
       ]
     }
   ],
@@ -96,6 +102,26 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001373"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 18400,
+          "src": [
+            "SRC-001373"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -104,9 +130,43 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "Three 30-story towers. Developers filed two entitlement options, residential and the earlier office plan.",
+      "src": [
+        "SRC-001373"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Westbank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001373"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Urban Community",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001373"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001373"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -124,6 +184,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

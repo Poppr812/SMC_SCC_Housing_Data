@@ -1,6 +1,6 @@
 {
   "id": "SCC-000255",
-  "name": "980 University Ave",
+  "name": "Cryptic (980 University Ave)",
   "parcels": [
     {
       "apn": "424-31-028",
@@ -67,8 +67,16 @@
             "SRC-001120"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-001595"
+          ],
+          "note": "68 multi-family units; rental or for-sale not stated"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -112,13 +120,31 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120"
+      ]
+    },
+    {
+      "text": "11 below-market units; Town list status Complete.",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -126,6 +152,15 @@
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-09-23",
+      "type": "Application filed",
+      "label": "Pending application filed",
+      "src": [
+        "SRC-001595"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-09-25",
       "type": "Application filed",
@@ -140,6 +175,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

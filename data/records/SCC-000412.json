@@ -1,6 +1,6 @@
 {
   "id": "SCC-000412",
-  "name": "640 Lakehaven Dr",
+  "name": "640 Lakehaven Drive",
   "parcels": [
     {
       "apn": "110-16-040",
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "text": "640  Lakehaven Dr, Sunnyvale, CA",
+      "text": "640 Lakehaven Dr, Sunnyvale, CA",
       "src": [
         "SRC-001118",
         "SRC-001119"
@@ -97,11 +97,13 @@
           "value": "Approved",
           "src": [
             "SRC-001118",
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001527"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -129,9 +131,16 @@
             "SRC-001118"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-001526"
+          ],
+          "note": "Six single-family homes"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -155,7 +164,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "SDG Architects, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001526"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -181,6 +201,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SMC-000132",
-  "name": "920 Shasta",
+  "name": "920 Shasta/122 Buckeye",
   "parcels": [
     {
       "apn": "053-343-110",
@@ -99,6 +99,12 @@
         "SRC-001117",
         "SRC-001116"
       ]
+    },
+    {
+      "text": "122 Buckeye Street, Redwood City, CA",
+      "src": [
+        "SRC-001243"
+      ]
     }
   ],
   "images": [],
@@ -121,7 +127,8 @@
           "value": "Approved",
           "src": [
             "SRC-001117",
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001243"
           ],
           "note": "State report shows entitlement approval"
         }
@@ -143,7 +150,8 @@
         {
           "value": 100,
           "src": [
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001243"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -154,7 +162,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001243"
           ]
         }
       ]
@@ -180,14 +189,31 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001243"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001117",
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "99 deed-restricted units plus 1 manager unit. Land donation tied to the 901 El Camino Real Gatekeeper office project.",
+      "src": [
+        "SRC-001243",
+        "SRC-001244"
       ]
     }
   ],
@@ -227,6 +253,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

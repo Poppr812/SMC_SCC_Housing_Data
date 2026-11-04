@@ -1,89 +1,7 @@
 {
   "id": "SCC-000229",
-  "name": "294-296 Tyrella Ave",
+  "name": "Oak Creek Terrace (294-296 Tyrella Ave)",
   "parcels": [
-    {
-      "apn": "160-32-001",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.0650374,
-          37.3983094
-        ],
-        [
-          -122.0650888,
-          37.3981788
-        ],
-        [
-          -122.0656705,
-          37.3983172
-        ],
-        [
-          -122.0655963,
-          37.3985157
-        ],
-        [
-          -122.0655025,
-          37.3984925
-        ],
-        [
-          -122.065397,
-          37.3984642
-        ],
-        [
-          -122.0650961,
-          37.398396
-        ],
-        [
-          -122.0650854,
-          37.3983941
-        ],
-        [
-          -122.0650752,
-          37.3983905
-        ],
-        [
-          -122.0650657,
-          37.3983853
-        ],
-        [
-          -122.0650571,
-          37.3983787
-        ],
-        [
-          -122.0650497,
-          37.3983708
-        ],
-        [
-          -122.0650436,
-          37.3983618
-        ],
-        [
-          -122.0650391,
-          37.398352
-        ],
-        [
-          -122.0650361,
-          37.3983416
-        ],
-        [
-          -122.0650348,
-          37.3983308
-        ],
-        [
-          -122.0650353,
-          37.39832
-        ],
-        [
-          -122.0650374,
-          37.3983094
-        ]
-      ]
-    },
     {
       "apn": "160-32-002",
       "from": null,
@@ -185,7 +103,9 @@
         {
           "value": 80,
           "src": [
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-001322",
+            "SRC-001323"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -197,14 +117,15 @@
           "note": "Units in the application as reported"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-001323"
           ]
         }
       ]
@@ -215,6 +136,12 @@
           "value": "16 deed-restricted units reported to the state",
           "src": [
             "SRC-001110"
+          ]
+        },
+        {
+          "value": "16 affordable units",
+          "src": [
+            "SRC-001323"
           ]
         }
       ]
@@ -230,6 +157,64 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001323"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 20,
+            "1br": 31,
+            "2br": 26,
+            "3br": 3,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001323"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 83,
+          "src": [
+            "SRC-001323"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.48,
+          "src": [
+            "SRC-001323"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001323"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -241,7 +226,28 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Tower Investment LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001322",
+        "SRC-001323"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Berry & Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001323"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -267,6 +273,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

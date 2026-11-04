@@ -139,112 +139,6 @@
           37.3851241
         ]
       ]
-    },
-    {
-      "apn": "193-02-050",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.0826023,
-          37.384289
-        ],
-        [
-          -122.0827296,
-          37.3843516
-        ],
-        [
-          -122.0829009,
-          37.3844359
-        ],
-        [
-          -122.0830722,
-          37.3845201
-        ],
-        [
-          -122.0832434,
-          37.3846044
-        ],
-        [
-          -122.0834382,
-          37.3847002
-        ],
-        [
-          -122.0831108,
-          37.3851241
-        ],
-        [
-          -122.0827958,
-          37.3849691
-        ],
-        [
-          -122.0827852,
-          37.3849647
-        ],
-        [
-          -122.0825422,
-          37.3848761
-        ],
-        [
-          -122.0825346,
-          37.3848729
-        ],
-        [
-          -122.0823585,
-          37.3847862
-        ],
-        [
-          -122.0823514,
-          37.3847829
-        ],
-        [
-          -122.0823448,
-          37.3847785
-        ],
-        [
-          -122.0823391,
-          37.3847732
-        ],
-        [
-          -122.0823343,
-          37.384767
-        ],
-        [
-          -122.0823305,
-          37.3847601
-        ],
-        [
-          -122.0823279,
-          37.3847526
-        ],
-        [
-          -122.0823265,
-          37.3847449
-        ],
-        [
-          -122.0823263,
-          37.384737
-        ],
-        [
-          -122.0823274,
-          37.3847293
-        ],
-        [
-          -122.0823297,
-          37.3847217
-        ],
-        [
-          -122.0823332,
-          37.3847147
-        ],
-        [
-          -122.0826023,
-          37.384289
-        ]
-      ]
     }
   ],
   "addresses": [
@@ -316,7 +210,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-001324"
           ]
         }
       ]
@@ -327,6 +222,12 @@
           "value": "33 deed-restricted units reported to the state",
           "src": [
             "SRC-001110"
+          ]
+        },
+        {
+          "value": "33 units for low to very low income households",
+          "src": [
+            "SRC-001324"
           ]
         }
       ]
@@ -342,6 +243,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001324"
+          ],
+          "note": "Mixed-use building; a separate two-story bank building is included"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -353,7 +265,17 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001324"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -379,6 +301,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

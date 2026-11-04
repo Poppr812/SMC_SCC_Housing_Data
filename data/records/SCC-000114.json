@@ -1,6 +1,6 @@
 {
   "id": "SCC-000114",
-  "name": "326 South Willard Avenue",
+  "name": "1470 West San Carlos Street",
   "parcels": [
     {
       "apn": "277-20-034",
@@ -43,6 +43,12 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "1470 West San Carlos Street",
+      "src": [
+        "SRC-001394"
+      ]
     }
   ],
   "images": [],
@@ -66,8 +72,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001394"
+          ],
+          "note": "Plans approved, April 2026."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -100,6 +114,64 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001394"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 155,
+            "2br": 58,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001394"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001394"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001394"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "11 affordable units.",
+          "src": [
+            "SRC-001394"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -110,7 +182,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "WSC Developments",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001394"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPMD Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001394"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -128,6 +220,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

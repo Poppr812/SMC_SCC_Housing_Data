@@ -1,6 +1,6 @@
 {
   "id": "SCC-000102",
-  "name": "15495 Los Gatos Blvd",
+  "name": "Newtown (15495 Los Gatos Blvd)",
   "parcels": [
     {
       "apn": "424-22-030",
@@ -120,11 +120,20 @@
         {
           "value": 238,
           "src": [
-            "SRC-001120"
+            "SRC-001120",
+            "SRC-001593"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 81,
+          "src": [
+            "SRC-001593"
+          ],
+          "note": "New application filed 2025-11-04"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -134,15 +143,27 @@
             "SRC-001120"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-24-046, U-24-011, S-25-050, U-25-009, M-25-009",
+          "src": [
+            "SRC-001593"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120"
+      ]
+    },
+    {
+      "text": "The Town lists both applications as pending. The old one invokes builder's remedy; the new one does not.",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -157,6 +178,15 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2025-11-04",
+      "type": "Application filed",
+      "label": "New 81-unit application",
+      "src": [
+        "SRC-001593"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -164,6 +194,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

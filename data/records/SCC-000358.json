@@ -1,6 +1,6 @@
 {
   "id": "SCC-000358",
-  "name": "0 Emory St",
+  "name": "Emory Street Townhomes",
   "parcels": [
     {
       "apn": "261-12-084",
@@ -101,6 +101,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001413"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -111,7 +121,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Pinion Property Company",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001413"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001413"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -122,6 +152,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-09",
+      "type": "Other",
+      "label": "Initial Study published; comment through October 8, 2026",
+      "src": [
+        "SRC-001413"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -129,6 +168,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

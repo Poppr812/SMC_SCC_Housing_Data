@@ -1,6 +1,6 @@
 {
   "id": "SCC-000169",
-  "name": "1207 N Capitol Ave",
+  "name": "1207 North Capitol Avenue",
   "parcels": [
     {
       "apn": "245-05-015",
@@ -142,7 +142,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001403"
           ]
         }
       ]
@@ -168,6 +169,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001403"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -179,10 +190,38 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Danco Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001403"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Form4 Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001403"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024",
+      "type": "Sale",
+      "label": "Danco bought the property for $10.5 million",
+      "src": [
+        "SRC-001403"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-08-14",
       "type": "Application filed",
@@ -198,6 +237,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-12-10",
+      "type": "Other",
+      "label": "Planning Director's Hearing; outcome not reported in source",
+      "src": [
+        "SRC-001403"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -205,6 +253,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

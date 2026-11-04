@@ -1,6 +1,6 @@
 {
   "id": "SCC-000189",
-  "name": "231 Grant Ave",
+  "name": "Educator Workforce Housing (231 Grant Avenue)",
   "parcels": [
     {
       "apn": "132-31-074",
@@ -78,8 +78,17 @@
             "SRC-001127"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001302",
+            "SRC-001303"
+          ],
+          "note": "Latest source read is December 2024, which expected opening in summer 2025; opening not confirmed"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -107,7 +116,9 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001127"
+            "SRC-001127",
+            "SRC-001301",
+            "SRC-001302"
           ]
         }
       ]
@@ -132,20 +143,132 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001304",
+            "SRC-001302"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 24,
+            "1br": 61,
+            "2br": 25,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001302"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 112,
+          "src": [
+            "SRC-001302"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-001304",
+            "SRC-001303"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001127"
       ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Abode Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001304",
+        "SRC-001302"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Mercy Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001302",
+        "SRC-001303"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Cahill Contractors",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001302",
+        "SRC-001303"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Van Meter Williams Pollack",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001302",
+        "SRC-001303"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Other",
+      "provider": "Meta",
+      "program": "Philanthropic grant",
+      "amount": 25000000,
+      "date": null,
+      "src": [
+        "SRC-001302",
+        "SRC-001303"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2023-08",
+      "type": "Construction start",
+      "label": "Groundbreaking",
+      "src": [
+        "SRC-001302"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-08-04",
       "type": "Approved",
@@ -161,6 +284,15 @@
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "date": "2025",
+      "type": "Completion",
+      "label": "Set to open summer 2025",
+      "src": [
+        "SRC-001303"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -168,6 +300,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

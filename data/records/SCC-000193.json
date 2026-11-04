@@ -1,6 +1,6 @@
 {
   "id": "SCC-000193",
-  "name": "5670 Camden Ave",
+  "name": "5670 Camden Avenue",
   "parcels": [
     {
       "apn": "567-28-001",
@@ -260,6 +260,48 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.7,
+          "src": [
+            "SRC-001406"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001406"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001406"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "8 of 108 units deed-restricted.",
+          "src": [
+            "SRC-001406"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -270,7 +312,17 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Mana Investments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001406"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -281,6 +333,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-03-25",
+      "type": "Other",
+      "label": "Planning Commission review; outcome not reported in source",
+      "src": [
+        "SRC-001406"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -288,6 +349,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

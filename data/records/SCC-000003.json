@@ -1,6 +1,6 @@
 {
   "id": "SCC-000003",
-  "name": "1500 N Shoreline Blvd",
+  "name": "Shoreline Gateway (1500 N Shoreline Blvd)",
   "parcels": [
     {
       "apn": "116-13-030",
@@ -148,6 +148,60 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 15,
+          "src": [
+            "SRC-001310"
+          ],
+          "note": "Eight residential buildings of nine to 15 stories"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 16.0,
+          "src": [
+            "SRC-001310"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001310"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "13% affordable per Mountain View Voice",
+          "src": [
+            "SRC-001310"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001310"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -156,9 +210,25 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "text": "Mountain View Voice, September 2026: undergoing environmental review; site is the Century 16 theater.",
+      "src": [
+        "SRC-001310"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Syufy Enterprises",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001310"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -176,6 +246,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

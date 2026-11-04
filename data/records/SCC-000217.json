@@ -1,6 +1,6 @@
 {
   "id": "SCC-000217",
-  "name": "14465 Monterey Rd, Morgan Hill",
+  "name": "Stoney Creek (14465 Monterey Hwy)",
   "parcels": [
     {
       "apn": "779-05-051",
@@ -92,22 +92,26 @@
         {
           "value": "Mixed product",
           "src": [
-            "SRC-001114"
+            "SRC-001114",
+            "SRC-001431"
           ],
           "note": "State categories: 5+, SFD"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
         {
           "value": "Proposed",
           "src": [
-            "SRC-001114"
+            "SRC-001114",
+            "SRC-001431"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -138,8 +142,16 @@
             "SRC-001114"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 268,
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "90 single-family with 20 ADUs, 87 rental single-family, 55 condos, 16 farmworker apartments"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -151,20 +163,69 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 22.4,
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "text": "County also lists APNs 779-05-043 and -054. An earlier 219-unit variant, PLN24-033-SB330, shows expired.",
+      "src": [
+        "SRC-001431"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "John Moniz",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001431"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-11-05",
+      "type": "Application filed",
+      "label": "Formal SB 330 application submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-29",
       "type": "Application filed",
@@ -179,6 +240,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

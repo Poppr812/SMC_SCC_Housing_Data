@@ -1,6 +1,6 @@
 {
   "id": "SMC-000111",
-  "name": "The View",
+  "name": "View at San Bruno (The View)",
   "parcels": [
     {
       "apn": "020-071-050",
@@ -182,6 +182,12 @@
         "SRC-001129",
         "SRC-001123"
       ]
+    },
+    {
+      "text": "850 San Bruno Ave West",
+      "src": [
+        "SRC-001346"
+      ]
     }
   ],
   "images": [],
@@ -207,8 +213,15 @@
             "SRC-001123"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001346"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -226,11 +239,13 @@
         {
           "value": 341,
           "src": [
-            "SRC-001123"
+            "SRC-001123",
+            "SRC-001346"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -239,6 +254,13 @@
           "src": [
             "SRC-001123"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001346"
+          ],
+          "note": "City: 341 affordable units"
         }
       ]
     },
@@ -263,14 +285,106 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 10,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.57,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 86,
+            "2br": 169,
+            "3br": 86,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 34,
+              "ami": 30
+            },
+            {
+              "count": 34,
+              "ami": 50
+            },
+            {
+              "count": 135,
+              "ami": 60
+            },
+            {
+              "count": 134,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001652"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 236695240,
+          "src": [
+            "SRC-001652"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001129",
         "SRC-001123"
+      ]
+    },
+    {
+      "text": "CTCAC CA-24-521: View at San Bruno, located at 840 San Bruno Avenue West in San Bruno on a 1.57 acre site, requested and is being recommended for a reservation of $10,871,877 in annual federal tax credits and $125,000,000 of tax- exempt bond cap to finance the new construction of 341 units of housing, consisting of 337 restricted rental units, and 4 unrestricted manager's units.",
+      "src": [
+        "SRC-001652"
       ]
     }
   ],
@@ -283,9 +397,119 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "JEMCOR Development Partners, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001652"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "CDLAC allocation",
+      "program": "Tax-exempt bond cap recommended in staff report",
+      "amount": 125000000,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Berkadia",
+      "program": "Tax-Exempt",
+      "amount": 125000000,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Berkadia",
+      "program": "Taxable",
+      "amount": 22928167,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Berkadia",
+      "program": "Recycled Tax-Exempt",
+      "amount": 20000000,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Berkadia",
+      "program": "Tax-Exempt",
+      "amount": 105000000,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Costs",
+      "program": null,
+      "amount": 4948010,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Net Operating Income",
+      "program": null,
+      "amount": 3638429,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General Partner Equity",
+      "program": null,
+      "amount": 5000000,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 26785031,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 91323770,
+      "date": null,
+      "src": [
+        "SRC-001652"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -305,12 +529,57 @@
       ]
     },
     {
+      "date": "2024-08-06",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-24-521)",
+      "src": [
+        "SRC-001652"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025",
+      "type": "Construction start",
+      "label": "City construction timeline: 2025 - Summer 2027",
+      "src": [
+        "SRC-001346"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01",
+      "type": "Construction start",
+      "label": "Expected construction start per CTCAC staff report",
+      "src": [
+        "SRC-001652"
+      ],
+      "estimated": true
+    },
+    {
       "date": "2025-04-04",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001123"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Completion",
+      "label": "City construction timeline: 2025 - Summer 2027",
+      "src": [
+        "SRC-001346"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027-06",
+      "type": "Completion",
+      "label": "Expected completion per CTCAC staff report",
+      "src": [
+        "SRC-001652"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -318,6 +587,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

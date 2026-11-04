@@ -1,6 +1,6 @@
 {
   "id": "SMC-000115",
-  "name": "1477 Huntington",
+  "name": "1477 Huntington Avenue",
   "parcels": [
     {
       "apn": "014-184-120",
@@ -73,11 +73,13 @@
           "value": "Approved",
           "src": [
             "SRC-001112",
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -95,11 +97,13 @@
         {
           "value": 262,
           "src": [
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -132,11 +136,31 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.98,
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001112",
         "SRC-001113"
@@ -152,6 +176,15 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Infill Land Partners, LLC",
+      "contact": "Will McPhee",
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
+      ]
     }
   ],
   "financing": [],
@@ -164,6 +197,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2023-04",
+      "type": "Approved",
+      "label": "Entitled",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-04-20",
@@ -179,6 +221,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

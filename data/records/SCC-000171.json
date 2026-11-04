@@ -1,6 +1,6 @@
 {
   "id": "SCC-000171",
-  "name": "940 Willow St",
+  "name": "940 Willow Street",
   "parcels": [
     {
       "apn": "429-03-072",
@@ -158,7 +158,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001404"
           ]
         }
       ]
@@ -169,6 +170,12 @@
           "value": "20 deed-restricted units reported to the state",
           "src": [
             "SRC-001107"
+          ]
+        },
+        {
+          "value": "26 of 126 units affordable.",
+          "src": [
+            "SRC-001404"
           ]
         }
       ]
@@ -184,6 +191,44 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001404"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 52,
+            "1br": 50,
+            "2br": 20,
+            "3br": 4,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001404"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001404"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -195,7 +240,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Redco Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001404"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio Current",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001404"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -214,6 +278,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-03",
+      "type": "Approved",
+      "label": "Planning Commission rejected an appeal",
+      "src": [
+        "SRC-001404"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -221,6 +294,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

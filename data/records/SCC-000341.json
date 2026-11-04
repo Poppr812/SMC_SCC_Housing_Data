@@ -109,11 +109,13 @@
           "value": "Approved",
           "src": [
             "SRC-001131",
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001446"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -138,7 +140,8 @@
         {
           "value": 23,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001446"
           ],
           "note": "Units in the application as reported"
         }
@@ -150,7 +153,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001422"
           ]
         }
       ]
@@ -161,6 +165,12 @@
           "value": "3 deed-restricted units reported to the state",
           "src": [
             "SRC-001135"
+          ]
+        },
+        {
+          "value": "3 affordable units",
+          "src": [
+            "SRC-001422"
           ]
         }
       ]
@@ -174,13 +184,29 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2020-0010, SR2020-0028",
+          "src": [
+            "SRC-001446"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.7,
+          "src": [
+            "SRC-001422"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131",
         "SRC-001135"
@@ -200,6 +226,15 @@
       ]
     },
     {
+      "date": "2021-10-12",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolution 21-11)",
+      "src": [
+        "SRC-001446"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2021-11-01",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -213,6 +248,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -48,22 +48,28 @@
         {
           "value": "Condominiums",
           "src": [
-            "SRC-001133"
+            "SRC-001133",
+            "SRC-001340",
+            "SRC-001351"
           ],
           "note": "State category 5+ units, for-sale tenure"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
         {
           "value": "Approved",
           "src": [
-            "SRC-001133"
+            "SRC-001133",
+            "SRC-001340",
+            "SRC-001351"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -83,15 +89,25 @@
             "SRC-001133"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 86,
+          "src": [
+            "SRC-001340",
+            "SRC-001351"
+          ],
+          "note": "Reduced from 120 by amendment approved May 27, 2025"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001133"
+            "SRC-001133",
+            "SRC-001340"
           ]
         }
       ]
@@ -103,15 +119,43 @@
           "src": [
             "SRC-001133"
           ]
+        },
+        {
+          "value": "6 moderate income units (120% AMI) for 55 years per November 2026 overview",
+          "src": [
+            "SRC-001340"
+          ]
+        },
+        {
+          "value": "6 units for low-income households per project page",
+          "src": [
+            "SRC-001351"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001351"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001133"
+      ]
+    },
+    {
+      "text": "City page gives an expiration date of June 7, 2028.",
+      "src": [
+        "SRC-001351"
       ]
     }
   ],
@@ -123,6 +167,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "CHS Development Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001351"
       ]
     }
   ],
@@ -136,6 +190,15 @@
       "src": [
         "SRC-001133"
       ]
+    },
+    {
+      "date": "2025-05-27",
+      "type": "Other",
+      "label": "Planning Commission approved amendment reducing units to 86",
+      "src": [
+        "SRC-001351"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -143,6 +206,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -117,8 +117,16 @@
             "SRC-001137"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001511"
+          ],
+          "note": "New application under review; older claim reflects DP-2018-07"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -139,8 +147,16 @@
             "SRC-001137"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 29,
+          "src": [
+            "SRC-001511"
+          ],
+          "note": "8 single-family, 6 townhomes, 15 condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -159,6 +175,12 @@
           "src": [
             "SRC-001137"
           ]
+        },
+        {
+          "value": "5 deed-restricted units: 2 very low income, 3 moderate income",
+          "src": [
+            "SRC-001511"
+          ]
         }
       ]
     },
@@ -171,20 +193,56 @@
             "SRC-001137"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "TM-2025-007, ASA-2025-015",
+          "src": [
+            "SRC-001511"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001511"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100",
         "SRC-001137"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Canyon Crossings, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001511"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPMD Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001511"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -203,6 +261,15 @@
       "src": [
         "SRC-001137"
       ]
+    },
+    {
+      "date": "2025-10-15",
+      "type": "Application filed",
+      "label": "Formal application filed",
+      "src": [
+        "SRC-001511"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -210,6 +277,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

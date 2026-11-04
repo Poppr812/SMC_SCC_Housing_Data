@@ -47,6 +47,12 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "511 Byron St; 660 University Ave; 680 University Ave / 500 Middlefield Rd, Palo Alto",
+      "src": [
+        "SRC-001308"
+      ]
     }
   ],
   "images": [],
@@ -94,8 +100,16 @@
             "SRC-001127"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 65,
+          "src": [
+            "SRC-001308"
+          ],
+          "note": "Application 21PLN-00341; 70 units was the 2021 prescreening"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -128,11 +142,48 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001308"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 47,
+            "1br": 12,
+            "2br": 6,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001308"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 9115,
+          "src": [
+            "SRC-001308"
+          ],
+          "note": "Ground-floor office"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126",
         "SRC-001127"
@@ -165,6 +216,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

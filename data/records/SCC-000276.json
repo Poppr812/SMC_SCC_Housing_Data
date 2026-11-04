@@ -3,90 +3,6 @@
   "name": "3265 El Camino Real",
   "parcels": [
     {
-      "apn": "132-28-020",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.1228826,
-          37.4192958
-        ],
-        [
-          -122.1231702,
-          37.4190058
-        ],
-        [
-          -122.1232226,
-          37.4190388
-        ],
-        [
-          -122.1232415,
-          37.419053
-        ],
-        [
-          -122.1232572,
-          37.4190695
-        ],
-        [
-          -122.1232693,
-          37.4190879
-        ],
-        [
-          -122.1232817,
-          37.4191194
-        ],
-        [
-          -122.1232878,
-          37.4191307
-        ],
-        [
-          -122.1230311,
-          37.4193895
-        ],
-        [
-          -122.1229042,
-          37.4193094
-        ],
-        [
-          -122.1228826,
-          37.4192958
-        ]
-      ]
-    },
-    {
-      "apn": "132-38-019",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -122.1367962,
-          37.4209951
-        ],
-        [
-          -122.1370777,
-          37.4206545
-        ],
-        [
-          -122.13722,
-          37.4207291
-        ],
-        [
-          -122.1369384,
-          37.4210698
-        ],
-        [
-          -122.1367962,
-          37.4209951
-        ]
-      ]
-    },
-    {
       "apn": "132-38-020",
       "from": null,
       "to": null,
@@ -179,7 +95,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001127"
+            "SRC-001127",
+            "SRC-001306"
           ]
         }
       ]
@@ -205,18 +122,49 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001306"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 31,
+          "src": [
+            "SRC-001306"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126",
         "SRC-001127"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Half Dome Capital LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (prescreening 23PLN-00105)",
+      "src": [
+        "SRC-001306"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -237,6 +185,15 @@
       ]
     },
     {
+      "date": "2025-02-10",
+      "type": "Approved",
+      "label": "City Council approval",
+      "src": [
+        "SRC-001306"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-02-24",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -250,6 +207,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

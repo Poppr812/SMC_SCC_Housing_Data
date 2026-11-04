@@ -1,6 +1,6 @@
 {
   "id": "SCC-000035",
-  "name": "330 Burnett Av, Morgan Hill",
+  "name": "Petal Fields (330 Burnett Ave)",
   "parcels": [
     {
       "apn": "726-40-013",
@@ -68,22 +68,26 @@
         {
           "value": "Mixed product",
           "src": [
-            "SRC-001114"
+            "SRC-001114",
+            "SRC-001431"
           ],
           "note": "State categories: 5+, SFA, SFD"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
         {
           "value": "Proposed",
           "src": [
-            "SRC-001114"
+            "SRC-001114",
+            "SRC-001431"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -114,8 +118,15 @@
             "SRC-001114"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 838,
+          "src": [
+            "SRC-001431"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -127,20 +138,104 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "170 units deed-restricted to low-income households",
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 131.9,
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "text": "County lists 15 APNs: 726-37-007, -003, -004; 726-40-008, -003, -002, -001, -006, -007, -013; 726-39-010, -009, -008, -002, -001. This record holds only 726-40-013.",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "text": "Reported: 523 single-family homes, 145 townhomes, 170 rental apartments.",
+      "src": [
+        "SRC-001456"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Chris Borello",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Borello Asset Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001456"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-10-23",
+      "type": "Application filed",
+      "label": "Formal SB 330 application submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-04-11",
       "type": "Application filed",
@@ -155,6 +250,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

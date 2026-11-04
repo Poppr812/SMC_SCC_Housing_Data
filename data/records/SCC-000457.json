@@ -80,11 +80,13 @@
         {
           "value": "Single-family",
           "src": [
-            "SRC-001157"
+            "SRC-001157",
+            "SRC-001598"
           ],
           "note": "State category: single-family detached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -115,8 +117,16 @@
             "SRC-001157"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 7,
+          "src": [
+            "SRC-001598"
+          ],
+          "note": "Five homes and two affordable ADUs"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -128,13 +138,41 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001598"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.6,
+          "src": [
+            "SRC-001598"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001157"
+      ]
+    },
+    {
+      "text": "Next step is a final subdivision map to City Council.",
+      "src": [
+        "SRC-001598"
       ]
     }
   ],
@@ -149,6 +187,15 @@
       "src": [
         "SRC-001157"
       ]
+    },
+    {
+      "date": "2025-08-13",
+      "type": "Approved",
+      "label": "Planning Commission approval",
+      "src": [
+        "SRC-001598"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -156,6 +203,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

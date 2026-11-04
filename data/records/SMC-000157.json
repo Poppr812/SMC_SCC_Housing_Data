@@ -51,8 +51,16 @@
             "SRC-001149"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001205"
+          ],
+          "note": "City says for-sale units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -96,11 +104,53 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001205"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001205"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "5 very low-income BMR units",
+          "src": [
+            "SRC-001205"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001205"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001149"
       ]
@@ -115,6 +165,16 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "888 El Camino LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001205"
+      ]
     }
   ],
   "financing": [],
@@ -127,6 +187,14 @@
       "src": [
         "SRC-001149"
       ]
+    },
+    {
+      "date": "2025-10-16",
+      "type": "Other",
+      "label": "City comment letter: inconsistent with several development standards",
+      "src": [
+        "SRC-001205"
+      ]
     }
   ],
   "history": [
@@ -134,6 +202,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

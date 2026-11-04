@@ -1,6 +1,6 @@
 {
   "id": "SMC-000110",
-  "name": "Syufy Enterprises",
+  "name": "1440 Huntington Avenue (410 Noor Ave)",
   "parcels": [
     {
       "apn": "014-183-270",
@@ -132,8 +132,15 @@
             "SRC-001113"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001342"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -151,7 +158,8 @@
         {
           "value": 338,
           "src": [
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -163,7 +171,7 @@
           "note": "Units in the application as reported"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -194,13 +202,29 @@
             "SRC-001113"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "P18-0013, B22-0788, B22-0789, B22-0790",
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.53,
+          "src": [
+            "SRC-001342"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001112",
         "SRC-001113"
@@ -216,6 +240,15 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Syufi Properties, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
+      ]
     }
   ],
   "financing": [],
@@ -228,6 +261,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2020-12",
+      "type": "Approved",
+      "label": "Entitled",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": false
     },
     {
       "date": "2020-12-09",
@@ -244,6 +286,15 @@
       "src": [
         "SRC-001113"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Completion",
+      "label": "City estimate: Q1 2027",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -251,6 +302,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000199",
-  "name": "Mana Canden Fund",
+  "name": "2480 & 2740 Hecker Pass (Mana Camden Fund)",
   "parcels": [
     {
       "apn": "810-20-036",
@@ -107,6 +107,12 @@
       "src": [
         "SRC-001115"
       ]
+    },
+    {
+      "text": "2480 & 2740 Hecker Pass Rd, Gilroy, CA 95020",
+      "src": [
+        "SRC-001435"
+      ]
     }
   ],
   "images": [],
@@ -116,22 +122,26 @@
         {
           "value": "Single-family",
           "src": [
-            "SRC-001115"
+            "SRC-001115",
+            "SRC-001435"
           ],
           "note": "State category: single-family detached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
         {
           "value": "Proposed",
           "src": [
-            "SRC-001115"
+            "SRC-001115",
+            "SRC-001435"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -151,8 +161,15 @@
             "SRC-001115"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 116,
+          "src": [
+            "SRC-001435"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -162,22 +179,94 @@
             "SRC-001115"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "AS 23-19, TM 23-03",
+          "src": [
+            "SRC-001435"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001435"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "9 extremely low income units",
+          "src": [
+            "SRC-001435"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 107,
+          "src": [
+            "SRC-001420"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 24.3,
+          "src": [
+            "SRC-001435"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001115"
       ]
+    },
+    {
+      "text": "City lists APNs 810-20-033, -036 and -037; this record holds only -036.",
+      "src": [
+        "SRC-001435"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Mana Camden Fund, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001435"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-10-31",
+      "type": "Application filed",
+      "label": "Application submitted",
+      "src": [
+        "SRC-001435"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-08-28",
       "type": "Application filed",
@@ -185,6 +274,15 @@
       "src": [
         "SRC-001115"
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "type": "Other",
+      "label": "Draft EIR released",
+      "src": [
+        "SRC-001435"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -192,6 +290,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

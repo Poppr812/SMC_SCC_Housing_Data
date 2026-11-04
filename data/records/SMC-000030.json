@@ -301,6 +301,56 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 47,
+              "ami": 30
+            },
+            {
+              "count": 15,
+              "ami": 50
+            },
+            {
+              "count": 54,
+              "ami": 60
+            },
+            {
+              "count": 8,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001637"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 130067043,
+          "src": [
+            "SRC-001637"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -308,6 +358,12 @@
       "text": "Eight stories, terraced, over a three-level subterranean garage; replaces the Bel Mateo Motel",
       "src": [
         "SRC-000611"
+      ]
+    },
+    {
+      "text": "CTCAC CA-23-488: Belmont Family Apartments, located at 800-803 Belmont Avenue in Belmont, requested and is being recommended for a reservation of $5,707,459 in annual federal tax credits and $32,921,993 in total state tax credits to finance the new construction of 124 units of housing serving families with rents affordable to households earning 30%-70% of area median income (AMI).",
+      "src": [
+        "SRC-001637"
       ]
     }
   ],
@@ -340,7 +396,108 @@
       ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - Tax Exempt",
+      "program": null,
+      "amount": 63920895,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - Bond Cap",
+      "program": null,
+      "amount": 4344139,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - Taxable Tail",
+      "program": null,
+      "amount": 23348763,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": null,
+      "amount": 32500000,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Lease-Up NOI",
+      "program": null,
+      "amount": 364282,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "HASMC AHF",
+      "program": null,
+      "amount": 9500000,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Moving to Work Funds",
+      "program": null,
+      "amount": 4400000,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Belmont",
+      "program": null,
+      "amount": 2500000,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 4876411,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 75926350,
+      "date": null,
+      "src": [
+        "SRC-001637"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -350,6 +507,15 @@
       "src": [
         "SRC-000611"
       ]
+    },
+    {
+      "date": "2023-05-10",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-23-488)",
+      "src": [
+        "SRC-001637"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-07-03",
@@ -378,6 +544,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Status set to Lease-up / selling and completion event added from City of Belmont completion post (SRC-001000); earlier Permitted claim kept"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

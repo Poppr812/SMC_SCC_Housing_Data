@@ -115,6 +115,12 @@
           "src": [
             "SRC-001110"
           ]
+        },
+        {
+          "value": "Architect's page describes market-rate rental housing",
+          "src": [
+            "SRC-001329"
+          ]
         }
       ]
     },
@@ -129,6 +135,22 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 139,
+            "1br": 201,
+            "2br": 68,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001329"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -140,7 +162,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Miramar Capital",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Client per architect",
+      "src": [
+        "SRC-001329"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -166,6 +199,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

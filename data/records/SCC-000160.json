@@ -211,8 +211,17 @@
             "SRC-001126"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001295",
+            "SRC-001296"
+          ],
+          "note": "For-sale townhomes in 65 buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -222,8 +231,18 @@
             "SRC-001126"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001296",
+            "SRC-001298",
+            "SRC-001297"
+          ],
+          "note": "City Council approval"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -243,8 +262,17 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 145,
+          "src": [
+            "SRC-001295",
+            "SRC-001296",
+            "SRC-001297"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -256,20 +284,120 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001295"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 11.0,
+          "src": [
+            "SRC-001297"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001295",
+            "SRC-001296"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "19 units (13%) deed-restricted for low-income households",
+          "src": [
+            "SRC-001295",
+            "SRC-001296"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001295",
+            "SRC-001296"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "text": "State notices list APNs 008-02-035 and 008-02-036. The record carries only 008-02-035. The two notices give different Council dates.",
+      "src": [
+        "SRC-001296",
+        "SRC-001298"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Strada Investment Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001297"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001297"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001297"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-07-08",
+      "type": "Application filed",
+      "label": "SB 330 pre-application filed",
+      "src": [
+        "SRC-001295"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-12-18",
       "type": "Application filed",
@@ -277,6 +405,24 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2026-03-16",
+      "type": "Approved",
+      "label": "City Council approval per first Notice of Exemption",
+      "src": [
+        "SRC-001296"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-06",
+      "type": "Approved",
+      "label": "City Council approval date on second Notice of Exemption",
+      "src": [
+        "SRC-001298"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -284,6 +430,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

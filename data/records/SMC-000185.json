@@ -1,6 +1,6 @@
 {
   "id": "SMC-000185",
-  "name": "141 Third Avenue",
+  "name": "Third Avenue Townhouses",
   "parcels": [
     {
       "apn": "006-254-030",
@@ -130,7 +130,8 @@
           "value": "Approved",
           "src": [
             "SRC-001104",
-            "SRC-001105"
+            "SRC-001105",
+            "SRC-001158"
           ],
           "note": "State report shows entitlement approval"
         }
@@ -159,7 +160,8 @@
         {
           "value": 15,
           "src": [
-            "SRC-001104"
+            "SRC-001104",
+            "SRC-001158"
           ],
           "note": "Units in the application as reported"
         }
@@ -175,13 +177,40 @@
             "SRC-001105"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "GPA-8-20-14643, ZC-8-20-14633, SUB-8-20-14634, UPR-8-20-14642, DR-8-20-14636",
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.72,
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "City list: no Affordable Housing Plan has been submitted/approved",
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001104",
         "SRC-001105"
@@ -196,6 +225,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "John Suppes",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Authorized agent",
+      "src": [
+        "SRC-001158"
       ]
     }
   ],
@@ -224,6 +263,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

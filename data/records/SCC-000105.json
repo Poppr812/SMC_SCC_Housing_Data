@@ -1,6 +1,6 @@
 {
   "id": "SCC-000105",
-  "name": "961 Meridian Av",
+  "name": "Meridian Family Apartments",
   "parcels": [
     {
       "apn": "284-03-052",
@@ -170,6 +170,65 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 67,
+            "2br": 90,
+            "3br": 76,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 53,
+              "ami": 30
+            },
+            {
+              "count": 15,
+              "ami": 40
+            },
+            {
+              "count": 23,
+              "ami": 50
+            },
+            {
+              "count": 56,
+              "ami": 60
+            },
+            {
+              "count": 84,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -179,9 +238,25 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CTCAC CA-23-548 Meridian Family Apartments: 233 total units, 231 low-income units; stage Preliminary Reservation; developer ROEM Development Corporation; annual federal credit 8218606; total state credit 24841586.",
+      "src": [
+        "SRC-001603"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "ROEM Development Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001603"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -215,6 +290,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000422",
-  "name": "THE LUMBER YARD",
+  "name": "The Lumberyard (Depot-Latala)",
   "parcels": [
     {
       "apn": "726-61-030",
@@ -77,6 +77,12 @@
       "src": [
         "SRC-001135"
       ]
+    },
+    {
+      "text": "East side of Depot Street, north of East Dunne Avenue, Morgan Hill, CA",
+      "src": [
+        "SRC-001454"
+      ]
     }
   ],
   "images": [],
@@ -97,11 +103,13 @@
         {
           "value": "Under construction",
           "src": [
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001454"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -121,8 +129,16 @@
             "SRC-001135"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 49,
+          "src": [
+            "SRC-001454"
+          ],
+          "note": "Whole project; the 8 was one permit batch"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -132,19 +148,42 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "GPA2018-0005, ZA2018-0004, SD2018-0007, SR2019-0003, EA2018-0013",
+          "src": [
+            "SRC-001454"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001135"
       ]
+    },
+    {
+      "text": "City lists APN 726-13-049, not in the county parcel layer.",
+      "src": [
+        "SRC-001454"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Hale Lumber and the Depot-Latala Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001454"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -178,6 +217,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

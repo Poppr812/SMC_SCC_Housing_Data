@@ -1,6 +1,6 @@
 {
   "id": "SCC-000159",
-  "name": "14789 Oka Rd",
+  "name": "Walnut Orchard (14789 Oka Rd)",
   "parcels": [
     {
       "apn": "424-08-074",
@@ -87,8 +87,16 @@
             "SRC-001120"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001555"
+          ],
+          "note": "138 three-story townhomes"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -98,8 +106,16 @@
             "SRC-001120"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001555"
+          ],
+          "note": "Town list and Los Gatan report approval on 2026-08-18"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -132,17 +148,65 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001555"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "text": "28 low-income units. Town report also lists APN 424-08-035.",
+      "src": [
+        "SRC-001590"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Urban Catalyst",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001590"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Yuki Farms, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001590"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -153,6 +217,15 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "type": "Approved",
+      "label": "Town Council approval at special meeting",
+      "src": [
+        "SRC-001555"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -160,6 +233,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

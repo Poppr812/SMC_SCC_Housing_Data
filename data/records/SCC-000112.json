@@ -91,6 +91,13 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 210,
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "Units in the application as reported"
         }
       ]
     },
@@ -122,6 +129,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H20-040",
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "Local tracking number as reported to the state"
         }
       ]
     }
@@ -139,6 +153,14 @@
   "groups": {},
   "events": [
     {
+      "date": "2020-11-25",
+      "type": "Application filed",
+      "label": "Application submitted",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    {
       "date": "2023-03-28",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -152,6 +174,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Merged a duplicate state report record (SCC-000115) on the same parcel"
     }
   ]
 }

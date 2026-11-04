@@ -1,6 +1,6 @@
 {
   "id": "SCC-000394",
-  "name": "647 N Santa Cruz Ave",
+  "name": "State Farm (647 N Santa Cruz Ave)",
   "parcels": [
     {
       "apn": "410-14-015",
@@ -122,15 +122,39 @@
             "SRC-001120"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-24-060, U-24-018, M-24-020",
+          "src": [
+            "SRC-001596"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120"
+      ]
+    },
+    {
+      "text": "1 below-market unit.",
+      "src": [
+        "SRC-001554"
       ]
     }
   ],
@@ -145,6 +169,15 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2024-10-25",
+      "type": "Application filed",
+      "label": "Pending application filed",
+      "src": [
+        "SRC-001596"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -152,6 +185,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

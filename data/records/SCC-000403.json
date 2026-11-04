@@ -116,11 +116,13 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001451"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -130,8 +132,16 @@
             "SRC-001131"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001451"
+          ],
+          "note": "Planning Entitlements Approved"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -162,13 +172,19 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SR2022-0023, SD2022-0003, EA2022-0013",
+          "src": [
+            "SRC-001451"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
       ]
@@ -185,6 +201,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2024-09-10",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolution 24-09)",
+      "src": [
+        "SRC-001451"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -192,6 +217,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

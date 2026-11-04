@@ -1,9 +1,9 @@
 {
   "id": "SCC-000216",
-  "name": "Cresleigh",
+  "name": "600 E Campbell Ave (Cresleigh)",
   "parcels": [
     {
-      "apn": "412-09-066",
+      "apn": "305-28-001",
       "from": null,
       "to": null,
       "src": [
@@ -11,148 +11,120 @@
       ],
       "outline": [
         [
-          -121.9398091,
-          37.2868631
+          -121.9597412,
+          37.2868891
         ],
         [
-          -121.9400016,
-          37.286614
+          -121.959726,
+          37.2867443
         ],
         [
-          -121.9402352,
-          37.2867292
+          -121.959702,
+          37.2865142
         ],
         [
-          -121.9403178,
-          37.28677
+          -121.9596753,
+          37.2862943
         ],
         [
-          -121.9403803,
-          37.2866895
+          -121.9596455,
+          37.2860493
         ],
         [
-          -121.9403867,
-          37.2866813
+          -121.9596186,
+          37.2858277
         ],
         [
-          -121.9404467,
-          37.2866039
+          -121.959612,
+          37.285773
         ],
         [
-          -121.9405131,
-          37.2865183
+          -121.9599749,
+          37.2857747
         ],
         [
-          -121.9405207,
-          37.2865085
+          -121.9601325,
+          37.2856402
         ],
         [
-          -121.9405795,
-          37.2864327
+          -121.960156,
+          37.2854992
         ],
         [
-          -121.9406459,
-          37.2863471
+          -121.9602209,
+          37.285109
         ],
         [
-          -121.9407123,
-          37.2862615
+          -121.9602357,
+          37.2850281
         ],
         [
-          -121.9407325,
-          37.2862354
+          -121.9602748,
+          37.284815
         ],
         [
-          -121.9407787,
-          37.2861758
+          -121.9602865,
+          37.2847581
         ],
         [
-          -121.9407969,
-          37.2861524
+          -121.9603025,
+          37.2846978
         ],
         [
-          -121.9409298,
-          37.2862171
+          -121.9603215,
+          37.2846264
         ],
         [
-          -121.9411162,
-          37.2863081
+          -121.9603314,
+          37.2845893
         ],
         [
-          -121.9406558,
-          37.2869017
+          -121.9606636,
+          37.2845416
         ],
         [
-          -121.9406469,
-          37.2869107
+          -121.960249,
+          37.2867056
         ],
         [
-          -121.9406368,
-          37.2869183
+          -121.9602355,
+          37.2867426
         ],
         [
-          -121.9406256,
-          37.2869243
+          -121.9602159,
+          37.2867768
         ],
         [
-          -121.9406137,
-          37.2869285
+          -121.9601908,
+          37.2868071
         ],
         [
-          -121.9406013,
-          37.286931
+          -121.960161,
+          37.2868328
         ],
         [
-          -121.9405887,
-          37.2869316
+          -121.9601272,
+          37.2868531
         ],
         [
-          -121.9398756,
-          37.2869323
+          -121.9600905,
+          37.2868673
         ],
         [
-          -121.9398654,
-          37.2869329
+          -121.960052,
+          37.2868752
         ],
         [
-          -121.9398553,
-          37.2869318
+          -121.9599486,
+          37.2868852
         ],
         [
-          -121.9398455,
-          37.2869289
+          -121.9598449,
+          37.2868898
         ],
         [
-          -121.9398364,
-          37.2869244
-        ],
-        [
-          -121.9398282,
-          37.2869184
-        ],
-        [
-          -121.9398211,
-          37.286911
-        ],
-        [
-          -121.9398155,
-          37.2869026
-        ],
-        [
-          -121.9398113,
-          37.2868933
-        ],
-        [
-          -121.9398088,
-          37.2868834
-        ],
-        [
-          -121.9398081,
-          37.2868733
-        ],
-        [
-          -121.9398091,
-          37.2868631
+          -121.9597412,
+          37.2868891
         ]
       ]
     }
@@ -172,11 +144,13 @@
         {
           "value": "Apartments",
           "src": [
-            "SRC-001134"
+            "SRC-001134",
+            "SRC-001552"
           ],
           "note": "State category 5+ units, rental tenure"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -204,11 +178,20 @@
         {
           "value": 90,
           "src": [
-            "SRC-001134"
+            "SRC-001134",
+            "SRC-001551"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 116,
+          "src": [
+            "SRC-001552"
+          ],
+          "note": "Latest filing, building permit application BLD-2026-1494"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -218,19 +201,62 @@
             "SRC-001134"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2025-3, BLD-2026-1494",
+          "src": [
+            "SRC-001552"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001552"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001552"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "text": "The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-03-23. The city's data does not say how it was decided. Building application pending review.",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Cresleigh",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -248,6 +274,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

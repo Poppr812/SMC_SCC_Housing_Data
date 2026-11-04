@@ -1,6 +1,6 @@
 {
   "id": "SCC-000322",
-  "name": "Dividend II",
+  "name": "20045 & 20065 Stevens Creek / Dividend Homes II",
   "parcels": [
     {
       "apn": "316-23-095",
@@ -63,6 +63,12 @@
       "src": [
         "SRC-001100"
       ]
+    },
+    {
+      "text": "20045 and 20065 Stevens Creek Blvd, Cupertino",
+      "src": [
+        "SRC-001508"
+      ]
     }
   ],
   "images": [],
@@ -86,8 +92,16 @@
             "SRC-001100"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001508"
+          ],
+          "note": "From final actions; the status line on the city page still says under review"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -104,7 +118,8 @@
         {
           "value": 32,
           "src": [
-            "SRC-001100"
+            "SRC-001100",
+            "SRC-001508"
           ],
           "note": "Units in the application as reported"
         }
@@ -120,20 +135,58 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "6 of 32 units affordable",
+          "src": [
+            "SRC-001508"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Dividend Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001508"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001508"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-03-03",
+      "type": "Application filed",
+      "label": "Formal application filed",
+      "src": [
+        "SRC-001508"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-06-18",
       "type": "Application filed",
@@ -141,6 +194,15 @@
       "src": [
         "SRC-001100"
       ]
+    },
+    {
+      "date": "2026-01-21",
+      "type": "Approved",
+      "label": "City Council approved 4-0-1",
+      "src": [
+        "SRC-001508"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -148,6 +210,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

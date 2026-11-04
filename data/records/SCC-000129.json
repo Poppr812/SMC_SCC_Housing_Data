@@ -1,6 +1,6 @@
 {
   "id": "SCC-000129",
-  "name": "1371 Kooser Rd",
+  "name": "Arcade (Kooser Apartments)",
   "parcels": [
     {
       "apn": "569-10-078",
@@ -146,8 +146,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001399"
+          ],
+          "note": "Press release: has broken ground."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -175,7 +183,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001401"
           ]
         }
       ]
@@ -200,6 +209,107 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001400"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 75,
+            "1br": 18,
+            "2br": 48,
+            "3br": 50,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001401",
+            "SRC-001399"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.63,
+          "src": [
+            "SRC-001401"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 50,
+              "ami": 30
+            },
+            {
+              "count": 17,
+              "ami": 40
+            },
+            {
+              "count": 63,
+              "ami": 50
+            },
+            {
+              "count": 39,
+              "ami": 60
+            },
+            {
+              "count": 20,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001401"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001401"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001657"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 156894457,
+          "src": [
+            "SRC-001657"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -208,10 +318,147 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CTCAC CA-24-738: Kooser Apartments, located at 1371 Kooser Road in San Jose on a 1.63 acre site, requested and is being recommended for a reservation of $5,902,201 in annual federal tax credits and $31,579,858 in total state tax credits and $73,708,167 of tax-exempt bond cap to finance the new construction of 191 units of housing, consisting of 189 restricted rental units and 2 unrestricted manager's units.",
+      "src": [
+        "SRC-001657"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Affirmed Housing Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001401",
+        "SRC-001399"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Compass for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CTCAC applicant / CDLAC sponsor",
+      "src": [
+        "SRC-001401"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Van Meter Williams Pollack",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001400"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "City of San Jose",
+      "program": "Recommended bond cap, Banner Bank construction source",
+      "amount": 73708167,
+      "date": null,
+      "src": [
+        "SRC-001401"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Banner Bank",
+      "program": "Taxable",
+      "amount": 21410242,
+      "date": null,
+      "src": [
+        "SRC-001401"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "NPLH and Measure A, construction period",
+      "amount": 1800000,
+      "date": null,
+      "src": [
+        "SRC-001401"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "Construction period",
+      "amount": 19062289,
+      "date": null,
+      "src": [
+        "SRC-001401"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Lument",
+      "program": null,
+      "amount": 40019791,
+      "date": null,
+      "src": [
+        "SRC-001657"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": null,
+      "amount": 2000000,
+      "date": null,
+      "src": [
+        "SRC-001657"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": null,
+      "amount": 19551066,
+      "date": null,
+      "src": [
+        "SRC-001657"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Lument Securities LLC",
+      "program": null,
+      "amount": 6275845,
+      "date": null,
+      "src": [
+        "SRC-001657"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 5700000,
+      "date": null,
+      "src": [
+        "SRC-001657"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 83347755,
+      "date": null,
+      "src": [
+        "SRC-001657"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -223,12 +470,48 @@
       ]
     },
     {
+      "date": "2024-12-11",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-24-738)",
+      "src": [
+        "SRC-001657"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05",
+      "type": "Construction start",
+      "label": "Expected construction start per CTCAC staff report",
+      "src": [
+        "SRC-001657"
+      ],
+      "estimated": true
+    },
+    {
       "date": "2025-07-30",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-11",
+      "type": "Construction start",
+      "label": "Groundbreaking press release November 19, 2025",
+      "src": [
+        "SRC-001399"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2027-09",
+      "type": "Completion",
+      "label": "CTCAC staff report expected completion",
+      "src": [
+        "SRC-001401"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -236,6 +519,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

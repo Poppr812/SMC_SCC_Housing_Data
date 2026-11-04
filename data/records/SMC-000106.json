@@ -1,6 +1,6 @@
 {
   "id": "SMC-000106",
-  "name": "Syufy",
+  "name": "Syufy Site (557 E Bayshore Rd)",
   "parcels": [
     {
       "apn": "052-520-380",
@@ -124,8 +124,16 @@
             "SRC-001116"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001238"
+          ],
+          "note": "City list"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -143,7 +151,8 @@
         {
           "value": 480,
           "src": [
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001238"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -180,14 +189,30 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001238"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001117",
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "Two five-story buildings plus a VillaSport athletic club.",
+      "src": [
+        "SRC-001238"
       ]
     }
   ],
@@ -199,6 +224,24 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "SyRES Properties",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001239"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001239"
       ]
     }
   ],
@@ -235,6 +278,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

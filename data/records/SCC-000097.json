@@ -1,6 +1,6 @@
 {
   "id": "SCC-000097",
-  "name": "Wolfe Rd Educator Housing",
+  "name": "Wolfe Road Teacher Housing",
   "parcels": [
     {
       "apn": "316-20-088",
@@ -195,11 +195,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001100"
+            "SRC-001100",
+            "SRC-001506"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -219,8 +221,16 @@
             "SRC-001100"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 250,
+          "src": [
+            "SRC-001506"
+          ],
+          "note": "City project page; earlier import said 246"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -232,20 +242,70 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-001506"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Affordable rental housing for educators and the workforce",
+          "src": [
+            "SRC-001506"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Eden Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001506"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architects FORA",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001506"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-06-26",
+      "type": "Application filed",
+      "label": "Formal application filed",
+      "src": [
+        "SRC-001506"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-12-10",
       "type": "Application filed",
@@ -260,6 +320,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

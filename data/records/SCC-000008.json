@@ -1,9 +1,9 @@
 {
   "id": "SCC-000008",
-  "name": "1312 El Paseo De Saratoga",
+  "name": "El Paseo de Saratoga",
   "parcels": [
     {
-      "apn": "244-06-002",
+      "apn": "403-33-017",
       "from": null,
       "to": null,
       "src": [
@@ -11,44 +11,40 @@
       ],
       "outline": [
         [
-          -121.873625,
-          37.3976637
+          -121.9922564,
+          37.2889472
         ],
         [
-          -121.8740279,
-          37.3972526
+          -121.9936329,
+          37.2889214
         ],
         [
-          -121.8737612,
-          37.3970839
+          -121.9936552,
+          37.2896833
         ],
         [
-          -121.8736616,
-          37.3970202
+          -121.9932366,
+          37.2896911
         ],
         [
-          -121.873966,
-          37.3969145
+          -121.993006,
+          37.2898888
         ],
         [
-          -121.8742209,
-          37.3970762
+          -121.9921999,
+          37.2899039
         ],
         [
-          -121.8743397,
-          37.3969554
+          -121.9921748,
+          37.2890495
         ],
         [
-          -121.8743687,
-          37.3970164
+          -121.9922578,
+          37.2889952
         ],
         [
-          -121.8736925,
-          37.3977063
-        ],
-        [
-          -121.873625,
-          37.3976637
+          -121.9922564,
+          37.2889472
         ]
       ]
     }
@@ -92,8 +88,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001374"
+          ],
+          "note": "Demolition under way in August 2025."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -121,8 +125,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 772,
+          "src": [
+            "SRC-001374"
+          ],
+          "note": "Amended plan, 39 affordable units; a separate 263-bed assisted living building is not counted."
         }
-      ]
+      ],
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -133,6 +145,27 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 12,
+          "src": [
+            "SRC-001374"
+          ],
+          "note": "Tallest of two apartment buildings."
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001374"
+          ]
         }
       ]
     }
@@ -146,7 +179,44 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Sand Hill Property Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001374"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Holland Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001374"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Sunrise Senior Living",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001374"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Solomon Cordwell Buenz",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001374"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -165,6 +235,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2024-12",
+      "type": "Approved",
+      "label": "Amended plans approved, cutting 325 units",
+      "src": [
+        "SRC-001374"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -172,6 +251,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcel corrected: the state report's APN didn't match the project address"
     }
   ]
 }

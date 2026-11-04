@@ -3,142 +3,6 @@
   "name": "808 Alameda De Las Pulgas",
   "parcels": [
     {
-      "apn": "049-360-060",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.2715912,
-          37.4962936
-        ],
-        [
-          -122.2721443,
-          37.495882
-        ],
-        [
-          -122.2722154,
-          37.4959445
-        ],
-        [
-          -122.2723489,
-          37.4960619
-        ],
-        [
-          -122.2724888,
-          37.4961849
-        ],
-        [
-          -122.2726083,
-          37.49629
-        ],
-        [
-          -122.2726118,
-          37.496293
-        ],
-        [
-          -122.272735,
-          37.4964014
-        ],
-        [
-          -122.2728451,
-          37.4964983
-        ],
-        [
-          -122.2729459,
-          37.4965869
-        ],
-        [
-          -122.2730853,
-          37.4967095
-        ],
-        [
-          -122.2732809,
-          37.4968815
-        ],
-        [
-          -122.2734705,
-          37.4970485
-        ],
-        [
-          -122.2727164,
-          37.4976022
-        ],
-        [
-          -122.2726944,
-          37.497583
-        ],
-        [
-          -122.272619,
-          37.4975172
-        ],
-        [
-          -122.2721473,
-          37.497106
-        ],
-        [
-          -122.2719044,
-          37.4968942
-        ],
-        [
-          -122.2718567,
-          37.4968525
-        ],
-        [
-          -122.2713886,
-          37.4964444
-        ],
-        [
-          -122.2714381,
-          37.4964076
-        ],
-        [
-          -122.2715912,
-          37.4962936
-        ]
-      ]
-    },
-    {
-      "apn": "050-220-020",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.2701877,
-          37.4966919
-        ],
-        [
-          -122.2693978,
-          37.496725
-        ],
-        [
-          -122.2696031,
-          37.4963
-        ],
-        [
-          -122.269866,
-          37.4963707
-        ],
-        [
-          -122.2703761,
-          37.4966001
-        ],
-        [
-          -122.2703809,
-          37.496685
-        ],
-        [
-          -122.2701877,
-          37.4966919
-        ]
-      ]
-    },
-    {
       "apn": "050-220-160",
       "from": null,
       "to": null,
@@ -505,8 +369,16 @@
             "SRC-001146"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001257"
+          ],
+          "note": "City list: 87 townhouse units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -514,7 +386,8 @@
           "value": "Approved",
           "src": [
             "SRC-001140",
-            "SRC-001146"
+            "SRC-001146",
+            "SRC-001257"
           ],
           "note": "State report shows entitlement approval"
         }
@@ -536,7 +409,8 @@
         {
           "value": 87,
           "src": [
-            "SRC-001146"
+            "SRC-001146",
+            "SRC-001257"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -573,14 +447,30 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 11.4,
+          "src": [
+            "SRC-001257"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001140",
         "SRC-001146"
+      ]
+    },
+    {
+      "text": "City is reviewing plans for Phase 1 grading work.",
+      "src": [
+        "SRC-001257"
       ]
     }
   ],
@@ -592,6 +482,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Veev",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001257"
       ]
     }
   ],
@@ -613,6 +513,15 @@
       "src": [
         "SRC-001146"
       ]
+    },
+    {
+      "date": "2028-11-12",
+      "type": "Other",
+      "label": "Entitlements effective through this date, after extension on Nov 17, 2025",
+      "src": [
+        "SRC-001257"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -620,6 +529,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

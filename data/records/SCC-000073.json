@@ -1,6 +1,6 @@
 {
   "id": "SCC-000073",
-  "name": "555 W Middlefield Rd",
+  "name": "555 W Middlefield Rd (AvalonBay infill)",
   "parcels": [
     {
       "apn": "158-49-001",
@@ -287,6 +287,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001316"
+          ],
+          "note": "Three to four stories"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -296,9 +307,35 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "323 new units added to 404 existing, 727 total, on 14.5 acres, with a 1.34-acre park dedication.",
+      "src": [
+        "SRC-001317"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "AvalonBay Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001317",
+        "SRC-001316"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001316"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -333,6 +370,15 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2026-03-26",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-001317"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -340,6 +386,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

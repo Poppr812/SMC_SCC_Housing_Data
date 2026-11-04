@@ -1,6 +1,6 @@
 {
   "id": "SCC-000220",
-  "name": "700 W Hamilton",
+  "name": "700 W Hamilton Ave (City Ventures)",
   "parcels": [
     {
       "apn": "307-39-037",
@@ -91,8 +91,16 @@
             "SRC-001134"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001582"
+          ],
+          "note": "Eight townhome-style buildings and one podium building"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -102,8 +110,16 @@
             "SRC-001134"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001582"
+          ],
+          "note": "Notice of Exemption gives project approval date of 2026-01-20"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -123,8 +139,16 @@
             "SRC-001134"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 173,
+          "src": [
+            "SRC-001582"
+          ],
+          "note": "89 was the townhome portion only"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -134,19 +158,72 @@
             "SRC-001134"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2024-189, BLD-2026-1178, BLD-2026-729",
+          "src": [
+            "SRC-001552"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001583"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.83,
+          "src": [
+            "SRC-001582"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "text": "Building and grading applications were pending review on the city's list. News reports about 20 months of construction.",
+      "src": [
+        "SRC-001585"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "City Ventures",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001584"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001585"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -157,6 +234,15 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "date": "2026-01-20",
+      "type": "Approved",
+      "label": "Project approval date in the Notice of Exemption",
+      "src": [
+        "SRC-001582"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -164,6 +250,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

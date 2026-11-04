@@ -1,6 +1,6 @@
 {
   "id": "SMC-000162",
-  "name": "626  Walnut",
+  "name": "626-648 Walnut Street (MidPen / County of San Mateo)",
   "parcels": [
     {
       "apn": "050-131-060",
@@ -39,9 +39,15 @@
   ],
   "addresses": [
     {
-      "text": "626  Walnut, San Carlos, CA",
+      "text": "626 Walnut, San Carlos, CA",
       "src": [
         "SRC-001146"
+      ]
+    },
+    {
+      "text": "626-648 Walnut Street, San Carlos, CA",
+      "src": [
+        "SRC-001254"
       ]
     }
   ],
@@ -55,8 +61,16 @@
             "SRC-001146"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-001254"
+          ],
+          "note": "Affordable rental"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -66,8 +80,16 @@
             "SRC-001146"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001254"
+          ],
+          "note": "Application filed August 2026. The prior Approved label belongs to a 35-unit plan under PLN2017-00093"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -87,8 +109,16 @@
             "SRC-001146"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 96,
+          "src": [
+            "SRC-001254"
+          ],
+          "note": "Current application"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -97,8 +127,15 @@
           "src": [
             "SRC-001146"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001254"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_notes": {
       "claims": [
@@ -106,6 +143,12 @@
           "value": "4 deed-restricted units reported to the state",
           "src": [
             "SRC-001146"
+          ]
+        },
+        {
+          "value": "At least 75 units for large families up to 80% AMI, at least 15% extremely low income, 5% supportive-needs, at least 25% reserved for City and County employees",
+          "src": [
+            "SRC-001254"
           ]
         }
       ]
@@ -120,13 +163,87 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001254"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 80,
+          "src": [
+            "SRC-001254"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 132829,
+          "src": [
+            "SRC-001254"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 20,
+            "1br": 19,
+            "2br": 30,
+            "3br": 27,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001254"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.6085,
+          "src": [
+            "SRC-001254"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001254"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001146"
+      ]
+    },
+    {
+      "text": "Site is three county-owned parcels: APNs 050-131-060, 050-131-070, 050-131-080.",
+      "src": [
+        "SRC-001254"
       ]
     }
   ],
@@ -138,6 +255,24 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "MidPen Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001254"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "County of San Mateo",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001254"
       ]
     }
   ],
@@ -151,6 +286,15 @@
       "src": [
         "SRC-001146"
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Application filed",
+      "label": "Planning application submitted",
+      "src": [
+        "SRC-001254"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -158,6 +302,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

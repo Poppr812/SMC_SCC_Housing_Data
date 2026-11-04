@@ -1,6 +1,6 @@
 {
   "id": "SCC-000416",
-  "name": "832 S San Tomas Aquino Rd",
+  "name": "832-864 S San Tomas Aquino Rd",
   "parcels": [
     {
       "apn": "406-03-034",
@@ -65,8 +65,15 @@
             "SRC-001134"
           ],
           "note": "State categories: SFA, SFD"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001549"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -97,8 +104,16 @@
             "SRC-001134"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 26,
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Application filed 2026-10-26; earlier 14-unit case closed and an earlier case withdrawn"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -108,19 +123,48 @@
             "SRC-001134"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2026-97, PLN-2025-86, PLN-2024-101",
+          "src": [
+            "SRC-001549"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001549"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Yang",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001549"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -131,6 +175,15 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Application filed",
+      "label": "Minor Housing Development Permit, 26 units",
+      "src": [
+        "SRC-001549"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -138,6 +191,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

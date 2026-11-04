@@ -1,6 +1,6 @@
 {
   "id": "SCC-000034",
-  "name": "3896 Stevens Creek Boulevard",
+  "name": "Stevens Creek (3896 Stevens Creek Boulevard)",
   "parcels": [
     {
       "apn": "303-25-060",
@@ -150,15 +150,24 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 575,
+          "src": [
+            "SRC-001379"
+          ],
+          "note": "264 in the first building, 311 in the second."
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001379"
           ]
         }
       ]
@@ -169,6 +178,12 @@
           "value": "27 deed-restricted units reported to the state",
           "src": [
             "SRC-001107"
+          ]
+        },
+        {
+          "value": "29 units for very low-income households.",
+          "src": [
+            "SRC-001379"
           ]
         }
       ]
@@ -184,6 +199,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001379"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -193,9 +218,44 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "The Rockpoint joint venture covers the 311 apartments with about 6,000 sq ft of retail.",
+      "src": [
+        "SRC-001380"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Holland Partner Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001379",
+        "SRC-001380"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Rockpoint",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001380"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "TCA Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001379"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -214,6 +274,24 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-07",
+      "type": "Approved",
+      "label": "Final approval reported July 13, 2026",
+      "src": [
+        "SRC-001379"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2029",
+      "type": "Completion",
+      "label": "311-apartment building scheduled for completion",
+      "src": [
+        "SRC-001380"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -221,6 +299,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -55,8 +55,16 @@
             "SRC-001111"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001212"
+          ],
+          "note": "Attached townhouses on a condominium map"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -66,8 +74,15 @@
             "SRC-001111"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001212"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -87,8 +102,16 @@
             "SRC-001111"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-001212"
+          ],
+          "note": "City project page; the state report said 6"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -98,13 +121,19 @@
             "SRC-001111"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "DR20-020; TTM21-001",
+          "src": [
+            "SRC-001212"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001111"
       ]
@@ -131,6 +160,14 @@
       "src": [
         "SRC-001111"
       ]
+    },
+    {
+      "date": "2023-05-22",
+      "type": "Approved",
+      "label": "Planning Commission approval",
+      "src": [
+        "SRC-001212"
+      ]
     }
   ],
   "history": [
@@ -138,6 +175,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

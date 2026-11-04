@@ -1,6 +1,6 @@
 {
   "id": "SCC-000427",
-  "name": "Serene Hills - Dunne",
+  "name": "Serene Hills",
   "parcels": [
     {
       "apn": "728-02-002",
@@ -51,8 +51,15 @@
             "SRC-001131"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Single-family",
+          "src": [
+            "SRC-001455"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -62,8 +69,16 @@
             "SRC-001131"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001455"
+          ],
+          "note": "Planning Entitlements Approved"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -80,11 +95,13 @@
         {
           "value": 7,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001455"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -94,13 +111,19 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2023-0003, SR2023-0019, EA2023-0008",
+          "src": [
+            "SRC-001455"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
       ]
@@ -117,6 +140,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2024-09-10",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolution 24-10)",
+      "src": [
+        "SRC-001455"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -124,6 +156,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

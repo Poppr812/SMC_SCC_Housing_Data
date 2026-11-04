@@ -128,6 +128,68 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 18,
+            "2br": 9,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 22,
+              "ami": 30
+            },
+            {
+              "count": 7,
+              "ami": 70
+            },
+            {
+              "count": 7,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001648"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 44780948,
+          "src": [
+            "SRC-001648"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -136,6 +198,18 @@
       "src": [
         "SRC-001141",
         "SRC-001142"
+      ]
+    },
+    {
+      "text": "CTCAC CA-24-103: Hill Street, located at 876, 884, 898, and 900 El Camino Real in Belmont, requested and is being recommended for a reservation of $2,014,263 in annual federal tax credits to finance the new construction of 36 units of housing serving families with rents affordable to households earning 30%-80% of area median income (AMI).",
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "text": "San Mateo County AHF predevelopment pipeline, September 2024: Hill Street Apartments (LINC): 36 total units, 61% at 15-30% AMI and 39% at 61-80% AMI.",
+      "src": [
+        "SRC-001649"
       ]
     }
   ],
@@ -150,7 +224,138 @@
       ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Wells Fargo",
+      "program": null,
+      "amount": 22047526,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "CCRC",
+      "program": null,
+      "amount": 6204000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Housing Trust of Silicon Valley",
+      "program": null,
+      "amount": 1784500,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": "AHF R.12",
+      "amount": 7000000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": "HOME",
+      "amount": 1994000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": "AHF",
+      "amount": 1900000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Belmont",
+      "program": null,
+      "amount": 1000000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Belmont",
+      "program": "Land Donation",
+      "amount": 4000000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "FHLB AHP",
+      "provider": "FHLB",
+      "program": "AHP",
+      "amount": 540000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 1000000,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General Partner Equity",
+      "program": null,
+      "amount": 100,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (9%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 19358348,
+      "date": null,
+      "src": [
+        "SRC-001648"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County",
+      "program": "Affordable Housing Fund commitment as of July 2024",
+      "amount": 10900000,
+      "date": "2024-07",
+      "src": [
+        "SRC-001649"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -170,6 +375,15 @@
       ]
     },
     {
+      "date": "2024-10-02",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-24-103)",
+      "src": [
+        "SRC-001648"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-04-11",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -183,6 +397,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

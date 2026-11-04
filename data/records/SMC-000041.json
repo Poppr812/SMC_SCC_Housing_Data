@@ -189,7 +189,8 @@
           "value": "Under construction",
           "src": [
             "SRC-000714",
-            "SRC-000715"
+            "SRC-000715",
+            "SRC-001255"
           ]
         }
       ]
@@ -224,7 +225,8 @@
           "src": [
             "SRC-000714",
             "SRC-000715",
-            "SRC-000717"
+            "SRC-000717",
+            "SRC-001255"
           ],
           "note": "Originally approved at 242 units; nine units added by 2025 amendment"
         }
@@ -244,6 +246,18 @@
             "SRC-000714",
             "SRC-000715"
           ]
+        },
+        {
+          "value": {
+            "studio": 5,
+            "1br": 161,
+            "2br": 73,
+            "3br": 11,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001255"
+          ]
         }
       ]
     },
@@ -253,7 +267,8 @@
           "value": 6,
           "src": [
             "SRC-000715",
-            "SRC-000716"
+            "SRC-000716",
+            "SRC-001255"
           ]
         }
       ]
@@ -282,7 +297,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-000717"
+            "SRC-000717",
+            "SRC-001255"
           ]
         }
       ]
@@ -294,6 +310,12 @@
           "src": [
             "SRC-000717",
             "SRC-000714"
+          ]
+        },
+        {
+          "value": "25 very low, 13 low income",
+          "src": [
+            "SRC-001255"
           ]
         }
       ]
@@ -308,6 +330,16 @@
             "SRC-000717"
           ],
           "note": "Design review; 2025 design review and BMR plan amendment; CEQA Class 32 infill exemption"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 213,
+          "src": [
+            "SRC-001255"
+          ]
         }
       ]
     }
@@ -380,12 +412,30 @@
   "groups": {},
   "events": [
     {
+      "date": "2023-09-18",
+      "type": "Approved",
+      "label": "Original 242-unit proposal approved",
+      "src": [
+        "SRC-001255"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-09-20",
       "type": "Other",
       "label": "City files CEQA exemption for 242-unit project",
       "src": [
         "SRC-000716"
       ]
+    },
+    {
+      "date": "2025-04-07",
+      "type": "Approved",
+      "label": "Major amendment approved by Planning and Transportation Commission (242 to 251 units)",
+      "src": [
+        "SRC-001255"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-04-08",
@@ -420,6 +470,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from local newspaper leads (2025-2026) and the sources listed"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

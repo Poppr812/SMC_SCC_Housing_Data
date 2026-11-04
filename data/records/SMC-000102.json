@@ -129,7 +129,8 @@
           "value": "Under construction",
           "src": [
             "SRC-001104",
-            "SRC-001105"
+            "SRC-001105",
+            "SRC-001158"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
         }
@@ -158,7 +159,8 @@
         {
           "value": 555,
           "src": [
-            "SRC-001104"
+            "SRC-001104",
+            "SRC-001158"
           ],
           "note": "Units in the application as reported"
         }
@@ -182,6 +184,12 @@
           "src": [
             "SRC-001105"
           ]
+        },
+        {
+          "value": "City list: 100% affordable, 56 BMRs at low income",
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     },
@@ -194,16 +202,51 @@
             "SRC-001105"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "GPA-5-19-14054, SUB-5-19-14055, DR-5-19-14056",
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 15.0,
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001104",
         "SRC-001105"
+      ]
+    },
+    {
+      "text": "City list gives APN 005-330-320 and others. That APN is not in the current county parcel layer; this record is on 005-330-020.",
+      "src": [
+        "SRC-001158"
+      ]
+    },
+    {
+      "text": "CTCAC CA-24-471: Midway Village Phase 2, located at 47 Midway Drive in Daly City on a 1.79 acre site, requested and is being recommended for a reservation of $6,418,635 in annual federal tax credits and $65,352,000 of tax-exempt bond cap to finance the new construction of 113 units of housing, consisting of 111 restricted rental units, and 2 unrestricted manager's units. Recorded as a note because this funding covers Midway Village Phase 2 (113 units), which may be one component of this record.",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "text": "San Mateo County AHF predevelopment pipeline, September 2024: Midway Village II (Midpen Housing): 128 total units, 20% at 15-30% AMI and 47% at 31-60% AMI.",
+      "src": [
+        "SRC-001649"
       ]
     }
   ],
@@ -216,9 +259,29 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "MidPen Housing",
+      "contact": "April Mo",
+      "linkedin": null,
+      "src": [
+        "SRC-001158"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County",
+      "program": "Affordable Housing Fund commitment as of July 2024",
+      "amount": 28762723,
+      "date": "2024-07",
+      "src": [
+        "SRC-001649"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -259,6 +322,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

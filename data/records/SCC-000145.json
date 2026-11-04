@@ -1,6 +1,6 @@
 {
   "id": "SCC-000145",
-  "name": "1400 Coleman Av",
+  "name": "1400 Coleman Avenue",
   "parcels": [
     {
       "apn": "230-05-021",
@@ -106,11 +106,13 @@
           "value": "Approved",
           "src": [
             "SRC-001106",
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-001534"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -128,7 +130,8 @@
         {
           "value": 142,
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-001535"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -138,9 +141,16 @@
             "SRC-001106"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 143,
+          "src": [
+            "SRC-001536"
+          ],
+          "note": "SF YIMBY"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -184,7 +194,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "City Ventures",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001536"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001536"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -197,12 +226,30 @@
       ]
     },
     {
+      "date": "2025-09-23",
+      "type": "Approved",
+      "label": "City Council approved GP amendment, rezone and map",
+      "src": [
+        "SRC-001534"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-10-24",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2025-11-19",
+      "type": "Other",
+      "label": "Development Review Hearing approved architectural review",
+      "src": [
+        "SRC-001537"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -210,6 +257,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

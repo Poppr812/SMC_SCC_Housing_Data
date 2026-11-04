@@ -1,6 +1,6 @@
 {
   "id": "SMC-000109",
-  "name": "El Rancho",
+  "name": "El Rancho Inn Redevelopment (1100 El Camino Real)",
   "parcels": [
     {
       "apn": "021-324-320",
@@ -84,6 +84,12 @@
         "SRC-001125",
         "SRC-001122"
       ]
+    },
+    {
+      "text": "1150 El Camino Real; 33 and 35 Center Street",
+      "src": [
+        "SRC-001357"
+      ]
     }
   ],
   "images": [],
@@ -106,11 +112,14 @@
           "value": "Approved",
           "src": [
             "SRC-001125",
-            "SRC-001122"
+            "SRC-001122",
+            "SRC-001355",
+            "SRC-001357"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -135,7 +144,9 @@
         {
           "value": 384,
           "src": [
-            "SRC-001125"
+            "SRC-001125",
+            "SRC-001355",
+            "SRC-001357"
           ],
           "note": "Units in the application as reported"
         }
@@ -151,16 +162,80 @@
             "SRC-001122"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "2019-33",
+          "src": [
+            "SRC-001357"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001357"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 560,
+          "src": [
+            "SRC-001355",
+            "SRC-001357"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.55,
+          "src": [
+            "SRC-001357"
+          ],
+          "note": "City: about 5.55 acres"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001357"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "5%, or 19 units, at Very Low-Income",
+          "src": [
+            "SRC-001357"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001125",
         "SRC-001122"
+      ]
+    },
+    {
+      "text": "City lists APNs 021-324-190, 021-324-310 and 021-324-320. Replaces eight occupied residential units and the Best Western El Rancho Inn.",
+      "src": [
+        "SRC-001357"
       ]
     }
   ],
@@ -172,6 +247,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hanover Company",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001357"
       ]
     }
   ],
@@ -187,6 +272,15 @@
       ]
     },
     {
+      "date": "2020-01-01",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application",
+      "src": [
+        "SRC-001357"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-03-07",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -200,6 +294,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -144,9 +144,59 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 18,
+            "1br": 12,
+            "2br": 3,
+            "3br": 3,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 30
+            },
+            {
+              "count": 14,
+              "ami": 40
+            },
+            {
+              "count": 6,
+              "ami": 50
+            },
+            {
+              "count": 3,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "CTCAC CA-22-080 Baden Station: 36 total units, 35 low-income units; stage Preliminary Reservation; developer Baden Station Investors, LLC; annual federal credit 1690560; total state credit None.",
+      "src": [
+        "SRC-001603"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Recorded owner",
@@ -183,6 +233,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from HCD APR Table A2 data and the sources listed"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

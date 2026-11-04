@@ -54,11 +54,14 @@
         {
           "value": "Condominiums",
           "src": [
-            "SRC-001144"
+            "SRC-001144",
+            "SRC-001337",
+            "SRC-001338"
           ],
           "note": "State category 5+ units, for-sale tenure"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -68,8 +71,16 @@
             "SRC-001144"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001338"
+          ],
+          "note": "State notice describes a previously approved 19-unit development; Builder's Remedy"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -89,8 +100,16 @@
             "SRC-001144"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 19,
+          "src": [
+            "SRC-001337",
+            "SRC-001338"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -100,6 +119,48 @@
             "SRC-001144"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001337"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001337"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "4 BMR units (21%) for low-income households",
+          "src": [
+            "SRC-001337"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001337"
+          ]
         }
       ]
     }
@@ -112,7 +173,19 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Octane First Street, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001337",
+        "SRC-001338"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -123,6 +196,24 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-001337"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Other",
+      "label": "Vesting Tentative Map Notice of Exemption filed",
+      "src": [
+        "SRC-001338"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -130,6 +221,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000002",
-  "name": "Vallco RISE",
+  "name": "The Rise (Vallco)",
   "parcels": [
     {
       "apn": "316-20-121",
@@ -159,6 +159,12 @@
       "src": [
         "SRC-001100"
       ]
+    },
+    {
+      "text": "10123 N. Wolfe Road, Cupertino",
+      "src": [
+        "SRC-001505"
+      ]
     }
   ],
   "images": [],
@@ -182,8 +188,16 @@
             "SRC-001100"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001505"
+          ],
+          "note": "City page says APPROVED; third modification approved Feb. 27, 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -200,7 +214,8 @@
         {
           "value": 2669,
           "src": [
-            "SRC-001100"
+            "SRC-001100",
+            "SRC-001505"
           ],
           "note": "Units in the application as reported"
         }
@@ -216,20 +231,65 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "356 affordable units of 2,669 under the third modification; 890 under the second modification",
+          "src": [
+            "SRC-001505"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100"
       ]
+    },
+    {
+      "text": "CTCAC CA-26-515: Block 5 Apartments, located at 10123 North Wolfe Road in Cupertino on a 1.91 acre site, requested and is being recommended for a reservation of $9,287,656 in annual federal tax credits and $53,597,685 of tax- exempt bond cap to finance the new construction of 234 units of housing, consisting of 232 restricted rental units and 2 unrestricted manager's units. Recorded as a note because this funding covers Block 5 Apartments (234 units), which may be one component of this record.",
+      "src": [
+        "SRC-001679"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Sand Hill Property Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001505"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Eden Housing, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Developer of Block 5 Apartments component",
+      "src": [
+        "SRC-001679"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-09-21",
+      "type": "Approved",
+      "label": "Original SB 35 approval",
+      "src": [
+        "SRC-001505"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-12-01",
       "type": "Application filed",
@@ -237,6 +297,24 @@
       "src": [
         "SRC-001100"
       ]
+    },
+    {
+      "date": "2026-02-27",
+      "type": "Other",
+      "label": "Third modification approved",
+      "src": [
+        "SRC-001505"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Other",
+      "label": "Partial plan modification DIR-2026-003 approved",
+      "src": [
+        "SRC-001505"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -244,6 +322,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

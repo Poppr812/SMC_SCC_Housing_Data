@@ -3,40 +3,6 @@
   "name": "509-511 California Drive",
   "parcels": [
     {
-      "apn": "029-132-110",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.3495805,
-          37.58149
-        ],
-        [
-          -122.34978,
-          37.5811809
-        ],
-        [
-          -122.3499248,
-          37.581258
-        ],
-        [
-          -122.3498272,
-          37.5814018
-        ],
-        [
-          -122.3497271,
-          37.5815516
-        ],
-        [
-          -122.3495805,
-          37.58149
-        ]
-      ]
-    },
-    {
       "apn": "029-132-120",
       "from": null,
       "to": null,
@@ -101,11 +67,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001132"
+            "SRC-001132",
+            "SRC-001340"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -125,8 +93,16 @@
             "SRC-001132"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 14,
+          "src": [
+            "SRC-001340"
+          ],
+          "note": "9 net new units. Earlier imported count was 24"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -138,11 +114,31 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "1 very low (50% AMI) and 1 moderate income (120% AMI) units for 55 years",
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001132"
       ]
@@ -185,6 +181,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000013",
-  "name": "685 E Middlefield Rd",
+  "name": "675-685 E Middlefield Rd",
   "parcels": [
     {
       "apn": "160-60-013",
@@ -295,7 +295,9 @@
         {
           "value": 836,
           "src": [
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-001311",
+            "SRC-001312"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -307,14 +309,15 @@
           "note": "Units in the application as reported"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-001312"
           ]
         }
       ]
@@ -325,6 +328,12 @@
           "value": "150 deed-restricted units reported to the state",
           "src": [
             "SRC-001110"
+          ]
+        },
+        {
+          "value": "150 affordable units",
+          "src": [
+            "SRC-001312"
           ]
         }
       ]
@@ -351,7 +360,45 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Prometheus Real Estate Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001312"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Harvest Properties",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Development advisor",
+      "src": [
+        "SRC-001312"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SERA Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001312"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Place",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001312"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -370,6 +417,15 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2024-12-18",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-001311"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -377,6 +433,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000181",
-  "name": "1000  S De Anza Bl",
+  "name": "1000 South De Anza Boulevard",
   "parcels": [
     {
       "apn": "372-26-018",
@@ -35,7 +35,7 @@
   ],
   "addresses": [
     {
-      "text": "1000  S De Anza Bl, San Jose, CA",
+      "text": "1000 S De Anza Bl, San Jose, CA",
       "src": [
         "SRC-001099",
         "SRC-001107"
@@ -91,7 +91,8 @@
         {
           "value": 118,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001405"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -102,14 +103,16 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001405"
           ]
         }
       ]
@@ -120,6 +123,12 @@
           "value": "24 deed-restricted units reported to the state",
           "src": [
             "SRC-001107"
+          ]
+        },
+        {
+          "value": "24 units at about 80% AMI.",
+          "src": [
+            "SRC-001405"
           ]
         }
       ]
@@ -135,6 +144,44 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001405"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 44,
+            "1br": 42,
+            "2br": 32,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001405"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001405"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -146,7 +193,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Borello Asset Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001405"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPMD Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001405"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -172,6 +238,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

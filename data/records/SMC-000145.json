@@ -3,52 +3,6 @@
   "name": "170-180 S Spruce Ave",
   "parcels": [
     {
-      "apn": "014-134-010",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001103"
-      ],
-      "outline": [
-        [
-          -122.418655,
-          37.6493177
-        ],
-        [
-          -122.4187466,
-          37.6490557
-        ],
-        [
-          -122.4187965,
-          37.6490668
-        ],
-        [
-          -122.4202108,
-          37.6493793
-        ],
-        [
-          -122.4201835,
-          37.6494573
-        ],
-        [
-          -122.4201359,
-          37.6495936
-        ],
-        [
-          -122.4201193,
-          37.6496412
-        ],
-        [
-          -122.4187049,
-          37.6493287
-        ],
-        [
-          -122.418655,
-          37.6493177
-        ]
-      ]
-    },
-    {
       "apn": "014-134-170",
       "from": null,
       "to": null,
@@ -130,22 +84,26 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001112"
+            "SRC-001112",
+            "SRC-001342"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
         {
           "value": "Proposed",
           "src": [
-            "SRC-001112"
+            "SRC-001112",
+            "SRC-001342"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -162,11 +120,13 @@
         {
           "value": 64,
           "src": [
-            "SRC-001112"
+            "SRC-001112",
+            "SRC-001342"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -178,11 +138,21 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.99,
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001112"
       ]
@@ -196,6 +166,15 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Valley Oak Partners, LLC",
+      "contact": "Scott Connelly",
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
       ]
     }
   ],
@@ -216,6 +195,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

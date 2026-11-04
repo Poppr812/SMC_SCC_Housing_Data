@@ -147,8 +147,16 @@
             "SRC-001101"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 268,
+          "src": [
+            "SRC-001330"
+          ],
+          "note": "City, December 2024: two phases; index figure of 187 not explained by this source"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -160,6 +168,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001330"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -168,10 +186,37 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "text": "CTCAC CA-26-464: The project, 87 East Evelyn Phase I, located at 87 East Evelyn Avenue in Mountain View on a 1.53 acre site, requested and is being recommended for a reservation of $6,805,335 in annual federal tax credits, $11,280,802 in total state tax credits, and $36,077,751 of tax-exempt bond cap to finance the new construction of 161 units of housing, consisting of 159 restricted rental units and 2 unrestricted manager's units. Recorded as a note because this funding covers 87 East Evelyn Phase I (161 units), which may be one component of this record.",
+      "src": [
+        "SRC-001678"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Affirmed Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001330"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "City of Mountain View",
+      "program": null,
+      "amount": 8000000,
+      "date": "2024-12-17",
+      "src": [
+        "SRC-001330"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -181,6 +226,24 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2027-01",
+      "type": "Construction start",
+      "label": "Phase 1 expected start",
+      "src": [
+        "SRC-001330"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2032-07",
+      "type": "Completion",
+      "label": "Phase 2 expected finish",
+      "src": [
+        "SRC-001330"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -188,6 +251,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

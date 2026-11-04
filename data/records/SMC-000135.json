@@ -1,6 +1,6 @@
 {
   "id": "SMC-000135",
-  "name": "1304 Middlefield Rd",
+  "name": "Rise City Apartments (1304 Middlefield Road)",
   "parcels": [
     {
       "apn": "053-145-260",
@@ -99,7 +99,8 @@
         {
           "value": "Approved",
           "src": [
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001245"
           ],
           "note": "State report shows entitlement approval"
         }
@@ -120,7 +121,8 @@
         {
           "value": 94,
           "src": [
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001245"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -131,7 +133,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001245"
           ]
         }
       ]
@@ -142,6 +145,18 @@
           "value": "92 deed-restricted units reported to the state",
           "src": [
             "SRC-001116"
+          ]
+        },
+        {
+          "value": "City: Low affordability level",
+          "src": [
+            "SRC-001245"
+          ]
+        },
+        {
+          "value": "Pulse: households at 20% to 70% of AMI; 24 units permanent supportive housing",
+          "src": [
+            "SRC-001217"
           ]
         }
       ]
@@ -156,13 +171,47 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.7,
+          "src": [
+            "SRC-001245"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001245"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "City Council approved nearly $8 million in May 2026.",
+      "src": [
+        "SRC-001217"
+      ]
+    },
+    {
+      "text": "CTCAC application CA-26-715, Rise City Apartments: 94 total units, 93 low-income, 1304 Middlefield Road, APNs 053-145-240, 053-145-230, 053-145-260. Application, not an award: bond request $18,900,000, federal credit request $3,317,072 (CDLAC September 8, 2026 applicant list).",
+      "src": [
+        "SRC-001685"
       ]
     }
   ],
@@ -174,6 +223,24 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Sand Hill Property Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001246"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Van Meter Williams Pollack",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001246"
       ]
     }
   ],
@@ -187,6 +254,15 @@
       "src": [
         "SRC-001116"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Construction start",
+      "label": "Pulse: expected early 2027",
+      "src": [
+        "SRC-001217"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -194,6 +270,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

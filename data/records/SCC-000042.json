@@ -140,11 +140,21 @@
         {
           "value": 460,
           "src": [
-            "SRC-001101"
+            "SRC-001101",
+            "SRC-001313",
+            "SRC-001314"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 456,
+          "src": [
+            "SRC-001315"
+          ],
+          "note": "State notice figure; news sources say 460"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -154,6 +164,113 @@
             "SRC-001101"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001315",
+            "SRC-001313",
+            "SRC-001314"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 230,
+            "1br": 196,
+            "2br": 26,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001313"
+          ],
+          "note": "Plus 8 loft-style units"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 495,
+          "src": [
+            "SRC-001313"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 327440,
+          "src": [
+            "SRC-001313"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 9370,
+          "src": [
+            "SRC-001313"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.86,
+          "src": [
+            "SRC-001313"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001313",
+            "SRC-001314"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "55 deed-restricted low and very low income per SF YIMBY; 60 BMR per Mountain View Voice",
+          "src": [
+            "SRC-001313",
+            "SRC-001314"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001313"
+          ],
+          "note": "CEQA statutory exemption under AB 130"
         }
       ]
     }
@@ -166,7 +283,46 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "WTA Middlefield LLC (Jeff Stone)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001313",
+        "SRC-001314"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Diamond Construction Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant's firm (Jeff Stone)",
+      "src": [
+        "SRC-001313"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDT Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001313"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Olin",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001313"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -177,6 +333,24 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2026-01-21",
+      "type": "Other",
+      "label": "Environmental Planning Commission voted 6-1 to back the project",
+      "src": [
+        "SRC-001314"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-11",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-001315"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -184,6 +358,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

@@ -252,6 +252,44 @@
           "note": "SB 35 (2017); 40% density bonus"
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 14,
+              "ami": 30
+            },
+            {
+              "count": 14,
+              "ami": 50
+            },
+            {
+              "count": 50,
+              "ami": 60
+            },
+            {
+              "count": 55,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 75097731,
+          "src": [
+            "SRC-001629"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -259,6 +297,12 @@
       "text": "Six-story building, about 94,000 sq ft above a 25-car garage; 148 bicycle spaces",
       "src": [
         "SRC-000602"
+      ]
+    },
+    {
+      "text": "CTCAC CA-22-566: El Camino Real, located at 732 & 740 El Camino Real in San Bruno, requested and is being recommended for a reservation of $3,509,297 in annual federal tax credits to finance the new construction of 133 units of housing serving tenants with rents affordable to households earning 30%-70% of area median income (AMI).",
+      "src": [
+        "SRC-001629"
       ]
     }
   ],
@@ -300,7 +344,68 @@
       ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - T.E. (Series A)",
+      "program": null,
+      "amount": 40000000,
+      "date": null,
+      "src": [
+        "SRC-001629"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank - Taxable",
+      "program": null,
+      "amount": 12250000,
+      "date": null,
+      "src": [
+        "SRC-001629"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank - T.E. (Series A)",
+      "program": null,
+      "amount": 30000000,
+      "date": null,
+      "src": [
+        "SRC-001629"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bonneville - Recycled T.E",
+      "program": null,
+      "amount": 10000000,
+      "date": null,
+      "src": [
+        "SRC-001629"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 5622584,
+      "date": null,
+      "src": [
+        "SRC-001629"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 29475147,
+      "date": null,
+      "src": [
+        "SRC-001629"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -310,6 +415,15 @@
       "src": [
         "SRC-000602"
       ]
+    },
+    {
+      "date": "2022-11-30",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-22-566)",
+      "src": [
+        "SRC-001629"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-12",
@@ -349,6 +463,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from HCD APR Table A2 data and the sources listed"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

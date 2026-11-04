@@ -1,6 +1,6 @@
 {
   "id": "SCC-000375",
-  "name": "Watsonville-Blackrock (Quail Vineyards)",
+  "name": "Quail Vineyards (Watsonville-Blackrock)",
   "parcels": [
     {
       "apn": "779-02-023",
@@ -338,22 +338,26 @@
         {
           "value": "Single-family",
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001450"
           ],
           "note": "State category: single-family detached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
         {
           "value": "Approved",
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001450"
           ],
           "note": "State report shows the application approved"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -370,11 +374,13 @@
         {
           "value": 14,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001450"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -384,13 +390,29 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2022-0002, EA2022-0009, SR2022-0013",
+          "src": [
+            "SRC-001450"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 18.39,
+          "src": [
+            "SRC-001450"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
       ]
@@ -407,6 +429,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2025-01-14",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolutions 25-01, 25-02)",
+      "src": [
+        "SRC-001450"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -414,6 +445,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

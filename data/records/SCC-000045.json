@@ -1,9 +1,9 @@
 {
   "id": "SCC-000045",
-  "name": "14859 Los Gatos Blvd",
+  "name": "North 40 Phase II",
   "parcels": [
     {
-      "apn": "424-07-009",
+      "apn": "424-07-094",
       "from": null,
       "to": null,
       "src": [
@@ -11,32 +11,60 @@
       ],
       "outline": [
         [
-          -121.953793,
-          37.253777
+          -121.9548948,
+          37.2534928
         ],
         [
-          -121.9540722,
-          37.2534124
-        ],
-        [
-          -121.9540799,
-          37.2534162
-        ],
-        [
-          -121.9542593,
-          37.2531819
+          -121.9546823,
+          37.2533889
         ],
         [
           -121.9544684,
           37.2532842
         ],
         [
-          -121.9540098,
-          37.2538831
+          -121.9542593,
+          37.2531819
         ],
         [
-          -121.953793,
-          37.253777
+          -121.9530925,
+          37.2526111
+        ],
+        [
+          -121.9533524,
+          37.2522717
+        ],
+        [
+          -121.9559421,
+          37.2535388
+        ],
+        [
+          -121.9559219,
+          37.2535533
+        ],
+        [
+          -121.9558804,
+          37.2535775
+        ],
+        [
+          -121.955795,
+          37.2536388
+        ],
+        [
+          -121.9557072,
+          37.2536966
+        ],
+        [
+          -121.955617,
+          37.2537507
+        ],
+        [
+          -121.9555246,
+          37.253801
+        ],
+        [
+          -121.9548948,
+          37.2534928
         ]
       ]
     }
@@ -103,7 +131,8 @@
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001121"
+            "SRC-001121",
+            "SRC-001554"
           ]
         }
       ]
@@ -129,18 +158,64 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001587"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001120",
         "SRC-001121"
       ]
+    },
+    {
+      "text": "77 affordable units, 16 reserved for residents with intellectual and developmental disabilities. The Town's list flags builder's remedy; the Los Gatan reports Grosvenor did not use it.",
+      "src": [
+        "SRC-001587"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Grosvenor Americas",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001587"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Eden Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001587"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Harmonie Park Development Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001587"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -166,6 +241,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

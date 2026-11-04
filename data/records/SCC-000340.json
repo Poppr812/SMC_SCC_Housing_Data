@@ -1,6 +1,6 @@
 {
   "id": "SCC-000340",
-  "name": "COACH HOUSE",
+  "name": "1655 S. De Anza Blvd / Dividend Homes IV",
   "parcels": [
     {
       "apn": "366-10-061",
@@ -63,6 +63,12 @@
         "SRC-001100",
         "SRC-001137"
       ]
+    },
+    {
+      "text": "1655 S. De Anza Blvd and 7357 Prospect Rd, Cupertino",
+      "src": [
+        "SRC-001510"
+      ]
     }
   ],
   "images": [],
@@ -88,8 +94,16 @@
             "SRC-001137"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001510"
+          ],
+          "note": "New application under review; older claims on this record are the prior scheme"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -117,9 +131,16 @@
             "SRC-001100"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 35,
+          "src": [
+            "SRC-001510"
+          ],
+          "note": "Current application; older claims are the prior scheme"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "affordability_type": {
       "claims": [
@@ -137,6 +158,12 @@
           "value": "3 deed-restricted units reported to the state",
           "src": [
             "SRC-001137"
+          ]
+        },
+        {
+          "value": "5 affordable units",
+          "src": [
+            "SRC-001510"
           ]
         }
       ]
@@ -156,14 +183,34 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001100",
         "SRC-001137"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Joshua Vrotsos",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001510"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001510"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -182,6 +229,15 @@
       "src": [
         "SRC-001137"
       ]
+    },
+    {
+      "date": "2025-09-29",
+      "type": "Application filed",
+      "label": "Formal application filed",
+      "src": [
+        "SRC-001510"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -189,6 +245,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

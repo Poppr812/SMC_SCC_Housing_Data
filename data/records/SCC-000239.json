@@ -1,6 +1,6 @@
 {
   "id": "SCC-000239",
-  "name": "0 Cozy Dr",
+  "name": "511 Cozy Drive",
   "parcels": [
     {
       "apn": "689-08-001",
@@ -285,7 +285,14 @@
       ]
     }
   ],
-  "addresses": [],
+  "addresses": [
+    {
+      "text": "511 Cozy Drive",
+      "src": [
+        "SRC-001410"
+      ]
+    }
+  ],
   "images": [],
   "facts": {
     "product_type": {
@@ -325,7 +332,8 @@
         {
           "value": 80,
           "src": [
-            "SRC-001099"
+            "SRC-001099",
+            "SRC-001410"
           ],
           "note": "Units in the application as reported"
         }
@@ -341,6 +349,16 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 9.5,
+          "src": [
+            "SRC-001410"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -349,9 +367,25 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "64 single-family houses and eight attached duplexes, replacing the former Glider Elementary campus.",
+      "src": [
+        "SRC-001410"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "The True Life Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001410"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -362,6 +396,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Other",
+      "label": "Planning Commission review; outcome not reported in source",
+      "src": [
+        "SRC-001410"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -369,6 +412,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

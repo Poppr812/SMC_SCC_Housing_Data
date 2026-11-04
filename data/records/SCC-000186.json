@@ -1,6 +1,6 @@
 {
   "id": "SCC-000186",
-  "name": "1035 W El Camino Real",
+  "name": "El Camino Health Mixed Use",
   "parcels": [
     {
       "apn": "161-41-009",
@@ -80,6 +80,12 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "1027-1035 West El Camino Real, Sunnyvale",
+      "src": [
+        "SRC-001517"
+      ]
     }
   ],
   "images": [],
@@ -105,8 +111,16 @@
             "SRC-001119"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001516"
+          ],
+          "note": "Groundbreaking reported April 2025; construction to begin soon after"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -124,7 +138,8 @@
         {
           "value": 113,
           "src": [
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001517"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -161,6 +176,18 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-001517"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -172,7 +199,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "PMB",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001516"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "PMB LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001517"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -198,6 +245,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

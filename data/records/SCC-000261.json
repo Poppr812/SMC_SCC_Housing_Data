@@ -1,37 +1,7 @@
 {
   "id": "SCC-000261",
-  "name": "1860 Alum Rock Av",
+  "name": "Alum Rock Multifamily",
   "parcels": [
-    {
-      "apn": "434-11-081",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.8797464,
-          37.312805
-        ],
-        [
-          -121.8800904,
-          37.312551
-        ],
-        [
-          -121.8801635,
-          37.312649
-        ],
-        [
-          -121.8798153,
-          37.3128959
-        ],
-        [
-          -121.8797464,
-          37.312805
-        ]
-      ]
-    },
     {
       "apn": "481-18-064",
       "from": null,
@@ -90,7 +60,7 @@
       ]
     },
     {
-      "text": "1860  Alum Rock Av, San Jose, CA",
+      "text": "1860 Alum Rock Av, San Jose, CA",
       "src": [
         "SRC-001099",
         "SRC-001107"
@@ -198,6 +168,52 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 10,
+            "1br": 19,
+            "2br": 16,
+            "3br": 15,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 30,
+              "ami": 30
+            },
+            {
+              "count": 29,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 58012583,
+          "src": [
+            "SRC-001630"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -207,10 +223,127 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CTCAC CA-22-618: Alum Rock Multifamily, located at 1860 Alum Rock Avenue in San Jose, requested and is being recommended for a reservation of $2,773,549 in annual federal tax credits and $851,925 in total state tax credits to finance the new construction of 59 units of housing serving special needs and large family tenants with rents affordable to households earning 30%-50% of area median income (AMI).",
+      "src": [
+        "SRC-001630"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Charities Housing Development Corporation of Santa Clara County",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001630"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Bank of the West",
+      "program": null,
+      "amount": 29468877,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bank of the West",
+      "program": null,
+      "amount": 10532000,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": null,
+      "amount": 8600000,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": null,
+      "amount": 7500000,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General Partner Contribution",
+      "program": null,
+      "amount": 250000,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General Partner Equity",
+      "program": null,
+      "amount": 1473165,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Impact Fee Waiver",
+      "program": null,
+      "amount": 352839,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Interest",
+      "program": null,
+      "amount": 247699,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 1026835,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 28030045,
+      "date": null,
+      "src": [
+        "SRC-001630"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -228,6 +361,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2022-11-30",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-22-618)",
+      "src": [
+        "SRC-001630"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-05-26",
@@ -251,6 +393,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

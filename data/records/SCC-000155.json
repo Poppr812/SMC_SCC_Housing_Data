@@ -1,6 +1,6 @@
 {
   "id": "SCC-000155",
-  "name": "MONTEREY-AMG",
+  "name": "Monterey-AMG & Associates",
   "parcels": [
     {
       "apn": "726-25-001",
@@ -39,6 +39,12 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "text": "17910 and 17920 Monterey Road, Morgan Hill, CA",
+      "src": [
+        "SRC-001441"
+      ]
     }
   ],
   "images": [],
@@ -62,8 +68,16 @@
             "SRC-001131"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001441"
+          ],
+          "note": "Planning Entitlements Approved"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -83,8 +97,15 @@
             "SRC-001131"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 100,
+          "src": [
+            "SRC-001441"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -96,13 +117,39 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001422"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.89,
+          "src": [
+            "SRC-001441"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
+      ]
+    },
+    {
+      "text": "City page covers APNs 726-25-001 and -002 and says SR2024-0025 updated earlier application SR2022-0022. See suspected duplicate SCC-000121.",
+      "src": [
+        "SRC-001441"
       ]
     }
   ],
@@ -117,6 +164,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2026-05-26",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolution 26-03)",
+      "src": [
+        "SRC-001441"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -124,6 +180,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

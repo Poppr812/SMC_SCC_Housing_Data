@@ -46,6 +46,7 @@ def n(x):
 
 def norm(a):
     a = re.sub(r"[^A-Z0-9 ]", " ", (a or "").upper())
+    a = re.sub(r"(NORTH|SOUTH|EAST|WEST)", lambda m: m.group(1)[0], a)
     a = re.sub(r"\b(STREET|ST|AVENUE|AVE|AV|ROAD|RD|BOULEVARD|BLVD|BL|DRIVE|DR|WAY|WY|LANE|LN|COURT|CT|PLACE|PL|UNIT|APT|STE|BLDG)\b.*$", "", a)
     return re.sub(r"\s+", " ", a).strip()
 
@@ -214,10 +215,12 @@ def by_address(p, a):
 
 def locate(p):
     """(list of parcels, how) checked against county GIS, or ([], reason)."""
+    nums = {m.group(1) for a in p["addresses"] for m in [re.match(r"^(\d+)", a)] if m}
     found = []
     for t in p["apns"][:10]:
-        got = parcels.lookup(p["county"], apn=t)
-        if got and got["outline"]:
+        got = parcels.lookup(p["county"], apn=t)  # cities mistype APNs, so the parcel must carry the project's address
+        m = re.match(r"^(\d+)", (got or {}).get("situs") or "")
+        if got and got["outline"] and m and m.group(1) in nums:
             found.append(got)
     if found:
         return found, "apn"

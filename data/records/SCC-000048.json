@@ -1,6 +1,6 @@
 {
   "id": "SCC-000048",
-  "name": "95 4th St",
+  "name": "Icon Echo",
   "parcels": [
     {
       "apn": "467-20-060",
@@ -121,40 +121,6 @@
           37.3376943
         ]
       ]
-    },
-    {
-      "apn": "467-20-081",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.8880534,
-          37.3382846
-        ],
-        [
-          -121.8885723,
-          37.3380372
-        ],
-        [
-          -121.8888839,
-          37.3384557
-        ],
-        [
-          -121.8887687,
-          37.3385107
-        ],
-        [
-          -121.888365,
-          37.3387031
-        ],
-        [
-          -121.8880534,
-          37.3382846
-        ]
-      ]
     }
   ],
   "addresses": [
@@ -191,6 +157,18 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "145 East Santa Clara Street",
+      "src": [
+        "SRC-001383"
+      ]
+    },
+    {
+      "text": "95 North 4th Street",
+      "src": [
+        "SRC-001383"
       ]
     }
   ],
@@ -239,8 +217,15 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 645,
+          "src": [
+            "SRC-001383"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -251,6 +236,82 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001383"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 233,
+            "1br": 272,
+            "2br": 140,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001383"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 527,
+          "src": [
+            "SRC-001383"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1320,
+          "src": [
+            "SRC-001383"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.1,
+          "src": [
+            "SRC-001383"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001383"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "33 deed-restricted units.",
+          "src": [
+            "SRC-001383"
+          ]
         }
       ]
     }
@@ -264,7 +325,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Urban Catalyst",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001383"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001383"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -291,6 +371,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Other",
+      "label": "Planning Director's Hearing on site development permit and vesting map; staff recommended approval, outcome not reported in source",
+      "src": [
+        "SRC-001383"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -298,6 +387,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "SMC-000143",
-  "name": "THE GATEWAY",
+  "name": "Railroad Avenue Townhomes (500 Railroad Ave)",
   "parcels": [
     {
       "apn": "014-061-170",
@@ -271,11 +271,14 @@
           "value": "Townhomes",
           "src": [
             "SRC-001112",
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342",
+            "SRC-001360"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -283,11 +286,13 @@
           "value": "Approved",
           "src": [
             "SRC-001112",
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -305,11 +310,14 @@
         {
           "value": 70,
           "src": [
-            "SRC-001113"
+            "SRC-001113",
+            "SRC-001342",
+            "SRC-001360"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -322,11 +330,21 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.04,
+          "src": [
+            "SRC-001342"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001112",
         "SRC-001113"
@@ -342,6 +360,25 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Sim Architects, Inc",
+      "contact": "Eugene Sim",
+      "linkedin": null,
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ken Cui",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Party undertaking project (CEQA notice)",
+      "src": [
+        "SRC-001360"
+      ]
     }
   ],
   "financing": [],
@@ -354,6 +391,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2025-08",
+      "type": "Approved",
+      "label": "Entitled",
+      "src": [
+        "SRC-001342"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-08-27",
@@ -369,6 +415,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

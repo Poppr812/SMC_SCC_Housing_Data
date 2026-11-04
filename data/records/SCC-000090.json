@@ -1,6 +1,6 @@
 {
   "id": "SCC-000090",
-  "name": "741 S Winchester Bl",
+  "name": "741 South Winchester Boulevard",
   "parcels": [
     {
       "apn": "299-45-021",
@@ -144,6 +144,55 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001391"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 35,
+            "1br": 113,
+            "2br": 116,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001391"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.97,
+          "src": [
+            "SRC-001391"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001391"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -154,7 +203,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "SyRes Properties",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001391"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Lowney Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001391"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -165,6 +234,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-08",
+      "type": "Other",
+      "label": "City staff granted a CEQA exemption",
+      "src": [
+        "SRC-001391"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -172,6 +250,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

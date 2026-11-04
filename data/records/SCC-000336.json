@@ -1,6 +1,6 @@
 {
   "id": "SCC-000336",
-  "name": "101 Gilman Ave",
+  "name": "57-101 Gilman Ave and 60 Dillon Ave (Robson Homes)",
   "parcels": [
     {
       "apn": "412-52-025",
@@ -74,6 +74,18 @@
       "src": [
         "SRC-001134",
         "SRC-001143"
+      ]
+    },
+    {
+      "text": "57-101 Gilman Ave",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "60 Dillon Ave",
+      "src": [
+        "SRC-001551"
       ]
     }
   ],
@@ -154,20 +166,43 @@
             "SRC-001143"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2023-125",
+          "src": [
+            "SRC-001551"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "City describes 25 townhomes and one apartment building with up to 10 units. The index count of 25 covers the townhomes.",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Robson Homes",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -201,6 +236,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

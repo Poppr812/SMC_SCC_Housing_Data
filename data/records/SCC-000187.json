@@ -80,6 +80,12 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "1104 and 1124 West El Camino Real, Sunnyvale",
+      "src": [
+        "SRC-001520"
+      ]
     }
   ],
   "images": [],
@@ -102,11 +108,13 @@
           "value": "Approved",
           "src": [
             "SRC-001118",
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001519"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -124,7 +132,8 @@
         {
           "value": 111,
           "src": [
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-001520"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -152,7 +161,18 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Steve Brinkman",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001520"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -178,6 +198,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

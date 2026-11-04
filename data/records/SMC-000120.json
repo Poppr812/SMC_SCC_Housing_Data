@@ -1,6 +1,6 @@
 {
   "id": "SMC-000120",
-  "name": "1675 Bay",
+  "name": "Four Corners (1675 Bay Road)",
   "parcels": [
     {
       "apn": "063-111-250",
@@ -183,8 +183,17 @@
             "SRC-001111"
           ],
           "note": "State category: single-family attached"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-001196",
+            "SRC-001197"
+          ],
+          "note": "Two city applications on one parcel: townhomes (DR25-004) and a mixed-use project (DR25-007)"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -194,8 +203,18 @@
             "SRC-001111"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001196",
+            "SRC-001197",
+            "SRC-001198"
+          ],
+          "note": "City pages show Approved; news summary says the City Council overturned a Planning Commission denial in March 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -215,6 +234,20 @@
             "SRC-001111"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 95,
+          "src": [
+            "SRC-001196"
+          ],
+          "note": "Townhome component only, per the city project page"
+        },
+        {
+          "value": 106,
+          "src": [
+            "SRC-001199"
+          ],
+          "note": "Townhome component only, per September 2025 notice; includes 11 moderate-income units"
         }
       ]
     },
@@ -232,7 +265,7 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001111"
       ]
@@ -247,17 +280,52 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Sand Hill Property Company",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001196",
+        "SRC-001197"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-11-22",
+      "type": "Application filed",
+      "label": "Townhome pre-application received",
+      "src": [
+        "SRC-001196"
+      ]
+    },
+    {
+      "date": "2024-12-02",
+      "type": "Application filed",
+      "label": "Mixed-use pre-application received",
+      "src": [
+        "SRC-001197"
+      ]
+    },
+    {
       "date": "2025-05-23",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001111"
+      ]
+    },
+    {
+      "date": "2026-03",
+      "type": "Approved",
+      "label": "City Council overturns Planning Commission denial",
+      "src": [
+        "SRC-001198"
       ]
     }
   ],
@@ -266,6 +334,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

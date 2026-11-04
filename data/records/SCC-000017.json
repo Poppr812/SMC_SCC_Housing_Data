@@ -1,6 +1,6 @@
 {
   "id": "SCC-000017",
-  "name": "7 Topgolf Dr",
+  "name": "7 Topgolf Drive",
   "parcels": [
     {
       "apn": "015-48-004",
@@ -320,6 +320,54 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001375"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 414,
+            "1br": 366,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001375"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001375"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001375"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -330,7 +378,35 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "LH Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001375"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Genesis Commercial Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001375"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "JPark Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001375"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -341,6 +417,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2025-06-25",
+      "type": "Other",
+      "label": "Planning Commission review; outcome not reported in source",
+      "src": [
+        "SRC-001375"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -348,6 +433,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

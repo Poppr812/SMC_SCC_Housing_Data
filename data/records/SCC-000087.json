@@ -1,6 +1,6 @@
 {
   "id": "SCC-000087",
-  "name": "323 Gifford Av",
+  "name": "470 West San Carlos Street",
   "parcels": [
     {
       "apn": "264-20-133",
@@ -61,80 +61,6 @@
         [
           -121.8965513,
           37.3259279
-        ]
-      ]
-    },
-    {
-      "apn": "421-14-053",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.9454616,
-          37.2437088
-        ],
-        [
-          -121.9454957,
-          37.2435633
-        ],
-        [
-          -121.9455004,
-          37.2435533
-        ],
-        [
-          -121.9455066,
-          37.2435442
-        ],
-        [
-          -121.9455141,
-          37.2435361
-        ],
-        [
-          -121.9455229,
-          37.2435294
-        ],
-        [
-          -121.9455325,
-          37.2435241
-        ],
-        [
-          -121.9455429,
-          37.2435204
-        ],
-        [
-          -121.9455538,
-          37.2435184
-        ],
-        [
-          -121.9455648,
-          37.2435182
-        ],
-        [
-          -121.9455757,
-          37.2435197
-        ],
-        [
-          -121.9456684,
-          37.2435362
-        ],
-        [
-          -121.9457599,
-          37.2435583
-        ],
-        [
-          -121.94585,
-          37.2435857
-        ],
-        [
-          -121.9458112,
-          37.2437659
-        ],
-        [
-          -121.9454616,
-          37.2437088
         ]
       ]
     }
@@ -211,7 +137,8 @@
         {
           "value": 276,
           "src": [
-            "SRC-001099"
+            "SRC-001099",
+            "SRC-001390"
           ],
           "note": "Units in the application as reported"
         }
@@ -229,6 +156,74 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001390"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 75,
+            "1br": 135,
+            "2br": 66,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001390"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 217,
+          "src": [
+            "SRC-001390"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001390"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001390"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "14 very low-income units.",
+          "src": [
+            "SRC-001390"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -240,7 +235,27 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Urban Catalyst",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001390"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001390"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -259,6 +274,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-07-15",
+      "type": "Other",
+      "label": "Planning Director's Hearing on site development permits; outcome not reported in source",
+      "src": [
+        "SRC-001390"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -266,6 +290,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped an APN from the state report that doesn't match the project address"
     }
   ]
 }

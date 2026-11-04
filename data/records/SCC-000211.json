@@ -1,61 +1,7 @@
 {
   "id": "SCC-000211",
-  "name": "1135 East Santa Clara St",
+  "name": "Algarve Apartments",
   "parcels": [
-    {
-      "apn": "446-15-020",
-      "from": null,
-      "to": null,
-      "src": [
-        "SRC-001098"
-      ],
-      "outline": [
-        [
-          -121.8975336,
-          37.2753144
-        ],
-        [
-          -121.8977738,
-          37.2752074
-        ],
-        [
-          -121.8979586,
-          37.27548
-        ],
-        [
-          -121.8977956,
-          37.2755509
-        ],
-        [
-          -121.8977805,
-          37.2755545
-        ],
-        [
-          -121.897765,
-          37.2755556
-        ],
-        [
-          -121.8977496,
-          37.2755541
-        ],
-        [
-          -121.8977346,
-          37.27555
-        ],
-        [
-          -121.8977205,
-          37.2755434
-        ],
-        [
-          -121.8977078,
-          37.2755346
-        ],
-        [
-          -121.8975336,
-          37.2753144
-        ]
-      ]
-    },
     {
       "apn": "467-11-021",
       "from": null,
@@ -138,8 +84,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001409"
+          ],
+          "note": "New county-backed SB 35 plan in early planning, April 2026."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -168,7 +122,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001409"
           ]
         }
       ]
@@ -194,6 +149,41 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001409"
+          ],
+          "note": "Seven stories of modular construction over a single-story podium."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001409"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-001409"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -205,7 +195,35 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Abode Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001409"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Santa Clara County",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001409"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Lowney Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001409"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -231,6 +249,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
     }
   ]
 }

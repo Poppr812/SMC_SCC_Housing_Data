@@ -351,15 +351,24 @@
             "SRC-001136"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001170"
+          ],
+          "note": "CEQA notice: single-family attached with ADUs"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
         {
           "value": "Proposed",
           "src": [
-            "SRC-001136"
+            "SRC-001136",
+            "SRC-001170"
           ],
           "note": "State report shows an application with no approval reported"
         }
@@ -383,8 +392,16 @@
             "SRC-001136"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 113,
+          "src": [
+            "SRC-001170"
+          ],
+          "note": "91 single-family attached units and 22 ADUs on 34 lots"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -394,6 +411,16 @@
             "SRC-001136"
           ],
           "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 9.1,
+          "src": [
+            "SRC-001170"
+          ]
         }
       ]
     }
@@ -415,6 +442,16 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Toll Brothers Northern California Division",
+      "contact": "Nick Kosla, Vice President",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001170"
+      ]
     }
   ],
   "financing": [],
@@ -427,6 +464,15 @@
       "src": [
         "SRC-001136"
       ]
+    },
+    {
+      "date": "2025-11-20",
+      "type": "Other",
+      "label": "Notice of Preparation of Draft EIR received by State Clearinghouse",
+      "src": [
+        "SRC-001170"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -434,6 +480,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

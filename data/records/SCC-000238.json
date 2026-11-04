@@ -1,6 +1,6 @@
 {
   "id": "SCC-000238",
-  "name": "750 West San Carlos",
+  "name": "Mariposa Place (West San Carlos Residential)",
   "parcels": [
     {
       "apn": "264-15-003",
@@ -83,8 +83,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001614"
+          ],
+          "note": "SV@Home Measure A dashboard lists it as In Construction; dashboard is undated."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -139,6 +147,56 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 57,
+            "2br": 23,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 40,
+              "ami": 30
+            },
+            {
+              "count": 20,
+              "ami": 50
+            },
+            {
+              "count": 19,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 62237118,
+          "src": [
+            "SRC-001613"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -148,10 +206,117 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CTCAC CA-21-591: Mariposa Place / West San Carlos Residential, located at 750 West San Carlos in San Jose, requested and is being recommended for a reservation of $2,827,395 in annual federal tax credits and $7,886,595 in total state tax credits to finance the new construction of 79 units of housing serving special needs tenants with rents affordable to households earning 25-60% of area median income (AMI).",
+      "src": [
+        "SRC-001613"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Danco Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001613"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Pacific Western Bank - Tax Exempt",
+      "program": null,
+      "amount": 31341010,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Pacific Western Bank - Taxable",
+      "program": null,
+      "amount": 2414157,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Pacific Western Bank",
+      "program": null,
+      "amount": 10884214,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": null,
+      "amount": 9875000,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara Acq Fund",
+      "program": null,
+      "amount": 5912500,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara Measure A",
+      "program": null,
+      "amount": 3350000,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 1145102,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 97240,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 30973062,
+      "date": null,
+      "src": [
+        "SRC-001613"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -171,6 +336,15 @@
       ]
     },
     {
+      "date": "2021-08-11",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-21-591)",
+      "src": [
+        "SRC-001613"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-02-07",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -184,6 +358,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

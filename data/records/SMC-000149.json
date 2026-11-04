@@ -1,6 +1,6 @@
 {
   "id": "SMC-000149",
-  "name": "170 San Bruno Ave West",
+  "name": "170 San Bruno Avenue W",
   "parcels": [
     {
       "apn": "020-111-160",
@@ -95,11 +95,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001129"
+            "SRC-001129",
+            "SRC-001346"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -116,11 +118,13 @@
         {
           "value": 57,
           "src": [
-            "SRC-001129"
+            "SRC-001129",
+            "SRC-001346"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -132,11 +136,61 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.29,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 910,
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "8 affordable units",
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001346"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001129"
       ]
@@ -170,6 +224,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

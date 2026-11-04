@@ -937,8 +937,8 @@ function openPipeline(silent){
    <h3>Projects (${active.length})</h3>${listTable(active)}
    ${inactive.length?`<h3>Inactive pipeline (${inactive.length}, not in totals)</h3>${listTable(inactive)}`:""}
    <h3>Coverage</h3><div style="font-size:13px">
-     ${covered.map(j=>`<p style="margin:0 0 6px"><b>${esc(j)}:</b> ${esc(cov[j])}</p>`).join("")}
-     ${partial.length?`<p style="margin:0 0 6px"><b>${esc(partial.join(", "))}:</b> partial. Projects found through leads and public sources; this is not a complete list.</p>`:""}
+     ${[...new Set(covered.map(j=>cov[j]))].map(txt=>`<p style="margin:0 0 6px"><b>${esc(covered.filter(j=>cov[j]===txt).join(", "))}:</b> ${esc(txt)}</p>`).join("")}
+     ${partial.length?`<p style="margin:0 0 6px"><b>${esc(partial.join(", "))}:</b> partial. Projects found through state housing reports (through 2025), funding reports and news; the city's own list wasn't fully checked, so this is not a complete list.</p>`:""}
      <p class="muted" style="margin:0">Stages are working labels for comps research, not legal status. Unit counts are as stated by sources and may be maximums for phased or master-planned projects. A boundary may also touch places with no records here yet. Delivery shows only what a source states, and "est." is the source's estimate, not ours. Blank means no source states a date. Every figure links back to its sources on the project's record.</p></div>
   </div>`;
   $("#repXlsx").onclick=()=>pipelineXlsx([...active,...inactive],radius,area);

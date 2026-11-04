@@ -1,6 +1,6 @@
 {
   "id": "SCC-000196",
-  "name": "TENNANT-CHIRI LTD",
+  "name": "Tennant-Chiri",
   "parcels": [
     {
       "apn": "817-09-055",
@@ -117,7 +117,14 @@
       ]
     }
   ],
-  "addresses": [],
+  "addresses": [
+    {
+      "text": "Northeast corner of Butterfield Blvd. and Tennant Ave., Morgan Hill, CA",
+      "src": [
+        "SRC-001442"
+      ]
+    }
+  ],
   "images": [],
   "facts": {
     "product_type": {
@@ -128,8 +135,15 @@
             "SRC-001131"
           ],
           "note": "State category: single-family detached"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001442"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -139,8 +153,16 @@
             "SRC-001131"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001442"
+          ],
+          "note": "Planning Entitlements Approved"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -160,8 +182,15 @@
             "SRC-001131"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 106,
+          "src": [
+            "SRC-001442"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -171,13 +200,29 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SR2024-0030, SD2025-0004",
+          "src": [
+            "SRC-001442"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 6.35,
+          "src": [
+            "SRC-001422"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
       ]
@@ -194,6 +239,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2025-12-09",
+      "type": "Approved",
+      "label": "Planning Commission meeting (Resolutions 25-19, 25-20)",
+      "src": [
+        "SRC-001442"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -201,6 +255,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

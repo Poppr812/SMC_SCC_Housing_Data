@@ -1,6 +1,6 @@
 {
   "id": "SCC-000004",
-  "name": "2518 Mission College Bl",
+  "name": "Santa Clara Park",
   "parcels": [
     {
       "apn": "104-40-019",
@@ -483,11 +483,13 @@
         {
           "value": "Approved",
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-001528"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -504,7 +506,8 @@
         {
           "value": 1792,
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-001529"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -535,6 +538,15 @@
   "groups": {},
   "events": [
     {
+      "date": "2025-03-25",
+      "type": "Approved",
+      "label": "City Council approved GP amendment, rezone and map",
+      "src": [
+        "SRC-001528"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-05-21",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -548,6 +560,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

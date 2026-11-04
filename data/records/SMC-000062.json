@@ -242,6 +242,40 @@
         }
       ],
       "combine": true
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 28,
+              "ami": 30
+            },
+            {
+              "count": 4,
+              "ami": 40
+            },
+            {
+              "count": 28,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001603"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 56405344,
+          "src": [
+            "SRC-001645"
+          ],
+          "note": "Total sources in CTCAC staff report."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -255,6 +289,12 @@
       "text": "MidPen's property page shows leasing status \"Referral Only\"; no completion date stated",
       "src": [
         "SRC-001002"
+      ]
+    },
+    {
+      "text": "CTCAC CA-24-059: Oak Gardens, located at 795 Willow Road in Menlo Park, requested and is being recommended for a reservation of $2,500,000 in annual federal tax credits and $3,247,634 in total state tax credits to finance the new construction of 60 units of housing serving special needs tenants with rents affordable to households earning 30%-50% of area median income (AMI).",
+      "src": [
+        "SRC-001645"
       ]
     }
   ],
@@ -436,10 +476,99 @@
         "SRC-000915",
         "SRC-000917"
       ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Silicon Valley Bank",
+      "program": null,
+      "amount": 33179444,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "HTSV",
+      "program": null,
+      "amount": 2609000,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "HCD - VHHP",
+      "program": null,
+      "amount": 12833477,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": null,
+      "amount": 4000000,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Menlo Park",
+      "program": null,
+      "amount": 2000000,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
+    },
+    {
+      "type": "FHLB AHP",
+      "provider": "FHLB-SF AHP",
+      "program": null,
+      "amount": 1000000,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Donated Land - VA",
+      "program": null,
+      "amount": 7440000,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (9%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 26522867,
+      "date": null,
+      "src": [
+        "SRC-001645"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2024-05-15",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-24-059)",
+      "src": [
+        "SRC-001645"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-02-26",
       "type": "Construction start",
@@ -459,6 +588,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Added MidPen's property page: Referral Only leasing noted, 1 Eucalyptus Lane address added; status stays Under construction"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

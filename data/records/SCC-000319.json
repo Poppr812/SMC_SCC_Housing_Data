@@ -1,6 +1,6 @@
 {
   "id": "SCC-000319",
-  "name": "966 Sherwood Ave",
+  "name": "Ax Sherwood Avenue Residential Project",
   "parcels": [
     {
       "apn": "170-01-044",
@@ -35,6 +35,12 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "text": "987, 994, 1005 Acacia Avenue and 966, 988, 994 Sherwood Avenue, Los Altos",
+      "src": [
+        "SRC-001336"
+      ]
     }
   ],
   "images": [],
@@ -47,8 +53,16 @@
             "SRC-001144"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001336"
+          ],
+          "note": "33 townhouses in seven three-story buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -92,6 +106,38 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001336"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.4,
+          "src": [
+            "SRC-001336"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001336"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -100,9 +146,26 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "text": "State notice lists APNs 170-01-042, -043, -044, -045, -047, -086. The record carries only 170-01-044.",
+      "src": [
+        "SRC-001336"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Urbanscape Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001336"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -113,6 +176,15 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-001336"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -120,6 +192,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

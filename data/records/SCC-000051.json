@@ -1,6 +1,6 @@
 {
   "id": "SCC-000051",
-  "name": "2940 Alum Rock Ave",
+  "name": "2940 Alum Rock Avenue",
   "parcels": [
     {
       "apn": "484-21-046",
@@ -117,7 +117,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001384"
           ]
         }
       ]
@@ -143,6 +144,32 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 119,
+            "1br": 199,
+            "2br": 72,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001384"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.4,
+          "src": [
+            "SRC-001384"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -154,7 +181,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "The Pacific Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001384"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "AO",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001384"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -180,6 +226,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

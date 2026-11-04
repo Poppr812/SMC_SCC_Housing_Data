@@ -181,6 +181,13 @@ COVERAGE = {
     "San Mateo": "complete against the City of San Mateo's Current Development Projects list as of 2026-11-03. "
                  "That list leaves out permit-only work and projects completed or inactive for over five years.",
 }
+_CHECKED = ("checked against the city's published project list on 2026-11-03. The list may leave out permit-only work, "
+            "and a few listed projects are missing because no county parcel could be matched.")
+COVERAGE.update({j: _CHECKED for j in [
+    "Burlingame", "Campbell", "Cupertino", "Daly City", "East Palo Alto", "Foster City", "Gilroy", "Half Moon Bay",
+    "Los Gatos", "Menlo Park", "Millbrae", "Morgan Hill", "Redwood City", "San Bruno", "San Carlos", "Saratoga",
+    "South San Francisco",
+]})
 
 
 def registry():

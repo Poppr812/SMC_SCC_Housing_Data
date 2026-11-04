@@ -1,6 +1,6 @@
 {
   "id": "SCC-000075",
-  "name": "New Horizons (Hill - Morgan Hill Devco)",
+  "name": "New Horizons (Hill-Morgan Hill Devco)",
   "parcels": [
     {
       "apn": "817-20-031",
@@ -293,7 +293,14 @@
       ]
     }
   ],
-  "addresses": [],
+  "addresses": [
+    {
+      "text": "Northeast quadrant of Hill Road and Barrett Avenue, Morgan Hill, CA",
+      "src": [
+        "SRC-001439"
+      ]
+    }
+  ],
   "images": [],
   "facts": {
     "product_type": {
@@ -304,8 +311,15 @@
             "SRC-001131"
           ],
           "note": "State category: single-family detached"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-001439"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -315,8 +329,16 @@
             "SRC-001131"
           ],
           "note": "State report shows the application approved"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001439"
+          ],
+          "note": "City: Processing Entitlements, with a Design Permit in process. Tentative map approved Aug. 11, 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -333,11 +355,13 @@
         {
           "value": 320,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001439"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -347,22 +371,64 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2025-0006, ZA2021-0001, EA2018-0016",
+          "src": [
+            "SRC-001439"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 69.43,
+          "src": [
+            "SRC-001439"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "text": "City list: 55 age-restricted units.",
+      "src": [
+        "SRC-001422"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Hill-Morgan Hill Devco, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001439"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-11-20",
+      "type": "Other",
+      "label": "City Council Ordinance 2358",
+      "src": [
+        "SRC-001439"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-06-23",
       "type": "Application filed",
@@ -370,6 +436,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Approved",
+      "label": "Planning Commission approved Tentative Subdivision Map (Resolution 26-04)",
+      "src": [
+        "SRC-001439"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -377,6 +452,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

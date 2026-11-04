@@ -43,6 +43,12 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "text": "3398, 3400 and 3450 El Camino Real and 556 Matadero Avenue, Palo Alto",
+      "src": [
+        "SRC-001286"
+      ]
     }
   ],
   "images": [],
@@ -55,8 +61,16 @@
             "SRC-001126"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-001286"
+          ],
+          "note": "Eight-story apartment tower plus townhouses"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -87,8 +101,16 @@
             "SRC-001126"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 291,
+          "src": [
+            "SRC-001286"
+          ],
+          "note": "249 apartments plus 42 townhouses, 24PLN-00184"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -100,11 +122,34 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001286"
+          ],
+          "note": "Apartment tower"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001286"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126"
       ]
@@ -128,6 +173,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

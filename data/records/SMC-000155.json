@@ -1,6 +1,6 @@
 {
   "id": "SMC-000155",
-  "name": "6774-6782 Mission Street",
+  "name": "6774 Mission Street Mixed-Use Building",
   "parcels": [
     {
       "apn": "003-180-590",
@@ -95,7 +95,8 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001104"
+            "SRC-001104",
+            "SRC-001158"
           ],
           "note": "State report shows an application with no approval reported"
         }
@@ -116,7 +117,8 @@
         {
           "value": 42,
           "src": [
-            "SRC-001104"
+            "SRC-001104",
+            "SRC-001158"
           ],
           "note": "Units in the application as reported"
         }
@@ -130,13 +132,30 @@
             "SRC-001104"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "UPR-10-23-016392, DR-10-23-016393",
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.12,
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001104"
       ]
@@ -150,6 +169,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Anders Fung",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Developer/contact per city list",
+      "src": [
+        "SRC-001158"
       ]
     }
   ],
@@ -170,6 +199,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

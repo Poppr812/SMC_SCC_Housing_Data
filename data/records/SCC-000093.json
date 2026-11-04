@@ -1,6 +1,6 @@
 {
   "id": "SCC-000093",
-  "name": "TEN SOUTH",
+  "name": "Ten South (Tennant-Ten South Acquisitions)",
   "parcels": [
     {
       "apn": "817-08-032",
@@ -88,8 +88,15 @@
             "SRC-001135"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001440"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -114,7 +121,8 @@
         {
           "value": 259,
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001440"
           ],
           "note": "Units in the application as reported"
         }
@@ -130,13 +138,41 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SR2024-0003",
+          "src": [
+            "SRC-001440"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001440"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 11.25,
+          "src": [
+            "SRC-001440"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131",
         "SRC-001135"
@@ -177,6 +213,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

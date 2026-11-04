@@ -1,6 +1,6 @@
 {
   "id": "SCC-000152",
-  "name": "3521 Homestead Rd",
+  "name": "3521-3591 Homestead Road",
   "parcels": [
     {
       "apn": "290-23-049",
@@ -59,6 +59,12 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "3521 and 3591 Homestead Road, Santa Clara",
+      "src": [
+        "SRC-001538"
+      ]
     }
   ],
   "images": [],
@@ -82,8 +88,15 @@
             "SRC-001106"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001539"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -103,8 +116,16 @@
             "SRC-001106"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 147,
+          "src": [
+            "SRC-001538"
+          ],
+          "note": "City items 2026; earlier import said 153"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -126,7 +147,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "PulteGroup",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001540"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "William Hezmalhalch Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001540"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -137,6 +177,15 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Approved",
+      "label": "City Council approved vesting map",
+      "src": [
+        "SRC-001539"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -144,6 +193,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

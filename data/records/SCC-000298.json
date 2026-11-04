@@ -1,6 +1,6 @@
 {
   "id": "SCC-000298",
-  "name": "1816 Worthington Cl",
+  "name": "Agrihood Townhomes",
   "parcels": [
     {
       "apn": "303-17-055",
@@ -91,11 +91,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-001544"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -112,7 +114,8 @@
         {
           "value": 44,
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-001544"
           ],
           "note": "Units in the application as reported"
         }
@@ -126,6 +129,22 @@
             "SRC-001106"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN25-00390, PLN25-00409",
+          "src": [
+            "SRC-001544"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001545"
+          ]
         }
       ]
     }
@@ -138,7 +157,26 @@
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Core Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001545"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001545"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -156,6 +194,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

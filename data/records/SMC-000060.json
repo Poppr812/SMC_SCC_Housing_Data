@@ -100,8 +100,16 @@
           "src": [
             "SRC-000908"
           ]
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001158"
+          ],
+          "note": "City list current as of May 27, 2026 still says In plan check"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -133,6 +141,12 @@
             "SRC-000908",
             "SRC-000909"
           ]
+        },
+        {
+          "value": 1.95,
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     },
@@ -144,8 +158,16 @@
             "SRC-000908",
             "SRC-000909"
           ]
+        },
+        {
+          "value": 179,
+          "src": [
+            "SRC-001158"
+          ],
+          "note": "City list, Old Burlington Site Mixed-Use Redevelopment"
         }
-      ]
+      ],
+      "best": 0
     },
     "residential_sf": {
       "claims": [
@@ -193,6 +215,12 @@
           "src": [
             "SRC-000908"
           ]
+        },
+        {
+          "value": "City list: 21 BMRs at low income",
+          "src": [
+            "SRC-001158"
+          ]
         }
       ]
     },
@@ -208,6 +236,16 @@
           "note": "Planned Development amendment (PD-60A) and design review; Mitigated Negative Declaration"
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "ZC-4-21-14994, DR-4-21-14995",
+          "src": [
+            "SRC-001158"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -221,6 +259,12 @@
       "text": "Targeting LEED Gold",
       "src": [
         "SRC-000908"
+      ]
+    },
+    {
+      "text": "City list names this Old Burlington Site Mixed-Use Redevelopment (Residential), APN 002-201-570. This record is on 002-201-140.",
+      "src": [
+        "SRC-001158"
       ]
     }
   ],
@@ -341,12 +385,30 @@
   "groups": {},
   "events": [
     {
+      "date": "2021-04-21",
+      "type": "Application filed",
+      "label": "Intake date on city list",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-06-22",
       "type": "Other",
       "label": "Mitigated Negative Declaration filed with State Clearinghouse",
       "src": [
         "SRC-000909"
       ]
+    },
+    {
+      "date": "2022-09-12",
+      "type": "Approved",
+      "label": "City Council approved",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-09-03",
@@ -371,6 +433,11 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from Business Journal leads (San Francisco Business Times / Silicon Valley Business Journal) and the sources listed"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

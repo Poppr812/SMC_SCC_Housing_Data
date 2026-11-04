@@ -151,8 +151,16 @@
             "SRC-001149"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001204"
+          ],
+          "note": "Townhome community on 50 condominium parcels"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -162,8 +170,16 @@
             "SRC-001149"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001204"
+          ],
+          "note": "Entitlements and tentative map approved; building permit applications under review"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -196,11 +212,63 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.5,
+          "src": [
+            "SRC-001204"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001204"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001204"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "8 of 50 units BMR",
+          "src": [
+            "SRC-001204"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001204"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001149"
       ]
@@ -215,6 +283,16 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "68 Willow Owner, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001204"
+      ]
     }
   ],
   "financing": [],
@@ -227,6 +305,22 @@
       "src": [
         "SRC-001149"
       ]
+    },
+    {
+      "date": "2026-05-04",
+      "type": "Approved",
+      "label": "Planning Commission approves use permit, architectural control and BMR agreement",
+      "src": [
+        "SRC-001204"
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "type": "Approved",
+      "label": "City Council approves tentative subdivision map",
+      "src": [
+        "SRC-001204"
+      ]
     }
   ],
   "history": [
@@ -234,6 +328,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

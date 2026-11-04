@@ -52,11 +52,13 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001134"
+            "SRC-001134",
+            "SRC-001552"
           ],
           "note": "State category: single-family attached"
         }
-      ]
+      ],
+      "best": 0
     },
     "status": {
       "claims": [
@@ -66,8 +68,16 @@
             "SRC-001134"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Permitted",
+          "src": [
+            "SRC-001552"
+          ],
+          "note": "Master permit BLD-2025-1836 issued 2026-09-17"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -104,13 +114,24 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001134"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "SCG Legacy LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -121,6 +142,15 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "type": "Permit issued",
+      "label": "Master permit for six townhomes under SB 684",
+      "src": [
+        "SRC-001552"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -128,6 +158,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

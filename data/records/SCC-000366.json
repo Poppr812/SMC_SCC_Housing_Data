@@ -1,6 +1,6 @@
 {
   "id": "SCC-000366",
-  "name": "TENNANT-OSITO HOLDINGS",
+  "name": "Tennant Square (Tennant-Osito)",
   "parcels": [
     {
       "apn": "817-04-059",
@@ -92,11 +92,13 @@
           "value": "Approved",
           "src": [
             "SRC-001131",
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001449"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -114,18 +116,21 @@
         {
           "value": 16,
           "src": [
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001449"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
         {
           "value": "Mixed-income",
           "src": [
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-001422"
           ]
         }
       ]
@@ -136,6 +141,12 @@
           "value": "2 deed-restricted units reported to the state",
           "src": [
             "SRC-001135"
+          ]
+        },
+        {
+          "value": "2 affordable units",
+          "src": [
+            "SRC-001422"
           ]
         }
       ]
@@ -149,13 +160,29 @@
             "SRC-001135"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SD2020-0005, EA2020-0011, SR2020-0014, SR2024-0026",
+          "src": [
+            "SRC-001449"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.99,
+          "src": [
+            "SRC-001449"
+          ]
         }
       ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001131",
         "SRC-001135"
@@ -188,6 +215,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

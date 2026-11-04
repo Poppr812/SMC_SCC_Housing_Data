@@ -1,6 +1,6 @@
 {
   "id": "SMC-000112",
-  "name": "MENLO PORTAL",
+  "name": "Vasara (formerly Menlo Portal)",
   "parcels": [
     {
       "apn": "055-236-320",
@@ -75,6 +75,12 @@
       "src": [
         "SRC-001130"
       ]
+    },
+    {
+      "text": "104-110 Constitution Dr and 115 Independence Dr, Menlo Park, CA 94025",
+      "src": [
+        "SRC-001185"
+      ]
     }
   ],
   "images": [],
@@ -98,8 +104,17 @@
             "SRC-001130"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001183",
+            "SRC-001185"
+          ],
+          "note": "On the city's under-construction list. Residential building complete; office/commercial building not started"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -152,13 +167,40 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001185"
+          ],
+          "note": "Residential building"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 414,
+          "src": [
+            "SRC-001185"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001130"
+      ]
+    },
+    {
+      "text": "Greystar has filed to replace the unbuilt office building with apartments; see 104 Constitution Drive Apartments.",
+      "src": [
+        "SRC-001185"
       ]
     }
   ],
@@ -170,6 +212,15 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001185"
       ]
     }
   ],
@@ -198,6 +249,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

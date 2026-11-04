@@ -1,6 +1,6 @@
 {
   "id": "SCC-000359",
-  "name": "15495 Bohlman Rd, Saratoga",
+  "name": "15495 Bohlman Rd (Miller)",
   "parcels": [
     {
       "apn": "517-32-010",
@@ -339,11 +339,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001114"
+            "SRC-001114",
+            "SRC-001431"
           ],
           "note": "State report shows an application with no approval reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -374,8 +376,15 @@
             "SRC-001114"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 22,
+          "src": [
+            "SRC-001431"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -387,20 +396,63 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 34.1,
+          "src": [
+            "SRC-001431"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001114"
       ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Sam Som c/o Balanced Success",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001431"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-05-16",
+      "type": "Application filed",
+      "label": "Formal SB 330 application submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-11-13",
       "type": "Application filed",
@@ -415,6 +467,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

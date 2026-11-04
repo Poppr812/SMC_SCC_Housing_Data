@@ -1,6 +1,6 @@
 {
   "id": "SMC-000150",
-  "name": "505 E. Bayshore",
+  "name": "Townhomes at 505 E. Bayshore",
   "parcels": [
     {
       "apn": "052-520-010",
@@ -80,8 +80,16 @@
             "SRC-001116"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001249"
+          ],
+          "note": "City list: for-sale townhomes"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -89,7 +97,8 @@
           "value": "Approved",
           "src": [
             "SRC-001117",
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001249"
           ],
           "note": "State report shows entitlement approval"
         }
@@ -111,7 +120,8 @@
         {
           "value": 56,
           "src": [
-            "SRC-001116"
+            "SRC-001116",
+            "SRC-001249"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -122,7 +132,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -140,6 +151,12 @@
           "value": "8 deed-restricted units reported to the state",
           "src": [
             "SRC-001116"
+          ]
+        },
+        {
+          "value": "8 moderate-income units",
+          "src": [
+            "SRC-001249"
           ]
         }
       ]
@@ -159,7 +176,7 @@
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001117",
         "SRC-001116"
@@ -195,6 +212,15 @@
       "src": [
         "SRC-001116"
       ]
+    },
+    {
+      "date": "2027-12-26",
+      "type": "Other",
+      "label": "Entitlement extended until this date",
+      "src": [
+        "SRC-001249"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -202,6 +228,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

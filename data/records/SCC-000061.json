@@ -48,6 +48,12 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "3128 and 3150-3160 El Camino Real, Palo Alto",
+      "src": [
+        "SRC-001299"
+      ]
     }
   ],
   "images": [],
@@ -92,7 +98,9 @@
         {
           "value": 368,
           "src": [
-            "SRC-001127"
+            "SRC-001127",
+            "SRC-001299",
+            "SRC-001300"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -104,7 +112,7 @@
           "note": "Units in the application as reported"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -137,18 +145,118 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001300"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 12,
+            "1br": 231,
+            "2br": 97,
+            "3br": 28,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001300"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 382,
+          "src": [
+            "SRC-001300"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 443500,
+          "src": [
+            "SRC-001300"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.5,
+          "src": [
+            "SRC-001300"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
-      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. Not yet checked against the city's own project list.",
+      "text": "Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025.",
       "src": [
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "SF YIMBY, August 2026: City approval granted summer 2025 and construction expected to start soon. The article's deed-restricted count (754) conflicts with the 368-unit total and was not recorded.",
+      "src": [
+        "SRC-001300"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Acclaim Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001300"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Stanford University",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001300"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001300"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001300"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -174,6 +282,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }
