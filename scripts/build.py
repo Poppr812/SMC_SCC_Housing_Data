@@ -132,6 +132,27 @@ def validate(r, sources):
     return c.errors
 
 
+def read_leads(records):
+    """Open items in INTAKE.md: pipeline bullets and transaction headings, flagged if a record seems to cover them."""
+    hay = [(r["id"], " ".join([r["name"]] + [a["text"] for a in r["addresses"]]).lower()) for r in records]
+    section, leads = "", []
+    for line in (ROOT / "INTAKE.md").read_text(encoding="utf-8").splitlines():
+        if line.startswith("## "):
+            section = line[3:].split(" (")[0]
+        pipeline = section.startswith("Development") and line.startswith("- ")
+        deal = section.startswith("Transactions") and line.startswith("### ")
+        if not (pipeline or deal):
+            continue
+        text = re.sub(r"\s*https?://\S+", "", line.lstrip("-# ")).strip()
+        m = re.search(r"\b(\d+)(?:-\d+)?\s+(?:[NSEW]\.?\s+)?([A-Za-z]+)", text)
+        hit = ""
+        if m and m.group(2).lower() != "units":
+            pat = rf"\b{m.group(1)}\b[^,]{{0,8}}\b{m.group(2).lower()}\b"
+            hit = next((i for i, h in hay if re.search(pat, h)), "")
+        leads.append({"section": section, "text": text[:140], "entered": hit})
+    return leads
+
+
 def is_stale(latest, today):
     """latest is YYYY, YYYY-MM or YYYY-MM-DD; a partial date counts as the end of that period."""
     if not latest:
@@ -323,7 +344,7 @@ def main():
         sys.exit(1)
     processed = [process(r, sources) for r in records.values()]
     payload = {"built": date.today().isoformat(), "registry": schema.registry(),
-               "sources": sources, "records": processed}
+               "sources": sources, "records": processed, "leads": read_leads(processed)}
 
     template = (ROOT / "scripts" / "template.html").read_text(encoding="utf-8")
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

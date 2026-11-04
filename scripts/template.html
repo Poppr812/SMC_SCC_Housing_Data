@@ -119,6 +119,8 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .adm table{width:100%;border-collapse:collapse;font-size:12px}
 .adm th{text-align:left;background:#EEF2F7;padding:4px 6px;position:sticky;top:0}
 .adm td{border-bottom:1px solid var(--rule);padding:4px 6px;vertical-align:top}
+.adm h4{margin:12px 0 4px;font-size:13px}
+.adm .bar{display:inline-block;height:9px;background:#17304F;border-radius:2px;margin-right:6px;vertical-align:middle}
 .adm .wrap{max-height:340px;overflow:auto;border:1px solid var(--rule);border-radius:6px}
 .adm .kpis{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
 .adm .kpi{background:#F6F7F4;border-radius:6px;padding:8px 12px;font-size:12px;color:var(--gray)}.adm .kpi b{display:block;font-size:20px;color:var(--ink)}
@@ -141,6 +143,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   .bar.open .ctl{flex:1 1 45%}
 }
 @media print{
+.adm .wrap{max-height:none;overflow:visible}
   header,.bar,main,#exp,footer,.noprint{display:none!important}
   #rec{position:static;background:none;display:block!important}
   .sheet{box-shadow:none;margin:0;max-width:none;padding:0}
@@ -836,12 +839,13 @@ function renderAdmin(){
   const sum=a=>{const d=a.detail||{};if(a.event==="record_view")return esc(d.id+" · "+d.name);if(a.event==="export")return esc(`${d.scope} · ${d.fmt} · ${d.count} records`);
     if(a.event==="search")return esc([d.kw&&`"${d.kw}"`,d.areas!=="all"&&d.areas&&("areas: "+d.areas.join(", ")),d.shape&&(d.shape.t==="c"?`${d.shape.mi} mi from ${d.shape.addr||d.shape.lat.toFixed(3)+", "+d.shape.lng.toFixed(3)}`:"fence"),d.types!=="all"&&d.types&&("types: "+d.types.join(", ")),`${d.results} results`].filter(Boolean).join(" · "));
     return esc(d.name||d.email||d.record||"")};
+  Object.assign(ADM,{sum,dt,actor});
   const wk=Date.now()-7*864e5,recent=acts.filter(a=>new Date(a.created_at)>wk);
   const stat=(u,e)=>acts.filter(a=>a.user_id===u.id&&a.event===e).length;
   const last=u=>{const x=acts.find(a=>a.user_id===u.id);return x?dt(x.created_at):""};
   $("#sheet").innerHTML=`<div class="adm">
    <div class="top"><div><div class="muted">Visible only to the site owner</div><h2>Admin</h2></div>
-     <div class="noprint" style="display:flex;gap:8px"><button class="btn ghost" type="button" onclick="openAdmin()">Refresh</button><button class="btn ghost" type="button" onclick="adminXlsx()">Download Excel</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
+     <div class="noprint" style="display:flex;gap:8px"><button class="btn" type="button" onclick="openReport()">Weekly report</button><button class="btn ghost" type="button" onclick="openAdmin()">Refresh</button><button class="btn ghost" type="button" onclick="adminXlsx()">Download Excel</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
    <div class="kpis"><div class="kpi"><b>${users.length}</b>accounts</div><div class="kpi"><b>${contribs.filter(c=>c.status==="new").length}</b>contributions to review</div>
      <div class="kpi"><b>${new Set(recent.map(a=>a.session_id)).size}</b>visitors, last 7 days</div><div class="kpi"><b>${recent.filter(a=>a.event==="search").length}</b>searches, last 7 days</div>
      <div class="kpi"><b>${recent.filter(a=>a.event==="export").length}</b>exports, last 7 days</div></div>
@@ -866,6 +870,81 @@ async function adminXlsx(){
   sheet("Contributions",contribs.map(c=>({Date:c.created_at.slice(0,16).replace("T"," "),From:(byId[c.user_id]||{}).email||"",Record:c.record_id||"",Topic:c.topic||"",Source:c.source_url||"",Details:c.details||"",Credit:c.credit_as||"",Status:c.status})));
   sheet("Activity",acts.map(a=>({When:a.created_at.slice(0,19).replace("T"," "),Who:a.user_id&&byId[a.user_id]?byId[a.user_id].email:"visitor "+(a.session_id||"").slice(0,6),Event:a.event,Detail:JSON.stringify(a.detail||{})})));
   const buf=await wb.xlsx.writeBuffer();const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf]));a.download=`housing_comps_admin_${new Date().toISOString().slice(0,10)}.xlsx`;a.click();
+}
+
+/* ---------- weekly report (admin only) ---------- */
+async function fetchActivity(since){const out=[];
+  for(let i=0;;i+=1000){const {data,error}=await sb.from("activity").select("*").gte("created_at",since).order("created_at",{ascending:false}).range(i,i+999);
+    if(error)throw error;out.push(...data);if(data.length<1000)return out}}
+async function openReport(){
+  try{renderReport(await fetchActivity(new Date(Date.now()-14*864e5).toISOString()))}
+  catch(e){toast("Report data unavailable: "+e.message)}
+}
+const tally=arr=>{const m={};arr.forEach(k=>{if(k)m[k]=(m[k]||0)+1});return Object.entries(m).sort((a,b)=>b[1]-a[1])};
+function barTable(head,rows,empty){const max=rows.length?rows[0][1]:1;
+  return `<div class="wrap"><table><tr><th>${head}</th><th style="width:45%">Count</th></tr>${rows.map(([k,n])=>`<tr><td>${esc(k)}</td><td><span class="bar" style="width:${Math.max(3,n/max*70)}%"></span>${n}</td></tr>`).join("")||`<tr><td colspan="2" class="muted">${empty||"None this week"}</td></tr>`}</table></div>`}
+function shapeLabel(sh){return !sh?"":sh.t==="c"?`${sh.mi} mi from ${sh.addr||sh.lat.toFixed(3)+", "+sh.lng.toFixed(3)}`:"Drawn fence"}
+function renderReport(all){
+  const {users,contribs,sum,dt,actor}=ADM,now=Date.now(),day=864e5;
+  const adminIds=new Set(users.filter(u=>u.is_admin).map(u=>u.id));
+  const ownSessions=new Set(all.filter(a=>adminIds.has(a.user_id)).map(a=>a.session_id));
+  const acts=all.filter(a=>(a.page||"").includes("SMC_SCC_Housing_Data")&&!ownSessions.has(a.session_id));
+  const cur=acts.filter(a=>new Date(a.created_at)>now-7*day),prev=acts.filter(a=>new Date(a.created_at)<=now-7*day);
+  const ev=(l,e)=>l.filter(a=>a.event===e),people=l=>new Set(l.map(a=>a.session_id)).size;
+  const joined=(from,to)=>users.filter(u=>{const d=new Date(u.created_at);return d>from&&d<=to}).length;
+  const metrics=[["Visitors",people(cur),people(prev)],["Visits",ev(cur,"visit").length,ev(prev,"visit").length],
+    ["Signed-in people",new Set(cur.map(a=>a.user_id).filter(Boolean)).size,new Set(prev.map(a=>a.user_id).filter(Boolean)).size],
+    ["New accounts",joined(now-7*day,now),joined(now-14*day,now-7*day)],
+    ...[["Searches","search"],["Records viewed","record_view"],["Exports","export"],["Searches saved","save_search"],["Contributions","contribute"]].map(([l,e])=>[l,ev(cur,e).length,ev(prev,e).length])];
+  const searches=ev(cur,"search"),details=searches.map(a=>a.detail||{});
+  const noResults=searches.filter(a=>(a.detail||{}).results===0);
+  const days=[...Array(7)].map((_,i)=>{const d=new Date(now-(6-i)*day).toDateString();return [d.slice(0,10),people(cur.filter(a=>new Date(a.created_at).toDateString()===d))]});
+  const maxDay=Math.max(1,...days.map(d=>d[1]));
+  const referrers=tally(ev(cur,"visit").map(a=>{try{const h=new URL((a.detail||{}).referrer).hostname;return h.endsWith("github.io")?"":h}catch(e){return "Direct or unknown"}}));
+  /* database */
+  const today=new Date(DATA.built),age=s=>(today-new Date(s.length===4?s+"-07-01":s.length===7?s+"-15":s))/(365.25*day);
+  const srcs=Object.values(SOURCES),buckets=[["Under 1 year",0],["1 to 2 years",0],["2 to 3 years",0],["Over 3 years",0],["No date",0]];
+  srcs.forEach(s=>{const y=s.date?age(s.date):null;buckets[y===null?4:y<1?0:y<2?1:y<3?2:3][1]++});
+  const pipe=RECORDS.filter(r=>r.kinds.includes("pipeline"));
+  const added=RECORDS.filter(r=>r.history&&r.history[0]&&age(r.history[0].date)*365.25<=7);
+  const changed=RECORDS.filter(r=>r.history&&r.history.length>1&&age(r.history[r.history.length-1].date)*365.25<=7);
+  const quiet=pipe.filter(r=>["Proposed","Approved","Permitted"].includes(r.summary.status)&&r.summary.latest_event&&age(r.summary.latest_event)>=1).sort((a,b)=>a.summary.latest_event<b.summary.latest_event?-1:1);
+  const leads=DATA.leads||[],open=leads.filter(l=>!l.entered),entered=leads.filter(l=>l.entered);
+  const newContribs=contribs.filter(c=>c.status==="new");
+  const rl=r=>`<a href="#" onclick="openRecord('${esc(r.id)}');return false">${esc(r.name)}</a>`;
+  $("#sheet").innerHTML=`<div class="adm">
+   <div class="top"><div><div class="muted">Last 7 days, compared with the 7 before. Excludes your own activity and local testing.</div><h2>Weekly report</h2></div>
+     <div class="noprint" style="display:flex;gap:8px"><button class="btn ghost" type="button" onclick="window.print()">Download PDF</button><button class="btn ghost" type="button" onclick="openAdmin()">Back to Admin</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
+   <h3>To review this week</h3><table>
+     <tr><td>Contributions waiting</td><td><b>${newContribs.length}</b></td></tr>
+     <tr><td>Searches that found nothing</td><td><b>${noResults.length}</b></td></tr>
+     <tr><td>Open leads to research</td><td><b>${open.length}</b></td></tr>
+     <tr><td>Leads that look already entered</td><td><b>${entered.length}</b></td></tr>
+     <tr><td>Proposed, Approved or Permitted records quiet for 12+ months</td><td><b>${quiet.length}</b></td></tr></table>
+   <h3>Traffic</h3><div class="wrap"><table><tr><th>Measure</th><th>This week</th><th>Week before</th></tr>${metrics.map(([l,a,b])=>`<tr><td>${l}</td><td><b>${a}</b></td><td>${b}</td></tr>`).join("")}</table></div>
+   <h4>Visitors by day</h4><table>${days.map(([d,n])=>`<tr><td style="width:90px">${d}</td><td><span class="bar" style="width:${n/maxDay*70}%"></span>${n}</td></tr>`).join("")}</table>
+   <h4>Where visitors came from</h4>${barTable("Source",referrers)}
+   <h3>Most popular records</h3>${barTable("Record",tally(ev(cur,"record_view").map(a=>{const d=a.detail||{};return d.id+" · "+d.name})))}
+   <h3>Searches</h3>
+   <h4>Addresses and boundaries</h4>${barTable("Search",tally(details.map(d=>shapeLabel(d.shape))))}
+   <h4>Keywords</h4>${barTable("Keyword",tally(details.map(d=>(d.kw||"").toLowerCase())))}
+   <h4>Jurisdictions picked</h4>${barTable("Jurisdiction",tally(details.flatMap(d=>Array.isArray(d.areas)?d.areas:[])))}
+   <h4>Searches that found nothing</h4><div class="wrap"><table><tr><th>When</th><th>Who</th><th>Search</th></tr>${noResults.map(a=>`<tr><td>${dt(a.created_at)}</td><td>${actor(a)}</td><td>${sum(a)}</td></tr>`).join("")||'<tr><td colspan="3" class="muted">None this week</td></tr>'}</table></div>
+   <h4>Every search (${searches.length})</h4><div class="wrap"><table><tr><th>When</th><th>Who</th><th>Search</th></tr>${searches.map(a=>`<tr><td>${dt(a.created_at)}</td><td>${actor(a)}</td><td>${sum(a)}</td></tr>`).join("")||'<tr><td colspan="3" class="muted">None this week</td></tr>'}</table></div>
+   <h4>Exports</h4><div class="wrap"><table><tr><th>When</th><th>Who</th><th>Export</th></tr>${ev(cur,"export").map(a=>`<tr><td>${dt(a.created_at)}</td><td>${actor(a)}</td><td>${sum(a)}</td></tr>`).join("")||'<tr><td colspan="3" class="muted">None this week</td></tr>'}</table></div>
+   <h3>Database</h3><div class="kpis">
+     <div class="kpi"><b>${RECORDS.length}</b>records</div><div class="kpi"><b>${pipe.length}</b>in pipeline</div><div class="kpi"><b>${added.length}</b>added this week</div><div class="kpi"><b>${changed.length}</b>updated this week</div>
+     <div class="kpi"><b>${srcs.length}</b>sources</div><div class="kpi"><b>${srcs.filter(s=>s.sha256).length}</b>privately archived</div><div class="kpi"><b>${srcs.filter(s=>s.wayback).length}</b>with a Wayback copy</div></div>
+   <h4>Pipeline by stage</h4>${barTable("Stage",PIPELINE.map(s=>[s,pipe.filter(r=>r.summary.status===s).length]).sort((a,b)=>b[1]-a[1]))}
+   <h4>Age of sources, by publication date</h4>${barTable("Age",[...buckets].sort((a,b)=>b[1]-a[1]))}
+   <h4>Pipeline data gaps</h4><table>
+     <tr><td>No development cost</td><td><b>${pipe.filter(r=>!r.facts.total_development_cost).length}</b> of ${pipe.length}</td></tr>
+     <tr><td>No unit mix</td><td><b>${pipe.filter(r=>!r.facts.unit_mix).length}</b> of ${pipe.length}</td></tr></table>
+   <h4>Quiet for 12+ months (Proposed, Approved, Permitted)</h4><div class="wrap"><table><tr><th>Record</th><th>Status</th><th>Last movement</th></tr>${quiet.map(r=>`<tr><td>${rl(r)}</td><td>${esc(r.summary.status)}</td><td>${esc(r.summary.latest_event)}</td></tr>`).join("")||'<tr><td colspan="3" class="muted">None</td></tr>'}</table></div>
+   <h3>Leads (<a href="https://github.com/Poppr812/SMC_SCC_Housing_Data/blob/main/INTAKE.md" target="_blank" rel="noopener">INTAKE.md</a>)</h3>
+   <div class="wrap"><table><tr><th>Lead</th><th>List</th><th>State</th></tr>${[...open,...entered].map(l=>`<tr><td>${esc(l.text)}</td><td>${esc(l.section)}</td><td>${l.entered?`Looks entered: ${esc(l.entered)}`:"Open"}</td></tr>`).join("")||'<tr><td colspan="3" class="muted">None</td></tr>'}</table></div>
+  </div>`;
+  $("#rec").classList.add("show");$("#rec").scrollTop=0;
 }
 
 /* ---------- start ---------- */
