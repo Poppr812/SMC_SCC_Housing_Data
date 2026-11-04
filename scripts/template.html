@@ -134,8 +134,8 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   header .sub,header .badge{display:none}
   .hbtn{font-size:12px;padding:3px 8px}
   .bar{padding:8px 12px;gap:8px}
-  .bar>*:not(.kwctl):not(#filtBtn):not(#expBtn){display:none}
-  .bar.open>*:not(.kwctl):not(#filtBtn):not(#expBtn){display:flex}
+  .bar>*:not(.kwctl):not(#filtBtn):not(#expBtn):not(#repBtn){display:none}
+  .bar.open>*:not(.kwctl):not(#filtBtn):not(#expBtn):not(#repBtn){display:flex}
   .bar.open>.spacer{display:none}
   .bar .kwctl{flex:1}.bar .kwctl input{width:100%!important;box-sizing:border-box}
   #filtBtn{display:inline-block!important}
@@ -206,6 +206,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <button class="btn ghost" id="saveBtn" type="button">Save search</button>
   <button class="btn ghost" id="linkBtn" type="button">Copy link</button>
   <button class="btn ghost" id="filtBtn" type="button" style="display:none" onclick="this.parentElement.classList.toggle('open');this.textContent=this.parentElement.classList.contains('open')?'Hide filters':'Filters'">Filters</button>
+  <button class="btn ghost" id="repBtn" type="button">Pipeline report</button>
   <button class="btn" id="expBtn" type="button">Export…</button>
 </div>
 
@@ -851,7 +852,7 @@ function renderAdmin(){
   const {users,contribs,acts}=ADM,byId=Object.fromEntries(users.map(u=>[u.id,u]));
   const dt=s=>new Date(s).toLocaleString([], {month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
   const actor=a=>a.user_id&&byId[a.user_id]?esc(byId[a.user_id].email):`<span class="muted">visitor ${esc((a.session_id||"").slice(0,6))}</span>`;
-  const sum=a=>{const d=a.detail||{};if(a.event==="record_view")return esc(d.id+" · "+d.name);if(a.event==="export")return esc(`${d.scope} · ${d.fmt} · ${d.count} records`);
+  const sum=a=>{const d=a.detail||{};if(a.event==="record_view")return esc(d.id+" · "+d.name);if(a.event==="export")return esc(`${d.scope} · ${d.fmt} · ${d.count} records`);if(a.event==="pipeline_report")return esc(`${d.area} · ${d.count} projects`);
     if(a.event==="search")return esc([d.kw&&`"${d.kw}"`,d.areas!=="all"&&d.areas&&("areas: "+d.areas.join(", ")),d.shape&&(d.shape.t==="c"?`${d.shape.mi} mi from ${d.shape.addr||d.shape.lat.toFixed(3)+", "+d.shape.lng.toFixed(3)}`:"fence"),d.types!=="all"&&d.types&&("types: "+d.types.join(", ")),`${d.results} results`].filter(Boolean).join(" · "));
     return esc(d.name||d.email||d.record||"")};
   Object.assign(ADM,{sum,dt,actor});
@@ -887,6 +888,60 @@ async function adminXlsx(){
   const buf=await wb.xlsx.writeBuffer();const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf]));a.download=`housing_comps_admin_${new Date().toISOString().slice(0,10)}.xlsx`;a.click();
 }
 
+/* ---------- pipeline report ---------- */
+function deliveryOf(r){
+  const ev=r.events.filter(e=>e.type==="Completion"||e.type==="Lease-up start");
+  if(r.summary.status==="Lease-up / selling"||ev.some(e=>!e.estimated))return {label:"Delivered",bucket:"Already delivered"};
+  if(!ev.length)return {label:"Not stated",bucket:"Not stated"};
+  const y=ev.map(e=>e.date.slice(0,4)).sort().pop();return {label:y+" (est.)",bucket:y};
+}
+function unitsOf(rs){const u=rs.map(r=>r.summary.units_range).filter(Boolean),lo=u.reduce((a,x)=>a+x[0],0),hi=u.reduce((a,x)=>a+x[1],0);return {lo,hi,text:lo===hi?num(lo):`${num(lo)}–${num(hi)}`}}
+function reportArea(s){
+  if(SHAPE&&SHAPE.t==="c")return `${SHAPE.mi}-mile radius around ${SHAPE.addr||fmtLL(SHAPE.lat,SHAPE.lng)}`;
+  if(SHAPE)return "Drawn boundary";
+  if(!s.areas)return "San Mateo County";
+  return s.areas.length<=3?s.areas.join(", "):`${s.areas.length} jurisdictions`;
+}
+function openPipeline(silent){
+  const s=getState(),all=filtered().filter(r=>isPipe(r)&&s.statuses.includes(r.summary.status));
+  if(!all.length){toast("No pipeline projects in this selection");return}
+  const radius=SHAPE&&SHAPE.t==="c",dist=r=>radius?miles(SHAPE,r):0;
+  const byRow=(a,b)=>radius?dist(a)-dist(b):(b.summary.total_units||0)-(a.summary.total_units||0);
+  const active=all.filter(r=>r.summary.status!=="Inactive pipeline").sort(byRow),inactive=all.filter(r=>r.summary.status==="Inactive pipeline").sort(byRow);
+  const total=unitsOf(active),area=reportArea(s),stage=l=>active.filter(r=>l.includes(r.summary.status));
+  const kpi=(l,rs)=>`<div class="kpi"><b>${unitsOf(rs).text}</b>${l}, ${rs.length} project${rs.length===1?"":"s"}</div>`;
+  const share=rs=>total.hi?unitsOf(rs).hi/total.hi:0;
+  const stageRows=PIPELINE.filter(x=>x!=="Inactive pipeline").map(x=>[x,stage([x])]).filter(x=>x[1].length);
+  const types=Object.keys(REG.product_types).map(x=>[x,active.filter(r=>r.summary.product_type===x)]).filter(x=>x[1].length).sort((a,b)=>unitsOf(b[1]).hi-unitsOf(a[1]).hi);
+  const buckets={};active.forEach(r=>{(buckets[deliveryOf(r).bucket]=buckets[deliveryOf(r).bucket]||[]).push(r)});
+  const delivery=Object.entries(buckets).sort(([a],[b])=>{const o=k=>k==="Already delivered"?"0":k==="Not stated"?"9":k;return o(a)<o(b)?-1:1});
+  const stated=active.filter(r=>deliveryOf(r).bucket!=="Not stated").length;
+  const rowsTable=(head,rows)=>`<div class="wrap"><table><tr><th>${head}</th><th>Projects</th><th>Units</th><th style="width:38%">Share of units</th></tr>${rows.map(([k,rs])=>`<tr><td>${esc(k)}</td><td>${rs.length}</td><td>${unitsOf(rs).text}</td><td><span class="bar" style="width:${share(rs)*70}%"></span>${Math.round(share(rs)*100)}%</td></tr>`).join("")}</table></div>`;
+  const listTable=rs=>`<div class="wrap"><table><tr><th>Project</th><th>Stage</th><th>Units</th><th>Type</th><th>Developer / applicant</th><th>Delivery</th><th>Last movement</th>${radius?"<th>Miles</th>":""}</tr>${rs.map(r=>{const m=r.summary;return `<tr><td><a href="${SITE_URL}#r=${r.id}" target="_blank" rel="noopener">${esc(r.name)}</a></td><td>${esc(m.status)}</td><td>${esc(m.units_display||"Not stated")}</td><td>${esc(short(m.product_type))}</td><td>${esc(m.developer||(r.parties.find(x=>x.other_role==="Applicant")||{}).company||"")}</td><td>${esc(deliveryOf(r).label)}</td><td>${esc(m.latest_event||"")}</td>${radius?`<td>${dist(r).toFixed(1)}</td>`:""}</tr>`}).join("")}</table></div>`;
+  const places=[...new Set(all.map(r=>r.summary.jurisdiction))].sort(),cov=REG.coverage||{};
+  const covered=places.filter(j=>cov[j]),partial=places.filter(j=>!cov[j]);
+  const filt=[s.kw&&`keyword "${s.kw}"`,s.types.length<Object.keys(REG.product_types).length&&("types: "+s.types.map(short).join(", ")),s.statuses.length<PIPELINE.length&&("stages: "+s.statuses.join(", "))].filter(Boolean);
+  $("#sheet").innerHTML=`<div class="adm">
+   <div class="top"><div><div class="muted">Pipeline report · data as of ${esc(DATA.built)}</div><h2>${esc(area)}</h2>${filt.length?`<div class="muted">Filtered to ${esc(filt.join("; "))}</div>`:""}</div>
+     <div class="noprint" style="display:flex;gap:8px"><button class="btn ghost" type="button" onclick="window.print()">Download PDF</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
+   <div class="kpis">${kpi("units in pipeline",active)}${kpi("units under construction",stage(["Under construction"]))}${kpi("units approved or permitted",stage(["Approved","Permitted"]))}${kpi("units proposed",stage(["Proposed"]))}</div>
+   <h3>By stage</h3>${rowsTable("Stage",stageRows)}
+   <h3>Expected delivery</h3>${rowsTable("Year",delivery)}
+   <div class="muted" style="font-size:12px;margin-top:4px">Only dates a source states. ${stated} of ${active.length} projects have one; "est." is the source's estimate, not ours.</div>
+   <h3>By product type</h3>${rowsTable("Type",types)}
+   <h3>Projects (${active.length})</h3>${listTable(active)}
+   ${inactive.length?`<h3>Inactive pipeline (${inactive.length}, not in totals)</h3>${listTable(inactive)}`:""}
+   <h3>Coverage</h3><div style="font-size:13px">
+     ${covered.map(j=>`<p style="margin:0 0 6px"><b>${esc(j)}:</b> ${esc(cov[j])}</p>`).join("")}
+     ${partial.length?`<p style="margin:0 0 6px"><b>${esc(partial.join(", "))}:</b> partial. Projects found through leads and public sources; this is not a complete list.</p>`:""}
+     <p class="muted" style="margin:0">Stages are working labels for comps research, not legal status. Unit counts are as stated by sources and may be maximums for phased or master-planned projects. A boundary may also touch places with no records here yet. Every figure links back to its sources on the project's record.</p></div>
+  </div>`;
+  $("#rec").classList.add("show");$("#rec").scrollTop=0;
+  safeReplace(location.pathname+location.search+stateToHash()+"&rep=1");
+  if(!silent)track("pipeline_report",{area,count:active.length,units:total.hi});
+}
+$("#repBtn").onclick=()=>openPipeline();
+
 /* ---------- weekly report (admin only) ---------- */
 async function fetchActivity(since){const out=[];
   for(let i=0;;i+=1000){const {data,error}=await sb.from("activity").select("*").gte("created_at",since).order("created_at",{ascending:false}).range(i,i+999);
@@ -910,7 +965,7 @@ function renderReport(all){
   const metrics=[["Visitors",people(cur),people(prev)],["Visits",ev(cur,"visit").length,ev(prev,"visit").length],
     ["Signed-in people",new Set(cur.map(a=>a.user_id).filter(Boolean)).size,new Set(prev.map(a=>a.user_id).filter(Boolean)).size],
     ["New accounts",joined(now-7*day,now),joined(now-14*day,now-7*day)],
-    ...[["Searches","search"],["Records viewed","record_view"],["Exports","export"],["Searches saved","save_search"],["Contributions","contribute"]].map(([l,e])=>[l,ev(cur,e).length,ev(prev,e).length])];
+    ...[["Searches","search"],["Records viewed","record_view"],["Exports","export"],["Pipeline reports","pipeline_report"],["Searches saved","save_search"],["Contributions","contribute"]].map(([l,e])=>[l,ev(cur,e).length,ev(prev,e).length])];
   const searches=ev(cur,"search"),details=searches.map(a=>a.detail||{});
   const noResults=searches.filter(a=>(a.detail||{}).results===0);
   const days=[...Array(7)].map((_,i)=>{const d=new Date(now-(6-i)*day).toDateString();return [d.slice(0,10),people(cur.filter(a=>new Date(a.created_at).toDateString()===d))]});
@@ -964,10 +1019,12 @@ function renderReport(all){
 
 /* ---------- start ---------- */
 loadSaved();
+const hash0=location.hash; /* render rewrites the URL, so read record and report links first */
 const s0=hashToState();if(s0)setState(s0);
 render();
 if(AUTH_ERR)acctView("signin",BAD_LINK);
-const rm=location.hash.match(/r=(SMC-\d{6})/);if(rm)openRecord(rm[1]);
+const rm=hash0.match(/r=(SMC-\d{6})/);if(rm)openRecord(rm[1]);
+if(/[#&]rep=1/.test(hash0))openPipeline(true);
 track("visit",{referrer:document.referrer||undefined});
 </script>
 </body>

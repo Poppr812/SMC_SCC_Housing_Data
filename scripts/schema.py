@@ -162,6 +162,13 @@ CALCS = {
 REQUIRED_FACTS = ["product_type", "status"]
 
 
+# Jurisdictions whose pipeline has been checked against an official list. Anything else is partial.
+COVERAGE = {
+    "San Mateo": "complete against the City of San Mateo's Current Development Projects list as of 2026-11-03. "
+                 "That list leaves out permit-only work and projects completed or inactive for over five years.",
+}
+
+
 def registry():
     """JSON-serializable registry for the site template."""
     return {
@@ -173,6 +180,7 @@ def registry():
         "mix_keys": MIX_KEYS,
         "product_types": PRODUCT_TYPES,
         "statuses": STATUSES,
+        "coverage": COVERAGE,
         "jurisdictions": JURISDICTIONS,
         "areas": {c: area_options(c) for c in COUNTIES},
         "party_roles": PARTY_ROLES,
