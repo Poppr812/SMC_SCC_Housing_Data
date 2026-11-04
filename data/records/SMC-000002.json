@@ -6,47 +6,254 @@
       "apn": "035-200-120",
       "from": null,
       "to": null,
-      "src": ["SRC-000010"],
-      "outline": [[-122.30765142836152,37.55560909574853],[-122.30856768987245,37.554974680510078],[-122.30886652104391,37.555248225988059],[-122.30795025869162,37.555882642635709],[-122.30765142836152,37.55560909574853]]
+      "src": [
+        "SRC-000010"
+      ],
+      "outline": [
+        [
+          -122.30765142836152,
+          37.55560909574853
+        ],
+        [
+          -122.30856768987245,
+          37.55497468051008
+        ],
+        [
+          -122.30886652104391,
+          37.55524822598806
+        ],
+        [
+          -122.30795025869162,
+          37.55588264263571
+        ],
+        [
+          -122.30765142836152,
+          37.55560909574853
+        ]
+      ]
     }
   ],
   "addresses": [
-    {"text": "1650 S. Delaware St, San Mateo, CA 94402", "src": ["SRC-000010", "SRC-000006"]}
+    {
+      "text": "1650 S Delaware St, San Mateo, CA 94402, San Mateo, CA",
+      "role": "main",
+      "src": [
+        "SRC-000010",
+        "SRC-000006"
+      ],
+      "written_as": [
+        {
+          "text": "1650 S. Delaware St, San Mateo, CA 94402",
+          "src": [
+            "SRC-000010",
+            "SRC-000006"
+          ]
+        }
+      ]
+    }
   ],
   "images": [],
   "facts": {
-    "product_type": {"claims": [{"value": "Apartments", "src": ["SRC-000006"]}]},
-    "status": {"claims": [{"value": "Existing", "src": ["SRC-000006"]}]},
-    "population": {"claims": [{"value": ["Workforce / educator"], "src": ["SRC-000006"]}]},
-    "jurisdiction": {"claims": [{"value": "San Mateo", "src": ["SRC-000010"]}]},
-    "total_units": {"claims": [{"value": 74, "src": ["SRC-000006", "SRC-000008"]}]},
-    "year_built": {"claims": [{"value": 2021, "src": ["SRC-000006"]}]},
-    "affordability_type": {"claims": [{"value": "Below-market (unrestricted)", "src": ["SRC-000006"]}]},
-    "affordability_notes": {"claims": [
-      {"value": "Units become below-market as they turn over; one- and two-bedroom units", "src": ["SRC-000006"]},
-      {"value": "About 25% below market on average", "src": ["SRC-000007"]}
-    ], "combine": true},
-    "sale_price": {"claims": [{"value": 54750000, "src": ["SRC-000007"]}]}
+    "product_type": {
+      "claims": [
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-000006"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "claims": [
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-000006"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-000006"
+          ]
+        }
+      ]
+    },
+    "jurisdiction": {
+      "claims": [
+        {
+          "value": "San Mateo",
+          "src": [
+            "SRC-000010"
+          ]
+        }
+      ]
+    },
+    "total_units": {
+      "claims": [
+        {
+          "value": 74,
+          "src": [
+            "SRC-000006",
+            "SRC-000008"
+          ]
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2021,
+          "src": [
+            "SRC-000006"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Below-market (unrestricted)",
+          "src": [
+            "SRC-000006"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Units become below-market as they turn over; one- and two-bedroom units",
+          "src": [
+            "SRC-000006"
+          ]
+        },
+        {
+          "value": "About 25% below market on average",
+          "src": [
+            "SRC-000007"
+          ]
+        }
+      ],
+      "combine": true
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 54750000,
+          "src": [
+            "SRC-000007"
+          ]
+        }
+      ]
+    }
   },
   "construction_notes": [],
   "parties": [
-    {"role": "Buyer", "company": "HEART-SV (HEART of San Mateo County)", "contact": null, "linkedin": null, "src": ["SRC-000006", "SRC-000010"]},
-    {"role": "Recorded owner", "company": "HEART-SV", "contact": null, "linkedin": null, "src": ["SRC-000010"]},
-    {"role": "Other", "other_role": "Partner", "company": "San Mateo County Office of Education", "contact": null, "linkedin": null, "src": ["SRC-000006"]}
+    {
+      "role": "Buyer",
+      "company": "HEART-SV (HEART of San Mateo County)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-000006",
+        "SRC-000010"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "HEART-SV",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-000010"
+      ]
+    },
+    {
+      "role": "Other",
+      "other_role": "Partner",
+      "company": "San Mateo County Office of Education",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-000006"
+      ]
+    }
   ],
   "financing": [
-    {"provider": "HEART-SV bondholders", "type": "Other", "program": "Series 2026A senior bonds; underwriter RBC; due 6/1/2061", "amount": 49450000, "date": "2026-05-28", "src": ["SRC-000009"]},
-    {"provider": "HEART-SV bondholders", "type": "Other", "program": "Series 2026B subordinate bonds", "amount": 5900000, "date": "2026-05-28", "src": ["SRC-000009"]},
-    {"provider": "San Mateo County Office of Education", "type": "Local soft loan", "program": "30-year loan", "amount": 8000000, "date": null, "src": ["SRC-000007"]}
+    {
+      "provider": "HEART-SV bondholders",
+      "type": "Other",
+      "program": "Series 2026A senior bonds; underwriter RBC; due 6/1/2061",
+      "amount": 49450000,
+      "date": "2026-05-28",
+      "src": [
+        "SRC-000009"
+      ]
+    },
+    {
+      "provider": "HEART-SV bondholders",
+      "type": "Other",
+      "program": "Series 2026B subordinate bonds",
+      "amount": 5900000,
+      "date": "2026-05-28",
+      "src": [
+        "SRC-000009"
+      ]
+    },
+    {
+      "provider": "San Mateo County Office of Education",
+      "type": "Local soft loan",
+      "program": "30-year loan",
+      "amount": 8000000,
+      "date": null,
+      "src": [
+        "SRC-000007"
+      ]
+    }
   ],
   "groups": {},
   "events": [
-    {"date": "2026-05-28", "type": "Other", "label": "HEART-SV bonds dated (Series 2026A/B)", "src": ["SRC-000009"]},
-    {"date": "2026-09", "type": "Sale", "label": "Acquisition by HEART-SV announced", "src": ["SRC-000006", "SRC-000007"]}
+    {
+      "date": "2026-05-28",
+      "type": "Other",
+      "label": "HEART-SV bonds dated (Series 2026A/B)",
+      "src": [
+        "SRC-000009"
+      ]
+    },
+    {
+      "date": "2026-09",
+      "type": "Sale",
+      "label": "Acquisition by HEART-SV announced",
+      "src": [
+        "SRC-000006",
+        "SRC-000007"
+      ]
+    }
   ],
   "history": [
-    {"date": "2026-10-03", "by": "Paul via Claude", "action": "Record created from sources SRC-000006 to SRC-000010"},
-    {"date": "2026-10-03", "by": "Paul via Claude", "action": "Parcel outline and owner verified against County GIS"},
-    {"date": "2026-11-02", "by": "Paul via Claude", "action": "Converted to the v1 record format"}
+    {
+      "date": "2026-10-03",
+      "by": "Paul via Claude",
+      "action": "Record created from sources SRC-000006 to SRC-000010"
+    },
+    {
+      "date": "2026-10-03",
+      "by": "Paul via Claude",
+      "action": "Parcel outline and owner verified against County GIS"
+    },
+    {
+      "date": "2026-11-02",
+      "by": "Paul via Claude",
+      "action": "Converted to the v1 record format"
+    }
   ]
 }

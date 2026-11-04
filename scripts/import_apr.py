@@ -18,6 +18,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import date
 from pathlib import Path
 
+import addresses
 import parcels
 import schema
 
@@ -248,7 +249,8 @@ def main():
         for x in r["parcels"]:
             seen_apn[parcels.digits(x["apn"])] = r["id"]
         for a in r["addresses"]:
-            seen_addr[(jur.upper(), norm(a["text"].split(",")[0]))] = r["id"]
+            for t in [a["text"]] + [w["text"] for w in a.get("written_as", [])]:
+                seen_addr[(jur.upper(), norm(t.split(",")[0]))] = r["id"]
 
     review, counts, cand = [], collections.Counter(), []
     def skip(p, why):
@@ -376,6 +378,7 @@ def main():
         w = csv.DictWriter(f, ["city", "address", "units", "name", "apn", "why"])
         w.writeheader()
         w.writerows(sorted(review, key=lambda x: (x["city"], -x["units"])))
+    addresses.run()
     print("written")
 
 

@@ -546,7 +546,12 @@ function sectionRows(r,sec){
   let h="";
   if(sec==="Location"){
     h+=row("Parcel number(s) (APN)",r.parcels.map(p=>p.apn+fn(p.src)).join("<br>"));
-    h+=row("Address(es)",r.addresses.map(a=>esc(a.text)+fn(a.src)).join("<br>"));
+    const addrHTML=a=>esc(a.text)+fn(a.src)
+      +(a.possible_typo_of?`<div class="derived">Possibly a typo for ${esc(a.possible_typo_of)}.</div>`:"")
+      +(a.written_as&&a.written_as.length?`<div class="derived">Also written: ${a.written_as.map(w=>esc(w.text)+fn(w.src)).join("; ")}</div>`:"");
+    const others=r.addresses.filter(a=>a.role!=="main"),main=r.addresses.find(a=>a.role==="main");
+    if(main)h+=row(others.length?"Main address":"Address",addrHTML(main));
+    if(others.length)h+=row("Other addresses",others.map(a=>`<div>${addrHTML(a)}</div>`).join(""));
   }
   Object.entries(REG.facts).filter(([k,f])=>f.section===sec&&r.facts[k]).forEach(([k,f])=>{h+=row(f.label,factHTML(r,k,r.facts[k]))});
   Object.entries(REG.calcs).filter(([k,c])=>c.section===sec&&r.calcs[k]).forEach(([k,c])=>{const x=r.calcs[k];h+=row(c.label,`${money(x.value)}<span class="tag calc">calculated</span><div class="derived">= ${esc(x.how)}</div>`)});
@@ -642,7 +647,7 @@ function rowsFor(scope,cats){
     const o={"Record ID":r.id,"Name":r.name};
     Object.entries(REG.facts).filter(([k,f])=>f.section==="Basics"&&r.facts[k]).forEach(([k,f])=>o[f.label]=claimsText(r,k,r.facts[k]));
     REG.sections.filter(sec=>sec!=="Basics"&&want.includes(sec)).forEach(sec=>{
-      if(sec==="Location"){o["APN(s)"]=r.parcels.map(p=>p.apn+L(p.src)).join("; ");o["Address(es)"]=r.addresses.map(a=>a.text+L(a.src)).join("; ");o["Latitude"]=+r.lat.toFixed(6);o["Longitude"]=+r.lng.toFixed(6)}
+      if(sec==="Location"){o["APN(s)"]=r.parcels.map(p=>p.apn+L(p.src)).join("; ");o["Address"]=r.addresses.filter(a=>a.role==="main").map(a=>a.text).join("");o["Other addresses"]=r.addresses.filter(a=>a.role!=="main").map(a=>a.text).join("; ");o["Address also written as"]=r.addresses.flatMap(a=>(a.written_as||[]).map(w=>w.text)).join("; ");o["Latitude"]=+r.lat.toFixed(6);o["Longitude"]=+r.lng.toFixed(6)}
       /* money facts with one value (or a flagged best) export as plain numbers; each calculated per-unit/per-sf value follows its total */
       const calc=k=>{if(r.calcs[k])o[REG.calcs[k].label+" (calculated)"]=r.calcs[k].value};
       Object.entries(REG.facts).filter(([k,f])=>f.section===sec&&r.facts[k]).forEach(([k,f])=>{

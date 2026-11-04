@@ -27,6 +27,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
+import addresses
 import parcels
 import schema
 
@@ -242,6 +243,7 @@ def main():
     for sid, s in new_sources.items():
         if sid in cited:
             (SOURCES / f"{sid}.json").write_text(json.dumps(s, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    addresses.run()
 
 
 if __name__ == "__main__":

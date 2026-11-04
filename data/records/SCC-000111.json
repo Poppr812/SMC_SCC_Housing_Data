@@ -31,21 +31,125 @@
           37.3289305
         ]
       ]
+    },
+    {
+      "apn": "264-30-114",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8853932,
+          37.3285634
+        ],
+        [
+          -121.8856582,
+          37.3287848
+        ],
+        [
+          -121.8853553,
+          37.3289305
+        ],
+        [
+          -121.8851463,
+          37.3286463
+        ],
+        [
+          -121.8851446,
+          37.3286392
+        ],
+        [
+          -121.8851441,
+          37.328632
+        ],
+        [
+          -121.8851448,
+          37.3286248
+        ],
+        [
+          -121.8851467,
+          37.3286178
+        ],
+        [
+          -121.8851497,
+          37.3286112
+        ],
+        [
+          -121.8851537,
+          37.3286052
+        ],
+        [
+          -121.8851587,
+          37.3285999
+        ],
+        [
+          -121.8851645,
+          37.3285956
+        ],
+        [
+          -121.885171,
+          37.3285922
+        ],
+        [
+          -121.8852682,
+          37.3285454
+        ],
+        [
+          -121.8852861,
+          37.3285386
+        ],
+        [
+          -121.8853048,
+          37.3285349
+        ],
+        [
+          -121.8853239,
+          37.3285344
+        ],
+        [
+          -121.8853429,
+          37.3285371
+        ],
+        [
+          -121.8853611,
+          37.3285429
+        ],
+        [
+          -121.885378,
+          37.3285518
+        ],
+        [
+          -121.8853932,
+          37.3285634
+        ]
+      ]
     }
   ],
   "addresses": [
     {
       "text": "470 S Market St, San Jose, CA",
+      "role": "main",
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ],
+      "written_as": [
+        {
+          "text": "470 South Market Street, San Jose, CA",
+          "src": [
+            "SRC-001099",
+            "SRC-001107"
+          ]
+        }
       ]
     },
     {
-      "text": "470 South Market Street, San Jose, CA",
+      "text": "493 S 1st St, San Jose, CA",
+      "role": "other",
       "src": [
-        "SRC-001099",
-        "SRC-001107"
+        "SRC-001920"
       ]
     }
   ],
@@ -72,8 +176,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001917"
+          ],
+          "note": "J.P. Morgan's James Vossoughi: 'Gateway Tower is now UNDER CONSTRUCTION!' Core's president: construction financing closed, mobilization starts next week. The Mercury News said preliminary work was slated to start."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -121,8 +233,15 @@
           "src": [
             "SRC-001393"
           ]
+        },
+        {
+          "value": "218 affordable units at 30% to 70% of area median income, plus 2 market-rate manager's units.",
+          "src": [
+            "SRC-001918"
+          ]
         }
-      ]
+      ],
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -197,6 +316,24 @@
             "SRC-001663"
           ],
           "note": "Total sources in CTCAC staff report."
+        },
+        {
+          "value": 197800000,
+          "src": [
+            "SRC-001918"
+          ],
+          "note": "State Housing Finance Agency estimate as reported at the October 2026 closing. San Jose Spotlight reported $197 million in November 2025."
+        }
+      ],
+      "best": 1
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3300,
+          "src": [
+            "SRC-001918"
+          ]
         }
       ]
     }
@@ -213,6 +350,56 @@
       "text": "CTCAC CA-25-590: Gateway Tower, located at 470 South Market Street in San Jose on a 0.5 acre site, requested and is being recommended for a reservation of $9,524,617 in annual federal tax credits and $12,695,387 in total state tax credits and $95,423,012 of tax-exempt bond cap to finance the new construction of 220 units of housing, consisting of 218 restricted rental units and 2 unrestricted manager's units.",
       "src": [
         "SRC-001663"
+      ]
+    },
+    {
+      "text": "At the October 2026 closing, J.P. Morgan stated over $123.4 million in construction financing and over $93.6 million in federal and state tax credit equity through Enterprise Community Investment, Inc. The August 2025 state report's plan shows $129.5 million in construction loans and $95.6 million in equity, so the financing table above reflects the earlier plan.",
+      "src": [
+        "SRC-001917",
+        "SRC-001663"
+      ]
+    },
+    {
+      "text": "Core's president credits the City of San Jose, County of Santa Clara, Santa Clara Housing Authority, CalHFA, Housing Trust of Silicon Valley, Enterprise and JPMorgan Chase.",
+      "src": [
+        "SRC-001917"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight reported a $38 million city loan, approved in late September 2025, and a $64 million county loan. The August 2025 state report shows $45.83 million from the county and no separate city line.",
+      "src": [
+        "SRC-001920",
+        "SRC-001663"
+      ]
+    },
+    {
+      "text": "Set-asides as reported: 55 units for the county's rapid rehousing program; about 10 for SoFA artists; 65 project-based vouchers. DLR Group's page describes 120 supportive units, half for formerly unhoused people.",
+      "src": [
+        "SRC-001917",
+        "SRC-001920",
+        "SRC-001919",
+        "SRC-001921"
+      ]
+    },
+    {
+      "text": "221,000 square feet, designed for LEED Silver.",
+      "src": [
+        "SRC-001921"
+      ]
+    },
+    {
+      "text": "San Jose Jazz is expected to be a ground-floor commercial tenant. The historic Herrold College facade is kept, with an exhibit on Charles 'Doc' Herrold and the birth of radio broadcasting.",
+      "src": [
+        "SRC-001918",
+        "SRC-001917",
+        "SRC-001920"
+      ]
+    },
+    {
+      "text": "Parcels: 264-30-090 came from state data. 264-30-114 was added by matching 493 S 1st St, the address San Jose Spotlight gives, to the county parcel. Spotlight describes three buildings between 493 S First St and 480 S Market St, and other parcels on the site may not be listed here yet.",
+      "src": [
+        "SRC-001920",
+        "SRC-001098"
       ]
     }
   ],
@@ -242,6 +429,42 @@
       "linkedin": null,
       "src": [
         "SRC-001393"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Affordable Housing CDC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001918"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "CORE Builders and Build Group, Inc. (joint venture)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001917"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Enterprise Community Investment, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001917"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001919"
       ]
     }
   ],
@@ -345,6 +568,16 @@
       "src": [
         "SRC-001663"
       ]
+    },
+    {
+      "type": "Predevelopment loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "TECH Fund",
+      "amount": 1500000,
+      "date": "2026-03-17",
+      "src": [
+        "SRC-001919"
+      ]
     }
   ],
   "groups": {},
@@ -393,6 +626,33 @@
       "estimated": true
     },
     {
+      "date": "2026-03-17",
+      "type": "Other",
+      "label": "Housing Trust reports $1.5 million predevelopment loan closed",
+      "src": [
+        "SRC-001919"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10",
+      "type": "Construction start",
+      "label": "Mobilization to start the week after Core announced its construction financing closed",
+      "src": [
+        "SRC-001917"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2026-10-14",
+      "type": "Other",
+      "label": "Real estate documents filed showing JPMorgan Chase, city, county and state loans",
+      "src": [
+        "SRC-001918"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2028",
       "type": "Completion",
       "label": "Expected as early as 2028",
@@ -407,6 +667,15 @@
       "label": "Expected completion per CTCAC staff report",
       "src": [
         "SRC-001663"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2029",
+      "type": "Completion",
+      "label": "Could be completed by 2029",
+      "src": [
+        "SRC-001918"
       ],
       "estimated": true
     }
@@ -424,6 +693,11 @@
     },
     {
       "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-04",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
     }

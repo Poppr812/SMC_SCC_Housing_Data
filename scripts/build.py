@@ -77,6 +77,10 @@ def validate(r, sources):
         c.src(p.get("src"), f"parcel {p.get('apn')}")
     for a in r.get("addresses", []):
         c.src(a.get("src"), f"address {a.get('text')}")
+        for w in a.get("written_as", []):
+            c.src(w.get("src"), f"address spelling {w.get('text')}")
+    if r.get("addresses") and sum(a.get("role") == "main" for a in r["addresses"]) != 1:
+        c.err("needs exactly one main address; run: python scripts/addresses.py")
     for key in schema.REQUIRED_FACTS:
         if key not in r.get("facts", {}):
             c.err(f"missing required fact {key}")
@@ -136,9 +140,14 @@ def validate(r, sources):
     return c.errors
 
 
+def address_texts(r):
+    """Every address on a record, including the spellings kept under it."""
+    return [t for a in r["addresses"] for t in [a["text"]] + [w["text"] for w in a.get("written_as", [])]]
+
+
 def read_leads(records):
     """Open items in INTAKE.md: pipeline bullets and transaction headings, flagged if a record seems to cover them."""
-    hay = [(r["id"], " ".join([r["name"]] + [a["text"] for a in r["addresses"]]).lower()) for r in records]
+    hay = [(r["id"], " ".join([r["name"]] + address_texts(r)).lower()) for r in records]
     section, leads = "", []
     for line in (ROOT / "INTAKE.md").read_text(encoding="utf-8").splitlines():
         if line.startswith("## "):
@@ -214,6 +223,8 @@ def process(r, sources):
         see(p["src"])
     for a in r["addresses"]:
         see(a["src"])
+        for w in a.get("written_as", []):
+            see(w["src"])
     for key in schema.FACTS:
         if key in facts:
             for cl in facts[key]["claims"]:
@@ -308,7 +319,7 @@ def process(r, sources):
     }
 
     words = [r["name"], summary["community"], summary["jurisdiction"]]
-    words += [p["apn"] for p in r["parcels"]] + [a["text"] for a in r["addresses"]]
+    words += [p["apn"] for p in r["parcels"]] + address_texts(r)
     for f in facts.values():
         for cl in f["claims"]:
             words.append(json.dumps(cl["value"]) if not isinstance(cl["value"], str) else cl["value"])
