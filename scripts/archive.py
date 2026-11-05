@@ -24,6 +24,7 @@ import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCHIVE = os.path.join(os.path.dirname(ROOT), "SMC_SCC_Housing_Archive")
+MAX_BYTES = 25 * 1024 * 1024  # larger documents, such as drawing sets, are not saved; they stay cited by link
 BROWSERS = [r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
             r"C:\Program Files\Google\Chrome\Application\chrome.exe"]
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
@@ -56,6 +57,14 @@ class Text(html.parser.HTMLParser):
         return "\n".join(l for l in lines if l)
 
 
+def skip_large(src, folder, sid):
+    """Drawing sets and other large documents aren't saved: the source stays cited by its link."""
+    json.dump({"id": sid, "title": src["title"], "publisher": src["publisher"], "date": src.get("date"), "url": src["url"],
+               "captured": datetime.datetime.now().isoformat(timespec="seconds"), "skipped": f"over {MAX_BYTES // 1048576} MB"},
+              open(os.path.join(folder, "meta.json"), "w", encoding="utf-8"), indent=2)
+    print(f"  {sid}  skipped, over {MAX_BYTES // 1048576} MB; stays cited by its link  {src['title'][:60]}")
+
+
 def archive(sid):
     path = os.path.join(ROOT, "data", "sources", sid + ".json")
     src = json.load(open(path, encoding="utf-8"))
@@ -68,10 +77,13 @@ def archive(sid):
     if os.path.exists(pdf):
         os.remove(pdf)  # never fingerprint a leftover from an earlier, interrupted run
     try:  # some sites refuse scripted downloads; the browser print below may still work
-        raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=40).read()
+        raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=40).read(MAX_BYTES + 1)
     except Exception as e:
         print(f"  {sid}  page download refused ({e}); trying the browser print only")
     is_pdf = raw[:4] == b"%PDF"  # the source itself is a PDF document: keep it as is
+    if is_pdf and len(raw) > MAX_BYTES:
+        skip_large(src, folder, sid)
+        return
     if is_pdf:
         open(pdf, "wb").write(raw)
         if os.path.exists(html_path):
@@ -99,18 +111,15 @@ def archive(sid):
             break
     if not (os.path.exists(pdf) and os.path.getsize(pdf) > 5000):
         raise RuntimeError("no browser produced a PDF")
+    if os.path.getsize(pdf) > MAX_BYTES:
+        os.remove(pdf)
+        skip_large(src, folder, sid)
+        return
     sha = hashlib.sha256(open(pdf, "rb").read()).hexdigest()
 
-    local_only = os.path.getsize(pdf) > 95 * 1024 * 1024  # GitHub refuses files over 100 MB: keep on this computer only
-    if local_only:
-        ign = os.path.join(ARCHIVE, ".gitignore")
-        rel = f"{sid}/{sid}.pdf"
-        if rel not in (open(ign, encoding="utf-8").read().split() if os.path.exists(ign) else []):
-            open(ign, "a", encoding="utf-8").write(rel + "\n")
     now = datetime.datetime.now().isoformat(timespec="seconds")
     json.dump({"id": sid, "title": src["title"], "publisher": src["publisher"], "date": src.get("date"),
-               "url": url, "captured": now, "pdf_sha256": sha, "pdf_bytes": os.path.getsize(pdf),
-               "local_only": local_only},
+               "url": url, "captured": now, "pdf_sha256": sha, "pdf_bytes": os.path.getsize(pdf)},
               open(os.path.join(folder, "meta.json"), "w", encoding="utf-8"), indent=2)
 
     src["sha256"] = sha
@@ -126,7 +135,8 @@ if __name__ == "__main__":
         d = os.path.join(ROOT, "data", "sources")
         ids = [f[:-5] for f in sorted(os.listdir(d))
                if json.load(open(os.path.join(d, f), encoding="utf-8")).get("copyright")
-               and not os.path.exists(os.path.join(ARCHIVE, f[:-5], f[:-5] + ".pdf"))]
+               and not os.path.exists(os.path.join(ARCHIVE, f[:-5], f[:-5] + ".pdf"))
+               and not os.path.exists(os.path.join(ARCHIVE, f[:-5], "meta.json"))]
     for sid in ids:
         try:
             archive(sid)
