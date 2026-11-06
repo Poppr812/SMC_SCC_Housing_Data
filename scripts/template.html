@@ -612,7 +612,7 @@ function openRecord(id){
    ${secs}
    <h3>Sources</h3>
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
-     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(S.url)}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)} · ${s}<br>Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":"pending"}</div></div>`}).join("")}
+     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(S.url)}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)} · ${s}<br>Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div></div>`}).join("")}
    <details><summary>Edit history (provenance)</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
@@ -1019,7 +1019,7 @@ function renderReport(all){
    <h4>Exports</h4><div class="wrap"><table><tr><th>When</th><th>Who</th><th>Export</th></tr>${ev(cur,"export").map(a=>`<tr><td>${dt(a.created_at)}</td><td>${actor(a)}</td><td>${sum(a)}</td></tr>`).join("")||'<tr><td colspan="3" class="muted">None this week</td></tr>'}</table></div>
    <h3>Database</h3><div class="kpis">
      <div class="kpi"><b>${RECORDS.length}</b>records</div><div class="kpi"><b>${pipe.length}</b>in pipeline</div><div class="kpi"><b>${added.length}</b>added this week</div><div class="kpi"><b>${changed.length}</b>updated this week</div>
-     <div class="kpi"><b>${srcs.length}</b>sources</div><div class="kpi"><b>${srcs.filter(s=>s.sha256).length}</b>privately archived</div><div class="kpi"><b>${srcs.filter(s=>s.wayback).length}</b>with a Wayback copy</div></div>
+     <div class="kpi"><b>${srcs.length}</b>sources</div><div class="kpi"><b>${srcs.filter(s=>s.sha256&&!s.no_copy).length}</b>privately archived</div><div class="kpi"><b>${srcs.filter(s=>s.wayback).length}</b>with a Wayback copy</div></div>
    <h4>Pipeline by stage</h4>${barTable("Stage",PIPELINE.map(s=>[s,pipe.filter(r=>r.summary.status===s).length]).sort((a,b)=>b[1]-a[1]))}
    <h4>Age of sources, by publication date</h4>${barTable("Age",[...buckets].sort((a,b)=>b[1]-a[1]))}
    <h4>Pipeline data gaps</h4><table>
