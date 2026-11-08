@@ -949,7 +949,11 @@ function repFileName(){ /* e.g. "Midd 1MR Housing Comps 2026.11.08" */
     if(whole){loc=abbr4(whole[0]);kind="CNTY"}else{loc=abbr4(s.areas[0]);kind=s.areas.length===1?"CITY":`${s.areas.length}CITIES`}}
   return `${loc||"Area"} ${kind} Housing Comps ${dd}`;
 }
-function printReport(){const t=document.title;document.title=repFileName();window.addEventListener("afterprint",()=>{document.title=t},{once:true});window.print();setTimeout(()=>{document.title=t},1000)}
+/* any print of an open report (button or Ctrl+P) saves under the report's file name */
+let TITLE0=null;
+window.addEventListener("beforeprint",()=>{if($("#rec").classList.contains("show")&&$("#sheet .repbar")){TITLE0=document.title;document.title=repFileName()}});
+window.addEventListener("afterprint",()=>{if(TITLE0!==null){document.title=TITLE0;TITLE0=null}});
+function printReport(){window.print()}
 const kMoney=n=>n>=1e6?"$"+(n/1e6).toFixed(n>=1e7?0:1)+"M":n>=1e3?"$"+Math.round(n/1e3)+"K":money(n);
 function repSummary(s,active,radius,area){
   const total=unitsOf(active),T=total.hi,stage=l=>active.filter(r=>l.includes(r.summary.status)),u=rs=>unitsOf(rs);
