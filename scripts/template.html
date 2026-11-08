@@ -469,9 +469,9 @@ async function reverseFill(lat,lng){
 async function geocode(){
   const q=$("#radAddr").value.trim();if(!q)return;
   const c=parseCoords(q);
-  if(c){setRadius(c[0],c[1]);reverseFill(c[0],c[1]);return}
+  if(c){closeMenus();setRadius(c[0],c[1]);reverseFill(c[0],c[1]);return}
   try{const j=await (await fetch("https://nominatim.openstreetmap.org/search?format=json&limit=1&q="+encodeURIComponent(q+", CA"))).json();
-    if(j[0]){setRadius(+j[0].lat,+j[0].lon,q)}else toast("Address not found")}
+    if(j[0]){closeMenus();setRadius(+j[0].lat,+j[0].lon,q)}else toast("Address not found")} /* the menu stays open on a miss so the address can be fixed */
   catch(e){toast("Address lookup unavailable")}
 }
 
