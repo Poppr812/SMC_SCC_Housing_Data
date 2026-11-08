@@ -157,6 +157,13 @@
             "SRC-001649"
           ],
           "note": "County pipeline, September 2024. Not marked current; other counts kept."
+        },
+        {
+          "value": 82,
+          "src": [
+            "SRC-001942"
+          ],
+          "note": "SF YIMBY, Nov. 2026, from preliminary plans. Likely the city's 83 less the manager unit, but not stated."
         }
       ]
     },
@@ -197,6 +204,55 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 46,
+            "2br": 36,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001942"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.5,
+          "src": [
+            "SRC-001942"
+          ],
+          "note": "Roughly 1.5 acres"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 89,
+          "src": [
+            "SRC-001942"
+          ],
+          "note": "Surface parking; also a room for 42 bicycles"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 51900,
+          "src": [
+            "SRC-001942"
+          ],
+          "note": "Housing area; about 68,020 sq ft total including 3,950 sq ft of common space"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -211,6 +267,12 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "text": "SF YIMBY, Nov. 1, 2026: preliminary plans filed by MidPen Housing; building about 42 feet tall; Devcon is expected to be the general contractor. Cost and timeline not yet shared.",
+      "src": [
+        "SRC-001942"
+      ]
     }
   ],
   "parties": [
@@ -222,6 +284,33 @@
       "src": [
         "SRC-001216",
         "SRC-001217"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001942"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001942"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Devcon",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001942"
       ]
     }
   ],
@@ -257,6 +346,11 @@
     },
     {
       "date": "2026-11-03",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
     }

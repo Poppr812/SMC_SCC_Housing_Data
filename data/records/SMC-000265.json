@@ -173,8 +173,16 @@
           ],
           "note": "City status: Under Review; awaiting applicant submittal for environmental review",
           "best": true
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001944"
+          ],
+          "note": "SF YIMBY, Nov. 4, 2026: plans approved. Approving body and date not stated."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -225,9 +233,47 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001944"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "4 of 20 units deed-restricted affordable; income levels not stated",
+          "src": [
+            "SRC-001944"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-001944"
+          ],
+          "note": "On-site; also 22 bicycle spaces"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "SF YIMBY, Nov. 4, 2026: four stories, 53 feet tall; owners described as two local individuals (not named); unit mix not yet published.",
+      "src": [
+        "SRC-001944"
+      ]
+    }
+  ],
   "parties": [],
   "financing": [],
   "groups": {},
@@ -237,6 +283,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-08",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

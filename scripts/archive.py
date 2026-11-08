@@ -64,12 +64,14 @@ class Text(html.parser.HTMLParser):
         return "\n".join(l for l in lines if l)
 
 
-def wait_for_file(path, seconds=60):
-    """Return once the file exists and has stopped growing, or when time runs out."""
-    last = -1
+def wait_for_file(path, seconds=180):
+    """Return once the file exists and hasn't grown for 3 seconds, or when time runs out.
+    Pages that pull images from the web can take a few minutes to print."""
+    last, steady = -1, 0
     for _ in range(seconds):
         size = os.path.getsize(path) if os.path.exists(path) else -1
-        if size > 0 and size == last:
+        steady = steady + 1 if size > 0 and size == last else 0
+        if steady >= 3:
             return
         last = size
         time.sleep(1)
@@ -128,22 +130,24 @@ def archive(sid):
         f"{src['title']}\n{src['publisher']} · {src.get('date') or ''}\n{url}\n\n"
         + ("(The source is a PDF document; see the PDF in this folder.)" if is_pdf else t.text()) + "\n")
 
-    if not is_pdf:  # print the page already downloaded; the browser never goes to the site for it
+    if not is_pdf:  # print the page already downloaded, fully offline: no images or scripts are fetched from the web
         browser = next((b for b in BROWSERS if os.path.exists(b)), None)
         if not browser:
             raise RuntimeError("no browser to print the page")
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as profile:  # throwaway profile, never the user's own
+            out = os.path.join(profile, "print.pdf")  # a late print lands here, never over an archived copy
             try:
                 subprocess.run([browser, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
-                                f"--user-data-dir={profile}", "--virtual-time-budget=20000",
-                                f"--print-to-pdf={pdf}", "file:///" + html_path.replace("\\", "/")], timeout=150,
+                                f"--user-data-dir={profile}", "--host-resolver-rules=MAP * ~NOTFOUND",
+                                "--virtual-time-budget=5000", f"--print-to-pdf={out}",
+                                "file:///" + html_path.replace("\\", "/")], timeout=150,
                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             except subprocess.TimeoutExpired:
                 pass
-            wait_for_file(pdf)  # the browser's launcher can return before the print is written
-        if not (os.path.exists(pdf) and os.path.getsize(pdf) > 5000):
-            if os.path.exists(pdf):
-                os.remove(pdf)  # a blank print: don't let it pass for a saved copy
+            wait_for_file(out)  # the browser's launcher can return before the print is written
+            if os.path.exists(out) and os.path.getsize(out) > 5000:
+                os.replace(out, pdf)
+        if not os.path.exists(pdf):
             raise RuntimeError("the browser did not produce a PDF")
     if os.path.getsize(pdf) > MAX_BYTES:
         os.remove(pdf)
