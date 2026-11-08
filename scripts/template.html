@@ -127,6 +127,8 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .adm .bar{display:inline-block;height:9px;background:#17304F;border-radius:2px;margin-right:6px;vertical-align:middle}
 .adm .wrap{max-height:340px;overflow:auto;border:1px solid var(--rule);border-radius:6px}
 .adm .kpis{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+.adm .repbar{position:sticky;top:0;z-index:1100;display:flex;justify-content:flex-end;gap:8px;padding:8px 0;margin:-8px 0 4px;background:var(--card)}
+.rpin span,.adm .legend i,.adm .exec{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .adm .exec{background:#F6F7F4;border-radius:8px;padding:12px 14px;margin:10px 0 4px}
 .adm table.sum{font-size:13px}.adm table.sum th{background:none;position:static;width:120px;padding:5px 8px 5px 0;vertical-align:top;color:var(--gray);font-weight:600}
 .adm table.sum td{padding:5px 0}.adm .take{margin:10px 0 0;font-size:14px;line-height:1.45}
@@ -918,7 +920,7 @@ function pipelineXlsx(rs,radius,area){
   const wb=new ExcelJS.Workbook();wb.creator="Housing Comps";
   const ws=wb.addWorksheet("Pipeline");styleSheet(ws,Object.keys(rows[0]),rows,["Record URL"]);ws.views=[{state:"frozen",xSplit:1,ySplit:1}];
   track("export",{scope:"pipeline",fmt:"xlsx",count:rows.length,area});
-  wb.xlsx.writeBuffer().then(buf=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=`housing_comps_pipeline_${new Date().toISOString().slice(0,10)}.xlsx`;a.click()});
+  wb.xlsx.writeBuffer().then(buf=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=repFileName()+".xlsx";a.click()});
 }
 const developerOf=r=>r.summary.developer||(r.parties.find(x=>x.other_role==="Applicant")||{}).company||"";
 function unitsOf(rs){const u=rs.map(r=>r.summary.units_range).filter(Boolean),lo=u.reduce((a,x)=>a+x[0],0),hi=u.reduce((a,x)=>a+x[1],0);return {lo,hi,text:lo===hi?num(lo):`${num(lo)}–${num(hi)}`}}
@@ -934,6 +936,20 @@ const pct=(a,b)=>b?Math.round(a/b*100):0;
 const pctT=(a,b)=>a>0&&pct(a,b)===0?"under 1%":pct(a,b)+"%";
 const listJoin=a=>a.length<2?a.join(""):a.slice(0,-1).join(", ")+" and "+a[a.length-1];
 const bestVal=(r,k)=>{const f=r.facts[k];if(!f)return null;const c=f.claims[f.claims.length===1?0:f.best];return c?c.value:null}; /* conflicting claims with none marked best count as not stated */
+const TYPE_LBL={"Condominiums":"Condos"},TYPE_PL={"Apartments":"Apartments","Condominiums":"Condos","Townhomes":"Townhomes","Single-family":"Single-family homes","Mixed product":"Mixed-product projects"};
+const abbr4=t=>{const w=(t||"").replace(/[^A-Za-z]/g,"").slice(0,4);return w?w[0].toUpperCase()+w.slice(1):""};
+function repFileName(){ /* e.g. "Midd 1MR Housing Comps 2026.11.08" */
+  const s=getState(),d=new Date(),dd=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,"0")}.${String(d.getDate()).padStart(2,"0")}`;
+  const rs=filtered(),topJur=()=>{const c={};rs.forEach(r=>{const j=r.summary.jurisdiction;c[j]=(c[j]||0)+1});return Object.keys(c).sort((a,b)=>c[b]-c[a])[0]||""};
+  let loc,kind;
+  if(SHAPE&&SHAPE.t==="c"){const words=(SHAPE.addr||"").split(",")[0].trim().split(/\s+/).filter(w=>w&&!/^\d/.test(w));loc=abbr4(words[0])||abbr4(topJur());kind=`${SHAPE.mi}MR`}
+  else if(SHAPE){loc=abbr4(topJur());kind="FNC"}
+  else if(!s.areas){loc="SMSC";kind="ALL"}
+  else{const whole=Object.entries(REG.areas).find(([,a])=>a.length===s.areas.length&&a.every(x=>s.areas.includes(x)));
+    if(whole){loc=abbr4(whole[0]);kind="CNTY"}else{loc=abbr4(s.areas[0]);kind=s.areas.length===1?"CITY":`${s.areas.length}CITIES`}}
+  return `${loc||"Area"} ${kind} Housing Comps ${dd}`;
+}
+function printReport(){const t=document.title;document.title=repFileName();window.addEventListener("afterprint",()=>{document.title=t},{once:true});window.print();setTimeout(()=>{document.title=t},1000)}
 const kMoney=n=>n>=1e6?"$"+(n/1e6).toFixed(n>=1e7?0:1)+"M":n>=1e3?"$"+Math.round(n/1e3)+"K":money(n);
 function repSummary(s,active,radius,area){
   const total=unitsOf(active),T=total.hi,stage=l=>active.filter(r=>l.includes(r.summary.status)),u=rs=>unitsOf(rs);
@@ -943,32 +959,32 @@ function repSummary(s,active,radius,area){
   const uc=stage(["Under construction"]),ap=stage(["Approved","Permitted"]),pr=stage(["Proposed"]),lu=stage(["Lease-up / selling"]);
   const parts=[[uc,"under construction"],[ap,"approved or permitted"],[pr,"proposed"],[lu,"in lease-up or selling"]].filter(x=>x[0].length).map(([rs,l])=>`${u(rs).text} ${l}`);
   const types=Object.keys(REG.product_types).map(x=>[x,active.filter(r=>r.summary.product_type===x)]).filter(x=>x[1].length).sort((a,b)=>u(b[1]).hi-u(a[1]).hi);
-  const typeLine=types.map(([t,rs])=>`${rs.length} ${esc(short(t).toLowerCase())} (${u(rs).text} units)`).join(" · ");
+  const typeLine=types.map(([t,rs])=>`${esc(TYPE_LBL[t]||t)} ${rs.length} (${u(rs).text} units)`).join(" · ");
   /* affordability: share of units by the record's best affordability type */
   const aff={};let affUnits=0,noAff=0;
   active.forEach(r=>{const t=bestVal(r,"affordability_type"),n=(r.summary.units_range||[0,0])[1];if(!t){noAff++;return}aff[t]=(aff[t]||0)+n;affUnits+=n});
-  const affLine=affUnits?Object.entries(aff).sort((a,b)=>b[1]-a[1]).map(([t,n])=>`${pctT(n,affUnits)} ${esc(t.toLowerCase())}`).join(", ")+(noAff?` <span class="muted">(share of units; not stated for ${noAff} project${noAff===1?"":"s"})</span>`:` <span class="muted">(share of units)</span>`):"Not stated for these projects yet";
+  const affLine=affUnits?Object.entries(aff).sort((a,b)=>b[1]-a[1]).map(([t,n])=>`${pctT(n,affUnits)} ${esc(t.toLowerCase())}`).join(", ")+(noAff?` <span class="muted">(share of units; not stated for ${noAff} project${noAff===1?"":"s"})</span>`:` <span class="muted">(share of units)</span>`):"Not stated";
   /* bedroom mix: only projects whose source states it */
   const mixKeys=["studio","1br","2br","3br","4br+"],mixLbl={"studio":"studio","1br":"1BR","2br":"2BR","3br":"3BR","4br+":"4BR+"},mix={};let mixN=0,mixU=0;
   active.forEach(r=>{const v=bestVal(r,"unit_mix");if(!v)return;const t=mixKeys.reduce((a,k)=>a+(+v[k]||0),0);if(!t)return;mixN++;mixU+=t;mixKeys.forEach(k=>mix[k]=(mix[k]||0)+(+v[k]||0))});
-  const mixLine=mixN?mixKeys.filter(k=>mix[k]).map(k=>`${pctT(mix[k],mixU)} ${mixLbl[k]}`).join(", ")+` <span class="muted">(known for ${mixN} of ${active.length} projects, ${num(mixU)} units)</span>`:"Not stated for these projects yet";
+  const mixLine=mixN?mixKeys.filter(k=>mix[k]).map(k=>`${pctT(mix[k],mixU)} ${mixLbl[k]}`).join(", ")+` <span class="muted">(known for ${mixN} of ${active.length} projects, ${num(mixU)} units)</span>`:"Not stated";
   /* sale prices: shown only when at least 3 projects have a recorded sale */
   const sales=active.map(r=>({r,price:bestVal(r,"sale_price"),pu:(r.calcs.price_per_unit||{}).value,psf:(r.calcs.price_per_sf||{}).value,date:(r.events.filter(e=>e.type==="Sale").map(e=>e.date).sort().pop()||"")})).filter(x=>x.price);
   const stats=(a,f)=>{const v=a.map(x=>x[f]).filter(x=>x);if(!v.length)return null;return {n:v.length,lo:Math.min(...v),hi:Math.max(...v),avg:v.reduce((p,q)=>p+q,0)/v.length}};
-  let saleLine="No price data for these projects yet",saleTable="";
+  let saleLine="None recorded",saleTable="";
   if(sales.length>=3){
     const pu=stats(sales,"pu"),psf=stats(sales,"psf"),tot=stats(sales,"price");
-    const bits=[`${sales.length} of ${active.length} projects have a recorded sale`];
+    const bits=[`${sales.length} of ${active.length} projects have a recorded sale (may include land sales)`];
     if(pu)bits.push(`${kMoney(pu.lo)} to ${kMoney(pu.hi)} per unit, average ${kMoney(pu.avg)}${pu.n<sales.length?` (${pu.n} with a unit count)`:""}`);
     if(psf)bits.push(`${money(psf.lo)} to ${money(psf.hi)} per sq ft, average ${money(psf.avg)} (${psf.n} with a stated area)`);
     if(!pu)bits.push(`${kMoney(tot.lo)} to ${kMoney(tot.hi)} total, average ${kMoney(tot.avg)}`);
     saleLine=bits.join(" · ");
     saleTable=`<div class="wrap" style="margin-top:6px"><table><tr><th>Project</th><th>Sale date</th><th>Sale price</th><th>Per unit</th><th>Per sq ft</th></tr>${sales.sort((a,b)=>(b.pu||0)-(a.pu||0)).map(x=>`<tr><td><a href="${SITE_URL}#r=${x.r.id}" target="_blank" rel="noopener">${esc(x.r.name)}</a></td><td>${esc(x.date)}</td><td>${money(x.price)}</td><td>${x.pu?money(x.pu):""}</td><td>${x.psf?money(x.psf):""}</td></tr>`).join("")}</table></div>`;
-  }else if(sales.length)saleLine=`Only ${sales.length} of ${active.length} projects ${sales.length===1?"has":"have"} a recorded sale, too few to summarize; see ${sales.length===1?"its record":"their records"}`;
+  }else if(sales.length)saleLine=`${sales.length} of ${active.length} projects ${sales.length===1?"has":"have"} a recorded sale; see the project record${sales.length===1?"":"s"}`;
   /* one plain sentence: facts only, no forecast */
   const big=active.slice().sort((a,b)=>((b.summary.units_range||[0,0])[1])-((a.summary.units_range||[0,0])[1]))[0];
   const lead=types[0],sent=[];
-  if(T&&lead)sent.push(`${short(lead[0])} make up ${pctT(u(lead[1]).hi,T)} of the units`);
+  if(T&&lead)sent.push(`${TYPE_PL[lead[0]]||lead[0]} make up ${pctT(u(lead[1]).hi,T)} of the units`);
   if(T&&uc.length)sent.push(`${pctT(u(uc).hi,T)} are already under construction`);
   let takeaway=`The search found ${num(active.length)} project${active.length===1?"":"s"} with ${total.text} units.`;
   if(sent.length)takeaway+=" "+sent.join(", and ")+".";
@@ -1005,20 +1021,19 @@ function openPipeline(silent){
   const total=unitsOf(active),area=reportArea(s);
   const listTable=(rs,numbered)=>`<div class="wrap"><table><tr>${numbered?"<th>#</th>":""}<th>Project</th><th>Stage</th><th>Units</th><th>Type</th><th>Developer / applicant</th><th>Delivery</th><th>Last movement</th>${radius?"<th>Miles</th>":""}</tr>${rs.map((r,i)=>{const m=r.summary;return `<tr>${numbered?`<td><b>${i+1}</b></td>`:""}<td><a href="${SITE_URL}#r=${r.id}" target="_blank" rel="noopener">${esc(r.name)}</a></td><td>${esc(m.status)}</td><td>${esc(m.units_display||"Not stated")}</td><td>${esc(short(m.product_type))}</td><td>${esc(developerOf(r))}</td><td>${esc(deliveryOf(r))}</td><td>${esc(m.latest_event||"")}</td>${radius?`<td>${dist(r).toFixed(1)}</td>`:""}</tr>`}).join("")}</table></div>`;
   const places=[...new Set(all.map(r=>r.summary.jurisdiction))].sort(),cov=REG.coverage||{};
-  const covered=places.filter(j=>cov[j]),partial=places.filter(j=>!cov[j]);
+  const covered=places.filter(j=>cov[j]);
   const stages=PIPELINE.filter(x=>x!=="Inactive pipeline"&&active.some(r=>r.summary.status===x));
   $("#sheet").innerHTML=`<div class="adm">
-   <div class="top"><div><div class="muted">Pipeline report · data as of ${esc(DATA.built)}</div><h2>${esc(area)}</h2></div>
-     <div class="noprint" style="display:flex;gap:8px"><button class="btn ghost" id="repXlsx" type="button">Download Excel</button><button class="btn ghost" type="button" onclick="window.print()">Download PDF</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div></div>
+   <div class="repbar noprint"><button class="btn ghost" id="repXlsx" type="button">Download Excel</button><button class="btn ghost" type="button" onclick="printReport()">Download PDF</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div>
+   <div class="muted">Pipeline report · data as of ${esc(DATA.built)}</div><h2 style="margin-top:2px">${esc(area)}</h2>
    ${active.length?repSummary(s,active,radius,area):`<div class="exec"><p class="take">No active pipeline projects in this selection; only inactive ones, listed below.</p></div>`}
    ${active.length?`<h3>Map</h3><div id="repMap" class="repmap"></div>
    <div class="legend">${stages.map(x=>`<span><i style="background:${STATUS_COLOR[x]}"></i>${esc(x)}</span>`).join("")}<span class="muted">Numbers match the project list.</span></div>
    <h3>Projects (${active.length})</h3>${listTable(active,true)}`:""}
    ${inactive.length?`<h3>Inactive pipeline (${inactive.length}, not in totals or on the map)</h3>${listTable(inactive,false)}`:""}
-   <h3>Coverage and notes</h3><div class="foot">
-     ${[...new Set(covered.map(j=>cov[j]))].map(txt=>`<p><b>${esc(covered.filter(j=>cov[j]===txt).join(", "))}:</b> ${esc(txt)}</p>`).join("")}
-     ${partial.length?`<p><b>${esc(partial.join(", "))}:</b> partial. Projects found through state housing reports (through 2025), funding reports and news; the city's own list wasn't fully checked, so this is not a complete list.</p>`:""}
-     <p class="muted">Stages are working labels for comps research, not legal status. Unit counts are as stated by sources and may be maximums for phased or master-planned projects. Shares and averages are simple math on the figures shown, over only the projects that state them. Sale prices are sales recorded on these project records, which may be land sales. A boundary may also touch places with no records here yet. Delivery shows only what a source states, and "est." is the source's estimate, not ours. Blank means no source states a date. Every figure links back to its sources on the project's record.</p></div>
+   <h3>Notes</h3><div class="foot">
+     ${places.map(j=>{const d=((cov[j]||"").match(/\d{4}-\d{2}-\d{2}/)||[])[0];return `<p><b>${esc(j)}:</b> ${cov[j]?`checked against the city's published project list${d?" on "+d:""}.`:"from state housing reports, funding reports and news."}</p>`}).join("")}
+     <p class="muted">Stages are working labels, not legal status. Unit counts and delivery dates are as stated by sources; "est." marks a source's estimate. Each project links to its sources.</p></div>
   </div>`;
   $("#repXlsx").onclick=()=>pipelineXlsx([...active,...inactive],radius,area);
   $("#rec").classList.add("show");$("#rec").scrollTop=0;
