@@ -22,6 +22,7 @@ header h1{font-size:17px;margin:0;font-weight:600}
 header .sub{font-size:12px;opacity:.8}
 .bar{background:var(--card);border-bottom:1px solid var(--rule);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
 .ctl{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--gray)}
+.lblrow{display:flex;gap:10px;align-items:baseline}.lnk{border:none;background:none;padding:0;font:inherit;font-size:12px;color:var(--gray);cursor:pointer;text-decoration:underline}.lnk:hover{color:var(--ink)}
 .ctl select,.ctl input[type=text],.ctl input[type=search],.ctl input[type=number]{font:inherit;font-size:13px;color:var(--ink);padding:5px 7px;border:1px solid var(--rule);border-radius:5px;background:#fff}
 .dd{position:relative}
 .dd>button{font:inherit;font-size:13px;padding:5px 9px;border:1px solid var(--rule);border-radius:5px;background:#fff;min-width:170px;text-align:left;cursor:pointer;color:var(--ink)}
@@ -190,7 +191,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline, Transactions, Existing</button>
       <div class="menu" id="showMenu"></div></div>
   </div>
-  <div class="ctl">Search area
+  <div class="ctl"><div class="lblrow">Search area<button type="button" class="lnk" id="clearSel" hidden>✕ Clear boundary</button></div>
     <div class="dd" id="ddSel"><button type="button" id="selBtn">All jurisdictions</button>
       <div class="menu selmenu" id="selMenu" style="min-width:330px">
         <button type="button" class="opt" id="jurToggle"><span id="jurCaret">▾</span> Jurisdiction<small id="jurSum">All jurisdictions</small></button>
@@ -208,8 +209,6 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
           <div class="muted" id="selCoords" style="font-size:11px;margin-top:5px"></div>
         </div>
         <button type="button" class="opt" id="gpsBtn">⌖ Use my location<small>Center the radius on this device's GPS</small></button>
-        <hr>
-        <button type="button" class="opt" id="clearSel">✕ Clear boundary</button>
       </div></div>
   </div>
   <div class="spacer"></div>
@@ -369,6 +368,7 @@ function setState(s){
 function stateToHash(){return "#q="+encodeURIComponent(btoa(unescape(encodeURIComponent(JSON.stringify(getState())))))}
 function hashToState(){const m=location.hash.match(/#q=([^&]+)/);if(!m)return null;try{return JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))))}catch(e){return null}}
 function labelDropdowns(){
+  $("#clearSel").hidden=!SHAPE;
   const s=getState(),n=Object.keys(REG.product_types).length;
   const tl=s.types.length===n?"All types":s.types.length?s.types.map(short).join(", "):"None";
   $("#typesBtn").textContent=s.aff.length===3?tl:(s.aff.filter(x=>x!=="None").map(x=>x==="Market"?"Market rate":x).join(" + ")||"Not stated")+(s.types.length===n?"":" · "+tl);
