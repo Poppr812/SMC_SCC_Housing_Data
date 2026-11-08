@@ -1042,7 +1042,7 @@ function openPipeline(silent){
   const stages=PIPELINE.filter(x=>x!=="Inactive pipeline"&&active.some(r=>r.summary.status===x));
   $("#sheet").innerHTML=`<div class="adm">
    <div class="repbar noprint"><button class="btn ghost" id="repXlsx" type="button">Download Excel</button><button class="btn ghost" type="button" onclick="printReport()">Download PDF</button><button class="btn" type="button" onclick="closeRecord()">Close ✕</button></div>
-   <div class="muted">Pipeline report · data as of ${esc(DATA.built)}</div><h2 style="margin-top:2px">${esc(area)}</h2>
+   <h2 style="margin:0">Pipeline report · data as of ${esc(DATA.built)}</h2><h2 style="margin-top:2px">${esc(area)}</h2>
    ${active.length?repSummary(s,active,radius,area):`<div class="exec"><p class="take">No active pipeline projects in this selection; only inactive ones, listed below.</p></div>`}
    ${active.length?`<h3>Map</h3><div id="repMap" class="repmap"></div>
    <div class="legend">${stages.map(x=>`<span><i style="background:${STATUS_COLOR[x]}"></i>${esc(x)}</span>`).join("")}<span class="muted">Numbers match the project list.</span></div>
