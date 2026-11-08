@@ -507,7 +507,8 @@ function drawShape(){
 }
 function redrawDraft(){draftLayer.clearLayers();if(!DRAFT.length)return;
   L.polyline(DRAFT,{color:"#17304F",weight:2,dashArray:"4 4"}).addTo(draftLayer);
-  DRAFT.forEach((p,i)=>{const m=L.circleMarker(p,{radius:i?4:7,color:"#17304F",weight:2,fillColor:"#fff",fillOpacity:1}).addTo(draftLayer);
+  DRAFT.forEach((p,i)=>{const z=i?12:18; /* fence points are X marks; the first is larger and closes the fence */
+    const m=L.marker(p,{icon:L.divIcon({className:"fx",html:`<svg width="${z}" height="${z}" viewBox="0 0 12 12"><path d="M2 2L10 10M10 2L2 10" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M2 2L10 10M10 2L2 10" stroke="#17304F" stroke-width="2" stroke-linecap="round"/></svg>`,iconSize:[z,z],iconAnchor:[z/2,z/2]}),interactive:i===0,title:i===0?"Click to close the fence":""}).addTo(draftLayer);
     if(i===0)m.on("click",e=>{L.DomEvent.stop(e);finishDraw()})})}
 map.on("click",e=>{
   if(MODE==="dragradius"){clickRadius(e.latlng);return} /* devices that send a click without a press */
@@ -520,7 +521,7 @@ map.on("mousemove",e=>{if(!DRAG)return;const mi=miles({lat:DRAG.c.lat,lng:DRAG.c
 map.on("mouseup",e=>{if(!DRAG)return;if(DRAG.px.distanceTo(e.containerPoint)<6){clickRadius(DRAG.c);return}const mi=Math.max(0.5,+miles({lat:DRAG.c.lat,lng:DRAG.c.lng},{lat:e.latlng.lat,lng:e.latlng.lng}).toFixed(1));const c=DRAG.c;DRAG=null;$("#radMi").value=mi;setRadius(c.lat,c.lng,"",false)});
 map.on("dblclick",()=>{if(MODE==="draw"){DRAFT.pop();finishDraw()}});
 map.on("contextmenu",e=>{
-  const p=L.popup({closeButton:false,className:"ctxmenu"}).setLatLng(e.latlng).setContent(`<a data-a="r">${DEFAULT_MI}-mile radius here</a>`+'<a data-a="d">Start a fence here</a>'+(SHAPE?'<a data-a="x">Clear boundary</a>':'')).openOn(map);
+  const p=L.popup({closeButton:false,className:"ctxmenu"}).setLatLng(e.latlng).setContent('<a data-a="r">Start search radius here</a><a data-a="d">Start search fence here</a>'+(SHAPE?'<a data-a="x">Clear boundary</a>':'')).openOn(map);
   p.getElement().querySelectorAll("a").forEach(a=>a.onclick=()=>{map.closePopup();const k=a.dataset.a;
     if(k==="r"){$("#radMi").value=DEFAULT_MI;setRadius(e.latlng.lat,e.latlng.lng);reverseFill(e.latlng.lat,e.latlng.lng)}
     if(k==="d"){setMode("draw");DRAFT=[[e.latlng.lat,e.latlng.lng]];redrawDraft()}
