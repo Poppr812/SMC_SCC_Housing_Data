@@ -52,6 +52,7 @@ aside h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(
 .selmenu .addr{padding:6px 4px}
 .selmenu .addr input{font:inherit;font-size:13px;padding:5px 7px;border:1px solid var(--rule);border-radius:5px}
 .selmenu .addrlabel{font-size:13px;margin-bottom:5px}
+.selmenu .sechead{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gray);padding:2px 4px 2px}
 .dd .selmenu{max-height:70vh}
 #areaMenu{padding:2px 0 6px 12px}
 .radlabel{font-weight:600;color:var(--ink)}
@@ -192,12 +193,13 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <div class="ctl">Search area
     <div class="dd" id="ddSel"><button type="button" id="selBtn">All jurisdictions</button>
       <div class="menu selmenu" id="selMenu" style="min-width:330px">
-        <button type="button" class="opt" id="jurToggle"><span id="jurCaret">▸</span> Jurisdiction<small id="jurSum">All jurisdictions</small></button>
-        <div id="areaMenu" hidden></div>
+        <button type="button" class="opt" id="jurToggle"><span id="jurCaret">▾</span> Jurisdiction<small id="jurSum">All jurisdictions</small></button>
+        <div id="areaMenu"></div>
+        <hr><div class="sechead">Add a boundary</div>
         <button type="button" class="opt" id="drawRadBtn">◯ Draw a radius<small>Click the map for a 1-mile radius, or press and drag to size it</small></button>
         <button type="button" class="opt" id="drawFenceBtn">⬠ Draw a fence<small>Click points; click the first point or double-click to close</small></button>
+        <hr><div class="sechead">Radius from address</div>
         <div class="addr">
-          <div class="addrlabel">Type an address</div>
           <div style="display:flex;gap:5px;align-items:center">
             <input type="text" id="radAddr" placeholder="Address or coordinates" style="flex:1;min-width:0">
             <input type="number" id="radMi" value="1" min="0.5" step="0.5" style="width:56px" title="radius in miles"><span class="muted">mi</span>
