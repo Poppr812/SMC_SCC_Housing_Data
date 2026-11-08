@@ -145,6 +145,37 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 11,
+              "ami": 50
+            },
+            {
+              "count": 3,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001101"
+          ],
+          "note": "State report 2021, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001101"
+          ],
+          "note": "State report 2021, application stage: 14 deed-restricted units"
+        }
+      ]
     }
   },
   "construction_notes": [

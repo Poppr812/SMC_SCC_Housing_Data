@@ -222,7 +222,10 @@ def affordability(facts, ami, units):
     if t == "100% affordable":
         return "Affordable", "Affordable, 100%", 1.0
     if t in ("Market-rate", "Below-market (unrestricted)"):
-        return "Market", "Market", 0.0
+        f = facts["affordability_type"]
+        cl = f["claims"][0 if len(f["claims"]) == 1 else f["best"]]
+        from_apr = (cl.get("note") or "").startswith("State report")
+        return "Market", "Market (state report)" if from_apr else "Market", 0.0
     if t != "Mixed-income":
         return None, "Not stated", None
     restricted = sum(x["count"] for x in ami) if ami else None
@@ -236,6 +239,15 @@ def affordability(facts, ami, units):
     if share is not None and share > INCLUSIONARY_MAX:
         return "Affordable", f"Affordable, {min(99, round(share * 100))}%", share
     return "Market", "Market, with inclusionary", share
+
+
+def income_bands(ami):
+    """Which income bands have deed-restricted units: Low (80% AMI and below), Moderate (81-120%), Workforce (121-200%)."""
+    out = []
+    for name, lo, hi in (("Low", 0, 80), ("Moderate", 81, 120), ("Workforce", 121, 200)):
+        if any(x.get("count") and lo <= (x.get("ami") or 0) <= hi for x in ami or []):
+            out.append(name)
+    return out
 
 
 def process(r, sources):
@@ -344,6 +356,7 @@ def process(r, sources):
         "aff_bucket": aff_bucket,
         "aff_label": aff_label,
         "aff_share": aff_share,
+        "aff_bands": income_bands(ami),
         "tax_credit": tax_credit,
         "owner": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Recorded owner"),
         "developer": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Developer"),

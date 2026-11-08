@@ -100,6 +100,22 @@ ol.events li b{display:inline-block;min-width:110px}
 .hist{font-size:12px;color:var(--gray)}
 details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;margin-top:18px}
 .note{background:#F1F4F8;border-radius:6px;padding:8px 10px;font-size:12px;color:var(--gray);margin-top:14px}
+#adv{position:fixed;inset:0;background:rgba(20,28,40,.25);z-index:2050;display:flex;justify-content:flex-end}
+#adv[hidden]{display:none}
+.advbox{background:#fff;width:400px;max-width:100%;height:100%;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.18)}
+.advhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:14px 16px;border-bottom:1px solid var(--rule)}
+.advhead b{font-size:16px}#advCount{font-size:13px;margin-top:2px}
+.advbody{overflow:auto;padding:4px 16px 20px}
+.advbody section{border-bottom:1px solid var(--rule);padding:10px 0}
+.advbody h4{margin:0 0 6px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray)}
+.advbody label{display:flex;gap:6px;align-items:center;font-size:13px;padding:2px 0;color:var(--ink)}
+.advbody label.muted{color:var(--gray)}
+.advsub{margin:0 0 4px 22px}
+.advrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;padding:3px 0;color:var(--ink)}
+.advrow label{padding:0}
+.advrow input[type=number]{width:72px}.advrow input,.advrow select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--rule);border-radius:5px}
+.advnote{font-size:11px;margin-top:6px}
+#advBtn.on{border-color:var(--ink);font-weight:600}
 #exp{display:none;position:fixed;inset:0;background:rgba(20,28,40,.45);z-index:2100}
 #exp.show{display:flex;align-items:center;justify-content:center}
 #exp .box{background:#fff;border-radius:10px;padding:20px 22px;width:min(520px,92vw);max-height:90vh;overflow:auto}
@@ -211,6 +227,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
         <button type="button" class="opt" id="gpsBtn">⌖ Use my location<small>Center the radius on this device's GPS</small></button>
       </div></div>
   </div>
+  <div class="ctl"><span>&nbsp;</span><button type="button" class="btn ghost" id="advBtn">Advanced filters</button></div>
   <div class="spacer"></div>
   <div class="ctl">My saved searches
     <select id="saved"><option value="">(none yet)</option></select>
@@ -233,6 +250,37 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 
 <div id="rec"><div class="sheet" id="sheet"></div></div>
 
+<div id="adv" hidden><div class="advbox">
+  <div class="advhead"><div><b>Advanced filters</b><div class="muted" id="advCount"></div></div>
+    <div style="display:flex;gap:8px"><button type="button" class="btn ghost sm" id="advReset">Reset</button><button type="button" class="btn sm" id="advDone">Done</button></div></div>
+  <div class="advbody">
+    <section><h4>Affordability</h4>
+      <label><input type="checkbox" data-mirror='#typesMenu input.af[value="Market"]'> Market rate</label>
+      <div class="advsub">
+        <div class="advrow">Inclusionary units <select id="advInc"><option value="any">Any</option><option value="has">Has inclusionary</option><option value="none">None</option></select></div>
+        <div class="advrow" id="advIbRow">Inclusionary at
+          <label><input type="checkbox" class="advIb" value="Low" checked> Low</label><label><input type="checkbox" class="advIb" value="Moderate" checked> Moderate</label><label><input type="checkbox" class="advIb" value="Workforce" checked> Workforce</label></div>
+      </div>
+      <label><input type="checkbox" data-mirror='#typesMenu input.af[value="Affordable"]'> Affordable</label>
+      <div class="advsub">
+        <div class="advrow">Income bands
+          <label title="80% AMI and below"><input type="checkbox" class="advAb" value="Low" checked> Low</label><label title="81 to 120% AMI"><input type="checkbox" class="advAb" value="Moderate" checked> Moderate</label><label title="121 to 200% AMI"><input type="checkbox" class="advAb" value="Workforce" checked> Workforce</label></div>
+        <div class="advrow">Tax credits / bonds <select id="advTc"><option value="any">Any</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+      </div>
+      <label class="muted"><input type="checkbox" data-mirror='#typesMenu input.af[value="None"]'> Affordability not stated</label>
+      <div class="muted advnote">Low: 80% AMI and below. Moderate: 81 to 120%. Workforce: 121 to 200%. A project with units in several bands matches any of them.</div>
+    </section>
+    <section><h4>Product types</h4><div id="advTypes"></div></section>
+    <section><h4>Pipeline stage</h4><div id="advStages"></div></section>
+    <section><h4>Size</h4><div class="advrow">Units <input type="number" id="advUmin" min="0" placeholder="min"> to <input type="number" id="advUmax" min="0" placeholder="max"></div></section>
+    <section><h4>Timing</h4>
+      <div class="advrow">Last movement <select id="advMv"><option value="">Any time</option><option value="6">Past 6 months</option><option value="12">Past year</option><option value="24">Past 2 years</option></select></div>
+      <div class="advrow">Delivery year <input type="number" id="advDfrom" min="2015" max="2040" placeholder="from"> to <input type="number" id="advDto" min="2015" max="2040" placeholder="to"></div>
+      <label class="advsub"><input type="checkbox" id="advDnone" checked> Include projects with no stated delivery date</label>
+      <div class="advrow">Filed or approved since <input type="date" id="advSince"></div>
+    </section>
+  </div>
+</div></div>
 <div id="exp"><div class="box">
   <h3>Export selection</h3>
   <div class="muted" id="expCount"></div>
@@ -349,8 +397,10 @@ function getState(){const ar=[...document.querySelectorAll("#areaMenu .ar")];ret
   tx:[...document.querySelectorAll("#showMenu .tx:checked")].map(i=>i.value),
   existing:$("#exAll").checked,
   areas:ar.every(i=>i.checked)?null:ar.filter(i=>i.checked).map(i=>i.value),
+  adv:advState(),
   shape:SHAPE}}
 function setState(s){
+  advSet(s.adv);
   $("#kw").value=s.kw||"";
   typesMenu.querySelectorAll("input.pt").forEach(i=>i.checked=!s.types||s.types.includes(i.value));
   typesMenu.querySelectorAll("input.af").forEach(i=>i.checked=!s.aff||s.aff.includes(i.value));
@@ -392,7 +442,7 @@ const isSale=r=>r.kinds.includes("transaction");
 const txMatch=(r,tx)=>tx.some(k=>r.kinds.includes(k));
 /* skip "area" or "status" to leave that filter out, so its menu can show counts */
 function matches(r,s,skip){const kw=s.kw.toLowerCase();
-  return (skip==="type"||s.types.includes(r.summary.product_type))&&(skip==="aff"||!s.aff||s.aff.includes(r.summary.aff_bucket||"None"))&&(!kw||r.search.includes(kw))&&inShape(r)
+  return (skip==="adv"||advMatch(r,s.adv))&&(skip==="type"||s.types.includes(r.summary.product_type))&&(skip==="aff"||!s.aff||s.aff.includes(r.summary.aff_bucket||"None"))&&(!kw||r.search.includes(kw))&&inShape(r)
     &&(skip==="area"||SHAPE||!s.areas||s.areas.includes(r.summary.area))
     &&(skip==="status"||(isPipe(r)&&s.statuses.includes(r.summary.status))||txMatch(r,s.tx)||(s.existing&&r.kinds.includes("existing")))}
 function filtered(){const s=getState();return RECORDS.filter(r=>matches(r,s))}
@@ -419,7 +469,7 @@ function imgBox(r,small){
 function thumbHTML(r){const s=r.summary;return `<div class="thumb">${imgBox(r,true)}<div><b>${esc(r.name)}</b><div class="muted">${esc(s.community||s.jurisdiction)}${s.units_display?" · "+s.units_display+" units":""}</div><span class="pill" style="${pillStyle(r)}">${esc(s.status)}</span><div class="muted" style="margin-top:3px">Click for full record</div></div></div>`}
 function render(){
   trackSearch();
-  labelDropdowns();updateCounts();layer.clearLayers();
+  labelDropdowns();updateCounts();layer.clearLayers();if(typeof advLabel==="function"){advLabel();if(!$("#adv").hidden)advCount()}
   const rs=filtered();
   rs.forEach(r=>{
     const c=colorOf(r),white=c==="#FFFFFF";
@@ -766,7 +816,7 @@ let USER=null,PROFILE=null,PENDING=null;
 const SESSION_ID=(()=>{let s=store("hc_sid");if(!s){s=Math.random().toString(36).slice(2,10)+Date.now().toString(36);store("hc_sid",s)}return s})();
 function track(event,detail){if(!sb)return;sb.from("activity").insert({event,detail:detail||null,session_id:SESSION_ID,user_id:USER?USER.id:null,page:location.pathname}).then(()=>{})}
 var trackT=null,lastQ="";
-function trackSearch(){clearTimeout(trackT);trackT=setTimeout(()=>{const s=getState(),q=JSON.stringify(s);if(q===lastQ)return;const first=!lastQ;lastQ=q;if(first)return;
+function trackSearch(){clearTimeout(trackT);if(!$("#adv").hidden)return;trackT=setTimeout(()=>{const s=getState(),q=JSON.stringify(s);if(q===lastQ)return;const first=!lastQ;lastQ=q;if(first)return;
   track("search",{kw:s.kw||undefined,types:s.types.length===Object.keys(REG.product_types).length?"all":s.types,statuses:s.statuses,tx:s.tx,areas:s.areas||"all",shape:s.shape||undefined,results:filtered().length})},2500)}
 
 function requireLogin(reason,then){if(!sb){toast("Sign-in isn't available right now");return}if(USER){then();return}PENDING=then;acctView("signin",reason)}
@@ -914,6 +964,53 @@ async function adminXlsx(){
   const buf=await wb.xlsx.writeBuffer();const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf]));a.download=`housing_comps_admin_${new Date().toISOString().slice(0,10)}.xlsx`;a.click();
 }
 
+/* ---------- advanced filters ---------- */
+const BANDS=["Low","Moderate","Workforce"];
+const ADV0={ab:BANDS,tc:"any",inc:"any",ib:BANDS,umin:"",umax:"",mv:"",dfrom:"",dto:"",dnone:true,since:""};
+const chk=sel=>[...document.querySelectorAll(sel)].filter(i=>i.checked).map(i=>i.value);
+function advState(){return{ab:chk(".advAb"),tc:$("#advTc").value,inc:$("#advInc").value,ib:chk(".advIb"),umin:$("#advUmin").value,umax:$("#advUmax").value,
+  mv:$("#advMv").value,dfrom:$("#advDfrom").value,dto:$("#advDto").value,dnone:$("#advDnone").checked,since:$("#advSince").value}}
+function advSet(a){a={...ADV0,...(a||{})};
+  document.querySelectorAll(".advAb").forEach(i=>i.checked=a.ab.includes(i.value));document.querySelectorAll(".advIb").forEach(i=>i.checked=a.ib.includes(i.value));
+  $("#advTc").value=a.tc;$("#advInc").value=a.inc;$("#advUmin").value=a.umin;$("#advUmax").value=a.umax;$("#advMv").value=a.mv;
+  $("#advDfrom").value=a.dfrom;$("#advDto").value=a.dto;$("#advDnone").checked=a.dnone;$("#advSince").value=a.since;advIbState()}
+function advIbState(){const on=$("#advInc").value==="has";document.querySelectorAll(".advIb").forEach(i=>i.disabled=!on);$("#advIbRow").style.opacity=on?1:.45}
+function deliveryYear(r){const d=r.events.filter(e=>e.type==="Completion"||e.type==="Lease-up start").map(e=>e.date).sort().pop();return d?+d.slice(0,4):null}
+function monthsAgo(n){const d=new Date();d.setMonth(d.getMonth()-n);return d.toISOString().slice(0,10)}
+function advMatch(r,a){if(!a)return true;const m=r.summary,bands=m.aff_bands||[];
+  if(m.aff_bucket==="Affordable"){if(a.ab.length<3&&!bands.some(b=>a.ab.includes(b)))return false;if(a.tc==="yes"&&!m.tax_credit)return false;if(a.tc==="no"&&m.tax_credit)return false}
+  if(m.aff_bucket==="Market"){const has=/inclusionary/.test(m.aff_label);if(a.inc==="has"&&!has)return false;if(a.inc==="none"&&has)return false;
+    if(a.inc==="has"&&a.ib.length<3&&!bands.some(b=>a.ib.includes(b)))return false}
+  const u=m.units_range;if(a.umin&&(!u||u[1]<+a.umin))return false;if(a.umax&&(!u||u[0]>+a.umax))return false;
+  if(a.mv&&(!m.latest_event||m.latest_event<monthsAgo(+a.mv)))return false;
+  const dy=deliveryYear(r);if(!dy){if(!a.dnone)return false}else{if(a.dfrom&&dy<+a.dfrom)return false;if(a.dto&&dy>+a.dto)return false}
+  if(a.since){const ev=r.events.filter(e=>(e.type==="Application filed"||e.type==="Approved")&&!e.estimated).map(e=>e.date).sort().pop();if(!ev||ev<a.since)return false}
+  return true}
+function advSummary(a){if(!a)return [];const o=[];
+  if(a.ab.length<3)o.push("income bands: "+(a.ab.join(", ")||"none"));if(a.tc!=="any")o.push(a.tc==="yes"?"tax credits / bonds":"no tax credits / bonds");
+  if(a.inc!=="any")o.push(a.inc==="has"?"market with inclusionary"+(a.ib.length<3?" ("+a.ib.join(", ")+")":""):"market without inclusionary");
+  if(a.umin||a.umax)o.push(`${a.umin||0}${a.umax?"–"+a.umax:"+"} units`);
+  if(a.mv)o.push(`moved in the past ${+a.mv<12?a.mv+" months":+a.mv/12===1?"year":+a.mv/12+" years"}`);
+  if(a.dfrom||a.dto)o.push(`delivery ${a.dfrom||"…"}–${a.dto||"…"}`);if(!a.dnone)o.push("stated delivery date only");
+  if(a.since)o.push("filed or approved since "+a.since);return o}
+function advActive(){const a=advState(),s=getState();return advSummary(a).length+(s.aff.length<3?1:0)}
+function advSyncMirrors(){document.querySelectorAll("#adv [data-mirror]").forEach(i=>{const o=document.querySelector(i.dataset.mirror);if(o)i.checked=o.checked})}
+function advCount(){const rs=filtered(),ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
+  $("#advCount").textContent=`${num(rs.length)} record${rs.length===1?"":"s"} match`+(ur.length?` · ${lo===hi?num(lo):num(lo)+"–"+num(hi)} units`:"")}
+function advLabel(){const n=advSummary(advState()).length;$("#advBtn").textContent="Advanced filters"+(n?` (${n})`:"");$("#advBtn").classList.toggle("on",!!n)}
+$("#advTypes").innerHTML=Object.keys(REG.product_types).map(t=>`<label><input type="checkbox" data-mirror='#typesMenu input.pt[value="${esc(t)}"]'> ${esc(short(t))}</label>`).join("");
+$("#advStages").innerHTML=PIPELINE.map(x=>`<label><input type="checkbox" data-mirror='#showMenu input.st[value="${esc(x)}"]'><span class="dot" style="background:${STATUS_COLOR[x]}${whiteEdge(STATUS_COLOR[x])}"></span>${esc(x)}</label>`).join("");
+$("#adv").addEventListener("change",e=>{const i=e.target;
+  if(i.dataset.mirror){const o=document.querySelector(i.dataset.mirror);if(o){o.checked=i.checked;if(typeof syncPipeAll==="function")syncPipeAll()}}
+  if(i.id==="advInc")advIbState();render()});
+$("#adv").addEventListener("input",e=>{if(e.target.type==="number")render()});
+function advOpen(){closeMenus();advSyncMirrors();advIbState();$("#adv").hidden=false;advCount()}
+function advClose(){$("#adv").hidden=true;trackSearch()}
+$("#advBtn").onclick=advOpen;$("#advDone").onclick=advClose;
+$("#adv").addEventListener("click",e=>{if(e.target.id==="adv")advClose()});
+$("#advReset").onclick=()=>{advSet(ADV0);document.querySelectorAll("#adv [data-mirror]").forEach(i=>{i.checked=true;const o=document.querySelector(i.dataset.mirror);if(o)o.checked=true});if(typeof syncPipeAll==="function")syncPipeAll();render()};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#adv").hidden)advClose()});
+
 /* ---------- pipeline report ---------- */
 function deliveryOf(r){
   const ev=r.events.filter(e=>e.type==="Completion"||e.type==="Lease-up start");
@@ -969,6 +1066,7 @@ function repSummary(s,active,radius,area){
   const req=[esc(area),allTypes?"all product types":esc(s.types.map(short).join(", ")),allStages?"all pipeline stages":esc(s.statuses.join(", "))];
   if(s.aff&&s.aff.length<3)req.splice(1,0,esc(s.aff.map(x=>x==="Market"?"market rate":x==="None"?"affordability not stated":"affordable").join(" + ")));
   if(s.kw)req.push(`keyword "${esc(s.kw)}"`);
+  if(typeof advSummary==="function")advSummary(s.adv).forEach(x=>req.push(esc(x)));
   const uc=stage(["Under construction"]),ap=stage(["Approved","Permitted"]),pr=stage(["Proposed"]),lu=stage(["Lease-up / selling"]);
   const parts=[[uc,"under construction"],[ap,"approved or permitted"],[pr,"proposed"],[lu,"in lease-up or selling"]].filter(x=>x[0].length).map(([rs,l])=>`${u(rs).text} ${l}`);
   const types=Object.keys(REG.product_types).map(x=>[x,active.filter(r=>r.summary.product_type===x)]).filter(x=>x[1].length).sort((a,b)=>u(b[1]).hi-u(a[1]).hi);

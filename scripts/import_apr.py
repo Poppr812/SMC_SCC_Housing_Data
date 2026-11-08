@@ -123,6 +123,7 @@ def rollup(raw):
             "lat": r0.get("LATITUDE"), "lng": r0.get("LONGITUDE"), "score": r0.get("SCORE") or 0, "std": r0.get("STD_ADDRESS"),
             "sb35": any(str(r.get("APPROVE_SB35") or r.get("APP_SUBMITTED_SB35") or "").upper() in ("YES", "Y") for r in rs),
             "tables": {r["_t"] for r in rs},
+            "rows": rs,  # kept for scripts/apr_affordability.py
         })
     return out
 

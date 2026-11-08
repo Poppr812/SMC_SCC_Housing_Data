@@ -135,6 +135,37 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 30,
+              "ami": 50
+            },
+            {
+              "count": 8,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report 2023, completion stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report 2023, completion stage: 38 deed-restricted units"
+        }
+      ]
     }
   },
   "construction_notes": [

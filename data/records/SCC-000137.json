@@ -216,6 +216,30 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 50
+            },
+            {
+              "count": 5,
+              "ami": 80
+            },
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001127"
+          ],
+          "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
     }
   },
   "construction_notes": [

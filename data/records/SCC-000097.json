@@ -265,6 +265,41 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 60,
+              "ami": 50
+            },
+            {
+              "count": 120,
+              "ami": 80
+            },
+            {
+              "count": 66,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001100"
+          ],
+          "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001100"
+          ],
+          "note": "State report 2025, application stage: 246 deed-restricted units"
+        }
+      ]
     }
   },
   "construction_notes": [
