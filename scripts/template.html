@@ -317,7 +317,7 @@ function plainValue(key,v){return fmtValue(key,v).replace(/&amp;/g,"&").replace(
 /* ---------- filters ---------- */
 const SHORT={"Condominiums":"Condos","Mixed product":"Mixed"};const short=t=>SHORT[t]||t;
 const typesMenu=$("#typesMenu");
-typesMenu.innerHTML=Object.keys(REG.product_types).map(t=>`<label title="${esc(REG.product_types[t])}"><input type="checkbox" value="${esc(t)}" checked> ${esc(short(t))}<span class="cnt" data-t="${esc(t)}"></span></label>`).join("");
+typesMenu.innerHTML=`<label class="grp" title="Up to 25% of units deed-restricted (inclusionary or density bonus), or none"><input type="checkbox" class="af" value="Market" checked> Market rate<span class="cnt" data-af="Market"></span></label><label class="grp" title="More than 25% of units deed-restricted, or applying for tax credits. 100% includes projects whose only unrestricted units are managers&#39; units"><input type="checkbox" class="af" value="Affordable" checked> Affordable<span class="cnt" data-af="Affordable"></span></label><label style="color:var(--gray)"><input type="checkbox" class="af" value="None" checked> Affordability not stated<span class="cnt" data-af="None"></span></label><hr>`+Object.keys(REG.product_types).map(t=>`<label title="${esc(REG.product_types[t])}"><input type="checkbox" class="pt" value="${esc(t)}" checked> ${esc(short(t))}<span class="cnt" data-t="${esc(t)}"></span></label>`).join("");
 $("#areaMenu").innerHTML='<div class="areanote">A boundary is active: only records inside it are shown. Jurisdiction picks are paused until you clear it.</div>'+Object.entries(REG.areas).map(([county,areas])=>
   `<div class="arow"><button type="button" class="caret" data-county="${esc(county)}" title="Show cities">▸</button><label class="grp"><input type="checkbox" class="cty" data-county="${esc(county)}" checked> ${esc(county)}<span class="cnt" data-a="__c:${esc(county)}"></span></label></div>
    <div class="kids" data-county="${esc(county)}" hidden>${areas.map(a=>`<label class="sub"><input type="checkbox" class="ar" data-county="${esc(county)}" value="${esc(a)}" checked>${esc(a)}<span class="cnt" data-a="${esc(a)}"></span></label>`).join("")}</div>`).join("")+'<button type="button" class="opt" id="clearArea">Select all jurisdictions</button>';
@@ -342,7 +342,8 @@ document.addEventListener("click",e=>{if(!e.target.closest(".dd"))document.query
 let SHAPE=null; /* {t:"c",lat,lng,mi,addr} radius | {t:"p",pts:[[lat,lng],...]} boundary */
 function getState(){const ar=[...document.querySelectorAll("#areaMenu .ar")];return{
   kw:$("#kw").value.trim(),
-  types:[...typesMenu.querySelectorAll("input:checked")].map(i=>i.value),
+  types:[...typesMenu.querySelectorAll("input.pt:checked")].map(i=>i.value),
+  aff:[...typesMenu.querySelectorAll("input.af:checked")].map(i=>i.value),
   statuses:[...document.querySelectorAll("#showMenu .st:checked")].map(i=>i.value),
   tx:[...document.querySelectorAll("#showMenu .tx:checked")].map(i=>i.value),
   existing:$("#exAll").checked,
@@ -350,7 +351,8 @@ function getState(){const ar=[...document.querySelectorAll("#areaMenu .ar")];ret
   shape:SHAPE}}
 function setState(s){
   $("#kw").value=s.kw||"";
-  typesMenu.querySelectorAll("input").forEach(i=>i.checked=!s.types||s.types.includes(i.value));
+  typesMenu.querySelectorAll("input.pt").forEach(i=>i.checked=!s.types||s.types.includes(i.value));
+  typesMenu.querySelectorAll("input.af").forEach(i=>i.checked=!s.aff||s.aff.includes(i.value));
   const sts=s.statuses&&s.statuses.map(x=>x==="Inactive"?"Inactive pipeline":x); /* older links used the old name */
   document.querySelectorAll("#showMenu .st").forEach(i=>i.checked=!sts||sts.includes(i.value));
   $("#exAll").checked=s.existing!==false;
@@ -366,7 +368,8 @@ function stateToHash(){return "#q="+encodeURIComponent(btoa(unescape(encodeURICo
 function hashToState(){const m=location.hash.match(/#q=([^&]+)/);if(!m)return null;try{return JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))))}catch(e){return null}}
 function labelDropdowns(){
   const s=getState(),n=Object.keys(REG.product_types).length;
-  $("#typesBtn").textContent=s.types.length===n?"All types":s.types.length?s.types.map(short).join(", "):"None";
+  const tl=s.types.length===n?"All types":s.types.length?s.types.map(short).join(", "):"None";
+  $("#typesBtn").textContent=s.aff.length===3?tl:(s.aff.filter(x=>x!=="None").map(x=>x==="Market"?"Market rate":x).join(" + ")||"Not stated")+(s.types.length===n?"":" · "+tl);
   const np=s.statuses.length,all=PIPELINE.length;
   const ar=[...document.querySelectorAll("#areaMenu .ar:checked")].map(i=>i.value);
   const jur=!s.areas?"All jurisdictions":!ar.length?"None":ar.length<=2?ar.join(", "):`${ar.length} jurisdictions`;
@@ -387,13 +390,14 @@ const isSale=r=>r.kinds.includes("transaction");
 const txMatch=(r,tx)=>tx.some(k=>r.kinds.includes(k));
 /* skip "area" or "status" to leave that filter out, so its menu can show counts */
 function matches(r,s,skip){const kw=s.kw.toLowerCase();
-  return (skip==="type"||s.types.includes(r.summary.product_type))&&(!kw||r.search.includes(kw))&&inShape(r)
+  return (skip==="type"||s.types.includes(r.summary.product_type))&&(skip==="aff"||!s.aff||s.aff.includes(r.summary.aff_bucket||"None"))&&(!kw||r.search.includes(kw))&&inShape(r)
     &&(skip==="area"||SHAPE||!s.areas||s.areas.includes(r.summary.area))
     &&(skip==="status"||(isPipe(r)&&s.statuses.includes(r.summary.status))||txMatch(r,s.tx)||(s.existing&&r.kinds.includes("existing")))}
 function filtered(){const s=getState();return RECORDS.filter(r=>matches(r,s))}
 function updateCounts(){
   const s=getState(),b=RECORDS.filter(r=>matches(r,s,"status")),a=RECORDS.filter(r=>matches(r,s,"area")),ty=RECORDS.filter(r=>matches(r,s,"type"));
-  document.querySelectorAll("#typesMenu .cnt").forEach(el=>{el.textContent=ty.filter(r=>r.summary.product_type===el.dataset.t).length});
+  document.querySelectorAll("#typesMenu .cnt[data-t]").forEach(el=>{el.textContent=ty.filter(r=>r.summary.product_type===el.dataset.t).length});
+  const af=RECORDS.filter(r=>matches(r,s,"aff"));document.querySelectorAll("#typesMenu .cnt[data-af]").forEach(el=>{el.textContent=af.filter(r=>(r.summary.aff_bucket||"None")===el.dataset.af).length});
   document.querySelectorAll("#showMenu .cnt").forEach(el=>{const k=el.dataset.c;el.textContent=k.startsWith("__")?b.filter(r=>r.kinds.includes(k.slice(2))).length:b.filter(r=>isPipe(r)&&r.summary.status===k).length});
   document.querySelectorAll("#areaMenu .cnt").forEach(el=>{const k=el.dataset.a;el.textContent=k.startsWith("__c:")?a.filter(r=>r.summary.county===k.slice(4)).length:a.filter(r=>r.summary.area===k).length});
 }
@@ -424,7 +428,7 @@ function render(){
   drawShape();
   const ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
   $("#count").textContent=`${rs.length} record${rs.length===1?"":"s"} match`+(ur.length?` (${lo===hi?num(lo):num(lo)+"–"+num(hi)} units)`:"");
-  $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${esc(r.name)}</b><span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.units_display?" · "+r.summary.units_display+" units":""} · ${esc(short(r.summary.product_type))}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
+  $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${esc(r.name)}</b><span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.units_display?" · "+r.summary.units_display+" units":""} · ${esc(short(r.summary.product_type))}${r.summary.aff_bucket?" · "+esc(r.summary.aff_label):""}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
   document.querySelectorAll(".item[data-id]").forEach(el=>{el.onclick=()=>openRecord(el.dataset.id);el.onmouseenter=()=>{const r=RECORDS.find(x=>x.id===el.dataset.id);map.panTo([r.lat,r.lng])}});
   safeReplace(location.pathname+location.search+stateToHash());
 }
@@ -916,7 +920,7 @@ function deliveryOf(r){
 function pipelineXlsx(rs,radius,area){
   if(!window.ExcelJS){toast("Excel library didn't load (needs internet)");return}
   if(!USER&&rs.length>LIMIT.standard){requireLogin(`Exports of more than ${LIMIT.standard} records need a free account. This report has ${rs.length}.`,()=>openPipeline(true));return}
-  const rows=rs.map(r=>{const m=r.summary,u=m.units_range;return {"Project":r.name,"Stage":m.status,"Units":u&&u[0]===u[1]?u[0]:m.units_display||"","Type":short(m.product_type),"Developer / applicant":developerOf(r),"Delivery (source-stated)":deliveryOf(r),"Your delivery date":"","Last movement":m.latest_event||"",...(radius?{"Distance (mi)":+miles(SHAPE,r).toFixed(1)}:{}),"Record URL":SITE_URL+"#r="+r.id}});
+  const rows=rs.map(r=>{const m=r.summary,u=m.units_range;return {"Project":r.name,"Stage":m.status,"Affordability":affText(r),"Units":u&&u[0]===u[1]?u[0]:m.units_display||"","Type":short(m.product_type),"Developer / applicant":developerOf(r),"Delivery (source-stated)":deliveryOf(r),"Your delivery date":"","Last movement":m.latest_event||"",...(radius?{"Distance (mi)":+miles(SHAPE,r).toFixed(1)}:{}),"Record URL":SITE_URL+"#r="+r.id}});
   const wb=new ExcelJS.Workbook();wb.creator="Housing Comps";
   const ws=wb.addWorksheet("Pipeline");styleSheet(ws,Object.keys(rows[0]),rows,["Record URL"]);ws.views=[{state:"frozen",xSplit:1,ySplit:1}];
   track("export",{scope:"pipeline",fmt:"xlsx",count:rows.length,area});
@@ -937,6 +941,7 @@ const pctT=(a,b)=>a>0&&pct(a,b)===0?"under 1%":pct(a,b)+"%";
 const listJoin=a=>a.length<2?a.join(""):a.slice(0,-1).join(", ")+" and "+a[a.length-1];
 const bestVal=(r,k)=>{const f=r.facts[k];if(!f)return null;const c=f.claims[f.claims.length===1?0:f.best];return c?c.value:null}; /* conflicting claims with none marked best count as not stated */
 const TYPE_LBL={"Condominiums":"Condos"},TYPE_PL={"Apartments":"Apartments","Condominiums":"Condos","Townhomes":"Townhomes","Single-family":"Single-family homes","Mixed product":"Mixed-product projects"};
+const affText=r=>r.summary.aff_label+(r.summary.tax_credit?" · TC/bonds":"");
 const abbr4=t=>{const w=(t||"").replace(/[^A-Za-z]/g,"").slice(0,4);return w?w[0].toUpperCase()+w.slice(1):""};
 function repFileName(){ /* e.g. "Midd 1MR Housing Comps 2026.11.08" */
   const s=getState(),d=new Date(),dd=`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,"0")}.${String(d.getDate()).padStart(2,"0")}`;
@@ -959,15 +964,20 @@ function repSummary(s,active,radius,area){
   const total=unitsOf(active),T=total.hi,stage=l=>active.filter(r=>l.includes(r.summary.status)),u=rs=>unitsOf(rs);
   const allTypes=s.types.length>=Object.keys(REG.product_types).length,allStages=s.statuses.length>=PIPELINE.length;
   const req=[esc(area),allTypes?"all product types":esc(s.types.map(short).join(", ")),allStages?"all pipeline stages":esc(s.statuses.join(", "))];
+  if(s.aff&&s.aff.length<3)req.splice(1,0,esc(s.aff.map(x=>x==="Market"?"market rate":x==="None"?"affordability not stated":"affordable").join(" + ")));
   if(s.kw)req.push(`keyword "${esc(s.kw)}"`);
   const uc=stage(["Under construction"]),ap=stage(["Approved","Permitted"]),pr=stage(["Proposed"]),lu=stage(["Lease-up / selling"]);
   const parts=[[uc,"under construction"],[ap,"approved or permitted"],[pr,"proposed"],[lu,"in lease-up or selling"]].filter(x=>x[0].length).map(([rs,l])=>`${u(rs).text} ${l}`);
   const types=Object.keys(REG.product_types).map(x=>[x,active.filter(r=>r.summary.product_type===x)]).filter(x=>x[1].length).sort((a,b)=>u(b[1]).hi-u(a[1]).hi);
   const typeLine=types.map(([t,rs])=>`${esc(TYPE_LBL[t]||t)} ${rs.length} (${u(rs).text} units)`).join(" · ");
-  /* affordability: share of units by the record's best affordability type */
-  const aff={};let affUnits=0,noAff=0;
-  active.forEach(r=>{const t=bestVal(r,"affordability_type"),n=(r.summary.units_range||[0,0])[1];if(!t){noAff++;return}aff[t]=(aff[t]||0)+n;affUnits+=n});
-  const affLine=affUnits?Object.entries(aff).sort((a,b)=>b[1]-a[1]).map(([t,n])=>`${pctT(n,affUnits)} ${esc(t.toLowerCase())}`).join(", ")+(noAff?` <span class="muted">(share of units; not stated for ${noAff} project${noAff===1?"":"s"})</span>`:` <span class="muted">(share of units)</span>`):"Not stated";
+  /* affordability: Market (up to 25% deed-restricted) or Affordable (more than 25%, or tax credits) */
+  const mk=active.filter(r=>r.summary.aff_bucket==="Market"),af=active.filter(r=>r.summary.aff_bucket==="Affordable"),ns=active.filter(r=>!r.summary.aff_bucket);
+  const incl=mk.filter(r=>/inclusionary/.test(r.summary.aff_label)).length,tcN=af.filter(r=>r.summary.tax_credit).length;
+  const affBits=[];
+  if(mk.length)affBits.push(`Market ${mk.length} (${u(mk).text} units${incl?`; ${incl} with inclusionary`:""})`);
+  if(af.length)affBits.push(`Affordable ${af.length} (${u(af).text} units${tcN?`; ${tcN} with tax credits or bonds`:""})`);
+  if(ns.length)affBits.push(`<span class="muted">not stated ${ns.length}</span>`);
+  const affLine=affBits.join(" · ")||"Not stated";
   /* bedroom mix: only projects whose source states it */
   const mixKeys=["studio","1br","2br","3br","4br+"],mixLbl={"studio":"studio","1br":"1BR","2br":"2BR","3br":"3BR","4br+":"4BR+"},mix={};let mixN=0,mixU=0;
   active.forEach(r=>{const v=bestVal(r,"unit_mix");if(!v)return;const t=mixKeys.reduce((a,k)=>a+(+v[k]||0),0);if(!t)return;mixN++;mixU+=t;mixKeys.forEach(k=>mix[k]=(mix[k]||0)+(+v[k]||0))});
@@ -1023,7 +1033,7 @@ function openPipeline(silent){
   const byRow=(a,b)=>radius?dist(a)-dist(b):(b.summary.total_units||0)-(a.summary.total_units||0);
   const active=all.filter(r=>r.summary.status!=="Inactive pipeline").sort(byRow),inactive=all.filter(r=>r.summary.status==="Inactive pipeline").sort(byRow);
   const total=unitsOf(active),area=reportArea(s);
-  const listTable=(rs,numbered)=>`<div class="wrap"><table><tr>${numbered?"<th>#</th>":""}<th>Project</th><th>Stage</th><th>Units</th><th>Type</th><th>Developer / applicant</th><th>Delivery</th><th>Last movement</th>${radius?"<th>Miles</th>":""}</tr>${rs.map((r,i)=>{const m=r.summary;return `<tr>${numbered?`<td><b>${i+1}</b></td>`:""}<td><a href="${SITE_URL}#r=${r.id}" target="_blank" rel="noopener">${esc(r.name)}</a></td><td>${esc(m.status)}</td><td>${esc(m.units_display||"Not stated")}</td><td>${esc(short(m.product_type))}</td><td>${esc(developerOf(r))}</td><td>${esc(deliveryOf(r))}</td><td>${esc(m.latest_event||"")}</td>${radius?`<td>${dist(r).toFixed(1)}</td>`:""}</tr>`}).join("")}</table></div>`;
+  const listTable=(rs,numbered)=>`<div class="wrap"><table><tr>${numbered?"<th>#</th>":""}<th>Project</th><th>Stage</th><th>Affordability</th><th>Units</th><th>Type</th><th>Developer / applicant</th><th>Delivery</th><th>Last movement</th>${radius?"<th>Miles</th>":""}</tr>${rs.map((r,i)=>{const m=r.summary;return `<tr>${numbered?`<td><b>${i+1}</b></td>`:""}<td><a href="${SITE_URL}#r=${r.id}" target="_blank" rel="noopener">${esc(r.name)}</a></td><td>${esc(m.status)}</td><td>${esc(affText(r))}</td><td>${esc(m.units_display||"Not stated")}</td><td>${esc(short(m.product_type))}</td><td>${esc(developerOf(r))}</td><td>${esc(deliveryOf(r))}</td><td>${esc(m.latest_event||"")}</td>${radius?`<td>${dist(r).toFixed(1)}</td>`:""}</tr>`}).join("")}</table></div>`;
   const places=[...new Set(all.map(r=>r.summary.jurisdiction))].sort(),cov=REG.coverage||{};
   const covered=places.filter(j=>cov[j]);
   const stages=PIPELINE.filter(x=>x!=="Inactive pipeline"&&active.some(r=>r.summary.status===x));
@@ -1037,6 +1047,7 @@ function openPipeline(silent){
    ${inactive.length?`<h3>Inactive pipeline (${inactive.length}, not in totals or on the map)</h3>${listTable(inactive,false)}`:""}
    <h3>Notes</h3><div class="foot">
      ${places.map(j=>{const d=((cov[j]||"").match(/\d{4}-\d{2}-\d{2}/)||[])[0];return `<p><b>${esc(j)}:</b> ${cov[j]?`checked against the city's published project list${d?" on "+d:""}.`:"from state housing reports, funding reports and news."}</p>`}).join("")}
+     <p class="muted">Market: up to 25% of units deed-restricted (inclusionary or density bonus). Affordable: more than 25% deed-restricted, or applying for tax credits; 100% includes projects whose only unrestricted units are managers' units. TC/bonds: tax credits or tax-exempt bonds in the project's funding records.</p>
      <p class="muted">Stages are working labels, not legal status. Unit counts and delivery dates are as stated by sources; "est." marks a source's estimate. Each project links to its sources.</p></div>
   </div>`;
   $("#repXlsx").onclick=()=>pipelineXlsx([...active,...inactive],radius,area);

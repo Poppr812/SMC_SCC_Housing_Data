@@ -33,7 +33,7 @@ POPULATIONS = {
 
 AFFORDABILITY_TYPES = {
     "Market-rate": "No deed-restricted units",
-    "Mixed-income": "Some deed-restricted units (inclusionary or density bonus)",
+    "Mixed-income": "Some deed-restricted units. Shown as Market (with inclusionary) up to 25% of units, Affordable above 25%",
     "100% affordable": "All units deed-restricted except manager units",
     "Below-market (unrestricted)": "Below-market rents by owner policy, no deed restriction",
 }

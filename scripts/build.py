@@ -211,6 +211,33 @@ def units_range(f):
     return [min(nums), max(nums)] if nums else None
 
 
+INCLUSIONARY_MAX = 0.25  # up to 25% deed-restricted is market with inclusionary; above that the project competes for affordable financing
+TAX_CREDIT_TYPES = {"Tax-exempt bonds", "Tax-credit equity (4%)", "Tax-credit equity (9%)", "State tax-credit equity"}
+STATE_DR = re.compile(r"^([\d,]+) deed-restricted units reported to the state")
+
+
+def affordability(facts, ami, units):
+    """Market or Affordable, with a short label. Returns (bucket or None, label, share or None)."""
+    t = best(facts.get("affordability_type"))
+    if t == "100% affordable":
+        return "Affordable", "Affordable, 100%", 1.0
+    if t in ("Market-rate", "Below-market (unrestricted)"):
+        return "Market", "Market", 0.0
+    if t != "Mixed-income":
+        return None, "Not stated", None
+    restricted = sum(x["count"] for x in ami) if ami else None
+    if restricted is None:
+        note = best(facts.get("affordability_notes")) or ""
+        mt = STATE_DR.match(note) if isinstance(note, str) else None
+        restricted = int(mt.group(1).replace(",", "")) if mt else None
+    share = restricted / units if restricted and units else None
+    if share is not None and units - restricted <= 3:  # only managers' units are unrestricted
+        return "Affordable", "Affordable, 100%", 1.0
+    if share is not None and share > INCLUSIONARY_MAX:
+        return "Affordable", f"Affordable, {min(99, round(share * 100))}%", share
+    return "Market", "Market, with inclusionary", share
+
+
 def process(r, sources):
     facts = r["facts"]
     # Local source labels S1, S2... in order of first appearance on the page.
@@ -295,6 +322,12 @@ def process(r, sources):
             main_lender = top["provider"] + (f" ({top['program']})" if top.get("program") else "")
 
     ami = best(facts.get("restricted_by_ami"))
+    aff_bucket, aff_label, aff_share = affordability(facts, ami, units)
+    lihtc = (any(x["type"] in TAX_CREDIT_TYPES - {"Tax-exempt bonds"} for x in r.get("financing", []))
+             or any(sources[s]["publisher"].startswith("California Tax Credit Allocation Committee") for s in order if s in sources))
+    tax_credit = lihtc or any(x["type"] == "Tax-exempt bonds" for x in r.get("financing", []))
+    if lihtc and aff_bucket != "Affordable":  # a tax credit project competes for affordable financing whatever its label says
+        aff_bucket, aff_label = "Affordable", "Affordable"
     use_price = price is not None and ("transaction" in kinds or tdc is None)
     summary = {
         "product_type": best(facts["product_type"]),
@@ -308,6 +341,10 @@ def process(r, sources):
         "units_display": units_display(facts.get("total_units")),
         "units_range": units_range(facts.get("total_units")),
         "restricted_units": sum(x["count"] for x in ami) if ami else None,
+        "aff_bucket": aff_bucket,
+        "aff_label": aff_label,
+        "aff_share": aff_share,
+        "tax_credit": tax_credit,
         "owner": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Recorded owner"),
         "developer": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Developer"),
         "cost_basis": "Sale price" if use_price else ("Total development cost" if tdc else ""),
