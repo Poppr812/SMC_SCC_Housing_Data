@@ -184,6 +184,44 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001950"
+          ],
+          "note": "\"DeNova has committed to exceeding this requirement by providing 20% of the Project's units at low-income housing levels, totaling 65 low-income housing units.\""
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 65,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001950"
+          ],
+          "note": "65 units at \"low-income housing levels\" (state low-income category, upper limit 80% AMI); split 16 live-work, 19 stacked flats, 19 townhomes, 11 clustered attached"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Builder's Remedy settlement: 65 low-income units (20% of 323), distributed across all product types; remaining inclusionary obligation paid as in-lieu fee",
+          "src": [
+            "SRC-001950"
+          ],
+          "note": "\"DeNova shall satisfy any remaining IHO obligations through an in-lieu fee in accordance with Chapter 14.08\""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -214,6 +252,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-08",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

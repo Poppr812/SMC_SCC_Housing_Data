@@ -156,6 +156,48 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001952"
+          ],
+          "note": "\"The Project is proposing to dedicate twenty (20) total Duplex units\" as BMR units; Table 1 shows 20 BMR units provided (10 Low, 10 Very Low), 31% of base density"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 10,
+              "ami": 50
+            },
+            {
+              "count": 10,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001952"
+          ],
+          "note": "Applicant's BMR plan Table 1: Total BMR Units Provided 20 = 10 Low + 10 Very Low (state categories, upper limits 80% and 50% AMI). Plan text says both tens are Very Low, an apparent typo; table used"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "For-sale project proposing BMR units as rentals (alternative under CMC 18.16.070 A5); 10 very-low-income units used for a 50% State Density Bonus",
+          "src": [
+            "SRC-001952"
+          ],
+          "note": "\"The project is for-sale, and is proposing an Alternative to provide the BMR units as rentals under CMC 18.16.070\""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -205,6 +247,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-08",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

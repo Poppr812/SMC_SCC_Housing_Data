@@ -264,6 +264,33 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001951"
+          ],
+          "note": "\"The project will include 49 units that will be available for sale to moderate income households (15% affordable).\""
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 49,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001951"
+          ],
+          "note": "49 for-sale units for moderate-income households (state moderate category, upper limit 120% AMI); qualifies project for State Density Bonus"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -313,6 +340,11 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-08",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }
