@@ -625,7 +625,7 @@ function askHTML(r,label,q){
 }
 function factHTML(r,key,f){
   const cl=f.claims;
-  if(f.combine)return cl.map(c=>fmtValue(key,c.value)+fn(c.src)).join("; ");
+  if(f.combine||key==="planning_file")return cl.map(c=>fmtValue(key,c.value)+fn(c.src)).join("; ");
   if(cl.length===1){const c=cl[0];return fmtValue(key,c.value)+fn(c.src)+(c.note?`<div class="derived">${esc(c.note)}</div>`:"")}
   if(f.best!=null){const b=cl[f.best],rest=cl.filter((_,i)=>i!==f.best);return `${fmtValue(key,b.value)}${fn(b.src)} <span class="muted">Other sources indicate ${rest.map(c=>fmtValue(key,c.value)+fn(c.src)).join(", ")}.</span>`}
   return `Possibly ${cl.map(c=>fmtValue(key,c.value)+fn(c.src)).join(" or ")}. <span class="muted">See sources below.</span>`+(f.question?askHTML(r,REG.facts[key].label,f.question):"");
@@ -725,7 +725,7 @@ $("#expBtn").onclick=()=>{$("#expCount").textContent=`${filtered().length} recor
 $("#expCancel").onclick=()=>$("#exp").classList.remove("show");
 function claimsText(r,key,f){
   const L=()=>"";
-  if(f.combine||f.claims.length===1)return f.claims.map(c=>plainValue(key,c.value)+L(c.src)+(c.note?" ("+c.note+")":"")).join("; ");
+  if(f.combine||key==="planning_file"||f.claims.length===1)return f.claims.map(c=>plainValue(key,c.value)+L(c.src)+(c.note?" ("+c.note+")":"")).join("; ");
   if(f.best!=null)return plainValue(key,f.claims[f.best].value)+L(f.claims[f.best].src)+"; other sources: "+f.claims.filter((_,i)=>i!==f.best).map(c=>plainValue(key,c.value)+L(c.src)).join(", ");
   return "Possibly "+f.claims.map(c=>plainValue(key,c.value)+L(c.src)).join(" or ");
 }
