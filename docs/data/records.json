@@ -15189,6 +15189,43 @@
    "wayback": null,
    "copyright": true,
    "sha256": "70ee668ef386377956908e1f7a99dd9d4e96428104b559f0151f32f404a583f2"
+  },
+  "SRC-001946": {
+   "id": "SRC-001946",
+   "title": "Orlo & Alba | Luxury Apartment Communities in Santa Clara, CA",
+   "publisher": "Holland Residential",
+   "date": null,
+   "type": "Developer web page",
+   "url": "https://www.hollandresidential.com/ca/santa-clara/orlo-alba",
+   "retrieved": "2026-11-08",
+   "wayback": null,
+   "copyright": true,
+   "sha256": "688acfb12b3103636a719dc5548c1ebdbd3ef323989c6b3c6f6c211452f547e5"
+  },
+  "SRC-001947": {
+   "id": "SRC-001947",
+   "title": "Orlo - Doorway Housing Portal",
+   "publisher": "Bay Area Housing Finance Authority (Doorway Housing Portal)",
+   "date": null,
+   "type": "Government web page",
+   "url": "https://housingbayarea.mtc.ca.gov/listing/600bb54a-6b0f-4ee3-98f0-c38ca000e36a/orlo_1200_rickabaugh_way_santa_clara_ca",
+   "retrieved": "2026-11-08",
+   "wayback": null,
+   "copyright": false,
+   "sha256": "8593bd71dae61326b720cfbb508124f2e35f5b31d9d3ee927c077a008cf53b81"
+  },
+  "SRC-001948": {
+   "id": "SRC-001948",
+   "title": "Anson Apartments, 1008 Carolan Ave, Burlingame, CA - RentCafe",
+   "publisher": "RentCafe",
+   "date": null,
+   "type": "Trade listing",
+   "url": "https://www.rentcafe.com/apartments/ca/burlingame/anson-0/default.aspx",
+   "retrieved": "2026-11-08",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null,
+   "no_copy": "site refused the download (HTTP 403)"
   }
  },
  "records": [
@@ -187108,6 +187145,30 @@
        ]
       }
      ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Mixed-income",
+       "src": [
+        "SRC-001946",
+        "SRC-001947"
+       ],
+       "note": "Leasing site: Orlo and Alba take part in Santa Clara's Below Market Rate (BMR) program. Doorway lists 18 units at Orlo (1200 Rickabaugh Way); no count found for Alba."
+      }
+     ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "Below Market Rate units under Santa Clara's BMR program. Doorway lists 18 units at Orlo: 1 studio, 11 one-bedroom, 5 two-bedroom, 1 three-bedroom.",
+       "src": [
+        "SRC-001946",
+        "SRC-001947"
+       ],
+       "note": ""
+      }
+     ]
     }
    },
    "construction_notes": [],
@@ -187148,11 +187209,18 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-08",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
    "srcLabels": {
     "SRC-001098": "S1",
-    "SRC-001504": "S2"
+    "SRC-001504": "S2",
+    "SRC-001946": "S3",
+    "SRC-001947": "S4"
    },
    "lat": 37.35583151071429,
    "lng": -121.93379774285714,
@@ -187175,7 +187243,7 @@
     ],
     "restricted_units": null,
     "aff_bucket": "Market",
-    "aff_label": "Market (by developer)",
+    "aff_label": "Market, with inclusionary",
     "aff_share": null,
     "aff_bands": [],
     "tax_credit": false,
@@ -187188,7 +187256,7 @@
     "latest_event": "",
     "stale_since": ""
    },
-   "search": "gateway crossing santa clara 230-60-001 230-60-002 1200 rickabaugh way, santa clara, ca 350 chastain pl, santa clara, ca 350 chastain place, santa clara apartments lease-up / selling first phase opened; remaining buildings and hotel are future phases santa clara 1565 about 1,565 apartments at full build-out; first phase 725 (orlo 318, alba 407) 7 developer holland partner group co-developer / partner hunter storm architect mve + partners"
+   "search": "gateway crossing santa clara 230-60-001 230-60-002 1200 rickabaugh way, santa clara, ca 350 chastain pl, santa clara, ca 350 chastain place, santa clara apartments lease-up / selling first phase opened; remaining buildings and hotel are future phases santa clara 1565 about 1,565 apartments at full build-out; first phase 725 (orlo 318, alba 407) 7 mixed-income leasing site: orlo and alba take part in santa clara's below market rate (bmr) program. doorway lists 18 units at orlo (1200 rickabaugh way); no count found for alba. below market rate units under santa clara's bmr program. doorway lists 18 units at orlo: 1 studio, 11 one-bedroom, 5 two-bedroom, 1 three-bedroom. developer holland partner group co-developer / partner hunter storm architect mve + partners"
   },
   {
    "id": "SCC-000542",
@@ -207465,6 +207533,17 @@
        ]
       }
      ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Market-rate",
+       "src": [
+        "SRC-001903"
+       ],
+       "note": "City project page: \"The market-rate project includes two- and three-bedroom townhomes\""
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -207504,6 +207583,11 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-08",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
    "srcLabels": {
@@ -207531,8 +207615,8 @@
     ],
     "restricted_units": null,
     "aff_bucket": "Market",
-    "aff_label": "Market (by developer)",
-    "aff_share": null,
+    "aff_label": "Market",
+    "aff_share": 0.0,
     "aff_bands": [],
     "tax_credit": false,
     "owner": "",
@@ -207544,7 +207628,7 @@
     "latest_event": "2022-11-21",
     "stale_since": ""
    },
-   "search": "royal way townhomes gilroy 799-44-113 6630 royal way, gilroy, ca townhomes under construction gilroy 45 2 3.37 as 21-17, tm 21-04, z 21-05 parcel match: the city's nine apns (799-44-093 to -110) aren't in county data. 799-44-113 is 3.32 acres, close to the stated 3.37, at the geocoded address. matched by location and area, not the source's own apn. developer lennar homes city council approval"
+   "search": "royal way townhomes gilroy 799-44-113 6630 royal way, gilroy, ca townhomes under construction gilroy 45 2 3.37 as 21-17, tm 21-04, z 21-05 market-rate city project page: \"the market-rate project includes two- and three-bedroom townhomes\" parcel match: the city's nine apns (799-44-093 to -110) aren't in county data. 799-44-113 is 3.32 acres, close to the stated 3.37, at the geocoded address. matched by location and area, not the source's own apn. developer lennar homes city council approval"
   },
   {
    "id": "SCC-000608",
@@ -239930,6 +240014,17 @@
        ]
       }
      ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Mixed-income",
+       "src": [
+        "SRC-001948"
+       ],
+       "note": "Leasing listing shows Below Market Rate floor plans (A1, A2, B1, C1) and says some units may be income restricted; no count stated."
+      }
+     ]
     }
    },
    "construction_notes": [],
@@ -240007,6 +240102,11 @@
      "date": "2026-11-02",
      "by": "Paul via Claude",
      "action": "Record created from local newspaper leads (2025-2026) and the sources listed"
+    },
+    {
+     "date": "2026-11-08",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
    "srcLabels": {
@@ -240014,7 +240114,8 @@
     "SRC-000730": "S2",
     "SRC-000727": "S3",
     "SRC-000728": "S4",
-    "SRC-000729": "S5"
+    "SRC-000729": "S5",
+    "SRC-001948": "S6"
    },
    "lat": 37.586999695833335,
    "lng": -122.35770032916666,
@@ -240042,8 +240143,8 @@
      268
     ],
     "restricted_units": null,
-    "aff_bucket": null,
-    "aff_label": "Not stated",
+    "aff_bucket": "Market",
+    "aff_label": "Market, with inclusionary",
     "aff_share": null,
     "aff_bands": [],
     "tax_credit": false,
@@ -240056,7 +240157,7 @@
     "latest_event": "2026-06-05",
     "stale_since": ""
    },
-   "search": "anson burlingame 026-240-380 1008 carolan ave, burlingame, ca 94010, burlingame, ca apartments existing burlingame 268 recorded owner anson apartments llc broker ipa capital markets (marcus & millichap) brian eisendrath; cameron chalfant; anita paryani-rice; jesse zarouk equity partner tokyu land us corporation life insurance company (not named) permanent loan refinance; five-year term, 5.09%, interest-only for the term, 1.10x dscr tokyu land us corporation private equity preferred equity $123m refinance announced (cash-neutral)"
+   "search": "anson burlingame 026-240-380 1008 carolan ave, burlingame, ca 94010, burlingame, ca apartments existing burlingame 268 mixed-income leasing listing shows below market rate floor plans (a1, a2, b1, c1) and says some units may be income restricted; no count stated. recorded owner anson apartments llc broker ipa capital markets (marcus & millichap) brian eisendrath; cameron chalfant; anita paryani-rice; jesse zarouk equity partner tokyu land us corporation life insurance company (not named) permanent loan refinance; five-year term, 5.09%, interest-only for the term, 1.10x dscr tokyu land us corporation private equity preferred equity $123m refinance announced (cash-neutral)"
   },
   {
    "id": "SMC-000045",
