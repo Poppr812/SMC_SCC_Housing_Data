@@ -82,6 +82,10 @@ aside h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(
 .imgs{display:flex;gap:10px;margin:14px 0 4px;flex-wrap:wrap}
 .imgs .img{width:150px;height:100px;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:12px;padding:8px;text-decoration:none}
 .imgs .img svg{margin-bottom:4px}
+.imgs .minimap{padding:0;position:relative;overflow:hidden;border:1px solid var(--rule);display:block}
+.minimap #miniMap{width:100%;height:100%;pointer-events:none}
+.minimap .mmlbl{position:absolute;left:4px;bottom:3px;z-index:500;background:rgba(255,255,255,.9);color:var(--navy);font-size:10px;padding:1px 5px;border-radius:4px}
+.minimap .mmattr{position:absolute;right:3px;bottom:2px;z-index:500;font-size:7px;color:#555;background:rgba(255,255,255,.75);padding:0 2px}
 table.facts{width:100%;border-collapse:collapse}
 table.facts td{border-top:1px solid var(--rule);padding:7px 6px;vertical-align:top}
 table.facts td:first-child{width:30%;color:var(--gray)}
@@ -102,10 +106,14 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .note{background:#F1F4F8;border-radius:6px;padding:8px 10px;font-size:12px;color:var(--gray);margin-top:14px}
 #adv{position:fixed;inset:0;background:rgba(20,28,40,.25);z-index:2050;display:flex;justify-content:flex-end}
 #adv[hidden]{display:none}
-.advbox{background:#fff;width:400px;max-width:100%;height:100%;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.18)}
+.advbox{background:#fff;width:960px;max-width:100%;height:100%;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.18)}
 .advhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:14px 16px;border-bottom:1px solid var(--rule)}
 .advhead b{font-size:16px}#advCount{font-size:13px;margin-top:2px}
-.advbody{overflow:auto;padding:4px 16px 20px}
+.advbody{overflow:auto;padding:4px 16px 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:0 22px;align-content:start}
+.advcol{min-width:0}
+@media (max-width:760px){.advbody{grid-template-columns:1fr}}
+.cov{font-size:11px;color:var(--gray);font-weight:400;text-transform:none;letter-spacing:0;margin-left:6px}
+.lvgrp{font-size:11px;color:var(--gray);margin:6px 0 1px}
 .advbody section{border-bottom:1px solid var(--rule);padding:10px 0}
 .advbody h4{margin:0 0 6px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray)}
 .advbody label{display:flex;gap:6px;align-items:center;font-size:13px;padding:2px 0;color:var(--ink)}
@@ -254,31 +262,41 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <div class="advhead"><div><b>Advanced filters</b><div class="muted" id="advCount"></div></div>
     <div style="display:flex;gap:8px"><button type="button" class="btn ghost sm" id="advReset">Reset</button><button type="button" class="btn sm" id="advDone">Done</button></div></div>
   <div class="advbody">
+   <div class="advcol">
     <section><h4>Affordability</h4>
       <label><input type="checkbox" data-mirror='#typesMenu input.af[value="Market"]'> Market rate</label>
-      <div class="advsub">
-        <div class="advrow">Inclusionary units <select id="advInc"><option value="any">Any</option><option value="has">Has inclusionary</option><option value="none">None</option></select></div>
-        <div class="advrow" id="advIbRow">Inclusionary at
-          <label><input type="checkbox" class="advIb" value="Low" checked> Low</label><label><input type="checkbox" class="advIb" value="Moderate" checked> Moderate</label><label><input type="checkbox" class="advIb" value="Workforce" checked> Workforce</label></div>
-      </div>
+      <div class="advsub"><div class="advrow">Inclusionary units <select id="advInc"><option value="any">Any</option><option value="has">Has inclusionary</option><option value="none">None</option></select></div></div>
       <label><input type="checkbox" data-mirror='#typesMenu input.af[value="Affordable"]'> Affordable</label>
-      <div class="advsub">
-        <div class="advrow">Income bands
-          <label title="80% AMI and below"><input type="checkbox" class="advAb" value="Low" checked> Low</label><label title="81 to 120% AMI"><input type="checkbox" class="advAb" value="Moderate" checked> Moderate</label><label title="121 to 200% AMI"><input type="checkbox" class="advAb" value="Workforce" checked> Workforce</label></div>
-        <div class="advrow">Tax credits / bonds <select id="advTc"><option value="any">Any</option><option value="yes">Yes</option><option value="no">No</option></select></div>
-      </div>
+      <div class="advsub"><div class="advrow">Tax credits / bonds <select id="advTc"><option value="any">Any</option><option value="yes">Yes</option><option value="no">No</option></select></div></div>
       <label class="muted"><input type="checkbox" data-mirror='#typesMenu input.af[value="None"]'> Affordability not stated</label>
-      <div class="muted advnote">Low: 80% AMI and below. Moderate: 81 to 120%. Workforce: 121 to 200%. A project with units in several bands matches any of them.</div>
     </section>
+    <section><h4>Restricted units at<span class="cov" id="covLv"></span></h4>
+      <div class="lvgrp">Extremely low</div><label><input type="checkbox" class="advLv" value="el"> 30% AMI and below</label>
+      <div class="lvgrp">Very low</div><label><input type="checkbox" class="advLv" value="vl"> 31–50% AMI</label>
+      <div class="lvgrp">Low</div><label><input type="checkbox" class="advLv" value="lo"> 51–80% AMI</label>
+      <div class="lvgrp">Moderate</div><label><input type="checkbox" class="advLv" value="m1"> 81–100% AMI</label><label><input type="checkbox" class="advLv" value="m2"> 101–120% AMI</label>
+      <div class="lvgrp">Workforce</div><label><input type="checkbox" class="advLv" value="w1"> 121–160% AMI</label><label><input type="checkbox" class="advLv" value="w2"> 161–200% AMI</label>
+      <div class="muted advnote">Leave all unchecked for any level. Checked levels match a Market project's inclusionary units or an Affordable project's units; a project with units at any checked level matches. State reports give moderate only as up to 120%, so those units match both moderate levels.</div>
+    </section>
+   </div>
+   <div class="advcol">
     <section><h4>Product types</h4><div id="advTypes"></div></section>
-    <section><h4>Pipeline stage</h4><div id="advStages"></div></section>
+    <section><h4>Bedrooms<span class="cov" id="covBr"></span></h4>
+      <label><input type="checkbox" class="advBr" value="studio"> Studio</label><label><input type="checkbox" class="advBr" value="1br"> 1 bedroom</label><label><input type="checkbox" class="advBr" value="2br"> 2 bedrooms</label><label><input type="checkbox" class="advBr" value="3br"> 3 bedrooms</label><label><input type="checkbox" class="advBr" value="4br+"> 4+ bedrooms</label>
+      <div class="muted advnote">Leave all unchecked for any. Checked types show projects known to have any of them; projects with no stated unit mix drop out.</div>
+    </section>
     <section><h4>Size</h4><div class="advrow">Units <input type="number" id="advUmin" min="0" placeholder="min"> to <input type="number" id="advUmax" min="0" placeholder="max"></div></section>
+   </div>
+   <div class="advcol">
+    <section><h4>Pipeline stage</h4><div id="advStages"></div></section>
     <section><h4>Timing</h4>
       <div class="advrow">Last movement <select id="advMv"><option value="">Any time</option><option value="6">Past 6 months</option><option value="12">Past year</option><option value="24">Past 2 years</option></select></div>
-      <div class="advrow">Delivery year <input type="number" id="advDfrom" min="2015" max="2040" placeholder="from"> to <input type="number" id="advDto" min="2015" max="2040" placeholder="to"></div>
+      <div class="advrow">Delivery year<span class="cov" id="covDy"></span></div>
+      <div class="advrow"><input type="number" id="advDfrom" min="2015" max="2040" placeholder="from"> to <input type="number" id="advDto" min="2015" max="2040" placeholder="to"></div>
       <label class="advsub"><input type="checkbox" id="advDnone" checked> Include projects with no stated delivery date</label>
-      <div class="advrow">Filed or approved since <input type="date" id="advSince"></div>
+      <div class="advrow">Filed or approved since</div><div class="advrow"><input type="date" id="advSince"></div>
     </section>
+   </div>
   </div>
 </div></div>
 <div id="exp"><div class="box">
@@ -674,7 +692,7 @@ function openRecord(id){
        <button class="btn" type="button" onclick="closeRecord()">Close ✕</button>
      </div>
    </div>
-   <div class="imgs">${(r.images.length?r.images:[{kind:"none"}]).map((im,i)=>imgBox({images:[im]},false)).join("")}</div>
+   <div class="imgs">${(r.images.length?r.images:[{kind:"none"}]).map((im,i)=>imgBox({images:[im]},false)).join("")}<a class="img minimap" href="https://www.google.com/maps/search/?api=1&query=${r.lat.toFixed(6)},${r.lng.toFixed(6)}" target="_blank" rel="noopener" title="Open in Google Maps"><div id="miniMap"></div><span class="mmlbl">Open map ↗</span><span class="mmattr">Esri</span></a></div>
    <h3>Basics</h3><table class="facts">${basics}</table>
    ${secs}
    <h3>Sources</h3>
@@ -684,9 +702,17 @@ function openRecord(id){
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
    <div class="note">Every fact links to the public source behind it. Where sources differ, each is shown. Data license: ODbL.</div>`;
-  $("#rec").classList.add("show");$("#rec").scrollTop=0;track("record_view",{id:r.id,name:r.name});
+  $("#rec").classList.add("show");$("#rec").scrollTop=0;miniMap(r);track("record_view",{id:r.id,name:r.name});
   safeReplace(location.pathname+location.search+stateToHash()+"&r="+id);
 }
+let MINI=null;
+function miniMap(r){if(MINI){MINI.remove();MINI=null}const el=$("#miniMap");if(!el)return;
+  MINI=L.map(el,{zoomControl:false,attributionControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false,zoomSnap:.25});
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:19}).addTo(MINI);
+  const c=colorOf(r),polys=r.parcels.filter(p=>p.outline).map(p=>L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:c==="#FFFFFF"?WHITE_EDGE:c,weight:2,fillOpacity:.3}).addTo(MINI));
+  const fit=()=>{MINI.invalidateSize();if(polys.length)MINI.fitBounds(L.featureGroup(polys).getBounds(),{padding:[14,14],maxZoom:17});else MINI.setView([r.lat,r.lng],16)};
+  fit();setTimeout(()=>MINI&&fit(),250);
+  if(!polys.length)L.circleMarker([r.lat,r.lng],{radius:6,color:"#fff",weight:2,fillColor:c,fillOpacity:1}).addTo(MINI)}
 function closeRecord(){$("#rec").classList.remove("show");safeReplace(location.pathname+location.search+stateToHash())}
 $("#rec").addEventListener("click",e=>{if(e.target.id==="rec")closeRecord()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeRecord();$("#exp").classList.remove("show")}});
@@ -965,30 +991,38 @@ async function adminXlsx(){
 }
 
 /* ---------- advanced filters ---------- */
-const BANDS=["Low","Moderate","Workforce"];
-const ADV0={ab:BANDS,tc:"any",inc:"any",ib:BANDS,umin:"",umax:"",mv:"",dfrom:"",dto:"",dnone:true,since:""};
+const LEVELS={el:"30% AMI and below",vl:"31–50% AMI",lo:"51–80% AMI",m1:"81–100% AMI",m2:"101–120% AMI",w1:"121–160% AMI",w2:"161–200% AMI"};
+const MIXL={studio:"studio","1br":"1 bedroom","2br":"2 bedrooms","3br":"3 bedrooms","4br+":"4+ bedrooms"};
+const ADV0={lv:[],br:[],tc:"any",inc:"any",umin:"",umax:"",mv:"",dfrom:"",dto:"",dnone:true,since:""};
 const chk=sel=>[...document.querySelectorAll(sel)].filter(i=>i.checked).map(i=>i.value);
-function advState(){return{ab:chk(".advAb"),tc:$("#advTc").value,inc:$("#advInc").value,ib:chk(".advIb"),umin:$("#advUmin").value,umax:$("#advUmax").value,
+function advState(){return{lv:chk(".advLv"),br:chk(".advBr"),tc:$("#advTc").value,inc:$("#advInc").value,umin:$("#advUmin").value,umax:$("#advUmax").value,
   mv:$("#advMv").value,dfrom:$("#advDfrom").value,dto:$("#advDto").value,dnone:$("#advDnone").checked,since:$("#advSince").value}}
 function advSet(a){a={...ADV0,...(a||{})};
-  document.querySelectorAll(".advAb").forEach(i=>i.checked=a.ab.includes(i.value));document.querySelectorAll(".advIb").forEach(i=>i.checked=a.ib.includes(i.value));
+  document.querySelectorAll(".advLv").forEach(i=>i.checked=(a.lv||[]).includes(i.value));document.querySelectorAll(".advBr").forEach(i=>i.checked=(a.br||[]).includes(i.value));
   $("#advTc").value=a.tc;$("#advInc").value=a.inc;$("#advUmin").value=a.umin;$("#advUmax").value=a.umax;$("#advMv").value=a.mv;
-  $("#advDfrom").value=a.dfrom;$("#advDto").value=a.dto;$("#advDnone").checked=a.dnone;$("#advSince").value=a.since;advIbState()}
-function advIbState(){const on=$("#advInc").value==="has";document.querySelectorAll(".advIb").forEach(i=>i.disabled=!on);$("#advIbRow").style.opacity=on?1:.45}
+  $("#advDfrom").value=a.dfrom;$("#advDto").value=a.dto;$("#advDnone").checked=a.dnone;$("#advSince").value=a.since}
+function advIbState(){}
 function deliveryYear(r){const d=r.events.filter(e=>e.type==="Completion"||e.type==="Lease-up start").map(e=>e.date).sort().pop();return d?+d.slice(0,4):null}
 function monthsAgo(n){const d=new Date();d.setMonth(d.getMonth()-n);return d.toISOString().slice(0,10)}
-function advMatch(r,a){if(!a)return true;const m=r.summary,bands=m.aff_bands||[];
-  if(m.aff_bucket==="Affordable"){if(a.ab.length<3&&!bands.some(b=>a.ab.includes(b)))return false;if(a.tc==="yes"&&!m.tax_credit)return false;if(a.tc==="no"&&m.tax_credit)return false}
-  if(m.aff_bucket==="Market"){const has=/inclusionary/.test(m.aff_label);if(a.inc==="has"&&!has)return false;if(a.inc==="none"&&has)return false;
-    if(a.inc==="has"&&a.ib.length<3&&!bands.some(b=>a.ib.includes(b)))return false}
+function advMatch(r,a){if(!a)return true;const m=r.summary;
+  if(a.lv&&a.lv.length&&!(m.aff_levels||[]).some(x=>a.lv.includes(x)))return false;
+  if(a.br&&a.br.length&&!(m.mix_types||[]).some(x=>a.br.includes(x)))return false;
+  if(m.aff_bucket==="Affordable"){if(a.tc==="yes"&&!m.tax_credit)return false;if(a.tc==="no"&&m.tax_credit)return false}
+  if(m.aff_bucket==="Market"){const has=/inclusionary/.test(m.aff_label);if(a.inc==="has"&&!has)return false;if(a.inc==="none"&&has)return false}
   const u=m.units_range;if(a.umin&&(!u||u[1]<+a.umin))return false;if(a.umax&&(!u||u[0]>+a.umax))return false;
   if(a.mv&&(!m.latest_event||m.latest_event<monthsAgo(+a.mv)))return false;
   const dy=deliveryYear(r);if(!dy){if(!a.dnone)return false}else{if(a.dfrom&&dy<+a.dfrom)return false;if(a.dto&&dy>+a.dto)return false}
   if(a.since){const ev=r.events.filter(e=>(e.type==="Application filed"||e.type==="Approved")&&!e.estimated).map(e=>e.date).sort().pop();if(!ev||ev<a.since)return false}
   return true}
+function advCoverage(){const act=RECORDS.filter(r=>PIPELINE.includes(r.summary.status)&&r.summary.status!=="Inactive pipeline"),n=act.length;
+  const restr=act.filter(r=>r.summary.aff_bucket==="Affordable"||/inclusionary/.test(r.summary.aff_label||""));
+  const part=(k,of)=>{const x=of.length?Math.round(k/of.length*100):0;return x>=90?"":`stated for ${x}% of ${of===act?"active projects":"active projects with restricted units"}`};
+  $("#covLv").textContent=part(restr.filter(r=>(r.summary.aff_levels||[]).length).length,restr);
+  $("#covBr").textContent=part(act.filter(r=>(r.summary.mix_types||[]).length).length,act);
+  $("#covDy").textContent=part(act.filter(r=>deliveryYear(r)).length,act)}
 function advSummary(a){if(!a)return [];const o=[];
-  if(a.ab.length<3)o.push("income bands: "+(a.ab.join(", ")||"none"));if(a.tc!=="any")o.push(a.tc==="yes"?"tax credits / bonds":"no tax credits / bonds");
-  if(a.inc!=="any")o.push(a.inc==="has"?"market with inclusionary"+(a.ib.length<3?" ("+a.ib.join(", ")+")":""):"market without inclusionary");
+  if(a.lv&&a.lv.length)o.push("restricted units at "+a.lv.map(x=>LEVELS[x]).join(", "));if(a.br&&a.br.length)o.push("has "+a.br.map(x=>MIXL[x]).join(" or "));if(a.tc!=="any")o.push(a.tc==="yes"?"tax credits / bonds":"no tax credits / bonds");
+  if(a.inc!=="any")o.push(a.inc==="has"?"market with inclusionary":"market without inclusionary");
   if(a.umin||a.umax)o.push(`${a.umin||0}${a.umax?"–"+a.umax:"+"} units`);
   if(a.mv)o.push(`moved in the past ${+a.mv<12?a.mv+" months":+a.mv/12===1?"year":+a.mv/12+" years"}`);
   if(a.dfrom||a.dto)o.push(`delivery ${a.dfrom||"…"}–${a.dto||"…"}`);if(!a.dnone)o.push("stated delivery date only");
@@ -1002,9 +1036,9 @@ $("#advTypes").innerHTML=Object.keys(REG.product_types).map(t=>`<label><input ty
 $("#advStages").innerHTML=PIPELINE.map(x=>`<label><input type="checkbox" data-mirror='#showMenu input.st[value="${esc(x)}"]'><span class="dot" style="background:${STATUS_COLOR[x]}${whiteEdge(STATUS_COLOR[x])}"></span>${esc(x)}</label>`).join("");
 $("#adv").addEventListener("change",e=>{const i=e.target;
   if(i.dataset.mirror){const o=document.querySelector(i.dataset.mirror);if(o){o.checked=i.checked;if(typeof syncPipeAll==="function")syncPipeAll()}}
-  if(i.id==="advInc")advIbState();render()});
+  render()});
 $("#adv").addEventListener("input",e=>{if(e.target.type==="number")render()});
-function advOpen(){closeMenus();advSyncMirrors();advIbState();$("#adv").hidden=false;advCount()}
+function advOpen(){closeMenus();advSyncMirrors();advCoverage();$("#adv").hidden=false;advCount()}
 function advClose(){$("#adv").hidden=true;trackSearch()}
 $("#advBtn").onclick=advOpen;$("#advDone").onclick=advClose;
 $("#adv").addEventListener("click",e=>{if(e.target.id==="adv")advClose()});

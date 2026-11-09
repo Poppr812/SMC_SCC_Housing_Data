@@ -243,13 +243,21 @@ def affordability(facts, ami, units):
     return "Market", "Market, with inclusionary", share
 
 
-def income_bands(ami):
-    """Which income bands have deed-restricted units: Low (80% AMI and below), Moderate (81-120%), Workforce (121-200%)."""
-    out = []
-    for name, lo, hi in (("Low", 0, 80), ("Moderate", 81, 120), ("Workforce", 121, 200)):
-        if any(x.get("count") and lo <= (x.get("ami") or 0) <= hi for x in ami or []):
-            out.append(name)
-    return out
+INCOME_LEVELS = [("el", 0, 30), ("vl", 31, 50), ("lo", 51, 80), ("m1", 81, 100), ("m2", 101, 120), ("w1", 121, 160), ("w2", 161, 200)]
+
+
+def income_levels(ami, from_state):
+    """Income levels with deed-restricted units. The state report gives moderate only as up to 120% AMI, so its
+    moderate units count in both moderate levels (81-100% and 101-120%)."""
+    out = set()
+    for x in ami or []:
+        a = x.get("ami") or 0
+        if not x.get("count") or a > 200:
+            continue
+        if from_state and a == 120:
+            out |= {"m1", "m2"}
+        out |= {k for k, lo, hi in INCOME_LEVELS if lo <= a <= hi}
+    return [k for k, _, _ in INCOME_LEVELS if k in out]
 
 
 def process(r, sources):
@@ -336,6 +344,8 @@ def process(r, sources):
             main_lender = top["provider"] + (f" ({top['program']})" if top.get("program") else "")
 
     ami = best(facts.get("restricted_by_ami"))
+    fa = facts.get("restricted_by_ami")
+    ami_from_state = bool(fa) and (fa["claims"][fa.get("best") or 0].get("note") or "").startswith("State report")
     aff_bucket, aff_label, aff_share = affordability(facts, ami, units)
     lihtc = (any(x["type"] in TAX_CREDIT_TYPES - {"Tax-exempt bonds"} for x in r.get("financing", []))
              or any(sources[s]["publisher"].startswith("California Tax Credit Allocation Committee") for s in order if s in sources))
@@ -370,7 +380,8 @@ def process(r, sources):
         "aff_bucket": aff_bucket,
         "aff_label": aff_label,
         "aff_share": aff_share,
-        "aff_bands": income_bands(ami),
+        "aff_levels": income_levels(ami, ami_from_state),
+        "mix_types": [k for k, v in (best(facts.get("unit_mix")) or {}).items() if v],
         "tax_credit": tax_credit,
         "owner": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Recorded owner"),
         "developer": "; ".join(p["company"] for p in r.get("parties", []) if p["role"] == "Developer"),
