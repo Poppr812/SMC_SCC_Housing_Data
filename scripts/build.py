@@ -213,6 +213,8 @@ def units_range(f):
 
 INCLUSIONARY_MAX = 0.25  # up to 25% deed-restricted is market with inclusionary; above that the project competes for affordable financing
 TAX_CREDIT_TYPES = {"Tax-exempt bonds", "Tax-credit equity (4%)", "Tax-credit equity (9%)", "State tax-credit equity"}
+FOR_SALE_TYPES = {"Townhomes", "Single-family", "Condominiums"}  # deed-restricted affordable is rare outside apartments, except inclusionary units
+DEVELOPERS = json.load(open(Path(__file__).resolve().parent.parent / "data" / "developers.json", encoding="utf-8"))
 STATE_DR = re.compile(r"^([\d,]+) deed-restricted units reported to the state")
 
 
@@ -338,8 +340,20 @@ def process(r, sources):
     lihtc = (any(x["type"] in TAX_CREDIT_TYPES - {"Tax-exempt bonds"} for x in r.get("financing", []))
              or any(sources[s]["publisher"].startswith("California Tax Credit Allocation Committee") for s in order if s in sources))
     tax_credit = lihtc or any(x["type"] == "Tax-exempt bonds" for x in r.get("financing", []))
+    names = [p["company"].lower() for p in r.get("parties", []) if p["role"] in ("Developer", "Co-developer / partner", "Recorded owner")
+             or (p["role"] == "Other" and re.match(r"(Applicant(?!'s)|Project sponsor|Developer/contact|Property (co-)?owner|Named project party)", p.get("other_role") or ""))]
+    dev_kinds = {k for k in ("Affordable", "Market") for d in DEVELOPERS[k] for n in names if n.startswith(d.lower())}
+    ptype = best(facts["product_type"])
     if lihtc and aff_bucket != "Affordable":  # a tax credit project competes for affordable financing whatever its label says
         aff_bucket, aff_label = "Affordable", "Affordable"
+    elif aff_bucket == "Affordable" and ptype != "Apartments" and dev_kinds != {"Affordable"}:
+        aff_bucket, aff_label = "Market", "Market, with inclusionary"  # outside apartments, restricted units are a market project's inclusionary share
+    if aff_bucket is None:  # no source states it: fall back to the developer, then the product type
+        if len(dev_kinds) == 1:
+            aff_bucket = dev_kinds.pop()
+            aff_label = f"{aff_bucket} (by developer)"
+        elif ptype in FOR_SALE_TYPES:
+            aff_bucket, aff_label = "Market", "Market (by product type)"
     use_price = price is not None and ("transaction" in kinds or tdc is None)
     summary = {
         "product_type": best(facts["product_type"]),
