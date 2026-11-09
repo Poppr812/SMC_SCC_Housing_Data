@@ -350,7 +350,7 @@ def process(r, sources):
     lihtc = (any(x["type"] in TAX_CREDIT_TYPES - {"Tax-exempt bonds"} for x in r.get("financing", []))
              or any(sources[s]["publisher"].startswith("California Tax Credit Allocation Committee") for s in order if s in sources))
     tax_credit = lihtc or any(x["type"] == "Tax-exempt bonds" for x in r.get("financing", []))
-    names = [p["company"].lower() for p in r.get("parties", []) if p["role"] in ("Developer", "Co-developer / partner", "Recorded owner")
+    names = [p["company"].lower() for p in r.get("parties", []) if p["role"] in ("Developer", "Co-developer / partner", "Recorded owner", "Buyer")
              or (p["role"] == "Other" and re.match(r"(Applicant(?!'s)|Project sponsor|Developer/contact|Property (co-)?owner|Named project party)", p.get("other_role") or ""))]
     dev_kinds = {k for k in ("Affordable", "Market") for d in DEVELOPERS[k] for n in names if n.startswith(d.lower())}
     ptype = best(facts["product_type"])
@@ -361,7 +361,7 @@ def process(r, sources):
     if aff_bucket is None:  # no source states it: fall back to the developer, then the product type
         if len(dev_kinds) == 1:
             aff_bucket = dev_kinds.pop()
-            aff_label = f"{aff_bucket} (by developer)"
+            aff_label = f"{aff_bucket} (implied by developer focus)"
         elif ptype in FOR_SALE_TYPES:
             aff_bucket, aff_label = "Market", "Market (by product type)"
     use_price = price is not None and ("transaction" in kinds or tdc is None)
