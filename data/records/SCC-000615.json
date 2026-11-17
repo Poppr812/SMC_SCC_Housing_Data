@@ -1,6 +1,6 @@
 {
   "id": "SCC-000615",
-  "name": "1020 N 4th St (supportive housing)",
+  "name": "PATH Villas at 4th Street",
   "parcels": [
     {
       "apn": "235-09-020",
@@ -133,8 +133,16 @@
             "SRC-001956"
           ],
           "note": "City file H20-002, status Approved, issued 2020-06-30"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-001968"
+          ],
+          "note": "Grand opening announced January 31, 2024"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -168,8 +176,19 @@
             "SRC-001956"
           ],
           "note": "City file H20-002 (Site Permit): \"AB2162 Ministerial Permit to allow demolition of an approximately 14,400-square foot building and construction of a 4-story, 94-unit supportive housing development, with 3,000-square feet of retail, on an approximately 0.96-gross acre site.\""
+        },
+        {
+          "value": [
+            "Senior",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-001968"
+          ],
+          "note": "Seniors experiencing homelessness"
         }
-      ]
+      ],
+      "best": 1
     },
     "approval_type": {
       "claims": [
@@ -194,6 +213,27 @@
           "note": "City file H20-002 (Site Permit): \"AB2162 Ministerial Permit to allow demolition of an approximately 14,400-square foot building and construction of a 4-story, 94-unit supportive housing development, with 3,000-square feet of retail, on an approximately 0.96-gross acre site.\""
         }
       ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2024,
+          "src": [
+            "SRC-001968"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001968"
+          ],
+          "note": "94 units of affordable and permanent supportive housing"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -213,6 +253,15 @@
       "other_role": "Applicant (city permit record)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "PATH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001968"
       ]
     }
   ],
@@ -236,6 +285,15 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-01-31",
+      "type": "Completion",
+      "label": "Grand opening announced",
+      "src": [
+        "SRC-001968"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -243,6 +301,11 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-17",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

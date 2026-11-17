@@ -70,8 +70,16 @@
             "SRC-001956"
           ],
           "note": "Project type not stated in the city text (213 units)"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-001970"
+          ],
+          "note": "Apartments plus 36 for-sale townhomes"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -105,6 +113,30 @@
           "note": "City file PRE23-127 (Prelim - Focused (Policy Review, No Plans)): \"SB330 preliminary application for 213 units\""
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001970"
+          ],
+          "note": "Described as an \"affordable residential complex\"; the senior units are not separately labeled affordable"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family",
+            "Senior"
+          ],
+          "src": [
+            "SRC-001970"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -112,6 +144,12 @@
       "text": "City of San Jose permit PRE23-127 (Prelim - Focused (Policy Review, No Plans), folder year 2023), status Complete: \"SB330 preliminary application for 213 units\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Jul 2023): 113 affordable family units, 64 senior apartments and 36 for-sale affordable townhomes; Core Companies and Eden Housing joint venture.",
+      "src": [
+        "SRC-001970"
       ]
     }
   ],
@@ -124,6 +162,24 @@
       "other_role": "Applicant (city permit record)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Core Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001970"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Eden Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001970"
       ]
     }
   ],
@@ -145,6 +201,11 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-17",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

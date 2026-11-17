@@ -106,7 +106,8 @@
         {
           "value": 345,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001969"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -117,7 +118,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -130,11 +132,13 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001956"
+            "SRC-001956",
+            "SRC-001969"
           ],
           "note": "City file H20-028 (Ministerial Permit): \"SB 35 Ministerial Permit to allow the construction of a 100% affordable multifamily residential building (29 stories) with a total of 345 residential units including a roof deck and three-level subterranean parking garage on a 0.30-gross acre site.\""
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_notes": {
       "claims": [
@@ -187,6 +191,33 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 183,
+            "1br": 81,
+            "2br": 27,
+            "3br": 54,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001969"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001969"
+          ],
+          "note": "285-foot rooftop height"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -201,6 +232,12 @@
       "text": "City of San Jose permit H20-028 (Ministerial Permit, folder year 2020), status Approved, issue date 2021-11-05: \"SB 35 Ministerial Permit to allow the construction of a 100% affordable multifamily residential building (29 stories) with a total of 345 residential units including a roof deck and three-level subterranean parking garage on a 0.30-gross acre site.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Dec 2021): earlier plans called for at least 70% affordable units. No source found for the 270-unit figure beyond the application as reported to the state.",
+      "src": [
+        "SRC-001969"
       ]
     }
   ],
@@ -253,6 +290,11 @@
     },
     {
       "date": "2026-11-08",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
     }
