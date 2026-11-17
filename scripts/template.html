@@ -53,6 +53,18 @@ aside h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(
 .selmenu .addr{padding:6px 4px}
 .selmenu .addr input{font:inherit;font-size:13px;padding:5px 7px;border:1px solid var(--rule);border-radius:5px}
 .selmenu .addrlabel{font-size:13px;margin-bottom:5px}
+#selBtn{border:1px solid var(--navy);font-weight:600}
+.addr .flab{display:block;font-size:11px;color:var(--gray);margin-bottom:2px}
+.mibox{display:flex;align-items:center;border:1px solid var(--rule);border-radius:5px;background:#fff;padding-right:6px}
+.selmenu .addr .mibox input{border:none;width:38px;padding:5px 2px 5px 7px;outline:none}
+.mibox span{font-size:12px;color:var(--gray)}
+.hov{position:relative}
+.hov .menu{display:none;position:absolute;z-index:1001;top:100%;right:0;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:6px;box-shadow:0 6px 20px rgba(0,0,0,.12);min-width:220px;max-height:320px;overflow:auto}
+.hov:hover .menu,.hov:focus-within .menu{display:block}
+.hov .menu .opt{display:block;width:100%;text-align:left;border:none;background:none;padding:6px 6px;border-radius:5px;cursor:pointer;font:inherit;font-size:13px;color:var(--ink)}
+.hov .menu .opt:hover{background:#EEF2F7}
+.hov .menu .none{font-size:12px;color:var(--gray);padding:4px 6px}
+.hov .menu hr{border:none;border-top:1px solid var(--rule);margin:5px 0}
 .selmenu .sechead{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gray);padding:2px 4px 2px}
 .dd .selmenu{max-height:70vh}
 #areaMenu{padding:2px 0 6px 12px}
@@ -123,6 +135,7 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .advrow label{padding:0}
 .advrow input[type=number]{width:72px}.advrow input,.advrow select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--rule);border-radius:5px}
 .advnote{font-size:11px;margin-top:6px}
+#advBtn{border-color:var(--rule);color:var(--ink)}
 #advBtn.on{border-color:var(--ink);font-weight:600}
 #exp{display:none;position:fixed;inset:0;background:rgba(20,28,40,.45);z-index:2100}
 #exp.show{display:flex;align-items:center;justify-content:center}
@@ -173,8 +186,9 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   header .sub,header .badge{display:none}
   .hbtn{font-size:12px;padding:3px 8px}
   .bar{padding:8px 12px;gap:8px}
-  .bar>*:not(.kwctl):not(#filtBtn):not(#expBtn):not(#repBtn){display:none}
-  .bar.open>*:not(.kwctl):not(#filtBtn):not(#expBtn):not(#repBtn){display:flex}
+  .bar>*:not(.kwctl):not(#filtBtn):not(#expBtn):not(#repBtn):not(#areaCtl){display:none}
+  .bar>#areaCtl{flex:1 1 100%}
+  .bar.open>*:not(.kwctl):not(#filtBtn):not(#expBtn):not(#repBtn):not(#areaCtl){display:flex}
   .bar.open>.spacer{display:none}
   .bar .kwctl{flex:1}.bar .kwctl input{width:100%!important;box-sizing:border-box}
   #filtBtn{display:inline-block!important}
@@ -204,8 +218,25 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 </header>
 
 <div class="bar" id="bar">
-  <div class="ctl kwctl">Keyword
-    <input type="search" id="kw" placeholder="e.g. podium, Pyatok, MHP" style="width:190px">
+  <div class="ctl" id="areaCtl"><div class="lblrow">Search area<button type="button" class="lnk" id="clearSel" hidden>✕ Clear boundary</button></div>
+    <div class="dd" id="ddSel"><button type="button" id="selBtn">All jurisdictions</button>
+      <div class="menu selmenu" id="selMenu" style="min-width:330px">
+        <div class="addr">
+          <div style="display:flex;gap:6px;align-items:flex-end">
+            <div style="flex:1;min-width:0"><label class="flab" for="radAddr">Address</label><input type="text" id="radAddr" placeholder="Address" style="width:100%;box-sizing:border-box"></div>
+            <div><label class="flab" for="radMi">Radius</label><span class="mibox"><input type="number" id="radMi" value="1" min="0.5" step="0.5" title="radius in miles"><span>mi</span></span></div>
+            <button type="button" class="btn sm" id="goAddr">Go</button>
+          </div>
+          <div class="muted" id="selCoords" style="font-size:11px;margin-top:5px"></div>
+        </div>
+        <button type="button" class="opt" id="gpsBtn">⌖ Use my location<small>Center the radius on this device's GPS</small></button>
+        <hr><div class="sechead">Add a boundary</div>
+        <button type="button" class="opt" id="drawRadBtn">◯ Draw a radius<small>Click the map for a 1-mile radius, or press and drag to size it</small></button>
+        <button type="button" class="opt" id="drawFenceBtn">⬠ Draw a fence<small>Click points; click the first point or double-click to close</small></button>
+        <hr>
+        <button type="button" class="opt" id="jurToggle"><span id="jurCaret">▾</span> Jurisdictions<small id="jurSum">All jurisdictions</small></button>
+        <div id="areaMenu"></div>
+      </div></div>
   </div>
   <div class="ctl">Product types
     <div class="dd" id="ddTypes"><button type="button" id="typesBtn">All types</button>
@@ -215,36 +246,16 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline, Transactions, Existing</button>
       <div class="menu" id="showMenu"></div></div>
   </div>
-  <div class="ctl"><div class="lblrow">Search area<button type="button" class="lnk" id="clearSel" hidden>✕ Clear boundary</button></div>
-    <div class="dd" id="ddSel"><button type="button" id="selBtn">All jurisdictions</button>
-      <div class="menu selmenu" id="selMenu" style="min-width:330px">
-        <button type="button" class="opt" id="jurToggle"><span id="jurCaret">▾</span> Jurisdiction<small id="jurSum">All jurisdictions</small></button>
-        <div id="areaMenu"></div>
-        <hr><div class="sechead">Add a boundary</div>
-        <button type="button" class="opt" id="drawRadBtn">◯ Draw a radius<small>Click the map for a 1-mile radius, or press and drag to size it</small></button>
-        <button type="button" class="opt" id="drawFenceBtn">⬠ Draw a fence<small>Click points; click the first point or double-click to close</small></button>
-        <hr><div class="sechead">Radius from address</div>
-        <div class="addr">
-          <div style="display:flex;gap:5px;align-items:center">
-            <input type="text" id="radAddr" placeholder="Address or coordinates" style="flex:1;min-width:0">
-            <input type="number" id="radMi" value="1" min="0.5" step="0.5" style="width:56px" title="radius in miles"><span class="muted">mi</span>
-            <button type="button" class="btn sm" id="goAddr">Go</button>
-          </div>
-          <div class="muted" id="selCoords" style="font-size:11px;margin-top:5px"></div>
-        </div>
-        <button type="button" class="opt" id="gpsBtn">⌖ Use my location<small>Center the radius on this device's GPS</small></button>
-      </div></div>
-  </div>
   <div class="ctl"><span>&nbsp;</span><button type="button" class="btn ghost" id="advBtn">Advanced filters</button></div>
   <div class="spacer"></div>
-  <div class="ctl">My saved searches
-    <select id="saved"><option value="">(none yet)</option></select>
-  </div>
-  <button class="btn ghost" id="saveBtn" type="button">Save search</button>
-  <button class="btn ghost" id="linkBtn" type="button">Copy link</button>
+  <div class="hov" id="ddSave"><button class="btn ghost" id="saveBtn" type="button">Save search ▾</button>
+    <div class="menu" id="saveMenu"></div></div>
   <button class="btn ghost" id="filtBtn" type="button" style="display:none" onclick="this.parentElement.classList.toggle('open');this.textContent=this.parentElement.classList.contains('open')?'Hide filters':'Filters'">Filters</button>
-  <button class="btn ghost" id="repBtn" type="button">Pipeline report</button>
-  <button class="btn" id="expBtn" type="button">Export…</button>
+  <button class="btn" id="repBtn" type="button" style="font-weight:600">Pipeline report</button>
+  <button class="btn ghost" id="expBtn" type="button">Export…</button>
+  <div class="ctl kwctl">Keyword
+    <input type="search" id="kw" placeholder="e.g. podium, Pyatok, MHP" style="width:190px">
+  </div>
 </div>
 
 <main>
@@ -605,15 +616,16 @@ async function loadSaved(){
     if(local.length){const {error}=await sb.from("saved_searches").insert(local.map(s=>({name:s.name,state:{hash:s.hash}})));if(!error)store("smc_saved",[])}
     const {data}=await sb.from("saved_searches").select("id,name,state").order("created_at",{ascending:false});SAVED=data||[];
   }else SAVED=[];
-  $("#saved").innerHTML='<option value="">'+(!USER?"(sign in to save)":SAVED.length?"Choose…":"(none yet)")+'</option>'+SAVED.map((s,i)=>`<option value="${i}">${esc(s.name)}</option>`).join("");
+  $("#saveMenu").innerHTML=(!USER?'<div class="none">Sign in to see saved searches</div>':SAVED.length?SAVED.map((s,i)=>`<button type="button" class="opt" data-i="${i}">${esc(s.name)}</button>`).join(""):'<div class="none">No saved searches yet</div>')+'<hr><button type="button" class="opt" id="linkBtn">Copy link</button>';
+  $("#linkBtn").onclick=copyLink;
 }
 $("#saveBtn").onclick=()=>requireLogin("Sign in to save searches to your account.",async()=>{
   const name=prompt("Name this search:","My search "+new Date().toLocaleDateString());if(!name)return;
   const {error}=await sb.from("saved_searches").insert({name,state:{hash:stateToHash()}});
   if(error){toast("Couldn't save: "+error.message);return}
   track("save_search",{name});loadSaved();toast("Saved to your account.")});
-$("#saved").onchange=e=>{const s=SAVED[+e.target.value];if(!s)return;location.hash=s.state.hash;applyHash();track("open_saved",{name:s.name})};
-$("#linkBtn").onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast("Link copied. It reopens this exact search.")}catch(e){prompt("Copy this link:",location.href)}};
+$("#saveMenu").addEventListener("click",e=>{const b=e.target.closest("[data-i]");if(!b)return;const s=SAVED[+b.dataset.i];if(!s)return;location.hash=s.state.hash;applyHash();track("open_saved",{name:s.name});b.blur()});
+async function copyLink(){try{await navigator.clipboard.writeText(location.href);toast("Link copied. It reopens this exact search.")}catch(e){prompt("Copy this link:",location.href)}};
 function applyHash(){const s=hashToState();if(s)setState(s);render()}
 
 /* ---------- record page ---------- */
