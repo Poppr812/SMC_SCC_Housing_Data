@@ -403,7 +403,7 @@ $("#jurToggle").onclick=()=>{const m=$("#areaMenu");m.hidden=!m.hidden;$("#jurCa
 document.querySelectorAll("#areaMenu .caret").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=document.querySelector(`#areaMenu .kids[data-county="${b.dataset.county}"]`);k.hidden=!k.hidden;b.textContent=k.hidden?"▸":"▾"});
 function syncCounty(){document.querySelectorAll("#areaMenu .cty").forEach(c=>{const ks=[...document.querySelectorAll(`#areaMenu .ar[data-county="${c.dataset.county}"]`)],n=ks.filter(i=>i.checked).length;c.checked=n===ks.length;c.indeterminate=n>0&&n<ks.length})}
 document.querySelectorAll("#areaMenu .cty").forEach(c=>c.addEventListener("change",()=>{document.querySelectorAll(`#areaMenu .ar[data-county="${c.dataset.county}"]`).forEach(i=>i.checked=c.checked)}));
-$("#headSub").textContent=`${RECORDS.length} records from public sources · San Mateo and Santa Clara Counties · built ${DATA.built}`;
+$("#headSub").textContent=`${RECORDS.length.toLocaleString()} records from ${new Set(RECORDS.flatMap(r=>Object.keys(r.srcLabels))).size.toLocaleString()} public sources · San Mateo and Santa Clara Counties · built ${DATA.built}`;
 $("#showMenu").innerHTML=`<label class="grp"><input type="checkbox" id="pipeAll" checked> Development pipeline</label>`
   +PIPELINE.map(s=>`<label class="sub"><input type="checkbox" class="st" value="${esc(s)}" checked><span class="dot" style="background:${STATUS_COLOR[s]}${whiteEdge(STATUS_COLOR[s])}"></span>${esc(s)}<span class="cnt" data-c="${esc(s)}"></span></label>`).join("")
   +`<hr><label class="grp"><input type="checkbox" id="txAll" checked><span class="dot" style="background:${SALES_COLOR}"></span>Transactions</label>`
