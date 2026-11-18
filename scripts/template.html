@@ -159,6 +159,7 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .modal .row2{display:flex;gap:8px}.modal .row2>*{flex:1}
 .modal .acts{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
 .modal .lnk{background:none;border:none;color:var(--teal);cursor:pointer;font:inherit;font-size:12px;padding:0;text-decoration:underline}
+.adminsrc{font-size:11px;color:var(--gray);opacity:.8}
 .modal .msg{font-size:13px;margin-top:8px;color:var(--navy);font-weight:600}
 .modal .sent p{font-size:14px;line-height:1.5;margin:8px 0}
 .adm table{width:100%;border-collapse:collapse;font-size:12px}
@@ -729,7 +730,7 @@ function openRecord(id){
    ${secs}
    <h3>Sources</h3>
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
-     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(S.url)}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)} · ${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()}<br>Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}${S.find?`<br><b>How to find it:</b> ${esc(findTip(S.find,r))}`:""}</div></div>`}).join("")}
+     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(S.url)}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)}${S.find?`<br><b>How to find it:</b> ${esc(findTip(S.find,r))}`:""}${PROFILE&&PROFILE.is_admin?`<div class="adminsrc">${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()} · Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div>`:""}</div></div>`}).join("")}
    <details><summary>Edit history (provenance)</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
