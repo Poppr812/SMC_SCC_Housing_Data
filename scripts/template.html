@@ -628,6 +628,14 @@ $("#saveMenu").addEventListener("click",e=>{const b=e.target.closest("[data-i]")
 async function copyLink(){try{await navigator.clipboard.writeText(location.href);toast("Link copied. It reopens this exact search.")}catch(e){prompt("Copy this link:",location.href)}};
 function applyHash(){const s=hashToState();if(s)setState(s);render()}
 
+function findTip(tpl,r){
+  const apns=r.parcels.map(p=>p.apn), street=(r.addresses[0]?.text||r.name).split(",")[0];
+  const pf=(r.facts.planning_file?.claims||[]).flatMap(c=>String(c.value).split(/[,;\s]+/)).filter(x=>/^[A-Z]{1,5}\d{2}-\d{2,4}/.test(x));
+  const ct=Object.keys(r.srcLabels).map(s=>(SOURCES[s].title.match(/CA-\d\d-\d{3}/)||[])[0]).find(Boolean);
+  const v={apn:apns.join(" or ")||"the parcel number",apn_digits:apns.map(a=>a.replace(/\D/g,"")).join(" or ")||"the parcel number",street,name:r.name,
+    ctcac:ct?`${ct} or ${r.name}`:r.name,sj_where:pf.length?`REFERENCENUM IN (${pf.map(x=>"'"+x+"'").join(",")})`:apns.length?`APN='${apns[0].replace(/\D/g,"")}'`:`FOLDERDESC LIKE '%${street}%'`};
+  return tpl.replace(/\{(\w+)\}/g,(m,k)=>v[k]??m);
+}
 /* ---------- record page ---------- */
 let CUR=null;
 function fn(srcs){return (srcs||[]).map(s=>`<sup class="fn"><a href="#src-${s}" title="${esc(SOURCES[s].title)}">${CUR.srcLabels[s]}</a></sup>`).join("")}
@@ -713,7 +721,7 @@ function openRecord(id){
    ${secs}
    <h3>Sources</h3>
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
-     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(S.url)}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)} · ${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")} (search the APN in the dataset)`:""})()}<br>Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div></div>`}).join("")}
+     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(S.url)}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)} · ${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()}<br>Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}${S.find?`<br><b>How to find it:</b> ${esc(findTip(S.find,r))}`:""}</div></div>`}).join("")}
    <details><summary>Edit history (provenance)</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
