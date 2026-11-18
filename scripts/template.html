@@ -641,7 +641,8 @@ function findTip(tpl,r){
   const apns=r.parcels.map(p=>p.apn), street=(r.addresses[0]?.text||r.name).split(",")[0];
   const pf=(r.facts.planning_file?.claims||[]).flatMap(c=>String(c.value).split(/[,;\s]+/)).filter(x=>/^[A-Z]{1,5}\d{2}-\d{2,4}/.test(x));
   const ct=Object.keys(r.srcLabels).map(s=>(SOURCES[s].title.match(/CA-\d\d-\d{3}/)||[])[0]).find(Boolean);
-  const v={apn:apns.join(" or ")||"the parcel number",apn_digits:apns.map(a=>a.replace(/\D/g,"")).join(" or ")||"the parcel number",street,name:r.name,
+  const trk=(r.facts.planning_file?.claims||[]).filter(c=>/^Local tracking number/.test(c.note||"")).flatMap(c=>String(c.value).split(/[,;]\s*/)).filter(Boolean)[0];
+  const v={apr_filter:trk?`JURS_TRACKING_ID: ${trk}`:`STREET_ADDRESS: ${street.toUpperCase()}`,apn:apns.join(" or ")||"the parcel number",apn_digits:apns.map(a=>a.replace(/\D/g,"")).join(" or ")||"the parcel number",street,name:r.name,
     ctcac:ct||r.name,sj_where:pf.length===1?`REFERENCENUM='${pf[0]}'`:pf.length?`REFERENCENUM IN (${pf.map(x=>"'"+x+"'").join(",")})`:apns.length?`APN='${apns[0].replace(/\D/g,"")}'`:`FOLDERDESC LIKE '%${street}%'`};
   return tpl.replace(/\{(\w+)\}/g,(m,k)=>v[k]??m);
 }
