@@ -579,6 +579,13 @@
             "SRC-001599"
           ],
           "note": "All phases: 174 detached homes, 381 townhomes, 236 apartments. The index's 381 is the townhome count"
+        },
+        {
+          "value": 797,
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "State report 2024, P-SD24-0003: four rows, Phase I SFD 136, Phase II apartments 242, Phase II SFD 38, Phase II townhomes 381"
         }
       ],
       "best": 1
@@ -617,6 +624,22 @@
             "SRC-001124"
           ],
           "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 242,
+              "ami": 80
+            },
+            {
+              "count": 26,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "State report 2024, application stage, all four P-SD24-0003 rows: 242 low-income (apartments) and 26 moderate-income (20 Phase I SFD, 6 Phase II SFD)"
         }
       ]
     },
@@ -628,6 +651,40 @@
             "SRC-001124"
           ],
           "note": "State report 2024, application stage: 242 deed-restricted units"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001599",
+            "SRC-001600"
+          ],
+          "note": "Apartment building, five stories wrapped around a six-story garage; 555 attached and detached homes are three stories"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3000,
+          "src": [
+            "SRC-001600"
+          ],
+          "note": "Potential retail space"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "236 apartments, 100% affordable to very low- and low-income households",
+          "src": [
+            "SRC-001599"
+          ],
+          "note": ""
         }
       ]
     }
@@ -644,6 +701,18 @@
       "src": [
         "SRC-001599"
       ]
+    },
+    {
+      "text": "State report 2024 names the rows Milpitas Business Park Phase I (APN 083-19-012, McCarthy Blvd and Murphy Ranch Rd) and Phase II (APN 083-19-013); all rows note the project requires a General Plan and Zoning Amendment.",
+      "src": [
+        "SRC-001124"
+      ]
+    },
+    {
+      "text": "CEQAnet NOP: 38.5-acre site subdivided into 300 lots; entitlements requested are General Plan Amendment, Planned Unit Development, Site Plan, Rezone, Use Permit and Land Division. CEQA comment period 2026-09-25 to 2026-10-26.",
+      "src": [
+        "SRC-001599"
+      ]
     }
   ],
   "parties": [
@@ -656,6 +725,16 @@
         "SRC-001599"
       ],
       "website": "https://www.tollbrothers.com"
+    },
+    {
+      "role": "Other",
+      "company": "LSA",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Environmental consultant",
+      "src": [
+        "SRC-001599"
+      ]
     }
   ],
   "financing": [],
@@ -712,6 +791,86 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search on Murphy Village, Toll Brothers, McCarthy/Tasman returned only CEQAnet and unrelated Toll communities",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 083-19-012 and 083-19-013; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched milpitas.gov for Murphy Village and P-SD24-0003; no project page or staff report found",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2024: four P-SD24-0003 rows; CEQAnet SCH 2026091106 NOP applicant block",
+      "src": [
+        "SRC-001124",
+        "SRC-001599"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No local news coverage found in search",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-10-03",
+      "src": [
+        "SRC-001600"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "tollbrothers.com results show other Milpitas and Sunnyvale communities; no Murphy Village page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY states architects not disclosed",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or public funder found for the affordable apartments",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts surfaced in web search",
+      "src": []
+    }
+  }
 }

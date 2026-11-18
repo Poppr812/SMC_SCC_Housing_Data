@@ -40,6 +40,14 @@
       "src": [
         "SRC-001500"
       ]
+    },
+    {
+      "text": "4995 Patrick Henry Dr, Santa Clara, CA 95054, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-001998",
+        "SRC-001997"
+      ]
     }
   ],
   "images": [],
@@ -82,6 +90,68 @@
             "SRC-001500"
           ],
           "note": "City item: up to 1,800 units. Council adopted land use Option B; final unit count under Option B not confirmed"
+        },
+        {
+          "value": 2600,
+          "src": [
+            "SRC-001993",
+            "SRC-001994",
+            "SRC-001995"
+          ],
+          "note": "Up to 2,600 under Option B, which the Council adopted; Option A was up to 1,800"
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 48.6,
+          "src": [
+            "SRC-001993",
+            "SRC-001994"
+          ],
+          "note": "Nine parcels of about 46 acres plus 2.6 acres of Democracy Way right-of-way"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001993"
+          ],
+          "note": "Development agreement: 15% of units at a maximum average of 80% AMI"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Development agreement requires 15% of units affordable at a maximum average of 80% AMI (instead of 100% AMI under the city ordinance): at least 390 affordable units under Option B, 270 under Option A",
+          "src": [
+            "SRC-001993"
+          ]
+        },
+        {
+          "value": "390 homes affordable to households earning 80% of AMI",
+          "src": [
+            "SRC-001994"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001993"
+          ],
+          "note": "General Plan amendment, PD rezoning, vesting tentative map and development agreement, with EIR"
         }
       ]
     }
@@ -91,6 +161,30 @@
       "text": "Mixed-use: also up to 3 million sq ft office/R&D and up to 100,000 sq ft retail per city items. Product type is a working label from \"multi-family residential units\".",
       "src": [
         "SRC-001500"
+      ]
+    },
+    {
+      "text": "City staff report (Nov. 19, 2024): up to 1.8 million sq ft of residential, 3 million sq ft office/R&D (2.2 million under Option B), about 100,000 sq ft retail and 10,000 sq ft childcare; housing in Area D under Option A and also Area C under Option B. Development agreement: 10-year term with up to three 5-year extensions; at least 1.5 acres of parkland, plus 1.5 acres in Area C under Option B; 1 parking space per unit in Areas C and D. Site is currently used for Levi's Stadium event parking (3,300 spaces); a prior owner demolished buildings for a planned Yahoo! campus.",
+      "src": [
+        "SRC-001993"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight: Council approved unanimously on Nov. 19, 2024; Kylli has owned the property since 2017; tallest building limited to 192 feet; more than seven acres of parks; construction to be phased starting with housing.",
+      "src": [
+        "SRC-001994"
+      ]
+    },
+    {
+      "text": "SF YIMBY, Nov. 2024: four podium structures; construction expected in four phases over at least a decade.",
+      "src": [
+        "SRC-001996"
+      ]
+    },
+    {
+      "text": "CEQAnet SCH 2018072068: NOPs July 27 and Oct. 1, 2018 (3005 Democracy Way Mixed-Use) and April 18, 2022; Draft EIR Nov. 16, 2023; Final EIR Nov. 26, 2024; NODs Nov. 22 and Dec. 13, 2024. Project description: up to about 2,600 units and up to 4,915,000 gsf.",
+      "src": [
+        "SRC-001995"
       ]
     }
   ],
@@ -105,17 +199,71 @@
       ],
       "website": "https://kylli.com",
       "project_page": "https://kylli.com/projects/mission-point/"
+    },
+    {
+      "role": "Architect",
+      "company": "Gensler",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001996"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "James Corner Field Operations",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001996"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Kylli, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001993"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2022-03",
+      "type": "Application filed",
+      "label": "Kylli Inc. submits Mission Point application",
+      "src": [
+        "SRC-001993"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-06",
+      "type": "Other",
+      "label": "Planning Commission recommends Option B (up to 2,600 units), 5-1-1",
+      "src": [
+        "SRC-001993"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-11-19",
       "type": "Approved",
       "label": "City Council certified EIR and approved Option B actions",
       "src": [
         "SRC-001502"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-03",
+      "type": "Other",
+      "label": "Council adopts Ordinance No. 2074 approving the development agreement with Kylli, Inc.",
+      "src": [
+        "SRC-001997"
       ],
       "estimated": false
     }
@@ -130,6 +278,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Kylli Mission Point; San Jose Spotlight and SF YIMBY opened",
+      "src": [
+        "SRC-001994",
+        "SRC-001996"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API 10404143: situs 3005 Democracy Wy, no owner field; city report says site is nine parcels, only one on record",
+      "src": [
+        "SRC-001993"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar file 24-1105 staff report text; file 24-1206 (Ordinance 2074) history",
+      "src": [
+        "SRC-001993",
+        "SRC-001997"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2018072068; APR Table A/A2 searched for Democracy Way in Santa Clara, no rows",
+      "src": [
+        "SRC-001995"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight on Nov. 19, 2024 approval",
+      "src": [
+        "SRC-001994"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Nov. 21, 2024",
+      "src": [
+        "SRC-001996"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "kylli.com project page: address 4995 Patrick Henry Drive",
+      "src": [
+        "SRC-001998"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY names Gensler and James Corner Field Operations; firm sites not opened",
+      "src": [
+        "SRC-001996"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lenders or funders in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search including linkedin.com for Kylli Mission Point returned only unrelated profiles",
+      "src": []
+    }
+  }
 }

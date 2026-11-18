@@ -552,6 +552,106 @@
             "SRC-001102"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001710",
+            "SRC-002001"
+          ],
+          "note": "City staff report: 5% of units at 50% AMI and 10% at 100% AMI"
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 25.74,
+          "src": [
+            "SRC-001710",
+            "SRC-001999"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 511,
+            "1br": 628,
+            "2br": 653,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002000"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 1750000,
+          "src": [
+            "SRC-002000"
+          ],
+          "note": "About 1.75 million sq ft of housing"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3500,
+          "src": [
+            "SRC-001710",
+            "SRC-001999"
+          ],
+          "note": "Retail"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 2459,
+          "src": [
+            "SRC-001999"
+          ],
+          "note": "Architectural review report; code requires 2,126"
+        },
+        {
+          "value": 2445,
+          "src": [
+            "SRC-002000"
+          ],
+          "note": "SF YIMBY, Oct. 2024"
+        }
+      ],
+      "best": 0
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Applicant stated 5% of units at 50% AMI and 10% at 100% AMI, evenly distributed across the five buildings; 70% of units average 667 sq ft",
+          "src": [
+            "SRC-001710"
+          ]
+        },
+        {
+          "value": "268 of 1,792 units affordable to households below 100% AMI",
+          "src": [
+            "SRC-002001"
+          ]
+        },
+        {
+          "value": "State report 2025 entitlement row: 75 very low-income and 194 moderate-income units, not deed-restricted, under Freedom Circle Focus Area affordability provisions; 1,523 above moderate",
+          "src": [
+            "SRC-001102"
+          ]
         }
       ]
     }
@@ -561,6 +661,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "Architectural review report: parcel to be split into six lots, five wrap buildings around parking structures (Building 1: 362 units; 2: 341; 3: 536; 4: 292; 5: 261) and a 3.48-acre public park, for 4.225 acres of total parkland; about 13,000 sq ft amenity space; 1,792 bike spaces. Existing 12 two-story buildings date from about 1978.",
+      "src": [
+        "SRC-001999"
+      ]
+    },
+    {
+      "text": "SF YIMBY, Feb. 2024: 427,400 sq ft of existing offices to be demolished; about 1.7 million sq ft of new construction.",
+      "src": [
+        "SRC-002002"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight: Irvine Company will start construction once the commercial leases expire; no official start date.",
+      "src": [
+        "SRC-002001"
       ]
     }
   ],
@@ -574,6 +692,33 @@
         "SRC-001711"
       ],
       "website": "https://www.irvinecompany.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "MVE + Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002000"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "EPTDesign",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002000"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002000"
+      ]
     }
   ],
   "financing": [],
@@ -626,6 +771,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Irvine Company 2518 Mission College; SF YIMBY and San Jose Spotlight opened",
+      "src": [
+        "SRC-002000",
+        "SRC-002001"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API 10440019: no owner field; city reports name Irvine Company as owner/applicant",
+      "src": [
+        "SRC-001999"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar file 25-166 staff report (site, affordability), file 25-432 architectural review report (parking, buildings)",
+      "src": [
+        "SRC-001710",
+        "SRC-001999"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2 2025 row PLN24-00160: non-deed-restricted affordability counts",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight on March 25, 2025 approval",
+      "src": [
+        "SRC-002001"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Feb. 19, 2024 and Oct. 16, 2024",
+      "src": [
+        "SRC-002002",
+        "SRC-002000"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Irvine Company apartments sites; no project page for this site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY names MVE + Partners, EPTDesign, BKF; mve-architects.com opened, no project page found",
+      "src": [
+        "SRC-002000"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lenders or funders found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com returned no LinkedIn pages",
+      "src": []
+    }
+  }
 }

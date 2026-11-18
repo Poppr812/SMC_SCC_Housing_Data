@@ -103,6 +103,13 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 803,
+          "src": [
+            "SRC-002049"
+          ],
+          "note": "Dorm-style co-living units with shared kitchens, living rooms and laundry, as reported in September 2021"
         }
       ],
       "best": 1
@@ -136,6 +143,17 @@
           "note": "State report (through 2019): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 18,
+          "src": [
+            "SRC-002049"
+          ],
+          "note": "Single tower, as reported in September 2021"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -163,6 +181,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "San Jose Spotlight (September 2021): KT Urban sued Starcity in May 2020 for fraud and breach of contract; BNN LLC sued Starcity in December 2020 for back rent; architect C2K Architecture sued Starcity in April 2021 over about $1.5 million allegedly owed. As of September 2021 the lot was empty and the city had received no new development proposals.",
+      "src": [
+        "SRC-002049"
+      ]
+    },
+    {
+      "text": "SF YIMBY (June 2025): Arena Investors took the site after a 2022 foreclosure and proposed an eight-story, 281,800 sq ft AI research and data center building designed by C2K Architects, replacing two vacant industrial buildings. The article reports the owner intends to build up to 400 affordable units on another downtown San Jose site.",
+      "src": [
+        "SRC-001787"
+      ]
     }
   ],
   "parties": [
@@ -174,6 +204,43 @@
       "other_role": "Site owner after 2022 foreclosure",
       "src": [
         "SRC-001787"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Starcity",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002049"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "C2K Architecture, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002049"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "KT Urban",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002049"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "199 Bassett LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Title holder as of September 2021 (Starcity affiliate)",
+      "src": [
+        "SRC-002049"
       ]
     }
   ],
@@ -194,6 +261,14 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2021-06",
+      "type": "Other",
+      "label": "Common acquires Starcity; the Bassett site is excluded from the deal",
+      "src": [
+        "SRC-002049"
       ]
     },
     {
@@ -221,6 +296,91 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 199 Bassett St, Starcity, Arena Investors; opened San Jose Spotlight 2021 article and SF YIMBY 2025 article",
+      "src": [
+        "SRC-002049",
+        "SRC-001787"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 259-23-029: situs 199 Bassett St, San Jose; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; planning GIS file numbers already on record",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A and A2 searched for Bassett; only rows already on record. No CTCAC/CDLAC or CEQAnet entry found in search",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2021-09-26; The Real Deal 2022 foreclosure articles returned 403",
+      "src": [
+        "SRC-002049"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2025-06 (already on record); The Real Deal and DatacenterDynamics returned 403",
+      "src": [
+        "SRC-001787"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Starcity was acquired by Common in 2021; no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "C2K Architecture identified via news; no C2K project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search snippets mention a 2019 Arena loan of about $14.7 million; the pages carrying it (The Real Deal) returned 403, so no opened source states lender or amount",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts on the project surfaced in web search",
+      "src": []
+    }
+  }
 }

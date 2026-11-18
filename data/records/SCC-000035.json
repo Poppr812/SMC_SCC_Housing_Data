@@ -178,6 +178,18 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "170 multi-family rental units; of these, twenty percent would be below market rate units (NOP wording)",
+          "src": [
+            "SRC-002041"
+          ]
+        },
+        {
+          "value": "All 170 apartment units designated affordable to lower-income households",
+          "src": [
+            "SRC-001456"
+          ]
         }
       ]
     },
@@ -188,8 +200,23 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 134.52,
+          "src": [
+            "SRC-002041"
+          ],
+          "note": "Project area in the NOP"
+        },
+        {
+          "value": 134,
+          "src": [
+            "SRC-001456"
+          ],
+          "note": "Article also gives 131.9 acres for the property"
         }
-      ]
+      ],
+      "best": 1
     },
     "restricted_by_ami": {
       "claims": [
@@ -226,6 +253,18 @@
       "src": [
         "SRC-001456"
       ]
+    },
+    {
+      "text": "NOP: County of Santa Clara is lead agency and will prepare an EIR. Project includes a 3.5-mile water line extension and an onsite wastewater facility; construction in multiple phases over two years and seven months, 2028 to 2030; all existing site improvements demolished. Present use: rural residential, greenhouses, orchards. Zoning A-40Ac-cv, general plan Agriculture Large Scale. APNs listed include a portion of 726-39-008.",
+      "src": [
+        "SRC-002041"
+      ]
+    },
+    {
+      "text": "SF YIMBY: wood-frame construction; single-family homes and townhomes in Farmhouse, Prairie, Ranch and Spanish revival styles; density about 6.2 units per acre; construction cost and timeline not established as of November 2024.",
+      "src": [
+        "SRC-001456"
+      ]
     }
   ],
   "parties": [
@@ -247,11 +286,59 @@
       "src": [
         "SRC-001456"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Peebles Burnett Venture, LLC",
+      "contact": "Chris Borello, President",
+      "linkedin": null,
+      "email": "chris@borellofamily.com",
+      "phone": "(408) 710-7069",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002041"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Bassenian Lagoni Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001456"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Gates + Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001456"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dudek",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Environmental consultant",
+      "src": [
+        "SRC-002041"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-07",
+      "type": "Application filed",
+      "label": "Preliminary application filed (builder's remedy)",
+      "src": [
+        "SRC-001456"
+      ]
+    },
     {
       "date": "2024-10-23",
       "type": "Application filed",
@@ -268,6 +355,14 @@
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "date": "2026-04-09",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR received by State Clearinghouse (review 2026-04-14 to 2026-05-14)",
+      "src": [
+        "SRC-002041"
+      ]
     }
   ],
   "history": [
@@ -280,6 +375,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Petal Fields, 330 Burnett Ave and Borello; CEQAnet and SF YIMBY opened",
+      "src": [
+        "SRC-002041",
+        "SRC-001456"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 726-40-013: situs 330 Burnett Av, Morgan Hill, jurisdiction Unincorporated; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Unincorporated; County of Santa Clara is the lead agency, not Morgan Hill",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "County SB 330 / builder's remedy list (already on record); no county hearing or draft EIR found",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026040424 NOP of Draft EIR, received 2026-04-09",
+      "src": [
+        "SRC-002041"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched local news for Petal Fields / 330 Burnett; only advocacy letters (Sierra Club, Green Foothills) found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-11-16: architect and landscape architect",
+      "src": [
+        "SRC-001456"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Borello Asset Management project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Bassenian Lagoni named by SF YIMBY; no Bassenian Lagoni project page for Petal Fields found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn for Petal Fields returned no relevant posts",
+      "src": []
+    }
+  }
 }

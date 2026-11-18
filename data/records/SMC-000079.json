@@ -627,6 +627,44 @@
           37.5349318
         ]
       ]
+    },
+    {
+      "apn": "042-121-060",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001029"
+      ],
+      "outline": [
+        [
+          -122.2970305,
+          37.5344793
+        ],
+        [
+          -122.2970917,
+          37.5344541
+        ],
+        [
+          -122.2974048,
+          37.5349354
+        ],
+        [
+          -122.2964595,
+          37.5353254
+        ],
+        [
+          -122.2964294,
+          37.535279
+        ],
+        [
+          -122.2961464,
+          37.5348441
+        ],
+        [
+          -122.2970305,
+          37.5344793
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -636,6 +674,23 @@
       "src": [
         "SRC-001028",
         "SRC-001003"
+      ]
+    },
+    {
+      "text": "358 E Sailer Dr, San Mateo, CA",
+      "role": "other",
+      "src": [
+        "SRC-002013",
+        "SRC-002011"
+      ],
+      "written_as": [
+        {
+          "text": "358 East Sailer Drive, San Mateo, CA",
+          "src": [
+            "SRC-002013",
+            "SRC-002011"
+          ]
+        }
       ]
     }
   ],
@@ -692,6 +747,20 @@
             "SRC-001028"
           ],
           "note": "Up to"
+        },
+        {
+          "value": 1385,
+          "src": [
+            "SRC-002010"
+          ],
+          "note": "Scenario 1 (maximum commercial variant), July 2026 project description; Scenario 2 is 1,670"
+        },
+        {
+          "value": 1389,
+          "src": [
+            "SRC-002011"
+          ],
+          "note": "Housing Action Coalition endorsement page, review date November 19, 2025"
         }
       ]
     },
@@ -724,6 +793,14 @@
             "SRC-001028"
           ],
           "note": "Multifamily buildings of five to eight stories; three-story townhomes"
+        },
+        {
+          "value": 10,
+          "src": [
+            "SRC-002010",
+            "SRC-002012"
+          ],
+          "note": "Up to 10 stories along El Camino Real; residential 3 to 8 stories"
         }
       ]
     },
@@ -744,6 +821,14 @@
           "src": [
             "SRC-001028"
           ]
+        },
+        {
+          "value": "About 15% of units affordable (up to 250 units): apartments for lower-income households, townhomes for moderate-income households. HAC lists 208 affordable homes of 1,389.",
+          "src": [
+            "SRC-002010",
+            "SRC-002013",
+            "SRC-002011"
+          ]
         }
       ]
     },
@@ -756,6 +841,17 @@
           ]
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 4340,
+          "src": [
+            "SRC-002010"
+          ],
+          "note": "Scenario 2 (1,670 units); Scenario 1 shows 4,476"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -763,6 +859,25 @@
       "text": "Demolishes 1,490,331 sq ft of commercial buildings and garages on 32.66 acres; North Block Retail (12.03 acres) remains; office and commercial buildings of eight to ten stories along El Camino Real",
       "src": [
         "SRC-001028"
+      ]
+    },
+    {
+      "text": "City CEQA determination (June 30, 2026): the City found the project not sufficiently defined for a CEQA Guidelines 15183 streamlined review and found a project-level EIR the most appropriate review. It cites flexible land use on Blocks C5 and S2 (up to four scenarios), 3,500 to 4,500 jobs against 1,707 studied in the General Plan EIR, 10-story heights beyond General Plan limits, and a phasing plan likely to take at least 15 years to full buildout.",
+      "src": [
+        "SRC-002012"
+      ]
+    },
+    {
+      "text": "Project description (July 2026): Scenario 1, about 1,385 units, 1,371,857 sq ft office and 150,132 sq ft retail; Scenario 2, about 1,670 units, 1,059,193 sq ft office and 150,132 sq ft retail; about 4.5 acres of open space either way. Phases: South Block (S1 to S3) about 4 years, S4 about 2 years, Central Block about 8 years, timed by market conditions.",
+      "src": [
+        "SRC-002010"
+      ]
+    },
+    {
+      "text": "Holland & Knight (October 27, 2026) represents David Bohannon Company as applicant and HSC Property Owner LLC as owner; the application is a Master Development Plan and Vesting Tentative Map. Its April 30, 2026 letter lists APNs 039-490-170, 042-121-060 and 039-490-050 and refers to an earlier file, PA-2025-008.",
+      "src": [
+        "SRC-002014",
+        "SRC-002013"
       ]
     }
   ],
@@ -785,11 +900,72 @@
       "src": [
         "SRC-001029"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "David Bohannon Company (Bohannon Companies)",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.ddbo.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-002014",
+        "SRC-002012",
+        "SRC-002011"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Northwood Investors LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002015"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002011"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Holland & Knight LLP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Land use counsel",
+      "src": [
+        "SRC-002014",
+        "SRC-002013"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "ICF",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Environmental consultant",
+      "src": [
+        "SRC-002014"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-02-05",
+      "type": "Other",
+      "label": "SB 330 preliminary application plans",
+      "src": [
+        "SRC-001028"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-04-29",
       "type": "Other",
@@ -815,6 +991,15 @@
       ]
     },
     {
+      "date": "2026-03-19",
+      "type": "Other",
+      "label": "City incompleteness letter on third submission",
+      "src": [
+        "SRC-002013"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-06-01",
       "type": "Other",
       "label": "Application deemed complete",
@@ -829,6 +1014,24 @@
       "src": [
         "SRC-001028"
       ]
+    },
+    {
+      "date": "2026-08-03",
+      "type": "Other",
+      "label": "Applicant responds to CEQA determination and files AB 1633 notice",
+      "src": [
+        "SRC-002014"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Other",
+      "label": "Applicant withdraws AB 1633 notice",
+      "src": [
+        "SRC-002014"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -836,6 +1039,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, developer; city Document Center PDFs opened",
+      "src": [
+        "SRC-002012",
+        "SRC-002010"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APNs and HSC Property Owner LLC already on record; 042-121-060 added from the applicant's letter",
+      "src": [
+        "SRC-001029",
+        "SRC-002013"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page and Document Center: CEQA determination 6/30/2026, project description 7/2026, AB 1633 notice withdrawal 10/27/2026, resubmittal letter 4/30/2026",
+      "src": [
+        "SRC-001028",
+        "SRC-002012",
+        "SRC-002010",
+        "SRC-002014",
+        "SRC-002013"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "APR Table A and A2 searched for Hillsdale and 31st Ave, San Mateo: no matching row; no CEQAnet entry found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles return 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Housing Action Coalition endorsement page (Nov 19, 2025 review); The Real Deal Feb 2025 returns 403",
+      "src": [
+        "SRC-002011"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "ddbo.com news page: Northwood Investors partnership, Dec 7, 2021; no project page",
+      "src": [
+        "SRC-002015"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "BDE Architecture named on HAC page; architect's own site not found",
+      "src": [
+        "SRC-002011"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found beyond the Northwood partnership",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com returned no posts",
+      "src": []
+    }
+  }
 }

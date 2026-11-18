@@ -1670,6 +1670,13 @@
           "src": [
             "SRC-000519"
           ]
+        },
+        {
+          "value": 56,
+          "src": [
+            "SRC-002003"
+          ],
+          "note": "Almanac, May 7, 2026. The Almanac's May 1 article and Hart Howerton give 59 acres."
         }
       ]
     },
@@ -1728,9 +1735,86 @@
           "note": "Master plan: general plan and zoning amendments, conditional development permit, development agreement, vesting tentative maps, BMR housing agreement; EIR certified"
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 119,
+              "ami": 50
+            },
+            {
+              "count": 76,
+              "ami": 80
+            },
+            {
+              "count": 117,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001130"
+          ],
+          "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit). The report also lists 82 extremely low-income units within the very low-income count."
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 1418,
+          "src": [
+            "SRC-001130"
+          ],
+          "note": "Above-moderate units at entitlement, state report 2022"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001130"
+          ],
+          "note": "State report 2022"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PLN2017-00064",
+          "src": [
+            "SRC-001130"
+          ],
+          "note": "Local tracking number as reported to the state"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Notice of Determination (approved December 6, 2022): up to 1,730 multifamily units, up to 193 hotel rooms, about 200,000 sq ft of commercial/retail, up to 1.6 million sq ft of office-related uses, and about 20 acres of open space including 8 acres of parks, bike paths and trails.",
+      "src": [
+        "SRC-002006"
+      ]
+    },
+    {
+      "text": "The Almanac (May 7, 2026) reports construction had not started, an estimated cost of over $3.5 billion, a negotiated community amenities package valued at $188 million, and 10 years of vested rights under the development agreement with Peninsula Innovation Partners. The Almanac (May 19, 2026) reports the agreement remains in effect until 2032.",
+      "src": [
+        "SRC-002003",
+        "SRC-002007"
+      ]
+    },
+    {
+      "text": "Parcel Two as approved by the Planning Commission in June 2023: two apartment buildings on one garage podium, about 316,740 sq ft of housing, a 46,770 sq ft ground-floor grocery, and parking for 632 cars.",
+      "src": [
+        "SRC-002005"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -1771,6 +1855,50 @@
       "src": [
         "SRC-000521"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Ankrom Moisan Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002004",
+        "SRC-002005"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Pickard Chilton",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002004",
+        "SRC-002005"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Safdie Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002004",
+        "SRC-002005"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hart Howerton",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.harthowerton.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.harthowerton.com/meta-and-signature-development-move-ahead-on-menlo-park-urban-village/",
+      "other_role": "Master planner",
+      "src": [
+        "SRC-002004",
+        "SRC-002005"
+      ]
     }
   ],
   "financing": [],
@@ -1799,6 +1927,15 @@
       "src": [
         "SRC-000517"
       ]
+    },
+    {
+      "date": "2022-12-12",
+      "type": "Other",
+      "label": "Notice of Determination filed with the state (SCH 2019090428)",
+      "src": [
+        "SRC-002006"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-06-26",
@@ -1832,6 +1969,15 @@
         "SRC-000518",
         "SRC-000519"
       ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "Other",
+      "label": "Planning Commission finds good-faith compliance with the development agreement (annual review)",
+      "src": [
+        "SRC-002007"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -1854,6 +2000,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, developer; Almanac May 7 and May 19, 2026 articles opened",
+      "src": [
+        "SRC-002003",
+        "SRC-002007"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APNs and recorded owner already on record from SMC Active Parcels",
+      "src": [
+        "SRC-000521"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Menlo Park approved-project page re-read: pause, May 18, 2026 DA review, Chevron parcel; no new filings. Menlo Park is not a Legistar API client.",
+      "src": [
+        "SRC-000517"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 (2022 entitlement row, PLN2017-00064); CEQAnet SCH 2019090428 NOD",
+      "src": [
+        "SRC-001130",
+        "SRC-002006"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Almanac May 7 and May 19, 2026; The Real Deal May 4, 2026 returned 403",
+      "src": [
+        "SRC-002003",
+        "SRC-002007"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY July 11, 2023 (architects, Parcel Two program)",
+      "src": [
+        "SRC-002005"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Willow Village project page from Signature Development Group found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Hart Howerton project news page (July 14, 2023)",
+      "src": [
+        "SRC-002004"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no lenders or equity partners; Meta-controlled Peninsula Innovation Partners already on record",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com returned no posts",
+      "src": []
+    }
+  }
 }

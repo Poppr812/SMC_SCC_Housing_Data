@@ -126,6 +126,13 @@
             "SRC-001374"
           ],
           "note": "Amended plan, 39 affordable units; a separate 263-bed assisted living building is not counted."
+        },
+        {
+          "value": 741,
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2020 row PD20-006, application stage, all above-moderate income"
         }
       ],
       "best": 2
@@ -176,6 +183,44 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10,
+          "src": [
+            "SRC-001374"
+          ],
+          "note": "Roughly ten acres"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 38,
+              "ami": 100
+            }
+          ],
+          "src": [
+            "SRC-002058"
+          ],
+          "note": "38 apartments for households at area median income; SF YIMBY (2025) reports 39 affordable units"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Developer agreed to pay $13.9 million in inclusionary in-lieu fees in exchange for fewer affordable units",
+          "src": [
+            "SRC-002058"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -196,6 +241,26 @@
       "text": "City of San Jose permit PDA20-006-02 (Planned Development Permit/Amendment, folder year 2023), status Approved, issue date 2024-12-10: \"Planned Development Permit Amendment to amend the Affordable Housing Compliance Plan in accordance with the Inclusionary Housing Ordinance and allow changes to Buildings 1, 2, and 4 in the approved El Paseo Signature Project. The amendment includes the fo\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (November 2024): 12-story building with 398 homes and 14,139 sq ft commercial; 10-story building with 374 homes and 17,447 sq ft commercial; a 263-bed residential and memory care facility; Whole Foods anchor. SF YIMBY (2025): the senior living building is 7 stories, designed by Lantz Boggio Architects; Solomon Cordwell Buenz designed the apartments.",
+      "src": [
+        "SRC-002058",
+        "SRC-001374"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (September 2024): the 2022 approval was nearly 1,000 apartments in four buildings with 150 affordable units; the revised plan submitted the prior December was 867 apartments in three buildings with no affordable units plus a 120-unit market-rate assisted living building.",
+      "src": [
+        "SRC-002059"
+      ]
+    },
+    {
+      "text": "State report rows list APN 24406002 (2020) and 403-33-014 (2023). County parcel data shows 244-06-002 at 1647 Capitol, San Jose; 403-33-014 is not in the county's current parcel dataset.",
+      "src": [
+        "SRC-001099",
+        "SRC-001098"
       ]
     }
   ],
@@ -238,11 +303,28 @@
       "src": [
         "SRC-001374"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Lantz Boggio Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001374"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019",
+      "type": "Sale",
+      "label": "Sand Hill Property Company buys the shopping center for about $146 million",
+      "src": [
+        "SRC-002059"
+      ]
+    },
     {
       "date": "2020-08-18",
       "type": "Application filed",
@@ -257,6 +339,14 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2024-11-20",
+      "type": "Approved",
+      "label": "Planning Commission unanimously approves downscaled plan",
+      "src": [
+        "SRC-002058"
       ]
     },
     {
@@ -294,6 +384,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on El Paseo de Saratoga, Sand Hill Property; opened two San Jose Spotlight articles and SF YIMBY 2025",
+      "src": [
+        "SRC-002058",
+        "SRC-002059"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 403-33-017 has no situs address; checked APNs from state report rows (24406002, 40333014)",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A rows 2020 (PD20-006, 741 units) and 2023 (PDA20-006-02, 867 units)",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2024-09-15 and 2024-11-27",
+      "src": [
+        "SRC-002058",
+        "SRC-002059"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-08-15 (senior living architect, acreage); The Registry returned 403",
+      "src": [
+        "SRC-001374"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "shpco.com lists El Paseo de Saratoga as mixed-use retail and residential, no details",
+      "src": [
+        "SRC-002060"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No SCB or Lantz Boggio project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for construction lender found none",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts surfaced in web search",
+      "src": []
+    }
+  }
 }

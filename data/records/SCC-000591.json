@@ -1380,7 +1380,9 @@
           "value": "Under construction",
           "src": [
             "SRC-001922",
-            "SRC-001923"
+            "SRC-001923",
+            "SRC-002017",
+            "SRC-002018"
           ],
           "note": "SummerHill's 154-townhome part (Pyrus Place) is listed Now Selling with model homes open. No source found on the 1,318 apartments, so this labels the project, not every building."
         }
@@ -1411,9 +1413,16 @@
             "SRC-001871"
           ],
           "note": "Earlier 2021 filing as reported"
+        },
+        {
+          "value": 1430,
+          "src": [
+            "SRC-002017"
+          ],
+          "note": "Units at buildout per city memo, May 26, 2026"
         }
       ],
-      "best": 0
+      "best": 2
     },
     "commercial_sf": {
       "claims": [
@@ -1423,8 +1432,16 @@
             "SRC-001870"
           ],
           "note": "About 19,000 sq ft of neighborhood retail"
+        },
+        {
+          "value": 18965,
+          "src": [
+            "SRC-002017"
+          ],
+          "note": "About 18,965 sq ft at buildout per city memo, May 26, 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "site_area_acres": {
       "claims": [
@@ -1471,6 +1488,56 @@
             "SRC-001956"
           ],
           "note": "City folder 119915, SB 330 preliminary application; city permit status: Complete. Matched by former APN 097-15-033."
+        },
+        {
+          "value": "PD22-002",
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002017",
+            "SRC-002018"
+          ],
+          "note": "Apartment buildings; Building B is seven stories per city memo"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 58,
+              "ami": 50
+            },
+            {
+              "count": 118,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2024, entitlement stage, rental component: deed-restricted units by state income category (AMI is the category's upper limit). The report also lists 57 non-deed-restricted moderate-income units."
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2024"
         }
       ]
     }
@@ -1507,6 +1574,33 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City memo (May 26, 2026): 22.88-acre site at the northeast corner of Montague Expressway and Seely Avenue; Phase 1, 154 market-rate townhomes; Phase 2, three market-rate apartment buildings (A, B, C) totaling 1,130 apartments; Phase 3, one 136-unit restricted affordable building. Building A: 397 units (377 market-rate, 20 affordable). Building B: seven stories, up to 372 units (353 market-rate, 19 moderate-income at or below 110% AMI) and about 5,342 sq ft of retail. Beneficiary: The Hanover Company, Danville.",
+      "src": [
+        "SRC-002017"
+      ]
+    },
+    {
+      "text": "City memo (May 15, 2025): MHIP tax and fee waiver of $6,057,536.80 for 0 Seely Building A.",
+      "src": [
+        "SRC-002021"
+      ]
+    },
+    {
+      "text": "Marketed as Coyote Creek Village. Building A is Hanover Parkside, completion slated for Q4 2027; Building B is Hanover Coyote Creek, groundbreaking planned Q2 2026. KTGY designs the three market-rate buildings (1,140 apartments per KTGY; 397 and 372 units in A and B), seven stories, with 5,000 to 10,000 sq ft of ground-floor retail and amenity space per building and a two-acre central park.",
+      "src": [
+        "SRC-002018",
+        "SRC-002019"
+      ]
+    },
+    {
+      "text": "Unit counts differ by source: city memo May 2026, 1,430 units and 1,130 apartments in Buildings A to C; KTGY, 1,140 apartments; state report 2024, 154 townhomes and 1,318 rentals at entitlement. The city memo counts the 136-unit affordable building (Trimble Apartments, CTCAC CA-25-741) as Phase 3 of this development.",
+      "src": [
+        "SRC-002017",
+        "SRC-002018",
+        "SRC-001107"
+      ]
     }
   ],
   "parties": [
@@ -1540,6 +1634,18 @@
         "SRC-001874"
       ],
       "website": "https://www.summerhillhomes.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Architecture + Planning",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://ktgy.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-002018",
+        "SRC-002019"
+      ]
     }
   ],
   "financing": [],
@@ -1560,6 +1666,24 @@
       "label": "Hanover buys about 22 acres for $78.6M and sells seven acres to SummerHill for $73.6M",
       "src": [
         "SRC-001923"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-16",
+      "type": "Construction start",
+      "label": "Groundbreaking ceremony with Mayor Mahan (San Jose Spotlight)",
+      "src": [
+        "SRC-002020"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-23",
+      "type": "Other",
+      "label": "City Council agenda: MHIP tax and fee waiver up to $6,253,458 for Building B (File 26-769)",
+      "src": [
+        "SRC-002017"
       ],
       "estimated": false
     }
@@ -1584,6 +1708,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Seely Ave, Coyote Creek Village, Hanover Parkside; San Jose Spotlight and trade releases opened",
+      "src": [
+        "SRC-002020",
+        "SRC-002018"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 097-15-042 present; parcels already matched on record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar API: File 26-769 (Building B MHIP, 6/23/2026) and File 25-727 (Building A MHIP) memos opened; sanjoseca.gov blocked",
+      "src": [
+        "SRC-002017",
+        "SRC-002021"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2024 entitlement rows (PD22-002): 154 townhomes and 1,318 rentals; no 2025 permit row found",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight May 16, 2025 groundbreaking; Local News Matters returned 403",
+      "src": [
+        "SRC-002020"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "REBusiness Online Oct 28, 2025; MultifamilyBiz Nov 18, 2025; The Real Deal and Multi-Housing News returned 403",
+      "src": [
+        "SRC-002018",
+        "SRC-002019"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "hanoverco.com property page for Hanover Parkside returned 404",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "ktgy.com project and press pages returned 403; KTGY release read via REBusiness and MultifamilyBiz",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "JPMorgan Chase $120.4M (Building A) and U.S. Bank $61.2M loans appear only in a personal blog citing recorder filings, not used; The Real Deal and traded.co returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com returned no posts",
+      "src": []
+    }
+  }
 }

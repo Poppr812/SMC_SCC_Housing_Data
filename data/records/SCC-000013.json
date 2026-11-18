@@ -371,6 +371,58 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.58,
+          "src": [
+            "SRC-002042",
+            "SRC-002043"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-002042"
+          ],
+          "note": "Three residential buildings: one 7-story and two 8-story"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2344,
+          "src": [
+            "SRC-002042",
+            "SRC-001311"
+          ],
+          "note": "Ground-floor neighborhood commercial; separate six-story, 275,200 sq ft office building also approved"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 683,
+          "src": [
+            "SRC-002044"
+          ],
+          "note": "8.5-level garage, January 2024 plans"
+        },
+        {
+          "value": 638,
+          "src": [
+            "SRC-002045"
+          ],
+          "note": "8.5-level garage, 2023 Development Review Committee item"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -379,6 +431,19 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "City Council 2024-12-17 approved a Planned Community Permit and Development Review Permit for 836 rental units in three buildings with a Below-Market-Rate Alternative Mitigation Proposal, a six-story 275,200 sq ft building, an 8.5-level parking structure, a 0.52-acre privately owned publicly accessible park and removal of 40 heritage trees; and a vesting tentative map creating five lots, one subdivided into six condominium units (three parking garage, two residential, one commercial).",
+      "src": [
+        "SRC-002042"
+      ]
+    },
+    {
+      "text": "Earlier plan (2023 Development Review Committee item, applicant Michael Ducote for Prometheus Real Estate Group): two 7- to 8-story buildings with 688 market-rate units, one 8-story 172-unit 100% affordable building, a six-story 260,000 sq ft office building and a 638-space garage. January 2024 plans: 860 apartments, 172 below-market-rate.",
+      "src": [
+        "SRC-002045",
+        "SRC-002044"
       ]
     }
   ],
@@ -435,6 +500,14 @@
       ]
     },
     {
+      "date": "2024-11-20",
+      "type": "Other",
+      "label": "Environmental Planning Commission recommends approval",
+      "src": [
+        "SRC-002043"
+      ]
+    },
+    {
       "date": "2024-12-17",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -467,6 +540,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 675-685 E Middlefield and Prometheus; Mountain View Voice and CEQAnet opened",
+      "src": [
+        "SRC-002044",
+        "SRC-001311"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 160-60-013; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar mountainview matters 7180 (DRC), 8404 (EPC 2024-11-20), 8403 (Council 2024-12-17); mountainview.gov project page returned 403; council report PDF is encrypted and could not be read",
+      "src": [
+        "SRC-002042",
+        "SRC-002043",
+        "SRC-002045"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2024120815 NOE: 2,344 sq ft commercial, 275,200 sq ft office",
+      "src": [
+        "SRC-001311"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice 2024-01-22",
+      "src": [
+        "SRC-002044"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2025-01 (already on record); The Real Deal 2026-03 not opened (403 on site)",
+      "src": [
+        "SRC-001312"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "prometheusapartments.com Mountain View page lists existing communities only",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SERA Architects already on record; STUDIOS project page for the office building (Timberline) returned 404",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn for 675 East Middlefield returned no relevant posts",
+      "src": []
+    }
+  }
 }

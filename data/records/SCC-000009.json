@@ -208,6 +208,21 @@
         "SRC-001106",
         "SRC-001102"
       ]
+    },
+    {
+      "text": "2121 Tasman Dr, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-002039"
+      ]
+    },
+    {
+      "text": "2220 Calle De Luna, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-002039",
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -275,6 +290,13 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN23-00131",
+          "src": [
+            "SRC-002039"
+          ],
+          "note": "File number on the city Development Review Hearing report"
         }
       ]
     },
@@ -304,6 +326,28 @@
           "note": "State report 2018, application stage: 95 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 7.76,
+          "src": [
+            "SRC-002039"
+          ],
+          "note": "Staff report: the applicant proposes to redevelop the 7.76-acre site; the location line describes an approximately 9-acre property"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-002039"
+          ],
+          "note": "Mid-rise scheme: two eight-story buildings, 95 ft 2 in to the roofline. High-rise scheme maximum height 220 ft to the roofline."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -318,6 +362,18 @@
       "text": "City staff report describes two design schemes: mid-rise, two eight-story buildings with 900 units; high-rise, two 22-story buildings with 950 units.",
       "src": [
         "SRC-001715"
+      ]
+    },
+    {
+      "text": "Staff report: site is five light industrial buildings totaling about 191,812 sq ft, to be demolished. Both schemes include a 1.5-acre public park and the extension of Lick Mill Boulevard north to Calle del Mundo. Mid-rise scheme: Building 4A 510 units, Building 4B 390 units, 62,358 sq ft of residential amenities, 509 parking spaces in 4A and 390 in 4B. High-rise scheme: Building 4A 590 units, Building 4B 360 units, 81,341 sq ft of amenities, 624 parking spaces in 4A and 385 in 4B. Density 116 du/ac (mid-rise) and 122 du/ac (high-rise).",
+      "src": [
+        "SRC-002039"
+      ]
+    },
+    {
+      "text": "County parcel data: APN 097-05-057 situs address is 2220 Calle De Luna; APN 097-05-056 situs address is 2101 Tasman Dr. The dataset shows no owner name.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -378,6 +434,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web search on 2101 Tasman Drive and Related: city project listing, LoopNet, Real Deal, ConnectCRE; no new facts from pages that opened",
+      "src": [
+        "SRC-001715"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API for 097-05-056 and 097-05-057: situs 2101 Tasman Dr and 2220 Calle De Luna; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar santaclara matter 22302 (Development Review Hearing report, May 2023) and 22437; santaclaraca.gov project pages are blocked",
+      "src": [
+        "SRC-002039",
+        "SRC-001715"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR rows already on record; no CTCAC/CDLAC or CEQAnet document found for 2101 Tasman",
+      "src": [
+        "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched local news for 2101 Tasman Drive; no local news article on this project found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2023-06-08 article on Related's 2101 Tasman proposal returned 403; ConnectCRE returned 403; no SF YIMBY article found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched related.com for a 2101 Tasman / Tasman East project page; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in the staff report; no architect page tied to 2101 Tasman found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for lenders and financing; Related's reported $690M Tasman East financing (ConnectCRE, 403) is not tied to this address in any page opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn for Tasman East / 2101 Tasman returned no relevant posts",
+      "src": []
+    }
+  }
 }
