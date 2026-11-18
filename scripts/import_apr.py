@@ -32,8 +32,7 @@ PARCEL_SRC = {
     "SCC": ("Parcels (county parcel dataset)", "County of Santa Clara", "https://data.sccgov.org/d/ubcd-cewv"),
 }
 INC = ["ACUTELY_LOW_INCOME", "EXTREMELY_LOW_INCOME", "VLOW_INCOME", "LOW_INCOME", "MOD_INCOME"]
-NOTE = ("Imported from the state Housing Element Annual Progress Report, which cities file themselves and which runs through 2025. "
-        "Not yet checked against the city's own project list.")
+NOTE = "From the state Housing Element Annual Progress Report, through 2025."
 MAX_ADDRESSES = 25
 MIN_UNITS = 5
 
