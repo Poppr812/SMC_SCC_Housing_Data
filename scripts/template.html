@@ -173,6 +173,7 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .adm table.sum{font-size:13px}.adm table.sum th{background:none;position:static;width:120px;padding:5px 8px 5px 0;vertical-align:top;color:var(--gray);font-weight:600}
 .adm table.sum td{padding:5px 0}.adm .take{margin:10px 0 0;font-size:14px;line-height:1.45}
 .adm .repmap{height:440px;border:1px solid var(--rule);border-radius:6px}
+.lnum{display:inline-block;min-width:20px;margin-right:6px;color:var(--gray);font-variant-numeric:tabular-nums}
 .rpin span{display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px #5B6570;font:700 11px/1 system-ui,sans-serif}
 .adm .legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin:6px 0 0}.adm .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle;box-shadow:0 0 0 1px #5B6570}
 .adm .foot{font-size:12px}.adm .foot p{margin:0 0 6px}
@@ -500,17 +501,22 @@ function thumbHTML(r){const s=r.summary;return `<div class="thumb">${imgBox(r,tr
 function render(){
   trackSearch();
   labelDropdowns();updateCounts();layer.clearLayers();if(typeof advLabel==="function"){advLabel();if(!$("#adv").hidden)advCount()}
-  const rs=filtered();
+  const st=getState(),radius=SHAPE&&SHAPE.t==="c";
+  const byRow=(a,b)=>radius?miles(SHAPE,a)-miles(SHAPE,b):(b.summary.total_units||0)-(a.summary.total_units||0);
+  const isActive=r=>isPipe(r)&&st.statuses.includes(r.summary.status)&&r.summary.status!=="Inactive pipeline";
+  const rs=filtered().sort((a,b)=>(isActive(b)-isActive(a))||byRow(a,b));
+  const NUM={};rs.filter(isActive).forEach((r,i)=>NUM[r.id]=i+1);
   rs.forEach(r=>{
     const c=colorOf(r),white=c==="#FFFFFF";
     r.parcels.forEach(p=>{if(p.outline){const poly=L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:white?WHITE_EDGE:c,weight:2,fillOpacity:.25}).addTo(layer);poly.bindTooltip(thumbHTML(r),{direction:"top",opacity:1});poly.on("click",e=>{if(MODE){return}openRecord(r.id)})}});
-    const mk=L.circleMarker([r.lat,r.lng],{radius:9,color:white?WHITE_EDGE:"#fff",weight:2,fillColor:c,fillOpacity:1}).addTo(layer);
+    const n=NUM[r.id],mk=n?L.marker([r.lat,r.lng],{icon:L.divIcon({className:"rpin",html:`<span style="background:${c};color:${DARK_TEXT.has(c)?"#1C2430":"#fff"}">${n}</span>`,iconSize:[24,24],iconAnchor:[12,12]})}).addTo(layer)
+      :L.circleMarker([r.lat,r.lng],{radius:9,color:white?WHITE_EDGE:"#fff",weight:2,fillColor:c,fillOpacity:1}).addTo(layer);
     mk.bindTooltip(thumbHTML(r),{direction:"top",offset:[0,-8],opacity:1});mk.on("click",e=>{if(MODE){return}openRecord(r.id)});
   });
   drawShape();
   const ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
   $("#count").textContent=`${rs.length} record${rs.length===1?"":"s"} match`+(ur.length?` (${lo===hi?num(lo):num(lo)+"–"+num(hi)} units)`:"");
-  $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${esc(r.name)}</b><span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.units_display?" · "+r.summary.units_display+" units":""} · ${esc(short(r.summary.product_type))}${r.summary.aff_bucket?" · "+esc(r.summary.aff_label):""}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
+  $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${NUM[r.id]?`<span class="lnum">${NUM[r.id]}.</span>`:""}${esc(r.name)}</b><span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.units_display?" · "+r.summary.units_display+" units":""} · ${esc(short(r.summary.product_type))}${r.summary.aff_bucket?" · "+esc(r.summary.aff_label):""}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
   document.querySelectorAll(".item[data-id]").forEach(el=>{el.onclick=()=>openRecord(el.dataset.id);el.onmouseenter=()=>{const r=RECORDS.find(x=>x.id===el.dataset.id);map.panTo([r.lat,r.lng])}});
   safeReplace(location.pathname+location.search+stateToHash());
 }
