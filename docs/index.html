@@ -272,7 +272,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 
 <div id="adv" hidden><div class="advbox">
   <div class="advhead"><div><b>Advanced filters</b><div class="muted" id="advCount"></div></div>
-    <div style="display:flex;gap:8px"><button type="button" class="btn ghost sm" id="advReset">Reset</button><button type="button" class="btn sm" id="advDone">Done</button></div></div>
+    <div style="display:flex;gap:8px"><button type="button" class="btn ghost sm" id="advReset">Reset filters</button><button type="button" class="btn sm" id="advDone">Done</button></div></div>
   <div class="advbody">
    <div class="advcol">
     <section><h4>Affordability</h4>
@@ -1055,7 +1055,7 @@ function advSummary(a){if(!a)return [];const o=[];
 function advActive(){const a=advState(),s=getState();return advSummary(a).length+(s.aff.length<3?1:0)}
 function advSyncMirrors(){document.querySelectorAll("#adv [data-mirror]").forEach(i=>{const o=document.querySelector(i.dataset.mirror);if(o)i.checked=o.checked})}
 function advCount(){const rs=filtered(),ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
-  $("#advCount").textContent=`${num(rs.length)} record${rs.length===1?"":"s"} match`+(ur.length?` · ${lo===hi?num(lo):num(lo)+"–"+num(hi)} units`:"");advCounts()}
+  $("#advCount").textContent=`${num(rs.length)} record${rs.length===1?"":"s"} match`+(ur.length?` · ${lo===hi?num(lo):num(lo)+"–"+num(hi)} units`:"")+(SHAPE||getState().areas?" within selected boundary":"");advCounts()}
 /* counts beside each checkbox: records matching every other filter, like the dropdown menus */
 function advCounts(){
   document.querySelectorAll("#adv label").forEach(l=>{const i=l.querySelector('input[type="checkbox"]');if(!i||i.id==="advDnone")return;
