@@ -369,9 +369,11 @@ def process(r, sources):
              or (p["role"] == "Other" and re.match(r"(Applicant(?!'s)|Project sponsor|Developer/contact|Property (co-)?owner|Named project party)", p.get("other_role") or ""))]
     dev_kinds = {k for k in ("Affordable", "Market") for d in DEVELOPERS[k] for n in names if n.startswith(d.lower())}
     ptype = best(facts["product_type"])
+    n_units, n_restr = share_units(facts.get("total_units")), sum(x["count"] for x in ami) if ami else None
+    all_restricted = bool(n_units and n_restr) and n_restr / n_units >= 0.75 and (n_units - n_restr <= 3 or n_restr / n_units >= 0.9)  # nothing left to be a market project
     if lihtc and aff_bucket != "Affordable":  # a tax credit project competes for affordable financing whatever its label says
         aff_bucket, aff_label = "Affordable", "Affordable"
-    elif aff_bucket == "Affordable" and ptype != "Apartments" and dev_kinds != {"Affordable"}:
+    elif aff_bucket == "Affordable" and ptype != "Apartments" and dev_kinds != {"Affordable"} and not all_restricted:
         aff_bucket, aff_label = "Market", "Market, with inclusionary"  # outside apartments, restricted units are a market project's inclusionary share
     if aff_bucket is None:  # no source states it: fall back to the developer, then the product type
         if len(dev_kinds) == 1:
