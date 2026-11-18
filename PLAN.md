@@ -18,6 +18,8 @@ A free, open-source, crowdsourced, wiki-style housing database: a publicly acces
 
 **Current focus:** the database and access structure, so Paul can see how it looks and feels. Contributor management, moderation, and copyright handling for archived sources are deferred until they come up.
 
+**Mantra (Paul, 2026-11-17): clean, robust, successful, concise.**
+
 ## 0. Core principle: integrity
 
 Every piece of data in the database must be tied to a source that can be accessed and verified.
