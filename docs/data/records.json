@@ -15747,6 +15747,30 @@
    "wayback": null,
    "copyright": true,
    "sha256": "9abe555c02694172c4621ced230211ca6d40e1a61ae35956877d07c651fe3317"
+  },
+  "SRC-001984": {
+   "id": "SRC-001984",
+   "title": "Report to Housing and Human Services Commission 25-0503: Below Market Rate Alternative Compliance Plan, 777 Sunnyvale-Saratoga Road",
+   "publisher": "City of Sunnyvale",
+   "date": "2025-05-28",
+   "type": "Government document",
+   "url": "https://legistar.granicus.com/Sunnyvale/attachments/e23926c4-302a-484a-b7a1-881ae52981a6.pdf",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-001985": {
+   "id": "SRC-001985",
+   "title": "Sunnyvale Housing Development Morphs, Adding More Affordable Housing",
+   "publisher": "The Silicon Valley Voice",
+   "date": "2025-07-15",
+   "type": "News article",
+   "url": "https://www.svvoice.com/sunnyvale-housing-development-morphs-adding-more-affordable-housing/",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -43261,7 +43285,7 @@
   },
   {
    "id": "SCC-000074",
-   "name": "777 Sunnyvale Saratoga Road",
+   "name": "777 Sunnyvale Saratoga Road Townhomes",
    "parcels": [
     {
      "apn": "201-36-002",
@@ -43322,12 +43346,12 @@
     "product_type": {
      "claims": [
       {
-       "value": "Mixed product",
+       "value": "Townhomes",
        "src": [
-        "SRC-001118",
-        "SRC-001119"
+        "SRC-001984",
+        "SRC-001985"
        ],
-       "note": "State categories: 5+, SFA"
+       "note": "For-sale townhomes"
       }
      ]
     },
@@ -43359,13 +43383,6 @@
     "total_units": {
      "claims": [
       {
-       "value": 162,
-       "src": [
-        "SRC-001119"
-       ],
-       "note": "Units reported in entitlement and permit rows"
-      },
-      {
        "value": 322,
        "src": [
         "SRC-001118"
@@ -43377,7 +43394,14 @@
        "src": [
         "SRC-001513"
        ],
-       "note": "80 townhomes and 162 apartments"
+       "note": "Whole development: 80 townhomes and 162 apartments"
+      },
+      {
+       "value": 80,
+       "src": [
+        "SRC-001984"
+       ],
+       "note": "80 ownership units; the 162 rental units are on the dedicated parcel"
       }
      ],
      "best": 2
@@ -43385,20 +43409,11 @@
     "affordability_type": {
      "claims": [
       {
-       "value": "100% affordable",
+       "value": "Market-rate",
        "src": [
-        "SRC-001119"
-       ]
-      }
-     ]
-    },
-    "affordability_notes": {
-     "claims": [
-      {
-       "value": "160 deed-restricted units reported to the state",
-       "src": [
-        "SRC-001119"
-       ]
+        "SRC-001984"
+       ],
+       "note": "Inclusionary obligation met by dedicating land for the affordable apartments"
       }
      ]
     },
@@ -43411,30 +43426,6 @@
         "SRC-001119"
        ],
        "note": "Local tracking number as reported to the state"
-      }
-     ]
-    },
-    "restricted_by_ami": {
-     "claims": [
-      {
-       "value": [
-        {
-         "count": 32,
-         "ami": 30
-        },
-        {
-         "count": 48,
-         "ami": 50
-        },
-        {
-         "count": 80,
-         "ami": 80
-        }
-       ],
-       "src": [
-        "SRC-001119"
-       ],
-       "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
       }
      ]
     }
@@ -43451,6 +43442,12 @@
      "text": "SF YIMBY reported in October 2025 that a Milrose Properties affiliate reached a deal to buy the site for $44.3 million.",
      "src": [
       "SRC-001515"
+     ]
+    },
+    {
+     "text": "The 162 affordable apartments on the dedicated 1.456-acre parcel are a separate record.",
+     "src": [
+      "SRC-001984"
      ]
     }
    ],
@@ -43538,17 +43535,29 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Split: the 162 affordable apartments moved to SCC-000641"
     }
    ],
    "srcLabels": {
     "SRC-001118": "S1",
     "SRC-001119": "S2",
-    "SRC-001514": "S3",
-    "SRC-001513": "S4",
-    "SRC-001515": "S5",
-    "SRC-001740": "S6",
-    "SRC-001741": "S7",
-    "SRC-001098": "S8"
+    "SRC-001984": "S3",
+    "SRC-001985": "S4",
+    "SRC-001514": "S5",
+    "SRC-001513": "S6",
+    "SRC-001515": "S7",
+    "SRC-001740": "S8",
+    "SRC-001741": "S9",
+    "SRC-001098": "S10"
    },
    "lat": 37.3659085,
    "lng": -122.03374324,
@@ -43557,27 +43566,23 @@
     "pipeline"
    ],
    "summary": {
-    "product_type": "Mixed product",
+    "product_type": "Townhomes",
     "status": "Approved",
     "jurisdiction": "Sunnyvale",
     "community": "",
     "county": "Santa Clara County",
     "area": "Sunnyvale",
-    "total_units": 242,
-    "units_display": "242",
+    "total_units": 80,
+    "units_display": "80",
     "units_range": [
-     242,
-     242
+     80,
+     80
     ],
-    "restricted_units": 160,
+    "restricted_units": null,
     "aff_bucket": "Market",
-    "aff_label": "Market, with inclusionary",
-    "aff_share": 1.0,
-    "aff_levels": [
-     "el",
-     "vl",
-     "lo"
-    ],
+    "aff_label": "Market",
+    "aff_share": 0.0,
+    "aff_levels": [],
     "mix_types": [],
     "tax_credit": false,
     "owner": "Mardit Properties, LP",
@@ -43589,7 +43594,7 @@
     "latest_event": "2025-06-17",
     "stale_since": ""
    },
-   "search": "777 sunnyvale saratoga road sunnyvale 201-36-002 777 sunnyvale saratoga rd, sunnyvale, ca 777 sunnyvale saratoga, sunnyvale, ca mixed product state categories: 5+, sfa approved state report shows entitlement approval sunnyvale 162 units reported in entitlement and permit rows 322 units in the application as reported 242 80 townhomes and 162 apartments 100% affordable 160 deed-restricted units reported to the state plng-2023-0807 local tracking number as reported to the state [{\"count\": 32, \"ami\": 30}, {\"count\": 48, \"ami\": 50}, {\"count\": 80, \"ami\": 80}] state report 2025, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. sf yimby reported in october 2025 that a milrose properties affiliate reached a deal to buy the site for $44.3 million. other applicant valley oak partners, llc developer the new home company northern california, llc other applicant 77seven housing partners llc recorded owner mardit properties, lp application submitted entitlement approved city council approved bmr alternative compliance plan"
+   "search": "777 sunnyvale saratoga road townhomes sunnyvale 201-36-002 777 sunnyvale saratoga rd, sunnyvale, ca 777 sunnyvale saratoga, sunnyvale, ca townhomes for-sale townhomes approved state report shows entitlement approval sunnyvale 322 units in the application as reported 242 whole development: 80 townhomes and 162 apartments 80 80 ownership units; the 162 rental units are on the dedicated parcel market-rate inclusionary obligation met by dedicating land for the affordable apartments plng-2023-0807 local tracking number as reported to the state from the state housing element annual progress report, through 2025. sf yimby reported in october 2025 that a milrose properties affiliate reached a deal to buy the site for $44.3 million. the 162 affordable apartments on the dedicated 1.456-acre parcel are a separate record. other applicant valley oak partners, llc developer the new home company northern california, llc other applicant 77seven housing partners llc recorded owner mardit properties, lp application submitted entitlement approved city council approved bmr alternative compliance plan"
   },
   {
    "id": "SCC-000075",
@@ -224480,6 +224485,288 @@
     "stale_since": ""
    },
    "search": "anza at agrihood (pulte) santa clara 303-57-036 303-57-012 303-57-013 1991 worthington cl, santa clara, ca 2015 worthington cl, santa clara, ca 2030 worthington cl, santa clara, ca condominiums townhome-style condos in three 12-unit, 3-story buildings existing certificates of occupancy april to june 2023 santa clara 36 three buildings of 12 3 1525 plans range 1,413 to 1,636 sq ft (midpoint) market-rate state report: all 36 above moderate income, none deed-restricted 2023 bld2021-62094, bld2021-62095, bld2021-62096, pln2016-12389 local tracking number as reported to the state part of the 2019 agrihood entitlement (361 homes): agrihood senior apartments (165, scc-000120), these 36 for-sale homes, and a 160-unit apartment building since re-entitled as 44 townhomes (scc-000298). the 2019 state entry lists the 36 as single-family; 2022 permits were for three 12-unit buildings. developer pulte homes architect wha agrihood entitlements approved (36 for-sale units, pln2016-12389) building entitlements for three 12-unit buildings building permits issued certificate of occupancy for the last of three buildings"
+  },
+  {
+   "id": "SCC-000641",
+   "name": "777 Sunnyvale Saratoga Road Affordable Apartments",
+   "parcels": [
+    {
+     "apn": "201-36-002",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-001098"
+     ],
+     "outline": [
+      [
+       -122.033847,
+       37.366269
+      ],
+      [
+       -122.0325205,
+       37.3662655
+      ],
+      [
+       -122.0325176,
+       37.365365
+      ],
+      [
+       -122.0340587,
+       37.365369
+      ],
+      [
+       -122.0357724,
+       37.366274
+      ],
+      [
+       -122.033847,
+       37.366269
+      ]
+     ],
+     "shared": true
+    }
+   ],
+   "addresses": [
+    {
+     "text": "777 Sunnyvale Saratoga Rd, Sunnyvale, CA",
+     "src": [
+      "SRC-001984"
+     ],
+     "role": "main"
+    }
+   ],
+   "images": [],
+   "facts": {
+    "product_type": {
+     "claims": [
+      {
+       "value": "Apartments",
+       "src": [
+        "SRC-001984"
+       ],
+       "note": "Rental development on a 1.456-acre parcel"
+      }
+     ]
+    },
+    "status": {
+     "claims": [
+      {
+       "value": "Approved",
+       "src": [
+        "SRC-001984",
+        "SRC-001741"
+       ],
+       "note": "Entitled with the townhomes; Planning Commission approval April 28, 2025"
+      }
+     ]
+    },
+    "jurisdiction": {
+     "claims": [
+      {
+       "value": "Sunnyvale",
+       "src": [
+        "SRC-001984"
+       ]
+      }
+     ]
+    },
+    "total_units": {
+     "claims": [
+      {
+       "value": 162,
+       "src": [
+        "SRC-001984",
+        "SRC-001985",
+        "SRC-001119"
+       ],
+       "note": "160 affordable rental units and two manager units"
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "100% affordable",
+       "src": [
+        "SRC-001984",
+        "SRC-001119"
+       ]
+      }
+     ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "160 rental units affordable to households earning 30-60% of area median income, plus two manager units",
+       "src": [
+        "SRC-001984"
+       ]
+      },
+      {
+       "value": "160 deed-restricted units reported to the state",
+       "src": [
+        "SRC-001119"
+       ]
+      }
+     ]
+    },
+    "planning_file": {
+     "claims": [
+      {
+       "value": "PLNG-2023-0807",
+       "src": [
+        "SRC-001984",
+        "SRC-001119"
+       ],
+       "note": "Development approval shared with the townhomes"
+      },
+      {
+       "value": "2024-0621",
+       "src": [
+        "SRC-001984"
+       ],
+       "note": "Below Market Rate Alternative Compliance Plan"
+      }
+     ]
+    },
+    "restricted_by_ami": {
+     "claims": [
+      {
+       "value": [
+        {
+         "count": 32,
+         "ami": 30
+        },
+        {
+         "count": 48,
+         "ami": 50
+        },
+        {
+         "count": 80,
+         "ami": 80
+        }
+       ],
+       "src": [
+        "SRC-001119"
+       ],
+       "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+      }
+     ]
+    }
+   },
+   "construction_notes": [
+    {
+     "text": "The developer of the 80 townhomes designs and entitles this rental building, then dedicates its 1.456-acre parcel to the City in place of the 36 inclusionary units the townhomes and apartments would otherwise owe. The City then issues a competitive request for proposals for a nonprofit developer to build and manage it.",
+     "src": [
+      "SRC-001984"
+     ]
+    },
+    {
+     "text": "The townhomes are a separate record: SCC-000074.",
+     "src": [
+      "SRC-001984"
+     ]
+    }
+   ],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "77Seven Housing Partners LLC",
+     "contact": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-001984"
+     ],
+     "linkedin": null
+    },
+    {
+     "role": "Other",
+     "company": "City of Sunnyvale",
+     "contact": null,
+     "other_role": "Land recipient (dedication before townhome building permits)",
+     "src": [
+      "SRC-001984"
+     ],
+     "linkedin": null
+    }
+   ],
+   "financing": [],
+   "groups": {},
+   "events": [
+    {
+     "date": "2025-04-28",
+     "type": "Approved",
+     "label": "Planning Commission approved the 242-unit development",
+     "src": [
+      "SRC-001984"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-06-17",
+     "type": "Other",
+     "label": "City Council approved the land dedication in place of inclusionary units",
+     "src": [
+      "SRC-001741",
+      "SRC-001985"
+     ],
+     "estimated": false
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Split from SCC-000074 (city staff report: dedicated parcel for 162 affordable rental units)"
+    }
+   ],
+   "srcLabels": {
+    "SRC-001984": "S1",
+    "SRC-001741": "S2",
+    "SRC-001985": "S3",
+    "SRC-001119": "S4",
+    "SRC-001098": "S5"
+   },
+   "lat": 37.3659085,
+   "lng": -122.03374324,
+   "calcs": {},
+   "kinds": [
+    "pipeline"
+   ],
+   "summary": {
+    "product_type": "Apartments",
+    "status": "Approved",
+    "jurisdiction": "Sunnyvale",
+    "community": "",
+    "county": "Santa Clara County",
+    "area": "Sunnyvale",
+    "total_units": 162,
+    "units_display": "162",
+    "units_range": [
+     162,
+     162
+    ],
+    "restricted_units": 160,
+    "aff_bucket": "Affordable",
+    "aff_label": "Affordable, 100%",
+    "aff_share": 1.0,
+    "aff_levels": [
+     "el",
+     "vl",
+     "lo"
+    ],
+    "mix_types": [],
+    "tax_credit": false,
+    "owner": "",
+    "developer": "",
+    "cost_basis": "",
+    "cost": null,
+    "per_unit": null,
+    "main_lender": "",
+    "latest_event": "2025-06-17",
+    "stale_since": ""
+   },
+   "search": "777 sunnyvale saratoga road affordable apartments sunnyvale 201-36-002 777 sunnyvale saratoga rd, sunnyvale, ca apartments rental development on a 1.456-acre parcel approved entitled with the townhomes; planning commission approval april 28, 2025 sunnyvale 162 160 affordable rental units and two manager units 100% affordable 160 rental units affordable to households earning 30-60% of area median income, plus two manager units 160 deed-restricted units reported to the state plng-2023-0807 development approval shared with the townhomes 2024-0621 below market rate alternative compliance plan [{\"count\": 32, \"ami\": 30}, {\"count\": 48, \"ami\": 50}, {\"count\": 80, \"ami\": 80}] state report 2025, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) the developer of the 80 townhomes designs and entitles this rental building, then dedicates its 1.456-acre parcel to the city in place of the 36 inclusionary units the townhomes and apartments would otherwise owe. the city then issues a competitive request for proposals for a nonprofit developer to build and manage it. the townhomes are a separate record: scc-000074. other applicant 77seven housing partners llc other land recipient (dedication before townhome building permits) city of sunnyvale planning commission approved the 242-unit development city council approved the land dedication in place of inclusionary units"
   },
   {
    "id": "SMC-000001",

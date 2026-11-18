@@ -441,7 +441,7 @@ def main():
     seen = {}
     for r in records.values():
         for p in r.get("parcels", []):
-            if p.get("apn") in seen and seen[p["apn"]] != r["id"]:
+            if p.get("apn") in seen and seen[p["apn"]] != r["id"] and not p.get("shared"):  # shared: one parcel, two projects, until it is split
                 errors.append(f"{r['id']}: APN {p['apn']} is already in {seen[p['apn']]} (possible duplicate project)")
             seen.setdefault(p.get("apn"), r["id"])
     if errors:

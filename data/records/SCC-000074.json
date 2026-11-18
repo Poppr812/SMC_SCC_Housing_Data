@@ -1,6 +1,6 @@
 {
   "id": "SCC-000074",
-  "name": "777 Sunnyvale Saratoga Road",
+  "name": "777 Sunnyvale Saratoga Road Townhomes",
   "parcels": [
     {
       "apn": "201-36-002",
@@ -61,12 +61,12 @@
     "product_type": {
       "claims": [
         {
-          "value": "Mixed product",
+          "value": "Townhomes",
           "src": [
-            "SRC-001118",
-            "SRC-001119"
+            "SRC-001984",
+            "SRC-001985"
           ],
-          "note": "State categories: 5+, SFA"
+          "note": "For-sale townhomes"
         }
       ]
     },
@@ -98,13 +98,6 @@
     "total_units": {
       "claims": [
         {
-          "value": 162,
-          "src": [
-            "SRC-001119"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 322,
           "src": [
             "SRC-001118"
@@ -116,7 +109,14 @@
           "src": [
             "SRC-001513"
           ],
-          "note": "80 townhomes and 162 apartments"
+          "note": "Whole development: 80 townhomes and 162 apartments"
+        },
+        {
+          "value": 80,
+          "src": [
+            "SRC-001984"
+          ],
+          "note": "80 ownership units; the 162 rental units are on the dedicated parcel"
         }
       ],
       "best": 2
@@ -124,20 +124,11 @@
     "affordability_type": {
       "claims": [
         {
-          "value": "100% affordable",
+          "value": "Market-rate",
           "src": [
-            "SRC-001119"
-          ]
-        }
-      ]
-    },
-    "affordability_notes": {
-      "claims": [
-        {
-          "value": "160 deed-restricted units reported to the state",
-          "src": [
-            "SRC-001119"
-          ]
+            "SRC-001984"
+          ],
+          "note": "Inclusionary obligation met by dedicating land for the affordable apartments"
         }
       ]
     },
@@ -150,30 +141,6 @@
             "SRC-001119"
           ],
           "note": "Local tracking number as reported to the state"
-        }
-      ]
-    },
-    "restricted_by_ami": {
-      "claims": [
-        {
-          "value": [
-            {
-              "count": 32,
-              "ami": 30
-            },
-            {
-              "count": 48,
-              "ami": 50
-            },
-            {
-              "count": 80,
-              "ami": 80
-            }
-          ],
-          "src": [
-            "SRC-001119"
-          ],
-          "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
     }
@@ -190,6 +157,12 @@
       "text": "SF YIMBY reported in October 2025 that a Milrose Properties affiliate reached a deal to buy the site for $44.3 million.",
       "src": [
         "SRC-001515"
+      ]
+    },
+    {
+      "text": "The 162 affordable apartments on the dedicated 1.456-acre parcel are a separate record.",
+      "src": [
+        "SRC-001984"
       ]
     }
   ],
@@ -277,6 +250,16 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Split: the 162 affordable apartments moved to SCC-000641"
     }
   ]
 }
