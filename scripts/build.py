@@ -268,8 +268,7 @@ def process(r, sources):
         for s in srcs or []:
             if s not in order:
                 order.append(s)
-    for p in r["parcels"]:
-        see(p["src"])
+    # Parcel-layer citations go last: the county dataset page is generic, so real sources lead.
     for a in r["addresses"]:
         see(a["src"])
         for w in a.get("written_as", []):
@@ -289,6 +288,8 @@ def process(r, sources):
     for im in r.get("images", []):
         if im.get("src"):
             see([im["src"]])
+    for p in r["parcels"]:
+        see(p["src"])
     src_labels = {s: f"S{i + 1}" for i, s in enumerate(order)}
 
     pts = [pt for p in r["parcels"] for pt in (p.get("outline") or [])[:-1]]
