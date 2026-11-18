@@ -130,6 +130,7 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .advbody h4{margin:0 0 6px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--gray)}
 .advbody label{display:flex;gap:6px;align-items:center;font-size:13px;padding:2px 0;color:var(--ink)}
 .advbody label.muted{color:var(--gray)}
+.advbody .acnt{margin-left:auto;padding-left:12px;color:var(--gray);font-variant-numeric:tabular-nums}
 .advsub{margin:0 0 4px 22px}
 .advrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;padding:3px 0;color:var(--ink)}
 .advrow label{padding:0}
@@ -1054,7 +1055,18 @@ function advSummary(a){if(!a)return [];const o=[];
 function advActive(){const a=advState(),s=getState();return advSummary(a).length+(s.aff.length<3?1:0)}
 function advSyncMirrors(){document.querySelectorAll("#adv [data-mirror]").forEach(i=>{const o=document.querySelector(i.dataset.mirror);if(o)i.checked=o.checked})}
 function advCount(){const rs=filtered(),ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
-  $("#advCount").textContent=`${num(rs.length)} record${rs.length===1?"":"s"} match`+(ur.length?` · ${lo===hi?num(lo):num(lo)+"–"+num(hi)} units`:"")}
+  $("#advCount").textContent=`${num(rs.length)} record${rs.length===1?"":"s"} match`+(ur.length?` · ${lo===hi?num(lo):num(lo)+"–"+num(hi)} units`:"");advCounts()}
+/* counts beside each checkbox: records matching every other filter, like the dropdown menus */
+function advCounts(){
+  document.querySelectorAll("#adv label").forEach(l=>{const i=l.querySelector('input[type="checkbox"]');if(!i||i.id==="advDnone")return;
+    if(!l.querySelector(".acnt"))l.insertAdjacentHTML("beforeend",'<span class="acnt"></span>')});
+  document.querySelectorAll("#adv [data-mirror]").forEach(i=>{const o=document.querySelector(i.dataset.mirror),c=o&&o.closest("label")?.querySelector(".cnt");
+    const a=i.closest("label").querySelector(".acnt");if(a)a.textContent=c?c.textContent:""});
+  const s=getState(),base=k=>RECORDS.filter(r=>matches(r,{...s,adv:{...s.adv,[k]:[]}}));
+  const lv=base("lv"),br=base("br");
+  document.querySelectorAll("#adv .advLv").forEach(i=>{i.closest("label").querySelector(".acnt").textContent=num(lv.filter(r=>(r.summary.aff_levels||[]).includes(i.value)).length)});
+  document.querySelectorAll("#adv .advBr").forEach(i=>{i.closest("label").querySelector(".acnt").textContent=num(br.filter(r=>(r.summary.mix_types||[]).includes(i.value)).length)});
+}
 function advLabel(){const n=advSummary(advState()).length;$("#advBtn").textContent="Advanced filters"+(n?` (${n})`:"");$("#advBtn").classList.toggle("on",!!n)}
 $("#advTypes").innerHTML=Object.keys(REG.product_types).map(t=>`<label><input type="checkbox" data-mirror='#typesMenu input.pt[value="${esc(t)}"]'> ${esc(short(t))}</label>`).join("");
 $("#advStages").innerHTML=PIPELINE.map(x=>`<label><input type="checkbox" data-mirror='#showMenu input.st[value="${esc(x)}"]'><span class="dot" style="background:${STATUS_COLOR[x]}${whiteEdge(STATUS_COLOR[x])}"></span>${esc(x)}</label>`).join("");
