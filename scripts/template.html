@@ -159,7 +159,8 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .modal .row2{display:flex;gap:8px}.modal .row2>*{flex:1}
 .modal .acts{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
 .modal .lnk{background:none;border:none;color:var(--teal);cursor:pointer;font:inherit;font-size:12px;padding:0;text-decoration:underline}
-.modal .msg{font-size:12px;margin-top:8px;color:var(--navy)}
+.modal .msg{font-size:13px;margin-top:8px;color:var(--navy);font-weight:600}
+.modal .sent p{font-size:14px;line-height:1.5;margin:8px 0}
 .adm table{width:100%;border-collapse:collapse;font-size:12px}
 .adm th{text-align:left;background:#EEF2F7;padding:4px 6px;position:sticky;top:0}
 .adm td{border-bottom:1px solid var(--rule);padding:4px 6px;vertical-align:top}
@@ -880,6 +881,13 @@ function requireLogin(reason,then){if(!sb){toast("Sign-in isn't available right 
 const who=p=>p?(p.alias||p.name||p.email):"";
 function acctLabel(){$("#acctBtn").textContent=USER?(who(PROFILE)||USER.email):"Sign in"}
 async function loadProfile(){PROFILE=null;if(!USER)return;const {data}=await sb.from("profiles").select("*").eq("id",USER.id).maybeSingle();PROFILE=data}
+async function busy(id,label,f){const b=document.getElementById(id);if(!b)return f();const t=b.textContent;b.disabled=true;b.textContent=label;try{return await f()}finally{if(b.isConnected){b.disabled=false;b.textContent=t}}}
+function acctSent(email,what,resend,after){const B=$("#acctBox");
+  B.innerHTML=`<div class="sent"><h3>Check your email</h3><p>We sent ${what} to <b>${esc(email)}</b>.${after?" "+after:""}</p>
+    <p class="muted" style="font-size:13px">It comes from Housing Comps (noreply@montarav.com). Not there in a couple of minutes? Check spam or promotions.</p>
+    <div class="acts">${resend?'<button class="btn ghost" type="button" id="aResend">Send it again</button>':""}<button class="btn" type="button" id="aDone">Close</button></div><div class="msg" id="acctMsg"></div></div>`;
+  document.getElementById("aDone").onclick=()=>{PENDING=null;$("#acct").classList.remove("show")};
+  if(resend)document.getElementById("aResend").onclick=()=>busy("aResend","Sending…",async()=>{const {error}=await resend();acctMsg(error?error.message:"Sent again.")})}
 function acctMsg(m){const e=$("#acctMsg");if(e)e.textContent=m||""}
 function acctView(mode,reason){
   const B=$("#acctBox"),why=reason?`<div class="msg" style="margin:0 0 6px">${esc(reason)}</div>`:"";
@@ -918,20 +926,21 @@ function acctView(mode,reason){
   const val=id=>(document.getElementById(id)||{}).value?.trim()||"";
   on("aCancel",()=>{PENDING=null;$("#acct").classList.remove("show")});
   on("aToUp",()=>acctView("signup",reason));on("aToIn",()=>acctView("signin",reason));
-  on("aGo",async()=>{const email=val("aEmail"),password=$("#aPass").value;if(!email||!password){acctMsg("Enter your email and password.");return}
+  on("aGo",()=>busy("aGo",mode==="signup"?"Creating account…":"Signing in…",async()=>{const email=val("aEmail"),password=$("#aPass").value;if(!email||!password){acctMsg("Enter your email and password.");return}
     if(mode==="signup"){
       if(password.length<8){acctMsg("Use at least 8 characters for the password.");return}
       if(!$("#aPriv").checked){acctMsg("Please confirm you've read the privacy note.");return}
       const {data,error}=await sb.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname,data:{name:val("aName"),alias:val("aAlias"),company:val("aCo"),role:val("aRole")}}});
       if(error){acctMsg(error.message);return}
-      if(!data.session)acctMsg("Check your email for a link to confirm your account, then sign in.");
-    }else{const {error}=await sb.auth.signInWithPassword({email,password});if(error)acctMsg(error.message)}});
-  on("aMagic",async()=>{const email=val("aEmail");if(!email){acctMsg("Enter your email first.");return}
-    const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+location.pathname,shouldCreateUser:false}});
-    acctMsg(error?error.message:"Check your email for a sign-in link.")});
-  on("aForgot",async()=>{const email=val("aEmail");if(!email){acctMsg("Enter your email first.");return}
-    const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname});
-    acctMsg(error?error.message:"Check your email for a link to set a new password.")});
+      if(data.user&&Array.isArray(data.user.identities)&&!data.user.identities.length){acctMsg("That email already has an account. Sign in, or use Forgot password.");return}
+      if(!data.session)acctSent(email,"a link to confirm your account",()=>sb.auth.resend({type:"signup",email,options:{emailRedirectTo:location.origin+location.pathname}}),"Open it to finish. You'll come back here signed in.");
+    }else{const {error}=await sb.auth.signInWithPassword({email,password});if(error)acctMsg(error.message)}}));
+  on("aMagic",()=>busy("aMagic","Sending…",async()=>{const email=val("aEmail");if(!email){acctMsg("Enter your email first.");return}
+    const go=()=>sb.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+location.pathname,shouldCreateUser:false}});
+    const {error}=await go();if(error)acctMsg(error.message);else acctSent(email,"a sign-in link",go)}));
+  on("aForgot",()=>busy("aForgot","Sending…",async()=>{const email=val("aEmail");if(!email){acctMsg("Enter your email first.");return}
+    const go=()=>sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname});
+    const {error}=await go();if(error)acctMsg(error.message);else acctSent(email,"a link to set a new password",go)}));
   on("aSetPw",async()=>{const pw=$("#aNew").value;if(pw.length<8){acctMsg("Use at least 8 characters.");return}if(pw!==$("#aNew2").value){acctMsg("The two passwords don't match.");return}
     const {error}=await sb.auth.updateUser({password:pw});if(error){acctMsg(error.message);return}
     RECOVERING=false;$("#acct").classList.remove("show");toast("Password updated. You're signed in.")});
