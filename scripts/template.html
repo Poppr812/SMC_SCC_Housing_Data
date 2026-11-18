@@ -505,7 +505,7 @@ function render(){
   const byRow=(a,b)=>radius?miles(SHAPE,a)-miles(SHAPE,b):(b.summary.total_units||0)-(a.summary.total_units||0);
   const isActive=r=>isPipe(r)&&st.statuses.includes(r.summary.status)&&r.summary.status!=="Inactive pipeline";
   const rs=filtered().sort((a,b)=>(isActive(b)-isActive(a))||byRow(a,b));
-  const NUM={};rs.filter(isActive).forEach((r,i)=>NUM[r.id]=i+1);
+  const NUM={};if(SHAPE)rs.filter(isActive).forEach((r,i)=>NUM[r.id]=i+1);
   rs.forEach(r=>{
     const c=colorOf(r),white=c==="#FFFFFF";
     r.parcels.forEach(p=>{if(p.outline){const poly=L.polygon(p.outline.map(q=>[q[1],q[0]]),{color:white?WHITE_EDGE:c,weight:2,fillOpacity:.25}).addTo(layer);poly.bindTooltip(thumbHTML(r),{direction:"top",opacity:1});poly.on("click",e=>{if(MODE){return}openRecord(r.id)})}});
