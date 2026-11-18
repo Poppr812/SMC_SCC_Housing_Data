@@ -17,6 +17,7 @@ Batch format (source keys are local to the file):
   "updates": [{"id": "SCC-000012", "name": "better project name", "apns": ["more parcels for this project"],
                "claims": {"total_units": [{"value": 300, "src": ["k1"], "note": "", "best": true}]},
                "parties": [...], "events": [...], "financing": [...], "addresses": [...], "notes": [...],
+               "research": [{"check": "<schema.RESEARCH_CHECKS key>", "result": "<schema.RESEARCH_RESULTS>", "note": "where looked", "src": ["k1 or SRC-id"]}],
                "checked_against_city": true}]
 }
 A new claim on a fact keeps the old claims. "best": true flags it as the value to use.
@@ -223,6 +224,13 @@ def main():
                                             if not any(o["date"] == e["date"] and o["type"] == e["type"] for o in r["events"])], key=lambda e: str(e["date"]))
         r["addresses"] += [a for a in resolve(u.get("addresses"), "address", errs) if not any(o["text"].lower() == a["text"].lower() for o in r["addresses"])]
         r["construction_notes"] = r.get("construction_notes", []) + notes_of(u.get("notes"), "note", errs)
+        for x in u.get("research") or []:
+            k, res = x.get("check"), x.get("result")
+            if k not in schema.RESEARCH_CHECKS or res not in schema.RESEARCH_RESULTS:
+                errs.append(f"research {k!r}/{res!r} not defined")
+                continue
+            srcs = [s if s.startswith("SRC-") else src_id(s) for s in x.get("src") or [] if s.startswith("SRC-") or s in b["sources"]]
+            r.setdefault("research", {})[k] = {"date": TODAY, "result": res, "note": x.get("note") or "", "src": srcs}
         if u.get("checked_against_city"):
             for n in r["construction_notes"]:
                 n["text"] = n["text"].replace(" " + IMPORT_NOTE, "")

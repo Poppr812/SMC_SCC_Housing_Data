@@ -129,6 +129,15 @@ SOURCE_TYPES = [
     "Trade publication", "Trade listing",
 ]
 
+# Research checklist: every place a project is looked for, in order. Admin view only.
+RESEARCH_CHECKS = {
+    "search": "Web search", "parcel": "County parcel and recorder", "city": "City planning and council records",
+    "county": "County", "state": "State (progress reports, tax credits, CEQAnet)", "news": "Local news",
+    "trade": "Trade press", "developer": "Developer site", "architect": "Architect site",
+    "finance": "Finance partners", "linkedin": "LinkedIn",
+}
+RESEARCH_RESULTS = ["found", "nothing new", "nothing found", "blocked", "not applicable"]
+
 # Facts: key -> (section, label, kind, options). kind: cat, catmulti, text, int, num, money, mix, ami
 SECTIONS = ["Basics", "Location", "Units & building", "Affordability",
             "Approvals & timeline", "Parties", "Financing & transactions"]
@@ -208,4 +217,5 @@ def registry():
         "financing_types": FINANCING_TYPES,
         "debt_types": sorted(DEBT_TYPES),
         "event_types": EVENT_TYPES,
+        "research_checks": RESEARCH_CHECKS,
     }

@@ -509,6 +509,8 @@ const PT_SVG=(()=>{const w=(s,d)=>`<svg width="${s}" height="${s}" viewBox="0 0 
     "Single-family":`<path d="M4 11l8-6.5 8 6.5M6 9.5V20h12V9.5M3 20h18"/><path d="M10.5 20v-4.5h3V20"/><rect x="7.5" y="12" width="2" height="2"/><rect x="14.5" y="12" width="2" height="2"/>`,
     "Mixed product":`<path d="M2.5 20v-6l3.5-3 3.5 3v6"/><rect x="11" y="5" width="10" height="15"/>${win([13,16.4],[7.5,11,14.5])}<path d="M2 20h20"/>`};
   return (pt,s)=>w(s,d[pt]||d["Apartments"])})();
+function researchBox(r){const R=r.research||{},keys=Object.keys(REG.research_checks);const done=keys.filter(k=>R[k]).length;
+  return `<details class="adminsrc"><summary>Research checklist: ${done} of ${keys.length} checked</summary><table class="facts">${keys.map(k=>{const x=R[k];return `<tr><td>${esc(REG.research_checks[k])}</td><td>${x?`${esc(x.result)} · ${esc(x.date)}${x.note?" · "+esc(x.note):""}${x.src.length?" · "+x.src.map(s=>esc(r.srcLabels[s]||s)).join(" "):""}`:"<b>not checked</b>"}</td></tr>`}).join("")}</table></details>`}
 function phArt(r,s){const a=r.summary.aff_bucket==="Affordable";return PT_SVG(r.summary.product_type,s)+(a?`<span class="affband" title="Affordable">${s<40?"A":"AFFORDABLE"}</span>`:"")}
 function imgBox(r,small){
   const im=r.images[0];
@@ -753,6 +755,7 @@ function openRecord(id){
    <h3>Sources</h3>
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
      return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(outUrl(S))}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)}${S.find?`<br><b>How to find it:</b> ${esc(findTip(S.find,r))}`:""}${PROFILE&&PROFILE.is_admin?`<div class="adminsrc">${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()} · Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div>`:""}</div></div>`}).join("")}
+   ${PROFILE&&PROFILE.is_admin?researchBox(r):""}
    <details><summary>Edit history (provenance)</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
