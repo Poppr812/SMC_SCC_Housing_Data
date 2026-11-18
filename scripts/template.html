@@ -663,7 +663,10 @@ function partiesRows(r){
   let h="";
   const order=REG.party_roles;
   [...r.parties].sort((a,b)=>order.indexOf(a.role)-order.indexOf(b.role)).forEach(p=>{
-    const who=esc(p.company)+(p.contact?` · ${esc(p.contact)}`:"")+(p.linkedin?` · <a href="${esc(p.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`:"");
+    const ext=u=>`href="${esc(u)}" target="_blank" rel="noopener"`;
+    const main=p.project_page||p.website;
+    const who=(main?`<a ${ext(main)} title="${p.project_page?"Developer's page for this project":"Company website"}">${esc(p.company)}</a>`:esc(p.company))
+      +(p.project_page&&p.website?` · <a ${ext(p.website)}>website</a>`:"")+(p.contact?` · ${p.email?`<a href="mailto:${esc(p.email)}">${esc(p.contact)}</a>`:esc(p.contact)}`:(p.email?` · <a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`:""))+(p.phone?` · <a href="tel:${esc(p.phone.replace(/[^\d+]/g,""))}">${esc(p.phone)}</a>`:"")+(p.linkedin?` · <a href="${esc(p.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`:"");
     h+=row(p.role==="Other"?(p.other_role||"Other"):p.role,who+fn(p.src));
   });
   if(r.events.some(e=>e.type==="Sale")&&!r.parties.some(p=>p.role==="Seller"))h+=row("Seller",'<span class="muted">No current report logged</span>');
@@ -764,7 +767,7 @@ function rowsFor(scope,cats){
         o[f.label]=f.kind==="money"&&one!=null&&!fc.combine?fc.claims[one].value:claimsText(r,k,fc);
         (CALC_AFTER[k]||[]).forEach(calc)});
       Object.keys(REG.calcs).filter(k=>REG.calcs[k].section===sec&&!Object.values(CALC_AFTER).flat().includes(k)).forEach(calc);
-      if(sec==="Parties")REG.party_roles.forEach(role=>{const ps=r.parties.filter(p=>p.role===role);if(ps.length)o[role==="Other"?"Other parties":role]=ps.map(p=>(p.other_role?p.other_role+": ":"")+p.company+(p.contact?" ("+p.contact+")":"")+(p.linkedin?" "+p.linkedin:"")+L(p.src)).join("; ")});
+      if(sec==="Parties")REG.party_roles.forEach(role=>{const ps=r.parties.filter(p=>p.role===role);if(ps.length)o[role==="Other"?"Other parties":role]=ps.map(p=>(p.other_role?p.other_role+": ":"")+p.company+(p.contact?" ("+p.contact+")":"")+(p.project_page||p.website?" "+(p.project_page||p.website):"")+(p.linkedin?" "+p.linkedin:"")+L(p.src)).join("; ")});
       if(sec==="Financing & transactions")o["Financing sources"]=r.financing.map(x=>x.type+": "+x.provider+(x.program?" · "+x.program:"")+(x.amount?" · "+money(x.amount):"")+(x.date?" · "+x.date:"")+L(x.src)+(x.group?" (sources differ)":"")).join(" | ");
     });
     if(want.includes("Timeline"))o["Timeline"]=r.events.map(e=>e.date+": "+e.label+(e.estimated?" (estimated)":"")+L(e.src)).join(" | ");
