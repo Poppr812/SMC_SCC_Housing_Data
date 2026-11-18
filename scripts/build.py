@@ -186,6 +186,20 @@ def best(f):
     return None
 
 
+def share_units(f):
+    """Units to measure an affordable share against: the best count, else the state report's count
+    entitlement/permit count (the restricted counts come from those rows), then its application count, else the smallest."""
+    v = best(f)
+    if v or not f:
+        return v
+    for pat in (r"Units reported in entitlement and permit rows|State report", r"Units in the application"):
+        st = [c["value"] for c in f["claims"] if re.match(pat, c.get("note") or "")]
+        if st:
+            return st[0]
+    vals = [c["value"] for c in f["claims"] if isinstance(c["value"], (int, float))]
+    return min(vals) if vals else None
+
+
 def units_display(f):
     """'71', or '1,014–1,514' when sources give different counts and none is flagged best."""
     if f is None:
@@ -347,7 +361,7 @@ def process(r, sources):
     ami = best(facts.get("restricted_by_ami"))
     fa = facts.get("restricted_by_ami")
     ami_from_state = bool(fa) and (fa["claims"][fa.get("best") or 0].get("note") or "").startswith("State report")
-    aff_bucket, aff_label, aff_share = affordability(facts, ami, units)
+    aff_bucket, aff_label, aff_share = affordability(facts, ami, share_units(facts.get("total_units")))
     lihtc = (any(x["type"] in TAX_CREDIT_TYPES - {"Tax-exempt bonds"} for x in r.get("financing", []))
              or any(sources[s]["publisher"].startswith("California Tax Credit Allocation Committee") for s in order if s in sources))
     tax_credit = lihtc or any(x["type"] == "Tax-exempt bonds" for x in r.get("financing", []))
