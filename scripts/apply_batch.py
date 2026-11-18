@@ -10,7 +10,7 @@ Batch format (source keys are local to the file):
   "new": [{"county": "SMC or SCC", "name": "", "apns": ["..."],
            "addresses": [{"text": "", "src": ["k1"]}],
            "facts": {"status": {"claims": [{"value": "", "src": ["k1"], "note": ""}]}, ...},
-           "parties": [{"role": "", "company": "", "contact": null, "other_role": null, "email": "optional, public", "phone": "optional, public", "website": "optional homepage", "project_page": "optional developer page for this project", "src": ["k1"]}],
+           "parties": [{"role": "", "company": "", "contact": null, "other_role": null, "email": "optional, public", "phone": "optional, public", "website": "optional homepage", "project_page": "optional developer page for this project", "website_basis": "opened (default) | filing | search", "src": ["k1"]}],
            "events": [{"date": "", "type": "", "label": "", "src": ["k1"], "estimated": false}],
            "financing": [{"type": "", "provider": "", "program": null, "amount": 1, "date": null, "src": ["k1"]}],
            "notes": [{"text": "", "src": ["k1"]}]}],
@@ -109,7 +109,7 @@ def main():
                 errs.append(f"financing type {f.get('type')!r} not defined")
 
     def parties_of(items, where, errs):
-        return [{"role": p["role"], "company": p["company"], "contact": p.get("contact"), "linkedin": p.get("linkedin"), **{k: p[k] for k in ("email", "phone", "website", "project_page") if p.get(k)}, **({"other_role": p["other_role"]} if p.get("other_role") else {}), "src": p["src"]}
+        return [{"role": p["role"], "company": p["company"], "contact": p.get("contact"), "linkedin": p.get("linkedin"), **{k: p[k] for k in ("email", "phone", "website", "website_basis", "project_page", "project_page_basis") if p.get(k)}, **({"other_role": p["other_role"]} if p.get("other_role") else {}), "src": p["src"]}
                 for p in resolve(items, where, errs)]
 
     def notes_of(items, where, errs):

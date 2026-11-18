@@ -664,9 +664,10 @@ function partiesRows(r){
   const order=REG.party_roles;
   [...r.parties].sort((a,b)=>order.indexOf(a.role)-order.indexOf(b.role)).forEach(p=>{
     const ext=u=>`href="${esc(u)}" target="_blank" rel="noopener"`;
-    const main=p.project_page||p.website;
-    const who=(main?`<a ${ext(main)} title="${p.project_page?"Developer's page for this project":"Company website"}">${esc(p.company)}</a>`:esc(p.company))
-      +(p.project_page&&p.website?` · <a ${ext(p.website)}>website</a>`:"")+(p.contact?` · ${p.email?`<a href="mailto:${esc(p.email)}">${esc(p.contact)}</a>`:esc(p.contact)}`:(p.email?` · <a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`:""))+(p.phone?` · <a href="tel:${esc(p.phone.replace(/[^\d+]/g,""))}">${esc(p.phone)}</a>`:"")+(p.linkedin?` · <a href="${esc(p.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`:"");
+    const main=p.project_page||p.website, mainBasis=p.project_page?p.project_page_basis:p.website_basis;
+    const nc=b=>b==="search"?' <span class="muted" style="font-size:11px" title="Found in search results. The site would not let us open it to confirm.">(not opened)</span>':"";
+    const who=(main?`<a ${ext(main)} title="${p.project_page?"Developer's page for this project":"Company website"}">${esc(p.company)}</a>${nc(mainBasis)}`:esc(p.company))
+      +(p.project_page&&p.website?` · <a ${ext(p.website)}>website</a>${nc(p.website_basis)}`:"")+(p.contact?` · ${p.email?`<a href="mailto:${esc(p.email)}">${esc(p.contact)}</a>`:esc(p.contact)}`:(p.email?` · <a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`:""))+(p.phone?` · <a href="tel:${esc(p.phone.replace(/[^\d+]/g,""))}">${esc(p.phone)}</a>`:"")+(p.linkedin?` · <a href="${esc(p.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`:"");
     h+=row(p.role==="Other"?(p.other_role||"Other"):p.role,who+fn(p.src));
   });
   if(r.events.some(e=>e.type==="Sale")&&!r.parties.some(p=>p.role==="Seller"))h+=row("Seller",'<span class="muted">No current report logged</span>');
