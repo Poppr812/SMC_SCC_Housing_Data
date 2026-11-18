@@ -282,7 +282,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 
 <div id="adv" hidden><div class="advbox">
   <div class="advhead"><div><b>Advanced filters</b><div class="muted" id="advCount"></div></div>
-    <div style="display:flex;gap:8px"><button type="button" class="btn ghost sm" id="advReset">Reset filters</button><button type="button" class="btn sm" id="advDone">Done</button></div></div>
+    <div style="display:flex;gap:8px"><button type="button" class="btn ghost sm" id="advReset" style="white-space:nowrap">Reset filters</button><button type="button" class="btn sm" id="advDone">Done</button></div></div>
   <div class="advbody">
    <div class="advcol">
     <section><h4>Affordability</h4>
@@ -933,7 +933,7 @@ function acctView(mode,reason){
     <label class="f">Password (8+ characters)<input type="password" id="aPass" autocomplete="new-password"></label>
     <div class="row2"><label class="f">Name<input type="text" id="aName" autocomplete="name"></label><label class="f">Alias (shown on credits)<input type="text" id="aAlias"></label></div>
     <div class="row2"><label class="f">Company<input type="text" id="aCo" autocomplete="organization"></label><label class="f">Role<select id="aRole">${roleOpts("")}</select></label></div>
-    <label class="chk"><input type="checkbox" id="aPriv"> I've read the <a href="#" onclick="$('#priv').classList.add('show');return false">privacy note</a>: the site logs sign-ins, searches, records opened and exports.</label>
+    <label class="chk"><input type="checkbox" id="aPriv"><span>I've read the <a href="#" onclick="$('#priv').classList.add('show');return false">privacy note</a>: the site logs sign-ins, searches, records opened and exports.</span></label>
     <div class="acts"><button class="btn ghost" type="button" id="aCancel">Cancel</button><button class="btn" type="button" id="aGo">Create account</button></div>
     <div class="msg" id="acctMsg"></div>
     <p style="font-size:13px;margin:14px 0 0">Already have an account? <button class="lnk" type="button" id="aToIn">Sign in</button></p>`;
