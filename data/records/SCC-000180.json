@@ -241,6 +241,116 @@
             "SRC-001099"
           ],
           "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2025, entitlement stage: 6 very low income units, 112 above moderate"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 17,
+            "1br": 81,
+            "2br": 20,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001836",
+            "SRC-002861"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002862",
+            "SRC-002863",
+            "SRC-001836"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 74,
+          "src": [
+            "SRC-002862",
+            "SRC-002863",
+            "SRC-001836"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.48,
+          "src": [
+            "SRC-002862",
+            "SRC-002863"
+          ],
+          "note": "Gross acres"
+        },
+        {
+          "value": 0.49,
+          "src": [
+            "SRC-002861"
+          ],
+          "note": "Gross acres"
+        }
+      ],
+      "best": 0
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 99040,
+          "src": [
+            "SRC-001836"
+          ],
+          "note": "Of nearly 119,200 sq ft total (3,725 sq ft amenities, 13,670 sq ft parking)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 112,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2025 entitlement row"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002862",
+            "SRC-001107"
+          ],
+          "note": "Site Development Permit under the State Density Bonus Law"
         }
       ]
     }
@@ -258,6 +368,22 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CEQA notices describe 118 units with 18 units affordable to very low, low and moderate income households; the state report 2025 entitlement row and SF YIMBY 2025 show 6 very low income units. Urbanize reports the project is eligible for a 20% density bonus but will not use it, with 244 units per acre proposed against 250 allowed.",
+      "src": [
+        "SRC-002862",
+        "SRC-002864",
+        "SRC-001107",
+        "SRC-001836",
+        "SRC-002861"
+      ]
+    },
+    {
+      "text": "Notice of Determination: the existing 12,000 sq ft building is a Candidate City Landmark; 20 trees removed (10 ordinance-size); EIR certified with mitigation monitoring and a Statement of Overriding Considerations.",
+      "src": [
+        "SRC-002862"
+      ]
     }
   ],
   "parties": [
@@ -266,6 +392,75 @@
       "company": "Msasa Properties",
       "contact": null,
       "linkedin": null,
+      "src": [
+        "SRC-001836"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MSASA Properties, LLC",
+      "contact": "Mostafa Aghamiri",
+      "linkedin": null,
+      "other_role": "Applicant; property owner per CEQA notice",
+      "src": [
+        "SRC-002862"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T-Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002863",
+        "SRC-001836",
+        "SRC-002861"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "HMH Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001836"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "HMH Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001836"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Erik Schoennauer",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant's representative",
+      "src": [
+        "SRC-002864"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Environmental consultant",
+      "src": [
+        "SRC-002864"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Swenson Builders",
+      "contact": "James Shydlowski",
+      "linkedin": null,
+      "other_role": "Demolition permit applicant",
       "src": [
         "SRC-001836"
       ]
@@ -283,11 +478,43 @@
       ]
     },
     {
+      "date": "2023-08-28",
+      "type": "Other",
+      "label": "EIR Notice of Preparation circulated",
+      "src": [
+        "SRC-002864"
+      ]
+    },
+    {
+      "date": "2025-02-12",
+      "type": "Other",
+      "label": "Planning Commission consent calendar (EIR certification and Site Development Permit recommendation)",
+      "src": [
+        "SRC-002861"
+      ]
+    },
+    {
       "date": "2025-03-11",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2025-03-20",
+      "type": "Other",
+      "label": "CEQA Notice of Determination posted (approval 2025-03-11)",
+      "src": [
+        "SRC-002862"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "type": "Other",
+      "label": "Demolition permits filed",
+      "src": [
+        "SRC-001836"
       ]
     },
     {
@@ -314,6 +541,93 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 380 N 1st St, Msasa Properties and Studio T-Square; opened SF YIMBY 2023 and 2025, Urbanize 2025-02-08",
+      "src": [
+        "SRC-002863",
+        "SRC-001836",
+        "SRC-002861"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel dataset APN 249-44-088: situs 380 N 1st St, San Jose 95112; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov active-EIR page and notices refuse automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2023080670 NOP and NOD; HCD APR Table A2 2025 entitlement row",
+      "src": [
+        "SRC-002864",
+        "SRC-002862",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal articles (2023-09-06, 2025-03-13) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2023-08-31 and 2025-07-22; Urbanize 2025-02-08",
+      "src": [
+        "SRC-002863",
+        "SRC-001836",
+        "SRC-002861"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Msasa Properties website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for a Studio T-Square project page for 380 N 1st found none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder found in search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 380 N 1st St returned no LinkedIn results",
+      "src": []
+    }
+  }
 }

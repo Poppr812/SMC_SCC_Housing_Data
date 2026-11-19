@@ -146,11 +146,21 @@
         {
           "value": 118,
           "src": [
-            "SRC-001128"
+            "SRC-001128",
+            "SRC-001124"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 116,
+          "src": [
+            "SRC-001124",
+            "SRC-002860"
+          ],
+          "note": "2022 application row"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -197,6 +207,76 @@
             "SRC-001128"
           ],
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 91,
+              "ami": 80
+            },
+            {
+              "count": 23,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "State report 2022, application stage (116 units, 2 above moderate)"
+        },
+        {
+          "value": [
+            {
+              "count": 94,
+              "ami": 80
+            },
+            {
+              "count": 22,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "State report 2023, application stage (118 units, 2 above moderate)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "Above-moderate units in the 2022 and 2023 application rows; the 2024 entitlement row reports all 118 as low income"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001124",
+            "SRC-001128"
+          ],
+          "note": "2023 application row: discretionary, density bonus; 2024 entitlement row: 80% density bonus with 9 incentives or waivers"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-002860"
+          ]
         }
       ]
     }
@@ -204,6 +284,13 @@
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001124",
+        "SRC-001128"
+      ]
+    },
+    {
+      "text": "State report rows list the project as \"AMG - 116 AFFORDABLE UNITS\" (2022) and \"AMG - 118 AFFORDABLE UNITS\" (2023), with APN 086-23-013; the county parcel at 1300 S Main St is APN 083-36-002.",
       "src": [
         "SRC-001124",
         "SRC-001128"
@@ -234,6 +321,14 @@
       ]
     },
     {
+      "date": "2023-01-25",
+      "type": "Application filed",
+      "label": "Revised application submitted (118 units)",
+      "src": [
+        "SRC-001124"
+      ]
+    },
+    {
       "date": "2024-04-16",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -257,6 +352,88 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search on 1300 S Main St Milpitas and AMG; Registry article returned 403; Telvue agenda video returned 404",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel dataset APN 083-36-002: situs 1300 S Main St, Milpitas 95035; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched Milpitas agendas and DocumentCenter for 1300 S Main / P-SD22-0015; no staff report opened",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HCD APR Table A 2022 and 2023 rows and Table A2 2024 row; no CTCAC/CDLAC award found for the address",
+      "src": [
+        "SRC-001124",
+        "SRC-001128"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search of Milpitas Beat, Mercury News and San Jose Spotlight found no coverage of this address",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Registry article on the 118-unit proposal returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "AMG projects page lists a 116-unit family project in Milpitas",
+      "src": [
+        "SRC-002860"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "CTCAC/CDLAC search found no award for 1300 S Main; APR 2024 row lists financial assistance as Other",
+      "src": [
+        "SRC-001128"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 1300 S Main Milpitas returned nothing relevant",
+      "src": []
+    }
+  }
 }

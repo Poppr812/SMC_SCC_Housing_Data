@@ -99,7 +99,9 @@
         {
           "value": 119,
           "src": [
-            "SRC-001591"
+            "SRC-001591",
+            "SRC-001554",
+            "SRC-002859"
           ],
           "note": "Town's current count"
         }
@@ -122,7 +124,9 @@
         {
           "value": 13,
           "src": [
-            "SRC-001592"
+            "SRC-001592",
+            "SRC-001554",
+            "SRC-002859"
           ]
         }
       ]
@@ -165,6 +169,28 @@
           "note": "State report 2024, application stage: 24 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.5,
+          "src": [
+            "SRC-002859"
+          ],
+          "note": "Described as a wedge-shaped half-acre lot"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 1700000,
+          "src": [
+            "SRC-002859"
+          ],
+          "note": "Developer's purchase of the site, late 2023"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -179,6 +205,25 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "Town SB 330 list: \"Capri Fruitstand - Proposal 3\", 119 units, 24 BMR (20%), 13 stories, status Pending, completeness review Incomplete, vested to 2025-03-05, builder's remedy invoked; Town declaratory relief case 25CV462276 pending. Proposal 1 (175 units, 35 BMR, 12 stories) and Proposal 2 (95 units, 19 BMR, 7 stories) expired.",
+      "src": [
+        "SRC-001554"
+      ]
+    },
+    {
+      "text": "Town pending projects list: S-24-044, demolish an existing commercial building and build 119 apartments with grading; SB 330 request; zoned C-1; CEQA review pending; planner Ryan Safty.",
+      "src": [
+        "SRC-001591"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight names the developer as Ben Eilenberg and notes earlier versions misspelled the name as Eisenberg; the Local News Matters version spells it Eisenberg. Both say Los Gatos LLC is based at a Fullerton mailbox address shared with more than 50 linked LLCs.",
+      "src": [
+        "SRC-002859",
+        "SRC-001592"
+      ]
     }
   ],
   "parties": [
@@ -190,17 +235,70 @@
       "src": [
         "SRC-001592"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Credited with the project rendering",
+      "src": [
+        "SRC-002859"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2023",
+      "type": "Sale",
+      "label": "Developer buys the site for $1.7 million (late 2023)",
+      "src": [
+        "SRC-002859"
+      ]
+    },
+    {
       "date": "2024-08-23",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001120"
+      ]
+    },
+    {
+      "date": "2024-08-28",
+      "type": "Application filed",
+      "label": "Architectural and Site Application S-24-044 filed (Town list date)",
+      "src": [
+        "SRC-001591"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "type": "Other",
+      "label": "Los Gatos LLC sues the Town over processing of the application",
+      "src": [
+        "SRC-002859",
+        "SRC-001592"
+      ]
+    },
+    {
+      "date": "2025-09",
+      "type": "Other",
+      "label": "Town declares the application complete and requires additional steps",
+      "src": [
+        "SRC-002859",
+        "SRC-001592"
+      ]
+    },
+    {
+      "date": "2025-12-16",
+      "type": "Other",
+      "label": "Town Council unanimously adopts resolution rejecting the developer's obstruction claims",
+      "src": [
+        "SRC-002859",
+        "SRC-001592"
       ]
     }
   ],
@@ -214,6 +312,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Vista Capri, 14288 Capri Dr and Los Gatos LLC; opened San Jose Spotlight 2025-12-23",
+      "src": [
+        "SRC-002859"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel dataset APN 406-30-016: situs 14288 Capri Dr, Los Gatos 95032; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Town of Los Gatos SB 330 list and Pending Planning Projects page (S-24-044)",
+      "src": [
+        "SRC-001554",
+        "SRC-001591"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Town project; Superior Court case noted from the Town page",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "HCD APR Table A 2024 row already on record; no CEQAnet filing found",
+      "src": [
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-12-23 and Local News Matters syndication; localnewsmatters.org returned 403",
+      "src": [
+        "SRC-002859",
+        "SRC-001592"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal articles (2025-07-17, 2026-02-08) returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Los Gatos LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Only a rendering credit to Anderson Architects found; no project page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder found in search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Vista Capri returned nothing relevant",
+      "src": []
+    }
+  }
 }
