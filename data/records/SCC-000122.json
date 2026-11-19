@@ -107,8 +107,18 @@
             "SRC-001102"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-002635",
+            "SRC-002636",
+            "SRC-002637"
+          ],
+          "note": "Vesting Tentative Map for 198 residential condominium units and four commercial condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -139,7 +149,10 @@
           "value": 198,
           "src": [
             "SRC-001102",
-            "SRC-001734"
+            "SRC-001734",
+            "SRC-002638",
+            "SRC-002635",
+            "SRC-002636"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -162,6 +175,13 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN23-00216",
+          "src": [
+            "SRC-002635"
+          ],
+          "note": "Vesting Tentative Map"
         }
       ]
     },
@@ -170,7 +190,10 @@
         {
           "value": 21,
           "src": [
-            "SRC-001734"
+            "SRC-001734",
+            "SRC-002638",
+            "SRC-002636",
+            "SRC-002637"
           ],
           "note": ""
         }
@@ -202,6 +225,70 @@
           "note": "State report 2018, application stage: 15 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.9,
+          "src": [
+            "SRC-002638",
+            "SRC-002635"
+          ],
+          "note": "39,024 sq ft"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 310,
+          "src": [
+            "SRC-002638",
+            "SRC-002636",
+            "SRC-002637"
+          ],
+          "note": "Staff report: 109 of the spaces in stackers; 110 bicycle spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 192700,
+          "src": [
+            "SRC-002637"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3000,
+          "src": [
+            "SRC-002637",
+            "SRC-002636"
+          ],
+          "note": "Ground-floor retail, approximate"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 28,
+            "1br": 87,
+            "2br": 61,
+            "3br": 15,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002637"
+          ],
+          "note": "Article also lists 7 penthouses, bedroom count not stated"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -210,6 +297,26 @@
       "src": [
         "SRC-001106",
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "City staff report (Architectural Review, PLN2018-13441) lists the applicant as Ensemble Investments/Steinberg Hart and the owner as 5185 Lafayette Street, LCC [sic]. Building: two levels below-grade parking, five-level podium with parking, sixteen residential levels above; 219 feet to roofline; replaces a 15,365 sq ft light industrial building; 220 du/ac. The Planning Commission staff report lists Ensemble Investments as both applicant and owner.",
+      "src": [
+        "SRC-002638",
+        "SRC-002635"
+      ]
+    },
+    {
+      "text": "Silicon Valley Voice (2024-02-21): City Council approved unanimously, with a condition emphasizing local union labor. SF YIMBY (2024-02-29): construction cost and timeline not established; garage 113,560 sq ft.",
+      "src": [
+        "SRC-002636",
+        "SRC-002637"
+      ]
+    },
+    {
+      "text": "Ensemble Investments release (2024-09-10) lists a 198-unit luxury high-rise across from Related Santa Clara with completion scheduled for 2028; the release gives no street address.",
+      "src": [
+        "SRC-002640"
       ]
     }
   ],
@@ -222,6 +329,75 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001734"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Ensemble Investments",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://ensemble.net",
+      "website_basis": "search",
+      "src": [
+        "SRC-002635",
+        "SRC-002637"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002638",
+        "SRC-002637"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "5185 Lafayette Street, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner named in city staff report",
+      "src": [
+        "SRC-002638"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Relm Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002637"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002637"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "DCI",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002637"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Meyers+",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "MEP engineer",
+      "src": [
+        "SRC-002637"
       ]
     }
   ],
@@ -237,12 +413,30 @@
       ]
     },
     {
+      "date": "2023-10-18",
+      "type": "Approved",
+      "label": "Architectural Review approved at Development Review Hearing",
+      "src": [
+        "SRC-002635"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-11-02",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2023-12-06",
+      "type": "Other",
+      "label": "Planning Commission action on Vesting Tentative Map (adopted)",
+      "src": [
+        "SRC-002639"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-02-20",
@@ -264,6 +458,99 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on 5185 Lafayette, Ensemble, Steinberg Hart",
+      "src": [
+        "SRC-002636",
+        "SRC-002637"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel layer: APN 097-46-011 situs 5185 Lafayette St; matches staff report APN. No owner field in the layer",
+      "src": [
+        "SRC-001098",
+        "SRC-002638"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar matters 23-1147 (DRH Architectural Review staff report), 23-1331 (PC VTM staff report and history), 24-1618 (Council VTM, already on record); santaclaraca.gov project listing not opened (site blocks automated access)",
+      "src": [
+        "SRC-002638",
+        "SRC-002635",
+        "SRC-002639",
+        "SRC-001734"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR rows already on record; CEQA handled as addendum to Tasman East Specific Plan EIR per staff report",
+      "src": [
+        "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Silicon Valley Voice 2024-02-21; Local News Matters 2024-03-01 returned 403",
+      "src": [
+        "SRC-002636"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-02-29 (consultant team, unit mix); CoStar paywalled, not used",
+      "src": [
+        "SRC-002637"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "ensemble.net news release 2024-09-10",
+      "src": [
+        "SRC-002640"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Steinberg Hart project pages found were other Santa Clara buildings; BAR Architects 'Lafayette Tower at Tasman East' page returned 404",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search returned no public posts on this project",
+      "src": []
+    }
+  }
 }

@@ -107,6 +107,13 @@
         "SRC-001889",
         "SRC-001888"
       ]
+    },
+    {
+      "text": "5160 El Camino Real, Los Altos, CA",
+      "role": "other",
+      "src": [
+        "SRC-002642"
+      ]
     }
   ],
   "images": [],
@@ -175,6 +182,94 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 29,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-002641"
+          ],
+          "note": "2022 modification request: 29 low-income units (20% of 145 base units) for the rental buildings"
+        },
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 120
+            },
+            {
+              "count": 16,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-002641"
+          ],
+          "note": "2019 approval: 12 moderate and 16 very-low income units"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002641"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 290,
+          "src": [
+            "SRC-002641"
+          ],
+          "note": "236 underground for rental units, 48 in townhouse garages, 6 surface guest"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002641"
+          ],
+          "note": "35 percent density bonus: 145 base units plus 51 bonus units"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "MOD22-0003",
+          "src": [
+            "SRC-002641"
+          ],
+          "note": "Modification to Vesting Tentative Map and State Density Bonus"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 1134,
+          "src": [
+            "SRC-002642"
+          ],
+          "note": "Harken apartments (172 units)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -182,6 +277,24 @@
       "text": "Parcel match: CEQA APN 170-04-066 isn't in county data. 170-04-068 (2.38 ac) and 170-04-069 (1.39 ac) total about the stated 3.8 acres, next to 5084 El Camino Real. Matched by block, location and area, not the source's own APN.",
       "src": [
         "SRC-001889"
+      ]
+    },
+    {
+      "text": "June 2022 Planning Commission report: the modification splits the site into two lots. Lot 1 holds two five-story buildings along El Camino Real with 172 rental units; Lot 2 holds 24 townhouse units to be sold as condominiums. The 2019 approval was for 196 condominium units. Parcel size 3.8 acres (165,345 sq ft); 52 du/ac.",
+      "src": [
+        "SRC-002641"
+      ]
+    },
+    {
+      "text": "Prometheus markets the 172 apartments as Harken at 5160 El Camino Real, Los Altos, with one- and two-bedroom plans averaging 1,134 sq ft.",
+      "src": [
+        "SRC-002642"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-06-20): the site was originally proposed by a different developer; after a 2021 loan default, a legal ruling allowed Prometheus to buy the property.",
+      "src": [
+        "SRC-001888"
       ]
     }
   ],
@@ -204,6 +317,15 @@
       "src": [
         "SRC-001888"
       ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002641"
+      ]
     }
   ],
   "financing": [
@@ -219,7 +341,35 @@
     }
   ],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2019-12-10",
+      "type": "Approved",
+      "label": "City Council Resolution 2019-43 approved design review, use permit and subdivision; MND adopted",
+      "src": [
+        "SRC-002641"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06-16",
+      "type": "Other",
+      "label": "Planning Commission hearing on modification MOD22-0003",
+      "src": [
+        "SRC-002641"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024",
+      "type": "Other",
+      "label": "Site preparation began with demolition of the existing office building",
+      "src": [
+        "SRC-001888"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -230,6 +380,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on 5150 El Camino Real, Prometheus, Harken",
+      "src": [
+        "SRC-002642",
+        "SRC-002641"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel layer: APNs 170-04-068 and 170-04-069 present, no situs or owner fields",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Los Altos PC agenda report 2022-06-16 (MOD22-0003) via the city's meeting attachment host; losaltosca.gov pages returned 403",
+      "src": [
+        "SRC-002641"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CEQAnet SCH 2019079050 already on record",
+      "src": [
+        "SRC-001889"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Los Altos Town Crier and local news; no article opened",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2025-06-20 already on record; The Real Deal and Traded returned 403",
+      "src": [
+        "SRC-001888"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "prometheusapartments.com Harken page: 172 apartments, 5160 El Camino Real",
+      "src": [
+        "SRC-002642"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "BDE Architecture already on record; named on 2022 plan sheets",
+      "src": [
+        "SRC-002641"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Lender named only in The Real Deal and Traded items, both returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn post page to open",
+      "src": []
+    }
+  }
 }

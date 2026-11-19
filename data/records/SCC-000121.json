@@ -39,6 +39,36 @@
           37.136027
         ]
       ]
+    },
+    {
+      "apn": "726-25-001",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.6580575,
+          37.1353763
+        ],
+        [
+          -121.6583619,
+          37.1351345
+        ],
+        [
+          -121.6586087,
+          37.1354417
+        ],
+        [
+          -121.658256,
+          37.1356233
+        ],
+        [
+          -121.6580575,
+          37.1353763
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -47,6 +77,43 @@
       "role": "main",
       "src": [
         "SRC-001131"
+      ]
+    },
+    {
+      "text": "17910 Monterey Rd, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-001441"
+      ]
+    },
+    {
+      "text": "1791 Monterey Rd, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-001131"
+      ],
+      "written_as": [
+        {
+          "text": "1791 Monterey Road, Morgan Hill, CA",
+          "src": [
+            "SRC-001131"
+          ]
+        }
+      ]
+    },
+    {
+      "text": "17910 and 17920 Monterey Rd, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-001441"
+      ],
+      "written_as": [
+        {
+          "text": "17910 and 17920 Monterey Road, Morgan Hill, CA",
+          "src": [
+            "SRC-001441"
+          ]
+        }
       ]
     }
   ],
@@ -71,8 +138,17 @@
             "SRC-001131"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001441",
+            "SRC-001422"
+          ],
+          "note": "Planning Entitlements Approved"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -92,8 +168,24 @@
             "SRC-001131"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 100,
+          "src": [
+            "SRC-001441",
+            "SRC-001422"
+          ],
+          "note": "Current application SR2024-0025, which the city says updates SR2022-0022"
+        },
+        {
+          "value": 150,
+          "src": [
+            "SRC-001131"
+          ],
+          "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -103,6 +195,14 @@
             "SRC-001131"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SR2024-0025",
+          "src": [
+            "SRC-001441",
+            "SRC-001131"
+          ],
+          "note": "City page says this application updates SR2022-0022"
         }
       ]
     },
@@ -127,6 +227,18 @@
             "SRC-001131"
           ],
           "note": "State report 2022, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 150,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001131"
+          ],
+          "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
     },
@@ -135,9 +247,32 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001131"
+            "SRC-001131",
+            "SRC-001422"
           ],
           "note": "State report 2022, application stage: 199 deed-restricted units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.89,
+          "src": [
+            "SRC-001441",
+            "SRC-001422"
+          ],
+          "note": "Net acres, 17910 and 17920 Monterey Road"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 100,
+          "src": [
+            "SRC-001441"
+          ]
         }
       ]
     }
@@ -159,6 +294,18 @@
       "text": "CTCAC application CA-26-705, Monterey Residences: 100 total units, 99 low-income, 17910 & 17920 Monterey Road, APNs 726-25-001 and 726-25-002. Application, not an award: bond request $18,350,000, federal credit request $3,207,787 (CDLAC September 8, 2026 applicant list).",
       "src": [
         "SRC-001687"
+      ]
+    },
+    {
+      "text": "City of Morgan Hill lists project SR2024-0025 (Monterey-AMG & Associates) at 17910 and 17920 Monterey Road, APNs 726-25-001 and 726-25-002: demolition of existing structures and a 100-unit multifamily building with 100 parking spaces. The city states it updates application SR2022-0022. Environmental review: statutorily exempt under CEQA Guidelines Section 15194.",
+      "src": [
+        "SRC-001441"
+      ]
+    },
+    {
+      "text": "City page covers APNs 726-25-001 and -002 and says SR2024-0025 updated earlier application SR2022-0022. See suspected duplicate SCC-000121.",
+      "src": [
+        "SRC-001441"
       ]
     }
   ],
@@ -184,6 +331,23 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2024-09-26",
+      "type": "Application filed",
+      "label": "Application submitted",
+      "src": [
+        "SRC-001131"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "type": "Approved",
+      "label": "Planning Commission meeting; Resolution No. 26-03",
+      "src": [
+        "SRC-001441"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -201,6 +365,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Merged duplicate SCC-000155 (Monterey-AMG & Associates): same project: the city says SR2024-0025 updates SR2022-0022 at 17910-17920 Monterey Rd"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on 17920 Monterey Road, Posada, AMG and Pacific West Communities; led to the city project page for SR2024-0025",
+      "src": [
+        "SRC-001441"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel layer: APN 726-25-002 situs 17920 Monterey Rd; adjacent APN 726-25-001 situs 17910 Monterey Rd. No owner field in the layer",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Morgan Hill project page Monterey-AMG & Associates (SR2024-0025, updates SR2022-0022); Significant Project Updates PDF, July 2026; SB35 page lists no applications",
+      "src": [
+        "SRC-001441",
+        "SRC-001422"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR Table A already on record; no CEQAnet or CTCAC entry found for 17910/17920 Monterey Road",
+      "src": [
+        "SRC-001131"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Morgan Hill Times and local news for AMG Monterey Road; no article on this project opened",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched SF YIMBY and trade press; no coverage of 17910/17920 Monterey Road found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched AMG & Associates and Pacific West Communities with Morgan Hill; no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "City page does not name an architect; none found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No CTCAC, county Measure A or lender record found for this site",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public posts on the project returned nothing",
+      "src": []
+    }
+  }
 }
