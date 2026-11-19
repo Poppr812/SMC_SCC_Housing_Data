@@ -547,6 +547,20 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-001418",
+            "SRC-003180"
+          ],
+          "note": "Tentative map under the adopted Glen Loma Ranch Specific Plan; CEQA cleared by addendum to the certified Specific Plan EIR"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -554,6 +568,12 @@
       "text": "Tentative map only: 40 Canyon Creek, 21 Rocky Knoll and 23 Malvasia II lots. City also lists APN 808-18-032, which is not in the county parcel layer.",
       "src": [
         "SRC-001418"
+      ]
+    },
+    {
+      "text": "CEQAnet Notice of Determination: the Glen Loma Ranch Specific Plan covers about 359 acres, including 145 acres of parks and open space, with a planned buildout of 1,467 units and up to 12,000 sq ft of commercial. The city certified the Specific Plan EIR on 2005-11-07, adopted Addendum #1 on 2014-05-19 and Addendum #2 on 2024-10-07. TM 24-03 subdivides about 41.36 acres into 84 single-family lots; the companion TM 24-02 (Town Center Flex, 42 duet lots on 6.7 acres) was approved at the same time.",
+      "src": [
+        "SRC-003180"
       ]
     }
   ],
@@ -568,17 +588,47 @@
         "SRC-001418"
       ],
       "website": "https://www.glenlomaranch.com"
+    },
+    {
+      "role": "Other",
+      "company": "Glen Loma Group",
+      "contact": "John M. Filice, Jr.",
+      "linkedin": null,
+      "email": "filicej@glenloma.com",
+      "phone": "(408) 847-4224",
+      "other_role": "Project applicant (CEQA Notice of Determination); contact title President",
+      "src": [
+        "SRC-003180"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-02-20",
+      "type": "Other",
+      "label": "Planning Commission public hearing recommended approval of TM 24-02 and TM 24-03",
+      "src": [
+        "SRC-001418"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-03-17",
       "type": "Approved",
       "label": "City Council approved tentative map",
       "src": [
         "SRC-001418"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-03-24",
+      "type": "Other",
+      "label": "CEQA Notice of Determination posted (addendum to Glen Loma Ranch Specific Plan EIR, SCH 2003042018)",
+      "src": [
+        "SRC-003180"
       ],
       "estimated": false
     }
@@ -593,6 +643,87 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search on Canyon Creek, Rocky Knoll, Malvasia II and Glen Loma Ranch tentative map; results point to the city page and CEQAnet only",
+      "src": [
+        "SRC-001418"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API: 808-58-005 has no situs address and no owner field; 808-18-032 not returned",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City of Gilroy Glen Loma Ranch page: PC hearing 2025-02-20, council approval 2025-03-17, TM 24-03 description. Gilroy is not on the Legistar web API",
+      "src": [
+        "SRC-001418"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2003042018, Notice of Determination posted 2025-03-24",
+      "src": [
+        "SRC-003180"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Gilroy Dispatch results cover earlier Glen Loma Ranch phases only; nothing on TM 24-03",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No trade press on Canyon Creek, Rocky Knoll or Malvasia II",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Glen Loma Ranch site already linked on the record; no builder named for these neighborhoods in search results",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Tentative map only; no architect named",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this map",
+      "src": []
+    }
+  }
 }

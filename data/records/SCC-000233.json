@@ -78,6 +78,14 @@
           ]
         }
       ]
+    },
+    {
+      "text": "2395 S Bascom Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003181",
+        "SRC-003182"
+      ]
     }
   ],
   "images": [],
@@ -158,6 +166,86 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.23,
+          "src": [
+            "SRC-003181",
+            "SRC-003182"
+          ],
+          "note": "Gross acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003181",
+            "SRC-003183"
+          ],
+          "note": "One to three stories, terraced, over one basement level"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-003181"
+          ],
+          "note": "Basement parking; 40 required after 20% urban village reduction"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 72380,
+          "src": [
+            "SRC-003181"
+          ],
+          "note": "Above-grade floor area in the CUP description; plus about 30,240 sq ft of basement"
+        },
+        {
+          "value": 72870,
+          "src": [
+            "SRC-003182"
+          ],
+          "note": "Building area in the CEQAnet MND summary"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-003181",
+            "SRC-003182"
+          ],
+          "note": "State-licensed Residential Care Facility for the Elderly, 83 units and 93 beds"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003181"
+          ],
+          "note": "Conditional Use Permit with MND"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -173,6 +261,26 @@
       "src": [
         "SRC-001847"
       ]
+    },
+    {
+      "text": "City staff report and CEQAnet list the site as APNs 412-25-009 and 412-25-010 (2375 and 2395 S Bascom Ave), then occupied by Dry Creek Plaza: four commercial buildings totaling about 6,030 sq ft. The county parcel layer now shows APN 412-25-026 at 2375 S Bascom Ave.",
+      "src": [
+        "SRC-003181",
+        "SRC-003182",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "83 units and 93 beds; up to 27 staff on site. City Council heard the appeal on 2020-09-29; the staff memo recommended denying the appeal and approving the CUP.",
+      "src": [
+        "SRC-003181"
+      ]
+    },
+    {
+      "text": "October 2020 article: ADP expected to break ground in early 2021 for a spring 2023 opening, with architects, contractors, financing and an operator still to be selected.",
+      "src": [
+        "SRC-003183"
+      ]
     }
   ],
   "parties": [
@@ -184,6 +292,17 @@
       "other_role": "Named project party (SJ Build tracker)",
       "src": [
         "SRC-001847"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Advocacy Development Partners",
+      "contact": "Paul Bunton",
+      "linkedin": null,
+      "src": [
+        "SRC-003181",
+        "SRC-003182",
+        "SRC-003183"
       ]
     }
   ],
@@ -197,6 +316,33 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2020-04-30",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration received by the State Clearinghouse (SCH 2020050029)",
+      "src": [
+        "SRC-003182"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-07-22",
+      "type": "Other",
+      "label": "Planning Commission approved CUP CP19-021 and adopted the MND, 7-0",
+      "src": [
+        "SRC-003181"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-08-03",
+      "type": "Other",
+      "label": "Appeal of the Planning Commission approval filed by the owner of 2355 S Bascom Ave",
+      "src": [
+        "SRC-003181"
+      ],
+      "estimated": false
     },
     {
       "date": "2020-09-29",
@@ -217,6 +363,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 2375 S Bascom and Advocacy Development Partners: CEQAnet record and REBusinessOnline article",
+      "src": [
+        "SRC-003182",
+        "SRC-003183"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 412-25-026 at 2375 S Bascom Av; former APNs 412-25-009/010 no longer returned; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Legistar file 20-1131 (council 2020-09-29) memo with PC staff report CP19-021. sanjoseca.gov pages not used (blocked)",
+      "src": [
+        "SRC-003181"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2020050029 MND. No CTCAC/APR rows beyond those already cited",
+      "src": [
+        "SRC-003182"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No local news coverage found on construction or opening",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "REBusinessOnline 2020-10-08 on entitlement",
+      "src": [
+        "SRC-003183"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Advocacy Development Partners project page found for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city or trade sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000616",
-  "name": "1510 Parkmoor Ave (Allied Housing)",
+  "name": "Parkmoor Community Apartments and The Hub",
   "parcels": [
     {
       "apn": "277-22-024",
@@ -196,6 +196,15 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "1510-1540 Parkmoor Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003195",
+        "SRC-003196",
+        "SRC-003194"
+      ]
     }
   ],
   "images": [],
@@ -230,8 +239,18 @@
             "SRC-001956"
           ],
           "note": "City file MP21-004, status Approved, issued 2023-01-27"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003192",
+            "SRC-003193",
+            "SRC-003194"
+          ],
+          "note": "Ribbon-cutting held Monday 2025-10-20; SJ Build lists Complete. Current leasing status is not stated"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -278,6 +297,150 @@
           "note": "City file MP21-004 (Ministerial Permit): \"SB 35 Ministerial Permit to allow the construction of an 81-unit, 100% affordable multi-family development with a 17,000-sf of social services (Parkmoor Hub Youth Center), a 31-space parking garage and 37- space surface parking, including the removal of 2\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 20,
+            "1br": 19,
+            "2br": 22,
+            "3br": 20,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003195",
+            "SRC-001603",
+            "SRC-003196"
+          ],
+          "note": "Includes two 2-bedroom manager units"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 40,
+              "ami": 30
+            },
+            {
+              "count": 24,
+              "ami": 50
+            },
+            {
+              "count": 15,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003195",
+            "SRC-001603",
+            "SRC-003196"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003195",
+            "SRC-003196"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 78229182,
+          "src": [
+            "SRC-003195"
+          ],
+          "note": "CTCAC staff report 2023-05-10, project cost at application"
+        },
+        {
+          "value": 78442868,
+          "src": [
+            "SRC-003196"
+          ],
+          "note": "City memo 2023-01-09, latest projection"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003196",
+            "SRC-003197"
+          ],
+          "note": "Four stories of wood frame over ground-floor podium"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.62,
+          "src": [
+            "SRC-003196",
+            "SRC-003194"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 70567,
+          "src": [
+            "SRC-003197"
+          ],
+          "note": "Building size per architect (81 units, 70,567 sq ft)"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 17098,
+          "src": [
+            "SRC-003196"
+          ],
+          "note": "Ground-floor Hub service center for current and former foster youth, owned and operated by the County"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003195",
+            "SRC-003196"
+          ],
+          "note": "CTCAC housing type Large Family; 20 permanent supportive housing units"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "79 restricted units and two unrestricted manager units. 40 units intended for transition-age youth; 20 permanent supportive housing units for chronically homeless households and 20 County Rapid Re-Housing units; 40 HUD Section 8 project-based vouchers per city memo (CTCAC: 41 units)",
+          "src": [
+            "SRC-003196",
+            "SRC-003195"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -292,6 +455,26 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC CA-23-490: $3,742,669 annual federal tax credits recommended, no state credits; bonds issued by the City of San Jose. CTCAC list gives APNs 277-22-011 and 277-22-009, which are not in the current county parcel layer.",
+      "src": [
+        "SRC-003195",
+        "SRC-001603",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "City memo 2023-01-09: City commitment of $16,826,688 ($11,803,587 Low and Moderate Income Housing Asset Fund, $5,023,101 Affordable Housing Impact Fee Fund). County committed $20M (Measure A $16M, No Place Like Home $4M) for housing and $15.3M from the County General Fund for the Hub; City loans do not fund the Hub. Budget rose from $57,303,815 at the 2021 NOFA to $78,442,868.",
+      "src": [
+        "SRC-003196"
+      ]
+    },
+    {
+      "text": "KTVU 2025-10-20: total project cost about $79 million; County contributed $20 million and the City nearly $16 million.",
+      "src": [
+        "SRC-003193"
+      ]
     }
   ],
   "parties": [
@@ -303,11 +486,231 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Allied 1510 Parkmoor, L.P.",
+      "contact": "Jon White",
+      "linkedin": null,
+      "email": "jwhite@abodeservices.org",
+      "phone": "408-941-1851",
+      "other_role": "Applicant (CTCAC)",
+      "src": [
+        "SRC-003195",
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Allied 1510 Parkmoor LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner (nonprofit)",
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "John Stewart Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003195",
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Enterprise Housing Community Investments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "JPMorgan Chase",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "HKIT Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://hkit.com/",
+      "project_page": "https://hkit.com/portfolio/parkmoor-hub/",
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Branagh Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "Vertech",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "HMH Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Waypoint Consulting",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Construction manager",
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Okubo Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner's representative",
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Abode Services",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Resident services provider; listed as client/owner on architect page",
+      "src": [
+        "SRC-003196",
+        "SRC-003197"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "JPMorgan Chase (tax-exempt)",
+      "program": null,
+      "amount": 39807713,
+      "date": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "JPMorgan Chase (tax-exempt)",
+      "program": null,
+      "amount": 6014868,
+      "date": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Measure A $16M and No Place Like Home $4M per city memo",
+      "amount": 20000000,
+      "date": null,
+      "src": [
+        "SRC-003195",
+        "SRC-003196"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "Permanent amount per CTCAC; city commitment up to $16,826,688",
+      "amount": 15730075,
+      "date": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Deferred interest",
+      "program": null,
+      "amount": 506763,
+      "date": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Deferred interest",
+      "program": null,
+      "amount": 444925,
+      "date": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Allied Housing, Inc.",
+      "program": null,
+      "amount": 1100000,
+      "date": null,
+      "src": [
+        "SRC-003195"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Enterprise Housing Community Investments",
+      "program": null,
+      "amount": 34432551,
+      "date": null,
+      "src": [
+        "SRC-003195"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2021-07-28",
+      "type": "Other",
+      "label": "Enhanced Preliminary Review PRE21-105 filed",
+      "src": [
+        "SRC-003194"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-11-18",
       "type": "Application filed",
@@ -325,6 +728,43 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2023-01-31",
+      "type": "Other",
+      "label": "City Council agenda: loan commitment up to $16,826,688",
+      "src": [
+        "SRC-003196"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-05-10",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-23-490)",
+      "src": [
+        "SRC-003195"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12",
+      "type": "Construction start",
+      "label": "Groundbreaking",
+      "src": [
+        "SRC-003192"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-20",
+      "type": "Completion",
+      "label": "Ribbon-cutting for the apartments and The Hub",
+      "src": [
+        "SRC-003192",
+        "SRC-003193"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -332,6 +772,99 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 1510 Parkmoor, Allied Housing and The Hub: CTCAC report, architect page, opening coverage",
+      "src": [
+        "SRC-003195",
+        "SRC-003197"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel API: 277-22-024 has no situs or owner; CTCAC APNs 277-22-009 and 277-22-011 not returned",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Legistar file 23-137 (council 2023-01-31) loan commitment memo. sanjoseca.gov NEPA page not used (blocked)",
+      "src": [
+        "SRC-003196"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County funding per city memo: Measure A, No Place Like Home and General Fund for the Hub. news.santaclaracounty.gov groundbreaking release not used (blocked)",
+      "src": [
+        "SRC-003196"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC CA-23-490 staff report 2023-05-10 and CTCAC active projects list",
+      "src": [
+        "SRC-003195",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "ABC7 2025-10-21 and KTVU 2025-10-20 opening coverage; San Jose Spotlight refused access",
+      "src": [
+        "SRC-003192",
+        "SRC-003193"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SF YIMBY category page for 1510 Parkmoor appeared in search; no new facts opened",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Allied Housing / Abode project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HKIT Architects project page: team, size, stories",
+      "src": [
+        "SRC-003197"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "JPMorgan Chase, Enterprise, County and City from CTCAC and city memo",
+      "src": [
+        "SRC-003195",
+        "SRC-003196"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

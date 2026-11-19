@@ -156,6 +156,14 @@
             "SRC-001135"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 83,
+          "src": [
+            "SRC-003184",
+            "SRC-003186"
+          ],
+          "note": "HumanGood 2022 release: 83 one-bedroom units; HKIT lists 83 units. HumanGood 2024 release and HKIT text describe 81 one-bedroom apartments"
         }
       ]
     },
@@ -175,6 +183,12 @@
           "value": "81 deed-restricted units reported to the state",
           "src": [
             "SRC-001135"
+          ]
+        },
+        {
+          "value": "14 apartments reserved for residents with special needs moving from skilled nursing to independent living",
+          "src": [
+            "SRC-003185"
           ]
         }
       ]
@@ -252,6 +266,41 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003184",
+            "SRC-003185",
+            "SRC-003186"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 37,
+          "src": [
+            "SRC-003184"
+          ],
+          "note": "Pervious resident parking spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 69825,
+          "src": [
+            "SRC-003184",
+            "SRC-003186"
+          ],
+          "note": "Total building square footage (HumanGood 2022 calls it an estimate)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -266,6 +315,19 @@
       "text": "CTCAC CA-22-453: Morgan Hill Senior Housing, located at the SE corner of San Pedro Avenue and Monterey Road in Morgan Hill, requested and is being recommended for a reservation of $2,518,030 in annual federal tax credits to finance the new construction of 81 units of housing serving seniors with rents affordable to households earning 25%-70% of area median income (AMI).",
       "src": [
         "SRC-001620"
+      ]
+    },
+    {
+      "text": "HumanGood (2022): all-electric building with rooftop solar, central courtyard and third-floor roof deck; construction planned to finish May 2024. HumanGood (2024): 62+ community, its second South Bay collaboration with Sunnyvale Life, Inc.",
+      "src": [
+        "SRC-003184",
+        "SRC-003185"
+      ]
+    },
+    {
+      "text": "HKIT lists the project as winner of 2025 Third Place, Affordable Housing, Senior Housing News Architecture & Design Awards.",
+      "src": [
+        "SRC-003186"
       ]
     }
   ],
@@ -309,6 +371,73 @@
       "linkedin": null,
       "src": [
         "SRC-001979"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "HKIT Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://hkit.com/",
+      "project_page": "https://hkit.com/portfolio/morgan-hill-senior-housing/",
+      "src": [
+        "SRC-003186"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Branagh Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003186"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "AXIOM",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003186"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Hanna-Brunetti",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003186"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Cupples Keller Designs",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003186"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Beacon Development Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Client/owner (architect project page)",
+      "src": [
+        "SRC-003186"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara Family Health Plan",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Community partner",
+      "src": [
+        "SRC-003185"
       ]
     }
   ],
@@ -430,11 +559,29 @@
       ]
     },
     {
+      "date": "2022-12-12",
+      "type": "Other",
+      "label": "HumanGood announced financing secured",
+      "src": [
+        "SRC-003184"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-07-25",
       "type": "Completion",
       "label": "Placed in service per CTCAC list (CA-22-453)",
       "src": [
         "SRC-001603"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-09-24",
+      "type": "Other",
+      "label": "HumanGood announced construction completed",
+      "src": [
+        "SRC-003185"
       ],
       "estimated": false
     }
@@ -464,6 +611,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Morgan Hill Senior Housing, 16685 Church St and HumanGood: HumanGood releases and HKIT page",
+      "src": [
+        "SRC-003184",
+        "SRC-003185",
+        "SRC-003186"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API: 817-02-068 at 16685 Church St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Morgan Hill DocumentCenter files 49120/49121 returned 404; a mirror of the city release (publicnow.com) refused access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "No county funding named in the CTCAC report or releases",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC CA-22-453 staff report and active projects list already on the record",
+      "src": [
+        "SRC-001620",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Morgan Hill Times or other local news found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HumanGood newsroom releases 2022-12-12 and 2024-09-24",
+      "src": [
+        "SRC-003184",
+        "SRC-003185"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HKIT Architects project page: team, size, stories",
+      "src": [
+        "SRC-003186"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Financing already on the record from CTCAC; HumanGood releases name no lenders",
+      "src": [
+        "SRC-001620"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

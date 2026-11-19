@@ -59,6 +59,28 @@
           ]
         }
       ]
+    },
+    {
+      "text": "326 Page St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003188",
+        "SRC-001603"
+      ]
+    },
+    {
+      "text": "341 Page St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "text": "353 Page St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003188"
+      ]
     }
   ],
   "images": [],
@@ -82,8 +104,18 @@
             "SRC-001107"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001603",
+            "SRC-001849",
+            "SRC-003187"
+          ],
+          "note": "CTCAC placed-in-service date 2022-12-06; SJ Build lists Complete; architect lists Completed 2023. Current leasing status is not stated"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -123,6 +155,14 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "27 permanent supportive housing units for chronically homeless households with HUD Section 8 project-based vouchers; 10 of the 30% AMI units set aside for developmentally disabled individuals (2019 city memo)",
+          "src": [
+            "SRC-003190",
+            "SRC-003189",
+            "SRC-003188"
+          ]
         }
       ]
     },
@@ -150,6 +190,124 @@
             "SRC-001107"
           ],
           "note": "State report 2020, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 27,
+              "ami": 30
+            },
+            {
+              "count": 27,
+              "ami": 40
+            },
+            {
+              "count": 27,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-003188",
+            "SRC-001603",
+            "SRC-003189"
+          ],
+          "note": "CTCAC 55-year targeting"
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 81,
+            "1br": 0,
+            "2br": 0,
+            "3br": 1,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003188",
+            "SRC-001603",
+            "SRC-003189",
+            "SRC-003187"
+          ],
+          "note": "81 SRO/studio units and one three-bedroom manager's unit"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003188",
+            "SRC-003189"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 54814223,
+          "src": [
+            "SRC-003188"
+          ],
+          "note": "CTCAC staff report 2020-04-14, project cost at application"
+        },
+        {
+          "value": 56435115,
+          "src": [
+            "SRC-003189"
+          ],
+          "note": "City memo 2020-09-14, permanent sources (developer projections as of 2020-07-30)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003189",
+            "SRC-001956"
+          ],
+          "note": "City memo: five stories of wood frame over one ground-floor story; city permit text: six-story building"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 62,
+          "src": [
+            "SRC-003187"
+          ],
+          "note": "60 spaces in triple parking lifts plus two accessible spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 53789,
+          "src": [
+            "SRC-003187"
+          ],
+          "note": "Project area per architect"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.7,
+          "src": [
+            "SRC-003187",
+            "SRC-001849"
+          ],
+          "note": "30,375 sq ft site per architect; 0.7 gross acres per permit text"
         }
       ]
     }
@@ -178,6 +336,26 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC CA-20-563: $2,134,329 annual federal and $5,700,000 total state tax credits recommended; HUD Section 8 PBVs on 27 units; bonds issued by the City of San Jose. CTCAC list shows combined APN 277-20-066, previously three parcels.",
+      "src": [
+        "SRC-003188",
+        "SRC-001603"
+      ]
+    },
+    {
+      "text": "City memo 2020-09-14 plan of finance: Bank of the West to buy the tax-exempt note ($29,500,000 construction, about $6,707,000 permanent); Hudson Housing Capital fund as tax credit investor; permanent sources also list Housing Trust Silicon Valley $2,750,000 and County of Santa Clara $10,127,000. CTCAC 2020-04-14 lists Wells Fargo Bank as construction lender and CCRC as permanent lender.",
+      "src": [
+        "SRC-003189",
+        "SRC-003188"
+      ]
+    },
+    {
+      "text": "Architect: GreenPoint Rated Platinum; Gold Nugget Honor Award, Best Affordable Housing Community (60+ dua); construction type V-A over I-A; 82 bicycle spaces.",
+      "src": [
+        "SRC-003187"
+      ]
     }
   ],
   "parties": [
@@ -190,11 +368,261 @@
         "SRC-001848"
       ],
       "website": "https://charitieshousing.org/"
+    },
+    {
+      "role": "Other",
+      "company": "Charities Housing Development Corporation",
+      "contact": "Kathy Robinson",
+      "linkedin": null,
+      "email": "krobinson@charitieshousing.org",
+      "phone": "408-550-8311",
+      "other_role": "Applicant (CTCAC); parent company",
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Page Street, L.P.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner / borrower partnership",
+      "src": [
+        "SRC-001603",
+        "SRC-003189"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Page Street Charities, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-003188",
+        "SRC-003189"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Charities Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003188",
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "David Baker Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dbarchitect.com/",
+      "project_page": "https://dbarchitect.com/projects/page-street-studios",
+      "src": [
+        "SRC-003187"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "L + D Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003187"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Form/Work",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003187"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Hudson Housing Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003189"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant (CTCAC)",
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Wells Fargo Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bank of the West",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003189"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Local Initiatives Support Corporation (LISC)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003190"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "County of Santa Clara",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Site owner and ground lessor (per city memos)",
+      "src": [
+        "SRC-003190",
+        "SRC-003189"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Catholic Charities of Santa Clara County",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "On-site service coordination",
+      "src": [
+        "SRC-003190"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Acquisition loan",
+      "provider": "Local Initiatives Support Corporation (LISC)",
+      "program": "Site acquisition and predevelopment, with a $2,096,609 Charities Housing loan",
+      "amount": 3098400,
+      "date": "2017-11",
+      "src": [
+        "SRC-003190"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Wells Fargo Bank",
+      "program": null,
+      "amount": 29500000,
+      "date": null,
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "CCRC",
+      "program": "Tranche A",
+      "amount": 2811000,
+      "date": null,
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "CCRC",
+      "program": "Tranche B",
+      "amount": 3588000,
+      "date": null,
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": null,
+      "amount": 10127000,
+      "date": null,
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "Low and Moderate Income Housing Asset Fund",
+      "amount": 8611968,
+      "date": null,
+      "src": [
+        "SRC-003188",
+        "SRC-003189"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Deferred interest",
+      "program": null,
+      "amount": 397968,
+      "date": null,
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General Partner Equity",
+      "program": null,
+      "amount": 3527133,
+      "date": null,
+      "src": [
+        "SRC-003188"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Federal and state tax credit equity as stated in staff report",
+      "amount": 25751154,
+      "date": null,
+      "src": [
+        "SRC-003188"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2017-09-01",
+      "type": "Application filed",
+      "label": "Special Use Permit SP17-037 filed",
+      "src": [
+        "SRC-001849"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2017-11",
+      "type": "Sale",
+      "label": "Page Street, L.P. bought the site with a LISC acquisition loan",
+      "src": [
+        "SRC-003190"
+      ],
+      "estimated": false
+    },
     {
       "date": "2018-12-05",
       "type": "Approved",
@@ -202,6 +630,33 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2019-02-05",
+      "type": "Other",
+      "label": "City Council agenda: loan commitment up to $7,176,640",
+      "src": [
+        "SRC-003190"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-04-14",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-20-563)",
+      "src": [
+        "SRC-003188"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-10-27",
+      "type": "Other",
+      "label": "City Council agenda: tax-exempt note issuance up to $29,500,000 (Series 2020B)",
+      "src": [
+        "SRC-003189"
+      ],
+      "estimated": false
     },
     {
       "date": "2020-11-30",
@@ -218,6 +673,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2022-12-06",
+      "type": "Completion",
+      "label": "Placed in service per CTCAC list (CA-20-563)",
+      "src": [
+        "SRC-001603"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -240,6 +704,102 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Page Street Studios and Charities Housing: CTCAC report, architect page",
+      "src": [
+        "SRC-003188",
+        "SRC-003187"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API: 277-20-066 at 333 Page St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Legistar files 18-1864 (council 2019-02-05) and 20-1128 (2020-09-29, renumbered 2020-10-27) memos",
+      "src": [
+        "SRC-003190",
+        "SRC-003189"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County role per city memos: site owner/ground lessor and $10.1M permanent loan",
+      "src": [
+        "SRC-003189"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC CA-20-563 staff report 2020-04-14; CTCAC active projects list (placed in service 2022-12-06)",
+      "src": [
+        "SRC-003188",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No local news beyond SF YIMBY already on the record",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2022-07 already on the record",
+      "src": [
+        "SRC-001848"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Charities Housing property page: 82 units, West San Carlos Urban Village",
+      "src": [
+        "SRC-003191"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "David Baker Architects project page: team, area, parking, completion 2023",
+      "src": [
+        "SRC-003187"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Lenders and investor from CTCAC report and city memos",
+      "src": [
+        "SRC-003188",
+        "SRC-003189",
+        "SRC-003190"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }
