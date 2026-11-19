@@ -4,6 +4,10 @@ Planning log. Decisions are recorded here as they are made; open questions stay 
 
 Rollout: San Mateo County → Santa Clara County → San Francisco → full Peninsula.
 
+## To do
+
+- **Clean up this plan (Paul, 2026-11-19).** Rework it into a one-page Vision of Success that Paul reads, with working rules moved to a CLAUDE.md for Claude and history archived. A first draft (purpose, audience, what success looks like, rules, how we work) was reviewed in chat on 2026-11-19 and needs rework. Also stale: "Growth model: no bulk ingestion" (superseded 2026-11-03 by the state data backbone) and the open questions under §1.
+
 ## Vision
 
 **Thesis (draft, 2026-11-02):** Developing, selling, buying, or investing in real estate in these counties? See what recent projects have been entitled, designed, built, financed, and sold, and who the players are, all from public records.
