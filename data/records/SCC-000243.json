@@ -115,8 +115,17 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003232",
+            "SRC-003233"
+          ],
+          "note": "Grand opening held 2024-03-29 per April 2024 developer release"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -169,6 +178,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "CA-21-593",
+          "src": [
+            "SRC-003236"
+          ],
+          "note": "CTCAC project number (as Bascom Apartments)"
         }
       ]
     },
@@ -185,6 +201,148 @@
             "SRC-001099"
           ],
           "note": "State report 2020, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 34,
+              "ami": 30
+            },
+            {
+              "count": 5,
+              "ami": 40
+            },
+            {
+              "count": 4,
+              "ami": 50
+            },
+            {
+              "count": 34,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003236"
+          ],
+          "note": "CTCAC 2021 staff report, 77 restricted units"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2024,
+          "src": [
+            "SRC-003232",
+            "SRC-003233"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003232",
+            "SRC-003234",
+            "SRC-003235"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 46,
+            "1br": 16,
+            "2br": 12,
+            "3br": 5,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003236"
+          ],
+          "note": "CTCAC 2021 staff report; studio count includes SRO units"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive",
+            "Family"
+          ],
+          "src": [
+            "SRC-003233",
+            "SRC-003232",
+            "SRC-003235"
+          ],
+          "note": "39 permanent supportive housing units; remaining units up to 60% AMI"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 67238991,
+          "src": [
+            "SRC-003236"
+          ],
+          "note": "CTCAC 2021 staff report, total project cost at application"
+        },
+        {
+          "value": 67100000,
+          "src": [
+            "SRC-003233"
+          ],
+          "note": "Silicon Valley Business Journal, April 2024: $67.1 million"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.64,
+          "src": [
+            "SRC-003234"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 40,
+          "src": [
+            "SRC-003232"
+          ],
+          "note": "40 underground stalls plus 3 accessible at-grade stalls"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003236"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "AB 2162 ministerial permit H20-013"
         }
       ]
     }
@@ -202,6 +360,31 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC 2021 staff report lists the project as Bascom Apartments at 3090 South Bascom Avenue (CA-21-593): $3,062,012 annual federal and $17,533,058 total state credits recommended, 79 units with 77 restricted, 16 units (21%) with HUD Section 8 project-based vouchers.",
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "text": "CTCAC 2021 financing at application: construction from Boston Capital Finance $35,672,716, Santa Clara County $14,220,000, tax credit equity $17,346,275; permanent from Boston Capital $9,270,288, Santa Clara County $15,800,000, deferred developer fee $1,000,000, tax credit equity $41,168,703; total $67,238,991. Investor/consultant Red Stone Equity Partners.",
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "text": "April 2024 developer release names different partners than the 2021 CTCAC report: U.S. Bank $36 million construction and permanent loan, Boston Financial Investment Management $40 million tax credit equity, Housing Trust Silicon Valley $7.7 million acquisition loan, County Measure A $15.8 million; project-based vouchers from the Santa Clara County Housing Authority and the VA.",
+      "src": [
+        "SRC-003232"
+      ]
+    },
+    {
+      "text": "VMWP lists the building at 28,000 sq ft on a 0.64-acre site; awards: PCBC Gold Nugget Grand Award, Best Health/Wellness Design Solution 2024, and Merit, Best Affordable Housing 2024. Rated GreenPoint Platinum.",
+      "src": [
+        "SRC-003234",
+        "SRC-003235"
+      ]
     }
   ],
   "parties": [
@@ -215,9 +398,177 @@
       ],
       "website": "https://www.affirmedhousing.com",
       "project_page": "https://affirmedhousing.com/completed/vitalia/"
+    },
+    {
+      "role": "Other",
+      "company": "Bascom Affordable Housing, L.P.",
+      "contact": "Jimmy Silverwood",
+      "linkedin": null,
+      "email": "james@affirmedhousing.com",
+      "phone": "858-679-2828",
+      "other_role": "CTCAC applicant (tax credit partnership)",
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "AHG Bascom, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Compass for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Solari Enterprises, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "City of San Jose",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Red Stone Equity Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Boston Financial Investment Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003232"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "U.S. Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003232"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003232"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Boston Capital Finance",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Cahill Contractors",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003233"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Van Meter Williams Pollack LLP",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://vmwp.com/?p=7051",
+      "src": [
+        "SRC-003233",
+        "SRC-003234"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "DCI Engineers",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://www.dci-engineers.com/work/vitalia",
+      "src": [
+        "SRC-003235"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Measure A",
+      "amount": 15800000,
+      "date": null,
+      "src": [
+        "SRC-003232",
+        "SRC-003233",
+        "SRC-003236"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "U.S. Bank",
+      "program": "Construction and permanent loan (2024 release)",
+      "amount": 36000000,
+      "date": null,
+      "src": [
+        "SRC-003232"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Boston Financial Investment Management",
+      "program": "Federal and state tax credit equity (2024 release)",
+      "amount": 40000000,
+      "date": null,
+      "src": [
+        "SRC-003232"
+      ]
+    },
+    {
+      "type": "Acquisition loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": null,
+      "amount": 7700000,
+      "date": null,
+      "src": [
+        "SRC-003232"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -237,12 +588,31 @@
       ]
     },
     {
+      "date": "2021-09-08",
+      "type": "Other",
+      "label": "CTCAC staff report recommends tax credit reservation (CA-21-593, Bascom Apartments)",
+      "src": [
+        "SRC-003236"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-01-31",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2024-03-29",
+      "type": "Other",
+      "label": "Grand opening ceremony",
+      "src": [
+        "SRC-003232",
+        "SRC-003233"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-05",
@@ -279,6 +649,103 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Vitalia / 3100 S Bascom / Affirmed; developer release, SVBJ repost, VMWP and DCI pages",
+      "src": [
+        "SRC-003232",
+        "SRC-003233"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 41414092: situs 3100 S Bascom Av, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "San Jose planning GIS layer: H20-013 applicant Bascom Affordable Housing LP, approved 2021-02-28 (already on record); sanjoseca.gov blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County Measure A $15.8 million per developer release and CTCAC report",
+      "src": [
+        "SRC-003232",
+        "SRC-003236"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-21-593 (2021-09-08), filed as Bascom Apartments, 3090 S Bascom",
+      "src": [
+        "SRC-003236"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Silicon Valley Business Journal 2024-04-01 (via VMWP repost): contractor, architect, $67.1M cost",
+      "src": [
+        "SRC-003233"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY May 2024 opening article already on record",
+      "src": [
+        "SRC-001852"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Affirmed Housing release 2024-04-01 (GlobeNewswire)",
+      "src": [
+        "SRC-003232"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "VMWP project page; DCI Engineers structural page",
+      "src": [
+        "SRC-003234",
+        "SRC-003235"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Lenders and investors from developer release and CTCAC report",
+      "src": [
+        "SRC-003232",
+        "SRC-003236"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for Vitalia; no matching posts",
+      "src": []
+    }
+  }
 }

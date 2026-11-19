@@ -1,6 +1,6 @@
 {
   "id": "SMC-000234",
-  "name": "851 Weeks Street",
+  "name": "851 Weeks Street Senior Apartments",
   "parcels": [
     {
       "apn": "063-221-240",
@@ -126,6 +126,13 @@
           "src": [
             "SRC-001179"
           ]
+        },
+        {
+          "value": "Seniors 62+ earning 35% to 60% of area median income (application narrative); state report 2025 lists 78 low-income deed-restricted units and 1 above-moderate unit",
+          "src": [
+            "SRC-003238",
+            "SRC-001111"
+          ]
         }
       ]
     },
@@ -139,6 +146,16 @@
             "SRC-001179"
           ],
           "note": "SB 35"
+        },
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003237"
+          ],
+          "note": "SB 35 with state density bonus (unlimited density, height increase)"
         }
       ]
     },
@@ -149,11 +166,110 @@
           "src": [
             "SRC-001179"
           ]
+        },
+        {
+          "value": "BLD2025-0144",
+          "src": [
+            "SRC-001111"
+          ],
+          "note": "Building permit application reported to the state, submitted 2025-10-13"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-003237",
+            "SRC-003238"
+          ],
+          "note": "79-unit 100% affordable senior building including one manager unit"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 46,
+            "1br": 32,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003238"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-003237",
+            "SRC-003239"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.654,
+          "src": [
+            "SRC-003237"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 67510,
+          "src": [
+            "SRC-003239"
+          ],
+          "note": "Plan set approximate gross area"
+        },
+        {
+          "value": 69355,
+          "src": [
+            "SRC-003240"
+          ],
+          "note": "TDM document project size"
         }
       ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Conformance letter (ZCP23-047, 2023-12-01): six-story, 79-unit 100% affordable senior building with 30 parking spaces and 33 bicycle spaces on a vacant 0.654-acre lot in the Ravenswood Specific Plan area, zoned Urban Residential; streamlined to the Building Division under SB 35; subject to an AB 168 enforceable agreement with the Tamien Nation on tribal cultural resources.",
+      "src": [
+        "SRC-003237"
+      ]
+    },
+    {
+      "text": "Plan set: five-story wood-frame over a one-story concrete podium, 62 ft to roof sheathing, stair penthouse to 73 ft 10 in; units by floor 2nd 13, 3rd-5th 17 each, 6th 14, plus the ground-floor manager unit.",
+      "src": [
+        "SRC-003239"
+      ]
+    },
+    {
+      "text": "State report 2025 notes: SB 35, 79-unit affordable senior apartments, part of the Euclid Improvements project inclusionary requirement.",
+      "src": [
+        "SRC-001111"
+      ]
+    },
+    {
+      "text": "The Almanac (September 2026): Sand Hill had proposed contributing $23 million to affordable housing at 851 Weeks Street instead of setting aside units in its own project, then proposed redirecting $14 million to a teacher housing project.",
+      "src": [
+        "SRC-003242"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -165,6 +281,82 @@
         "SRC-001179"
       ],
       "website": "https://edenhousing.org"
+    },
+    {
+      "role": "Developer",
+      "company": "Eden Housing",
+      "contact": "Diego Terreros Arroyo",
+      "linkedin": null,
+      "src": [
+        "SRC-003239",
+        "SRC-003237"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "EPACANDO",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003239",
+        "SRC-003238"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Woodland Park Communities",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (per plan set)",
+      "src": [
+        "SRC-003239"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "851 Weeks LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Okamoto Saijo Architecture, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003239"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Taniguchi Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003239"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003239"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BWF Consulting Engineers",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Exterior lighting engineer",
+      "src": [
+        "SRC-003239"
+      ]
     }
   ],
   "financing": [],
@@ -179,12 +371,30 @@
       ]
     },
     {
+      "date": "2023-09-11",
+      "type": "Application filed",
+      "label": "SB 35 application submittal (plans dated 2023-08-29)",
+      "src": [
+        "SRC-003241"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-12-01",
       "type": "Approved",
       "label": "City finds project in conformance with SB 35",
       "src": [
         "SRC-001179"
       ]
+    },
+    {
+      "date": "2025-10-13",
+      "type": "Other",
+      "label": "Building permit application BLD2025-0144 submitted",
+      "src": [
+        "SRC-001111"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -197,6 +407,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 851 Weeks / Eden Housing; city application documents and Almanac article",
+      "src": [
+        "SRC-003238",
+        "SRC-003242"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC Active Parcels layer, APN 063221240: owner 851 WEEKS LLC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "EPA project page attachments: conformance letter ZCP23-047, narrative, plan set, submittal letter, TDM",
+      "src": [
+        "SRC-003237",
+        "SRC-003239",
+        "SRC-003238",
+        "SRC-003241",
+        "SRC-003240"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for San Mateo County affordable housing fund award; none found for this site",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A East Palo Alto: ZCP23-047 (2023) and BLD2025-0144 (2025); no CTCAC award found",
+      "src": [
+        "SRC-001111"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "The Almanac 2026-09-08 (Sand Hill $23M contribution proposal)",
+      "src": [
+        "SRC-003242"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and trade press; no coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "edenhousing.org project page returned 404; no other Eden page for this project found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Okamoto Saijo named in plan set; no firm project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, investor or public funder award found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for 851 Weeks; no matching posts",
+      "src": []
+    }
+  }
 }

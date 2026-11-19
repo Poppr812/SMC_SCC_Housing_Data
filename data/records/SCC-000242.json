@@ -31,6 +31,142 @@
           37.3217456
         ]
       ]
+    },
+    {
+      "apn": "277-34-039",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9459154,
+          37.3215945
+        ],
+        [
+          -121.9459139,
+          37.3214987
+        ],
+        [
+          -121.945916,
+          37.3214881
+        ],
+        [
+          -121.9459199,
+          37.321478
+        ],
+        [
+          -121.9459255,
+          37.3214687
+        ],
+        [
+          -121.9459326,
+          37.3214605
+        ],
+        [
+          -121.945941,
+          37.3214537
+        ],
+        [
+          -121.9459505,
+          37.3214484
+        ],
+        [
+          -121.9459607,
+          37.3214448
+        ],
+        [
+          -121.9459714,
+          37.321443
+        ],
+        [
+          -121.9459822,
+          37.3214431
+        ],
+        [
+          -121.9463197,
+          37.3214413
+        ],
+        [
+          -121.946322,
+          37.3215924
+        ],
+        [
+          -121.9459154,
+          37.3215945
+        ]
+      ]
+    },
+    {
+      "apn": "277-34-040",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.946322,
+          37.3215924
+        ],
+        [
+          -121.9463197,
+          37.3214413
+        ],
+        [
+          -121.946658,
+          37.3214395
+        ],
+        [
+          -121.9466687,
+          37.3214393
+        ],
+        [
+          -121.9466794,
+          37.3214409
+        ],
+        [
+          -121.9466896,
+          37.3214444
+        ],
+        [
+          -121.9466991,
+          37.3214495
+        ],
+        [
+          -121.9467076,
+          37.3214562
+        ],
+        [
+          -121.9467149,
+          37.3214642
+        ],
+        [
+          -121.9467206,
+          37.3214733
+        ],
+        [
+          -121.9467248,
+          37.3214832
+        ],
+        [
+          -121.9467272,
+          37.3214937
+        ],
+        [
+          -121.9467287,
+          37.3215902
+        ],
+        [
+          -121.946509,
+          37.3215914
+        ],
+        [
+          -121.946322,
+          37.3215924
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -57,6 +193,21 @@
           ]
         }
       ]
+    },
+    {
+      "text": "383 S Baywood Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "382 S Redwood Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001853",
+        "SRC-001956"
+      ]
     }
   ],
   "images": [],
@@ -70,8 +221,18 @@
             "SRC-001107"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001956",
+            "SRC-001853",
+            "SRC-001099"
+          ],
+          "note": "City permit T20-010: 79 residential and 7 commercial condominiums; state report lists owner tenure"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -130,6 +291,27 @@
             "SRC-001956"
           ],
           "note": "City folder 110836, Special Use Permit/Amendment (permit type: Development Permit); city permit status: Approved. Matched by file number."
+        },
+        {
+          "value": "ER20-041",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review (Mitigated Negative Declaration) for SP20-008; Approved/Certified 2021-06-23"
+        },
+        {
+          "value": "AD25-198",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "One-year extension of SP20-008 from June 23, 2025 to June 23, 2026; approved 2025-04-28"
+        },
+        {
+          "value": "AD26-596",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Permit adjustment for a further one-year extension of SP20-008; filed 2026-08-26, Under Review"
         }
       ]
     },
@@ -141,6 +323,67 @@
             "SRC-001107"
           ],
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 11,
+          "src": [
+            "SRC-001853",
+            "SRC-001956"
+          ],
+          "note": "About 120 ft (SF YIMBY)"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 9820,
+          "src": [
+            "SRC-001853",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 98,
+          "src": [
+            "SRC-001853"
+          ],
+          "note": "Below-grade; plus 26 motorcycle and 37 bicycle spaces"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 34,
+            "2br": 41,
+            "3br": 4,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001853"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-001853",
+            "SRC-001956"
+          ]
         }
       ]
     }
@@ -164,6 +407,24 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "SF YIMBY (April 2021): 11-story building about 120 ft tall with 79 condominiums and 9,820 sq ft of commercial space on the ground and second levels; lobby on Hemlock Avenue; developer Cord Associates acquired the property in 2020 and earlier had a 105-room hotel approved in 2018.",
+      "src": [
+        "SRC-001853"
+      ]
+    },
+    {
+      "text": "State report (2019 applications) lists PD19-027 at 375 S Baywood for 48 owner units, shown as disapproved; the 2020 row lists SP20-008 for 79 owner units.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    {
+      "text": "City permit data: ER20-041 Mitigated Negative Declaration for the Baywood Mixed-Use project, Approved/Certified 2021-06-23. Earlier filings on the site include PRE17-143 (12-story, 65-unit apartment preliminary review, 2017) and PRE17-201 (hotel preliminary review for 375 and 383 S Baywood, 2017).",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "parties": [
@@ -175,11 +436,70 @@
       "src": [
         "SRC-001853"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Carpira Design Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001853"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Yisrael 26 LLC",
+      "contact": "Adam Askari",
+      "linkedin": null,
+      "other_role": "Applicant and owner on city permits SP20-008, ER20-041, AD26-596",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "A&Z Development, LLC",
+      "contact": "Adam Askari",
+      "linkedin": null,
+      "other_role": "Applicant on extension AD25-198",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Creative Studio Design",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Co-applicant on extension AD25-198",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cord Associates",
+      "contact": "Henry Cord",
+      "linkedin": null,
+      "other_role": "Applicant and owner on vesting tentative map T20-010",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-02-27",
+      "type": "Other",
+      "label": "Earlier proposal: SP18-048 for a 105-room hotel approved",
+      "src": [
+        "SRC-001956",
+        "SRC-001853"
+      ],
+      "estimated": false
+    },
     {
       "date": "2019-08-08",
       "type": "Application filed",
@@ -189,12 +509,40 @@
       ]
     },
     {
+      "date": "2020-02-24",
+      "type": "Application filed",
+      "label": "SP20-008 Special Use Permit application filed",
+      "src": [
+        "SRC-001956",
+        "SRC-001099"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2021-06-23",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-04-28",
+      "type": "Other",
+      "label": "SP20-008 extended to June 23, 2026 (AD25-198)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Other",
+      "label": "Further one-year extension of SP20-008 requested (AD26-596)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -217,6 +565,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 375 S Baywood / Cord Associates; listings not opened (redirects); SF YIMBY article opened",
+      "src": [
+        "SRC-001853"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 27734038 (375 S Baywood), 27734039 (383 S Baywood), 27734040 (382 S Redwood); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer by APN: SP20-008, ER20-041, T20-010, AD25-198, AD26-596; sanjoseca.gov pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county funding or approval role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A San Jose: PD19-027 (2019, 48 owner units disapproved), SP20-008 (2020, 79 owner units)",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of local news; no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2021-04-25: stories, commercial sf, parking, unit mix, architect",
+      "src": [
+        "SRC-001853"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Cord Associates or Yisrael 26 LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Carpira Design Group named in SF YIMBY; no firm project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity named in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for the address; no matching posts",
+      "src": []
+    }
+  }
 }
