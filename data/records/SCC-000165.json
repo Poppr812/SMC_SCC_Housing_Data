@@ -280,6 +280,40 @@
           "note": "State report 2024, application stage: 20 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 7.22,
+          "src": [
+            "SRC-001601",
+            "SRC-002807"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-002808"
+          ],
+          "note": "CEQA exemption based on conformity with the Milpitas Gateway-Main Street Specific Plan"
+        }
+      ]
+    },
+    "community": {
+      "claims": [
+        {
+          "value": "Milpitas Gateway-Main Street Specific Plan area",
+          "src": [
+            "SRC-002808"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -294,6 +328,18 @@
       "src": [
         "SRC-001601"
       ]
+    },
+    {
+      "text": "Notice of Exemption: 24 three-story townhome buildings totaling 134 units, including 14 adaptable units, and a one-story clubhouse. Exempt under Public Resources Code 21155.4 as consistent with the Gateway-Main Street Specific Plan Subsequent EIR (SCH 2024070432).",
+      "src": [
+        "SRC-002808"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (2023): the site houses the Sobrato Centers for Nonprofits and is owned by the Silicon Valley Community Foundation, with Sobrato processing land use permits. The 2023 concept was 244 homes: about 104 market-rate townhomes on 5.62 acres and about 140 affordable apartments on a 1.6-acre parcel to be dedicated to the city, where an existing nonprofit office building stands.",
+      "src": [
+        "SRC-002807"
+      ]
     }
   ],
   "parties": [
@@ -306,11 +352,29 @@
         "SRC-001601"
       ],
       "website": "https://www.sobrato.com"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Silicon Valley Community Foundation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002807"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-11-14",
+      "type": "Other",
+      "label": "Preliminary plans for 244 homes presented to City Council for feedback",
+      "src": [
+        "SRC-002807"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-11-18",
       "type": "Application filed",
@@ -318,6 +382,15 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "date": "2026-06-18",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption signed by the City of Milpitas",
+      "src": [
+        "SRC-002808"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-06-23",
@@ -344,6 +417,88 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 600 Valley Way and Sobrato Milpitas; San Jose Spotlight 2023 article opened",
+      "src": [
+        "SRC-002807"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API 022-28-022 returns the parcel; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of milpitas.gov found no project page or staff report for 600 Valley Way",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026060979 Notice of Exemption PDF read: 24 buildings, 14 adaptable units, Specific Plan basis",
+      "src": [
+        "SRC-002808",
+        "SRC-001601"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2023-11-22: owner, 244-home concept, council feedback 2023-11-14; Local News Matters returned 403",
+      "src": [
+        "SRC-002807"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "sobrato.com already linked; Sobrato page link from search returned 404",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in CEQA notice or news",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found; not in CTCAC active projects list",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

@@ -196,6 +196,17 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.6,
+          "src": [
+            "SRC-002805"
+          ],
+          "note": "First phase site, a former VTA parking lot"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -215,6 +226,19 @@
       "text": "CTCAC CA-26-616: Tamien Station Phase II, located at 1221 Lick Avenue & 1184 Lelong Street in San Jose on a 1.92 acre site, requested and is being recommended for a reservation of $5,095,713 in annual federal tax credits, $9,979,182 in total state tax credits, and $27,050,000 of tax-exempt bond cap to finance the new construction of 132 units of housing, consisting of 131 restricted rental units and 1 unrestricted manager's unit. Recorded as a note because this funding covers Tamien Station Phase II (132 units), which may be one component of this record.",
       "src": [
         "SRC-001625"
+      ]
+    },
+    {
+      "text": "HCD press release: 135 affordable units in the first phase, reserved for households at or below 60% of area median income, half allocated for rapid rehousing; land owned by VTA and ground-leased to UrbanCo Tamien LLC, a Core and Republic Urban Properties partnership; the full site is planned for 555 units; first VTA transit-oriented housing to open in more than 20 years.",
+      "src": [
+        "SRC-002805"
+      ]
+    },
+    {
+      "text": "CTCAC active projects list gives CA-2022-552 Tamien Station Affordable at 1197 Lick Avenue, APN 434-13-040, general partners Central Valley Coalition for Affordable Housing and Core Tamien Station, LLC. The county parcel layer has no 434-13-040; it shows 1197 Lick Ave on 434-13-043 and 1221 Lick Ave on 434-13-044.",
+      "src": [
+        "SRC-001603",
+        "SRC-001098"
       ]
     }
   ],
@@ -305,6 +329,36 @@
       "other_role": "Applicant (CTCAC)",
       "email": "vcantore@thecorecompanies.com",
       "phone": "408-207-1312"
+    },
+    {
+      "role": "Other",
+      "company": "UrbanCo Tamien LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Ground lessee",
+      "src": [
+        "SRC-002805",
+        "SRC-001956",
+        "SRC-002806"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Core Tamien Station, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "HMH Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002806"
+      ]
     }
   ],
   "financing": [
@@ -407,16 +461,63 @@
       "src": [
         "SRC-001624"
       ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Strategic Growth Council / HCD",
+      "program": "Affordable Housing and Sustainable Communities (AHSC), described as a grant",
+      "amount": 28700000,
+      "date": "2026-01-23",
+      "src": [
+        "SRC-002805"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "HCD",
+      "program": "Infill Infrastructure Grant",
+      "amount": 3000000,
+      "date": "2026-01-23",
+      "src": [
+        "SRC-002805"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2020-12-09",
+      "type": "Approved",
+      "label": "Planned Development Permit PD20-003 approved for the Tamien Station master plan (569 or 555 units in three buildings)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-11-30",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-22-552)",
       "src": [
         "SRC-001624"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-27",
+      "type": "Approved",
+      "label": "PDA20-003-01 approved: a planned 219-unit market-rate building changed to 132 units, 100% affordable (Phase II)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-23",
+      "type": "Other",
+      "label": "Grand opening celebrated",
+      "src": [
+        "SRC-002805"
       ],
       "estimated": false
     },
@@ -450,6 +551,11 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -458,5 +564,94 @@
       "relation": "part_of",
       "note": "Phase one of the Tamien Station master plan"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Tamien Station Apartments; HCD newsroom release opened",
+      "src": [
+        "SRC-002805"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 434-13-044 situs 1221 Lick; 434-13-043 situs 1197 Lick; 434-13-040 not in current layer",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN 434-13-044: PDC18-025, PD20-003, T20-017, PDA20-003-01",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "County of Santa Clara $25M loan already on record from CTCAC report; news.santaclaracounty.gov not used (blocked)",
+      "src": [
+        "SRC-001624"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "HCD release (AHSC $28.7M, IIG $3M); CTCAC active projects list row CA-2022-552",
+      "src": [
+        "SRC-002805",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Search results repeated opening coverage already on record",
+      "src": [
+        "SRC-001372"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY opening article already on record",
+      "src": [
+        "SRC-001372"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "thecorecompanies.com project page: owner UrbanCo Tamien LLC, landscape architect HMH",
+      "src": [
+        "SRC-002806"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Studio T Square and BDE already on record; Core page lists the same",
+      "src": [
+        "SRC-002806"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "HCD release lists AHSC and Infill Infrastructure Grant amounts",
+      "src": [
+        "SRC-002805"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

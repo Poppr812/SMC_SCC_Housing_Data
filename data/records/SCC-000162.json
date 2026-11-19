@@ -230,8 +230,17 @@
             "SRC-001119"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-002800",
+            "SRC-001746"
+          ],
+          "note": "CEQA Notice of Determination and Planning Commission item describe 135 condominium units in 16 three- to four-story buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -296,6 +305,14 @@
             "SRC-001119"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "2019-7576",
+          "src": [
+            "SRC-002800",
+            "SRC-001746"
+          ],
+          "note": "City planning file; Legistar file 21-0470"
         }
       ]
     },
@@ -314,6 +331,42 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.97,
+          "src": [
+            "SRC-002800",
+            "SRC-001746"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-002800",
+            "SRC-001746"
+          ],
+          "note": "16 buildings of three to four stories"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002800"
+          ],
+          "note": "Uses State Density Bonus Law: reduced parking and a possible rear-setback concession"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -322,6 +375,13 @@
       "src": [
         "SRC-001118",
         "SRC-001119"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Determination and the 2021 Planning Commission item list the site as APN 110-14-197, 4.97 acres, vacant, zoned R-4/PD, on the west side of Karlstad Drive between Tasman and Toyama Drives. The approval covered a Special Development Permit and a Tentative Parcel Map for 135 condominiums. The NOD says the applicant also owns the adjacent apartment property; Legistar lists The Sobrato Organization as applicant/owner.",
+      "src": [
+        "SRC-002800",
+        "SRC-001746"
       ]
     }
   ],
@@ -336,6 +396,15 @@
         "SRC-001746"
       ],
       "website": "https://www.sobrato.com/"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "The Sobrato Organization",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001746"
+      ]
     }
   ],
   "financing": [],
@@ -356,6 +425,15 @@
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "date": "2021-05-27",
+      "type": "Other",
+      "label": "CEQA Notice of Determination posted (Mitigated Negative Declaration, SCH 2021050606)",
+      "src": [
+        "SRC-002800"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-11-20",
@@ -394,6 +472,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, Sobrato; led to CEQAnet NOD 2021050606. Pulte builder pages for The Square surfaced but their opened text did not show project details.",
+      "src": [
+        "SRC-002800"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 110-64-001, 110-64-048, 110-64-057: situs addresses match record; no owner field in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Sunnyvale Legistar matter 10439 (PC 2021-05-24, file 2019-7576): zoning R-4/PD, Sobrato as applicant/owner, 16 buildings",
+      "src": [
+        "SRC-001746"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Sunnyvale; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2021050606 NOD (approved 2021-05-24, MND); APR data already on record; not in CTCAC active projects list",
+      "src": [
+        "SRC-002800",
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for local news on 1139 Karlstad / The Square found no articles",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY/trade coverage found none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "sobrato.com already linked; pulte.com community pages for The Square opened but text returned only the page title",
+      "src": [
+        "SRC-001746"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in CEQA NOD or Legistar matter",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project found none",
+      "src": []
+    }
+  }
 }

@@ -103,7 +103,8 @@
         {
           "value": "Inactive pipeline",
           "src": [
-            "SRC-001830"
+            "SRC-001830",
+            "SRC-002802"
           ],
           "note": "SJ Build tracker lists this file as Withdrawn; single secondary source, not confirmed with the city."
         }
@@ -139,6 +140,14 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "GP23-011, C24-062, ER24-147",
+          "src": [
+            "SRC-001830",
+            "SRC-001956"
+          ],
+          "note": "General Plan Amendment, rezoning CP/R-18 to TR, environmental review"
         }
       ]
     },
@@ -150,6 +159,140 @@
             "SRC-001099"
           ],
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002803",
+            "SRC-001956"
+          ],
+          "note": "20 of 135 homes for very low-income households per 2025 news; ER24-147 lists 20 inclusionary affordable units"
+        }
+      ],
+      "best": 1
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-001830",
+            "SRC-002803",
+            "SRC-002802"
+          ],
+          "note": "Two towers of 14 and 17 floors on a shared podium per SF YIMBY 2024"
+        },
+        {
+          "value": 18,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City environmental review file ER24-147 describes an 18-story building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.6,
+          "src": [
+            "SRC-001830",
+            "SRC-001831"
+          ],
+          "note": "H24-052: about 0.6 gross acres"
+        },
+        {
+          "value": 0.61,
+          "src": [
+            "SRC-001830"
+          ],
+          "note": "GP23-011: 0.61 gross acres"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 15000,
+          "src": [
+            "SRC-001830",
+            "SRC-002803",
+            "SRC-002802"
+          ],
+          "note": "H24-052 description and 2025 news"
+        },
+        {
+          "value": 25300,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "ER24-147 (2024): 25,300 sq ft retail; SF YIMBY 2024 and Housing Action Coalition say about 25,000"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 70,
+            "2br": 65,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001831"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 170,
+          "src": [
+            "SRC-001831",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 20,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-002803"
+          ],
+          "note": "San Jose Spotlight 2025: 20 very low-income units"
+        },
+        {
+          "value": [
+            {
+              "count": 14,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001830"
+          ],
+          "note": "H24-052 description: tentatively 14 units at Very Low Income"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "San Jose Spotlight (2025) lists affordable rents of $1,105-$1,842 for one-bedrooms and $1,244-$2,073 for two-bedrooms. Housing Action Coalition describes 15% affordable.",
+          "src": [
+            "SRC-002803",
+            "SRC-002804"
+          ]
         }
       ]
     }
@@ -159,6 +302,20 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2024) describes two steel-frame towers of 14 and 17 floors on an L-shaped two-story podium joined by a skybridge, about 179,250 sq ft total, and about 18,800 sq ft of privately owned public open space. City staff recommended against the project. San Jose Spotlight reports VCI offered to reduce the building to 11 stories before the council denial. A prior five-story, 100-unit proposal for the site was withdrawn in April 2023 and the site was foreclosed in June 2023.",
+      "src": [
+        "SRC-001831",
+        "SRC-002803",
+        "SRC-002802"
+      ]
+    },
+    {
+      "text": "Housing Action Coalition page lists 'Homes: 362' in its metadata while its description says 135 homes.",
+      "src": [
+        "SRC-002804"
       ]
     }
   ],
@@ -172,11 +329,59 @@
       "src": [
         "SRC-001831"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "VCI Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001831",
+        "SRC-002803",
+        "SRC-002804"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Winchester Estate LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (ER24-237)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-09",
+      "type": "Sale",
+      "label": "VCI bought the site for $6.5 million (city records cited by SF YIMBY)",
+      "src": [
+        "SRC-001831"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-11-21",
+      "type": "Application filed",
+      "label": "General Plan Amendment GP23-011 filed",
+      "src": [
+        "SRC-001830"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-05-14",
+      "type": "Other",
+      "label": "Environmental review file ER24-147 opened",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-09-17",
       "type": "Application filed",
@@ -184,6 +389,24 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2025-05",
+      "type": "Other",
+      "label": "Planning Commission split 4-4, no recommendation",
+      "src": [
+        "SRC-002803"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06",
+      "type": "Other",
+      "label": "City Council unanimously denied the project",
+      "src": [
+        "SRC-002802"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -196,6 +419,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 826 N Winchester and VCI; HAC and SJ Spotlight pages opened",
+      "src": [
+        "SRC-002804",
+        "SRC-002803"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API 274-50-061: situs 826 N Winchester; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN: ER24-147 and ER24-237 (applicant VCI Companies & Winchester Estate LLC); SJ Build lists H24-052, GP23-011, C24-062",
+      "src": [
+        "SRC-001956",
+        "SRC-001830"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet or CTCAC entry found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-05-15 (PC 4-4) and 2025-06-12 (council denial); Local News Matters returned 403",
+      "src": [
+        "SRC-002803",
+        "SRC-002802"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-02-28 (unit mix, parking, site purchase); The Real Deal returned 403",
+      "src": [
+        "SRC-001831"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No VCI Companies project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Housing Action Coalition lists VCI Companies as architect; no separate architect site found",
+      "src": [
+        "SRC-002804"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }
