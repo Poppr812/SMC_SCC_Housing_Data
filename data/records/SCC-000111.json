@@ -125,6 +125,36 @@
           37.3285634
         ]
       ]
+    },
+    {
+      "apn": "264-30-089",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8854425,
+          37.3290489
+        ],
+        [
+          -121.8857798,
+          37.3288866
+        ],
+        [
+          -121.8858781,
+          37.3289688
+        ],
+        [
+          -121.8855128,
+          37.3291446
+        ],
+        [
+          -121.8854425,
+          37.3290489
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -252,6 +282,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H24-034, HP24001, ER24-165",
+          "src": [
+            "SRC-002570"
+          ],
+          "note": "Site Development Permit, Historic Preservation Permit and environmental file numbers on the city's Notice of Determination"
         }
       ]
     },
@@ -334,6 +371,28 @@
           "src": [
             "SRC-001918"
           ]
+        },
+        {
+          "value": 3760,
+          "src": [
+            "SRC-002570"
+          ],
+          "note": "Ground-floor commercial space in the approved project description"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002570",
+            "SRC-001107"
+          ],
+          "note": "Director's Hearing approval of Site Development and Historic Preservation Permits; state report lists a density bonus with 9 incentives or waivers"
         }
       ]
     }
@@ -399,6 +458,19 @@
       "text": "Parcels: 264-30-090 came from state data. 264-30-114 was added by matching 493 S 1st St, the address San Jose Spotlight gives, to the county parcel. Spotlight describes three buildings between 493 S First St and 480 S Market St, and other parcels on the site may not be listed here yet.",
       "src": [
         "SRC-001920",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "City Notice of Determination: 15-story building with up to 220 affordable units, 3,760 sq ft of ground-floor commercial space and 5 levels of above-grade parking. The facades of 455 South First Street/460 South Market Street and 465-467 South First Street/470-480 South Market Street are kept; the rest of the existing buildings are removed. Location given as 455 to 493 South First Street, APNs 264-30-114, -090 and -089. The city found significant unavoidable impacts to cultural resources.",
+      "src": [
+        "SRC-002570"
+      ]
+    },
+    {
+      "text": "The 2025 state report entitlement row lists APNs 264-30-090 and -089. County parcel data gives 264-30-089 the situs address 455 S 1st St.",
+      "src": [
+        "SRC-001107",
         "SRC-001098"
       ]
     }
@@ -467,6 +539,18 @@
       "linkedin": null,
       "src": [
         "SRC-001919"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Gateway Tower SJ LP",
+      "contact": "Aaron Barger",
+      "linkedin": null,
+      "email": "abarger@thecorecompanies.com",
+      "phone": "(408) 640-1100",
+      "other_role": "Project applicant (CEQA filing)",
+      "src": [
+        "SRC-002570"
       ]
     }
   ],
@@ -593,6 +677,24 @@
       ]
     },
     {
+      "date": "2025-02-26",
+      "type": "Approved",
+      "label": "Director's Hearing approved Site Development and Historic Preservation Permits and adopted an Addendum to the Supplemental EIR",
+      "src": [
+        "SRC-002570"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-28",
+      "type": "Other",
+      "label": "Notice of Determination filed with the Santa Clara County Clerk-Recorder",
+      "src": [
+        "SRC-002570"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-04-09",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -707,6 +809,104 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Gateway Tower, 470 S Market St and The Core Companies; led to the CEQA Notice of Determination",
+      "src": [
+        "SRC-002570"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 264-30-089 (455 S 1st St), 264-30-090 (465 S 1st St); 264-30-089 listed in the state report and the city NOD",
+      "src": [
+        "SRC-001098",
+        "SRC-002570"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city NOD read through CEQAnet instead",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "County loan already on record from the CTCAC staff report and San Jose Spotlight; county news site blocks automated access",
+      "src": [
+        "SRC-001663",
+        "SRC-001920"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2025 row (APNs 264-30-090, -089; density bonus, 9 incentives); CEQAnet NOD for SCH 2003042127 addendum",
+      "src": [
+        "SRC-001107",
+        "SRC-002570"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Mercury News Oct 2026 and San Jose Spotlight already on record; Local News Matters March 2025 article returned 403",
+      "src": [
+        "SRC-001918",
+        "SRC-001920"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY Nov 2025 already on record; The Real Deal returned 403",
+      "src": [
+        "SRC-001393"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Core Companies project page already linked on record",
+      "src": [
+        "SRC-001917"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "DLR Group project page already on record",
+      "src": [
+        "SRC-001921"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CTCAC staff report, Housing Trust and J.P. Morgan closing already on record; no new funder found",
+      "src": [
+        "SRC-001663",
+        "SRC-001919"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Core/J.P. Morgan closing post already on record",
+      "src": [
+        "SRC-001917"
+      ]
+    }
+  }
 }

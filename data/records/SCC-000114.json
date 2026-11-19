@@ -35,6 +35,40 @@
           37.3231322
         ]
       ]
+    },
+    {
+      "apn": "277-20-035",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9163526,
+          37.3233397
+        ],
+        [
+          -121.9163507,
+          37.3231322
+        ],
+        [
+          -121.9171248,
+          37.3231256
+        ],
+        [
+          -121.9171267,
+          37.3233308
+        ],
+        [
+          -121.9168736,
+          37.3233337
+        ],
+        [
+          -121.9163526,
+          37.3233397
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -79,8 +113,16 @@
             "SRC-001099"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-001394"
+          ],
+          "note": "213 rental units in the April 2026 approved plans; the 2025 state report row shows owner tenure"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -206,6 +248,39 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 178,
+          "src": [
+            "SRC-001394"
+          ],
+          "note": "With stackers; plus 70 bicycle spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 139400,
+          "src": [
+            "SRC-001394"
+          ],
+          "note": "About"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1490,
+          "src": [
+            "SRC-001394"
+          ],
+          "note": "About; retail"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -213,6 +288,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "SF YIMBY: 78 feet tall, about 202,847 sq ft including about 28,700 sq ft of basement garage; four density bonus waivers (height, setbacks, common and private open space); replaces a 105-key hotel proposal; demolition of a former auto repair center has occurred.",
+      "src": [
+        "SRC-001394"
+      ]
+    },
+    {
+      "text": "The 2025 state report application row lists APNs 277-20-034 and -035. County parcel data gives 277-20-035 the situs address 1470 W San Carlos St and 277-20-034 the address 326 S Willard Ave.",
+      "src": [
+        "SRC-001099",
+        "SRC-001098"
       ]
     }
   ],
@@ -230,6 +318,15 @@
     {
       "role": "Architect",
       "company": "LPMD Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001394"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Aitken & Associates",
       "contact": null,
       "linkedin": null,
       "src": [
@@ -259,6 +356,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1470 West San Carlos and WSC Developments",
+      "src": [
+        "SRC-001394"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 277-20-035 (1470 W San Carlos St), 277-20-034 (326 S Willard Ave)",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2025 row: APNs 277-20-034, -035; density bonus received and approved; status pending",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No local news coverage found beyond aggregator reposts",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-04-27; The Real Deal 2026-04-21 returned 403",
+      "src": [
+        "SRC-001394"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No WSC Developments website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No LPMD Architects project page for this site found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity found; LoopNet/Showcase listing of the site as entitled returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
