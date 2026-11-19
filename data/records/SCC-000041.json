@@ -109,6 +109,13 @@
             "SRC-001956"
           ],
           "note": "City folder 143229, Tentative Map (permit type: Subdivision); city permit status: Under Review. Matched by APN."
+        },
+        {
+          "value": "H25-044, T25-028, ER25-250",
+          "src": [
+            "SRC-002193"
+          ],
+          "note": "ER25-250 Environmental Review (exemption), under review"
         }
       ]
     },
@@ -163,6 +170,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit data lists H25-044, T25-028 and ER25-250 at 1099 S Bascom (APN 282-11-019), all under review, applicant Karen Biran for Project S53 LLC. It also lists PRE25-150 at 1145 S Bascom (APN 282-11-022), filed 2025-04-10, status Complete, applicant Karen Biran for owner Bode.",
+      "src": [
+        "SRC-002193"
+      ]
+    },
+    {
+      "text": "SF YIMBY (April 2025): site holds a Round Table Pizza and a vacant former Kelly-Moore Paints; plans include 191 vehicle and 457 bicycle spaces; site is in an Urban Village under the Envision San Jose 2040 plan.",
+      "src": [
+        "SRC-001382"
+      ]
     }
   ],
   "parties": [
@@ -174,17 +193,43 @@
       "src": [
         "SRC-001382"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Project S53 LLC",
+      "contact": "Karen Biran",
+      "linkedin": null,
+      "other_role": "Applicant and owner listed in city permit data",
+      "src": [
+        "SRC-002193"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-12-02",
+      "type": "Other",
+      "label": "Environmental review ER25-250 (exemption) filed",
+      "src": [
+        "SRC-002193"
+      ]
+    },
+    {
       "date": "2025-12-23",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2025-12-23",
+      "type": "Other",
+      "label": "Tentative map T25-028 filed to combine 4 lots",
+      "src": [
+        "SRC-002193"
       ]
     }
   ],
@@ -208,6 +253,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1099 S Bascom, 474/476 units and b9 Architects; city permit layer queried",
+      "src": [
+        "SRC-002193"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 282-11-019 is 1099 S Bascom; adjacent 282-11-020 (1101), 282-11-022 (1145) and 282-11-021 (1155) S Bascom",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer (geo.sanjoseca.gov): ER25-250, PRE25-150, applicant Project S53 LLC",
+      "src": [
+        "SRC-002193"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in San Jose",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A 2025 row (H25-044, 476 units, pending) already on record; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal April 2025 article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY April 2025 reopened: site uses, 457 bicycle spaces",
+      "src": [
+        "SRC-001382"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No developer named in any source opened",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for a b9 Architects project page returned none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No funding award or lender found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for 1099 S Bascom returned no posts",
+      "src": []
+    }
+  }
 }

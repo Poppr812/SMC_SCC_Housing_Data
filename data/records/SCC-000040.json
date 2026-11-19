@@ -1,6 +1,6 @@
 {
   "id": "SCC-000040",
-  "name": "Sunnyvale Town Center Block 18 Subblock 3 South (200 S Taaffe St)",
+  "name": "The Martin (Cityline Block 3 South, 200 S Taaffe St)",
   "parcels": [
     {
       "apn": "209-35-032",
@@ -338,6 +338,15 @@
           ]
         }
       ]
+    },
+    {
+      "text": "240 S Taaffe St, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-002190",
+        "SRC-002184",
+        "SRC-002185"
+      ]
     }
   ],
   "images": [],
@@ -363,8 +372,18 @@
             "SRC-001119"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-002184",
+            "SRC-002185",
+            "SRC-002186"
+          ],
+          "note": "Move-ins began June 2024; 354 of 479 units leased as of March 2025"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -414,6 +433,13 @@
           "src": [
             "SRC-001119"
           ]
+        },
+        {
+          "value": "53 affordable rental units; city waitlist opened April 29, 2024 with Sunnyvale live/work priority",
+          "src": [
+            "SRC-002184",
+            "SRC-002191"
+          ]
         }
       ]
     },
@@ -457,6 +483,101 @@
             "SRC-001118"
           ],
           "note": "State report 2019, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 16,
+              "ami": 50
+            },
+            {
+              "count": 31,
+              "ami": 80
+            },
+            {
+              "count": 6,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 36,
+            "1br": 281,
+            "2br": 137,
+            "3br": 25
+          },
+          "src": [
+            "SRC-002187",
+            "SRC-002188"
+          ],
+          "note": "1br includes 79 junior one-bedrooms (SF YIMBY 2023)"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 516280,
+          "src": [
+            "SRC-002187"
+          ],
+          "note": "817,600 sq ft total including amenities, retail and garage"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 29640,
+          "src": [
+            "SRC-002187",
+            "SRC-002188"
+          ],
+          "note": "4,700 sq ft retail in two shops plus 24,940 sq ft in seven ground-level restaurant spaces"
+        },
+        {
+          "value": 30000,
+          "src": [
+            "SRC-002189"
+          ]
+        },
+        {
+          "value": 28000,
+          "src": [
+            "SRC-002190"
+          ],
+          "note": "Gross sq ft of ground-level restaurant and retail"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 470,
+          "src": [
+            "SRC-002187",
+            "SRC-002188",
+            "SRC-002190"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001119"
+          ]
         }
       ]
     }
@@ -466,6 +587,43 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001118",
+        "SRC-001119"
+      ]
+    },
+    {
+      "text": "12 stories, 137 feet; two-level basement garage of about 187,670 sq ft with 470 car and 184 bicycle spaces.",
+      "src": [
+        "SRC-002188"
+      ]
+    },
+    {
+      "text": "State Table A shows a 2019 application 20197251 for 400 units (20 very low, 40 low) and a 2020 application 20207262 for 464 units; the 2020 row notes a Development Agreement approved in 2020 and final planning entitlements in 2021.",
+      "src": [
+        "SRC-001118"
+      ]
+    },
+    {
+      "text": "Sunnyvale flyer (April 2024): pre-leasing of the 53 affordable units from May 2024, move-ins July through September 2024, lease-up expected complete December 2024.",
+      "src": [
+        "SRC-002184"
+      ]
+    },
+    {
+      "text": "Silicon Valley Voice (March 2025): 354 of 479 units leased, rents from $3,410 a month.",
+      "src": [
+        "SRC-002186"
+      ]
+    },
+    {
+      "text": "Heller Manus lists LEED Silver; BKF lists ENR 2025 Best Residential/Hospitality and PCBC 2025 Gold Nugget Award of Merit.",
+      "src": [
+        "SRC-002190",
+        "SRC-002192"
+      ]
+    },
+    {
+      "text": "State reports list APN 209-35-023, which is not in the current county parcel dataset.",
+      "src": [
         "SRC-001119"
       ]
     }
@@ -479,6 +637,85 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001739"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Sares Regis Group of Northern California",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002185",
+        "SRC-002186",
+        "SRC-002189"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Hunter Properties",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002189",
+        "SRC-002187",
+        "SRC-002188"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "STC Venture LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Joint venture developer entity",
+      "src": [
+        "SRC-002187",
+        "SRC-002192"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "J.P. Morgan",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002187"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Heller Manus Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.hellermanus.com",
+      "website_basis": "search",
+      "project_page": "https://www.hellermanus.com/the-martin",
+      "src": [
+        "SRC-002187",
+        "SRC-002188",
+        "SRC-002190"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Build Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002188",
+        "SRC-002191",
+        "SRC-002192"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.bkf.com",
+      "website_basis": "search",
+      "project_page": "https://www.bkf.com/?p=15872",
+      "src": [
+        "SRC-002192"
       ]
     }
   ],
@@ -494,11 +731,51 @@
       ]
     },
     {
+      "date": "2020-05-07",
+      "type": "Application filed",
+      "label": "Application 20207262 submitted for 464 units",
+      "src": [
+        "SRC-001118"
+      ]
+    },
+    {
       "date": "2021-01-11",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001119"
+      ]
+    },
+    {
+      "date": "2022-01",
+      "type": "Construction start",
+      "label": "STC Venture reported to have broken ground on Phase III including The Martin",
+      "src": [
+        "SRC-002191"
+      ]
+    },
+    {
+      "date": "2023-08",
+      "type": "Other",
+      "label": "Structure topped out; facade installation underway",
+      "src": [
+        "SRC-002188"
+      ]
+    },
+    {
+      "date": "2024-06",
+      "type": "Lease-up start",
+      "label": "Renters moved in starting June 2024",
+      "src": [
+        "SRC-002186"
+      ]
+    },
+    {
+      "date": "2024-07",
+      "type": "Completion",
+      "label": "YieldPro reports the building completed with leasing underway",
+      "src": [
+        "SRC-002185"
       ]
     }
   ],
@@ -512,6 +789,106 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 200 S Taaffe, Cityline Block 3 and The Martin; Heller Manus, YieldPro and city flyer opened",
+      "src": [
+        "SRC-002190",
+        "SRC-002185",
+        "SRC-002184"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 209-35-032 matches record; 209-35-023 from state report returns no parcel",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of Sunnyvale affordable rental flyer for The Martin (April 2024); Legistar file 2020-7262 already on record",
+      "src": [
+        "SRC-002184",
+        "SRC-001739"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Sunnyvale",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2019/2020 and Table A2 2021 via CKAN: 16 VL/31 L/6 M at entitlement, 55 years, 2020 application",
+      "src": [
+        "SRC-001118",
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Silicon Valley Voice March 2025: 75% leased",
+      "src": [
+        "SRC-002186"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021 and 2023, REBusinessOnline 2021 and 2022, YieldPro 2024",
+      "src": [
+        "SRC-002187",
+        "SRC-002188",
+        "SRC-002189",
+        "SRC-002191",
+        "SRC-002185"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "YieldPro and SV Voice identify Sares Regis Group of Northern California as primary residential developer",
+      "src": [
+        "SRC-002185",
+        "SRC-002186"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Heller Manus project page for The Martin",
+      "src": [
+        "SRC-002190"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021 names J.P. Morgan in the STC Venture joint venture; no lender found",
+      "src": [
+        "SRC-002187"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for The Martin Sunnyvale returned no posts",
+      "src": []
+    }
+  }
 }

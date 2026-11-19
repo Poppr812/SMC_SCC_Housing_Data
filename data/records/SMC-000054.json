@@ -470,6 +470,13 @@
             "SRC-001342",
             "SRC-001359"
           ]
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-002177"
+          ],
+          "note": "Urbanize April 2026 describes a pair of six-story structures"
         }
       ]
     },
@@ -524,6 +531,12 @@
           "src": [
             "SRC-001359"
           ]
+        },
+        {
+          "value": "40 low-income and 20 moderate-income deed-restricted units at building permit; state report lists deed-restriction type density bonus and other, and notes Inclusionary Housing Ordinance 20.380",
+          "src": [
+            "SRC-001113"
+          ]
         }
       ],
       "question": "Is the affordable count 48 low-income units (10%, per the 2021 CEQA document) or 60 units at 80-100% AMI (per 2022-2025 reports)?"
@@ -566,6 +579,36 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 40,
+              "ami": 80
+            },
+            {
+              "count": 20,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001113"
+          ],
+          "note": "State report 2025, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001113"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -594,6 +637,24 @@
       "src": [
         "SRC-001342",
         "SRC-001359"
+      ]
+    },
+    {
+      "text": "State report 2025 lists a 20% density bonus and a 55-year affordability term.",
+      "src": [
+        "SRC-001113"
+      ]
+    },
+    {
+      "text": "Kennedy Wilson release (August 13, 2025) describes the borrower as a joint venture of repeat Kennedy Wilson sponsors, and the project as two 7-story podium buildings on two sites totaling 4.12 acres.",
+      "src": [
+        "SRC-002178"
+      ]
+    },
+    {
+      "text": "Urbanize (April 1, 2026) reports construction began in mid-2025 and describes two six-story structures; the CEQA document and SF YIMBY describe seven stories.",
+      "src": [
+        "SRC-002177"
       ]
     }
   ],
@@ -706,6 +767,74 @@
         "SRC-001342"
       ],
       "website": "https://www.hanoverco.com/"
+    },
+    {
+      "role": "General contractor",
+      "company": "SBI Builders",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002177"
+      ]
+    },
+    {
+      "role": "Interior designer",
+      "company": "Parisa O'Connell Interior Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002177"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "EPT Design",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project team member (role not stated)",
+      "src": [
+        "SRC-002177"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "VCA Engineers",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project team member (role not stated)",
+      "src": [
+        "SRC-002177"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "LDI Mechanical, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project team member (role not stated)",
+      "src": [
+        "SRC-002177"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Emerald City",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project team member (role not stated)",
+      "src": [
+        "SRC-002177"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "AMPAM",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project team member (role not stated)",
+      "src": [
+        "SRC-002177"
+      ]
     }
   ],
   "financing": [
@@ -724,6 +853,14 @@
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2018-10-25",
+      "type": "Application filed",
+      "label": "Application P18-0074 submitted (state report project name PS Office Park/Hanover)",
+      "src": [
+        "SRC-001112"
+      ]
+    },
     {
       "date": "2021-07-01",
       "type": "Other",
@@ -767,6 +904,14 @@
       ]
     },
     {
+      "date": "2025-07-18",
+      "type": "Permit issued",
+      "label": "Building permits issued for 480 units",
+      "src": [
+        "SRC-001113"
+      ]
+    },
+    {
       "date": "2027",
       "type": "Completion",
       "label": "SF YIMBY: move-ins likely before the end of 2027",
@@ -791,6 +936,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Alexan Icon, 1587/1588 San Mateo Ave and Trammell Crow; Urbanize April 2026 and Kennedy Wilson release opened",
+      "src": [
+        "SRC-002177",
+        "SRC-002178"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer for 015-113-180 and 015-113-380 already on record",
+      "src": [
+        "SRC-000831"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SSF development projects map layer already on record; SSF has no Legistar Web API client",
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in South San Francisco",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A (2018, 2020) and Table A2 (2025) via data.ca.gov CKAN: application 2018-10-25, building permits 2025-07-18, 40 low and 20 moderate deed-restricted units, 55 years",
+      "src": [
+        "SRC-001112",
+        "SRC-001113"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Search found only coverage already on record (The Real Deal, Commercial Observer)",
+      "src": [
+        "SRC-000819"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Urbanize April 2026: GC SBI Builders and project team",
+      "src": [
+        "SRC-002177"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Crow Holdings development page lists no Alexan Icon property",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for a TCA Architects project page returned none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Kennedy Wilson $183M loan already on record; release adds borrower description",
+      "src": [
+        "SRC-002178"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for Alexan Icon returned no posts",
+      "src": []
+    }
+  }
 }

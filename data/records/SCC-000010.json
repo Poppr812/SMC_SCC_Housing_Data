@@ -90,8 +90,17 @@
             "SRC-001110"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-001110",
+            "SRC-002194"
+          ],
+          "note": "State report 2023 shows certificates of occupancy on 2023-05-31 for 222 units (555 E Evelyn, 2020-1090) and 249 units (605 E Evelyn, 2020-1091), 471 total; Prometheus lists the property for lease"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -117,7 +126,8 @@
           "value": 471,
           "src": [
             "SRC-001101",
-            "SRC-001688"
+            "SRC-001688",
+            "SRC-001110"
           ],
           "note": "Units in the application as reported"
         }
@@ -146,6 +156,84 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2023,
+          "src": [
+            "SRC-001110"
+          ],
+          "note": "Certificates of occupancy 2023-05-31"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.9,
+          "src": [
+            "SRC-001688"
+          ],
+          "note": "Three parcels, approximately 5.9 acres, including a 0.68-acre public park"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001688"
+          ],
+          "note": "Buildings step from three to five stories"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 667,
+          "src": [
+            "SRC-001688"
+          ],
+          "note": "Two levels below grade; 100 shared guest/public park spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 449025,
+          "src": [
+            "SRC-001688"
+          ],
+          "note": "Net habitable sq ft"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "No on-site BMR units; applicant proposed $22,772,844 as alternative mitigation for 70.65 required BMR units, paid within two weeks of entitlement, toward the 950 El Camino Real affordable project",
+          "src": [
+            "SRC-001688"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001688"
+          ],
+          "note": "General Plan amendment, rezoning to R4, Planned Community and Development Review permits, EIR"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -161,6 +249,24 @@
       "src": [
         "SRC-001689"
       ]
+    },
+    {
+      "text": "The 942-unit figure counts the 2019 entitlement row (471 units) and the two 2023 rows (222 + 249) together; the 2023 rows show certificates of occupancy for all 471 units on 2023-05-31.",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    {
+      "text": "EPC staff report: 471 units in two buildings above two levels of below-grade parking, wrapped around a 0.68-acre public park; 275 studio/one-bedroom and 196 two-/three-bedroom units; replaces mini-storage buildings; site 525, 531, 555, 565, 569 and 769 E Evelyn; public benefit contribution estimated at about $7.8 million.",
+      "src": [
+        "SRC-001688"
+      ]
+    },
+    {
+      "text": "State reports list APNs 161-15-004 and 161-15-005, which are not in the current county parcel dataset.",
+      "src": [
+        "SRC-001110"
+      ]
     }
   ],
   "parties": [
@@ -173,11 +279,32 @@
       "src": [
         "SRC-001689"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Prometheus Real Estate Group",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://prometheusapartments.com",
+      "website_basis": "search",
+      "project_page": "https://prometheusapartments.com/ca/mountain-view-apartments/the-hadley",
+      "src": [
+        "SRC-001688",
+        "SRC-002194"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-04-03",
+      "type": "Other",
+      "label": "Environmental Planning Commission hearing on the project and Final EIR",
+      "src": [
+        "SRC-001688"
+      ]
+    },
     {
       "date": "2019-04-30",
       "type": "Application filed",
@@ -218,6 +345,14 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2023-05-31",
+      "type": "Completion",
+      "label": "Certificates of occupancy for all 471 units (222 + 249) per state report",
+      "src": [
+        "SRC-001110"
+      ]
     }
   ],
   "history": [
@@ -230,6 +365,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on The Hadley, 555 E Evelyn and Prometheus; Prometheus property page opened",
+      "src": [
+        "SRC-002194"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 161-15-018 situs 555 E Evelyn; 161-15-004 returns no parcel",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View EPC staff report April 3, 2019 read in full",
+      "src": [
+        "SRC-001688"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Mountain View",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 via CKAN: 2023 rows show COs 2023-05-31 for 222 and 249 units",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search returned listing sites only",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search returned no trade coverage; NAHB award page returned 404",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Prometheus property page for The Hadley",
+      "src": [
+        "SRC-002194"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "BDE Architecture page already on record",
+      "src": [
+        "SRC-001689"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for a Prometheus construction loan on Evelyn returned none",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for The Hadley returned no posts",
+      "src": []
+    }
+  }
 }
