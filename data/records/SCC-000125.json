@@ -117,7 +117,9 @@
         {
           "value": 3,
           "src": [
-            "SRC-001320"
+            "SRC-001320",
+            "SRC-001699",
+            "SRC-002618"
           ]
         }
       ]
@@ -127,7 +129,8 @@
         {
           "value": 10.0,
           "src": [
-            "SRC-001320"
+            "SRC-001320",
+            "SRC-001699"
           ]
         }
       ]
@@ -158,8 +161,33 @@
             "SRC-001101"
           ],
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 14,
+              "ami": 100
+            },
+            {
+              "count": 14,
+              "ami": 120
+            },
+            {
+              "count": 9,
+              "ami": 160
+            },
+            {
+              "count": 9,
+              "ami": 180
+            }
+          ],
+          "src": [
+            "SRC-001699"
+          ],
+          "note": "Council report, terms presented March 10, 2026: 46 for-sale BMR units; the 14 units at 120% AMI are priced at 110% AMI. At the EPC the proposal was 14 at 90%, 14 at 120%, and 6 each at 160%, 180% and 200% AMI"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -171,6 +199,40 @@
           "note": "State report 2025, application stage: 28 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 177,
+            "4br+": 18
+          },
+          "src": [
+            "SRC-001699"
+          ],
+          "note": "Council report Table 3"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "46 below-market-rate ownership units (28 moderate-income units count toward the state density bonus; 18 units at 160-180% AMI as alternative mitigation for the city's 10% BMR tranche). BMR units are mostly the smallest floor plan (all 40 Plan 1 units, 1,288 sq ft) and are clustered in Neighborhood 2.",
+          "src": [
+            "SRC-001699"
+          ]
+        },
+        {
+          "value": "46 BMR units: 28 moderate-income and 18 above-moderate-income",
+          "src": [
+            "SRC-002618",
+            "SRC-002619"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -178,6 +240,18 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001101"
+      ]
+    },
+    {
+      "text": "Council report: 30 three-story rowhouse buildings with rear-loaded garages, 0.24-acre publicly accessible mini-park, 30 guest parking spaces, FAR 1.07, site coverage 39%. Nine floor plans from 1,288 to 2,165 sq ft. Existing site: two two-story office buildings and surface parking. Applicant/Owner listed as Stonelex, LLC.",
+      "src": [
+        "SRC-001699"
+      ]
+    },
+    {
+      "text": "Mountain View Voice: 307 trees removed (139 heritage), 440 planted; developer paying a $4.3 million parkland dedication fee; site is part of a known Superfund site and EPA sign-off is required before construction and before occupancy.",
+      "src": [
+        "SRC-002618"
       ]
     }
   ],
@@ -191,11 +265,39 @@
       "src": [
         "SRC-001320"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Stonelex, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001699",
+        "SRC-002618"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-03-11",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-001699"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-13",
+      "type": "Application filed",
+      "label": "Formal application submitted (deemed complete December 19, 2025)",
+      "src": [
+        "SRC-001699"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-12-19",
       "type": "Application filed",
@@ -203,6 +305,16 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2026-02-04",
+      "type": "Other",
+      "label": "Environmental Planning Commission recommended approval, 6-0",
+      "src": [
+        "SRC-001699",
+        "SRC-002619"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-03-10",
@@ -238,6 +350,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and project name: Mountain View Voice articles, council report",
+      "src": [
+        "SRC-002618"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 16054002: situs 515 N Whisman Rd; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar council report for March 10, 2026 (unit mix, BMR terms, application dates, EPC date)",
+      "src": [
+        "SRC-001699"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A and CEQAnet NOE already on record",
+      "src": [
+        "SRC-001101",
+        "SRC-001320"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice, February 9 and March 13, 2026",
+      "src": [
+        "SRC-002618",
+        "SRC-002619"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no trade press coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Stonelex website or project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Council report and news name no architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in council report, news or search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Stonelex / Whisman rowhouses found none",
+      "src": []
+    }
+  }
 }

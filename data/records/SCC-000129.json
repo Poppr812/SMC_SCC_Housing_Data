@@ -191,6 +191,19 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "30 permanent supportive housing units (project-based vouchers), 20 rapid rehousing, 36 served by the County Homelessness Prevention System",
+          "src": [
+            "SRC-001399"
+          ]
+        },
+        {
+          "value": "50 units for formerly unhoused or extremely low-income residents (under 30% AMI) and 139 units at 40%-70% AMI",
+          "src": [
+            "SRC-002629",
+            "SRC-002630"
+          ]
         }
       ]
     },
@@ -239,6 +252,13 @@
           "src": [
             "SRC-001401"
           ]
+        },
+        {
+          "value": 1.62,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "CT25-001 Certificate of Compliance (2025-07-18): two APNs recognized as one legal lot of about 1.62 gross acres"
         }
       ]
     },
@@ -292,6 +312,16 @@
           "src": [
             "SRC-001657"
           ]
+        },
+        {
+          "value": [
+            "Family",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-001399"
+          ],
+          "note": "30 permanent supportive housing units with project-based vouchers, 20 rapid rehousing units"
         }
       ]
     },
@@ -303,8 +333,35 @@
             "SRC-001657"
           ],
           "note": "Total sources in CTCAC staff report."
+        },
+        {
+          "value": 160000000,
+          "src": [
+            "SRC-002629",
+            "SRC-002630"
+          ],
+          "note": "$160 million per news and law-firm deal announcement"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 128,
+          "src": [
+            "SRC-002628",
+            "SRC-002629"
+          ]
+        },
+        {
+          "value": 134,
+          "src": [
+            "SRC-001399"
+          ],
+          "note": "Groundbreaking release, November 2025"
+        }
+      ],
+      "best": 1
     }
   },
   "construction_notes": [
@@ -324,6 +381,24 @@
       "text": "City of San Jose permit MP22-014 (Ministerial Permit, folder year 2022), status Approved, issue date 2023-08-24: \"SB 35 Ministerial Permit to allow for the demolition of the existing Chuck E Cheese restaurant totaling approximately 19,400 square feet and construction of a 7-story, 100 percent affordable housing apartment building consisting of 191 residential units,\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Groundbreaking release (November 19, 2025): construction and permanent financing from Lument and Bank of America; funders include Measure A, Measure E, Santa Clara County Housing Authority project-based vouchers and the County Homelessness Prevention System. Partners listed: HA Builder Group, Jett Landscape Architecture + Design, BKF Engineers, Bright Green Strategies, Redwood Energy, Murphy Burr Curry Inc., Compass for Affordable Housing, Solari Enterprises, Community Solutions.",
+      "src": [
+        "SRC-001399"
+      ]
+    },
+    {
+      "text": "California Construction News (August 2025): City Council approved a $73.7 million multifamily housing revenue bond; $19.5 million city loan, $2 million county Measure A, $27.7 million state tax credit equity and $55.4 million federal LIHTC equity; completion expected by end of 2027.",
+      "src": [
+        "SRC-002629"
+      ]
+    },
+    {
+      "text": "City building permits 2025-112707-MF (apartment) and 2025-112711-CI (parking garage) issued 2025-07-30; applicant HA Builder Group, LLC.",
+      "src": [
+        "SRC-002624"
       ]
     }
   ],
@@ -357,6 +432,35 @@
       "linkedin": null,
       "src": [
         "SRC-001400"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bank of America",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001399"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Jett Landscape Architecture + Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001399"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "HA Builder Group, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Building permit applicant",
+      "src": [
+        "SRC-002624",
+        "SRC-001399"
       ]
     }
   ],
@@ -491,6 +595,15 @@
       "estimated": true
     },
     {
+      "date": "2025-07-08",
+      "type": "Other",
+      "label": "City permit adjustment AD24-182 approved to prepare density bonus regulatory agreement",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-07-30",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -513,6 +626,15 @@
       "label": "CTCAC staff report expected completion",
       "src": [
         "SRC-001401"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027-12",
+      "type": "Completion",
+      "label": "Completion scheduled for December 2027 (deal announcement)",
+      "src": [
+        "SRC-002630"
       ],
       "estimated": true
     }
@@ -542,6 +664,99 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address and developer: CCN, Katten, SF YIMBY",
+      "src": [
+        "SRC-002629"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 56910078 and 56910080: situs 1371 Kooser Rd; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning and building permit GIS layers by APN: CT25-001, AD24-182, building permits",
+      "src": [
+        "SRC-001956",
+        "SRC-002624"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "County Measure A/NPLH loan already on record from CTCAC report",
+      "src": [
+        "SRC-001401"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CTCAC CA-24-738 and APR already on record",
+      "src": [
+        "SRC-001657"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "California Construction News August 2025",
+      "src": [
+        "SRC-002629"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY July 2025 (parking 128); Katten deal announcement",
+      "src": [
+        "SRC-002628",
+        "SRC-002630"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Affirmed Housing project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "VMWP groundbreaking release (financing, partners, parking 134)",
+      "src": [
+        "SRC-001399"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Bank of America named as lender in VMWP release",
+      "src": [
+        "SRC-001399"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts found none",
+      "src": []
+    }
+  }
 }

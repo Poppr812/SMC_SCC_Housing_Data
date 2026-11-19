@@ -202,6 +202,18 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 115,
+          "src": [
+            "SRC-002620",
+            "SRC-002621"
+          ],
+          "note": "SRM: 115 residential outdoor spaces"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -215,6 +227,30 @@
       "text": "166 assisted living and 29 memory care units.",
       "src": [
         "SRC-001398"
+      ]
+    },
+    {
+      "text": "SRM Development: 197,867 sq ft total with 18,373 sq ft of common amenity space; status Completed.",
+      "src": [
+        "SRC-002620"
+      ]
+    },
+    {
+      "text": "Merrill Gardens operates Novelle and lists independent living, assisted living and memory care.",
+      "src": [
+        "SRC-002622"
+      ]
+    },
+    {
+      "text": "City permit CP20-013 (issued 2021-05-12): demolition of an approximately 44,488 sq ft building and removal of 23 ordinance-size trees for an approximately 195,840 sq ft assisted living facility with 195 rooms; applicant and owner listed as SRM Development. Environmental review ER20-077 (Mitigated Negative Declaration) approved 2021-05-12.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (March 2021): sponsor Columbia Pacific Advisors; 195,840 sq ft, four stories, 45 feet; about 92 employees; 115 parking spaces; construction then expected to start August 2021 and take about 18 months.",
+      "src": [
+        "SRC-002621"
       ]
     }
   ],
@@ -248,6 +284,24 @@
       "src": [
         "SRC-001398"
       ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Merrill Gardens",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002622"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Urbal Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002621"
+      ]
     }
   ],
   "financing": [],
@@ -268,6 +322,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-04-03",
+      "type": "Other",
+      "label": "City permit adjustment AD25-129 approved to open two model units for pre-leasing",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-08",
@@ -294,6 +357,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name and address: SRM page, Merrill Gardens, SF YIMBY 2021",
+      "src": [
+        "SRC-002620"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 45109067: situs 3355 Almaden Ex; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer by APN: CP20-013, ER20-077, AD25-129",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project, market-rate; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A2 already on record; no CTCAC/CDLAC role",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no local news beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021 renderings article (architect, parking); traded.co and The Real Deal pages refused access (403)",
+      "src": [
+        "SRC-002621"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SRM Development project page: sq ft, parking, status",
+      "src": [
+        "SRC-002620"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Urbal Architecture named in SF YIMBY 2021; no architect project page found",
+      "src": [
+        "SRC-002621"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Construction loan coverage (The Real Deal, traded.co) refused access (403)",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts found none",
+      "src": []
+    }
+  }
 }

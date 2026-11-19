@@ -251,6 +251,57 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002623",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.49,
+          "src": [
+            "SRC-002623"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3000,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "CP20-015 description"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 133,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "AD23-658 (2024-01-25): mechanical stackers, from 110 to 133 spaces"
+        },
+        {
+          "value": 115,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "AD24-206 (2024-04-17): 115 residential stalls plus 13 retail stalls, 7 residential and 3 commercial motorcycle stalls"
+        }
+      ],
+      "best": 1
     }
   },
   "construction_notes": [
@@ -277,6 +328,24 @@
       "text": "City of San Jose permit CP20-015 (Conditional Use Permit/Amendment, folder year 2020), status Approved, issue date 2021-04-14: \"Conditional Use Permit to allow: The construction of a six-story mixed-use building with 3,000 square feet of commercial and podium parking on the ground floor and 194 units of 100% affordable multi-family units on the upper floors in the Alum Rock Urban\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "AO project page: 194 units on 1.49 acres (130.20 du/ac), 192 apartments for low-income families plus 2 manager units, six-story podium, mixed-use modular development, TCAC-funded, 30%-70% AMI; client Pacific West Communities.",
+      "src": [
+        "SRC-002623"
+      ]
+    },
+    {
+      "text": "Housing Action Coalition endorsement: developer The Pacific Companies, 194 homes affordable to 30%-80% AMI.",
+      "src": [
+        "SRC-002625"
+      ]
+    },
+    {
+      "text": "City building permits 2024-086346-MF (apartment) and 2024-086401-CI (mixed use) issued 2024-05-30 at 1928 Alum Rock Av; applicant Pacific West Builders Inc.",
+      "src": [
+        "SRC-002624"
       ]
     }
   ],
@@ -330,6 +399,27 @@
       "other_role": "Applicant (CTCAC)",
       "email": "calebr@tpchousing.com",
       "phone": "208.461.0022"
+    },
+    {
+      "role": "Architect",
+      "company": "AO",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.aoarchitects.com/",
+      "project_page": "https://www.aoarchitects.com/?p=25304",
+      "src": [
+        "SRC-002623"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Pacific West Builders, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Building permit applicant",
+      "src": [
+        "SRC-002624"
+      ]
     }
   ],
   "financing": [
@@ -432,12 +522,30 @@
       "estimated": false
     },
     {
+      "date": "2024-01-25",
+      "type": "Other",
+      "label": "City permit adjustment AD23-658 approved (parking stackers, FAR 2.56)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-05-30",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-02-11",
+      "type": "Other",
+      "label": "City major permit adjustment AD26-044 approved",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -470,6 +578,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name and address: AO project page, Housing Action Coalition",
+      "src": [
+        "SRC-002623"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 48119003: situs 1928 Alum Rock Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning and building permit GIS layers by APN (AD23-658, AD24-206, AD26-044, building permits)",
+      "src": [
+        "SRC-001956",
+        "SRC-002624"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No county funding found in CTCAC report or search",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CTCAC staff report CA-23-611 and APR already on record",
+      "src": [
+        "SRC-001644"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no local news on construction or leasing",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Registry and The Real Deal financing items refused access (403)",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Pacific Companies project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "AO project page: architect of record and design architect",
+      "src": [
+        "SRC-002623"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Lenders already on record from CTCAC report",
+      "src": [
+        "SRC-001644"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts found none",
+      "src": []
+    }
+  }
 }
