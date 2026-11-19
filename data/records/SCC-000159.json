@@ -67,6 +67,36 @@
           37.2546735
         ]
       ]
+    },
+    {
+      "apn": "424-08-035",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9603951,
+          37.2534033
+        ],
+        [
+          -121.960451,
+          37.2533308
+        ],
+        [
+          -121.9618068,
+          37.2539955
+        ],
+        [
+          -121.96173,
+          37.254058
+        ],
+        [
+          -121.9603951,
+          37.2534033
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -147,6 +177,13 @@
             "SRC-001120"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "ND-26-001",
+          "src": [
+            "SRC-001590"
+          ],
+          "note": "Mitigated Negative Declaration application"
         }
       ]
     },
@@ -198,6 +235,50 @@
           "note": "State report 2024, application stage: 28 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "2br": 54,
+            "3br": 84
+          },
+          "src": [
+            "SRC-002789"
+          ],
+          "note": "Two-bedroom units with tandem garages; three-bedroom with two-car garages"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 6.71,
+          "src": [
+            "SRC-002789",
+            "SRC-001590"
+          ],
+          "note": "Two contiguous parcels; 6.30 acres residential"
+        },
+        {
+          "value": 6.41,
+          "src": [
+            "SRC-001590"
+          ],
+          "note": "Parcel size in staff report project data"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 276,
+          "src": [
+            "SRC-001590"
+          ],
+          "note": "In private garages, 54 tandem; plus 20 guest spaces"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -210,6 +291,13 @@
     {
       "text": "28 low-income units. Town report also lists APN 424-08-035.",
       "src": [
+        "SRC-001590"
+      ]
+    },
+    {
+      "text": "138 townhomes in 18 three-story buildings on 18 residential lots, up to 43 feet 3-1/8 inches tall; 0.41 acres of open space; two new driveways off Oka Road. Condominium vesting tentative map.",
+      "src": [
+        "SRC-002789",
         "SRC-001590"
       ]
     }
@@ -248,6 +336,24 @@
       ]
     },
     {
+      "date": "2026-03-06",
+      "type": "Other",
+      "label": "Initial Study / Mitigated Negative Declaration released for public review (SCH 2026030319)",
+      "src": [
+        "SRC-002789"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-27",
+      "type": "Other",
+      "label": "Planning Commission hearing",
+      "src": [
+        "SRC-001590"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-08-18",
       "type": "Approved",
       "label": "Town Council approval at special meeting",
@@ -272,6 +378,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 14789 Oka Road / Urban Catalyst; opened CEQAnet and Town PC report",
+      "src": [
+        "SRC-002789"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 424-08-074 and 424-08-035 (Oka Ln situs); PC report lists both APNs",
+      "src": [
+        "SRC-001098",
+        "SRC-001590"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Town PC staff report dated 2026-05-22 for 2026-05-27: acreage, parking, ND-26-001",
+      "src": [
+        "SRC-001590"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Town project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026030319: IS/MND, unit mix, 6.71 acres",
+      "src": [
+        "SRC-002789"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Los Gatan approval article already on record",
+      "src": [
+        "SRC-001555"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2024 pre-application article; facts already on record",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Urban Catalyst search found no Oka Road project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in opened sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity found; Urban Catalyst runs Opportunity Zone funds, no link to this project found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public posts",
+      "src": []
+    }
+  }
 }

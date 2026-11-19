@@ -1,6 +1,6 @@
 {
   "id": "SCC-000530",
-  "name": "1484 Kifer Road",
+  "name": "The Greenway (1484 Kifer Rd)",
   "parcels": [
     {
       "apn": "216-27-023",
@@ -162,14 +162,16 @@
         {
           "value": 137,
           "src": [
-            "SRC-001481"
+            "SRC-001481",
+            "SRC-002790"
           ],
           "note": "Planning Commission item, June 2026"
         },
         {
           "value": 136,
           "src": [
-            "SRC-001482"
+            "SRC-001482",
+            "SRC-002792"
           ],
           "note": "SF YIMBY, Aug. 2026"
         }
@@ -204,6 +206,46 @@
           "src": [
             "SRC-001482"
           ]
+        },
+        {
+          "value": "28 of 137 units for sale at moderate-income levels (applicant letter)",
+          "src": [
+            "SRC-002790"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 28,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-002790"
+          ],
+          "note": "Applicant letter: 28 units (20%) for sale at moderate-income levels"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 244,
+          "src": [
+            "SRC-002791",
+            "SRC-002790"
+          ],
+          "note": "238 in garages, 6 surface"
+        },
+        {
+          "value": 252,
+          "src": [
+            "SRC-001482"
+          ]
         }
       ]
     }
@@ -213,6 +255,25 @@
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
         "SRC-001481"
+      ]
+    },
+    {
+      "text": "Approved Planning Commission item: Special Development Permit to demolish a 96,410 sq ft one-story industrial building and build 137 townhome-style condominiums in 13 three-story buildings, and a Vesting Tentative Parcel Map creating four lots. CEQA covered by the 2016 Lawrence Station Area Plan EIR and 2021 SEIR.",
+      "src": [
+        "SRC-001481"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports Fortinet bought the lot in 2021 for an estimated $44 million.",
+      "src": [
+        "SRC-001482"
+      ]
+    },
+    {
+      "text": "Applicant requested two density bonus concessions (BMR unit size and location) and 14 waivers. Maximum height 40 feet.",
+      "src": [
+        "SRC-002790",
+        "SRC-002791"
       ]
     }
   ],
@@ -235,11 +296,39 @@
       "src": [
         "SRC-001482"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Fortinet Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-001481"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-08-28",
+      "type": "Other",
+      "label": "City Council approved sale agreement for city-owned site (former Unilever margarine plant) to Youland Smarthome LLC",
+      "src": [
+        "SRC-002793"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-26",
+      "type": "Other",
+      "label": "Planning Commission study session (136-unit plan)",
+      "src": [
+        "SRC-002792"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-08-24",
       "type": "Approved",
@@ -260,6 +349,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1484 Kifer / City Ventures / The Greenway",
+      "src": [
+        "SRC-001482"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 216-27-023; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Sunnyvale Legistar 26-0639 (PC approved 2026-08-24) with data table and applicant letter; 26-0249 study session; 2018 sale item 7354. No City Council appeal matter found in Legistar",
+      "src": [
+        "SRC-001481",
+        "SRC-002791",
+        "SRC-002790",
+        "SRC-002792"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No CEQAnet filing; city relied on 2016 LSAP EIR and 2021 SEIR",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched local news for 1484 Kifer / The Greenway; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-08-26: 252 parking, Fortinet 2021 purchase",
+      "src": [
+        "SRC-001482"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "cityventures.com community list has no Sunnyvale or Kifer Road page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SDG Architects already on record; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public posts",
+      "src": []
+    }
+  }
 }

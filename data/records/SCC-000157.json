@@ -439,6 +439,13 @@
             "SRC-001101"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 128,
+          "src": [
+            "SRC-002778"
+          ],
+          "note": "Developer project page: 128 condominiums"
         }
       ]
     },
@@ -468,7 +475,8 @@
         {
           "value": 200,
           "src": [
-            "SRC-001321"
+            "SRC-001321",
+            "SRC-001702"
           ]
         }
       ]
@@ -521,8 +529,25 @@
             "SRC-001101"
           ],
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 11,
+              "ami": 50
+            },
+            {
+              "count": 11,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001702"
+          ],
+          "note": "Council report: 11 very low-income units and 11 moderate-income units (120% AMI or less)"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -534,6 +559,43 @@
           "note": "State report 2025, application stage: 22 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 8,
+            "1br": 32,
+            "2br": 73,
+            "3br": 27
+          },
+          "src": [
+            "SRC-001702"
+          ],
+          "note": "Units range from 728 to 2,062 sq ft"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.43,
+          "src": [
+            "SRC-001702"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 199151,
+          "src": [
+            "SRC-002777"
+          ],
+          "note": "Residential area in Table 1; total building floor area 293,756 sq ft"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -541,6 +603,26 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001101"
+      ]
+    },
+    {
+      "text": "City Council approved the project 4-2 on April 28, 2026. The April 23, 2026 settlement lowered parkland fees from about $2.9 million to $2 million. The Council also approved a $4.2 million sale of the Fairmont Avenue segment between Hope and Castro streets to Castro GPRV 10, LLC.",
+      "src": [
+        "SRC-002781",
+        "SRC-002779",
+        "SRC-001702"
+      ]
+    },
+    {
+      "text": "Eight-story podium building, five levels of wood frame over two concrete levels, with two levels of below-grade parking; maximum height about 103 feet. Total floor area about 293,756 sq ft.",
+      "src": [
+        "SRC-002777"
+      ]
+    },
+    {
+      "text": "Developer project page lists a purchase date of August 2015.",
+      "src": [
+        "SRC-002778"
       ]
     }
   ],
@@ -554,6 +636,27 @@
       "src": [
         "SRC-001321"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "GPR Ventures",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://gprventures.com",
+      "project_page": "https://gprventures.com/portfolio/castro/",
+      "src": [
+        "SRC-002778",
+        "SRC-002779"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Kenneth Rodrigues & Partners, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002777"
+      ]
     }
   ],
   "financing": [],
@@ -566,6 +669,24 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2025-10-22",
+      "type": "Other",
+      "label": "Zoning Administrator hearing; recommended approval",
+      "src": [
+        "SRC-002780"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-10",
+      "type": "Other",
+      "label": "City Council closed session authorized $2 million parkland fee settlement (4-1)",
+      "src": [
+        "SRC-002781"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-04-28",
@@ -606,6 +727,102 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 881 Castro / Castro Commons / GPR Ventures; opened MV Voice, SJ Spotlight, CEQA report",
+      "src": [
+        "SRC-002779",
+        "SRC-002777"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 158-06-037: situs 881 Castro St, no owner field; Council report lists the same six APNs",
+      "src": [
+        "SRC-001098",
+        "SRC-001702"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar matter 9738 (adopted 2026-04-28) and Council report: unit mix, BMR levels, 1.43 acres. mountainview.gov project page returned 403",
+      "src": [
+        "SRC-001702",
+        "SRC-001701"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet: Class 32 exemption report (Sept 2025) and NOE 2026041413; APR already on record",
+      "src": [
+        "SRC-002777",
+        "SRC-001321"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "MV Voice 2025-10-24 and 2026-04-30; SJ Spotlight 2026-04-30",
+      "src": [
+        "SRC-002780",
+        "SRC-002779",
+        "SRC-002781"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2021 article on parcel purchases returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "gprventures.com Projects Under Development: Castro page (128 condos, purchase Aug 2015)",
+      "src": [
+        "SRC-002778"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQA report credits site plan to Kenneth Rodrigues & Partners, Inc.; MV Voice names Ken Rodrigues as architect",
+      "src": [
+        "SRC-002777",
+        "SRC-002780"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "News reports name no lender; developer cited difficulty getting condo construction loans",
+      "src": [
+        "SRC-002781"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for GPR Ventures Castro posts found none",
+      "src": []
+    }
+  }
 }

@@ -301,7 +301,9 @@
         {
           "value": 140,
           "src": [
-            "SRC-001142"
+            "SRC-001142",
+            "SRC-002783",
+            "SRC-002782"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -312,7 +314,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -330,6 +333,12 @@
           "value": "25 deed-restricted units reported to the state",
           "src": [
             "SRC-001142"
+          ]
+        },
+        {
+          "value": "25 affordable units; density bonus based on 15% very low-income and 15% moderate-income units",
+          "src": [
+            "SRC-002783"
           ]
         }
       ]
@@ -369,6 +378,68 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002782"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.24,
+          "src": [
+            "SRC-002783"
+          ],
+          "note": "Four lots merged into one"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 39,
+            "1br": 68,
+            "2br": 33
+          },
+          "src": [
+            "SRC-002783"
+          ],
+          "note": "Affordable: 7 studios, 12 one-bedroom, 6 two-bedroom"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 138,
+          "src": [
+            "SRC-002782"
+          ],
+          "note": "Plan set lists an automated parking system"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002783",
+            "SRC-002784"
+          ],
+          "note": "By-right processing under Gov. Code 65583.2(i) as a Housing Element site; State Density Bonus"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -377,6 +448,18 @@
       "src": [
         "SRC-001141",
         "SRC-001142"
+      ]
+    },
+    {
+      "text": "Planning Commission adopted Resolution 2025-18 approving the project 5-1 on August 19, 2025. CEQA does not apply under by-right processing.",
+      "src": [
+        "SRC-002783"
+      ]
+    },
+    {
+      "text": "Five-story building, about 147,198 sq ft per the ALUC application; 60 feet to the structure plus an 8-foot mechanical screen (68 feet total).",
+      "src": [
+        "SRC-002782"
       ]
     }
   ],
@@ -388,6 +471,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Prometheus Real Estate Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002783",
+        "SRC-002784"
       ]
     }
   ],
@@ -409,6 +502,34 @@
       "src": [
         "SRC-001142"
       ]
+    },
+    {
+      "date": "2025-08-28",
+      "type": "Other",
+      "label": "Appeal of Planning Commission approval filed",
+      "src": [
+        "SRC-002783"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-28",
+      "type": "Other",
+      "label": "City Council heard appeal; Resolution 2025-68 upheld Planning Commission approval",
+      "src": [
+        "SRC-002783",
+        "SRC-002784"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-22",
+      "type": "Other",
+      "label": "Airport Land Use Committee found project consistent with San Carlos Airport plan (6-1)",
+      "src": [
+        "SRC-002785"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -416,6 +537,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 580 Masonic Way / 500-580 Masonic Way Belmont; opened C/CAG and city agenda documents",
+      "src": [
+        "SRC-002783"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC parcel layer for 040-315-010; owner already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Belmont Council 2025-10-28 agenda packet (appeal staff report, draft resolution); belmont.gov project page and documents returned 403",
+      "src": [
+        "SRC-002783",
+        "SRC-002784"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "C/CAG ALUC: application materials and January 22, 2026 minutes",
+      "src": [
+        "SRC-002782",
+        "SRC-002785"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR rows already on record; by-right project exempt from CEQA, no CEQAnet filing found",
+      "src": [
+        "SRC-001142"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles on approval and resident lawsuit returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched trade press for 500-580 Masonic Way; no coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for a Prometheus Real Estate Group Masonic Way project page found none",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in opened city or C/CAG documents",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public posts",
+      "src": []
+    }
+  }
 }
