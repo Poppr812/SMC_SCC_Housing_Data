@@ -144,6 +144,14 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 4000,
+          "src": [
+            "SRC-002129",
+            "SRC-002130"
+          ],
+          "note": "Approved plan as reported: 4,000 homes; Google's page says the project is studying up to 5,900 units"
         }
       ]
     },
@@ -162,6 +170,13 @@
             "SRC-001956"
           ],
           "note": "City folder 140436, PT Subdivision Map (permit type: Subdivision (Legacy)); city permit status: Approved. Matched by APN."
+        },
+        {
+          "value": "GP19-009, PDC19-039, PD19-029, PT20-027, HL20-004, HL20-005, HP20-002",
+          "src": [
+            "SRC-002131"
+          ],
+          "note": "Files listed on City Council matter 21-1186"
         }
       ]
     },
@@ -173,6 +188,48 @@
             "SRC-001099"
           ],
           "note": "State report (through 2019): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002129",
+            "SRC-002130"
+          ],
+          "note": "Article: about 25% of units, roughly 1,000, affordable. Google page: support for 25% affordable housing in the Diridon Station Area."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 80,
+          "src": [
+            "SRC-002129"
+          ],
+          "note": "Plan area as reported"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 7300000,
+          "src": [
+            "SRC-002129",
+            "SRC-002130"
+          ],
+          "note": "Office space; Google's page lists 500,000 sq ft of retail, cultural, arts, education and hotel space separately"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "About 25% of the 4,000 homes, roughly 1,000 units, affordable as reported at approval; Google's page describes support for 25% affordable housing in the Diridon Station Area",
+          "src": [
+            "SRC-002129",
+            "SRC-002130"
+          ]
         }
       ]
     }
@@ -200,6 +257,18 @@
       "text": "City of San Jose permit PT20-027 (PT Subdivision Map, folder year 2020), status Approved, issue date 2024-01-25: \"Vesting Tentative Map to allow 50 lots, up to 5900 residential condominiums and up to 20 commercial condominiums.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight: City Council approved the Downtown West plan unanimously on May 25, 2021, with a $200 million community benefits package including $154.8 million for anti-displacement, homelessness and affordable housing efforts.",
+      "src": [
+        "SRC-002129"
+      ]
+    },
+    {
+      "text": "City Council matter 21-1186 (agenda date 2021-05-25) covers files GP19-009, PDC19-039, PD19-029, PT20-027, HL20-004, HL20-005 and HP20-002.",
+      "src": [
+        "SRC-002131"
       ]
     }
   ],
@@ -235,6 +304,14 @@
         "SRC-001766"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-12-17",
+      "type": "Other",
+      "label": "City Council item on allocation of the community benefit payment from Google (file 24-2346)",
+      "src": [
+        "SRC-002132"
+      ]
     }
   ],
   "history": [
@@ -257,6 +334,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Downtown West, Google, Diridon; Spotlight approval article and Google project page opened",
+      "src": [
+        "SRC-002129",
+        "SRC-002130"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 259-38-132: situs 450 W Santa Clara St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Legistar API: matter 21-1186 (2021-05-25) and 24-2346 (2024-12-17). sanjoseca.gov not used (blocks automated access)",
+      "src": [
+        "SRC-002131",
+        "SRC-002132"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR data and CEQAnet SCH 2019080493 already on record",
+      "src": [
+        "SRC-001099",
+        "SRC-001767"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight approval article (May 2021); no 2025-2026 coverage found",
+      "src": [
+        "SRC-002129"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2024 article on a possible restart returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "realestate.withgoogle.com/sanjose: 4,000 homes, studying up to 5,900, 7.3M sq ft office; no dated updates after 2021",
+      "src": [
+        "SRC-002130"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect identified in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lenders or equity partners found in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No LinkedIn pages surfaced in web searches for the project",
+      "src": []
+    }
+  }
 }

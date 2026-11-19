@@ -111,8 +111,38 @@
             "SRC-001106"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 583,
+          "src": [
+            "SRC-001102"
+          ],
+          "note": "State report 2023 row, PLN22-00211: minor modification to PLN2018-13436 raising units from 580 to 583, three 12-story towers, approved 2023-02-26. The 1,163 figure is the sum of the 580- and 583-unit rows."
+        },
+        {
+          "value": 580,
+          "src": [
+            "SRC-001102",
+            "SRC-002141"
+          ],
+          "note": "PLN2018-13436 as approved 2019-10-16"
+        },
+        {
+          "value": 584,
+          "src": [
+            "SRC-002142"
+          ],
+          "note": "As reported August 2023"
+        },
+        {
+          "value": 301,
+          "src": [
+            "SRC-002143"
+          ],
+          "note": "Revised six-story plan in a preliminary application filed June 2025"
         }
-      ]
+      ],
+      "best": 2
     },
     "affordability_type": {
       "claims": [
@@ -128,6 +158,12 @@
       "claims": [
         {
           "value": "48 deed-restricted units reported to the state",
+          "src": [
+            "SRC-001102"
+          ]
+        },
+        {
+          "value": "State report 2019 row (PLN2018-13436, 580 units) lists 48 moderate-income deed-restricted units; 2023 row (PLN22-00211, 583 units) lists the 48 moderate-income units as non-deed-restricted.",
           "src": [
             "SRC-001102"
           ]
@@ -159,6 +195,65 @@
             "SRC-001106"
           ],
           "note": "State report 2018, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 48,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001102"
+          ],
+          "note": "State report 2019 entitlement row (PLN2018-13436): 48 moderate-income deed-restricted units"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 119,
+            "1br": 316,
+            "2br": 145,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002142"
+          ],
+          "note": "Three-tower plan; article lists 4 more units in tower B of unspecified size"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 12,
+          "src": [
+            "SRC-002142",
+            "SRC-001102"
+          ],
+          "note": "Three-tower plan, 158 ft"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-002143"
+          ],
+          "note": "Revised 301-unit plan (2025 preliminary application)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.9,
+          "src": [
+            "SRC-002141"
+          ],
+          "note": "Site area in the 2019 approval as described in the report to council"
         }
       ]
     }
@@ -169,6 +264,24 @@
       "src": [
         "SRC-001106",
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "Report to Council 23-1329: the 2019 approval covers two 12-story buildings and one 11-story building over a three-level parking podium; parkland met through dedication of a 1.09-acre (44,649 sq ft) public neighborhood park built by the developer, private amenities and fees.",
+      "src": [
+        "SRC-002141"
+      ]
+    },
+    {
+      "text": "SF YIMBY, August 2023: Holland had not started work on the three-tower project.",
+      "src": [
+        "SRC-002142"
+      ]
+    },
+    {
+      "text": "The Registry, July 2025: Holland Partner Group filed a preliminary application in June 2025 for a six-story apartment building with 301 rental units, replacing the three-tower plan; rendering credited to KTGY.",
+      "src": [
+        "SRC-002143"
       ]
     }
   ],
@@ -182,6 +295,16 @@
         "SRC-001714"
       ],
       "website": "https://www.hollandpartnergroup.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002142",
+        "SRC-002143"
+      ]
     }
   ],
   "financing": [],
@@ -196,11 +319,44 @@
       ]
     },
     {
+      "date": "2019-10-16",
+      "type": "Approved",
+      "label": "City approved 580-unit project (PLN2018-13436)",
+      "src": [
+        "SRC-001102",
+        "SRC-002141"
+      ]
+    },
+    {
       "date": "2023-02-26",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001102"
+      ]
+    },
+    {
+      "date": "2023-09-12",
+      "type": "Other",
+      "label": "City Council resolutions vacating easements at 2200 Calle De Luna",
+      "src": [
+        "SRC-002144"
+      ]
+    },
+    {
+      "date": "2023-12-05",
+      "type": "Other",
+      "label": "City Council action on schematic design of the 1.09-acre neighborhood park",
+      "src": [
+        "SRC-002141"
+      ]
+    },
+    {
+      "date": "2025-06",
+      "type": "Application filed",
+      "label": "Preliminary application for revised six-story, 301-unit plan",
+      "src": [
+        "SRC-002143"
       ]
     }
   ],
@@ -224,6 +380,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 2200 Calle De Luna and Holland Tasman East; opened SF YIMBY 2023 and The Registry 2025",
+      "src": [
+        "SRC-002142",
+        "SRC-002143"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 097-05-058: situs 2200 Calle De Luna; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar API: matters 23-751 (2023-09-12), 23-1329 (2023-12-05, RTC text), 23-1209. santaclaraca.gov blocks automated access",
+      "src": [
+        "SRC-002144",
+        "SRC-002141"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A/A2 (Santa Clara): PLN2018-13436 (2018, 2019 rows) and PLN22-00211 (2022, 2023 rows)",
+      "src": [
+        "SRC-001102",
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No local news coverage found beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-08-07; The Registry 2025-07-25 (visible lede)",
+      "src": [
+        "SRC-002142",
+        "SRC-002143"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Holland project page for 2200 Calle De Luna surfaced in searches",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "KTGY project page ktgy.com/work/2200-calle-de-luna returned 403",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lenders or equity partners found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com returned no project pages",
+      "src": []
+    }
+  }
 }

@@ -389,6 +389,21 @@
           ]
         }
       ]
+    },
+    {
+      "text": "1205 Coleman Ave, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-001102",
+        "SRC-002134"
+      ]
+    },
+    {
+      "text": "330 Chastain Pl, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -432,6 +447,14 @@
             "SRC-001504"
           ],
           "note": "About 1,565 apartments at full build-out; first phase 725 (Orlo 318, Alba 407)"
+        },
+        {
+          "value": 725,
+          "src": [
+            "SRC-001102",
+            "SRC-001106"
+          ],
+          "note": "Phase 1 only (PLN2020-14667): Orlo 318 and Alba 407; full build-out reported as about 1,565"
         }
       ]
     },
@@ -466,11 +489,126 @@
             "SRC-001947"
           ],
           "note": ""
+        },
+        {
+          "value": "State report: Orlo (1200 Rickabaugh Way) 16 low-income and 16 moderate-income deed-restricted units; Alba (350 Chastain Pl) 21 low-income and 20 moderate-income; 55-year term. Phase 1 entitlement row notes the requirement is through the development agreement.",
+          "src": [
+            "SRC-001102"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 69,
+            "1br": 345,
+            "2br": 283,
+            "3br": 28,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002133"
+          ],
+          "note": "Phase 1 only: Building 1 (318) 31 studios, 150 1BR, 123 2BR, 14 3BR; Building 2 (407) 38 studios, 195 1BR, 160 2BR, 14 3BR"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 37,
+              "ami": 80
+            },
+            {
+              "count": 36,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001102"
+          ],
+          "note": "Phase 1 entitlement row (PLN2020-14667, 2021): 37 low-income and 36 moderate-income deed-restricted units (AMI is the category's upper limit). Building rows: Orlo 16 low + 16 moderate; 350 Chastain Pl 21 low + 20 moderate"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001102"
+          ],
+          "note": "Term reported for deed-restricted units"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 45000,
+          "src": [
+            "SRC-002133"
+          ],
+          "note": "Retail in the full masterplan as reported"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 23,
+          "src": [
+            "SRC-002134"
+          ],
+          "note": "Overall site; Phase I ground lease covers 13.3 acres"
+        },
+        {
+          "value": 23.8,
+          "src": [
+            "SRC-002135"
+          ],
+          "note": "Full community as reported by the architect"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PLN2020-14667, PLN22-00504, BLD2021-60640, BLD2021-61985",
+          "src": [
+            "SRC-001102",
+            "SRC-001106"
+          ],
+          "note": "Local tracking numbers as reported to the state"
         }
       ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Full masterplan as reported: four apartment buildings with about 1,565 apartments, a 225-key hotel and 45,000 sq ft of retail.",
+      "src": [
+        "SRC-002133",
+        "SRC-002135"
+      ]
+    },
+    {
+      "text": "Berkadia: Holland Partner Group to assume a 99-year ground lease of 13.3 acres (Phase I) from Hunter Properties, Inc., part of a 23-acre site at 1205 Coleman Avenue; Berkadia brokered the lease for Hunter Properties.",
+      "src": [
+        "SRC-002134"
+      ]
+    },
+    {
+      "text": "State report lists PLN22-00504 (2023) as a 406-unit project at 350 Chastain Pl, entitlement approved 2023-02-14; the building permit row (BLD2021-61985) lists 407 units.",
+      "src": [
+        "SRC-001102"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -499,11 +637,128 @@
       "src": [
         "SRC-001504"
       ]
+    },
+    {
+      "role": "Lender",
+      "company": "Sekisui House",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002133"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Petersen Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002133"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002133"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hunter Properties, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Ground lessor (99-year ground lease, Phase I)",
+      "src": [
+        "SRC-002134"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Berkadia",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002134"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Sekisui House",
+      "program": "Building 1 (318 units)",
+      "amount": 128000000,
+      "date": "2022",
+      "src": [
+        "SRC-002133"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Sekisui House",
+      "program": "Building 2, 350 Chastain Place (407 units)",
+      "amount": 168000000,
+      "date": "2022-12",
+      "src": [
+        "SRC-002133"
+      ]
+    }
+  ],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2020-10-20",
+      "type": "Application filed",
+      "label": "Phase 1 application submitted (PLN2020-14667, 725 units)",
+      "src": [
+        "SRC-001106"
+      ]
+    },
+    {
+      "date": "2021-03-17",
+      "type": "Approved",
+      "label": "Phase 1 architectural review approved (725 units)",
+      "src": [
+        "SRC-001102",
+        "SRC-001106"
+      ]
+    },
+    {
+      "date": "2022-04-06",
+      "type": "Permit issued",
+      "label": "Building permit issued, Orlo (BLD2021-60640, 318 units)",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    {
+      "date": "2022-09-30",
+      "type": "Permit issued",
+      "label": "Building permit issued, 350 Chastain Pl (BLD2021-61985, 407 units)",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    {
+      "date": "2025-03-05",
+      "type": "Completion",
+      "label": "Certificate of occupancy, Orlo (318 units)",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    {
+      "date": "2025-11-06",
+      "type": "Completion",
+      "label": "Certificate of occupancy, 350 Chastain Pl (407 units)",
+      "src": [
+        "SRC-001102"
+      ]
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -519,6 +774,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Gateway Crossing, Orlo, Alba, Holland Partner Group; opened SF YIMBY loan article, Berkadia release, MVE post",
+      "src": [
+        "SRC-002133",
+        "SRC-002134",
+        "SRC-002135"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 230-60-001 situs 1200 Rickabaugh Wy; 230-60-002 situs 330 Chastain Pl; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "santaclaraca.gov blocks automated access; Santa Clara Legistar title search found no Gateway Crossing matters",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A and A2 (Santa Clara): PLN2020-14667, PLN22-00504, BLD2021-60640, BLD2021-61985 rows",
+      "src": [
+        "SRC-001102",
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Jose Spotlight piece surfaced in search; Daily Journal and similar outlets return 403; no new facts from local news",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2022-12-13 loan article; The Real Deal and Connect CRE returned 403",
+      "src": [
+        "SRC-002133"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Holland leasing site already on record",
+      "src": [
+        "SRC-001946"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "MVE + Partners blog, 2025-10-27: phase 1 complete, 725 homes, 23.8-acre community, 225-room hotel",
+      "src": [
+        "SRC-002135"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Sekisui House construction loans of $128M and $168M (SF YIMBY)",
+      "src": [
+        "SRC-002133"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com returned no project pages",
+      "src": []
+    }
+  }
 }
