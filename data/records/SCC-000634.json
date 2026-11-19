@@ -153,11 +153,28 @@
           "note": "City file H26-031 (Site Development Permit/Amendment): \"Site Development Permit to allow the demolition of an existing two-story commercial building and the construction of a seven-story multifamily residential building consisting of 110-units with two stories of structured parking totaling 122 parking spaces.\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 122,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file H26-031: two stories of structured parking totaling 122 spaces"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "City of San Jose permit H26-031 (Site Development Permit/Amendment, folder year 2026), status Under Review: \"Site Development Permit to allow the demolition of an existing two-story commercial building and the construction of a seven-story multifamily residential building consisting of 110-units with two stories of structured parking totaling 122 parking spaces.\" (city text cut off at 255 characters)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City file PRE26-295 describes demolishing the existing commercial building and using SB 6 to build a seven-story multifamily residential building with podium parking.",
       "src": [
         "SRC-001956"
       ]
@@ -173,11 +190,55 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Hill / Ho / Pang / Nguenphuc / Pang",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner name on city planning records",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Anthony Ho",
+      "contact": "Anthony Ho",
+      "linkedin": null,
+      "other_role": "Applicant on city planning records",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-09-02",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE25-278 filed (completed 2025-11-10)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "type": "Other",
+      "label": "Environmental review ER26-169 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Other",
+      "label": "SB 330 preliminary application PRE26-295 filed: seven-story residential building using SB 6, podium parking",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2026-10-02",
       "type": "Application filed",
@@ -193,6 +254,83 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search on 2858 Stevens Creek Blvd and Gratus Ventures; no project coverage found",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 277-34-015: situs 2858 Stevens Creek Bl; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer by APN: PRE25-278, ER26-169, H26-031, PRE26-295",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project in San Jose",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Table A searched for 2858; no row",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of local news; nothing on this address",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and other trade press; nothing on this address",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Gratus Ventures, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city records or search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no public post found",
+      "src": []
+    }
+  }
 }

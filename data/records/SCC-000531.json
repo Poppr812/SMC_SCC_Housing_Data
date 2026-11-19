@@ -309,6 +309,18 @@
           "src": [
             "SRC-001484"
           ]
+        },
+        {
+          "value": "Homes for households at 30% to 70% of area median income, prioritized for families experiencing or at risk of homelessness",
+          "src": [
+            "SRC-002985"
+          ]
+        },
+        {
+          "value": "ENA requires at least 40% of units below 60% AMI, half of those below 50% AMI, and states intent to set aside at least 25% of units for unhoused households",
+          "src": [
+            "SRC-002986"
+          ]
         }
       ]
     },
@@ -331,6 +343,112 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 28,
+            "1br": 24,
+            "2br": 30,
+            "3br": 28,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002983"
+          ],
+          "note": "Project data summary, sheet A1.3, July 2026 Planning Commission packet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 65,
+          "src": [
+            "SRC-002984",
+            "SRC-002983"
+          ],
+          "note": "0.59 spaces per unit, enclosed and surface"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 75163,
+          "src": [
+            "SRC-002983"
+          ],
+          "note": "Residential units area; proposed gross floor area is 123,735 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002984"
+          ],
+          "note": "State Density Bonus request: 57 base units under DSP Block 16 plus 53 density bonus units, height increase and four concessions"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 87,
+              "ami": 80
+            },
+            {
+              "count": 22,
+              "ami": 110
+            }
+          ],
+          "src": [
+            "SRC-002984"
+          ],
+          "note": "Application letter gives these as maximum affordability levels; final levels to be set by funding sources"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-002986",
+            "SRC-002985"
+          ],
+          "note": "Staff report: retains two- and three-bedroom units to compete in the TCAC Large Family category"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 7325000,
+          "src": [
+            "SRC-002986"
+          ],
+          "note": "City of Sunnyvale purchased the site on 2023-09-15 for $7,325,000 from Housing Mitigation Funds"
+        },
+        {
+          "value": 7350000,
+          "src": [
+            "SRC-002987"
+          ],
+          "note": "Purchase price in the Wells Fargo purchase and sale agreement assigned to the city (August 2023 staff report)"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -338,6 +456,25 @@
       "text": "City is the site owner.",
       "src": [
         "SRC-001484"
+      ]
+    },
+    {
+      "text": "February 2026 staff report: four proposals were presented. Current Proposal A had six stories and 122 units with 65 stalls and a $20,325,000 anticipated city funding request; Proposal C (five stories, three along Charles Street, 110 units including 24 studios, 65 stalls) carried a $19,425,000 anticipated city funding request. Council directed negotiation on Proposal C, with a DDA and long-term ground lease expected within six to 12 months.",
+      "src": [
+        "SRC-002986"
+      ]
+    },
+    {
+      "text": "Site was a gasoline service station in the 1950s to 1970s; two potential underground storage tanks were noted by radar but not confirmed, and consultants recommend at-grade construction with a vapor barrier.",
+      "src": [
+        "SRC-002986",
+        "SRC-002987"
+      ]
+    },
+    {
+      "text": "Application letter: 1.039-acre site with a vacant 10,038 sq ft former Wells Fargo bank building; heights up to 66'-4\" on Mathilda and 38'-6\" on parts of Charles Street; about 0.3 mile from Sunnyvale Caltrain.",
+      "src": [
+        "SRC-002984"
       ]
     }
   ],
@@ -351,11 +488,138 @@
         "SRC-001484"
       ],
       "website": "https://www.midpen-housing.org"
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002983",
+        "SRC-002988"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002983"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002983"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "City of Sunnyvale",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001484",
+        "SRC-002986"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "Wells Fargo Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002987"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "City of Sunnyvale",
+      "program": "Housing Mitigation Fund predevelopment award",
+      "amount": 1500000,
+      "date": "2024-08-13",
+      "src": [
+        "SRC-002986"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "City of Sunnyvale",
+      "program": "Housing Mitigation Fund site acquisition (city-owned land, ground lease to MidPen)",
+      "amount": 7325000,
+      "date": "2023-09-15",
+      "src": [
+        "SRC-002986"
+      ]
+    }
+  ],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2023-07-17",
+      "type": "Other",
+      "label": "MidPen signed purchase and sale agreement with Wells Fargo",
+      "src": [
+        "SRC-002987"
+      ]
+    },
+    {
+      "date": "2023-08-08",
+      "type": "Other",
+      "label": "City Council approved assignment of the purchase agreement and ENA with MidPen",
+      "src": [
+        "SRC-002987"
+      ]
+    },
+    {
+      "date": "2023-09-15",
+      "type": "Sale",
+      "label": "City of Sunnyvale bought the site; short-term lease to MidPen",
+      "src": [
+        "SRC-002986"
+      ]
+    },
+    {
+      "date": "2024-08-13",
+      "type": "Other",
+      "label": "City Council awarded $1.5 million Housing Mitigation Fund predevelopment funding to MidPen",
+      "src": [
+        "SRC-002986"
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "type": "Other",
+      "label": "City Council study session on the project",
+      "src": [
+        "SRC-002986"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "type": "Other",
+      "label": "City Council extended the ENA and short-term lease and directed staff to negotiate Proposal C (five stories, 110 units with studios)",
+      "src": [
+        "SRC-002986",
+        "SRC-002989"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "type": "Other",
+      "label": "Planning Commission study session, no action",
+      "src": [
+        "SRC-001484",
+        "SRC-002985"
+      ]
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -366,6 +630,100 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 295 S Mathilda and MidPen; SV@Home and SF YIMBY articles opened",
+      "src": [
+        "SRC-002985",
+        "SRC-002989",
+        "SRC-002988"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 165-13-064, -051, -052, -053: situs 295 S Mathilda, 495 and 475 W McKinley, 260 Charles; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Sunnyvale Legistar: files 23-0770, 25-0891, 26-0074, 26-0658 and July 2026 PC attachments (project letter, plans)",
+      "src": [
+        "SRC-002987",
+        "SRC-002986",
+        "SRC-001484",
+        "SRC-002984",
+        "SRC-002983"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City-owned site in Sunnyvale; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Table A searched for Mathilda; no CTCAC award found for this project",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SV@Home 2026-02-12 and 2026-07-17 articles",
+      "src": [
+        "SRC-002989",
+        "SRC-002985"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2026-07-16 (Dahlin Group renderings); The Real Deal returned 403",
+      "src": [
+        "SRC-002988"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "MidPen media pages found in search; facts match the record and city reports",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Dahlin Group named on plan set cover sheet",
+      "src": [
+        "SRC-002983"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City Housing Mitigation Fund acquisition and predevelopment award from staff reports",
+      "src": [
+        "SRC-002986"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no public post found",
+      "src": []
+    }
+  }
 }

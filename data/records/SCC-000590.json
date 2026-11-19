@@ -165,6 +165,17 @@
           "note": ""
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.1,
+          "src": [
+            "SRC-001765"
+          ],
+          "note": "Along East Tasman Drive between North First Street and Baypointe Parkway"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -172,6 +183,12 @@
       "text": "SB 330 preliminary application, November 2023. No later source found.",
       "src": [
         "SRC-001765"
+      ]
+    },
+    {
+      "text": "City planning records for APN 097-07-038 show no residential filing; they show a January 2026 zoning verification letter for continuation of an educational use (University of Silicon Valley) and an April 2026 sign permit for University of Silicon Valley.",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -201,6 +218,87 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search on 90 East Tasman and SummerHill; only the November 2023 SF YIMBY article covers housing here",
+      "src": [
+        "SRC-001765"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 097-07-037 and 097-07-038: situs 90 E Tasman Dr; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer by APN: no SB 330 or development filing listed; RSL26-021 educational use letter and AD26-174 sign permit",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project in San Jose",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Table A searched for Tasman; no row for this site",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of local news; nothing on housing at this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2023-11-11 article opened: 5.1-acre site",
+      "src": [
+        "SRC-001765"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of SummerHill Homes community listings; no project page for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no public post found",
+      "src": []
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000188",
-  "name": "2188 The Alameda",
+  "name": "Casa de Novo (2188 The Alameda)",
   "parcels": [
     {
       "apn": "230-16-060",
@@ -48,6 +48,14 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "2180 The Alameda, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098",
+        "SRC-001956"
+      ]
     }
   ],
   "images": [],
@@ -92,8 +100,23 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 59,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file MP26-009 (AB 2162 Ministerial Permit, filed 2026-11-05, Under Review): demolish a 27-unit hotel supportive housing facility and build a 59-unit supportive housing facility, 58 income-restricted units plus one manager's unit"
+        },
+        {
+          "value": 104,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE18-192 (enhanced preliminary review, 2018, 2180 The Alameda): 104-unit affordable housing with live/work units on a 0.9 gross acre site"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -132,6 +155,53 @@
           "note": "State report 2021, application stage: 110 deed-restricted units"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-001956",
+            "SRC-002980"
+          ],
+          "note": "City file MP26-009 describes a supportive housing facility; listing tags supportive housing for the homeless and veterans"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "58 income-restricted units plus one manager's unit (city file MP26-009, 2026)",
+          "src": [
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "AB 2162 Ministerial Permit MP26-009, filed 2026-11-05"
+        },
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2021, application H20-046: density bonus requested"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -140,18 +210,125 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "The site holds a 27-unit hotel supportive housing facility in the former Santa Clara Inn; city file MP26-009 proposes demolishing it. City records from 2016 to 2018 use the address 2180 The Alameda and APN 984-17-403.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SV@Home's Measure A housing bond dashboard lists Casa de Novo, 2188 The Alameda, as Pipeline with developer Allied Housing and no unit count.",
+      "src": [
+        "SRC-001614"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Abode Housing Development (formerly Allied Housing)",
+      "contact": "Jonathan White",
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Allied Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001614",
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "DAHLIN Architecture | Planning | Interiors",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, administrative permit AP26-085 (2026)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Abode Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002980"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2015-10-01",
+      "type": "Other",
+      "label": "City Housing Department filed public project exemption PP15-100 to acquire the Santa Clara Inn for hotel supportive housing",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2017-01-10",
+      "type": "Other",
+      "label": "Conditional Use Permit CP16-015 approved: 27-unit permanent hotel supportive housing in the existing motel (applicant Allied Housing)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2018-10-16",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE18-192 filed: 104-unit affordable housing with live/work units",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2021-01-08",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2023-09-20",
+      "type": "Other",
+      "label": "Environmental review ER23-217 filed (NEPA review for H20-046, Casa de Novo)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "Other",
+      "label": "Administrative permit AP26-085 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "type": "Other",
+      "label": "Environmental review ER26-194 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "type": "Application filed",
+      "label": "AB 2162 Ministerial Permit MP26-009 filed (59-unit supportive housing)",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -160,6 +337,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Casa de Novo, Allied/Abode Housing Development; found SV@Home dashboard and Affordable Housing Online listing",
+      "src": [
+        "SRC-001614",
+        "SRC-002980"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API, APN 230-16-060: situs 2180 The Alameda; no owner field in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer by APN: PP15-100, CP16-015, C16-032, PRE18-192, ER23-217, AP26-085, ER26-194, MP26-009",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SV@Home Measure A (county housing bond) dashboard: Casa de Novo listed as Pipeline",
+      "src": [
+        "SRC-001614"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "data.ca.gov APR Table A: H20-046 row (2021) already on record; density bonus field added; no CTCAC or CEQAnet entry found for this address",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of local news for 2188 The Alameda and Casa de Novo; results covered 787 The Alameda and other projects only",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of trade press; no article on this site found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Abode Communities pipeline pages opened (Camden Place, Chavez Gardens); none covers this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "DAHLIN Architecture named as applicant on city file AP26-085",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Measure A dashboard shows no allocation amount; no CTCAC or HCD award found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no public post found",
+      "src": []
+    }
+  }
 }

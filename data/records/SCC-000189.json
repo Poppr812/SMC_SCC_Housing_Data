@@ -1,6 +1,6 @@
 {
   "id": "SCC-000189",
-  "name": "Educator Workforce Housing (231 Grant Avenue)",
+  "name": "The Acacia (231 Grant Avenue)",
   "parcels": [
     {
       "apn": "132-31-074",
@@ -87,9 +87,16 @@
             "SRC-001303"
           ],
           "note": "Latest source read is December 2024, which expected opening in summer 2025; opening not confirmed"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-002981"
+          ],
+          "note": "December 2025 article: opened summer 2025, about 50% occupied and still leasing"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "jurisdiction": {
       "claims": [
@@ -130,6 +137,12 @@
           "value": "110 deed-restricted units reported to the state",
           "src": [
             "SRC-001127"
+          ]
+        },
+        {
+          "value": "Residents must earn 60% to 140% of area median income; rents about $1,800 to $3,100 per month (December 2025)",
+          "src": [
+            "SRC-002981"
           ]
         }
       ]
@@ -214,6 +227,17 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001127"
+          ],
+          "note": "State report 2023, Palo Alto row"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -221,6 +245,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001127"
+      ]
+    },
+    {
+      "text": "Unit sizes: studios 376 sq ft, one-bedrooms 535 sq ft, two-bedrooms 814 sq ft. Units are allocated by employer: 29 Palo Alto Unified, 24 Los Altos, 12 Foothill-De Anza, 12 Mountain View Whisman, 32 San Mateo County schools and programs. Ground-floor retail space had no tenant as of December 2025.",
+      "src": [
+        "SRC-002981"
+      ]
+    },
+    {
+      "text": "Abode's project page says 109 workforce homes plus 1 manager unit for classified and certificated school staff, a 56-year ground lease with the County of Santa Clara, and more than $37 million in county construction and permanent financing.",
+      "src": [
+        "SRC-002982"
+      ]
+    },
+    {
+      "text": "State report 2023: the Palo Alto row shows 39 low-income and 71 moderate-income deed-restricted units with a 55-year term and lists funders County of Santa Clara, Meta, City of Palo Alto, Palo Alto Unified, Los Altos School District, Mountain View Whisman, Foothill-De Anza and Century Housing Corporation. The Santa Clara County row (DEV22-1242) shows the same 110 building permits issued 2023-08-04, reported in the above-moderate category.",
+      "src": [
+        "SRC-001127",
+        "SRC-001156"
       ]
     }
   ],
@@ -267,6 +310,16 @@
         "SRC-001302",
         "SRC-001303"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "County of Santa Clara",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Ground lessor (56-year ground lease)",
+      "src": [
+        "SRC-002982"
+      ]
     }
   ],
   "financing": [
@@ -279,6 +332,16 @@
       "src": [
         "SRC-001302",
         "SRC-001303"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "County of Santa Clara",
+      "program": "Construction and permanent financing (developer page: more than $37 million)",
+      "amount": 37000000,
+      "date": null,
+      "src": [
+        "SRC-002982"
       ]
     }
   ],
@@ -317,6 +380,15 @@
         "SRC-001303"
       ],
       "estimated": true
+    },
+    {
+      "date": "2025",
+      "type": "Lease-up start",
+      "label": "Leasing began; about 50% occupied in December 2025",
+      "src": [
+        "SRC-002981"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -334,6 +406,102 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on The Acacia / 231 Grant; Mountain View Voice December 2025 article opened",
+      "src": [
+        "SRC-002981"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 132-31-074: situs 231 Grant Av, Palo Alto; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Palo Alto 231 Grant Ave project page already on record",
+      "src": [
+        "SRC-001304"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County role per Abode page (ground lease, financing) and county APR row DEV22-1242",
+      "src": [
+        "SRC-002982",
+        "SRC-001156"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "data.ca.gov APR: Palo Alto row (55-year term, funder list) and Santa Clara County row",
+      "src": [
+        "SRC-001127",
+        "SRC-001156"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Mountain View Voice 2025-12-22 (opening, occupancy, rents, allocations)",
+      "src": [
+        "SRC-002981"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2023 groundbreaking article already on record",
+      "src": [
+        "SRC-001302"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Abode Communities page for The Acacia opened",
+      "src": [
+        "SRC-002982"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Van Meter Williams Pollack named on Abode page and SV@Home dashboard; already on record",
+      "src": [
+        "SRC-002982"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County financing amount from Abode page; funder list from state report",
+      "src": [
+        "SRC-002982",
+        "SRC-001127"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no public post found",
+      "src": []
+    }
+  }
 }
