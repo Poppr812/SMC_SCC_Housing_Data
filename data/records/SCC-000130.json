@@ -130,8 +130,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001822"
+          ],
+          "note": "Staff report dated May 20, 2019: 103 of the 188 residential units and a mixed-use retail building under construction"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -178,6 +186,12 @@
             "SRC-001956"
           ],
           "note": "City folder 111102, PD Permit (permit type: Development Permit (Legacy)); city permit status: Approved. Matched by file number."
+        },
+        {
+          "value": "PDC16-002, PD16-025, PT16-035, PDA16-025-01, PDC19-012, PD19-010",
+          "src": [
+            "SRC-001822"
+          ]
         }
       ]
     },
@@ -189,6 +203,28 @@
             "SRC-001107"
           ],
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.6,
+          "src": [
+            "SRC-001822"
+          ],
+          "note": "Gross acres"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 108000,
+          "src": [
+            "SRC-001822"
+          ],
+          "note": "Minimum commercial square footage in the Planned Development zoning"
         }
       ]
     }
@@ -218,6 +254,36 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Site is the southwest corner of North Capitol Avenue and Gimelli Way (formerly 641 North Capitol Avenue), about 800 feet from the McKee light rail station, bounded by Interstate 680 to the southwest.",
+      "src": [
+        "SRC-001822"
+      ]
+    },
+    {
+      "text": "Approved as a Signature Project in the North Capitol Avenue/McKee Road Urban Village: up to 188 residential units, a mixed-use commercial/retail building, an office/commercial building, a mini-storage building, a 0.58-acre public park and 0.45 acres of publicly accessible private recreation.",
+      "src": [
+        "SRC-001822"
+      ]
+    },
+    {
+      "text": "Vesting Tentative Map PT16-035 subdivided one parcel into six lots and created 188 residential condominium units.",
+      "src": [
+        "SRC-001822"
+      ]
+    },
+    {
+      "text": "CEQA: determination of consistency with the 641 North Capitol Avenue Mixed-Use Project Mitigated Negative Declaration (Resolution No. 78053).",
+      "src": [
+        "SRC-001822"
+      ]
+    },
+    {
+      "text": "The staff report's history table dates PDA16-025-01 to March 7, 2018; its text dates the Director Hearing approval to September 26, 2017.",
+      "src": [
+        "SRC-001822"
+      ]
     }
   ],
   "parties": [
@@ -231,11 +297,40 @@
         "SRC-001822"
       ],
       "website": "https://www.pulte.com/"
+    },
+    {
+      "role": "Developer",
+      "company": "Pulte Homes Company, LLC",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.pulte.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-001822"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-01-10",
+      "type": "Approved",
+      "label": "City Council approves PD rezoning, PD Permit PD16-025 and Vesting Tentative Map PT16-035",
+      "src": [
+        "SRC-001822"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2017-09-26",
+      "type": "Approved",
+      "label": "Director Hearing approves PD Permit Amendment PDA16-025-01 (unit makeup and architecture)",
+      "src": [
+        "SRC-001822"
+      ],
+      "estimated": false
+    },
     {
       "date": "2018-12-04",
       "type": "Permit issued",
@@ -251,6 +346,16 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2019-06-11",
+      "type": "Approved",
+      "label": "City Council: conforming rezoning PDC19-012 and PD Permit PD19-010",
+      "src": [
+        "SRC-001822",
+        "SRC-001956"
+      ],
+      "estimated": false
     },
     {
       "date": "2021-08-17",
@@ -281,6 +386,86 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web searches on 641 N Capitol Ave, Pulte and The Capitol community returned listing pages only; Apartments.com and Movoto refused access",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 254-91-058 is a 112 sq ft lot, situs 486 Tintin Ct; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar: Council staff report 2019-05-20 for 2019-06-11 agenda, PDC19-012/PD19-010 (permit history, site, phasing)",
+      "src": [
+        "SRC-001822"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in San Jose",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Tables A and A2 already on record; CEQA document is a city MND referenced in the staff report",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searches for San Jose Spotlight and Mercury News coverage returned nothing on this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searches returned nothing in SF YIMBY, Real Deal or Bisnow on this project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "pulte.com search results show other San Jose communities; no page for this project found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in the staff report text; ktgy.com result refused access (403)",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or public funder found in searches",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found",
+      "src": []
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000132",
-  "name": "110 Wood Rd",
+  "name": "Los Gatos Meadows rebuild (Fresco Los Gatos)",
   "parcels": [
     {
       "apn": "510-47-038",
@@ -379,8 +379,17 @@
             "SRC-001120"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-002605",
+            "SRC-002606"
+          ],
+          "note": "Town Council approved the Planned Development on February 4, 2025; architecture and site application filed afterward"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -400,6 +409,21 @@
             "SRC-001120"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 211,
+          "src": [
+            "SRC-002605"
+          ],
+          "note": "187 independent living units and up to 24 supporting care units (July 2025)"
+        },
+        {
+          "value": 209,
+          "src": [
+            "SRC-002606",
+            "SRC-002607"
+          ],
+          "note": "About 185 independent living homes and up to 24 supportive care homes"
         }
       ]
     },
@@ -424,6 +448,53 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-002605",
+            "SRC-002606"
+          ],
+          "note": "Life Plan / Continuing Care Retirement Community for older adults"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.84,
+          "src": [
+            "SRC-002606",
+            "SRC-002608"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002607"
+          ],
+          "note": "Eight villa buildings, three stories at the front and up to six at the rear, built into the hillside"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "No below-market-rate units on site; CCRCs are exempt by state law from local rent and income restrictions. Front Porch committed to make 11 of 22 units at its El Sombroso Oaks community available for Property Based or Housing Choice Vouchers.",
+          "src": [
+            "SRC-002605",
+            "SRC-002606"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -432,12 +503,151 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "text": "Redevelopment of the Los Gatos Meadows senior community, operated 1971 to 2019 and closed for safety reasons. Owner Front Porch merged with the prior operator, Covia, in 2021. Front Porch's site names the new community Fresco Los Gatos.",
+      "src": [
+        "SRC-002605",
+        "SRC-002607",
+        "SRC-002611"
+      ]
+    },
+    {
+      "text": "Front Porch FAQ (July 2025): construction documents and permits about 18 months, construction not expected to start until early 2027 and lasting about two and a half years, reopening targeted for late 2029. Hazardous-material removal starting July 2025.",
+      "src": [
+        "SRC-002605"
+      ]
+    },
+    {
+      "text": "2021 Draft EIR version: eight three- to five-story buildings, 174 independent apartments (57 one-bedroom, 117 two-bedroom), 17 supporting care units and 77 parking spaces.",
+      "src": [
+        "SRC-002608"
+      ]
+    },
+    {
+      "text": "Los Gatan reports parking in an underground base beneath the villas, removal of 192 trees, and the developer's statement that it is not a Builder's Remedy project. Its subtitle says 185 independent units; its body cites 187.",
+      "src": [
+        "SRC-002607"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Front Porch Communities and Services",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://frontporch.net/",
+      "website_basis": "opened",
+      "project_page": "https://frontporch.net/?p=9120",
+      "src": [
+        "SRC-002605",
+        "SRC-002606",
+        "SRC-002609"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rockwood Pacific Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Development manager",
+      "src": [
+        "SRC-002605",
+        "SRC-002606"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Perkins Eastman",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002605",
+        "SRC-002607"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Kimley-Horn",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002605",
+        "SRC-002607"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Gates + Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002607"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "W.E. O'Neil",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002605",
+        "SRC-002607"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-01-22",
+      "type": "Application filed",
+      "label": "Initial Planned Development application submitted to Town",
+      "src": [
+        "SRC-002609"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-05-27",
+      "type": "Other",
+      "label": "Draft EIR received by State Clearinghouse (SCH 2021020007)",
+      "src": [
+        "SRC-002608"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-01-13",
+      "type": "Other",
+      "label": "Planning Commission opposes original proposal",
+      "src": [
+        "SRC-002610"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-13",
+      "type": "Other",
+      "label": "Planning Commission unanimously recommends approval of revised plan",
+      "src": [
+        "SRC-002605",
+        "SRC-002609"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-04",
+      "type": "Approved",
+      "label": "Town Council unanimously approves Planned Development",
+      "src": [
+        "SRC-002605",
+        "SRC-002606",
+        "SRC-002609"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-06-25",
       "type": "Application filed",
@@ -452,6 +662,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search tied 110 Wood Rd to the Los Gatos Meadows rebuild by Front Porch",
+      "src": [
+        "SRC-002606"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 510-47-038, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "losgatosca.gov project description PDF and /110WoodRoad returned 404; meeting attachments not opened",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Town of Los Gatos project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2021020007 (NOP 2021-02-01, EIR 2021-05-27); APR already on record",
+      "src": [
+        "SRC-002608"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-02-06; Los Gatan 2024-11-20 and 2025-02-12",
+      "src": [
+        "SRC-002606",
+        "SRC-002610",
+        "SRC-002607"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searches returned no trade press on this project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Front Porch press release 2025-02-05, July 2025 FAQ, Fresco Los Gatos page",
+      "src": [
+        "SRC-002609",
+        "SRC-002605",
+        "SRC-002611"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Perkins Eastman named in FAQ; no Perkins Eastman project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "FAQ and press release name no lender; none found in search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found",
+      "src": []
+    }
+  }
 }
