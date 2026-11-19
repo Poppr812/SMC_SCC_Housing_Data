@@ -173,6 +173,78 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 30,
+            "1br": 125,
+            "2br": 62,
+            "3br": 8,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002565"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.0,
+          "src": [
+            "SRC-002566"
+          ],
+          "note": "Residential lot after lot line relocation; combined site is 5.82 acres"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 188100,
+          "src": [
+            "SRC-002565"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 269,
+          "src": [
+            "SRC-002565"
+          ],
+          "note": "Garage total: 85 replacement office spaces on the ground floor and 184 resident stalls"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002566",
+            "SRC-001119"
+          ],
+          "note": "Staff report: State Density Bonus Law waivers and reduced parking for 44 BMR units; state report: 50 density bonus units"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001119"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -180,6 +252,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001118",
+        "SRC-001119"
+      ]
+    },
+    {
+      "text": "Planning Commission staff report: the two existing two-story office/R&D buildings on Kifer Road are retained and the apartment building replaces the rear surface parking lot; the lot line relocation creates a 3.82-acre office lot and a 2-acre residential lot; APNs 205-50-034 and 205-50-035; zoning MXD-I in the Lawrence Station Area Plan. SF YIMBY (January 2023) said the two office buildings would be demolished.",
+      "src": [
+        "SRC-002566",
+        "SRC-002567"
+      ]
+    },
+    {
+      "text": "SF YIMBY (October 2023): eight residential stories over a three-story above-grade garage, 86 feet tall, about 356,520 sq ft total, 357 bicycle spaces.",
+      "src": [
+        "SRC-002565"
+      ]
+    },
+    {
+      "text": "State report 2023 entitlement row: 4 extremely low-income units within the deed-restricted count, 50 density bonus units, 90 non-restricted units counted as moderate by the city's rent analysis.",
+      "src": [
         "SRC-001119"
       ]
     }
@@ -204,6 +295,52 @@
       "src": [
         "SRC-001742"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Prometheus Real Estate Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002565",
+        "SRC-002567"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Jones Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002565"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002565"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Andrea Cochran Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002565"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002565"
+      ]
     }
   ],
   "financing": [],
@@ -224,6 +361,15 @@
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "date": "2023-10-09",
+      "type": "Other",
+      "label": "Planning Commission approved Special Development Permit and Tentative Parcel Map",
+      "src": [
+        "SRC-002568"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-12-05",
@@ -250,6 +396,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Prometheus: SF YIMBY 2023-01-10 and 2023-10-16",
+      "src": [
+        "SRC-002567",
+        "SRC-002565"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 205-50-034 situs 1150 Kifer Rd; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Sunnyvale Legistar: 23-0131 (2022-11-16), 23-0932 PC report and 2023-10-09 approval, 23-1022 LIUNA appeal 2023-12-05",
+      "src": [
+        "SRC-002566",
+        "SRC-002568"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Sunnyvale",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2 2023: 55-year term, 50 density bonus units, 4 extremely low-income; no permit row",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No local news beyond trade press; Real Deal 2023-12-05 on LIUNA appeal returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-01-10 and 2023-10-16: unit mix, sq ft, parking, design team",
+      "src": [
+        "SRC-002567",
+        "SRC-002565"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "prometheusapartments.com Sunnyvale page lists eight communities; none at Kifer Rd",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Design team named by SF YIMBY: Jones Architecture, BDE Architecture, Andrea Cochran, BKF",
+      "src": [
+        "SRC-002565"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for construction loan or permit returned nothing for this site",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found",
+      "src": []
+    }
+  }
 }

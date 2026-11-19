@@ -103,7 +103,8 @@
         {
           "value": "Inactive pipeline",
           "src": [
-            "SRC-001817"
+            "SRC-001817",
+            "SRC-001099"
           ],
           "note": "SJ Build tracker lists this file as Withdrawn; single secondary source, not confirmed with the city."
         }
@@ -172,6 +173,28 @@
           "note": "State report 2019, application stage: 35 deed-restricted units"
         }
       ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3600,
+          "src": [
+            "SRC-001817"
+          ],
+          "note": "SJ Build tracker"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.02,
+          "src": [
+            "SRC-001817"
+          ],
+          "note": "Gross acres, SJ Build tracker"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -179,6 +202,26 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "State 2019 report row for SP19-067 lists APN 261-42-059; the county parcel dataset has no current parcel with that number. The record carries 261-42-082, whose situs is 1301 W San Carlos St.",
+      "src": [
+        "SRC-001099",
+        "SRC-001817"
+      ]
+    },
+    {
+      "text": "2019 coverage: site at the corner of Race Street; ground-floor retail, a plaza and a street-side gathering area under an overhang; building set back 20 feet from the sidewalk; potentially 15 percent of units affordable.",
+      "src": [
+        "SRC-002561",
+        "SRC-002562"
+      ]
+    },
+    {
+      "text": "SJ Build tracker describes SP19-067 as a Special Use Permit for a commercial/residential mixed-use development.",
+      "src": [
+        "SRC-001817"
       ]
     }
   ],
@@ -193,6 +236,16 @@
         "SRC-001817"
       ],
       "website": "https://thecorecompanies.com"
+    },
+    {
+      "role": "Developer",
+      "company": "The Core Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002561",
+        "SRC-002562"
+      ]
     }
   ],
   "financing": [],
@@ -222,6 +275,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Core Companies: California Construction News 2019-09-12, BVNA post 2019-09-29",
+      "src": [
+        "SRC-002561",
+        "SRC-002562"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 261-42-082 situs 1301 W San Carlos St; 261-42-059 (state report APN) not found; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; SJ Build tracker shows SP19-067 Withdrawn, 3,600 sf commercial, 1.02 acres",
+      "src": [
+        "SRC-001817"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in San Jose",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2019: SP19-067, APN 261-42-059, 230 units disapproved; Table A2 has no row for this address",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "BVNA republished news post 2019-09-29; no newer local news found",
+      "src": [
+        "SRC-002562"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "California Construction News 2019-09-12; a 213-unit West San Carlos project in 2026 trade press is at 1470 W San Carlos, a different site",
+      "src": [
+        "SRC-002561"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "thecorecompanies.com project portfolio lists 31 projects; none at 1301 W San Carlos",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts on this project",
+      "src": []
+    }
+  }
 }

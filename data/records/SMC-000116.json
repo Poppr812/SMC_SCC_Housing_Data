@@ -1,6 +1,6 @@
 {
   "id": "SMC-000116",
-  "name": "East Side Of Coast Highway, Between Reina Del Mar Ave And Rockaway Beach Ave",
+  "name": "Pacifica Gateway",
   "parcels": [
     {
       "apn": "018-140-680",
@@ -336,8 +336,16 @@
             "SRC-001136"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-002569"
+          ],
+          "note": "NOP: single-family homes, townhomes and multifamily"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -368,8 +376,16 @@
             "SRC-001136"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 200,
+          "src": [
+            "SRC-002569"
+          ],
+          "note": "NOP May 2025: 21 single-family, 33 townhomes, 105 market-rate and 40 affordable multifamily units, 1 manager unit"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -408,6 +424,40 @@
           "note": "State report 2024, application stage: 45 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 61.86,
+          "src": [
+            "SRC-002569"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002569"
+          ],
+          "note": "Market-rate multifamily building, units above three levels of parking"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001136"
+          ],
+          "note": "State report 2024: density bonus requested in the application"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -415,6 +465,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001136"
+      ]
+    },
+    {
+      "text": "State report 2024 names the project SB 330 Pacifica Gateway (tracking 2023-024), 225 units, 45 low-income deed-restricted; CEQA notice of May 2025 describes 200 units.",
+      "src": [
+        "SRC-001136",
+        "SRC-002569"
+      ]
+    },
+    {
+      "text": "NOP: development on APNs 018-140-690 and 018-140-700; 018-140-680 kept as open space. Undeveloped, steep site with about 1,543 trees, within the Hillside Preservation District, near Rockaway Beach Ave and SR 1. Requested actions: Specific Plan, Rezone, Land Division, Development Plan, Design Review, Tree Removal Authorization.",
+      "src": [
+        "SRC-002569"
       ]
     }
   ],
@@ -426,6 +489,25 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "MYKZK, LLC",
+      "contact": "Mike Klestoff",
+      "linkedin": null,
+      "src": [
+        "SRC-002569"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Raney Planning & Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-002569"
       ]
     }
   ],
@@ -439,6 +521,15 @@
       "src": [
         "SRC-001136"
       ]
+    },
+    {
+      "date": "2025-05-06",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR received by the State Clearinghouse (SCH 2025050244)",
+      "src": [
+        "SRC-002569"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -446,6 +537,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on site description and Pacifica Gateway led to CEQAnet SCH 2025050244",
+      "src": [
+        "SRC-002569"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels: 018-140-680/690/700 owner MYKZK LLC, no situs address",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "cityofpacifica.org returns 403 to automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Pacifica",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2024: project name SB 330 Pacifica Gateway, density bonus requested; CEQAnet NOP 2025-05-06",
+      "src": [
+        "SRC-001136",
+        "SRC-002569"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Local news searches return the separate Rockaway Quarry (Coastal Crest) project, not this one",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY and Real Deal cover the Coastal Crest quarry project on APNs 018-150-120/150, not this site",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No website found for MYKZK, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in the NOP summary",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found",
+      "src": []
+    }
+  }
 }
