@@ -245,6 +245,13 @@
         "SRC-001138",
         "SRC-002680"
       ]
+    },
+    {
+      "text": "1335 W Luchessa Ave, Gilroy, CA",
+      "role": "other",
+      "src": [
+        "SRC-002767"
+      ]
     }
   ],
   "images": [],
@@ -268,8 +275,23 @@
             "SRC-001138"
           ],
           "note": "State report 2018: entitlement approved 2018-09-19"
+        },
+        {
+          "value": "Permitted",
+          "src": [
+            "SRC-001138"
+          ],
+          "note": "State report 2020: building permits issued 2020-06-11 for ten W Luchessa Ave buildings listed as Glen Loma Ranch BMR Apartments (Community Resources)"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-002767"
+          ],
+          "note": "Listing shows an operating LIHTC property at 1335 W. Luchessa Ave managed by Aperto Property Management"
         }
-      ]
+      ],
+      "best": 2
     },
     "jurisdiction": {
       "claims": [
@@ -321,8 +343,29 @@
             "SRC-001138"
           ],
           "note": "State report 2018, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 76,
+              "ami": 50
+            },
+            {
+              "count": 42,
+              "ami": 60
+            },
+            {
+              "count": 38,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-002680"
+          ],
+          "note": "CTCAC 2020 aggregate targeting, 55-year use restriction"
         }
-      ]
+      ],
+      "best": 1
     },
     "restriction_term_years": {
       "claims": [
@@ -331,6 +374,47 @@
           "src": [
             "SRC-001138"
           ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior",
+            "Family"
+          ],
+          "src": [
+            "SRC-002680"
+          ],
+          "note": "CTCAC: housing type Large Family and Senior; contains senior (62+) residences and family units"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 61,
+            "2br": 57,
+            "3br": 40,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002680"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 86986949,
+          "src": [
+            "SRC-002680"
+          ],
+          "note": "CTCAC project cost at application"
         }
       ]
     }
@@ -342,6 +426,18 @@
         "SRC-001138",
         "SRC-002680"
       ]
+    },
+    {
+      "text": "CTCAC CA-20-900: 10 residential buildings, new construction, census tract 5125.09, federal set-aside 40%/60% average income, tax-exempt bonds issued by CalHFA. Land contributed for $1,000. Per-unit cost $512,949. Approved developer fee $9,000,000.",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "text": "State APR Gilroy 2020 Table A2 lists building permits issued 2020-06-11 under APN 808-19-023 for ten addresses at 1301-1345 W Luchessa Ave, named Glen Loma Ranch BMR Apartments (Community Resources), each with 15 to 18 units, with very low- and low-income deed-restricted units and a 55-year regulatory agreement. APN 808-19-023 is not in the current county parcel dataset.",
+      "src": [
+        "SRC-001138"
+      ]
     }
   ],
   "parties": [
@@ -351,9 +447,178 @@
       "src": [
         "SRC-002680"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Gilroy Glen Loma Pacific Associates, a California Limited Partnership",
+      "contact": "Caleb Roope",
+      "linkedin": null,
+      "email": "calebr@tpchousing.com",
+      "phone": "208.461.0022",
+      "other_role": "Applicant (tax credit partnership)",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "W R Spann, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "TPC Holdings VII, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Central Valley Coalition for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Boston Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Aperto Property Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002680",
+        "SRC-002767"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citibank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bonneville",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002680"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Housing Finance Agency (CalHFA)",
+      "program": "Bond issuer; expected issuance 2020-04-01",
+      "amount": null,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Boston Capital",
+      "program": "Federal LIHTC, $2,738,964 annual credit recommended",
+      "amount": 25195949,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Tax-exempt",
+      "amount": 33000000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Taxable",
+      "amount": 27000000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Bonneville",
+      "program": "Tax-exempt",
+      "amount": 15000000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": null,
+      "amount": 33000000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bonneville",
+      "program": null,
+      "amount": 15000000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Housing Finance Agency (CalHFA)",
+      "program": "Mixed-Income Program (MIP)",
+      "amount": 7850000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Pacific West Communities, Inc.",
+      "program": "Permanent sources",
+      "amount": 5940000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-002680"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -373,6 +638,15 @@
         "SRC-002680"
       ],
       "estimated": false
+    },
+    {
+      "date": "2020-06-11",
+      "type": "Permit issued",
+      "label": "Building permits issued for ten buildings, 1301-1345 W Luchessa Ave (158 units per CTCAC)",
+      "src": [
+        "SRC-001138"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -380,7 +654,88 @@
       "date": "2026-11-18",
       "by": "Paul via Claude",
       "action": "Record created: split from SCC-000141 (Canyon Estates), where a 2018 state report row had been merged"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
-  "research": {}
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, Luchessa Ave and Pacific West Communities; opened Affordable Housing Online listing (1335 W. Luchessa Ave, Aperto management, family and senior). apartments.com and after55 refused access.",
+      "src": [
+        "SRC-002767"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 808-18-022: jurisdiction Gilroy, no situs address, no owner field. 808-19-023 (APR permit rows) not in current dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for Gilroy staff reports on Glen Loma Ranch apartments; no city page or staff report for this project surfaced.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Incorporated Gilroy project; CTCAC lists no county funding.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Opened CTCAC staff report CA-20-900 (parties, financing, unit mix, AMI targeting); APR Gilroy Table A2 2020 permit rows. CDLAC 2019 staff report links returned 404.",
+      "src": [
+        "SRC-002680",
+        "SRC-001138"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Gilroy Dispatch and Mercury News for the project; no article found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched trade press for Glen Loma Ranch Apartments; none found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Pacific West Communities project page surfaced in searches.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "CTCAC report does not name an architect; none found in search.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC CA-20-900 construction and permanent sources: Citibank, Bonneville, CalHFA MIP, Boston Capital tax credit equity.",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts on the project surfaced in web search.",
+      "src": []
+    }
+  }
 }

@@ -109,6 +109,13 @@
             "SRC-001346",
             "SRC-001347"
           ]
+        },
+        {
+          "value": 156,
+          "src": [
+            "SRC-002772"
+          ],
+          "note": "May 2022 applicant fact sheet proposal"
         }
       ]
     },
@@ -121,6 +128,90 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001123",
+            "SRC-002772"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 8,
+              "ami": 80
+            },
+            {
+              "count": 16,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001123",
+            "SRC-001129"
+          ],
+          "note": "State report 2024, entitlement stage: deed-restricted units by state income category"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 131,
+          "src": [
+            "SRC-001123",
+            "SRC-001129"
+          ]
+        },
+        {
+          "value": 132,
+          "src": [
+            "SRC-002772"
+          ],
+          "note": "May 2022 fact sheet, 156-home proposal"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001123"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001123"
+          ],
+          "note": "State report: deed restriction type DB, 3 other incentives, development standards modification"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PUP22-001, TM22-001, AR22-006",
+          "src": [
+            "SRC-001123",
+            "SRC-001129"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -128,6 +219,39 @@
       "text": "City lists APN 019-170-020, which is not in the county layer; 018-072-160 is 300 Piedmont Ave by situs.",
       "src": [
         "SRC-001346"
+      ]
+    },
+    {
+      "text": "State APR San Bruno: Table A 2022 lists Crestmoor High School, 300 Piedmont Ave, APN 019-170-020, application 2022-08-23, 155 units (8 low, 16 moderate deed-restricted, 131 above moderate), note 'Disposed former school site'. Table A2 2024 lists Crestmoor Project, entitled 2024-05-28, 155 units, 55-year term, density bonus with 3 other incentives, note 'SB330 Application'.",
+      "src": [
+        "SRC-001129",
+        "SRC-001123"
+      ]
+    },
+    {
+      "text": "May 2022 SummerHill fact sheet: 156 for-sale single-family detached homes on the 40.2-acre former Crestmoor and Peninsula High Schools site owned by SMUHSD, 132 market rate and 24 below-market (8 low-income at 80% AMI, 16 moderate at 120% AMI), all BMR homes 4-bedroom; about 24 acres developable, about 12 acres of open space to be dedicated to the city, 8 acres private open space; zoning R-1, proposed density 3.9 units/acre.",
+      "src": [
+        "SRC-002772"
+      ]
+    },
+    {
+      "text": "City Crestmoor fields page: SMUHSD owned the 40-acre parcel at 300 Piedmont Ave and has an agreement with SummerHill Homes LLC for its sale; SummerHill received city approval in June 2024 for a subdivision with 6.91 acres dedicated to the city (5.3 acres of fields, 1.61 acres of recreation and parking).",
+      "src": [
+        "SRC-002773"
+      ]
+    },
+    {
+      "text": "Toll Brothers markets Crestmoor Estates at Courtland Dr and Piedmont Ave (sales center 183 Courtland Dr): Montara Collection 2,304-2,398 sq ft from $2,099,995 and Solara Collection 2,666-2,818 sq ft from $2,327,995; 4 bedrooms, 3 baths, loft. The Toll Brothers pages do not state a home count or mention SummerHill.",
+      "src": [
+        "SRC-002774",
+        "SRC-002776",
+        "SRC-002775"
+      ]
+    },
+    {
+      "text": "County parcel layer: owner of record of 018-072-160 (300 Piedmont Ave) is 300 Piedmont Avenue LLC.",
+      "src": [
+        "SRC-001103"
       ]
     }
   ],
@@ -141,17 +265,87 @@
         "SRC-001347"
       ],
       "website": "https://www.summerhillhomes.com/"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "300 Piedmont Avenue LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "San Mateo Union High School District",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002773",
+        "SRC-002772"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Toll Brothers",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.tollbrothers.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.tollbrothers.com/luxury-homes-for-sale/California/Crestmoor-Estates",
+      "other_role": "Homebuilder marketing Crestmoor Estates; city fields agreement",
+      "src": [
+        "SRC-002774",
+        "SRC-002775",
+        "SRC-002773"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2022-08-23",
+      "type": "Application filed",
+      "label": "Application submitted (PUP22-001)",
+      "src": [
+        "SRC-001129"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-05-28",
       "type": "Approved",
       "label": "Notice of Determination approved",
       "src": [
         "SRC-001347"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-09",
+      "type": "Other",
+      "label": "City Council approved Baseline Improvement Agreement with Toll Brothers to build Crestmoor Fields (not to exceed $6.6 million)",
+      "src": [
+        "SRC-002773"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-02-09",
+      "type": "Other",
+      "label": "Toll Brothers announced Crestmoor Estates coming soon; site work underway",
+      "src": [
+        "SRC-002776"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Other",
+      "label": "Toll Brothers announced Crestmoor Estates open for sale",
+      "src": [
+        "SRC-002775"
       ],
       "estimated": false
     },
@@ -175,6 +369,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Crestmoor, 300 Piedmont and SummerHill/Toll Brothers; opened Toll Brothers pages and city pages.",
+      "src": [
+        "SRC-002775",
+        "SRC-002773"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC parcel layer: 018-072-160 owner of record 300 Piedmont Avenue LLC.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City Crestmoor Multi-Use Fields page; May 2022 applicant fact sheet (DocumentCenter 3614).",
+      "src": [
+        "SRC-002773",
+        "SRC-002772"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Incorporated San Bruno project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR San Bruno Table A 2022 and Table A2 2024 rows; CEQAnet NOD already on record.",
+      "src": [
+        "SRC-001129",
+        "SRC-001123",
+        "SRC-001347"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "SMDJ article on Crestmoor demolition start returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No trade press coverage found beyond Toll Brothers release reposts.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Toll Brothers Crestmoor Estates page and releases (2026-02-09, 2026-08-26). No SummerHill project page found.",
+      "src": [
+        "SRC-002774",
+        "SRC-002776",
+        "SRC-002775"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing reported; city fields agreement with Toll Brothers up to $6.6M is a public works agreement.",
+      "src": [
+        "SRC-002773"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts surfaced.",
+      "src": []
+    }
+  }
 }

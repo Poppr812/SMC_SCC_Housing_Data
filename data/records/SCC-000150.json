@@ -90,8 +90,17 @@
             "SRC-001121"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-002770",
+            "SRC-002771"
+          ],
+          "note": "Developer: 155 townhomes in 28 three-story buildings; SF YIMBY: townhouse-style condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -174,6 +183,13 @@
             "SRC-001121"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-23-042, M-23-009, U-23-017, ADR25-0039-0041, B25-0730, B25-0620-0655",
+          "src": [
+            "SRC-001121"
+          ],
+          "note": "Tracking numbers in the 2025 state report row"
         }
       ]
     },
@@ -202,6 +218,89 @@
             "SRC-001120"
           ],
           "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 16,
+              "ami": 80
+            },
+            {
+              "count": 10,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001121",
+            "SRC-001588",
+            "SRC-002771"
+          ],
+          "note": "State report 2025, entitlement stage"
+        }
+      ],
+      "best": 1
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001554",
+            "SRC-002771",
+            "SRC-002770"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 310,
+          "src": [
+            "SRC-002771"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 367300,
+          "src": [
+            "SRC-002771"
+          ],
+          "note": "Combined square footage of 28 structures"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 129,
+          "src": [
+            "SRC-001121"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001121"
+          ]
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 78000000,
+          "src": [
+            "SRC-001588"
+          ],
+          "note": "Los Gatan: SummerHill bought the site for $78 million, escrow closed October 15, 2025"
         }
       ]
     }
@@ -219,6 +318,31 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "SummerHill project page: 155 townhomes in 28 three-story buildings, five floor plans of 1,339 to 2,270 sq ft, 2 to 4 bedrooms, sales office at 50 Saratoga-Los Gatos Road, sales coming spring 2027. Los Gatan (2025-10-30) said homes would go on sale in winter 2026.",
+      "src": [
+        "SRC-002770",
+        "SRC-001588"
+      ]
+    },
+    {
+      "text": "State APR Los Gatos 2025 Table A2: 155 units entitled 2025-03-04 (16 low, 10 moderate deed-restricted, 129 above moderate), 26 units (20 percent) required to be deed restricted under Gov. Code 65915-65918, 55-year term; no building permit date reported.",
+      "src": [
+        "SRC-001121"
+      ]
+    },
+    {
+      "text": "Town SB 330 list: approved by Town Council 2025-03-04, 155 units including 26 below-market (17%), 3 stories, Housing Element site, applicant invoked Builder's Remedy.",
+      "src": [
+        "SRC-001554"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-03-13): site of nearly nine acres; 26 affordable units, 16 low-income and 10 moderate-income.",
+      "src": [
+        "SRC-002771"
+      ]
     }
   ],
   "parties": [
@@ -232,11 +356,38 @@
       ],
       "website": "https://www.summerhillhomes.com/",
       "project_page": "https://www.summerhillhomes.com/los-gatos/solana"
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002771"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "SummerHill Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001588"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-07-06",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application vested",
+      "src": [
+        "SRC-001554"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-12-20",
       "type": "Application filed",
@@ -254,11 +405,29 @@
       ]
     },
     {
+      "date": "2025-10-15",
+      "type": "Sale",
+      "label": "SummerHill closed purchase of Los Gatos Lodge site ($78 million)",
+      "src": [
+        "SRC-001588"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-11-04",
       "type": "Construction start",
       "label": "Announced groundbreaking date",
       "src": [
         "SRC-001588"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027",
+      "type": "Other",
+      "label": "Developer: sales coming spring 2027",
+      "src": [
+        "SRC-002770"
       ],
       "estimated": true
     }
@@ -278,6 +447,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Solana, Los Gatos Lodge and SummerHill; opened SF YIMBY, Los Gatan, SummerHill page.",
+      "src": [
+        "SRC-002771",
+        "SRC-001588"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APN 529-24-001 matches the APR row; SCC parcel dataset has no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Town SB 330/Builder's Remedy list: SB 330 vesting 2023-07-06, Council approval 2025-03-04, 3 stories.",
+      "src": [
+        "SRC-001554"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Incorporated Los Gatos project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Los Gatos 2025 Table A2 row (16 low, 10 moderate, 129 above moderate, tracking numbers).",
+      "src": [
+        "SRC-001121"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Los Gatan 2025-10-30: sale closed Oct 15 for $78M, groundbreaking 2025-11-04. The Real Deal sale article refused access.",
+      "src": [
+        "SRC-001588"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-03-13: 28 buildings, 367,300 sf, 310 parking, SDG Architects. Traded.co refused access.",
+      "src": [
+        "SRC-002771"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SummerHill Solana page: plan sizes, sales coming spring 2027.",
+      "src": [
+        "SRC-002770"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SDG Architects named by SF YIMBY; architect site not opened.",
+      "src": [
+        "SRC-002771"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No construction lender reported; SummerHill page lists a Bank of America preferred mortgage lender for buyers only.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts surfaced.",
+      "src": []
+    }
+  }
 }

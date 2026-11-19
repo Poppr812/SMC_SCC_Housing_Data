@@ -39,6 +39,140 @@
           37.51089
         ]
       ]
+    },
+    {
+      "apn": "045-316-140",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.2650047,
+          37.5106863
+        ],
+        [
+          -122.2652259,
+          37.5105331
+        ],
+        [
+          -122.2650291,
+          37.5103528
+        ],
+        [
+          -122.2652173,
+          37.5102224
+        ],
+        [
+          -122.2652485,
+          37.5102008
+        ],
+        [
+          -122.2652856,
+          37.5101751
+        ],
+        [
+          -122.265295,
+          37.5101697
+        ],
+        [
+          -122.2653054,
+          37.5101655
+        ],
+        [
+          -122.2653166,
+          37.5101628
+        ],
+        [
+          -122.2653282,
+          37.5101617
+        ],
+        [
+          -122.2653399,
+          37.5101622
+        ],
+        [
+          -122.2653513,
+          37.5101642
+        ],
+        [
+          -122.2653621,
+          37.5101677
+        ],
+        [
+          -122.265372,
+          37.5101726
+        ],
+        [
+          -122.2653807,
+          37.5101787
+        ],
+        [
+          -122.2654192,
+          37.5102109
+        ],
+        [
+          -122.2654986,
+          37.5102824
+        ],
+        [
+          -122.2655712,
+          37.5103583
+        ],
+        [
+          -122.2656366,
+          37.5104381
+        ],
+        [
+          -122.2656946,
+          37.5105216
+        ],
+        [
+          -122.2657447,
+          37.5106083
+        ],
+        [
+          -122.2657852,
+          37.510712
+        ],
+        [
+          -122.2657083,
+          37.5107302
+        ],
+        [
+          -122.2655469,
+          37.5106244
+        ],
+        [
+          -122.2651633,
+          37.51089
+        ],
+        [
+          -122.2651113,
+          37.5108557
+        ],
+        [
+          -122.2650878,
+          37.5108401
+        ],
+        [
+          -122.2650791,
+          37.5108343
+        ],
+        [
+          -122.2650555,
+          37.5108188
+        ],
+        [
+          -122.2649317,
+          37.5107369
+        ],
+        [
+          -122.2650047,
+          37.5106863
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -131,8 +265,16 @@
         {
           "value": 147,
           "src": [
-            "SRC-001253"
+            "SRC-001253",
+            "SRC-002769"
           ]
+        },
+        {
+          "value": 153,
+          "src": [
+            "SRC-002768"
+          ],
+          "note": "Cycle 3 project description letter (2026-10-15)"
         }
       ]
     },
@@ -199,6 +341,12 @@
           "src": [
             "SRC-001253"
           ]
+        },
+        {
+          "value": "13 very low income (10%) and 7 low income (5%) per Cycle 3 project description; city page shows 6 low income",
+          "src": [
+            "SRC-002768"
+          ]
         }
       ]
     },
@@ -209,7 +357,8 @@
             "Density bonus"
           ],
           "src": [
-            "SRC-001253"
+            "SRC-001253",
+            "SRC-002768"
           ]
         }
       ]
@@ -241,6 +390,24 @@
       "src": [
         "SRC-001140"
       ]
+    },
+    {
+      "text": "Cycle 3 plans (2026-10-02) list APNs 045-316-130 and 045-316-140, 227 Laurel St, zoning MU-N-120, site 47,433 sf (1.09 ac), total floor area 228,705 sf, 7 stories, height 85'-0\" to average roof, Type IA construction, plan dates 2026-02-13, 2026-06-17 and 2026-10-02. Owner/developer block: Prometheus Real Estate Group.",
+      "src": [
+        "SRC-002769"
+      ]
+    },
+    {
+      "text": "Cycle 3 project description: base density 131 units at 120 du/ac; 10% very low income set-aside yields a 32.5% density bonus (173 units allowed), 157 proposed. Nine development standard waivers requested, no incentives identified. Applicant states the project qualifies for a statutory CEQA exemption under AB 130.",
+      "src": [
+        "SRC-002768"
+      ]
+    },
+    {
+      "text": "County parcel layer: APN 045-316-140 (260 El Camino Real) has the same owner of record as 045-316-130.",
+      "src": [
+        "SRC-001103"
+      ]
     }
   ],
   "parties": [
@@ -263,6 +430,26 @@
         "SRC-001253"
       ],
       "website": "https://prometheusapartments.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "Jones Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.jonesarc.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-002769"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002769"
+      ]
     }
   ],
   "financing": [],
@@ -295,9 +482,27 @@
       "estimated": false
     },
     {
+      "date": "2026-06",
+      "type": "Other",
+      "label": "Cycle 2 submittal",
+      "src": [
+        "SRC-001253"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-10",
       "type": "Other",
       "label": "Cycle 3 submittal",
+      "src": [
+        "SRC-001253"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Other",
+      "label": "Applicant-hosted virtual neighborhood meeting",
       "src": [
         "SRC-001253"
       ],
@@ -319,6 +524,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Prometheus; opened city project page and Cycle 3 documents. Ground News summary of The Registry article refused access.",
+      "src": [
+        "SRC-001253"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC parcel layer: 045-316-130 (240 ECR) and 045-316-140 (260 ECR), same owner of record.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page (updated 2026-11-16); Cycle 3 project description letter 2026-10-15 and plans 2026-10-02.",
+      "src": [
+        "SRC-001253",
+        "SRC-002768",
+        "SRC-002769"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Incorporated San Carlos project, no county funding.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR San Carlos Table A2 searched for 240 El Camino Real: no rows; Table A row already on record.",
+      "src": [
+        "SRC-001140"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched local news for 240 El Camino Real; none found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Registry tag page and Ground News copy of its article returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Prometheus project page for 240 El Camino Real surfaced.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Cycle 3 plans title block: Jones Architecture, Portland OR.",
+      "src": [
+        "SRC-002769"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing reported in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts surfaced in web search.",
+      "src": []
+    }
+  }
 }
