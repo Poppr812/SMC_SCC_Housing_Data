@@ -215,16 +215,37 @@
           "src": [
             "SRC-001457"
           ]
+        },
+        {
+          "value": "44 below-market-rate units: 33 very-low-income and 11 moderate-income, under a 99-year regulatory agreement",
+          "src": [
+            "SRC-002361"
+          ]
+        },
+        {
+          "value": "43 below-market-rate units: 32 very-low-income and 11 moderate-income",
+          "src": [
+            "SRC-001458"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "site_area_acres": {
       "claims": [
         {
           "value": 2.67,
           "src": [
-            "SRC-001457"
+            "SRC-001457",
+            "SRC-002361"
           ]
+        },
+        {
+          "value": 2.4,
+          "src": [
+            "SRC-002362"
+          ],
+          "note": "Reported as roughly 2.4 acres"
         }
       ]
     },
@@ -235,7 +256,8 @@
             "Density bonus"
           ],
           "src": [
-            "SRC-001457"
+            "SRC-001457",
+            "SRC-002361"
           ]
         }
       ]
@@ -245,7 +267,8 @@
         {
           "value": 8,
           "src": [
-            "SRC-001458"
+            "SRC-001458",
+            "SRC-002361"
           ],
           "note": "Eight stories plus a three-story garage, per SF YIMBY"
         }
@@ -256,7 +279,66 @@
         {
           "value": 451,
           "src": [
-            "SRC-001458"
+            "SRC-001458",
+            "SRC-002361"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 35,
+            "1br": 203,
+            "2br": 112,
+            "3br": 13,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002361"
+          ],
+          "note": "Two-bedroom count includes 7 two-level townhome-style units; units range from 530 to 1,439 sq ft"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 33,
+              "ami": 50
+            },
+            {
+              "count": 11,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-002361"
+          ],
+          "note": "33 very-low-income, 11 moderate-income"
+        }
+      ],
+      "best": 0
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 319,
+          "src": [
+            "SRC-002361"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-002361"
           ]
         }
       ]
@@ -267,6 +349,18 @@
       "text": "City status: under review. City page says the project spans two existing parcels; county data shows these three APNs at the two addresses.",
       "src": [
         "SRC-001457"
+      ]
+    },
+    {
+      "text": "Planning Commission staff report lists the site as APNs 375-06-006 and 375-06-007 (two parcels, 2.62 net acres) with 17,500 sq ft of existing one-story office space.",
+      "src": [
+        "SRC-002361"
+      ]
+    },
+    {
+      "text": "Staff report: density 136 units per acre under state density bonus law (base 214 units at 80 per acre); waivers for height (97'-3\"), lot coverage, setbacks and open space; three concessions on public art and bird-safe design; parking 1.24 spaces per unit; parkland in-lieu fee about $17.2 million; CEQA statutory exemption recommended; applicant agreed to a 90-day extension moving the processing deadline to Feb. 26, 2027.",
+      "src": [
+        "SRC-002361"
       ]
     }
   ],
@@ -288,6 +382,15 @@
       "linkedin": null,
       "src": [
         "SRC-001457"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Tom and Eleane Hall Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002362"
       ]
     }
   ],
@@ -311,6 +414,33 @@
         "SRC-001457"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Other",
+      "label": "Application determined complete",
+      "src": [
+        "SRC-002361"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-10",
+      "type": "Other",
+      "label": "Planning Commission hearing; staff recommended the Commission recommend City Council approval",
+      "src": [
+        "SRC-002361"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-12-15",
+      "type": "Other",
+      "label": "City Council hearing scheduled",
+      "src": [
+        "SRC-001457"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -323,6 +453,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project, addresses and Hanover; found SF YIMBY 2025 preliminary-application article with owner of record",
+      "src": [
+        "SRC-002362"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 375-06-006, 375-06-007, 375-01-018: situs 19220/19300 Stevens Creek; dataset has no owner field. Staff report names only 375-06-006 and -007",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Cupertino Legistar matter 26-15461, PC 2026-11-10 staff report; city project page",
+      "src": [
+        "SRC-002361",
+        "SRC-001457"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "CEQAnet search: no document (staff report recommends statutory exemption); not in APR data through 2025",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of local news: no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY May 2025 (owner of record) and May 2026 (affordability split)",
+      "src": [
+        "SRC-002362",
+        "SRC-001458"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "hanoverco.com: no page for this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "TCA Architects already on record; confirmed in SF YIMBY 2026",
+      "src": [
+        "SRC-001458"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts: none found",
+      "src": []
+    }
+  }
 }

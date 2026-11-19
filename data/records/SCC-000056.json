@@ -256,6 +256,13 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 377,
+          "src": [
+            "SRC-002363"
+          ],
+          "note": "345 apartments plus 32 for-sale townhomes"
         }
       ],
       "best": 0
@@ -308,6 +315,45 @@
           "note": "State report 2025, building permit stage: 17 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.5,
+          "src": [
+            "SRC-002363"
+          ],
+          "note": "2.12-acre apartment parcel plus 1.35-acre townhome parcel"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3000,
+          "src": [
+            "SRC-002363",
+            "SRC-001385"
+          ],
+          "note": "About 3,000 sq ft of office space"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "About 5% of the 345 apartments affordable, the rest market rate",
+          "src": [
+            "SRC-001385"
+          ]
+        },
+        {
+          "value": "5% of units set aside for households earning the area median income",
+          "src": [
+            "SRC-002364"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -322,6 +368,18 @@
       "text": "City of San Jose permit H21-015 (Site Development Permit/Amendment, folder year 2021), status Approved, issue date 2022-06-30: \"A Site Development Permit to allow the demolition of an existing single-family residential building and two accessory structures, the removal of 10 ordinance-sized trees and 24 non-ordinance-sized trees, and the construction of a 7-story mixed-use buildin\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "CEQA MND: northern 2.12-acre parcel (APN 254-29-028) gets a seven-story mixed-use building with 345 apartments, about 3,000 sq ft of office and underground parking; southern 1.35-acre parcel (APN 254-29-026) is subdivided for 32 for-sale townhomes with two-car garages. County parcel data returns no parcel for APN 254-29-026.",
+      "src": [
+        "SRC-002363"
+      ]
+    },
+    {
+      "text": "SF YIMBY (April 2025): apartments are a mix of studios, one- and two-bedrooms; completion of the apartment building expected in just under two years.",
+      "src": [
+        "SRC-001385"
       ]
     }
   ],
@@ -345,6 +403,25 @@
       "src": [
         "SRC-001385"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Hanover R.S. Limited Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA applicant",
+      "src": [
+        "SRC-002363"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "GWH Landscape Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001385"
+      ]
     }
   ],
   "financing": [],
@@ -357,6 +434,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2022-04-26",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration released (SCH 2022040527); review period to May 16, 2022",
+      "src": [
+        "SRC-002363"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-09-23",
@@ -412,6 +498,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project, address and Hanover; found CEQAnet MND",
+      "src": [
+        "SRC-002363"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 254-29-028 at 905 N Capitol (3.37 acres); 254-29-026 not in current data; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2022040527 (MND); APR data already on record",
+      "src": [
+        "SRC-002363"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "The San Jose Blog May 2025 (affordability, timeline); Local News Matters returned 403",
+      "src": [
+        "SRC-002364"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY April 2025 groundbreaking article (landscape architect); The Real Deal returned 403",
+      "src": [
+        "SRC-001385"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "hanoverco.com property page: 345 units, under construction",
+      "src": [
+        "SRC-001386"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "KTGY already on record; confirmed in SF YIMBY",
+      "src": [
+        "SRC-001385"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Construction loan coverage at The Real Deal and traded.co returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts: none found",
+      "src": []
+    }
+  }
 }

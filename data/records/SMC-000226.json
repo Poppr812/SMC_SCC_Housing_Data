@@ -650,6 +650,13 @@
             "SRC-001162"
           ],
           "note": "County completeness letter of July 24, 2026 calls it a proposed 350-unit development"
+        },
+        {
+          "value": 363,
+          "src": [
+            "SRC-002357"
+          ],
+          "note": "Project description on the applicant's pre-application civil plans; the same sheet's site data block gives 364"
         }
       ]
     },
@@ -658,7 +665,8 @@
         {
           "value": 1172,
           "src": [
-            "SRC-001161"
+            "SRC-001161",
+            "SRC-002358"
           ]
         }
       ]
@@ -679,6 +687,12 @@
           "value": "20% of the 364 units designated affordable (73 units)",
           "src": [
             "SRC-001161"
+          ]
+        },
+        {
+          "value": "73 affordable units (20%) to be sold to lower-income households: 22 duets, 18 townhomes, 30 condominiums and 3 single-family homes",
+          "src": [
+            "SRC-002357"
           ]
         }
       ]
@@ -703,6 +717,36 @@
             "SRC-001161",
             "SRC-001162"
           ]
+        },
+        {
+          "value": "PRE2025-00065",
+          "src": [
+            "SRC-002359",
+            "SRC-002358"
+          ],
+          "note": "SB 330 preliminary application file number"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 840302,
+          "src": [
+            "SRC-002358"
+          ],
+          "note": "Preliminary application description quoted in the City of Pacifica letter"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 282,
+          "src": [
+            "SRC-002357"
+          ],
+          "note": "Plans give approximately 282 acres; county page lists the two parcels at 168.86 and 108.58 acres"
         }
       ]
     }
@@ -719,6 +763,33 @@
       "src": [
         "SRC-001163"
       ]
+    },
+    {
+      "text": "Unit types: county page lists 129 single-family detached homes, 22 duplex units, 63 townhomes and 150 condominiums (364 total), plus demolition of 16 existing dwellings. The City of Pacifica letter lists 128 single-family homes in the same 364-unit total. The applicant's plans list 129 single-family homes, 63 townhomes, 22 duets and 150 condominiums in a 363-unit project description.",
+      "src": [
+        "SRC-002360",
+        "SRC-002358",
+        "SRC-002357"
+      ]
+    },
+    {
+      "text": "Applicant's plans state water service from North Coast County Water District and sanitary sewer from the City of Pacifica Public Works Department. Pacifica's letter says the city did not issue a will-serve determination and that the site is outside city limits.",
+      "src": [
+        "SRC-002357",
+        "SRC-002358"
+      ]
+    },
+    {
+      "text": "Pacifica letter: the preliminary application also listed county-owned parcels 023-742-010 and 023-742-030; county staff said on Jan. 30, 2026 that their inclusion was an error.",
+      "src": [
+        "SRC-002358"
+      ]
+    },
+    {
+      "text": "County letter: both parcels are in the county's Rural Area, designated rural lands; the tentative map must meet Subdivision Ordinance water supply (Sec. 9.40.010) and sewage disposal (Sec. 9.52.010) requirements.",
+      "src": [
+        "SRC-002359"
+      ]
     }
   ],
   "parties": [
@@ -731,17 +802,72 @@
       "src": [
         "SRC-001162"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Ocean Moon Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002357",
+        "SRC-002359"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MH Engineering",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002357"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "A.K.I. Design Group, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002357"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-12-29",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application filed with the county (PRE2025-00065), per City of Pacifica letter",
+      "src": [
+        "SRC-002358"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-02-27",
       "type": "Application filed",
       "label": "Preliminary application received, per county",
       "src": [
         "SRC-001161"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-05",
+      "type": "Other",
+      "label": "City of Pacifica comment letter: city says existing staffing and infrastructure cannot serve the project",
+      "src": [
+        "SRC-002358"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-23",
+      "type": "Other",
+      "label": "County letter to applicant on preliminary application: significant issues with water supply, sewage disposal, General Plan and Subdivision Ordinance",
+      "src": [
+        "SRC-002359"
       ],
       "estimated": false
     },
@@ -771,6 +897,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project name, address and Ocean Moon Corporation; found county pre-application plan set",
+      "src": [
+        "SRC-002357"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "County Active Parcels layer: both APNs (023-741-010, 023-741-020) already on record; layer shows no owner",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of Pacifica comment letter of March 5, 2026 (site is outside Pacifica city limits)",
+      "src": [
+        "SRC-002358"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "County project pages (preliminary and formal application), March 23, 2026 county letter, pre-application civil plans",
+      "src": [
+        "SRC-002360",
+        "SRC-001161",
+        "SRC-002359",
+        "SRC-002357"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "CEQAnet search: no document for this project; county says an EIR is required",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web search: Coastside Buzz coverage already on record; no other local news found",
+      "src": [
+        "SRC-001163"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY, The Real Deal: Pacifica coverage concerns other projects",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No website found for Ocean Moon Corporation",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "A.K.I. Design Group, Inc. named as architect on the pre-application plans",
+      "src": [
+        "SRC-002357"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Shamrock Ranch: none found",
+      "src": []
+    }
+  }
 }

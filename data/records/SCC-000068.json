@@ -3,7 +3,7 @@
   "name": "Terraine (323 Terraine Street)",
   "parcels": [
     {
-      "apn": "249-66-037",
+      "apn": "259-24-020",
       "from": null,
       "to": null,
       "src": [
@@ -11,24 +11,100 @@
       ],
       "outline": [
         [
-          -121.8696508,
-          37.3535969
+          -121.8982255,
+          37.3394473
         ],
         [
-          -121.8699171,
-          37.3534133
+          -121.8985016,
+          37.3393146
         ],
         [
-          -121.8700372,
-          37.3535246
+          -121.8987102,
+          37.3395944
         ],
         [
-          -121.8697712,
-          37.353708
+          -121.8980483,
+          37.3399107
         ],
         [
-          -121.8696508,
-          37.3535969
+          -121.8978399,
+          37.3396326
+        ],
+        [
+          -121.8982255,
+          37.3394473
+        ]
+      ]
+    },
+    {
+      "apn": "259-24-040",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8974723,
+          37.3388281
+        ],
+        [
+          -121.8977034,
+          37.338717
+        ],
+        [
+          -121.8977494,
+          37.3387813
+        ],
+        [
+          -121.8982255,
+          37.3394473
+        ],
+        [
+          -121.8978399,
+          37.3396326
+        ],
+        [
+          -121.8976126,
+          37.3393293
+        ],
+        [
+          -121.8977725,
+          37.339252
+        ],
+        [
+          -121.8974723,
+          37.3388281
+        ]
+      ]
+    },
+    {
+      "apn": "259-24-041",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8972992,
+          37.3389113
+        ],
+        [
+          -121.8974723,
+          37.3388281
+        ],
+        [
+          -121.8977725,
+          37.339252
+        ],
+        [
+          -121.8976126,
+          37.3393293
+        ],
+        [
+          -121.8972992,
+          37.3389113
         ]
       ]
     }
@@ -117,7 +193,9 @@
         {
           "value": 345,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-002365",
+            "SRC-002366"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -159,6 +237,55 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.57,
+          "src": [
+            "SRC-002365"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-002365"
+          ],
+          "note": "Residential tower under SP21-045"
+        },
+        {
+          "value": 18,
+          "src": [
+            "SRC-002366"
+          ],
+          "note": "Residential building in the version paired with a data center"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 621,
+          "src": [
+            "SRC-002366"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 11777,
+          "src": [
+            "SRC-002365"
+          ],
+          "note": "Up to 11,777 sq ft of ground-floor retail"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -186,6 +313,30 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CEQA Notice of Determination: Phase I is a 17-story, 345-unit tower and a nine-level parking tower on a shared podium with up to 11,777 sq ft of ground-floor retail; Phase II converts the parking tower to about 210,328 sq ft of office. Site about 1.57 acres, APNs 259-24-020, 259-24-040 and 259-24-041.",
+      "src": [
+        "SRC-002365"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (April 2025): 18-story residential building with 345 apartments, an 11-story data center and a 10-story, 621-space garage; affordable housing requirement still being worked out with the city; residential buildings to be built first.",
+      "src": [
+        "SRC-002366"
+      ]
+    },
+    {
+      "text": "Westbank project page: about 500,000 sq ft, mass timber hybrid, net zero carbon target, paired with the Arbor building; status In Development.",
+      "src": [
+        "SRC-002367"
+      ]
+    },
+    {
+      "text": "County parcel data places APN 249-66-037, the parcel previously on this record, at 345 Wooster Ave.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [
@@ -200,6 +351,28 @@
       ],
       "website": "https://westbankcorp.com/",
       "project_page": "https://westbankcorp.com/body-of-work/terraine"
+    },
+    {
+      "role": "Developer",
+      "company": "Westbank Corp",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://westbankcorp.com/",
+      "website_basis": "opened",
+      "project_page": "https://westbankcorp.com/body-of-work/terraine",
+      "src": [
+        "SRC-002365",
+        "SRC-002366"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio Gang",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002367"
+      ]
     }
   ],
   "financing": [],
@@ -220,6 +393,24 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2024-04-04",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed for the Special Use Permit",
+      "src": [
+        "SRC-002365"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-04-08",
+      "type": "Other",
+      "label": "City Council unanimously accepted Westbank's proposal under the Innovative Project Pathway Program",
+      "src": [
+        "SRC-002366"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -247,6 +438,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Removed parcel 249-66-037: county situs is 345 Wooster Ave; the 2022 state report row for SP21-045 gives this APN and address, while the 2024 and 2025 rows and the CEQA filing give 259-24-020/-040/-041 at 323 Terraine St"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Terraine, 323 Terraine St and Westbank; found San Jose Spotlight April 2025",
+      "src": [
+        "SRC-002366"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet NOD lists APNs 259-24-020, -040, -041; SCC parcel API confirms them (Bassett St, 217 and 201 W Julian St); 249-66-037 is at 345 Wooster Ave",
+      "src": [
+        "SRC-002365",
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2003042127 document 39 (NOD, April 4, 2024)",
+      "src": [
+        "SRC-002365"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight April 16, 2025; Local News Matters returned 403",
+      "src": [
+        "SRC-002366"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal articles returned 403; SF YIMBY already on record",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "westbankcorp.com Terraine page",
+      "src": [
+        "SRC-002367"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Studio Gang named as architect on the Westbank project page",
+      "src": [
+        "SRC-002367"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in opened sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts: none found",
+      "src": []
+    }
+  }
 }

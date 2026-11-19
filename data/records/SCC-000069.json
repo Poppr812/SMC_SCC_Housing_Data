@@ -107,7 +107,9 @@
           "value": 345,
           "src": [
             "SRC-001107",
-            "SRC-001969"
+            "SRC-001969",
+            "SRC-002368",
+            "SRC-001802"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -147,6 +149,12 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "Units for households earning 70% to 80% of AMI; architect describes the project as 100% affordable",
+          "src": [
+            "SRC-001802"
+          ]
         }
       ]
     },
@@ -161,6 +169,16 @@
             "SRC-001107"
           ],
           "note": "SB 35 flagged in the state report"
+        },
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001802"
+          ],
+          "note": "SB 35 and the 50% state density bonus"
         }
       ]
     },
@@ -173,6 +191,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE20-064",
+          "src": [
+            "SRC-001801"
+          ],
+          "note": "Enhanced preliminary review, June 4, 2020 (354 units, 30 stories)"
         }
       ]
     },
@@ -203,7 +228,9 @@
             "4br+": 0
           },
           "src": [
-            "SRC-001969"
+            "SRC-001969",
+            "SRC-002368",
+            "SRC-001802"
           ]
         }
       ]
@@ -213,9 +240,56 @@
         {
           "value": 30,
           "src": [
-            "SRC-001969"
+            "SRC-001969",
+            "SRC-002368",
+            "SRC-001802"
           ],
           "note": "285-foot rooftop height"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 273940,
+          "src": [
+            "SRC-001802"
+          ]
+        },
+        {
+          "value": 274250,
+          "src": [
+            "SRC-002368"
+          ]
+        }
+      ],
+      "best": 0
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 91,
+          "src": [
+            "SRC-001802"
+          ],
+          "note": "Stackers on three below-ground levels"
+        },
+        {
+          "value": 96,
+          "src": [
+            "SRC-002368"
+          ]
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.3,
+          "src": [
+            "SRC-001802"
+          ]
         }
       ]
     }
@@ -239,6 +313,18 @@
       "src": [
         "SRC-001969"
       ]
+    },
+    {
+      "text": "SF YIMBY (Dec 2021): 285-foot rooftop height; 289,420 sq ft total including 273,940 sq ft residential, 6,400 sq ft amenities and 7,440 sq ft lobby and utility; 12,830 sq ft below-ground garage for 91 cars; 74 long-term and 40 short-term bicycle spaces; construction expected to begin by mid-2023.",
+      "src": [
+        "SRC-001802"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Sept 2020): 290 feet, 289,324 sq ft total, 96 car and 114 bicycle spaces; at least 70% of the tower affordable.",
+      "src": [
+        "SRC-002368"
+      ]
     }
   ],
   "parties": [
@@ -250,11 +336,48 @@
       "src": [
         "SRC-001802"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002368",
+        "SRC-001802"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Nterra Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001802"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Taniguchi Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001802"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-06-04",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE20-064 filed (354 units, 30 stories)",
+      "src": [
+        "SRC-001801"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-08-05",
       "type": "Application filed",
@@ -297,6 +420,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 605 S. Second St and Roygbiv; found SF YIMBY Sept 2020 article",
+      "src": [
+        "SRC-002368"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 472-26-070, situs 605 S 2nd St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov and sjpermits.org city pages refuse automated access; SJ Build permit summary used",
+      "src": [
+        "SRC-001801"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No county housing funding found for this project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR data already on record; no CTCAC/CDLAC award or CEQAnet document found",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search: no recent local coverage; Mercury News items behind paywall",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Sept 2020 and Dec 2021 articles",
+      "src": [
+        "SRC-002368",
+        "SRC-001802"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Roygbiv Real Estate Development website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Anderson Architects named in SF YIMBY; firm site not found",
+      "src": [
+        "SRC-001802"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, tax credit or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts: none found",
+      "src": []
+    }
+  }
 }
