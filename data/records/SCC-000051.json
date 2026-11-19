@@ -102,7 +102,9 @@
         {
           "value": 400,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-002280",
+            "SRC-002281"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -112,6 +114,13 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 372,
+          "src": [
+            "SRC-002282"
+          ],
+          "note": "Architect's project page: 372 units, 109.3 units per acre, modular"
         }
       ]
     },
@@ -169,7 +178,9 @@
         {
           "value": 3.4,
           "src": [
-            "SRC-001384"
+            "SRC-001384",
+            "SRC-002280",
+            "SRC-002282"
           ]
         }
       ]
@@ -193,6 +204,29 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002280",
+            "SRC-002281"
+          ],
+          "note": "Six-story multifamily building with podium parking"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 401,
+          "src": [
+            "SRC-002281"
+          ],
+          "note": "Spaces the developer pledged, per San José Spotlight"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -207,6 +241,24 @@
       "text": "City of San Jose permit H24-042 (Site Development Permit/Amendment, folder year 2024), status Approved, issue date 2025-03-12: \"Site Development Permit to allow the demolition of two vacant commercial buildings, totaling approximately 50,900 square feet, and the removal of 56 trees (14 ordinance and 42 non-ordinance trees), for the construction of a six-story multifamily residenti\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption (SCH 2025030811): Site Development Permit to demolish two vacant commercial buildings (about 50,900 sq ft) and remove 59 trees (17 ordinance trees) for a six-story, 400-unit, 100% affordable multifamily building with podium parking on about 3.4 gross acres, about 600 ft west of South White Road; categorical exemption under CEQA Guidelines 15332. The city GIS permit text on this record shows 56 trees (14 ordinance).",
+      "src": [
+        "SRC-002280"
+      ]
+    },
+    {
+      "text": "San José Spotlight: approved at a Planning Director hearing on March 12, 2025; green and open space requirements were waived; homes expected to be affordable at 80% AMI; a 24/7 all-electric car-share program; traffic-calming budget raised from $40,000 to $100,000; site formerly a drive-in restaurant, The Golden Point; developer said it was too early to discuss financing.",
+      "src": [
+        "SRC-002281"
+      ]
+    },
+    {
+      "text": "AO project page describes a 100% affordable modular housing community on the former Orchard Supply Hardware site.",
+      "src": [
+        "SRC-002282"
       ]
     }
   ],
@@ -229,6 +281,16 @@
       "src": [
         "SRC-001384"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "National Retail Properties",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Site owner",
+      "src": [
+        "SRC-002281"
+      ]
     }
   ],
   "financing": [],
@@ -248,6 +310,14 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2025-03-20",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (Class 32 infill) received by the state",
+      "src": [
+        "SRC-002280"
       ]
     }
   ],
@@ -271,6 +341,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and The Pacific Companies; led to CEQAnet NOE and SJ Spotlight",
+      "src": [
+        "SRC-002280",
+        "SRC-002281"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 484-21-046, situs 2940 Alum Rock Av (no owner field)",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city GIS permit data already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025030811 NOE 2025-03-20; CDLAC/CTCAC 2025-2026 results searched, no award for this address",
+      "src": [
+        "SRC-002280"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San José Spotlight 2025-03-17 approval article",
+      "src": [
+        "SRC-002281"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2024-11 article on record; Real Deal 2024 article returned 403",
+      "src": [
+        "SRC-001384"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "tpchousing.com: no project page found via search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "AO project page: 372 units, 3.4 acres, modular",
+      "src": [
+        "SRC-002282"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, bond or tax credit award found; SJ Spotlight reports financing not yet discussed",
+      "src": [
+        "SRC-002281"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 2940 Alum Rock",
+      "src": []
+    }
+  }
 }

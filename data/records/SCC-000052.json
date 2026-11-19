@@ -179,8 +179,17 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-002276",
+            "SRC-002277"
+          ],
+          "note": "Up to 297 multifamily units in one building plus up to 111 three-story townhouses"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -223,7 +232,8 @@
         {
           "value": 408,
           "src": [
-            "SRC-001531"
+            "SRC-001531",
+            "SRC-002276"
           ],
           "note": "297 apartments and 111 townhomes per SF YIMBY"
         }
@@ -267,6 +277,47 @@
           "note": "State report 2024, application stage: 62 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.96,
+          "src": [
+            "SRC-002276"
+          ],
+          "note": "Gross acres, including a 0.94-acre parcel in San Jose to be annexed"
+        },
+        {
+          "value": 10.2,
+          "src": [
+            "SRC-002277"
+          ],
+          "note": "Parcel area in the city project data table"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002276",
+            "SRC-002277"
+          ],
+          "note": "Multifamily building five stories (about 64 ft); townhouses three stories (about 38 ft)"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 555,
+          "src": [
+            "SRC-002277"
+          ],
+          "note": "359 multifamily and 196 townhouse off-street spaces in the city project data table"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -274,6 +325,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "text": "CEQAnet project summary: demolition of four office buildings (216,000 sq ft) and two parking garages; 26 buildings; average density 37 units per acre; APNs 230-09-020 and 230-09-021; applicant Bixby Land Company.",
+      "src": [
+        "SRC-002276"
+      ]
+    },
+    {
+      "text": "City project data table: building areas of 186,000 sq ft (4-plex townhouses), 41,100 sq ft (6-plex townhouses) and 475,000 sq ft (multifamily building); density 39.4 units per acre; a concession for commercial FAR and waivers for the multi-story stepback and height; site eligible under Gov. Code 65863.2 (AB 2097); 297 and 98 Class 1 bicycle spaces.",
+      "src": [
+        "SRC-002277"
+      ]
+    },
+    {
+      "text": "City Council Sept. 22, 2026 adopted Resolutions 26-9604 (EIR certification, CEQA findings, MMRP), 26-9605 (annexation application for the 0.94-acre San Jose parcel), 26-9606 (General Plan pre-designation Regional Mixed-Use) and 26-9607 (pre-zone), and continued the remaining items.",
+      "src": [
+        "SRC-001532"
       ]
     }
   ],
@@ -320,6 +389,30 @@
       ]
     },
     {
+      "date": "2025-05-21",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR received by the state",
+      "src": [
+        "SRC-002276"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Other",
+      "label": "Historical & Landmarks Commission architectural review hearing",
+      "src": [
+        "SRC-002278"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "type": "Other",
+      "label": "Planning Commission approved staff recommendations 1-4",
+      "src": [
+        "SRC-002279"
+      ]
+    },
+    {
       "date": "2026-09-22",
       "type": "Approved",
       "label": "City Council approved map and prezone",
@@ -344,6 +437,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project name, address, Bixby and KTGY; led to CEQAnet SCH 2025050963",
+      "src": [
+        "SRC-002276"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 230-09-020 (no owner field); CEQAnet lists second APN 230-09-021, which is on record SCC-000380",
+      "src": [
+        "SRC-001098",
+        "SRC-002276"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar files 26-684 (HLC 2026-08-06), 26-900 (PC 2026-09-02), 26-954 (Council 2026-09-22) and Attachment 2 project data table",
+      "src": [
+        "SRC-002277",
+        "SRC-002279",
+        "SRC-002278",
+        "SRC-001532"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025050963 (NOP 2025-05-21); APR data already on record; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-002276",
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Mercury News, Silicon Valley Voice, SJ Spotlight for 451 El Camino Real / University Station",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-08 article already on record; Real Deal 2024 article returned 403",
+      "src": [
+        "SRC-001533"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Bixby Land Company: no University Station project page found via search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "KTGY: no project page found via search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found in public records or press",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on University Station Santa Clara",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000380",
+      "relation": "adjacent",
+      "note": "CEQAnet SCH 2025050963 lists this San Jose parcel (230-09-021) within the University Station site"
     }
   ]
 }

@@ -235,9 +235,42 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 31,
+              "ami": 50
+            },
+            {
+              "count": 27,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001341"
+          ],
+          "note": "Very low income (50% AMI) and moderate income (120% AMI) units"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City project page: zoning RRMU (North Rollins Road Mixed-Use); Major Design Review and State Density Bonus requested; site 127,631 sq ft; 7 stories plus two stories of above-grade parking; 84 ft 9 in to top of parapet; CEQA review filed under the AB 130 exemption.",
+      "src": [
+        "SRC-001341"
+      ]
+    },
+    {
+      "text": "County parcel data lists the owner of APN 025-166-090 as GIC Burlingame LLC, c/o Goodman North America.",
+      "src": [
+        "SRC-002285"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -249,6 +282,24 @@
         "SRC-001341"
       ],
       "website": "https://www.shapartments.com/"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "GIC Burlingame LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002285"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "SummerHill Apartment Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001341"
+      ]
     }
   ],
   "financing": [],
@@ -264,6 +315,84 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web search on address and SummerHill; only city pages and a Daily Journal mention",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels APN 025-166-090: owner GIC Burlingame LLC",
+      "src": [
+        "SRC-002285"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Burlingame project page and Residential Applications Overview (Nov 2026)",
+      "src": [
+        "SRC-001341",
+        "SRC-001340"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "CEQAnet and APR searched; no entry for 1755 Rollins",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal North Rollins article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY and other trade press: no article on 1755 Rollins",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SummerHill Apartment Communities: no project page found via search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in public sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 1755 Rollins",
+      "src": []
+    }
+  }
 }
