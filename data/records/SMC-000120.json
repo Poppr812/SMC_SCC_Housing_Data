@@ -232,7 +232,8 @@
         {
           "value": 168,
           "src": [
-            "SRC-001111"
+            "SRC-001111",
+            "SRC-002725"
           ],
           "note": "Units in the application as reported"
         },
@@ -246,11 +247,20 @@
         {
           "value": 106,
           "src": [
-            "SRC-001199"
+            "SRC-001199",
+            "SRC-002725"
           ],
           "note": "Townhome component only, per September 2025 notice; includes 11 moderate-income units"
+        },
+        {
+          "value": 274,
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "106 for-sale townhomes plus 168 rental units in the mixed-use project, per March 3, 2026 council staff report"
         }
-      ]
+      ],
+      "best": 3
     },
     "planning_file": {
       "claims": [
@@ -260,6 +270,14 @@
             "SRC-001111"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE24-003, PRE24-004",
+          "src": [
+            "SRC-001196",
+            "SRC-001197"
+          ],
+          "note": "Preliminary applications for the townhome and mixed-use projects"
         }
       ]
     },
@@ -289,6 +307,87 @@
           "note": "State report 2025, application stage: 25 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 6.06,
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "Townhome project 4.61 acres, mixed-use project 1.45 acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "Mixed-use project, 75 feet"
+        },
+        {
+          "value": 3,
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "Townhome project, 39 feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 229,
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "Townhome project (211 required)"
+        },
+        {
+          "value": 256,
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "Mixed-use project (168 required)"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 5555,
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "Retail in the mixed-use project"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Townhomes: 11 affordable units (10% of total). Mixed-use: 25 affordable units (20% of base units).",
+          "src": [
+            "SRC-002725"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002725"
+          ],
+          "note": "Projects use State Density Bonus Law waivers and concessions; SB 330 vesting"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -296,6 +395,18 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001111"
+      ]
+    },
+    {
+      "text": "Council staff report (March 3, 2026): two projects on one parcel by Sand Hill Property Company, owner Four Corners EPA Property Owner, LLC. Townhomes: 106 for-sale units, 11 affordable, 3 stories, 4.61 acres. Mixed-use: 168 rental units, 25 affordable, 6 stories, 5,555 sq ft retail, 1.45 acres. Both vested under SB 330 to the 2013 Ravenswood/4 Corners TOD Specific Plan; staff found both exempt from CEQA under Public Resources Code 21080.66 (AB 130).",
+      "src": [
+        "SRC-002725"
+      ]
+    },
+    {
+      "text": "Council staff report: the applicant's November 2020 application proposed about 400,000 sq ft of life science/office, 180 units and 22,000 to 30,000 sq ft of retail; the applicant put it on hold in spring 2024.",
+      "src": [
+        "SRC-002725"
       ]
     }
   ],
@@ -350,12 +461,41 @@
       ]
     },
     {
+      "date": "2026-02-09",
+      "type": "Other",
+      "label": "Planning Commission does not approve townhome and mixed-use projects",
+      "src": [
+        "SRC-002725"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-02-24",
+      "type": "Other",
+      "label": "Applicant files appeal; council call-for-review motion fails 2-2-1",
+      "src": [
+        "SRC-002725"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-03",
       "type": "Approved",
       "label": "City Council overturns Planning Commission denial",
       "src": [
         "SRC-001198"
       ]
+    },
+    {
+      "date": "2026-03-03",
+      "type": "Other",
+      "label": "City Council appeal hearing (staff recommended approval)",
+      "src": [
+        "SRC-002725",
+        "SRC-001196",
+        "SRC-001197"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -373,6 +513,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Four Corners, 1675 Bay Road and Sand Hill Property Company",
+      "src": [
+        "SRC-002725"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels: 063-111-250 owner Four Corners EPA Property Owner LLC (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project pages DR25-004 and DR25-007; City Council agenda packet 2026-03-03 Item 8.1 staff report",
+      "src": [
+        "SRC-002725",
+        "SRC-001196",
+        "SRC-001197"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR and CEQAnet notice already on record",
+      "src": [
+        "SRC-001111",
+        "SRC-001199"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Palo Alto Online 2026-03-10 article returned 429; Ground News summary already on record",
+      "src": [
+        "SRC-001198"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY 'Apartments Approved for 1675 Bay Road' link returned 404",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "shpco.com homepage and portfolio list no Four Corners page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in city pages or staff report text reviewed",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found in public records searched",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

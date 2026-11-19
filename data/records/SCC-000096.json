@@ -235,6 +235,13 @@
           "src": [
             "SRC-001412"
           ]
+        },
+        {
+          "value": 76,
+          "src": [
+            "SRC-002728"
+          ],
+          "note": "2021 application"
         }
       ]
     },
@@ -245,6 +252,20 @@
           "src": [
             "SRC-001412"
           ]
+        },
+        {
+          "value": 4660,
+          "src": [
+            "SRC-002728"
+          ],
+          "note": "2021 application"
+        },
+        {
+          "value": 4662,
+          "src": [
+            "SRC-002729"
+          ],
+          "note": "About; ground-floor retail/restaurant"
         }
       ]
     },
@@ -290,6 +311,39 @@
           ]
         }
       ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 95860019,
+          "src": [
+            "SRC-001641"
+          ],
+          "note": "Total permanent sources in CTCAC staff report ($577,470 per unit)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002728",
+            "SRC-002729"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 118275,
+          "src": [
+            "SRC-002728"
+          ],
+          "note": "2021 application (246 studios)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -310,6 +364,24 @@
       "text": "City of San Jose permit PD21-011 (Planned Development Permit/Amendment, folder year 2021), status Approved, issue date 2022-10-12: \"RE: File No. PD21-011 and PT21-031: Planned Development Permit and a Tentative Map to allow the demolition of 31,152-square feet of commercial buildings and construction of a mixed-use multifamily housing project consisting of a six-story building with a\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "CTCAC staff report CA-23-608: bond issuer California Municipal Finance Authority; general partners Central Valley Coalition for Affordable Housing, TPC Holdings IX, LLC and San Jose - Martha Gardens, LLC; census tract 5016.01; approved developer fee $9,800,000.",
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "text": "SF YIMBY (October 3, 2021): 2021 application proposed 246 studios, 37 affordable (22 at 80% AMI, 15 at 50% AMI), six stories, 71 feet, 4,660 sq ft retail, 76 parking spaces; sponsor Maracor Development; architect AO.",
+      "src": [
+        "SRC-002728"
+      ]
+    },
+    {
+      "text": "San Jose Inside (August 12, 2025): six-story modular building on the former Wheel Works tire store site, within the Martha Gardens Specific Plan, 75-plus parking spaces; joint effort of Maracor Development and The Pacific Cos.",
+      "src": [
+        "SRC-002729"
       ]
     }
   ],
@@ -389,6 +461,45 @@
       ],
       "other_role": "Applicant (CTCAC)",
       "email": "calebr@tpchousing.com"
+    },
+    {
+      "role": "Equity partner",
+      "company": "Boston Financial",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "TPC Holdings IX, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner (CTCAC)",
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "San Jose - Martha Gardens, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner (CTCAC)",
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Schoennauer Company",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Development application (2021)",
+      "src": [
+        "SRC-002728"
+      ]
     }
   ],
   "financing": [
@@ -417,6 +528,46 @@
       "provider": "Bonneville Tax-Exempt",
       "program": null,
       "amount": 23000000,
+      "date": null,
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank Tax-Exempt",
+      "program": null,
+      "amount": 25300000,
+      "date": null,
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bonneville Tax-Exempt",
+      "program": null,
+      "amount": 23000000,
+      "date": null,
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Pacific West Communities, Inc.",
+      "program": null,
+      "amount": 7380000,
+      "date": null,
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Boston Financial",
+      "program": "Federal credit factor $0.83992",
+      "amount": 40180019,
       "date": null,
       "src": [
         "SRC-001641"
@@ -498,6 +649,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name and address; opened San Jose Inside and SF YIMBY 2021",
+      "src": [
+        "SRC-002729",
+        "SRC-002728"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset for 472-17-104: no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose planning permits GIS layer (PD21-011) already on record; sanjoseca.gov not used (blocks automated access)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; CTCAC staff report lists no county funding",
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report CA-23-608: permanent sources, equity investor, total cost",
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Inside 2025-08-12 groundbreaking article",
+      "src": [
+        "SRC-002729"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021-10-03 plans filed; groundbreaking article already on record; The Real Deal 2024-06-05 returned 403",
+      "src": [
+        "SRC-002728",
+        "SRC-001412"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "tpchousing.com homepage has no page for this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "aoarchitects.com search for Martha Gardens returned no results",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Permanent loans, deferred fee and Boston Financial equity from CTCAC staff report",
+      "src": [
+        "SRC-001641"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

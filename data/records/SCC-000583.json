@@ -98,6 +98,13 @@
           "src": [
             "SRC-001611"
           ]
+        },
+        {
+          "value": 173,
+          "src": [
+            "SRC-002723"
+          ],
+          "note": "SB 330 preliminary application, including 2 manager units"
         }
       ]
     },
@@ -129,6 +136,95 @@
           "note": "City file H26-013 (Site Development Permit/Amendment): \"Site Development Permit to allow the construction of a 100% affordable seven-story, 168-unit multifamily residential building on an approximately 1.34-gross-acre site. The project includes an application under State Density Bonus Law.\""
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001611",
+            "SRC-001956"
+          ],
+          "note": "Five residential floors over two levels of podium parking"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.34,
+          "src": [
+            "SRC-001611",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 153,
+          "src": [
+            "SRC-001611"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 112109980,
+          "src": [
+            "SRC-001611"
+          ],
+          "note": "Total project cost in CTCAC application; land cost shown as $0 (ground lease)"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 17,
+              "ami": 30
+            },
+            {
+              "count": 17,
+              "ami": 50
+            },
+            {
+              "count": 65,
+              "ami": 60
+            },
+            {
+              "count": 67,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001611"
+          ],
+          "note": "CTCAC application, 166 low-income units"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 123,
+            "2br": 33,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001611"
+          ],
+          "note": "166 low-income units only; the two manager units are not in this breakdown"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -149,6 +245,24 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC application: site subject to a 58-year ground lease, loans secured by the leasehold; seller Sobrato Interests 3; total land cost shown as $0; bond issuer California Municipal Finance Authority; census tract 5009.01, Qualified Census Tract, Low Resource area; one seven-story building, 158,230 sq ft of structures.",
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "text": "SF YIMBY (April 30, 2026): site is a 1.3-acre surface parking lot beside the Hammer Theatre; a 24-story, 393-unit Sobrato Organization tower designed by Arquitectonica was proposed for the site in 2015 and later dropped.",
+      "src": [
+        "SRC-002723"
+      ]
+    },
+    {
+      "text": "The San Jose Blog (June 4, 2026), citing the Mercury News: Pacific West Communities is working with the Sobrato Organization, which has owned the lot since about 2010.",
+      "src": [
+        "SRC-002724"
+      ]
     }
   ],
   "parties": [
@@ -160,11 +274,204 @@
       "src": [
         "SRC-001611"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "San Jose Second & Central Associates, LP",
+      "contact": "Caleb Roope",
+      "linkedin": null,
+      "email": "calebr@tpchousing.com",
+      "phone": "208.461.0022",
+      "other_role": "Applicant (CTCAC)",
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Central Valley Coalition for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "TPC Holdings IX, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Administrative general partner (CTCAC)",
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architects Orange, LLP dba AO",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Pacific West Builders, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "ConAm Management Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Boston Financial",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citibank, N.A.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bonneville",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "Sobrato Interests 3, a California limited partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "The Sobrato Organization",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002724"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citibank, N.A.",
+      "program": "Tax-exempt (CTCAC application)",
+      "amount": 30200000,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank, N.A.",
+      "program": "Taxable (CTCAC application)",
+      "amount": 41989839,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Bonneville",
+      "program": "Recycled tax-exempt bonds (CTCAC application)",
+      "amount": 19500000,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank, N.A.",
+      "program": "Tax-exempt (CTCAC application)",
+      "amount": 30200000,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank, N.A.",
+      "program": "Taxable (CTCAC application)",
+      "amount": 7800000,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bonneville",
+      "program": "Recycled tax-exempt bonds (CTCAC application)",
+      "amount": 19500000,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Pacific West Communities, Inc.",
+      "program": "CTCAC application",
+      "amount": 8890944,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Boston Financial",
+      "program": "CTCAC application, total tax credit equity",
+      "amount": 45719036,
+      "date": null,
+      "src": [
+        "SRC-001611"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2026-08-31",
+      "type": "Other",
+      "label": "Purchase contract or option dated (CTCAC application)",
+      "src": [
+        "SRC-001611"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-09-02",
       "type": "Approved",
@@ -173,6 +480,15 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2027-05-19",
+      "type": "Other",
+      "label": "Expected escrow closing (CTCAC application)",
+      "src": [
+        "SRC-001611"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -190,6 +506,96 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name and address; opened SF YIMBY and San Jose Blog",
+      "src": [
+        "SRC-002723",
+        "SRC-002724"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset for 467-22-160: no owner field, no situs address",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose planning permits GIS layer (H26-013, PRE26-133) already on record; sanjoseca.gov not used (blocks automated access)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; CTCAC application lists no county funding",
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC application CA-26-684 workbook: team, sources, AMI mix, parking, ground lease; no award found in search",
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Blog 2026-06-04 citing Mercury News; Mercury News original not opened",
+      "src": [
+        "SRC-002724"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-04-30 opened; The Real Deal 2026-04-27 returned 403",
+      "src": [
+        "SRC-002723"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "tpchousing.com homepage has no page for this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "aoarchitects.com search found no project page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Citibank, Bonneville, Boston Financial and CMFA from CTCAC application",
+      "src": [
+        "SRC-001611"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

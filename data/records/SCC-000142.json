@@ -79,6 +79,44 @@
           37.4198325
         ]
       ]
+    },
+    {
+      "apn": "147-03-042",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1011052,
+          37.4201613
+        ],
+        [
+          -122.1011955,
+          37.4198325
+        ],
+        [
+          -122.1017834,
+          37.4198697
+        ],
+        [
+          -122.1017589,
+          37.4199791
+        ],
+        [
+          -122.1017385,
+          37.4200894
+        ],
+        [
+          -122.1017222,
+          37.4202003
+        ],
+        [
+          -122.1011052,
+          37.4201613
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -111,6 +149,14 @@
             "SRC-001293"
           ]
         }
+      ]
+    },
+    {
+      "text": "790 San Antonio Rd, Palo Alto, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098",
+        "SRC-001293"
       ]
     }
   ],
@@ -175,6 +221,13 @@
             "SRC-001293"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 168,
+          "src": [
+            "SRC-002727"
+          ],
+          "note": "Council prescreening application 25PLN-00062"
         }
       ],
       "best": 1
@@ -203,6 +256,12 @@
           "src": [
             "SRC-001293"
           ]
+        },
+        {
+          "value": "25 affordable units",
+          "src": [
+            "SRC-002726"
+          ]
         }
       ]
     },
@@ -221,6 +280,13 @@
           "src": [
             "SRC-001293"
           ]
+        },
+        {
+          "value": "25PLN-00062",
+          "src": [
+            "SRC-002727"
+          ],
+          "note": "Council prescreening"
         }
       ]
     },
@@ -252,6 +318,12 @@
             "SRC-001293"
           ],
           "note": "About"
+        },
+        {
+          "value": 1550,
+          "src": [
+            "SRC-002726"
+          ]
         }
       ]
     },
@@ -270,6 +342,34 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 37,
+            "1br": 96,
+            "2br": 34,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002726"
+          ],
+          "note": "167-unit plan for April 8, 2026 Planning Commission meeting"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 198700,
+          "src": [
+            "SRC-002726"
+          ],
+          "note": "About"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -285,9 +385,78 @@
       "src": [
         "SRC-001294"
       ]
+    },
+    {
+      "text": "SF YIMBY (April 7, 2026): 8 stories, 84 feet, 167 units, 74 car and 167 bicycle spaces, site between East Charleston Road and Leghorn Street.",
+      "src": [
+        "SRC-002726"
+      ]
+    },
+    {
+      "text": "City prescreening page: 168 rental units in an eight-story building on a 43,414 sq ft (one-acre) site, rezoning from CS to Planned Community/Planned Home; plan set dated May 19, 2025.",
+      "src": [
+        "SRC-002727"
+      ]
+    },
+    {
+      "text": "County parcel dataset lists APN 147-03-042 at 790 San Antonio Road, adjacent to 147-03-041; the city zone-change page describes merging the 788-790 and 796 San Antonio Road parcels.",
+      "src": [
+        "SRC-001098",
+        "SRC-001293"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Grubb Properties",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.grubbproperties.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-002726"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "788 San Antonio Palo Alto LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (prescreening)",
+      "src": [
+        "SRC-002727"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Explore Real Estate",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Consultant",
+      "src": [
+        "SRC-002726"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002726"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Border",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002726"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -306,6 +475,15 @@
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "date": "2026-04-08",
+      "type": "Other",
+      "label": "Planning Commission hearing scheduled",
+      "src": [
+        "SRC-002726"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -318,6 +496,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Grubb Properties; opened SF YIMBY April 2026",
+      "src": [
+        "SRC-002726"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel dataset: 147-03-041 (788) and 147-03-042 (790 San Antonio); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City pages 25PLN-00294 (zone change) and 25PLN-00062 (prescreening)",
+      "src": [
+        "SRC-001293",
+        "SRC-002727"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR rows already on record",
+      "src": [
+        "SRC-001126",
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Palo Alto Online articles returned 429; MV Voice 2025-09-15 and 2026-02-25 mention the project only in passing (168 units)",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-04-07 meeting preview",
+      "src": [
+        "SRC-002726"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "grubbproperties.com homepage has no Palo Alto project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for KTGY project page found none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found in public records searched",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
