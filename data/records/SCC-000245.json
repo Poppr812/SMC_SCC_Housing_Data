@@ -204,6 +204,27 @@
             "SRC-001956"
           ],
           "note": "City folder 151887, Special Use Permit (permit type: Development Permit (Legacy)); city permit status: Approved. Matched by file number."
+        },
+        {
+          "value": "PRE17-200",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 043167, filed 2017-11-13, applicant Henry Cord (Cord Associates): enhanced preliminary review for a mixed-use project in the Valley Fair/Santana Row Urban Village. Status Complete."
+        },
+        {
+          "value": "ER20-117",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review for SP19-068; applicant Yisrael 26, LLC; approved/certified 2021-02-10"
+        },
+        {
+          "value": "ER23-004 for SP23-001",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 080118, filed 2023-01-13, applicant Henry Cord; status Under Review"
         }
       ]
     },
@@ -215,6 +236,36 @@
             "SRC-001107"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 18495,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PD18-037 / PDC18-009 (approved 2019-04-09): about 18,495 sf of commercial office space with up to 48 units"
+        },
+        {
+          "value": 11910,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SP19-068 (approved 2021-09-29): reduced to about 11,910 sf with 54 units"
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.47,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per PD18-037 and PT18-020"
         }
       ]
     }
@@ -250,12 +301,54 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City vesting tentative map PT18-020 (applicant Adam Askari, Yisrael 26 LLC): combine two lots into one for up to 48 residential condominiums and up to 15 commercial condominiums.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer: Yisrael 26 LLC (Adam Askari) requested a zoning verification letter (RSL26-007) for the adjacent 384 S Baywood Ave (APN 277-34-022), completed 2026-01-12.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Yisrael 26 LLC",
+      "contact": "Adam Askari",
+      "linkedin": null,
+      "other_role": "Owner named in city permit records; applicant on SP19-068",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cord Associates",
+      "contact": "Henry Cord",
+      "linkedin": null,
+      "other_role": "Applicant on PRE17-200, PDC18-009, PD18-037 and ER23-004",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-11-13",
+      "type": "Application filed",
+      "label": "Enhanced preliminary review filed (PRE17-200)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2018-09-12",
       "type": "Application filed",
@@ -265,12 +358,39 @@
       ]
     },
     {
+      "date": "2019-04-09",
+      "type": "Approved",
+      "label": "PD rezoning, PD permit and vesting tentative map approved for up to 48 units (PDC18-009, PD18-037, PT18-020)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2021-02-10",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2021-09-29",
+      "type": "Approved",
+      "label": "Special Use Permit SP19-068 issued: 48 to 54 units",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-01-13",
+      "type": "Application filed",
+      "label": "Environmental review ER23-004 filed for SP23-001",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -283,6 +403,88 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 2881 Hemlock Ave, Hemlock Mixed-Use, Yisrael 26 LLC, Cord Associates",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 27734023 (376 S Baywood) and 27734051 (2881 Hemlock): situs only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer by APN: PRE17-200, PDC18-009, PD18-037, PT18-020, SP19-068, ER20-117, ER23-004 for SP23-001; sanjoseca.gov project and calendar pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "State APR Table A/A2 already on record; CEQAnet search did not return the project",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "BLDUP listing refused access (403); no other trade coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Cord Associates or Yisrael 26 LLC project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found only a Henry Cord profile listing; no project posts",
+      "src": []
+    }
+  }
 }

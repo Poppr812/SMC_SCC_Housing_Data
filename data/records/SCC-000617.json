@@ -124,7 +124,8 @@
         {
           "value": "Apartments",
           "src": [
-            "SRC-001956"
+            "SRC-001956",
+            "SRC-003213"
           ],
           "note": "78-unit multifamily development in three three-story buildings; rental or for-sale not stated in the city text"
         }
@@ -156,6 +157,27 @@
             "SRC-001956"
           ],
           "note": "City folder 112505, Ministerial Permit; city permit status: Under Review."
+        },
+        {
+          "value": "PRE23-193",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 121137, filed 2023-10-19, applicant Bruce Dorfman (Education Housing Partners Inc): \"Construct 78-unit workforce housing for employees of Alum Rock School District. Enhanced preliminary review.\" Status Complete."
+        },
+        {
+          "value": "AD24-035",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 069047, filed 2024-01-29, AB 168 tribal consultation for a proposed SB 35 streamlined ministerial 78-unit workforce housing community on a portion of the Renaissance Academy at Mathson school site. Status Under Review."
+        },
+        {
+          "value": "PRE24-235",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 104682, filed 2024-10-09, applicant German Cerda (Alum Rock Union School District): preliminary feedback on a 78-unit workforce housing project using AB 2295 and SB 35. Status Complete."
         }
       ]
     },
@@ -204,6 +226,68 @@
           "note": "City file MP26-003 (Ministerial Permit): \"SB 35 and AB 2295 Ministerial Permit to allow the construction of a 78-unit multifamily residential development configured in three three-story buildings, the removal of 11 trees (three ordinance-size, eight non-ordinance-size), and an application pursuan\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-003213"
+          ],
+          "note": "Units for district teachers and staff; unfilled units may be offered to employees of other school districts or public agencies who meet the income limits"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 39,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003213",
+            "SRC-001956"
+          ],
+          "note": "Spotlight: half of the units reserved for employee households earning up to 80% AMI; city file PRE26-085: 39 affordable units"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 39,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE26-085: 39 market-rate units. Spotlight reports average rents projected about 40% below market."
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 55000000,
+          "src": [
+            "SRC-003213"
+          ],
+          "note": "Spotlight: the project costs $55 million"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Half of units for employee households up to 80% AMI; rents estimated to start about $1,800/month, averaging about 40% below market (Spotlight, Aug 2026)",
+          "src": [
+            "SRC-003213"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -224,6 +308,24 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit layer shows MP26-003 with status Preparing Permit (last updated 2026-11-13).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "District board agenda of 2025-12-18: after a design-build RFP, the board selected CORE Builders + Steinberg Hart as the design-build entity; design-build agreement terms were under negotiation with district staff, legal counsel and Education Housing Partners.",
+      "src": [
+        "SRC-003214"
+      ]
+    },
+    {
+      "text": "San José Spotlight calls it the Mayfair Workforce Housing Project on the Mathson campus; three-story development with lawn and seating area, children's play structure and fenced dog run; a property management company will handle leasing and operations.",
+      "src": [
+        "SRC-003213"
+      ]
     }
   ],
   "parties": [
@@ -236,11 +338,78 @@
         "SRC-001956"
       ],
       "website": "https://www.arusd.org/"
+    },
+    {
+      "role": "Other",
+      "company": "Education Housing Partners",
+      "contact": "Bruce Dorfman",
+      "linkedin": null,
+      "other_role": "Development advisor; applicant on 2023-2024 city preliminary filings",
+      "src": [
+        "SRC-001956",
+        "SRC-003214"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "CORE Builders",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003214"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003214"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Other",
+      "provider": "Alum Rock Union Elementary School District",
+      "program": "Measure S school bond ($71.5 million bond measure)",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-003213"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2023-10-19",
+      "type": "Application filed",
+      "label": "Enhanced preliminary review filed by Education Housing Partners (PRE23-193)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-01-29",
+      "type": "Other",
+      "label": "AB 168 tribal consultation opened for proposed SB 35 project (AD24-035)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-09",
+      "type": "Application filed",
+      "label": "Preliminary review filed by the district (PRE24-235)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-03-16",
       "type": "Application filed",
@@ -258,6 +427,24 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2027",
+      "type": "Construction start",
+      "label": "Construction slated to begin in 2027 per Spotlight",
+      "src": [
+        "SRC-003213"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028-12",
+      "type": "Completion",
+      "label": "Completion expected by end of 2028 per Spotlight",
+      "src": [
+        "SRC-003213"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -270,6 +457,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 2050 Kammerer, Alum Rock workforce housing, Mathson, Education Housing Partners",
+      "src": [
+        "SRC-003213"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 48131005: situs and geometry only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer: PRE23-193, AD24-035, PRE24-235, PRE26-085, MP26-003 (Preparing Permit); sanjoseca.gov pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project on school district land; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No CTCAC/CDLAC or HCD award found; district-funded project",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San José Spotlight 2026-08-10; Local News Matters 2026-08-11 refused access (403)",
+      "src": [
+        "SRC-003213"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "The Registry 2026-04-22 (paywalled lede: Education Housing Partners, SB 35, half lower-income); The Real Deal refused access (403)",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "District board agenda 2025-12-18 (design-build selection); district workforce-housing page returned 404",
+      "src": [
+        "SRC-003214"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Steinberg Hart named in district board agenda as design-build partner; firm project page not found",
+      "src": [
+        "SRC-003214"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Spotlight: funded by Measure S ($71.5M bond), $55M project cost",
+      "src": [
+        "SRC-003213"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search surfaced LinkedIn posts on a kickoff event; no new facts beyond 78 units and 1-3 bedroom mix",
+      "src": []
+    }
+  }
 }

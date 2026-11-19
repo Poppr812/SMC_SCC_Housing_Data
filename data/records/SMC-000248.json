@@ -155,6 +155,13 @@
             "SRC-001220",
             "SRC-001221"
           ]
+        },
+        {
+          "value": 38,
+          "src": [
+            "SRC-003218"
+          ],
+          "note": "SF YIMBY Nov 2025: 38 cars and 43 bicycles"
         }
       ]
     },
@@ -171,6 +178,19 @@
           "src": [
             "SRC-001220"
           ]
+        },
+        {
+          "value": {
+            "studio": 35,
+            "1br": 40,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003218"
+          ],
+          "note": "SF YIMBY Nov 2025: 35 studios, 40 one-bedrooms, 1 two-bedroom manager unit"
         }
       ]
     },
@@ -220,6 +240,34 @@
           "src": [
             "SRC-001220"
           ]
+        },
+        {
+          "value": "SF YIMBY Nov 2025: 10 extremely low, 25 very low, 40 low income, plus 1 manager unit",
+          "src": [
+            "SRC-003218"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 59150,
+          "src": [
+            "SRC-003218"
+          ],
+          "note": "SF YIMBY Nov 2025: about 72,400 sf total, 59,150 sf housing and 13,250 sf podium garage"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.5,
+          "src": [
+            "SRC-003218"
+          ],
+          "note": "Described as a half-acre corner parcel at Veterans Blvd and Brewster Ave"
         }
       ]
     }
@@ -229,6 +277,25 @@
       "text": "Pulse (Aug 2026) describes the project as proposed, with Eden fundraising through 2027. The city list shows Approved.",
       "src": [
         "SRC-001221"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Nov 2025): five stories, 57 feet tall; community room and fitness center overlooking a second-level courtyard. The Registry (Nov 2025) reports an estimated construction cost of $60.8 million and a preliminary application by Eden Housing.",
+      "src": [
+        "SRC-003218",
+        "SRC-003220"
+      ]
+    },
+    {
+      "text": "Walking Redwood City (Jul 2026): Lane Partners will buy 705 Veterans Blvd and deed it to Eden Housing once its 1900 Broadway office project moves forward; existing commercial leases run through 2026, one into 2027, so construction is not expected before 2028.",
+      "src": [
+        "SRC-003219"
+      ]
+    },
+    {
+      "text": "Patch (Aug 2026): council approved the site swap 4-1, replacing a 71-unit affordable project at 847 Woodside Rd that Eden said was no longer economically feasible.",
+      "src": [
+        "SRC-003221"
       ]
     }
   ],
@@ -251,6 +318,16 @@
       "linkedin": null,
       "src": [
         "SRC-001220"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lane Partners",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "1900 Broadway developer; to buy the site and deed it to Eden Housing",
+      "src": [
+        "SRC-003219"
       ]
     }
   ],
@@ -286,6 +363,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 705 Veterans Blvd, Eden Housing Redwood City senior",
+      "src": [
+        "SRC-003218"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No public SMC owner-of-record source opened for 052-412-010",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Redwood City development project page 147: Approved, 75 + 1 manager, 12 ELI/23 VLI/40 LI, about 6,600 sf private open space; Redwood City is not a Legistar API client",
+      "src": [
+        "SRC-001219"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No San Mateo County housing fund award found for the project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No CTCAC/CDLAC or HCD award found; project still fundraising",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Patch 2026-08-07, Walking Redwood City 2026-07-31; SM Daily Journal refused access (403)",
+      "src": [
+        "SRC-003221",
+        "SRC-003219"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-11-24; The Registry 2025-11-18 (paywalled, visible lede only)",
+      "src": [
+        "SRC-003218",
+        "SRC-003220"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Eden Housing project page for 705 Veterans found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No BAR Architects project page for 705 Veterans found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Registry: $60.8M estimated construction cost; no funders named; Lane Partners to provide the land",
+      "src": [
+        "SRC-003220",
+        "SRC-003219"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

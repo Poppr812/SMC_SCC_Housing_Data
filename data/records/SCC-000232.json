@@ -121,8 +121,17 @@
         {
           "value": 77,
           "src": [
-            "SRC-001431"
+            "SRC-001431",
+            "SRC-003216",
+            "SRC-003217"
           ]
+        },
+        {
+          "value": 92,
+          "src": [
+            "SRC-003215"
+          ],
+          "note": "SF YIMBY July 2025: formal application increased the count from 77 to 92 (87 single-family homes, 5 detached townhouse-style units)"
         }
       ],
       "best": 1
@@ -135,6 +144,13 @@
             "SRC-001114"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN25-017",
+          "src": [
+            "SRC-003217"
+          ],
+          "note": "Green Foothills links the project's preliminary plans as PLN25_017_PRE_Plans.pdf"
         }
       ]
     },
@@ -148,6 +164,15 @@
             "SRC-001431"
           ],
           "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        },
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003215"
+          ],
+          "note": "SF YIMBY: uses the State Density Bonus law, streamlined under SB 330"
         }
       ]
     },
@@ -167,6 +192,18 @@
           "value": "10 units deed-restricted to lower-income households",
           "src": [
             "SRC-001431"
+          ]
+        },
+        {
+          "value": "SF YIMBY July 2025: the 5 townhomes would be deed-restricted affordable to low-income households",
+          "src": [
+            "SRC-003215"
+          ]
+        },
+        {
+          "value": "SF YIMBY Feb 2025: ten units would be deed-restricted affordable housing",
+          "src": [
+            "SRC-003216"
           ]
         }
       ]
@@ -204,6 +241,18 @@
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "text": "SF YIMBY (Feb 2025): preliminary permits filed through the County of Santa Clara permit system for a hillside single-family subdivision; property owner Larry Grattan, a Morgan Hill broker, owns several parcels off Silver Creek Road along Road M.",
+      "src": [
+        "SRC-003216"
+      ]
+    },
+    {
+      "text": "Green Foothills (Apr 2025): site is in a high fire hazard and landslide zone, contains serpentine grassland and a creek used by California red-legged frogs, and adjoins the Richmond Ranch open space property.",
+      "src": [
+        "SRC-003217"
+      ]
     }
   ],
   "parties": [
@@ -215,6 +264,37 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Silver Creek Valley Estates LLC",
+      "contact": "Hai Huynh",
+      "linkedin": null,
+      "src": [
+        "SRC-003216",
+        "SRC-003215"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "H&L Realty",
+      "contact": "Hai Huynh",
+      "linkedin": null,
+      "other_role": "Affiliated company of project sponsor Hai Huynh",
+      "src": [
+        "SRC-003215"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Larry Grattan",
+      "contact": "Larry Grattan",
+      "linkedin": null,
+      "other_role": "Property owner (per SF YIMBY)",
+      "src": [
+        "SRC-003216",
+        "SRC-003215"
       ]
     }
   ],
@@ -249,6 +329,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 6821 Silver Creek Rd, Silver Creek Valley Estates, builder's remedy",
+      "src": [
+        "SRC-003215"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 67826015: situs 6821 Silver Creek Rd, jurisdiction Unincorporated; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Unincorporated parcel; County of Santa Clara is the reviewing agency",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "County SB 330 / Builder's Remedy list already cited; no further county planning page found for PLN25-125",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "State APR Table A (Santa Clara County) already on record: PLN25-125-SB330, 84 units",
+      "src": [
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Green Foothills 2025-04-29",
+      "src": [
+        "SRC-003217"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-02-06 and 2025-07-26; The Registry headline (92 units) not opened",
+      "src": [
+        "SRC-003216",
+        "SRC-003215"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Silver Creek Valley Estates LLC or H&L Realty project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
