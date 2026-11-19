@@ -1,6 +1,6 @@
 {
   "id": "SCC-000076",
-  "name": "Pruneridge Apartments (400 Saratoga Ave)",
+  "name": "The Greens at Pruneridge (400 Saratoga Ave)",
   "parcels": [
     {
       "apn": "294-45-055",
@@ -676,9 +676,20 @@
         {
           "value": 316,
           "src": [
-            "SRC-001730"
+            "SRC-001730",
+            "SRC-002390",
+            "SRC-002391",
+            "SRC-002392"
           ],
           "note": "316 apartments per May 2025 Notice of Preparation of a Draft EIR"
+        },
+        {
+          "value": 324,
+          "src": [
+            "SRC-002393",
+            "SRC-001106"
+          ],
+          "note": "2024 application: two buildings (five-story and four-story) with 324 units"
         }
       ],
       "best": 1
@@ -688,9 +699,17 @@
         {
           "value": "PLN24-00269",
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-002390"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN24-00361",
+          "src": [
+            "SRC-002390"
+          ],
+          "note": "Tentative Parcel Map (three parcels)"
         }
       ]
     },
@@ -731,6 +750,99 @@
           "note": "State report 2024, application stage: 43 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 70,
+            "1br": 121,
+            "2br": 115,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002392"
+          ],
+          "note": "City staff report gives 191 studio and one-bedroom units and 125 two-bedroom or larger, consistent with this mix"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 414,
+          "src": [
+            "SRC-002390",
+            "SRC-002391",
+            "SRC-002392"
+          ],
+          "note": "407 garage spaces plus 7 surface visitor spaces (staff report); Draft EIR: up to 414 stalls. One staff report passage states 417."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.73,
+          "src": [
+            "SRC-002390"
+          ],
+          "note": "Residential parcel under the tentative parcel map; full golf course site is 30.97 acres"
+        },
+        {
+          "value": 3.66,
+          "src": [
+            "SRC-002391"
+          ],
+          "note": "Residential parcel per Draft EIR"
+        }
+      ],
+      "best": 0
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 324400,
+          "src": [
+            "SRC-002392"
+          ],
+          "note": "Housing area; garage 152,820 sq ft"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "47 affordable units (15%) under the City's Affordable Housing Ordinance, dispersed through the building",
+          "src": [
+            "SRC-002390",
+            "SRC-002391"
+          ]
+        },
+        {
+          "value": "2024 plan: at least 48 affordable of 324 units (San José Spotlight); state report project description says 49 of 324",
+          "src": [
+            "SRC-002393",
+            "SRC-001106"
+          ]
+        }
+      ],
+      "best": 0
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002390"
+          ],
+          "note": "General Plan Amendment and rezone to R-5; one State Density Bonus waiver reducing common recreation area from 200 to 174 sq ft per unit"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -738,6 +850,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "text": "Site is the 30.97-acre Pruneridge Golf Club. The tentative parcel map creates a 25.5-acre golf course parcel, a 1.74-acre public park dedicated to the City, and a 3.73-acre residential parcel.",
+      "src": [
+        "SRC-002390"
+      ]
+    },
+    {
+      "text": "City Council also acts on amending a 1978 scenic easement deed that limits the golf parcel to golf and recreational uses, and on the tentative parcel map. Architectural Review by the Community Development Director follows Council action.",
+      "src": [
+        "SRC-002390"
+      ]
+    },
+    {
+      "text": "Draft EIR: five-story building 69 ft tall wrapped around a seven-story garage 82 ft tall; 332 bicycle stalls; residential construction up to about 26 months, golf course redesign about 10 months.",
+      "src": [
+        "SRC-002391"
       ]
     }
   ],
@@ -752,6 +882,66 @@
         "SRC-001730"
       ],
       "website": "https://www.demmonpartners.com"
+    },
+    {
+      "role": "Developer",
+      "company": "Demmon Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002390",
+        "SRC-002391",
+        "SRC-002394"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Demmon Family Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002390"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPAS Architecture + Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002394",
+        "SRC-002392"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002392",
+        "SRC-002394"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-002391"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Morley Bros.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Entitlement consultant",
+      "src": [
+        "SRC-002393"
+      ]
     }
   ],
   "financing": [],
@@ -766,6 +956,15 @@
       ]
     },
     {
+      "date": "2024-06-06",
+      "type": "Application filed",
+      "label": "Formal planning application PLN24-00269 submitted (city staff report date)",
+      "src": [
+        "SRC-002390"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-05-12",
       "type": "Other",
       "label": "Notice of Preparation of Draft EIR received by State Clearinghouse",
@@ -773,6 +972,62 @@
         "SRC-001730"
       ],
       "estimated": false
+    },
+    {
+      "date": "2025-05-28",
+      "type": "Other",
+      "label": "First applicant community meeting",
+      "src": [
+        "SRC-002390",
+        "SRC-002392"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-12",
+      "type": "Other",
+      "label": "Application deemed complete at Project Clearance Committee",
+      "src": [
+        "SRC-002390"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-05",
+      "type": "Other",
+      "label": "Draft EIR received by State Clearinghouse; review through 2026-07-20",
+      "src": [
+        "SRC-002391",
+        "SRC-002390"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-06",
+      "type": "Other",
+      "label": "Final EIR circulated for 10-day review",
+      "src": [
+        "SRC-002390"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Other",
+      "label": "Planning Commission hearing on EIR, General Plan Amendment and rezone recommendation",
+      "src": [
+        "SRC-002390"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2028",
+      "type": "Construction start",
+      "label": "Construction start targeted (2024 report)",
+      "src": [
+        "SRC-002393"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -790,6 +1045,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address and Demmon Partners: SF YIMBY, San José Spotlight, CEQAnet results",
+      "src": [
+        "SRC-002392",
+        "SRC-002393"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 294-45-055 at 400 Saratoga, already on record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar santaclara matter 26676: Planning Commission staff report for 2026-11-18 hearing",
+      "src": [
+        "SRC-002390"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Santa Clara; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025050498 Draft EIR (June 2026); APR Table A 2024 row; CTCAC active projects list has no match",
+      "src": [
+        "SRC-002391",
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San José Spotlight, July 2024",
+      "src": [
+        "SRC-002393"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY May 15 and May 28, 2025; The Real Deal 2024 article refused access (403)",
+      "src": [
+        "SRC-002392",
+        "SRC-002394"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for a Demmon Partners project page returned only CEQAnet and press items",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for an LPAS project page for Pruneridge returned no firm page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Staff report states no City fiscal impact; no lender or equity named in sources",
+      "src": [
+        "SRC-002390"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -222,9 +222,121 @@
             "SRC-001956"
           ],
           "note": "City folder 687423, Tentative Map (permit type: Subdivision); city permit status: Approved. Matched by file number."
+        },
+        {
+          "value": "2025 123747 000 00 MF",
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "Building permit number as reported to the state"
         }
       ],
       "best": 0
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 47,
+              "ami": 30
+            },
+            {
+              "count": 136,
+              "ami": 50
+            },
+            {
+              "count": 87,
+              "ami": 60
+            },
+            {
+              "count": 31,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001635"
+          ],
+          "note": "CTCAC 55-year targeting; 70% AMI units are CTCAC-restricted only"
+        },
+        {
+          "value": [
+            {
+              "count": 47,
+              "ami": 30
+            },
+            {
+              "count": 137,
+              "ami": 50
+            },
+            {
+              "count": 119,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2025, building permit stage, by state income category (AMI is the category's upper limit)"
+        }
+      ],
+      "best": 0
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001635",
+            "SRC-001107"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 152001011,
+          "src": [
+            "SRC-001875"
+          ],
+          "note": "CalHFA final commitment staff report, May 2025 ($498,364 per unit)"
+        },
+        {
+          "value": 138236316,
+          "src": [
+            "SRC-001635"
+          ],
+          "note": "At CTCAC application, Aug. 2024"
+        }
+      ],
+      "best": 0
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 8150000,
+          "src": [
+            "SRC-001877",
+            "SRC-001875"
+          ],
+          "note": "Purchase of the two parcels, Aug. 2025; CalHFA shows the PSA with Yi First Seed LLC amended to $8,150,000"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002402",
+            "SRC-001107"
+          ],
+          "note": "YIMBY: 220% density bonus requested; state report 2024: 227% density bonus with six incentives"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -257,6 +369,25 @@
       "text": "City of San Jose permit T22-033 (Tentative Map, folder year 2022), status Approved: \"Vesting Tentative Map to reconfigure two parcels into one parcel and allow up to 140 residential condominiums on an approximately 0.98-gross acre site.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "CTCAC staff report (Aug. 2024) showed construction financing from U.S. Bank ($65.4M tax-exempt, $11.25M recycled tax-exempt, $13M taxable) and a $38.36M CalHFA tax-exempt permanent loan. CalHFA's final commitment report (May 2025) shows Banc of California as construction lender and Palm Drive Associates, LLC as tax credit investor, replacing U.S. Bank and Walker & Dunlop.",
+      "src": [
+        "SRC-001635",
+        "SRC-001875"
+      ]
+    },
+    {
+      "text": "CTCAC recommended $6,379,444 in annual federal credits, $36,054,485 in total state credits and $65,400,000 in tax-exempt bond cap.",
+      "src": [
+        "SRC-001635"
+      ]
+    },
+    {
+      "text": "Site held one single-family home and one duplex; the seller was to relocate residents before transfer.",
+      "src": [
+        "SRC-001875"
       ]
     }
   ],
@@ -318,6 +449,97 @@
       "src": [
         "SRC-001877"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "1271 E. Julian St., L.P.",
+      "contact": "Lori Koester",
+      "linkedin": null,
+      "email": "lkoester@corpoffices.org",
+      "phone": "818-605-3758",
+      "other_role": "CTCAC applicant / borrower",
+      "src": [
+        "SRC-001635"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "California Housing Finance Agency",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001875",
+        "SRC-001635"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "U.S. Bank National Association",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001635"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Palm Drive Associates, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001875"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Walker & Dunlop",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tax credit investor/consultant at CTCAC application",
+      "src": [
+        "SRC-001635",
+        "SRC-001875"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Orrick, Herrington & Sutcliffe LLP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond counsel",
+      "src": [
+        "SRC-001635"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "Yi First Seed LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001875"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Integrated Community Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project sponsor in 2024 filing",
+      "src": [
+        "SRC-002402"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hestia Real Estate, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, earlier 140-unit version",
+      "src": [
+        "SRC-001878",
+        "SRC-002402"
+      ]
     }
   ],
   "financing": [
@@ -340,6 +562,47 @@
       "src": [
         "SRC-001635"
       ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "California Housing Finance Agency",
+      "program": "Tax-exempt permanent loan, 1st lien",
+      "amount": 44863000,
+      "date": "2025-05-07",
+      "src": [
+        "SRC-001875"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Housing Finance Agency",
+      "program": "Mixed-Income Program (MIP), 2nd lien",
+      "amount": 4000000,
+      "date": "2025-05-07",
+      "src": [
+        "SRC-001875",
+        "SRC-001635"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Palm Drive Associates, LLC",
+      "program": "Federal and state tax credit equity combined (CalHFA permanent sources)",
+      "amount": 91795970,
+      "date": "2025-05-07",
+      "src": [
+        "SRC-001875"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Corporation for Better Housing",
+      "program": null,
+      "amount": 11035213,
+      "date": "2025-05-07",
+      "src": [
+        "SRC-001875"
+      ]
     }
   ],
   "groups": {},
@@ -361,6 +624,79 @@
         "SRC-001876"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-04-22",
+      "type": "Other",
+      "label": "CalHFA initial commitment approved",
+      "src": [
+        "SRC-001875"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-06",
+      "type": "Other",
+      "label": "CTCAC 4% credits and CDLAC bond cap awarded",
+      "src": [
+        "SRC-001635",
+        "SRC-001875"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-11",
+      "type": "Approved",
+      "label": "H24-013 entitlement approval date (state report)",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-07",
+      "type": "Other",
+      "label": "CalHFA final commitment approved",
+      "src": [
+        "SRC-001875"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08",
+      "type": "Sale",
+      "label": "Site purchased for $8.15 million",
+      "src": [
+        "SRC-001877"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-08",
+      "type": "Permit issued",
+      "label": "Building permit issued, 305 units (state report)",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2027-01",
+      "type": "Completion",
+      "label": "Completion expected (CTCAC)",
+      "src": [
+        "SRC-001635"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027-12-01",
+      "type": "Other",
+      "label": "CalHFA permanent loan conversion expected",
+      "src": [
+        "SRC-001875"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -373,6 +709,97 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, Corporation for Better Housing and JSL Real Estate",
+      "src": [
+        "SRC-002402",
+        "SRC-001877"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset and NOD: former APNs 249-66-009/-010, current 249-66-054 already on record with a parcel note",
+      "src": [
+        "SRC-001878",
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov pages refuse automated access; city permit data already on record via GIS layer",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in San Jose; no county funding named in sources",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report CA-24-503; CalHFA MIP staff report May 2025; APR A2 2024-2025 rows (H24-013 entitlement, building permit 2025-08-08)",
+      "src": [
+        "SRC-001635",
+        "SRC-001875",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for local news on Julian Street Studios found none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Apr. 2024 and Aug. 2025",
+      "src": [
+        "SRC-002402",
+        "SRC-001877"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no Corporation for Better Housing or JSL project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Y&M Architects named in trade press; no firm project page in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC and CalHFA reports: CalHFA perm and MIP loans, tax credit investor, deferred fee",
+      "src": [
+        "SRC-001875",
+        "SRC-001635"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -141,7 +141,8 @@
         {
           "value": "Apartments",
           "src": [
-            "SRC-001879"
+            "SRC-001879",
+            "SRC-002403"
           ],
           "note": "Source describes affordable units; rental form not stated outright"
         }
@@ -174,10 +175,19 @@
           "value": 305,
           "src": [
             "SRC-001879",
-            "SRC-001880"
+            "SRC-001880",
+            "SRC-002404"
           ]
+        },
+        {
+          "value": 308,
+          "src": [
+            "SRC-002403"
+          ],
+          "note": "Six-story, 308-unit apartment building per city HHSC report (July 2024)"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -189,6 +199,37 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002403"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 208000000,
+          "src": [
+            "SRC-002403"
+          ],
+          "note": "City report: total development cost estimated at approximately $208 million"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Proposed as 100% deed-restricted affordable; city scoring notes a lower share of units at deep affordability levels and no units serving households experiencing homelessness",
+          "src": [
+            "SRC-002403"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -196,6 +237,18 @@
       "text": "KRON: first residential project in the Moffett Park Specific Plan area.",
       "src": [
         "SRC-001880"
+      ]
+    },
+    {
+      "text": "City report: demolition of the existing office building; Moffett Park Specific Plan area. The Pacific Companies and Miramar Capital are co-general partners. The site, owned by a Miramar subsidiary, transfers to Safehold at construction financing close and is ground leased to the partnership for 99 years. About $58 million of the gap is to come from tax-exempt bonds and the Safehold investment; the $14 million city award equals about $45,000 per unit.",
+      "src": [
+        "SRC-002403"
+      ]
+    },
+    {
+      "text": "City report schedule: entitlements by Aug. 2025, LIHTC and tax-exempt bond applications in fall 2025, construction start summer 2026.",
+      "src": [
+        "SRC-002403"
       ]
     }
   ],
@@ -220,6 +273,16 @@
       ],
       "website": "https://www.miramarcapital.com",
       "project_page": "https://www.miramarcapital.com/project/352-e-java/"
+    },
+    {
+      "role": "Other",
+      "company": "Safehold Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Planned ground lessor (99-year ground lease)",
+      "src": [
+        "SRC-002403"
+      ]
     }
   ],
   "financing": [
@@ -233,10 +296,48 @@
         "SRC-001879",
         "SRC-001880"
       ]
+    },
+    {
+      "type": "Seller financing",
+      "provider": "Safehold Inc.",
+      "program": "Planned 99-year ground lease; approx. $31 million capital investment",
+      "amount": 31000000,
+      "date": null,
+      "src": [
+        "SRC-002403"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2024-06",
+      "type": "Application filed",
+      "label": "Preliminary application for a market-rate version submitted by Miramar",
+      "src": [
+        "SRC-002403"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-24",
+      "type": "Other",
+      "label": "Housing and Human Services Commission recommends $14M award",
+      "src": [
+        "SRC-002403",
+        "SRC-002405"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-13",
+      "type": "Other",
+      "label": "City Council awards conditional funding",
+      "src": [
+        "SRC-002405"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026",
       "type": "Construction start",
@@ -258,6 +359,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Pacific Companies and Miramar; SV@Home Aug. 2024",
+      "src": [
+        "SRC-002404"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 110-34-024 at 352 Java Dr, already on record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar sunnyvaleca matters 14991 (HHSC 2024-07-24) and 15048 (Council 2024-08-13); sunnyvale.ca.gov housing page refused access (403); no planning matter found",
+      "src": [
+        "SRC-002403",
+        "SRC-002405"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Sunnyvale; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "CTCAC active projects list through 12/31/2025 and APR Sunnyvale rows have no 352 Java Dr entry",
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Local News Matters article refused access (403)",
+      "src": [
+        "SRC-001879"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no trade coverage of the Java Drive project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no Pacific Companies or Miramar project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City report: Safehold ground lease investment and planned bond financing",
+      "src": [
+        "SRC-002403"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -200,6 +200,12 @@
           "src": [
             "SRC-001133"
           ]
+        },
+        {
+          "value": "22 very low income BMR units (at or below 50% AMI), 9% of the 239 base units, qualifying for a 30% density bonus (72 bonus units)",
+          "src": [
+            "SRC-002395"
+          ]
         }
       ]
     },
@@ -220,7 +226,9 @@
         {
           "value": 8,
           "src": [
-            "SRC-001353"
+            "SRC-001353",
+            "SRC-002395",
+            "SRC-002396"
           ],
           "note": "Project page"
         },
@@ -231,14 +239,16 @@
           ],
           "note": "City list page"
         }
-      ]
+      ],
+      "best": 0
     },
     "site_area_acres": {
       "claims": [
         {
           "value": 1.7,
           "src": [
-            "SRC-001353"
+            "SRC-001353",
+            "SRC-002395"
           ]
         }
       ]
@@ -248,7 +258,9 @@
         {
           "value": 319,
           "src": [
-            "SRC-001353"
+            "SRC-001353",
+            "SRC-002395",
+            "SRC-002397"
           ]
         }
       ]
@@ -260,7 +272,8 @@
             "Density bonus"
           ],
           "src": [
-            "SRC-001353"
+            "SRC-001353",
+            "SRC-002395"
           ]
         }
       ]
@@ -275,9 +288,79 @@
             }
           ],
           "src": [
-            "SRC-001133"
+            "SRC-001133",
+            "SRC-002395",
+            "SRC-002396"
           ],
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 37,
+            "1br": 137,
+            "2br": 120,
+            "3br": 17,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002395",
+            "SRC-002396"
+          ]
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 939,
+          "src": [
+            "SRC-002395"
+          ],
+          "note": "Studios 613-743 sq ft, 1BR 659-980, 2BR 1,072-1,374, 3BR 1,502-1,520"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 291966,
+          "src": [
+            "SRC-002395"
+          ],
+          "note": "Leasable residential area per city staff report"
+        },
+        {
+          "value": 291970,
+          "src": [
+            "SRC-002397",
+            "SRC-002396"
+          ]
+        }
+      ],
+      "best": 0
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001133"
+          ]
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 28000000,
+          "src": [
+            "SRC-002396"
+          ],
+          "note": "Carmel Partners purchase of the site in 2023"
         }
       ]
     }
@@ -288,6 +371,28 @@
       "src": [
         "SRC-001132",
         "SRC-001133"
+      ]
+    },
+    {
+      "text": "An earlier 7-story mixed-use project with retail, office and 60 residential units was approved by City Council on Nov. 2, 2020; the owner then replaced it with the 311-unit proposal. The state report's 2019 application row (60 units) belongs to that earlier project.",
+      "src": [
+        "SRC-002395",
+        "SRC-001132",
+        "SRC-001133"
+      ]
+    },
+    {
+      "text": "Density bonus: 239 base units plus 72 bonus units = 311; waivers for lot coverage, open space, side and rear setbacks, and compact stall dimensions.",
+      "src": [
+        "SRC-002395"
+      ]
+    },
+    {
+      "text": "Height: 88 ft 8 in to top of parapet (city); 90 ft (SF YIMBY). Total floor area 505,184 sq ft (city page).",
+      "src": [
+        "SRC-001353",
+        "SRC-002395",
+        "SRC-002396"
       ]
     }
   ],
@@ -341,6 +446,54 @@
       "src": [
         "SRC-001353"
       ]
+    },
+    {
+      "role": "Seller",
+      "company": "Certosa Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002395",
+        "SRC-002397"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Carmel Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002398",
+        "SRC-002396"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT Landscape Architecture + Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002397",
+        "SRC-002396"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002397"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002399"
+      ]
     }
   ],
   "financing": [],
@@ -355,6 +508,25 @@
       ]
     },
     {
+      "date": "2020-11-02",
+      "type": "Approved",
+      "label": "Earlier 60-unit mixed-use project approved by City Council",
+      "src": [
+        "SRC-002395",
+        "SRC-001133"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-11-15",
+      "type": "Application filed",
+      "label": "311-unit application submitted (state report)",
+      "src": [
+        "SRC-001132"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-06-13",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -363,12 +535,49 @@
       ]
     },
     {
+      "date": "2023-01-05",
+      "type": "Sale",
+      "label": "Carmel Partners acquires site ($28 million)",
+      "src": [
+        "SRC-002398",
+        "SRC-002396"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-08-11",
+      "type": "Construction start",
+      "label": "Excavation reported underway",
+      "src": [
+        "SRC-002400"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-10-06",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001133"
       ]
+    },
+    {
+      "date": "2024-08-30",
+      "type": "Other",
+      "label": "Topping out reported",
+      "src": [
+        "SRC-002396"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07",
+      "type": "Completion",
+      "label": "Scheduled opening (2024 report)",
+      "src": [
+        "SRC-002396"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -391,6 +600,98 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Revery, 1766 El Camino Real and Carmel Partners",
+      "src": [
+        "SRC-002396",
+        "SRC-002398"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC active parcels layer: APN 025-161-110, owner CP VIII 1766 ECR LLC, already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page and June 13, 2022 Planning Commission staff report",
+      "src": [
+        "SRC-002395",
+        "SRC-001353"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Burlingame; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A (2019, 2021) and A2 (2020, 2022, 2023) rows; no completion row through 2025",
+      "src": [
+        "SRC-001132",
+        "SRC-001133"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no local news coverage beyond trade press and listings",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY June 2022, Aug. 2023, Aug. 2024; The Real Deal Jan. 2023 article refused access (403)",
+      "src": [
+        "SRC-002396",
+        "SRC-002397",
+        "SRC-002400"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Carmel Partners project page: acquired 01/05/2023, 311 units, status Held",
+      "src": [
+        "SRC-002398"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "TCA Architects listed on city page; no new facts",
+      "src": [
+        "SRC-001353"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for construction loan or lender found none",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -122,6 +122,99 @@
             "SRC-001102"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001731",
+            "SRC-001102"
+          ],
+          "note": "15% affordable (46.05 units) to be secured by agreement with the City; state report 2023 lists 46 units as not deed-restricted with no agreement yet"
+        }
+      ],
+      "best": 1
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "46.05 affordable units (15%), equal mix of 50%, 80% and 120% AMI, secured through an agreement between the City and the owner; fractional 0.05 unit by in-lieu fee of $8,356.91 or one full 50% AMI unit. State report 2023: 15 very low, 16 low, 15 moderate, not deed-restricted, affordable units required by ordinance with no agreement in place.",
+          "src": [
+            "SRC-001731",
+            "SRC-001102"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.52,
+          "src": [
+            "SRC-001731"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 339,
+          "src": [
+            "SRC-001731",
+            "SRC-002401"
+          ],
+          "note": "314 residential (35 in stackers), 16 guest, 9 retail/civic/flex"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 4000,
+          "src": [
+            "SRC-001731",
+            "SRC-002401"
+          ],
+          "note": "Retail; plus a 5,000 sq ft community/civic art center condominium for the City"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 247760,
+          "src": [
+            "SRC-002401"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 23,
+            "1br": 208,
+            "2br": 76,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002401"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-001731"
+          ],
+          "note": "Patrick Henry Drive Specific Plan; Addendum to the Specific Plan EIR"
         }
       ]
     }
@@ -132,6 +225,19 @@
       "src": [
         "SRC-001106",
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "Seven stories: two levels of above-grade parking under five residential stories. Includes a 5,000 sq ft community/civic art center condominium and an Art Park of about 9,250 sq ft (10,340 sq ft in another passage) dedicated to the City. Replaces a one-story 37,000 sq ft light industrial building. First project considered under the Patrick Henry Drive Specific Plan.",
+      "src": [
+        "SRC-001731",
+        "SRC-001732"
+      ]
+    },
+    {
+      "text": "SF YIMBY: 96 ft tall, about 315,070 sq ft total, 9,210 sq ft amenities, 321 bicycle spaces.",
+      "src": [
+        "SRC-002401"
       ]
     }
   ],
@@ -154,6 +260,34 @@
       "src": [
         "SRC-001731"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Summerhill Apartment Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001731",
+        "SRC-001732"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002401"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002401"
+      ]
     }
   ],
   "financing": [],
@@ -168,9 +302,36 @@
       ]
     },
     {
+      "date": "2022-12-05",
+      "type": "Other",
+      "label": "Virtual community meeting",
+      "src": [
+        "SRC-001731"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-02-21",
+      "type": "Other",
+      "label": "City Council approves Art Park design",
+      "src": [
+        "SRC-001731"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-03-15",
       "type": "Approved",
       "label": "Architectural Review approved at Development Review Hearing",
+      "src": [
+        "SRC-001732"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-05-23",
+      "type": "Approved",
+      "label": "City Council approves Vesting Tentative Map",
       "src": [
         "SRC-001732"
       ],
@@ -195,6 +356,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and SummerHill; SF YIMBY Mar. 2023 article",
+      "src": [
+        "SRC-002401"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 104-04-093 at 3000 Patrick Henry Dr, already on record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar santaclara matters 21808 (DRH Architectural Review) and 21874 (Council VTM, adopted 2023-05-23)",
+      "src": [
+        "SRC-001731",
+        "SRC-001732"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Santa Clara; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2022 and A2 2023 rows (non-deed-restricted 15/16/15 by income); no permit row through 2025; CTCAC active list no match",
+      "src": [
+        "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for 2025-2026 coverage of construction, permit or sale found none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Mar. 14, 2023",
+      "src": [
+        "SRC-002401"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No SummerHill project page for 3000 Patrick Henry in search results",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "KTGY portfolio pages in search covered other SummerHill projects only",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
