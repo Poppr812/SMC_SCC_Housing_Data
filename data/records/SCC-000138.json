@@ -1,6 +1,6 @@
 {
   "id": "SCC-000138",
-  "name": "Chiala (2215 & 2880 Tennant Ave)",
+  "name": "Fountain Oaks Ranch (2215 & 2880 Tennant Ave)",
   "parcels": [
     {
       "apn": "817-20-008",
@@ -63,6 +63,48 @@
           37.1266104
         ]
       ]
+    },
+    {
+      "apn": "817-20-010",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.6004896,
+          37.1291997
+        ],
+        [
+          -121.6007878,
+          37.1290832
+        ],
+        [
+          -121.6019596,
+          37.1310476
+        ],
+        [
+          -121.600323,
+          37.1316688
+        ],
+        [
+          -121.5991519,
+          37.1297054
+        ],
+        [
+          -121.5995091,
+          37.1295701
+        ],
+        [
+          -121.5999238,
+          37.1294114
+        ],
+        [
+          -121.6004896,
+          37.1291997
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -79,6 +121,14 @@
             "SRC-001114"
           ]
         }
+      ]
+    },
+    {
+      "text": "2880 Tennant Ave, Morgan Hill, CA 95037, CA",
+      "role": "other",
+      "src": [
+        "SRC-002590",
+        "SRC-002592"
       ]
     }
   ],
@@ -143,9 +193,24 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 219,
+          "src": [
+            "SRC-002589",
+            "SRC-002590"
+          ],
+          "note": "175 single-family detached plus 44 duet (attached) units, per the July 2026 EIR Notice of Preparation"
+        },
+        {
+          "value": 239,
+          "src": [
+            "SRC-002591"
+          ],
+          "note": "July 2024 pre-application as reported"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -165,7 +230,9 @@
             "Builder's remedy"
           ],
           "src": [
-            "SRC-001431"
+            "SRC-001431",
+            "SRC-002590",
+            "SRC-002592"
           ],
           "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
         }
@@ -188,6 +255,19 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "All 44 duet units deed-restricted for low-income households",
+          "src": [
+            "SRC-002589",
+            "SRC-002590"
+          ]
+        },
+        {
+          "value": "48 units for low-income households (July 2024 pre-application)",
+          "src": [
+            "SRC-002591"
+          ]
         }
       ]
     },
@@ -197,6 +277,19 @@
           "value": 52,
           "src": [
             "SRC-001431"
+          ]
+        },
+        {
+          "value": 54.9,
+          "src": [
+            "SRC-002589",
+            "SRC-002590"
+          ]
+        },
+        {
+          "value": 52.3,
+          "src": [
+            "SRC-002592"
           ]
         }
       ]
@@ -216,6 +309,29 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-002592"
+          ],
+          "note": "One- and two-story homes"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 1400,
+          "src": [
+            "SRC-002591",
+            "SRC-002592"
+          ],
+          "note": "Private garages and curbside spaces"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -229,6 +345,18 @@
       "text": "County also lists APN 817-20-010.",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "text": "NOP: on-site public water system (groundwater wells, tanks), community wastewater treatment with leach field, all-electric homes; existing home, garage and barn at 2215 Tennant Ave remain; right-of-way dedication on Tennant Ave and Hill Road; single phase over about three years. Residential lots cover 25.8 acres.",
+      "src": [
+        "SRC-002590"
+      ]
+    },
+    {
+      "text": "Site is on the north side of Tennant Avenue and east side of Hill Road, in unincorporated county near Morgan Hill.",
+      "src": [
+        "SRC-002590"
       ]
     }
   ],
@@ -251,11 +379,51 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "The Latala Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002589",
+        "SRC-002591",
+        "SRC-002592"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Bassenian Lagoni Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002591",
+        "SRC-002592"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dudek",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-002589"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-07",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application reported (239 homes)",
+      "src": [
+        "SRC-002591"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-04-28",
       "type": "Application filed",
@@ -272,6 +440,24 @@
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Other",
+      "label": "County files Notice of Preparation of a Draft EIR (SCH 2026071249)",
+      "src": [
+        "SRC-002589"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Other",
+      "label": "Virtual EIR scoping meeting",
+      "src": [
+        "SRC-002590"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -284,6 +470,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Tennant Ave, Fountain Oaks, Latala; CEQAnet NOP and SF YIMBY",
+      "src": [
+        "SRC-002589"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 817-20-008 situs 2215 Tennant Av; 817-20-010 Tennant Av, both unincorporated; no owner field. NOP lists both APNs",
+      "src": [
+        "SRC-001098",
+        "SRC-002590"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Unincorporated county project near Morgan Hill",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "County NOP, file PLN25-073-SB330, via CEQAnet; county SB 330 projects page returned 403",
+      "src": [
+        "SRC-002590"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026071249 (NOP 2026-07-30); APR already on record",
+      "src": [
+        "SRC-002589",
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-07-29 and 2024-11-29",
+      "src": [
+        "SRC-002591",
+        "SRC-002592"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Latala Group project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Bassenian Lagoni named by SF YIMBY; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }
