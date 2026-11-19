@@ -73,8 +73,16 @@
             "SRC-001004"
           ],
           "note": "Tenure not stated; multifamily units treated as apartments"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-002765"
+          ],
+          "note": "Plan set scope of work: 8-story mixed-use condominium"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -136,6 +144,14 @@
             "SRC-001004"
           ],
           "note": "14 with public EV charging"
+        },
+        {
+          "value": 122,
+          "src": [
+            "SRC-002765",
+            "SRC-002766"
+          ],
+          "note": "122 residential spaces (stackers) plus 14 public EV charging spaces"
         }
       ]
     },
@@ -168,6 +184,64 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 81,
+            "2br": 31,
+            "3br": 39,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002765"
+          ],
+          "note": "3BR count includes 36 nested 3BD units; average areas 1BR 826 sf, 2BR 1,058 sf, 3BR 1,504 sf, nested 3BD 1,240 sf"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 148851,
+          "src": [
+            "SRC-002765"
+          ],
+          "note": "Total unit area; gross building area 211,451 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002765"
+          ],
+          "note": "50% State Density Bonus requested, 15% of units at very low income, with waivers of select objective design standards"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 15,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-002765",
+            "SRC-001004"
+          ],
+          "note": "15 very low-income units"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -175,6 +249,18 @@
       "text": "Eight-story mixed-use building; demolishes a Burger King and its parking lot; ground-floor retail space to replace the Burger King",
       "src": [
         "SRC-001004"
+      ]
+    },
+    {
+      "text": "Plan set (6/26/26): lot 33,845 sq ft (0.78 acre), TOD zoning, Hillsdale Station Area Plan; base density 130 units/acre gives 101.4 base units plus 50.7 bonus units; Type IA construction, 90 feet; 171 long-term and 10 short-term bike spaces; replacement formula retail on the ground floor.",
+      "src": [
+        "SRC-002765"
+      ]
+    },
+    {
+      "text": "SFYIMBY (2026-08-11): about 211,450 sq ft including 148,800 sq ft of housing and about 25,000 sq ft of parking; roughly 90 feet tall.",
+      "src": [
+        "SRC-002766"
       ]
     }
   ],
@@ -197,6 +283,47 @@
       "linkedin": null,
       "src": [
         "SRC-001005"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Ghai Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002766"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "RG-Architecture, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.rg-architecture.com",
+      "src": [
+        "SRC-002765",
+        "SRC-002766"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "1857 East Main Street LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (plan set)",
+      "src": [
+        "SRC-002765",
+        "SRC-002766"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Terramark",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Surveyor",
+      "src": [
+        "SRC-002765"
       ]
     }
   ],
@@ -222,6 +349,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 2817 El Camino Real; led to SFYIMBY 2026-08-11",
+      "src": [
+        "SRC-002766"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 039-351-100 already on record (owner 1857 East Main Street LLC)",
+      "src": [
+        "SRC-001005"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of San Mateo project page and SB 330 plan set (first submittal) for PA-2026-0052",
+      "src": [
+        "SRC-001004",
+        "SRC-002765"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SB 330 preliminary application filed 2026; no APR, CEQAnet or tax credit record found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched San Mateo Daily Journal and local news; no coverage of this application found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SFYIMBY 2026-08-11 names Ghai Management as developer",
+      "src": [
+        "SRC-002766"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Ghai Management website or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "RG-Architecture is on record; plan set confirms architect role",
+      "src": [
+        "SRC-002765"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funding found for this early-stage application",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

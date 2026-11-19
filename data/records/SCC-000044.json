@@ -187,8 +187,17 @@
           "src": [
             "SRC-001102"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001724",
+            "SRC-001621"
+          ],
+          "note": "151 units, 150 restricted plus a manager's unit"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_notes": {
       "claims": [
@@ -233,8 +242,143 @@
             "SRC-001102"
           ],
           "note": "State report 2025, completion stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 16,
+              "ami": 30
+            },
+            {
+              "count": 58,
+              "ami": 50
+            },
+            {
+              "count": 76,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001621",
+            "SRC-001724"
+          ],
+          "note": "CTCAC CA-22-462 and the 2022 amended city agreement (which moved 10 units from 80% AMI to deeper levels)"
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 90,
+            "1br": 34,
+            "2br": 24,
+            "3br": 3,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001621",
+            "SRC-002760"
+          ],
+          "note": "Studios 371 sf, 1BR 537 sf, 2BR 865 sf, 3BR 1,095 sf (CalHFA); one 2BR manager's unit"
         }
       ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001621"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-002760",
+            "SRC-002761"
+          ],
+          "note": "Five residential levels over a three-story podium (AO Architects)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.77,
+          "src": [
+            "SRC-002761"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 5000,
+          "src": [
+            "SRC-002760"
+          ],
+          "note": "Approximately 5,000 sq ft, to be sold as a condominium to 2302 Calle Del Mundo, LLC for $1,800,000"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-002760"
+          ],
+          "note": "CalHFA: 151 units / Family; CTCAC lists housing type Non-Targeted"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-001724"
+          ],
+          "note": "Tasman East Specific Plan"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 72194393,
+          "src": [
+            "SRC-001621"
+          ],
+          "note": "CTCAC total at application (June 2022)"
+        },
+        {
+          "value": 88227829,
+          "src": [
+            "SRC-002760"
+          ],
+          "note": "CalHFA permanent sources total (November 2022)"
+        },
+        {
+          "value": 81200000,
+          "src": [
+            "SRC-002762"
+          ],
+          "note": "Ensemble press release at groundbreaking (April 2023)"
+        }
+      ],
+      "best": 1
     }
   },
   "construction_notes": [
@@ -262,6 +406,30 @@
       "src": [
         "SRC-001603",
         "SRC-001914"
+      ]
+    },
+    {
+      "text": "CalHFA (Nov 2022): the land, held by USA BH 26, Inc. after a 2020 purchase from 2302 Calle Del Mundo, LLC, was under a 9/1/2021 purchase agreement to Life Span Home, Inc. for $9,652,500, funded by contributions from Related ($6,425,000) and Ensemble ($3,227,500); Life Span leases the land back to the borrower for 99 years.",
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "text": "City of Santa Clara (2022): the project fulfills the consolidated inclusionary obligations of three Tasman East Specific Plan projects (Related California and Ensemble); proposed developer fee $9.387 million, of which $5,992,156 deferred; no direct city subsidy beyond the $6 million Related contribution loaned through the city at 0%.",
+      "src": [
+        "SRC-001724"
+      ]
+    },
+    {
+      "text": "Ensemble press release (2023-04-17) lists financing partners Bank of America, CalHFA, City of Santa Clara, Google, Housing Trust Silicon Valley, Ensemble and Related, without amounts.",
+      "src": [
+        "SRC-002762"
+      ]
+    },
+    {
+      "text": "CalHFA construction sources total $83,055,810; permanent sources total $88,227,829. Construction lender Bank of America; supportive services by LifeSTEPS for 15 years.",
+      "src": [
+        "SRC-002760"
       ]
     }
   ],
@@ -346,9 +514,196 @@
       "other_role": "Applicant (CTCAC)",
       "email": "dbobrowsky@usapropfund.com",
       "phone": "916-865-3981"
+    },
+    {
+      "role": "Architect",
+      "company": "AO Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.aoarchitects.com",
+      "project_page": "https://www.aoarchitects.com/project/mainline-north",
+      "src": [
+        "SRC-002760",
+        "SRC-002761"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "USA Multifamily Construction Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002761"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002761"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bank of America",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "California Housing Finance Agency",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "WNC & Associates Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001621"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Life Span Home, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Land buyer and ground lessor (99-year ground lease)",
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "2302 Calle Del Mundo, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "USA BH 26, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002760"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Bank of America",
+      "program": "Tax-exempt conduit (CalHFA bonds)",
+      "amount": 42500000,
+      "date": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Bank of America",
+      "program": "Taxable conduit",
+      "amount": 19200000,
+      "date": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "California Housing Finance Agency",
+      "program": "Tax-exempt or FFB permanent loan with HUD Risk Sharing",
+      "amount": 23950000,
+      "date": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Housing Finance Agency",
+      "program": "Mixed-Income Program (MIP), $3,000,000 original plus $4,025,000 supplemental",
+      "amount": 7025000,
+      "date": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Santa Clara",
+      "program": "Residual receipts loan funded by Related's inclusionary contribution",
+      "amount": 6000000,
+      "date": null,
+      "src": [
+        "SRC-002760",
+        "SRC-001724"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Life Span Home, Inc.",
+      "program": "Related/Ensemble subordinate loan",
+      "amount": 1695645,
+      "date": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "USA Multifamily Development",
+      "program": "Deferred developer fee note",
+      "amount": 6530000,
+      "date": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "Developer equity contribution",
+      "program": null,
+      "amount": 1150000,
+      "date": null,
+      "src": [
+        "SRC-002760"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "WNC & Associates Inc.",
+      "program": "Investor equity at permanent (CalHFA)",
+      "amount": 38245996,
+      "date": null,
+      "src": [
+        "SRC-002760",
+        "SRC-001621"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -358,6 +713,44 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2019-10-22",
+      "type": "Approved",
+      "label": "City Council approves Affordable Housing Agreement with ZAEN Partners, LLC (Matter 19-1173)",
+      "src": [
+        "SRC-002763"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06-15",
+      "type": "Other",
+      "label": "CDLAC bond allocation and CTCAC 4% credit reservation (CA-22-462)",
+      "src": [
+        "SRC-001621",
+        "SRC-002760"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-11-17",
+      "type": "Other",
+      "label": "CalHFA Board final commitment for permanent and MIP loans",
+      "src": [
+        "SRC-002760"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-12-06",
+      "type": "Approved",
+      "label": "City Council approves amended Affordable Housing Agreement and loan documents with Mainline North 701, L.P. (Matter 22-1483)",
+      "src": [
+        "SRC-002764",
+        "SRC-001724"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-12-21",
@@ -374,6 +767,15 @@
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2023-04-17",
+      "type": "Construction start",
+      "label": "Groundbreaking announced",
+      "src": [
+        "SRC-002762"
+      ],
+      "estimated": true
     },
     {
       "date": "2025-08-31",
@@ -428,6 +830,103 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Mainline North, architect and contractor; led to AO Architects, CalHFA report and Ensemble release",
+      "src": [
+        "SRC-002761",
+        "SRC-002760",
+        "SRC-002762"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=09746034: situs 2302 Calle Del Mundo; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar matters 19-1173 (2019-10-22) and 22-1483 (2022-12-06) with staff report text; santaclaraca.gov refuses automated access",
+      "src": [
+        "SRC-002763",
+        "SRC-002764",
+        "SRC-001724"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding named in CTCAC or CalHFA reports",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC CA-22-462 (financing, unit mix, AMI); CalHFA Final Commitment Staff Report 2022-11-17",
+      "src": [
+        "SRC-001621",
+        "SRC-002760"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose Spotlight opening coverage already on record",
+      "src": [
+        "SRC-001914"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SFYIMBY opening article already on record; Multi-Housing News returned 403",
+      "src": [
+        "SRC-001915"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Ensemble press release 2023-04-17; USA Properties project page already on record",
+      "src": [
+        "SRC-002762"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "AO Architects project page: architect of record, 8 stories, 0.77 acres, consultants",
+      "src": [
+        "SRC-002761"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CalHFA and CTCAC sources and uses; Bank of America, CalHFA, WNC, City of Santa Clara, Life Span Home",
+      "src": [
+        "SRC-002760",
+        "SRC-001621"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Mainline North found none",
+      "src": []
+    }
+  }
 }
