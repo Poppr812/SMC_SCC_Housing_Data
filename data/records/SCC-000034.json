@@ -160,6 +160,13 @@
             "SRC-001379"
           ],
           "note": "264 in the first building, 311 in the second."
+        },
+        {
+          "value": 524,
+          "src": [
+            "SRC-002222"
+          ],
+          "note": "November 2024 plans: about 524 apartments in two eight-story buildings"
         }
       ],
       "best": 1
@@ -235,6 +242,48 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.7,
+          "src": [
+            "SRC-002221"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 13000,
+          "src": [
+            "SRC-002222"
+          ],
+          "note": "November 2024 plans"
+        },
+        {
+          "value": 6000,
+          "src": [
+            "SRC-002223",
+            "SRC-002224"
+          ],
+          "note": "311-apartment building, August 2026"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002222"
+          ],
+          "note": "About 5% of base-zoning units for very low-income households under the State Density Bonus law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -261,6 +310,18 @@
       "text": "City of San Jose permit MPA25-003-01 (Ministerial Permit, folder year 2026), status Approved, issue date 2026-07-01: \"Ministerial Permit Adjustment to allow changes to Building 2, including an increase in the number of residential units from 276 to 311 units, for a total unit count of 575 units, including minor exterior changes, a reduction in ground-floor commercial ret\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Before Holland's purchase, Cypress Equities proposed a 12-story office tower and a four-story fitness center for the site, designed by HKS Architects.",
+      "src": [
+        "SRC-002221"
+      ]
+    },
+    {
+      "text": "November 2024 plans: lower three floors of each building are parking, with two driveways to Saratoga Avenue and one to Northlake Drive; podium-top courtyard.",
+      "src": [
+        "SRC-002222"
       ]
     }
   ],
@@ -294,11 +355,38 @@
       "src": [
         "SRC-001379"
       ]
+    },
+    {
+      "role": "Seller",
+      "company": "Cypress Equities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002222"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-08",
+      "type": "Sale",
+      "label": "Holland Partner Group bought the site; price not disclosed (county recorder documents)",
+      "src": [
+        "SRC-002221"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-22",
+      "type": "Other",
+      "label": "Plans released for about 524 apartments in two eight-story buildings",
+      "src": [
+        "SRC-002222"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-02-20",
       "type": "Application filed",
@@ -321,6 +409,16 @@
       "label": "Final approval reported July 13, 2026",
       "src": [
         "SRC-001379"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Other",
+      "label": "Rockpoint and Holland Partner Group announced joint venture to acquire the site and build the 311-apartment building",
+      "src": [
+        "SRC-002224",
+        "SRC-001380"
       ],
       "estimated": false
     },
@@ -354,6 +452,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Holland Partner Group, Rockpoint",
+      "src": [
+        "SRC-002221"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 30325060: situs 3896 Stevens Creek Bl, 0.69 acre parcel; owner of record not in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose planning permits GIS layer (MP25-003, MPA25-003-01) already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A and A2 rows already on record; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Mercury News coverage cited only through other outlets; The Real Deal July 2026 article blocked",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Aug. and Nov. 2024; REBusinessOnline and IREI Aug. 2026",
+      "src": [
+        "SRC-002221",
+        "SRC-002222",
+        "SRC-002223",
+        "SRC-002224"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Rockpoint joint venture release already on record",
+      "src": [
+        "SRC-001380"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched TCA Architects; no project page for this site found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Joint venture terms not disclosed; no construction lender found",
+      "src": [
+        "SRC-002223"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Holland / Rockpoint Stevens Creek returned none",
+      "src": []
+    }
+  }
 }

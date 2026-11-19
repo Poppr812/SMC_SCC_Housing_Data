@@ -188,6 +188,13 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "2600 El Camino Real, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -239,7 +246,9 @@
         {
           "value": 601,
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-002207",
+            "SRC-002208"
           ],
           "note": "Units in the application as reported"
         },
@@ -250,6 +259,13 @@
             "SRC-001718"
           ],
           "note": "City item, Sept. 2026: 590 units and 15,000 sq ft commercial"
+        },
+        {
+          "value": 584,
+          "src": [
+            "SRC-002209"
+          ],
+          "note": "Architect page, earlier plan: two 132-unit condominium buildings, a 161-unit rental building and 159 townhomes"
         }
       ],
       "best": 1
@@ -291,6 +307,56 @@
           "note": "State report 2024, application stage: 90 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 14.34,
+          "src": [
+            "SRC-002207",
+            "SRC-002209"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 15000,
+          "src": [
+            "SRC-001718"
+          ],
+          "note": "City item title, 2026: 590 residential units and 15,000 sq ft commercial"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002209"
+          ],
+          "note": "Architect page: condominium buildings seven stories, rental building six, townhomes three"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "166-unit affordable rental building",
+          "src": [
+            "SRC-002207",
+            "SRC-002208"
+          ]
+        },
+        {
+          "value": "About 25% below-market-rate rental apartments (earlier plan)",
+          "src": [
+            "SRC-002209"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -298,6 +364,20 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "text": "Santa Clara City Council closed-session items in September and December 2024 list Moonlite Associates LLC v. City of Santa Clara, U.S. District Court, Northern District of California, Case No. 5:24-CV-00723-VKD. An April 2023 closed-session item lists a claim of Moonlite Associates, LLC.",
+      "src": [
+        "SRC-002211",
+        "SRC-002212",
+        "SRC-002213"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (Nov. 2025): USA Properties Fund is the affordable housing partner; the plan includes about 60,000 sq ft of open space; more than a dozen shopping center businesses would be displaced.",
+      "src": [
+        "SRC-002208"
       ]
     }
   ],
@@ -320,6 +400,29 @@
       "other_role": "Property owner per news",
       "src": [
         "SRC-001720"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Van Meter Williams Pollack LLP",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://vmwp.com",
+      "website_basis": "search",
+      "project_page": "https://vmwp.com/?p=12126",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-002207",
+        "SRC-002209"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "USA Properties Fund",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002208"
       ]
     }
   ],
@@ -351,6 +454,15 @@
         "SRC-001718"
       ],
       "estimated": false
+    },
+    {
+      "date": "2029",
+      "type": "Completion",
+      "label": "Target completion reported",
+      "src": [
+        "SRC-002208"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -373,6 +485,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, Toll Brothers; opened SF YIMBY Oct. 2024 article",
+      "src": [
+        "SRC-002207"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API, APN 29006020: situs 2600 El Camino Real, Santa Clara, 30 situs addresses; owner of record not in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar: matters 26-1073 history (Council 2026-11-17), 26-1066 PC staff report, litigation closed-session items 24-902, 24-1224, 23-552. santaclaraca.gov project listing blocked",
+      "src": [
+        "SRC-002210",
+        "SRC-001718",
+        "SRC-002211"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; CEQAnet search returned no project-specific entry (city cites CEQA Guidelines 15183)",
+      "src": [
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight Nov. 2025",
+      "src": [
+        "SRC-002208"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Oct. 2024 (601 units, 14.34 acres)",
+      "src": [
+        "SRC-002207"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of Toll Brothers site showed no Moonlite page; Toll results cover 3131 Camino, a different site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Van Meter Williams Pollack project page",
+      "src": [
+        "SRC-002209"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in news, trade or city sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Moonlite, Toll Brothers, USA Properties, VMWP returned none",
+      "src": []
+    }
+  }
 }

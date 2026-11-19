@@ -166,7 +166,8 @@
           -121.9774994,
           37.3229874
         ]
-      ]
+      ],
+      "shared": true
     }
   ],
   "addresses": [
@@ -268,6 +269,13 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "173 affordable units in one 100% affordable building; the two other residential buildings are market-rate",
+          "src": [
+            "SRC-002217",
+            "SRC-002218"
+          ]
         }
       ]
     },
@@ -321,6 +329,79 @@
             "SRC-001107"
           ],
           "note": "State report 2024, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 58,
+              "ami": 50
+            },
+            {
+              "count": 29,
+              "ami": 60
+            },
+            {
+              "count": 29,
+              "ami": 80
+            },
+            {
+              "count": 57,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-002218"
+          ],
+          "note": "City approval, Aug. 2022: 173 below-market-rate units in one building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 9.22,
+          "src": [
+            "SRC-002217"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 8500,
+          "src": [
+            "SRC-002218"
+          ],
+          "note": "Ground-floor retail in the 250-room hotel"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002217"
+          ],
+          "note": "Architect page: three 5-story residential buildings; hotel has 5 stories over a 3-level podium"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-002219"
+          ],
+          "note": "SJ Build: three 6-story residential buildings"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 407,
+          "src": [
+            "SRC-001783"
+          ]
         }
       ]
     }
@@ -331,12 +412,6 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
-      ]
-    },
-    {
-      "text": "CTCAC CA-23-517: Stevens Creek Promenade, located at 4300 Stevens Creek Boulevard in San Jose, requested and is being recommended for a reservation of $5,867,538 in annual federal tax credits and $19,600,000 in total state tax credits to finance the new construction of 171 units of housing serving families with rents affordable to households earning 30%-70% of area median income (AMI). Recorded as a note because this funding covers Stevens Creek Promenade (173 units), which may be one component of this record.",
-      "src": [
-        "SRC-001638"
       ]
     },
     {
@@ -362,19 +437,27 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Architects Orange project page: client Miramar Capital & TPC; architect of record and design architect; 580 dwelling units on 9.22 acres (the description text says 637 units); 250-key dual-branded hotel (109 extended-stay, 141 select-service rooms).",
+      "src": [
+        "SRC-002217"
+      ]
+    },
+    {
+      "text": "Miramar Capital project page gives the address as 4300-4400 Stevens Creek Blvd.",
+      "src": [
+        "SRC-002220"
+      ]
+    },
+    {
+      "text": "SJ Build: City approved a two-phase split on January 31, 2024 (PDA20-012-01), Phase 1 the 173-unit affordable building; a November 2024 preliminary proposal (PRE24-302) would replace the hotel and Building C with a car dealership, reducing units to 364; a December 2024 filing (PD24-022) proposes a Chick-fil-A at the northwest corner.",
+      "src": [
+        "SRC-002219"
+      ]
     }
   ],
   "parties": [
-    {
-      "role": "Other",
-      "company": "Pacific West Communities, Inc.",
-      "contact": null,
-      "linkedin": null,
-      "other_role": "Developer of Stevens Creek Promenade component",
-      "src": [
-        "SRC-001638"
-      ]
-    },
     {
       "role": "Developer",
       "company": "Miramar Capital",
@@ -385,6 +468,48 @@
       ],
       "website": "https://www.miramarcapital.com",
       "project_page": "https://www.miramarcapital.com/project/4300-stevens-creek/"
+    },
+    {
+      "role": "Architect",
+      "company": "Architects Orange",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.aoarchitects.com",
+      "website_basis": "search",
+      "project_page": "https://www.aoarchitects.com/?p=13575",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-002217",
+        "SRC-001783"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "HMH Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002217"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002217"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "The Pacific Companies (TPC)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002217",
+        "SRC-001638"
+      ]
     }
   ],
   "financing": [],
@@ -399,12 +524,39 @@
       ]
     },
     {
+      "date": "2022-07",
+      "type": "Approved",
+      "label": "Planning Commission approved the revised project",
+      "src": [
+        "SRC-002218"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-08-30",
+      "type": "Approved",
+      "label": "City Council unanimously approved the revised project",
+      "src": [
+        "SRC-002218"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-11-29",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2024-02",
+      "type": "Sale",
+      "label": "Affordable building site sold for $3.5 million; Pacific West Builders to develop it",
+      "src": [
+        "SRC-001783"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-02-22",
@@ -440,6 +592,110 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Split: the 173-unit affordable building and its CTCAC financing moved to SCC-000644"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, 4300 Stevens Creek, Miramar, Pacific West",
+      "src": [
+        "SRC-002219"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 29640009: situs 4300 Stevens Creek Bl, 0.56 acre parcel; owner of record not in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose planning permits GIS layer already on record; sanjoseca.gov documents blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report CA-23-517 (Aug. 2023): financing, parties, AMI targeting",
+      "src": [
+        "SRC-001638"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight Aug. 2022 approval story",
+      "src": [
+        "SRC-002218"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Feb. 2024; The Real Deal Feb. 2024 blocked",
+      "src": [
+        "SRC-001783"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Miramar Capital project page (address 4300-4400 only)",
+      "src": [
+        "SRC-002220"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Architects Orange project page",
+      "src": [
+        "SRC-002217"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC CA-23-517 sources of funds; SF YIMBY Feb. 2024 (Citibank)",
+      "src": [
+        "SRC-001638",
+        "SRC-001783"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Stevens Creek Promenade returned none",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000644",
+      "relation": "includes",
+      "note": "173-unit affordable building, Phase 1"
     }
   ]
 }
