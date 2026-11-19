@@ -669,6 +669,27 @@ function findTip(tpl,r){
     ctcac:ct||r.name,sj_where:pf.length===1?`REFERENCENUM='${pf[0]}'`:pf.length?`REFERENCENUM IN (${pf.map(x=>"'"+x+"'").join(",")})`:apns.length?`APN='${apns[0].replace(/\D/g,"")}'`:`FOLDERDESC LIKE '%${street}%'`};
   return tpl.replace(/\{(\w+)\}/g,(m,k)=>v[k]??m);
 }
+// Source listing (Paul, 2026-11-19): "Publisher · Type" (linked) · title · date, plus a short gray hint only for PDFs and databases.
+const PUB_SHORT={"California Tax Credit Allocation Committee":"California TCAC","California Department of Housing and Community Development":"California HCD","San Mateo County GIS":"San Mateo County"};
+function srcPub(S){return PUB_SHORT[S.publisher]||S.publisher}
+function srcIsPdf(S){return /\.pdf($|\?|#)/i.test(S.url)}
+function srcType(S){
+  if(S.type==="Government dataset"){const p=S.publisher+" "+S.title;
+    return /parcel/i.test(p)?"Parcel database":/progress report|housing and community/i.test(p)?"Housing report database":/permit/i.test(p)?"Permit database":"Database"}
+  if(/Tax Credit Allocation|CDLAC|Debt Limit/i.test(S.publisher))return "Staff report";
+  return {"Government document":"Public document","Government web page":"Web page","Government press release":"Press release","Developer press release":"Press release",
+    "Developer web page":"Web page","Trade publication":"Trade article","Trade listing":"Listing"}[S.type]||S.type}
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmtDay(d){const m=/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/.exec(d||"");if(!m)return d||"";return m[3]?`${MON[+m[2]-1]} ${+m[3]}, ${m[1]}`:m[2]?`${MON[+m[2]-1]} ${m[1]}`:m[1]}
+function srcDate(S){if(S.type==="Government dataset"){const d=S.retrieved||S.date;return d?"retrieved "+fmtDay(d):""}return S.date?fmtDay(S.date):""}
+function srcTip(S,r){
+  if(S.type==="Government dataset"){
+    const pf=(r.facts.planning_file?.claims||[]).flatMap(c=>String(c.value).split(/[,;\s]+/)).filter(x=>/^[A-Z]{1,5}\d{2}-\d{2,4}/.test(x)||/^\d{6,}$/.test(x))[0];
+    if(/parcel/i.test(S.publisher+" "+S.title))return "Search by APN";
+    if(pf)return `Filter by file number ${pf}`;
+    const street=(r.addresses[0]?.text||r.name).split(",")[0];return `Filter by address ${street}`}
+  if(/^Spreadsheet/i.test(S.find||""))return "Spreadsheet";
+  return srcIsPdf(S)?"PDF":""}
 /* ---------- record page ---------- */
 let CUR=null;
 function fn(srcs){return (srcs||[]).map(s=>`<sup class="fn"><a href="#src-${s}" title="${esc(SOURCES[s].title)}">${CUR.srcLabels[s]}</a></sup>`).join("")}
@@ -757,7 +778,7 @@ function openRecord(id){
    ${secs}
    <h3>Sources</h3>
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
-     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(outUrl(S))}" target="_blank" rel="noopener">${esc(S.title)}</a><div class="muted" style="margin-left:26px">${esc(S.publisher)}${S.date?" · "+esc(S.date):""} · ${esc(S.type)}${S.find?`<br><b>How to find it:</b> ${esc(findTip(S.find,r))}`:""}${PROFILE&&PROFILE.is_admin?`<div class="adminsrc">${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()} · Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div>`:""}</div></div>`}).join("")}
+     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(outUrl(S))}" target="_blank" rel="noopener">${esc(srcPub(S))} · <i>${esc(srcType(S))}</i></a> · ${esc(S.title)}${srcDate(S)?" · "+esc(srcDate(S)):""}<div class="muted" style="margin-left:26px;font-size:.85em">${esc(srcTip(S,r))}${PROFILE&&PROFILE.is_admin?`<div class="adminsrc">${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()} · Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div>`:""}</div></div>`}).join("")}
    ${PROFILE&&PROFILE.is_admin?researchBox(r):""}
    <details><summary>Edit history (provenance)</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
