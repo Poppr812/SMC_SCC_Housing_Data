@@ -168,6 +168,14 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 307,
+          "src": [
+            "SRC-002406",
+            "SRC-001956"
+          ],
+          "note": "Up to 307 new units in two buildings (Avalon Building and Manzanita Building) per the EIR description and city file PDC17-056; 1,180 units on site in total including the existing Eaves community"
         }
       ]
     },
@@ -192,6 +200,39 @@
           "note": "State report (through 2019): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 17800,
+          "src": [
+            "SRC-002406"
+          ],
+          "note": "Ground-floor retail at Saratoga Ave and Blackford Ave"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 1414,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PDA17-027-01 (approved 2020-01-29): 15% parking reduction, 1,414 spaces for the mixed-use development"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 18.9,
+          "src": [
+            "SRC-002406"
+          ],
+          "note": "Whole Eaves West Valley site; the new garage occupies about 7.46 acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -206,6 +247,18 @@
       "src": [
         "SRC-001807"
       ]
+    },
+    {
+      "text": "City GIS file names: PDC17-056 and PD17-027 \"AvalonBay West Valley\". PD17-027 allows demolition of existing parking garages, sports courts, pool and amenity building within the existing Eaves West Valley apartment community.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "CEQAnet: EIR (SCH 2018042029) describes up to 307 new units in two buildings, about 17,800 sq ft of retail, demolition of a 210-stall and a 620-stall garage, and a new stand-alone garage with about 1,148 spaces.",
+      "src": [
+        "SRC-002406"
+      ]
     }
   ],
   "parties": [
@@ -219,11 +272,59 @@
         "SRC-001807"
       ],
       "website": "https://www.avaloncommunities.com/"
+    },
+    {
+      "role": "Developer",
+      "company": "AvalonBay Communities, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.avaloncommunities.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-002406",
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-12-12",
+      "type": "Application filed",
+      "label": "PD rezoning application PDC17-056 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2018-04-11",
+      "type": "Other",
+      "label": "EIR Notice of Preparation received by State Clearinghouse",
+      "src": [
+        "SRC-002406"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2018-12-04",
+      "type": "Approved",
+      "label": "Vesting tentative map PT18-049 approved (merge seven parcels, subdivide into up to two)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2018-12-21",
+      "type": "Other",
+      "label": "EIR received by State Clearinghouse",
+      "src": [
+        "SRC-002406"
+      ],
+      "estimated": false
+    },
     {
       "date": "2019-06-11",
       "type": "Approved",
@@ -231,6 +332,24 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2020-01-29",
+      "type": "Approved",
+      "label": "PD permit amendment PDA17-027-01 approved (parking reduction to 1,414 spaces)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-03-08",
+      "type": "Other",
+      "label": "Permit adjustment AD24-119 extends PD17-027 expiration to March 17, 2025",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -248,6 +367,88 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on 700 Saratoga Ave, AvalonBay West Valley and Eaves West Valley; city GIS and CEQAnet records opened",
+      "src": [
+        "SRC-001956",
+        "SRC-002406"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 299-37-024, situs 700 Saratoga Av; no owner field in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer: PDC17-056, PD17-027, PT18-049, PDA17-027-01, AD24-119. sanjoseca.gov project and EIR pages refused automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2018042029 (NOP 2018-04-11, EIR 2018-12-21); APR row already on record",
+      "src": [
+        "SRC-002406"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searches for AvalonBay West Valley / 700 Saratoga expansion found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searches found no trade coverage of the expansion",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "AvalonBay site shows the existing eaves West Valley community only; no expansion page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in the city or CEQAnet records opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing reported in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No LinkedIn results in web searches for the project",
+      "src": []
+    }
+  }
 }

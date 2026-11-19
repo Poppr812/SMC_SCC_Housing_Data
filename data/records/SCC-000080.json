@@ -139,6 +139,112 @@
           37.3851241
         ]
       ]
+    },
+    {
+      "apn": "193-02-050",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.0826023,
+          37.384289
+        ],
+        [
+          -122.0827296,
+          37.3843516
+        ],
+        [
+          -122.0829009,
+          37.3844359
+        ],
+        [
+          -122.0830722,
+          37.3845201
+        ],
+        [
+          -122.0832434,
+          37.3846044
+        ],
+        [
+          -122.0834382,
+          37.3847002
+        ],
+        [
+          -122.0831108,
+          37.3851241
+        ],
+        [
+          -122.0827958,
+          37.3849691
+        ],
+        [
+          -122.0827852,
+          37.3849647
+        ],
+        [
+          -122.0825422,
+          37.3848761
+        ],
+        [
+          -122.0825346,
+          37.3848729
+        ],
+        [
+          -122.0823585,
+          37.3847862
+        ],
+        [
+          -122.0823514,
+          37.3847829
+        ],
+        [
+          -122.0823448,
+          37.3847785
+        ],
+        [
+          -122.0823391,
+          37.3847732
+        ],
+        [
+          -122.0823343,
+          37.384767
+        ],
+        [
+          -122.0823305,
+          37.3847601
+        ],
+        [
+          -122.0823279,
+          37.3847526
+        ],
+        [
+          -122.0823265,
+          37.3847449
+        ],
+        [
+          -122.0823263,
+          37.384737
+        ],
+        [
+          -122.0823274,
+          37.3847293
+        ],
+        [
+          -122.0823297,
+          37.3847217
+        ],
+        [
+          -122.0823332,
+          37.3847147
+        ],
+        [
+          -122.0826023,
+          37.384289
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -223,6 +329,12 @@
           "src": [
             "SRC-001324"
           ]
+        },
+        {
+          "value": "33 BMR units (15.8% of 209 base units): 31 at 50% AMI and 2 at 80% AMI; 4 studio, 21 one-bedroom (incl. 5 with den), 7 two-bedroom (incl. 1 with den), 1 three-bedroom.",
+          "src": [
+            "SRC-002414"
+          ]
         }
       ]
     },
@@ -235,6 +347,14 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-6884",
+          "src": [
+            "SRC-002415",
+            "SRC-002416"
+          ],
+          "note": "Application number in the 2026 council reports"
         }
       ]
     },
@@ -268,6 +388,67 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 38,
+            "1br": 192,
+            "2br": 62,
+            "3br": 7,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002414"
+          ],
+          "note": "1BR includes 46 one-bedroom plus den; 2BR includes 7 two-bedroom plus den"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.05,
+          "src": [
+            "SRC-002414"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 10830,
+          "src": [
+            "SRC-002414"
+          ],
+          "note": "Ground-floor commercial; a separate two-story 8,483 sq ft bank building is also approved"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 344,
+          "src": [
+            "SRC-002414"
+          ],
+          "note": "Residential spaces; plus 115 commercial spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002414"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -276,6 +457,20 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "Council report 2025-11-18: applicant Greystar in partnership with property owner Metropolitan Life; site at the southeast corner of El Camino Real and Castro Street with a vacant restaurant and an operating Chase bank. Final Supplemental EIR (SCH 2023050251) certified. Community benefit contribution $5,045,161.74; park land in-lieu fee $3,582,920 for 266 net new units.",
+      "src": [
+        "SRC-002414",
+        "SRC-002415"
+      ]
+    },
+    {
+      "text": "Council reports 2026-11-17: after a legal dispute with Metropolitan Life, a proposed settlement extends the zoning permits to four years from the November 18, 2025 approval (building permits and construction by November 18, 2029) and ties the community benefit payment to the first residential foundation, excavation or structure permit.",
+      "src": [
+        "SRC-002415",
+        "SRC-002416"
       ]
     }
   ],
@@ -289,11 +484,30 @@
         "SRC-001324"
       ],
       "website": "https://www.greystar.com"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Metropolitan Life Insurance Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002414",
+        "SRC-002416"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-01-07",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-002414"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-06-30",
       "type": "Application filed",
@@ -303,12 +517,40 @@
       ]
     },
     {
+      "date": "2024-09-26",
+      "type": "Other",
+      "label": "Formal application deemed complete",
+      "src": [
+        "SRC-002414"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-15",
+      "type": "Other",
+      "label": "Environmental Planning Commission hearing",
+      "src": [
+        "SRC-002414"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-11-18",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Other",
+      "label": "Council agenda: settlement agreement with Metropolitan Life and amended conditions extending permits to November 18, 2029",
+      "src": [
+        "SRC-002415",
+        "SRC-002416"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -331,6 +573,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search and Mountain View Legistar on 749 W El Camino Real",
+      "src": [
+        "SRC-002414"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: APN 193-02-049 situs 749 W El Camino Real; city reports add APN 193-02-050",
+      "src": [
+        "SRC-001098",
+        "SRC-002414"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Legistar: Council report 2025-11-18 (file 204368), EPC file 204443, council items 206367 and 206514 (2026-11-17)",
+      "src": [
+        "SRC-002414",
+        "SRC-002415",
+        "SRC-002416"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of Mountain View project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Supplemental EIR SCH 2023050251 per council report; APR rows already on record",
+      "src": [
+        "SRC-002414"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searches found no local news article on the project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2025-08-22 article already on record",
+      "src": [
+        "SRC-001324"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Greystar project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Plan set cover pages (Legistar attachment) and SF YIMBY do not name an architect in extractable text",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing reported; project not yet permitted",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No LinkedIn results in web searches for the project",
+      "src": []
+    }
+  }
 }
