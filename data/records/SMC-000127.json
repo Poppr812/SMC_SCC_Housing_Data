@@ -140,7 +140,8 @@
         {
           "value": 6,
           "src": [
-            "SRC-001351"
+            "SRC-001351",
+            "SRC-003126"
           ]
         }
       ]
@@ -158,6 +159,127 @@
             "SRC-001133"
           ],
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003126"
+          ],
+          "note": "Amended project: 6 BMR units (4 one-bedroom, 2 two-bedroom) for moderate income up to 120% AMI"
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 14,
+            "2br": 51,
+            "3br": 21,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003126"
+          ],
+          "note": "Amended 86-unit project"
+        },
+        {
+          "value": {
+            "studio": 35,
+            "1br": 30,
+            "2br": 55,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003126"
+          ],
+          "note": "Originally approved 120-unit project (2021)"
+        }
+      ],
+      "best": 0
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 145,
+          "src": [
+            "SRC-003126"
+          ],
+          "note": "Amended project, two levels, 62 tandem"
+        },
+        {
+          "value": 150,
+          "src": [
+            "SRC-003126",
+            "SRC-003127"
+          ],
+          "note": "Originally approved 120-unit project, 66 tandem"
+        }
+      ],
+      "best": 0
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 85583,
+          "src": [
+            "SRC-003126"
+          ],
+          "note": "Net square feet; 171,318 gross square feet including the parking levels"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.89,
+          "src": [
+            "SRC-003126",
+            "SRC-003127"
+          ],
+          "note": "39,138 sq ft"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "DSRA24-0009",
+          "src": [
+            "SRC-003126"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003126"
+          ],
+          "note": "EIR, Major Design Review, CUP, Condominium Permit, Tentative Condominium Map; NBMU Tier 3 community benefits bonuses"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 14800000,
+          "src": [
+            "SRC-003128"
+          ],
+          "note": "MLS ML81954463 sold 2024-10-03; listed at $39,000,000 on 2024-02-15"
         }
       ]
     }
@@ -173,6 +295,31 @@
       "text": "City page gives an expiration date of June 7, 2028.",
       "src": [
         "SRC-001351"
+      ]
+    },
+    {
+      "text": "2025 staff report: the new owners requested the amendment; building envelope, height and net square footage unchanged; existing vacant one-story office building to be demolished. The EIR was required because the building was found significant under CRHR Criterion A for its association with United Farm Workers labor activism in the 1960s and 1970s.",
+      "src": [
+        "SRC-003126"
+      ]
+    },
+    {
+      "text": "2025 staff report: originally approved project had six BMR units for low income households up to 80% AMI; a one-year extension required a building permit by March 15, 2024.",
+      "src": [
+        "SRC-003126"
+      ]
+    },
+    {
+      "text": "CEQAnet 2020 Draft EIR: 120 units (6 BMR), 150 parking spaces on two levels, 81 resident and 12 guest bicycle spaces, 69-foot building.",
+      "src": [
+        "SRC-003127"
+      ]
+    },
+    {
+      "text": "County parcel layer shows NEW HORIZONS DEVELOPMENT LLC as owner of APN 025-121-190; the 2025 staff report names CHS Development Group as applicant and property owner.",
+      "src": [
+        "SRC-003130",
+        "SRC-003126"
       ]
     }
   ],
@@ -195,17 +342,85 @@
       "src": [
         "SRC-001351"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPD Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003126"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Levy Design Partners, Inc",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant on 2020 Draft EIR (CEQAnet)",
+      "src": [
+        "SRC-003127"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Green Banker Realty",
+      "contact": "Stanley Lo",
+      "linkedin": null,
+      "src": [
+        "SRC-003129"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2020-11-23",
+      "type": "Other",
+      "label": "Draft EIR received by State Clearinghouse (SCH 2020070230)",
+      "src": [
+        "SRC-003127"
+      ]
+    },
+    {
+      "date": "2021-02-22",
+      "type": "Other",
+      "label": "Planning Commission recommended approval to City Council",
+      "src": [
+        "SRC-003126"
+      ]
+    },
+    {
       "date": "2021-03-15",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001133"
+      ]
+    },
+    {
+      "date": "2022-04-05",
+      "type": "Other",
+      "label": "Building permit application submitted",
+      "src": [
+        "SRC-003126"
+      ]
+    },
+    {
+      "date": "2024-01-24",
+      "type": "Application filed",
+      "label": "Amendment application filed (revised September 2024)",
+      "src": [
+        "SRC-003126"
+      ]
+    },
+    {
+      "date": "2024-10-03",
+      "type": "Sale",
+      "label": "Entitled site sold for $14,800,000 (MLS ML81954463)",
+      "src": [
+        "SRC-003128"
       ]
     },
     {
@@ -228,6 +443,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and applicant; MLS and Coldwell Banker listing pages opened (2024 sale)",
+      "src": [
+        "SRC-003128",
+        "SRC-003129"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 025-121-190: owner NEW HORIZONS DEVELOPMENT LLC, land area 39,137 sq ft",
+      "src": [
+        "SRC-003130"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Burlingame project page and PC staff report 2025-05-27 (DSRA24-0009): architect, unit mix, parking, BMR terms",
+      "src": [
+        "SRC-001351",
+        "SRC-003126"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2020070230 Draft EIR 2020-11-23: applicant, parking, bicycle spaces",
+      "src": [
+        "SRC-003127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (2019, 2020, 2021) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "WoodWorks Innovation Network project page returned 403; no other trade coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no CHS Development Group project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no LPD Architecture page for 1868 Ogden",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 1868 Ogden Drive returned nothing relevant",
+      "src": []
+    }
+  }
 }

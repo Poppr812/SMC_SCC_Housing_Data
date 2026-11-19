@@ -71,6 +71,78 @@
           37.2985442
         ]
       ]
+    },
+    {
+      "apn": "279-25-012",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9486799,
+          37.2989881
+        ],
+        [
+          -121.9486752,
+          37.298549
+        ],
+        [
+          -121.9489158,
+          37.2985468
+        ],
+        [
+          -121.9489206,
+          37.2989878
+        ],
+        [
+          -121.9486799,
+          37.2989881
+        ]
+      ]
+    },
+    {
+      "apn": "279-25-013",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9489206,
+          37.2989878
+        ],
+        [
+          -121.9489158,
+          37.2985468
+        ],
+        [
+          -121.9492781,
+          37.2985442
+        ],
+        [
+          -121.9492815,
+          37.2989322
+        ],
+        [
+          -121.9497113,
+          37.2989267
+        ],
+        [
+          -121.9497119,
+          37.2989868
+        ],
+        [
+          -121.9491963,
+          37.2989874
+        ],
+        [
+          -121.9489206,
+          37.2989878
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -89,6 +161,22 @@
             "SRC-001107"
           ]
         }
+      ]
+    },
+    {
+      "text": "3071 Driftwood Dr, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001673",
+        "SRC-003133"
+      ]
+    },
+    {
+      "text": "3075 Driftwood Dr, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001673",
+        "SRC-003134"
       ]
     }
   ],
@@ -220,6 +308,55 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.11,
+          "src": [
+            "SRC-003131"
+          ],
+          "note": "Gross acres, per the MP23-004 permit description quoted on the listing"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003131"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003131"
+          ],
+          "note": "SB 35 Ministerial Permit MP23-004 with 7 State Density Bonus waivers and 1 concession"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive",
+            "Family"
+          ],
+          "src": [
+            "SRC-002238"
+          ],
+          "note": "Developer pipeline lists Family/Individual, Permanent Supportive Housing"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -246,6 +383,25 @@
       "text": "City of San Jose permit PRE23-065 (Prelim - Focused (Policy Review, No Plans), folder year 2023), status Complete: \"SB330 Preliminary application to construct 5-story multifamily affordable residential building with 101 units\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Listing quoting permit MP23-004: demolition of three commercial buildings of about 15,630 sq ft and construction of a 5-story, 100 percent affordable project with 101 rental units including 2 manager units; removal of 10 trees; 7 State Density Bonus waivers and 1 concession; 1.11 gross acres.",
+      "src": [
+        "SRC-003131"
+      ]
+    },
+    {
+      "text": "Charities Housing development pipeline lists Winchester Blvd. Apartments, San Jose, in Predevelopment.",
+      "src": [
+        "SRC-002238"
+      ]
+    },
+    {
+      "text": "County parcel dataset: APN 279-25-012 has situs 3071 Driftwood Dr and APN 279-25-013 has situs 3075 Driftwood Dr, the two Driftwood addresses named in CTCAC CA-26-082.",
+      "src": [
+        "SRC-003133",
+        "SRC-003134"
       ]
     }
   ],
@@ -280,6 +436,19 @@
         "SRC-001673"
       ],
       "website": "https://www.charitieshousing.org"
+    },
+    {
+      "role": "Developer",
+      "company": "Charities Housing",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://charitieshousing.org/",
+      "website_basis": "opened",
+      "project_page": "https://charitieshousing.org/property/winchester-blvd-apartments/",
+      "src": [
+        "SRC-002238",
+        "SRC-003132"
+      ]
     }
   ],
   "financing": [
@@ -407,6 +576,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Driftwood and Charities Housing; sjbuild listing quoting MP23-004 opened",
+      "src": [
+        "SRC-003131"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel dataset: APNs 279-25-012 (3071 Driftwood) and 279-25-013 (3075 Driftwood) adjoin 279-25-014; no owner field",
+      "src": [
+        "SRC-003133",
+        "SRC-003134",
+        "SRC-003135"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sjpermits.org redirects to portal.sanjoseca.gov; sanjoseca.gov blocks automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Measure A dashboard has no entry for this project",
+      "src": [
+        "SRC-001614"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC CA-26-082 staff report already on record",
+      "src": [
+        "SRC-001673"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on 1390 S Winchester / Winchester Blvd Apartments found none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for trade coverage found none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Charities Housing pipeline (Predevelopment, PSH) and project page",
+      "src": [
+        "SRC-002238",
+        "SRC-003132"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC CA-26-082 sources already on record",
+      "src": [
+        "SRC-001673"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Winchester Blvd Apartments returned nothing relevant",
+      "src": []
+    }
+  }
 }
