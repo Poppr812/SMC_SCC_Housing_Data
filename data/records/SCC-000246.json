@@ -105,6 +105,13 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 125,
+          "src": [
+            "SRC-001854"
+          ],
+          "note": "Units planned at the 2020 purchase; the 2022 permit is for 74"
         }
       ]
     },
@@ -153,6 +160,92 @@
             "SRC-001107"
           ],
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 72,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2021, application stage: 72 very low income deed-restricted units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H21-029: supportive housing services"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "AB 2162 streamlined ministerial permit with three density bonus concessions"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956",
+            "SRC-003246"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 69,
+            "2br": 5,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003246"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.42,
+          "src": [
+            "SRC-003246"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ]
         }
       ]
     }
@@ -170,6 +263,31 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit layer: H21-029 applicant listed as Jesse Loper (First Community Housing); 17,112 sq ft existing building to be demolished. Preliminary review PRE20-135 (filed 2020-10-26, status Complete) proposed 125 supportive units on 0.42 gross acres, applicant Affirmed Housing.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer: AD25-487, a Notice of Release of the AB 2162 ministerial permit H21-029 (recorded 2022-11-08 as instrument 25397706), approved 2026-01-21. NEPA review ER25-009 for the 995 East Santa Clara Street Residential project shows Under Review.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "David Baker Architects lists the project as In Design: 74 homes (69 one-bedroom, 5 two-bedroom), six stories, 71,000 sq ft on 0.42 acre, part of the CEC Next EPIC Challenge.",
+      "src": [
+        "SRC-003246"
+      ]
+    },
+    {
+      "text": "State report Table A (2021) lists 72 very low income and 2 above-moderate units at application; Table A2 (2022) lists 73 low income and 1 above-moderate unit at entitlement, 55-year restriction term.",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
     }
   ],
   "parties": [
@@ -182,11 +300,87 @@
         "SRC-001854"
       ],
       "website": "https://www.firsthousing.org/"
+    },
+    {
+      "role": "Architect",
+      "company": "David Baker Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dbarchitect.com/",
+      "website_basis": "search",
+      "project_page": "https://dbarchitect.com/995EastSantaClara",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003246"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Roberts-Obayashi Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003246"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Luk + Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003246"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Form/Work",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003246"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rockridge Geotechnical",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Geotechnical engineer",
+      "src": [
+        "SRC-003246"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Affirmed Housing",
+      "contact": "Branden Sarkissian",
+      "linkedin": null,
+      "other_role": "Applicant on 2020 preliminary review PRE20-135",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-10-26",
+      "type": "Other",
+      "label": "Preliminary review PRE20-135 filed (125-unit supportive housing, Affirmed Housing)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2020-11",
+      "type": "Sale",
+      "label": "Purchase by First Community Housing reported at $5.5 million",
+      "src": [
+        "SRC-001854"
+      ]
+    },
     {
       "date": "2021-06-22",
       "type": "Application filed",
@@ -201,6 +395,38 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2022-09-23",
+      "type": "Permit issued",
+      "label": "AB 2162 ministerial permit H21-029 issued",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2022-11-08",
+      "type": "Other",
+      "label": "Ministerial permit H21-029 recorded (instrument 25397706)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2025-01-27",
+      "type": "Other",
+      "label": "NEPA review ER25-009 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "type": "Other",
+      "label": "Notice of Release of AB 2162 ministerial permit H21-029 approved (AD25-487)",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -224,6 +450,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and First Community Housing; David Baker Architects project page and SF YIMBY opened.",
+      "src": [
+        "SRC-003246",
+        "SRC-001854"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel dataset for APN 467-12-002 has no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer queried by APN 46712002 (H21-029, PRE20-135, ER25-009, AD25-487).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for County of Santa Clara or Measure A funding for 995 E Santa Clara: none found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "State APR Tables A and A2 rows via data.ca.gov API. CTCAC staff report search for 995 E Santa Clara found none.",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "Cambrian Resident (PressReader) article on the 2021 fast-track filing refused access.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 995 East Santa Clara category: one 2020 article, already cited.",
+      "src": [
+        "SRC-001854"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "firsthousing.org development page: project not listed.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "David Baker Architects project page.",
+      "src": [
+        "SRC-003246"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in sources opened.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts found.",
+      "src": []
+    }
+  }
 }

@@ -143,8 +143,16 @@
             "SRC-001134"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003247"
+          ],
+          "note": "Planning Commission approved 2026-06-23, 5-0"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -220,6 +228,47 @@
           "note": "State report 2025, application stage: 11 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003248"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 163,
+          "src": [
+            "SRC-003248"
+          ],
+          "note": "148 in-garage residential, 15 guest"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.8,
+          "src": [
+            "SRC-001586"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "11 BMR units: 6 moderate income, 5 low income",
+          "src": [
+            "SRC-003248"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -233,6 +282,25 @@
       "text": "City status Decision Rendered, last updated 2026-07-07; a Notice of Exemption was posted 2026-06-26. Neither source opened states an approval date.",
       "src": [
         "SRC-001586"
+      ]
+    },
+    {
+      "text": "City notices list Ross Green Valley II as applicant and property owner (c/o Martin Menne); zoning MHD-MU. Plan set (KTGY, SB-330 application, 2026-04-01): 74 three-story townhomes in 12 rows, each with a private two-car garage.",
+      "src": [
+        "SRC-003249",
+        "SRC-003248"
+      ]
+    },
+    {
+      "text": "Planning Commission minutes 2026-06-23: approval includes density bonus waivers and a concession from frontage utility undergrounding, and a vesting tentative map for 13 lots and 74 condominiums; vote 5-0 (Aquilina absent). Applicant Jim Sullivan described plans to have a home builder build the project once approved and offered an additional traffic study.",
+      "src": [
+        "SRC-003247"
+      ]
+    },
+    {
+      "text": "Notice of Exemption names James Sullivan as applicant on behalf of Ross Green Valley II and Ross Green Valley II as the party carrying out the project; demolition of an existing office building.",
+      "src": [
+        "SRC-003250"
       ]
     }
   ],
@@ -256,6 +324,52 @@
       "src": [
         "SRC-001586"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Ross-Green Valley II",
+      "contact": "Martin Menne",
+      "linkedin": null,
+      "email": "mmenne@mcmdiversified.com",
+      "phone": "(408) 288-3413",
+      "src": [
+        "SRC-003249",
+        "SRC-003248"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Group, Inc.",
+      "contact": "David Burton",
+      "linkedin": null,
+      "email": "dburton@ktgy.com",
+      "website": "https://ktgy.com/",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003249"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Civil Engineering Associates, Inc.",
+      "contact": "Graham Goodwin",
+      "linkedin": null,
+      "email": "ggoodwin@ceainc.net",
+      "src": [
+        "SRC-003249",
+        "SRC-003248"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Van Dorn Abed Landscape Architects, Inc.",
+      "contact": "Melissa Willmann",
+      "linkedin": null,
+      "email": "melissa@valainc.com",
+      "src": [
+        "SRC-003249",
+        "SRC-003248"
+      ]
     }
   ],
   "financing": [],
@@ -267,6 +381,31 @@
       "label": "Application submitted",
       "src": [
         "SRC-001134"
+      ]
+    },
+    {
+      "date": "2025-04-23",
+      "type": "Other",
+      "label": "City courtesy notice of new planning application",
+      "src": [
+        "SRC-003249"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "type": "Approved",
+      "label": "Planning Commission approved Minor Housing Development Project Permit and Vesting Tentative Map, 5-0",
+      "src": [
+        "SRC-003247"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003250",
+        "SRC-001586"
       ]
     }
   ],
@@ -280,6 +419,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Ross Green Valley and Sullivan; Campbell notices, minutes and CEQA NOE PDF opened.",
+      "src": [
+        "SRC-003247",
+        "SRC-003250"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel dataset for APN 288-13-095 has no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Campbell public notices archive (courtesy notice 2025-04-23, hearing notice 2026-06-10 with plan sets) and Planning Commission minutes 2026-06-23.",
+      "src": [
+        "SRC-003249",
+        "SRC-003248",
+        "SRC-003247"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2026061188 and attached NOE; State APR Table A 2025 row already on record.",
+      "src": [
+        "SRC-001586",
+        "SRC-003250",
+        "SRC-001134"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on 1500 E Hamilton townhomes: none found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of trade press: none found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Ross Green Valley II or Sullivan Land Development LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "KTGY Group named as architect in the city plan set; no KTGY project page for this site found.",
+      "src": [
+        "SRC-003249"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funding found in sources opened.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts found.",
+      "src": []
+    }
+  }
 }

@@ -98,6 +98,30 @@
           "note": ""
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.24,
+          "src": [
+            "SRC-003251",
+            "SRC-001956"
+          ],
+          "note": "Gross acres, vacant site"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003251",
+            "SRC-001956"
+          ],
+          "note": "Two four-story multifamily buildings"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -105,6 +129,19 @@
       "text": "Preliminary review request only, December 2024.",
       "src": [
         "SRC-001761"
+      ]
+    },
+    {
+      "text": "City permit PRE24-391 (status Complete): enhanced preliminary review for two four-story multifamily buildings totaling 74 townhome units on about 1.24 gross acres of vacant land; applicant Mark Pilarczyk (Swenson), owner Swenson.",
+      "src": [
+        "SRC-003251",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer also lists ER25-109 at 1379 Lick Ave, a Determination of Consistency for a private project (NEPA not applicable), applicant Melissa Durkin (GR Tamien LLC), filed 2025-05-21, issue date 2025-11-05, status Under Review.",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -119,11 +156,38 @@
         "SRC-001761"
       ],
       "website": "https://www.swenson.com/"
+    },
+    {
+      "role": "Other",
+      "company": "GR Tamien LLC",
+      "contact": "Melissa Durkin",
+      "linkedin": null,
+      "other_role": "Owner named on city file ER25-109",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2025-01-15",
+      "type": "Application filed",
+      "label": "Enhanced preliminary review PRE24-391 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2025-05-21",
+      "type": "Other",
+      "label": "Determination of Consistency ER25-109 filed (GR Tamien LLC)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -134,6 +198,86 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Swenson; sjpermits.org record PRE24-391 opened. A Mass Transit article on Tamien Station phase two returned 404.",
+      "src": [
+        "SRC-003251"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel dataset for APN 434-46-116 has no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN 43446116 (PRE24-391, ER25-109) and sjpermits.org.",
+      "src": [
+        "SRC-001956",
+        "SRC-003251"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "State APR Tables A and A2 via data.ca.gov API: no rows for 1379 Lick or PRE24-391. No CEQAnet entry found.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on 1379 Lick: no article naming this address opened.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal article on Swenson in San Jose (2026-05-20) refused access.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Swenson project page for 1379 Lick found by web search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funding found in sources opened.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts found.",
+      "src": []
+    }
+  }
 }
