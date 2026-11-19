@@ -95,8 +95,16 @@
             "SRC-001104"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-002347"
+          ],
+          "note": "CEQA Notice of Determination: City of Daly City approval on Nov. 26, 2018"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -156,6 +164,42 @@
           "note": "State report 2018, application stage: 56 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002348"
+          ],
+          "note": "General Plan amendment to Very High Density Residential, Planned Development rezoning, density bonus under Gov. Code 65915"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-002348",
+            "SRC-002349"
+          ],
+          "note": "Residential buildings approved at 13 and 17 stories; hotel at 12 stories"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 6.06,
+          "src": [
+            "SRC-002348"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -163,6 +207,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001104"
+      ]
+    },
+    {
+      "text": "CEQA record describes 323 condominiums in three high-rise residential buildings and a 176-room hotel in one high-rise building on a 6.06-acre vacant site on the south side of Serramonte Blvd, across from Serramonte Shopping Center.",
+      "src": [
+        "SRC-002348",
+        "SRC-002347"
+      ]
+    },
+    {
+      "text": "Architect's page: 323 residential units and a 176-room hotel, 17- and 13-story housing buildings and a 12-story hotel on a multi-level parking podium, 438,000 sq ft total, status in design.",
+      "src": [
+        "SRC-002349"
       ]
     }
   ],
@@ -175,11 +232,40 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Costa Brown Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website_basis": "opened",
+      "project_page": "https://www.costabrown.com/serramonte-views",
+      "src": [
+        "SRC-002349"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2016-06-27",
+      "type": "Other",
+      "label": "CEQA Notice of Preparation filed",
+      "src": [
+        "SRC-002348"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2018-01-24",
+      "type": "Other",
+      "label": "EIR filed with the state",
+      "src": [
+        "SRC-002348"
+      ],
+      "estimated": false
+    },
     {
       "date": "2018-10-04",
       "type": "Application filed",
@@ -187,6 +273,15 @@
       "src": [
         "SRC-001104"
       ]
+    },
+    {
+      "date": "2018-11-26",
+      "type": "Approved",
+      "label": "City of Daly City approval; EIR with statement of overriding considerations",
+      "src": [
+        "SRC-002347"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -194,6 +289,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on name and address; led to CEQAnet SCH 2016062063 and architect page",
+      "src": [
+        "SRC-002348",
+        "SRC-002349"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC active parcel layer: APN 091-247-080 already on record; layer shows no owner",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Daly City Current Residential Project List (24 months to July 1, 2025) does not list the project",
+      "src": [
+        "SRC-002350"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Daly City; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2016062063: NOP 2016-06-27, EIR 2018-01-24, NOD received 2018-12-03 with approval 2018-11-26",
+      "src": [
+        "SRC-002348",
+        "SRC-002347"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Local news searches found no coverage of this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Broker listing pages (Crexi, Showcase/LoopNet) for a 'Serramonte Views' entitled site on Serramonte Blvd returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No developer site found; recorded owner Serramonte Terraces LLC has no public web page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Costa Brown Architecture project page 'Serramonte Views'",
+      "src": [
+        "SRC-002349"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com found no post on this project",
+      "src": []
+    }
+  }
 }
