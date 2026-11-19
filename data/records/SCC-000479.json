@@ -177,6 +177,22 @@
           "src": [
             "SRC-001370"
           ]
+        },
+        {
+          "value": 184,
+          "src": [
+            "SRC-001107",
+            "SRC-002444"
+          ],
+          "note": "Original entitlement SP20-019, approved 2021-03-17"
+        },
+        {
+          "value": 272,
+          "src": [
+            "SRC-002444",
+            "SRC-002445"
+          ],
+          "note": "Plan reported 2023-2024"
         }
       ]
     },
@@ -229,6 +245,68 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "SP20-019",
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "Amendments SPA20-019-01 (approved 2022-01-19, +88 units) and SPA20-019-02 (2024, +6 units); building permit 2024 107127 000 00 MF"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 14,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001107",
+            "SRC-002446"
+          ],
+          "note": "State report 2025, building permit stage: 14 deed-restricted units; city reports the other 264 as moderate without deed restriction under its HCD-approved method"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2025, building permit row"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State reports 2021 and 2022: density bonus with development standards modification and parking waiver"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 135000000,
+          "src": [
+            "SRC-002446"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -236,6 +314,30 @@
       "text": "Article reports a $112.5 million construction loan secured; lender not named in what was read.",
       "src": [
         "SRC-001371"
+      ]
+    },
+    {
+      "text": "Unit mix per California Construction News: 211 studio and one-bedroom units, 67 two- and three-bedroom units; 88 bicycle spaces.",
+      "src": [
+        "SRC-002446"
+      ]
+    },
+    {
+      "text": "State report 2021 lists entitlement SP20-019 (\"Urban Catalyst's Madera\") on APNs 264-20-079, 264-20-108, 264-20-109, 264-20-110 and 264-20-128 at 486 and 490 W San Carlos St, 332-346 Josefa St and 498 W San Carlos St.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    {
+      "text": "BDE describes the building as five stories of Type IIIA residential over three levels of Type IA parking and residential, with mechanical parking stackers.",
+      "src": [
+        "SRC-002449"
+      ]
+    },
+    {
+      "text": "Commercial Observer describes Aquino as one of the first projects under San Jose's Multifamily Housing Incentive Program.",
+      "src": [
+        "SRC-002447"
       ]
     }
   ],
@@ -271,15 +373,101 @@
       ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Beach Point Capital",
+      "program": null,
+      "amount": 112500000,
+      "date": "2025-09",
+      "src": [
+        "SRC-002447"
+      ]
+    },
+    {
+      "type": "Bridge loan",
+      "provider": "Private IRA lender (Inspira Financial Trust LLC, custodian)",
+      "program": "Interim loan",
+      "amount": 6100000,
+      "date": "2024-04",
+      "src": [
+        "SRC-002444"
+      ]
+    },
+    {
+      "type": "Private equity",
+      "provider": "UC Multifamily Equity I Fund (Urban Catalyst)",
+      "program": "Amount raised by fund as reported September 2025",
+      "amount": 16150000,
+      "date": null,
+      "src": [
+        "SRC-002446",
+        "SRC-002445"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2020-06-29",
+      "type": "Application filed",
+      "label": "Special use permit SP20-019 filed (184 units)",
+      "src": [
+        "SRC-001099"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021",
+      "type": "Sale",
+      "label": "Urban Catalyst bought the parcels for over $10 million",
+      "src": [
+        "SRC-002444"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-03-17",
+      "type": "Approved",
+      "label": "SP20-019 approved, 184 units",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-01-19",
+      "type": "Approved",
+      "label": "Amendment SPA20-019-01 approved, 88 more units",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-27",
+      "type": "Permit issued",
+      "label": "Building permit issued for 278 units",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-09-03",
       "type": "Construction start",
       "label": "Groundbreaking expected",
       "src": [
         "SRC-001371"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027",
+      "type": "Completion",
+      "label": "Completion expected late 2027",
+      "src": [
+        "SRC-002446"
       ],
       "estimated": true
     }
@@ -294,6 +482,103 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Aquino, 486/498 W San Carlos and Urban Catalyst; opened Commercial Observer, CCN, SF YIMBY 2024, IREI",
+      "src": [
+        "SRC-002447",
+        "SRC-002446",
+        "SRC-002444",
+        "SRC-002445"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 264-20-134: situs 498 W San Carlos St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city file numbers taken from state APR data",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2020 (SP20-019 filed) and Table A2 2021, 2022, 2025 (entitlements, building permit 2025-08-27, 14 deed-restricted, 99-year term)",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-04-28 interim funding article",
+      "src": [
+        "SRC-002444"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Commercial Observer 2025-09-17, California Construction News 2025-09-08, IREI 2023-08-23",
+      "src": [
+        "SRC-002447",
+        "SRC-002446",
+        "SRC-002445"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "urbancatalyst.com/aquino: groundbreaking 2025-09-03, vertical construction underway July 2026",
+      "src": [
+        "SRC-002448"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "bdearch.com Aquino page: 8 stories, construction types",
+      "src": [
+        "SRC-002449"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Beach Point Capital $112.5M construction loan; $6.1M interim loan; UC Multifamily Equity I fund",
+      "src": [
+        "SRC-002447",
+        "SRC-002444",
+        "SRC-002446"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }

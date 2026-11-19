@@ -172,6 +172,37 @@
           37.5423745
         ]
       ]
+    },
+    {
+      "apn": "040-102-580",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-000411",
+        "SRC-000409"
+      ],
+      "outline": [
+        [
+          -122.2903487,
+          37.5422928
+        ],
+        [
+          -122.2895849,
+          37.5423745
+        ],
+        [
+          -122.2901798,
+          37.5419875
+        ],
+        [
+          -122.2903946,
+          37.5422182
+        ],
+        [
+          -122.2903487,
+          37.5422928
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -190,6 +221,14 @@
             "SRC-000411"
           ]
         }
+      ]
+    },
+    {
+      "text": "341 E Hillsdale Blvd, San Mateo, CA",
+      "role": "other",
+      "src": [
+        "SRC-002454",
+        "SRC-002455"
       ]
     }
   ],
@@ -259,9 +298,16 @@
             "SRC-000410"
           ],
           "note": "Preliminary application: 247 apartments + 28 townhouse-style condominiums"
+        },
+        {
+          "value": 278,
+          "src": [
+            "SRC-002454"
+          ],
+          "note": "City project page: 249 apartments plus 29 townhomes"
         }
       ],
-      "best": 0
+      "best": 2
     },
     "residential_sf": {
       "claims": [
@@ -281,6 +327,13 @@
             "SRC-000409"
           ],
           "note": "Apartment building; townhouse structures are three stories"
+        },
+        {
+          "value": 7,
+          "src": [
+            "SRC-002454"
+          ],
+          "note": "City project page describes a seven-story multi-family building"
         }
       ]
     },
@@ -319,9 +372,16 @@
           "src": [
             "SRC-000410"
           ]
+        },
+        {
+          "value": "41 BMR units: 37 low-income units (15% of for-rent apartments) and 4 moderate-income units (15% of for-sale townhomes)",
+          "src": [
+            "SRC-002454"
+          ]
         }
       ],
-      "question": "Are the 37 lower-income units at 477 E. Hillsdale restricted to low-income or very low-income households?"
+      "question": "Are the 37 lower-income units at 477 E. Hillsdale restricted to low-income or very low-income households?",
+      "best": 2
     },
     "approval_type": {
       "claims": [
@@ -345,6 +405,43 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 177,
+            "2br": 54,
+            "3br": 18,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002454"
+          ],
+          "note": "Apartments only (30 urban one-bedroom and 147 one-bedroom); 29 townhomes of 3 and 4 bedrooms not broken out"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 37,
+              "ami": 80
+            },
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-002454"
+          ],
+          "note": "City project page: 37 low-income (15% of for-rent apartments), 4 moderate-income (15% of for-sale townhomes)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -358,6 +455,24 @@
       "text": "Replaces the former Hillsdale Inn",
       "src": [
         "SRC-000409"
+      ]
+    },
+    {
+      "text": "City page: site is 477 and 341 E. Hillsdale Boulevard; project demolishes the closed 58,955 sq ft Hillsdale Inn, a self-service car wash and a car rental business.",
+      "src": [
+        "SRC-002454"
+      ]
+    },
+    {
+      "text": "City page application history: planning application August 2016; formal application PA-2020-046 August 2020; SB 330 preliminary application PA-2022-021 March 2022; withdrawn May 2024; new SB 330 preliminary application PA-2026-0008 by a new applicant January 30, 2026; formal application plan set posted June 30, 2026, revised plans October 1, 2026.",
+      "src": [
+        "SRC-002454"
+      ]
+    },
+    {
+      "text": "Parking per city page: 292 spaces in the apartment building and 58 in two-car townhome garages, 350 total.",
+      "src": [
+        "SRC-002454"
       ]
     }
   ],
@@ -412,11 +527,38 @@
       "src": [
         "SRC-000411"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "341 Hillsdale LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002455"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-05",
+      "type": "Other",
+      "label": "Prior applications PA-2020-046 and PA-2022-021 withdrawn",
+      "src": [
+        "SRC-002454"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-30",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PA-2026-0008 filed by new applicant",
+      "src": [
+        "SRC-002454"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-02",
       "type": "Other",
@@ -424,6 +566,24 @@
       "src": [
         "SRC-000410"
       ]
+    },
+    {
+      "date": "2026-05-19",
+      "type": "Other",
+      "label": "Neighborhood informational meeting #1 (virtual)",
+      "src": [
+        "SRC-002454"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-09-15",
+      "type": "Other",
+      "label": "Neighborhood informational meeting #2",
+      "src": [
+        "SRC-002454"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-10",
@@ -449,6 +609,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 477 E. Hillsdale, Hillsdale Inn and SummerHill; opened SF YIMBY 2026-10-26 and city project page",
+      "src": [
+        "SRC-000409",
+        "SRC-002454"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels: 040-102-580 at 341 E Hillsdale Blvd owned by 341 Hillsdale LLC; 040-102-620 owner 477 Hillsdale LLC already on record",
+      "src": [
+        "SRC-002455",
+        "SRC-000411"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of San Mateo project page 477 E. Hillsdale (PA-2026-0008/PA-2026-0050, unit mix, BMR split, meetings, history) and Current Development Projects list",
+      "src": [
+        "SRC-002454",
+        "SRC-001003"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Mateo project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 (data.ca.gov) San Mateo: no row for 477 E Hillsdale or APN 040102620; no CEQAnet entry found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "San Mateo Daily Journal coverage returned 403 or covered the earlier proposal only",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-10-26 formal application article re-read",
+      "src": [
+        "SRC-000409"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "shapartments.com project list: site not listed",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched TCA Architects, SDG Architects and Guzzardo sites; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }
