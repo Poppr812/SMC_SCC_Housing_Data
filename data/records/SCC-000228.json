@@ -82,8 +82,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit layer shows PD21-015 status Inactive; 2026 city permits (AD26-059, TR26-197, AD26-279) by VOHD Fund LLC cover renovation of the existing multifamily buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -114,6 +122,13 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PDC17-035, ER21-141",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PDC17-035 Planned Development Rezoning A(PD) to R-M(PD); ER21-141 environmental review for PD21-015"
         }
       ]
     },
@@ -125,6 +140,39 @@
             "SRC-001099"
           ],
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001956",
+            "SRC-001846"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 192,
+          "src": [
+            "SRC-001846"
+          ],
+          "note": "Two-level below-grade garage"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.9,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approximately 0.90 gross acres (PDC17-035)"
         }
       ]
     }
@@ -147,6 +195,19 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Earlier city preliminary reviews on the same APN: PRE13-170 (85-unit, 6-story condominium, 2013), PRE15-214 (82 units on 6 stories, applicant Jason Lee / CRE Investment Fund, 2015), PRE16-153 (6-story, 85-unit residential building, 2016). PRE14-129 (Ko Architects, 2014) covered a larger 1.8-acre, 141-unit mixed-use site including this parcel.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer description for ER21-141 and PD21-015: demolition of an existing residential building, removal of 26 trees (10 ordinance-size, 16 non-ordinance-size), seven-story multifamily building with up to 85 units. SF YIMBY reports 32 trees and a 192-space two-level below-grade garage.",
+      "src": [
+        "SRC-001956",
+        "SRC-001846"
+      ]
     }
   ],
   "parties": [
@@ -159,11 +220,67 @@
         "SRC-001846"
       ],
       "website": "https://www.swensonbuilders.com"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Lee Lily Fu and Jason C",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lee Lily Fu and Jason C",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (PDC17-035, PD21-015, ER21-141)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "VOHD Fund LLC",
+      "contact": "Carrick Young",
+      "linkedin": null,
+      "other_role": "Applicant on 2026 renovation permits for existing buildings",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-08-18",
+      "type": "Application filed",
+      "label": "PDC17-035 Planned Development Rezoning filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-08-11",
+      "type": "Approved",
+      "label": "PDC17-035 Planned Development Rezoning approved (A(PD) to R-M(PD))",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-08-13",
+      "type": "Other",
+      "label": "ER21-141 environmental review filed for 7-story, up to 85-unit building",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-08-19",
       "type": "Application filed",
@@ -171,6 +288,24 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-02-09",
+      "type": "Other",
+      "label": "AD26-059 approved: remove pool and deck at existing apartments (VOHD Fund LLC)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-12",
+      "type": "Other",
+      "label": "AD26-279 issued: exterior modifications to three existing multifamily buildings (VOHD Fund LLC)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -193,6 +328,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 7201/7245 Bark Ln and Bark Lane Residential Project; led to city permit layer details",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 37224011, situs 7201 Bark Ln, 3 situs addresses; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer queried by APN 37224011 (PDC17-035, PD21-015, ER21-141, PRE files, 2026 AD/TR permits); sanjoseca.gov pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A 2021 row (PD21-015, pending, 85 units) already on record; no CEQAnet entry found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2021-09 article: 7 stories, 192-space garage",
+      "src": [
+        "SRC-001846"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Swenson Builders link already on record; no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn post",
+      "src": []
+    }
+  }
 }

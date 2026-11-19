@@ -91,8 +91,16 @@
             "SRC-001110"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003138"
+          ],
+          "note": "Taylor Morrison's Amelia community page lists move-in-ready homes (e.g. 560 S Rengstorff Ave, 2120 Latham St) and shows 'Final opportunity!'"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -134,6 +142,21 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2019-182, PL-2019-185",
+          "src": [
+            "SRC-001703"
+          ],
+          "note": "Administrative Zoning Hearing item, 2021-08-11"
+        },
+        {
+          "value": "PL-2020-182, PL-2020-185, PL-2023-115, PL-2023-116; Tract No. 10584",
+          "src": [
+            "SRC-003137",
+            "SRC-001704"
+          ],
+          "note": "Final map report cites PUD/Development Review PL-2020-182 and Vesting Tentative Map PL-2020-185; PL-2023-116 is the map extension"
         }
       ]
     },
@@ -147,6 +170,44 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.07,
+          "src": [
+            "SRC-003136",
+            "SRC-001703"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 24,
+            "3br": 26,
+            "4br+": 35
+          },
+          "src": [
+            "SRC-003136"
+          ],
+          "note": "Approved 2021 design; units about 1,040 to 1,833 sq ft"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Subject to BMR Phase I (grandfathered from Phase II); applicant proposed BMR in-lieu fees of about $3 million, based on a projected average sales price of $1.2 million per unit",
+          "src": [
+            "SRC-003136"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -155,6 +216,33 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "Site was the 70-unit Mountain View Gardens Apartments (11 two-story buildings) on about 4.07 acres at the northwest corner of S Rengstorff Ave and Latham St. Council approved the 85-unit rowhouse project on 2021-09-14 (Resolution No. 18601 for the Vesting Tentative Map), with removal of 38 Heritage trees.",
+      "src": [
+        "SRC-003136",
+        "SRC-003137"
+      ]
+    },
+    {
+      "text": "Approved design: two-car garages for all units plus 31 guest parking spaces; Spanish Colonial style; about 62,506 sq ft of open area (35%). Park Land Dedication in-lieu fees for 15 net new units estimated at $720,000.",
+      "src": [
+        "SRC-003136"
+      ]
+    },
+    {
+      "text": "Council report states the applicant entity changed during review, finalized in 2020. Final map report names Taylor Morrison of California, LLC as developer and states it paid $1,729,271 in subdivision fees.",
+      "src": [
+        "SRC-003136",
+        "SRC-003137"
+      ]
+    },
+    {
+      "text": "City filings list original APNs 148-36-033, 148-36-035 and 148-36-036; these are not in the current county parcel dataset. Record APN 148-45-053 (570 S Rengstorff Av) is one of the subdivided lots numbered 148-45-0xx along S Rengstorff Av. Taylor Morrison markets the project as Amelia, 2116 Latham Street.",
+      "src": [
+        "SRC-001703",
+        "SRC-003138"
       ]
     }
   ],
@@ -178,11 +266,43 @@
       "src": [
         "SRC-001703"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Taylor Morrison of California, LLC",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.taylormorrison.com",
+      "website_basis": "search",
+      "project_page": "https://www.taylormorrison.com/ca/bay-area/mountain-view/amelia",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003137",
+        "SRC-003138"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-10-04",
+      "type": "Other",
+      "label": "Application deemed complete under the Permit Streamlining Act",
+      "src": [
+        "SRC-003136"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-08-11",
+      "type": "Other",
+      "label": "Administrative Zoning Hearing on PUD, Development Review, Heritage Tree and Vesting Tentative Map requests",
+      "src": [
+        "SRC-001703"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-08-29",
       "type": "Application filed",
@@ -198,6 +318,24 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2023-08-23",
+      "type": "Other",
+      "label": "Joint Administrative Zoning and Subdivision Committee granted one-year Vesting Tentative Map extension (PL-2023-116)",
+      "src": [
+        "SRC-003137"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-09-12",
+      "type": "Other",
+      "label": "Final Map of Tract No. 10584 on City Council consent agenda",
+      "src": [
+        "SRC-003137"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-11-04",
@@ -223,6 +361,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Taylor Morrison and Mountain View Gardens; led to Taylor Morrison Amelia page",
+      "src": [
+        "SRC-003138"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 14845053 is a ~100 sq m lot at 570 S Rengstorff Av; original APNs 148-36-033/035/036 return no rows; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Mountain View Legistar matters 5499 (Council 2021-09-14 report), 5666, 7735, 7746 (final map report 2023-09-12)",
+      "src": [
+        "SRC-003136",
+        "SRC-003137",
+        "SRC-001703",
+        "SRC-001704"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Incorporated city project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A/A2 rows already on record; no CTCAC/HCD award (market-rate)",
+      "src": [
+        "SRC-001101",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no local news article on the project beyond the trade item below",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal 2023-04-07 article on Taylor Morrison purchase returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Taylor Morrison Amelia community page",
+      "src": [
+        "SRC-003138"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Council report and search did not name the architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in city filings or search; city documents show BMR in-lieu and subdivision fees only",
+      "src": [
+        "SRC-003136"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn post on the project",
+      "src": []
+    }
+  }
 }

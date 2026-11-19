@@ -222,7 +222,8 @@
             "Density bonus"
           ],
           "src": [
-            "SRC-001335"
+            "SRC-001335",
+            "SRC-003139"
           ]
         }
       ]
@@ -251,6 +252,25 @@
         "SRC-001144",
         "SRC-001145"
       ]
+    },
+    {
+      "text": "Earlier design: SF YIMBY (2022-09-16) describes a five-story, 28-unit building with six affordable units, about 47,587 sq ft, two underground parking levels, designed by SDG Architects; the developer was raising a $1.5 million preferred equity round for construction financing.",
+      "src": [
+        "SRC-003141"
+      ]
+    },
+    {
+      "text": "CEQAnet NOE (2025-11-10): eight-story, 109-foot-9-inch building on a 0.43-acre vacant lot at El Camino Real and Jordan Avenue; underground automated parking garage with 95 spaces; rooftop deck; 85 units including 10 very low-income units. The 2025-11-20 NOE says the map merges two parcels into one with 85 condominium lots and one common lot.",
+      "src": [
+        "SRC-003139",
+        "SRC-003142"
+      ]
+    },
+    {
+      "text": "Developer investor-update page lists successive concepts: 28-unit condos (approved), 105/99/95-unit senior housing (2024), 105-unit affordable (2024), and the 85-unit, 8-story design (2025). It states the property was listed for sale in 2024 and the first lender agreed to a 4-month loan extension in August 2025.",
+      "src": [
+        "SRC-003140"
+      ]
     }
   ],
   "parties": [
@@ -264,6 +284,52 @@
       ],
       "website": "https://www.arondevelopers.com",
       "project_page": "https://www.arondevelopers.com/projects/4898-el-camino-real"
+    },
+    {
+      "role": "Other",
+      "company": "ADL 15, LLC",
+      "contact": "Subhendu Data",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003139"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "ADL 15, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003140"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003141"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Lea & Braze Engineering",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003141"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Environmental Foresight Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003141"
+      ]
     }
   ],
   "financing": [],
@@ -292,6 +358,42 @@
       "src": [
         "SRC-001145"
       ]
+    },
+    {
+      "date": "2022-07",
+      "type": "Sale",
+      "label": "Land escrow closed; title transferred to ADL 15 LLC",
+      "src": [
+        "SRC-003140"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-12",
+      "type": "Other",
+      "label": "City Council approved final map (28-unit design), per developer",
+      "src": [
+        "SRC-003140"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-10",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed for 8-story, 85-unit building",
+      "src": [
+        "SRC-003139"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-20",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed for Vesting Tentative Map (85 condominium lots)",
+      "src": [
+        "SRC-003142"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-02-03",
@@ -323,6 +425,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Aron Developers; CEQAnet and SF YIMBY items",
+      "src": [
+        "SRC-003139",
+        "SRC-003142"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 17003085, 4898 El Camino Real, Los Altos; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "losaltosca.gov project page and Resolution 2019-42 returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet NOEs 2025110368, 2025110804, 2026020051",
+      "src": [
+        "SRC-003139",
+        "SRC-003142",
+        "SRC-003143"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no local news article; a change.org petition opposes the project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-09-16 (28-unit design, consultants) and 2025-11-16 (85-unit approval)",
+      "src": [
+        "SRC-003141",
+        "SRC-001753"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Aron Developers project page (investor updates)",
+      "src": [
+        "SRC-003140"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SDG Architects named for 28-unit design (SF YIMBY 2022); architect of 85-unit design not named",
+      "src": [
+        "SRC-003141"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Lender not named; developer page mentions an unnamed first lender and equity raises",
+      "src": [
+        "SRC-003140"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn post",
+      "src": []
+    }
+  }
 }

@@ -108,8 +108,16 @@
             "SRC-001099"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003144"
+          ],
+          "note": "85 four-story townhomes in seven buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -158,6 +166,13 @@
             "SRC-001956"
           ],
           "note": "City folder 093288, Prelim - Focused (Policy Review, No Plans) (permit type: All Other Permits); city permit status: Complete. Matched by APN."
+        },
+        {
+          "value": "PRE22-195, ER23-143, T23-013",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PRE22-195 enhanced preliminary review for 75 townhouses; ER23-143 environmental review; T23-013 vesting tentative map, 13 lots (7 residential, 6 common)"
         }
       ]
     },
@@ -169,6 +184,56 @@
             "SRC-001099"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003144"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001956",
+            "SRC-003144"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.26,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per PRE23-040 and T23-013"
+        },
+        {
+          "value": 3.2,
+          "src": [
+            "SRC-003145"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Builder's remedy application; article states state law requires 20% of the townhomes for lower-income residents, about 17 of 85",
+          "src": [
+            "SRC-003144"
+          ]
         }
       ]
     }
@@ -191,12 +256,102 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Site is the San Jose Swim & Racquet Club (founded 1956). San José Spotlight (2023-04-21) reports the club owned by the Norman Lariviere Trust was under contract to sell, with Colliers broker Dion Campisi representing the seller; a 2022 city letter said staff would not support the general plan amendment needed for the earlier 75-townhome plan.",
+      "src": [
+        "SRC-003145",
+        "SRC-003144"
+      ]
+    },
+    {
+      "text": "City permit layer shows H23-017, ER23-143 and T23-013 with status Under Review. H23-017 lists Grupe Acquisitions, LLC as applicant and owner name; PRE22-195 and PRE23-040 list The True Life Companies.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "The True Life Companies",
+      "contact": "Kelley Rutchena",
+      "linkedin": null,
+      "src": [
+        "SRC-001956",
+        "SRC-003144",
+        "SRC-003145"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Grupe Acquisitions, LLC",
+      "contact": "Alberto Esquivel",
+      "linkedin": null,
+      "other_role": "Applicant (H23-017)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Scott Menard",
+      "contact": "Scott Menard",
+      "linkedin": null,
+      "other_role": "Applicant (ER23-143, T23-013)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Norman Lariviere Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003145"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Colliers International",
+      "contact": "Dion Campisi",
+      "linkedin": null,
+      "src": [
+        "SRC-003145"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-11-15",
+      "type": "Application filed",
+      "label": "PRE22-195 enhanced preliminary review filed (75 townhouses)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-04-06",
+      "type": "Application filed",
+      "label": "PRE23-040 SB 330 preliminary application filed (85 attached homes)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-07-03",
+      "type": "Other",
+      "label": "ER23-143 environmental review filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-08-18",
       "type": "Application filed",
@@ -204,6 +359,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2023-08-18",
+      "type": "Other",
+      "label": "T23-013 vesting tentative map filed (13 lots)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -216,6 +380,91 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, True Life and swim club; San José Spotlight articles",
+      "src": [
+        "SRC-003145",
+        "SRC-003144"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 26404013, 1170 Pedro St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer queried by APN 26404013 (PRE22-195, PRE23-040, ER23-143, H23-017, T23-013); sanjoseca.gov notices blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR row already on record; CEQAnet search found no entry for 1170 Pedro",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San José Spotlight 2023-04-21 and 2023-07-13",
+      "src": [
+        "SRC-003145",
+        "SRC-003144"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal 2023-04-13 and 2023-06-23 articles returned 403; Law360 returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No True Life Companies project page found for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn post",
+      "src": []
+    }
+  }
 }
