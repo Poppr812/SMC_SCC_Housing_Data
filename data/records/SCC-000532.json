@@ -232,6 +232,14 @@
             "SRC-001485"
           ],
           "note": "City item: 329 townhomes and detached dwelling units, including 41 ADUs"
+        },
+        {
+          "value": 370,
+          "src": [
+            "SRC-002369",
+            "SRC-002370"
+          ],
+          "note": "329 primary units (151 single-family, 178 townhome condominiums) plus 41 ADUs"
         }
       ]
     },
@@ -291,6 +299,57 @@
           "note": "49 for-sale units for moderate-income households (state moderate category, upper limit 120% AMI); qualifies project for State Density Bonus"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 18,
+            "3br": 153,
+            "4br+": 158
+          },
+          "src": [
+            "SRC-002369"
+          ],
+          "note": "329 primary units: single-family 47 3BR, 93 4BR, 11 5BR; townhomes 18 2BR, 106 3BR, 54 4BR. The 41 ADUs (582 sq ft) are not included."
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 767,
+          "src": [
+            "SRC-002369"
+          ],
+          "note": "Proposed total: 651 covered, 116 uncovered; 652 minimum under density bonus law"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 872593,
+          "src": [
+            "SRC-002369"
+          ],
+          "note": "Proposed gross floor area"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002371"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -298,6 +357,18 @@
       "text": "151 single-family lots and 178 condominium units.",
       "src": [
         "SRC-001485"
+      ]
+    },
+    {
+      "text": "Silicon Valley Voice: neighbors appealed the Planning Commission approval over parking, traffic and waivers; the City Council moved the project forward on March 24, 2026, and the city said state density bonus law limited its discretion.",
+      "src": [
+        "SRC-002371"
+      ]
+    },
+    {
+      "text": "City item 25-1088 lists the applicant as Tidewater Capital.",
+      "src": [
+        "SRC-002372"
       ]
     }
   ],
@@ -311,11 +382,39 @@
       "src": [
         "SRC-001485"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Tidewater Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002371",
+        "SRC-002372"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "TC III SPP NORTH LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001485"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-11-24",
+      "type": "Other",
+      "label": "Planning Commission hearing on the application (file 25-1088)",
+      "src": [
+        "SRC-002372"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-02-23",
       "type": "Approved",
@@ -333,6 +432,15 @@
         "SRC-001486"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-03-30",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed with the State Clearinghouse",
+      "src": [
+        "SRC-002370"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -345,6 +453,90 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, applicant entity and Tidewater Capital; Silicon Valley Voice article opened",
+      "src": [
+        "SRC-002371"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel data: 205-22-022 (situs 920 De Guigne Dr) and 205-22-023 (situs 935 Stewart Dr), both on record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Sunnyvale Legistar: items 25-1088 (PC 2025-11), 26-0311 (PC 2026-02-23), 26-0378 (Council 2026-03-24); Project Data Table",
+      "src": [
+        "SRC-002372",
+        "SRC-002369"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Sunnyvale",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2012032003: Notice of Exemption received 2026-03-30",
+      "src": [
+        "SRC-002370"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Silicon Valley Voice 2026-04-06",
+      "src": [
+        "SRC-002371"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2022 and 2024 articles on the Sunnyvale site returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "tidewatercap.com home page opened; no project page for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in the Legistar item text, Project Data Table, CEQA notice or news articles opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search on Tidewater Capital and the site; no lender or equity partner named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on De Guigne / Tidewater; none found",
+      "src": []
+    }
+  }
 }

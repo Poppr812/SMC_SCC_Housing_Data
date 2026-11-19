@@ -1,6 +1,6 @@
 {
   "id": "SCC-000072",
-  "name": "3069 Lawrence Expy/3517 Ryder St",
+  "name": "Ryder Square (3069 Lawrence Expy/3517 Ryder St)",
   "parcels": [
     {
       "apn": "216-34-052",
@@ -258,6 +258,13 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN21-15375",
+          "src": [
+            "SRC-001728"
+          ],
+          "note": "Entitlement extension of PLN2015-11411"
         }
       ]
     },
@@ -269,6 +276,20 @@
             "SRC-001728"
           ],
           "note": ""
+        },
+        {
+          "value": 7,
+          "src": [
+            "SRC-002378"
+          ],
+          "note": "Westlake: 7 stories ground-up. City 2022 report: five-story apartment building with a seven-story wrapped parking garage"
+        },
+        {
+          "value": 4,
+          "src": [
+            "SRC-002379"
+          ],
+          "note": "Council report: the August 20, 2020 approval was for a four-story development"
         }
       ]
     },
@@ -282,6 +303,74 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 484,
+          "src": [
+            "SRC-001728",
+            "SRC-002376",
+            "SRC-002377"
+          ],
+          "note": "464 required under the Lawrence Station Area Plan"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.8,
+          "src": [
+            "SRC-001728",
+            "SRC-002376"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 575304,
+          "src": [
+            "SRC-002376"
+          ],
+          "note": "Proposed building square footage (project data table)"
+        },
+        {
+          "value": 575900,
+          "src": [
+            "SRC-002378"
+          ],
+          "note": "Total future building area per Westlake"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 21,
+            "1br": 171,
+            "2br": 126,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002377"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "City Development Review report (2022) finding: the project adds new affordable housing for low and very low-income households; unit counts not stated",
+          "src": [
+            "SRC-001728"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -289,6 +378,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "Parkland obligation of 2.0467 acres met by 0.7528 acres of private recreational amenities (credit $1,502,965) and $8,550,563 in Mitigation Fee Act in-lieu fees.",
+      "src": [
+        "SRC-002379"
+      ]
+    },
+    {
+      "text": "Westlake project page lists a construction start of Q3 2024 and delivery in Q4 2026.",
+      "src": [
+        "SRC-002378"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2022): five stories, 85 feet; Westlake said it would hold the project in its portfolio indefinitely.",
+      "src": [
+        "SRC-002377"
       ]
     }
   ],
@@ -313,6 +420,16 @@
       ],
       "website": "https://westlake-realty.com/real-estate-development/",
       "project_page": "https://westlake-realty.com/projects/ryder-square/"
+    },
+    {
+      "role": "Architect",
+      "company": "LPAS Architecture + Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002378",
+        "SRC-002377"
+      ]
     }
   ],
   "financing": [],
@@ -327,12 +444,31 @@
       ]
     },
     {
+      "date": "2022-06-08",
+      "type": "Other",
+      "label": "Development Review Hearing on a 24-month extension of the 2020 architectural approval",
+      "src": [
+        "SRC-001728",
+        "SRC-002377"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-09-23",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2025-09-23",
+      "type": "Other",
+      "label": "City Council approved the Private Recreational Amenity Agreement with Westlake Ryder Square, LLC",
+      "src": [
+        "SRC-002380"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -350,6 +486,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Ryder Square, address and Westlake; Westlake page and SF YIMBY opened",
+      "src": [
+        "SRC-002378"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel data for 216-34-052: situs 3545 Ryder St, already on record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar: DRH 2022-06-08 extension report and data table (22-739); Council 2025-09-23 agreement (25-791)",
+      "src": [
+        "SRC-001728",
+        "SRC-002376",
+        "SRC-002379"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Santa Clara",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR data already on record",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for local news on Ryder Square construction; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2022-06-08 article opened",
+      "src": [
+        "SRC-002377"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Westlake project page",
+      "src": [
+        "SRC-002378"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "LPAS named on Westlake page and SF YIMBY",
+      "src": [
+        "SRC-002378",
+        "SRC-002377"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for construction loan on 3517 Ryder St; none tied to this project",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Ryder Square / Westlake; none found",
+      "src": []
+    }
+  }
 }
