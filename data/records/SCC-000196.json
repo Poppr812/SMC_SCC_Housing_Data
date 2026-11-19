@@ -150,6 +150,14 @@
           "src": [
             "SRC-001442"
           ]
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003006",
+            "SRC-001442"
+          ],
+          "note": "Three-story attached townhome-style condominiums with 2-car garages"
         }
       ],
       "best": 1
@@ -166,7 +174,8 @@
         {
           "value": "Approved",
           "src": [
-            "SRC-001442"
+            "SRC-001442",
+            "SRC-003007"
           ],
           "note": "Planning Entitlements Approved"
         }
@@ -195,7 +204,9 @@
         {
           "value": 106,
           "src": [
-            "SRC-001442"
+            "SRC-001442",
+            "SRC-003006",
+            "SRC-003007"
           ]
         }
       ],
@@ -223,8 +234,17 @@
         {
           "value": 6.35,
           "src": [
-            "SRC-001422"
+            "SRC-001422",
+            "SRC-003006"
           ]
+        },
+        {
+          "value": 6.28,
+          "src": [
+            "SRC-003007",
+            "SRC-003006"
+          ],
+          "note": "Figure in the agenda item title"
         }
       ]
     },
@@ -254,6 +274,67 @@
           "note": "State report 2024, application stage: 16 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 43,
+            "3br": 46,
+            "4br+": 17
+          },
+          "src": [
+            "SRC-003006"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003006"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 249,
+          "src": [
+            "SRC-003006"
+          ],
+          "note": "2-car garage per unit plus 37 surface spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003006"
+          ],
+          "note": "Design Permit and Tentative Subdivision Map; three waivers under state density bonus law"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "16 below-market-rate units (15%) required under the city's Inclusionary Housing Ordinance; staff report says the developer intends to build all 16",
+          "src": [
+            "SRC-003006"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -262,9 +343,34 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "text": "Staff report: units of about 1,410 to 2,093 sq ft in buildings of 5 to 7 units, single access from St. James Drive, clubhouse; project exempt from CEQA under AB 130. Planning Commission approved both resolutions 7-0 with added conditions.",
+      "src": [
+        "SRC-003006",
+        "SRC-003007"
+      ]
+    },
+    {
+      "text": "Staff report: a Phase 1 ESA notes perchlorate-impacted groundwater from the former Olin flare plant at 425 Tennant Avenue; groundwater monitoring wells are on the southern portion of the site.",
+      "src": [
+        "SRC-003006"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Tennant-Chiri Family Ltd. Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003007",
+        "SRC-003006"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -296,6 +402,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Tennant-Chiri, site and applicant; led to city page and PC records",
+      "src": [
+        "SRC-001442"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API (data.sccgov.org ubcd-cewv) for APN 817-09-055: situs Tennant Av, Morgan Hill (no house number); jurisdiction Morgan Hill. The dataset shows no owner of record.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Morgan Hill project page; CivicClerk PC 2025-12-09 agenda packet staff report and minutes; Resolutions 25-19/25-20 PDFs are scans with no text layer",
+      "src": [
+        "SRC-001442",
+        "SRC-003006",
+        "SRC-003007"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A already on record; AB 130 CEQA exemption, no CEQAnet filing found",
+      "src": [
+        "SRC-001131"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of Morgan Hill Times, Local News Matters; articles found concern other Morgan Hill projects",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search, SF YIMBY; no coverage of this site found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No builder named; applicant is the landowning family partnership",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Plans PDF is a scan with no text layer; no architect named in staff report",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

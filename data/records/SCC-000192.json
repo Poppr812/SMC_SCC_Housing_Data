@@ -161,7 +161,11 @@
         {
           "value": 108,
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-003001",
+            "SRC-001736",
+            "SRC-001735",
+            "SRC-001614"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -174,7 +178,7 @@
           "note": "Units in the application as reported"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -185,6 +189,13 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN21-15208",
+          "src": [
+            "SRC-001736"
+          ],
+          "note": "Architectural Review file"
         }
       ]
     },
@@ -207,6 +218,114 @@
             "SRC-001102"
           ],
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001735",
+            "SRC-003001"
+          ],
+          "note": "106 income-restricted units plus 2 unrestricted manager units"
+        }
+      ],
+      "best": 1
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 27,
+              "ami": 30
+            },
+            {
+              "count": 26,
+              "ami": 30
+            },
+            {
+              "count": 53,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001735"
+          ],
+          "note": "City loan report: 27 units for homeless households and families with special needs at or below 30% AMI, 26 units at or below 30% AMI, 53 units at or below 50% AMI; 2 manager units unrestricted"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001735"
+          ],
+          "note": "Affordable Housing Agreement term from first certificate of occupancy"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 104610764,
+          "src": [
+            "SRC-001735"
+          ],
+          "note": "Anticipated total cost in the November 2023 city loan report ($968,618 per unit)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.4,
+          "src": [
+            "SRC-001736",
+            "SRC-003001",
+            "SRC-003002"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 82,
+          "src": [
+            "SRC-001736",
+            "SRC-003001"
+          ],
+          "note": "50 podium spaces and 32 surface spaces"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-001735",
+            "SRC-001614"
+          ],
+          "note": "27 rapid-rehousing units for homeless households with special needs; SV@Home lists 27 supportive units"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003001"
+          ],
+          "note": "General Plan Amendment, rezone to Planned Development, and density bonus agreement"
         }
       ]
     }
@@ -217,6 +336,33 @@
       "src": [
         "SRC-001106",
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "City loan report (November 2023) lists planned sources at permanent: tax credit equity $43,111,764, state AHSC $21,600,000, County Measure A $12,100,000, bonds $10,149,000, deferred developer fee $7,500,000, City $5,400,000, Housing Trust Silicon Valley Apple funds $4,750,000. It states Charities Housing planned to apply for AHSC in March 2024 and state tax credits and bonds in September 2024, and to seek 27 project-based vouchers from the Santa Clara County Housing Authority.",
+      "src": [
+        "SRC-001735"
+      ]
+    },
+    {
+      "text": "Architectural review: five-story building with podium parking wrapped by units, studios to three-bedrooms of 379 to 1,139 sq ft, 54 ft 6 in to top of parapet; replaces a vacant 28,950 sq ft two-story office building.",
+      "src": [
+        "SRC-001736"
+      ]
+    },
+    {
+      "text": "City Council approved the project 6-1 in November 2022; Charities Housing bought the site in 2020.",
+      "src": [
+        "SRC-003002"
+      ]
+    },
+    {
+      "text": "Charities Housing's development pipeline page lists Civic Center, Santa Clara, under Predevelopment. SV@Home's Measure A dashboard lists Civic Center Multifamily as Pipeline. HCD AHSC Round 8 and Round 9 award lists show no award for this project.",
+      "src": [
+        "SRC-002238",
+        "SRC-001614",
+        "SRC-003003",
+        "SRC-003004"
       ]
     }
   ],
@@ -229,10 +375,63 @@
       "src": [
         "SRC-001735"
       ],
-      "website": "https://www.charitieshousing.org"
+      "website": "https://www.charitieshousing.org",
+      "project_page": "https://charitieshousing.org/property/civic-center/",
+      "project_page_basis": "opened"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Charities Housing Development Corporation of Santa Clara County",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003001",
+        "SRC-003002"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "County of Santa Clara",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Planned land owner / ground lessor (County Measure A loan)",
+      "src": [
+        "SRC-001735"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "2016 Measure A housing bond; Board delegated authority to negotiate a loan of up to $12.1 million to buy the land and ground lease it to Charities Housing",
+      "amount": 12100000,
+      "date": "2023-05-16",
+      "src": [
+        "SRC-001735"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Santa Clara",
+      "program": "City Affordable Housing Capital Fund loan",
+      "amount": 4944484,
+      "date": "2023-11-14",
+      "src": [
+        "SRC-001735"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Santa Clara",
+      "program": "Permanent Local Housing Allocation (PLHA) funds, administered by the County",
+      "amount": 455516,
+      "date": "2023-11-14",
+      "src": [
+        "SRC-001735"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -250,6 +449,24 @@
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2023-05-16",
+      "type": "Other",
+      "label": "County Board of Supervisors delegated authority to negotiate a Measure A loan of up to $12.1 million",
+      "src": [
+        "SRC-001735"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-11-14",
+      "type": "Other",
+      "label": "City Council approved city loan of up to $5.4 million and release of 1964 land indenture",
+      "src": [
+        "SRC-001735"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -267,6 +484,102 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Civic Center Multifamily and Charities Housing",
+      "src": [
+        "SRC-003002",
+        "SRC-001614"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API (data.sccgov.org ubcd-cewv) for APN 224-49-006: situs 1601 Civic Center Dr, Santa Clara; jurisdiction Santa Clara. The dataset shows no owner of record.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Santa Clara Legistar: Council 2022-11-15 (matter 21300), architectural review PLN21-15208 (21495), loan report 2023-11-14 (22572); santaclaraca.gov project listing blocked",
+      "src": [
+        "SRC-003001",
+        "SRC-001736",
+        "SRC-001735"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County Measure A loan terms as reported in the city loan report; news.santaclaracounty.gov blocked",
+      "src": [
+        "SRC-001735"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "HCD AHSC Round 8 and 9 award lists: no award; web search found no CTCAC/CDLAC award for this address; APR already on record",
+      "src": [
+        "SRC-003003",
+        "SRC-003004"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2022-11-19",
+      "src": [
+        "SRC-003002"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SV@Home Measure A dashboard",
+      "src": [
+        "SRC-001614"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Charities Housing development pipeline (Predevelopment) and Civic Center property page",
+      "src": [
+        "SRC-002238",
+        "SRC-003005"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in city reports or news found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City loan report funding table and County Measure A loan terms",
+      "src": [
+        "SRC-001735"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn post found",
+      "src": []
+    }
+  }
 }

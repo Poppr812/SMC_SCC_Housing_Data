@@ -113,6 +113,12 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "PLN25-074-SB330; preliminary applications PLN24-131-PRE and PLN24-234-PRE",
+          "src": [
+            "SRC-001431"
+          ]
         }
       ]
     },
@@ -158,6 +164,56 @@
           ]
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 84,
+          "src": [
+            "SRC-003008"
+          ],
+          "note": "84 market-rate single-family homes"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 22,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001431",
+            "SRC-003008"
+          ],
+          "note": "22 units deed-restricted to low-income households (state low-income category upper limit 80% AMI); SF YIMBY places them in 11 duplex structures"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003009",
+            "SRC-003008"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 207280,
+          "src": [
+            "SRC-003008"
+          ],
+          "note": "Combined floor area of 95 structures"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +221,13 @@
       "text": "County status: Complete August 29, 2025, under CEQA review.",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "text": "SF YIMBY: 95 two-story wood-frame structures, 84 market-rate single-family homes and 11 duplexes with the 22 affordable units, in five styles (Craftsman, Farmhouse, Italianate, Ranch, Spanish); site bounded by Condit Road, Diana Avenue and Murphy Avenue; owner last bought the site in 2015.",
+      "src": [
+        "SRC-003009",
+        "SRC-003008"
       ]
     }
   ],
@@ -178,15 +241,82 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Borelli Investment Company",
+      "contact": "Nick Gera",
+      "linkedin": null,
+      "src": [
+        "SRC-003009",
+        "SRC-003008"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Nicholas Gera Trustee",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001431",
+        "SRC-003009"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003009",
+        "SRC-003008"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MH Engineering Co",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003009",
+        "SRC-003008"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-07-26",
+      "type": "Other",
+      "label": "SB 330 preliminary application PLN24-131-PRE submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-27",
+      "type": "Other",
+      "label": "SB 330 preliminary application PLN24-234-PRE submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-04-29",
       "type": "Application filed",
       "label": "Formal SB 330 application submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-29",
+      "type": "Other",
+      "label": "County deemed formal application complete; under CEQA review",
       "src": [
         "SRC-001431"
       ],
@@ -198,6 +328,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 1245 Diana Ave, Gera, builder's remedy",
+      "src": [
+        "SRC-003009"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API (data.sccgov.org ubcd-cewv) for APN 728-21-002: situs 1245 Diana Av, Morgan Hill (4 situs addresses); jurisdiction Unincorporated. The dataset shows no owner of record.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Unincorporated parcel under county review",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list: owner, preliminary application dates and record numbers",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of CEQAnet found no filing for 1245 Diana (the 1320 N Diana EIR, SCH 2026080052, is a different site)",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search; Local News Matters Morgan Hill 105-home articles concern a different project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-06-03 and 2024-12-07",
+      "src": [
+        "SRC-003009",
+        "SRC-003008"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Borelli Investment Company project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No SDG Architects project page found for this site",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SF YIMBY says cost not yet established; no financing found",
+      "src": [
+        "SRC-003008"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }
