@@ -31,6 +31,40 @@
           37.3636355
         ]
       ]
+    },
+    {
+      "apn": "484-21-004",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8303954,
+          37.3637381
+        ],
+        [
+          -121.8306134,
+          37.3636355
+        ],
+        [
+          -121.8310641,
+          37.364247
+        ],
+        [
+          -121.8308461,
+          37.3643496
+        ],
+        [
+          -121.8304809,
+          37.3638488
+        ],
+        [
+          -121.8303954,
+          37.3637381
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -49,6 +83,14 @@
             "SRC-001107"
           ]
         }
+      ]
+    },
+    {
+      "text": "2928 Alum Rock Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001956",
+        "SRC-001861"
       ]
     }
   ],
@@ -143,6 +185,13 @@
             "SRC-001956"
           ],
           "note": "City folder 679756, Prelim - Focused (Policy Review, No Plans) (permit type: All Other Permits); city permit status: Complete. Matched by APN."
+        },
+        {
+          "value": "PRE20-176; AD22-494",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "2020 enhanced preliminary review; 2022 AB 168 tribal consultation at 2928 Alum Rock"
         }
       ]
     },
@@ -159,6 +208,59 @@
             "SRC-001099"
           ],
           "note": "State report 2022, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 31,
+              "ami": 50
+            },
+            {
+              "count": 31,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2023, entitlement stage; 1 above-moderate unit (manager)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit MP22-010"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107",
+            "SRC-001956"
+          ],
+          "note": "SB 35 ministerial permit; state report shows density bonus"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2023, MP22-010"
         }
       ]
     }
@@ -188,6 +290,19 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "PRE20-176 (2020) described a 103-unit, 6-story, 100% supportive housing building on an approximately 1.11-gross-acre site; the later SB 35 permit MP22-010 is for 63 units in 4 stories. PRE22-133 describes approximately 60,480 sq ft of residential development.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit AD22-494 lists 2928 Alum Rock Ave (APN 484-21-004) for the same 63-unit SB 35 project; SV@Home names the project 2920 & 2928 Alum Rock.",
+      "src": [
+        "SRC-001956",
+        "SRC-001861"
+      ]
     }
   ],
   "parties": [
@@ -201,11 +316,68 @@
       ],
       "website": "https://charitieshousing.org/",
       "project_page": "https://charitieshousing.org/property/2920-2928-alum-rock/"
+    },
+    {
+      "role": "Other",
+      "company": "Charities Housing Development Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner named on city permits",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kathy Robinson",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant for Charities Housing (PRE20-176, MP22-010)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Marvel Ang",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant for Charities Housing (PRE22-133, AD22-494)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-12-14",
+      "type": "Other",
+      "label": "Enhanced preliminary review filed (PRE20-176) for a 103-unit, 6-story supportive housing concept",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06-27",
+      "type": "Other",
+      "label": "SB 330 preliminary review filed (PRE22-133), 63 units",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-09-09",
+      "type": "Other",
+      "label": "AB 168 tribal consultation for SB 35 review approved (AD22-494)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-09-21",
       "type": "Application filed",
@@ -243,6 +415,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search on address and Charities Housing; SV@Home endorsement already on record",
+      "src": [
+        "SRC-001861"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 484-21-003 (2920) and 484-21-004 (2928 Alum Rock); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose permits GIS: PRE20-176, PRE22-133, AD22-494, MP22-010",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No county funding item found in search",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR A2 2023 MP22-010: 31 very low, 31 low, 55-year term, SB 35, density bonus; no CTCAC entry in active list",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SJ Spotlight article already on record",
+      "src": [
+        "SRC-001862"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "charitieshousing.org project page: future property, details coming soon",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Jose funding list naming Alum Rock East appears only on sanjoseca.gov, which returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

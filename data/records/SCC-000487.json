@@ -830,6 +830,19 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001420"
+          ],
+          "note": "Tentative map and zoning amendment for a Planned Unit Development"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -851,6 +864,16 @@
       "src": [
         "SRC-001421"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Branden Lee",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city project log)",
+      "src": [
+        "SRC-001420"
+      ]
     }
   ],
   "financing": [],
@@ -871,6 +894,84 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search on project name, applicant and location; only resale listings for the existing Country Estates neighborhood",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API 783-47-003 (Sunflower) and 783-45-044 (Hollyhock), Gilroy; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Gilroy project page TM 25-03 (incomplete for review, CEQA analysis to be prepared); project log 9/24/2026 TM 25-03, Z 25-04, PUD",
+      "src": [
+        "SRC-001421",
+        "SRC-001420"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No CEQAnet entry for Phase IV found; not in APR data",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no local news",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No web presence found for Enterprise REI 8, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No public financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

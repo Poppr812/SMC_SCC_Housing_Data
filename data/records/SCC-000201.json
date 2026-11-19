@@ -1,6 +1,6 @@
 {
   "id": "SCC-000201",
-  "name": "934 E Santa Clara St",
+  "name": "Milestone Senior Arts Colony",
   "parcels": [
     {
       "apn": "467-30-038",
@@ -43,6 +43,36 @@
           37.3445249
         ]
       ]
+    },
+    {
+      "apn": "467-30-059",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8713956,
+          37.3448686
+        ],
+        [
+          -121.871672,
+          37.3446961
+        ],
+        [
+          -121.8718922,
+          37.3449211
+        ],
+        [
+          -121.87159,
+          37.3450673
+        ],
+        [
+          -121.8713956,
+          37.3448686
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -52,6 +82,20 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "948 E Santa Clara St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003018"
+      ]
+    },
+    {
+      "text": "942 E Santa Clara St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -63,7 +107,8 @@
           "value": "Apartments",
           "src": [
             "SRC-001099",
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001956"
           ],
           "note": "State category 5+ units, rental tenure"
         }
@@ -78,6 +123,13 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SB 330 preliminary application PRE21-176 complete"
         }
       ]
     },
@@ -87,7 +139,8 @@
           "value": "San Jose",
           "src": [
             "SRC-001099",
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001956"
           ]
         }
       ]
@@ -100,6 +153,13 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 99,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE21-176 (Prelim - Focused (Policy Review, No Plans)): \"SB330 Prelim for mixed use building with 99 affordable senior housing units and 2500 square feet of ground floor retail space\""
         }
       ]
     },
@@ -108,7 +168,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001956"
           ]
         }
       ]
@@ -132,6 +193,20 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE21-185",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Enhanced preliminary review, 99 units, 6 stories"
+        },
+        {
+          "value": "PRE21-176",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 055962, Prelim - Focused (Policy Review, No Plans); city permit status: Complete."
         }
       ]
     },
@@ -154,6 +229,85 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit MP22-013"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003018",
+            "SRC-001956"
+          ],
+          "note": "Residents 55+; MP22-013 reserves 52 units for permanent supportive housing"
+        },
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE21-176 (Prelim - Focused (Policy Review, No Plans)): \"SB330 Prelim for mixed use building with 99 affordable senior housing units and 2500 square feet of ground floor retail space\""
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001956",
+            "SRC-001107"
+          ],
+          "note": "AB 2162 ministerial permit; state report shows density bonus"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2023, MP22-013"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PRE21-185: approximately 0.44 gross acre"
+        },
+        {
+          "value": 0.4,
+          "src": [
+            "SRC-003018"
+          ],
+          "note": "SF YIMBY, two parcels"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -169,12 +323,101 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Earlier plans: PRE21-176 and PRE21-185 (2021) describe a six-story building with 99 units and 2,500 sq ft of ground-floor commercial. SF YIMBY (May 2022) reported 71 studios and 28 one-bedrooms for residents 55+, with a ground-floor art gallery and fitness center. The approved MP22-013 shows 103 units.",
+      "src": [
+        "SRC-001956",
+        "SRC-003018"
+      ]
+    },
+    {
+      "text": "City permit records show the site as 934 and 942 E Santa Clara St (APNs 467-30-038 and 467-30-059); SF YIMBY uses 948 E Santa Clara St.",
+      "src": [
+        "SRC-001956",
+        "SRC-003018"
+      ]
+    },
+    {
+      "text": "City of San Jose permit PRE21-176 (Prelim - Focused (Policy Review, No Plans), folder year 2021), status Complete: \"SB330 Prelim for mixed use building with 99 affordable senior housing units and 2500 square feet of ground floor retail space\"",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Milestone Housing Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003018",
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MAC Senior Apartments, LP",
+      "contact": "Marcus Griffin",
+      "linkedin": null,
+      "other_role": "Applicant and owner named on city permit MP22-013",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Aaron Barger",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant for Milestone Housing Group (PRE21-185, zoning letters)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Enterprise Community Loan Fund",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003018"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Acquisition loan",
+      "provider": "Enterprise Community Loan Fund",
+      "program": null,
+      "amount": 4800000,
+      "date": "2022",
+      "src": [
+        "SRC-003018"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2021-11-12",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application filed (PRE21-176)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022",
+      "type": "Sale",
+      "label": "Milestone affiliate bought the two-parcel site for a combined $5.1 million",
+      "src": [
+        "SRC-003018"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-11-16",
       "type": "Application filed",
@@ -190,6 +433,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2023-09-06",
+      "type": "Other",
+      "label": "NEPA environmental review opened (Milestone Senior Arts Colony, MP22-013)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -202,6 +454,96 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Merged duplicate SCC-000614 (942 E Santa Clara St (senior affordable)): same senior affordable project at 934-948 E Santa Clara St; PRE21-176 was its 99-unit preliminary filing"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Milestone, Senior Arts Colony; SF YIMBY 2022",
+      "src": [
+        "SRC-003018"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API: 467-30-038 (934 E Santa Clara) and 467-30-059 (942 E Santa Clara, held by record SCC-000614); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose permits GIS: PRE21-176, PRE21-185, MP22-013, NEPA review 2023-09-06, zoning letters",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No county funding item found in search",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR A2 2023 MP22-013: 55-year term, density bonus, AB2162; no CTCAC/CDLAC award found in active list",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no local news beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-05-09; The Real Deal 2022 articles returned 403",
+      "src": [
+        "SRC-003018"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Milestone project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Enterprise Community Loan Fund $4.8M per SF YIMBY; Enterprise blog returned 403",
+      "src": [
+        "SRC-003018"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

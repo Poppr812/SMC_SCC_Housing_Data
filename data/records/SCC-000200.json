@@ -176,6 +176,17 @@
             "SRC-001107"
           ],
           "note": "SB 35 flagged in the state report"
+        },
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107",
+            "SRC-001956"
+          ],
+          "note": "SB 35 ministerial permit with state density bonus"
         }
       ]
     },
@@ -188,6 +199,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE20-131; ER22-185; AT23-001; AD23-369",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folders: enhanced preliminary review, NEPA review, lot line adjustment, regulatory agreement adjustment"
         }
       ]
     },
@@ -236,6 +254,19 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": {
+            "studio": 36,
+            "1br": 62,
+            "2br": 3,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003015"
+          ],
+          "note": "Leasing flyer, 101 affordable units; manager units not listed"
         }
       ]
     },
@@ -268,6 +299,46 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-003015"
+          ],
+          "note": "Leasing flyer: 45-space parking garage"
+        },
+        {
+          "value": 48,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit MP21-002 and NEPA review ER22-185 describe a 48-space parking garage"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2022, MP21-002"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 105500,
+          "src": [
+            "SRC-003016"
+          ],
+          "note": "About 125,000 sq ft total; 105,500 sq ft residential"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -288,6 +359,31 @@
       "text": "City of San Jose permit MP21-002 (Ministerial Permit, folder year 2021), status Approved, issue date 2022-09-02: \"SB 35 Ministerial Permit to allow the construction of a 103-unit, 100% affordable residential development with a 48-space parking garage and the removal of 15 ordinance-size and 5 non-ordinance-size trees, including a State Density Bonus for three additio\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Leasing flyer: of 101 affordable units, 54 offered by lottery, 21 for County Coordinated Entry referrals, 26 Project-Based Voucher units filled from the housing authority interest list. Income limits at 30% and 50% AMI.",
+      "src": [
+        "SRC-003015"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (May 2024): total estimated cost about $88.9 million; funding from Measures A and E, federal tax credits, loans, the housing authority and No Place Like Home; about 47 apartments receive federal rental vouchers for at least 20 years.",
+      "src": [
+        "SRC-003017"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Nov 2024): about 125,000 sq ft total, 105,500 sq ft residential, 8,580 sq ft parking; construction cost at least $76 million; site 1.11 acres.",
+      "src": [
+        "SRC-003016"
+      ]
+    },
+    {
+      "text": "City lot line adjustment AT23-001 combined two parcels on the 1.11-gross-acre site; the 2021 state application row lists APNs 467-14-054 and 467-14-076.",
+      "src": [
+        "SRC-001956",
+        "SRC-001107"
       ]
     }
   ],
@@ -349,6 +445,56 @@
       "other_role": "Applicant (CTCAC)",
       "email": "karl.lauff@scchousingauthority.org",
       "phone": "(669) 214-9902"
+    },
+    {
+      "role": "Other",
+      "company": "LifeSTEPS",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Resident services partner",
+      "src": [
+        "SRC-003017"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Abode Services",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Mental health and substance use counseling partner",
+      "src": [
+        "SRC-003017"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Felipe Casas",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city permits MP21-002, AD23-369)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Natalie Monk",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city preliminary review PRE20-131)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Preston Prince",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city lot line adjustment AT23-001)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [
@@ -421,10 +567,29 @@
       "src": [
         "SRC-001646"
       ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "City loan, about $15.2 million, approved unanimously by City Council",
+      "amount": 15200000,
+      "date": "2024-04",
+      "src": [
+        "SRC-003017"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2020-10-07",
+      "type": "Other",
+      "label": "Enhanced preliminary review filed (PRE20-131), 4-story affordable senior housing",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-08-20",
       "type": "Application filed",
@@ -442,11 +607,29 @@
       ]
     },
     {
+      "date": "2024-04",
+      "type": "Other",
+      "label": "San Jose City Council approved about $15.2 million loan",
+      "src": [
+        "SRC-003017"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-05-15",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-24-069)",
       "src": [
         "SRC-001646"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-09-26",
+      "type": "Other",
+      "label": "City approved permit adjustment AD23-369 to record SB 35 and density bonus regulatory agreement",
+      "src": [
+        "SRC-001956"
       ],
       "estimated": false
     },
@@ -473,6 +656,24 @@
       "label": "Expected as early as summer 2026",
       "src": [
         "SRC-001407"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2026-04-07",
+      "type": "Lease-up start",
+      "label": "Online lottery applications open through May 18, 2026 for 54 of 101 units",
+      "src": [
+        "SRC-003015"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08",
+      "type": "Completion",
+      "label": "Leasing flyer: move-in starting August 2026",
+      "src": [
+        "SRC-003015"
       ],
       "estimated": true
     }
@@ -507,6 +708,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name and both addresses; SF YIMBY, SJ Spotlight, housing authority flyer",
+      "src": [
+        "SRC-003016",
+        "SRC-003017",
+        "SRC-003015"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API 467-14-090: situs 715 E St John St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose permits GIS layer: PRE20-131, MP21-002, ER22-185, AT23-001, AD23-369, tree permit 2024-08-21",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Housing authority leasing flyer (2026-05); county Measure A loan already on record",
+      "src": [
+        "SRC-003015"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A/A2 MP21-002: 55-year term, density bonus; CTCAC active list CA-24-069 matches record",
+      "src": [
+        "SRC-001107",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SJ Spotlight 2024-05-03 (city loan, cost); Local News Matters returned 403",
+      "src": [
+        "SRC-003017"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY groundbreaking 2024-11-08; The Real Deal returned 403",
+      "src": [
+        "SRC-003016"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "scchousingauthority.org leasing flyer",
+      "src": [
+        "SRC-003015"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Paulett Taggart Architects already on record; no project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City of San Jose loan from SJ Spotlight; CTCAC sources already on record",
+      "src": [
+        "SRC-003017",
+        "SRC-001646"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts found",
+      "src": []
+    }
+  }
 }
