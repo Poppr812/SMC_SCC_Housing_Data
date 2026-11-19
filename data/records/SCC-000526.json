@@ -304,6 +304,13 @@
             "SRC-001473"
           ],
           "note": "942 total, 600 new; 342 existing apartments demolished"
+        },
+        {
+          "value": 992,
+          "src": [
+            "SRC-002097"
+          ],
+          "note": "Architect's project page states 992 apartments in total"
         }
       ]
     },
@@ -326,6 +333,41 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002098"
+          ],
+          "note": "CEQA description: six buildings, six to seven stories"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 1716,
+          "src": [
+            "SRC-002098"
+          ],
+          "note": "Two levels below grade and 1.5 levels at grade"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-001473"
+          ],
+          "note": "Development Agreement with IAC at Cupertino LLC, Ordinance No. 16-2144, Agreement No. 16-091"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -333,6 +375,24 @@
       "text": "City page: no building permits submitted as of December 2024.",
       "src": [
         "SRC-001473"
+      ]
+    },
+    {
+      "text": "CEQA description: demolish 342 apartments and build 942 in six buildings, with a public bike hub, 7.46 acres of open space and amenities, and a 7.83-acre building footprint including covered parking.",
+      "src": [
+        "SRC-002098"
+      ]
+    },
+    {
+      "text": "City page lists the entitlements as DP-2015-04 with MND EA-2015-03 (Resolution 16-065), ASA-2015-13 (16-066), U-2015-05 for a bicycle hub and bar (16-067) and TR-2015-21 for removal and replacement of 277 trees (16-068).",
+      "src": [
+        "SRC-001473"
+      ]
+    },
+    {
+      "text": "Architect's page describes about 1,000,000 sq ft and a garage concealed by landscaped berms under a green roof.",
+      "src": [
+        "SRC-002097"
       ]
     }
   ],
@@ -354,17 +414,72 @@
       "src": [
         "SRC-001473"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "IAC at Cupertino LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Development agreement party",
+      "src": [
+        "SRC-001473"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2016-04-15",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the State Clearinghouse (SCH 2016042040)",
+      "src": [
+        "SRC-002098"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2016-05-05",
+      "type": "Other",
+      "label": "Environmental Review Committee hearing",
+      "src": [
+        "SRC-001473"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2016-05-10",
+      "type": "Other",
+      "label": "Planning Commission hearing",
+      "src": [
+        "SRC-001473"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2016-06-21",
       "type": "Approved",
       "label": "City Council approved",
       "src": [
         "SRC-001473"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2016-07-05",
+      "type": "Other",
+      "label": "City Council second reading of the development agreement ordinance",
+      "src": [
+        "SRC-001473"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-05",
+      "type": "Other",
+      "label": "City development activity report: project on hold by applicant",
+      "src": [
+        "SRC-002099"
       ],
       "estimated": false
     }
@@ -374,6 +489,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address and Irvine Company; Arquitectonica page and Cupertino activity report opened. ConnectCRE article returned 403.",
+      "src": [
+        "SRC-002097",
+        "SRC-002099"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 316-06-068 and 316-06-058 both situs 19500 Pruneridge Ave, Cupertino. Owner not shown in the dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Cupertino project page (hearing dates, resolutions, DA party) and May 2019 development activity report.",
+      "src": [
+        "SRC-001473",
+        "SRC-002099"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2016042040 opened. APR Tables A and A2 queried for Pruneridge in Cupertino: no rows.",
+      "src": [
+        "SRC-002098"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage after 2016.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "ConnectCRE 2016 approval story returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no Irvine Company project page for the redevelopment.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Arquitectonica project page: 992 apartments, about 1,000,000 sq ft.",
+      "src": [
+        "SRC-002097"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder named in city, CEQA or web sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

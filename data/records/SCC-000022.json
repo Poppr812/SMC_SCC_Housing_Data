@@ -63,6 +63,104 @@
           37.3183339
         ]
       ]
+    },
+    {
+      "apn": "303-38-003",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.951971,
+          37.3178032
+        ],
+        [
+          -121.9515479,
+          37.3178041
+        ],
+        [
+          -121.9503402,
+          37.3178067
+        ],
+        [
+          -121.9503394,
+          37.3174989
+        ],
+        [
+          -121.9503442,
+          37.3174742
+        ],
+        [
+          -121.950353,
+          37.3174506
+        ],
+        [
+          -121.9503655,
+          37.3174288
+        ],
+        [
+          -121.9503815,
+          37.3174093
+        ],
+        [
+          -121.9504004,
+          37.3173926
+        ],
+        [
+          -121.9504217,
+          37.3173793
+        ],
+        [
+          -121.950445,
+          37.3173696
+        ],
+        [
+          -121.9504695,
+          37.3173639
+        ],
+        [
+          -121.9504946,
+          37.3173623
+        ],
+        [
+          -121.9516446,
+          37.3172726
+        ],
+        [
+          -121.951925,
+          37.3172485
+        ],
+        [
+          -121.9522046,
+          37.3172198
+        ],
+        [
+          -121.9529426,
+          37.317138
+        ],
+        [
+          -121.952944,
+          37.3171462
+        ],
+        [
+          -121.9529563,
+          37.3172169
+        ],
+        [
+          -121.9529576,
+          37.3176628
+        ],
+        [
+          -121.9529581,
+          37.3178
+        ],
+        [
+          -121.951971,
+          37.3178032
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -115,6 +213,14 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "585 S Winchester Blvd, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001956",
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -162,6 +268,13 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 686,
+          "src": [
+            "SRC-002128"
+          ],
+          "note": "Council memo 2021: 90 rowhouses, 158 condominiums, 72 flats and a 366-unit apartment building."
         }
       ]
     },
@@ -174,6 +287,12 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "GP18-014, GPT19-004, PDC18-037, PT19-023, AD21-331, AD21-600",
+          "src": [
+            "SRC-001956"
+          ]
         }
       ]
     },
@@ -185,6 +304,28 @@
             "SRC-001107"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 15.7,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per PDC18-037 and PT19-023"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 516,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Apartment garage only, per permit adjustment AD21-331 (from 513)"
         }
       ]
     }
@@ -208,6 +349,19 @@
       "src": [
         "SRC-001774"
       ]
+    },
+    {
+      "text": "Council memo (June 2021): conversion of a 111-unit mobile home park to 686 units (90 rowhouses, 158 condominiums, 72 flats, 366-unit apartment building), a public park and a publicly accessible recreational garden. Parkland obligation 3.72 acres or $13,239,800 in in-lieu fees, met by dedicating and building a 2.01-acre park; design and construction cost estimated by the city at $2,984,004.",
+      "src": [
+        "SRC-002128"
+      ]
+    },
+    {
+      "text": "City permit layer: PT19-023 Vesting Tentative Map for up to 64 lots and up to 320 residential condominiums on 15.7 gross acres; PDC18-037 zoning for up to 687 units. Apartment parcel APN 303-38-003 at 585 S Winchester Blvd.",
+      "src": [
+        "SRC-001956",
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [
@@ -230,6 +384,27 @@
         "SRC-001775"
       ],
       "website": "https://www.hanoverco.com/"
+    },
+    {
+      "role": "Other",
+      "company": "Pulte Homes Company, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant entity",
+      "src": [
+        "SRC-001956",
+        "SRC-002128"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Winchester San Jose Development LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, 2022 sign permit at 585 S Winchester Blvd",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
@@ -250,6 +425,33 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2021-05-26",
+      "type": "Other",
+      "label": "Permit adjustment AD21-331 filed: apartment garage from 513 to 516 spaces (approved 2021-06-04)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-06-22",
+      "type": "Other",
+      "label": "City Council agenda: Turnkey Parkland Agreement with Pulte, park master plan, and naming of 2.01-acre Winchester Orchard Park",
+      "src": [
+        "SRC-002128"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-09-28",
+      "type": "Other",
+      "label": "Permit adjustment AD21-600 approved: temporary sales trailer and signage",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-12-02",
@@ -292,6 +494,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on Winchester Ranch, Pulte, Hanover, The Winchester Apartments. Pulte \"at Central\" community pages near Olsen Drive not linked to this site by any opened source.",
+      "src": [
+        "SRC-002128"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: APN 30355090 is 532 Oakdale Wy (small condo lot); APN 30338003 is 585 Winchester (apartment parcel). Owner not shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Legistar file 21-1450 (parkland memo); city permit GIS layer by address (PT19-023, PDC18-037, AD21-331, AD21-600, AD22-721).",
+      "src": [
+        "SRC-002128",
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR rows already on record; CEQAnet SCH 2019039074 listed in search; no CTCAC/CDLAC application.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Search results on 2019 resident settlement (Law Foundation, SJ Spotlight) predate facts on record; no newer news found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY articles already on record; no 2025-2026 sale or loan for the Hanover building found.",
+      "src": [
+        "SRC-001774"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Pulte or Hanover project page for this site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "KTGY project page (Hanover Winchester) on ktgy.com returns 403 to automated access.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts surfaced.",
+      "src": []
+    }
+  }
 }

@@ -71,6 +71,13 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "95 N 11th St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001107"
+      ]
     }
   ],
   "images": [],
@@ -105,8 +112,17 @@
             "SRC-001956"
           ],
           "note": "SB 330 preliminary application PRE22-003 complete"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001107",
+            "SRC-001956"
+          ],
+          "note": "State report 2021: entitlement approved 2021-09-29 (H20-007)"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -116,6 +132,14 @@
             "SRC-001956"
           ],
           "note": "City folder 654945, Prelim - Focused (Policy Review, No Plans); city permit status: Complete."
+        },
+        {
+          "value": "H20-007",
+          "src": [
+            "SRC-001107",
+            "SRC-001956"
+          ],
+          "note": "Site Development Permit"
         }
       ]
     },
@@ -124,9 +148,37 @@
         {
           "value": 46,
           "src": [
-            "SRC-001956"
+            "SRC-001956",
+            "SRC-001107"
           ],
           "note": "City file PRE22-003 (Prelim - Focused (Policy Review, No Plans)): \"SB330 preliminary application for a multifamily residential building consisting of 46 units\""
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2021, entitlement stage: 14 deed-restricted units"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 14,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
     }
@@ -136,6 +188,12 @@
       "text": "City of San Jose permit PRE22-003 (Prelim - Focused (Policy Review, No Plans), folder year 2022), status Complete: \"SB330 preliminary application for a multifamily residential building consisting of 46 units\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "State Table A2 (2021) row for file H20-007: 46 rental units (14 low-income deed-restricted, 32 above-moderate), entitled 2021-09-29, 6 units demolished, density bonus. The row lists APNs 467-17-044, -045 and -046, no longer in county data; county parcel 467-17-112 (488 E St John St) is the current parcel at this address.",
+      "src": [
+        "SRC-001107"
       ]
     }
   ],
@@ -155,6 +213,16 @@
   "groups": {},
   "events": [
     {
+      "date": "2021-09-29",
+      "type": "Approved",
+      "label": "Site Development Permit H20-007 approved",
+      "src": [
+        "SRC-001107",
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-01-10",
       "type": "Application filed",
       "label": "SB 330 preliminary application filed (PRE22-003)",
@@ -169,6 +237,11 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ]
 }

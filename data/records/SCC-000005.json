@@ -178,8 +178,16 @@
             "SRC-001102"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-002093"
+          ],
+          "note": "The Clara (508 units) opened about April 2025 and was leasing; rents $3,460 to $6,777"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -214,6 +222,21 @@
             "SRC-001712"
           ],
           "note": "657 dwelling units in two towers (one 20-story Home for the Ambulatory Aged, one 22-story rental), approved December 4, 2019, per December 2023 council report"
+        },
+        {
+          "value": 700,
+          "src": [
+            "SRC-002094",
+            "SRC-002095"
+          ],
+          "note": "509 market-rate apartments plus 191 senior residences"
+        },
+        {
+          "value": 508,
+          "src": [
+            "SRC-002093"
+          ],
+          "note": "The Clara rental tower only, at opening"
         }
       ],
       "best": 2
@@ -265,6 +288,64 @@
           "note": "State report 2018, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 23,
+          "src": [
+            "SRC-002096"
+          ],
+          "note": "The Clara, 238 ft"
+        },
+        {
+          "value": 22,
+          "src": [
+            "SRC-002093"
+          ],
+          "note": "The Clara"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 613,
+          "src": [
+            "SRC-002094"
+          ],
+          "note": "2021 plans; 352 bicycle spaces"
+        },
+        {
+          "value": 565,
+          "src": [
+            "SRC-002096"
+          ],
+          "note": "The Clara"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 19410,
+          "src": [
+            "SRC-002094"
+          ],
+          "note": "Retail"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 700000000,
+          "src": [
+            "SRC-002093"
+          ],
+          "note": "Reported cost including the Ellore senior building"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -273,6 +354,20 @@
       "src": [
         "SRC-001106",
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "Two towers on an eight-story podium: The Clara (rental, 508-509 units) and a senior tower (191 units in 2022 sources, under the Coterie brand with Atria; named Ellore in 2025 coverage).",
+      "src": [
+        "SRC-002094",
+        "SRC-002095",
+        "SRC-002093"
+      ]
+    },
+    {
+      "text": "CTBUH lists The Clara at 5150 Calle Del Sol, 238 ft, 23 floors, 509 apartments, construction 2022 to 2024, status Completed.",
+      "src": [
+        "SRC-002096"
       ]
     }
   ],
@@ -296,9 +391,118 @@
       "src": [
         "SRC-001712"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.steinberghart.com",
+      "website_basis": "search",
+      "src": [
+        "SRC-002094",
+        "SRC-002096"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Bohlin Cywinski Jackson",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002094",
+        "SRC-002096"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "SurfaceDesign, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002094",
+        "SRC-002096"
+      ]
+    },
+    {
+      "role": "Interior designer",
+      "company": "AVROKO",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002096"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Atria Senior Living",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002094",
+        "SRC-002095"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Welltower Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002095"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Otera Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002095"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "PNC Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002095"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Otera Capital",
+      "program": "509 rental residences",
+      "amount": 360000000,
+      "date": "2022-08-18",
+      "src": [
+        "SRC-002095"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "PNC Bank",
+      "program": "191 senior residences",
+      "amount": 130000000,
+      "date": "2022-08-18",
+      "src": [
+        "SRC-002095"
+      ]
+    },
+    {
+      "type": "Private equity",
+      "provider": "Welltower Inc.",
+      "program": "Capital for the senior residences (amount not stated)",
+      "amount": null,
+      "date": "2022-08-18",
+      "src": [
+        "SRC-002095"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -326,6 +530,23 @@
       ]
     },
     {
+      "date": "2022-08-18",
+      "type": "Other",
+      "label": "Related California announces $690M in construction financing",
+      "src": [
+        "SRC-002095"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "type": "Lease-up start",
+      "label": "The Clara opens and begins leasing",
+      "src": [
+        "SRC-002093"
+      ],
+      "estimated": true
+    },
+    {
       "date": "2025-04-07",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
@@ -349,6 +570,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Related / 2300 Calle de Luna / The Clara: financing release, opening coverage.",
+      "src": [
+        "SRC-002095",
+        "SRC-002093"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 09746032: situs 2300 Calle De Luna, Santa Clara; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Santa Clara Legistar matters on Tasman East: no new items on this site after the 2023 park agreement already on record; santaclaraca.gov not used.",
+      "src": [
+        "SRC-001712"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "data.ca.gov APR rows already on record; no CTCAC/CDLAC award (market-rate financing).",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Mercury News Feb. 2025 coverage hosted on related.com not opened; no other local news found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Oct. 2021 project highlight; Multifamily Dive May 2, 2025; CTBUH listing. ConnectCRE leasing story returned 403.",
+      "src": [
+        "SRC-002094",
+        "SRC-002093",
+        "SRC-002096"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Related press release Aug. 18, 2022: lenders and amounts.",
+      "src": [
+        "SRC-002095"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Steinberg Hart and Bohlin Cywinski Jackson named in SF YIMBY and CTBUH.",
+      "src": [
+        "SRC-002094",
+        "SRC-002096"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Otera Capital $360M, PNC Bank $130M, Welltower capital per Related release.",
+      "src": [
+        "SRC-002095"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web search.",
+      "src": []
+    }
+  }
 }

@@ -109,6 +109,20 @@
         "SRC-001106",
         "SRC-001102"
       ]
+    },
+    {
+      "text": "5211 Lafayette St, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-002123"
+      ]
+    },
+    {
+      "text": "2363 Calle Del Mundo, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-002123"
+      ]
     }
   ],
   "images": [],
@@ -160,11 +174,14 @@
         {
           "value": 347,
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-002123",
+            "SRC-002124"
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -182,6 +199,12 @@
           "value": "34 deed-restricted units reported to the state",
           "src": [
             "SRC-001102"
+          ]
+        },
+        {
+          "value": "34 affordable units (4 studios, 21 one-bedroom, 9 two-bedroom) at low, median and moderate income, averaging no more than 100% AMI; in-lieu fee of $16,150.15 for the fractional unit",
+          "src": [
+            "SRC-002123"
           ]
         }
       ]
@@ -211,6 +234,47 @@
             "SRC-001106"
           ],
           "note": "State report 2018, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 80
+            },
+            {
+              "count": 19,
+              "ami": 100
+            },
+            {
+              "count": 9,
+              "ami": 110
+            }
+          ],
+          "src": [
+            "SRC-002123"
+          ],
+          "note": "Affordable Housing Agreement, 2020"
+        }
+      ],
+      "best": 1
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-002123"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.06,
+          "src": [
+            "SRC-002123"
+          ]
         }
       ]
     }
@@ -228,6 +292,26 @@
       "src": [
         "SRC-001717"
       ]
+    },
+    {
+      "text": "City staff report (2020): SummerHill owns the 3.06-acre site at 2343 and 2363 Calle Del Mundo and 5211 Lafayette Street, then APNs 097-05-062, 097-05-063 and 097-05-064, within the Tasman East Specific Plan; architectural approval for 347 rental units including 34 affordable.",
+      "src": [
+        "SRC-002123"
+      ]
+    },
+    {
+      "text": "Project dedicates an 18,200 sq ft (0.4178-acre) public park adjacent to the site, built by the developer in two phases; Parks & Recreation Commission recommended the name Calle del Mundo Park on October 20, 2020.",
+      "src": [
+        "SRC-002124"
+      ]
+    },
+    {
+      "text": "State report rows give 694 units on entitlement and permit rows and 347 on the application row; city staff reports give 347.",
+      "src": [
+        "SRC-002123",
+        "SRC-001102",
+        "SRC-001106"
+      ]
     }
   ],
   "parties": [
@@ -238,6 +322,37 @@
       "linkedin": null,
       "src": [
         "SRC-001716"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "SummerHill Apartment Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002123"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SHAC Tasman CDM Apartments LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Affordable Housing Agreement party (SummerHill affiliate)",
+      "src": [
+        "SRC-002123"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Bozzuto",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://bozzuto.com/",
+      "website_basis": "opened",
+      "project_page": "https://bozzuto.com/apartments-for-rent/ca/santa-clara/the-lafayette",
+      "src": [
+        "SRC-002125"
       ]
     }
   ],
@@ -259,6 +374,25 @@
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2019-05-21",
+      "type": "Other",
+      "label": "Parks & Recreation Commission approved, with conditions, schematic design of the public park at 2343 Calle Del Mundo",
+      "src": [
+        "SRC-002126"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-05-12",
+      "type": "Other",
+      "label": "City Council approved Affordable Housing Agreement with SHAC Tasman CDM Apartments LLC",
+      "src": [
+        "SRC-002123",
+        "SRC-002127"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-07-01",
@@ -287,6 +421,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on The Lafayette, 2333/2343 Calle del Mundo, SummerHill. KTGY opening release and project page returned 403.",
+      "src": [
+        "SRC-002125"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 09705110: situs 2333 Calle Del Mundo. Owner not shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar: files 20-458 (AHA, approved 2020-05-12), 20-1082 (park naming), 19-383 (park schematic design), 25-289/25-565 already on record. santaclaraca.gov not used (blocked).",
+      "src": [
+        "SRC-002123",
+        "SRC-002124",
+        "SRC-002126"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of Santa Clara project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR rows already on record; no CTCAC/CDLAC application found.",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No local news coverage found beyond listings.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2022-08-18 article on SummerHill's stake sale returned 403; not used.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No SummerHill project page found; Bozzuto (manager) property page opened.",
+      "src": [
+        "SRC-002125"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "KTGY project page and opening release returned 403.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Equity stake and construction loan reported by The Real Deal (403); no other public source opened.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts surfaced.",
+      "src": []
+    }
+  }
 }

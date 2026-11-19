@@ -1,6 +1,6 @@
 {
   "id": "SCC-000016",
-  "name": "2101 Alum Rock Av",
+  "name": "Sunset Mixed Use Complex (2101 Alum Rock Av)",
   "parcels": [
     {
       "apn": "481-07-018",
@@ -152,6 +152,38 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 30000,
+          "src": [
+            "SRC-002109"
+          ],
+          "note": "Retail"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002109"
+          ],
+          "note": "Four five-story buildings"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 11.42,
+          "src": [
+            "SRC-002109"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -160,9 +192,44 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "CEQA NOP: demolish all buildings and build four five-story buildings with 796 units, 30,000 sq ft of retail and a 21,780 sq ft public park, on 11.42 acres on the north side of Alum Rock Ave between Castlecrest Dr and Jose Figueres Ave. APNs listed: 481-07-016, -018, -019, -020, -027, -028. Local actions: site plan, use permit, redevelopment.",
+      "src": [
+        "SRC-002109"
+      ]
+    },
+    {
+      "text": "County parcel data shows 481-07-019 at 2075 Alum Rock Ave, -020 at 2055 Alum Rock Ave, -027 at 70 Sunset and -028 at 61 Sunset; 481-07-016 returns no active parcel.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "Sunbelt Rentals lists its San Jose branch #353 at 2101 Alum Rock Ave.",
+      "src": [
+        "SRC-002110"
+      ]
+    },
+    {
+      "text": "CBRE lists 2075 Alum Rock Ave for lease as an industrial outside storage site of about 2.5 acres with 8,500 sq ft of improvements.",
+      "src": [
+        "SRC-002111"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Silicon Sage Builders",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002109"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -173,6 +240,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2020-07-23",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR filed with the State Clearinghouse (SCH 2020070436)",
+      "src": [
+        "SRC-002109"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -185,6 +261,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and CP20-001 led to the Sunset Mixed Use Complex; CEQAnet, Sunbelt and CBRE pages opened.",
+      "src": [
+        "SRC-002109",
+        "SRC-002110",
+        "SRC-002111"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API for the six CEQA APNs: situs addresses for -018, -019, -020, -027, -028; -016 not active. Owner not shown in the dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov EIR page blocks automated access. San Jose Legistar API: no matters for CP20-001 or Sunset Mixed Use.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2020070436 (NOP only, no later documents). APR Table A shows CP20-001 in 2020 only; no Table A2 rows.",
+      "src": [
+        "SRC-002109",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News via PressReader (Oct 2020 purchase story) and The Real Deal (Sept 2023 Sunbelt purchase of foreclosed land) returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal and Traded deal pages returned 403; LoopNet returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no Silicon Sage Builders project page.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "A Dahlin Group 'Alum Rock' project link redirected to the firm's portfolio index; no project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder named in opened sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts.",
+      "src": []
+    }
+  }
 }

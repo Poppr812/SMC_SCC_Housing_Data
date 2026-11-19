@@ -145,6 +145,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H20-037, ER20-242, H24-050, ER24-220",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit layer: H20-037 Site Development Permit and ER20-242 Supplemental EIR (2020); H24-050 Site Development Permit and ER24-220 Addendum (2024)."
         }
       ]
     },
@@ -156,6 +163,14 @@
             "SRC-001376"
           ],
           "note": "Two towers of 27 and 28 stories."
+        },
+        {
+          "value": 21,
+          "src": [
+            "SRC-002114",
+            "SRC-002115"
+          ],
+          "note": "2022 version under H20-037: one 21-story mixed residential and commercial building with 194 units and 368,093 sq ft of office."
         }
       ]
     },
@@ -172,6 +187,19 @@
           "src": [
             "SRC-001376"
           ]
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 104,
+            "2br": 74,
+            "3br": 16,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002114"
+          ],
+          "note": "2022 version under H20-037 (194 units), as stated in Planning Commission discussion."
         }
       ]
     },
@@ -192,6 +220,14 @@
           "src": [
             "SRC-001376"
           ]
+        },
+        {
+          "value": 30790,
+          "src": [
+            "SRC-002114",
+            "SRC-002115"
+          ],
+          "note": "2022 version under H20-037: commercial/retail on ground and second floors, plus 368,093 sq ft of office."
         }
       ]
     },
@@ -225,6 +261,25 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "2022 version (H20-037): 21-story mixed residential and commercial building, about 721,286 sq ft in total: 194 residential units, 368,093 sq ft of office, 30,790 sq ft of commercial/retail, three levels of below-grade parking, on about 1.25 gross acres. City Council approved it on December 13, 2022, with certification of a Supplemental EIR (SCH 2003042127).",
+      "src": [
+        "SRC-002114",
+        "SRC-002115"
+      ]
+    },
+    {
+      "text": "City permit H24-050 (filed 2024-08-26, status Approved, issue date 2025-12-17) allows either Option A, the 21-story building approved under H20-037, or Option B, two 27-28-story mixed residential and commercial buildings. Applicant: Project Fountain Alley LLC and Westbank Corp. The environmental folder for the 2020 permit is titled Westbank Energy Hub.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "Westbank lists The Energy Hub in San Jose as in development: 730,000 sq ft of retail, rental residential and workspace, designed by Bjarke Ingels Group.",
+      "src": [
+        "SRC-002116"
+      ]
     }
   ],
   "parties": [
@@ -254,6 +309,16 @@
       "src": [
         "SRC-001376"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Project Fountain Alley LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant entity",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
@@ -276,11 +341,48 @@
       ]
     },
     {
+      "date": "2022-11-16",
+      "type": "Other",
+      "label": "Planning Commission recommended approval of H20-037, 6-3-1 (21-story building, 194 units)",
+      "src": [
+        "SRC-002114"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-12-13",
+      "type": "Approved",
+      "label": "City Council approved Site Development Permit H20-037 (21-story mixed-use building, 194 units)",
+      "src": [
+        "SRC-002115",
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-26",
+      "type": "Application filed",
+      "label": "H24-050 filed: Option A, the H20-037 building, or Option B, two 27-28-story mixed-use buildings",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-12-17",
       "type": "Other",
       "label": "Revised plans before Planning Director Hearing; outcome not reported in source",
       "src": [
         "SRC-001376"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-17",
+      "type": "Approved",
+      "label": "Site Development Permit H24-050 approved (city permit layer issue date)",
+      "src": [
+        "SRC-001956"
       ],
       "estimated": false
     }
@@ -300,6 +402,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on Fountain Alley, 35 South Second Street, Westbank. Real Deal 2025-12-23 and verticalurbanism.org returned 403; briefly reposts returned 404.",
+      "src": [
+        "SRC-002116"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 46722121: situs 35 S 2nd St, San Jose. Owner not shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Legistar file 22-1874 (PC memo 2022-11-28, Council 2022-12-13); city permit GIS layer by APN (H20-037, ER20-242, H24-050, ER24-220). sanjoseca.gov not used (blocked).",
+      "src": [
+        "SRC-002114",
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2003042127: Draft SEIR received 2022-06-22, NOD received 2022-12-19 (approval 2022-12-13). No CTCAC/CDLAC application found.",
+      "src": [
+        "SRC-002115"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Searched local news; Mercury News not accessible to automated tools. thesanjoseblog fountain alley label has no posts on this project.",
+      "src": [
+        "SRC-001376"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2025-12-23 article on the 768-unit approval returned 403. SF YIMBY 2025-12-12 article already on record.",
+      "src": [
+        "SRC-001376"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Westbank site: The Energy Hub project page.",
+      "src": [
+        "SRC-002116"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Bjarke Ingels Group named in PC memo and Westbank page; no BIG project page for this site found by search.",
+      "src": [
+        "SRC-002114"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in searches or city records.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts surfaced for this project.",
+      "src": []
+    }
+  }
 }

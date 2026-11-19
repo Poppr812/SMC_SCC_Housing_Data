@@ -273,6 +273,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "100 Aspen Way, Mountain View, CA",
+      "role": "other",
+      "src": [
+        "SRC-002081"
+      ]
     }
   ],
   "images": [],
@@ -296,8 +303,17 @@
             "SRC-001110"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-002080",
+            "SRC-002081"
+          ],
+          "note": "Listing shows built 2022 and apartments offered for lease as Landsby; no stabilization date in sources"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -321,7 +337,8 @@
         {
           "value": 632,
           "src": [
-            "SRC-001690"
+            "SRC-001690",
+            "SRC-002080"
           ],
           "note": "Council report at the June 2018 hearing: 632 apartments and up to 20,000 sq ft commercial. No source opened explains the 925 state figure."
         }
@@ -378,6 +395,27 @@
           "note": "State report 2023, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2022,
+          "src": [
+            "SRC-002080"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 15859,
+          "src": [
+            "SRC-002080"
+          ],
+          "note": "Retail/restaurant space; listing also shows 4,827 sq ft of non-profit office space"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -385,6 +423,13 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "Marketed as Landsby, a mixed-use neighborhood of four buildings at 2580-2590 California St; Greystar lists the property at 100 Aspen Way with studio to two-bedroom plans.",
+      "src": [
+        "SRC-002080",
+        "SRC-002081"
       ]
     }
   ],
@@ -398,6 +443,18 @@
         "SRC-001690"
       ],
       "website": "https://www.greystar.com"
+    },
+    {
+      "role": "Property manager",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.greystar.com/",
+      "website_basis": "search",
+      "project_page": "https://www.greystar.com/properties/mountain-view-ca/landsby",
+      "src": [
+        "SRC-002081"
+      ]
     }
   ],
   "financing": [],
@@ -448,6 +505,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Greystar; property is marketed as Landsby",
+      "src": [
+        "SRC-002080"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 148-18-015 matches; no owner of record shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Legistar: Council 2023-12-05 public improvements item (report PDF encrypted, no recorded action); 2018 hearing already on record",
+      "src": [
+        "SRC-001690"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR data already on record; no CTCAC or CEQAnet entry found",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no local news on Landsby sale or completion",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no trade reports on Landsby; The Real Deal and CoStar results were for other properties",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Greystar Landsby page: 100 Aspen Way, studio to two-bedroom",
+      "src": [
+        "SRC-002081"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not identified in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no lender or sale reports",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

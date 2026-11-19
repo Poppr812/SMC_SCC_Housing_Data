@@ -350,6 +350,13 @@
             "SRC-000514"
           ],
           "note": "Project-wide, with shared parking and TDM strategy; 1,265 bicycle spaces"
+        },
+        {
+          "value": 805,
+          "src": [
+            "SRC-002084"
+          ],
+          "note": "Residential car spaces in June 2026 plans; 1,751 commercial car spaces and 1,259 bicycle spaces listed separately"
         }
       ]
     },
@@ -395,6 +402,55 @@
           "note": "General plan amendment, zoning map/ordinance amendment, conditional development permit, development agreement, EIR, vesting tentative subdivision map, BMR housing agreement"
         }
       ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 137000006,
+          "src": [
+            "SRC-002083"
+          ],
+          "note": "GSA auction high bid, April 15, 2025; buyer Presidio Bay Ventures. Daily Post reports $137 million at closing."
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 10,
+            "1br": 345,
+            "2br": 188,
+            "3br": 46
+          },
+          "src": [
+            "SRC-002084"
+          ],
+          "note": "June 2026 plans; plus 81 townhouse-style units with no bedroom count given (670 total)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002084"
+          ],
+          "note": "Three seven-story residential buildings; four office buildings of five or six floors"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 779050,
+          "src": [
+            "SRC-002084"
+          ],
+          "note": "Approximately"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -415,6 +471,18 @@
       "text": "City describes about 713,000 sq ft of office (300,000 net new), about 43,000 sq ft of retail and amenity space, and a childcare center of about 10,000 sq ft.",
       "src": [
         "SRC-000512"
+      ]
+    },
+    {
+      "text": "Daily Post, Aug. 11, 2025: Presidio Bay Ventures, headed by Cyrus Sanandaji, bid as USGS Menlo Park LLC; the federal government announced the sale closed that day.",
+      "src": [
+        "SRC-002085"
+      ]
+    },
+    {
+      "text": "SF YIMBY, June 19, 2026: updated plans list 118 deed-restricted BMR units, about 713,000 sq ft of office, 43,000 sq ft of amenity/retail, a 10,800 sq ft childcare center and about three acres of public open space including a 1.5-acre Redwood Meadow. Team: Gensler (architect), Gehl (masterplan), RG-Architecture (residential), Studio MLA (landscape).",
+      "src": [
+        "SRC-002084"
       ]
     }
   ],
@@ -487,11 +555,55 @@
         "SRC-000514"
       ],
       "other_role": "Design oversight"
+    },
+    {
+      "role": "Seller",
+      "company": "U.S. General Services Administration",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002083",
+        "SRC-002085"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "USGS Menlo Park LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002085"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Gensler",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002084"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-04-15",
+      "type": "Other",
+      "label": "GSA auction: Presidio Bay Ventures high bid of $137,000,006",
+      "src": [
+        "SRC-002083"
+      ]
+    },
+    {
+      "date": "2025-08-11",
+      "type": "Sale",
+      "label": "Federal sale to USGS Menlo Park LLC (Presidio Bay Ventures) closed, $137 million",
+      "src": [
+        "SRC-002085"
+      ]
+    },
     {
       "date": "2026-01-30",
       "type": "Application filed",
@@ -540,6 +652,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 345 Middlefield / USGS campus / Presidio Bay: Almanac auction story, Daily Post closing story, SF YIMBY June 2026 update.",
+      "src": [
+        "SRC-002083",
+        "SRC-002085"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer, APNs 062421070 and 062390700: owner USGS MENLO PARK LLC (attn K Cyrus Sanandaji), already on record.",
+      "src": [
+        "SRC-000516"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Menlo Park project page: latest entries July 10, 2026 incomplete letter and Aug. 24, 2026 PC study session, already on record; nothing listed after August.",
+      "src": [
+        "SRC-000512"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Tables A and A2: no Menlo Park row for 345 Middlefield. CEQAnet keyword search did not return filtered results.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Almanac Apr. 15, 2025 (auction, $137,000,006); Palo Alto Daily Post Aug. 11, 2025 (closing).",
+      "src": [
+        "SRC-002083",
+        "SRC-002085"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY June 19, 2026: unit mix, parking, residential area, team. The Real Deal June 2026 article returned 403.",
+      "src": [
+        "SRC-002084"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "presidiobay.com: no project page for 345 Middlefield; site lists only a 2026 CoStar Impact Award.",
+      "src": [
+        "SRC-002086"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Gensler and RG-Architecture named in SF YIMBY; no project pages opened on their sites.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web search.",
+      "src": []
+    }
+  }
 }

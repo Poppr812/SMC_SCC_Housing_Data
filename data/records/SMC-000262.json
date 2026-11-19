@@ -404,7 +404,9 @@
         {
           "value": 800,
           "src": [
-            "SRC-001344"
+            "SRC-001344",
+            "SRC-001113",
+            "SRC-002105"
           ],
           "note": "2019 narrative"
         }
@@ -428,6 +430,13 @@
             "SRC-001342"
           ],
           "note": "City: approximately 5.9 acres"
+        },
+        {
+          "value": 6.61,
+          "src": [
+            "SRC-002105"
+          ],
+          "note": "Resolution 176-2020: 6.61-acre former Redevelopment Agency property"
         }
       ]
     },
@@ -454,6 +463,33 @@
           "src": [
             "SRC-001344"
           ]
+        },
+        {
+          "value": "State report: 55 very low and 103 low income deed-restricted units (55 counted as extremely low income), under an Affordable Housing Agreement, LIHTC financing listed",
+          "src": [
+            "SRC-001113"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 642,
+          "src": [
+            "SRC-001113"
+          ],
+          "note": "Above moderate income units in the state report"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001113"
+          ]
         }
       ]
     }
@@ -469,6 +505,24 @@
       "text": "San Mateo County AHF predevelopment pipeline, September 2024: 1051 Mission (Bridge Housing): 156 total units, 21% at 15-30% AMI and 79% at 31-60% AMI. The affordable component of this site, recorded as a note.",
       "src": [
         "SRC-001649"
+      ]
+    },
+    {
+      "text": "Resolution 176-2020: L37/KASA partnered with Bridge Housing Corporation to build and operate the 158 below-market-rate units in a stand-alone affordable building at the northernmost part of the site. Bridge requested the $2 million loan as the City's matching contribution.",
+      "src": [
+        "SRC-002105"
+      ]
+    },
+    {
+      "text": "City funding page lists Bridge Housing's loan request for 1051 Mission Road at $17,555,194, with $2,000,000 awarded plus a to-be-determined amount from the Local Housing Trust Fund.",
+      "src": [
+        "SRC-002106"
+      ]
+    },
+    {
+      "text": "City financing plan FY2025-2027 allocates Local Housing Trust Fund money to 1051 Mission Road.",
+      "src": [
+        "SRC-002107"
       ]
     }
   ],
@@ -491,6 +545,15 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "SSF Housing Partners, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002105"
+      ]
     }
   ],
   "financing": [
@@ -503,16 +566,73 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "type": "Predevelopment loan",
+      "provider": "City of South San Francisco",
+      "program": "Commercial Linkage Fee Fund 823, Resolution 176-2020, to Bridge Housing for the 158-unit affordable building",
+      "amount": 2000000,
+      "date": "2020-12-01",
+      "src": [
+        "SRC-002105",
+        "SRC-002106"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Department of Housing and Community Development",
+      "program": "Infill Infrastructure Grant, awarded to the City, listed among 1051 Mission Road funding sources",
+      "amount": 28817500,
+      "date": null,
+      "src": [
+        "SRC-002107"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2019-06-13",
+      "type": "Application filed",
+      "label": "SSF Housing Partners, LLC (L37/KASA) filed the 800-unit mixed-use application",
+      "src": [
+        "SRC-002105"
+      ],
+      "estimated": false
+    },
     {
       "date": "2019-11",
       "type": "Approved",
       "label": "Entitled",
       "src": [
         "SRC-001342"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-11-13",
+      "type": "Other",
+      "label": "City Council Resolution 153-2019 approved the Purchase and Sale Agreement and Affordable Housing Agreement",
+      "src": [
+        "SRC-002105"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-12-01",
+      "type": "Other",
+      "label": "City Council Resolution 176-2020 approved a $2 million predevelopment loan to Bridge Housing",
+      "src": [
+        "SRC-002105"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-09",
+      "type": "Other",
+      "label": "City action plan update lists an AHSC Round 9 application for 1051 Mission",
+      "src": [
+        "SRC-002108"
       ],
       "estimated": false
     }
@@ -527,6 +647,100 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1051 Mission Road, PUC site, L37, Bridge; city resolution and funding pages opened.",
+      "src": [
+        "SRC-002105",
+        "SRC-002106"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Record APNs 093-312-080, -090, -100 already from county layer; state report lists older APNs 093-312-050 and -060.",
+      "src": [
+        "SRC-001103",
+        "SRC-001113"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SSF Resolution 176-2020, housing funding page, AHFP FY2025-27, July 2025 action plan update. SSF Legistar API not configured for this client.",
+      "src": [
+        "SRC-002105",
+        "SRC-002106",
+        "SRC-002107",
+        "SRC-002108"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "County AHF pipeline (September 2024) already on record.",
+      "src": [
+        "SRC-001649"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2019 and 2020: P18-0081 'L37 Kasa', 800 units entitled 2019-11-13 with income breakdown.",
+      "src": [
+        "SRC-001113"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (developer agreement changes; $28.8M grant) returned 403. City press release site failed SSL handshake.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "ConnectCRE and Housing Action Coalition already on record.",
+      "src": [
+        "SRC-001343",
+        "SRC-001344"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no L37, KASA or Bridge project page for 1051 Mission.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search result points to a BAR Architects master plan page for the PUC site; not opened, so no architect recorded.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City predevelopment loan ($2M) and HCD IIG ($28,817,500) from city documents.",
+      "src": [
+        "SRC-002105",
+        "SRC-002107"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts.",
+      "src": []
+    }
+  }
 }

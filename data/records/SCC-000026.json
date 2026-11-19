@@ -35,6 +35,44 @@
           37.3965605
         ]
       ]
+    },
+    {
+      "apn": "160-52-021",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.0558048,
+          37.3962182
+        ],
+        [
+          -122.0562032,
+          37.395185
+        ],
+        [
+          -122.0576675,
+          37.3955295
+        ],
+        [
+          -122.05727,
+          37.3965605
+        ],
+        [
+          -122.0571612,
+          37.3965348
+        ],
+        [
+          -122.0560155,
+          37.3962669
+        ],
+        [
+          -122.0558048,
+          37.3962182
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -103,8 +141,16 @@
             "SRC-001110"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Proposed",
+          "src": [
+            "SRC-002082"
+          ],
+          "note": "New Essex project following an SB 330 preliminary application; Notice of Exemption filed 2026-11-13; source does not state an approval"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -139,9 +185,16 @@
             "SRC-001691"
           ],
           "note": "36 town flats, 154 condominiums, 270 rental apartments, per the February 2020 endorsement"
+        },
+        {
+          "value": 576,
+          "src": [
+            "SRC-002082"
+          ],
+          "note": "Essex project per November 2026 Notice of Exemption: 460 apartments in a seven-story building and 116 below-market-rate apartments in a six-story building"
         }
       ],
-      "best": 1
+      "best": 3
     },
     "affordability_type": {
       "claims": [
@@ -159,6 +212,12 @@
           "value": "68 deed-restricted units reported to the state",
           "src": [
             "SRC-001110"
+          ]
+        },
+        {
+          "value": "116 below-market-rate units (20%) in a separate six-story building, per the 2026 Essex project description",
+          "src": [
+            "SRC-002082"
           ]
         }
       ]
@@ -194,6 +253,38 @@
           "note": "State report 2022, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 609,
+          "src": [
+            "SRC-002082"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002082"
+          ],
+          "note": "Taller of two buildings; the other is six stories"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 6.0,
+          "src": [
+            "SRC-002082"
+          ],
+          "note": "About"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -202,6 +293,12 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "The November 2026 Notice of Exemption lists Essex Property Trust as applicant for a Planned Community Permit, Development Review Permit, heritage tree removal (21 trees), Alternative Mitigation Proposal and lot line adjustment between APNs 160-52-013 and 160-52-021. It covers demolition of two vacant office/R&D buildings, studio through three-bedroom units, density of 96 units per acre, FAR about 3.182, and an exemption under Public Resources Code 21080.66 (AB 130).",
+      "src": [
+        "SRC-002082"
       ]
     }
   ],
@@ -226,6 +323,19 @@
         "SRC-001692"
       ],
       "website": "https://www.summerhillhomes.com/"
+    },
+    {
+      "role": "Developer",
+      "company": "Essex Property Trust",
+      "contact": "Lauren Krause, Vice President, Head of Development",
+      "linkedin": null,
+      "email": "lkrause@essex.com",
+      "phone": "(310) 508-0870",
+      "website": "https://www.essex.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-002082"
+      ]
     }
   ],
   "financing": [],
@@ -246,6 +356,15 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "type": "Other",
+      "label": "City of Mountain View filed Notice of Exemption (AB 130) for Essex's 576-unit project",
+      "src": [
+        "SRC-002082"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -268,6 +387,88 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, SummerHill and Essex; led to CEQAnet NOE",
+      "src": [
+        "SRC-002082"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel dataset: 160-52-013 (situs 355) and 160-52-021 (situs 401) E Middlefield; no owner of record shown",
+      "src": [
+        "SRC-001098",
+        "SRC-002082"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Legistar matter search found only 2018-2019 items already covered; mountainview.gov project documents refused access",
+      "src": [
+        "SRC-001692"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026110381: NOE received 2026-11-13",
+      "src": [
+        "SRC-002082"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of Mountain View Voice found no article on the Essex project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal articles on the 2024 Essex purchase and 2026 plans and Connect CRE refused access",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no Essex project page for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no lender or equity reports",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

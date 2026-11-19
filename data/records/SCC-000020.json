@@ -152,6 +152,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PDC20-020, PT20-036, AD26-228",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit layer: rezoning, vesting tentative map, and 2026 permit extension."
         }
       ]
     },
@@ -178,6 +185,85 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002122"
+          ],
+          "note": "Architect: Building A (market rate) 7 stories, Building B (affordable) 6 stories."
+        },
+        {
+          "value": 5,
+          "src": [
+            "SRC-001956",
+            "SRC-001773"
+          ],
+          "note": "City permit PD20-011 describes two five-story multifamily buildings."
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 314,
+          "src": [
+            "SRC-002122"
+          ],
+          "note": "Building A"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.4,
+          "src": [
+            "SRC-001773",
+            "SRC-001956"
+          ],
+          "note": "Gross acres, six parcels"
+        },
+        {
+          "value": 4.24,
+          "src": [
+            "SRC-002122"
+          ],
+          "note": "Architect's figure"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 4005,
+          "src": [
+            "SRC-001773"
+          ]
+        },
+        {
+          "value": 4000,
+          "src": [
+            "SRC-002122"
+          ],
+          "note": "Ground floor of market-rate building"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001773"
+          ],
+          "note": "State Density Bonus concession for a 38% parking reduction"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -202,6 +288,18 @@
     },
     {
       "text": "City of San Jose permit PD20-011 (Planned Development Permit/Amendment, folder year 2020), status Approved, issue date 2022-05-10: \"Planned Development Permit to allow the demolition of nine buildings totaling approximately 64,800 square feet, the removal of 56 trees (26 ordinance-size, 30 non-ordinance-size) for the construction of two five-story multifamily apartment buildings total\" (city text cut off at 255 characters)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "Architects Orange project page (Dupont Village): client Miramar Capital & TPC; 689 units on 4.24 acres; Building A 7 stories, 314 market-rate units; Building B 6 stories, 375 affordable units; 4,000 sq ft retail; modular manufacturer Autovol; MHN Excellence Award, unbuilt category.",
+      "src": [
+        "SRC-002122"
+      ]
+    },
+    {
+      "text": "City permit layer: AD26-228, a one-year extension of PD20-011, filed 2026-04-15 by Autumn LLC and approved 2026-04-16; described as the first of two eligible extensions. Earlier PD20-011, PDC20-020 and PT20-036 applicant: HMH, M & M Diridon LLC.",
       "src": [
         "SRC-001956"
       ]
@@ -249,11 +347,52 @@
       "src": [
         "SRC-001771"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architects Orange",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.aoarchitects.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.aoarchitects.com/?p=13540",
+      "src": [
+        "SRC-002122"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Autovol",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Modular manufacturer",
+      "src": [
+        "SRC-002122"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Autumn LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant for 2026 permit extension (AD26-228)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-10-22",
+      "type": "Other",
+      "label": "Enhanced preliminary review filed by M&M Diridon LLC for 762 units on six parcels",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-12-18",
       "type": "Application filed",
@@ -269,6 +408,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-04-16",
+      "type": "Other",
+      "label": "One-year extension of PD20-011 approved (AD26-228, first of two eligible extensions)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -296,6 +444,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on Dupont Station, 244 McEvoy, Dupont Village, Miramar Capital. Separate First Community Housing McEvoy/Dupont Apartments (365 units, 699 W San Carlos) is a different project.",
+      "src": [
+        "SRC-002122"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 26138037: situs 244 McEvoy St. Owner not shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City permit GIS layer by APN (AD26-228 extension 2026, 2019 preliminary review); Legistar file 22-662 memo already on record.",
+      "src": [
+        "SRC-001956",
+        "SRC-001772"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No CTCAC/CDLAC application found for this address; APR rows already on record.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No news after 2022 found in searches.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2022 article and SJ Build listing already on record.",
+      "src": [
+        "SRC-001771",
+        "SRC-001773"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Miramar Capital or Pacific Companies project page for this site found by search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Architects Orange project page, Dupont Village.",
+      "src": [
+        "SRC-002122"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts surfaced.",
+      "src": []
+    }
+  }
 }

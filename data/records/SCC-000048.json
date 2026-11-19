@@ -121,6 +121,40 @@
           37.3376943
         ]
       ]
+    },
+    {
+      "apn": "467-20-081",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8880534,
+          37.3382846
+        ],
+        [
+          -121.8885723,
+          37.3380372
+        ],
+        [
+          -121.8888839,
+          37.3384557
+        ],
+        [
+          -121.8887687,
+          37.3385107
+        ],
+        [
+          -121.888365,
+          37.3387031
+        ],
+        [
+          -121.8880534,
+          37.3382846
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -212,6 +246,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "49 N 4th St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -265,9 +306,16 @@
           "src": [
             "SRC-001383"
           ]
+        },
+        {
+          "value": 665,
+          "src": [
+            "SRC-002073"
+          ],
+          "note": "Up to 665 multifamily units in two eight-story buildings, per August 2026 Notice of Exemption"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -286,7 +334,9 @@
         {
           "value": 8,
           "src": [
-            "SRC-001383"
+            "SRC-001383",
+            "SRC-002073",
+            "SRC-002074"
           ]
         }
       ]
@@ -334,6 +384,13 @@
           "src": [
             "SRC-001383"
           ]
+        },
+        {
+          "value": 2.11,
+          "src": [
+            "SRC-002073"
+          ],
+          "note": "About 2.11 gross acres"
         }
       ]
     },
@@ -365,6 +422,30 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "The design approved in 2022 had two towers: Echo, 27 stories and 415 apartments, and Icon, 24 stories with about 525,000 sq ft of office and up to 8,500 sq ft of retail. San Jose Spotlight reported that design provided no on-site below-market-rate units, received an affordable housing fee waiver and 50% construction tax reduction under the downtown high-rise incentive program, and that the developer was investing $10 million in the Town Park Towers senior affordable complex.",
+      "src": [
+        "SRC-002076"
+      ]
+    },
+    {
+      "text": "REBusinessOnline (March 2024) described a 21-story office tower and 27-story residential tower on a shared four-story podium with 1,000 below-grade parking spaces.",
+      "src": [
+        "SRC-002075"
+      ]
+    },
+    {
+      "text": "The 2026 Notice of Exemption covers demolition of all existing buildings (about 22,527 sq ft), removal of 29 trees, about 1,320 sq ft of commercial space, and lists APNs 467-20-079, 467-20-081, 467-20-060 and 467-20-080.",
+      "src": [
+        "SRC-002073"
+      ]
+    },
+    {
+      "text": "Urban Catalyst's Echo page shows 315 homes in eight stories at 95 N. 4th Street as the northern portion of the Icon/Echo block, with status Planning Permit Approved.",
+      "src": [
+        "SRC-002074"
+      ]
     }
   ],
   "parties": [
@@ -387,9 +468,41 @@
       "src": [
         "SRC-001383"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Urban Catalyst",
+      "contact": "Matt Bernadis, Developer",
+      "linkedin": null,
+      "email": "mattbernardis@urbancatalyst.com",
+      "phone": "(916) 606-3225",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002073"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Gantry",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002075"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Bridge loan",
+      "provider": "Unnamed private real estate investment company",
+      "program": "Short-term, interest-only loan to recapitalize land and entitlement costs and fund pre-construction work; arranged by Gantry",
+      "amount": 10500000,
+      "date": "2024-03-28",
+      "src": [
+        "SRC-002075"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -417,11 +530,48 @@
       ]
     },
     {
+      "date": "2022-12-02",
+      "type": "Approved",
+      "label": "City Council unanimously approved the earlier two-tower Icon/Echo design (reported the week of this date)",
+      "src": [
+        "SRC-002076"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2023-10-01",
+      "type": "Other",
+      "label": "Land assembly completed with the final parcel acquired (developer page: October 2023)",
+      "src": [
+        "SRC-002074"
+      ],
+      "estimated": true
+    },
+    {
       "date": "2026-08-12",
       "type": "Other",
       "label": "Planning Director's Hearing on site development permit and vesting map; staff recommended approval, outcome not reported in source",
       "src": [
         "SRC-001383"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Approved",
+      "label": "Site development permit approved for the eight-story design (developer page: August 2026; Planning Director hearing held this date)",
+      "src": [
+        "SRC-002074",
+        "SRC-001383"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Other",
+      "label": "City of San Jose filed Notice of Exemption for two eight-story buildings, up to 665 units",
+      "src": [
+        "SRC-002073"
       ],
       "estimated": false
     }
@@ -446,6 +596,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Icon Echo, Urban Catalyst and addresses",
+      "src": [
+        "SRC-002073",
+        "SRC-002074"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel dataset: 467-20-081 (situs 49 N 4th St) added; 467-20-080 from CEQAnet not in dataset; no owner of record shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026080692: NOE received 2026-08-20",
+      "src": [
+        "SRC-002073"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2022-12-02 on Council approval; Mercury News 2023 item via PressReader not opened",
+      "src": [
+        "SRC-002076"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "REBusinessOnline 2024-03-28 financing; The Real Deal 2025-12 and 2026-07 and BusinessWire refused access",
+      "src": [
+        "SRC-002075",
+        "SRC-001383"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "urbancatalyst.com/echo: 315 homes, permit approved August 2026, timeline",
+      "src": [
+        "SRC-002074"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no BDE Architecture project page for Echo",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "REBusinessOnline: $10.5M bridge loan via Gantry",
+      "src": [
+        "SRC-002075"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

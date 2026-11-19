@@ -137,7 +137,8 @@
           "value": "Mixed product",
           "src": [
             "SRC-000103",
-            "SRC-000104"
+            "SRC-000104",
+            "SRC-001149"
           ],
           "note": "Reported as 665 \"apartments or condos\"; the tallest tower in the 2024 plan combines condominiums and a hotel. The rental/for-sale split is not stated in these sources."
         }
@@ -224,6 +225,12 @@
             "SRC-000104"
           ],
           "note": "May 2024 plan"
+        },
+        {
+          "value": "133 lower-income deed-restricted units and 532 above-moderate units reported to the state (2024 application)",
+          "src": [
+            "SRC-001149"
+          ]
         }
       ],
       "best": 0
@@ -265,6 +272,22 @@
           "note": "Buildings up to 39 stories or 458 feet tall"
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 133,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001149"
+          ],
+          "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -284,6 +307,18 @@
       "text": "Almanac, Nov. 3, 2026: Mayor Betsy Nash wrote to Attorney General Rob Bonta on Aug. 25, Oct. 16 and Oct. 29, 2026, inviting a site visit; no reply as of Nov. 2. The City filed a Public Records Act request with the DOJ on Sept. 24 covering 25 people and entities tied to the project. If N17 wins its lawsuit, the City could face penalties of more than $6.6 million under AB 712.",
       "src": [
         "SRC-001943"
+      ]
+    },
+    {
+      "text": "N17's project website lists 665 homes including 100 affordable, 324,000 sq ft of office, a 130-room hotel, four restaurants, a bakery, an ice cream shop, a Montessori school and a 4.9-acre ground-level park.",
+      "src": [
+        "SRC-002091"
+      ]
+    },
+    {
+      "text": "Redwood City Pulse, Dec. 17, 2025: YIMBY Law threatened to sue the City over its AB 2011 ineligibility finding and reported the City to HCD and the Attorney General.",
+      "src": [
+        "SRC-002092"
       ]
     }
   ],
@@ -369,6 +404,30 @@
       ]
     },
     {
+      "date": "2025-06-24",
+      "type": "Other",
+      "label": "Keeper of the National Register finds the property eligible for the National Register (also lists it on the California Register)",
+      "src": [
+        "SRC-000100"
+      ]
+    },
+    {
+      "date": "2025-11-07",
+      "type": "Other",
+      "label": "City finds application inconsistent with development standards and ineligible for AB 2011",
+      "src": [
+        "SRC-000100"
+      ]
+    },
+    {
+      "date": "2025-12-18",
+      "type": "Other",
+      "label": "City determines application remains ineligible for AB 2011",
+      "src": [
+        "SRC-000100"
+      ]
+    },
+    {
       "date": "2026-04-13",
       "type": "Other",
       "label": "Fifth consistency review: project inconsistent with multiple development standards",
@@ -391,6 +450,22 @@
       "src": [
         "SRC-000100",
         "SRC-000102"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "type": "Other",
+      "label": "Developer's attorney sends notice of intent to sue the City",
+      "src": [
+        "SRC-000100"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "type": "Other",
+      "label": "City responds to Attorney General's July 29 notice",
+      "src": [
+        "SRC-000100"
       ]
     },
     {
@@ -417,6 +492,15 @@
       "label": "City's written reply due in writ case (per mayor's Oct. 31 newsletter, subject to change)",
       "src": [
         "SRC-001943"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2026-12-08",
+      "type": "Other",
+      "label": "Petitioner's reply brief due in writ case (subject to change)",
+      "src": [
+        "SRC-000100"
       ],
       "estimated": true
     },
@@ -454,6 +538,93 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 80 Willow Road / N17 / lawsuit: RWC Pulse Dec. 2025, N17 project site.",
+      "src": [
+        "SRC-002092",
+        "SRC-002091"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer, APN 062423040: owner Willow Project LLC (attn Embarcadero Realty Services LP), already on record.",
+      "src": [
+        "SRC-000105"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Menlo Park project page timeline: 2025-2026 determinations, Aug. 3, 2026 notice of intent to sue, Oct. 1 response to AG, writ briefing schedule.",
+      "src": [
+        "SRC-000100"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "San Mateo County Superior Court docket not searched online; no county planning or funding role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A (Menlo Park 2024): PLN2023-00049, 665 units, 133 lower-income, 231 condos and 434 rentals.",
+      "src": [
+        "SRC-001149"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Redwood City Pulse Dec. 17, 2025; Almanac Nov. 3, 2026 already on record.",
+      "src": [
+        "SRC-002092",
+        "SRC-001943"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY N17 category and The Real Deal 2023 items describe facts already on record.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "willowpark.life (N17 Development): program details.",
+      "src": [
+        "SRC-002091"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Solomon Cordwell Buenz already on record; no SCB project page found in search.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web search.",
+      "src": []
+    }
+  }
 }
