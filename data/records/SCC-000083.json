@@ -71,6 +71,82 @@
           37.4225566
         ]
       ]
+    },
+    {
+      "apn": "127-37-004",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1033395,
+          37.4227575
+        ],
+        [
+          -122.1033691,
+          37.4225308
+        ],
+        [
+          -122.1035907,
+          37.4225442
+        ],
+        [
+          -122.1037967,
+          37.4225566
+        ],
+        [
+          -122.1040588,
+          37.4225724
+        ],
+        [
+          -122.1040517,
+          37.4226748
+        ],
+        [
+          -122.1040501,
+          37.4227775
+        ],
+        [
+          -122.1040503,
+          37.4228004
+        ],
+        [
+          -122.1033395,
+          37.4227575
+        ]
+      ]
+    },
+    {
+      "apn": "127-37-006",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1032802,
+          37.423211
+        ],
+        [
+          -122.1033098,
+          37.4229842
+        ],
+        [
+          -122.1040525,
+          37.423029
+        ],
+        [
+          -122.1040547,
+          37.4232577
+        ],
+        [
+          -122.1032802,
+          37.423211
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -249,6 +325,18 @@
             "SRC-001126"
           ],
           "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001282"
+          ],
+          "note": "City page for 24PLN-00280: 9% of units at very low income, 12 on site, remainder paid through impact fees"
         }
       ]
     }
@@ -264,6 +352,25 @@
       "text": "Related SB 330 filings cover 3997, 3977 and 3963 Fabian Way. County parcels for those addresses include 127-37-004 and 127-37-006; the record carries only 127-37-003.",
       "src": [
         "SRC-001282"
+      ]
+    },
+    {
+      "text": "Mountain View Voice (2026-08-26): seven stories, five of apartments over two of parking, 273 units with 12 (5%) very-low-income; six existing parcels would be consolidated into one; neighbors from the Oshman Family JCC and Moldaw Residences opposed at the 2026-08-20 ARB hearing; a separate builder's remedy application proposes 350 units at eight stories.",
+      "src": [
+        "SRC-002461"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2023-11-07): two SB 330 preliminary applications by Juno Realty Partners, designed by TCA Architects. 292-unit plan: 76 studios, 132 one-bedrooms, 84 two-bedrooms, 15 very-low-income units, 77 ft, 429,700 sq ft, 337 parking spaces. 350-unit builder's remedy plan: 92 studios, 156 one-bedrooms, 102 two-bedrooms, 70 low-income units, 88 ft, 489,130 sq ft, 394 parking spaces.",
+      "src": [
+        "SRC-002462"
+      ]
+    },
+    {
+      "text": "City page: SB 330 filings 24PLN-00111 (292 units) and 24PLN-00112 (350 units) cover 3997, 3977 and 3963 Fabian Way; County parcels 127-37-004 (3977 Fabian Way) and 127-37-006 (3963 Fabian Way).",
+      "src": [
+        "SRC-001282",
+        "SRC-001098"
       ]
     }
   ],
@@ -327,6 +434,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Juno Realty Partners; Mountain View Voice 2026-08-26 article",
+      "src": [
+        "SRC-002461"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel dataset: 12737004 situs 3977 Fabian Wy, 12737006 situs 3963 Fabian Wy; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Palo Alto project page for 24PLN-00280 (no hearing outcome or status listed)",
+      "src": [
+        "SRC-001282"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR data already on record",
+      "src": [
+        "SRC-001126"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice / Palo Alto Online 2026-08-26; Palo Alto Online 2023-05-11 page returned no content",
+      "src": [
+        "SRC-002461"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-11-07 competing plans article; The Real Deal blocked (403)",
+      "src": [
+        "SRC-002462"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Juno Realty Partners website or project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "TCA Architects: no project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found in search",
+      "src": []
+    }
+  }
 }

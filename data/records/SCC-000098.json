@@ -218,6 +218,16 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.2,
+          "src": [
+            "SRC-001392"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -237,6 +247,18 @@
       "text": "City of San Jose permit H25-045 (Site Development Permit/Amendment, folder year 2025), status Approved, issue date 2026-05-20: \"Site Development Permit to allow the construction of a seven-story multifamily building with 272 dwelling units (100% affordable; with 55 units reserved for very-low-income households earning up to 50% of Area Median Income and 217 units reserved for low-\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2026-03-02): 79 ft, seven stories (five wood floors over a two-story concrete podium), about 425,700 sq ft, 242-car garage, 76 bicycle spaces; Swenson is developer and design architect, Republic Urban Properties joint venture partner, HMH civil engineering and landscape architecture. Prior 2022 design by Steinberg Hart was a 12-story, 263-unit complex. Third and final phase after Silver at Ohlone (268 units) and Patina@Midtown (269 units).",
+      "src": [
+        "SRC-001392"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2024-09-06): plans shifted from mostly market-rate to fully affordable, 272 units, up from a prior 12-story application for 251 or 263 apartments with ground-floor retail that the city approved in 2021; article cites an estimated $400 million for the overall three-phase development.",
+      "src": [
+        "SRC-002463"
       ]
     }
   ],
@@ -279,6 +301,24 @@
         "SRC-001670"
       ],
       "website": "https://www.swenson.com/"
+    },
+    {
+      "role": "Civil engineer",
+      "company": "HMH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001392"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "HMH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001392"
+      ]
     }
   ],
   "financing": [
@@ -450,6 +490,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Block A Family Apartments and Swenson",
+      "src": [
+        "SRC-002463"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 26414132: situs 860 W San Carlos St, matches record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Legistar search for 860 West San Carlos returned no matters; sanjoseca.gov documents refuse automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CTCAC CA-25-715 already on record; no later CTCAC or CDLAC item found",
+      "src": [
+        "SRC-001670"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2026-05-20 and 2026-05-06 articles returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-09-06 and 2026-03-02",
+      "src": [
+        "SRC-002463",
+        "SRC-001392"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "swenson.com home page has no project page for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect is Swenson; no project page on swenson.com",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Financing from CTCAC staff report already on record",
+      "src": [
+        "SRC-001670"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found in search",
+      "src": []
+    }
+  }
 }

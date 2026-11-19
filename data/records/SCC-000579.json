@@ -52,6 +52,15 @@
       "src": [
         "SRC-001607"
       ]
+    },
+    {
+      "text": "1001 Blossom Hill Rd, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098",
+        "SRC-002470",
+        "SRC-002474"
+      ]
     }
   ],
   "images": [],
@@ -91,9 +100,16 @@
             "SRC-001956"
           ],
           "note": "City permit H21-020 (Site Development Permit/Amendment) shows status Approved"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-002470"
+          ],
+          "note": "Listing shows building constructed in 2026 and income-restricted units available to lease"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "total_units": {
       "claims": [
@@ -102,6 +118,14 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": 269,
+          "src": [
+            "SRC-002472",
+            "SRC-002471"
+          ],
+          "note": "2021 preliminary plans"
         }
       ]
     },
@@ -188,6 +212,37 @@
           "note": "City folder 029749, Site Development Permit/Amendment (permit type: Development Permit); city permit status: Approved. Matched by APN."
         }
       ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2026,
+          "src": [
+            "SRC-002470"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002470",
+            "SRC-002471"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.9,
+          "src": [
+            "SRC-002471"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -201,6 +256,25 @@
       "text": "City of San Jose permit H21-020 (Site Development Permit/Amendment, folder year 2021), status Approved, issue date 2022-08-03: \"Site Development Permit to allow the demolition (approx. 11,275 square feet) of an existing commercial building (Fish Market) and the construction of a seven-story building, with five-stories of multi-family 100% affordable residential housing units (271\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Council memo (2022-10-17): TEFRA approval for up to $95,000,000 of tax-exempt bonds issued by the California Municipal Finance Authority to View at Blossom Hill, LP (JEMCOR Development Partners, LLC or an affiliate as general partner) for a 271-unit project at 1007 Blossom Hill Road; 267 units at 30-70% AMI plus four unrestricted manager units; no City loan; CMFA recycled bonds as an additional construction source.",
+      "src": [
+        "SRC-002473"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2021): Jemcor Development Partners LLC sponsor, Water Dragon 289 LLC property owner; 269 deed-restricted affordable units, seven stories, average unit 767 sq ft (586 to 1,200 sq ft) on a 1.9-acre parcel replacing an 11,900 sq ft restaurant; start mid-2022, completion anticipated 2024.",
+      "src": [
+        "SRC-002472",
+        "SRC-002471"
+      ]
+    },
+    {
+      "text": "Listing (RentCafe): 1001 Blossom Hill Road, 271 units, seven stories, built 2026, managed by Avenue5 Residential, LLC; one-bedroom 600-659 sq ft, two-bedroom 715-844 sq ft, three-bedroom 1,078-1,089 sq ft. The CTCAC CA-22-589 staff report names FPI Management as property manager.",
+      "src": [
+        "SRC-002470"
       ]
     }
   ],
@@ -232,6 +306,46 @@
       "linkedin": null,
       "src": [
         "SRC-001607"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Avenue5 Residential, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002470"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Water Dragon 289 LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner as reported in 2021",
+      "src": [
+        "SRC-002472",
+        "SRC-002471"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "View at Blossom Hill, LP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Borrower",
+      "src": [
+        "SRC-002473"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-002473"
       ]
     }
   ],
@@ -310,6 +424,15 @@
   "groups": {},
   "events": [
     {
+      "date": "2021-02",
+      "type": "Other",
+      "label": "Enhanced preliminary review application filed for 269 affordable units",
+      "src": [
+        "SRC-002472"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-08-03",
       "type": "Approved",
       "label": "City issues Site Development Permit/Amendment H21-020",
@@ -319,11 +442,47 @@
       "estimated": false
     },
     {
+      "date": "2022-08-09",
+      "type": "Other",
+      "label": "CDLAC application for $75,000,000 bond allocation",
+      "src": [
+        "SRC-002473"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-10-18",
+      "type": "Other",
+      "label": "City Council authorizes CMFA as alternate bond issuer",
+      "src": [
+        "SRC-002473"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-11-08",
+      "type": "Other",
+      "label": "TEFRA hearing scheduled at City Council for up to $95,000,000 in CMFA tax-exempt bonds",
+      "src": [
+        "SRC-002473"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-11-30",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-22-589)",
       "src": [
         "SRC-001607"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026",
+      "type": "Lease-up start",
+      "label": "Listing shows building constructed in 2026, income-restricted units leasing",
+      "src": [
+        "SRC-002470"
       ],
       "estimated": false
     }
@@ -353,6 +512,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project name, address and JEMCOR; rental listings and leasing site",
+      "src": [
+        "SRC-002470",
+        "SRC-002474"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel dataset APN 45814022: situs 1001 Blossom Hill Rd; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Legistar: files 22-1622 (TEFRA, memo) and 22-1523 (bond policy exception)",
+      "src": [
+        "SRC-002473"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CTCAC CA-22-589 already on record; CA-23-545 link returned 404",
+      "src": [
+        "SRC-001607"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2023 and 2024 financing articles and GlobeSt 2024 returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021-02-18 and 2021-05-24",
+      "src": [
+        "SRC-002472",
+        "SRC-002471"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "viewatblossomhill.com leasing site (address); no JEMCOR project page found",
+      "src": [
+        "SRC-002474"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Council memo names CMFA as issuer and View at Blossom Hill, LP as borrower",
+      "src": [
+        "SRC-002473"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found in search",
+      "src": []
+    }
+  }
 }
