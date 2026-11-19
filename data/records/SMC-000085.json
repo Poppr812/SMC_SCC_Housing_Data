@@ -51,6 +51,44 @@
           37.5628322
         ]
       ]
+    },
+    {
+      "apn": "034-194-040",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001052"
+      ],
+      "outline": [
+        [
+          -122.3201611,
+          37.562845
+        ],
+        [
+          -122.3200479,
+          37.5627414
+        ],
+        [
+          -122.3199305,
+          37.562634
+        ],
+        [
+          -122.3200607,
+          37.5625438
+        ],
+        [
+          -122.3203478,
+          37.5628067
+        ],
+        [
+          -122.3202177,
+          37.5628968
+        ],
+        [
+          -122.3201611,
+          37.562845
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -133,8 +171,15 @@
             "SRC-001051"
           ],
           "note": "Approximate"
+        },
+        {
+          "value": 7286,
+          "src": [
+            "SRC-003064"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "stories": {
       "claims": [
@@ -153,6 +198,13 @@
           "src": [
             "SRC-001051"
           ]
+        },
+        {
+          "value": 117,
+          "src": [
+            "SRC-003063"
+          ],
+          "note": "Plus 33 bicycle spaces; May 2025 plans"
         }
       ]
     },
@@ -197,12 +249,56 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 42,
+            "1br": 41,
+            "2br": 11
+          },
+          "src": [
+            "SRC-003063"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 139560,
+          "src": [
+            "SRC-003063"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "Demolishes one-story commercial buildings",
       "src": [
+        "SRC-001051"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption lists APNs 034-194-030 and 034-194-040, 0.64 acres; demolition of two commercial buildings of about 11,300 square feet; an eight-story building with 94 units including 10 very low income units, 7,286 square feet of ground-floor commercial, 114 parking spaces on levels 1-3; and a tentative parcel map merging five parcels. It names Mounir Kardosh, President, Nazareth Enterprises, as property owner.",
+      "src": [
+        "SRC-003064"
+      ]
+    },
+    {
+      "text": "County parcel layer shows 034-194-040 (245 7th Ave) owned by Moore Richard A & Ann M Trs; 034-194-030 is owned by Nazareth Vista LLC.",
+      "src": [
+        "SRC-003065",
+        "SRC-001052"
+      ]
+    },
+    {
+      "text": "SF YIMBY (May 2025) reports 84 feet, nearly 160,000 square feet total, 117 car and 33 bicycle spaces, and demolition of the former Kelly-Moore Paints store. City page lists the units as for-rent.",
+      "src": [
+        "SRC-003063",
         "SRC-001051"
       ]
     }
@@ -227,6 +323,40 @@
       "src": [
         "SRC-001052"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Nazareth Enterprises",
+      "contact": "Mounir Kardosh",
+      "linkedin": null,
+      "email": "mounir@nazarethenterprises.com",
+      "phone": "650-375-9500",
+      "src": [
+        "SRC-003064",
+        "SRC-003063"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Arc Tec, Inc.",
+      "contact": "Evan Sockalosky",
+      "linkedin": null,
+      "email": "evans@arctecinc.com",
+      "phone": "408-496-0676",
+      "website": "https://arctecinc.com",
+      "src": [
+        "SRC-003064",
+        "SRC-003063"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "MOORE RICHARD A & ANN M TRS",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003065"
+      ]
     }
   ],
   "financing": [],
@@ -249,12 +379,30 @@
       ]
     },
     {
+      "date": "2025-04-23",
+      "type": "Other",
+      "label": "Applicant neighborhood meeting",
+      "src": [
+        "SRC-001051"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-06-20",
       "type": "Application filed",
       "label": "Initial formal submittal",
       "src": [
         "SRC-001051"
       ]
+    },
+    {
+      "date": "2026-04-22",
+      "type": "Other",
+      "label": "Third resubmittal deemed complete",
+      "src": [
+        "SRC-001051"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-06-09",
@@ -271,6 +419,15 @@
       "src": [
         "SRC-001051"
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003064"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -283,6 +440,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Nazareth Vista and Nazareth Enterprises: CEQAnet NOE, SF YIMBY",
+      "src": [
+        "SRC-003064",
+        "SRC-003063"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC Active Parcels: 034-194-030 Nazareth Vista LLC; 034-194-040 Moore Richard A & Ann M Trs",
+      "src": [
+        "SRC-003065",
+        "SRC-001052"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City project page re-read: neighborhood meeting, resubmittal dates, PC 2026-06-09, CC 2026-08-17; San Mateo is not a Legistar API client",
+      "src": [
+        "SRC-001051"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2026080771 NOE (2026-08-21)",
+      "src": [
+        "SRC-003064"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "SM Daily Journal articles on the project return 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY May 29, 2025 (unit mix, areas, parking)",
+      "src": [
+        "SRC-003063"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Nazareth Enterprises project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "arctecinc.com home page portfolio does not show this project",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search returned no LinkedIn posts",
+      "src": []
+    }
+  }
 }

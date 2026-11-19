@@ -43,6 +43,64 @@
           37.4925321
         ]
       ]
+    },
+    {
+      "apn": "052-261-690",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.2336827,
+          37.4921932
+        ],
+        [
+          -122.2337084,
+          37.4921744
+        ],
+        [
+          -122.2338692,
+          37.4923158
+        ],
+        [
+          -122.233954,
+          37.4923904
+        ],
+        [
+          -122.2340328,
+          37.4924596
+        ],
+        [
+          -122.2337199,
+          37.4926887
+        ],
+        [
+          -122.2336444,
+          37.4927439
+        ],
+        [
+          -122.2333204,
+          37.492459
+        ],
+        [
+          -122.2333239,
+          37.4924564
+        ],
+        [
+          -122.2336322,
+          37.4922303
+        ],
+        [
+          -122.2336585,
+          37.492211
+        ],
+        [
+          -122.2336827,
+          37.4921932
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -181,6 +239,52 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.2,
+          "src": [
+            "SRC-003055"
+          ],
+          "note": "Total acres on the CEQA Notice of Exemption"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 85,
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "Above-moderate units in the 2024 entitlement row"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report term for owner tenure; its notes say 55 years if built as rental"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report: density bonus and inclusionary project, 50% density bonus, 2 incentives"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -188,6 +292,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "City Notice of Exemption (SCH 2024111043) describes a 6-story, 95-unit multi-family development on APNs 052-261-680 and 052-261-690, 1.2 acres, exempt under CEQA Class 32 (infill).",
+      "src": [
+        "SRC-003055"
+      ]
+    },
+    {
+      "text": "State report 2024 row lists tenure as owner; its notes say the entitlement allows rental, with a 55-year affordability term if rental, and that no public subsidy is expected. The city project page describes a 6-story, 95-unit multi-family development with 10 very low income units, 150 parking spaces on levels 1 and 2, and 32 bicycle spaces.",
+      "src": [
+        "SRC-001116",
+        "SRC-001247"
+      ]
+    },
+    {
+      "text": "County parcel layer shows both 590 Veterans Blvd (052-261-680) and 91 Winslow St (052-261-690) owned by Veterans Winslow LLC.",
+      "src": [
+        "SRC-001103"
       ]
     }
   ],
@@ -212,6 +335,15 @@
       "src": [
         "SRC-001116"
       ]
+    },
+    {
+      "date": "2024-11-27",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003055"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -224,6 +356,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and project name: CEQAnet NOE, Walking Redwood City Jan 2022 post (no new facts), SM Daily Journal column (403)",
+      "src": [
+        "SRC-003055",
+        "SRC-003056"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC Active Parcels: 052-261-680 (590 Veterans) and 052-261-690 (91 Winslow), both Veterans Winslow LLC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Redwood City planning projects API record 124; Redwood City is not a Legistar API client",
+      "src": [
+        "SRC-001247"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2024111043 NOE; data.ca.gov APR Table A2 2024 row (tenure, density bonus, term)",
+      "src": [
+        "SRC-003055",
+        "SRC-001116"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "SM Daily Journal column on 590 Veterans returned 403; Walking Redwood City Jan 2022 post mentions preliminary plans only",
+      "src": [
+        "SRC-003056"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY, Bisnow, The Real Deal for 590 Veterans; Bisnow hit was a different site (603 Jefferson)",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No developer named in an opened public source; owner of record is Veterans Winslow LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city, state or news sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "State report notes no public subsidy expected; no lender found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for project and owner entity returned no LinkedIn posts",
+      "src": []
+    }
+  }
 }
