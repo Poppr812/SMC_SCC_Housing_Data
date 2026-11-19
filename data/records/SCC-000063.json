@@ -105,7 +105,8 @@
         {
           "value": 372,
           "src": [
-            "SRC-001128"
+            "SRC-001128",
+            "SRC-002297"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -169,6 +170,18 @@
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.0,
+          "src": [
+            "SRC-002298",
+            "SRC-002297"
+          ],
+          "note": "Described as a three-acre site"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -177,6 +190,24 @@
       "src": [
         "SRC-001124",
         "SRC-001128"
+      ]
+    },
+    {
+      "text": "The 2007 Notice of Preparation described an 18-story mixed-use building on a former car dealership site with up to 375 condominiums, about 148,805 sq ft of retail and about 48,960 sq ft of office. Lead agency: City of Milpitas.",
+      "src": [
+        "SRC-002298"
+      ]
+    },
+    {
+      "text": "The 2020 Notice of Determination (applicant BDK Capital, LLC) says the city certified an addendum on August 12, 2020 for the 600 Barber Lane Mixed Use Development, which reduced the 2008 EIR project by 3 residential units, 143,305 sq ft of commercial/retail, 36,160 sq ft of office, 859 parking spaces and 142 feet of maximum height.",
+      "src": [
+        "SRC-001751"
+      ]
+    },
+    {
+      "text": "The Adept Urban page describes 600 Barber as 372 units in four buildings with 5,500 sq ft of retail and 12,800 sq ft of office over a shared podium and garage, between Barber Lane and I-880.",
+      "src": [
+        "SRC-002297"
       ]
     }
   ],
@@ -190,11 +221,33 @@
       "src": [
         "SRC-001751"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Adept Urban",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://adepturban.com",
+      "website_basis": "opened",
+      "project_page": "https://adepturban.com/milpitas-info",
+      "other_role": "Development and architecture (per company page)",
+      "src": [
+        "SRC-002297"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2007-06-15",
+      "type": "Other",
+      "label": "Notice of Preparation of Landmark Tower EIR received by the State Clearinghouse",
+      "src": [
+        "SRC-002298"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-08-12",
       "type": "Approved",
@@ -202,6 +255,15 @@
       "src": [
         "SRC-001128"
       ]
+    },
+    {
+      "date": "2020-08-18",
+      "type": "Other",
+      "label": "Notice of Determination filed for addendum to the 2008 Landmark Towers EIR",
+      "src": [
+        "SRC-001751"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-11-26",
@@ -222,6 +284,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 600 Barber Lane and Landmark Tower; Adept Urban project page",
+      "src": [
+        "SRC-002297"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 083-03-013: situs 600 Barber Ln, Milpitas; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of milpitas.gov for 600 Barber, P-SD19-0006 and P-PP24-0005 found no project page or staff report; Milpitas is not on Legistar web API",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2007062074: 2007 NOP and 2020 NOD",
+      "src": [
+        "SRC-002298",
+        "SRC-001751"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News 2020-08-26 article via PressReader returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of SF YIMBY and trade press for 600 Barber Lane returned nothing",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No BDK Capital site or project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Adept Urban page lists development and architecture scope; MVE Architects Landmark Tower page returned 404",
+      "src": [
+        "SRC-002297"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned nothing",
+      "src": []
+    }
+  }
 }

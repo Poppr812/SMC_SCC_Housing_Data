@@ -1,6 +1,6 @@
 {
   "id": "SCC-000065",
-  "name": "2225 Calle De Luna",
+  "name": "Passero (2225 Calle De Luna)",
   "parcels": [
     {
       "apn": "097-46-020",
@@ -196,8 +196,17 @@
             "SRC-001102"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-002300",
+            "SRC-002301"
+          ],
+          "note": "Greystar announced pre-leasing on 2025-02-18; city BMR lottery held June 2025"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -247,6 +256,18 @@
           "src": [
             "SRC-001102"
           ]
+        },
+        {
+          "value": "48 moderate-income units under an affordable housing agreement (2020 staff report)",
+          "src": [
+            "SRC-002302"
+          ]
+        },
+        {
+          "value": "48 BMR units (36 one-bedroom, 12 two-bedroom) at 30%, 50%, 80%, 100% and 110% AMI levels",
+          "src": [
+            "SRC-002301"
+          ]
         }
       ]
     },
@@ -288,6 +309,54 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.024,
+          "src": [
+            "SRC-002302"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 306,
+          "src": [
+            "SRC-002302",
+            "SRC-002303"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 56,
+            "1br": 249,
+            "2br": 66,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002303"
+          ],
+          "note": "Source lists 56 micro-units, 66 junior one-bedrooms, 183 one-bedrooms and 66 two-bedrooms; micro-units shown as studios and junior one-bedrooms as 1br"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 338800,
+          "src": [
+            "SRC-002303"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -295,6 +364,26 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    {
+      "text": "December 2020 Development Review report (PLN2020-14513): applicant Greystar GP II, LLC; owners listed as Laison, LLC and 2232 Calle Del Mundo, LLC; two eight-story buildings on parcels 20 (185 units) and 27 (186 units), 471,416 sq ft total, three levels of above-ground parking, about 85 feet tall (90 feet to parapet), with minor modifications reducing parking from 331 to 306 spaces.",
+      "src": [
+        "SRC-002302"
+      ]
+    },
+    {
+      "text": "Greystar markets the project as Passero, two eight-story buildings with 371 residences at 2230 Calle Del Mundo.",
+      "src": [
+        "SRC-002300",
+        "SRC-002304"
+      ]
+    },
+    {
+      "text": "The 2020 staff report lists 48 moderate-income units; the state report lists 49 deed-restricted units.",
+      "src": [
+        "SRC-002302",
         "SRC-001102"
       ]
     }
@@ -317,6 +406,67 @@
       "linkedin": null,
       "src": [
         "SRC-001727"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.greystar.com",
+      "website_basis": "opened",
+      "project_page": "https://www.livepassero.com/",
+      "src": [
+        "SRC-002300",
+        "SRC-002304"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Greystar California, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002304",
+        "SRC-002301"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Heller Manus Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002303"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002303"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Laison, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner listed in 2020 staff report",
+      "src": [
+        "SRC-002302"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "2232 Calle Del Mundo, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner listed in 2020 staff report",
+      "src": [
+        "SRC-002302"
       ]
     }
   ],
@@ -348,6 +498,24 @@
       ]
     },
     {
+      "date": "2025-02-18",
+      "type": "Lease-up start",
+      "label": "Greystar announces Passero pre-leasing",
+      "src": [
+        "SRC-002300"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-19",
+      "type": "Other",
+      "label": "City BMR rental lottery for 48 units",
+      "src": [
+        "SRC-002301"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-11-17",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
@@ -366,6 +534,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 2225 Calle De Luna, Greystar and Passero",
+      "src": [
+        "SRC-002300"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 097-46-020 and 097-46-027: situs on Calle De Luna and 2230 Calle Del Mundo; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar matter 17302 (Development Review, PLN2020-14513) and matter 21540 extension; city BMR bulletin",
+      "src": [
+        "SRC-002302",
+        "SRC-001727",
+        "SRC-002301"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR rows already on record; no CTCAC or HCD award",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of local news found no article beyond trade and city items",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-01-11: architects, unit mix, residential sq ft",
+      "src": [
+        "SRC-002303"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Greystar press release 2025-02-18 and livepassero.com",
+      "src": [
+        "SRC-002300",
+        "SRC-002304"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for Heller Manus project page returned nothing",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned nothing",
+      "src": []
+    }
+  }
 }

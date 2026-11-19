@@ -77,11 +77,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001610"
+            "SRC-001610",
+            "SRC-001956"
           ],
           "note": "CTCAC documents do not state entitlement or construction status. Proposed is a working label until checked against the city's list."
         }
-      ]
+      ],
+      "best": 0
     },
     "total_units": {
       "claims": [
@@ -165,6 +167,56 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 15,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H26-037 description: 100% affordable, 15-story, 372-unit building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.52,
+          "src": [
+            "SRC-001610",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001610"
+          ]
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "H26-037",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Site Development Permit, status New, folder on APN 467-47-096"
+        },
+        {
+          "value": "AD26-730",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Planning consultation opened 2026-10-21"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -179,6 +231,25 @@
       "src": [
         "SRC-001610"
       ]
+    },
+    {
+      "text": "City permit layer folder H26-037 describes a Site Development Permit for a 100% affordable, 15-story, 372-unit multifamily building with demolition of a single-family residence and a 31-unit multifamily building on about 0.52 gross acres; applicant American Housing Company 1 LLC.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "The site spans APNs 467-47-058 (451 S 4th St) and 467-47-096 (439 S 4th St). The earlier South Fourth Street Project (H17-004) proposed a 25-story, 274-foot building with up to 210 units on the same two parcels.",
+      "src": [
+        "SRC-002299",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "CTCAC staff report: census tract 5009.01, average targeted affordability 59.95% AMI, 40%/60% average income set-aside, project analyst listed, general partners American Housing Company 1 and Central Valley Coalition for Affordable Housing.",
+      "src": [
+        "SRC-001610"
+      ]
     }
   ],
   "parties": [
@@ -187,6 +258,62 @@
       "company": "American Housing Company 1",
       "contact": null,
       "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Central Valley Coalition for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Hudson Housing Capital LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Aperto Property Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "JLL Real Estate Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jones Hall, A Professional Law Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond counsel",
       "src": [
         "SRC-001610"
       ]
@@ -252,6 +379,16 @@
       "src": [
         "SRC-001610"
       ]
+    },
+    {
+      "type": "Other",
+      "provider": "Deferred costs",
+      "program": "Construction-period source per CTCAC staff report",
+      "amount": 7518166,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
     }
   ],
   "groups": {},
@@ -262,6 +399,24 @@
       "label": "CTCAC staff report recommends tax credit reservation (CA-26-655)",
       "src": [
         "SRC-001610"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-21",
+      "type": "Other",
+      "label": "Planning consultation AD26-730 opened with the City of San Jose",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Other",
+      "label": "Environmental scope review opened for the revised 451 S 4th Street proposal",
+      "src": [
+        "SRC-001956"
       ],
       "estimated": false
     },
@@ -289,6 +444,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 451 and 439-451 South 4th Street, oWow and American Housing Company",
+      "src": [
+        "SRC-002299"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 467-47-058 situs 451 S 4th St; 467-47-096 situs 439 S 4th St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of San Jose planning permit GIS layer by APN: H26-037, AD26-730, environmental scope review, H17-004; sanjoseca.gov pages not used",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report CA-26-655 reopened for parties and terms; CEQAnet SCH 2022020588 for prior plan",
+      "src": [
+        "SRC-001610",
+        "SRC-002299"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Traded.co October 2026 oWow article returned 403; no other local news found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY 2024 article covers the earlier 210-unit student-housing plan only",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "owow.com home page opened; no San Jose or 4th Street project shown",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named for the 372-unit plan in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report: JLL Real Estate Capital loans, Hudson Housing Capital investor, CMFA bond issuer",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned nothing",
+      "src": []
+    }
+  }
 }
