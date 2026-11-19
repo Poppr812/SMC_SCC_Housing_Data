@@ -145,6 +145,13 @@
           "src": [
             "SRC-001110"
           ]
+        },
+        {
+          "value": "141 affordable units at 30%-60% AMI plus 2 manager units; weighted average 42% AMI; 36 units (25%) set aside for Rapid Rehousing at 30% AMI contingent on county funding",
+          "src": [
+            "SRC-002812"
+          ],
+          "note": ""
         }
       ]
     },
@@ -177,6 +184,129 @@
             "SRC-001110"
           ],
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 46,
+              "ami": 30
+            },
+            {
+              "count": 95,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-002812"
+          ],
+          "note": "NOFA memo: 36 Rapid Rehousing units and 10 other units at 30% AMI, 95 units at 40-60% AMI, 2 manager units"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-002811"
+          ],
+          "note": "Affordable family housing"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.2,
+          "src": [
+            "SRC-002812"
+          ],
+          "note": ""
+        },
+        {
+          "value": 2.22,
+          "src": [
+            "SRC-002811"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002812",
+            "SRC-002813"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 105,
+          "src": [
+            "SRC-002812"
+          ],
+          "note": "Surface parking at the tip of the site"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 22,
+            "1br": 46,
+            "2br": 38,
+            "3br": 37
+          },
+          "src": [
+            "SRC-002812"
+          ],
+          "note": "NOFA committee memo Table 2"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-002814",
+            "SRC-002813"
+          ],
+          "note": "SB 35 application"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 136900500,
+          "src": [
+            "SRC-002812"
+          ],
+          "note": "Estimate in October 2024 NOFA memo (about $957,300 per unit)"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 18100000,
+          "src": [
+            "SRC-002812",
+            "SRC-002815"
+          ],
+          "note": "Land purchase, February 2022"
         }
       ]
     }
@@ -187,6 +317,31 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "NOFA memo (Oct 2024) anticipated sources: tax credit equity $65,348,065; State HCD grant (IIG or AHSC) $27,000,000; bank loan $22,807,000; City of Mountain View $11,300,000; other $5,015,435; County of Santa Clara $4,000,000; FHLB AHP $1,430,000; total $136,900,500.",
+      "src": [
+        "SRC-002812"
+      ]
+    },
+    {
+      "text": "City funding: $11.3 million in Below Market Rate in-lieu fees reserved Dec 17, 2024, of which $1.3 million predevelopment and $5.0 million acquisition loan appropriated immediately; $5.0 million construction/permanent loan to follow.",
+      "src": [
+        "SRC-002814"
+      ]
+    },
+    {
+      "text": "Site rezoned from General Industrial (MM) to High-Density Residential (R4) in 2023 as part of the 2023-2031 Housing Element. Site plan was coordinated with Affirmed Housing's adjacent 87 East Evelyn project (shared plaza, vehicular access off Pioneer Way, utility corridors, and resident services provider Catholic Charities).",
+      "src": [
+        "SRC-002812"
+      ]
+    },
+    {
+      "text": "Earlier plans (2022) described about 160 affordable family units.",
+      "src": [
+        "SRC-002811",
+        "SRC-002815"
       ]
     }
   ],
@@ -201,6 +356,35 @@
       ],
       "website": "https://charitieshousing.org/",
       "project_page": "https://charitieshousing.org/property/evelyn-avenue-apartments/"
+    },
+    {
+      "role": "Buyer",
+      "company": "Evelyn Avenue LP",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002815"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://housingtrustsv.org/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-002811"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Catholic Charities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002812"
+      ]
     }
   ],
   "financing": [
@@ -213,10 +397,67 @@
       "src": [
         "SRC-001330"
       ]
+    },
+    {
+      "type": "Acquisition loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "Funded through Google's Launch Initiative",
+      "amount": 17200000,
+      "date": "2022-03-02",
+      "src": [
+        "SRC-002811",
+        "SRC-002816"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2022-02",
+      "type": "Sale",
+      "label": "Charities Housing affiliate buys 2.2-acre site for $18.1 million",
+      "src": [
+        "SRC-002812",
+        "SRC-002815"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-05",
+      "type": "Other",
+      "label": "Preliminary SB 35 application submitted",
+      "src": [
+        "SRC-002812"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-14",
+      "type": "Other",
+      "label": "City NOFA funding application submitted ($18.0 million requested)",
+      "src": [
+        "SRC-002812"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-22",
+      "type": "Application filed",
+      "label": "Formal SB 35 application submitted",
+      "src": [
+        "SRC-002814"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-28",
+      "type": "Other",
+      "label": "NOFA Review Committee considers $11.3 million recommendation",
+      "src": [
+        "SRC-002812"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-07",
       "type": "Application filed",
@@ -232,6 +473,15 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2026-10",
+      "type": "Other",
+      "label": "Projected building permit / construction loan closing",
+      "src": [
+        "SRC-002814"
+      ],
+      "estimated": true
     },
     {
       "date": "2026-12",
@@ -267,6 +517,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 57-67 E Evelyn, Charities Housing; found HTSV release, MV Voice, SF YIMBY",
+      "src": [
+        "SRC-002811"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcels API, APN 160-65-010 (67 E Evelyn Av); no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Legistar: matter 9099 NOFA committee memo 2024-10-28; matter 8601 council report 2024-12-17. mountainview.gov documents returned 403",
+      "src": [
+        "SRC-002812",
+        "SRC-002814"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for County of Santa Clara / Measure A award to 57-67 E Evelyn; only an anticipated $4.0M county source in the city memo",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for CTCAC/CDLAC staff reports for 57-67 E Evelyn; CA-26-464 is the adjacent 87 E Evelyn project",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice 2022-03-02 and 2025-01-08",
+      "src": [
+        "SRC-002813",
+        "SRC-002816"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2022-03-14 (Evelyn Avenue LP, $18.1M); The Real Deal 2022-03-03 returned 403",
+      "src": [
+        "SRC-002815"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "charitieshousing.org development page; no 57-67 E Evelyn listing",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "City memo and news name no architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley release: $17.2M acquisition loan with Google",
+      "src": [
+        "SRC-002811"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Charities Housing East Evelyn; none found",
+      "src": []
+    }
+  }
 }

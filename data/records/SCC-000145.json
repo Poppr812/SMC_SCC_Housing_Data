@@ -107,8 +107,17 @@
             "SRC-001102"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-002817",
+            "SRC-002818"
+          ],
+          "note": "142 for-sale townhouses in 13 four-story buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -179,6 +188,20 @@
           "src": [
             "SRC-001102"
           ]
+        },
+        {
+          "value": "29 units (20%) affordable: 10% lower income and 10% a mix of very low and moderate income; city ordinance requires 15%",
+          "src": [
+            "SRC-002817"
+          ],
+          "note": ""
+        },
+        {
+          "value": "43 affordable units",
+          "src": [
+            "SRC-002821"
+          ],
+          "note": ""
         }
       ]
     },
@@ -191,6 +214,13 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN24-00267, PLN24-00332, PLN24-00474",
+          "src": [
+            "SRC-002817"
+          ],
+          "note": "PLN24-00474 is the architectural review"
         }
       ]
     },
@@ -217,6 +247,89 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.8,
+          "src": [
+            "SRC-002817",
+            "SRC-002818"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-002817",
+            "SRC-002819"
+          ],
+          "note": "Maximum height 50 feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 234,
+          "src": [
+            "SRC-002820"
+          ],
+          "note": ""
+        },
+        {
+          "value": 196,
+          "src": [
+            "SRC-002819"
+          ],
+          "note": "Off-street; the table also lists 39 guest spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 186133,
+          "src": [
+            "SRC-002817"
+          ],
+          "note": "Total unit living area from plan unit summary; gross building area 241,530 sq ft"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 24,
+            "1br": 18,
+            "2br": 13,
+            "3br": 88
+          },
+          "src": [
+            "SRC-002821"
+          ],
+          "note": "SF YIMBY count of 143 residences"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002817"
+          ],
+          "note": "GPA, rezone, vesting tentative map; qualifies for two density bonus concessions"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -225,6 +338,19 @@
       "src": [
         "SRC-001106",
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "Site held a two-story office building (Airport Park Garden Office Suites) and a one-story light industrial building; all 59 existing trees to be removed and 64 planted. Density 37.4 du/acre. Requires Airport Land Use Commission referral (hearing scheduled Aug 27, 2025).",
+      "src": [
+        "SRC-002817",
+        "SRC-002820"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (Oct 2025) reports construction expected to start about a year after architectural drawings are finalized.",
+      "src": [
+        "SRC-002820"
       ]
     }
   ],
@@ -247,11 +373,48 @@
       "src": [
         "SRC-001536"
       ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Kier & Wright Civil Engineers & Surveyors",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002817"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "C2 Collaborative",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002821"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Grant Associates LP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner as listed with the applicant in the staff report",
+      "src": [
+        "SRC-002817"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-05-28",
+      "type": "Application filed",
+      "label": "City Ventures filed PLN24-00267 and PLN24-00332",
+      "src": [
+        "SRC-002817"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-06-27",
       "type": "Application filed",
@@ -259,6 +422,24 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2025-07-15",
+      "type": "Other",
+      "label": "Initial Study / MND filed with state clearinghouse (SCH 2025070609)",
+      "src": [
+        "SRC-002818"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-13",
+      "type": "Other",
+      "label": "Planning Commission hearing on MND, GPA, rezone and map",
+      "src": [
+        "SRC-002817"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-09-23",
@@ -302,6 +483,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1400 Coleman Avenue and City Ventures; found CEQAnet, SF YIMBY, San Jose Spotlight",
+      "src": [
+        "SRC-002818",
+        "SRC-002820"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcels API, APN 230-05-021 (1400 Coleman Av); no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar: file 25-764 PC report 2025-08-13; file 25-958 project data table",
+      "src": [
+        "SRC-002817",
+        "SRC-002819"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; county role limited to Airport Land Use Commission referral noted in city report",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025070609 (IS/MND, 142 units, 29 BMR)",
+      "src": [
+        "SRC-002818"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-10-06",
+      "src": [
+        "SRC-002820"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-11-01 permits article",
+      "src": [
+        "SRC-002821"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "cityventures.com home page; no 1400 Coleman project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Hunt Hale Jones named in plan set and SF YIMBY (already on record); hhjarchitects.com shows no project page",
+      "src": [
+        "SRC-002817"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found in city, state or press sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on City Ventures 1400 Coleman; none found",
+      "src": []
+    }
+  }
 }

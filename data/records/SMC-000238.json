@@ -165,6 +165,13 @@
           "src": [
             "SRC-001184"
           ]
+        },
+        {
+          "value": 142,
+          "src": [
+            "SRC-002823"
+          ],
+          "note": "Three-story podium garage (2024 design)"
         }
       ]
     },
@@ -181,6 +188,40 @@
           "note": "Described by the city as filed under the builder's remedy"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.87,
+          "src": [
+            "SRC-002822",
+            "SRC-002823"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002823"
+          ],
+          "note": "One-fifth of units affordable"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "One-fifth of the 140 apartments affordable under the builder's remedy",
+          "src": [
+            "SRC-002823"
+          ],
+          "note": ""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -188,6 +229,13 @@
       "text": "Would replace the approved, unbuilt office building of Vasara, formerly Menlo Portal (SMC-000112), with a residential building.",
       "src": [
         "SRC-001184"
+      ]
+    },
+    {
+      "text": "City page lists 152,887 sq ft gross floor area and 83'-4\" height; requested approvals are revisions to the architectural control permit, use permit and BMR housing agreement. SF YIMBY (2024) reported 92 feet and about 151,700 sq ft excluding the podium garage.",
+      "src": [
+        "SRC-001184",
+        "SRC-002823"
       ]
     }
   ],
@@ -201,11 +249,49 @@
         "SRC-001184"
       ],
       "website": "https://www.greystar.com"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "GS MP Portal Office Owner LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Heller Manus Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.hellermanus.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-002823"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "PGAdesign",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002823"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-06",
+      "type": "Application filed",
+      "label": "Formal builder's remedy application filed (early June 2024)",
+      "src": [
+        "SRC-002822"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-08-28",
       "type": "Application filed",
@@ -233,6 +319,88 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 104 Constitution Drive and Greystar; found SF YIMBY articles",
+      "src": [
+        "SRC-002822"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels layer: APN 055-236-310, owner GS MP PORTAL OFFICE OWNER LLC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Menlo Park project page 104 Constitution Dr (GFA, height, approvals added as note)",
+      "src": [
+        "SRC-001184"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Not in state APR data through 2025; no CEQAnet or CTCAC entry found in search",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of local news (Almanac, Daily Journal); Real Deal and CoStar paywalled",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-07-08 and 2024-08-12",
+      "src": [
+        "SRC-002822",
+        "SRC-002823"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for Greystar project page for 104 Constitution; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "hellermanus.com residential portfolio lists Vasara and Lume, not 104 Constitution",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on 104 Constitution Drive; none found",
+      "src": []
+    }
+  }
 }

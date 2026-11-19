@@ -110,6 +110,13 @@
       "src": [
         "SRC-001472"
       ]
+    },
+    {
+      "text": "10041 N Blaney Ave, Cupertino, CA",
+      "role": "other",
+      "src": [
+        "SRC-002827"
+      ]
     }
   ],
   "images": [],
@@ -193,6 +200,60 @@
           "src": [
             "SRC-001472"
           ]
+        },
+        {
+          "value": [
+            "Builder's remedy",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002825"
+          ],
+          "note": "Applicant also applied for State Density Bonus Law benefits"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 195,
+          "src": [
+            "SRC-002824"
+          ],
+          "note": "Two-level underground garage: 183 resident and 12 guest stalls"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 119739,
+          "src": [
+            "SRC-002824"
+          ],
+          "note": "Total unit area from plan unit summary"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002825"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "20% of units reserved at rents affordable to low income households",
+          "src": [
+            "SRC-002825"
+          ],
+          "note": ""
         }
       ]
     }
@@ -202,6 +263,12 @@
       "text": "City lists this as an inactive formal application. Multi-family; rental or for-sale not stated.",
       "src": [
         "SRC-001472"
+      ]
+    },
+    {
+      "text": "Plan set: five stories of Type III-A rental apartments over two levels of Type I-A subterranean garage; proposed height 70 feet versus 45 feet under current zoning; 141 rental units (96 studio/one-bedroom and 45 two/three-bedroom per the parking calculation).",
+      "src": [
+        "SRC-002824"
       ]
     }
   ],
@@ -223,6 +290,45 @@
       "linkedin": null,
       "src": [
         "SRC-001472"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "20015 SCB Cupertino Multi, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant entity; listed as owner on plan set",
+      "src": [
+        "SRC-002825",
+        "SRC-002824"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "HMH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002824"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Plat Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002824"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Holland & Knight LLP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant's counsel",
+      "src": [
+        "SRC-002825"
       ]
     }
   ],
@@ -246,6 +352,15 @@
         "SRC-001472"
       ],
       "estimated": false
+    },
+    {
+      "date": "2023-11-29",
+      "type": "Other",
+      "label": "Acclaim tells SF YIMBY the project is on hold",
+      "src": [
+        "SRC-002826"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -258,6 +373,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 20015 Stevens Creek Blvd and Acclaim; found SF YIMBY and city documents",
+      "src": [
+        "SRC-002826"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcels API: APN 316-23-093 (20015 Stevens Creek Bl), APN 316-23-036 (10041 N Blaney Av)",
+      "src": [
+        "SRC-002827"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Cupertino Builder's Remedy page: project description letter and plan set PDFs",
+      "src": [
+        "SRC-001472",
+        "SRC-002825",
+        "SRC-002824"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Not found in state APR data or CEQAnet search",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of local news; The Real Deal 2023-11-28 paywalled",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-11-29",
+      "src": [
+        "SRC-002826"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "acclaimcompanies.com home page; no project listing",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Studio T-Square named on plan set (already on record); studiot-sq.com shows no project page",
+      "src": [
+        "SRC-002824"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on 20015 Stevens Creek; none found",
+      "src": []
+    }
+  }
 }

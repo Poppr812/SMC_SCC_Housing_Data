@@ -202,6 +202,100 @@
             "SRC-001113"
           ],
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 20,
+              "ami": 15
+            },
+            {
+              "count": 5,
+              "ami": 30
+            },
+            {
+              "count": 40,
+              "ami": 50
+            },
+            {
+              "count": 14,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001674"
+          ],
+          "note": "CTCAC 55-year targeting for the 80-unit senior building; 1 manager's unit unrestricted"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior",
+            "Family"
+          ],
+          "src": [
+            "SRC-002809"
+          ],
+          "note": "Phase 1 senior building, phase 2 family building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.96,
+          "src": [
+            "SRC-002810"
+          ],
+          "note": "County HOME notice: 500 Linden property, 0.96 acres"
+        },
+        {
+          "value": 0.49,
+          "src": [
+            "SRC-001674"
+          ],
+          "note": "CTCAC staff report site for the 80-unit Rotary Gardens senior building"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 52,
+          "src": [
+            "SRC-002810"
+          ],
+          "note": "County HOME notice for 500 Linden Avenue"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 5,
+            "1br": 74,
+            "2br": 1
+          },
+          "src": [
+            "SRC-001674"
+          ],
+          "note": "80-unit senior building only (CTCAC CA-26-410)"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001674",
+            "SRC-002810"
+          ],
+          "note": ""
         }
       ]
     }
@@ -231,6 +325,25 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "text": "City resolution RES 187-2023 describes Rotary Gardens at 500 and 522 Linden as a two-phase project by the local Rotary Club and Beacon Development: an 83-unit senior building in phase 1 and an anticipated 65-unit family building in phase 2. The applicants had requested about $7.5 million from the city.",
+      "src": [
+        "SRC-002809"
+      ]
+    },
+    {
+      "text": "CTCAC CA-26-410 shows total project cost of $77,834,793 for the 80-unit senior building ($966,935 per unit), with $9,061,657 developer fee and $47,580,000 construction costs. The county HOME notice (March 2026) estimates total project cost at $79,877,218.",
+      "src": [
+        "SRC-001674",
+        "SRC-002810"
+      ]
+    },
+    {
+      "text": "County HOME notice describes the 500 Linden site as a vacant two-story commercial building built in 1971, last occupied by Liberty Bank, and the development as two new 6-story buildings (five stories of Type III over a one-story plus basement Type I podium) providing 80 affordable senior units including one manager's unit.",
+      "src": [
+        "SRC-002810"
+      ]
     }
   ],
   "parties": [
@@ -253,11 +366,59 @@
       ]
     },
     {
-      "role": "Other",
+      "role": "Developer",
       "company": "HumanGood Affordable Housing",
       "contact": null,
       "linkedin": null,
-      "other_role": "Developer of Rotary Gardens component",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "HumanGood Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Raymond James",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citibank, N.A.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rotary Gardens, L.P.",
+      "contact": "Peggy Lichthart",
+      "linkedin": null,
+      "email": "peggyl@beacondevgroup.com",
+      "phone": "310-600-0237",
+      "website_basis": "filing",
+      "other_role": "CTCAC applicant / CDLAC sponsor",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Rotary Gardens, LLC",
+      "contact": null,
+      "linkedin": null,
       "src": [
         "SRC-001674"
       ]
@@ -273,10 +434,159 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of South San Francisco",
+      "program": "Low/Mod-Income Housing Asset Fund (Fund 241), for the 65-unit family building",
+      "amount": 1076383,
+      "date": "2023-12-13",
+      "src": [
+        "SRC-002809"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of South San Francisco",
+      "program": "State PLHA funds, for the 83-unit senior building",
+      "amount": 556789,
+      "date": "2023-12-13",
+      "src": [
+        "SRC-002809"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "San Mateo County Department of Housing",
+      "program": "HOME funds (6 HOME units)",
+      "amount": 1002197,
+      "date": "2026-04",
+      "src": [
+        "SRC-002810"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "Citibank, N.A.",
+      "program": "Private placement; issuer California Municipal Finance Authority; senior building construction",
+      "amount": 20562128,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank, N.A.",
+      "program": "Taxable construction loan, senior building",
+      "amount": 16324997,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank, N.A.",
+      "program": "Tax-exempt permanent loan, senior building",
+      "amount": 5044422,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Raymond James",
+      "program": "Permanent tax credit equity, senior building",
+      "amount": 28150742,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County",
+      "program": "AHF 12.5 & 13.0, permanent, senior building",
+      "amount": 17866197,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of South San Francisco",
+      "program": "Permanent, senior building",
+      "amount": 8424198,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Rotary Plaza, Inc.",
+      "program": "Sponsor loan, senior building",
+      "amount": 5537577,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Seller financing",
+      "provider": "Seller (not named in staff report)",
+      "program": "Seller carryback, senior building",
+      "amount": 5250000,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "HumanGood Affordable Housing",
+      "program": "Capital Magnet Funds, senior building",
+      "amount": 1000000,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "HumanGood Affordable Housing",
+      "program": "Senior building",
+      "amount": 4228773,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "Rotary Gardens, LLC",
+      "program": "General partner equity, senior building",
+      "amount": 2332884,
+      "date": "2026-05-12",
+      "src": [
+        "SRC-001674"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2023-12-13",
+      "type": "Other",
+      "label": "City Council commits Housing Asset Fund and PLHA funds (RES 187-2023)",
+      "src": [
+        "SRC-002809"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-01",
       "type": "Application filed",
@@ -301,6 +611,42 @@
       "src": [
         "SRC-001113"
       ]
+    },
+    {
+      "date": "2026-03-30",
+      "type": "Other",
+      "label": "County FONSI and notice of intent to request release of HOME funds",
+      "src": [
+        "SRC-002810"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-12",
+      "type": "Other",
+      "label": "CTCAC/CDLAC staff report recommends 4% credits and bond cap for senior building",
+      "src": [
+        "SRC-001674"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10",
+      "type": "Construction start",
+      "label": "Expected construction start, senior building",
+      "src": [
+        "SRC-001674"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028-03",
+      "type": "Completion",
+      "label": "Expected completion, senior building",
+      "src": [
+        "SRC-001674"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -323,6 +669,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Rotary Gardens, 500/522 Linden and Beacon; found city resolution, county HOME notice, CTCAC report",
+      "src": [
+        "SRC-002809",
+        "SRC-002810"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer: APN 012-175-260, 500 Linden Ave, owner ROTARY PLAZA INC (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SSF City Council RES 187-2023 (file 23-1065, 2023-12-13); SSF Legistar API not configured for the city",
+      "src": [
+        "SRC-002809"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Mateo County Department of Housing FONSI / NOI-RROF for HOME funds, March 30, 2026",
+      "src": [
+        "SRC-002810"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC/CDLAC staff report CA-26-410 (May 12, 2026): sources, targeting, unit mix, development team",
+      "src": [
+        "SRC-001674"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles on Rotary Gardens financing returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of trade press for Rotary Gardens South San Francisco; results were for Rotary Terrace (Miller Ave), a different project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for Rotary Gardens on Beacon Development Group and HumanGood sites; no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for Rotary Gardens architect; no source names one",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC CA-26-410 lists Citibank, Raymond James, CMFA, County AHF, City of SSF, Rotary Plaza Inc.; county HOME notice",
+      "src": [
+        "SRC-001674",
+        "SRC-002810"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Rotary Gardens South San Francisco; none found",
+      "src": []
+    }
+  }
 }
