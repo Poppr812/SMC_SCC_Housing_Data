@@ -47,6 +47,13 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "675 E Santa Clara St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001784"
+      ]
     }
   ],
   "images": [],
@@ -137,6 +144,56 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 25,
+            "1br": 86,
+            "2br": 32,
+            "3br": 32
+          },
+          "src": [
+            "SRC-001784"
+          ],
+          "note": "Rental units only; plus 36 for-sale townhomes and two manager units, 213 total"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 190,
+          "src": [
+            "SRC-001784"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001784"
+          ],
+          "note": "Seven-story family building; five-story senior building"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001784"
+          ],
+          "note": "Preliminary permits filed for SB 35 streamlined approval"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -150,6 +207,30 @@
       "text": "SF YIMBY (Jul 2023): 113 affordable family units, 64 senior apartments and 36 for-sale affordable townhomes; Core Companies and Eden Housing joint venture.",
       "src": [
         "SRC-001970"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Dec 2023), 675 E Santa Clara St: phase two of the Santa Clara County Housing Authority master plan; 213 affordable units plus two manager units in a seven-story family building, a five-story senior building and 36 for-sale townhomes, with adaptive reuse of historic Building 800 (early IBM office); 190 parking spaces; construction expected to start fall 2025, opening as early as 2027.",
+      "src": [
+        "SRC-001784"
+      ]
+    },
+    {
+      "text": "Eden Housing: Eden and The Core Companies are master developers of the 2.8-acre East Santa Clara site, led by the Santa Clara County Housing Authority and the County of Santa Clara. Core will develop a 114-unit family building and 36 for-sale BMR townhomes; Eden's 68-unit senior building is at 700 E Saint John St.",
+      "src": [
+        "SRC-001983"
+      ]
+    },
+    {
+      "text": "County Measure A dashboard: E. Santa Clara Family Apartments, 725 E Santa Clara St, 114 affordable homes including 20 supportive, Eden Housing and The Core Companies, status Pipeline. E. Santa Clara Senior Apartments, 700 E Saint John St, 68 homes, status In Construction.",
+      "src": [
+        "SRC-001614"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption (May 28, 2025): East Santa Clara Townhomes, 36 affordable for-sale townhomes, applicant The Core Companies, 675 E Santa Clara St, APNs 467-14-087 and 467-14-052, about 3 acres; ministerial under Government Code 65913.4.",
+      "src": [
+        "SRC-002199"
       ]
     }
   ],
@@ -183,6 +264,35 @@
         "SRC-001970"
       ],
       "website": "https://edenhousing.org"
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001784"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "McCullough Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001784"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara County Housing Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Master plan co-lead with the County of Santa Clara",
+      "src": [
+        "SRC-001983",
+        "SRC-001784"
+      ]
     }
   ],
   "financing": [],
@@ -194,6 +304,15 @@
       "label": "SB 330 preliminary application filed (PRE23-127)",
       "src": [
         "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-28",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (ministerial) for the 36 for-sale townhomes, County Office of Supportive Housing",
+      "src": [
+        "SRC-002199"
       ],
       "estimated": false
     }
@@ -213,6 +332,112 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 95 N 17th St, 675 E Santa Clara St, Core Companies and Eden Housing; SF YIMBY Dec 2023 article opened",
+      "src": [
+        "SRC-001784"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 467-14-001, situs 95 N 17th St, San Jose; no owner field in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city GIS permit layer already on record (PRE23-127)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "County Measure A housing bond dashboard; County OSH Notice of Exemption for the townhomes",
+      "src": [
+        "SRC-001614",
+        "SRC-002199"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025051260 (townhomes NOE); APR data shows no rows for 95 N 17th St",
+      "src": [
+        "SRC-002199"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Planetizen 2023 approval item returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Jul 2023 and Dec 2023; The Real Deal Jul 2023 returned 403",
+      "src": [
+        "SRC-001784",
+        "SRC-001970"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Eden Housing East Santa Clara Senior page; Core Companies homepage already linked",
+      "src": [
+        "SRC-001983"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY names Studio T Square (master plan) and McCullough Landscape Architecture; no project page found on their sites in search",
+      "src": [
+        "SRC-001784"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Eden page lists senior-building funders; Measure A dashboard lists the family building as County-Led Development Program pipeline",
+      "src": [
+        "SRC-001983",
+        "SRC-001614"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the East Santa Clara townhomes or family building",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000478",
+      "relation": "includes",
+      "note": "Senior building in the 213-unit MP23-008 phase"
+    },
+    {
+      "id": "SCC-000032",
+      "relation": "part_of",
+      "note": "The 213-unit Core/Eden phase (MP23-008) of the 675 E Santa Clara St master plan"
     }
   ]
 }

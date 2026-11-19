@@ -152,6 +152,47 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002599",
+            "SRC-002600",
+            "SRC-001828"
+          ],
+          "note": "Five residential floors over two levels of parking"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 311,
+          "src": [
+            "SRC-002599"
+          ],
+          "note": "Includes 66 tandem spaces; 52 motorcycle and 73 bicycle spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.2,
+          "src": [
+            "SRC-002599"
+          ]
+        },
+        {
+          "value": 2.22,
+          "src": [
+            "SRC-001828"
+          ],
+          "note": "Gross acres, R-M zoning"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +206,25 @@
       "text": "City of San Jose permit H20-049 (Site Development Permit/Amendment, folder year 2020), status Approved, issue date 2023-04-19: \"Site Development Permit to allow the demolition of a 28,223 sf two-story commercial building and the construction of a 206-unit 7-story apartment building, with five-stories of residential over two-levels of at grade and partial basement parking, with rem\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Height: about 92 feet (San Jose Spotlight); 87 feet to top of parapet (CEQAnet project description).",
+      "src": [
+        "SRC-002599",
+        "SRC-002600"
+      ]
+    },
+    {
+      "text": "Replaces a two-story 28,223 sq ft senior housing facility; includes 13,090 sq ft of private deck space and one below-grade plus two podium parking levels.",
+      "src": [
+        "SRC-002600"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (Apr 2023): KCR has owned the site since 2013 and leased it to Somerset Senior Living from 2016 until 2022, when the facility closed; construction could start as early as Q1 2024 and last about two years.",
+      "src": [
+        "SRC-002599"
       ]
     }
   ],
@@ -188,6 +248,15 @@
       "src": [
         "SRC-001828"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "KCR Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002599"
+      ]
     }
   ],
   "financing": [],
@@ -202,11 +271,38 @@
       ]
     },
     {
+      "date": "2023-02-02",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the state",
+      "src": [
+        "SRC-002600"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-04",
       "type": "Approved",
       "label": "Planning Director approval",
       "src": [
         "SRC-001827"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-04-19",
+      "type": "Approved",
+      "label": "Planning Director hearing approval",
+      "src": [
+        "SRC-002599"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-04-25",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed",
+      "src": [
+        "SRC-002600"
       ],
       "estimated": false
     }
@@ -226,6 +322,91 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1050 St Elizabeth Dr and KCR Development; San Jose Spotlight opened",
+      "src": [
+        "SRC-002599"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 284-07-018, situs 1050 St Elizabeth Dr; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov environmental review page refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2023020063 (MND Feb 2023, NOD Apr 2023); APR shows only the 2021 application row",
+      "src": [
+        "SRC-002600",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight Apr 2023 (also syndicated by NBC Bay Area)",
+      "src": [
+        "SRC-002599"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY Apr 2023 already on record; SJ Build tracker",
+      "src": [
+        "SRC-001827",
+        "SRC-001828"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for a KCR Development project page found none",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner in any source opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on 1050 St Elizabeth",
+      "src": []
+    }
+  }
 }

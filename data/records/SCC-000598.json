@@ -109,8 +109,16 @@
             "SRC-001887"
           ],
           "note": "Approved Nov. 7, 2023. Later status not confirmed from a source that could be opened"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "State report: building permits issued from Dec 16, 2024 (74 permits through 2025); first certificates of occupancy Sep 10, 2025 (33 through 2025)"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -142,6 +150,106 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "P-SD22-0003",
+          "src": [
+            "SRC-001128",
+            "SRC-001124"
+          ],
+          "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001128",
+            "SRC-002601"
+          ],
+          "note": "75 deed-restricted apartments; 131 market-rate for-sale homes"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 131,
+          "src": [
+            "SRC-001128"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 31,
+              "ami": 80
+            },
+            {
+              "count": 44,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "State report 2023, entitlement stage, inclusionary (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 15,
+              "ami": 30
+            },
+            {
+              "count": 25,
+              "ami": 60
+            },
+            {
+              "count": 34,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-002602"
+          ],
+          "note": "CTCAC Dec 2025, 75-unit CA Circle Family apartments (74 restricted plus manager unit)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002603"
+          ],
+          "note": "Heights of 3, 4 and 6 stories: 5 buildings of 7 three-story townhomes, 8 buildings of 12 four-story condo/flats, one six-story 75-unit apartment building"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-002601",
+            "SRC-002604",
+            "SRC-002603"
+          ],
+          "note": "Most of the 75 affordable apartments designated for Milpitas Unified School District employees"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -155,6 +263,30 @@
       "text": "The 75 apartments in this count may be SCC-000575 (1397 California Circle, 75 units). Not merged: no source opened links them.",
       "src": [
         "SRC-001887"
+      ]
+    },
+    {
+      "text": "State report 2025 names two for-sale collections on the site: Apex at the District (townhomes) and Rise at the District (2-4 unit buildings).",
+      "src": [
+        "SRC-001128"
+      ]
+    },
+    {
+      "text": "Pulte presentation posted by the city: site is 6.69 acres in the Dixon Landing Business Park (circa 1986) with 90,500 sq ft of existing industrial space; 36% affordable units; schedule shown as application April 2022, groundbreaking early 2024, opening late 2024/early 2025.",
+      "src": [
+        "SRC-002603"
+      ]
+    },
+    {
+      "text": "City Council approved unanimously (Nov 2023), removing the General Plan's 100% affordable requirement for the site; council allowed market-rate homes to be occupied before construction of the affordable apartments.",
+      "src": [
+        "SRC-002601"
+      ]
+    },
+    {
+      "text": "CTCAC staff report (Dec 10, 2025), CA Circle Family, 1355 California Circle, 0.94-acre site: 75 units (30 one-bedroom, 21 two-bedroom, 24 three-bedroom), developer Waterford Development, total cost $47,636,880; $1,815,835 annual federal credits and $12,486,492 tax-exempt bonds; Pulte Home Company contributes $6,400,000; construction expected June 2026 to January 2028; legal description and APN not yet finalized as part of a larger site.",
+      "src": [
+        "SRC-002602"
       ]
     }
   ],
@@ -175,11 +307,47 @@
   "groups": {},
   "events": [
     {
+      "date": "2022-04-12",
+      "type": "Application filed",
+      "label": "Application submitted (206 units)",
+      "src": [
+        "SRC-001124"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-11-07",
       "type": "Approved",
       "label": "City of Milpitas approval (Notice of Determination)",
       "src": [
         "SRC-001887"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-11-14",
+      "type": "Approved",
+      "label": "Entitlement approval date as reported to the state",
+      "src": [
+        "SRC-001128"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-16",
+      "type": "Permit issued",
+      "label": "First building permits (14 townhome units)",
+      "src": [
+        "SRC-001128"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-10",
+      "type": "Other",
+      "label": "First certificates of occupancy (Apex at the District)",
+      "src": [
+        "SRC-001128"
       ],
       "estimated": false
     }
@@ -194,6 +362,105 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1355 California Circle, Pulte, The District; San Jose Spotlight and SF YIMBY opened",
+      "src": [
+        "SRC-002601",
+        "SRC-002604"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: 022-62-120 (1357 California Cl) and 022-62-121 (1353 California Cl); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "milpitas.gov DocumentCenter View/4030: Pulte project presentation",
+      "src": [
+        "SRC-002603"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A (2022 application) and Table A2 (2023 entitlement, 2024-2025 permits and completions); CTCAC CA-25-759",
+      "src": [
+        "SRC-001124",
+        "SRC-001128",
+        "SRC-002602"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight Nov 2023; Local News Matters returned 403",
+      "src": [
+        "SRC-002601"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Nov 2023",
+      "src": [
+        "SRC-002604"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Pulte The District community page (already linked) opened; no unit counts or status shown",
+      "src": [
+        "SRC-001887"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named for the for-sale homes in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report for the affordable apartment component (KeyBank, Pulte Home Company contribution)",
+      "src": [
+        "SRC-002602"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on The District Milpitas",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000575",
+      "relation": "includes",
+      "note": "The 75 apartments counted in the 206-unit total"
     }
   ]
 }
