@@ -203,8 +203,22 @@
             "SRC-001313"
           ],
           "note": "Plus 8 loft-style units"
+        },
+        {
+          "value": {
+            "studio": 230,
+            "1br": 201,
+            "2br": 29,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002228"
+          ],
+          "note": "City Council report, March 10, 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "parking_spaces": {
       "claims": [
@@ -235,8 +249,16 @@
             "SRC-001313"
           ],
           "note": "About"
+        },
+        {
+          "value": 9371,
+          "src": [
+            "SRC-002228"
+          ],
+          "note": "Approximately; ground-floor commercial per City Council report"
         }
-      ]
+      ],
+      "best": 1
     },
     "site_area_acres": {
       "claims": [
@@ -268,8 +290,15 @@
             "SRC-001313",
             "SRC-001314"
           ]
+        },
+        {
+          "value": "City Council report: 55 BMR units for very low (50% AMI) and low (80% AMI) income households, deed-restricted in perpetuity at a blended 65% AMI (15% of the 361-unit base count); plus 3 studios at 90% AMI and 2 one-bedrooms at 100% AMI for 10 to 15 years under the East Whisman Bonus FAR program, for 60 affordable units. The Development Agreement gives the City an option to master lease or guarantee 30 to 60 more units as BMR for at least 7 years.",
+          "src": [
+            "SRC-002228"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "approval_type": {
       "claims": [
@@ -310,6 +339,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001101"
+      ]
+    },
+    {
+      "text": "City Council report lists the applicant and owner as Jeffrey Stone of WTA Middlefield, LLC. The site holds one occupied two-story office building. The eight-story building totals about 391,775 sq ft with an at-grade one-level podium garage; 29 heritage trees removed.",
+      "src": [
+        "SRC-002228"
+      ]
+    },
+    {
+      "text": "Development Agreement with WTA Middlefield, LLC: 4-year term with two optional 2-year extensions ($100,000 and $250,000 fees); $1.1 million community benefit fee (1.41 Bonus FAR, 175,476 sq ft at $6.23/sq ft) payable at final certificate of occupancy; $1.2 million retail tenant improvements; $1.2 million Recreational City Facilities Contribution toward park land within 1,250 feet or Pyramid Park.",
+      "src": [
+        "SRC-002228",
+        "SRC-002229"
+      ]
+    },
+    {
+      "text": "Second-reading report: council introduced the Development Agreement ordinance 6-0 with one member absent on March 10, 2026; project estimated to raise the City's property tax share from about $18,000 to about $140,000 per year.",
+      "src": [
+        "SRC-002229"
       ]
     }
   ],
@@ -357,6 +405,33 @@
   "groups": {},
   "events": [
     {
+      "date": "2024-12-23",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted (deemed complete 2025-01-22)",
+      "src": [
+        "SRC-002228"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-11",
+      "type": "Application filed",
+      "label": "Formal application submitted",
+      "src": [
+        "SRC-002228"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-03",
+      "type": "Other",
+      "label": "Design Review Consultation meeting",
+      "src": [
+        "SRC-002228"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-09-26",
       "type": "Application filed",
       "label": "Application submitted",
@@ -390,6 +465,15 @@
         "SRC-001315"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-03-24",
+      "type": "Other",
+      "label": "City Council adopted Development Agreement ordinance (second reading); effective 2026-04-23",
+      "src": [
+        "SRC-002229"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -407,6 +491,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web search on address and developer returned the MV Voice, SF YIMBY and CEQAnet items already on the record",
+      "src": [
+        "SRC-001313",
+        "SRC-001709",
+        "SRC-001315"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 16053004: situs 490 E Middlefield Rd, Mountain View; no owner field in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Legistar matters 10165 (CC 2026-03-10 report), 10167 (EPC 2026-01-21), 10235 (DA staff memo), 10374 (CC 2026-03-24 DA second reading)",
+      "src": [
+        "SRC-002228",
+        "SRC-002229"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding or role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CEQAnet NOE 2026030490 and APR rows already on record",
+      "src": [
+        "SRC-001315",
+        "SRC-001101"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Mountain View Voice 2026-01-22 and 2026-03-12 articles already on record",
+      "src": [
+        "SRC-001314",
+        "SRC-001709"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY March 2026 CEQA exemption article already on record",
+      "src": [
+        "SRC-001313"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No website found for WTA Middlefield LLC or a project page in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SDT Architects named on record; no project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found; council report covers only DA fees and contributions",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

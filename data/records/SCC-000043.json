@@ -284,6 +284,13 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2023-062",
+          "src": [
+            "SRC-002230"
+          ],
+          "note": "Application number in City Attorney settlement report, Nov. 17, 2026"
         }
       ]
     },
@@ -330,6 +337,64 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.26,
+          "src": [
+            "SRC-002231",
+            "SRC-002232"
+          ],
+          "note": "Development parcel created by the lot line adjustment"
+        },
+        {
+          "value": 1.3,
+          "src": [
+            "SRC-002233"
+          ],
+          "note": "About"
+        }
+      ],
+      "best": 0
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 429,
+          "src": [
+            "SRC-001693",
+            "SRC-002231",
+            "SRC-002233"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 183,
+            "1br": 142,
+            "2br": 130,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001693"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 364,
+          "src": [
+            "SRC-001693"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -338,6 +403,32 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "City Council approved 6-1 on Nov. 18, 2025 (Resolution No. 19054), John McAlister dissenting; the council kept the two-year permit term rather than the eight years the applicant requested. About 180 feet tall; 19 heritage trees removed.",
+      "src": [
+        "SRC-002233",
+        "SRC-002232"
+      ]
+    },
+    {
+      "text": "Council report: replaces a two-story duplex and three storage structures; building about 542,306 sq ft total; 91 low-income units (20%) and 364 market-rate; density 362 units per acre; lists Mario Ambra as applicant and owner.",
+      "src": [
+        "SRC-001693"
+      ]
+    },
+    {
+      "text": "CEQA notice: 356 bicycle spaces; 67 trees removed and 52 planted; includes a lot line adjustment; anticipated construction April 2028 to October 2030. The notice lists APNs 193-02-049 and 193-02-050.",
+      "src": [
+        "SRC-002231"
+      ]
+    },
+    {
+      "text": "Proposed settlement after a legal dispute: zoning permits and lot line adjustment valid four years from Nov. 18, 2025, so building permits and construction must start by Nov. 18, 2029, with one possible two-year extension; the applicant's density bonus concessions are deemed fully satisfied.",
+      "src": [
+        "SRC-002230",
+        "SRC-002232"
       ]
     }
   ],
@@ -350,6 +441,16 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001693"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Genna Yarkin",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Attorney representing the applicant",
+      "src": [
+        "SRC-002233"
       ]
     }
   ],
@@ -371,6 +472,34 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2025-11-20",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (AB 130, PRC 21080.66)",
+      "src": [
+        "SRC-002231"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-23",
+      "type": "Other",
+      "label": "City Council closed session on legal dispute with the applicant",
+      "src": [
+        "SRC-002230"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Other",
+      "label": "City Council consent agenda: settlement agreement with Mario Ambra and amended approval resolution extending zoning permits to four years",
+      "src": [
+        "SRC-002230",
+        "SRC-002232"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -388,6 +517,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search found MV Voice 2025-11-19, SJ Spotlight and CEQAnet 2025110829",
+      "src": [
+        "SRC-002233",
+        "SRC-002231"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 15302039/040/041: situs 913, 901 and 987 N Rengstorff Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Legistar matters 9949 (CC 2025-11-18), 10784 and 10930 (CC 2026-11-17 consent items); mountainview.gov project page returned 403",
+      "src": [
+        "SRC-001693",
+        "SRC-002232",
+        "SRC-002230"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet NOE 2025110829; APR rows already on record",
+      "src": [
+        "SRC-002231",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice 2025-11-19 approval article",
+      "src": [
+        "SRC-002233"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no SF YIMBY or other trade coverage of this project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Applicant is an individual (Mario Ambra); no developer company or site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Council report says the copyright owner of the plans withheld consent to post them; no architect named",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

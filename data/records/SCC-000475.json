@@ -131,8 +131,16 @@
             "SRC-001362"
           ],
           "note": "Up to 446: 373 apartments and 73 townhome-style condominiums."
+        },
+        {
+          "value": 444,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permits MP26-007, T26-023, PRE26-079 and PRE26-050"
         }
-      ]
+      ],
+      "best": 1
     },
     "site_area_acres": {
       "claims": [
@@ -141,6 +149,13 @@
           "src": [
             "SRC-001362"
           ]
+        },
+        {
+          "value": 5.91,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per tentative map T26-023"
         }
       ]
     },
@@ -161,6 +176,13 @@
           "src": [
             "SRC-001362"
           ]
+        },
+        {
+          "value": 71,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Preliminary applications PRE26-050 and PRE26-079; MP26-007 and T26-023 say 73"
         }
       ]
     },
@@ -198,6 +220,19 @@
           "note": "City folder 131689, Tentative Map (permit type: Subdivision); city permit status: Under Review. Matched by APN."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Ministerial Permit MP26-007 (mixed-density housing, MIHO)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -224,6 +259,12 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit records list Ryan McNamara of SummerHill Homes as applicant on MP26-007, T26-023 and ER26-133 (all Under Review), Eric Morley of Morley Bros., LLC on PRE26-079 (Complete), and Lily Ciammaichella of KTGY on PRE26-050 (Complete).",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "parties": [
@@ -245,11 +286,68 @@
       "src": [
         "SRC-001362"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Morley Bros., LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, SB 330 preliminary application PRE26-079",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "KTGY",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, focused preliminary review PRE26-050",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2026-02-03",
+      "type": "Other",
+      "label": "Focused preliminary review PRE26-050 filed (444 units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-02",
+      "type": "Other",
+      "label": "SB 330 preliminary application PRE26-079 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Other",
+      "label": "Environmental review ER26-133 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Application filed",
+      "label": "Ministerial Permit MP26-007 and Tentative Map T26-023 filed by SummerHill Homes",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -265,6 +363,85 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web search found SF YIMBY June 2026 (on record), Real Deal and Traded listings",
+      "src": [
+        "SRC-001362"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 09707040: situs 3550 N 1st St, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer queried by APN (PRE26-050, PRE26-079, ER26-133, MP26-007, T26-023); sanjoseca.gov blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No CEQAnet, APR or CTCAC entry found for 3550 N First St",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Mercury News report appeared in search only through third-party excerpts",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2026-06-18 article returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no SummerHill or Cypress Equity project page for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named; KTGY appears only as applicant on PRE26-050",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Traded.co deal listing (buyers, seller LBA Realty) returned 403; no public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

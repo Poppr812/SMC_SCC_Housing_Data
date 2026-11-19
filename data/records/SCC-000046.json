@@ -199,6 +199,14 @@
             "SRC-001956"
           ],
           "note": "City file PRE22-154 (Prelim - Focused (Policy Review, No Plans)): \"SB330 preliminary review for proposed 448 unit affordable unit building\""
+        },
+        {
+          "value": 509,
+          "src": [
+            "SRC-001791",
+            "SRC-001956"
+          ],
+          "note": "2021 preliminary proposal (PRE21-101)"
         }
       ]
     },
@@ -256,6 +264,49 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SB 35 Ministerial Permit MP23-001"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Two 7-story buildings per MP23-001"
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-001791"
+          ],
+          "note": "2021 proposal: one 8-story and one 6-story building"
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.21,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per tentative map T23-001"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -277,6 +328,25 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit AD22-520 (approved 2023-03-03): AB 168 tribal consultation for the SB 35 project on the 4.2-acre site, two buildings each built in two phases. ER23-015 (NEPA review for the SB 35 project, filed 2023-01-26) shows Under Review. A second MP23-001 folder opened 2024-07-17 shows status New. City records list Kathy Robinson of Charities Housing as applicant.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "2021 proposal: 509 units with a library and childcare facility, a paseo to Vista Montana Park, replacing a vacant 62,000 sq ft industrial building; the city council gave Charities Housing a two-year exclusive negotiating right.",
+      "src": [
+        "SRC-001791"
+      ]
+    },
+    {
+      "text": "Charities Housing lists 71 Vista Montana under Predevelopment as a future property, with no unit details posted.",
+      "src": [
+        "SRC-002237",
+        "SRC-002238"
+      ]
     }
   ],
   "parties": [
@@ -289,11 +359,58 @@
         "SRC-001791"
       ],
       "website": "https://charitieshousing.org/"
+    },
+    {
+      "role": "Architect",
+      "company": "David Baker Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dbarchitect.com",
+      "website_basis": "search",
+      "src": [
+        "SRC-001791"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "City of San Jose",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001791"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-06",
+      "type": "Sale",
+      "label": "City of San Jose bought the site for $22.9 million",
+      "src": [
+        "SRC-001791"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-07-19",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE21-101 filed by the City Housing Department (509 units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-08-22",
+      "type": "Other",
+      "label": "SB 330 preliminary review PRE22-154 filed (448 units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-01-03",
       "type": "Application filed",
@@ -303,12 +420,30 @@
       ]
     },
     {
+      "date": "2023-02-07",
+      "type": "Other",
+      "label": "Tentative map T23-001 filed (one lot into four)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-03-21",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2024-03-21",
+      "type": "Other",
+      "label": "Tentative map T23-001 approved",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -331,6 +466,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search found SF YIMBY 2021 and Charities Housing pages; Mercury News 2021 only on PressReader",
+      "src": [
+        "SRC-001791",
+        "SRC-002237"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 09752027: situs 71 Vista Montana, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer queried by APN (PRE21-101, PRE22-154, AD22-520, ER23-015, MP23-001, T23-001); sanjoseca.gov blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no county Measure A item for this site",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A2 rows already on record; CTCAC search found no Vista Montana award",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Mercury News 2021 article appears only via PressReader; no newer local news found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021-07-31 article (architect, stories, city purchase)",
+      "src": [
+        "SRC-001791"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Charities Housing property page and development pipeline page",
+      "src": [
+        "SRC-002237",
+        "SRC-002238"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "David Baker Architects site search found no Vista Montana project page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No CTCAC, CDLAC, HCD or lender record found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
