@@ -701,7 +701,8 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001225"
+            "SRC-001225",
+            "SRC-002833"
           ]
         }
       ]
@@ -745,6 +746,42 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 7.88,
+          "src": [
+            "SRC-002833"
+          ],
+          "note": "CEQAnet NOP: 7.88 acres including a 0.87-acre dedication for the Blomquist St extension"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-002833"
+          ],
+          "note": "CEQAnet NOP: 131 for-sale, market-rate townhomes"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-002833",
+            "SRC-001225"
+          ],
+          "note": "Zoning map and text amendment, tentative map, planned development permit, use permit, development agreement"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -753,12 +790,43 @@
       "src": [
         "SRC-001225"
       ]
+    },
+    {
+      "text": "CEQAnet NOP lists APNs 052-532-010, 052-532-020 and 052-532-030; about 17 units per acre; 12-foot Bay Trail segment along Redwood Creek; relocation of a 20-foot water tower built around 1900 to city-owned land.",
+      "src": [
+        "SRC-002833"
+      ]
+    },
+    {
+      "text": "Walking Redwood City (2018-05-11): Strada Investment Group of San Francisco; 131 townhome-style condos in twenty buildings, two or three bedrooms, ground-floor garages, optional roof decks; small park planned at the eastern tip of the site.",
+      "src": [
+        "SRC-002834"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Strada Investment Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002834"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-07-07",
+      "type": "Other",
+      "label": "Notice of Preparation of EIR received by state",
+      "src": [
+        "SRC-002833"
+      ],
+      "estimated": false
+    },
     {
       "date": "2018-05-07",
       "type": "Approved",
@@ -783,6 +851,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and developer; opened Walking Redwood City 2018-05-11 and CEQAnet.",
+      "src": [
+        "SRC-002834",
+        "SRC-002833"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SMC parcel owner not available from a public source opened; CEQAnet lists older APNs 052-532-010/020/030.",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Redwood City project page re-read (2018 entitlement, 2023 Third Amendment). Redwood City is not on the Legistar web API.",
+      "src": [
+        "SRC-001225"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2017072011 NOP: 7.88 acres, market-rate for-sale townhomes, APNs, discretionary actions.",
+      "src": [
+        "SRC-002833"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (2018 approval; DA amendment coverage) and Mercury News via PressReader returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "ConnectCRE 2018 article on the approval returned 403; Urbanize SF 2025-05-03 mentions the site only as next to MidPen's 1580 Maple project.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Strada project page found in search. A Sierra Club letter refers to 1548 Maple, LLC but its page text did not load.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Dahlin Group hosts a 2018 news item on the approval but does not state a role; no architect confirmed.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

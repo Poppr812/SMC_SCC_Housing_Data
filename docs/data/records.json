@@ -25893,6 +25893,114 @@
    "wayback": null,
    "copyright": false,
    "sha256": null
+  },
+  "SRC-002828": {
+   "id": "SRC-002828",
+   "title": "Downtown San Jose office building may convert to housing",
+   "publisher": "The San Jose Blog",
+   "date": "2025-01-20",
+   "type": "News article",
+   "url": "https://thesanjoseblog.com/2025/01/downtown-san-jose-office-building-may.html",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002829": {
+   "id": "SRC-002829",
+   "title": "SCH Number 2024070130: Point Martin II Residential Subdivision (Streambed Alteration Agreement No. EPIMS-SMO-25034-R3)",
+   "publisher": "CEQAnet, Governor's Office of Land Use and Climate Innovation",
+   "date": "2024-07-03",
+   "type": "Government dataset",
+   "url": "https://ceqanet.lci.ca.gov/2024070130",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002830": {
+   "id": "SRC-002830",
+   "title": "SCH Number 2025100481",
+   "publisher": "CEQAnet, Governor's Office of Land Use and Climate Innovation",
+   "date": null,
+   "type": "Government dataset",
+   "url": "https://ceqanet.lci.ca.gov/Project/2025100481",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002831": {
+   "id": "SRC-002831",
+   "title": "SCH Number 2025100481: 18500 and 18520 Marshall Lane Townhome Project (Draft EIR)",
+   "publisher": "CEQAnet, Governor's Office of Land Use and Climate Innovation",
+   "date": "2026-09-10",
+   "type": "Government dataset",
+   "url": "https://ceqanet.lci.ca.gov/2025100481/2",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002832": {
+   "id": "SRC-002832",
+   "title": "Marshall Lane Site Plan (SB330 Builder's Remedy Application, February 14, 2025)",
+   "publisher": "City of Saratoga",
+   "date": "2025-02-14",
+   "type": "Application document",
+   "url": "https://www.saratoga.ca.us/DocumentCenter/View/5820",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002833": {
+   "id": "SRC-002833",
+   "title": "SCH Number 2017072011: 1548 Maple Street Project (NOP)",
+   "publisher": "CEQAnet, Governor's Office of Land Use and Climate Innovation",
+   "date": "2017-07-07",
+   "type": "Government dataset",
+   "url": "https://ceqanet.lci.ca.gov/2017072011",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002834": {
+   "id": "SRC-002834",
+   "title": "On the Waterfront",
+   "publisher": "Walking Redwood City",
+   "date": "2018-05-11",
+   "type": "News article",
+   "url": "https://walkingredwoodcity.com/2018/05/11/on-the-waterfront/",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002835": {
+   "id": "SRC-002835",
+   "title": "The Taft Apartments",
+   "publisher": "RentCafe",
+   "date": null,
+   "type": "Trade listing",
+   "url": "https://www.rentcafe.com/apartments/ca/san-jose/the-taft/default.aspx",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002836": {
+   "id": "SRC-002836",
+   "title": "The Firestone (Mixed Use Construction Loan)",
+   "publisher": "Northmarq",
+   "date": "2019-08-09",
+   "type": "Trade listing",
+   "url": "https://www.northmarq.com/transactions/firestone-construction-loan-2019-08",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -127040,7 +127148,7 @@
   },
   {
    "id": "SCC-000166",
-   "name": "477 S Market St",
+   "name": "The Taft (477 S Market St)",
    "parcels": [
     {
      "apn": "264-30-140",
@@ -127122,8 +127230,16 @@
         "SRC-001107"
        ],
        "note": "State report shows a building permit issued; it does not say whether construction started"
+      },
+      {
+       "value": "Existing",
+       "src": [
+        "SRC-002835"
+       ],
+       "note": "Rental listing shows the building completed in 2022 and leasing; stabilization not stated"
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -127176,6 +127292,64 @@
        "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "year_built": {
+     "claims": [
+      {
+       "value": 2022,
+       "src": [
+        "SRC-002835"
+       ]
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 6,
+       "src": [
+        "SRC-002836",
+        "SRC-002431",
+        "SRC-002835"
+       ]
+      }
+     ]
+    },
+    "commercial_sf": {
+     "claims": [
+      {
+       "value": 6725,
+       "src": [
+        "SRC-002836"
+       ],
+       "note": "Northmarq: 6,725 sq ft ground-floor retail"
+      },
+      {
+       "value": 6800,
+       "src": [
+        "SRC-002431"
+       ],
+       "note": "Bisnow: about 6,800 sq ft ground-floor retail"
+      },
+      {
+       "value": 5000,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City permit H18-026: approximately 5,000 sq ft commercial"
+      }
+     ]
+    },
+    "total_development_cost": {
+     "claims": [
+      {
+       "value": 72000000,
+       "src": [
+        "SRC-002431"
+       ],
+       "note": "Bisnow 2019: total development cost estimated at $72M"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -127191,10 +127365,116 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "Planned as The Firestone: six-story Type III mixed-use building, 130 apartments, rooftop terrace, ground-floor restaurant/bar, one underground parking level with triple-stacker parking. Northmarq arranged $67M of joint-venture equity and construction financing (2019-08-09).",
+     "src": [
+      "SRC-002836",
+      "SRC-002431"
+     ]
+    },
+    {
+     "text": "Leasing as The Taft; listing shows 130 units, studios from 465 sq ft, one-bedrooms from 562 sq ft and two-bedrooms from 721 to 1,040 sq ft.",
+     "src": [
+      "SRC-002835"
+     ]
+    },
+    {
+     "text": "State APR 2020 building permit row (tracking 1812499, issued 2020-04-27): 106 units moderate income non-deed-restricted and 24 above moderate, noted \"Deemed Moderate Income per methodology approved by HCD\".",
+     "src": [
+      "SRC-001107"
+     ]
+    },
+    {
+     "text": "City sign permit AD21-777 (approved 2021-12-10) for a THE TAFT sign; applicant Western National Builders.",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
-   "parties": [],
-   "financing": [],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "Acquity Realty",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002836",
+      "SRC-002431"
+     ]
+    },
+    {
+     "role": "Lender",
+     "company": "PCCP",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002836",
+      "SRC-002431"
+     ]
+    },
+    {
+     "role": "Equity partner",
+     "company": "Cigna Investment Management",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002836",
+      "SRC-002431"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Steinberg Hart",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002431"
+     ]
+    },
+    {
+     "role": "Broker",
+     "company": "Northmarq",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002836"
+     ]
+    },
+    {
+     "role": "Property manager",
+     "company": "SRG Residential",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002835"
+     ]
+    }
+   ],
+   "financing": [
+    {
+     "type": "Construction loan",
+     "provider": "PCCP",
+     "program": "Part of $67M combined JV equity and construction financing; loan amount not stated separately",
+     "amount": null,
+     "date": "2019-08-09",
+     "src": [
+      "SRC-002836",
+      "SRC-002431"
+     ]
+    },
+    {
+     "type": "Private equity",
+     "provider": "Cigna Investment Management",
+     "program": "Joint-venture equity with Acquity Realty, part of $67M combined capital",
+     "amount": null,
+     "date": "2019-08-09",
+     "src": [
+      "SRC-002836",
+      "SRC-002431"
+     ]
+    }
+   ],
    "groups": {},
    "events": [
     {
@@ -127214,12 +127494,30 @@
      ]
     },
     {
+     "date": "2019-08",
+     "type": "Construction start",
+     "label": "Bisnow reports the project broke ground the week of 2019-08-14",
+     "src": [
+      "SRC-002431"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2020-04-27",
      "type": "Permit issued",
      "label": "Building permit issued",
      "src": [
       "SRC-001107"
      ]
+    },
+    {
+     "date": "2022",
+     "type": "Completion",
+     "label": "Building completed (listing year built)",
+     "src": [
+      "SRC-002835"
+     ],
+     "estimated": false
     }
    ],
    "history": [
@@ -127232,23 +127530,118 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on address, The Firestone and The Taft; opened Northmarq, Bisnow, RentCafe.",
+     "src": [
+      "SRC-002836",
+      "SRC-002431",
+      "SRC-002835"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SCC parcel API for 264-30-140 confirms 477 S Market St; no owner field. PropertyShark/LoopNet not opened (LoopNet refuses access).",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "San Jose planning GIS layer by APN: AD21-777 sign permit for The Taft (2021), zoning letters 2022 and 2024.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "APR Table A2 via data.ca.gov CKAN: 2020 permit row income split; no completion row found.",
+     "src": [
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "Mercury News 2019-07-29 article blocks automated access; Real Deal not used.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Bisnow 2019-08-14: architect Steinberg Hart, $72M estimated cost, groundbreaking; Multi-Housing News and ConnectCRE returned 403.",
+     "src": [
+      "SRC-002431"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No Acquity Realty project page found in search.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No Steinberg Hart project page found in search.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Northmarq transaction page 2019-08-09: PCCP construction loan, Cigna and Acquity JV equity, $67M combined.",
+     "src": [
+      "SRC-002836"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no public LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
-    "SRC-001956": "S3",
-    "SRC-001098": "S4"
+    "SRC-002835": "S3",
+    "SRC-002836": "S4",
+    "SRC-002431": "S5",
+    "SRC-001956": "S6",
+    "SRC-001098": "S7"
    },
    "lat": 37.3283894875,
    "lng": -121.88612491250001,
-   "calcs": {},
+   "calcs": {
+    "cost_per_unit": {
+     "value": 553846,
+     "how": "Total development cost $72,000,000 ÷ 130 total units"
+    }
+   },
    "kinds": [
-    "pipeline"
+    "existing"
    ],
    "summary": {
     "product_type": "Apartments",
-    "status": "Inactive pipeline",
+    "status": "Existing",
     "jurisdiction": "San Jose",
     "community": "",
     "county": "Santa Clara County",
@@ -127267,16 +127660,16 @@
     "mix_types": [],
     "tax_credit": false,
     "owner": "",
-    "developer": "",
-    "cost_basis": "",
-    "cost": null,
-    "per_unit": null,
+    "developer": "Acquity Realty",
+    "cost_basis": "Total development cost",
+    "cost": 72000000,
+    "per_unit": 553846,
     "main_lender": "",
-    "latest_event": "2020-04-27",
-    "stale_since": "2020-04-27",
+    "latest_event": "2022",
+    "stale_since": "",
     "part_of": ""
    },
-   "search": "477 s market st san jose 264-30-140 477 s market st, san jose, ca apartments state category 5+ units, rental tenure permitted state report shows a building permit issued; it does not say whether construction started san jose 130 units reported in entitlement and permit rows epr, h18-026 local tracking number as reported to the state h18-026 city folder 121002, site permit (permit type: development permit (legacy)); city permit status: approved. matched by file number. market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit h18-026 (site permit, folder year 2018), status approved, issue date 2019-05-01: \"site development permit to allow demolition of an existing building and construct a 6-story mixed use development with 130 residential units and approximately 5,000-square feet street of commercial space on a 0.58 gross acre site\" application submitted entitlement approved building permit issued"
+   "search": "the taft (477 s market st) san jose 264-30-140 477 s market st, san jose, ca apartments state category 5+ units, rental tenure permitted state report shows a building permit issued; it does not say whether construction started existing rental listing shows the building completed in 2022 and leasing; stabilization not stated san jose 130 units reported in entitlement and permit rows epr, h18-026 local tracking number as reported to the state h18-026 city folder 121002, site permit (permit type: development permit (legacy)); city permit status: approved. matched by file number. market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 2022 6 6725 northmarq: 6,725 sq ft ground-floor retail 6800 bisnow: about 6,800 sq ft ground-floor retail 5000 city permit h18-026: approximately 5,000 sq ft commercial 72000000 bisnow 2019: total development cost estimated at $72m from the state housing element annual progress report, through 2025. city of san jose permit h18-026 (site permit, folder year 2018), status approved, issue date 2019-05-01: \"site development permit to allow demolition of an existing building and construct a 6-story mixed use development with 130 residential units and approximately 5,000-square feet street of commercial space on a 0.58 gross acre site\" planned as the firestone: six-story type iii mixed-use building, 130 apartments, rooftop terrace, ground-floor restaurant/bar, one underground parking level with triple-stacker parking. northmarq arranged $67m of joint-venture equity and construction financing (2019-08-09). leasing as the taft; listing shows 130 units, studios from 465 sq ft, one-bedrooms from 562 sq ft and two-bedrooms from 721 to 1,040 sq ft. state apr 2020 building permit row (tracking 1812499, issued 2020-04-27): 106 units moderate income non-deed-restricted and 24 above moderate, noted \"deemed moderate income per methodology approved by hcd\". city sign permit ad21-777 (approved 2021-12-10) for a the taft sign; applicant western national builders. developer acquity realty lender pccp equity partner cigna investment management architect steinberg hart broker northmarq property manager srg residential pccp construction loan part of $67m combined jv equity and construction financing; loan amount not stated separately cigna investment management private equity joint-venture equity with acquity realty, part of $67m combined capital application submitted entitlement approved bisnow reports the project broke ground the week of 2019-08-14 building permit issued building completed (listing year built)"
   },
   {
    "id": "SCC-000167",
@@ -256227,6 +256620,88 @@
        37.2633996
       ]
      ]
+    },
+    {
+     "apn": "397-02-110",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-001098"
+     ],
+     "outline": [
+      [
+       -121.9929926,
+       37.263395
+      ],
+      [
+       -121.9940927,
+       37.2633996
+      ],
+      [
+       -121.9940788,
+       37.2637767
+      ],
+      [
+       -121.9930761,
+       37.2637705
+      ],
+      [
+       -121.9930634,
+       37.2637708
+      ],
+      [
+       -121.9930509,
+       37.2637689
+      ],
+      [
+       -121.9930388,
+       37.2637651
+      ],
+      [
+       -121.9930275,
+       37.2637592
+      ],
+      [
+       -121.9930173,
+       37.2637516
+      ],
+      [
+       -121.9930085,
+       37.2637425
+      ],
+      [
+       -121.9930013,
+       37.263732
+      ],
+      [
+       -121.992996,
+       37.2637205
+      ],
+      [
+       -121.9929926,
+       37.2637083
+      ],
+      [
+       -121.9929912,
+       37.2636956
+      ],
+      [
+       -121.9929978,
+       37.2636206
+      ],
+      [
+       -121.9929998,
+       37.2635453
+      ],
+      [
+       -121.9929981,
+       37.26347
+      ],
+      [
+       -121.9929926,
+       37.263395
+      ]
+     ]
     }
    ],
    "addresses": [
@@ -256332,6 +256807,17 @@
        ]
       }
      ]
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 357710,
+       "src": [
+        "SRC-002830"
+       ],
+       "note": "CEQAnet: total building area about 357,710 sq ft"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -256340,18 +256826,107 @@
      "src": [
       "SRC-001557"
      ]
+    },
+    {
+     "text": "CEQAnet: 22 buildings of six units each; units from 1,275 sq ft (2 bed, 2.5 bath) to 2,268 sq ft (4 bed, 3.5 bath); about 0.98 acre of off-site improvements; 298 parking spaces (264 garage, 32 on-street, 2 ADA) and 24 long-term bicycle spaces; up to 71 trees removed. Site zoned R-1-40,000; local action Site Plan; APNs 397-02-110 and 397-02-111.",
+     "src": [
+      "SRC-002831",
+      "SRC-002830"
+     ]
+    },
+    {
+     "text": "Site plan sheet is titled \"SB330 Builder's Remedy Application,\" dated February 14, 2025, owner Marshall Lane Owner LLC, and notes 7% of units (10) for extremely low-income households.",
+     "src": [
+      "SRC-002832"
+     ]
+    },
+    {
+     "text": "City page: Draft EIR finds significant and unavoidable impacts on emergency response and evacuation and on vehicle miles traveled.",
+     "src": [
+      "SRC-001557"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "Marshall Lane Owner, LLC",
+     "contact": "Pete Beritzhoff, Partner",
+     "linkedin": null,
+     "email": "pete@baywestdevelopment.com",
+     "phone": "(408) 680-4938",
+     "other_role": "Applicant",
+     "src": [
+      "SRC-002831",
+      "SRC-002832"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "FirstCarbon Solutions",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "EIR consultant",
+     "src": [
+      "SRC-002831"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2024-01-31",
+     "type": "Application filed",
+     "label": "Preliminary application received",
+     "src": [
+      "SRC-001557"
+     ],
+     "estimated": false
+    },
     {
      "date": "2024-07-16",
      "type": "Application filed",
      "label": "Formal application received",
      "src": [
       "SRC-001557"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-01-16",
+     "type": "Other",
+     "label": "Application deemed complete for processing",
+     "src": [
+      "SRC-001557"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-02-25",
+     "type": "Other",
+     "label": "Applicant invoked AB 1893",
+     "src": [
+      "SRC-001557"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-10-10",
+     "type": "Other",
+     "label": "Notice of Preparation of EIR received by state",
+     "src": [
+      "SRC-002830"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-09-10",
+     "type": "Other",
+     "label": "Draft EIR published; comment period 2026-09-11 to 2026-10-26",
+     "src": [
+      "SRC-001557",
+      "SRC-002831"
      ],
      "estimated": false
     },
@@ -256370,15 +256945,101 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on project name and address; led to CEQAnet SCH 2025100481.",
+     "src": [
+      "SRC-002830"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SCC parcel API for 397-02-111 confirms 18500 Marshall Ln, Saratoga; CEQAnet adds APN 397-02-110 (18520 Marshall Lane). No owner field in the county layer.",
+     "src": [
+      "SRC-002831"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Saratoga project page (timeline, DEIR findings) and site plan PDF (DocumentCenter 5820).",
+     "src": [
+      "SRC-001557",
+      "SRC-002832"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "CEQAnet SCH 2025100481: NOP 2025-10-10, DEIR 2026-09-10, applicant block, unit sizes, APNs.",
+     "src": [
+      "SRC-002831",
+      "SRC-002830"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "SJ Spotlight Saratoga builder's remedy coverage covers other sites (14001 Chester Ave); nothing on Marshall Lane found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "The Real Deal 2024-07-16 article on Saratoga builder's remedy filings returned 403.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Applicant contact email uses baywestdevelopment.com; that site returned a server error. No project page found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Site plan sheet shows no architect name in extractable text; none named on city or CEQAnet pages.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no public LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001557": "S1",
     "SRC-001558": "S2",
-    "SRC-001098": "S3"
+    "SRC-002830": "S3",
+    "SRC-002831": "S4",
+    "SRC-002832": "S5",
+    "SRC-001098": "S6"
    },
-   "lat": 37.262334512121214,
-   "lng": -121.99283827272728,
+   "lat": 37.262788621999995,
+   "lng": -121.992941728,
    "calcs": {},
    "kinds": [
     "pipeline"
@@ -256409,11 +257070,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2024-07-16",
+    "latest_event": "2026-09-10",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "marshall lane townhomes saratoga 397-02-111 18500 marshall ln, saratoga, ca townhomes proposed saratoga 132 misc24-0002 3 298 9.84 [\"builder's remedy\"] 10 extremely low-income units after the applicant invoked ab 1893 on 2025-02-25. draft eir published 2026-09-10. formal application received public hearing anticipated in spring 2027"
+   "search": "marshall lane townhomes saratoga 397-02-111 397-02-110 18500 marshall ln, saratoga, ca townhomes proposed saratoga 132 misc24-0002 3 298 9.84 [\"builder's remedy\"] 357710 ceqanet: total building area about 357,710 sq ft 10 extremely low-income units after the applicant invoked ab 1893 on 2025-02-25. draft eir published 2026-09-10. ceqanet: 22 buildings of six units each; units from 1,275 sq ft (2 bed, 2.5 bath) to 2,268 sq ft (4 bed, 3.5 bath); about 0.98 acre of off-site improvements; 298 parking spaces (264 garage, 32 on-street, 2 ada) and 24 long-term bicycle spaces; up to 71 trees removed. site zoned r-1-40,000; local action site plan; apns 397-02-110 and 397-02-111. site plan sheet is titled \"sb330 builder's remedy application,\" dated february 14, 2025, owner marshall lane owner llc, and notes 7% of units (10) for extremely low-income households. city page: draft eir finds significant and unavoidable impacts on emergency response and evacuation and on vehicle miles traveled. other applicant marshall lane owner, llc pete beritzhoff, partner other eir consultant firstcarbon solutions preliminary application received formal application received application deemed complete for processing applicant invoked ab 1893 notice of preparation of eir received by state draft eir published; comment period 2026-09-11 to 2026-10-26 public hearing anticipated in spring 2027"
   },
   {
    "id": "SCC-000559",
@@ -265352,6 +266013,18 @@
      "src": [
       "SRC-001760"
      ]
+    },
+    {
+     "text": "SF YIMBY reports the owner is a group linked to the founder of Flow, a residential real estate company, and a Flow executive. The tower dates from 1985 and keeps the 1909 facade of Eagles Hall; the site spans North 3rd to North 4th Street between Saint John and Saint James Streets.",
+     "src": [
+      "SRC-001759"
+     ]
+    },
+    {
+     "text": "City planning layer: PRE24-387 applicant is C2K Architecture, Inc; description \"To Request Preliminary Feedback on changing primary occupancy from type B- Office to Type R-2.\" Intake date 2025-01-07, status Complete.",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
    "parties": [
@@ -265369,7 +266042,17 @@
    ],
    "financing": [],
    "groups": {},
-   "events": [],
+   "events": [
+    {
+     "date": "2025-01-07",
+     "type": "Application filed",
+     "label": "Preliminary feedback request PRE24-387 filed (office to R-2 residential occupancy); city status Complete",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    }
+   ],
    "history": [
     {
      "date": "2026-11-03",
@@ -265380,12 +266063,99 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Linked developer website / project page"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on address and conversion; SF YIMBY 2025-01-25 and San Jose Blog 2025-01-20 opened.",
+     "src": [
+      "SRC-001759",
+      "SRC-002828"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SCC parcel API for 467-20-084 shows situs 152 N 3rd St, San Jose; no owner field. LoopNet property record refused access.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "San Jose planning GIS layer queried by APN: PRE24-387 (2025-01-07, Complete), plus older zoning letters and permit adjustments. sanjoseca.gov pages not used.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Preliminary filing only; no APR, CEQAnet or tax-credit entry found for the address.",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "San Jose Blog 2025-01-20 (citing Mercury News 2025-01-16): 133 units, 1985 tower, Eagles Hall facade. Mercury News blocks automated access.",
+     "src": [
+      "SRC-002828"
+     ]
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SF YIMBY 2025-01-25: ownership group linked to Flow; site boundaries.",
+     "src": [
+      "SRC-001759"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No developer named in any source; owner described only as a group linked to Flow.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "C2K Architecture is applicant per city layer and SF YIMBY; no project page found on c2k.com in search.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no public LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001759": "S1",
     "SRC-001760": "S2",
-    "SRC-001098": "S3"
+    "SRC-001956": "S3",
+    "SRC-001098": "S4"
    },
    "lat": 37.3395762875,
    "lng": -121.8895199,
@@ -265419,11 +266189,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "",
+    "latest_event": "2025-01-07",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "152 north 3rd street san jose 467-20-084 152 n 3rd st, san jose, ca 152 north 3rd street, san jose, ca apartments proposed preliminary or application filing; no approval stated. san jose 133 pre24-387 office conversion, nine-story building. article does not state rental or for-sale; product type is a working label. removed a \"flow\" party tag: sj build shows the word \"flow\" in its status line without naming a developer, and no other source ties flow to this site. other applicant c2k architecture"
+   "search": "152 north 3rd street san jose 467-20-084 152 n 3rd st, san jose, ca 152 north 3rd street, san jose, ca apartments proposed preliminary or application filing; no approval stated. san jose 133 pre24-387 office conversion, nine-story building. article does not state rental or for-sale; product type is a working label. removed a \"flow\" party tag: sj build shows the word \"flow\" in its status line without naming a developer, and no other source ties flow to this site. sf yimby reports the owner is a group linked to the founder of flow, a residential real estate company, and a flow executive. the tower dates from 1985 and keeps the 1909 facade of eagles hall; the site spans north 3rd to north 4th street between saint john and saint james streets. city planning layer: pre24-387 applicant is c2k architecture, inc; description \"to request preliminary feedback on changing primary occupancy from type b- office to type r-2.\" intake date 2025-01-07, status complete. other applicant c2k architecture preliminary feedback request pre24-387 filed (office to r-2 residential occupancy); city status complete"
   },
   {
    "id": "SCC-000586",
@@ -411704,7 +412474,8 @@
       {
        "value": "Townhomes",
        "src": [
-        "SRC-001225"
+        "SRC-001225",
+        "SRC-002833"
        ]
       }
      ]
@@ -411748,6 +412519,42 @@
        ]
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 7.88,
+       "src": [
+        "SRC-002833"
+       ],
+       "note": "CEQAnet NOP: 7.88 acres including a 0.87-acre dedication for the Blomquist St extension"
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Market-rate",
+       "src": [
+        "SRC-002833"
+       ],
+       "note": "CEQAnet NOP: 131 for-sale, market-rate townhomes"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary"
+       ],
+       "src": [
+        "SRC-002833",
+        "SRC-001225"
+       ],
+       "note": "Zoning map and text amendment, tentative map, planned development permit, use permit, development agreement"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -411756,12 +412563,43 @@
      "src": [
       "SRC-001225"
      ]
+    },
+    {
+     "text": "CEQAnet NOP lists APNs 052-532-010, 052-532-020 and 052-532-030; about 17 units per acre; 12-foot Bay Trail segment along Redwood Creek; relocation of a 20-foot water tower built around 1900 to city-owned land.",
+     "src": [
+      "SRC-002833"
+     ]
+    },
+    {
+     "text": "Walking Redwood City (2018-05-11): Strada Investment Group of San Francisco; 131 townhome-style condos in twenty buildings, two or three bedrooms, ground-floor garages, optional roof decks; small park planned at the eastern tip of the site.",
+     "src": [
+      "SRC-002834"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "Strada Investment Group",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002834"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2017-07-07",
+     "type": "Other",
+     "label": "Notice of Preparation of EIR received by state",
+     "src": [
+      "SRC-002833"
+     ],
+     "estimated": false
+    },
     {
      "date": "2018-05-07",
      "type": "Approved",
@@ -411786,11 +412624,93 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on address and developer; opened Walking Redwood City 2018-05-11 and CEQAnet.",
+     "src": [
+      "SRC-002834",
+      "SRC-002833"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "SMC parcel owner not available from a public source opened; CEQAnet lists older APNs 052-532-010/020/030.",
+     "src": []
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "Redwood City project page re-read (2018 entitlement, 2023 Third Amendment). Redwood City is not on the Legistar web API.",
+     "src": [
+      "SRC-001225"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "CEQAnet SCH 2017072011 NOP: 7.88 acres, market-rate for-sale townhomes, APNs, discretionary actions.",
+     "src": [
+      "SRC-002833"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "San Mateo Daily Journal articles (2018 approval; DA amendment coverage) and Mercury News via PressReader returned 403.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "ConnectCRE 2018 article on the approval returned 403; Urbanize SF 2025-05-03 mentions the site only as next to MidPen's 1580 Maple project.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No Strada project page found in search. A Sierra Club letter refers to 1548 Maple, LLC but its page text did not load.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Dahlin Group hosts a 2018 news item on the approval but does not state a role; no architect confirmed.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no public LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001225": "S1",
-    "SRC-001103": "S2"
+    "SRC-002833": "S2",
+    "SRC-002834": "S3",
+    "SRC-001103": "S4"
    },
    "lat": 37.49475843921569,
    "lng": -122.22182713529412,
@@ -411813,13 +412733,13 @@
     ],
     "restricted_units": null,
     "aff_bucket": "Market",
-    "aff_label": "Market (by product type)",
-    "aff_share": null,
+    "aff_label": "Market",
+    "aff_share": 0.0,
     "aff_levels": [],
     "mix_types": [],
     "tax_credit": false,
     "owner": "",
-    "developer": "",
+    "developer": "Strada Investment Group",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
@@ -411828,7 +412748,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1548 maple street redwood city 052-532-040 052-532-050 052-532-060 052-532-070 052-532-080 1548 maple st, redwood city, ca townhomes approved redwood city 131 3 for-sale townhomes on the waterfront with a bay trail connection. entitled by city council council approved third amendment to the development agreement, extending its term by three years"
+   "search": "1548 maple street redwood city 052-532-040 052-532-050 052-532-060 052-532-070 052-532-080 1548 maple st, redwood city, ca townhomes approved redwood city 131 3 7.88 ceqanet nop: 7.88 acres including a 0.87-acre dedication for the blomquist st extension market-rate ceqanet nop: 131 for-sale, market-rate townhomes [\"discretionary\"] zoning map and text amendment, tentative map, planned development permit, use permit, development agreement for-sale townhomes on the waterfront with a bay trail connection. ceqanet nop lists apns 052-532-010, 052-532-020 and 052-532-030; about 17 units per acre; 12-foot bay trail segment along redwood creek; relocation of a 20-foot water tower built around 1900 to city-owned land. walking redwood city (2018-05-11): strada investment group of san francisco; 131 townhome-style condos in twenty buildings, two or three bedrooms, ground-floor garages, optional roof decks; small park planned at the eastern tip of the site. developer strada investment group notice of preparation of eir received by state entitled by city council council approved third amendment to the development agreement, extending its term by three years"
   },
   {
    "id": "SMC-000252",
@@ -419412,7 +420332,8 @@
       {
        "value": "Single-family",
        "src": [
-        "SRC-001158"
+        "SRC-001158",
+        "SRC-002829"
        ],
        "note": "City list: detached homes"
       }
@@ -419445,7 +420366,8 @@
       {
        "value": 133,
        "src": [
-        "SRC-001158"
+        "SRC-001158",
+        "SRC-002829"
        ],
        "note": "City list: Phase One 16 + Phase Two 117, added here"
       }
@@ -419480,6 +420402,41 @@
        ]
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 10.2,
+       "src": [
+        "SRC-001158"
+       ],
+       "note": "City list: Phase One 1.9 acres + Phase Two 8.3 acres, added here"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-001908"
+       ],
+       "note": "KB Home: modern 3-story plans"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary"
+       ],
+       "src": [
+        "SRC-001158"
+       ],
+       "note": "Major subdivision; Phase Two General Plan Amendment and PD zone change"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -419488,6 +420445,24 @@
      "src": [
       "SRC-001908",
       "SRC-001158"
+     ]
+    },
+    {
+     "text": "City list densities: Phase One 8 units per acre, Phase Two 14.1 units per acre.",
+     "src": [
+      "SRC-001158"
+     ]
+    },
+    {
+     "text": "CEQAnet NOD (posted 2024-07-03) for Point Martin II: CDFW streambed agreement covering grading and fill of an intermittent drainage and wetland, culverts and v-ditches, and a residential community with access roads; APN 916-122-960; applicant KB Homes.",
+     "src": [
+      "SRC-002829"
+     ]
+    },
+    {
+     "text": "KB Home community page: 3-story plans of about 1,835 to 1,994 sq ft with up to 4 bedrooms, from $1,311,990 (base, excluding solar).",
+     "src": [
+      "SRC-001908"
      ]
     }
    ],
@@ -419509,9 +420484,27 @@
    "groups": {},
    "events": [
     {
+     "date": "2015-06-08",
+     "type": "Application filed",
+     "label": "Phase One application filed",
+     "src": [
+      "SRC-001158"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2015-09-14",
      "type": "Approved",
      "label": "Phase One approved by City Council",
+     "src": [
+      "SRC-001158"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2015-10-29",
+     "type": "Application filed",
+     "label": "Phase Two application filed",
      "src": [
       "SRC-001158"
      ],
@@ -419523,6 +420516,24 @@
      "label": "Phase Two approved by City Council",
      "src": [
       "SRC-001158"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2018-06-25",
+     "type": "Other",
+     "label": "Phase One two-year time extension granted, to 2020-09-14",
+     "src": [
+      "SRC-001158"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2024-06-28",
+     "type": "Other",
+     "label": "CDFW Lake and Streambed Alteration Agreement EPIMS-SMO-25034-R3 approved for Point Martin II",
+     "src": [
+      "SRC-002829"
      ],
      "estimated": false
     },
@@ -419546,13 +420557,97 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Linked developer website / project page"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on Point Martin, KB Home, Martin Street; led to CEQAnet NOD.",
+     "src": [
+      "SRC-002829"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "Parcel ownership already noted on record (KB Home South Bay Inc); CEQAnet adds APN 916-122-960, not in county layer used here.",
+     "src": [
+      "SRC-001908"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Daly City Current Residential Project List (5/27/2026) and older list (DocumentCenter 11826): filing dates, acreage, densities, time extension.",
+     "src": [
+      "SRC-001158"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "CEQAnet SCH 2024070130 NOD: 133 single-family detached lots, CDFW streambed agreement approved 2024-06-28.",
+     "src": [
+      "SRC-002829"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search found only syndicated copies of KB Home's 2026-01-30 release and listing sites; no local news coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No trade press coverage found beyond the KB Home release.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "KB Home community page: 3-story plans 1,835 to 1,994 sq ft, base price from $1,311,990.",
+     "src": [
+      "SRC-001908"
+     ]
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No architect named in city, CEQAnet or KB sources.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "For-sale homebuilder project; no lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no public LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001158": "S1",
     "SRC-001908": "S2",
     "SRC-001907": "S3",
-    "SRC-001103": "S4"
+    "SRC-002829": "S4",
+    "SRC-001103": "S5"
    },
    "lat": 37.70603283076923,
    "lng": -122.42522347307691,
@@ -419590,7 +420685,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "point martin (kb home) daly city 005-590-300 005-590-520 005-580-500 steve courter way and martin st, daly city, ca steve courter way and martin street, daly city, ca 726 shoreridge ln, daly city, ca (sales office), daly city, ca 726 shoreridge ln., daly city, ca (sales office) townhomes kb home: new three-story townhomes single-family city list: detached homes under construction selling too: kb grand opening jan. 30, 2026 daly city 133 city list: phase one 16 + phase two 117, added here mixed-income phase two: 11 bmrs at moderate income. phase one: fees. sub-6-15-11016; gpa-01-16-011884, pd-10-15-11781, ceqa-10-15-11782 parcel match: city apns 005-042-020 and 005-031-070 (+47 others) aren't in the county layer. these lots are owned by kb home south bay inc per the county, at kb's sales address (726 shoreridge) and point martin way. three lots stand in for the project. developer kb home phase one approved by city council phase two approved by city council kb home grand opening announced"
+   "search": "point martin (kb home) daly city 005-590-300 005-590-520 005-580-500 steve courter way and martin st, daly city, ca steve courter way and martin street, daly city, ca 726 shoreridge ln, daly city, ca (sales office), daly city, ca 726 shoreridge ln., daly city, ca (sales office) townhomes kb home: new three-story townhomes single-family city list: detached homes under construction selling too: kb grand opening jan. 30, 2026 daly city 133 city list: phase one 16 + phase two 117, added here mixed-income phase two: 11 bmrs at moderate income. phase one: fees. sub-6-15-11016; gpa-01-16-011884, pd-10-15-11781, ceqa-10-15-11782 10.2 city list: phase one 1.9 acres + phase two 8.3 acres, added here 3 kb home: modern 3-story plans [\"discretionary\"] major subdivision; phase two general plan amendment and pd zone change parcel match: city apns 005-042-020 and 005-031-070 (+47 others) aren't in the county layer. these lots are owned by kb home south bay inc per the county, at kb's sales address (726 shoreridge) and point martin way. three lots stand in for the project. city list densities: phase one 8 units per acre, phase two 14.1 units per acre. ceqanet nod (posted 2024-07-03) for point martin ii: cdfw streambed agreement covering grading and fill of an intermittent drainage and wetland, culverts and v-ditches, and a residential community with access roads; apn 916-122-960; applicant kb homes. kb home community page: 3-story plans of about 1,835 to 1,994 sq ft with up to 4 bedrooms, from $1,311,990 (base, excluding solar). developer kb home phase one application filed phase one approved by city council phase two application filed phase two approved by city council phase one two-year time extension granted, to 2020-09-14 cdfw lake and streambed alteration agreement epims-smo-25034-r3 approved for point martin ii kb home grand opening announced"
   },
   {
    "id": "SMC-000269",

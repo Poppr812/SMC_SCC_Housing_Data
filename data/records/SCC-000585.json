@@ -136,6 +136,18 @@
       "src": [
         "SRC-001760"
       ]
+    },
+    {
+      "text": "SF YIMBY reports the owner is a group linked to the founder of Flow, a residential real estate company, and a Flow executive. The tower dates from 1985 and keeps the 1909 facade of Eagles Hall; the site spans North 3rd to North 4th Street between Saint John and Saint James Streets.",
+      "src": [
+        "SRC-001759"
+      ]
+    },
+    {
+      "text": "City planning layer: PRE24-387 applicant is C2K Architecture, Inc; description \"To Request Preliminary Feedback on changing primary occupancy from type B- Office to Type R-2.\" Intake date 2025-01-07, status Complete.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "parties": [
@@ -153,7 +165,17 @@
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2025-01-07",
+      "type": "Application filed",
+      "label": "Preliminary feedback request PRE24-387 filed (office to R-2 residential occupancy); city status Complete",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -164,6 +186,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and conversion; SF YIMBY 2025-01-25 and San Jose Blog 2025-01-20 opened.",
+      "src": [
+        "SRC-001759",
+        "SRC-002828"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 467-20-084 shows situs 152 N 3rd St, San Jose; no owner field. LoopNet property record refused access.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning GIS layer queried by APN: PRE24-387 (2025-01-07, Complete), plus older zoning letters and permit adjustments. sanjoseca.gov pages not used.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Preliminary filing only; no APR, CEQAnet or tax-credit entry found for the address.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose Blog 2025-01-20 (citing Mercury News 2025-01-16): 133 units, 1985 tower, Eagles Hall facade. Mercury News blocks automated access.",
+      "src": [
+        "SRC-002828"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-01-25: ownership group linked to Flow; site boundaries.",
+      "src": [
+        "SRC-001759"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No developer named in any source; owner described only as a group linked to Flow.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "C2K Architecture is applicant per city layer and SF YIMBY; no project page found on c2k.com in search.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

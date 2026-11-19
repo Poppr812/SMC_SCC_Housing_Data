@@ -147,6 +147,88 @@
           37.2633996
         ]
       ]
+    },
+    {
+      "apn": "397-02-110",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9929926,
+          37.263395
+        ],
+        [
+          -121.9940927,
+          37.2633996
+        ],
+        [
+          -121.9940788,
+          37.2637767
+        ],
+        [
+          -121.9930761,
+          37.2637705
+        ],
+        [
+          -121.9930634,
+          37.2637708
+        ],
+        [
+          -121.9930509,
+          37.2637689
+        ],
+        [
+          -121.9930388,
+          37.2637651
+        ],
+        [
+          -121.9930275,
+          37.2637592
+        ],
+        [
+          -121.9930173,
+          37.2637516
+        ],
+        [
+          -121.9930085,
+          37.2637425
+        ],
+        [
+          -121.9930013,
+          37.263732
+        ],
+        [
+          -121.992996,
+          37.2637205
+        ],
+        [
+          -121.9929926,
+          37.2637083
+        ],
+        [
+          -121.9929912,
+          37.2636956
+        ],
+        [
+          -121.9929978,
+          37.2636206
+        ],
+        [
+          -121.9929998,
+          37.2635453
+        ],
+        [
+          -121.9929981,
+          37.26347
+        ],
+        [
+          -121.9929926,
+          37.263395
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -252,6 +334,17 @@
           ]
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 357710,
+          "src": [
+            "SRC-002830"
+          ],
+          "note": "CEQAnet: total building area about 357,710 sq ft"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -260,18 +353,107 @@
       "src": [
         "SRC-001557"
       ]
+    },
+    {
+      "text": "CEQAnet: 22 buildings of six units each; units from 1,275 sq ft (2 bed, 2.5 bath) to 2,268 sq ft (4 bed, 3.5 bath); about 0.98 acre of off-site improvements; 298 parking spaces (264 garage, 32 on-street, 2 ADA) and 24 long-term bicycle spaces; up to 71 trees removed. Site zoned R-1-40,000; local action Site Plan; APNs 397-02-110 and 397-02-111.",
+      "src": [
+        "SRC-002831",
+        "SRC-002830"
+      ]
+    },
+    {
+      "text": "Site plan sheet is titled \"SB330 Builder's Remedy Application,\" dated February 14, 2025, owner Marshall Lane Owner LLC, and notes 7% of units (10) for extremely low-income households.",
+      "src": [
+        "SRC-002832"
+      ]
+    },
+    {
+      "text": "City page: Draft EIR finds significant and unavoidable impacts on emergency response and evacuation and on vehicle miles traveled.",
+      "src": [
+        "SRC-001557"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Marshall Lane Owner, LLC",
+      "contact": "Pete Beritzhoff, Partner",
+      "linkedin": null,
+      "email": "pete@baywestdevelopment.com",
+      "phone": "(408) 680-4938",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002831",
+        "SRC-002832"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "FirstCarbon Solutions",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "EIR consultant",
+      "src": [
+        "SRC-002831"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-01-31",
+      "type": "Application filed",
+      "label": "Preliminary application received",
+      "src": [
+        "SRC-001557"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-07-16",
       "type": "Application filed",
       "label": "Formal application received",
       "src": [
         "SRC-001557"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-16",
+      "type": "Other",
+      "label": "Application deemed complete for processing",
+      "src": [
+        "SRC-001557"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-25",
+      "type": "Other",
+      "label": "Applicant invoked AB 1893",
+      "src": [
+        "SRC-001557"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-10",
+      "type": "Other",
+      "label": "Notice of Preparation of EIR received by state",
+      "src": [
+        "SRC-002830"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-09-10",
+      "type": "Other",
+      "label": "Draft EIR published; comment period 2026-09-11 to 2026-10-26",
+      "src": [
+        "SRC-001557",
+        "SRC-002831"
       ],
       "estimated": false
     },
@@ -290,6 +472,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project name and address; led to CEQAnet SCH 2025100481.",
+      "src": [
+        "SRC-002830"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API for 397-02-111 confirms 18500 Marshall Ln, Saratoga; CEQAnet adds APN 397-02-110 (18520 Marshall Lane). No owner field in the county layer.",
+      "src": [
+        "SRC-002831"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Saratoga project page (timeline, DEIR findings) and site plan PDF (DocumentCenter 5820).",
+      "src": [
+        "SRC-001557",
+        "SRC-002832"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025100481: NOP 2025-10-10, DEIR 2026-09-10, applicant block, unit sizes, APNs.",
+      "src": [
+        "SRC-002831",
+        "SRC-002830"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SJ Spotlight Saratoga builder's remedy coverage covers other sites (14001 Chester Ave); nothing on Marshall Lane found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-16 article on Saratoga builder's remedy filings returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Applicant contact email uses baywestdevelopment.com; that site returned a server error. No project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Site plan sheet shows no architect name in extractable text; none named on city or CEQAnet pages.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

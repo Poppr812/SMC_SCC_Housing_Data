@@ -1,6 +1,6 @@
 {
   "id": "SCC-000166",
-  "name": "477 S Market St",
+  "name": "The Taft (477 S Market St)",
   "parcels": [
     {
       "apn": "264-30-140",
@@ -82,8 +82,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-002835"
+          ],
+          "note": "Rental listing shows the building completed in 2022 and leasing; stabilization not stated"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -136,6 +144,64 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2022,
+          "src": [
+            "SRC-002835"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002836",
+            "SRC-002431",
+            "SRC-002835"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 6725,
+          "src": [
+            "SRC-002836"
+          ],
+          "note": "Northmarq: 6,725 sq ft ground-floor retail"
+        },
+        {
+          "value": 6800,
+          "src": [
+            "SRC-002431"
+          ],
+          "note": "Bisnow: about 6,800 sq ft ground-floor retail"
+        },
+        {
+          "value": 5000,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H18-026: approximately 5,000 sq ft commercial"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 72000000,
+          "src": [
+            "SRC-002431"
+          ],
+          "note": "Bisnow 2019: total development cost estimated at $72M"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -151,10 +217,116 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Planned as The Firestone: six-story Type III mixed-use building, 130 apartments, rooftop terrace, ground-floor restaurant/bar, one underground parking level with triple-stacker parking. Northmarq arranged $67M of joint-venture equity and construction financing (2019-08-09).",
+      "src": [
+        "SRC-002836",
+        "SRC-002431"
+      ]
+    },
+    {
+      "text": "Leasing as The Taft; listing shows 130 units, studios from 465 sq ft, one-bedrooms from 562 sq ft and two-bedrooms from 721 to 1,040 sq ft.",
+      "src": [
+        "SRC-002835"
+      ]
+    },
+    {
+      "text": "State APR 2020 building permit row (tracking 1812499, issued 2020-04-27): 106 units moderate income non-deed-restricted and 24 above moderate, noted \"Deemed Moderate Income per methodology approved by HCD\".",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    {
+      "text": "City sign permit AD21-777 (approved 2021-12-10) for a THE TAFT sign; applicant Western National Builders.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Acquity Realty",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002836",
+        "SRC-002431"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "PCCP",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002836",
+        "SRC-002431"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Cigna Investment Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002836",
+        "SRC-002431"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002431"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Northmarq",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002836"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "SRG Residential",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002835"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "PCCP",
+      "program": "Part of $67M combined JV equity and construction financing; loan amount not stated separately",
+      "amount": null,
+      "date": "2019-08-09",
+      "src": [
+        "SRC-002836",
+        "SRC-002431"
+      ]
+    },
+    {
+      "type": "Private equity",
+      "provider": "Cigna Investment Management",
+      "program": "Joint-venture equity with Acquity Realty, part of $67M combined capital",
+      "amount": null,
+      "date": "2019-08-09",
+      "src": [
+        "SRC-002836",
+        "SRC-002431"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -174,12 +346,30 @@
       ]
     },
     {
+      "date": "2019-08",
+      "type": "Construction start",
+      "label": "Bisnow reports the project broke ground the week of 2019-08-14",
+      "src": [
+        "SRC-002431"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2020-04-27",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2022",
+      "type": "Completion",
+      "label": "Building completed (listing year built)",
+      "src": [
+        "SRC-002835"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -192,6 +382,93 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, The Firestone and The Taft; opened Northmarq, Bisnow, RentCafe.",
+      "src": [
+        "SRC-002836",
+        "SRC-002431",
+        "SRC-002835"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 264-30-140 confirms 477 S Market St; no owner field. PropertyShark/LoopNet not opened (LoopNet refuses access).",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning GIS layer by APN: AD21-777 sign permit for The Taft (2021), zoning letters 2022 and 2024.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 via data.ca.gov CKAN: 2020 permit row income split; no completion row found.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News 2019-07-29 article blocks automated access; Real Deal not used.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Bisnow 2019-08-14: architect Steinberg Hart, $72M estimated cost, groundbreaking; Multi-Housing News and ConnectCRE returned 403.",
+      "src": [
+        "SRC-002431"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Acquity Realty project page found in search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Steinberg Hart project page found in search.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Northmarq transaction page 2019-08-09: PCCP construction loan, Cigna and Acquity JV equity, $67M combined.",
+      "src": [
+        "SRC-002836"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

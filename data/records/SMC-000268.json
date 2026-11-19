@@ -195,7 +195,8 @@
         {
           "value": "Single-family",
           "src": [
-            "SRC-001158"
+            "SRC-001158",
+            "SRC-002829"
           ],
           "note": "City list: detached homes"
         }
@@ -228,7 +229,8 @@
         {
           "value": 133,
           "src": [
-            "SRC-001158"
+            "SRC-001158",
+            "SRC-002829"
           ],
           "note": "City list: Phase One 16 + Phase Two 117, added here"
         }
@@ -263,6 +265,41 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.2,
+          "src": [
+            "SRC-001158"
+          ],
+          "note": "City list: Phase One 1.9 acres + Phase Two 8.3 acres, added here"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001908"
+          ],
+          "note": "KB Home: modern 3-story plans"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001158"
+          ],
+          "note": "Major subdivision; Phase Two General Plan Amendment and PD zone change"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -271,6 +308,24 @@
       "src": [
         "SRC-001908",
         "SRC-001158"
+      ]
+    },
+    {
+      "text": "City list densities: Phase One 8 units per acre, Phase Two 14.1 units per acre.",
+      "src": [
+        "SRC-001158"
+      ]
+    },
+    {
+      "text": "CEQAnet NOD (posted 2024-07-03) for Point Martin II: CDFW streambed agreement covering grading and fill of an intermittent drainage and wetland, culverts and v-ditches, and a residential community with access roads; APN 916-122-960; applicant KB Homes.",
+      "src": [
+        "SRC-002829"
+      ]
+    },
+    {
+      "text": "KB Home community page: 3-story plans of about 1,835 to 1,994 sq ft with up to 4 bedrooms, from $1,311,990 (base, excluding solar).",
+      "src": [
+        "SRC-001908"
       ]
     }
   ],
@@ -292,9 +347,27 @@
   "groups": {},
   "events": [
     {
+      "date": "2015-06-08",
+      "type": "Application filed",
+      "label": "Phase One application filed",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2015-09-14",
       "type": "Approved",
       "label": "Phase One approved by City Council",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2015-10-29",
+      "type": "Application filed",
+      "label": "Phase Two application filed",
       "src": [
         "SRC-001158"
       ],
@@ -306,6 +379,24 @@
       "label": "Phase Two approved by City Council",
       "src": [
         "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2018-06-25",
+      "type": "Other",
+      "label": "Phase One two-year time extension granted, to 2020-09-14",
+      "src": [
+        "SRC-001158"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-06-28",
+      "type": "Other",
+      "label": "CDFW Lake and Streambed Alteration Agreement EPIMS-SMO-25034-R3 approved for Point Martin II",
+      "src": [
+        "SRC-002829"
       ],
       "estimated": false
     },
@@ -329,6 +420,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Point Martin, KB Home, Martin Street; led to CEQAnet NOD.",
+      "src": [
+        "SRC-002829"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Parcel ownership already noted on record (KB Home South Bay Inc); CEQAnet adds APN 916-122-960, not in county layer used here.",
+      "src": [
+        "SRC-001908"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Daly City Current Residential Project List (5/27/2026) and older list (DocumentCenter 11826): filing dates, acreage, densities, time extension.",
+      "src": [
+        "SRC-001158"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2024070130 NOD: 133 single-family detached lots, CDFW streambed agreement approved 2024-06-28.",
+      "src": [
+        "SRC-002829"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found only syndicated copies of KB Home's 2026-01-30 release and listing sites; no local news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No trade press coverage found beyond the KB Home release.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "KB Home community page: 3-story plans 1,835 to 1,994 sq ft, base price from $1,311,990.",
+      "src": [
+        "SRC-001908"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in city, CEQAnet or KB sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "For-sale homebuilder project; no lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }
