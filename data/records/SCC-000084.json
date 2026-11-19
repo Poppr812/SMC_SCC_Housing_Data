@@ -1,6 +1,6 @@
 {
   "id": "SCC-000084",
-  "name": "1202 Campbell Av",
+  "name": "Santa Clara University Faculty Housing (1202 Campbell Ave)",
   "parcels": [
     {
       "apn": "230-14-004",
@@ -140,6 +140,14 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 295,
+          "src": [
+            "SRC-002429",
+            "SRC-002430"
+          ],
+          "note": "2019 news reports"
         }
       ]
     },
@@ -164,6 +172,54 @@
           "note": "State report (through 2019): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002430"
+          ],
+          "note": "Three-acre property"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 20000,
+          "src": [
+            "SRC-002429",
+            "SRC-002430"
+          ],
+          "note": "Technology incubator (Bronco Venture Accelerator)"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-002429",
+            "SRC-002430"
+          ],
+          "note": "Housing for teachers at Santa Clara University, Bellarmine College Preparatory and Cristo Rey Jesuit High School"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Mayor said all 295 units would be rent-restricted (San José Spotlight, 2019); San Jose Inside described 295 below-market-rate homes proposed without public subsidies.",
+          "src": [
+            "SRC-002429",
+            "SRC-002430"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -172,12 +228,53 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "State report 2019 row for PD19-020 lists 290 units proposed and 290 in the disapproved-units column.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    {
+      "text": "San José Spotlight (2019-05-14): site at 1202 and 1205 Campbell Ave designated light industrial; city planning staff recommended rejecting the conversion; council voted 9-1-1 to direct staff to return with general plan amendments.",
+      "src": [
+        "SRC-002429"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Santa Clara University",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002429",
+        "SRC-002430"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-04-10",
+      "type": "Other",
+      "label": "Planning Commission recommends council advance the project",
+      "src": [
+        "SRC-002429"
+      ]
+    },
+    {
+      "date": "2019-05-14",
+      "type": "Other",
+      "label": "City Council votes 9-1-1 to bring back general plan amendments",
+      "src": [
+        "SRC-002429",
+        "SRC-002430"
+      ]
+    },
     {
       "date": "2019-06-13",
       "type": "Application filed",
@@ -192,6 +289,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1202 Campbell Ave, PD19-020 and SCU faculty housing",
+      "src": [
+        "SRC-002429"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SCC parcel API for 230-14-004: situs 1202 Campbell Av, no owner of record shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov (environmental review page, staff reports) refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2019 row for PD19-020; no CEQAnet SCH entry found for this project",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San José Spotlight 2019-05-14; San Jose Inside 2019-05-30",
+      "src": [
+        "SRC-002429",
+        "SRC-002430"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of trade press; no trade articles opened with project facts",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "scu.edu/housingeducators redirects to a redirect service with no content",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in public sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Inside: proposed without public subsidies; no lenders found",
+      "src": [
+        "SRC-002430"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts; none returned",
+      "src": []
+    }
+  }
 }

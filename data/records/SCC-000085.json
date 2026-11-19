@@ -137,6 +137,43 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 21,
+          "src": [
+            "SRC-001956",
+            "SRC-002431"
+          ],
+          "note": "Approved permit description; Bisnow 2019"
+        },
+        {
+          "value": 19,
+          "src": [
+            "SRC-002432"
+          ],
+          "note": "Architect's project page"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 123479,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Office space in permit description"
+        },
+        {
+          "value": 75000,
+          "src": [
+            "SRC-002432"
+          ],
+          "note": "Office space on architect's page"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -152,6 +189,37 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Steinberg Hart page: client Acquity Realty Inc.; 19 stories, about 75,000 sq ft office, enclosed parking, rooftop pool, lounge and fitness; lists both 290 and 220 residential units.",
+      "src": [
+        "SRC-002432"
+      ]
+    },
+    {
+      "text": "Bisnow (2019-08-14): Acquity was seeking entitlements for a 21-story mixed-use tower at Carlysle Street and Notre Dame Avenue, with NorthMarq leading its capitalization.",
+      "src": [
+        "SRC-002431"
+      ]
+    },
+    {
+      "text": "San Jose Highrises: revised plan for a mid-rise mixed-use building with about half the original units and 4,700 sq ft of ground-floor retail; site listed for sale at $12.5 million; a loan default notice was rescinded.",
+      "src": [
+        "SRC-002433"
+      ]
+    },
+    {
+      "text": "SiliconValley.com via Kidder Mathews (2025-09-30): the owner avoided foreclosure on the site for a second time and began seeking a buyer.",
+      "src": [
+        "SRC-002434"
+      ]
+    },
+    {
+      "text": "State report 2020 Table A row for SP20-020 lists 290 owner units proposed and approved; Table A2 2020 lists APNs 259-35-033, -026, -027, -032 and 220 renter units entitled 2020-07-08.",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
     }
   ],
   "parties": [
@@ -164,6 +232,26 @@
         "SRC-001820"
       ],
       "website": "https://www.acquityrealty.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.steinberghart.com",
+      "project_page": "https://www.steinberghart.com/design/projects/the-carlysle/",
+      "src": [
+        "SRC-002432"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "NorthMarq",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002431"
+      ]
     }
   ],
   "financing": [],
@@ -173,6 +261,14 @@
       "date": "2018-06-05",
       "type": "Application filed",
       "label": "Application submitted",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    {
+      "date": "2020-06-18",
+      "type": "Application filed",
+      "label": "Application SP20-020 submitted",
       "src": [
         "SRC-001099"
       ]
@@ -211,6 +307,100 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 51 Notre Dame, The Carlysle and Acquity Realty",
+      "src": [
+        "SRC-002433"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SCC parcel API for 259-35-033 and 259-35-026: situs only, no owner of record shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov Carlysle EIR page refuses automated access; city permit GIS already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2018 and 2020, Table A2 2020",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Kidder Mathews reprint of SiliconValley.com 2025-09-30; Mercury News articles paywalled",
+      "src": [
+        "SRC-002434"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Bisnow 2019-08-14; San Jose Highrises listing; The Real Deal refused access; SF YIMBY 2021 already on record",
+      "src": [
+        "SRC-002431",
+        "SRC-002433",
+        "SRC-001820"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Acquity Realty website already on record",
+      "src": [
+        "SRC-001820"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Steinberg Hart project page",
+      "src": [
+        "SRC-002432"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Bisnow: NorthMarq leading capitalization; The Real Deal loan-default articles refused access",
+      "src": [
+        "SRC-002431"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts; none returned",
+      "src": []
+    }
+  }
 }
