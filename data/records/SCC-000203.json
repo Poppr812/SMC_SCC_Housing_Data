@@ -139,6 +139,13 @@
             "SRC-001956"
           ],
           "note": "City file PRE23-226 (Prelim - Focused (Policy Review, No Plans)): \"SB330 Preliminary Application to construct a multifamily residential townhome project totaling 85 units\""
+        },
+        {
+          "value": 105,
+          "src": [
+            "SRC-001837"
+          ],
+          "note": "SF YIMBY, May 2024: preliminary plans for 105 condominiums, up from 85 townhomes filed the prior year"
         }
       ]
     },
@@ -193,6 +200,18 @@
           "note": "State report 2024, application stage: 21 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.86,
+          "src": [
+            "SRC-001837",
+            "SRC-001838"
+          ],
+          "note": "Both sources give 3.86 acres (city permit description quoted by SJ Build says approximately 3.86 gross acres)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -218,6 +237,12 @@
       "text": "City of San Jose permit T24-018 (Tentative Map, folder year 2024), status Under Review: \"Vesting Tentative Map to subdivide one existing lot into six residential lots, with each lot designated for condominium purposes for up to 101 residential units, on an approximately 3.68-gross-acre site.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (May 2024) describes the existing building as a vacant six-floor office block to be demolished and says the developer invoked SB 330 in a May 2024 pre-application; the number and income levels of affordable units were not specified.",
+      "src": [
+        "SRC-001837"
       ]
     }
   ],
@@ -270,6 +295,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Bayshore Plaza and Stanley Group; SF YIMBY May 2024 gives 105 condos and 3.86 acres",
+      "src": [
+        "SRC-001837"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 101-05-004: situs 2107 N 1st St, San Jose; no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov planning pages refuse automated access; city GIS permit layer already on record",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project in San Jose; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "data.ca.gov APR Table A: 2024 row H24-026, 101 units, 21 low-income, status Pending; no entitlement row",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched Mercury News, SJ Spotlight for 2107 N First / Bayshore Plaza housing; no articles found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-05-24 (opened); The Real Deal 2023-11-09 and ConnectCRE sale story returned 403",
+      "src": [
+        "SRC-001837"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for Stanley Group (Campbell) project page; no company page for this project found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in SF YIMBY, SJ Build or search results",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 2107 N First St residential; none found",
+      "src": []
+    }
+  }
 }

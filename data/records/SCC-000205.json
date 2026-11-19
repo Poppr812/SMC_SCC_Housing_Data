@@ -90,6 +90,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "364 San Antonio Rd, Mountain View, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -245,6 +252,27 @@
           "src": [
             "SRC-001680"
           ]
+        },
+        {
+          "value": [
+            {
+              "count": 22,
+              "ami": 50
+            },
+            {
+              "count": 77,
+              "ami": 80
+            },
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001101",
+            "SRC-001110"
+          ],
+          "note": "State report 2024: deed-restricted units by state income category (very low, low, moderate; AMI is the category's upper limit)"
         }
       ]
     },
@@ -270,6 +298,26 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 16,
+          "src": [
+            "SRC-003157",
+            "SRC-003158"
+          ],
+          "note": "16 vehicle spaces at Planning Commission and Council approval, plus 100 long-term and 14 short-term bike spaces"
+        },
+        {
+          "value": 17,
+          "src": [
+            "SRC-003159"
+          ],
+          "note": "June 2024 proposal: ground-level garage with 17 spaces"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -285,6 +333,40 @@
       "src": [
         "SRC-001680"
       ]
+    },
+    {
+      "text": "Mountain View Voice reports the City Council approved the project unanimously on December 17, 2024; it replaces a Valero gas station and auto repair shop; no city funding was requested; parking requirements were waived under AB 2097 with a $50 monthly transit subsidy for three years.",
+      "src": [
+        "SRC-003158",
+        "SRC-003157"
+      ]
+    },
+    {
+      "text": "An earlier market-rate project by a different applicant, a five-story for-sale condominium building with ground-floor commercial, was approved in October 2022; that approval expired before CRP bought the property. The state report lists it as 62 units under file PL-2021-130.",
+      "src": [
+        "SRC-003159",
+        "SRC-003157",
+        "SRC-001110"
+      ]
+    },
+    {
+      "text": "Mountain View Voice (June 2024) names Seth Sterneck, managing director, and Jack Burlison, director, of CRP Affordable Housing, and gives affordability as 30% to 70% of AMI; the November 2024 article says at or below 80% of AMI.",
+      "src": [
+        "SRC-003159",
+        "SRC-003157"
+      ]
+    },
+    {
+      "text": "CEQAnet Notice of Exemption (statutory, CEQA Guidelines 15194): Planned Community Permit and Development Review Permit to demolish a service station and build an eight-story project of 99 affordable rental units and one manager unit using State Density Bonus Law on a 0.62-acre site.",
+      "src": [
+        "SRC-003160"
+      ]
+    },
+    {
+      "text": "County parcel data gives the situs for APN 148-15-020 as 364 San Antonio Rd.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [
@@ -297,6 +379,17 @@
         "SRC-001325"
       ],
       "website": "https://www.crpaffordable.com"
+    },
+    {
+      "role": "Other",
+      "company": "Shellan Rodriguez",
+      "contact": "Shellan Rodriguez",
+      "linkedin": null,
+      "other_role": "Project applicant / consultant for CRP Affordable Housing",
+      "src": [
+        "SRC-003159",
+        "SRC-003157"
+      ]
     }
   ],
   "financing": [
@@ -392,6 +485,25 @@
       ]
     },
     {
+      "date": "2022-10-25",
+      "type": "Approved",
+      "label": "Earlier 62-unit for-sale project entitled (PL-2021-130); approval later expired",
+      "src": [
+        "SRC-001110",
+        "SRC-003157"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-12",
+      "type": "Application filed",
+      "label": "Application for 100-unit affordable project (PL-2024-002)",
+      "src": [
+        "SRC-001101"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-09",
       "type": "Sale",
       "label": "CRP Affordable Housing bought the lot for $10 million",
@@ -407,6 +519,15 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2024-12-19",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (SCH 2024120922)",
+      "src": [
+        "SRC-003160"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-09-01",
@@ -456,6 +577,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 334 San Antonio Road and CRP Affordable Housing",
+      "src": [
+        "SRC-003158"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API, APN 148-15-020: situs 364 San Antonio Rd; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Mountain View planning documents not reached directly; council and commission actions taken from news and state data",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county funding (developer requested no local funding)",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "data.ca.gov APR Tables A and A2 (2022 and 2024 rows); CEQAnet SCH 2024120922; CTCAC CA-26-549 already on record",
+      "src": [
+        "SRC-001101",
+        "SRC-001110",
+        "SRC-003160",
+        "SRC-001680"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Mountain View Voice 2024-06-17, 2024-11-25, 2024-12-19",
+      "src": [
+        "SRC-003159",
+        "SRC-003157",
+        "SRC-003158"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY Nov 2024 already on record; The Real Deal Oct 2024 not opened (403 on that site)",
+      "src": [
+        "SRC-001325"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "crpaffordable.com homepage and Our Projects page: no Mountain View project listed",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in news, CEQAnet or CTCAC sources read",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC CA-26-549 financing already on record",
+      "src": [
+        "SRC-001680"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 334 San Antonio CRP; none opened",
+      "src": []
+    }
+  }
 }

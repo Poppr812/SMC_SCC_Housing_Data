@@ -187,18 +187,11 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001487"
-          ]
-        },
-        {
-          "value": "Approved",
-          "src": [
+            "SRC-001487",
             "SRC-001749"
-          ],
-          "note": "Planning Commission approved October 27, 2025"
+          ]
         }
-      ],
-      "best": 1
+      ]
     },
     "jurisdiction": {
       "claims": [
@@ -260,6 +253,25 @@
           "note": ""
         }
       ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 23104,
+          "src": [
+            "SRC-001487"
+          ],
+          "note": "October 2025 item: new two-story commercial building of 23,104 sq ft"
+        },
+        {
+          "value": 10000,
+          "src": [
+            "SRC-003149"
+          ],
+          "note": "April/May 2025 item: one-story commercial building of 10,000 sq ft"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -267,6 +279,25 @@
       "text": "City item describes 101 market-rate townhouse units and a 23,104 sq ft commercial building. Planning Commission continued it on October 27, 2025 to November 24, 2025; outcome not found in the items read.",
       "src": [
         "SRC-001487"
+      ]
+    },
+    {
+      "text": "Sunnyvale file 25-0575 (May 2025 Planning Commission) described demolition of the Lakewood Shopping Center and a former auto service center, 101 townhomes in 15 three-story buildings, a one-story 10,000 sq ft commercial building, and a vesting tentative map for 27 lots and 101 condominiums; zoning C-1/PD.",
+      "src": [
+        "SRC-003149"
+      ]
+    },
+    {
+      "text": "Sunnyvale file 25-0975 (October 2025) describes a two-story 23,104 sq ft commercial building and 101 market-rate townhouses in 15 three-story buildings, a vesting tentative map for 26 lots and 101 condominium spaces, and zoning VCMU-22 and VCC. The Planning Commission continued the hearing to a date uncertain on 2025-10-27.",
+      "src": [
+        "SRC-001487",
+        "SRC-001749"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (May 2025) reports the center includes New Wing Yuan Market and that Kelley Rutchena is director of entitlements for True Life's Bay Area branch.",
+      "src": [
+        "SRC-003150"
       ]
     }
   ],
@@ -290,15 +321,35 @@
       "src": [
         "SRC-001750"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "The True Life Companies",
+      "contact": "Kelley Rutchena",
+      "linkedin": null,
+      "website": "https://www.thetruelifecompanies.com",
+      "src": [
+        "SRC-003149",
+        "SRC-003150"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-05-12",
+      "type": "Other",
+      "label": "Planning Commission study session on the proposal",
+      "src": [
+        "SRC-003150"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-10-27",
-      "type": "Approved",
-      "label": "Planning Commission approval",
+      "type": "Other",
+      "label": "Planning Commission continued the public hearing to a date uncertain",
       "src": [
         "SRC-001749"
       ],
@@ -320,6 +371,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Removed the 2025-10-27 approval: Legistar shows the Planning Commission continued the hearing to a date uncertain"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Lakewood Shopping Center, Lawrence Expressway, True Life; San Jose Spotlight May 2025 article",
+      "src": [
+        "SRC-003150"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 110-23-110, -109, -108: situs 1119 Lawrence Ex, 1037 and 1051 Lakehaven Dr, Sunnyvale; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Sunnyvale Legistar: matters 15882 (25-0575) and 16342 (25-0975) with histories; PC agendas Nov 2025-Nov 2026 show no later Lakewood item",
+      "src": [
+        "SRC-003149",
+        "SRC-001487",
+        "SRC-001749"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project in Sunnyvale; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Tables A and A2 searched by APN 110-23-110; no Sunnyvale row found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-05-28 (opened); Local News Matters 2025-05-31 returned 403",
+      "src": [
+        "SRC-003150"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for SF YIMBY, Real Deal, CoStar coverage of Lakewood Sunnyvale townhomes; no trade article on this project opened",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "thetruelifecompanies.com homepage: no Sunnyvale or Lakewood project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city items or news read",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on True Life Lakewood Sunnyvale; none found",
+      "src": []
+    }
+  }
 }

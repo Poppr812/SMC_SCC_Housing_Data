@@ -71,6 +71,88 @@
           37.4215939
         ]
       ]
+    },
+    {
+      "apn": "127-15-049",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1035132,
+          37.4218728
+        ],
+        [
+          -122.1035498,
+          37.4215939
+        ],
+        [
+          -122.1036679,
+          37.421601
+        ],
+        [
+          -122.1036578,
+          37.4216778
+        ],
+        [
+          -122.1040342,
+          37.4217006
+        ],
+        [
+          -122.1040562,
+          37.4218396
+        ],
+        [
+          -122.1040555,
+          37.4218495
+        ],
+        [
+          -122.1040533,
+          37.4218592
+        ],
+        [
+          -122.1040495,
+          37.4218684
+        ],
+        [
+          -122.1040442,
+          37.4218769
+        ],
+        [
+          -122.1040377,
+          37.4218844
+        ],
+        [
+          -122.1040301,
+          37.4218908
+        ],
+        [
+          -122.1040215,
+          37.4218959
+        ],
+        [
+          -122.1040123,
+          37.4218996
+        ],
+        [
+          -122.1040026,
+          37.4219017
+        ],
+        [
+          -122.1039926,
+          37.4219023
+        ],
+        [
+          -122.1039827,
+          37.4219013
+        ],
+        [
+          -122.1035132,
+          37.4218728
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -87,6 +169,14 @@
             "SRC-001266"
           ]
         }
+      ]
+    },
+    {
+      "text": "830 E Charleston Rd, Palo Alto, CA",
+      "role": "other",
+      "src": [
+        "SRC-003163",
+        "SRC-003162"
       ]
     }
   ],
@@ -141,6 +231,132 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-003161",
+            "SRC-003162"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 100,
+          "src": [
+            "SRC-003163",
+            "SRC-003162"
+          ],
+          "note": "Garage at one space per unit"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 73612,
+          "src": [
+            "SRC-003163"
+          ],
+          "note": "SB 330 form floor area: residential 73,612 sq ft, nonresidential 66,135 sq ft, total 139,747 sq ft"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.65,
+          "src": [
+            "SRC-003162"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 14,
+            "1br": 86,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003161"
+          ]
+        },
+        {
+          "value": {
+            "studio": 16,
+            "1br": 84,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003162"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 15,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003161"
+          ],
+          "note": "15 below-market units for households at or below 80% of AMI"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003161",
+            "SRC-003162"
+          ],
+          "note": "15 of 100 units affordable"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "SB 330 form unit table lists 99 extremely low income, 1 very low income and 15 moderate income units, total 100, 15 affordable and 27 density bonus units, with the note '100% Low Income Units - to be @ 80AMI'. Mountain View Voice reports 15 units at 80% AMI or less; SF YIMBY reports 15 low-income units.",
+          "src": [
+            "SRC-003163",
+            "SRC-003161",
+            "SRC-003162"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003163",
+            "SRC-003162"
+          ],
+          "note": "Waivers for height (79 ft vs 60 ft), lot coverage (87% vs 70%) and front setback; density bonus for FAR 3.37"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -149,17 +365,185 @@
       "src": [
         "SRC-001266"
       ]
+    },
+    {
+      "text": "The SB 330 preliminary application covers 830 E Charleston and 4015 Fabian Way, APNs 127-15-049 and 127-15-048. Existing uses: two single-story commercial buildings with an auto repair shop, cleaning service and flooring contractor's office.",
+      "src": [
+        "SRC-003163"
+      ]
+    },
+    {
+      "text": "Mountain View Voice gives the height as 79 feet; SF YIMBY gives 81 feet. SF YIMBY reports about 139,750 sq ft total, 73,610 sq ft conditioned space and a 41,600 sq ft parking area, with garage on the first two floors and five floors of housing.",
+      "src": [
+        "SRC-003161",
+        "SRC-003162"
+      ]
+    },
+    {
+      "text": "City project page lists file 24PLN-00171, zoning GM (General Manufacturing), environmental review pending, and planner Garrett Sauls.",
+      "src": [
+        "SRC-001266"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Sand Hill Property Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003161",
+        "SRC-003162"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Charleston LLC",
+      "contact": "Bezalel Ho",
+      "linkedin": null,
+      "email": "bho@shpco.com",
+      "phone": "650-344-1500",
+      "other_role": "Applicant (SB 330 form)",
+      "src": [
+        "SRC-003163"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Peter Pau",
+      "contact": "Peter Pau",
+      "linkedin": null,
+      "email": "ppau@shpco.com",
+      "phone": "650-344-1500",
+      "src": [
+        "SRC-003163"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003162"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Jett",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003162"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2024-06-12",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application (date in city file name)",
+      "src": [
+        "SRC-003163",
+        "SRC-003161"
+      ],
+      "estimated": true
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 4015 Fabian Way, 830 E Charleston and Sand Hill Property Company",
+      "src": [
+        "SRC-003161",
+        "SRC-003162"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: APN 127-15-048 situs 4015 Fabian Wy; APN 127-15-049 (named in SB 330 form) also in dataset; no owner field",
+      "src": [
+        "SRC-001098",
+        "SRC-003163"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Palo Alto project page and SB 330 preliminary application PDF (applicant, owner, units, parking, waivers)",
+      "src": [
+        "SRC-001266",
+        "SRC-003163"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project in Palo Alto; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Table A searched by APNs 127-15-048 and 127-15-049; no row",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Mountain View Voice / Palo Alto Online 2024-06-25",
+      "src": [
+        "SRC-003161"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-06-25 (opened); The Real Deal 2024-07-01 returned 403",
+      "src": [
+        "SRC-003162"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for Sand Hill Property Company project page for Fabian/Charleston; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Studio T Square named by SF YIMBY; no architect project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 830 E Charleston / 4015 Fabian; none found",
+      "src": []
+    }
+  }
 }
