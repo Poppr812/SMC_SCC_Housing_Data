@@ -346,9 +346,27 @@
       "src": [
         "SRC-002046"
       ]
+    },
+    {
+      "text": "City of San Jose permit record for PDA14-035-05 (folder 014000, folder year 2017, issued 2023-10-25, status Approved, 0 Curtner Av, APN 455-91-014): applicant Peter Lezak (KB Home), owner name KB Home.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "KB Home",
+      "contact": "Peter Lezak",
+      "linkedin": null,
+      "website": "https://www.kbhome.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -373,6 +391,11 @@
       "date": "2026-11-18",
       "by": "Paul via Claude",
       "action": "Split from Communications Hill (SCC-000014)"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -381,5 +404,83 @@
       "relation": "adjacent",
       "note": "KB Home phase, same Communications Hill 2 plan"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web searches on Communications Hill Village Center, 505 apartments, 0 Curtner Ave and KB Home: results point to The Real Deal (Oct. 2023), Mercury News via PressReader and KTGY, all of which returned 403; nothing on construction or a site sale found.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APNs 455-91-024 to -027: no situs address, no owner shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Planning permits GIS layer: PDA14-035-05 applicant and owner fields name KB Home; no later planning permit on the Village Center found by APN or description. Legistar: CFD 8 matters 19-967, 19-1061, 19-1144, 26-1153; the Nov. 10, 2026 memo covers KB Home South Bay's Phase 3.2 (226 units, permit 2025-103452) and says Phase 3.1 was annexed June 2025, without naming the Village Center. sanjoseca.gov project page refused automated access.",
+      "src": [
+        "SRC-001956",
+        "SRC-002068"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A2 (San Jose, all years through 2025): only the 2023 entitlement row for PDA14-035-05, no building permit or certificate of occupancy rows. CEQAnet SCH 2001062119 documents 1-6: latest is a 2024 CDFW NOD for KB Home South Bay's 200-plus units, not the Village Center.",
+      "src": [
+        "SRC-001107",
+        "SRC-002069"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News Oct. 29, 2023 story (PressReader) returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal Oct. 12 and Oct. 30, 2023 articles returned 403; no SF YIMBY or Bisnow coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "KB Home Communications Hill update pages (2026) cover air monitoring and grading; no mention of the Village Center apartments.",
+      "src": [
+        "SRC-002070"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Search results name KTGY's Communications Hill page (client KB Home); ktgy.com returned 403.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in city, state or search results.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the Communications Hill Village Center returned none.",
+      "src": []
+    }
+  }
 }

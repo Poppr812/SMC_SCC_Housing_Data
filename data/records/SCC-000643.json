@@ -299,6 +299,53 @@
           "note": "CTCAC application number"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001679"
+          ],
+          "note": "CTCAC housing type: Large Family"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001679"
+          ],
+          "note": "CTCAC 55-year use/affordability"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001505"
+          ],
+          "note": "The Rise is approved under SB 35; the city page shows the 2025 Third Modification at 2,669 units (356 affordable)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "CTCAC: average targeted affordability 58.97%; federal set-aside 40%/60% average income; the 94 units at 70% AMI are CTCAC-restricted only.",
+          "src": [
+            "SRC-001679"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -318,6 +365,18 @@
       "text": "SV@Home, Feb. 2026: the first residential building at The Rise, Town Square West, is 232 affordable homes by Sand Hill Property Company and Eden Housing, half of them two- and three-bedroom units, most at or below 50% AMI; a construction permit application has been submitted.",
       "src": [
         "SRC-001987"
+      ]
+    },
+    {
+      "text": "CDLAC QRRP 2026 Round 1 Final List of Awards (dated June 22, 2026), Bay Area Region: application 26-515 Block 5 Apartments, 234 units, Cupertino, applicant California Municipal Finance Authority; 2026 bond cap $53,597,685, total allocation $53,597,685; 111 points, tiebreaker 191.006%, homeless 0.000%; federal credit requested $9,287,656, state credit $0.",
+      "src": [
+        "SRC-002064"
+      ]
+    },
+    {
+      "text": "CTCAC CA-26-515: one residential building, new construction; census tract 5081.01; Senate District 13, Assembly District 26; general partner Eden Housing, Inc. (nonprofit); private placement purchaser JP Morgan Chase Bank, N.A.; applicant elected not to sell state credits.",
+      "src": [
+        "SRC-001679"
       ]
     }
   ],
@@ -349,6 +408,58 @@
       "linkedin": null,
       "src": [
         "SRC-001679"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Eden Housing, Inc.",
+      "contact": "Andrea Osgood",
+      "linkedin": null,
+      "email": "aosgood@edenhousing.org",
+      "phone": "510-247-8103",
+      "other_role": "CTCAC applicant / CDLAC sponsor",
+      "src": [
+        "SRC-001679"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Eden Housing Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001679"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Community Economics, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tax credit investor / consultant",
+      "src": [
+        "SRC-001679"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jones Hall, A Professional Law Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond counsel",
+      "src": [
+        "SRC-001679"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer (CDLAC applicant)",
+      "src": [
+        "SRC-001679",
+        "SRC-002064"
       ]
     }
   ],
@@ -446,6 +557,15 @@
       "estimated": false
     },
     {
+      "date": "2026-06-22",
+      "type": "Other",
+      "label": "CDLAC QRRP 2026 Round 1 Final List of Awards: $53,597,685 bond cap and $9,287,656 federal credits",
+      "src": [
+        "SRC-002064"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-11",
       "type": "Construction start",
       "label": "Construction expected to begin (CTCAC staff report)",
@@ -460,6 +580,11 @@
       "date": "2026-11-18",
       "by": "Paul via Claude",
       "action": "Record created: split from The Rise (SCC-000002), where it was a component"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -468,5 +593,95 @@
       "relation": "part_of",
       "note": "Block 5 of The Rise"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web searches on Block 5 Apartments, The Rise, Town Square West, 10123 N Wolfe Rd and Eden Housing: only the CTCAC staff report and SV@Home items already cited. No source opened names both Block 5 and Town Square West; SV@Home places the 232 affordable homes (Eden/Sand Hill, first residential building) in Town Square West, and CTCAC lists 232 restricted units at Block 5.",
+      "src": [
+        "SRC-001987",
+        "SRC-001679"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 316-20-121: situs 10330 N Wolfe Rd, Cupertino; dataset shows no owner. CTCAC says the Block 5 parcel and APN are not yet finalized.",
+      "src": [
+        "SRC-001098",
+        "SRC-001679"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Cupertino The Rise SB 35 project page: SB 35 approval, 2025 Third Modification 2,669 units (356 affordable), 2026 partial plan modification DIR-2026-003 for Blocks 1 and 2 only; no Block 5 building permit, architect or construction start listed. Major Residential Projects list has no Block 5 entry. Third modification letter on Laserfiche WebLink not readable (cookie sign-in page).",
+      "src": [
+        "SRC-001505",
+        "SRC-002065"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding in CTCAC sources.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CDLAC 2026 program year page: QRRP Round 1 Final List of Awards (June 22, 2026) lists Block 5 Apartments at the recommended amounts; also checked QRRP Round 1 preliminary list and Round 2 final list. CTCAC staff report re-read for development team.",
+      "src": [
+        "SRC-002064",
+        "SRC-001679"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SV@Home Feb. 2026 (permit application submitted, construction before end of 2026) and July 2025 (first vertical buildings by fall 2026); no groundbreaking coverage found.",
+      "src": [
+        "SRC-001987",
+        "SRC-002066"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched SF YIMBY, The Registry, The Real Deal; SF YIMBY items are the separate 10333 N Wolfe Rd educator housing; The Registry returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Eden Housing Cupertino page lists only Wolfe Road Educator Workforce Housing; no Block 5 / The Rise project page.",
+      "src": [
+        "SRC-002067"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect or general contractor named in CTCAC staff report, city page, SV@Home or search results. Architects FORA is tied to Eden's separate 10333 N Wolfe Rd project.",
+      "src": [
+        "SRC-001679"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report: bond counsel Jones Hall, issuer CMFA, purchaser JP Morgan Chase, consultant Community Economics; CDLAC final award list.",
+      "src": [
+        "SRC-001679",
+        "SRC-002064"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Eden Housing Cupertino / The Rise Block 5 returned none.",
+      "src": []
+    }
+  }
 }
