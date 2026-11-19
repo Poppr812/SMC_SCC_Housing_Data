@@ -164,6 +164,14 @@
             "SRC-001942"
           ],
           "note": "SF YIMBY, Nov. 2026, from preliminary plans. Likely the city's 83 less the manager unit, but not stated."
+        },
+        {
+          "value": 110,
+          "src": [
+            "SRC-002977",
+            "SRC-002978"
+          ],
+          "note": "SB 35 proposal: 108 affordable units, mostly studios, plus 2 two-bedroom manager units (Urbanize, May 2025); county floodplain notice, Oct. 2023, also 110"
         }
       ]
     },
@@ -189,6 +197,12 @@
           "value": "Pulse: households at 20% to 40% of AMI; 23 units for people with disabilities or other special needs",
           "src": [
             "SRC-001217"
+          ]
+        },
+        {
+          "value": "SB 35 proposal: affordable units at or below 50% AMI, aiming to serve extremely low-income households, particularly formerly homeless people.",
+          "src": [
+            "SRC-002977"
           ]
         }
       ]
@@ -251,6 +265,38 @@
             "SRC-001942"
           ],
           "note": "Housing area; about 68,020 sq ft total including 3,950 sq ft of common space"
+        },
+        {
+          "value": 53263,
+          "src": [
+            "SRC-002977"
+          ],
+          "note": "SB 35 proposal: residential building about 53,263 sq ft plus two one-story amenity buildings totaling about 3,210 sq ft"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-002977"
+          ],
+          "note": "SB 35 proposal: 3 to 4 stories, modular construction"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002977"
+          ],
+          "note": "SB 35 application with state density bonus benefits (Urbanize, May 2025); the city's later list shows a preliminary application for 83 units"
         }
       ]
     }
@@ -272,6 +318,24 @@
       "text": "SF YIMBY, Nov. 1, 2026: preliminary plans filed by MidPen Housing; building about 42 feet tall; Devcon is expected to be the general contractor. Cost and timeline not yet shared.",
       "src": [
         "SRC-001942"
+      ]
+    },
+    {
+      "text": "San Mateo County floodplain notice, Oct. 26, 2023: MidPen Housing Corporation's 110-unit permanent supportive housing project on about 1.5 acres is in a 100-year floodplain; the project will apply for HUD Project-Based Vouchers.",
+      "src": [
+        "SRC-002978"
+      ]
+    },
+    {
+      "text": "Urbanize, May 3, 2025: site of about 1.5 acres next to U.S. 101 and the Redwood City Police Department, to be conveyed by the city to MidPen as vacant land; architect Studio T Squared; CEQA-exempt under SB 35.",
+      "src": [
+        "SRC-002977"
+      ]
+    },
+    {
+      "text": "San Mateo County Department of Housing describes 1580-1590 Maple Street as a flagship permanent supportive housing project; the county ran the developer RFP in 2022 and title later transferred to the City of Redwood City.",
+      "src": [
+        "SRC-002979"
       ]
     }
   ],
@@ -330,6 +394,15 @@
   "groups": {},
   "events": [
     {
+      "date": "2023-10-26",
+      "type": "Other",
+      "label": "County final floodplain notice for 110-unit project (HUD review)",
+      "src": [
+        "SRC-002978"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2027",
       "type": "Construction start",
       "label": "Pulse: expected toward the end of 2027",
@@ -359,6 +432,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and MidPen; Urbanize and county pages opened",
+      "src": [
+        "SRC-002977",
+        "SRC-002978"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APN 052-532-020 already on record; SMC parcel layer shows no owner",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Redwood City planning projects API id 137: still Planning Application Submittal, 82 units plus manager; Legistar redwoodcity API returned an error",
+      "src": [
+        "SRC-001216"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC Department of Housing project page and floodplain notice",
+      "src": [
+        "SRC-002979",
+        "SRC-002978"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No CTCAC/CDLAC award or CEQAnet filing found; project is CEQA-exempt under SB 35",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "SM Daily Journal articles on the 110-unit proposal and loans returned 403; RWC Pulse already on record",
+      "src": [
+        "SRC-001217"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Urbanize SF May 2025; Traded.co returned 403",
+      "src": [
+        "SRC-002977"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No MidPen project page for 1580 Maple found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Studio T Squared project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County notice: HUD Project-Based Voucher application planned (added as note)",
+      "src": [
+        "SRC-002978"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
