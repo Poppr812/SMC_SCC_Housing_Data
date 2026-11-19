@@ -1,6 +1,6 @@
 {
   "id": "SCC-000178",
-  "name": "North 40 Single Building (14849 Los Gatos Blvd)",
+  "name": "The Luxe (14849 Los Gatos Blvd)",
   "parcels": [
     {
       "apn": "424-07-064",
@@ -93,11 +93,21 @@
         {
           "value": 120,
           "src": [
-            "SRC-001120"
+            "SRC-001120",
+            "SRC-002899",
+            "SRC-002901"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 117,
+          "src": [
+            "SRC-002900"
+          ],
+          "note": "March 2024 formal application"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -148,6 +158,92 @@
           "note": "State report 2024, application stage: 24 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 9,
+          "src": [
+            "SRC-001554",
+            "SRC-002899"
+          ],
+          "note": "Eight residential levels over street-level commercial"
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-002900"
+          ],
+          "note": "March 2024 formal application: one 8-story building"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 8,
+            "1br": 24,
+            "2br": 56,
+            "3br": 32,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002899"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 18771,
+          "src": [
+            "SRC-002899"
+          ],
+          "note": "Street level; plus 2,391 sq ft roof-level commercial"
+        },
+        {
+          "value": 19621,
+          "src": [
+            "SRC-002900"
+          ],
+          "note": "March 2024 formal application"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 246494,
+          "src": [
+            "SRC-002900"
+          ],
+          "note": "March 2024 formal application"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.9,
+          "src": [
+            "SRC-002900",
+            "SRC-002899"
+          ],
+          "note": "39,550 sq ft per revised letter"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 96,
+          "src": [
+            "SRC-001120"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -162,12 +258,106 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "Project name The Luxe: seven-level condominium building with eight stacked residential levels of 15 units each over street-level commercial, three levels of underground parking, a roof-level eating establishment and a 7,121 sq ft public plaza; 146 ft 6 in overall height; 306,252 total sq ft.",
+      "src": [
+        "SRC-002899"
+      ]
+    },
+    {
+      "text": "Town issued incompleteness determinations on April 3, 2024, July 24, 2024 and November 20, 2024; the applicant responded July 2, 2024 and October 21, 2024. Initial Study pending; applicant resubmitted the traffic report April 9, 2026.",
+      "src": [
+        "SRC-002901"
+      ]
+    },
+    {
+      "text": "The Town's SB 330 list shows completeness review as Incomplete; the April 2026 staff report states the application was deemed complete April 16, 2025.",
+      "src": [
+        "SRC-001554",
+        "SRC-002901"
+      ]
+    },
+    {
+      "text": "The Town filed suit in Santa Clara County Superior Court on March 28, 2025 over the 90-day resubmittal question, seeking expiration of The Luxe application.",
+      "src": [
+        "SRC-002902"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Los Gatos Boulevard Properties, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002901",
+        "SRC-002900"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Los Gatos Boulevard Properties, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002901",
+        "SRC-002899"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ali Moayed",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (per news report)",
+      "src": [
+        "SRC-002902"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Kurt B. Anderson, AIA",
+      "contact": "Kurt B. Anderson, Principal",
+      "linkedin": null,
+      "src": [
+        "SRC-002899"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Miller Starr Regalia",
+      "contact": "Travis Brooks",
+      "linkedin": null,
+      "other_role": "Applicant counsel",
+      "src": [
+        "SRC-002900"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-08-30",
+      "type": "Other",
+      "label": "Preliminary application submitted, per Town staff report",
+      "src": [
+        "SRC-002901"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-09-12",
+      "type": "Other",
+      "label": "SB 330 / builder's remedy preliminary application submitted (PRE23-01058), per applicant letter and court order",
+      "src": [
+        "SRC-002900",
+        "SRC-002901"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-03-08",
       "type": "Application filed",
@@ -175,6 +365,33 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2025-04-16",
+      "type": "Other",
+      "label": "Planning application deemed complete",
+      "src": [
+        "SRC-002901"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-29",
+      "type": "Other",
+      "label": "Superior Court ruling (Town of Los Gatos v. Arya Properties, 25CV462276) allows multiple 90-day resubmission periods",
+      "src": [
+        "SRC-002901"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-21",
+      "type": "Other",
+      "label": "Town Council granted Luxe appeal 3-2; SB 330 vesting found not expired",
+      "src": [
+        "SRC-002903"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -187,6 +404,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search; San Jose Spotlight 2025-04-03; Town project page and documents",
+      "src": [
+        "SRC-002902",
+        "SRC-002904"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API 424-07-064: situs 14849 Los Gatos Blvd; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Town project page; formal application cover letter and revised justification letter; Town Council 2026-04-21 packet and minutes",
+      "src": [
+        "SRC-002904",
+        "SRC-002900",
+        "SRC-002899",
+        "SRC-002901",
+        "SRC-002903"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Town project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A 2024 row for 14849 Los Gatos Blvd already on record",
+      "src": [
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-04-03; Local News Matters and Catalyst returned 403",
+      "src": [
+        "SRC-002902"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal articles on Los Gatos builder's remedy suits returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No developer website found for Los Gatos Boulevard Properties, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Architect named in revised letter of justification (Kurt B. Anderson, AIA, Campbell)",
+      "src": [
+        "SRC-002899"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing in Town, state or press sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }

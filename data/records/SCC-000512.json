@@ -277,10 +277,21 @@
         {
           "value": 122,
           "src": [
-            "SRC-001459"
+            "SRC-001459",
+            "SRC-002887",
+            "SRC-002888",
+            "SRC-002889"
           ]
+        },
+        {
+          "value": 139,
+          "src": [
+            "SRC-002890"
+          ],
+          "note": "Units reported for the September 2024 application"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -309,6 +320,12 @@
           "src": [
             "SRC-001459"
           ]
+        },
+        {
+          "value": "24 for-sale BMR units, all in the townhomes: 12 at median income (80-100% AMI) and 12 at moderate income (100-120% AMI), 99-year term; the remaining 0.4-unit obligation is paid as an in-lieu fee.",
+          "src": [
+            "SRC-002887"
+          ]
         }
       ]
     },
@@ -318,6 +335,19 @@
           "value": 6.93,
           "src": [
             "SRC-001459"
+          ]
+        },
+        {
+          "value": 6.84,
+          "src": [
+            "SRC-002887"
+          ],
+          "note": "Net acres"
+        },
+        {
+          "value": 6.8,
+          "src": [
+            "SRC-002889"
           ]
         }
       ]
@@ -333,12 +363,150 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002887",
+            "SRC-002888"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 272,
+          "src": [
+            "SRC-002888"
+          ],
+          "note": "Two-car garage per unit plus 28 guest spaces"
+        },
+        {
+          "value": 263,
+          "src": [
+            "SRC-002889"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 351338,
+          "src": [
+            "SRC-002888"
+          ],
+          "note": "Total project gross square feet per CEQA notice"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 42,
+            "4br+": 80
+          },
+          "src": [
+            "SRC-002889"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 100
+            },
+            {
+              "count": 12,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-002887"
+          ],
+          "note": "For-sale BMR units: 12 median-income (80-100% AMI), 12 moderate-income (100-120% AMI)"
+        },
+        {
+          "value": [
+            {
+              "count": 24,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001100"
+          ],
+          "note": "State report 2024, application stage: deed-restricted moderate-income units"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 98,
+          "src": [
+            "SRC-002887"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-002887"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "66 small-lot single-family homes and 56 townhomes.",
       "src": [
+        "SRC-001459"
+      ]
+    },
+    {
+      "text": "All buildings are three stories; 33 units have fourth-floor access to roof decks. Townhomes are in seven 8-plex buildings. Including garages, townhomes range from 2,273 to 3,304 sq ft and single-family homes are 2,973 or 3,541 sq ft.",
+      "src": [
+        "SRC-002887"
+      ]
+    },
+    {
+      "text": "CEQA notice lists single-family homes at 2,328 to 2,668 sq ft, townhomes at 1,380 to 2,269 sq ft, and about 31,711 sq ft of private open space.",
+      "src": [
+        "SRC-002888"
+      ]
+    },
+    {
+      "text": "Existing site: about 109,000 sq ft of office and 7,000 sq ft of retail (Panera Bread and Voyager Coffee). The project requests 12 density bonus waivers and one concession and pays a $5,880,000 parkland in-lieu fee for the 98 market-rate units.",
+      "src": [
+        "SRC-002887"
+      ]
+    },
+    {
+      "text": "September 2024 filing reported 139 units with 28 affordable on 6.93 acres.",
+      "src": [
+        "SRC-002890"
+      ]
+    },
+    {
+      "text": "State APR 2024 lists the application date as 2024-10-25, status Pending; the city lists the formal application as 2024-09-25.",
+      "src": [
+        "SRC-001100",
         "SRC-001459"
       ]
     }
@@ -362,6 +530,36 @@
       "linkedin": null,
       "src": [
         "SRC-001459"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Stevens Creek OCA Owner LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002890"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Gates + Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002889"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Harvest Properties",
+      "contact": "Kevin Choy, Director",
+      "linkedin": null,
+      "email": "kchoy@harvestproperties.com",
+      "phone": "(530) 574-5339",
+      "other_role": "Applicant contact",
+      "src": [
+        "SRC-002888"
       ]
     }
   ],
@@ -387,11 +585,29 @@
       "estimated": false
     },
     {
+      "date": "2026-03-24",
+      "type": "Other",
+      "label": "Planning Commission recommended approval 5-0",
+      "src": [
+        "SRC-001459"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-04-07",
       "type": "Approved",
       "label": "City Council approved 4-0",
       "src": [
         "SRC-001459"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-09",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (SCH 2026040419)",
+      "src": [
+        "SRC-002888"
       ],
       "estimated": false
     }
@@ -406,6 +622,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search; SF YIMBY 2026-04 and 2024-09 articles, CEQAnet",
+      "src": [
+        "SRC-002889",
+        "SRC-002888"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 326-32-050 to -053: situs 20883, 20807, 20813, 20823 Stevens Creek Blvd; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Cupertino project page; Legistar CC 2026-04-07 staff report (matter 25-14593) and PC 2026-03-24 (matter 26-14967)",
+      "src": [
+        "SRC-002887",
+        "SRC-002891",
+        "SRC-001459"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet NOE SCH 2026040419; APR Table A 2024 rows for Cupertino",
+      "src": [
+        "SRC-002888",
+        "SRC-001100"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web searches returned no local news coverage of this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2026-04-14 and 2024-09-29",
+      "src": [
+        "SRC-002889",
+        "SRC-002890"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Harvest Properties Stevens Creek page: 122 townhomes and single-family homes, SB 330 re-entitlement",
+      "src": [
+        "SRC-002892"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for a KTGY project page for this site returned none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner in city, state or press sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }

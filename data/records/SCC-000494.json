@@ -80,6 +80,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "16130 Juan Hernandez Dr, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -143,6 +150,72 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 10.04,
+          "src": [
+            "SRC-002905"
+          ]
+        },
+        {
+          "value": 19.67,
+          "src": [
+            "SRC-001422"
+          ],
+          "note": "City project list figure"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 9,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001135"
+          ],
+          "note": "State report 2022: deed-restricted moderate-income units"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 111,
+          "src": [
+            "SRC-001135"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001135"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-002905"
+          ],
+          "note": "Lillian Commons PD Master Plan"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -157,18 +230,124 @@
       "src": [
         "SRC-001422"
       ]
+    },
+    {
+      "text": "Resolution 22-13: 35-lot vesting tentative map on 10.04 acres; 34 single-family attached duets, 86 townhome-style condominiums and about 1.98 acres of open space; minor exception for a maximum building height of 38 ft 6 in; tentative map by Ruggeri-Jensen-Azar dated April 18, 2022.",
+      "src": [
+        "SRC-002905"
+      ]
+    },
+    {
+      "text": "State APR reports the homes as Rosewood - Sundance Duets and Rosewood - Moonstone Townhouse. Building permits reported from 2023-06-23 to 2025-06-05; certificates of occupancy from 2024-10-09 to 2025-12-05.",
+      "src": [
+        "SRC-001135"
+      ]
+    },
+    {
+      "text": "The applicant entity is shown as BFH CM LLC in Resolution 22-13 and as MFH CM LLC in the state APR.",
+      "src": [
+        "SRC-002905",
+        "SRC-001131"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Brookfield Properties LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002905",
+        "SRC-001131"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BFH CM LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Entity named in approval title",
+      "src": [
+        "SRC-002905"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MFH CM LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Entity named in state report project name",
+      "src": [
+        "SRC-001131"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Ruggeri-Jensen-Azar",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002905"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-11-04",
+      "type": "Other",
+      "label": "City Council adopted Lillian Commons MND and MMRP (Resolution 20-058)",
+      "src": [
+        "SRC-002905"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-01-19",
+      "type": "Application filed",
+      "label": "Brookfield Properties LLC submitted vesting tentative map and design permit applications",
+      "src": [
+        "SRC-002905",
+        "SRC-001131"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-06-28",
       "type": "Other",
       "label": "Planning Commission meeting (Resolutions 22-11, 22-13)",
       "src": [
         "SRC-001430"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06-28",
+      "type": "Approved",
+      "label": "Planning Commission approved Resolution 22-13",
+      "src": [
+        "SRC-002905",
+        "SRC-001135"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-06-23",
+      "type": "Permit issued",
+      "label": "First building permit reported to the state",
+      "src": [
+        "SRC-001135"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-09",
+      "type": "Other",
+      "label": "First certificates of occupancy reported to the state (Sundance Duets)",
+      "src": [
+        "SRC-001135"
       ],
       "estimated": false
     }
@@ -178,6 +357,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search; city project page and Brookfield listing pages",
+      "src": [
+        "SRC-001430"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 817-09-040 situs 16130 Juan Hernandez Dr; 817-09-039 and -041 not in layer; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Morgan Hill project page; PC Resolution 22-13; Significant Projects list July 2026",
+      "src": [
+        "SRC-002905",
+        "SRC-001422"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A 2022 and A2 2022-2025 rows (Rosewood)",
+      "src": [
+        "SRC-001131",
+        "SRC-001135"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search returned no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search returned no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Brookfield Residential Rosewood and Moonstone pages show no community details",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect site found for the project",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "For-sale project; no financing in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }

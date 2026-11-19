@@ -148,6 +148,21 @@
           ]
         }
       ]
+    },
+    {
+      "text": "444 Bryant St, Mountain View, CA",
+      "role": "other",
+      "src": [
+        "SRC-002906",
+        "SRC-002910"
+      ]
+    },
+    {
+      "text": "460 Bryant St, Mountain View, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -180,8 +195,17 @@
             "SRC-001608"
           ],
           "note": "CTCAC documents do not state entitlement or construction status. Proposed is a working label until checked against the city's list."
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-002906",
+            "SRC-002907"
+          ],
+          "note": "Construction began March 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "total_units": {
       "claims": [
@@ -275,6 +299,34 @@
           "src": [
             "SRC-001608"
           ]
+        },
+        {
+          "value": "Set-asides: 20 units for households leaving homelessness (county Rapid Rehousing), 10 permanent supportive housing units, 15 units for residents with intellectual or developmental disabilities. Rents $1,055 to $3,133 per month.",
+          "src": [
+            "SRC-001980",
+            "SRC-002906"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001980",
+            "SRC-002906"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.5,
+          "src": [
+            "SRC-002906"
+          ]
         }
       ]
     }
@@ -284,6 +336,34 @@
       "text": "CTCAC CA-25-597: Mountain View Lot 12, located at 424 Bryant Street in Mountain View on a 1.56 acre site, requested and is being recommended for a reservation of $6,363,871 in annual federal tax credits and $62,900,000 of tax- exempt bond cap to finance the new construction of 120 units of housing, consisting of 119 restricted rental units and 1 unrestricted manager's unit.",
       "src": [
         "SRC-001608"
+      ]
+    },
+    {
+      "text": "City funding totals $23.45 million and includes $8.0 million in state SB 129 funds; the October 2025 action substituted $3.2 million Local Housing Trust Fund, $1,862,056 HOME and $781,271 HOME-ARP for part of the BMR in-lieu and housing impact fee funds. The project has federal project-based Section 8 vouchers.",
+      "src": [
+        "SRC-002911",
+        "SRC-002907"
+      ]
+    },
+    {
+      "text": "TCAC reservation made August 5, 2025; construction had been targeted for January 2026.",
+      "src": [
+        "SRC-002911",
+        "SRC-002908"
+      ]
+    },
+    {
+      "text": "City Lot 12 described in 2021 as 917-941 California Street and 424-468 Bryant Street, APNs 158-11-033 through -038, -055 and -060.",
+      "src": [
+        "SRC-002912"
+      ]
+    },
+    {
+      "text": "News articles give the address as 444 Bryant St; Related and the city give 424 Bryant Street.",
+      "src": [
+        "SRC-002906",
+        "SRC-001980",
+        "SRC-002908"
       ]
     }
   ],
@@ -308,6 +388,54 @@
         "SRC-001980"
       ],
       "website": "https://altahousing.org/"
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001980"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Related California Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001980"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Related Affordable Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001980"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MV Lot 12 Housing Partners, L.P.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Ownership partnership of Alta Housing and Related California",
+      "src": [
+        "SRC-002908"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "City of Mountain View",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Landowner (city-owned parking lot)",
+      "src": [
+        "SRC-002908",
+        "SRC-002906"
+      ]
     }
   ],
   "financing": [
@@ -430,16 +558,44 @@
       "src": [
         "SRC-001608"
       ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Municipal Finance Authority",
+      "program": "TEFRA approval, not to exceed $75,000,000",
+      "amount": 75000000,
+      "date": "2025-11-04",
+      "src": [
+        "SRC-002908"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2020-05-19",
+      "type": "Other",
+      "label": "City Council selected Lot 12 preferred development team",
+      "src": [
+        "SRC-002909"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-08-05",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-25-597)",
       "src": [
         "SRC-001608"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-04",
+      "type": "Other",
+      "label": "City Council approved TEFRA resolution for CMFA bonds up to $75 million",
+      "src": [
+        "SRC-002908"
       ],
       "estimated": false
     },
@@ -453,11 +609,41 @@
       "estimated": true
     },
     {
+      "date": "2026-03",
+      "type": "Construction start",
+      "label": "Construction began",
+      "src": [
+        "SRC-002906",
+        "SRC-002910"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-27",
+      "type": "Other",
+      "label": "Groundbreaking ceremony",
+      "src": [
+        "SRC-002906",
+        "SRC-002910"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2027-11",
       "type": "Completion",
       "label": "Expected completion per CTCAC staff report",
       "src": [
         "SRC-001608"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028",
+      "type": "Completion",
+      "label": "Expected completion Q1 2028",
+      "src": [
+        "SRC-001980",
+        "SRC-002906"
       ],
       "estimated": true
     }
@@ -482,6 +668,102 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search; MV Voice 2026-05-28, Related California page",
+      "src": [
+        "SRC-002906",
+        "SRC-001980"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API 158-11-061: situs 460 Bryant St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Mountain View Legistar: TEFRA 2025-11-04, funding modification 2025-10-14, SB 129 appropriation 2026-05-12, developer selection 2020-05-19",
+      "src": [
+        "SRC-002908",
+        "SRC-002911",
+        "SRC-002907",
+        "SRC-002909"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "County Measure A loan already on record from CTCAC report; news cites nearly $20 million in county loans",
+      "src": [
+        "SRC-001608",
+        "SRC-002906"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC CA-25-597 already on record; APR search for Bryant St returned no matching row",
+      "src": [
+        "SRC-001608"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "MV Voice 2026-05-28; San Jose Spotlight 2026-06-02",
+      "src": [
+        "SRC-002906",
+        "SRC-002910"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "Housing Finance groundbreaking article returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Related California Corso page: 5 stories, contractor, manager, architect",
+      "src": [
+        "SRC-001980"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No BDE Architecture project page for Corso found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City council reports: CMFA bonds up to $75,000,000; city funding sources",
+      "src": [
+        "SRC-002908",
+        "SRC-002911"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }
