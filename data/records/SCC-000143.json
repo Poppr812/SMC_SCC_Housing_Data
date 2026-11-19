@@ -221,6 +221,42 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": [
+            {
+              "count": 34,
+              "ami": 50
+            },
+            {
+              "count": 128,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2024, building permit stage (permits 2024 086846 MF, 119 units, and 2024 086872 MF, 45 units): deed-restricted units by state income category; 17 reported as extremely low income within these; AMI is the category's upper limit"
+        },
+        {
+          "value": [
+            {
+              "count": 32,
+              "ami": 50
+            },
+            {
+              "count": 33,
+              "ami": 80
+            },
+            {
+              "count": 97,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2021, entitlement stage (CP20-025): deed-restricted units by state income category; AMI is the category's upper limit"
         }
       ]
     },
@@ -232,6 +268,82 @@
             "SRC-001643"
           ],
           "note": "Total sources in CTCAC staff report."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.32,
+          "src": [
+            "SRC-002708"
+          ],
+          "note": "Architect's project page: 164 DU on 1.32 acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002709",
+            "SRC-002708"
+          ],
+          "note": "Two buildings; architect describes each as 5 stories over 1 podium level; SF YIMBY: six stories, 76 feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 102,
+          "src": [
+            "SRC-002709"
+          ],
+          "note": "102 vehicle and 44 bicycle spaces"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 7500,
+          "src": [
+            "SRC-002709"
+          ],
+          "note": "SF YIMBY: 7,500 sq ft in Building A"
+        },
+        {
+          "value": 7000,
+          "src": [
+            "SRC-002708"
+          ],
+          "note": "Architect's project page"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report entitlement and permit rows: deed restriction type DB, two development standards modifications"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report entitlement and permit rows"
         }
       ]
     }
@@ -248,6 +360,18 @@
       "text": "CTCAC CA-23-610: The project, 2880 Alum Rock Avenue Apartments, located at 2880 Alum Rock Avenue in San Jose, requested and is being recommended for a reservation of $4,819,022 in annual federal tax credits to finance the new construction of 162 units of housing serving tenants with rents affordable to households earning 30%-70% of area median income (AMI).",
       "src": [
         "SRC-001643"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2021): Building A has 119 units and 7,500 sq ft of retail; Building B has 45 units; 76 feet tall. Pacific West Communities is named as property owner.",
+      "src": [
+        "SRC-002709"
+      ]
+    },
+    {
+      "text": "State report 2024: building permits 2024 086846 MF (2884 Alum Rock Avenue Building 1, 119 units) and 2024 086872 MF (2884 Alum Rock Avenue, 45 units), both issued June 27, 2024; financial assistance listed as LIHTC.",
+      "src": [
+        "SRC-001107"
       ]
     }
   ],
@@ -300,6 +424,18 @@
       ],
       "other_role": "Applicant (CTCAC)",
       "email": "calebr@tpchousing.com"
+    },
+    {
+      "role": "Architect",
+      "company": "AO Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.aoarchitects.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.aoarchitects.com/project/2880-alum-rock/",
+      "src": [
+        "SRC-002708"
+      ]
     }
   ],
   "financing": [
@@ -435,6 +571,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and developer: AO Architects project page, SF YIMBY coverage",
+      "src": [
+        "SRC-002708",
+        "SRC-002709"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 48420040: situs 2884 Alum Rock Av, already on record; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov (CP20-025 environmental review page and staff documents) refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found in CTCAC staff report sources",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2: 2021 entitlement row and 2024 permit rows (density bonus, 55-year term, income mix); CTCAC CA-23-610 already on record",
+      "src": [
+        "SRC-001107",
+        "SRC-001643"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Mercury News, San Jose Spotlight for 2880 Alum Rock; Spotlight results cover other Alum Rock sites",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021-08-21 and 2021-10-27 (Planning Commission meeting)",
+      "src": [
+        "SRC-002709",
+        "SRC-002710"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "tpchousing.com featured projects searched; no 2880 Alum Rock page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "AO Architects project page: design architect and architect of record",
+      "src": [
+        "SRC-002708"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Lenders and equity already on record from CTCAC CA-23-610; state report lists LIHTC",
+      "src": [
+        "SRC-001643"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public posts on 2880 Alum Rock found none",
+      "src": []
+    }
+  }
 }

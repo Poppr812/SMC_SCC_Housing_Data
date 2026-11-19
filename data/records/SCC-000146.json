@@ -296,6 +296,53 @@
             "SRC-001099"
           ],
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001825"
+          ],
+          "note": "City permit description for H24-004: 20 of 162 units reserved for low-income households earning up to 80% AMI"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 20,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001825"
+          ],
+          "note": "H24-004 permit description"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 6.74,
+          "src": [
+            "SRC-001825"
+          ],
+          "note": "Gross acres per H24-004 description"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2024 application row: project type Discretionary"
         }
       ]
     }
@@ -324,6 +371,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "H24-004 description: demolition of two commercial buildings (about 27,020 sq ft) and removal of 98 trees on a 6.74-gross-acre site; 162 dwelling units in 25 buildings. The sjbuild listing header shows 205 units.",
+      "src": [
+        "SRC-001825"
+      ]
+    },
+    {
+      "text": "SF YIMBY (September 2023): 137 townhomes and 35 additional dwelling units on over six acres at the Santa Teresa Main Street shopping center, filed under SB 330; architect Anderson Architects.",
+      "src": [
+        "SRC-001824"
+      ]
     }
   ],
   "parties": [
@@ -345,6 +404,15 @@
       "other_role": "Named project party (SJ Build tracker)",
       "src": [
         "SRC-001825"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001824"
       ]
     }
   ],
@@ -380,6 +448,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web search on 865/873 Blossom Hill Road, H24-004 and Terracommercial; only SF YIMBY and sjbuild already on record",
+      "src": [
+        "SRC-001824",
+        "SRC-001825"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 46435033: situs 865 Blossom Hill Rd, already on record; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov and sjpermits.org permit pages refuse automated access; H24-004 text read from sjbuild listing",
+      "src": [
+        "SRC-001825"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2024: H24-004, owner tenure, discretionary, pending; no Table A2 row; no CEQAnet document found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Mercury News and San Jose Spotlight for 865/873 Blossom Hill Road; no coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-09-24 (architect); The Real Deal 2023-09-20 returned 403",
+      "src": [
+        "SRC-001824"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "terracommercial.com home page lists no project pages",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for Anderson Architects project page for Blossom Hill; none found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public posts found none",
+      "src": []
+    }
+  }
 }

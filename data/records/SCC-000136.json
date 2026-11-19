@@ -116,6 +116,13 @@
           "src": [
             "SRC-001110"
           ]
+        },
+        {
+          "value": "18 units deed-restricted to very low income households, 15% of the 117 base-density units",
+          "src": [
+            "SRC-002689",
+            "SRC-002691"
+          ]
         }
       ]
     },
@@ -128,6 +135,13 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-7243",
+          "src": [
+            "SRC-002690"
+          ],
+          "note": "Zoning permit number; the density bonus letter cites PL2024-001"
         }
       ]
     },
@@ -157,6 +171,71 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 35,
+            "1br": 93,
+            "2br": 46,
+            "3br": 1,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002688"
+          ],
+          "note": "Plan set parking summary by unit type, May 30, 2025"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 190,
+          "src": [
+            "SRC-002689"
+          ],
+          "note": "Density bonus letter, August 20, 2025"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2077,
+          "src": [
+            "SRC-002690",
+            "SRC-002691"
+          ],
+          "note": "Ground-floor commercial space"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.67,
+          "src": [
+            "SRC-002690",
+            "SRC-002689"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002689",
+            "SRC-002691"
+          ],
+          "note": "50% state density bonus over 117 base-density units, with waivers"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +244,20 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "Plan set lists Jones Architecture as design architect and BDE Architecture as architect. Six-story building: five stories of Type IIIA over one story of Type IA, with a below-grade garage. Project gross floor area 201,650 sq ft.",
+      "src": [
+        "SRC-002688",
+        "SRC-002689"
+      ]
+    },
+    {
+      "text": "Replaces Moffett Plaza, a one-story retail building of about 13,800 sq ft. The Mountain View Voice reported Prometheus said construction would likely be about two years away.",
+      "src": [
+        "SRC-002689",
+        "SRC-002692"
       ]
     }
   ],
@@ -179,11 +272,66 @@
         "SRC-001700"
       ],
       "website": "https://www.prometheusapartments.com"
+    },
+    {
+      "role": "Developer",
+      "company": "Prometheus Real Estate Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002688",
+        "SRC-002692"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Jones Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002688"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002688"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Lango Hansen",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002688"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Civil Engineering Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002688"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-01-02",
+      "type": "Application filed",
+      "label": "Development Review Permit, Conditional Use Permit and Heritage Tree Removal Permit request filed",
+      "src": [
+        "SRC-002690"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-10-30",
       "type": "Application filed",
@@ -216,6 +364,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and developer; Mountain View Voice approval article 2025-09-03",
+      "src": [
+        "SRC-002692"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 15324016: situs 400A Moffett Bl, 8 situs addresses, jurisdiction Mountain View; no owner field in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar matters 8872 (DRC 2024-08-12) and 9575 (Administrative Zoning 2025-08-27): staff memo, draft findings, density bonus letter, plan set",
+      "src": [
+        "SRC-001700",
+        "SRC-002690",
+        "SRC-002691",
+        "SRC-002689",
+        "SRC-002688"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Tables A and A2 already on record; city used a CEQA 15183 compliance checklist, no state award applies to this market-rate project",
+      "src": [
+        "SRC-001101",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice 2025-09-03 approval article; 2024-10-22 article on the pitch",
+      "src": [
+        "SRC-002692"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no SF YIMBY or other trade coverage of 400 Moffett",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of prometheusapartments.com found pages for 100 Moffett and Hiro, none for 400 Moffett",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Architects named in the plan set; web search found no Jones Architecture or BDE Architecture project page for 400 Moffett",
+      "src": [
+        "SRC-002688"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in city documents or web search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 400 Moffett returned nothing relevant",
+      "src": []
+    }
+  }
 }

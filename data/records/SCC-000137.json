@@ -77,8 +77,16 @@
             "SRC-001127"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-002693"
+          ],
+          "note": "Described as a 174-unit condominium complex in the city pipeline, August 2026"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -203,6 +211,13 @@
           "src": [
             "SRC-001291"
           ]
+        },
+        {
+          "value": 212,
+          "src": [
+            "SRC-002694"
+          ],
+          "note": "Two-story garage, as reported September 2025"
         }
       ]
     },
@@ -240,6 +255,34 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 28,
+            "1br": 39,
+            "2br": 82,
+            "3br": 26,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002694"
+          ],
+          "note": "175-unit application as reported September 2025"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2294,
+          "src": [
+            "SRC-002694"
+          ],
+          "note": "Ground-floor retail"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -248,6 +291,13 @@
       "src": [
         "SRC-001126",
         "SRC-001127"
+      ]
+    },
+    {
+      "text": "The Mountain View Voice reported the September 2025 application as an eight-story, 85-foot, all-electric building with 175 apartments, merging the 800 and 808 San Antonio Road lots; an August 2026 article lists it as a 174-unit condominium complex still in the city pipeline.",
+      "src": [
+        "SRC-002694",
+        "SRC-002693"
       ]
     }
   ],
@@ -335,6 +385,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Timespace Group; Mountain View Voice articles 2025-09-15 and 2026-08-18",
+      "src": [
+        "SRC-002694",
+        "SRC-002693"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 14703038: situs 800 San Antonio Rd, 2 situs addresses, jurisdiction Palo Alto; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Palo Alto 808 San Antonio Rd project page (25PLN-00225): 174 units, 25 BMR, 8 stories, CEQA pending, cycle 1-3 plans",
+      "src": [
+        "SRC-001290"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Tables A and A2 already on record; no state award applies",
+      "src": [
+        "SRC-001126",
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice 2025-09-15 and 2026-08-18; Palo Alto Online returned HTTP 429",
+      "src": [
+        "SRC-002694",
+        "SRC-002693"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-05 article already on record",
+      "src": [
+        "SRC-001291"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "timespacegroup.com homepage lists no Palo Alto project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no Lowney Architecture page for 800 San Antonio",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn for 800 San Antonio returned nothing relevant",
+      "src": []
+    }
+  }
 }

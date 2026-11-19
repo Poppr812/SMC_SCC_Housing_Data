@@ -219,9 +219,64 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 72,
+            "1br": 71,
+            "2br": 19,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002717"
+          ],
+          "note": "72 studios, 33 junior one-bedrooms and 38 one-bedrooms (counted together as 1br), 19 two-bedrooms"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 140000,
+          "src": [
+            "SRC-002717"
+          ],
+          "note": "SF YIMBY: roughly 140,000 sq ft residential; about 194,400 sq ft total including a 53,700 sq ft garage"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002717"
+          ],
+          "note": "State Density Bonus law, 17% above 138-unit base"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "SF YIMBY (June 2025): six stories, 77 feet, 162 units, 21 deed-restricted units, 87-car garage, 168 bicycle spaces; project architect KTGY.",
+      "src": [
+        "SRC-002717"
+      ]
+    },
+    {
+      "text": "Existing building: 39 units (9 studios, 29 one-bedrooms, 1 two-bedroom), built 1950, 23,893 sq ft gross building area on 1.061 acres; MLS shows closed price $15,570,000.",
+      "src": [
+        "SRC-002719",
+        "SRC-002718"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -240,11 +295,29 @@
       "src": [
         "SRC-000936"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002717"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-12-20",
+      "type": "Sale",
+      "label": "Existing 39-unit San Mateo Gardens building sold for $15,570,000",
+      "src": [
+        "SRC-002718",
+        "SRC-002719"
+      ]
+    },
     {
       "date": "2025-05-07",
       "type": "Application filed",
@@ -267,6 +340,89 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from Business Journal leads (San Francisco Business Times / Silicon Valley Business Journal) and the sources listed"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 22 N San Mateo Drive: MLS and Coldwell Banker sold listings, SF YIMBY",
+      "src": [
+        "SRC-002719",
+        "SRC-002718",
+        "SRC-002717"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC active parcels APN 032-321-340: owner San Mateo Gardens LLC already on record",
+      "src": [
+        "SRC-000936"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "City project page (withdrawn December 10, 2025): facts already on record; plan set PDF too large to open",
+      "src": [
+        "SRC-000935"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Tables A and A2 for San Mateo: no row for 22 N San Mateo Dr; no CEQAnet document found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Daily Journal and local news; no coverage found; The Real Deal 2025-05-27 not opened",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-06-06 (unit mix, architect, square footage)",
+      "src": [
+        "SRC-002717"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No company website found for San Mateo Gardens, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "ktgy.com refuses automated access (403)",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found; project withdrawn",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public posts found none",
+      "src": []
+    }
+  }
 }
