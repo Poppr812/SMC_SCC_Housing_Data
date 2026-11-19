@@ -183,6 +183,17 @@
           "note": "State report 2019, application stage: 77 deed-restricted units"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 83,
+          "src": [
+            "SRC-001118"
+          ],
+          "note": "State report 2019, application stage: above-moderate units"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -190,6 +201,12 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001118"
+      ]
+    },
+    {
+      "text": "Sunnyvale Planning Commission study session item 19-1141 (Dec 9, 2019): add 158 units in 3 new buildings to the existing 766-unit apartment complex; zoning R-4/PD. No action item or later Legistar matter for the site found.",
+      "src": [
+        "SRC-001745"
       ]
     }
   ],
@@ -225,6 +242,15 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "date": "2019-12-09",
+      "type": "Other",
+      "label": "Planning Commission study session",
+      "src": [
+        "SRC-001745"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -242,6 +268,85 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search on 655 S Fair Oaks, Prometheus and file 2019-7418; results only showed the existing Spruce Apartments",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 21101034: situs only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar matter 8910 (PC study session 2019-12-09), matter search for Fair Oaks: no later item; plan set attachment is scanned images",
+      "src": [
+        "SRC-001745"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project, no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2019 row 20197418: 77 low-income, 83 above-moderate units, not SB 35; no A2 entitlement row",
+      "src": [
+        "SRC-001118"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of local news found no coverage of the expansion",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and The Real Deal found no coverage of this site",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Prometheus site lists the existing Spruce Apartments only; no expansion page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in Legistar text; plan set is scanned",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "site:linkedin.com web search returned no project posts",
+      "src": []
+    }
+  }
 }

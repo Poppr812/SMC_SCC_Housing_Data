@@ -68,8 +68,17 @@
             "SRC-001130"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-002733",
+            "SRC-002734"
+          ],
+          "note": "Architect and The Almanac describe 158 rental units; the state report lists for-sale tenure"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -167,6 +176,89 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 137,
+          "src": [
+            "SRC-001130"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001130"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.38,
+          "src": [
+            "SRC-002734",
+            "SRC-002735"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 176,
+          "src": [
+            "SRC-002735",
+            "SRC-002736"
+          ],
+          "note": "Three-level garage; 232 long-term bike spaces per SF YIMBY Apr 2022"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 113,
+            "1br": 0,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 45
+          },
+          "src": [
+            "SRC-002736"
+          ],
+          "note": "As stated by SF YIMBY Apr 2022: 113 studios and 45 four-bedroom units"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 168590,
+          "src": [
+            "SRC-002736"
+          ],
+          "note": "Of 252,040 sq ft total; garage 79,060 sq ft"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 15000,
+          "src": [
+            "SRC-002734",
+            "SRC-002733"
+          ],
+          "note": "Office and commercial combined; city page: about 13,400 sq ft office and 1,600 sq ft ground-floor commercial"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -180,6 +272,25 @@
       "text": "Includes about 13,400 sq ft of office and 1,600 sq ft of ground-floor commercial. Building permit submitted early 2023; the city page does not show it issued.",
       "src": [
         "SRC-001201"
+      ]
+    },
+    {
+      "text": "City page: BMR agreement covers 21 units (15% of the 138 base units); additional units under density bonus provisions of BMR Housing Program Chapter 16.96.040; bonus-level FAR, density and height in exchange for an in-lieu community amenities fee; Planning Commission certified a focused EIR and approved entitlements on March 28, 2022.",
+      "src": [
+        "SRC-001201"
+      ]
+    },
+    {
+      "text": "The Almanac: 21 affordable units (4 very low-income, 12 low-income, 5 moderate-income); Greystar chose to pay a $4.8 million community amenity in-lieu fee, including a 10% administrative fee.",
+      "src": [
+        "SRC-002734"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Apr 2022): eight stories, 94 feet, 252,040 sq ft total (168,590 residential, 13,400 office, 1,600 retail, 79,060 garage). SF YIMBY (Nov 2021) gave about 248,995 sq ft. State report 2022 lists tenure as owner and notes a below market rate housing agreement.",
+      "src": [
+        "SRC-002735",
+        "SRC-001130"
       ]
     }
   ],
@@ -202,6 +313,59 @@
         "SRC-001201"
       ],
       "website": "https://www.greystar.com"
+    },
+    {
+      "role": "Architect",
+      "company": "Heller Manus Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.hellermanus.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.hellermanus.com/menlo-flats",
+      "src": [
+        "SRC-002733",
+        "SRC-002735"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Menlo Park Flats Venture, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002735",
+        "SRC-002736"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Architect of record",
+      "src": [
+        "SRC-002736"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "PGAdesign",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002736"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Engineer",
+      "src": [
+        "SRC-002736"
+      ]
     }
   ],
   "financing": [],
@@ -231,6 +395,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Menlo Flats / 165 Jefferson / Greystar; Almanac, SF YIMBY, Heller Manus opened",
+      "src": [
+        "SRC-002734",
+        "SRC-002735"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC parcel layer, APN 055242090: owner Bohannon trusts, already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Menlo Park project page re-read: entitlements 2022-03-28, building permit submitted early 2023, not issued",
+      "src": [
+        "SRC-001201"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project, no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2022 row BLD2020-00004: 137 above-moderate units, 55-year term, inclusionary",
+      "src": [
+        "SRC-001130"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "The Almanac 2022-03-31 approval article",
+      "src": [
+        "SRC-002734"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Nov 2021 and Apr 2022: parking, unit mix, SF, design team, applicant LLC; The Real Deal 2024 builder's remedy item returned 403",
+      "src": [
+        "SRC-002735",
+        "SRC-002736"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Greystar site has no Menlo Flats page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Heller Manus project page: 158 rental units, 21 BMR, 15,000 sf commercial",
+      "src": [
+        "SRC-002733"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lenders or equity found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "site:linkedin.com web search returned no project posts",
+      "src": []
+    }
+  }
 }

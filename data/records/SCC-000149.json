@@ -206,6 +206,20 @@
             "SRC-001653"
           ],
           "note": "Total sources in CTCAC staff report."
+        },
+        {
+          "value": 129000000,
+          "src": [
+            "SRC-001976"
+          ],
+          "note": "Developer project page: total development cost $129 million"
+        },
+        {
+          "value": 130000000,
+          "src": [
+            "SRC-001402"
+          ],
+          "note": "SF YIMBY: estimated $130 million needed for full financing"
         }
       ]
     }
@@ -228,6 +242,18 @@
       "text": "City of San Jose permit MP22-011 (Ministerial Permit, folder year 2022), status Approved, issue date 2023-09-01: \"SB 35 Ministerial Permit to allow the demolition of an existing concrete pad and new construction of a 5-story mixed-use affordable housing project consisting of 160 affordable housing rental units, including two manager's units, and 2,900 square feet of\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Developer page: 15 permanent supportive housing units, 25 HUD-VASH units for homeless veterans, 12 units for people with intellectual or developmental disabilities; LEED Gold target; car and bike parking on the ground floor. Funders listed: San Jose Measure E, Santa Clara County Measure A and I/DD funds, HCD Infill Infrastructure Grant, California Department of Developmental Services.",
+      "src": [
+        "SRC-001976"
+      ]
+    },
+    {
+      "text": "California Construction News (May 2026) names First Citizens Bank as construction lender, Citi as permanent lender and CREA, LLC as equity investor. The CTCAC staff report (Dec 2024) shows Citibank as construction and permanent lender.",
+      "src": [
+        "SRC-002730"
       ]
     }
   ],
@@ -278,6 +304,42 @@
       "other_role": "Lead service provider",
       "src": [
         "SRC-001976"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "FPI Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001976"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "CREA, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002730"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "First Citizens Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002730"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citi",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002730"
       ]
     }
   ],
@@ -431,6 +493,26 @@
       "src": [
         "SRC-001653"
       ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "First Citizens Bank",
+      "program": "Construction loan as reported May 2026",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002730"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "CREA, LLC",
+      "program": "Equity investor as reported May 2026",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002730"
+      ]
     }
   ],
   "groups": {},
@@ -487,6 +569,15 @@
       "estimated": false
     },
     {
+      "date": "2026-05",
+      "type": "Other",
+      "label": "Topping out reported",
+      "src": [
+        "SRC-002730"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2027",
       "type": "Completion",
       "label": "Expected as early as mid-2027",
@@ -501,6 +592,15 @@
       "label": "Expected completion per CTCAC staff report",
       "src": [
         "SRC-001653"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027-06",
+      "type": "Completion",
+      "label": "Estimated completion per developer page",
+      "src": [
+        "SRC-001976"
       ],
       "estimated": true
     }
@@ -535,6 +635,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on The Fielden / 525 N Capitol; CDP page, CCN and SF YIMBY opened",
+      "src": [
+        "SRC-001976",
+        "SRC-002730"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 25491004: situs 525 N Capitol Av, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov (NEPA review page, permits) refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "County Measure A $8M already on record from CTCAC report; news.santaclaracounty.gov blocked",
+      "src": [
+        "SRC-001653"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CTCAC CA-24-672 staff report and active projects list already on record",
+      "src": [
+        "SRC-001653",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Multi-Housing News topping-out article returned 403; no other local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "California Construction News May 2026 (topping out, lenders); SF YIMBY Sep 2025 cost estimate",
+      "src": [
+        "SRC-002730",
+        "SRC-001402"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CDP project page: cost, completion estimate, property manager, funders",
+      "src": [
+        "SRC-001976"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "dbarchitect.com search results show no Fielden page; Cahill project page returned HTTP 500",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "California Construction News: First Citizens Bank, Citi, CREA LLC",
+      "src": [
+        "SRC-002730"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "site:linkedin.com web search returned no project posts",
+      "src": []
+    }
+  }
 }

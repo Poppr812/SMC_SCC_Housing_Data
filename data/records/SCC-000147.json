@@ -172,6 +172,41 @@
           "note": "State report 2024, application stage: 160 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001826"
+          ],
+          "note": "Six residential floors above a two-story garage"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.86,
+          "src": [
+            "SRC-001826"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2024: project type Discretionary, density bonus requested; application status Withdrawn"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -179,6 +214,12 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Feb 2024): podium building on a 0.86-acre site at Hillsdale Avenue and Newberry Drive replacing a vacant strip mall; units for very low- and low-income households; application filed under the State Density Bonus Law and SB 330.",
+      "src": [
+        "SRC-001826"
       ]
     }
   ],
@@ -193,6 +234,15 @@
         "SRC-001826"
       ],
       "website": "https://usapropfund.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "AC Martin",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001826"
+      ]
     }
   ],
   "financing": [],
@@ -222,6 +272,87 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and USA Properties Fund; SF YIMBY Feb 2024 article opened",
+      "src": [
+        "SRC-001826"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 45109061: situs 1190 Hillsdale Av, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2024 row SP24-002: discretionary, density bonus requested, status Withdrawn; no CTCAC/CDLAC application found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal (Aug 2024 cancellation report citing Mercury News) returned 403; Mercury News not opened",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Feb 2024: stories, site size, architect",
+      "src": [
+        "SRC-001826"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "usapropfund.com project post returned 404; no Hillsdale project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "acmartin.com home page: no Hillsdale or San Jose project listed",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lenders or funders found; project withdrawn before financing",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "site:linkedin.com web search on the address returned no project posts",
+      "src": []
+    }
+  }
 }
