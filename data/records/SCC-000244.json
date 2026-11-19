@@ -85,6 +85,14 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "585 Keyes St, San Jose, CA 95112, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003032",
+        "SRC-003029"
+      ]
     }
   ],
   "images": [],
@@ -117,9 +125,16 @@
             "SRC-001614"
           ],
           "note": "SV@Home Measure A dashboard lists it as In Construction; dashboard is undated."
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003029"
+          ],
+          "note": "Architect's project page lists status Completed, 2025; Blach (Dec. 2024) said it was on track to welcome residents by summer 2025; Charities Housing page says the waiting list closed as of January 16 (year not given)"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "jurisdiction": {
       "claims": [
@@ -166,6 +181,14 @@
           "value": "77 deed-restricted units reported to the state",
           "src": [
             "SRC-001107"
+          ]
+        },
+        {
+          "value": "97 units at 30%-50% AMI plus 2 manager units; HUD Section 8 project-based vouchers on 44 units and HUD Rapid Re-Housing vouchers on 49 units (CTCAC); half the units reserved for Rapid Rehousing households referred by the County Office of Supportive Housing (Charities Housing, Blach)",
+          "src": [
+            "SRC-001631",
+            "SRC-003032",
+            "SRC-003030"
           ]
         }
       ]
@@ -255,6 +278,79 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-003029",
+            "SRC-003030",
+            "SRC-003031",
+            "SRC-003032",
+            "SRC-003033"
+          ]
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-003034"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.9,
+          "src": [
+            "SRC-003029",
+            "SRC-003032",
+            "SRC-003030"
+          ],
+          "note": "Architect page: 39,278 sf site"
+        },
+        {
+          "value": 0.65,
+          "src": [
+            "SRC-003034"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 52,
+          "src": [
+            "SRC-003029",
+            "SRC-003034",
+            "SRC-003031"
+          ],
+          "note": "Automated stackers / podium parking; SF YIMBY also lists 100 bicycle spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 93980,
+          "src": [
+            "SRC-003034"
+          ],
+          "note": "SF YIMBY: building of about 93,980 square feet"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001631"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -282,6 +378,32 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC staff report construction financing table lists Silicon Valley Bank - TE $44,565,052, Silicon Valley Bank - Taxable $5,848,164, City of San Jose $9,267,938, County of Santa Clara Measure A $9,280,000, costs deferred until conversion $2,557,587 and tax credit equity $12,228,182 during construction. Bond issuer: City of San Jose. Census tract 5031.12.",
+      "src": [
+        "SRC-001631"
+      ]
+    },
+    {
+      "text": "SF YIMBY (June 2023), citing Bay Area News Group: $9.3 million from Santa Clara County, $9.3 million from the City of San Jose, $12.2 million in tax credit investment and $44.6 million in tax-exempt bond proceeds; total cost $87 million.",
+      "src": [
+        "SRC-003034"
+      ]
+    },
+    {
+      "text": "Blach groundbreaking release names as partners Santa Clara County, City of San Jose, California Community Reinvestment Corporation, Santa Clara County Housing Authority, Housing Trust Silicon Valley, Wells Fargo, CDLAC and CTCAC, without stating each party's role.",
+      "src": [
+        "SRC-003030"
+      ]
+    },
+    {
+      "text": "Architect page: Type IB construction, GreenPoint Rated Platinum target; Blach: concrete structure, rooftop photovoltaic array, sixth-floor terrace. Named for Dr. Charles Preston (Housing Trust Silicon Valley).",
+      "src": [
+        "SRC-003029",
+        "SRC-003031",
+        "SRC-003033"
+      ]
     }
   ],
   "parties": [
@@ -305,6 +427,78 @@
       "src": [
         "SRC-001631"
       ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Blach Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003030",
+        "SRC-003031",
+        "SRC-003034",
+        "SRC-003029"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "David Baker Architects",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://dbarchitect.com/TheCharles",
+      "src": [
+        "SRC-003029",
+        "SRC-003034",
+        "SRC-003030"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Form/Work",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003029"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "DCI Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003029"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Meyers+ Engineers",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "MEP engineer",
+      "src": [
+        "SRC-003029"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Keyes Charities LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001631"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tax credit investor/consultant",
+      "src": [
+        "SRC-001631"
+      ]
     }
   ],
   "financing": [
@@ -312,7 +506,7 @@
       "type": "Construction loan",
       "provider": "Silicon Valley Bank - TE",
       "program": null,
-      "amount": 4456505,
+      "amount": 44565052,
       "date": null,
       "src": [
         "SRC-001631"
@@ -443,6 +637,34 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2023-06-15",
+      "type": "Construction start",
+      "label": "Groundbreaking announced",
+      "src": [
+        "SRC-003030",
+        "SRC-003034"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12",
+      "type": "Other",
+      "label": "Building topped out",
+      "src": [
+        "SRC-003031"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025",
+      "type": "Completion",
+      "label": "Completed (architect project page)",
+      "src": [
+        "SRC-003029"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -470,6 +692,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and developer; SF YIMBY, Blach, David Baker, Housing Trust SV pages opened",
+      "src": [
+        "SRC-003034",
+        "SRC-003030"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 472-12-086: situs 551 Keyes St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov documents refuse automated access; city permit GIS layer already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Measure A loan already on record from CTCAC report; Charities page names County Office of Supportive Housing referrals",
+      "src": [
+        "SRC-001631",
+        "SRC-003032"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-22-633 re-read: general partner, investor/consultant, vouchers, 55-year term, construction-phase sources",
+      "src": [
+        "SRC-001631"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "Multi-Housing News topping-out article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2023-06-14 financing article",
+      "src": [
+        "SRC-003034"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Charities Housing property page: 585 Keyes St, 7 stories, 0.9 acre, waitlist closed",
+      "src": [
+        "SRC-003032"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "David Baker Architects project page: completed 2025, 52 parking, consultant team",
+      "src": [
+        "SRC-003029"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC construction sources; Blach partner list; Housing Trust SV tour page",
+      "src": [
+        "SRC-001631",
+        "SRC-003030",
+        "SRC-003033"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts for the project",
+      "src": []
+    }
+  }
 }

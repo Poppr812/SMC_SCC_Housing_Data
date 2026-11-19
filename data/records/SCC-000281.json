@@ -115,6 +115,13 @@
             "SRC-001411"
           ],
           "note": "Up from 53."
+        },
+        {
+          "value": 86,
+          "src": [
+            "SRC-003036"
+          ],
+          "note": "January 2022 enhanced preliminary permit proposal"
         }
       ],
       "best": 1
@@ -194,6 +201,66 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 9,
+          "src": [
+            "SRC-003035"
+          ]
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-003036"
+          ],
+          "note": "2022 enhanced preliminary proposal"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 74640,
+          "src": [
+            "SRC-003035"
+          ],
+          "note": "Architect lists 74,640 gross square feet"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.27,
+          "src": [
+            "SRC-003036"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-003036"
+          ],
+          "note": "2022 proposal described as senior housing"
+        },
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-003035"
+          ],
+          "note": "Architect describes affordable family housing"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -207,6 +274,13 @@
       "text": "City of San Jose permit MP22-012 (Ministerial Permit, folder year 2022), status Approved, issue date 2023-09-01: \"SB 35 Ministerial Permit to allow the demolition of an existing surface parking lot, and allow the construction of an eight-story affordable housing apartment building consisting of 53 units, including one manager’s unit, studios, one-, two-, and three-be\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Architect page: 99 affordable rental units (studios through three-bedrooms), 9 stories, 74,640 GSF, design phase; team exploring a light steel frame / mass timber hybrid structure; GreenPoint Rated Gold target. SF YIMBY 2026: eight residential floors over a ground floor with parking and lobby.",
+      "src": [
+        "SRC-003035",
+        "SRC-001411"
       ]
     }
   ],
@@ -235,12 +309,30 @@
   "groups": {},
   "events": [
     {
+      "date": "2022-01",
+      "type": "Application filed",
+      "label": "Enhanced preliminary permit submitted (reported Jan. 26, 2022)",
+      "src": [
+        "SRC-003036"
+      ],
+      "estimated": true
+    },
+    {
       "date": "2023-09-01",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Construction start",
+      "label": "Construction scheduled to start early 2027 (architect)",
+      "src": [
+        "SRC-003035"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -263,6 +355,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and SAHA; LMSA and SF YIMBY 2022 pages opened",
+      "src": [
+        "SRC-003035",
+        "SRC-003036"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 264-31-111: situs 501 S Almaden Av, 3 situs addresses; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Jose Housing NOFA documents on sanjoseca.gov refuse automated access; city permit GIS layer already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Measure A or county funding item found for this address",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No CTCAC/CDLAC award found naming 501 S Almaden; APR rows already on record",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No local news coverage beyond trade press found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-01-26 (86 senior units, 8 floors, 0.27 acre) and 2026-03-18",
+      "src": [
+        "SRC-003036",
+        "SRC-001411"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SAHA Properties in Development page lists no San Jose project",
+      "src": [
+        "SRC-003037"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "LMSA project page: 9 stories, 74,640 GSF, construction start early 2027",
+      "src": [
+        "SRC-003035"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "City NOFA wait-list reports are on sanjoseca.gov, which refuses automated access",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

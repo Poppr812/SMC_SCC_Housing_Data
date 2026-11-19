@@ -220,6 +220,63 @@
             "SRC-001113"
           ],
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 10,
+              "ami": 80
+            },
+            {
+              "count": 5,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-003038"
+          ],
+          "note": "SF YIMBY Dec. 2022: 10 units at about 80% AMI and 5 at 50% AMI"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 6,
+            "1br": 68,
+            "2br": 25,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003038",
+            "SRC-003039"
+          ],
+          "note": "Aug. 2022 detail: 6 studios, 12 one-bedrooms, 56 one-bedroom plus den, 9 two-bedrooms, 16 two-bedroom plus den"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 112750,
+          "src": [
+            "SRC-003038"
+          ],
+          "note": "Total about 142,250 sf, including 14,990 sf garage and 1,500 sf retail"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-003038",
+            "SRC-003039"
+          ],
+          "note": "Garage with stackers; 99 bicycle spaces"
         }
       ]
     }
@@ -230,6 +287,13 @@
       "src": [
         "SRC-001112",
         "SRC-001113"
+      ]
+    },
+    {
+      "text": "SF YIMBY: 85 feet, seven stories; ground-floor 1,500 sf restaurant; design recreates the Bertolucci's sign on the northern facade. The Aug. 2022 article describes the site as three parcels totaling 0.58 acres, with applications for design review and environmental review.",
+      "src": [
+        "SRC-003038",
+        "SRC-003039"
       ]
     }
   ],
@@ -251,6 +315,44 @@
       "src": [
         "SRC-001342"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Victoria Sodini",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003038"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T-Square",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003038",
+        "SRC-003039"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003038",
+        "SRC-003039"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Wilsey Ham",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003038"
+      ]
     }
   ],
   "financing": [],
@@ -263,6 +365,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2022-08-18",
+      "type": "Other",
+      "label": "Design review meeting scheduled",
+      "src": [
+        "SRC-003039"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-12",
@@ -280,6 +391,15 @@
       "src": [
         "SRC-001113"
       ]
+    },
+    {
+      "date": "2022-12-15",
+      "type": "Other",
+      "label": "Planning Commission review meeting",
+      "src": [
+        "SRC-003038"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -297,6 +417,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Bertolucci's and Sodini; SF YIMBY articles opened",
+      "src": [
+        "SRC-003038"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner (Sodini trusts) already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SSF development map layer already on record; SSF is not on the Legistar web API; no staff report found by search",
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR rows (P21-0009) already on record",
+      "src": [
+        "SRC-001113"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (Aug. 2022, Jan. 2023) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-08-17 and 2022-12-15",
+      "src": [
+        "SRC-003039",
+        "SRC-003038"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Owner-applicants are individuals; no project site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Studio T-Square project page found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "Sale listings (Showcase, Cityfeet brochure) returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

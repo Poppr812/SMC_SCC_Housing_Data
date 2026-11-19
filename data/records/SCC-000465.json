@@ -31,6 +31,66 @@
           37.43044
         ]
       ]
+    },
+    {
+      "apn": "124-27-039",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1442448,
+          37.4305687
+        ],
+        [
+          -122.1445299,
+          37.4302233
+        ],
+        [
+          -122.1447341,
+          37.4303519
+        ],
+        [
+          -122.144449,
+          37.4306974
+        ],
+        [
+          -122.1442448,
+          37.4305687
+        ]
+      ]
+    },
+    {
+      "apn": "124-28-043",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1437681,
+          37.4302685
+        ],
+        [
+          -122.1440532,
+          37.4299231
+        ],
+        [
+          -122.1443256,
+          37.4300946
+        ],
+        [
+          -122.1440405,
+          37.43044
+        ],
+        [
+          -122.1437681,
+          37.4302685
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -47,6 +107,22 @@
             "SRC-001262"
           ]
         }
+      ]
+    },
+    {
+      "text": "2151 Park Blvd, Palo Alto, CA",
+      "role": "other",
+      "src": [
+        "SRC-001262",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "2211 Park Blvd, Palo Alto, CA",
+      "role": "other",
+      "src": [
+        "SRC-001262",
+        "SRC-001098"
       ]
     }
   ],
@@ -150,6 +226,13 @@
       "src": [
         "SRC-001262"
       ]
+    },
+    {
+      "text": "SF YIMBY: 75 feet tall; ground floor holds lobby, amenity lounge and bicycle parking; no on-site car parking. Office buildings to be demolished are at 2151, 2181 and 2211 Park Boulevard (county parcels 124-27-039, 124-27-038 and 124-28-043).",
+      "src": [
+        "SRC-001262",
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [
@@ -158,6 +241,16 @@
       "company": "Brion McDonald / 2211 Park Boulevard LLC",
       "contact": null,
       "linkedin": null,
+      "src": [
+        "SRC-001262"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MSI Consulting Engineers",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Engineer (representative elevations)",
       "src": [
         "SRC-001262"
       ]
@@ -171,6 +264,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, SB 79 and Brion McDonald; SF YIMBY re-read",
+      "src": [
+        "SRC-001262"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 2151 Park = 124-27-039, 2211 Park = 124-28-043, both adjoining 124-27-038; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Palo Alto project page for 2181 Park (404); city SB 79 status page (Aug. 4, 2026) lists nine other preliminary applications, not this one",
+      "src": [
+        "SRC-003040"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Preliminary application only; no APR or CEQAnet item found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Palo Alto Online coverage found by search",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-08-08 already on record; The Real Deal July 2026 Palo Alto article returned 403",
+      "src": [
+        "SRC-001262"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No developer site found for 2211 Park Boulevard LLC / Brion McDonald",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not credited; MSI Consulting Engineers provided elevations",
+      "src": [
+        "SRC-001262"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
