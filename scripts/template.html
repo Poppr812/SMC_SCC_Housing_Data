@@ -118,7 +118,8 @@ sup.fn a{font-size:10px;text-decoration:none;background:#E6F2F3;color:var(--teal
 ol.events{list-style:none;padding:0;margin:0}
 ol.events li{border-left:3px solid var(--teal);padding:3px 0 8px 12px;margin-left:4px}
 ol.events li b{display:inline-block;min-width:110px}
-.src{border-top:1px solid var(--rule);padding:8px 0;font-size:13px}
+.src{border-top:1px solid var(--rule);padding:8px 0;font-size:13px;transition:background .4s}
+.src.hl{background:#fff3c4}
 .src .id{display:inline-block;min-width:26px;font-weight:600;color:var(--teal)}
 .hist{font-size:12px;color:var(--gray)}
 details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;margin-top:18px}
@@ -672,10 +673,22 @@ function findTip(tpl,r){
 // Source listing (Paul, 2026-11-19): "Publisher · Type" (linked) · title · date, plus a short gray hint only for PDFs and databases.
 const PUB_SHORT={"California Tax Credit Allocation Committee":"California TCAC","California Department of Housing and Community Development":"California HCD","San Mateo County GIS":"San Mateo County"};
 function srcPub(S){return PUB_SHORT[S.publisher]||S.publisher}
+// Display title: a source's optional display_title, else a short form for repeated database and staff-report titles. The stored title stays the citation.
+function srcTitle(S,r){
+  if(S.display_title)return S.display_title;
+  const t=S.title||"", p=S.publisher+" "+t;
+  if(S.type==="Government dataset"){
+    if(/parcel/i.test(p)){const a=r.parcels.map(x=>x.apn);return a.length?"APN "+a.join(", "):t}
+    const m=/Progress Report.*?Table (A2|A)\b(?:\s*\([^)]*\))?,\s*(.+)$/i.exec(t);
+    if(m)return `Annual Progress Report: ${m[2]} (${m[1].toUpperCase()==="A2"?"approvals, permits, completions":"applications"})`;
+    if(/permit/i.test(p)){const pf=(r.facts.planning_file?.claims||[]).filter(c=>c.src.includes(Object.keys(SOURCES).find(k=>SOURCES[k]===S))).map(c=>c.value);return pf.length?"Planning permits "+pf.join(", "):t}
+    return t.replace(/^City Development Projects:\s*/i,"")}
+  if(/Tax Credit Allocation|CDLAC|Debt Limit/i.test(S.publisher))return t.replace(/^(CDLAC\/)?(CTCAC\s+)?Project Staff Report,?\s*/i,"");
+  return t}
 function srcIsPdf(S){return /\.pdf($|\?|#)/i.test(S.url)}
 function srcType(S){
   if(S.type==="Government dataset"){const p=S.publisher+" "+S.title;
-    return /parcel/i.test(p)?"Parcel database":/progress report|housing and community/i.test(p)?"Housing report database":/permit/i.test(p)?"Permit database":"Database"}
+    return /parcel/i.test(p)?"Parcel database":/progress report|housing and community/i.test(p)?"Housing report database":/permit/i.test(p)?"Permit database":/project/i.test(p+" "+S.url)?"Project database":"Database"}
   if(/Tax Credit Allocation|CDLAC|Debt Limit/i.test(S.publisher))return "Staff report";
   return {"Government document":"Public document","Government web page":"Web page","Government press release":"Press release","Developer press release":"Press release",
     "Developer web page":"Web page","Trade publication":"Trade article","Trade listing":"Listing"}[S.type]||S.type}
@@ -686,13 +699,16 @@ function srcTip(S,r){
   if(S.type==="Government dataset"){
     const pf=(r.facts.planning_file?.claims||[]).flatMap(c=>String(c.value).split(/[,;\s]+/)).filter(x=>/^[A-Z]{1,5}\d{2}-\d{2,4}/.test(x)||/^\d{6,}$/.test(x))[0];
     if(/parcel/i.test(S.publisher+" "+S.title))return "Search by APN";
+    if(!/progress report|housing and community|permit/i.test(S.publisher+" "+S.title))return "";
     if(pf)return `Filter by file number ${pf}`;
     const street=(r.addresses[0]?.text||r.name).split(",")[0];return `Filter by address ${street}`}
   if(/^Spreadsheet/i.test(S.find||""))return "Spreadsheet";
   return srcIsPdf(S)?"PDF":""}
 /* ---------- record page ---------- */
 let CUR=null;
-function fn(srcs){return (srcs||[]).map(s=>`<sup class="fn"><a href="#src-${s}" title="${esc(SOURCES[s].title)}">${CUR.srcLabels[s]}</a></sup>`).join("")}
+function fn(srcs){return (srcs||[]).map(s=>`<sup class="fn"><a href="#src-${s}" onclick="return srcJump('${s}')" title="${esc(SOURCES[s].title)}">${CUR.srcLabels[s]}</a></sup>`).join("")}
+// Clicking S7 scrolls to that source and highlights it (Paul, 2026-11-19); the highlight stays until another source is clicked.
+function srcJump(s){const el=document.getElementById("src-"+s);if(!el)return true;document.querySelectorAll(".src.hl").forEach(e=>e.classList.remove("hl"));el.classList.add("hl");el.scrollIntoView({behavior:"smooth",block:"center"});return false}
 function askHTML(r,label,q){
   const id="q"+Math.random().toString(36).slice(2,8);
   return `<button class="clarify noprint" type="button" onclick="document.getElementById('${id}').classList.toggle('show')">Know more?</button><div class="ask noprint" id="${id}">${esc(q)} <a href="#" data-topic="${esc(label+": "+q)}" onclick="openContrib(CUR,this.dataset.topic);return false">Share what you know</a></div>`;
@@ -778,7 +794,7 @@ function openRecord(id){
    ${secs}
    <h3>Sources</h3>
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
-     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(outUrl(S))}" target="_blank" rel="noopener">${esc(srcPub(S))} · <i>${esc(srcType(S))}</i></a> · ${esc(S.title)}${srcDate(S)?" · "+esc(srcDate(S)):""}<div class="muted" style="margin-left:26px;font-size:.85em">${esc(srcTip(S,r))}${PROFILE&&PROFILE.is_admin?`<div class="adminsrc">${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()} · Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div>`:""}</div></div>`}).join("")}
+     return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(outUrl(S))}" target="_blank" rel="noopener">${esc(srcPub(S))} · <i>${esc(srcType(S))}</i></a> · ${esc(srcTitle(S,r))}${srcDate(S)?" · "+esc(srcDate(S)):""}<div class="muted" style="margin-left:26px;font-size:.85em">${esc(srcTip(S,r))}${PROFILE&&PROFILE.is_admin?`<div class="adminsrc">${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()} · Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div>`:""}</div></div>`}).join("")}
    ${PROFILE&&PROFILE.is_admin?researchBox(r):""}
    <details><summary>Edit history (provenance)</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
