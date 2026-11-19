@@ -167,8 +167,17 @@
         {
           "value": 116,
           "src": [
-            "SRC-001435"
+            "SRC-001435",
+            "SRC-002954",
+            "SRC-002953"
           ]
+        },
+        {
+          "value": 113,
+          "src": [
+            "SRC-002955"
+          ],
+          "note": "November 2023 report on the original application"
         }
       ],
       "best": 1
@@ -207,6 +216,13 @@
           "src": [
             "SRC-001435"
           ]
+        },
+        {
+          "value": "2023 application reported 23 affordable homes of 113; the 2026 Draft EIR shows 9 extremely low income homes of 116",
+          "src": [
+            "SRC-002955",
+            "SRC-002954"
+          ]
         }
       ]
     },
@@ -215,7 +231,8 @@
         {
           "value": 107,
           "src": [
-            "SRC-001420"
+            "SRC-001420",
+            "SRC-002954"
           ]
         }
       ]
@@ -245,6 +262,20 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001435",
+            "SRC-002953"
+          ],
+          "note": "City page: submitted as a Builder's Remedy 2.0 project under the Housing Accountability Act"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -259,6 +290,20 @@
       "src": [
         "SRC-001435"
       ]
+    },
+    {
+      "text": "Draft EIR public review ran August 21 to October 5, 2026. Plans include demolition of an existing house, barn (South Hoey Barn) and accessory structures and removal of 22 trees; about 24 acres split into two lots by Plum Street; construction about 23 months in 12 phases.",
+      "src": [
+        "SRC-001435",
+        "SRC-002954",
+        "SRC-002953"
+      ]
+    },
+    {
+      "text": "The site had an agri-tourist development approved by the City Council in 2018 that was not built; the land was sold in 2023.",
+      "src": [
+        "SRC-002955"
+      ]
     }
   ],
   "parties": [
@@ -271,11 +316,67 @@
       "src": [
         "SRC-001435"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Mana Investment",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002953"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Mana Hanalei LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (2023 application)",
+      "src": [
+        "SRC-002955"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "William Hezmalhalch Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002953"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Ripley Designs",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002953"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "EMC Planning Group Inc.",
+      "contact": "Teri Wissler Adam",
+      "linkedin": null,
+      "other_role": "Environmental (CEQA) consultant",
+      "src": [
+        "SRC-002954"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-05-01",
+      "type": "Other",
+      "label": "Preliminary application filed citing the builder's remedy",
+      "src": [
+        "SRC-002955"
+      ],
+      "estimated": true
+    },
     {
       "date": "2023-10-31",
       "type": "Application filed",
@@ -284,6 +385,23 @@
         "SRC-001435"
       ],
       "estimated": false
+    },
+    {
+      "date": "2023-11-01",
+      "type": "Application filed",
+      "label": "Tentative map application filed",
+      "src": [
+        "SRC-002955"
+      ]
+    },
+    {
+      "date": "2025-01-10",
+      "type": "Other",
+      "label": "CEQA Notice of Preparation issued (SCH 2025010214)",
+      "src": [
+        "SRC-001435",
+        "SRC-002956"
+      ]
     },
     {
       "date": "2025-08-28",
@@ -301,6 +419,14 @@
         "SRC-001435"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-09-28",
+      "type": "Other",
+      "label": "City community meeting on the Draft EIR",
+      "src": [
+        "SRC-001435"
+      ]
     }
   ],
   "history": [
@@ -313,6 +439,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Mana Camden Fund and builder's remedy",
+      "src": [
+        "SRC-002955",
+        "SRC-002953"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API: 810-20-036 (no situs), 810-20-033 (2740 Hecker Pass Rd), 810-20-037 (2480 Hecker Pass Hy); city-listed APNs already noted on record; no owner of record in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City of Gilroy project page AS 23-19 / TM 23-03: builder's remedy, NOP date, community meeting",
+      "src": [
+        "SRC-001435"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2025010214: NOP 2025-01-08, Draft EIR 2026-08-25",
+      "src": [
+        "SRC-002954",
+        "SRC-002956"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Gilroy Dispatch 2023-11-16",
+      "src": [
+        "SRC-002955"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2026-08-28",
+      "src": [
+        "SRC-002953"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Mana Investment project page found by web search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Architect William Hezmalhalch Architects and landscape architect Ripley Designs named by SF YIMBY; no architect project page found",
+      "src": [
+        "SRC-002953"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com for Hecker Pass and Mana; nothing found",
+      "src": []
+    }
+  }
 }

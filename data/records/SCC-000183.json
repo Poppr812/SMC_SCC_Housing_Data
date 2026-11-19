@@ -150,6 +150,18 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "25% of homes reserved for people with intellectual and developmental disabilities across income levels",
+          "src": [
+            "SRC-002961"
+          ]
+        },
+        {
+          "value": "HUD Section 811 Project Rental Assistance contract; 55-year affordability",
+          "src": [
+            "SRC-001616"
+          ]
         }
       ]
     },
@@ -244,6 +256,54 @@
             "SRC-001616"
           ],
           "note": "Total sources in CTCAC staff report."
+        },
+        {
+          "value": 75000000,
+          "src": [
+            "SRC-002961"
+          ],
+          "note": "Developer page describes a $75M community"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001616"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002962"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 85461,
+          "src": [
+            "SRC-002962"
+          ],
+          "note": "Building size as stated by the contractor (85,461 SF), not residential-only area"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2024,
+          "src": [
+            "SRC-002962"
+          ]
         }
       ]
     }
@@ -272,6 +332,24 @@
       "text": "City of San Jose permit H20-005 (Site Development Permit/Amendment, folder year 2020), status Approved, issue date 2020-02-28: \"SB 35 Streamlined Ministerial Permit to allow the demolition of an existing commercial building and the construction of a 115-unit multi-family apartment building with 87 affordable housing units on an approximately 0.47-gross acre site.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "CTCAC staff report lists general partners The Kelsey Ayer Station LLC, North First Street - San Jose MF, LLC and DGI Kelsey LLC (joint venture; parents The Kelsey, Sares Regis Group of NC, Devine & Gong, Inc.). Staff noted a per-unit development cost of $590,715.",
+      "src": [
+        "SRC-001616"
+      ]
+    },
+    {
+      "text": "Devcon Construction lists the project as design-build, completed 2024: a six-story building with five floors of units over a podium, replacing a two-story office building.",
+      "src": [
+        "SRC-002962"
+      ]
+    },
+    {
+      "text": "County parcel data shows the record's APN 264-30-087 with situs 447 S 1st St; the project address is 447 N 1st St.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -311,6 +389,46 @@
       "linkedin": null,
       "src": [
         "SRC-001616"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Kelsey Ayer Station, LP",
+      "contact": "Caroline Bas",
+      "linkedin": null,
+      "email": "caroline@thekelsey.org",
+      "other_role": "Applicant / tax credit owner",
+      "src": [
+        "SRC-001616"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Enterprise Housing Credit Investments, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001616"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "CalHFA",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001616"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Devcon Construction, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.devcon-const.com/",
+      "src": [
+        "SRC-002962"
       ]
     }
   ],
@@ -414,6 +532,47 @@
       "src": [
         "SRC-001616"
       ]
+    },
+    {
+      "type": "Predevelopment loan",
+      "provider": "Google affordable housing fund",
+      "program": "First project funded for predevelopment",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002961"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "Named funder; amount not stated",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002961"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Capital One",
+      "program": "Named funder; amount not stated",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002961"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "U.S. Department of Housing and Urban Development",
+      "program": "Section 811 Project Rental Assistance contract",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001616",
+        "SRC-002961"
+      ]
     }
   ],
   "groups": {},
@@ -486,6 +645,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Added applicant contact and partners from the CTCAC staff report"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on project name and address; Kelsey, Devcon, Housing Trust pages",
+      "src": [
+        "SRC-002961",
+        "SRC-002962"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API apn=26430087: situs 447 S 1st St (614 sq m); nearby N 1st St parcels 259-20-043 (445 N 1st) and 259-20-066 (457 N 1st). No source opened lists the project APN",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit GIS data already on record",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No county funding item found in searches",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-21-750: applicant LP, GPs, investor, bond issuer, 811 PRA",
+      "src": [
+        "SRC-001616"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley 2024-10-15 opening post; HCD and KTVU results were about Tamien Station, not this project",
+      "src": [
+        "SRC-002963"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched trade press; nothing specific to this project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "The Kelsey project page",
+      "src": [
+        "SRC-002961"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Devcon page lists design-build; architect of record not clearly stated",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Funders listed on The Kelsey page; investor and bond issuer from CTCAC report",
+      "src": [
+        "SRC-002961",
+        "SRC-001616"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com for the project name; nothing found",
+      "src": []
+    }
+  }
 }

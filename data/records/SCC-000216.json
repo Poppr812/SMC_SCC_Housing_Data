@@ -1,6 +1,6 @@
 {
   "id": "SCC-000216",
-  "name": "600 E Campbell Ave (Cresleigh)",
+  "name": "Parkvue (600 E Campbell Ave, Cresleigh)",
   "parcels": [
     {
       "apn": "305-28-001",
@@ -149,6 +149,14 @@
             "SRC-001552"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-002958",
+            "SRC-002957"
+          ],
+          "note": "Approved as a six-story mixed-use condominium building with a vesting map for up to 120 residential condominiums and one commercial condominium. The developer site markets it as Parkvue Apartments"
         }
       ],
       "best": 0
@@ -161,8 +169,16 @@
             "SRC-001134"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-002957"
+          ],
+          "note": "Planning Commission approved PLN-2025-3 on 2026-02-10, 6-0; building permit BLD-2026-1494 pending review"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -190,6 +206,13 @@
             "SRC-001552"
           ],
           "note": "Latest filing, building permit application BLD-2026-1494"
+        },
+        {
+          "value": 120,
+          "src": [
+            "SRC-002957"
+          ],
+          "note": "Maximum allowed under the approval through the local small-scale-unit density bonus; plans show 90"
         }
       ],
       "best": 1
@@ -216,7 +239,9 @@
         {
           "value": 6,
           "src": [
-            "SRC-001552"
+            "SRC-001552",
+            "SRC-002958",
+            "SRC-002957"
           ]
         }
       ]
@@ -245,9 +270,85 @@
             }
           ],
           "src": [
-            "SRC-001134"
+            "SRC-001134",
+            "SRC-002958"
           ],
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "7 very low income units (State Density Bonus target units and 15% inclusionary requirement) and 6 moderate income units; 50% primary bonus (AB 2345) plus stacked bonus (AB 1287) on a 45-unit base density",
+          "src": [
+            "SRC-002958"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus",
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-002958"
+          ],
+          "note": "Minor Housing Development Project Permit with State Density Bonus Law waivers; Planning Commission action final; CEQA categorical exemption"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 111,
+          "src": [
+            "SRC-002958",
+            "SRC-002959"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 5000,
+          "src": [
+            "SRC-002958"
+          ],
+          "note": "Approximately 5,000 sq ft ground-floor retail"
+        },
+        {
+          "value": 6758,
+          "src": [
+            "SRC-001552"
+          ],
+          "note": "Building permit application BLD-2026-1494"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 128034,
+          "src": [
+            "SRC-001552"
+          ],
+          "note": "Residential apartment area in building permit application BLD-2026-1494"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.998,
+          "src": [
+            "SRC-002958"
+          ],
+          "note": "Gross lot area"
         }
       ]
     }
@@ -264,6 +365,27 @@
       "src": [
         "SRC-001551"
       ]
+    },
+    {
+      "text": "An earlier 59-unit, five-story condominium project on the site (preliminary application March 2016) was approved by the City Council in December 2019; Cresleigh recorded a subdivision map, demolished the buildings and remediated soil, but the approval expired. A 2023 extension request (PLN-2023-46) covered the 2016 approvals.",
+      "src": [
+        "SRC-002958",
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "The site, about one acre between Dillon and Gilman Avenues, formerly held Paul del Grande Auto Parts and two homes and has been vacant since 2021.",
+      "src": [
+        "SRC-002958",
+        "SRC-002959"
+      ]
+    },
+    {
+      "text": "At the February 2026 hearing the applicant described 116 units; the staff report shows 90 units in the plans with an option up to 120. Building is about 75 feet tall with two levels of podium parking; 55 of 111 stalls with EV charging.",
+      "src": [
+        "SRC-002957",
+        "SRC-002958"
+      ]
     }
   ],
   "parties": [
@@ -278,17 +400,74 @@
       ],
       "website": "https://www.cresleigh.com/",
       "project_page": "https://www.cresleigh.com/multi-family"
+    },
+    {
+      "role": "Developer",
+      "company": "Cresleigh Homes",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.cresleigh.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.cresleigh.com/multi-family",
+      "src": [
+        "SRC-002958",
+        "SRC-002960"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cresleigh Homes Corp.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (building permit)",
+      "src": [
+        "SRC-001552"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cresleigh Homes",
+      "contact": "Jeremy Lui",
+      "linkedin": null,
+      "other_role": "Development project manager",
+      "src": [
+        "SRC-002959"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-11-19",
+      "type": "Other",
+      "label": "SB 330 preliminary application filed (PLN-2024-176, 108-unit mixed-use project)",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
       "date": "2025-01-21",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001134"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "type": "Approved",
+      "label": "Planning Commission approved Minor Housing Development Project Permit and Vesting Tentative Map (6-0)",
+      "src": [
+        "SRC-002957"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "type": "Other",
+      "label": "Building permit application BLD-2026-1494 filed (116 units, six stories)",
+      "src": [
+        "SRC-001552"
       ]
     }
   ],
@@ -312,6 +491,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Cresleigh; Campbell agenda center and San Jose Spotlight",
+      "src": [
+        "SRC-002959"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel API apn=30528001 shows situs 600 W Campbell Av (not E); no parcel has situs 600 E Campbell Ave. The city permit point for 600 E Campbell falls in parcel 412-09-066 (situs 566 E Campbell Ave)",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Campbell Planning Commission 2026-02-10 agenda packet and minutes; city ArcGIS planning and building permit layers",
+      "src": [
+        "SRC-002958",
+        "SRC-002957",
+        "SRC-001551",
+        "SRC-001552"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR row already on record; CEQA categorical exemption, no CEQAnet document found",
+      "src": [
+        "SRC-001134"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-02-25",
+      "src": [
+        "SRC-002959"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched SF YIMBY and trade press; nothing on 600 E Campbell",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Cresleigh Homes multi-family page: Parkvue Apartments, Campbell",
+      "src": [
+        "SRC-002960"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Staff report and press do not name the architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com for Cresleigh Campbell/Parkvue; nothing found",
+      "src": []
+    }
+  }
 }

@@ -105,6 +105,14 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 120,
+          "src": [
+            "SRC-002947",
+            "SRC-002948"
+          ],
+          "note": "CEQA Draft EIR (2025-06-06) and Notice of Determination (2025-12-19) project description"
         }
       ],
       "best": 0
@@ -132,6 +140,13 @@
           "value": "24 units at about 80% AMI.",
           "src": [
             "SRC-001405"
+          ]
+        },
+        {
+          "value": "16 below-market-rate units of 120, per the CEQA Draft EIR and Notice of Determination. The 2024 Notice of Preparation described 20% of 99 units at 80% AMI.",
+          "src": [
+            "SRC-002947",
+            "SRC-002949"
           ]
         }
       ]
@@ -178,6 +193,19 @@
           "src": [
             "SRC-001405"
           ]
+        },
+        {
+          "value": {
+            "studio": 36,
+            "1br": 46,
+            "2br": 17,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002949"
+          ],
+          "note": "2024 Notice of Preparation, 99-unit version (approximate counts as stated)"
         }
       ]
     },
@@ -208,6 +236,46 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 77660,
+          "src": [
+            "SRC-002947"
+          ],
+          "note": "Building area as stated in the CEQA notice (77,660 sq ft, seven stories, 97 ft)"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 148,
+          "src": [
+            "SRC-002947"
+          ],
+          "note": "148 stalls with mechanical lifts plus 8 outdoor guest spaces"
+        },
+        {
+          "value": 112,
+          "src": [
+            "SRC-002949"
+          ],
+          "note": "2024 Notice of Preparation (99-unit version): 112 stalls with mechanical lifts plus 8 outdoor guest spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.72,
+          "src": [
+            "SRC-002947"
+          ],
+          "note": "Gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -229,6 +297,13 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "The 2024 Notice of Preparation described a seven-story, 99-unit building with 20% of units at 80% AMI and 8,714 sq ft of common open space. The 2025 Draft EIR and Notice of Determination describe 120 units (16 below market rate), 77,660 sq ft, 97 ft tall, with 5,017 sq ft of common open space.",
+      "src": [
+        "SRC-002949",
+        "SRC-002947"
+      ]
     }
   ],
   "parties": [
@@ -249,6 +324,36 @@
       "src": [
         "SRC-001405"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Borello Asset Management, Inc.",
+      "contact": "Chris Borello",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002947"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Borello Asset Management, Inc.",
+      "contact": "Erik Schoennauer",
+      "linkedin": null,
+      "other_role": "Applicant's representative (land use consultant)",
+      "src": [
+        "SRC-002949"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Environmental (CEQA) consultant",
+      "src": [
+        "SRC-002949"
+      ]
     }
   ],
   "financing": [],
@@ -263,11 +368,35 @@
       ]
     },
     {
+      "date": "2024-05-06",
+      "type": "Other",
+      "label": "CEQA Notice of Preparation of an EIR received by the State Clearinghouse (SCH 2024050237)",
+      "src": [
+        "SRC-002949"
+      ]
+    },
+    {
+      "date": "2025-06-06",
+      "type": "Other",
+      "label": "Draft EIR released for public review (through 2025-07-21)",
+      "src": [
+        "SRC-002948"
+      ]
+    },
+    {
       "date": "2025-12-17",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2025-12-19",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed; project approved 2025-12-17 with EIR",
+      "src": [
+        "SRC-002947"
       ]
     }
   ],
@@ -286,6 +415,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and developer; led to CEQAnet SCH 2024050237 documents",
+      "src": [
+        "SRC-002947"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=37226018: situs 1000 S De Anza Bl, San Jose 95129; matches record. Dataset shows no owner of record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit GIS data already on record",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2024050237: NOP 2024-05-06, Draft EIR 2025-06-06, NOD 2025-12-19; APR rows already on record",
+      "src": [
+        "SRC-002949",
+        "SRC-002948",
+        "SRC-002947"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched Mercury News and San Jose Spotlight coverage; no article page opened beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY article already on record; The Real Deal article (2025-12-29) returned 403",
+      "src": [
+        "SRC-001405"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Borello Asset Management found no company website",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "LPMD Architects on record from SF YIMBY; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in CEQA filings or press",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com for the project and developer; no posts found",
+      "src": []
+    }
+  }
 }

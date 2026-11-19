@@ -176,8 +176,16 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-002950"
+          ],
+          "note": "Community meeting notice describes 118 three-story townhome units with two-car garages; the state report categorizes it as 5+ units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -230,6 +238,44 @@
             "SRC-001106"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002950"
+          ],
+          "note": "Meeting notice states 15% affordable housing"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "15% affordable housing, per the March 2026 community meeting notice",
+          "src": [
+            "SRC-002950"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2500,
+          "src": [
+            "SRC-002950"
+          ],
+          "note": "Approximately 2,500 sq ft of retail"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.88,
+          "src": [
+            "SRC-002950"
+          ]
         }
       ]
     }
@@ -239,6 +285,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "text": "Earlier proposals on the Mariani's Inn site: a 2014-12-09 City Council study session reviewed a conceptual plan for 395 townhome and apartment units on 7.79 acres (APNs 290-46-011, -002, -003, -015, -016, -017); a 2017 CEQA Notice of Preparation (SCH 2017022007) described up to 392 multifamily and senior units plus a roughly 311-room hotel on 7.14 acres.",
+      "src": [
+        "SRC-002951",
+        "SRC-002952"
+      ]
+    },
+    {
+      "text": "The March 2026 community meeting notice describes the 5.88-acre site as including former restaurant, motel and service station parcels.",
+      "src": [
+        "SRC-002950"
       ]
     }
   ],
@@ -253,6 +312,14 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2026-03-12",
+      "type": "Other",
+      "label": "Developer community meeting on the proposed redevelopment",
+      "src": [
+        "SRC-002950"
+      ]
     }
   ],
   "history": [
@@ -260,6 +327,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Mariani's Inn and file PLN25-00566; community meeting listing",
+      "src": [
+        "SRC-002950"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=29046017: situs 2490 El Camino Real, Santa Clara; no owner of record in dataset. The current project covers five parcels not individually listed in sources opened",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "santaclaraca.gov project listing refuses automated access; Legistar (santaclara) matters search: no hearing yet on PLN25-00566; 2014 study session on earlier Mariani Inn plan",
+      "src": [
+        "SRC-002951"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2017022007 (earlier 2017 proposal on the site); APR row already on record",
+      "src": [
+        "SRC-002952",
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched SV Voice, Local News Matters, San Jose Spotlight; no article on the current townhome proposal",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched SF YIMBY and other trade press; nothing on 2490 El Camino Real",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No developer named in sources opened",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com for the address; nothing found",
+      "src": []
+    }
+  }
 }
