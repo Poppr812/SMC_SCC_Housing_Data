@@ -78,8 +78,16 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001855"
+          ],
+          "note": "Council memo: 70 residential condominium units and nine commercial condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -124,6 +132,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "SP21-006, ER21-035, T21-012",
+          "src": [
+            "SRC-001855"
+          ],
+          "note": "Special Use Permit, environmental review, Tentative Map; CEQA SCH 2021080419"
         }
       ]
     },
@@ -135,6 +150,79 @@
             "SRC-001107"
           ],
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.93,
+          "src": [
+            "SRC-001855"
+          ],
+          "note": "Approximately 0.93 gross acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001855",
+            "SRC-003278"
+          ],
+          "note": "SF YIMBY: 65 feet; one podium and one basement parking level"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 20410,
+          "src": [
+            "SRC-001855",
+            "SRC-003279"
+          ],
+          "note": "Nine commercial condominiums; CEQAnet describes it as office space, SF YIMBY as retail and offices on floors one and two"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 130840,
+          "src": [
+            "SRC-003278"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 105,
+          "src": [
+            "SRC-003278"
+          ],
+          "note": "Garage capacity; plus 44 bicycle spaces"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 40,
+            "2br": 17,
+            "3br": 13,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003278"
+          ],
+          "note": "SF YIMBY 2022-03. Council memo (2022-10) quotes a commissioner: 36 one-bedroom and 34 two- and three-bedroom units."
         }
       ]
     }
@@ -151,6 +239,18 @@
       "text": "City of San Jose permit SP21-006 (Special Use Permit/Amendment, folder year 2021), status Approved, issue date 2022-10-25: \"Special Use Permit to allow the demolition of the existing residence, barn, and accessory buildings, the removal of 30 ordinance-size and 19 non-ordinance trees, and construction of a 6-story, mixed-use building consisting of 70 residential condominium un\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Council memo: six-story mixed-use building with up to 70 residential condominiums and nine commercial condominiums, one podium and one basement parking level; demolishes an existing residence, barn and accessory buildings and removes 30 ordinance-size and 19 non-ordinance trees. EIR found significant unavoidable impacts on cultural resources (historic residence and barn) requiring a Statement of Overriding Considerations. Applicant requested a parking reduction with a TDM plan.",
+      "src": [
+        "SRC-001855"
+      ]
+    },
+    {
+      "text": "SF YIMBY: 48,250 sq ft garage; 131 homes in total across this project and the adjacent 1073-1087 South Winchester project.",
+      "src": [
+        "SRC-003278"
       ]
     }
   ],
@@ -174,6 +274,33 @@
       "src": [
         "SRC-001855"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Carpira Design Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003278"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Shila Yasmeh",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003278"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Kier+Wright",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003278"
+      ]
     }
   ],
   "financing": [],
@@ -185,6 +312,39 @@
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2021-08-23",
+      "type": "Other",
+      "label": "Notice of Preparation of EIR filed with the state",
+      "src": [
+        "SRC-003279"
+      ]
+    },
+    {
+      "date": "2022-02-15",
+      "type": "Other",
+      "label": "Draft EIR filed with the state",
+      "src": [
+        "SRC-003279"
+      ]
+    },
+    {
+      "date": "2022-09-14",
+      "type": "Other",
+      "label": "Planning Commission recommends approval 8-1-0",
+      "src": [
+        "SRC-001855"
+      ]
+    },
+    {
+      "date": "2022-10-25",
+      "type": "Other",
+      "label": "City Council hearing on EIR, Special Use Permit and Tentative Map (Legistar 22-1574, item 10.2)",
+      "src": [
+        "SRC-001855",
+        "SRC-003280"
       ]
     },
     {
@@ -211,6 +371,91 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, SP21-006, Askari and Cord Associates; CEQAnet, SF YIMBY and council memo opened. The Real Deal returned 403.",
+      "src": [
+        "SRC-003279",
+        "SRC-003278"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=29925037: situs 1065 S Winchester Bl, San Jose; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Legistar API: matter 22-1574 (City Council 2022-10-25); council memo dated 2022-10-17 opened (PC 2022-09-14 vote 8-1-0). sanjoseca.gov EIR page not used (blocks automated access).",
+      "src": [
+        "SRC-001855",
+        "SRC-003280"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2021080419: NOP 2021-08-23, EIR 2022-02-15. APR data already on record.",
+      "src": [
+        "SRC-003279"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal articles (2023-04-10, 2024-04-10) returned HTTP 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-03-10 article on detailed plans.",
+      "src": [
+        "SRC-003278"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website or project page found for Cord Associates or A&Z Development.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for Carpira Design Group: only SF YIMBY category pages, no firm project page.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in city, CEQA or trade sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

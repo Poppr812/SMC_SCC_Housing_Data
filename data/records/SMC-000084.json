@@ -222,6 +222,27 @@
           ]
         }
       ]
+    },
+    {
+      "text": "302 E 4th Ave, San Mateo, CA",
+      "role": "other",
+      "src": [
+        "SRC-001046"
+      ]
+    },
+    {
+      "text": "407 S B St, San Mateo, CA",
+      "role": "other",
+      "src": [
+        "SRC-001047"
+      ]
+    },
+    {
+      "text": "415 S B St, San Mateo, CA",
+      "role": "other",
+      "src": [
+        "SRC-001048"
+      ]
     }
   ],
   "images": [],
@@ -320,6 +341,68 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 3,
+            "1br": 24,
+            "2br": 22,
+            "3br": 22,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003286"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.16,
+          "src": [
+            "SRC-003286"
+          ],
+          "note": "Six parcels; about 0.37 acre is the City-owned surface parking lot"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 80484,
+          "src": [
+            "SRC-003286"
+          ],
+          "note": "Residential building size, includes 5,964 sq ft for Self-Help for the Elderly"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus",
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003286"
+          ],
+          "note": "100% lower-income (80% AMI or less); 22 percent density bonus over base density of 58 units; height waivers to 87 ft (residential) and 85 ft (commercial)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Initial Study: 100 percent of residential units reserved for lower-income households (80% AMI or less)",
+          "src": [
+            "SRC-003286"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -327,6 +410,30 @@
       "text": "Public-private partnership; includes city-owned parking lot parcels and the former Talbot's Toy Store site",
       "src": [
         "SRC-001044"
+      ]
+    },
+    {
+      "text": "Initial Study: seven-story residential building (71 affordable units plus the Center for Self-Help for the Elderly, 37 below-grade spaces, 85-bicycle room) and six-story commercial building with 148,939 sq ft of office and 13,995 sq ft of retail/restaurant, over a shared subterranean garage. City page lists the commercial building at about 156,000 sq ft.",
+      "src": [
+        "SRC-003286",
+        "SRC-003287",
+        "SRC-001044"
+      ]
+    },
+    {
+      "text": "County parcel data: APNs 034-179-010 and -020 owned by DTSM Talbots Venture LLC; -030 and -040 by Moore Talbot Partners LP; -050 and -060 by the City of San Mateo.",
+      "src": [
+        "SRC-001046",
+        "SRC-001047",
+        "SRC-001048",
+        "SRC-001049",
+        "SRC-001050"
+      ]
+    },
+    {
+      "text": "Initial Study figures: residential building drawings credited to BDE Architecture and commercial building drawings to RMW Architecture Interiors (June 10, 2024).",
+      "src": [
+        "SRC-003286"
       ]
     }
   ],
@@ -378,15 +485,85 @@
       "src": [
         "SRC-001045"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "DTSM Talbots Venture LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001046",
+        "SRC-001047"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "City of San Mateo",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001049",
+        "SRC-001050"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003286"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "RMW Architecture Interiors",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003286"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2022-09-01",
+      "type": "Other",
+      "label": "Neighborhood meeting",
+      "src": [
+        "SRC-001044"
+      ]
+    },
+    {
+      "date": "2022-10-11",
+      "type": "Other",
+      "label": "Planning Commission study session",
+      "src": [
+        "SRC-001044"
+      ]
+    },
+    {
       "date": "2023-02-24",
       "type": "Application filed",
       "label": "Formal application submitted",
+      "src": [
+        "SRC-001044"
+      ]
+    },
+    {
+      "date": "2023-05-15",
+      "type": "Other",
+      "label": "City Council study session on term sheet",
+      "src": [
+        "SRC-001044"
+      ]
+    },
+    {
+      "date": "2024-09-16",
+      "type": "Other",
+      "label": "City Council considers deal terms",
       "src": [
         "SRC-001044"
       ]
@@ -403,6 +580,14 @@
       "date": "2026-04-28",
       "type": "Other",
       "label": "Planning Commission public hearing",
+      "src": [
+        "SRC-001044"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "type": "Other",
+      "label": "Health and Safety Code Section 33433 Summary Report",
       "src": [
         "SRC-001044"
       ]
@@ -426,6 +611,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Bespoke, 445 South B Street, partners; city page, Initial Study and CEQAnet opened.",
+      "src": [
+        "SRC-001044",
+        "SRC-003286"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County GIS active parcels for all six APNs: owners DTSM Talbots Venture LLC, Moore Talbot Partners LP, City of San Mateo.",
+      "src": [
+        "SRC-001046",
+        "SRC-001047",
+        "SRC-001048",
+        "SRC-001049",
+        "SRC-001050"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City of San Mateo project page timeline and Initial Study (Oct 2024). City does not use Legistar.",
+      "src": [
+        "SRC-001044",
+        "SRC-003286"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City of San Mateo project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2024100181 (MND received 2024-10-04). No APR rows for APNs 034-179-*.",
+      "src": [
+        "SRC-003287"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "SM Daily Journal articles on the approval returned HTTP 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search of SF YIMBY / Real Deal for Bespoke: no articles on this project found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Alta Housing, Harvest Properties or Prometheus project page for Bespoke found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Architects identified from Initial Study figure credits; no firm project pages found.",
+      "src": [
+        "SRC-003286"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, tax credit or public funding award found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

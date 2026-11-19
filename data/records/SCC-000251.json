@@ -74,8 +74,16 @@
             "SRC-001107"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-003273"
+          ],
+          "note": "NOD: 62 dwelling units merged onto one lot as 62 residential condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -136,6 +144,19 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "NOD (2021-08-26): 62 units including eleven affordable units",
+          "src": [
+            "SRC-003273"
+          ]
+        },
+        {
+          "value": "Draft EIR (2021-06): 9 of 62 units designated affordable; SF YIMBY: nine units for moderate-income residents",
+          "src": [
+            "SRC-003274",
+            "SRC-003275"
+          ]
         }
       ]
     },
@@ -155,6 +176,13 @@
             "SRC-001956"
           ],
           "note": "City folder 116291, Special Use Permit/Amendment (permit type: Development Permit); city permit status: Approved. Matched by file number."
+        },
+        {
+          "value": "SP20-013, T20-014",
+          "src": [
+            "SRC-003273"
+          ],
+          "note": "Special Use Permit and Vesting Tentative Map; CEQA SCH 2020100529"
         }
       ]
     },
@@ -173,6 +201,36 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.58,
+          "src": [
+            "SRC-003273"
+          ],
+          "note": "NOD: approximately 0.58 gross acres"
+        },
+        {
+          "value": 0.57,
+          "src": [
+            "SRC-003274"
+          ],
+          "note": "Draft EIR listing: about 0.57 gross acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003274",
+            "SRC-003275"
+          ],
+          "note": "Draft EIR: six-story building with one-story at-grade parking garage, about 78 feet to top of stairwell. City permit text describes five stories over podium."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -188,9 +246,42 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Draft EIR: Special Use Permit to demolish two vacant structures and build a six-story, 90,323 square-foot multi-family residential building with a one-story at-grade garage, roof amenity deck, and a Tentative Map for condominium purposes. Project title: Almaden Villas.",
+      "src": [
+        "SRC-003274"
+      ]
+    },
+    {
+      "text": "NOD: approved by the Director of Planning, Building and Code Enforcement on 2021-08-25; Council District 6; merges two lots into one.",
+      "src": [
+        "SRC-003273"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Sam Nemazie",
+      "contact": "Sam Nemazie",
+      "linkedin": null,
+      "phone": "(408) 529-2147",
+      "other_role": "Project applicant",
+      "src": [
+        "SRC-003273"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Mayberry Workshop",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003275"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -203,11 +294,36 @@
       ]
     },
     {
+      "date": "2020-10-28",
+      "type": "Other",
+      "label": "Notice of Preparation of EIR filed with the state",
+      "src": [
+        "SRC-003276"
+      ]
+    },
+    {
+      "date": "2021-06-21",
+      "type": "Other",
+      "label": "Draft EIR released (review through 2021-08-05)",
+      "src": [
+        "SRC-003274"
+      ]
+    },
+    {
       "date": "2021-08-25",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2021-08-26",
+      "type": "Other",
+      "label": "Notice of Determination filed; Director of Planning approved project and certified Final EIR on 2021-08-25",
+      "src": [
+        "SRC-003277",
+        "SRC-003273"
       ]
     }
   ],
@@ -221,6 +337,91 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Almaden Villas and applicant; CEQAnet and SF YIMBY pages opened. Sale listings at MLSListings/Estately not readable.",
+      "src": [
+        "SRC-003274",
+        "SRC-003275"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=45603003: situs 1747 Almaden Rd, San Jose; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "San Jose Legistar API: no matters for SP20-013, 1747 Almaden or Almaden Villas (Director-level approval). sanjoseca.gov project page not used (blocks automated access).",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2020100529: NOP 2020-10-28, Draft EIR 2021-06-21, NOD 2021-08-26 (NOD PDF opened). APR data already on record.",
+      "src": [
+        "SRC-003276",
+        "SRC-003274",
+        "SRC-003277",
+        "SRC-003273"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Almaden Villas / 1747 Almaden Rd in local news: no articles found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 1747 Almaden Road category page (June 2021 article).",
+      "src": [
+        "SRC-003275"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Applicant is an individual (Sam Nemazie); no developer website or project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for Mayberry Workshop and the project: no architect project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in CEQA, city or trade sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }
