@@ -75,6 +75,118 @@
           37.6082425
         ]
       ]
+    },
+    {
+      "apn": "021-324-190",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3977756,
+          37.6079787
+        ],
+        [
+          -122.3977828,
+          37.607974
+        ],
+        [
+          -122.3980537,
+          37.6082367
+        ],
+        [
+          -122.3979907,
+          37.608284
+        ],
+        [
+          -122.3979271,
+          37.6083307
+        ],
+        [
+          -122.3978636,
+          37.6083775
+        ],
+        [
+          -122.3975844,
+          37.6081061
+        ],
+        [
+          -122.3976505,
+          37.608062
+        ],
+        [
+          -122.3977166,
+          37.6080178
+        ],
+        [
+          -122.3977756,
+          37.6079787
+        ]
+      ]
+    },
+    {
+      "apn": "021-324-310",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.398203,
+          37.6073312
+        ],
+        [
+          -122.3984239,
+          37.6075492
+        ],
+        [
+          -122.3981149,
+          37.6077542
+        ],
+        [
+          -122.3981056,
+          37.6077604
+        ],
+        [
+          -122.3980486,
+          37.6077982
+        ],
+        [
+          -122.3979823,
+          37.6078422
+        ],
+        [
+          -122.397916,
+          37.6078862
+        ],
+        [
+          -122.3978496,
+          37.6079301
+        ],
+        [
+          -122.3977828,
+          37.607974
+        ],
+        [
+          -122.3977756,
+          37.6079787
+        ],
+        [
+          -122.3975356,
+          37.6077218
+        ],
+        [
+          -122.3978816,
+          37.6075193
+        ],
+        [
+          -122.398203,
+          37.6073312
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -127,9 +239,16 @@
             "SRC-001357"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-002263"
+          ],
+          "note": "Hanover property page status: Under construction"
         }
       ],
-      "best": 0
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -248,6 +367,30 @@
           "note": "State report 2018, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 396272,
+          "src": [
+            "SRC-002264"
+          ],
+          "note": "Gross sq ft of the apartment complex including common open space, amenities and leasing office (SCEA project description)"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001357"
+          ],
+          "note": "Height and density waivers requested under State Density Bonus Law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -262,6 +405,31 @@
       "text": "City lists APNs 021-324-190, 021-324-310 and 021-324-320. Replaces eight occupied residential units and the Best Western El Rancho Inn.",
       "src": [
         "SRC-001357"
+      ]
+    },
+    {
+      "text": "Hanover lists the property as Hanover Millbrae, 384 units, midrise, under construction; its page gives the address as 1100 El Camino Real, San Bruno, CA 94066.",
+      "src": [
+        "SRC-002263"
+      ]
+    },
+    {
+      "text": "SCEA: five-story apartment building wrapping a six-level above-ground garage (about 203,514 gsf); a future seven-story hotel of up to 200 rooms on the remaining 1.2 acres under a separate application; 6.7 acres total.",
+      "src": [
+        "SRC-002264"
+      ]
+    },
+    {
+      "text": "City page: Planning Commission voted 5-0 to adopt the SCEA and 3-2 to approve the Design Review Permit on March 7, 2022; height limit waiver to about 63 feet 5 inches; 69 units per acre; 72 bicycle spaces.",
+      "src": [
+        "SRC-001357"
+      ]
+    },
+    {
+      "text": "City page lists owners at application: APN 021-324-190 El Rancho Motel, Inc.; APN 021-324-320 EMJP Partners LP; APN 021-324-310 held by trustees. County parcel layer shows APNs 021-324-190 and 021-324-320 with Anton Millbrae LLC as lessee and Millbrae MF Owner LLC, and APN 021-324-310 with Anton Millbrae LLC as lessee and a trust, care of Anton DevCo Inc.",
+      "src": [
+        "SRC-001357",
+        "SRC-001103"
       ]
     }
   ],
@@ -285,6 +453,46 @@
         "SRC-001357"
       ],
       "website": "https://www.hanoverco.com/"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Millbrae MF Owner LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Anton Millbrae LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Lessee of record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Hanover Company",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.hanoverco.com/",
+      "project_page": "https://www.hanoverco.com/property/hanover-millbrea/",
+      "src": [
+        "SRC-002263"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "ICF Jones & Stokes, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-002264"
+      ]
     }
   ],
   "financing": [],
@@ -308,12 +516,39 @@
       "estimated": false
     },
     {
+      "date": "2020-05-18",
+      "type": "Other",
+      "label": "Planning Commission study session",
+      "src": [
+        "SRC-001357"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-01-13",
+      "type": "Other",
+      "label": "Sustainable Communities Environmental Assessment filed with the State Clearinghouse (SCH 2022010199)",
+      "src": [
+        "SRC-002264"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-03-07",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001122"
       ]
+    },
+    {
+      "date": "2022-04-27",
+      "type": "Other",
+      "label": "CEQA Notice of Determination",
+      "src": [
+        "SRC-001357"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -331,6 +566,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1100 El Camino Real, El Rancho Inn, Hanover; Hanover property page opened",
+      "src": [
+        "SRC-002263"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC parcel layer query for 021324190, 021324310, 021324320 (owner names)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Millbrae project page 216 (application 2019-33, PC March 7, 2022, NOD April 27, 2022)",
+      "src": [
+        "SRC-001357"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of Millbrae project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2022010199 SCEA; state APR rows already on record",
+      "src": [
+        "SRC-002264",
+        "SRC-001122"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal demolition article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY 1100 El Camino Real category listed in search (public review article); no newer trade coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Hanover property page: under construction, 384 units",
+      "src": [
+        "SRC-002263"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in opened sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in opened sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

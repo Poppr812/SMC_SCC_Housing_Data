@@ -163,6 +163,64 @@
           "note": "State report (through 2018): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 24,
+          "src": [
+            "SRC-001797"
+          ],
+          "note": "239 feet, September 2021 revised plans"
+        },
+        {
+          "value": 22,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SP18-016 description: 22-story, 242-foot building"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 352350,
+          "src": [
+            "SRC-001797"
+          ],
+          "note": "Plus over 17,500 sq ft of residential amenities; 511,150 sq ft total building area"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 35260,
+          "src": [
+            "SRC-001797"
+          ],
+          "note": "Retail across three levels, September 2021 revised plans"
+        },
+        {
+          "value": 35712,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SP18-016 description: approximately 35,712 sq ft of retail"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 240000000,
+          "src": [
+            "SRC-001797"
+          ],
+          "note": "Projected cost of the whole development as reported in 2021"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -183,6 +241,12 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "SF YIMBY (September 2021): three-level garage with stackers for nearly 400 vehicles, bike parking for almost 100; groundbreaking targeted for 2022 with about two and a half years of construction.",
+      "src": [
+        "SRC-001797"
+      ]
     }
   ],
   "parties": [
@@ -196,6 +260,25 @@
       ],
       "website": "https://www.alterraworldwide.com",
       "project_page": "https://www.alterraworldwide.com"
+    },
+    {
+      "role": "Architect",
+      "company": "Merriman Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001797"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "5G Studio Collaborative",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Rendering designer",
+      "src": [
+        "SRC-001797"
+      ]
     }
   ],
   "financing": [],
@@ -244,6 +327,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 27 South First, Tower 27, Alterra, TDA Investment Group; SF YIMBY 2021 article reopened for building figures",
+      "src": [
+        "SRC-001797"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 25940043: situs 27 S 1st St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "City permit layer SP18-016 already on record; sanjoseca.gov pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR row (SP18-016, 374 units) already on record",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Mercury News / East Bay Times coverage only via PressReader and aggregator listings; no openable local news article found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "SF YIMBY 2021 opened (architect, sq ft, cost added); The Real Deal October 28, 2025 article on TDA Investment Group deed in lieu returned 403",
+      "src": [
+        "SRC-001797"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Alterra Worldwide site already linked on record",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Merriman Anderson Architects named as project architect in SF YIMBY 2021",
+      "src": [
+        "SRC-001797"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search results report a TDA Investment Group affiliate took the site by deed in lieu of foreclosure; the Real Deal source is blocked and no open source gave terms",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

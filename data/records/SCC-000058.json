@@ -39,6 +39,44 @@
           37.428923
         ]
       ]
+    },
+    {
+      "apn": "124-28-003",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1437369,
+          37.4294613
+        ],
+        [
+          -122.1439949,
+          37.4291478
+        ],
+        [
+          -122.1442819,
+          37.4292996
+        ],
+        [
+          -122.144263,
+          37.4293225
+        ],
+        [
+          -122.1442357,
+          37.4293081
+        ],
+        [
+          -122.1439824,
+          37.4296159
+        ],
+        [
+          -122.1437369,
+          37.4294613
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -122,6 +160,13 @@
             "SRC-001284"
           ],
           "note": "Tallest of three towers (12, 14, 12) in 24PLN-00100; original plan had a 17-story tower"
+        },
+        {
+          "value": 17,
+          "src": [
+            "SRC-002258"
+          ],
+          "note": "Tower A in the original plan (Tower B 11, podium 7)"
         }
       ]
     },
@@ -153,6 +198,12 @@
           "src": [
             "SRC-001285"
           ]
+        },
+        {
+          "value": "Negotiated plan: 390 apartments including 50 subsidized units; original plan: 382 apartments including 77 subsidized units",
+          "src": [
+            "SRC-002259"
+          ]
         }
       ]
     },
@@ -183,6 +234,50 @@
           "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 310,
+          "src": [
+            "SRC-002258"
+          ],
+          "note": "NOP project description: about 310 spaces, original 382-unit plan"
+        },
+        {
+          "value": 290,
+          "src": [
+            "SRC-002259"
+          ],
+          "note": "Original Builder's Remedy proposal"
+        },
+        {
+          "value": 266,
+          "src": [
+            "SRC-002259"
+          ],
+          "note": "Negotiated 390-unit proposal the Council moved forward on May 18, 2026"
+        }
+      ],
+      "best": 2
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 19500,
+          "src": [
+            "SRC-002258"
+          ],
+          "note": "About 19,500 sq ft: Tower A 3,316, grocery 14,709, Tower B retail 1,422 (original plan)"
+        },
+        {
+          "value": 19447,
+          "src": [
+            "SRC-001284"
+          ],
+          "note": "Alternative SB 330 application 24PLN-00071 (382 units)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -190,6 +285,30 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001126"
+      ]
+    },
+    {
+      "text": "Daily Post (May 18, 2026): Council voted 4-2 to move forward with one 14-story and two 12-story buildings peaking at 144 feet; the site is to be added to the housing element, and the project goes to an Architectural Review Board courtesy review before returning to Council.",
+      "src": [
+        "SRC-002259"
+      ]
+    },
+    {
+      "text": "City project page: the City determined the project exempt from CEQA under AB 130 (Public Resources Code 21080.66).",
+      "src": [
+        "SRC-001284"
+      ]
+    },
+    {
+      "text": "Redco's project page: joint venture formed November 2023; plan includes a new Mollie Stone's grocery store with 20% affordable units.",
+      "src": [
+        "SRC-002262"
+      ]
+    },
+    {
+      "text": "CEQAnet NOP lists APNs 124-28-045 and 124-28-003, 1.43 acres total.",
+      "src": [
+        "SRC-002258"
       ]
     }
   ],
@@ -204,11 +323,77 @@
       ],
       "website": "https://www.redcodevelopment.com",
       "project_page": "https://www.redcodevelopment.com/156-california-ave-palo-alto-ca/"
+    },
+    {
+      "role": "Other",
+      "company": "Midar Investment Co. LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002260"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio Current",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002261"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "JMH Weiss Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002261"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "SAW Workshop",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002261"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Holland & Knight LLP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant's counsel",
+      "src": [
+        "SRC-002260"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J Powers & Associates, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-002258"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-03-12",
+      "type": "Application filed",
+      "label": "SB 330 pre-application submitted",
+      "src": [
+        "SRC-001284"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-04-02",
       "type": "Application filed",
@@ -216,6 +401,24 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2024-12-17",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR filed with the State Clearinghouse (SCH 2024120754)",
+      "src": [
+        "SRC-002258"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-23",
+      "type": "Other",
+      "label": "Applicant's counsel files AB 1633 notice over the AB 130 CEQA exemption",
+      "src": [
+        "SRC-002260"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-05-18",
@@ -243,6 +446,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 156 California Ave, Redco, Mollie Stone's; Daily Post May 2026 article opened",
+      "src": [
+        "SRC-002259"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API for 12428045 (situs 156 California Av, no owner field); second APN 124-28-003 from CEQAnet",
+      "src": [
+        "SRC-001098",
+        "SRC-002258"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page 24PLN-00100/24PLN-00071; AB 1633 notice PDF; C2 plan set cover sheet",
+      "src": [
+        "SRC-001284",
+        "SRC-002260",
+        "SRC-002261"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of Palo Alto project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2024120754 NOP; state APR row already on record",
+      "src": [
+        "SRC-002258",
+        "SRC-001126"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Palo Alto Daily Post May 18, 2026 article",
+      "src": [
+        "SRC-002259"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal November 2023 article (Redco and Midar) listed in search; therealdeal.com returns 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Redco project page",
+      "src": [
+        "SRC-002262"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Plan set cover sheet names Studio Current (architect), JMH Weiss (civil), SAW Workshop (landscape)",
+      "src": [
+        "SRC-002261"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in opened sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
