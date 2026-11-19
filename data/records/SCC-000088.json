@@ -360,6 +360,30 @@
           "note": "State report 2024, application stage: 40 deed-restricted units"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 228,
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "State report 2024, application stage: above-moderate units"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "State report 2024: density bonus requested; approval N/A while pending"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -368,9 +392,25 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "text": "State report 2024 lists the project as \"Southbay Tech Pulte Homes - Pre-Application\", for-sale single-family attached, status pending, discretionary. Its notes say the applicant is requesting SB 330 status and the filing is a pre-application.",
+      "src": [
+        "SRC-001124"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Pulte Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001124"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -388,6 +428,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web searches on 1601-1765 S Main St, P-PP24-0004, Pulte Milpitas; results show only Pulte's The District (1355-1367 California Circle) and other South Main projects",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 083-40-044; matches state report APN; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Milpitas Legistar API not configured for the city; web search of milpitas.gov for the address and file number found no project page",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2024 row for P-PP24-0004: pre-application, SB 330 request, density bonus, 228 above-moderate units",
+      "src": [
+        "SRC-001124"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of local news for 1601 S Main and Pulte Milpitas",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY, The Real Deal for the address and Pulte South Main",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Pulte Milpitas pages list only The District",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing named in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com for Pulte Milpitas South Main",
+      "src": []
+    }
+  }
 }

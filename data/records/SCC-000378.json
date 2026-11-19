@@ -200,6 +200,25 @@
           "src": [
             "SRC-001436"
           ]
+        },
+        {
+          "value": 33,
+          "src": [
+            "SRC-002482",
+            "SRC-002483"
+          ],
+          "note": "CEQA filing total acres; city project page says approximately 31 acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002482"
+          ],
+          "note": "Condominium buildings three stories; single-family and duets one to two stories"
         }
       ]
     }
@@ -216,12 +235,87 @@
       "src": [
         "SRC-001436"
       ]
+    },
+    {
+      "text": "City Council certified the EIR and approved the vesting tentative map and design permit on June 21, 2023 (Resolution 23-032). Three phases; the first phase has 94 homes. Approval includes preserving an equal acreage of farmland elsewhere, transit passes for residents and a contribution to the MoGo rideshare service.",
+      "src": [
+        "SRC-001436",
+        "SRC-002483"
+      ]
+    },
+    {
+      "text": "KB Home's Haven at Crosswinds page lists 1260 Pueblo Ln (this record's main address): three-story townhome-style condos, 2 to 4 bedrooms, about 1,396 to 2,004 sq ft, base price from $789,000. KB Home's January 23, 2026 release priced Haven from the mid $800,000s, at Mission View Drive and Half Road.",
+      "src": [
+        "SRC-002485",
+        "SRC-002486"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Dividend Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002484",
+        "SRC-002483"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "KB Home",
+      "contact": null,
+      "linkedin": null,
+      "website_basis": "opened",
+      "project_page": "https://www.kbhome.com/new-homes-bay-area-south/haven-at-crosswinds",
+      "src": [
+        "SRC-002485",
+        "SRC-002486"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-01-28",
+      "type": "Other",
+      "label": "EIR Notice of Preparation filed",
+      "src": [
+        "SRC-002487"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06",
+      "type": "Application filed",
+      "label": "Dividend Homes application filed",
+      "src": [
+        "SRC-002484",
+        "SRC-002483"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-11-03",
+      "type": "Other",
+      "label": "Draft EIR filed with the state",
+      "src": [
+        "SRC-002487"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-05-23",
+      "type": "Other",
+      "label": "Planning Commission recommended approval (Resolutions 23-04, 23-05)",
+      "src": [
+        "SRC-001436",
+        "SRC-002483"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-06-21",
       "type": "Approved",
@@ -231,12 +325,30 @@
       ]
     },
     {
+      "date": "2023-06-27",
+      "type": "Other",
+      "label": "EIR Notice of Determination filed",
+      "src": [
+        "SRC-002487"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-09-25",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001135"
       ]
+    },
+    {
+      "date": "2026-01-23",
+      "type": "Other",
+      "label": "KB Home grand opening of Haven at Crosswinds (townhomes)",
+      "src": [
+        "SRC-002486"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -249,6 +361,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Crosswinds, Half Road, Dividend Homes, KB Home; Morgan Hill Times, KB Home pages",
+      "src": [
+        "SRC-002483",
+        "SRC-002485"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 728-30-019: Morgan Hill, no situs address; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Morgan Hill project page: PC 2023-05-23 Resolutions 23-04/23-05, Council 2023-06-21 Resolution 23-032, planner",
+      "src": [
+        "SRC-001436"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; county role limited to CEQA declaration posted on city page",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2021010358: NOP, Draft EIR, Final EIR, NOD dates; 33 acres; condo buildings three stories",
+      "src": [
+        "SRC-002482",
+        "SRC-002487"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Morgan Hill Times 2023-06-01 and 2023-07-05",
+      "src": [
+        "SRC-002484",
+        "SRC-002483"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2024-10-02 article on KB Home purchase returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "KB Home Haven at Crosswinds page; KB Home 2026-01-23 release (Finviz). KB Home investor PDFs and Business Wire refused access",
+      "src": [
+        "SRC-002485",
+        "SRC-002486"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named on city page, CEQAnet or news",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or public funder named in city, CEQA, news or KB Home sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com for Crosswinds, Dividend Homes, KB Home",
+      "src": []
+    }
+  }
 }

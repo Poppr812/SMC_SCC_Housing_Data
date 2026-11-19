@@ -75,6 +75,118 @@
           37.0992675
         ]
       ]
+    },
+    {
+      "apn": "779-05-043",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.6254333,
+          37.0965174
+        ],
+        [
+          -121.6294399,
+          37.0948334
+        ],
+        [
+          -121.6302473,
+          37.0953372
+        ],
+        [
+          -121.6302368,
+          37.095348
+        ],
+        [
+          -121.6298806,
+          37.0957139
+        ],
+        [
+          -121.6292421,
+          37.0963697
+        ],
+        [
+          -121.627683,
+          37.0979711
+        ],
+        [
+          -121.6267919,
+          37.0974126
+        ],
+        [
+          -121.6268183,
+          37.0973855
+        ],
+        [
+          -121.6254333,
+          37.0965174
+        ]
+      ]
+    },
+    {
+      "apn": "779-05-054",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.6297392,
+          37.0992598
+        ],
+        [
+          -121.627683,
+          37.0979711
+        ],
+        [
+          -121.6292421,
+          37.0963697
+        ],
+        [
+          -121.6296872,
+          37.0966481
+        ],
+        [
+          -121.6301185,
+          37.0969196
+        ],
+        [
+          -121.6305459,
+          37.0971886
+        ],
+        [
+          -121.6309706,
+          37.0974558
+        ],
+        [
+          -121.631402,
+          37.0977273
+        ],
+        [
+          -121.6318334,
+          37.0979987
+        ],
+        [
+          -121.6314233,
+          37.0984236
+        ],
+        [
+          -121.6308804,
+          37.0980833
+        ],
+        [
+          -121.6302552,
+          37.0987272
+        ],
+        [
+          -121.6297392,
+          37.0992598
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -150,6 +262,13 @@
             "SRC-001431"
           ],
           "note": "90 single-family with 20 ADUs, 87 rental single-family, 55 condos, 16 farmworker apartments"
+        },
+        {
+          "value": 248,
+          "src": [
+            "SRC-002499"
+          ],
+          "note": "Nov. 2024 pre-application: Stoney Creek West 90, East 158; 177 single-family and 71 apartments"
         }
       ],
       "best": 1
@@ -162,6 +281,13 @@
             "SRC-001114"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN24-208-PRE",
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "Preliminary application for the 268-unit Project B"
         }
       ]
     },
@@ -214,6 +340,17 @@
           "note": "State report 2025, application stage: 37 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002499"
+          ],
+          "note": "Apartments; single-family heights not stated"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -228,17 +365,37 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "text": "County list (Project B, PLN24-219-SB330): 268 units plus 3 commercial buildings; parcel size 22.4 acres, development area about 38.2 acres, excluding a future industrial area shown on the site plan. Status complete May 29, 2025, under CEQA review.",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "text": "SF YIMBY, Nov. 2024: addresses 14465 Monterey Road and 360 West Middle Avenue; 90 for-sale and 87 for-rent single-family homes; 50 low-income apartments including 16 for farmworkers.",
+      "src": [
+        "SRC-002499"
+      ]
     }
   ],
   "parties": [
     {
-      "role": "Other",
-      "company": "John Moniz",
+      "role": "Developer",
+      "company": "Glenrock Builders",
       "contact": null,
       "linkedin": null,
-      "other_role": "Applicant",
       "src": [
-        "SRC-001431"
+        "SRC-002499"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Bassenian Lagoni",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002499"
       ]
     }
   ],
@@ -261,6 +418,15 @@
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "date": "2025-05-29",
+      "type": "Other",
+      "label": "County deemed application complete; under CEQA review",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -273,6 +439,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Stoney Creek, 14465 Monterey Road, PLN24-219; SF YIMBY article",
+      "src": [
+        "SRC-002499"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 779-05-051 situs 14465 Monterey Rd, unincorporated; 779-05-043 (Olive Ave) and 779-05-054 (W Middle Ave) also unincorporated and listed by county for the project",
+      "src": [
+        "SRC-001098",
+        "SRC-001431"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Unincorporated county project",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list: PLN24-208-PRE, complete 2025-05-29, under CEQA review, development area",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; CEQAnet search found no posting for the project",
+      "src": [
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search of Morgan Hill Times and local news; only a 2005 unrelated San Martin article",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-11-10: Glenrock Builders, Bassenian Lagoni, 248-unit pre-application",
+      "src": [
+        "SRC-002499"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for Glenrock Builders site found none",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Bassenian Lagoni named in SF YIMBY; firm project page not found",
+      "src": [
+        "SRC-002499"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing named in county list or trade press",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com for Stoney Creek, Glenrock, Bassenian",
+      "src": []
+    }
+  }
 }
