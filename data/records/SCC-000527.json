@@ -115,6 +115,13 @@
           "src": [
             "SRC-001474"
           ]
+        },
+        {
+          "value": 1.98,
+          "src": [
+            "SRC-002475"
+          ],
+          "note": "CEQA notice: parcel 110-25-017, 1.98 acres"
         }
       ]
     },
@@ -135,6 +142,12 @@
           "src": [
             "SRC-001475"
           ]
+        },
+        {
+          "value": "About 15% of units reserved for low- and very low-income households (CEQA notice)",
+          "src": [
+            "SRC-002475"
+          ]
         }
       ]
     },
@@ -147,6 +160,47 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 64,
+            "1br": 160,
+            "2br": 41,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001475"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 257600,
+          "src": [
+            "SRC-001475"
+          ],
+          "note": "About 257,600 sq ft of housing plus about 39,700 sq ft two-story garage; about 297,300 sq ft total"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002475",
+            "SRC-001475"
+          ],
+          "note": "State Density Bonus Law concessions and waivers; SF YIMBY also cites SB 330"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -154,6 +208,24 @@
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
         "SRC-001474"
+      ]
+    },
+    {
+      "text": "CEQA notice: demolition of a 25,820 sq ft office building; eight-story residential building up to 91 feet to top of parapet; about 25,700 sq ft of private and common open space and a roughly 0.3-acre privately owned, publicly accessible open space; approval includes a Special Development Permit.",
+      "src": [
+        "SRC-002475"
+      ]
+    },
+    {
+      "text": "Bisnow: the existing single-story building was formerly Google research and development space and was placed on the sublease market in 2023; Beam Reach is described as a Dallas-based real estate investment firm; the plan includes a 15,000 sq ft neighborhood park.",
+      "src": [
+        "SRC-002476"
+      ]
+    },
+    {
+      "text": "SF YIMBY: 268 bicycle parking spaces; waivers requested for publicly accessible open space, courtyards, parking and facade design.",
+      "src": [
+        "SRC-001475"
       ]
     }
   ],
@@ -175,6 +247,25 @@
       "src": [
         "SRC-001475"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "1215 Bordeaux LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002475"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Bionic",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001475"
+      ]
     }
   ],
   "financing": [],
@@ -188,6 +279,15 @@
         "SRC-001476"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-06-10",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Section 15183, consistent with Moffett Park Specific Plan EIR)",
+      "src": [
+        "SRC-002475"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -195,6 +295,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Beam Reach and 265 units; opened Bisnow, SF YIMBY and CEQAnet pages",
+      "src": [
+        "SRC-002476"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=11025017: situs 1215 Bordeaux Dr, Sunnyvale; no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Sunnyvale Legistar file 26-0541 histories: Planning Commission approved 2026-06-08",
+      "src": [
+        "SRC-001476"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in Sunnyvale; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026060501 Notice of Exemption, received 2026-06-10",
+      "src": [
+        "SRC-002475"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for local news coverage returned only trade press; The Real Deal article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-06-16 final approval article; Bisnow 2026-06-15",
+      "src": [
+        "SRC-001475",
+        "SRC-002476"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for a Beam Reach company site or project page found none; beamreach.com refused connection",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "KTGY site search returned 403",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in Bisnow, SF YIMBY or CEQA notice",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for Beam Reach found no public LinkedIn post on this project",
+      "src": []
+    }
+  }
 }

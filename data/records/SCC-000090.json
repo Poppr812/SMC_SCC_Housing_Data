@@ -155,6 +155,13 @@
             "SRC-001956"
           ],
           "note": "City file PRE23-007 (Prelim - Focused (Policy Review, No Plans)): \"SB330 Preliminary review for 257 unit residential building\""
+        },
+        {
+          "value": 269,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE23-041 (Prelim - Enhanced, filed 2023-04-17): 269-unit, seven-story builder's remedy concept on 2.97 gross acres"
         }
       ]
     },
@@ -173,6 +180,20 @@
             "SRC-001956"
           ],
           "note": "City folder 085010, Prelim - Focused (Policy Review, No Plans) (permit type: All Other Permits); city permit status: Complete. Matched by APN."
+        },
+        {
+          "value": "PRE23-041",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Enhanced Preliminary Review, status Complete, final 2023-09-06"
+        },
+        {
+          "value": "ER23-138",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review (Exemption), status Approved/Certified: \"BR project now proceeding under AB 130\""
         }
       ]
     },
@@ -233,6 +254,25 @@
             "SRC-001099"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002477",
+            "SRC-002478"
+          ],
+          "note": "2023 reports: about 20% of units proposed affordable"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "About 20% of units proposed affordable (2023 reports); 2026 CEQA notice cites a State Density Bonus request of about 9.8%",
+          "src": [
+            "SRC-002477",
+            "SRC-002479"
+          ]
         }
       ]
     }
@@ -252,6 +292,25 @@
     },
     {
       "text": "City of San Jose permit PRE23-007 (Prelim - Focused (Policy Review, No Plans), folder year 2023), status Complete: \"SB330 Preliminary review for 257 unit residential building\"",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "CEQA notice (posted 2026-08-24): Site Development Permit under the Housing Accountability Act builder's remedy for a seven-story, 264-unit building with removal of 23 trees (14 ordinance-size, 9 non-ordinance-size); statutory exemption under PRC 21080.66 (AB 130). City permit H23-014 text lists removal of 26 trees.",
+      "src": [
+        "SRC-002479",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2023-09-01): site is the former Century 24 dome theater; SyRES Properties is owned by Syufy Enterprises; amenities include community room, outdoor space, fitness center and co-working space.",
+      "src": [
+        "SRC-002477"
+      ]
+    },
+    {
+      "text": "Earlier city files on the parcel: CP13-048 (2013, Approved) conditional use permit for a new 20,700 sq ft movie theater; PRE19-143 (2019, Complete) preliminary review for a 38,000 sq ft two-story health club, both by SyWest Development.",
       "src": [
         "SRC-001956"
       ]
@@ -284,6 +343,15 @@
   "groups": {},
   "events": [
     {
+      "date": "2023-04-17",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE23-041 filed (269 units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-07-05",
       "type": "Application filed",
       "label": "Application submitted",
@@ -297,6 +365,15 @@
       "label": "City staff granted a CEQA exemption",
       "src": [
         "SRC-001391"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption posted (AB 130, PRC 21080.66)",
+      "src": [
+        "SRC-002479"
       ],
       "estimated": false
     }
@@ -326,6 +403,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, SyRES and builder's remedy; opened SF YIMBY 2023, San Jose Blog, CEQAnet",
+      "src": [
+        "SRC-002477"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=29945021; no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer by APN: H23-014, PRE23-041, PRE23-007, ER23-138, CP13-048, PRE19-143",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in San Jose; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026080820 Notice of Exemption posted 2026-08-24",
+      "src": [
+        "SRC-002479"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Blog 2023-09-04 (citing Mercury News 2023-08-28); PressReader Mercury News page and The Real Deal returned 403",
+      "src": [
+        "SRC-002478"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-09-01 builder's remedy article; 2026-08 CEQA article already on record",
+      "src": [
+        "SRC-002477",
+        "SRC-001391"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SyRES project page opened; it gives no units, status or timeline for this site",
+      "src": [
+        "SRC-001391"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for Lowney Architecture project page for this site found none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity named in opened sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn post on this project",
+      "src": []
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000089",
-  "name": "543 Lorraine Ave",
+  "name": "Montgomery Plaza II (543 Lorraine Ave)",
   "parcels": [
     {
       "apn": "259-47-069",
@@ -133,6 +133,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "ER21-103",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review file (Addendum), status Approved/Certified, issued 2022-12-14"
         }
       ]
     },
@@ -151,6 +158,28 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 29,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H21-028 description: approximately 29-story building"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1814,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H21-028: approximately 1,814 sq ft of ground floor retail"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -166,12 +195,43 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City of San Jose permit records name H21-028 \"Roygbiv Lorraine - Montgomery Plaza II\", with Roygbiv Real Estate Development, LLC as applicant company; environmental review ER21-103 (Addendum) was Approved/Certified on 2022-12-14.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City of San Jose permit ER17-014 (2017, status Pending) on the same parcel: environmental scope review for a 70-unit, 11-story building in the Diridon Station Area.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Roygbiv Real Estate Development, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-06-09",
+      "type": "Other",
+      "label": "Environmental review ER21-103 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-07-15",
       "type": "Application filed",
@@ -187,6 +247,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2023-01-03",
+      "type": "Other",
+      "label": "City permit H21-028 final date",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -204,6 +273,94 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 543 Lorraine Ave, Roygbiv and Montgomery Plaza; city GIS permit layer queried by APN 25947069",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=25947069: situs 543 Lorraine Av, San Jose; no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer: H21-028, ER21-103, ER17-014; sanjoseca.gov document pages not opened (site refuses automated access)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in San Jose; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR rows already on record; no CEQAnet or CTCAC item found for this address",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News item on PressReader and The Real Deal 2022-12-14 approval article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SF YIMBY Montgomery Plaza 1 category covers 565 Lorraine only",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no Roygbiv project page for 543 Lorraine",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named for 543 Lorraine in opened sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity named in any opened source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn post on this project",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000170",
+      "relation": "adjacent",
+      "note": "Montgomery Plaza II and Montgomery Plaza 1, neighboring towers on Lorraine Ave"
     }
   ]
 }

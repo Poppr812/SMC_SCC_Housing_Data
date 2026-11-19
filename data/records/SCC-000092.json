@@ -87,6 +87,36 @@
           37.2749325
         ]
       ]
+    },
+    {
+      "apn": "412-22-021",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9328306,
+          37.2737753
+        ],
+        [
+          -121.9332499,
+          37.2736602
+        ],
+        [
+          -121.9333826,
+          37.2739664
+        ],
+        [
+          -121.9329633,
+          37.2740816
+        ],
+        [
+          -121.9328306,
+          37.2737753
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -103,6 +133,14 @@
             "SRC-001099"
           ]
         }
+      ]
+    },
+    {
+      "text": "2638 Union Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001811",
+        "SRC-001098"
       ]
     }
   ],
@@ -163,6 +201,13 @@
             "SRC-001811"
           ],
           "note": "SP22-031 per SJ Build: six-story, 100% affordable, 220 units."
+        },
+        {
+          "value": 280,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE22-142 (Enhanced Review, filed 2022-07-19): 6-story, 280-unit, 100% affordable rental with ground floor commercial and parking garage"
         }
       ]
     },
@@ -174,6 +219,13 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE22-142",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Enhanced preliminary review, status Complete, final 2023-11-08"
         }
       ]
     },
@@ -203,6 +255,28 @@
           "note": "State report 2022, application stage: 260 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956",
+            "SRC-001811"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.31,
+          "src": [
+            "SRC-001811"
+          ],
+          "note": "SJ Build citing SP22-031: about 2.31 gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -210,6 +284,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "SCC parcel data lists APN 412-22-021 at 2638 Union Av, adjacent to 412-22-022 (2628 Union Av); SJ Build lists the project as 2628-2638 Union Avenue.",
+      "src": [
+        "SRC-001098",
+        "SRC-001811"
+      ]
+    },
+    {
+      "text": "City of San Jose file for 2638 Union Avenue (filed 2019-11-12, APN 412-22-021, applicant company Hylan Investments, Inc., status Complete): enhanced preliminary review for a mixed-use 5-story building with commercial ground floor and 4 residential stories on a 2-acre strip shopping center site.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SJ Build: SP22-031 is a Special Use Permit filed 2022-11-17 for 220 units up to 80% AMI on about 2.31 gross acres, demolishing a 23,810 sq ft strip center; status Withdrawn.",
+      "src": [
+        "SRC-001811"
       ]
     }
   ],
@@ -223,11 +316,29 @@
       "src": [
         "SRC-001811"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Maracor Development Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-07-19",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE22-142 filed (280 units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-11-17",
       "type": "Application filed",
@@ -247,6 +358,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Maracor; city GIS permit layer queried by APNs 41222022 and 41222021",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 41222022 (2628 Union Av) and 41222021 (2638 Union Av); no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer: PRE22-142 (Maracor), 2019 prelim (Hylan Investments); SP22-031 not in GIS layer; sanjoseca.gov documents not opened (site refuses automated access)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in San Jose; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of CDLAC/CTCAC items for Union Avenue San Jose found no allocation",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Los Gatos Weekly Times item on PressReader returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2022-12-13 and 2024-06-05 articles returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "maracor.com connection closed",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in opened sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No bond, tax credit or lender tied to this site in opened sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn post on this project",
+      "src": []
+    }
+  }
 }

@@ -125,6 +125,12 @@
           "src": [
             "SRC-001113"
           ]
+        },
+        {
+          "value": "39 units for low- and very low-income households; proposed rents $1,830 to $2,930 for one- or two-person households (2021 proposal)",
+          "src": [
+            "SRC-002480"
+          ]
         }
       ]
     },
@@ -179,6 +185,34 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 26,
+            "1br": 178,
+            "2br": 59,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002480"
+          ],
+          "note": "As published in 2021; the listed types sum to 263 against 262 total units"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 309,
+          "src": [
+            "SRC-002480"
+          ],
+          "note": "Plus 144 bicycle spaces (2021 proposal)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -187,6 +221,18 @@
       "src": [
         "SRC-001112",
         "SRC-001113"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2021-12-06): Overton Moore Properties filed through Infill Land Partners LLC; seven stories, 85 feet; 266,890 sq ft total including 11,630 sq ft of amenities and 41,860 sq ft of outdoor open space; podium building.",
+      "src": [
+        "SRC-002480"
+      ]
+    },
+    {
+      "text": "South San Francisco development map: status \"Entitled - April 2023; Construction Date - TBD\" (P20-0079).",
+      "src": [
+        "SRC-001342"
       ]
     }
   ],
@@ -207,6 +253,43 @@
       "linkedin": null,
       "src": [
         "SRC-001342"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Overton Moore Properties",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002480",
+        "SRC-002481"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Architecture + Planning",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002480"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "April Philips Design Works",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002480"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "CBG",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002480"
       ]
     }
   ],
@@ -249,6 +332,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Infill Land Partners and Overton Moore; opened SF YIMBY 2021 and 2023 articles",
+      "src": [
+        "SRC-002480"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC parcel layer APN 014184120: owner INFILL LAND PARTNERS LLC (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SSF development projects map layer: Entitled April 2023, construction TBD; SSF Legistar web API not configured for client",
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project in South San Francisco; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "State APR rows already on record; no CTCAC/CDLAC or CEQAnet item found",
+      "src": [
+        "SRC-001113"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal 2023 approval article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021-12-06 and 2023-04-20; The Real Deal 2023-04-24 not opened (403 on that site)",
+      "src": [
+        "SRC-002480",
+        "SRC-002481"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no Overton Moore or Infill Land Partners project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "KTGY site search returned 403",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity named in opened sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn post on this project",
+      "src": []
+    }
+  }
 }
