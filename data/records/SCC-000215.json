@@ -31,6 +31,36 @@
           37.3087619
         ]
       ]
+    },
+    {
+      "apn": "434-19-027",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8850916,
+          37.3088652
+        ],
+        [
+          -121.885573,
+          37.3087619
+        ],
+        [
+          -121.8858478,
+          37.3092223
+        ],
+        [
+          -121.8853663,
+          37.3093257
+        ],
+        [
+          -121.8850916,
+          37.3088652
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -112,6 +142,13 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 91,
+          "src": [
+            "SRC-003085"
+          ],
+          "note": "Developer page: 91 family apartments"
         }
       ]
     },
@@ -131,6 +168,18 @@
           "value": "89 deed-restricted units reported to the state",
           "src": [
             "SRC-001107"
+          ]
+        },
+        {
+          "value": "68 low-income and 21 very-low-income units plus 1 manager unit",
+          "src": [
+            "SRC-001842"
+          ]
+        },
+        {
+          "value": "Households earning up to 70% of AMI",
+          "src": [
+            "SRC-003087"
           ]
         }
       ]
@@ -166,6 +215,66 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001842",
+            "SRC-003085",
+            "SRC-003086"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.23,
+          "src": [
+            "SRC-003086"
+          ],
+          "note": "53,589 sq ft"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 64,
+          "src": [
+            "SRC-003086"
+          ],
+          "note": "About 64 spaces on the ground floor"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-003085",
+            "SRC-003086"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003086"
+          ],
+          "note": "Architect sheet: project uses a super density bonus"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -174,6 +283,19 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "Housing Trust Silicon Valley lists other funders Google Launch Initiative and Golden State Acquisition Fund.",
+      "src": [
+        "SRC-003087"
+      ]
+    },
+    {
+      "text": "Project spans 520 and 544 West Alma Avenue; the site includes the closed Agave Sports Bar. County parcel data shows 520 W Alma as APN 434-19-027.",
+      "src": [
+        "SRC-001842",
+        "SRC-001098"
       ]
     }
   ],
@@ -189,9 +311,51 @@
       ],
       "website": "https://rcdhousing.org/",
       "project_page": "https://rcdhousing.org/upcoming-properties/"
+    },
+    {
+      "role": "Developer",
+      "company": "Resources for Community Development",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://rcdhousing.org/",
+      "project_page": "https://rcdhousing.org/upcoming-properties/",
+      "src": [
+        "SRC-003087",
+        "SRC-001842"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Van Meter Williams Pollack",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001842",
+        "SRC-003086"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003087"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Acquisition loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": null,
+      "amount": 5250000,
+      "date": "2025-08-18",
+      "src": [
+        "SRC-003087"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -209,6 +373,24 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-08-18",
+      "type": "Other",
+      "label": "Housing Trust Silicon Valley announces acquisition loan",
+      "src": [
+        "SRC-003087"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2029",
+      "type": "Completion",
+      "label": "Expected completion per developer page",
+      "src": [
+        "SRC-003085"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -226,6 +408,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on West Alma, address and RCD",
+      "src": [
+        "SRC-003087",
+        "SRC-001842"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 434-19-032 is 544 W Alma, 434-19-027 is 520 W Alma",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No county funding found for this project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR rows already on record; not in CTCAC Active Projects list",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Mercury News and other local coverage; no article page found to open",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-06-14: income split, architect, stories; The Real Deal returned 403",
+      "src": [
+        "SRC-001842"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "RCD Properties in Development page: 91 family apartments, five stories, 2029",
+      "src": [
+        "SRC-003085"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "VMWP project sheet: 1.23 acres, about 64 parking spaces, super density bonus",
+      "src": [
+        "SRC-003086"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley $5.25M acquisition loan",
+      "src": [
+        "SRC-003087"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn; no relevant results",
+      "src": []
+    }
+  }
 }

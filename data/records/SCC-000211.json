@@ -121,9 +121,18 @@
         {
           "value": 91,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-003075",
+            "SRC-003076"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 90,
+          "src": [
+            "SRC-003077"
+          ],
+          "note": "News report counts 90 apartments for extremely low-income households"
         }
       ]
     },
@@ -168,6 +177,13 @@
             "SRC-001409"
           ],
           "note": "Seven stories of modular construction over a single-story podium."
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-001975"
+          ],
+          "note": "Developer page: new 8-story building"
         }
       ]
     },
@@ -192,6 +208,16 @@
           "src": [
             "SRC-001409"
           ]
+        },
+        {
+          "value": [
+            "Supportive",
+            "Family"
+          ],
+          "src": [
+            "SRC-001975"
+          ],
+          "note": "Developer page: families and veterans; 24 apartments for veterans and 36 permanent supportive housing units"
         }
       ]
     },
@@ -208,8 +234,70 @@
             "SRC-001107"
           ],
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 47,
+              "ami": 30
+            },
+            {
+              "count": 43,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-003075"
+          ],
+          "note": "2021 CTCAC staff report, 55-year targeting"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 42,
+            "1br": 21,
+            "2br": 28,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003075"
+          ],
+          "note": "2021 CTCAC staff report; studio count is SRO/studio"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003075"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 63423095,
+          "src": [
+            "SRC-003075"
+          ],
+          "note": "Total project cost at 2021 tax credit application"
+        },
+        {
+          "value": 79000000,
+          "src": [
+            "SRC-003077"
+          ],
+          "note": "Total cost reported in August 2025"
+        }
+      ],
+      "best": 1
     }
   },
   "construction_notes": [
@@ -224,6 +312,25 @@
       "text": "City of San Jose permit H20-001 (Site Permit, folder year 2020), status Approved, issue date 2020-10-19: \"AB 2162 Streamlined Ministerial Permit to allow the demolition of an existing commercial building and the construction of a 91-unit residential development, with 59 units reserved for permanent supportive housing, with a State Density Bonus Request for tw\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "The December 2021 CTCAC staff report (CA-21-706) lists Reed Community Partners LLC as developer, general partners Reed Realty Advisors LLC and Allied 2095 Evans LLC, City of San Jose as bond issuer, and 46 HUD Section 8 project-based vouchers. Its permanent sources were Specialty Finance Group tax-exempt loan $11,157,588, Santa Clara County Measure A $11,500,000, City of San Jose $10,500,000, deferred developer fee $4,650,892 and tax credit equity $25,614,615. The project does not appear in CTCAC's Active Projects list through 2025.",
+      "src": [
+        "SRC-003075",
+        "SRC-001603"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (August 2025): Santa Clara County contributed nearly $36 million, including $22 million of Measure A; Homekey+ provided $40 million; completion expected October 2027.",
+      "src": [
+        "SRC-003077"
+      ]
+    },
+    {
+      "text": "Developer page lists financing partners County of Santa Clara, HCD Homekey+, HCD NPLH, WPC, Housing Authority, AHP and VA, and expects completion in late 2027.",
+      "src": [
+        "SRC-001975"
       ]
     }
   ],
@@ -265,9 +372,118 @@
       "src": [
         "SRC-001975"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Algarve Apartments Development, LP",
+      "contact": "Scott Reed",
+      "linkedin": null,
+      "email": "scott@reedcommunity.com",
+      "phone": "503-974-7555",
+      "other_role": "Tax credit applicant (2021); Homekey+ co-applicant (2025)",
+      "src": [
+        "SRC-003075",
+        "SRC-003076"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Reed Community Partners LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003075"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Allied Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003075"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "John Stewart Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003075"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Abode Property Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001975"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "CREA, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003075"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "County of Santa Clara",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Homekey+ applicant",
+      "src": [
+        "SRC-003076"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "State soft loan",
+      "provider": "California HCD",
+      "program": "Homekey+ capital award",
+      "amount": 40500000,
+      "date": "2025-07-15",
+      "src": [
+        "SRC-003076"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "California HCD",
+      "program": "Homekey+ veteran operating award",
+      "amount": 720000,
+      "date": "2025-07-15",
+      "src": [
+        "SRC-003076"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County",
+      "program": "Measure A",
+      "amount": 22000000,
+      "date": null,
+      "src": [
+        "SRC-003077"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "California Department of Toxic Substances Control",
+      "program": "Cleanup of former dry cleaner on site",
+      "amount": 3000000,
+      "date": null,
+      "src": [
+        "SRC-003077"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -285,6 +501,33 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2021-12-08",
+      "type": "Other",
+      "label": "CTCAC staff report recommends $2,846,353 annual federal 4% credits (CA-21-706)",
+      "src": [
+        "SRC-003075"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-15",
+      "type": "Other",
+      "label": "HCD Homekey+ award to County of Santa Clara ($41,220,000)",
+      "src": [
+        "SRC-003076"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2027-10",
+      "type": "Completion",
+      "label": "Expected completion",
+      "src": [
+        "SRC-003077"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -317,6 +560,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and Abode; found 2021 CTCAC staff report and 2025 news",
+      "src": [
+        "SRC-003075",
+        "SRC-003077"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 467-11-021: situs 1135 E Santa Clara St; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit GIS layer already on record",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County Measure A amounts via San Jose Spotlight; County is Homekey+ applicant on HCD list",
+      "src": [
+        "SRC-003077",
+        "SRC-003076"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-21-706 (2021); HCD Homekey+ awardee list; CTCAC Active Projects list (not listed)",
+      "src": [
+        "SRC-003075",
+        "SRC-003076",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-08-28",
+      "src": [
+        "SRC-003077"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-04 article already on record",
+      "src": [
+        "SRC-001409"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "abode.org project page: 8 stories, populations, manager, financing partners",
+      "src": [
+        "SRC-001975"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for a Lowney Architecture project page; none found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HCD Homekey+, County Measure A, DTSC, 2021 CTCAC sources",
+      "src": [
+        "SRC-003076",
+        "SRC-003077",
+        "SRC-003075"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn for project name; no relevant results",
+      "src": []
+    }
+  }
 }

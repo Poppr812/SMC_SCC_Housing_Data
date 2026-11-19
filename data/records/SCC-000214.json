@@ -99,6 +99,48 @@
           37.2787924
         ]
       ]
+    },
+    {
+      "apn": "412-02-003",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9483638,
+          37.2793639
+        ],
+        [
+          -121.9496181,
+          37.2793484
+        ],
+        [
+          -121.9496216,
+          37.2797631
+        ],
+        [
+          -121.9480076,
+          37.2797831
+        ],
+        [
+          -121.947919,
+          37.2797842
+        ],
+        [
+          -121.9478726,
+          37.2797847
+        ],
+        [
+          -121.9481977,
+          37.2793659
+        ],
+        [
+          -121.9483638,
+          37.2793639
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -183,6 +225,13 @@
           "src": [
             "SRC-001143"
           ]
+        },
+        {
+          "value": "Units for households at or below 60% of area median income; at least 23 permanent supportive housing units",
+          "src": [
+            "SRC-003083",
+            "SRC-003084"
+          ]
         }
       ]
     },
@@ -236,6 +285,31 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.6,
+          "src": [
+            "SRC-003081",
+            "SRC-003082",
+            "SRC-003083"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003083"
+          ],
+          "note": "At least 23 units permanent supportive housing"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -250,6 +324,26 @@
       "text": "Index address read 2420 S Winchester; the city case PLN-2024-29 is at 2400 S Winchester Blvd on the VTA station property. The city moved this case to its inactive list and shows it as Project Closed, last updated 2024-12-05. The city's data does not say how it was decided.",
       "src": [
         "SRC-001551"
+      ]
+    },
+    {
+      "text": "City case PLN-2024-29 is a Zoning Clearance (Housing Development Project): 90 units in a single 6-story, approximately 138,000 square-foot building with two levels of above-ground parking and four residential levels, plus transit plaza improvements.",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "VTA lists land use entitlements approved 2024-08-15; its March 2026 fact sheet shows financing and city permits 2024-2027 and construction 2027-2029; its June 2026 placemat shows phase Project Financing and anticipated completion 2028.",
+      "src": [
+        "SRC-003082",
+        "SRC-003081",
+        "SRC-002342"
+      ]
+    },
+    {
+      "text": "County parcel data shows 2400 Winchester Blvd as APN 412-02-003 and 2420 Winchester Blvd as APN 412-02-029.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -285,11 +379,58 @@
       ],
       "website": "https://www.vta.org/",
       "project_page": "https://www.vta.org/transitorientedcommunities"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "VTA",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003084"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "PYATOK",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003084"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "PATH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003083"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County",
+      "program": "Measure A",
+      "amount": 5100000,
+      "date": null,
+      "src": [
+        "SRC-003083"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2022-06-02",
+      "type": "Other",
+      "label": "VTA Board selects Related California and PATH Ventures as developers",
+      "src": [
+        "SRC-003082"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-02-20",
       "type": "Application filed",
@@ -305,6 +446,24 @@
       "src": [
         "SRC-001143"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Construction start",
+      "label": "Construction scheduled 2027-2029 per VTA fact sheet",
+      "src": [
+        "SRC-003081"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028",
+      "type": "Completion",
+      "label": "Anticipated completion per VTA TOD placemat (06/2026)",
+      "src": [
+        "SRC-002342"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -327,6 +486,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on VTA Winchester Station, Related California, PATH Ventures",
+      "src": [
+        "SRC-003082",
+        "SRC-003083"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 412-02-029 is 2420 Winchester (small parcel); 412-02-003 is 2400 Winchester",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Campbell Inactive Planning layer, PLN-2024-29 description",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Measure A $5.1M via San Jose Spotlight; VTA partnership with County Office of Supportive Housing",
+      "src": [
+        "SRC-003083",
+        "SRC-003081"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR rows already on record; CTCAC/CDLAC search and CTCAC Active Projects list show no application for this site",
+      "src": [
+        "SRC-001143"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2024-02-15",
+      "src": [
+        "SRC-003083"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-02-10 article: architect PYATOK, 60% AMI",
+      "src": [
+        "SRC-003084"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "VTA project page, fact sheet and TOD placemat",
+      "src": [
+        "SRC-003082",
+        "SRC-003081",
+        "SRC-002342"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "pyatok.com returned 403; architect named in SF YIMBY",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Measure A $5.1M",
+      "src": [
+        "SRC-003083"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn; no relevant results",
+      "src": []
+    }
+  }
 }

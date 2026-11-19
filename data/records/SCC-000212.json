@@ -1,6 +1,6 @@
 {
   "id": "SCC-000212",
-  "name": "Distel Circle (330 Distel Circle)",
+  "name": "MiLA (330 Distel Circle)",
   "parcels": [
     {
       "apn": "170-04-051",
@@ -229,6 +229,16 @@
           "src": [
             "SRC-001656"
           ]
+        },
+        {
+          "value": [
+            "Family",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003078"
+          ],
+          "note": "Developer page: families; 25% of apartments reserved for permanent supportive housing"
         }
       ]
     },
@@ -257,6 +267,18 @@
       "src": [
         "SRC-001656"
       ]
+    },
+    {
+      "text": "Developer page names the project MiLA and lists financing partners 4% LIHTC, Century Housing Corporation, County of Santa Clara, FHLBSF AHP, Housing Accelerator Fund and U.S. Bank; general contractor Nibbi Prefab (modular).",
+      "src": [
+        "SRC-003078"
+      ]
+    },
+    {
+      "text": "REBusinessOnline (September 2025): County of Santa Clara contribution totals $25 million, including $15.9 million from Measure A, with the balance from the County's No Place Like Home and HOME funds.",
+      "src": [
+        "SRC-003079"
+      ]
     }
   ],
   "parties": [
@@ -270,6 +292,65 @@
       ],
       "website": "https://www.eahhousing.org/",
       "project_page": "https://www.eahhousing.org/affordable-development-los-altos/mila/"
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003078",
+        "SRC-003079"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Nibbi Prefab",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003078"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "330 Distel Circle, L.P.",
+      "contact": "Welton Jordan",
+      "linkedin": null,
+      "phone": "415-295-8876",
+      "other_role": "Tax credit owner/applicant",
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "330 Distel Circle EAH, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "EAH Inc.",
+      "contact": "Stacey Smith-Shelley",
+      "linkedin": null,
+      "phone": "415-649-6382",
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "U.S. Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003078"
+      ]
     }
   ],
   "financing": [
@@ -486,6 +567,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and EAH; found developer page and trade coverage",
+      "src": [
+        "SRC-003078",
+        "SRC-003079"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 170-04-051: situs 330 Distel Cl; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "losaltosca.gov project page and press release returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County $25M contribution including $15.9M Measure A, via REBusinessOnline",
+      "src": [
+        "SRC-003079"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC Active Projects list: owner 330 Distel Circle, L.P., general partner and management company",
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Mountain View Voice groundbreaking article already on record",
+      "src": [
+        "SRC-001339"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "REBusinessOnline 2025-09-02",
+      "src": [
+        "SRC-003079"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "EAH MiLA project page: name, populations, team, financing partners",
+      "src": [
+        "SRC-003078"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "ktgy.com and archello.com returned 403; KTGY named on EAH page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "EAH page lists U.S. Bank and Housing Accelerator Fund; CTCAC staff report already on record",
+      "src": [
+        "SRC-003078"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of LinkedIn for project name; no relevant results",
+      "src": []
+    }
+  }
 }
