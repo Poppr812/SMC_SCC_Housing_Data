@@ -187,6 +187,83 @@
             "SRC-001099"
           ],
           "note": "State report 2022, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 39,
+              "ami": 50
+            },
+            {
+              "count": 40,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2023, entitlement stage"
+        },
+        {
+          "value": [
+            {
+              "count": 54,
+              "ami": 30
+            },
+            {
+              "count": 25,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003178"
+          ],
+          "note": "Housing Trust 2021: 54 units up to 30% AMI, 25 at 51-80% AMI, plus 1 manager unit"
+        }
+      ],
+      "best": 1
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2023: approved under SB 35 (2017) with a 44% density bonus and 5 incentives"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003178"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-003178"
+          ]
         }
       ]
     }
@@ -210,6 +287,25 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Housing Trust Silicon Valley (2021): 27 of the extremely low-income units are reserved for permanent supportive housing or rapid rehousing, supported by 17 project-based vouchers; the release places the project on Almaden Road without a street number.",
+      "src": [
+        "SRC-003178"
+      ]
+    },
+    {
+      "text": "The state Table A row for MP22-004 (2022) lists 550 Piercy Rd, APN 678-08-043; the Table A2 entitlement row (2023) lists 2080 Almaden Rd, APN 456-09-008.",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2020): preliminary review filed for 80 affordable units on a vacant lot; property owner listed as Bates Grace Trustee.",
+      "src": [
+        "SRC-001850"
+      ]
     }
   ],
   "parties": [
@@ -222,11 +318,49 @@
         "SRC-001850"
       ],
       "website": "https://www.affirmedhousing.com/"
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003178"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Bates Grace Trustee",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner named in 2020 news report",
+      "src": [
+        "SRC-001850"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Acquisition loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "TECH Fund and 2015 Loan Pool",
+      "amount": 4110000,
+      "date": "2021-02-18",
+      "src": [
+        "SRC-003178"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2021-02-18",
+      "type": "Other",
+      "label": "Housing Trust Silicon Valley announces $4.11 million acquisition loan",
+      "src": [
+        "SRC-003178"
+      ]
+    },
     {
       "date": "2022-07-15",
       "type": "Application filed",
@@ -241,6 +375,14 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2024-10-15",
+      "type": "Other",
+      "label": "Amendment application MPA22-004-01 submitted (SB 423, 6 low-income units)",
+      "src": [
+        "SRC-001099"
       ]
     }
   ],
@@ -264,6 +406,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Affirmed Housing: Housing Trust release, SF YIMBY",
+      "src": [
+        "SRC-003178",
+        "SRC-001850"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel data for 456-09-008; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Measure A or county funding for this project found none",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR A2 2023 (SB 35, density bonus, 39 VLI/40 LI) and Table A 2024 amendment row; CTCAC staff reports searched, none for this site",
+      "src": [
+        "SRC-001107",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of local news found no coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2020-12-06: owner of record named",
+      "src": [
+        "SRC-001850"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Affirmed Housing Coming Soon page lists no Almaden Road project",
+      "src": [
+        "SRC-003179"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley acquisition loan release",
+      "src": [
+        "SRC-003178"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Public LinkedIn search for Affirmed Housing Almaden: no relevant results",
+      "src": []
+    }
+  }
 }

@@ -206,8 +206,17 @@
             "SRC-001142"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003164",
+            "SRC-003165"
+          ],
+          "note": "City of Belmont bulletin dated 2023-05-16 announces the grand opening and residents moving in"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -232,7 +241,10 @@
         {
           "value": 66,
           "src": [
-            "SRC-001756"
+            "SRC-001756",
+            "SRC-003166",
+            "SRC-003167",
+            "SRC-003168"
           ],
           "note": "66 rental homes in the MidPen building; architect page lists 81 for the whole project"
         }
@@ -245,8 +257,17 @@
           "src": [
             "SRC-001142"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-003166",
+            "SRC-003167"
+          ],
+          "note": "CTCAC: 65 of 66 units low-income; the other is a manager unit"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_notes": {
       "claims": [
@@ -287,6 +308,138 @@
             "SRC-001142"
           ],
           "note": "State report 2020, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 11,
+              "ami": 30
+            },
+            {
+              "count": 33,
+              "ami": 50
+            },
+            {
+              "count": 5,
+              "ami": 60
+            },
+            {
+              "count": 16,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003166"
+          ],
+          "note": "CTCAC 2020 staff report, 55-year aggregate targeting"
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 18,
+            "1br": 12,
+            "2br": 19,
+            "3br": 17,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003166",
+            "SRC-003167"
+          ],
+          "note": "CTCAC lists SRO/studio units; county notice lists studios"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003166",
+            "SRC-001142"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-003166"
+          ],
+          "note": "CTCAC housing type: Large Family"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 59798080,
+          "src": [
+            "SRC-003166"
+          ],
+          "note": "Project cost at CTCAC application, January 2020"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3783,
+          "src": [
+            "SRC-003167"
+          ],
+          "note": "Retail at El Camino Real and O'Neill Avenue"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 47,
+          "src": [
+            "SRC-003167"
+          ],
+          "note": "Below-grade basement parking; 30 bicycle spaces also listed"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.72,
+          "src": [
+            "SRC-003167"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003168"
+          ],
+          "note": "Architect: 4-story building; county notice describes three- and four-story massing"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2023,
+          "src": [
+            "SRC-003168"
+          ],
+          "note": "Architect page lists completion in 2023"
         }
       ]
     }
@@ -297,6 +450,26 @@
       "src": [
         "SRC-001141",
         "SRC-001142"
+      ]
+    },
+    {
+      "text": "CTCAC reservation: $2,348,601 annual federal credits and $6,778,311 total state credits; census tract 6090.00; bond issuer California Municipal Finance Authority.",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "text": "The CMFA release on the $45,523,000 tax-exempt financing describes 49 low-income households; CTCAC and the county show 66 units with 65 low-income.",
+      "src": [
+        "SRC-003169",
+        "SRC-003166"
+      ]
+    },
+    {
+      "text": "Eight units are reserved for people with intellectual and developmental disabilities, with services by Housing Choices in coordination with Golden Gate Regional Center. The building keeps the historic firehouse facade and has two murals by Xuan May Ho.",
+      "src": [
+        "SRC-003164",
+        "SRC-003165"
       ]
     }
   ],
@@ -329,9 +502,175 @@
       "src": [
         "SRC-001757"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "MP Firehouse Square LLC",
+      "contact": "Phoebe Mayor Das",
+      "linkedin": null,
+      "email": "phoebe.mayor@midpen-housing.org",
+      "phone": "650-356-2900",
+      "other_role": "Tax credit applicant and general partner",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "MidPen Property Management Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor / consultant (CTCAC)",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Union Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003166",
+        "SRC-001756"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://bdearch.com",
+      "website_basis": "opened",
+      "project_page": "https://bdearch.com/firehouse-square-apartments",
+      "src": [
+        "SRC-003168"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Housing Choices",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services provider (I/DD units)",
+      "src": [
+        "SRC-003164",
+        "SRC-003165"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Union Bank",
+      "program": "Tax-exempt construction loan",
+      "amount": 29160000,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Union Bank",
+      "program": "Taxable construction loan",
+      "amount": 12875000,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Union Bank",
+      "program": "Tax-exempt permanent loan",
+      "amount": 9718000,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Union Bank",
+      "program": "Tranche B",
+      "amount": 10406000,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": null,
+      "amount": 6650000,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Belmont",
+      "program": null,
+      "amount": 3000000,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "California Housing Partnership Corporation (investor/consultant)",
+      "program": "Federal and state tax credit equity at permanent",
+      "amount": 29144085,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "MidPen Housing Corporation",
+      "program": null,
+      "amount": 500000,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Municipal Finance Authority",
+      "program": "Tax-exempt financing (issuer)",
+      "amount": 45523000,
+      "date": null,
+      "src": [
+        "SRC-003169"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "HUD",
+      "program": "Section 8 Project-based Vouchers, 33 units",
+      "amount": null,
+      "date": "2020-01-15",
+      "src": [
+        "SRC-003166",
+        "SRC-003167"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -351,11 +690,27 @@
       ]
     },
     {
+      "date": "2020-01-15",
+      "type": "Other",
+      "label": "CTCAC staff report recommends 4% tax credit reservation (CA-20-406)",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    {
       "date": "2020-08-14",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001142"
+      ]
+    },
+    {
+      "date": "2023-05-16",
+      "type": "Completion",
+      "label": "City of Belmont bulletin announces grand opening",
+      "src": [
+        "SRC-003164"
       ]
     }
   ],
@@ -374,6 +729,98 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address, MidPen: CTCAC CA-20-406, CMFA release, county notice, city bulletin",
+      "src": [
+        "SRC-003166",
+        "SRC-003169"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer: APN 045-244-200, owner MP Firehouse Square Associates LP lessee & City of Belmont",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City of Belmont govdelivery bulletin 2023-05-16 (grand opening)",
+      "src": [
+        "SRC-003164"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Mateo County Department of Housing notice 2020-05-05: 33 PBVs, mix, parking, retail sf",
+      "src": [
+        "SRC-003167"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-20-406 (2020-01-15); APR Table A/A2 rows already on record",
+      "src": [
+        "SRC-003166"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "SM Daily Journal articles on Firehouse Square returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for trade coverage found none beyond news and agency pages",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "MidPen news page on resident welcome; MidPen property profile",
+      "src": [
+        "SRC-003165",
+        "SRC-001756"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "BDE Architecture project page: 4 stories, 2023 completion",
+      "src": [
+        "SRC-003168"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC sources table; CMFA release on tax-exempt financing",
+      "src": [
+        "SRC-003166",
+        "SRC-003169"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Search of public LinkedIn posts (MidPen, BDE): 66 homes, up to 80% AMI, murals",
+      "src": []
+    }
+  }
 }

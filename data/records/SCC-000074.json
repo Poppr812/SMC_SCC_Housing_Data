@@ -141,6 +141,60 @@
             "SRC-001119"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "2024-0621",
+          "src": [
+            "SRC-003170"
+          ],
+          "note": "Planning file for the BMR Alternative Compliance Plan"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.24,
+          "src": [
+            "SRC-001513",
+            "SRC-002715"
+          ],
+          "note": "Whole 5.24-acre site, including the parcel for the 162 apartments"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2050,
+          "src": [
+            "SRC-001513"
+          ],
+          "note": "Whole development (80 townhomes, 162 apartments and 2,050 sq ft commercial)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002715"
+          ],
+          "note": "Three-story townhouses; the apartment building is seven stories"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001118"
+          ],
+          "note": "State report 2025: density bonus received and approved for the 80 owner units"
         }
       ]
     }
@@ -163,6 +217,13 @@
       "text": "The 162 affordable apartments on the dedicated 1.456-acre parcel are a separate record.",
       "src": [
         "SRC-001984"
+      ]
+    },
+    {
+      "text": "City file 25-0200 (January 2025) described 80 three-story townhouses and a 162-unit seven-story apartment building with a 19-lot tract map; file 25-0513 (March 2025) describes a 31-lot map creating 80 condominiums. Zoning ECR-MU54; CEQA under the El Camino Real Specific Plan EIR (Guidelines 15183).",
+      "src": [
+        "SRC-002715",
+        "SRC-001513"
       ]
     }
   ],
@@ -226,6 +287,14 @@
       ]
     },
     {
+      "date": "2025-05-28",
+      "type": "Other",
+      "label": "Housing and Human Services Commission approved BMR Alternative Compliance Plan",
+      "src": [
+        "SRC-003171"
+      ]
+    },
+    {
       "date": "2025-06-17",
       "type": "Other",
       "label": "City Council approved BMR Alternative Compliance Plan",
@@ -233,6 +302,15 @@
         "SRC-001740"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Other",
+      "label": "City Council approved median improvements cost sharing reimbursement agreement with The New Home Company ($222,300 budget modification)",
+      "src": [
+        "SRC-003172",
+        "SRC-003173"
+      ]
     }
   ],
   "history": [
@@ -260,6 +338,90 @@
       "date": "2026-11-18",
       "by": "Paul via Claude",
       "action": "Split: the 162 affordable apartments moved to SCC-000641"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search on address and The New Home Company: no project page or listing",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=20136002: 777 Sunnyvale-Saratoga Rd, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Sunnyvale Legistar matters 15508, 15810, 15820, 15982, 16195 and histories",
+      "src": [
+        "SRC-002715",
+        "SRC-001513",
+        "SRC-003171",
+        "SRC-003173"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A/A2 2025 rows for PLNG-2023-0807 (density bonus approved)",
+      "src": [
+        "SRC-001118"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Silicon Valley Voice article already on record",
+      "src": [
+        "SRC-001985"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY and builder press: nothing on this address",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for a New Home Company community page for this site found none",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city files opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Public LinkedIn search for 777 Sunnyvale Saratoga: no results",
+      "src": []
+    }
+  }
 }

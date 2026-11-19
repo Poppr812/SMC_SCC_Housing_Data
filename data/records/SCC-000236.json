@@ -113,6 +113,73 @@
             "SRC-001099"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001851"
+          ],
+          "note": "Updated application (January 2024) includes 18 low-income units"
+        }
+      ],
+      "best": 1
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 18,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001851"
+          ],
+          "note": "18 units for low-income households"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 11,
+          "src": [
+            "SRC-001851"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1350,
+          "src": [
+            "SRC-001851"
+          ],
+          "note": "Ground-level retail"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.2,
+          "src": [
+            "SRC-001851"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001851"
+          ]
         }
       ]
     }
@@ -135,6 +202,12 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "SF YIMBY (2024-01-02): about 48,000 sq ft building at Delmas Avenue and West San Fernando Street, replacing a single-story convenience store and surface parking; MANU Studios submitted the updated application.",
+      "src": [
+        "SRC-001851"
+      ]
     }
   ],
   "parties": [
@@ -144,6 +217,16 @@
       "contact": null,
       "linkedin": null,
       "other_role": "Applicant",
+      "src": [
+        "SRC-001851"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Family trust of Paramjit Kaur and Surinder Singh",
+      "contact": "Paramjit Kaur; Surinder Singh",
+      "linkedin": null,
+      "other_role": "Property owner (family trust)",
       "src": [
         "SRC-001851"
       ]
@@ -176,6 +259,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address: SF YIMBY 2024-01-02, The Real Deal 2023 (403)",
+      "src": [
+        "SRC-001851"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel data for 259-45-057; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A 2023 row H23-047 only; no A2 rows through 2025",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal articles (2023-07-05, 2023-12-21) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-01-02",
+      "src": [
+        "SRC-001851"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No owner or developer project page found by web search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SF YIMBY credits MANU Studios for renderings; no MANU project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funding named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Public LinkedIn search for 101 Delmas: no results",
+      "src": []
+    }
+  }
 }
