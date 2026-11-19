@@ -801,7 +801,7 @@ function openRecord(id){
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
      return `<div class="src" id="src-${s}"><span class="id">${r.srcLabels[s]}</span><a href="${esc(outUrl(S))}" target="_blank" rel="noopener">${esc(srcPub(S))} · <i>${esc(srcType(S))}</i></a> · ${esc(srcTitleShown(S,r))}${srcDate(S)?" · "+esc(srcDate(S)):""}<div class="muted" style="margin-left:26px;font-size:.85em">${esc(srcTip(S,r))}${PROFILE&&PROFILE.is_admin?`<div class="adminsrc">${s}${(()=>{const a=r.parcels.filter(p=>p.src.includes(s)).map(p=>p.apn);return a.length?` · used for parcel ${a.map(esc).join(", ")}`:""})()} · Retrieved ${esc(S.retrieved)} · Wayback: ${wb} · Saved copy: ${S.no_copy?"none, cited by link":S.sha256?"private archive":S.copyright?"private archive (not yet saved)":"public archive"}${S.sha256&&!S.no_copy&&PROFILE&&PROFILE.is_admin?` (<a href="${ARCH_URL}${s}/${s}.pdf" target="_blank" rel="noopener">PDF</a>, <a href="${ARCH_URL}${s}/${s}.txt" target="_blank" rel="noopener">text</a>)`:""} · Fingerprint: ${S.sha256?esc(S.sha256.slice(0,12))+"…":S.no_copy?"none":"pending"}</div>`:""}</div></div>`}).join("")}
    ${PROFILE&&PROFILE.is_admin?researchBox(r):""}
-   <details><summary>Edit history (provenance)</summary>
+   <details><summary>Edit history</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
    <div class="note">Every fact links to the public source behind it. Where sources differ, each is shown. Data license: ODbL.</div>`;
