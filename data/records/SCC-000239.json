@@ -1,6 +1,6 @@
 {
   "id": "SCC-000239",
-  "name": "511 Cozy Drive",
+  "name": "Glider Residential (511 Cozy Drive)",
   "parcels": [
     {
       "apn": "689-08-001",
@@ -323,8 +323,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003201"
+          ],
+          "note": "CEQA Notice of Determination shows City of San Jose approval on 2026-09-15"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -342,7 +350,9 @@
           "value": 80,
           "src": [
             "SRC-001099",
-            "SRC-001410"
+            "SRC-001410",
+            "SRC-003201",
+            "SRC-003202"
           ],
           "note": "Units in the application as reported"
         }
@@ -373,6 +383,12 @@
           "src": [
             "SRC-001410"
           ]
+        },
+        {
+          "value": 9.51,
+          "src": [
+            "SRC-003201"
+          ]
         }
       ]
     },
@@ -384,6 +400,52 @@
             "SRC-001099"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003202"
+          ],
+          "note": "11 homes priced at 80% AMI for low-income households"
+        }
+      ],
+      "best": 1
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 11,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003202"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "11 for-sale homes priced at 80% of area median income for low-income households",
+          "src": [
+            "SRC-003202"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H23-028 description: submitted under the Housing Accountability Act (Builder's Remedy)"
         }
       ]
     }
@@ -412,6 +474,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "San Jose Spotlight: True Life Companies bought the former Glider Elementary site from Oak Grove School District for $26.6 million; townhomes 1,233 sq ft; detached homes 1,896 to 2,234 sq ft with three or four bedrooms; 0.68-acre public park.",
+      "src": [
+        "SRC-003202"
+      ]
+    },
+    {
+      "text": "CEQA NOD (SCH 2024091026): demolition of vacant school buildings, 64 single-family detached and 16 single-family attached homes on 9.51 acres, 2.09 acres of public right-of-way and a 0.68-acre park; an EIR was prepared and a Statement of Overriding Considerations adopted.",
+      "src": [
+        "SRC-003201"
+      ]
     }
   ],
   "parties": [
@@ -424,6 +498,24 @@
         "SRC-001410"
       ],
       "website": "https://www.thetruelifecompanies.com/"
+    },
+    {
+      "role": "Seller",
+      "company": "Oak Grove School District",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003202"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "The True Life Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003202"
+      ]
     }
   ],
   "financing": [],
@@ -443,6 +535,24 @@
       "label": "Planning Commission review; outcome not reported in source",
       "src": [
         "SRC-001410"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-09-15",
+      "type": "Approved",
+      "label": "City approval; EIR certified with Statement of Overriding Considerations (CEQA NOD)",
+      "src": [
+        "SRC-003201"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-09-30",
+      "type": "Other",
+      "label": "Notice of Determination filed with the state (SCH 2024091026)",
+      "src": [
+        "SRC-003201"
       ],
       "estimated": false
     }
@@ -467,6 +577,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 511 Cozy Drive, Glider Elementary and True Life; opened San Jose Spotlight and CEQAnet",
+      "src": [
+        "SRC-003202"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 68908001 returns the parcel outline; no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov (Glider Residential EIR page, staff reports) refuses automated access; city GIS permit layer on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2024091026: NOD, approved 2026-09-15, posted 2026-09-30",
+      "src": [
+        "SRC-003201"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2026-09-07 (PC vote, sale price, affordable units); Local News Matters 2026-09-12 returned 403",
+      "src": [
+        "SRC-003202"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-08 meeting article already on record",
+      "src": [
+        "SRC-001410"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No project page for Glider/Cozy Drive found for The True Life Company",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in any opened source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in any opened source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

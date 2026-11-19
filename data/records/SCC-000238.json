@@ -137,6 +137,12 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "40 permanent supportive housing units for special-needs homeless households and 39 low-income units, plus 1 manager's unit",
+          "src": [
+            "SRC-003198"
+          ]
         }
       ]
     },
@@ -165,6 +171,19 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 56,
+            "2br": 23,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003198"
+          ],
+          "note": "SF YIMBY lists 56 one-bedroom, 23 two-bedroom and 1 manager's unit"
         }
       ]
     },
@@ -201,6 +220,43 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-003198",
+            "SRC-003199",
+            "SRC-003200"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.4,
+          "src": [
+            "SRC-003198",
+            "SRC-003199"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003198",
+            "SRC-003199"
+          ],
+          "note": "40 units of permanent supportive housing for special-needs households who have experienced homelessness"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -221,6 +277,24 @@
       "text": "City of San Jose permit H19-028 (Site Permit, folder year 2019), status Approved, issue date 2020-01-13: \"AB 2162 Streamlined Ministerial Permit to demolish an existing building (7,685-sf) and construct a 7- story,80-unit multi-family development, with a State Density Bonus Request for one Incentive (reduction of side setback) and one Waiver (reduction of re\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (July 2022): seven stories, 85 feet, wood over a two-level concrete podium with ground-level parking; estimated cost about $52 million; completion expected by 2024.",
+      "src": [
+        "SRC-003198"
+      ]
+    },
+    {
+      "text": "SGPA: 90,500 sq ft building on 0.4 acres (195 units per acre), all-electric with rooftop solar; seventh-floor community room and roof deck.",
+      "src": [
+        "SRC-003199"
+      ]
+    },
+    {
+      "text": "Danco project page lists the address as 748 W San Carlos St and describes an 80-unit permanent supportive and affordable building for households at or below 60% AMI.",
+      "src": [
+        "SRC-003200"
       ]
     }
   ],
@@ -263,6 +337,20 @@
       ],
       "other_role": "Applicant (CTCAC)",
       "email": "mdibble@danco-group.com"
+    },
+    {
+      "role": "Architect",
+      "company": "SGPA Architecture and Planning",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://sgpa.com/",
+      "website_basis": "search",
+      "project_page": "https://sgpa.com/project/mariposa-place/",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003198",
+        "SRC-003199"
+      ]
     }
   ],
   "financing": [
@@ -391,6 +479,24 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2022-07-25",
+      "type": "Other",
+      "label": "SF YIMBY reports demolition has cleared the parcel",
+      "src": [
+        "SRC-003198"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-06-25",
+      "type": "Other",
+      "label": "SF YIMBY reports Danco has started construction",
+      "src": [
+        "SRC-002758"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -418,6 +524,100 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and Danco; opened SF YIMBY, SGPA and Danco pages",
+      "src": [
+        "SRC-003198",
+        "SRC-003199"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 26415003: situs 748 W San Carlos St, San Jose; no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city GIS permit layer already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "County Measure A and acquisition fund loans already on record from CTCAC staff report; news.santaclaracounty.gov blocked",
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC staff report CA-21-591 and APR rows already on record",
+      "src": [
+        "SRC-001613",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for opening coverage returned only unrelated San Jose supportive housing openings",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-07-25 (demolition, unit mix, cost) and 2023-06-25 (construction started)",
+      "src": [
+        "SRC-003198",
+        "SRC-002758"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Danco project page danco-group.com/projects/mariposa-place: 748 W San Carlos, 7 stories, 80 units",
+      "src": [
+        "SRC-003200"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SGPA project page: 7 stories, 90,500 sq ft, 0.4 acres",
+      "src": [
+        "SRC-003199"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Lenders and public funders already on record from CTCAC staff report; no other source found",
+      "src": [
+        "SRC-001613"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Mariposa Place found none",
+      "src": []
+    }
+  }
 }

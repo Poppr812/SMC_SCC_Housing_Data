@@ -112,6 +112,13 @@
           "src": [
             "SRC-001019"
           ]
+        },
+        {
+          "value": 83,
+          "src": [
+            "SRC-003211"
+          ],
+          "note": "March 2026 preliminary filing: 83 units including 9 affordable"
         }
       ]
     },
@@ -154,6 +161,12 @@
           "src": [
             "SRC-001019"
           ]
+        },
+        {
+          "value": "9 affordable units in March 2026 filing (83 units)",
+          "src": [
+            "SRC-003211"
+          ]
         }
       ]
     },
@@ -166,6 +179,80 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 44,
+            "2br": 34,
+            "3br": 5,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003211"
+          ],
+          "note": "March 2026 preliminary filing"
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 38,
+            "2br": 32,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003212"
+          ],
+          "note": "July 2026 updated plan set"
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.55,
+          "src": [
+            "SRC-003211",
+            "SRC-003212"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 65900,
+          "src": [
+            "SRC-003211"
+          ],
+          "note": "March 2026 filing"
+        },
+        {
+          "value": 69350,
+          "src": [
+            "SRC-003212"
+          ],
+          "note": "July 2026 plan set"
+        }
+      ],
+      "best": 1
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003212"
+          ],
+          "note": "State density bonus (50% above base); seven waivers and two concessions requested"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -173,6 +260,18 @@
       "text": "Demolishes an existing office building",
       "src": [
         "SRC-001019"
+      ]
+    },
+    {
+      "text": "SF YIMBY (March 2026): replaces a five-story office building built in 1963; about 87 feet; about 115,200 sq ft total including 33,500 sq ft of parking; 83 car and 118 bicycle spaces; property last sold in 2024 for $7 million.",
+      "src": [
+        "SRC-003211"
+      ]
+    },
+    {
+      "text": "SF YIMBY (July 2026): about 90 feet; about 115,700 sq ft total including a 33,400 sq ft podium garage; 80 apartments, 8 very low-income; state density bonus with seven waivers and two concessions.",
+      "src": [
+        "SRC-003212"
       ]
     }
   ],
@@ -194,6 +293,25 @@
       "linkedin": null,
       "src": [
         "SRC-001020"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "DNA Design and Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003211",
+        "SRC-003212"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Edge Land Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003212"
       ]
     }
   ],
@@ -230,6 +348,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 2555 Flores and SM Flores LLC; opened two SF YIMBY articles and the city project page",
+      "src": [
+        "SRC-003211",
+        "SRC-003212"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC active parcels: SM Flores LLC owner already on record",
+      "src": [
+        "SRC-001020"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "City project page PA26-0049: neighborhood meeting 2026-05-05, submittals 2026-07-02 and 2026-10-06; no hearing listed",
+      "src": [
+        "SRC-001019"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No CEQAnet or APR entry found for the 2026 application",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2026-03-14 and 2026-07-18",
+      "src": [
+        "SRC-003211",
+        "SRC-003212"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for SM Flores LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "DNA Design and Architecture named by SF YIMBY; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in any opened source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

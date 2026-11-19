@@ -1,6 +1,6 @@
 {
   "id": "SCC-000240",
-  "name": "400 Blossom Hill Rd",
+  "name": "The Grove at Los Gatos (400 Blossom Hill Rd)",
   "parcels": [
     {
       "apn": "529-16-071",
@@ -115,6 +115,13 @@
       "src": [
         "SRC-001121"
       ]
+    },
+    {
+      "text": "400-420 Blossom Hill Rd, Los Gatos, CA",
+      "role": "other",
+      "src": [
+        "SRC-003206"
+      ]
     }
   ],
   "images": [],
@@ -138,8 +145,16 @@
             "SRC-001121"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003204"
+          ],
+          "note": "Ribbon-cutting held in May 2025; Los Gatan reports the facility officially opened"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -159,6 +174,13 @@
             "SRC-001121"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 114,
+          "src": [
+            "SRC-003203"
+          ],
+          "note": "Designer's project page lists 114 apartment units (assisted living with memory care)"
         }
       ]
     },
@@ -170,6 +192,13 @@
             "SRC-001121"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-17-042, V-18-002, U-17-007",
+          "src": [
+            "SRC-003206"
+          ],
+          "note": "Architecture and Site, Variance and Conditional Use Permit applications"
         }
       ]
     },
@@ -183,6 +212,41 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003203"
+          ],
+          "note": "Two-story Type V over a one-story Type I base"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2025,
+          "src": [
+            "SRC-003203"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-003204",
+            "SRC-003205"
+          ],
+          "note": "Assisted living and memory care facility; independent living also offered per Los Gatan"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -191,9 +255,60 @@
       "src": [
         "SRC-001121"
       ]
+    },
+    {
+      "text": "Town of Los Gatos Planning Commission, March 27, 2019: S-17-042, V-18-002 and U-17-007 for 400-420 Blossom Hill Road, demolition of existing office buildings and construction of an assisted living and memory care facility on property zoned O; applicant Jason Reyes, CP Swenson, LLC; property owner Green Valley Corporation c/o Case Swenson.",
+      "src": [
+        "SRC-003206",
+        "SRC-003205"
+      ]
+    },
+    {
+      "text": "The state Annual Progress Report shows 80 units; the d3pa project page shows 114 apartment units.",
+      "src": [
+        "SRC-001121",
+        "SRC-003203"
+      ]
+    },
+    {
+      "text": "Los Gatan (May 28, 2025): The Grove at Los Gatos offers independent living, assisted living and memory care; developers spent more than eight years on the property.",
+      "src": [
+        "SRC-003204"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Swenson",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003203"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "CP Swenson, LLC",
+      "contact": "Jason Reyes",
+      "linkedin": null,
+      "other_role": "Applicant (Town of Los Gatos)",
+      "src": [
+        "SRC-003206",
+        "SRC-003205"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Green Valley Corporation",
+      "contact": "Case Swenson",
+      "linkedin": null,
+      "src": [
+        "SRC-003206",
+        "SRC-003205"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -220,6 +335,15 @@
       "src": [
         "SRC-001121"
       ]
+    },
+    {
+      "date": "2025-05-22",
+      "type": "Lease-up start",
+      "label": "Ribbon-cutting hosted by the Los Gatos Chamber of Commerce (Thursday before the May 28, 2025 article)",
+      "src": [
+        "SRC-003204"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -227,6 +351,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, S-17-042 and Swenson; opened Los Gatos WebLink, d3pa and Los Gatan pages",
+      "src": [
+        "SRC-003206",
+        "SRC-003203"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 52916071: situs 400 Blossom Hill Rd, Los Gatos; no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Los Gatos WebLink: PC 2019-03-27 Item 4 desk item and conditions of approval",
+      "src": [
+        "SRC-003206",
+        "SRC-003205"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Town project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A2 rows already on record; no CEQAnet filing found (staff report lists a categorical exemption memo)",
+      "src": [
+        "SRC-001121"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Los Gatan 2025-05-28 opening coverage; Mercury News sale coverage not accessible (blocked)",
+      "src": [
+        "SRC-003204"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal (2025-11-07 sale article), traded.co and Connect CRE returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Swenson or Chronograph project page opened for this property",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "d3pa project page (The Oaks Atlos): 114 units, 3 stories, client Swenson, completion 2025; architect of record not named",
+      "src": [
+        "SRC-003203"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "Sale financing and buyer details appear only in The Real Deal and Mercury News coverage, both blocked",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

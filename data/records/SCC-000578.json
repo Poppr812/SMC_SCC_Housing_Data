@@ -44,6 +44,14 @@
       "src": [
         "SRC-001606"
       ]
+    },
+    {
+      "text": "3333 Kifer Rd, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-003208",
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -76,8 +84,17 @@
             "SRC-001603"
           ],
           "note": "Status reflects the CTCAC placed-in-service date only; current leasing status is not stated."
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003207",
+            "SRC-003208"
+          ],
+          "note": "Grand opening held May 8, 2024"
         }
-      ]
+      ],
+      "best": 1
     },
     "total_units": {
       "claims": [
@@ -102,6 +119,19 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": {
+            "studio": 30,
+            "1br": 45,
+            "2br": 4,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003209"
+          ],
+          "note": "SF YIMBY lists 30 studios, 45 one-bedroom, 4 two-bedroom plus 1 manager's unit"
         }
       ]
     },
@@ -151,6 +181,63 @@
           ]
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003207",
+            "SRC-003208"
+          ],
+          "note": "Seniors experiencing homelessness or chronic homelessness, including senior veterans"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 45923,
+          "src": [
+            "SRC-003209"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1897,
+          "src": [
+            "SRC-003209"
+          ],
+          "note": "Commercial/office space"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.54,
+          "src": [
+            "SRC-003209"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 24,
+          "src": [
+            "SRC-003209"
+          ],
+          "note": "Plus 29 bicycle spaces"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -158,6 +245,32 @@
       "text": "CTCAC CA-21-718: Kifer Senior Housing, located at 3335-3337 Kifer Road in Santa Clara, requested and is being recommended for a reservation of $2,415,301 in annual federal tax credits to finance the new construction of 79 income units of housing serving special needs tenants with rents affordable to households earning 20- 50% of area median income (AMI).",
       "src": [
         "SRC-001606"
+      ]
+    },
+    {
+      "text": "HCD (June 3, 2024): 80 homes; 46 units set aside for seniors experiencing homelessness or chronic homelessness with very low or extremely low incomes; more than $13 million from the Housing for a Healthy California program; services by Abode Services; managed by John Stewart Company.",
+      "src": [
+        "SRC-003207"
+      ]
+    },
+    {
+      "text": "Housing Trust Silicon Valley (May 9, 2024): 79 affordable apartments for seniors at 30-50% AMI; early funding from Housing Trust's TECH Fund with Google as capital partner, plus County Measure A Supportive Housing Fund; amounts not stated.",
+      "src": [
+        "SRC-003210"
+      ]
+    },
+    {
+      "text": "SF YIMBY (March 2021): 68-foot facade; replaces an 8,992 sq ft R&D building; GLO Architecture; rooftop solar; estimated construction cost $57.5 million; estimated completion May 2023.",
+      "src": [
+        "SRC-003209"
+      ]
+    },
+    {
+      "text": "The CTCAC staff report gives the address as 3335-3337 Kifer Road; the county parcel data and Silicon Valley Voice give 3333 Kifer Road.",
+      "src": [
+        "SRC-001606",
+        "SRC-001098",
+        "SRC-003208"
       ]
     }
   ],
@@ -191,6 +304,24 @@
       "other_role": "Applicant (CTCAC)",
       "email": "jwhite@abodeservices.org",
       "phone": "(408) 941-1851"
+    },
+    {
+      "role": "Architect",
+      "company": "GLO Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003209"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Abode Housing Developments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003207"
+      ]
     }
   ],
   "financing": [
@@ -283,10 +414,29 @@
       "src": [
         "SRC-001606"
       ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "HCD",
+      "program": "Housing for a Healthy California (more than $13 million per HCD release)",
+      "amount": 13000000,
+      "date": null,
+      "src": [
+        "SRC-003207"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2021-03-18",
+      "type": "Other",
+      "label": "Plans under review by Santa Clara Planning Commission (Lawrence Station Area Plan)",
+      "src": [
+        "SRC-003209"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-12-08",
       "type": "Other",
@@ -304,6 +454,15 @@
         "SRC-001603"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-05-08",
+      "type": "Other",
+      "label": "Grand opening ribbon-cutting",
+      "src": [
+        "SRC-003208"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -316,6 +475,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Added applicant contact and partners from the CTCAC staff report"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Kifer Senior, Allied/Abode and address; opened HCD, SV Voice, Housing Trust, SF YIMBY",
+      "src": [
+        "SRC-003207",
+        "SRC-003208"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API for APN 21633035: situs 3333 Kifer Rd, Santa Clara 95051; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "santaclaraca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "news.santaclaracounty.gov refuses automated access; Measure A loan already on record from CTCAC",
+      "src": [
+        "SRC-001606"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HCD newsroom 2024-06-03 (HHC funding, opening); CTCAC CA-21-718 already on record",
+      "src": [
+        "SRC-003207",
+        "SRC-001606"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Silicon Valley Voice 2024-05-28: 3333 Kifer Rd, ribbon cutting May 8",
+      "src": [
+        "SRC-003208"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2021-03-18: square footage, parking, architect, unit mix",
+      "src": [
+        "SRC-003209"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Abode project page surfaced in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "GLO Architecture named by SF YIMBY; no GLO project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HCD HHC award amount; Housing Trust SV TECH Fund early funding (amount not stated)",
+      "src": [
+        "SRC-003207",
+        "SRC-003210"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
