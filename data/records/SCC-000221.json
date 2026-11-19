@@ -123,6 +123,12 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN2019-14040 (entitlement extension PLN23-00099)",
+          "src": [
+            "SRC-001737"
+          ]
         }
       ]
     },
@@ -141,6 +147,49 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.46,
+          "src": [
+            "SRC-003094"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-003094",
+            "SRC-003095"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 75,
+          "src": [
+            "SRC-003094",
+            "SRC-001737"
+          ],
+          "note": "72 stacker spaces, 2 accessible, 1 EV"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001102"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -148,6 +197,30 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001102"
+      ]
+    },
+    {
+      "text": "2021 staff report: eight-story building, 89 units, maximum height 88 feet, two above-grade parking levels plus one underground stacker pit, 75 vehicle and 53 bicycle spaces (66 required), 1,379 sq ft of amenities on the third floor, 193 units per net acre. Existing use is light manufacturing, zoned Transit Neighborhood, flood zone AE. CEQA: addendum to the Tasman East Specific Plan EIR (SCH 2016122027).",
+      "src": [
+        "SRC-003094"
+      ]
+    },
+    {
+      "text": "Continued hearings followed concerns from the owner of the adjacent building at 5191 Lafayette Street; staff added conditions requiring test pits and a final geotechnical investigation before a demolition permit. Staff recommended approval on May 12, 2021.",
+      "src": [
+        "SRC-003096"
+      ]
+    },
+    {
+      "text": "2023 extension staff report: the approval was conditioned to expire May 12, 2023; the applicant stated it could not complete a building permit application in time and requested an extension.",
+      "src": [
+        "SRC-001737"
+      ]
+    },
+    {
+      "text": "SF YIMBY image caption credits a redesign of 2354 Calle Del Mundo to BDE Architecture.",
+      "src": [
+        "SRC-003095"
       ]
     }
   ],
@@ -170,17 +243,80 @@
       "src": [
         "SRC-001737"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Ensemble Real Estate Investments",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://ensemble.net/",
+      "website_basis": "search",
+      "src": [
+        "SRC-003095",
+        "SRC-003094"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ensemble Real Estate Investment, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner (2021 staff report)",
+      "src": [
+        "SRC-003094"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003095"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2021-03-17",
+      "type": "Other",
+      "label": "Development Review Hearing; item continued",
+      "src": [
+        "SRC-003096"
+      ]
+    },
+    {
+      "date": "2021-04-21",
+      "type": "Other",
+      "label": "Development Review Hearing; item continued to May 12, 2021",
+      "src": [
+        "SRC-003096"
+      ]
+    },
+    {
       "date": "2021-05-12",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001102"
+      ]
+    },
+    {
+      "date": "2023-02-22",
+      "type": "Application filed",
+      "label": "Entitlement extension request received (PLN23-00099)",
+      "src": [
+        "SRC-001737"
+      ]
+    },
+    {
+      "date": "2023-04-19",
+      "type": "Other",
+      "label": "Development Review Hearing on entitlement extension",
+      "src": [
+        "SRC-001737"
       ]
     }
   ],
@@ -194,6 +330,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and developer; SF YIMBY archive names Ensemble as developer",
+      "src": [
+        "SRC-003095"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 097-46-002: situs 2354 Calle Del Mundo; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Santa Clara Legistar: DRH staff reports 2021-03-17 (21-103), 2021-05-12 (21-585), extension 2023-04-19 (23-394)",
+      "src": [
+        "SRC-003094",
+        "SRC-003096",
+        "SRC-001737"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A2 2021 row: 7 moderate-income units, 55-year term",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on the address found none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY articles 2020-12-11 and 2021-05-12",
+      "src": [
+        "SRC-003095"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "ensemble.net Santa Clara news (2024-09) lists other Tasman East projects, not this address",
+      "src": [
+        "SRC-002640"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "BDE Architecture credited in SF YIMBY caption; no firm project page found",
+      "src": [
+        "SRC-003095"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in city, state or press sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web searches on the address and developer",
+      "src": []
+    }
+  }
 }

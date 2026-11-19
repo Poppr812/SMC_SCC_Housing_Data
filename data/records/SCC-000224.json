@@ -1,6 +1,6 @@
 {
   "id": "SCC-000224",
-  "name": "2348 Alum Rock",
+  "name": "Vela (2348 Alum Rock Avenue)",
   "parcels": [
     {
       "apn": "484-41-168",
@@ -89,6 +89,20 @@
           ]
         }
       ]
+    },
+    {
+      "text": "2350 Alum Rock Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "text": "2358 Alum Rock Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003105"
+      ]
     }
   ],
   "images": [],
@@ -114,8 +128,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003103"
+          ],
+          "note": "Grand opening ceremony held Nov. 30, 2022"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -198,6 +220,112 @@
             "SRC-001099"
           ],
           "note": "State report 2018, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 43,
+              "ami": 50
+            },
+            {
+              "count": 42,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003104"
+          ],
+          "note": "CTCAC 55-year targeting"
+        },
+        {
+          "value": [
+            {
+              "count": 69,
+              "ami": 50
+            },
+            {
+              "count": 16,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2020, entitlement stage; 51 of the very low-income units reported as extremely low-income"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2022,
+          "src": [
+            "SRC-003103"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-003104"
+          ],
+          "note": "5 stories over 2 stories of concrete"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 29,
+            "1br": 13,
+            "2br": 22,
+            "3br": 23,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003104"
+          ],
+          "note": "Includes two manager's units"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 66623139,
+          "src": [
+            "SRC-003104"
+          ],
+          "note": "Total project cost at application in CTCAC staff report"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003104",
+            "SRC-001107"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003103",
+            "SRC-003104"
+          ],
+          "note": "43 homes for formerly unhoused residents (14 rapid rehousing, 29 permanent supportive)"
         }
       ]
     }
@@ -221,6 +349,25 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC CA-20-569 (April 14, 2020), project name Alum Rock Family Housing at 2350 Alum Rock Avenue: 87 units, 85 restricted, special needs housing type, HUD Section 8 project-based vouchers for 29 units, bond issuer City of San Jose, total project cost at application $66,623,139 (about $744,160 per unit). Construction sources: Banner Bank $36,855,974, City of San Jose $1,000,000, Santa Clara County $13,117,165, tax credit equity $15,650,000.",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "text": "Grand opening release: 87 homes in the Mayfair neighborhood; 43 homes for formerly unhoused residents (14 rapid rehousing, 29 permanent supportive); rents for households up to 30% and 60% AMI; on-site services by PATH; City of San Jose and Santa Clara County (Measure A) funding; Bank of America financing; CCRC named as a partner.",
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    {
+      "text": "County parcel data lists situs 2358 Alum Rock Av for APN 484-41-168. The state report's 2018 application row lists APN 484-41-165, which does not appear in current county parcel data.",
+      "src": [
+        "SRC-003105",
+        "SRC-001099"
+      ]
     }
   ],
   "parties": [
@@ -233,9 +380,185 @@
         "SRC-001843"
       ],
       "website": "https://www.affirmedhousing.com/"
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Nexus for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003104",
+        "SRC-003103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Alum Rock Family Housing, L.P.",
+      "contact": "Rob Wilkins",
+      "linkedin": null,
+      "email": "rob@affirmedhousing.com",
+      "phone": "(415) 488-7743",
+      "other_role": "Applicant (CTCAC)",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "AHG Alum Rock, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner (CTCAC)",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Enterprise Community",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant (CTCAC)",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Solari Enterprises, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "DAHLIN Group Architecture Planning",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT Landscape",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Cahill Contractors",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Banner Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bank of America",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "People Assisting the Homeless (PATH)",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services provider",
+      "src": [
+        "SRC-003103"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Banner Bank",
+      "program": null,
+      "amount": 36855974,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Banner Bank",
+      "program": "Tranche B",
+      "amount": 11660914,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": null,
+      "amount": 9350000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County",
+      "program": null,
+      "amount": 15650000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Affirmed Housing Group, Inc.",
+      "program": null,
+      "amount": 1500000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Federal $2,516,925 annual and state $4,475,590 total credits",
+      "amount": 28462225,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003104"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -252,6 +575,22 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2020-04-14",
+      "type": "Other",
+      "label": "CTCAC staff report recommends 4% credit reservation (CA-20-569)",
+      "src": [
+        "SRC-003104"
+      ]
+    },
+    {
+      "date": "2022-11-30",
+      "type": "Completion",
+      "label": "Grand opening ceremony",
+      "src": [
+        "SRC-003103"
       ]
     }
   ],
@@ -275,6 +614,98 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Vela, Alum Rock Family Housing and Affirmed Housing",
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API APN 484-41-168: situs 2358 Alum Rock Av",
+      "src": [
+        "SRC-003105"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Santa Clara County loan $15,650,000 in CTCAC sources; Measure A cited in opening release",
+      "src": [
+        "SRC-003104",
+        "SRC-003103"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC CA-20-569; APR 2020 entitlement row",
+      "src": [
+        "SRC-003104",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Grand opening release syndicated via Yahoo Finance",
+      "src": [
+        "SRC-003103"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "MultifamilyBiz opening article already on record",
+      "src": [
+        "SRC-001844"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Housing Trust SV page already on record; affirmedhousing.com project page not found",
+      "src": [
+        "SRC-001843"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "dahlingroup.com project page refused connection (certificate error); architect taken from release",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC sources table; Bank of America in release",
+      "src": [
+        "SRC-003104",
+        "SRC-003103"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web searches",
+      "src": []
+    }
+  }
 }

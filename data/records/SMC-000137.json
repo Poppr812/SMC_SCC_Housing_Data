@@ -178,8 +178,16 @@
           "src": [
             "SRC-001203"
           ]
+        },
+        {
+          "value": 120,
+          "src": [
+            "SRC-003097"
+          ],
+          "note": "120-stall surface lot per April 2024 article"
         }
-      ]
+      ],
+      "best": 0
     },
     "approval_type": {
       "claims": [
@@ -204,7 +212,8 @@
             "4br+": 0
           },
           "src": [
-            "SRC-001603"
+            "SRC-001603",
+            "SRC-003097"
           ]
         }
       ]
@@ -244,6 +253,24 @@
             "SRC-001665"
           ],
           "note": "Total sources in CTCAC staff report."
+        },
+        {
+          "value": 66000000,
+          "src": [
+            "SRC-003098"
+          ],
+          "note": "Total estimated project cost stated by Alliant, January 2025"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 87724,
+          "src": [
+            "SRC-001203"
+          ],
+          "note": "Gross floor area, including unusable attic space"
         }
       ]
     }
@@ -265,6 +292,24 @@
       "text": "CTCAC CA-25-604: Sheridan Apartments, located at 320 Sheridan Drive in Menlo Park on a 2.52 acre site, requested and is being recommended for a reservation of $2,507,094 in annual federal tax credits and $3,850,318 in total state tax credits and $27,704,168 of tax-exempt bond cap to finance the new construction of 88 units of housing, consisting of 87 restricted rental units and 1 unrestricted manager's unit.",
       "src": [
         "SRC-001665"
+      ]
+    },
+    {
+      "text": "Planning Commission vote on January 13, 2025 was 5-1 (Commissioner Ferrick dissenting, one absent). The district keeps ownership of the land. The article reported construction could start in December 2025 with completion and leasing in 2027.",
+      "src": [
+        "SRC-003098"
+      ]
+    },
+    {
+      "text": "City page: three three-story buildings, 40 ft height, about 2,217 sq ft amenity center, 27,918 sq ft open space, zoning R-3. Density bonus waivers and incentives include LEED Silver certification and dual plumbing for recycled water. Applicant: Ravenswood City School District in partnership with Alliant Communities.",
+      "src": [
+        "SRC-001203"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption SCH 2025010493, Class 32 infill, filed by the City of Menlo Park; applicant Alliant Communities LLC.",
+      "src": [
+        "SRC-003099"
       ]
     }
   ],
@@ -317,6 +362,46 @@
       "linkedin": null,
       "src": [
         "SRC-001665"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003097",
+        "SRC-003098"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "R3 Studios",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003097"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "KPFF",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003097"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Alliant Communities LLC",
+      "contact": "Katia Kamangar",
+      "linkedin": null,
+      "email": "katkamangar@gmail.com",
+      "phone": "650-815-8521",
+      "other_role": "Applicant (CEQA notice)",
+      "src": [
+        "SRC-003099"
       ]
     }
   ],
@@ -415,9 +500,25 @@
   "groups": {},
   "events": [
     {
+      "date": "2024-11",
+      "type": "Other",
+      "label": "City Council commits $1 million from the BMR Housing Fund",
+      "src": [
+        "SRC-003098"
+      ]
+    },
+    {
       "date": "2025-01-13",
       "type": "Approved",
       "label": "Planning Commission approves use permit, architectural control and BMR agreement",
+      "src": [
+        "SRC-001203"
+      ]
+    },
+    {
+      "date": "2025-01-28",
+      "type": "Other",
+      "label": "Appeal of Planning Commission approval filed",
       "src": [
         "SRC-001203"
       ]
@@ -428,6 +529,14 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001130"
+      ]
+    },
+    {
+      "date": "2025-03-14",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (Class 32 infill) posted",
+      "src": [
+        "SRC-003099"
       ]
     },
     {
@@ -483,6 +592,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Flood School site and Alliant",
+      "src": [
+        "SRC-003097",
+        "SRC-003098"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC parcel layer APN 055-303-110: owner Ravenswood Elementary Sch Dist (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Menlo Park project page: appeal filed 2025-01-28, gross floor area, height",
+      "src": [
+        "SRC-001203"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "County of San Mateo $9M loan already on record from CTCAC staff report",
+      "src": [
+        "SRC-001665"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet NOE SCH 2025010493; CTCAC CA-25-604 already on record",
+      "src": [
+        "SRC-003099",
+        "SRC-001665"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "The Almanac 2025-01-15: $66M estimated cost, PC vote",
+      "src": [
+        "SRC-003098"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-04-03: architect, landscape architect, civil engineer, parking",
+      "src": [
+        "SRC-003097"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Alliant project page for Sheridan found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SDG Architects named in SF YIMBY and The Almanac; no firm project page found",
+      "src": [
+        "SRC-003097",
+        "SRC-003098"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Financing already on record from CTCAC staff report; city $1M commitment confirmed by The Almanac",
+      "src": [
+        "SRC-001665",
+        "SRC-003098"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web searches",
+      "src": []
+    }
+  }
 }

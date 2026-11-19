@@ -187,8 +187,16 @@
         {
           "value": 93,
           "src": [
-            "SRC-000937"
+            "SRC-000937",
+            "SRC-003106"
           ]
+        },
+        {
+          "value": 92,
+          "src": [
+            "SRC-003107"
+          ],
+          "note": "October 2025 updated plans"
         }
       ]
     },
@@ -234,6 +242,42 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 48,
+            "2br": 39,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003106",
+            "SRC-003107"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 69630,
+          "src": [
+            "SRC-003106"
+          ],
+          "note": "June 2026 formal application"
+        },
+        {
+          "value": 85050,
+          "src": [
+            "SRC-003107"
+          ],
+          "note": "October 2025 updated plans"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -241,6 +285,37 @@
       "text": "Seven stories over a two-level garage; demolishes an existing office building",
       "src": [
         "SRC-000937"
+      ]
+    },
+    {
+      "text": "June 2026 article: owner and applicant Sierra Investments (San Mateo); 74 feet tall; about 126,500 sq ft total, including 69,630 sq ft housing, 39,570 sq ft podium garage and 2,590 sq ft amenities; 93 car and over 90 bicycle spaces.",
+      "src": [
+        "SRC-003106"
+      ]
+    },
+    {
+      "text": "October 2025 article on updated plans: 86 feet tall; about 127,220 sq ft total, including 85,050 sq ft housing, 1,590 sq ft recreation and 40,580 sq ft parking; 92 car and 104 bicycle spaces.",
+      "src": [
+        "SRC-003107"
+      ]
+    },
+    {
+      "text": "Earlier approved project PA-2020-037: 49 units (34 one-bedroom, 11 two-bedroom, 4 three-bedroom), 4 very low-income units, 45 feet, 64 basement parking spaces with stackers, about 70,000 sq ft.",
+      "src": [
+        "SRC-003108"
+      ]
+    },
+    {
+      "text": "State report: PA-2020-037, 49 units (4 very low-income, 45 above moderate), approved 2021-10-26, density bonus approved.",
+      "src": [
+        "SRC-001108",
+        "SRC-001109"
+      ]
+    },
+    {
+      "text": "County parcel data: owner O'Farrell Development LLC; existing building 3,798 sq ft built 1967; land area 30,173 sq ft.",
+      "src": [
+        "SRC-000938"
       ]
     }
   ],
@@ -263,15 +338,62 @@
         "SRC-000937"
       ],
       "other_role": "Applicant"
+    },
+    {
+      "role": "Developer",
+      "company": "Sierra Investments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003106",
+        "SRC-003107",
+        "SRC-003108"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "DNA Design and Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003106",
+        "SRC-003107"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Consultant (2021 proposal)",
+      "src": [
+        "SRC-003108"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2021-10-15",
+      "type": "Application filed",
+      "label": "Application PA-2020-037 submitted, as reported to the state",
+      "src": [
+        "SRC-001108"
+      ]
+    },
+    {
       "date": "2021-10-26",
       "type": "Approved",
       "label": "Planning Commission approves earlier project (PA-2020-037)",
+      "src": [
+        "SRC-000937"
+      ]
+    },
+    {
+      "date": "2023-10-19",
+      "type": "Other",
+      "label": "Zoning Administrator extends PA-2020-037 approval to Oct. 26, 2025",
       "src": [
         "SRC-000937"
       ]
@@ -285,9 +407,33 @@
       ]
     },
     {
+      "date": "2026-01-16",
+      "type": "Other",
+      "label": "Neighborhood informational meeting",
+      "src": [
+        "SRC-000937"
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "type": "Other",
+      "label": "Second neighborhood meeting",
+      "src": [
+        "SRC-000937"
+      ]
+    },
+    {
       "date": "2026-05-13",
       "type": "Application filed",
       "label": "Formal application submitted",
+      "src": [
+        "SRC-000937"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "type": "Other",
+      "label": "Cycle 2 plans posted",
       "src": [
         "SRC-000937"
       ]
@@ -298,6 +444,92 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from Business Journal leads (San Francisco Business Times / Silicon Valley Business Journal) and the sources listed"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and owner; SF YIMBY archive",
+      "src": [
+        "SRC-003106"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC parcel layer APN 039-030-340: owner O'Farrell Development LLC, 1967 building of 3,798 sq ft",
+      "src": [
+        "SRC-000938"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City of San Mateo project page: ZA extension 2023-10-19, meetings, Cycle 2 plans",
+      "src": [
+        "SRC-000937"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Tables A and A2 2021 rows for PA-2020-037",
+      "src": [
+        "SRC-001108",
+        "SRC-001109"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal 2025-10-20 article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2021-10-26, 2025-10-27, 2026-06-09",
+      "src": [
+        "SRC-003108",
+        "SRC-003107",
+        "SRC-003106"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Sierra Investments website or project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for DNA Design and Architecture project page found none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web searches",
+      "src": []
+    }
+  }
 }

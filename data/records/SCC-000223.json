@@ -200,6 +200,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "226 Balbach St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003100"
+      ]
     }
   ],
   "images": [],
@@ -225,8 +232,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003100"
+          ],
+          "note": "SAHA property page: completed March 2023"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -299,6 +314,116 @@
             "SRC-001107"
           ],
           "note": "State report 2021, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 56,
+              "ami": 50
+            },
+            {
+              "count": 30,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003102"
+          ],
+          "note": "CTCAC 55-year targeting"
+        },
+        {
+          "value": [
+            {
+              "count": 19,
+              "ami": 30
+            },
+            {
+              "count": 37,
+              "ami": 50
+            },
+            {
+              "count": 30,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003101"
+          ],
+          "note": "SAHA groundbreaking release AMI table"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2023,
+          "src": [
+            "SRC-003100"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-003100",
+            "SRC-003101"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 19,
+            "1br": 54,
+            "2br": 14,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003102",
+            "SRC-003100"
+          ],
+          "note": "Includes one two-bedroom manager's unit"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 60531369,
+          "src": [
+            "SRC-003102"
+          ],
+          "note": "Total project cost at application in CTCAC staff report"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003102",
+            "SRC-001107"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-003100"
+          ],
+          "note": "SAHA: targeted for families and artist households"
         }
       ]
     }
@@ -316,6 +441,30 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC CA-20-615 (Sept. 16, 2020): $2,453,657 annual federal credits recommended, no state credits; 87 units, 86 restricted; bond issuer City of San Jose; total project cost at application $60,531,369. In that application Silicon Valley Bank was the construction lender.",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "text": "SAHA groundbreaking release: the City provided the land (a former city parking lot) and more than $15 million; Chase is the tax-exempt construction bond and permanent lender; the AHSC grant funds two electric VTA buses, transit passes and bikeshare memberships.",
+      "src": [
+        "SRC-003101"
+      ]
+    },
+    {
+      "text": "State report 2021 permit row lists 19 extremely low-income units within the 56 very low-income units, and other funding: Chase tax-exempt bond, City of San Jose loan, land donation, deferred developer fees, IIG, AHSC.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    {
+      "text": "SAHA lists the address as 500 South Almaden Boulevard, formerly 226 Balbach Street.",
+      "src": [
+        "SRC-003100"
+      ]
     }
   ],
   "parties": [
@@ -329,9 +478,208 @@
       ],
       "website": "https://www.sahahomes.org/",
       "project_page": "https://www.sahahomes.org/property/arya/"
+    },
+    {
+      "role": "Architect",
+      "company": "LMS Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003100"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Branagh Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003100"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Satellite Affordable Housing Associates PM",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003102",
+        "SRC-003100"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SAHA Arya, L.P.",
+      "contact": "Evelyn Perdomo",
+      "linkedin": null,
+      "email": "eperdomo@sahahomes.org",
+      "phone": "510-809-2733",
+      "other_role": "Applicant (CTCAC)",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Satellite AHA Development Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner (CTCAC)",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership Corp.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant (CTCAC)",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "JPMorgan Chase",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003101",
+        "SRC-001107"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Silicon Valley Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "California Community Reinvestment Corporation (CCRC)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003102"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Silicon Valley Bank",
+      "program": "Tax-exempt (CTCAC application)",
+      "amount": 34314000,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Silicon Valley Bank",
+      "program": "Taxable (CTCAC application)",
+      "amount": 3540000,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "CCRC",
+      "program": null,
+      "amount": 6234238,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": null,
+      "amount": 13489960,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "HCD",
+      "program": "IIG",
+      "amount": 3577755,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "HCD",
+      "program": "AHSC",
+      "amount": 12777880,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General partner",
+      "program": null,
+      "amount": 928053,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Federal annual credits $2,453,657",
+      "amount": 22693512,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Satellite Affordable Housing Associates",
+      "program": null,
+      "amount": 371947,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Accrued interest",
+      "program": "Accrued interest (permanent source)",
+      "amount": 458024,
+      "date": "2020-09-16",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "JPMorgan Chase",
+      "program": "Tax-exempt construction bond and permanent lender (2021 release)",
+      "amount": null,
+      "date": "2021-08-12",
+      "src": [
+        "SRC-003101"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -351,11 +699,35 @@
       ]
     },
     {
+      "date": "2020-09-16",
+      "type": "Other",
+      "label": "CTCAC staff report recommends 4% credit reservation (CA-20-615)",
+      "src": [
+        "SRC-003102"
+      ]
+    },
+    {
       "date": "2021-04-15",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2021-08-12",
+      "type": "Construction start",
+      "label": "Groundbreaking announced",
+      "src": [
+        "SRC-003101"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "type": "Completion",
+      "label": "Completed per SAHA property page",
+      "src": [
+        "SRC-003100"
       ]
     },
     {
@@ -388,6 +760,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Arya, 500 Almaden and SAHA",
+      "src": [
+        "SRC-003101"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API APNs 264-31-102 and 264-31-109: situs 500 Almaden Bl; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No county funding named in CTCAC report or SAHA pages",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-20-615; APR 2021 permit row",
+      "src": [
+        "SRC-003102",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no local news beyond trade press already on record",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY grand opening article already on record",
+      "src": [
+        "SRC-001845"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SAHA property page and Aug. 2021 groundbreaking release",
+      "src": [
+        "SRC-003100",
+        "SRC-003101"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "LMS Architects named on SAHA property page; firm page not opened",
+      "src": [
+        "SRC-003100"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC sources table; Chase named by SAHA",
+      "src": [
+        "SRC-003102",
+        "SRC-003101"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web searches",
+      "src": []
+    }
+  }
 }
