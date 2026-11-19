@@ -152,6 +152,13 @@
             "SRC-001885",
             "SRC-001422"
           ]
+        },
+        {
+          "value": 244,
+          "src": [
+            "SRC-002524"
+          ],
+          "note": "Master plan as reported in 2010 (San Sebastian Homes, 244 lots)"
         }
       ]
     },
@@ -163,6 +170,13 @@
             "SRC-001885",
             "SRC-001422"
           ]
+        },
+        {
+          "value": 120.0,
+          "src": [
+            "SRC-002524"
+          ],
+          "note": "About 120 acres, as reported in 2010"
         }
       ]
     },
@@ -175,6 +189,17 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-002524"
+          ],
+          "note": "2010 report: no affordable units; developers to pay into the city housing mitigation fund"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -183,6 +208,25 @@
       "src": [
         "SRC-001886",
         "SRC-001885"
+      ]
+    },
+    {
+      "text": "Toll Brothers: gated community of single- and two-story homes, 3,500 to 6,000+ sq ft, 4-5 bedrooms, 3- or 4-car garages, home sites up to 24,000+ sq ft; 7,000 sq ft recreation center; pricing from $2.89 million (Feb 2025) and about $2.9 million (Sep 2025); sales center 18251 Corte Augustin.",
+      "src": [
+        "SRC-002525",
+        "SRC-002526"
+      ]
+    },
+    {
+      "text": "2010 report: planned as San Sebastian Homes on agricultural land near Cochrane, Half and Peet roads; average lot about 15,000 sq ft; about 16.5 acres of common open space; private streets; construction to be phased over seven to 10 years.",
+      "src": [
+        "SRC-002524"
+      ]
+    },
+    {
+      "text": "State report lists per-lot building permits and certificates of occupancy labeled Borello Ranch in 2018 and 2021 (Corte Arcangel, Corte Paterna, Via Santa Elena, Via Orista, Via Tolentino, Corte Matheo, Corte Bautista, Via Potano), and a 2023 Phase 4 permit (BRES2023-0234) at Cochrane Rd/Peet Rd.",
+      "src": [
+        "SRC-001135"
       ]
     }
   ],
@@ -200,7 +244,35 @@
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2022-01-24",
+      "type": "Approved",
+      "label": "Entitlement SR2021-0011 (Cochrane-Toll Brothers): 114 single-family homes and 25 ADUs",
+      "src": [
+        "SRC-001135"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-13",
+      "type": "Other",
+      "label": "Toll Brothers releases final phase of home sites",
+      "src": [
+        "SRC-002525"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-11",
+      "type": "Other",
+      "label": "Toll Brothers releases Milazzo and Naples model homes for sale",
+      "src": [
+        "SRC-002526"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -211,6 +283,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Borello Ranch, Toll Brothers, San Sebastian; Toll Brothers releases and Morgan Hill Times opened",
+      "src": [
+        "SRC-002525",
+        "SRC-002524"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 72860041 returns geometry only, no owner",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "City project page and Exhibit A conditions now return 404; Significant Projects update already on record",
+      "src": [
+        "SRC-001422"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2: SR2021-0011 entitlement 2022-01-24 (114 SFD, 25 ADU); per-lot permits 2018, 2021, 2023",
+      "src": [
+        "SRC-001135"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Morgan Hill Times 2010-11-13",
+      "src": [
+        "SRC-002524"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found only Toll Brothers releases syndicated and listing sites",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Toll Brothers releases 2025-02-13 and 2025-09-11",
+      "src": [
+        "SRC-002525",
+        "SRC-002526"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No project financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search returned no LinkedIn posts",
+      "src": []
+    }
+  }
 }

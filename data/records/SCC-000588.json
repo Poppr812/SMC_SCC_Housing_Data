@@ -189,11 +189,54 @@
           "note": ""
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001763"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 250,
+          "src": [
+            "SRC-001763"
+          ],
+          "note": "Resident spaces in a 370-car wrap garage (120 for office employees); 122 surface spaces retained, 492 total"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.7,
+          "src": [
+            "SRC-001763"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "Eight-story complex behind an existing office building; AB 2011 and SB 330 preliminary filings, January 2024.",
+      "src": [
+        "SRC-001763"
+      ]
+    },
+    {
+      "text": "Existing office building on the site: 123,511 sq ft, six stories, built 1984; operated by Expansive as office suites and coworking.",
+      "src": [
+        "SRC-002522"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports the application did not specify whether any units would be below market rate.",
       "src": [
         "SRC-001763"
       ]
@@ -214,7 +257,26 @@
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2019-03-28",
+      "type": "Sale",
+      "label": "Expansive buys the existing office building at 2150 N. First St.",
+      "src": [
+        "SRC-002522"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-01",
+      "type": "Application filed",
+      "label": "Two preliminary applications filed (late January 2024)",
+      "src": [
+        "SRC-001763"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -225,6 +287,87 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Expansive; Expansive 2019 purchase release opened",
+      "src": [
+        "SRC-002522"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 23717136 (situs 2150 N 1st St) and 23717157; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 searched by APN and address; no rows. No CEQAnet or CTCAC entry found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage beyond SF YIMBY",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-02-26: stories, parking, site area, filing timing",
+      "src": [
+        "SRC-001763"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Expansive press release on 2019 purchase; no housing plans on Expansive site",
+      "src": [
+        "SRC-002522"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search returned no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

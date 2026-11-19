@@ -305,6 +305,12 @@
           "src": [
             "SRC-001135"
           ]
+        },
+        {
+          "value": "State report notes 19 very low and 19 low income units are restricted under the city Inclusionary Housing Ordinance (15% of the project); financial assistance listed as LIHTC, CDLAC",
+          "src": [
+            "SRC-001135"
+          ]
         }
       ]
     },
@@ -381,6 +387,50 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 7.5,
+          "src": [
+            "SRC-001926"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001926"
+          ],
+          "note": "12 three-story and 2 two-story residential buildings"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001135"
+          ],
+          "note": "State report: density bonus of 80 units, 3 incentives (development standards modification); deed restriction type DB;INC"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001135"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -404,6 +454,18 @@
         "SRC-001924",
         "SRC-001925",
         "SRC-001926"
+      ]
+    },
+    {
+      "text": "CEQA document: demolish existing structures; 14 residential buildings plus a separate amenity building with club terrace, fitness room, computer room, kitchen, clubroom and leasing office.",
+      "src": [
+        "SRC-001926"
+      ]
+    },
+    {
+      "text": "Morgan Hill Times (November 2024) lists Village at Madrone as a 249-unit affordable community by Jemcor among recent affordable rental projects.",
+      "src": [
+        "SRC-002523"
       ]
     }
   ],
@@ -521,6 +583,15 @@
       ]
     },
     {
+      "date": "2021-08-06",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the state (SCH 2021080115)",
+      "src": [
+        "SRC-001926"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2021-10-26",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -580,6 +651,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Village at Madrone, Monterey and Madrone, JEMCOR; CEQAnet and Morgan Hill Times opened",
+      "src": [
+        "SRC-001926",
+        "SRC-002523"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 72636059 returns geometry only, no owner",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Morgan Hill Housing Resource Guide already on record; no project page found",
+      "src": [
+        "SRC-001893"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No county funding or board item found in search",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2022 rows (density bonus, 55-year term, inclusionary note); CEQAnet SCH 2021080115",
+      "src": [
+        "SRC-001135",
+        "SRC-001926"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Morgan Hill Times 2024-11-30",
+      "src": [
+        "SRC-002523"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search found no trade coverage of this project; Real Deal JEMCOR items concern San Jose projects",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "villageatmadrone.com already on record",
+      "src": [
+        "SRC-001924"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in CTCAC report, CEQAnet or listings",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CTCAC CA-21-744 sources already on record",
+      "src": [
+        "SRC-001615"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search returned no LinkedIn posts",
+      "src": []
+    }
+  }
 }
