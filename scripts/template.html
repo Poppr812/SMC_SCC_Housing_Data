@@ -535,8 +535,8 @@ function render(){
     mk.bindTooltip(thumbHTML(r),{direction:"top",offset:[0,-8],opacity:1});mk.on("click",e=>{if(MODE){return}openRecord(r.id)});
   });
   drawShape();
-  const ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
-  $("#count").textContent=`${rs.length} record${rs.length===1?"":"s"} match`+(ur.length?` (${lo===hi?num(lo):num(lo)+"–"+num(hi)} units)`:"");
+  const U=unitsOf(rs);
+  $("#count").textContent=`${rs.length} record${rs.length===1?"":"s"} match`+(U.n?` (${U.text} units)`:"");
   $("#list").innerHTML=rs.map(r=>`<div class="item" data-id="${r.id}"><b>${NUM[r.id]?`<span class="lnum">${NUM[r.id]}.</span>`:""}${esc(r.name)}</b><span class="pill" style="${pillStyle(r)}">${esc(r.summary.status)}</span><span class="muted">${r.id} · ${esc(r.summary.community||r.summary.jurisdiction)}${r.summary.units_display?" · "+r.summary.units_display+" units":""} · ${esc(short(r.summary.product_type))}${r.summary.aff_bucket?" · "+esc(r.summary.aff_label):""}</span></div>`).join("")||'<div class="item muted">No records match these filters.</div>';
   document.querySelectorAll(".item[data-id]").forEach(el=>{el.onclick=()=>openRecord(el.dataset.id);el.onmouseenter=()=>{const r=RECORDS.find(x=>x.id===el.dataset.id);map.panTo([r.lat,r.lng])}});
   safeReplace(location.pathname+location.search+stateToHash());
@@ -725,6 +725,8 @@ function financingRows(r){
   });
   return h;
 }
+function relatedBox(r){const L=(r.related||[]).map(x=>({...x,o:RECORDS.find(y=>y.id===x.id)})).filter(x=>x.o);if(!L.length)return "";
+  return `<h3>Related projects</h3><table class="facts">${L.map(x=>row(REG.relations[x.relation],`<a href="#r=${x.o.id}" onclick="openRecord('${x.o.id}');return false">${esc(x.o.name)}</a> <span class="muted">· ${x.o.summary.units_display?esc(x.o.summary.units_display)+" units · ":""}${esc(x.o.summary.status)}</span>${x.note?`<br><span class="muted">${esc(x.note)}</span>`:""}`)).join("")}</table>`}
 function openRecord(id){
   const r=RECORDS.find(x=>x.id===id);if(!r)return;CUR=r;
   const secs=REG.sections.map(sec=>{
@@ -751,6 +753,7 @@ function openRecord(id){
    </div>
    <div class="imgs">${(r.images.length?r.images:[{kind:"none"}]).map((im,i)=>imgBox({...r,images:[im]},false)).join("")}<a class="img minimap" href="https://www.google.com/maps/search/?api=1&query=${r.lat.toFixed(6)},${r.lng.toFixed(6)}" target="_blank" rel="noopener" title="Open in Google Maps"><div id="miniMap"></div><span class="mmlbl">Open map ↗</span><span class="mmattr">Esri</span></a></div>
    <h3>Basics</h3><table class="facts">${basics}</table>
+   ${relatedBox(r)}
    ${secs}
    <h3>Sources</h3>
    ${used.map(s=>{const S=SOURCES[s];const wb=S.wayback?`<a href="https://web.archive.org/web/${S.wayback.replace(/-/g,"")}/${esc(S.url)}" target="_blank" rel="noopener">${esc(S.wayback)}</a>`:"not yet archived";
@@ -1095,8 +1098,8 @@ function advSummary(a){if(!a)return [];const o=[];
   if(a.since)o.push("filed or approved since "+a.since);return o}
 function advActive(){const a=advState(),s=getState();return advSummary(a).length+(s.aff.length<3?1:0)}
 function advSyncMirrors(){document.querySelectorAll("#adv [data-mirror]").forEach(i=>{const o=document.querySelector(i.dataset.mirror);if(o)i.checked=o.checked})}
-function advCount(){const rs=filtered(),ur=rs.map(r=>r.summary.units_range).filter(Boolean),lo=ur.reduce((a,x)=>a+x[0],0),hi=ur.reduce((a,x)=>a+x[1],0);
-  $("#advCount").textContent=`${num(rs.length)} record${rs.length===1?"":"s"} match`+(ur.length?` · ${lo===hi?num(lo):num(lo)+"–"+num(hi)} units`:"")+(SHAPE||getState().areas?" within selected boundary":"");advCounts()}
+function advCount(){const rs=filtered(),U=unitsOf(rs);
+  $("#advCount").textContent=`${num(rs.length)} record${rs.length===1?"":"s"} match`+(U.n?` · ${U.text} units`:"")+(SHAPE||getState().areas?" within selected boundary":"");advCounts()}
 /* counts beside each checkbox: records matching every other filter, like the dropdown menus */
 function advCounts(){
   document.querySelectorAll("#adv label").forEach(l=>{const i=l.querySelector('input[type="checkbox"]');if(!i||i.id==="advDnone")return;
@@ -1138,7 +1141,8 @@ function pipelineXlsx(rs,radius,area){
   wb.xlsx.writeBuffer().then(buf=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=repFileName()+".xlsx";a.click()});
 }
 const developerOf=r=>r.summary.developer||(r.parties.find(x=>x.other_role==="Applicant")||{}).company||"";
-function unitsOf(rs){const u=rs.map(r=>r.summary.units_range).filter(Boolean),lo=u.reduce((a,x)=>a+x[0],0),hi=u.reduce((a,x)=>a+x[1],0);return {lo,hi,text:lo===hi?num(lo):`${num(lo)}–${num(hi)}`}}
+function unitsOf(rs){const ids=new Set(rs.map(r=>r.id));  // a part whose master plan is also listed is already in the plan's count
+  const u=rs.filter(r=>!(r.summary.part_of&&ids.has(r.summary.part_of))).map(r=>r.summary.units_range).filter(Boolean),lo=u.reduce((a,x)=>a+x[0],0),hi=u.reduce((a,x)=>a+x[1],0);return {lo,hi,n:u.length,text:lo===hi?num(lo):`${num(lo)}–${num(hi)}`}}
 function reportArea(s){
   if(SHAPE&&SHAPE.t==="c")return `${SHAPE.mi}-mile radius around ${SHAPE.addr||fmtLL(SHAPE.lat,SHAPE.lng)}`;
   if(SHAPE)return "Drawn boundary";

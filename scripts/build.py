@@ -408,6 +408,7 @@ def process(r, sources):
         "main_lender": main_lender,
         "latest_event": max(dated) if dated else "",
         "stale_since": stale_since,
+        "part_of": next((x["id"] for x in r.get("related", []) if x["relation"] == "part_of"), ""),
     }
 
     words = [r["name"], summary["community"], summary["jurisdiction"]]
@@ -438,6 +439,13 @@ def main():
     errors += [f"{s['id']}: source type {s.get('type')!r} not in schema.SOURCE_TYPES" for s in sources.values() if s.get("type") not in schema.SOURCE_TYPES]
     cited = set(json.dumps(list(records.values())).split('"'))
     errors += [f"{sid}: source is not cited by any record (delete it or cite it)" for sid in sources if sid not in cited]
+    for r in records.values():
+        for x in r.get("related", []):
+            back = records.get(x["id"], {}).get("related", [])
+            if x.get("relation") not in schema.RELATIONS:
+                errors.append(f"{r['id']}: relation {x.get('relation')!r} not in schema.RELATIONS")
+            elif not any(y["id"] == r["id"] and y["relation"] == schema.RELATION_REVERSE[x["relation"]] for y in back):
+                errors.append(f"{r['id']}: related {x['id']} needs the reverse link ({schema.RELATION_REVERSE[x['relation']]})")
     seen = {}
     for r in records.values():
         for p in r.get("parcels", []):

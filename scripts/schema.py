@@ -136,6 +136,10 @@ RESEARCH_CHECKS = {
     "trade": "Trade press", "developer": "Developer site", "architect": "Architect site",
     "finance": "Finance partners", "linkedin": "LinkedIn",
 }
+# record["related"] = [{"id", "relation", "note"}]. "part_of" points at a master plan whose unit count includes this one,
+# so totals skip the part when the plan is also counted. Each link needs its reverse on the other record.
+RELATIONS = {"part_of": "Part of master plan", "includes": "Includes", "adjacent": "Adjacent project"}
+RELATION_REVERSE = {"part_of": "includes", "includes": "part_of", "adjacent": "adjacent"}
 RESEARCH_RESULTS = ["found", "nothing new", "nothing found", "blocked", "not applicable"]
 
 # Facts: key -> (section, label, kind, options). kind: cat, catmulti, text, int, num, money, mix, ami
@@ -218,4 +222,5 @@ def registry():
         "debt_types": sorted(DEBT_TYPES),
         "event_types": EVENT_TYPES,
         "research_checks": RESEARCH_CHECKS,
+        "relations": RELATIONS,
     }
