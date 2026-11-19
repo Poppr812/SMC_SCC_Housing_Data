@@ -180,6 +180,13 @@
             "SRC-001112"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 262,
+          "src": [
+            "SRC-002323"
+          ],
+          "note": "Contractor page: 262 market-rate apartments in two buildings"
         }
       ],
       "best": 0
@@ -219,6 +226,13 @@
           "src": [
             "SRC-001342"
           ]
+        },
+        {
+          "value": "P18-0013, UP18-0006, DR18-0006, TDM18-0003, WM20-0005",
+          "src": [
+            "SRC-002324"
+          ],
+          "note": "Entitlement files in City Council resolution"
         }
       ]
     },
@@ -228,6 +242,13 @@
           "value": 4.53,
           "src": [
             "SRC-001342"
+          ]
+        },
+        {
+          "value": 4.74,
+          "src": [
+            "SRC-002320",
+            "SRC-002322"
           ]
         }
       ]
@@ -251,6 +272,45 @@
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002320"
+          ],
+          "note": "Three buildings of 3 to 5 stories; tallest about 60 feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 467,
+          "src": [
+            "SRC-002321"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 955,
+          "src": [
+            "SRC-002321"
+          ],
+          "note": "Retail space in Planning Commission resolution"
+        },
+        {
+          "value": 1100,
+          "src": [
+            "SRC-002320"
+          ],
+          "note": "Ground-floor retail in 2020 ALUC application materials"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -259,6 +319,31 @@
       "src": [
         "SRC-001112",
         "SRC-001113"
+      ]
+    },
+    {
+      "text": "City of South San Francisco Planning Commission item 26-2309 refers to the project as 1400 Huntington Avenue, formerly known as 410 Noor Avenue.",
+      "src": [
+        "SRC-002328"
+      ]
+    },
+    {
+      "text": "C/CAG ALUC packet (June 2020): SyRES Properties applied in March 2018; 338 for-rent units (studio, one- and two-bedroom) in three 3-5 story buildings, parking in below-grade garages, on a 4.74-acre parcel at Noor and Huntington Avenues. ALUC staff found the project inconsistent with SFO ALUCP noise policies.",
+      "src": [
+        "SRC-002320"
+      ]
+    },
+    {
+      "text": "San Francisco Board of Supervisors Resolution 401-23 accepts an avigation easement from SyNoor LLC, owner of the 4.74-acre site, required by South San Francisco as a condition of approval after it overruled the ALUC.",
+      "src": [
+        "SRC-002322"
+      ]
+    },
+    {
+      "text": "BDE Architecture: 342 units in three buildings of 3 to 5 floors. Deacon: 262 market-rate apartments in two buildings (one with two below-grade podium levels and five Type III stories, one with one below-grade level and three Type V stories); owner SyNoor, LLC c/o SyRES Properties; status in progress.",
+      "src": [
+        "SRC-002325",
+        "SRC-002323"
       ]
     }
   ],
@@ -280,6 +365,39 @@
       "src": [
         "SRC-001342"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://bdearch.com",
+      "project_page": "https://bdearch.com/410-noor",
+      "src": [
+        "SRC-002325",
+        "SRC-002323"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Deacon",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://deacon.com",
+      "project_page": "https://deacon.com/portfolio/410-noor",
+      "src": [
+        "SRC-002323"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "SyRES Properties",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002325",
+        "SRC-002320"
+      ]
     }
   ],
   "financing": [],
@@ -294,11 +412,30 @@
       ]
     },
     {
+      "date": "2020-06-25",
+      "type": "Other",
+      "label": "C/CAG Airport Land Use Committee consistency review",
+      "src": [
+        "SRC-002320"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2020-12",
       "type": "Approved",
       "label": "Entitled",
       "src": [
         "SRC-001342"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-12-01",
+      "type": "Approved",
+      "label": "City Council approves entitlements and overrules ALUC noise inconsistency determination",
+      "src": [
+        "SRC-002324",
+        "SRC-002326"
       ],
       "estimated": false
     },
@@ -311,12 +448,30 @@
       ]
     },
     {
+      "date": "2024-10-23",
+      "type": "Other",
+      "label": "City Council approves tieback license agreement with SYNOOR LLC for construction",
+      "src": [
+        "SRC-002327"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-02-10",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001113"
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "type": "Other",
+      "label": "Planning Commission Master Sign Program item for 1400 Huntington Avenue, formerly 410 Noor Avenue",
+      "src": [
+        "SRC-002328"
+      ],
+      "estimated": false
     },
     {
       "date": "2027",
@@ -338,6 +493,98 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 410 Noor / 1400 Huntington / SyRES; opened BDE, Deacon, SF BOS resolution, C/CAG packet.",
+      "src": [
+        "SRC-002325",
+        "SRC-002323"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC parcel layer already on record (SYNOOR LLC); SF BOS resolution names SyNoor LLC as site owner.",
+      "src": [
+        "SRC-001103",
+        "SRC-002322"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "South San Francisco Legistar: PC 20-606, CC 20-868 and 20-872 (2020-12-01), CC 24-991 (2024-10-23), PC 26-2309 (2026-09-22).",
+      "src": [
+        "SRC-002321",
+        "SRC-002324",
+        "SRC-002326",
+        "SRC-002327",
+        "SRC-002328"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "C/CAG Airport Land Use Committee packet 2020-06-25; SF Board of Supervisors avigation easement resolution 401-23.",
+      "src": [
+        "SRC-002320",
+        "SRC-002322"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR rows already on record; no CTCAC or CEQAnet entry found.",
+      "src": [
+        "SRC-001113"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Daily Journal and local news for 410 Noor; no article found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2025-08-05 article on South San Francisco construction returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No SyRES Properties project page found in search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "BDE Architecture project page.",
+      "src": [
+        "SRC-002325"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for construction financing; none found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found.",
+      "src": []
+    }
+  }
 }

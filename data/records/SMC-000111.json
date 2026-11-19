@@ -289,7 +289,8 @@
         {
           "value": 1.57,
           "src": [
-            "SRC-001346"
+            "SRC-001346",
+            "SRC-002318"
           ]
         }
       ]
@@ -359,6 +360,31 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002318",
+            "SRC-002319"
+          ],
+          "note": "CEQA notice: 80% state density bonus, 151 units above the 190-unit base density. SF YIMBY: application uses SB 330 and the State Density Bonus program"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 316900,
+          "src": [
+            "SRC-002319"
+          ],
+          "note": "Housing area; total project area about 437,000 sq ft including 50,100 sq ft of parking area"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -373,6 +399,24 @@
       "text": "CTCAC CA-24-521: View at San Bruno, located at 840 San Bruno Avenue West in San Bruno on a 1.57 acre site, requested and is being recommended for a reservation of $10,871,877 in annual federal tax credits and $125,000,000 of tax- exempt bond cap to finance the new construction of 341 units of housing, consisting of 337 restricted rental units, and 4 unrestricted manager's units.",
       "src": [
         "SRC-001652"
+      ]
+    },
+    {
+      "text": "CTCAC staff report: two residential buildings, Type I construction; census tract 6041.02; tax credit investor Berkadia at a federal credit factor of $0.84; land and acquisition cost $21,501,900; construction cost per square foot $442; staff noted a per unit development cost of $694,293.",
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "text": "SF YIMBY: Building A has 204 units and Building B has 137 units; each building is 10 stories and 102 feet tall. The site held a single-story commercial building and surface parking.",
+      "src": [
+        "SRC-002319"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption filed by the City of San Bruno on 2023-11-17 (SCH 2023110467) for demolition of the existing structure and construction of two 10-story residential buildings with 337 affordable rental units and four manager's units, APN 020-071-050.",
+      "src": [
+        "SRC-002318"
       ]
     }
   ],
@@ -393,6 +437,100 @@
       "linkedin": null,
       "src": [
         "SRC-001652"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Pacific Housing, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "website_basis": "filing",
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "JS IV View at San Bruno, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "PACH San Jose Holdings, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "FPI Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Berkadia Commercial Mortgage LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Berkadia",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002319"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "MJS",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002319"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "CBG",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002319"
       ]
     }
   ],
@@ -517,6 +655,15 @@
       ]
     },
     {
+      "date": "2023-11-17",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (SCH 2023110467)",
+      "src": [
+        "SRC-002318"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-08-06",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-24-521)",
@@ -585,6 +732,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address and JEMCOR; opened CEQAnet, SF YIMBY and CTCAC report. The Real Deal article returned 403.",
+      "src": [
+        "SRC-002318",
+        "SRC-002319"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC parcel layer already on record; CEQA notice confirms APN 020-071-050.",
+      "src": [
+        "SRC-001103",
+        "SRC-002318"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of San Bruno CEQA Notice of Exemption via CEQAnet; city July 2026 development update already on record. No staff report found online.",
+      "src": [
+        "SRC-002318",
+        "SRC-001346"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report CA-24-521 (development team, costs); CEQAnet SCH 2023110467.",
+      "src": [
+        "SRC-001652",
+        "SRC-002318"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched local news; only trade and state results returned.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-11-30 article (architect, building areas, heights). The Real Deal 2023-12-04 article blocked (403).",
+      "src": [
+        "SRC-002319"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "jemcorpartners.com returned a server error.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "KTGY named by SF YIMBY; searched ktgy.com, no project page for this site found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report: Berkadia Commercial Mortgage LLC private placement purchaser, Berkadia investor, CMFA bond issuer.",
+      "src": [
+        "SRC-001652"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on View at San Bruno; none returned.",
+      "src": []
+    }
+  }
 }

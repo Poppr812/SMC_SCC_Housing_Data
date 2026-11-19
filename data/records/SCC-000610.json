@@ -1,6 +1,6 @@
 {
   "id": "SCC-000610",
-  "name": "3331 N 1st St (Eden Housing)",
+  "name": "Riverwalk Landing (VTA River Oaks Phase 1, Eden Housing)",
   "parcels": [
     {
       "apn": "097-06-032",
@@ -238,6 +238,21 @@
             "SRC-001956"
           ],
           "note": "City file H26-033 (Site Development Permit/Amendment): \"Site Development Permit/Amendment to allow the demolition of 105009 square feet of building to enable the construction of 330 residential units, and the removal of 51 ordinance-sized trees.\""
+        },
+        {
+          "value": 328,
+          "src": [
+            "SRC-002341",
+            "SRC-002342"
+          ],
+          "note": "VTA: River Oaks Phase 1, 328 affordable rental units"
+        },
+        {
+          "value": 350,
+          "src": [
+            "SRC-002343"
+          ],
+          "note": "Open house boards (January 2026): up to 350 apartments"
         }
       ],
       "best": 1
@@ -250,6 +265,29 @@
             "SRC-001956"
           ],
           "note": "City file PRE26-138 (Prelim - Focused (Policy Review, No Plans)): \"SB 330 Preliminary Application to allow the construction of a 100% affordable, 333-unit residential project.\""
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-002343"
+          ],
+          "note": "Focus on housing for families; households up to 70% AMI"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "100% affordable rental for households earning up to 70% of area median income (open house boards, January 2026)",
+          "src": [
+            "SRC-002343"
+          ]
         }
       ]
     }
@@ -265,6 +303,19 @@
       "text": "City of San Jose permit H26-033 (Site Development Permit/Amendment, folder year 2026), status Under Review: \"Site Development Permit/Amendment to allow the demolition of 105009 square feet of building to enable the construction of 330 residential units, and the removal of 51 ordinance-sized trees.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "VTA: the 18-acre River Oaks site, VTA's former headquarters at North First Street and River Oaks Parkway, is planned for transit-oriented development under a ground lease; Phase 1 is affordable housing with a public park and Magical Bridge playground; Phases 2-4 market-rate housing, commercial and mixed use. June 2026 status: contract negotiations.",
+      "src": [
+        "SRC-002344",
+        "SRC-002342"
+      ]
+    },
+    {
+      "text": "Open house boards (January 2026) name the project Riverwalk Landing: up to 350 apartments, 100% affordable rental, a park along the Guadalupe River trail, Park & Ride to remain open; team Eden Housing, Architects FORA, BASE Landscape and Magical Bridge.",
+      "src": [
+        "SRC-002343"
       ]
     }
   ],
@@ -288,11 +339,69 @@
         "SRC-001956"
       ],
       "website": "https://www.architectsfora.com/"
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara Valley Transportation Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Landowner (ground lease)",
+      "src": [
+        "SRC-002344",
+        "SRC-002343"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "BASE Landscape",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002343"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Magical Bridge",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Playground design",
+      "src": [
+        "SRC-002343"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-04-04",
+      "type": "Other",
+      "label": "VTA releases Request for Offer for River Oaks TOD",
+      "src": [
+        "SRC-002344"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10",
+      "type": "Other",
+      "label": "VTA Board approves partnership with Eden Housing for Phase 1",
+      "src": [
+        "SRC-002344"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-31",
+      "type": "Other",
+      "label": "Eden Housing community open house",
+      "src": [
+        "SRC-002344",
+        "SRC-002343"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-04-28",
       "type": "Application filed",
@@ -310,6 +419,33 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2027",
+      "type": "Approved",
+      "label": "Open house boards: entitlement approval hoped for by mid 2027",
+      "src": [
+        "SRC-002343"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2029",
+      "type": "Construction start",
+      "label": "Open house boards: permitting and financing through 2029, then about two years of construction",
+      "src": [
+        "SRC-002343"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2032",
+      "type": "Completion",
+      "label": "Open house boards: building occupancy expected 2032",
+      "src": [
+        "SRC-002343"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -322,6 +458,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 3331 N First St / Eden Housing / VTA River Oaks; opened VTA project page and documents.",
+      "src": [
+        "SRC-002344"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 09706032, situs 3331 N 1st St, San Jose 95134; no owner field.",
+      "src": [
+        "SRC-002345"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "City permit layer already on record; no San Jose Legistar matter found for 3331 N First. sanjoseca.gov blocked.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "VTA (countywide transit agency) River Oaks TOD page, 2025 affordable housing report, June 2026 TOD placemat.",
+      "src": [
+        "SRC-002344",
+        "SRC-002341",
+        "SRC-002342"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No APR, CTCAC or CEQAnet entries found for this new 2026 application.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "San Jose Blog label page empty; Mass Transit article returned 404.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched trade press; The Real Deal 2024 VTA HQ article not opened; its articles returned 403 elsewhere in this pass.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Eden Housing-hosted open house boards on VTA site; no Eden Housing project page found.",
+      "src": [
+        "SRC-002343"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Architects FORA already on record; also named on open house boards.",
+      "src": [
+        "SRC-002343"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No funding awards found yet; boards say financing follows entitlements.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found.",
+      "src": []
+    }
+  }
 }

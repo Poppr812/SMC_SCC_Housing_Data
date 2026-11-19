@@ -132,6 +132,80 @@
           "note": "City file H22-037 (Site Development Permit/Amendment): \"Site Development Permit to allow the demolition of an existing 67,045-square foot commercial building and the removal of 105 trees (40 ordinance-size, 65 non-ordinance-size) for the construction of a seven-story, 292-unit multifamily building and 42 townh\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 449456,
+          "src": [
+            "SRC-002334"
+          ],
+          "note": "Apartment building only: 449,456 gross sq ft residential (243,228 net) and 122,471 sq ft of parking area; excludes the 42 townhomes"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-002334",
+            "SRC-002335"
+          ],
+          "note": "15 moderate-income units in the 292-unit apartment building, IHO Mixed Compliance option"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 15,
+              "ami": 110
+            }
+          ],
+          "src": [
+            "SRC-002334"
+          ],
+          "note": "City memo: 15 moderate-income units at or below 110% AMI"
+        },
+        {
+          "value": [
+            {
+              "count": 15,
+              "ami": 100
+            }
+          ],
+          "src": [
+            "SRC-002335"
+          ],
+          "note": "Draft resolution: 15 moderate-income units at or below 100% AMI"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 277,
+          "src": [
+            "SRC-002334",
+            "SRC-002335"
+          ],
+          "note": "Apartment building only"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 13500000,
+          "src": [
+            "SRC-002336"
+          ],
+          "note": "Land purchase of the 4.3-acre site by SummerHill from JT Associates, per county documents cited by San Jose Spotlight"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -146,6 +220,24 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City of San Jose memo (2026-07-23): 292 units in one seven-story building; 277 market-rate and 15 moderate-income units under the IHO Mixed Compliance option; IHO in-lieu fee estimate $3,339,520.44 on 243,228 net residential sq ft; standard B&S and CRMP construction taxes $3,582,509; developer estimates about 305 full-time construction jobs. Benefiting entity SummerHill Apartment Communities, 777 S. California Ave., Palo Alto.",
+      "src": [
+        "SRC-002334"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (2025-05-12): SummerHill bought the site for $13.5 million from JT Associates and secured a $43.2 million construction loan from Comerica Bank; 15 apartments affordable; about $3.7 million in in-lieu fees.",
+      "src": [
+        "SRC-002336"
+      ]
+    },
+    {
+      "text": "SummerHill Homes: The Towns @ Baypointe, 42 townhomes in 4 floorplans, 3-4 bedrooms, about 1,355-2,439 sq ft, priced from $1,238,000, now selling.",
+      "src": [
+        "SRC-002339"
+      ]
     }
   ],
   "parties": [
@@ -159,9 +251,69 @@
       ],
       "website": "https://www.summerhillhomes.com",
       "project_page": "https://www.summerhillhomes.com/san-jose/the-towns-at-baypointe"
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002337"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Comerica Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002336"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "JT Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002336"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SummerHill Apartment Communities",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Benefiting entity (MHIP tax and fee waiver)",
+      "src": [
+        "SRC-002334",
+        "SRC-002335"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Comerica Bank",
+      "program": null,
+      "amount": 43200000,
+      "date": null,
+      "src": [
+        "SRC-002336"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "City of San Jose",
+      "program": "Multifamily Housing Incentive Program tax and fee waiver (IHO in-lieu fee waiver $3,339,520.44 plus 50% construction tax reduction $1,791,254.50), up to",
+      "amount": 5130775,
+      "date": "2026-08-25",
+      "src": [
+        "SRC-002334",
+        "SRC-002335"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -190,6 +342,34 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-10-09",
+      "type": "Other",
+      "label": "EIR adopted by the Director of Planning (Resolution 24-031, file H22-037)",
+      "src": [
+        "SRC-002334"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07",
+      "type": "Other",
+      "label": "San Jose Spotlight: demolition to begin after initial drawings finished by end of July 2025",
+      "src": [
+        "SRC-002336"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Other",
+      "label": "City Council agenda: MHIP tax and fee waiver up to $5,130,775 (file 26-877)",
+      "src": [
+        "SRC-002338",
+        "SRC-002334"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -202,6 +382,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 210 Baypointe / SummerHill; opened San Jose Spotlight, SF YIMBY, SummerHill page.",
+      "src": [
+        "SRC-002336",
+        "SRC-002337"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 09707097, situs 210 Baypointe Py, San Jose 95134; no owner field.",
+      "src": [
+        "SRC-002340"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Legistar file 26-877 (Council 2026-08-25): memo and draft resolution. sanjoseca.gov pages not used (blocked).",
+      "src": [
+        "SRC-002338",
+        "SRC-002334",
+        "SRC-002335"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No APR, CTCAC or HCD entries found for this address; EIR noted in city memo.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-05-12 (purchase, construction loan).",
+      "src": [
+        "SRC-002336"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-05-16 (architect KTGY). The Real Deal not opened; its articles returned 403 elsewhere in this pass.",
+      "src": [
+        "SRC-002337"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SummerHill Homes Towns @ Baypointe page: now selling, pricing and plans.",
+      "src": [
+        "SRC-002339"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "KTGY named by SF YIMBY; no KTGY project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Comerica Bank construction loan (San Jose Spotlight); City MHIP waiver (Legistar).",
+      "src": [
+        "SRC-002336",
+        "SRC-002334"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found.",
+      "src": []
+    }
+  }
 }

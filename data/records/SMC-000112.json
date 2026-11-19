@@ -167,6 +167,13 @@
           "src": [
             "SRC-001130"
           ]
+        },
+        {
+          "value": "48 BMR units for a mix of very-low, low and moderate-income households; CEQA notice: 15% of units, minimum 48",
+          "src": [
+            "SRC-002329",
+            "SRC-002330"
+          ]
         }
       ]
     },
@@ -225,6 +232,53 @@
           "note": "State report 2023, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 326816,
+          "src": [
+            "SRC-002329",
+            "SRC-002330"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 34499,
+          "src": [
+            "SRC-002329",
+            "SRC-002330"
+          ],
+          "note": "Office building, generally office use; city page also lists about 1,600 sq ft of ground-floor non-office commercial. Construction of the office/commercial building has not started"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.2,
+          "src": [
+            "SRC-002330",
+            "SRC-002331"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002329"
+          ],
+          "note": "15 market-rate units added through density bonus; use permit for bonus-level development"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -238,6 +292,24 @@
       "text": "Greystar has filed to replace the unbuilt office building with apartments; see 104 Constitution Drive Apartments.",
       "src": [
         "SRC-001185"
+      ]
+    },
+    {
+      "text": "City of Menlo Park: seven-story residential building and three-story commercial building, average height 60.7 feet; 9,574 sq ft public plaza and 32,543 sq ft common and private open space; approvals include a certified EIR, use permit for bonus-level development, architectural control, BMR housing agreement and lot line adjustment/merger (Council Resolutions 6665, 6666, 6667).",
+      "src": [
+        "SRC-002329"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Determination (2021) lists APNs 055-236-010, 055-236-020 and 055-236-190 on a 3.2-acre site.",
+      "src": [
+        "SRC-002330"
+      ]
+    },
+    {
+      "text": "BDE Architecture describes itself as architect of record working with original design architect Heller Manus; construction type IIIA / IA.",
+      "src": [
+        "SRC-002332"
       ]
     }
   ],
@@ -261,6 +333,39 @@
       ],
       "website": "https://www.greystar.com",
       "project_page": "https://www.greystar.com/vasara-menlo-park-ca/p_21147"
+    },
+    {
+      "role": "Architect",
+      "company": "Heller Manus Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.hellermanus.com",
+      "project_page": "https://www.hellermanus.com/vasara-menlo-park",
+      "src": [
+        "SRC-002331",
+        "SRC-002332"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://bdearch.com",
+      "project_page": "http://www.bdearch.com/vasara",
+      "other_role": "Architect of record",
+      "src": [
+        "SRC-002332"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002333"
+      ]
     }
   ],
   "financing": [],
@@ -273,6 +378,24 @@
       "src": [
         "SRC-001130"
       ]
+    },
+    {
+      "date": "2021-09-20",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed (SCH 2020010055); approval date 2021-09-14",
+      "src": [
+        "SRC-002330"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-12",
+      "type": "Other",
+      "label": "City receives $9.4 million community amenity in-lieu payment instead of on-site child care center",
+      "src": [
+        "SRC-002329"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-09-06",
@@ -298,6 +421,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Vasara / Menlo Portal / Greystar; opened city pages, CEQAnet, BDE, Heller Manus, Greystar.",
+      "src": [
+        "SRC-002329",
+        "SRC-002330"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC parcel layer on record; CEQAnet NOD lists the earlier APNs 055-236-010, -020, -190.",
+      "src": [
+        "SRC-001103",
+        "SRC-002330"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Menlo Park approved-projects and under-construction pages for Vasara.",
+      "src": [
+        "SRC-002329",
+        "SRC-001185"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2020010055 Notice of Determination; APR rows already on record.",
+      "src": [
+        "SRC-002330",
+        "SRC-001130"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched local news for Menlo Portal / Vasara financing and approvals; nothing beyond city pages.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-11 article on Greystar builder's remedy returned 403; SF YIMBY coverage concerns the separate 104 Constitution Dr project.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Greystar property page (Greystar as manager; studio to 3-bedroom units).",
+      "src": [
+        "SRC-002333"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Heller Manus and BDE Architecture project pages.",
+      "src": [
+        "SRC-002331",
+        "SRC-002332"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for construction loan or equity; none found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found.",
+      "src": []
+    }
+  }
 }
