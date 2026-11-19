@@ -198,6 +198,13 @@
             "SRC-001725"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 209,
+          "src": [
+            "SRC-002661"
+          ],
+          "note": "April 2021 proposal"
         }
       ],
       "best": 1
@@ -267,6 +274,102 @@
             "SRC-001102"
           ],
           "note": "State report 2023, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 20,
+              "ami": 30
+            },
+            {
+              "count": 20,
+              "ami": 50
+            },
+            {
+              "count": 119,
+              "ami": 60
+            },
+            {
+              "count": 39,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001632",
+            "SRC-002659"
+          ],
+          "note": "CTCAC May 2023 targeting; one manager's unit"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 71,
+            "1br": 21,
+            "2br": 54,
+            "3br": 54,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001632",
+            "SRC-002659"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 148568639,
+          "src": [
+            "SRC-001632"
+          ],
+          "note": "Total project cost in CTCAC staff report, May 2023"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001632"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001632"
+          ],
+          "note": "CTCAC housing type Large Family"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 8625,
+          "src": [
+            "SRC-002660"
+          ],
+          "note": ""
+        },
+        {
+          "value": 8600,
+          "src": [
+            "SRC-002659"
+          ],
+          "note": "About 8,600 sq ft"
         }
       ]
     }
@@ -289,6 +392,31 @@
       "text": "The project now operates under the 88 Saratoga Avenue address. The city bulletin counts 198 affordable rental apartments. No source read gives a completion date.",
       "src": [
         "SRC-001929"
+      ]
+    },
+    {
+      "text": "CTCAC CA-23-430 (May 10, 2023): applicant Central Valley Coalition for Affordable Housing; general partners Central Valley Coalition for Affordable Housing, TPC Holdings IX, LLC and Santa Clara-Saratoga, LLC; parent companies Central Valley Coalition, The Pacific Companies and Maracor Development; 200 units, 198 low-income; recommended $6,782,702 annual federal and $32,860,000 state credits; total project cost $148,568,639 ($705,343 per unit), attributed to Bay Area construction costs, podium parking and impact and permitting fees; management agent ConAm.",
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "text": "TEFRA staff report, September 2023: Santa Clara Pacific Associates, a California limited partnership, asked CMFA to issue up to $95,000,000 in exempt facility bonds for the 200-unit project; developer Pacific West Communities, Inc.",
+      "src": [
+        "SRC-002662"
+      ]
+    },
+    {
+      "text": "Parkland agreement, February 2025: requirement of 1.0608 acres met by 0.8077 acres of private recreational amenities (credit of $2,067,629) and $4,639,551 in parkland in-lieu fees.",
+      "src": [
+        "SRC-002663"
+      ]
+    },
+    {
+      "text": "San José Spotlight, July 2023: 200 apartments on a nearly two-acre former YMCA site, six stories with five levels of apartments over one parking level, about 8,600 sq ft of commercial space; Maracor Development named as developer. SF YIMBY, April 2021: 209 units proposed with YMCA of Silicon Valley as applicant, 90 structured and 15 surface parking spaces.",
+      "src": [
+        "SRC-002659",
+        "SRC-002661"
       ]
     }
   ],
@@ -330,9 +458,193 @@
       "src": [
         "SRC-001726"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "LCA Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://lca-architects.com",
+      "website_basis": "search",
+      "project_page": "https://lca-architects.com/portfolio/affordable-housing/80-saratoga-ave/",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-002660"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Central Valley Coalition for Affordable Housing",
+      "contact": "Christina Alley",
+      "linkedin": null,
+      "email": "chris@centralvalleycoalition.com",
+      "phone": "209.388.0782",
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "TPC Holdings IX, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara-Saratoga, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Pacific Companies",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Parent company (CTCAC)",
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Maracor Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Parent company (CTCAC)",
+      "src": [
+        "SRC-001632",
+        "SRC-002659"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "ConAm Management Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Boston Financial",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tax credit investor/consultant (CTCAC)",
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citibank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bonneville",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001632",
+        "SRC-002662"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Municipal Finance Authority",
+      "program": "Maximum principal amount approved at TEFRA hearing",
+      "amount": 95000000,
+      "date": "2023-09-12",
+      "src": [
+        "SRC-002662"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Tax-Exempt",
+      "amount": 75000000,
+      "date": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": "Taxable Bonds",
+      "amount": 39000000,
+      "date": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": "Tax-Exempt",
+      "amount": 44500000,
+      "date": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bonneville",
+      "program": "Recycled Bonds",
+      "amount": 12000000,
+      "date": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 7500000,
+      "date": null,
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Federal and state credit equity; investor/consultant Boston Financial",
+      "amount": 84568639,
+      "date": null,
+      "src": [
+        "SRC-001632"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -344,12 +656,39 @@
       ]
     },
     {
+      "date": "2022-09-14",
+      "type": "Approved",
+      "label": "Architectural Review Committee approves six-story, 200-unit affordable development",
+      "src": [
+        "SRC-002663"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-04-13",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2023-05-10",
+      "type": "Other",
+      "label": "CTCAC staff report recommends 4% tax credits (CA-23-430)",
+      "src": [
+        "SRC-001632"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-09-12",
+      "type": "Other",
+      "label": "City Council TEFRA hearing approves CMFA bond issuance",
+      "src": [
+        "SRC-002662"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-11-09",
@@ -365,6 +704,15 @@
       "label": "Construction starting; concrete pour scheduled for late September and mid-October",
       "src": [
         "SRC-001930"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-25",
+      "type": "Other",
+      "label": "City Council approves Private Recreational Amenity Agreement",
+      "src": [
+        "SRC-002663"
       ],
       "estimated": false
     },
@@ -398,6 +746,98 @@
       "date": "2026-11-04",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 80 and 88 Saratoga, YMCA, Pacific West: LCA Architects page, San José Spotlight",
+      "src": [
+        "SRC-002660",
+        "SRC-002659"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 294-38-016 situs 88 Saratoga Av, two situs addresses; owner not shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar matters 22571 (TEFRA, 2023-09-12) and 24568 (parkland agreement, 2025-02-25)",
+      "src": [
+        "SRC-002662",
+        "SRC-002663"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No county funding found in CTCAC sources or search",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC CA-23-430 staff report read for financing, parties, unit mix and AMI",
+      "src": [
+        "SRC-001632"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San José Spotlight July 2023; Local News Matters returned 403",
+      "src": [
+        "SRC-002659"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY April 2021 proposal story",
+      "src": [
+        "SRC-002661"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Pacific West Communities or Pacific Companies project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "LCA Architects project page: six stories, 200 units, 8,625 sq ft commercial",
+      "src": [
+        "SRC-002660"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC: Citibank, Bonneville, Boston Financial; Legistar: CMFA bonds up to $95M",
+      "src": [
+        "SRC-001632",
+        "SRC-002662"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; nothing surfaced",
+      "src": []
+    }
+  }
 }

@@ -121,6 +121,20 @@
           "src": [
             "SRC-001023"
           ]
+        },
+        {
+          "value": {
+            "studio": 24,
+            "1br": 111,
+            "2br": 67,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002657",
+            "SRC-002658"
+          ],
+          "note": ""
         }
       ]
     },
@@ -131,6 +145,14 @@
           "src": [
             "SRC-001023"
           ]
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-002657",
+            "SRC-002658"
+          ],
+          "note": "SF YIMBY: six stories, about 78-79 feet"
         }
       ]
     },
@@ -141,6 +163,14 @@
           "src": [
             "SRC-001023"
           ]
+        },
+        {
+          "value": 207,
+          "src": [
+            "SRC-002657",
+            "SRC-002658"
+          ],
+          "note": "Two-story podium garage"
         }
       ]
     },
@@ -161,6 +191,13 @@
           "src": [
             "SRC-001023"
           ]
+        },
+        {
+          "value": "25 units for very low-income households",
+          "src": [
+            "SRC-002657"
+          ],
+          "note": ""
         }
       ]
     },
@@ -171,6 +208,46 @@
           "src": [
             "SRC-001003"
           ]
+        },
+        {
+          "value": "PA25-115",
+          "src": [
+            "SRC-001023"
+          ],
+          "note": "File number on city project page"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 230740,
+          "src": [
+            "SRC-002657"
+          ],
+          "note": "January 2026 plans"
+        },
+        {
+          "value": 218390,
+          "src": [
+            "SRC-002658"
+          ],
+          "note": "June 2026 updated plans"
+        }
+      ],
+      "best": 1
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002657",
+            "SRC-002658"
+          ],
+          "note": "SB 330 application using the State Density Bonus law"
         }
       ]
     }
@@ -179,6 +256,19 @@
     {
       "text": "Demolishes a gas station and shopping center",
       "src": [
+        "SRC-001023"
+      ]
+    },
+    {
+      "text": "SF YIMBY, January 2026: six stories, 78 feet, about 323,860 sq ft with 230,740 sq ft residential and 92,350 sq ft parking; 207 car and 108 bicycle spaces; 24 studios, 111 one-bedroom, 67 two-bedroom; 25 very low-income units; SB 330 and State Density Bonus law.",
+      "src": [
+        "SRC-002657"
+      ]
+    },
+    {
+      "text": "SF YIMBY, June 2026 (updated plans): six stories, about 79 feet, about 324,240 sq ft with 218,390 sq ft residential and 92,140 sq ft podium garage; 207 car and 234 bicycle spaces; McLellan Company listed as applicant and property owner. The city project page lists seven stories, 214 spaces and a 24/108/70 unit mix.",
+      "src": [
+        "SRC-002658",
         "SRC-001023"
       ]
     }
@@ -202,6 +292,36 @@
       "linkedin": null,
       "src": [
         "SRC-001024"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "AO",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://aoarchitects.com",
+      "website_basis": "search",
+      "src": [
+        "SRC-002657",
+        "SRC-002658"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002657"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Canyon Park Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002657"
       ]
     }
   ],
@@ -243,6 +363,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and McLellan: SF YIMBY Jan and Jun 2026; The Real Deal Jun 2026 returned 403",
+      "src": [
+        "SRC-002657",
+        "SRC-002658"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC parcel record already on record (040-232-280, owner Mc Lellan Estate Co)",
+      "src": [
+        "SRC-001024"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page: file PA25-115; preliminary plan set too large to open",
+      "src": [
+        "SRC-001023"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Mateo project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "State APR data searched by address and APN; no rows (application filed 2026)",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for Daily Journal coverage found none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Jan 6 and Jun 14, 2026; The Real Deal blocked (403)",
+      "src": [
+        "SRC-002657",
+        "SRC-002658"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "mclellancompany.com home page has no project page for 4095 Pacific",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "AO named by SF YIMBY; no AO project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; nothing surfaced",
+      "src": []
+    }
+  }
 }

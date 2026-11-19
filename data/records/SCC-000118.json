@@ -173,7 +173,15 @@
       ]
     }
   ],
-  "addresses": [],
+  "addresses": [
+    {
+      "text": "4015 Narvaez Ave, San Jose, CA",
+      "role": "main",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "images": [],
   "facts": {
     "product_type": {
@@ -239,6 +247,13 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "51 permanent supportive housing apartments for formerly homeless individuals",
+          "src": [
+            "SRC-002650"
+          ],
+          "note": ""
         }
       ]
     },
@@ -319,6 +334,43 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.4,
+          "src": [
+            "SRC-002648"
+          ],
+          "note": "CEQA Notice of Exemption, May 2025"
+        },
+        {
+          "value": 2.7,
+          "src": [
+            "SRC-002649"
+          ],
+          "note": "SF YIMBY, July 2023"
+        },
+        {
+          "value": 2.68,
+          "src": [
+            "SRC-001676"
+          ],
+          "note": "CTCAC staff report, May 2026"
+        }
+      ],
+      "best": 2
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002649"
+          ],
+          "note": "Two six-story residential buildings with four- and five-story step-downs"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -347,6 +399,32 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "MidPen, December 2025: $49.3 million Affordable Housing and Sustainable Communities (AHSC) Round 9 award for 203 affordable rental homes, including 51 permanent supportive housing apartments, an all-electric building replacing a VTA parking lot, a new transit plaza, 2.28 miles of protected bikeways, upgraded walkways and new bus shelters. The CTCAC staff report lists $35,000,000 AHSC and $1,828,515 AHSC STI as project sources.",
+      "src": [
+        "SRC-002650",
+        "SRC-001676"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption (SCH 2025051249), received May 28, 2025: lead agency Santa Clara County, with the Office of Supportive Housing as contact; applicant MidPen Housing Corporation; 203 units on 2.4 acres; ministerial exemption under Sec. 21080(b)(1). It lists parcels 462-15-035, 462-15-030 and 462-15-040. The city permit layer and the state progress report list the project on parcel 462-14-021.",
+      "src": [
+        "SRC-002648",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer, APN 462-14-021: AD22-546 SB 35 tribal consultation (filed 2022-08-25, issued 2022-09-09, applicant MidPen Housing Corporation); MP24-001 filed 2024-03-12 by Santa Clara Valley Transportation Authority, issued 2025-05-19; AT26-007 subdivision filed 2026-03-03, tentative approval 2026-07-15; ER26-051 environmental review for MP24-001 filed 2026-04-01, under review; AD26-524 exterior remodeling (filed 2026-07-30) and AD26-599 (filed 2026-08-26) by MP Capitol Station Associates I, L.P., under review; RSL26-231 land use verification for 4015 Narvaez Av, issued 2026-10-09.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY, July 2023: 600 East Capitol Expressway next to Capitol light rail station; two six-story buildings with four- and five-story step-downs, retail and landscaped open space on a 2.7-acre site; SB 35 pre-application first filed August 2022; Mithun is project architect.",
+      "src": [
+        "SRC-002649"
+      ]
     }
   ],
   "parties": [
@@ -359,6 +437,39 @@
         "SRC-001676"
       ],
       "website": "https://www.midpen-housing.org"
+    },
+    {
+      "role": "Architect",
+      "company": "Mithun",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://mithun.com",
+      "website_basis": "search",
+      "src": [
+        "SRC-002649"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MP Capitol Station Associates I, L.P.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project partnership; owner name on 2026 city permits AD26-524 and AD26-599",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara Valley Transportation Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Landowner; signed lease option agreement with MidPen in December 2023; owner name on MP24-001",
+      "src": [
+        "SRC-002651",
+        "SRC-001956",
+        "SRC-002652"
+      ]
     }
   ],
   "financing": [
@@ -506,6 +617,24 @@
   "groups": {},
   "events": [
     {
+      "date": "2022-03",
+      "type": "Other",
+      "label": "VTA Board selects MidPen Housing and approves Exclusive Negotiation Agreement",
+      "src": [
+        "SRC-002652"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12",
+      "type": "Other",
+      "label": "VTA and MidPen sign lease option agreement",
+      "src": [
+        "SRC-002651"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-03-12",
       "type": "Application filed",
       "label": "Application submitted",
@@ -522,11 +651,47 @@
       ]
     },
     {
+      "date": "2025-05-28",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (ministerial) posted",
+      "src": [
+        "SRC-002648"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-16",
+      "type": "Other",
+      "label": "AHSC Round 9 award of $49.3 million announced",
+      "src": [
+        "SRC-002650"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-03",
+      "type": "Other",
+      "label": "Subdivision application AT26-007 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-05-12",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-26-443)",
       "src": [
         "SRC-001676"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-15",
+      "type": "Other",
+      "label": "Subdivision AT26-007 tentative approval",
+      "src": [
+        "SRC-001956"
       ],
       "estimated": false
     },
@@ -583,6 +748,100 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, MidPen: SF YIMBY 2023, MidPen news posts (AHSC award, lease option)",
+      "src": [
+        "SRC-002649",
+        "SRC-002650"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 462-14-021 has no situs address, jurisdiction San Jose; CEQA-listed parcels 462-15-030, -035, -040 also in dataset; owner not shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer by APN: AT26-007, ER26-051, AD26-524, AD26-599, RSL26-231, AD22-546",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet NOE lists Santa Clara County as lead agency (Office of Supportive Housing); county loan already on record from CTCAC",
+      "src": [
+        "SRC-002648"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025051249 NOE; CTCAC CA-26-443 and APR already on record",
+      "src": [
+        "SRC-002648",
+        "SRC-001676"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Search for groundbreaking news after Nov 4, 2026 found none; SVBJ Dec 2023 lease option story (MidPen repost) read",
+      "src": [
+        "SRC-002651"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY July 2023: architect Mithun, two six-story buildings",
+      "src": [
+        "SRC-002649"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "MidPen news posts: AHSC award Dec 2025, lease option Dec 2023",
+      "src": [
+        "SRC-002650",
+        "SRC-002651"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Mithun named by SF YIMBY; no Mithun project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "MidPen AHSC award $49.3M; VTA 2025 affordable housing report lists Capitol AHSC award; CTCAC sources already on record",
+      "src": [
+        "SRC-002650"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts on the project surfaced",
+      "src": []
+    }
+  }
 }

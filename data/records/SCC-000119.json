@@ -162,6 +162,53 @@
           "note": "State report 2023, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family",
+            "Senior"
+          ],
+          "src": [
+            "SRC-001617",
+            "SRC-001618"
+          ],
+          "note": "Bellarmino Place: Large Family (CTCAC CA-22-001); Alvarado Park: Seniors (CTCAC CA-23-007)"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001617",
+            "SRC-001618"
+          ],
+          "note": "CTCAC 55-year use/affordability"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002653",
+            "SRC-002654"
+          ],
+          "note": "Bellarmino Place"
+        },
+        {
+          "value": 5,
+          "src": [
+            "SRC-002655",
+            "SRC-002654"
+          ],
+          "note": "Alvarado Park"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -194,6 +241,31 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC CA-22-001, Bellarmino Place (June 2022): 116 units (57 one-bedroom, 30 two-bedroom, 29 three-bedroom); 115 tax credit units: 53 at 30% AMI, 52 at 50%, 10 at 60%, plus one manager's unit; HUD project-based vouchers on 53 units; total project cost $97,893,417 ($835,579 per unit), attributed in part to soil remediation; management agent John Stewart Company.",
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "text": "CTCAC CA-23-007, Alvarado Park (July 2023): 90 units (82 one-bedroom, 8 two-bedroom); 89 tax credit units: 41 at 30% AMI, 41 at 50%, 7 at 60%, plus one manager's unit; HUD project-based vouchers on 41 units; total project cost $69,331,902 ($770,354 per unit), attributed to demolition and abatement, covered podium parking and EV charging.",
+      "src": [
+        "SRC-001618"
+      ]
+    },
+    {
+      "text": "San José Spotlight, September 2025: Bellarmino Place cost nearly $97 million, with over $10 million from Santa Clara County, $34 million from the Housing Authority and $52 million from Wells Fargo; 24 apartments for formerly homeless households. Alvarado Park cost nearly $70 million, with $10 million from the county, nearly $22 million from the Housing Authority and $24 million from Enterprise; 23 apartments for people at risk of homelessness. The county's $20 million for the two came from Measure A.",
+      "src": [
+        "SRC-002654"
+      ]
+    },
+    {
+      "text": "Dahlin Group lists itself as architect of both buildings (architecture and interior design for Bellarmino Place) and gives the Alvarado Park site as 2.3 acres.",
+      "src": [
+        "SRC-002653",
+        "SRC-002655"
+      ]
     }
   ],
   "parties": [
@@ -216,9 +288,255 @@
       "src": [
         "SRC-001396"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dahlingroup.com",
+      "website_basis": "search",
+      "project_page": "https://www.dahlingroup.com/projects/bellarmino-place",
+      "src": [
+        "SRC-002653",
+        "SRC-002655"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002653"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "JMH Weiss",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002653"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Bellarmino Place LP",
+      "contact": "Karl Lauff",
+      "linkedin": null,
+      "email": "Karl.Lauff@scchousingauthority.org",
+      "phone": "(669) 214-9902",
+      "other_role": "Applicant / owner partnership for Bellarmino Place (CTCAC)",
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Alvarado Park LP",
+      "contact": "Karl Lauff",
+      "linkedin": null,
+      "email": "Karl.Lauff@scchousingauthority.org",
+      "phone": "(669) 214-9902",
+      "other_role": "Applicant / owner partnership for Alvarado Park (CTCAC)",
+      "src": [
+        "SRC-001618"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Villa Garcia, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Nonprofit general partner of both partnerships",
+      "src": [
+        "SRC-001617",
+        "SRC-001618"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tax credit investor/consultant (CTCAC)",
+      "src": [
+        "SRC-001617",
+        "SRC-001618"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Silicon Valley Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Wells Fargo",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001618",
+        "SRC-002654"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "CCRC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001618"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Silicon Valley Bank",
+      "program": "Bellarmino Place",
+      "amount": 48769314,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Silicon Valley Bank",
+      "program": "Bellarmino Place",
+      "amount": 30475000,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "Santa Clara County",
+      "program": "Bellarmino Place: NPLH-APC loan (HCD No Place Like Home)",
+      "amount": 4800000,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County",
+      "program": "Bellarmino Place: Measure A",
+      "amount": 2912436,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County Housing Authority",
+      "program": "Bellarmino Place: MTW loan",
+      "amount": 33110000,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County Housing Authority",
+      "program": "Bellarmino Place: DDTF loan",
+      "amount": 3003331,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": "Bellarmino Place",
+      "amount": 220000,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (9%)",
+      "provider": "Tax credit investor",
+      "program": "Bellarmino Place; investor/consultant California Housing Partnership",
+      "amount": 23372650,
+      "date": null,
+      "src": [
+        "SRC-001617"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Wells Fargo",
+      "program": "Alvarado Park",
+      "amount": 31779340,
+      "date": null,
+      "src": [
+        "SRC-001618"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "CCRC",
+      "program": "Alvarado Park",
+      "amount": 13213000,
+      "date": null,
+      "src": [
+        "SRC-001618"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County Housing Authority",
+      "program": "Alvarado Park: MTW",
+      "amount": 22910000,
+      "date": null,
+      "src": [
+        "SRC-001618"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County",
+      "program": "Alvarado Park: Measure A",
+      "amount": 6400000,
+      "date": null,
+      "src": [
+        "SRC-001618"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "Santa Clara County",
+      "program": "Alvarado Park: NPLH (HCD No Place Like Home)",
+      "amount": 4600000,
+      "date": null,
+      "src": [
+        "SRC-001618"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (9%)",
+      "provider": "Tax credit investor",
+      "program": "Alvarado Park; investor/consultant California Housing Partnership",
+      "amount": 22208902,
+      "date": null,
+      "src": [
+        "SRC-001618"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -230,12 +548,30 @@
       ]
     },
     {
+      "date": "2022-06-15",
+      "type": "Other",
+      "label": "CTCAC staff report recommends 9% tax credits for Bellarmino Place (CA-22-001)",
+      "src": [
+        "SRC-001617"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-12-06",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2023-07-26",
+      "type": "Other",
+      "label": "CTCAC staff report recommends 9% tax credits for Alvarado Park (CA-23-007)",
+      "src": [
+        "SRC-001618"
+      ],
+      "estimated": false
     },
     {
       "date": "2024",
@@ -260,6 +596,15 @@
       "label": "Alvarado Park opened mid-September 2025",
       "src": [
         "SRC-001396"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-17",
+      "type": "Other",
+      "label": "Opening celebration for Bellarmino Place and Alvarado Park",
+      "src": [
+        "SRC-002654"
       ],
       "estimated": false
     }
@@ -289,6 +634,99 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Bellarmino Place, Alvarado Park, Race Street: Dahlin Group project pages, San José Spotlight",
+      "src": [
+        "SRC-002653",
+        "SRC-002654"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 261-42-080 situs 253 Race St, San Jose",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose planning permit GIS layer by APN: AD25-175 sign permit, RSL25-104 land use verification; no new project facts",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "news.santaclaracounty.gov refuses automated access; county Measure A amounts come from CTCAC and San José Spotlight",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC CA-22-001 and CA-23-007 staff reports read for financing, unit mix and AMI",
+      "src": [
+        "SRC-001617",
+        "SRC-001618"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San José Spotlight Sept 17, 2025: opening, costs, funders",
+      "src": [
+        "SRC-002654"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY Sept 2025 opening story already on record",
+      "src": [
+        "SRC-001396"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC Housing Authority property page already on record",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Dahlin Group project pages for Bellarmino Place and Alvarado Park",
+      "src": [
+        "SRC-002653",
+        "SRC-002655"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC: Silicon Valley Bank, Wells Fargo, CCRC, SCCHA MTW and DDTF, County Measure A and NPLH, California Housing Partnership",
+      "src": [
+        "SRC-001617",
+        "SRC-001618"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts surfaced",
+      "src": []
+    }
+  }
 }
