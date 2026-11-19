@@ -77,6 +77,52 @@
           37.3524793
         ]
       ]
+    },
+    {
+      "apn": "481-12-070",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8570299,
+          37.3525997
+        ],
+        [
+          -121.8571037,
+          37.3525644
+        ],
+        [
+          -121.856918,
+          37.3523171
+        ],
+        [
+          -121.8570655,
+          37.3522465
+        ],
+        [
+          -121.8572247,
+          37.3524585
+        ],
+        [
+          -121.8573264,
+          37.352594
+        ],
+        [
+          -121.8575297,
+          37.3528649
+        ],
+        [
+          -121.8573084,
+          37.3529708
+        ],
+        [
+          -121.8570299,
+          37.3525997
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -112,6 +158,13 @@
             "SRC-001107"
           ]
         }
+      ]
+    },
+    {
+      "text": "1661 Alum Rock Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001107"
       ]
     }
   ],
@@ -192,6 +245,74 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PD18-016 permit description: mixed-use 6-story building"
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-001833"
+          ],
+          "note": "SF YIMBY 2020"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 113560,
+          "src": [
+            "SRC-001833"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 13720,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PD18-016 permit description"
+        },
+        {
+          "value": 13650,
+          "src": [
+            "SRC-001833"
+          ],
+          "note": "Up to 13,650 sq ft retail"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 170,
+          "src": [
+            "SRC-001833"
+          ],
+          "note": "170 spaces in 83,880 sq ft of parking"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.92,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "0.92 gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -206,6 +327,18 @@
       "text": "City of San Jose permit PD18-016 (PD Permit, folder year 2018), status Approved, issue date 2020-11-17: \"Planned Development Permit to demolish existing buildings and construct a mixed-use 6 story building consisting of 123 residential units, 13,720-SF of ground floor retail and the removal of 6 ordinance sized trees on a 0.92-gross acre site.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2020): over 210,000 sq ft total floor area; units range from studios to two-bedrooms; nearly 20,000 sq ft of open space including a 4,280 sq ft roof deck; demolition of a single-story apartment building and three commercial buildings totaling 5,500 sq ft.",
+      "src": [
+        "SRC-001833"
+      ]
+    },
+    {
+      "text": "APR 2020 entitlement row lists three parcels, APNs 481-12-109, 481-12-069 and 481-12-070 (1665, 1663 and 1661 Alum Rock Ave), with 123 above-moderate units.",
+      "src": [
+        "SRC-001107"
       ]
     }
   ],
@@ -260,6 +393,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project name, address and SiliconSage; no source found on construction status after 2020",
+      "src": [
+        "SRC-001833"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 48112069 (1663), 48112109 (1665), 48112070 (1661 Alum Rock); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov environmental review page and IS/MND documents refuse automated access; planning GIS permit text already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding or role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2020 row via data.ca.gov datastore lists third APN; CEQAnet search did not return the MND",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News 2020-10-27 article on PressReader and Real Deal coverage of SiliconSage receivership returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2020-10-28: stories, residential and retail area, parking",
+      "src": [
+        "SRC-001833"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No SiliconSage Builders project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funding sources found for this site",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }

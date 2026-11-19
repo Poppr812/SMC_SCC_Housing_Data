@@ -26001,6 +26001,102 @@
    "wayback": null,
    "copyright": true,
    "sha256": null
+  },
+  "SRC-002837": {
+   "id": "SRC-002837",
+   "title": "803 Belmont Avenue (project page)",
+   "publisher": "BKF Engineers",
+   "date": null,
+   "type": "Developer web page",
+   "url": "https://www.bkf.com/?p=7992",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002838": {
+   "id": "SRC-002838",
+   "title": "Ribbon Cutting Celebrates New 125-Unit Affordable Housing Community in Belmont",
+   "publisher": "City of Belmont",
+   "date": "2026-09-18",
+   "type": "Government press release",
+   "url": "https://content.govdelivery.com/accounts/CABELMONT/bulletins/42b4018",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002839": {
+   "id": "SRC-002839",
+   "title": "Active Parcels, APNs 044-172-190, 044-172-200, 044-172-230 (attribute query)",
+   "publisher": "County of San Mateo",
+   "date": "2026-11-18",
+   "type": "Government dataset",
+   "url": "https://gis.smcgov.org/maps/rest/services/Common/ACTIVE_PARCELS_APN/MapServer/0/query?where=APN+IN+%28%27044172190%27%2C%27044172200%27%2C%27044172230%27%29&outFields=APN,SITUS_ADDR,COMBINEDOWNERNAMES,LegalStartDate&returnGeometry=false&f=json",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002840": {
+   "id": "SRC-002840",
+   "title": "23 Fifty Bascom",
+   "publisher": "Buckingham Property Management",
+   "date": null,
+   "type": "Developer web page",
+   "url": "https://www.buckinghampm.com/homes/23-fifty-bascom",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002841": {
+   "id": "SRC-002841",
+   "title": "23 Fifty Bascom (affordable housing listing)",
+   "publisher": "The United Effort Organization",
+   "date": null,
+   "type": "Trade listing",
+   "url": "https://preview-ueo.netlify.app/housing/affordable-housing/1538",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002842": {
+   "id": "SRC-002842",
+   "title": "Orchard Gardens",
+   "publisher": "First Community Housing",
+   "date": null,
+   "type": "Developer web page",
+   "url": "https://www.firsthousing.org/orchard-gardens",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002843": {
+   "id": "SRC-002843",
+   "title": "Affordable Housing Proposed for 245 West Weddell Avenue, Sunnyvale",
+   "publisher": "SF YIMBY",
+   "date": "2021-11-28",
+   "type": "Trade publication",
+   "url": "https://sfyimby.com/2021/11/affordable-housing-proposed-for-245-west-weddell-avenue-sunnyvale.html",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002844": {
+   "id": "SRC-002844",
+   "title": "TECH Fund at Work: FCH Receives $6.7M Loan for Sunnyvale Homes",
+   "publisher": "Housing Trust Silicon Valley",
+   "date": "2019-06-27",
+   "type": "Developer press release",
+   "url": "https://housingtrustsv.org/tech-fund-at-work-fch-receives-6-7m-loan-for-sunnyvale-homes/",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -129705,7 +129801,7 @@
   },
   {
    "id": "SCC-000172",
-   "name": "2350 S. Bascom",
+   "name": "23 Fifty Bascom (2350 S. Bascom)",
    "parcels": [
     {
      "apn": "288-05-045",
@@ -129845,6 +129941,12 @@
        "src": [
         "SRC-001107"
        ]
+      },
+      {
+       "value": "2022 APR entitlement row: 122 low-income deed-restricted, 1 above moderate, 58 extremely low-income. 2023 APR permit row: 26 very low, 71 low, 25 moderate, 1 above moderate, 13 extremely low-income.",
+       "src": [
+        "SRC-001107"
+       ]
       }
      ]
     },
@@ -129859,6 +129961,16 @@
         "SRC-001107"
        ],
        "note": "SB 35 flagged in the state report"
+      },
+      {
+       "value": [
+        "Streamlined / ministerial",
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-001107"
+       ],
+       "note": "APR rows flag SB 35 approval and deed restriction type DB, with one development standards modification"
       }
      ]
     },
@@ -129939,6 +130051,51 @@
        "note": "Total sources in CTCAC staff report."
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 6,
+       "src": [
+        "SRC-001932",
+        "SRC-001956"
+       ],
+       "note": "6-story mixed-use building per SB 35 permit H21-004 description"
+      }
+     ]
+    },
+    "commercial_sf": {
+     "claims": [
+      {
+       "value": 1437,
+       "src": [
+        "SRC-001932",
+        "SRC-001956"
+       ],
+       "note": "Ground-floor commercial space"
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.96,
+       "src": [
+        "SRC-001932"
+       ],
+       "note": "Approximately 0.96 gross acres"
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001107"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -129959,6 +130116,19 @@
      "text": "City of San Jose permit H21-004 (Site Development Permit/Amendment, folder year 2021), status Approved, issue date 2022-02-04: \"SB 35 Ministerial Site Development Permit to allow the demolition of two commercial buildings totaling 7,155 sf and the construction of 6 story mixed-use, multifamily unit project consisting of 123 100% affordable rental units and 1,437 square feet of gro\" (city text cut off at 255 characters)",
      "src": [
       "SRC-001956"
+     ]
+    },
+    {
+     "text": "Operating name 23 Fifty Bascom, managed by Buckingham Property Management. Directory listing shows 123 units, 122 affordable, studio to three-bedroom, with rent tiers at 30%, 50%, 60% and 80% AMI; waitlists closed for all unit types.",
+     "src": [
+      "SRC-002841",
+      "SRC-002840"
+     ]
+    },
+    {
+     "text": "Buckingham property page lists amenities including community room, courtyard, fitness center, playground, elevator and carport/covered parking.",
+     "src": [
+      "SRC-002840"
      ]
     }
    ],
@@ -130073,6 +130243,26 @@
      "src": [
       "SRC-001619"
      ]
+    },
+    {
+     "type": "Local soft loan",
+     "provider": "City of San Jose",
+     "program": "San Jose 20% funds (amount not reported)",
+     "amount": null,
+     "date": null,
+     "src": [
+      "SRC-001107"
+     ]
+    },
+    {
+     "type": "Local soft loan",
+     "provider": "County of Santa Clara",
+     "program": "Measure A (amount not reported)",
+     "amount": null,
+     "date": null,
+     "src": [
+      "SRC-001107"
+     ]
     }
    ],
    "groups": {},
@@ -130150,8 +130340,99 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Linked developer website / project page"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search identified the operating name 23 Fifty Bascom and Buckingham listing",
+     "src": [
+      "SRC-002841",
+      "SRC-002840"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 28805045: situs 2350 S Bascom Av, San Jose 95128; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "San Jose planning GIS permit H21-004 text (6 stories, 1,437 sq ft commercial); sanjoseca.gov pages refuse automated access",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Measure A funding named in the 2023 APR row; no county board item found",
+     "src": [
+      "SRC-001107"
+     ]
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "APR Table A2 2022 and 2023 rows via data.ca.gov datastore: density bonus, 55-year term, funding sources, income counts",
+     "src": [
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "No news beyond the San Jose Spotlight article already on record",
+     "src": [
+      "SRC-001933"
+     ]
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SJ Build page: 6 stories, 1,437 sq ft commercial, 0.96 gross acres",
+     "src": [
+      "SRC-001932"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No project page found for Pacific West Communities or Maracor Development",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Architect not named in any source opened",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "San Jose 20% funds and Measure A named in APR; Citibank and Bonneville financing already on record from CTCAC",
+     "src": [
+      "SRC-001107",
+      "SRC-001619"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts returned none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
@@ -130159,8 +130440,10 @@
     "SRC-001619": "S4",
     "SRC-001603": "S5",
     "SRC-001956": "S6",
-    "SRC-001933": "S7",
-    "SRC-001098": "S8"
+    "SRC-002841": "S7",
+    "SRC-002840": "S8",
+    "SRC-001933": "S9",
+    "SRC-001098": "S10"
    },
    "lat": 37.28123291666667,
    "lng": -121.93087195,
@@ -130216,7 +130499,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "2350 s. bascom san jose 288-05-045 2350 s bascom ave, san jose, ca 2350 bascom av, san jose, ca 2350 s bascom av, san jose, ca apartments state category 5+ units, rental tenure permitted state report shows a building permit issued; it does not say whether construction started lease-up / selling sj build page heading: \"complete 123 units maracor development\". undated. complete is what the source states; no source read says whether initial lease-up has finished, so stabilization is not claimed. san jose 123 units reported in entitlement and permit rows 100% affordable 122 deed-restricted units reported to the state [\"streamlined / ministerial\"] sb 35 flagged in the state report h21-004 local tracking number as reported to the state {\"studio\": 50, \"1br\": 5, \"2br\": 31, \"3br\": 37, \"4br+\": 0} [{\"count\": 13, \"ami\": 30}, {\"count\": 13, \"ami\": 50}, {\"count\": 71, \"ami\": 60}, {\"count\": 25, \"ami\": 80}] [\"family\"] 91351816 total sources in ctcac staff report. from the state housing element annual progress report, through 2025. ctcac ca-22-425: the project, 2350 s. bascom, located at 2350 s. bascom avenue in san jose, requested and is being recommended for a reservation of $3,218,752 in annual federal tax credits and $18,680,000 in total state tax credits to finance the new construction of 122 units of housing serving large families with rents affordable to households earning 30%-80% of area median income (ami). city of san jose permit h21-004 (site development permit/amendment, folder year 2021), status approved, issue date 2022-02-04: \"sb 35 ministerial site development permit to allow the demolition of two commercial buildings totaling 7,155 sf and the construction of 6 story mixed-use, multifamily unit project consisting of 123 100% affordable rental units and 1,437 square feet of gro\" (city text cut off at 255 characters) developer pacific west communities, inc. co-developer / partner maracor development co-developer / partner central valley coalition for affordable housing christina alley co-developer / partner the pacific companies property manager buckingham property management citibank - t.e. (series a) construction loan citibank - taxable construction loan citibank - t.e. (series a) permanent loan bonneville - recycled (series b) permanent loan deferred developer fee deferred developer fee tax credit investor tax-credit equity (4%) tax credit equity as stated in staff report application submitted entitlement approved ctcac staff report recommends tax credit reservation (ca-22-425) building permit issued reported under construction: housing development \"going up on bascom avenue\", completion expected the next spring"
+   "search": "23 fifty bascom (2350 s. bascom) san jose 288-05-045 2350 s bascom ave, san jose, ca 2350 bascom av, san jose, ca 2350 s bascom av, san jose, ca apartments state category 5+ units, rental tenure permitted state report shows a building permit issued; it does not say whether construction started lease-up / selling sj build page heading: \"complete 123 units maracor development\". undated. complete is what the source states; no source read says whether initial lease-up has finished, so stabilization is not claimed. san jose 123 units reported in entitlement and permit rows 100% affordable 122 deed-restricted units reported to the state 2022 apr entitlement row: 122 low-income deed-restricted, 1 above moderate, 58 extremely low-income. 2023 apr permit row: 26 very low, 71 low, 25 moderate, 1 above moderate, 13 extremely low-income. [\"streamlined / ministerial\"] sb 35 flagged in the state report [\"streamlined / ministerial\", \"density bonus\"] apr rows flag sb 35 approval and deed restriction type db, with one development standards modification h21-004 local tracking number as reported to the state {\"studio\": 50, \"1br\": 5, \"2br\": 31, \"3br\": 37, \"4br+\": 0} [{\"count\": 13, \"ami\": 30}, {\"count\": 13, \"ami\": 50}, {\"count\": 71, \"ami\": 60}, {\"count\": 25, \"ami\": 80}] [\"family\"] 91351816 total sources in ctcac staff report. 6 6-story mixed-use building per sb 35 permit h21-004 description 1437 ground-floor commercial space 0.96 approximately 0.96 gross acres 55 from the state housing element annual progress report, through 2025. ctcac ca-22-425: the project, 2350 s. bascom, located at 2350 s. bascom avenue in san jose, requested and is being recommended for a reservation of $3,218,752 in annual federal tax credits and $18,680,000 in total state tax credits to finance the new construction of 122 units of housing serving large families with rents affordable to households earning 30%-80% of area median income (ami). city of san jose permit h21-004 (site development permit/amendment, folder year 2021), status approved, issue date 2022-02-04: \"sb 35 ministerial site development permit to allow the demolition of two commercial buildings totaling 7,155 sf and the construction of 6 story mixed-use, multifamily unit project consisting of 123 100% affordable rental units and 1,437 square feet of gro\" (city text cut off at 255 characters) operating name 23 fifty bascom, managed by buckingham property management. directory listing shows 123 units, 122 affordable, studio to three-bedroom, with rent tiers at 30%, 50%, 60% and 80% ami; waitlists closed for all unit types. buckingham property page lists amenities including community room, courtyard, fitness center, playground, elevator and carport/covered parking. developer pacific west communities, inc. co-developer / partner maracor development co-developer / partner central valley coalition for affordable housing christina alley co-developer / partner the pacific companies property manager buckingham property management citibank - t.e. (series a) construction loan citibank - taxable construction loan citibank - t.e. (series a) permanent loan bonneville - recycled (series b) permanent loan deferred developer fee deferred developer fee tax credit investor tax-credit equity (4%) tax credit equity as stated in staff report city of san jose local soft loan san jose 20% funds (amount not reported) county of santa clara local soft loan measure a (amount not reported) application submitted entitlement approved ctcac staff report recommends tax credit reservation (ca-22-425) building permit issued reported under construction: housing development \"going up on bascom avenue\", completion expected the next spring"
   },
   {
    "id": "SCC-000173",
@@ -130363,6 +130646,13 @@
         "SRC-001119"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "PLNG-2025-0332",
+       "src": [
+        "SRC-001524"
+       ],
+       "note": "Miscellaneous plan permit modifying the approved Special Development Permit 2020-7620"
       }
      ]
     },
@@ -130406,6 +130696,30 @@
        "src": [
         "SRC-001677"
        ]
+      },
+      {
+       "value": [
+        {
+         "count": 47,
+         "ami": 30
+        },
+        {
+         "count": 15,
+         "ami": 40
+        },
+        {
+         "count": 26,
+         "ami": 50
+        },
+        {
+         "count": 33,
+         "ami": 60
+        }
+       ],
+       "src": [
+        "SRC-002843"
+       ],
+       "note": "2021 design as reported by SF YIMBY, plus 2 staff units"
       }
      ]
     },
@@ -130417,6 +130731,76 @@
         "SRC-001677"
        ],
        "note": "Total sources in CTCAC staff report."
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 6,
+       "src": [
+        "SRC-002842",
+        "SRC-002843"
+       ],
+       "note": "New building; the 30 rehabilitated units are in the existing Parkview buildings"
+      }
+     ]
+    },
+    "parking_spaces": {
+     "claims": [
+      {
+       "value": 90,
+       "src": [
+        "SRC-002843"
+       ],
+       "note": "2021 design: 90 ground-level spaces, 31 for existing residents and 59 for new residents"
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 1.72,
+       "src": [
+        "SRC-001525"
+       ]
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-002843",
+        "SRC-001119"
+       ],
+       "note": "State density bonus under AB 1763; APR reports a 98.6% density bonus with 13 incentives. Planning Commission approved the Special Development Permit on Nov. 8, 2021"
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001119"
+       ]
+      }
+     ]
+    },
+    "population": {
+     "claims": [
+      {
+       "value": [
+        "Supportive"
+       ],
+       "src": [
+        "SRC-002842"
+       ],
+       "note": "47 of the 93 new units for rapid rehousing and permanent supportive housing; at least 15 units for adults with intellectual/developmental disabilities"
       }
      ]
     }
@@ -130433,6 +130817,32 @@
      "text": "CTCAC CA-26-457: The project, 245 Weddell, located at 245-251 West Weddell Drive in Sunnyvale on a 1.72 acre site, requested $5,832,651 in annual federal tax credits but is being recommended for $5,736,199 in annual federal tax credits and $32,018,486 of tax-exempt bond cap to finance the new construction & acquisition & rehabilitation of 123 units of housing, consisting of 121 restricted rental units and 2 unrestricted manager's units.",
      "src": [
       "SRC-001677"
+     ]
+    },
+    {
+     "text": "Existing Orchard Gardens has 62 apartments. Two 16-unit buildings (19,990 sq ft, 32 units) are demolished and replaced by a new 6-story Type 3A/1A building of 114,800 sq ft with 93 units; 30 existing units are substantially rehabilitated. SF YIMBY (2021) gives the new building as 115,800 sq ft and the existing Park View building as 30,720 sq ft.",
+     "src": [
+      "SRC-002842",
+      "SRC-002843",
+      "SRC-001119"
+     ]
+    },
+    {
+     "text": "First Community Housing: 46 of the new units for income-qualifying current residents, 2 manager/maintenance units; all units affordable below 60% AMI; designed as LEED Platinum.",
+     "src": [
+      "SRC-002842"
+     ]
+    },
+    {
+     "text": "APR 2021 entitlement row: 87 very low, 34 low, 2 above moderate, 47 extremely low-income; 32 rental units demolished; deed restriction by local funding regulatory agreement; LIHTC and County Measure A planned.",
+     "src": [
+      "SRC-001119"
+     ]
+    },
+    {
+     "text": "Housing Trust Silicon Valley (June 2019) described the redevelopment as bringing the property to 86 affordable homes.",
+     "src": [
+      "SRC-002844"
      ]
     }
    ],
@@ -130467,6 +130877,59 @@
       "SRC-001677"
      ],
      "website": "https://www.scchousingauthority.org/"
+    },
+    {
+     "role": "Developer",
+     "company": "First Community Housing",
+     "contact": null,
+     "linkedin": null,
+     "website": "https://www.firsthousing.org",
+     "website_basis": "opened",
+     "project_page": "https://www.firsthousing.org/orchard-gardens",
+     "src": [
+      "SRC-002843",
+      "SRC-002842"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "OJK Architecture and Planning",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002843"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Architects FORA",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001525",
+      "SRC-001524"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Parkview Apartment Association",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Property owner (per city filing)",
+     "src": [
+      "SRC-001524",
+      "SRC-002843"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Housing Choices",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Resident services provider",
+     "src": [
+      "SRC-002842"
+     ]
     }
    ],
    "financing": [
@@ -130599,6 +131062,16 @@
      "src": [
       "SRC-001677"
      ]
+    },
+    {
+     "type": "Other",
+     "provider": "Housing Trust Silicon Valley",
+     "program": "Loan from TECH Fund and CDFI Bond Guarantee Program (loan type not stated)",
+     "amount": 6700000,
+     "date": "2019-06-27",
+     "src": [
+      "SRC-002844"
+     ]
     }
    ],
    "groups": {},
@@ -130618,6 +131091,15 @@
      "src": [
       "SRC-001119"
      ]
+    },
+    {
+     "date": "2025-07-14",
+     "type": "Other",
+     "label": "Planning Commission study session on minor modifications to approved plans (PLNG-2025-0332)",
+     "src": [
+      "SRC-001524"
+     ],
+     "estimated": false
     },
     {
      "date": "2026-05-12",
@@ -130667,15 +131149,111 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Linked developer website / project page"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search surfaced First Community Housing project page, SF YIMBY 2021 article and Housing Trust loan post",
+     "src": [
+      "SRC-002842",
+      "SRC-002843"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 11012093: situs 245 W Weddell Dr, Sunnyvale 94089, 5 situs addresses; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Legistar matter 25-0701 (PC 2025-07-14): owner, applicant, PLNG-2025-0332. Sunnyvale 'Building Affordable Housing' page returned 403",
+     "src": [
+      "SRC-001524"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "Measure A $16.45M already on record from CTCAC staff report",
+     "src": [
+      "SRC-001677"
+     ]
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "APR Table A2 2021 row via data.ca.gov datastore: density bonus 98.6%, 32 units demolished, 55-year term",
+     "src": [
+      "SRC-001119"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no local news coverage",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SF YIMBY 2021-11-28 (OJK design, parking, AMI mix) and 2025-07-19 (Architects FORA, 1.72 acres)",
+     "src": [
+      "SRC-002843",
+      "SRC-001525"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "First Community Housing Orchard Gardens page",
+     "src": [
+      "SRC-002842"
+     ]
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "Architects FORA portfolio page already on record",
+     "src": [
+      "SRC-001524"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Housing Trust Silicon Valley $6.7M loan, June 2019",
+     "src": [
+      "SRC-002844"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts returned none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001118": "S1",
     "SRC-001119": "S2",
     "SRC-001524": "S3",
-    "SRC-001677": "S4",
+    "SRC-002842": "S4",
     "SRC-001525": "S5",
-    "SRC-001098": "S6"
+    "SRC-001677": "S6",
+    "SRC-002843": "S7",
+    "SRC-002844": "S8",
+    "SRC-001098": "S9"
    },
    "lat": 37.39909063333333,
    "lng": -122.02502422222223,
@@ -130685,8 +131263,8 @@
      "how": "Total development cost $124,227,055 ÷ 123 total units"
     },
     "financing_total": {
-     "value": 156245541,
-     "how": "$32,018,486 + $20,934,000 + $1,041,420 + $551,400 + $10,000,000 + $1,109,452 + $17,401,426 + $16,450,000 + $1,283 + $8,053,706 + $48,684,368 (excludes short-term construction, bridge and predevelopment loans); compares with a $124,227,055 total development cost"
+     "value": 162945541,
+     "how": "$32,018,486 + $20,934,000 + $1,041,420 + $551,400 + $10,000,000 + $1,109,452 + $17,401,426 + $16,450,000 + $1,283 + $8,053,706 + $48,684,368 + $6,700,000 (excludes short-term construction, bridge and predevelopment loans); compares with a $124,227,055 total development cost"
     }
    },
    "kinds": [
@@ -130705,15 +131283,11 @@
      123,
      123
     ],
-    "restricted_units": 121,
+    "restricted_units": null,
     "aff_bucket": "Affordable",
     "aff_label": "Affordable, 100%",
     "aff_share": 1.0,
-    "aff_levels": [
-     "el",
-     "vl",
-     "lo"
-    ],
+    "aff_levels": [],
     "mix_types": [
      "studio",
      "1br",
@@ -130722,7 +131296,7 @@
     ],
     "tax_credit": true,
     "owner": "",
-    "developer": "Parkview Apartment Association; Santa Clara County Housing Authority",
+    "developer": "Parkview Apartment Association; Santa Clara County Housing Authority; First Community Housing",
     "cost_basis": "Total development cost",
     "cost": 124227055,
     "per_unit": 1009976,
@@ -130731,7 +131305,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "orchard gardens (245 w weddell) sunnyvale 110-12-093 245 w weddell dr, sunnyvale, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval sunnyvale 123 units reported in entitlement and permit rows 100% affordable 121 deed-restricted units reported to the state 20207620 local tracking number as reported to the state {\"studio\": 4, \"1br\": 76, \"2br\": 29, \"3br\": 14, \"4br+\": 0} [{\"count\": 60, \"ami\": 30}, {\"count\": 17, \"ami\": 50}, {\"count\": 37, \"ami\": 60}, {\"count\": 7, \"ami\": 80}] 124227055 total sources in ctcac staff report. from the state housing element annual progress report, through 2025. ctcac ca-26-457: the project, 245 weddell, located at 245-251 west weddell drive in sunnyvale on a 1.72 acre site, requested $5,832,651 in annual federal tax credits but is being recommended for $5,736,199 in annual federal tax credits and $32,018,486 of tax-exempt bond cap to finance the new construction & acquisition & rehabilitation of 123 units of housing, consisting of 121 restricted rental units and 2 unrestricted manager's units. other applicant architects fora developer parkview apartment association developer santa clara county housing authority cdlac allocation tax-exempt bonds tax-exempt bond cap recommended in staff report chase construction loan tax-exempt chase construction loan taxable chase permanent loan tax-exempt cos local soft loan home cos local soft loan cdbg cos local soft loan hmf & lmhaf cos local soft loan hmf sccha local soft loan moving to work scco local soft loan measure a acquired reserves other deferred developer fee deferred developer fee tax credit investor tax-credit equity (4%) tax credit equity as stated in staff report application submitted entitlement approved ctcac staff report recommends tax credit reservation (ca-26-457) expected construction start per ctcac staff report expected completion per ctcac staff report"
+   "search": "orchard gardens (245 w weddell) sunnyvale 110-12-093 245 w weddell dr, sunnyvale, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval sunnyvale 123 units reported in entitlement and permit rows 100% affordable 121 deed-restricted units reported to the state 20207620 local tracking number as reported to the state plng-2025-0332 miscellaneous plan permit modifying the approved special development permit 2020-7620 {\"studio\": 4, \"1br\": 76, \"2br\": 29, \"3br\": 14, \"4br+\": 0} [{\"count\": 60, \"ami\": 30}, {\"count\": 17, \"ami\": 50}, {\"count\": 37, \"ami\": 60}, {\"count\": 7, \"ami\": 80}] [{\"count\": 47, \"ami\": 30}, {\"count\": 15, \"ami\": 40}, {\"count\": 26, \"ami\": 50}, {\"count\": 33, \"ami\": 60}] 2021 design as reported by sf yimby, plus 2 staff units 124227055 total sources in ctcac staff report. 6 new building; the 30 rehabilitated units are in the existing parkview buildings 90 2021 design: 90 ground-level spaces, 31 for existing residents and 59 for new residents 1.72 [\"density bonus\"] state density bonus under ab 1763; apr reports a 98.6% density bonus with 13 incentives. planning commission approved the special development permit on nov. 8, 2021 55 [\"supportive\"] 47 of the 93 new units for rapid rehousing and permanent supportive housing; at least 15 units for adults with intellectual/developmental disabilities from the state housing element annual progress report, through 2025. ctcac ca-26-457: the project, 245 weddell, located at 245-251 west weddell drive in sunnyvale on a 1.72 acre site, requested $5,832,651 in annual federal tax credits but is being recommended for $5,736,199 in annual federal tax credits and $32,018,486 of tax-exempt bond cap to finance the new construction & acquisition & rehabilitation of 123 units of housing, consisting of 121 restricted rental units and 2 unrestricted manager's units. existing orchard gardens has 62 apartments. two 16-unit buildings (19,990 sq ft, 32 units) are demolished and replaced by a new 6-story type 3a/1a building of 114,800 sq ft with 93 units; 30 existing units are substantially rehabilitated. sf yimby (2021) gives the new building as 115,800 sq ft and the existing park view building as 30,720 sq ft. first community housing: 46 of the new units for income-qualifying current residents, 2 manager/maintenance units; all units affordable below 60% ami; designed as leed platinum. apr 2021 entitlement row: 87 very low, 34 low, 2 above moderate, 47 extremely low-income; 32 rental units demolished; deed restriction by local funding regulatory agreement; lihtc and county measure a planned. housing trust silicon valley (june 2019) described the redevelopment as bringing the property to 86 affordable homes. other applicant architects fora developer parkview apartment association developer santa clara county housing authority developer first community housing architect ojk architecture and planning architect architects fora other property owner (per city filing) parkview apartment association other resident services provider housing choices cdlac allocation tax-exempt bonds tax-exempt bond cap recommended in staff report chase construction loan tax-exempt chase construction loan taxable chase permanent loan tax-exempt cos local soft loan home cos local soft loan cdbg cos local soft loan hmf & lmhaf cos local soft loan hmf sccha local soft loan moving to work scco local soft loan measure a acquired reserves other deferred developer fee deferred developer fee tax credit investor tax-credit equity (4%) tax credit equity as stated in staff report housing trust silicon valley other loan from tech fund and cdfi bond guarantee program (loan type not stated) application submitted entitlement approved planning commission study session on minor modifications to approved plans (plng-2025-0332) ctcac staff report recommends tax credit reservation (ca-26-457) expected construction start per ctcac staff report expected completion per ctcac staff report"
   },
   {
    "id": "SCC-000174",
@@ -130812,6 +131386,52 @@
        37.3524793
       ]
      ]
+    },
+    {
+     "apn": "481-12-070",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-001098"
+     ],
+     "outline": [
+      [
+       -121.8570299,
+       37.3525997
+      ],
+      [
+       -121.8571037,
+       37.3525644
+      ],
+      [
+       -121.856918,
+       37.3523171
+      ],
+      [
+       -121.8570655,
+       37.3522465
+      ],
+      [
+       -121.8572247,
+       37.3524585
+      ],
+      [
+       -121.8573264,
+       37.352594
+      ],
+      [
+       -121.8575297,
+       37.3528649
+      ],
+      [
+       -121.8573084,
+       37.3529708
+      ],
+      [
+       -121.8570299,
+       37.3525997
+      ]
+     ]
     }
    ],
    "addresses": [
@@ -130847,6 +131467,13 @@
         "SRC-001107"
        ]
       }
+     ]
+    },
+    {
+     "text": "1661 Alum Rock Ave, San Jose, CA",
+     "role": "other",
+     "src": [
+      "SRC-001107"
      ]
     }
    ],
@@ -130927,6 +131554,74 @@
        "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 6,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "PD18-016 permit description: mixed-use 6-story building"
+      },
+      {
+       "value": 8,
+       "src": [
+        "SRC-001833"
+       ],
+       "note": "SF YIMBY 2020"
+      }
+     ]
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 113560,
+       "src": [
+        "SRC-001833"
+       ]
+      }
+     ]
+    },
+    "commercial_sf": {
+     "claims": [
+      {
+       "value": 13720,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "PD18-016 permit description"
+      },
+      {
+       "value": 13650,
+       "src": [
+        "SRC-001833"
+       ],
+       "note": "Up to 13,650 sq ft retail"
+      }
+     ]
+    },
+    "parking_spaces": {
+     "claims": [
+      {
+       "value": 170,
+       "src": [
+        "SRC-001833"
+       ],
+       "note": "170 spaces in 83,880 sq ft of parking"
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.92,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "0.92 gross acres"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -130941,6 +131636,18 @@
      "text": "City of San Jose permit PD18-016 (PD Permit, folder year 2018), status Approved, issue date 2020-11-17: \"Planned Development Permit to demolish existing buildings and construct a mixed-use 6 story building consisting of 123 residential units, 13,720-SF of ground floor retail and the removal of 6 ordinance sized trees on a 0.92-gross acre site.\"",
      "src": [
       "SRC-001956"
+     ]
+    },
+    {
+     "text": "SF YIMBY (2020): over 210,000 sq ft total floor area; units range from studios to two-bedrooms; nearly 20,000 sq ft of open space including a 4,280 sq ft roof deck; demolition of a single-story apartment building and three commercial buildings totaling 5,500 sq ft.",
+     "src": [
+      "SRC-001833"
+     ]
+    },
+    {
+     "text": "APR 2020 entitlement row lists three parcels, APNs 481-12-109, 481-12-069 and 481-12-070 (1665, 1663 and 1661 Alum Rock Ave), with 123 above-moderate units.",
+     "src": [
+      "SRC-001107"
      ]
     }
    ],
@@ -130995,8 +131702,91 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on project name, address and SiliconSage; no source found on construction status after 2020",
+     "src": [
+      "SRC-001833"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SCC parcel API: 48112069 (1663), 48112109 (1665), 48112070 (1661 Alum Rock); no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "sanjoseca.gov environmental review page and IS/MND documents refuse automated access; planning GIS permit text already on record",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project; no county funding or role found",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "APR Table A2 2020 row via data.ca.gov datastore lists third APN; CEQAnet search did not return the MND",
+     "src": [
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "Mercury News 2020-10-27 article on PressReader and Real Deal coverage of SiliconSage receivership returned 403",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SF YIMBY 2020-10-28: stories, residential and retail area, parking",
+     "src": [
+      "SRC-001833"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No SiliconSage Builders project page found",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Architect not named in any source opened",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or funding sources found for this site",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts returned none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
@@ -131004,8 +131794,8 @@
     "SRC-001833": "S4",
     "SRC-001098": "S5"
    },
-   "lat": 37.352635475,
-   "lng": -121.85695101666666,
+   "lat": 37.35261208,
+   "lng": -121.857045925,
    "calcs": {},
    "kinds": [
     "pipeline"
@@ -131040,7 +131830,7 @@
     "stale_since": "2020-11-17",
     "part_of": ""
    },
-   "search": "little portugal gateway san jose 481-12-069 481-12-109 1663 alum rock ave, san jose, ca 1663 alum rock av, san jose, ca 1665 alum rock ave, san jose, ca 1665 alum rock av, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 123 units reported in entitlement and permit rows 121 units in the application as reported pd18-016 local tracking number as reported to the state market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit pd18-016 (pd permit, folder year 2018), status approved, issue date 2020-11-17: \"planned development permit to demolish existing buildings and construct a mixed-use 6 story building consisting of 123 residential units, 13,720-sf of ground floor retail and the removal of 6 ordinance sized trees on a 0.92-gross acre site.\" developer siliconsage builders application submitted entitlement approved"
+   "search": "little portugal gateway san jose 481-12-069 481-12-109 481-12-070 1663 alum rock ave, san jose, ca 1663 alum rock av, san jose, ca 1665 alum rock ave, san jose, ca 1665 alum rock av, san jose, ca 1661 alum rock ave, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 123 units reported in entitlement and permit rows 121 units in the application as reported pd18-016 local tracking number as reported to the state market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 6 pd18-016 permit description: mixed-use 6-story building 8 sf yimby 2020 113560 13720 pd18-016 permit description 13650 up to 13,650 sq ft retail 170 170 spaces in 83,880 sq ft of parking 0.92 0.92 gross acres from the state housing element annual progress report, through 2025. city of san jose permit pd18-016 (pd permit, folder year 2018), status approved, issue date 2020-11-17: \"planned development permit to demolish existing buildings and construct a mixed-use 6 story building consisting of 123 residential units, 13,720-sf of ground floor retail and the removal of 6 ordinance sized trees on a 0.92-gross acre site.\" sf yimby (2020): over 210,000 sq ft total floor area; units range from studios to two-bedrooms; nearly 20,000 sq ft of open space including a 4,280 sq ft roof deck; demolition of a single-story apartment building and three commercial buildings totaling 5,500 sq ft. apr 2020 entitlement row lists three parcels, apns 481-12-109, 481-12-069 and 481-12-070 (1665, 1663 and 1661 alum rock ave), with 123 above-moderate units. developer siliconsage builders application submitted entitlement approved"
   },
   {
    "id": "SCC-000175",
@@ -298023,8 +298813,85 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web searches on 2281 Cabrillo Highway, the builder's remedy filing, and KTGY/Kosmont returned no new project sources",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SMC active parcel layer: APNs 048-300-090 (situs 2281 Cabrillo Hwy N) and 048-300-100 both owned by 2651 North Cabrillo Hwy LLC",
+     "src": [
+      "SRC-000226"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "City project page re-read 2026-11-18: same three documents (submittal, PDP-26-059 review letter, 2026-10-20 applicant letter); no formal application or hearing listed",
+     "src": [
+      "SRC-000212"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "Site is within the City of Half Moon Bay; no county role found",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "APR Table A2 (data.ca.gov datastore) has no row for 2281 Cabrillo; CEQAnet search returned no record",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Searches of Coastside News and other local outlets found no coverage newer than the record's existing article",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no trade-press coverage",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No project page found for 2651 North Cabrillo Highway LLC or Kosmont Realty",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of KTGY for a Half Moon Bay project returned no project page",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender, equity or public funding sources found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project returned none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-000212": "S1",
     "SRC-000214": "S2",
@@ -319278,6 +320145,13 @@
         "SRC-000611"
        ],
        "note": "Terraced; no single portion above six floors"
+      },
+      {
+       "value": 5,
+       "src": [
+        "SRC-002837"
+       ],
+       "note": "BKF project page describes a five-story building"
       }
      ]
     },
@@ -319407,6 +320281,25 @@
      "src": [
       "SRC-001637"
      ]
+    },
+    {
+     "text": "BKF Engineers provided civil engineering and land surveying for client ROEM Development Corporation. BKF describes 125 affordable units for low-income families and formerly homeless veterans, about 6,500 sq ft of outdoor recreation space including a children's playground, a club room and a computer room. The project received a 2022 PCBC Gold Nugget Award of Merit, Best On-the-Boards Affordable Housing Community.",
+     "src": [
+      "SRC-002837"
+     ]
+    },
+    {
+     "text": "City bulletin of Sept. 18, 2026: 125 units (52 one-bedroom, 40 two-bedroom, 33 three-bedroom) on a 1.5-acre site at Belmont Avenue and El Camino Real, formerly the Bel-Mateo Motel and vacant land.",
+     "src": [
+      "SRC-002838"
+     ]
+    },
+    {
+     "text": "The 2024 APR row lists APNs 044-172-190 and 044-172-200 and financial assistance LIHTC, PBS8, HOME, CDLAC and Other. The county active parcel layer returns only APN 044-172-230 (803 Belmont Ave, owner Belmont Family Apartments LP) with a legal start date of 2024-05-15.",
+     "src": [
+      "SRC-000643",
+      "SRC-002839"
+     ]
     }
    ],
    "parties": [
@@ -319458,6 +320351,27 @@
      "linkedin": null,
      "src": [
       "SRC-001637"
+     ]
+    },
+    {
+     "role": "Civil engineer",
+     "company": "BKF Engineers",
+     "contact": null,
+     "linkedin": null,
+     "website": "https://www.bkf.com",
+     "website_basis": "opened",
+     "project_page": "https://www.bkf.com/?p=7992",
+     "src": [
+      "SRC-002837"
+     ]
+    },
+    {
+     "role": "Landscape architect",
+     "company": "JETT Landscape Architecture + Design",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002837"
      ]
     }
    ],
@@ -319591,6 +320505,15 @@
      ]
     },
     {
+     "date": "2026-09",
+     "type": "Other",
+     "label": "Ribbon cutting for the completed 125-unit community, held the week of the city's Sept. 18, 2026 bulletin",
+     "src": [
+      "SRC-002838"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2026-09-16",
      "type": "Completion",
      "label": "City celebrates completion of 125 affordable homes",
@@ -319624,15 +320547,108 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Linked developer website / project page"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search surfaced BKF Engineers project page and City of Belmont bulletin",
+     "src": [
+      "SRC-002837"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SMC active parcel layer query for 044-172-190/-200/-230: only -230 active, legal start 2024-05-15, owner Belmont Family Apartments LP",
+     "src": [
+      "SRC-002839"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "City of Belmont GovDelivery bulletin 2026-09-18 on ribbon cutting",
+     "src": [
+      "SRC-002838"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "HASMC AHF loan already on record from CTCAC staff report; city bulletin thanks San Mateo County without amounts",
+     "src": [
+      "SRC-001637"
+     ]
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "APR Table A2 2024 row (data.ca.gov datastore): prior APNs and financial assistance types",
+     "src": [
+      "SRC-000643"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search found no local news coverage of the opening",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SF YIMBY 2022 approval article already on record; no newer trade coverage found",
+     "src": [
+      "SRC-000611"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "ROEM project page opened; its body text describes a different 42-unit San Luis Obispo property, so no facts taken",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No Withee Malcolm project page found; BKF page confirms Withee Malcolm as architect",
+     "src": [
+      "SRC-002837"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "Financing from CTCAC CA-23-488 already on record; no other lender sources found",
+     "src": [
+      "SRC-001637"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts returned none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-000610": "S1",
     "SRC-000612": "S2",
     "SRC-000611": "S3",
     "SRC-001000": "S4",
     "SRC-001637": "S5",
-    "SRC-001603": "S6"
+    "SRC-002837": "S6",
+    "SRC-001603": "S7",
+    "SRC-002838": "S8",
+    "SRC-000643": "S9",
+    "SRC-002839": "S10"
    },
    "lat": 37.527164114814816,
    "lng": -122.28532430740741,
@@ -319687,7 +320703,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "belmont family apartments (800-803 belmont avenue) belmont 044-172-230 803 belmont ave, belmont, ca 94002, belmont, ca 800-803 belmont ave, belmont, ca 94002, belmont, ca apartments permitted building permit issued 2024-07-03 (status as of the 2024 apr) lease-up / selling city celebrated completion on 2026-09-16; 125 households to move in belmont 1.5 125 {\"studio\": 0, \"1br\": 52, \"2br\": 40, \"3br\": 33, \"4br+\": 0} 8 terraced; no single portion above six floors 100% affordable apr counts: 62 very low, 62 low (deed-restricted), 1 above moderate; 47 extremely low-income units within these. apr income categories are reported by the city and are not ami percentages 36 extremely low-income units including 19 supportive units for formerly homeless veterans; 89 units at 50-80% ami 55 [\"discretionary\", \"density bonus\"] city council approval; 80% density bonus plus additional bonus for public benefits pa2020-0020 [{\"count\": 47, \"ami\": 30}, {\"count\": 15, \"ami\": 50}, {\"count\": 54, \"ami\": 60}, {\"count\": 8, \"ami\": 70}] [\"family\"] 130067043 total sources in ctcac staff report. eight stories, terraced, over a three-level subterranean garage; replaces the bel mateo motel ctcac ca-23-488: belmont family apartments, located at 800-803 belmont avenue in belmont, requested and is being recommended for a reservation of $5,707,459 in annual federal tax credits and $32,921,993 in total state tax credits to finance the new construction of 124 units of housing serving families with rents affordable to households earning 30%-70% of area median income (ami). developer roem corporation lucky bhardwaj architect withee malcolm architects recorded owner belmont family apartments lp co-developer / partner pacific housing, inc. property manager fpi management citibank - tax exempt construction loan citibank - bond cap construction loan citibank - taxable tail construction loan citibank permanent loan lease-up noi other hasmc ahf local soft loan moving to work funds other city of belmont local soft loan deferred developer fee deferred developer fee tax credit investor tax-credit equity (4%) tax credit equity as stated in staff report city council approval ctcac staff report recommends tax credit reservation (ca-23-488) building permit issued city celebrates completion of 125 affordable homes"
+   "search": "belmont family apartments (800-803 belmont avenue) belmont 044-172-230 803 belmont ave, belmont, ca 94002, belmont, ca 800-803 belmont ave, belmont, ca 94002, belmont, ca apartments permitted building permit issued 2024-07-03 (status as of the 2024 apr) lease-up / selling city celebrated completion on 2026-09-16; 125 households to move in belmont 1.5 125 {\"studio\": 0, \"1br\": 52, \"2br\": 40, \"3br\": 33, \"4br+\": 0} 8 terraced; no single portion above six floors 5 bkf project page describes a five-story building 100% affordable apr counts: 62 very low, 62 low (deed-restricted), 1 above moderate; 47 extremely low-income units within these. apr income categories are reported by the city and are not ami percentages 36 extremely low-income units including 19 supportive units for formerly homeless veterans; 89 units at 50-80% ami 55 [\"discretionary\", \"density bonus\"] city council approval; 80% density bonus plus additional bonus for public benefits pa2020-0020 [{\"count\": 47, \"ami\": 30}, {\"count\": 15, \"ami\": 50}, {\"count\": 54, \"ami\": 60}, {\"count\": 8, \"ami\": 70}] [\"family\"] 130067043 total sources in ctcac staff report. eight stories, terraced, over a three-level subterranean garage; replaces the bel mateo motel ctcac ca-23-488: belmont family apartments, located at 800-803 belmont avenue in belmont, requested and is being recommended for a reservation of $5,707,459 in annual federal tax credits and $32,921,993 in total state tax credits to finance the new construction of 124 units of housing serving families with rents affordable to households earning 30%-70% of area median income (ami). bkf engineers provided civil engineering and land surveying for client roem development corporation. bkf describes 125 affordable units for low-income families and formerly homeless veterans, about 6,500 sq ft of outdoor recreation space including a children's playground, a club room and a computer room. the project received a 2022 pcbc gold nugget award of merit, best on-the-boards affordable housing community. city bulletin of sept. 18, 2026: 125 units (52 one-bedroom, 40 two-bedroom, 33 three-bedroom) on a 1.5-acre site at belmont avenue and el camino real, formerly the bel-mateo motel and vacant land. the 2024 apr row lists apns 044-172-190 and 044-172-200 and financial assistance lihtc, pbs8, home, cdlac and other. the county active parcel layer returns only apn 044-172-230 (803 belmont ave, owner belmont family apartments lp) with a legal start date of 2024-05-15. developer roem corporation lucky bhardwaj architect withee malcolm architects recorded owner belmont family apartments lp co-developer / partner pacific housing, inc. property manager fpi management civil engineer bkf engineers landscape architect jett landscape architecture + design citibank - tax exempt construction loan citibank - bond cap construction loan citibank - taxable tail construction loan citibank permanent loan lease-up noi other hasmc ahf local soft loan moving to work funds other city of belmont local soft loan deferred developer fee deferred developer fee tax credit investor tax-credit equity (4%) tax credit equity as stated in staff report city council approval ctcac staff report recommends tax credit reservation (ca-23-488) building permit issued ribbon cutting for the completed 125-unit community, held the week of the city's sept. 18, 2026 bulletin city celebrates completion of 125 affordable homes"
   },
   {
    "id": "SMC-000031",

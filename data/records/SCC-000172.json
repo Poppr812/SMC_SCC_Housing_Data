@@ -1,6 +1,6 @@
 {
   "id": "SCC-000172",
-  "name": "2350 S. Bascom",
+  "name": "23 Fifty Bascom (2350 S. Bascom)",
   "parcels": [
     {
       "apn": "288-05-045",
@@ -140,6 +140,12 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "2022 APR entitlement row: 122 low-income deed-restricted, 1 above moderate, 58 extremely low-income. 2023 APR permit row: 26 very low, 71 low, 25 moderate, 1 above moderate, 13 extremely low-income.",
+          "src": [
+            "SRC-001107"
+          ]
         }
       ]
     },
@@ -154,6 +160,16 @@
             "SRC-001107"
           ],
           "note": "SB 35 flagged in the state report"
+        },
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "APR rows flag SB 35 approval and deed restriction type DB, with one development standards modification"
         }
       ]
     },
@@ -234,6 +250,51 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001932",
+            "SRC-001956"
+          ],
+          "note": "6-story mixed-use building per SB 35 permit H21-004 description"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1437,
+          "src": [
+            "SRC-001932",
+            "SRC-001956"
+          ],
+          "note": "Ground-floor commercial space"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.96,
+          "src": [
+            "SRC-001932"
+          ],
+          "note": "Approximately 0.96 gross acres"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -254,6 +315,19 @@
       "text": "City of San Jose permit H21-004 (Site Development Permit/Amendment, folder year 2021), status Approved, issue date 2022-02-04: \"SB 35 Ministerial Site Development Permit to allow the demolition of two commercial buildings totaling 7,155 sf and the construction of 6 story mixed-use, multifamily unit project consisting of 123 100% affordable rental units and 1,437 square feet of gro\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Operating name 23 Fifty Bascom, managed by Buckingham Property Management. Directory listing shows 123 units, 122 affordable, studio to three-bedroom, with rent tiers at 30%, 50%, 60% and 80% AMI; waitlists closed for all unit types.",
+      "src": [
+        "SRC-002841",
+        "SRC-002840"
+      ]
+    },
+    {
+      "text": "Buckingham property page lists amenities including community room, courtyard, fitness center, playground, elevator and carport/covered parking.",
+      "src": [
+        "SRC-002840"
       ]
     }
   ],
@@ -368,6 +442,26 @@
       "src": [
         "SRC-001619"
       ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "San Jose 20% funds (amount not reported)",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Measure A (amount not reported)",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001107"
+      ]
     }
   ],
   "groups": {},
@@ -445,6 +539,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search identified the operating name 23 Fifty Bascom and Buckingham listing",
+      "src": [
+        "SRC-002841",
+        "SRC-002840"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 28805045: situs 2350 S Bascom Av, San Jose 95128; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning GIS permit H21-004 text (6 stories, 1,437 sq ft commercial); sanjoseca.gov pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Measure A funding named in the 2023 APR row; no county board item found",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2022 and 2023 rows via data.ca.gov datastore: density bonus, 55-year term, funding sources, income counts",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "No news beyond the San Jose Spotlight article already on record",
+      "src": [
+        "SRC-001933"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SJ Build page: 6 stories, 1,437 sq ft commercial, 0.96 gross acres",
+      "src": [
+        "SRC-001932"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No project page found for Pacific West Communities or Maracor Development",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose 20% funds and Measure A named in APR; Citibank and Bonneville financing already on record from CTCAC",
+      "src": [
+        "SRC-001107",
+        "SRC-001619"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts returned none",
+      "src": []
+    }
+  }
 }
