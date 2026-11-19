@@ -95,21 +95,28 @@
     "total_units": {
       "claims": [
         {
-          "value": 36,
-          "src": [
-            "SRC-001107"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 90,
           "src": [
             "SRC-001869"
           ],
           "note": "H24-047, filed August 2024: 90 units, under review per SJ Build. Earlier approved plan was 36."
+        },
+        {
+          "value": 99,
+          "src": [
+            "SRC-003092",
+            "SRC-001869"
+          ],
+          "note": "Preliminary review PRE23-211 (November 2023): eight-story building with 99 residential units"
+        },
+        {
+          "value": 18,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "SP18-053: state report rows for 2018 (approved 2018-12-18) and 2022 (approved 2022-11-29) each list 18 entitled units"
         }
-      ],
-      "best": 1
+      ]
     },
     "planning_file": {
       "claims": [
@@ -126,6 +133,13 @@
             "SRC-001869"
           ],
           "note": ""
+        },
+        {
+          "value": "PRE23-211",
+          "src": [
+            "SRC-001869"
+          ],
+          "note": "Enhanced preliminary review"
         }
       ]
     },
@@ -137,6 +151,47 @@
             "SRC-001107"
           ],
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-003092",
+            "SRC-001869"
+          ],
+          "note": "PRE23-211 proposal"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2670,
+          "src": [
+            "SRC-003092",
+            "SRC-001869"
+          ],
+          "note": "Ground-floor retail (PRE23-211 and H24-047)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.31,
+          "src": [
+            "SRC-001869"
+          ],
+          "note": "0.31-gross-acre site (PRE23-211)"
+        },
+        {
+          "value": 0.3,
+          "src": [
+            "SRC-003092"
+          ]
         }
       ]
     }
@@ -153,6 +208,13 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "H24-047 description: 2,670 sq ft of non-residential space, demolition of 2,500 sq ft of building, 90 residential units, removal of 0 ordinance-size trees. Site is in the Diridon Station Area Plan, between Josefa Street and Barack Obama Boulevard.",
+      "src": [
+        "SRC-001869",
+        "SRC-003092"
+      ]
     }
   ],
   "parties": [
@@ -165,11 +227,30 @@
       "src": [
         "SRC-001869"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Bay Plus Construction",
+      "contact": "Abbas Haghshenas",
+      "linkedin": null,
+      "other_role": "Applicant (SF YIMBY, 2023)",
+      "src": [
+        "SRC-003092"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-12-18",
+      "type": "Approved",
+      "label": "SP18-053 entitlement approved (18 units), as reported to the state for 2018",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-11-29",
       "type": "Approved",
@@ -177,6 +258,24 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2023-11-05",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE23-211 filed (99 units, 8 stories)",
+      "src": [
+        "SRC-001869"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-14",
+      "type": "Application filed",
+      "label": "Site Development Permit H24-047 filed (90 units)",
+      "src": [
+        "SRC-001869"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -194,6 +293,94 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Removed total_units claim 36: it added two state report rows (2018 and 2022) for the same 18-unit file SP18-053"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 500 W San Carlos St and applicant names",
+      "src": [
+        "SRC-003092"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 264-20-064: situs 500 W San Carlos St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit records read via SJ Build tracker",
+      "src": [
+        "SRC-001869"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "State APR Table A2 rows for SP18-053, 2018 and 2022 (18 units each)",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Bay Area News Group coverage referenced by SF YIMBY not found in open access",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2023-11-15",
+      "src": [
+        "SRC-003092"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched Bay Plus Construction; no company site or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

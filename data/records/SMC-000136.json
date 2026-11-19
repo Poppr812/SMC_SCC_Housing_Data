@@ -43,6 +43,52 @@
           37.5927998
         ]
       ]
+    },
+    {
+      "apn": "025-121-120",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3864579,
+          37.5927347
+        ],
+        [
+          -122.3868277,
+          37.592414
+        ],
+        [
+          -122.3868468,
+          37.5924279
+        ],
+        [
+          -122.3869803,
+          37.5925254
+        ],
+        [
+          -122.386482,
+          37.5929573
+        ],
+        [
+          -122.3864587,
+          37.5929775
+        ],
+        [
+          -122.3863784,
+          37.5930471
+        ],
+        [
+          -122.3862291,
+          37.592933
+        ],
+        [
+          -122.3864579,
+          37.5927347
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -147,6 +193,64 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003093"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 20,
+            "1br": 15,
+            "2br": 55,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003093"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 82750,
+          "src": [
+            "SRC-003093"
+          ],
+          "note": "Total building area 124,620 sq ft"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 145,
+          "src": [
+            "SRC-003093"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001133"
+          ],
+          "note": "State report 2021"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -155,6 +259,20 @@
       "src": [
         "SRC-001132",
         "SRC-001133"
+      ]
+    },
+    {
+      "text": "Six-story, 70-foot building on a 33,340 sq ft lot replacing two office buildings (one and three stories); includes a 2,340 sq ft public plaza; five units for households at 80% of San Mateo County AMI.",
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    {
+      "text": "State report lists APNs 025-121-110 and 025-121-120; county parcel layer shows 025-121-120 at 1820 Ogden Dr, owner HC RE PORTFOLIO LLC. The state report notes the affordable units are required as a community benefit in the zoning district.",
+      "src": [
+        "SRC-001133",
+        "SRC-001132",
+        "SRC-001103"
       ]
     }
   ],
@@ -166,6 +284,64 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Sierra Investments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ogden Properties MGMT",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Development entity for Sierra Investments",
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Levy Design Partners",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.levydesignpartners.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Chris Ford Landscape",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Macleod & Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Queensway Trading Company",
+      "contact": "Galen Ma",
+      "linkedin": null,
+      "other_role": "Property owner's representative",
+      "src": [
+        "SRC-003093"
       ]
     }
   ],
@@ -199,6 +375,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 1814-1820 Ogden Dr, Sierra Investments and Levy Design Partners",
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC parcel layer: 025-121-110 (1814 Ogden) and 025-121-120 (1820 Ogden), both owned by HC RE PORTFOLIO LLC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "burlingame.org project page, major projects page and attachment PDFs return 404",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "State APR Table A 2020 and Table A2 2021 rows: second APN 025-121-120, 55-year affordability term",
+      "src": [
+        "SRC-001132",
+        "SRC-001133"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (2020, 2021) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2021-09-29",
+      "src": [
+        "SRC-003093"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Sierra Investments project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched Levy Design Partners site; no page for 1814-1820 Ogden found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

@@ -120,6 +120,13 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "Abode lists 66 affordable homes, 23 supportive homes and 1 manager unit; city permit text: units at 30-80% AMI including 23 permanent supportive housing units",
+          "src": [
+            "SRC-003091",
+            "SRC-001841"
+          ]
         }
       ]
     },
@@ -150,6 +157,58 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001841"
+          ],
+          "note": "MP24-002 description: 6-story building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.67,
+          "src": [
+            "SRC-001841"
+          ],
+          "note": "About 0.67 gross acres"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001841",
+            "SRC-001107"
+          ],
+          "note": "SB 35 ministerial permit MP24-002 with two density bonus concessions and eight waivers; state report 2025 lists SB 35 approval and density bonus"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003091",
+            "SRC-001841"
+          ],
+          "note": "Families, including families and individuals experiencing homelessness; 23 permanent supportive housing units"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +224,13 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "MP24-002 covers demolition of a 2,740 sq ft commercial building, a 6-story building of 90 units, and removal of 7 ordinance-size trees. Abode's site lists Camden Place in its pipeline as a proposed development.",
+      "src": [
+        "SRC-001841",
+        "SRC-003091"
+      ]
     }
   ],
   "parties": [
@@ -178,11 +244,52 @@
         "SRC-001841"
       ],
       "website": "https://abodecommunities.org/"
+    },
+    {
+      "role": "Developer",
+      "company": "Abode Communities",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://abodecommunities.org/",
+      "website_basis": "opened",
+      "project_page": "https://abodecommunities.org/?p=13184",
+      "src": [
+        "SRC-003091",
+        "SRC-001841"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Abode Services",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services partner",
+      "src": [
+        "SRC-003091"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-02-24",
+      "type": "Other",
+      "label": "SB 330 preliminary application PRE23-009 filed (90 affordable units)",
+      "src": [
+        "SRC-001841"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-04-06",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE23-021 filed",
+      "src": [
+        "SRC-001841"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-04-05",
       "type": "Application filed",
@@ -225,6 +332,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Camden Place, 1999 Camden Ave and Abode Communities",
+      "src": [
+        "SRC-003091"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 414-24-037: situs 1999 Camden Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov (housing NOFA documents) refuses automated access; city permit data read via SJ Build tracker",
+      "src": [
+        "SRC-001841"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched Measure A dashboard and county funding news; Camden Place not listed",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "State APR Table A2 2025 row for MP24-002 (SB 35, density bonus); no CTCAC, CDLAC or HCD award found in searches",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "San Jose Spotlight and other local news searches found no article on Camden Place",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Trade press searches found no article on Camden Place",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Abode Communities project page: 66 affordable, 23 supportive, 1 manager unit; Abode Services as services partner",
+      "src": [
+        "SRC-003091"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named on Abode page or permit text",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public award found in public sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

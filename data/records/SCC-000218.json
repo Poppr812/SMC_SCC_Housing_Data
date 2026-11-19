@@ -1,6 +1,6 @@
 {
   "id": "SCC-000218",
-  "name": "0 E Alma Ave",
+  "name": "Senter Road Residential (0 E Alma Ave)",
   "parcels": [
     {
       "apn": "477-05-005",
@@ -291,6 +291,12 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "Amendment proposes 10 deed-restricted for-sale units for households up to 110% AMI, sold at 120% AMI, down from 11 in the approved permit",
+          "src": [
+            "SRC-003089"
+          ]
         }
       ]
     },
@@ -326,6 +332,57 @@
             "SRC-001107"
           ],
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 10,
+              "ami": 110
+            }
+          ],
+          "src": [
+            "SRC-003089"
+          ],
+          "note": "Amendment as described by SF YIMBY, February 2025; the city permit text for HA21-014-01 describes five very low-income units at 50% AMI"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.23,
+          "src": [
+            "SRC-003088",
+            "SRC-003089"
+          ],
+          "note": "CEQAnet: approximately 2.23-acre site"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003088",
+            "SRC-003089"
+          ],
+          "note": "Three-story duplexes and three-story single-family houses"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107",
+            "SRC-003088"
+          ],
+          "note": "State report 2023 lists density bonus (16 bonus units, development standards modification); CEQAnet local actions: Site Plan, Land Division"
         }
       ]
     }
@@ -349,9 +406,57 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CEQAnet: subdivide the site into 44 residential lots and three open space parcels; 42 lots each with a three-story duplex and 2 lots each with a three-story single-family residence; lots about 1,838 to 2,015 sq ft; 11 of 44 units planned as affordable. Site is vacant, on Senter Road between Keyes Street and East Alma Avenue.",
+      "src": [
+        "SRC-003088"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2023) describes 42 three-story townhome-style units and two detached single-family homes, with stucco and fiber cement exteriors, and estimates construction at about 15 months once started.",
+      "src": [
+        "SRC-003090"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025): amendment subdivides the site into 47 lots (44 residential, 3 common) and removes 25 non-ordinance-size trees.",
+      "src": [
+        "SRC-003089"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Affordable Housing Land Consultant LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner (SF YIMBY, 2025)",
+      "src": [
+        "SRC-003089"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "AMG & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (SF YIMBY, 2023)",
+      "src": [
+        "SRC-003090"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "RJA",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003090"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -364,12 +469,30 @@
       ]
     },
     {
+      "date": "2023-03-10",
+      "type": "Other",
+      "label": "Draft Initial Study/Mitigated Negative Declaration circulated (SCH 2023030330)",
+      "src": [
+        "SRC-003088"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-07-12",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-02-12",
+      "type": "Other",
+      "label": "City project review meeting on amendment to affordable housing plan",
+      "src": [
+        "SRC-003089"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -382,6 +505,92 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, H21-014 and Senter Road; found SF YIMBY and CEQAnet entries",
+      "src": [
+        "SRC-003089",
+        "SRC-003088"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 477-05-005: situs E Alma Av, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov project and environmental pages refuse automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2023030330 (MND); state APR Table A2 2023 row for H21-014 (density bonus fields)",
+      "src": [
+        "SRC-003088",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for Senter Road / E Alma townhomes in local news found no article on this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2023-03-14 and 2025-02-12",
+      "src": [
+        "SRC-003090",
+        "SRC-003089"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched AMG & Associates and Affordable Housing Land Consultant LLC; no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources; RJA named as civil engineering and design consultant",
+      "src": [
+        "SRC-003090"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or public funder found in searches",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }
