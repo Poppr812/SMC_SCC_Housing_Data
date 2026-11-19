@@ -47,6 +47,48 @@
           37.4812694
         ]
       ]
+    },
+    {
+      "apn": "053-063-120",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-000743"
+      ],
+      "outline": [
+        [
+          -122.2295253,
+          37.4814863
+        ],
+        [
+          -122.2294741,
+          37.4814495
+        ],
+        [
+          -122.2293718,
+          37.4813759
+        ],
+        [
+          -122.2292695,
+          37.4813023
+        ],
+        [
+          -122.2291671,
+          37.4812287
+        ],
+        [
+          -122.2292826,
+          37.4811267
+        ],
+        [
+          -122.2296408,
+          37.4813843
+        ],
+        [
+          -122.2295253,
+          37.4814863
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -237,6 +279,17 @@
           "note": "Waivers sought for height, open space, bicycle parking and frontage"
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "DPC2021-005",
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "Earlier 130-unit plan entitled 2023-01-23"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -257,6 +310,36 @@
       "text": "City status: Application Deemed Incomplete. 26 below-market units.",
       "src": [
         "SRC-001242"
+      ]
+    },
+    {
+      "text": "City project page lists the status as Application Deemed Incomplete; it describes an 8-story, 126-unit project with 26 below-market-rate units and 121 parking spaces on merged parcels at 1320-1330 El Camino Real and 114 Madison Avenue.",
+      "src": [
+        "SRC-001242"
+      ]
+    },
+    {
+      "text": "County parcel data lists APN 053-063-120 at 114 Madison Ave, owner 114 Madison LLC.",
+      "src": [
+        "SRC-002851"
+      ]
+    },
+    {
+      "text": "State Table A2 (2023) reports the earlier plan as 130 units: 7 very-low, 6 low and 13 moderate-income inclusionary and density bonus units, plus 104 above-moderate.",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    {
+      "text": "Redwood City Pulse reports a height of nearly 98 feet, 54 bicycle spaces, a 26,554 sq ft lot, waivers for height, open space, bicycle parking and frontage standards, and replacement of Happy Donuts, The King Mattress and Furniture, and The Record Man.",
+      "src": [
+        "SRC-000740"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports about 163,000 sq ft total, including 38,800 sq ft for a two-story podium garage.",
+      "src": [
+        "SRC-000741"
       ]
     }
   ],
@@ -308,11 +391,38 @@
       "src": [
         "SRC-000742"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "114 Madison LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002851"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-05-11",
+      "type": "Other",
+      "label": "Application submitted for earlier 130-unit plan",
+      "src": [
+        "SRC-001117"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-01-23",
+      "type": "Other",
+      "label": "Earlier 130-unit plan (DPC2021-005) entitled",
+      "src": [
+        "SRC-001116"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-02",
       "type": "Other",
@@ -347,6 +457,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web searches on 1330 El Camino Real and Mecah Ventures; only Pulse and SF YIMBY articles already cited",
+      "src": [
+        "SRC-000740"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels: 053-063-110 (owner already on record) and 053-063-120 at 114 Madison Ave (114 Madison LLC); 1320-1328 El Camino parcels not matched to the project by any source",
+      "src": [
+        "SRC-002851",
+        "SRC-000743"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Redwood City PlanningProjects API id 153: status Application Deemed Incomplete",
+      "src": [
+        "SRC-001242"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2022 and Table A2 2023 rows for the earlier 130-unit plan (DPC2021-005)",
+      "src": [
+        "SRC-001117",
+        "SRC-001116"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Redwood City Pulse 2026-06-24 (height, lot size, displaced businesses); Daily Journal column returned 403",
+      "src": [
+        "SRC-000740"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-06-23 (garage and total square footage)",
+      "src": [
+        "SRC-000741"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No website found for Mecah Ventures or a Premier Properties project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No BDE Architecture project page for 1330 El Camino Real found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project returned nothing relevant",
+      "src": []
+    }
+  }
 }

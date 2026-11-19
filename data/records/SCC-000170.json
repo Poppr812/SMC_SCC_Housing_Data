@@ -173,6 +173,12 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "24% of units reserved as affordable",
+          "src": [
+            "SRC-001956"
+          ]
         }
       ]
     },
@@ -203,6 +209,54 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 22,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approved site development permit: approximately 214-foot high-rise with approximately 22 stories"
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.1,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres stated in the 2015 Planned Development permit for this parcel"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 93,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "2022 Table A2: 93 above-moderate of 123 entitled"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "Table A2 reports a 50 percent density bonus with development standards modifications"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -218,6 +272,24 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permits layer: site development permit filed 2021-07-14 by Roygbiv Real Estate Development, LLC for demolition of a single-family home and an approximately 214-foot, 22-story, 123-unit building; issued 2022-12-14, status Approved.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "An earlier Planned Development permit for this parcel, filed 2015-09-11 by Montgomery 7 LLC and approved 2016-06-21, allowed a 10-story mixed-use building with about 1,856 sq ft of ground-floor commercial space and up to 54 units on about 0.10 gross acres.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2021-06-28) described the filing as 126 units with 21 residential levels rising to 213 feet and ground-floor restaurant or cafe retail.",
+      "src": [
+        "SRC-001834"
+      ]
     }
   ],
   "parties": [
@@ -227,6 +299,25 @@
       "contact": null,
       "linkedin": null,
       "other_role": "Applicant",
+      "src": [
+        "SRC-001834"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Roygbiv Real Estate Development, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956",
+        "SRC-001834"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects Inc",
+      "contact": null,
+      "linkedin": null,
       "src": [
         "SRC-001834"
       ]
@@ -267,6 +358,11 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -275,5 +371,83 @@
       "relation": "adjacent",
       "note": "Montgomery Plaza II and Montgomery Plaza 1, neighboring towers on Lorraine Ave"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web searches on 565 Lorraine, Montgomery Plaza and Roygbiv; results pointed to sanjoseca.gov addendum (blocked) and SF YIMBY already cited",
+      "src": [
+        "SRC-001834"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 259-47-068: situs 565 Lorraine Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose permits GIS layer queried by APN 25947068 (H21-027 site development permit, 2016 PD permit); sanjoseca.gov addendum and notices refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2 2022 row: 123 units entitled 2022-12-14, 30 low, 93 above-moderate, 50 percent density bonus",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News items on pressreader returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021-06-28 (architect, height); The Real Deal 2022-12-14 approval article returned 403",
+      "src": [
+        "SRC-001834"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Roygbiv website found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Anderson Architects project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project returned nothing relevant",
+      "src": []
+    }
+  }
 }

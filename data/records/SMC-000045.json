@@ -159,6 +159,13 @@
             "SRC-000732",
             "SRC-000733"
           ]
+        },
+        {
+          "value": 125,
+          "src": [
+            "SRC-002845"
+          ],
+          "note": "Earlier proposal described in the March 2025 neighborhood meeting notice"
         }
       ]
     },
@@ -253,6 +260,38 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 10,
+              "ami": 50
+            },
+            {
+              "count": 10,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001108",
+            "SRC-002846"
+          ],
+          "note": "10 very-low-income and 10 moderate-income units"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 108,
+          "src": [
+            "SRC-001108"
+          ],
+          "note": "2025 Table A: 108 above-moderate of 128 proposed"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -266,6 +305,38 @@
       "text": "Replaces a single-story strip mall along South Delaware Street, demolished in 2023",
       "src": [
         "SRC-000732",
+        "SRC-000733"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-08-11 and 2026-03-06) lists the mix as 1 studio, 89 one-bedrooms, 33 two-bedrooms, 1 three-bedroom penthouse and 4 ground-floor townhome-style units, with 73 car and 148 bicycle spaces.",
+      "src": [
+        "SRC-002846",
+        "SRC-000732"
+      ]
+    },
+    {
+      "text": "SF YIMBY 2026-03-06 reports about 196,000 sq ft total, including 23,400 sq ft of parking and 5,950 sq ft of residential amenities, and a height of 85 feet; the 2025-08-11 article reported about 191,000 sq ft and 84 feet.",
+      "src": [
+        "SRC-000732",
+        "SRC-002846"
+      ]
+    },
+    {
+      "text": "State 2025 Table A describes a SPAR application for 128 apartments and 73 parking spaces, using density bonus to waive Objective Design Standards and General Plan height limits; status Pending.",
+      "src": [
+        "SRC-001108"
+      ]
+    },
+    {
+      "text": "The neighborhood meeting notice describes conversion of an aging strip retail center and parking lot.",
+      "src": [
+        "SRC-002845"
+      ]
+    },
+    {
+      "text": "The CEQA notice of exemption cites Public Resources Code 21080.66, a density of 200 units per acre, and demolition of a one-story commercial building.",
+      "src": [
         "SRC-000733"
       ]
     }
@@ -314,6 +385,33 @@
   "groups": {},
   "events": [
     {
+      "date": "2024-11-12",
+      "type": "Application filed",
+      "label": "SB 330 initial planning submittal",
+      "src": [
+        "SRC-002845"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-03-05",
+      "type": "Other",
+      "label": "Virtual neighborhood meeting held by Prometheus Real Estate Group",
+      "src": [
+        "SRC-002845"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-23",
+      "type": "Application filed",
+      "label": "Planning application PA-2025-025 submitted (state progress report date)",
+      "src": [
+        "SRC-001108"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-03",
       "type": "Approved",
       "label": "City Council approves project",
@@ -345,6 +443,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on 668 E 3rd Ave and Prometheus; opened SF YIMBY 2025 and 2026 articles and city notice",
+      "src": [
+        "SRC-002846"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 034-188-140: owner Gateway Crossing SM LLC c/o Prometheus Real Estate Group Inc, already on record",
+      "src": [
+        "SRC-000734"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of San Mateo neighborhood meeting notice (DocumentCenter 96559) with SB 330 submittal plans; no project page or staff report found",
+      "src": [
+        "SRC-002845"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2025 row (PA-2025-025, submitted 2025-10-23, 10 VLI, 10 MOD, 108 above-moderate); CEQAnet SCH 2026030146 already on record",
+      "src": [
+        "SRC-001108",
+        "SRC-000733"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal council approval article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-08-11 and 2026-03-06; The Real Deal 2026-03-06 returned 403",
+      "src": [
+        "SRC-002846",
+        "SRC-000732"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Prometheus project page for Gateway found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Jones Architecture project page for 668 E 3rd found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project returned nothing relevant",
+      "src": []
+    }
+  }
 }

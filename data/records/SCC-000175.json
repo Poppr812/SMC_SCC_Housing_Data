@@ -146,6 +146,13 @@
             "SRC-001956"
           ],
           "note": "City file PRE23-191 (Prelim - Focused (Policy Review, No Plans)): \"SB330 Preliminary Application for a townhome development of 107 units\""
+        },
+        {
+          "value": 139,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Vesting tentative map filed 2024-05-02: subdivide one lot into 14 residential lots with up to 139 condominium units"
         }
       ],
       "best": 1
@@ -201,6 +208,28 @@
           "note": "State report 2024, application stage: 25 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.91,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres, per the vesting tentative map description"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 98,
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "2024 Table A: 98 above-moderate of 123 proposed"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -227,6 +256,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permits layer shows the site development permit application filed 2024-05-03 (demolition of two commercial buildings totaling about 47,431 sq ft, removal of 122 trees, 128 condominium units) with status Inactive. The vesting tentative map, General Plan diagram amendment and environmental review files show Under Review.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "State 2024 Table A reports 123 proposed owner units: 25 low-income deed-restricted and 98 above-moderate; no density bonus.",
+      "src": [
+        "SRC-001099"
+      ]
     }
   ],
   "parties": [
@@ -239,11 +280,38 @@
       "src": [
         "SRC-001832"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Valley Office Partners, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-10-16",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application for 107 townhomes",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-05-02",
+      "type": "Application filed",
+      "label": "Vesting tentative map application (14 lots, up to 139 condominium units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-05-03",
       "type": "Application filed",
@@ -251,6 +319,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2024-08-20",
+      "type": "Application filed",
+      "label": "General Plan diagram amendment application",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -268,6 +345,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Web searches on address, H24-021 and Valley Office Partners; results were office lease listings and the sjbuild page already cited",
+      "src": [
+        "SRC-001832"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 101-19-002: situs 2611 N 1st St, San Jose 95134; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose permits GIS layer queried by APN 10119002: PRE23-191 prelim, tentative map, GP amendment, H24-021 marked Inactive; sanjoseca.gov pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2024 row for H24-021 (123 units, 25 low, 98 above-moderate); no CEQAnet or CTCAC record found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News 2023-10-24 article available only via pressreader, which returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal and ConnectCRE items on the Stanley Group purchase and 107-townhome plan returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No website found for Valley Office Partners, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project returned nothing relevant",
+      "src": []
+    }
+  }
 }

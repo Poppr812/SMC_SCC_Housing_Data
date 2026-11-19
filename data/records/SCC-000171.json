@@ -171,6 +171,18 @@
           "src": [
             "SRC-001404"
           ]
+        },
+        {
+          "value": "20 below-market-rate homes",
+          "src": [
+            "SRC-002849"
+          ]
+        },
+        {
+          "value": "20% of units affordable",
+          "src": [
+            "SRC-002850"
+          ]
         }
       ]
     },
@@ -228,8 +240,20 @@
           "src": [
             "SRC-001404"
           ]
+        },
+        {
+          "value": [
+            "Builder's remedy",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107",
+            "SRC-002849"
+          ],
+          "note": "Table A2 reports density bonus with six incentives or waivers"
         }
-      ]
+      ],
+      "best": 1
     },
     "restricted_by_ami": {
       "claims": [
@@ -248,6 +272,85 @@
             "SRC-001107"
           ],
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.8,
+          "src": [
+            "SRC-002847",
+            "SRC-002848"
+          ],
+          "note": "CEQA notice: approximately 0.8 acres (34,797 sq ft)"
+        },
+        {
+          "value": 1.0,
+          "src": [
+            "SRC-002849",
+            "SRC-001404"
+          ],
+          "note": "Described as roughly one acre"
+        }
+      ],
+      "best": 0
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 94750,
+          "src": [
+            "SRC-002848"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1799,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SB 330 preliminary application"
+        },
+        {
+          "value": 1800,
+          "src": [
+            "SRC-002848"
+          ]
+        }
+      ],
+      "best": 0
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 135,
+          "src": [
+            "SRC-002848",
+            "SRC-001404"
+          ],
+          "note": "Two-story podium garage"
+        },
+        {
+          "value": 127,
+          "src": [
+            "SRC-002849"
+          ],
+          "note": "Garages on the first and second stories"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 106,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "2025 Table A2: 106 above-moderate of 126 entitled"
         }
       ]
     }
@@ -271,6 +374,31 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "San Jose Spotlight reports approval at a Planning Director Hearing on 2025-12-03.",
+      "src": [
+        "SRC-002849"
+      ]
+    },
+    {
+      "text": "City permits layer describes demolition of an approximately 5,500 sq ft commercial building; Redco's project page describes a 5,000 sq ft retail strip on a 35,000 sq ft parcel and a joint venture formed in April 2023.",
+      "src": [
+        "SRC-001956",
+        "SRC-002850"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports a height of 86 feet and about 183,750 sq ft total, including 15,600 sq ft of amenities and 56,200 sq ft of parking.",
+      "src": [
+        "SRC-002848"
+      ]
+    },
+    {
+      "text": "CEQA notice names the applicant as 940 Willow LLC (REDCO Development) and describes seven levels: two concrete levels with retail, lobby and parking, and five wood-framed residential levels.",
+      "src": [
+        "SRC-002847"
+      ]
     }
   ],
   "parties": [
@@ -293,11 +421,30 @@
       "src": [
         "SRC-001404"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "940 Willow Owner LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant entity, dba REDCO Development",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-06-12",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application (126 units, 1,799 sq ft retail)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-10-10",
       "type": "Application filed",
@@ -322,6 +469,15 @@
         "SRC-001404"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-03-17",
+      "type": "Other",
+      "label": "City files CEQA notice of exemption (PRC 21080.66)",
+      "src": [
+        "SRC-002847"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -344,6 +500,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web searches on 940 Willow and Redco; opened Spotlight, SF YIMBY 2024, CEQAnet and Redco pages",
+      "src": [
+        "SRC-002849"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 429-03-072: situs 940 Willow St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose permits GIS layer by APN 42903072 (SB 330 prelim 2023-06-12, development permit approved 2025-12-03); sanjoseca.gov agenda documents refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026030677 notice of exemption; APR Table A2 2025 row (density bonus, 10 VLI, 10 MOD, 106 above-moderate)",
+      "src": [
+        "SRC-002847",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-12-15 on the director hearing approval",
+      "src": [
+        "SRC-002849"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-07-04 and 2026-03-20; The Real Deal articles returned 403",
+      "src": [
+        "SRC-002848",
+        "SRC-001404"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Redco Development project page for 940 Willow",
+      "src": [
+        "SRC-002850"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Studio Current project page for 940 Willow found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Redco page names no JV partner or lender; no other public source found",
+      "src": [
+        "SRC-002850"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project returned nothing relevant",
+      "src": []
+    }
+  }
 }
