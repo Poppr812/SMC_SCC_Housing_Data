@@ -186,7 +186,8 @@
         {
           "value": 114,
           "src": [
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-002913"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -197,7 +198,8 @@
           ],
           "note": "110 townhome-style condominiums per January 2023 article; state figure 114"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -216,6 +218,12 @@
           "src": [
             "SRC-001119"
           ]
+        },
+        {
+          "value": "13 of 110 condominiums designated affordable in the January 2023 proposal",
+          "src": [
+            "SRC-002914"
+          ]
         }
       ]
     },
@@ -228,6 +236,14 @@
             "SRC-001119"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "2021-7922",
+          "src": [
+            "SRC-002913",
+            "SRC-002915"
+          ],
+          "note": "City file number as written in Planning Commission items"
         }
       ]
     },
@@ -246,6 +262,39 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 6.13,
+          "src": [
+            "SRC-002913",
+            "SRC-002914"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 35393,
+          "src": [
+            "SRC-002913"
+          ],
+          "note": "Office space; SF YIMBY (January 2023) describes a 35,400 sq ft three-story medical office building"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002913"
+          ],
+          "note": "16 two- to three-story buildings"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -254,6 +303,19 @@
       "src": [
         "SRC-001118",
         "SRC-001119"
+      ]
+    },
+    {
+      "text": "The Planning Commission approved a use permit and tentative map on August 14, 2023 for a mixed-use development of 114 condominium units and 35,393 sq ft of office space in 16 two- to three-story buildings on a 6.13-acre site, with a 1.2-acre lot created for the office development. The January 9, 2023 Planning Commission item described 110 condominium units. Environmental review used CEQA infill streamlining (Public Resources Code 21094.5).",
+      "src": [
+        "SRC-002913",
+        "SRC-002915"
+      ]
+    },
+    {
+      "text": "SF YIMBY (January 2023): plan includes demolition of an eight-building medical office complex, two- to three-story townhomes with private garages, a three-story medical office building and a privately-owned public park.",
+      "src": [
+        "SRC-002914"
       ]
     }
   ],
@@ -267,6 +329,27 @@
       "src": [
         "SRC-001747"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Kamangar Consulting",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (August 2023 Planning Commission item)",
+      "src": [
+        "SRC-002913"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Silver Lake Foothill, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (per city filing)",
+      "src": [
+        "SRC-002913",
+        "SRC-002915"
+      ]
     }
   ],
   "financing": [],
@@ -278,6 +361,14 @@
       "label": "Application submitted",
       "src": [
         "SRC-001118"
+      ]
+    },
+    {
+      "date": "2023-01-09",
+      "type": "Other",
+      "label": "Planning Commission agenda item for the 110-unit version",
+      "src": [
+        "SRC-002915"
       ]
     },
     {
@@ -299,6 +390,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Silver Lake Foothill; SF YIMBY January 2023 article opened",
+      "src": [
+        "SRC-002914"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 20223007: situs 877 W Fremont; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Sunnyvale Legistar: PC 2023-01-09 item 23-0135 and PC 2023-08-14 item 23-0629 (approved)",
+      "src": [
+        "SRC-002913",
+        "SRC-002915"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "State APR Tables A and A2 already on record; no CTCAC or CEQAnet entry found",
+      "src": [
+        "SRC-001118",
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search for 2025-2026 local news on 877 W Fremont returned no articles",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2023-01-22 article; Institutional Property Advisors listing page opened but returned no listing content",
+      "src": [
+        "SRC-002914"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No developer website found for Silver Lake Foothill LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city items or articles",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -69,6 +69,13 @@
       "src": [
         "SRC-000632"
       ]
+    },
+    {
+      "text": "47 Midway Dr, Daly City, CA 94014, Daly City, CA",
+      "role": "other",
+      "src": [
+        "SRC-001650"
+      ]
     }
   ],
   "images": [
@@ -132,6 +139,19 @@
           "src": [
             "SRC-000633"
           ]
+        },
+        {
+          "value": 1.79,
+          "src": [
+            "SRC-001650"
+          ]
+        },
+        {
+          "value": 2.95,
+          "src": [
+            "SRC-002930"
+          ],
+          "note": "Site area listed by the architect (128,400 sq ft)"
         }
       ]
     },
@@ -190,6 +210,13 @@
             "SRC-000633"
           ],
           "note": "Shared garage built in Phase 1"
+        },
+        {
+          "value": 185,
+          "src": [
+            "SRC-001650"
+          ],
+          "note": "185 of 371 spaces in the shared four-level garage built in Phase 1 allocated to Phase 2"
         }
       ]
     },
@@ -218,9 +245,50 @@
             "SRC-000633",
             "SRC-000634"
           ]
+        },
+        {
+          "value": "76 units (68%) with HUD Section 8 project-based vouchers; 29 homeless set-aside units; 55-year affordability",
+          "src": [
+            "SRC-001650"
+          ]
         }
       ],
       "combine": true
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 41,
+              "ami": 30
+            },
+            {
+              "count": 50,
+              "ami": 50
+            },
+            {
+              "count": 20,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001650"
+          ],
+          "note": "CTCAC staff report aggregate targeting, 111 restricted units plus 2 manager units"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 130994476,
+          "src": [
+            "SRC-001650"
+          ],
+          "note": "Project cost at application"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -228,6 +296,18 @@
       "text": "One 4-story building, Type V with one first-floor wing Type I; ground-floor child care center",
       "src": [
         "SRC-000633"
+      ]
+    },
+    {
+      "text": "CTCAC/CDLAC staff report CA-24-471 (August 6, 2024): 113 units (111 restricted, 2 managers) at 47 Midway Drive on 1.79 acres; 4 stories, Type V; construction expected February 2025 to February 2027. Phase 2 parking is 185 of 371 spaces in the garage built in Phase 1; Phase 1 also built shared after-school space and play area.",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "text": "David Baker Architects project page lists 75,948 sq ft, a 2.95-acre (128,400 sq ft) site, 60 bicycle parking spaces, GreenPoint Rated Platinum, and status under construction.",
+      "src": [
+        "SRC-002930"
       ]
     }
   ],
@@ -300,6 +380,104 @@
       "src": [
         "SRC-000637"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "MP Midway Associates 2, L.P.",
+      "contact": "Abigail Goldware Potluri",
+      "linkedin": null,
+      "email": "agoldware@midpen-housing.org",
+      "phone": "650.356.2900",
+      "other_role": "CTCAC applicant / CDLAC sponsor",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MP Midway 2, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jones Hall, A Professional Law Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond counsel",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "California Community Reinvestment Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002930"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "GLS Landscape/Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002930"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "KPFF Consulting Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002930"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dorman Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Associate architect (child care center)",
+      "src": [
+        "SRC-002930"
+      ]
     }
   ],
   "financing": [
@@ -332,10 +510,128 @@
       "src": [
         "SRC-000636"
       ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "Wells Fargo, N.A. (private placement); California Municipal Finance Authority (issuer)",
+      "program": "CDLAC bond allocation",
+      "amount": 65352000,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "California Community Reinvestment Corporation",
+      "program": "Tax-exempt permanent loan",
+      "amount": 23582000,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County",
+      "program": "Affordable Housing Fund (Housing for a Healthy California)",
+      "amount": 14762723,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "FHLB AHP",
+      "provider": "Federal Home Loan Bank",
+      "program": "Affordable Housing Program",
+      "amount": 1000000,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Housing Authority of the County of San Mateo",
+      "program": null,
+      "amount": 11279806,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Housing Authority of the County of San Mateo",
+      "program": "Gap loan",
+      "amount": 2720194,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Daly City",
+      "program": "Permanent Local Housing Allocation (PLHA)",
+      "amount": 486230,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Peninsula Family Service",
+      "program": "Commercial space contribution",
+      "amount": 1150000,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "MidPen Housing Corporation (general partner)",
+      "program": "General partner contribution",
+      "amount": 8717646,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "MidPen Housing Corporation",
+      "program": null,
+      "amount": 3300000,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor (not named in staff report)",
+      "program": "Federal 4% credits, $6,418,635 annual",
+      "amount": 63337881,
+      "date": "2024-08",
+      "src": [
+        "SRC-001650"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2024-08-06",
+      "type": "Other",
+      "label": "CTCAC/CDLAC recommended $6,418,635 annual federal tax credits and $65,352,000 tax-exempt bond allocation",
+      "src": [
+        "SRC-001650"
+      ]
+    },
     {
       "date": "2025-03-26",
       "type": "Other",
@@ -383,6 +679,11 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -391,5 +692,98 @@
       "relation": "part_of",
       "note": "Phase 2 of the Midway Village master plan"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Midway Village Phase 2; CTCAC staff report and architect page opened",
+      "src": [
+        "SRC-001650",
+        "SRC-002930"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC parcel layer APN 005-330-440 already on record with owner/lessee",
+      "src": [
+        "SRC-000637"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Daly City APR permit data already on record; no newer city item found",
+      "src": [
+        "SRC-000632"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Mateo County AHF and Housing Authority loans per CTCAC staff report",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC/CDLAC staff report CA-24-471, August 6, 2024",
+      "src": [
+        "SRC-001650"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Search for 2026 news found only the 2025 groundbreaking and financing coverage already on record",
+      "src": [
+        "SRC-000634",
+        "SRC-000636"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY and Connect CRE articles already on record",
+      "src": [
+        "SRC-000635",
+        "SRC-000636"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "MidPen property profile and press release already on record",
+      "src": [
+        "SRC-000633",
+        "SRC-000634"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "David Baker Architects project page 8 Partridge Street",
+      "src": [
+        "SRC-002930"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Permanent sources from CTCAC staff report; Wells Fargo construction financing already on record",
+      "src": [
+        "SRC-001650",
+        "SRC-000636"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

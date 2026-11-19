@@ -152,6 +152,14 @@
             "SRC-001517"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 149,
+          "src": [
+            "SRC-002924",
+            "SRC-002925"
+          ],
+          "note": "113 independent living units plus 36 assisted living units; state report counts 113"
         }
       ]
     },
@@ -171,6 +179,12 @@
           "value": "17 deed-restricted units reported to the state",
           "src": [
             "SRC-001119"
+          ]
+        },
+        {
+          "value": "17 units reserved for low- and very low-income residents",
+          "src": [
+            "SRC-002925"
           ]
         }
       ]
@@ -218,6 +232,62 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.42,
+          "src": [
+            "SRC-002926",
+            "SRC-002925"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001517",
+            "SRC-002927"
+          ],
+          "note": "Senior housing building; convalescent hospital building is separate"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 12232,
+          "src": [
+            "SRC-001517"
+          ],
+          "note": "Ground-floor commercial in the senior housing building"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 203500,
+          "src": [
+            "SRC-002927"
+          ],
+          "note": "Senior housing building, about 203,500 sq ft; WATG lists 203,000 sq ft"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 172,
+          "src": [
+            "SRC-002927"
+          ],
+          "note": "Senior housing building; the hospital building has a further 78 spaces"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -226,6 +296,33 @@
       "src": [
         "SRC-001118",
         "SRC-001119"
+      ]
+    },
+    {
+      "text": "Special Development Permit approved by the Planning Commission September 9, 2024: a six-story senior housing building with 113 independent living units, 36 assisted living accommodations and about 12,232 sq ft of commercial space, plus a three-story, 72,000 sq ft, 52-bed convalescent hospital, replacing two used auto sales buildings on one 2.42-acre parcel.",
+      "src": [
+        "SRC-001517",
+        "SRC-002926"
+      ]
+    },
+    {
+      "text": "Sources differ on the hospital building: the city filing shows three stories and 72,000 sq ft; SF YIMBY (September 2024) shows about 63,000 sq ft, 59 feet tall, three stories; SF YIMBY (April 2025) shows four stories. SF YIMBY (September 2024) shows the senior building at 75 feet with a 2.5-level basement garage.",
+      "src": [
+        "SRC-001517",
+        "SRC-002927",
+        "SRC-001516"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (September 2024): Watermark Retirement Communities to operate the senior living building and El Camino Health the convalescent hospital; about 12,000 sq ft of ground-floor retail planned as a fitness center and cafe; PMB targeted a November construction start and an end-of-2026 opening.",
+      "src": [
+        "SRC-002925"
+      ]
+    },
+    {
+      "text": "WATG project page: 203,000 sq ft mixed-use project with 149 units (113 independent living, 36 assisted living), targeting LEED Gold.",
+      "src": [
+        "SRC-002924"
       ]
     }
   ],
@@ -250,11 +347,102 @@
         "SRC-001517"
       ],
       "website": "https://pmbllc.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "WATG",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.watg.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.watg.com/project/sunnyvale-senior-living/",
+      "src": [
+        "SRC-002927",
+        "SRC-001516",
+        "SRC-002924"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Material Design Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002927",
+        "SRC-001516"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Watermark Retirement Communities",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002925"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "El Camino Health",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001516"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "El Camino Health",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Convalescent hospital operator",
+      "src": [
+        "SRC-002925"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Nicholas Gera",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (per 2024 city filing)",
+      "src": [
+        "SRC-001517",
+        "SRC-002926"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dubrovnik Properties, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (per December 2025 parcel map filing)",
+      "src": [
+        "SRC-002928"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Tyler Whaley",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, tentative parcel map PLNG-2025-0122",
+      "src": [
+        "SRC-002928"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-06-10",
+      "type": "Other",
+      "label": "Planning Commission agenda item (24-0681)",
+      "src": [
+        "SRC-002926"
+      ]
+    },
     {
       "date": "2024-09-09",
       "type": "Application filed",
@@ -270,6 +458,31 @@
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "date": "2025-04",
+      "type": "Construction start",
+      "label": "Groundbreaking ceremony",
+      "src": [
+        "SRC-001516"
+      ]
+    },
+    {
+      "date": "2025-12-10",
+      "type": "Other",
+      "label": "Zoning Administrator hearing on tentative parcel map splitting APN 161-41-009 into two lots (PLNG-2025-0122)",
+      "src": [
+        "SRC-002928"
+      ]
+    },
+    {
+      "date": "2026",
+      "type": "Completion",
+      "label": "Opening targeted for end of 2026",
+      "src": [
+        "SRC-002925"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -292,6 +505,99 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, PMB and El Camino Health; WATG page and news articles opened",
+      "src": [
+        "SRC-002924",
+        "SRC-002925"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 16141009: situs 1027 W El Camino Real, 5 situs addresses; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Sunnyvale Legistar: PC 2024-06-10 item 24-0681, PC 2024-09-09 item 24-0922 (approved), ZA 2025-12-10 item 25-1103 parcel map",
+      "src": [
+        "SRC-002926",
+        "SRC-001517",
+        "SRC-002928"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "State APR already on record; no CTCAC or CEQAnet entry found",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Spotlight 2024-09-13 opened; Local News Matters copy returned 403",
+      "src": [
+        "SRC-002925"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-09-22 approval article and 2025-04-29 groundbreaking article",
+      "src": [
+        "SRC-002927",
+        "SRC-001516"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "PMB website already linked on record",
+      "src": [
+        "SRC-001516"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "WATG project page Sunnyvale Senior Living",
+      "src": [
+        "SRC-002924"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts with project facts",
+      "src": []
+    }
+  }
 }

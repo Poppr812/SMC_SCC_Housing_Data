@@ -1,6 +1,6 @@
 {
   "id": "SCC-000185",
-  "name": "15860 Winchester Blvd",
+  "name": "Winchester Assisted Living and Memory Care",
   "parcels": [
     {
       "apn": "529-11-040",
@@ -67,6 +67,116 @@
           37.2383554
         ]
       ]
+    },
+    {
+      "apn": "529-11-013",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9762519,
+          37.2383415
+        ],
+        [
+          -121.9762866,
+          37.2380682
+        ],
+        [
+          -121.9764575,
+          37.2380821
+        ],
+        [
+          -121.9764228,
+          37.2383554
+        ],
+        [
+          -121.9762519,
+          37.2383415
+        ]
+      ]
+    },
+    {
+      "apn": "529-11-038",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9765026,
+          37.2377269
+        ],
+        [
+          -121.9765269,
+          37.2375356
+        ],
+        [
+          -121.9770053,
+          37.2375745
+        ],
+        [
+          -121.9769811,
+          37.2377657
+        ],
+        [
+          -121.9765026,
+          37.2377269
+        ]
+      ]
+    },
+    {
+      "apn": "529-11-039",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9763092,
+          37.2378906
+        ],
+        [
+          -121.976356,
+          37.2375218
+        ],
+        [
+          -121.9765269,
+          37.2375356
+        ],
+        [
+          -121.9765026,
+          37.2377269
+        ],
+        [
+          -121.9769811,
+          37.2377657
+        ],
+        [
+          -121.976936,
+          37.238121
+        ],
+        [
+          -121.9764575,
+          37.2380821
+        ],
+        [
+          -121.9762866,
+          37.2380682
+        ],
+        [
+          -121.976304,
+          37.2379316
+        ],
+        [
+          -121.9763092,
+          37.2378906
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -76,6 +186,22 @@
       "src": [
         "SRC-001120",
         "SRC-001121"
+      ]
+    },
+    {
+      "text": "15860-15894 Winchester Blvd, Los Gatos, CA",
+      "role": "other",
+      "src": [
+        "SRC-002916",
+        "SRC-002920"
+      ]
+    },
+    {
+      "text": "17484 Shelburne Way, Los Gatos, CA",
+      "role": "other",
+      "src": [
+        "SRC-002916",
+        "SRC-002920"
       ]
     }
   ],
@@ -124,6 +250,21 @@
             "SRC-001121"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 125,
+          "src": [
+            "SRC-002916",
+            "SRC-002917"
+          ],
+          "note": "107 assisted living units and 18 memory care units"
+        },
+        {
+          "value": 107,
+          "src": [
+            "SRC-002918"
+          ],
+          "note": "Applicant letter counts the 107 assisted living units (with kitchenettes) as housing units"
         }
       ]
     },
@@ -136,6 +277,20 @@
             "SRC-001121"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-21-008, U-21-010, V-21-003, M-22-008, ND-22-001",
+          "src": [
+            "SRC-002916"
+          ],
+          "note": "Architecture and Site, Conditional Use Permit, Variance, Subdivision (lot merger) and Mitigated Negative Declaration"
+        },
+        {
+          "value": "S-25-034, U-25-004, V-25-001, M-25-007",
+          "src": [
+            "SRC-002919"
+          ],
+          "note": "Applications for the 2025 one-year time extension"
         }
       ]
     },
@@ -149,6 +304,78 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-002916"
+          ],
+          "note": "Assisted living and memory care facility"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002916"
+          ],
+          "note": "Three stories over a basement level; 35 to 50 feet in height"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 81633,
+          "src": [
+            "SRC-002916"
+          ],
+          "note": "Total building area of the facility"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 54,
+          "src": [
+            "SRC-002916",
+            "SRC-002917"
+          ],
+          "note": "Applicant letter: 49 below-grade garage spaces plus 5 surface visitor spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.31,
+          "src": [
+            "SRC-002916",
+            "SRC-002917"
+          ],
+          "note": "Four parcels merged into one"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-002916"
+          ],
+          "note": "Architecture and Site approval, Conditional Use Permit, height and lot coverage variances"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -158,9 +385,73 @@
         "SRC-001120",
         "SRC-001121"
       ]
+    },
+    {
+      "text": "Three-story assisted living and memory care facility of 81,633 sq ft with 107 assisted living units, 18 memory care units and 54 parking spaces, replacing an office and residential buildings on four parcels (APNs 529-11-013, -038, -039, -040; 1.31 acres) at 15860-15894 Winchester Boulevard and 17484 Shelburne Way.",
+      "src": [
+        "SRC-002916",
+        "SRC-002917"
+      ]
+    },
+    {
+      "text": "Town staff recommended denial in the August 4, 2023 report. The Planning Commission approved the project 5-2 on August 9, 2023, adding conditions to reduce building height and require evergreen screening trees on the south property line. The Town Council denied a neighbor's appeal 3-2 on September 19, 2023.",
+      "src": [
+        "SRC-002916",
+        "SRC-002921",
+        "SRC-002922"
+      ]
+    },
+    {
+      "text": "On September 10, 2025 the Planning Commission unanimously approved a one-year time extension; the applicant cited capital markets as the reason. The conditions set expiration at September 10, 2026 unless the approval is vested.",
+      "src": [
+        "SRC-002919",
+        "SRC-002920"
+      ]
+    },
+    {
+      "text": "The state report shows 113 units; town documents show 125 units (107 assisted living, 18 memory care). An office building approved on the site by the Town Council on October 17, 2017 was not built and its approvals expired.",
+      "src": [
+        "SRC-001121",
+        "SRC-002916"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Green Valley Corp. d.b.a. Swenson",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.swenson.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-002916",
+        "SRC-002919"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Green Valley Corp. d.b.a. Swenson",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant / property owner (per town filings)",
+      "src": [
+        "SRC-002916",
+        "SRC-002920"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Swenson Builders",
+      "contact": "Jessie Bristow",
+      "linkedin": null,
+      "other_role": "Applicant representative, Development Project Manager",
+      "src": [
+        "SRC-002916",
+        "SRC-002921"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -173,11 +464,61 @@
       ]
     },
     {
+      "date": "2022-07-01",
+      "type": "Other",
+      "label": "Draft Mitigated Negative Declaration circulated (SCH 2022070014)",
+      "src": [
+        "SRC-002917"
+      ]
+    },
+    {
+      "date": "2023-08-09",
+      "type": "Approved",
+      "label": "Planning Commission approval, 5-2 vote",
+      "src": [
+        "SRC-002921",
+        "SRC-002922"
+      ]
+    },
+    {
+      "date": "2023-08-21",
+      "type": "Other",
+      "label": "Appeal of Planning Commission approval filed",
+      "src": [
+        "SRC-002922"
+      ]
+    },
+    {
+      "date": "2023-09-19",
+      "type": "Other",
+      "label": "Town Council denied appeal, 3-2 vote (Resolution 2023-054)",
+      "src": [
+        "SRC-002922"
+      ]
+    },
+    {
       "date": "2025-09-10",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001121"
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "type": "Other",
+      "label": "Planning Commission approved one-year time extension",
+      "src": [
+        "SRC-002919",
+        "SRC-002920"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "type": "Other",
+      "label": "Extended approval expiration date unless vested or extended",
+      "src": [
+        "SRC-002920"
       ]
     }
   ],
@@ -191,6 +532,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, S-21-008 and Swenson; Los Gatos meeting documents opened",
+      "src": [
+        "SRC-002916"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel dataset APN 52911040 situs 15860B Winchester (no owner field); town filings list four project APNs 529-11-013, -038, -039, -040",
+      "src": [
+        "SRC-001098",
+        "SRC-002916"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Los Gatos PC staff report 2023-08-04, PC minutes 2023-08-09, Council Resolution 2023-054, PC minutes and conditions 2025-09-10",
+      "src": [
+        "SRC-002916",
+        "SRC-002921",
+        "SRC-002922",
+        "SRC-002919",
+        "SRC-002920"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Town project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2022070014 MND; state APR already on record",
+      "src": [
+        "SRC-002917",
+        "SRC-001121"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on the project returned no article opened beyond town records",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "Connect CRE article on Swenson approvals returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "swenson.com homepage opened; no project page for this site",
+      "src": [
+        "SRC-002923"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in the town documents reviewed",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named; applicant cited capital markets at the 2025 extension hearing",
+      "src": [
+        "SRC-002919"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
