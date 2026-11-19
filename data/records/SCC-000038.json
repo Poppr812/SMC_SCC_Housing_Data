@@ -110,8 +110,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-002170"
+          ],
+          "note": "REBusiness 2023-12-19: Urban Catalyst and a trust affiliated with Thang Do sold the site to VTA, which plans to rebuild and expand Diridon Station; the site lies in an area designated for high-speed rail infrastructure"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -165,6 +173,41 @@
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 23400000,
+          "src": [
+            "SRC-002170"
+          ],
+          "note": "Sale to Santa Clara Valley Transportation Authority reported December 2023"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 20,
+          "src": [
+            "SRC-002170",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Site Development Permit H21-048"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -185,6 +228,12 @@
       "text": "City of San Jose permit H21-048 (Site Development Permit/Amendment, folder year 2021), status Approved, issue date 2022-11-09: \"Site Development Permit to allow a 20-story mixed-use building consisting of up to 471 residential units and approximately 7,600 square feet of ground floor retail space, alternative parking arrangement (stackers) on an approximately 1.12-gross acre site\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "REBusiness reports 472 approved units (studios to three-bedrooms), planning approval in November 2022, a 1.2-acre site across 32 and 60 Stockton Ave, and that Urban Catalyst bought the site in two transactions totaling $15.1 million in 2021 and 2022.",
+      "src": [
+        "SRC-002170"
       ]
     }
   ],
@@ -208,6 +257,33 @@
       "src": [
         "SRC-001789"
       ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Santa Clara Valley Transportation Authority",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002170"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "Urban Catalyst and a trust affiliated with Thang Do",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002170"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Aedis Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002170"
+      ]
     }
   ],
   "financing": [],
@@ -228,6 +304,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2023-12",
+      "type": "Sale",
+      "label": "Site sold to VTA for $23.4 million",
+      "src": [
+        "SRC-002170"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -250,6 +335,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Apollo, 32 Stockton and Urban Catalyst; sale to VTA reported",
+      "src": [
+        "SRC-002170"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API for 25928001: situs 32 Stockton Av, two situs addresses; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city GIS permit H21-048 already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR rows already on record",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal (2022-11-11, 2023-12-20) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "REBusiness Online 2023-12-19: sale to VTA $23.4M; Business Wire and Connect CRE returned 403",
+      "src": [
+        "SRC-002170"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "urbancatalyst.com home page; Apollo not listed",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "REBusiness names Aedis Architects (Thang Do's firm) on entitlements",
+      "src": [
+        "SRC-002170"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity named in opened sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search; no relevant LinkedIn posts",
+      "src": []
+    }
+  }
 }

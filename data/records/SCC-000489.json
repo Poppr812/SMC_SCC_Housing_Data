@@ -840,6 +840,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "1107 Cochrane Rd, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -882,6 +889,13 @@
             "SRC-001422"
           ],
           "note": "City: up to 498 units"
+        },
+        {
+          "value": 489,
+          "src": [
+            "SRC-002167"
+          ],
+          "note": "CEQAnet SEIR Development Types field; the same page's description says 498"
         }
       ]
     },
@@ -932,6 +946,25 @@
           "src": [
             "SRC-001422"
           ]
+        },
+        {
+          "value": 69,
+          "src": [
+            "SRC-002168"
+          ],
+          "note": "NOD total acres field"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 1367,
+          "src": [
+            "SRC-002169",
+            "SRC-001424"
+          ],
+          "note": "Project total including retail and hotel"
         }
       ]
     }
@@ -943,6 +976,33 @@
         "SRC-001422",
         "SRC-001423",
         "SRC-001424"
+      ]
+    },
+    {
+      "text": "City and CEQAnet describe Phase 2 as 498 residential units (homes, townhomes, condos and apartments), 135,000 sq ft of retail and a 140-room hotel, with the area redesignated Mixed Use Flex. The 2005 EIR had planned about 350,000 sq ft of retail for Phase 2.",
+      "src": [
+        "SRC-002169",
+        "SRC-001424"
+      ]
+    },
+    {
+      "text": "CEQAnet splits the 33.5 acres as 23 residential and 10 commercial (NOP) and as 20 residential and 13.5 commercial (SEIR). The NOD lists 69 total acres.",
+      "src": [
+        "SRC-001424",
+        "SRC-002167",
+        "SRC-002168"
+      ]
+    },
+    {
+      "text": "Per the NOD, the Council approved a reduced General Plan Amendment area tied to the residential uses and reduced height, and moved some uses from permitted to conditional. Residential uses are in the northern and middle portions; retail and hotel in the southern portion.",
+      "src": [
+        "SRC-002168"
+      ]
+    },
+    {
+      "text": "County parcel 728-37-024 has situs 1107 Cochrane Rd; the other listed parcels show no situs address.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -963,11 +1023,56 @@
   "groups": {},
   "events": [
     {
+      "date": "2021-03-23",
+      "type": "Other",
+      "label": "Planning Commission preliminary hearing",
+      "src": [
+        "SRC-002169"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-11-24",
+      "type": "Other",
+      "label": "Notice of Preparation of Subsequent EIR filed with State Clearinghouse",
+      "src": [
+        "SRC-001424"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06-09",
+      "type": "Other",
+      "label": "Draft Subsequent EIR filed; review June 10 to July 25, 2022",
+      "src": [
+        "SRC-002167"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-10-11",
+      "type": "Other",
+      "label": "Planning Commission meeting",
+      "src": [
+        "SRC-002169"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-11-02",
       "type": "Other",
       "label": "City Council public hearing",
       "src": [
         "SRC-001423"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-11-02",
+      "type": "Approved",
+      "label": "City Council approves General Plan Amendment and Planned Development Amendment; certifies SEIR",
+      "src": [
+        "SRC-002168"
       ],
       "estimated": false
     }
@@ -982,6 +1087,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, location and Browman; city page and CEQAnet records",
+      "src": [
+        "SRC-002169"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API for all 15 APNs: 728-37-024 situs 1107 Cochrane Rd, others no situs; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "morganhill.ca.gov/2535 project page: hearing dates, 140-room hotel, 1,367 parking spaces",
+      "src": [
+        "SRC-002169"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2021110402 NOP and NOD (approved 2022-11-02); SCH 2022060200 SEIR",
+      "src": [
+        "SRC-001424",
+        "SRC-002168",
+        "SRC-002167"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched Morgan Hill Times and Local News Matters; localnewsmatters.org returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for trade coverage of Cochrane Commons Phase 2 housing; none found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "browmandevelopment.com home and Mixed Use/Residential pages; Cochrane Commons not listed",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in city or CEQAnet records",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search; no relevant LinkedIn posts",
+      "src": []
+    }
+  }
 }

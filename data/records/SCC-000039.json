@@ -428,6 +428,13 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "60 Daggett Dr, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -451,8 +458,17 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-001381",
+            "SRC-001956"
+          ],
+          "note": "City permit MP24-007 status Inactive; SF YIMBY (updated 2025-06-02) says plans were paused and the property put on the market"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -530,6 +546,31 @@
             "SRC-001099"
           ],
           "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 122,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001381"
+          ],
+          "note": "SF YIMBY: 122 affordable units for households at or below 80% AMI; city permit MP24-007 text also says 122 restricted units plus two manager units"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Filed as Ministerial Permit MP24-007"
         }
       ]
     }
@@ -551,6 +592,12 @@
       "text": "City of San Jose permit MP24-007 (Ministerial Permit, folder year 2024), status Inactive: \"Ministerial Permit to allow the construction of a market rate residential building with 360 residential units, a 100% affordable housing building with 122 restricted affordable residential units, and two manager units and the removal of 132 trees, includi\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "County parcel 101-30-006 has situs 60 Daggett Dr with 18 situs addresses.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -607,6 +654,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, BXP and 482 units",
+      "src": [
+        "SRC-001381"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API for 10130006: situs 60 Daggett Dr; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city GIS permit MP24-007 already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; no tax credit or CDLAC award found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "The Almanac 2026-01-21 reports Four Corners bought an unnamed 24-acre San Jose property for $50.5M, no address given; The Real Deal 2025-05-29 returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-05-29: 122 affordable units at 80% AMI; traded.co deal pages returned 403",
+      "src": [
+        "SRC-001381"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "bxp.com North First Business Park page returned 404",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY names BDE Architecture, already on record",
+      "src": [
+        "SRC-001381"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "traded.co sale and loan pages returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search; no relevant LinkedIn posts",
+      "src": []
+    }
+  }
 }

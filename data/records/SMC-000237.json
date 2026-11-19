@@ -116,6 +116,13 @@
       "src": [
         "SRC-001182"
       ]
+    },
+    {
+      "text": "172 Constitution Dr, Menlo Park, CA",
+      "role": "other",
+      "src": [
+        "SRC-002172"
+      ]
     }
   ],
   "images": [],
@@ -215,9 +222,58 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.83,
+          "src": [
+            "SRC-002171",
+            "SRC-002172"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 476,
+          "src": [
+            "SRC-002173"
+          ],
+          "note": "Spaces in the automated parking system"
+        },
+        {
+          "value": 490,
+          "src": [
+            "SRC-002172"
+          ],
+          "note": "Above-grade automated parking system"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "BDE Architecture is architect of record; Heller Manus Architects did the design. BDE lists construction type IIIA/IA. Heller Manus lists LEED Gold.",
+      "src": [
+        "SRC-002174",
+        "SRC-002172"
+      ]
+    },
+    {
+      "text": "CEQAnet NOD: 441 rental units in Buildings A and B and 42 for-sale townhomes on site TH1; about 472,956 sq ft gross floor area; demolition of existing office and industrial buildings.",
+      "src": [
+        "SRC-002171"
+      ]
+    },
+    {
+      "text": "The Almanac (2026-03-20) describes Lume as 441 completed rental units with 42 for-sale townhomes still awaiting construction.",
+      "src": [
+        "SRC-002175"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -229,6 +285,39 @@
       ],
       "website": "https://www.greystar.com",
       "project_page": "https://www.greystar.com/properties/menlo-park-ca/lume"
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website_basis": "opened",
+      "project_page": "https://bdearch.com/lume",
+      "src": [
+        "SRC-002174"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Heller Manus Architects",
+      "contact": null,
+      "linkedin": null,
+      "website_basis": "opened",
+      "project_page": "https://www.hellermanus.com/lume-menlo-park",
+      "src": [
+        "SRC-002172",
+        "SRC-002174"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Parkworks",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Automated parking system developer",
+      "src": [
+        "SRC-002173"
+      ]
     }
   ],
   "financing": [],
@@ -243,12 +332,30 @@
       ]
     },
     {
+      "date": "2021-09-20",
+      "type": "Other",
+      "label": "Notice of Determination posted with State Clearinghouse (SCH 2019110498)",
+      "src": [
+        "SRC-002171"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-12",
       "type": "Other",
       "label": "Planning Commission approves in-lieu payment of $9,790,000 in place of urgent care community amenity",
       "src": [
         "SRC-001182"
       ]
+    },
+    {
+      "date": "2024-01-29",
+      "type": "Lease-up start",
+      "label": "Greystar announces Lume now leasing",
+      "src": [
+        "SRC-002173"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -261,6 +368,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Lume, Menlo Uptown, address and Greystar",
+      "src": [
+        "SRC-002172"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SMC parcel layer gives geometry only; no owner of record in a public source opened",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "menlopark.gov Lume project page: 483 units, 73 BMR, townhomes not started",
+      "src": [
+        "SRC-002176"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2019110498 NOD: 4.83 acres, 472,956 sf GFA, posted 2021-09-20",
+      "src": [
+        "SRC-002171"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "The Almanac 2026-03-20: 441 completed rentals, townhomes awaiting construction",
+      "src": [
+        "SRC-002175"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for trade coverage of financing or sale; The Real Deal and CoStar items concern 104 Constitution Dr or are paywalled",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Greystar newsroom 2024-01-29: now leasing, 476-space automated parking by Parkworks",
+      "src": [
+        "SRC-002173"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "bdearch.com/lume and hellermanus.com/lume-menlo-park",
+      "src": [
+        "SRC-002174",
+        "SRC-002172"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search for loans or sale of Menlo Uptown/Lume; none found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn on Lume contractor; none found",
+      "src": []
+    }
+  }
 }

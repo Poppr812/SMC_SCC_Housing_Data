@@ -152,6 +152,79 @@
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 21,
+            "1br": 343,
+            "2br": 184
+          },
+          "src": [
+            "SRC-002147"
+          ],
+          "note": "2024 amended plan; the article also lists two larger units"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 570,
+          "src": [
+            "SRC-002147"
+          ],
+          "note": "2024 amended plan, split between the two buildings; 72 on-street spaces in addition"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.92,
+          "src": [
+            "SRC-002148"
+          ],
+          "note": "3.02 acres residential, 0.9 acres public open space/park (2020 NOP)"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 5000,
+          "src": [
+            "SRC-002148"
+          ],
+          "note": "2020 NOP for the 605-unit plan"
+        },
+        {
+          "value": 2619,
+          "src": [
+            "SRC-002147"
+          ],
+          "note": "Retail in the 2024 amended plan"
+        }
+      ],
+      "best": 1
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "160 rent-controlled apartments, the same number as on the existing site",
+          "src": [
+            "SRC-002147",
+            "SRC-002149"
+          ]
+        },
+        {
+          "value": "January 2022 inclusionary proposal: Sand Hill to provide 0.65 acres at 851 Weeks Street plus cash ($19.1 million combined) for an Eden Housing affordable project of about 75 units, and pay $3.6 million in lieu of 14 more units",
+          "src": [
+            "SRC-002149"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -166,6 +239,24 @@
       "src": [
         "SRC-001195",
         "SRC-001194"
+      ]
+    },
+    {
+      "text": "2024 amended plan: two eight-story buildings, one on each side of Euclid Avenue, replacing 161 apartments in 15 buildings; 9,300 sq ft public park, about 2,500 sq ft community space, and creek-side land between Euclid and University avenues dedicated to the city.",
+      "src": [
+        "SRC-002147"
+      ]
+    },
+    {
+      "text": "Second amendment DR24-004 (received 2024-11-25, approved) adds an 86-stall below-grade garage for Building A and a gated driveway from Euclid Avenue, with no change in unit count.",
+      "src": [
+        "SRC-002151"
+      ]
+    },
+    {
+      "text": "2020 NOP described 605 units in buildings of 5 to 13 stories with a 625-space central garage.",
+      "src": [
+        "SRC-002148"
       ]
     }
   ],
@@ -189,11 +280,41 @@
         "SRC-001194"
       ],
       "website": "https://www.shpco.com"
+    },
+    {
+      "role": "Architect",
+      "company": "David Baker Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dbarchitect.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-002150"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Woodland Park Communities (Sand Hill Property Company affiliate)",
+      "contact": "Mike Kramer",
+      "linkedin": null,
+      "email": "mkramer@wlpcommunities.com",
+      "src": [
+        "SRC-001194",
+        "SRC-002147"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-04-22",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR filed with the state (605-unit plan)",
+      "src": [
+        "SRC-002148"
+      ]
+    },
     {
       "date": "2022-11-15",
       "type": "Approved",
@@ -211,11 +332,35 @@
       ]
     },
     {
+      "date": "2024-06-24",
+      "type": "Other",
+      "label": "Planning Commission unanimously recommends approval of the 550-unit amendment",
+      "src": [
+        "SRC-001195"
+      ]
+    },
+    {
       "date": "2024-07-16",
       "type": "Approved",
       "label": "City Council approves amendment reducing to 550 units",
       "src": [
         "SRC-001195"
+      ]
+    },
+    {
+      "date": "2024-11-25",
+      "type": "Application filed",
+      "label": "Second amendment (DR24-004) filed: 86-stall below-grade garage for Building A",
+      "src": [
+        "SRC-002151"
+      ]
+    },
+    {
+      "date": "2025-06-26",
+      "type": "Other",
+      "label": "City update: demolition complete, rough grading under way",
+      "src": [
+        "SRC-001194"
       ]
     }
   ],
@@ -234,6 +379,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project name, address and developer; Palo Alto Daily Post 2024-06-27 opened",
+      "src": [
+        "SRC-002147"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC parcel layer: owner of record already on the record; city page lists 14 APNs already noted",
+      "src": [
+        "SRC-001103",
+        "SRC-001194"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "East Palo Alto project pages: DR24-001 amendment, DR24-004 second amendment, construction updates; 2022 inclusionary plan PDF",
+      "src": [
+        "SRC-001195",
+        "SRC-002151",
+        "SRC-001194",
+        "SRC-002149"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2020040270 NOP page; APR data already on record",
+      "src": [
+        "SRC-002148",
+        "SRC-001111"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Palo Alto Daily Post 2024-06-27; The Real Deal 2026-05-21 refused access (403)",
+      "src": [
+        "SRC-002147"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal article on Woodland Park Communities returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "euclidimprovements.com returned 403",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City plan sheet (July 2024 revisions) shows David Baker Architects title block",
+      "src": [
+        "SRC-002150"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for construction lender or loan; none found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }

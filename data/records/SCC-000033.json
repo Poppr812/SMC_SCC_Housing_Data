@@ -140,6 +140,52 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001786",
+            "SRC-002152"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 502340,
+          "src": [
+            "SRC-001786",
+            "SRC-002152"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 13860,
+          "src": [
+            "SRC-001786",
+            "SRC-002152"
+          ],
+          "note": "Ground-floor retail"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 104,
+          "src": [
+            "SRC-001786",
+            "SRC-002152"
+          ],
+          "note": "Underground garage, reduced by nearly half in post-approval revisions"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -154,6 +200,32 @@
       "text": "30-story tower, 540 units. A December 2025 article says of the Westbank and Urban Community projects that only 180 Park Avenue had started.",
       "src": [
         "SRC-001376"
+      ]
+    },
+    {
+      "text": "294 feet tall; about 606,520 sq ft total including a 44,360 sq ft garage and about 7,950 sq ft of amenities; room for 58 motorcycles and 176 bicycles. Construction expected to last 33 months.",
+      "src": [
+        "SRC-001786",
+        "SRC-002152"
+      ]
+    },
+    {
+      "text": "Demolishes a two-story storage structure and surface parking; the vacant Bo Town restaurant building is preserved.",
+      "src": [
+        "SRC-002152"
+      ]
+    },
+    {
+      "text": "August 2023: developers had submitted for the building permit but had not received it. January 2024: construction had not started; Urban Community expected a start in the first half of 2024.",
+      "src": [
+        "SRC-002152",
+        "SRC-002153"
+      ]
+    },
+    {
+      "text": "Targets LEED Platinum, with on-site black water treatment; 312 fruit trees planned along balconies.",
+      "src": [
+        "SRC-002153"
       ]
     }
   ],
@@ -174,6 +246,76 @@
       "linkedin": null,
       "src": [
         "SRC-001786"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "James K.M. Cheng Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart (architect of record)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "SWA Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "Glotman Simpson",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Kier & Wright",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Peterson Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "OPTrust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
       ]
     }
   ],
@@ -220,6 +362,98 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address and developers; SF YIMBY 2023-2025 articles opened",
+      "src": [
+        "SRC-001786",
+        "SRC-002152",
+        "SRC-002153"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=46747097: situs 409 S 2nd St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet or tax-credit filing found",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Local News Matters 2022-12-01 article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2023-08-17, 2023-10-26, 2024-01-05, 2025-12; The Real Deal 2024 articles returned 403",
+      "src": [
+        "SRC-001786",
+        "SRC-002152",
+        "SRC-002153",
+        "SRC-001376"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for Westbank and Urban Community project pages; none opened with project facts",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Design team per SF YIMBY: James K.M. Cheng Architects, Steinberg Hart",
+      "src": [
+        "SRC-001786"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Peterson Group and OPTrust named as partners; no lender found",
+      "src": [
+        "SRC-001786",
+        "SRC-002153"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }

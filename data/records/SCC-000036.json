@@ -120,11 +120,23 @@
         {
           "value": 530,
           "src": [
-            "SRC-001115"
+            "SRC-001115",
+            "SRC-001433",
+            "SRC-002156",
+            "SRC-002157"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 501,
+          "src": [
+            "SRC-002154",
+            "SRC-002155"
+          ],
+          "note": "2023-2024 builder's remedy proposal"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -159,6 +171,12 @@
           "value": "106 rental units for low-income households",
           "src": [
             "SRC-001433"
+          ]
+        },
+        {
+          "value": "Lender release (July 2026): 243 units income-restricted for households at 60% and 80% of AMI; 287 market-rate townhomes",
+          "src": [
+            "SRC-002157"
           ]
         }
       ]
@@ -200,6 +218,17 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 287,
+          "src": [
+            "SRC-002157"
+          ],
+          "note": "Lender release: 287 market-rate townhomes"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -214,6 +243,33 @@
       "src": [
         "SRC-001434"
       ]
+    },
+    {
+      "text": "38 buildings, 877,661 sq ft: 33 townhouse buildings (max about 28.5 ft), 3 mid-rise apartment buildings (max about 60 ft), a clubhouse/residential building and a mixed-use amenity building with apartments above (max about 50 ft); about 2.7 acres of open space.",
+      "src": [
+        "SRC-001433",
+        "SRC-002156"
+      ]
+    },
+    {
+      "text": "Lender release describes four mid-rise apartment buildings, 33 townhome buildings and a clubhouse/leasing office on 27 acres.",
+      "src": [
+        "SRC-002157"
+      ]
+    },
+    {
+      "text": "Gilroy Dispatch describes Gandolfi Investments as a TenSouth subsidiary. The 2024 proposal had 50 two-story townhomes and three four-story apartment buildings on industrially zoned land. The city council voted 4-3 on 2024-07-29 to defend the lawsuit.",
+      "src": [
+        "SRC-002154",
+        "SRC-002155"
+      ]
+    },
+    {
+      "text": "CEQA: addendum to the 2003 Las Animas Annexation and Pre-Zoning EIR (SCH 2002022084). Project processing agreement dated 2025-07-01.",
+      "src": [
+        "SRC-001433",
+        "SRC-002156"
+      ]
     }
   ],
   "parties": [
@@ -226,11 +282,50 @@
       "src": [
         "SRC-001433"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "TenSouth (Ten South Construction)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002154",
+        "SRC-002157"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Dwight Capital / Dwight Mortgage Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002157"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Dwight Capital / Dwight Mortgage Trust",
+      "program": null,
+      "amount": 183000000,
+      "date": "2026-06",
+      "src": [
+        "SRC-002157"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2023-07",
+      "type": "Application filed",
+      "label": "Preliminary application (501 units) filed by Gandolfi Investments",
+      "src": [
+        "SRC-002154",
+        "SRC-002155"
+      ]
+    },
     {
       "date": "2024-07-01",
       "type": "Application filed",
@@ -238,6 +333,47 @@
       "src": [
         "SRC-001115"
       ]
+    },
+    {
+      "date": "2024-07-02",
+      "type": "Other",
+      "label": "HCD letter finds the project eligible for builder's remedy protections",
+      "src": [
+        "SRC-002154"
+      ]
+    },
+    {
+      "date": "2024-07-26",
+      "type": "Other",
+      "label": "Gandolfi Investments sues the City of Gilroy in Santa Clara County Superior Court",
+      "src": [
+        "SRC-002155"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "type": "Approved",
+      "label": "City approval per CEQA Notice of Determination (EIR addendum)",
+      "src": [
+        "SRC-002156"
+      ]
+    },
+    {
+      "date": "2026-06",
+      "type": "Other",
+      "label": "$183 million construction loan closed",
+      "src": [
+        "SRC-002157"
+      ]
+    },
+    {
+      "date": "2029",
+      "type": "Completion",
+      "label": "Expected completion",
+      "src": [
+        "SRC-002157"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -250,6 +386,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, Gandolfi Investments and TenSouth",
+      "src": [
+        "SRC-002154",
+        "SRC-002157"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=83505006: situs 315 Las Animas Av, Gilroy; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of Gilroy Park 315 page (AS 23-21) with approval documents list",
+      "src": [
+        "SRC-001433"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet NOD SCH 2002022084 (2026-02-09); HCD letter reported by Gilroy Dispatch; APR on record",
+      "src": [
+        "SRC-002156",
+        "SRC-001115"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Gilroy Dispatch 2024-07-18 and 2024-08-01; The Real Deal 2025-06-23 and 2026-07-08 returned 403",
+      "src": [
+        "SRC-002154",
+        "SRC-002155"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "ConnectCRE, Multi-Housing News, Traded and The Real Deal returned 403; SF YIMBY 2026-02 already on record",
+      "src": [
+        "SRC-001434"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for TenSouth project page; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named on the city page or in news",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Dwight Capital July 2026 release: $183M construction loan",
+      "src": [
+        "SRC-002157"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }
