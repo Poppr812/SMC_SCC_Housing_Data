@@ -25485,6 +25485,78 @@
    "wayback": null,
    "copyright": false,
    "sha256": null
+  },
+  "SRC-002794": {
+   "id": "SRC-002794",
+   "title": "Christian Drive Project (PLN2026-00261) HAA Notice Regarding Alleged Project Disapproval: County Response and Findings",
+   "publisher": "County of San Mateo Planning and Building",
+   "date": "2026-11-13",
+   "type": "Government document",
+   "url": "https://www.smcgov.org/media/161944/download?inline=",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002795": {
+   "id": "SRC-002795",
+   "title": "Formal SB330 Full Plan Set (Ralston), San Mateo Pointe",
+   "publisher": "County of San Mateo Planning and Building (applicant submittal)",
+   "date": null,
+   "type": "Application document",
+   "url": "https://www.smcgov.org/media/160788/download?inline=",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002796": {
+   "id": "SRC-002796",
+   "title": "SB 330 Preliminary Application staff letter, PRE2026-00012, 135-Unit Multifamily Residential Building",
+   "publisher": "County of San Mateo Planning and Building",
+   "date": "2026-04-28",
+   "type": "Government document",
+   "url": "https://www.smcgov.org/media/160789/download?inline=",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002797": {
+   "id": "SRC-002797",
+   "title": "Pre-Application Filed For Suburban Sprawl at 1125 East Main Avenue, Morgan Hill",
+   "publisher": "San Francisco YIMBY",
+   "date": "2024-09-21",
+   "type": "Trade publication",
+   "url": "https://sfyimby.com/2024/09/pre-application-filed-for-suburban-sprawl-at-1125-east-main-avenue-morgan-hill.html",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-002798": {
+   "id": "SRC-002798",
+   "title": "Dec 18, 2025 Pre-App Community Meeting Flyer, 1600 Bay Road",
+   "publisher": "City of East Palo Alto (applicant flyer)",
+   "date": null,
+   "type": "Application document",
+   "url": "https://www.cityofepa.org/sites/default/files/community_meeting_flyer_1600_bay_road.pdf",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-002799": {
+   "id": "SRC-002799",
+   "title": "1620 Bay Road Pre-App Plans (Bay Road Apartments preliminary review set)",
+   "publisher": "City of East Palo Alto (applicant submittal)",
+   "date": "2024-02-02",
+   "type": "Application document",
+   "url": "https://www.cityofepa.org/sites/default/files/bay_rd_apt_preliminary_review_set.pdf",
+   "retrieved": "2026-11-18",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -123532,6 +123604,13 @@
        "src": [
         "SRC-001107"
        ]
+      },
+      {
+       "value": "APR Table A (2021 application): 129 proposed units, 65 low-income deed-restricted and 64 above-moderate; density bonus requested. APR Table A2 (2022 entitlement): 136 units, 68 low-income deed-restricted and 68 above-moderate, 55-year term, SB 35 and density bonus.",
+       "src": [
+        "SRC-001099",
+        "SRC-001107"
+       ]
       }
      ]
     },
@@ -123546,6 +123625,16 @@
         "SRC-001107"
        ],
        "note": "SB 35 flagged in the state report"
+      },
+      {
+       "value": [
+        "Streamlined / ministerial",
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-001107"
+       ],
+       "note": "APR Table A2 2022: SB 35 approval; deed restriction type DB; density bonus incentive: development standards modification"
       }
      ]
     },
@@ -123574,6 +123663,34 @@
         "SRC-001107"
        ],
        "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001107"
+       ]
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 68,
+       "src": [
+        "SRC-001107"
+       ],
+       "note": "APR Table A2 2022 above-moderate units"
+      },
+      {
+       "value": 64,
+       "src": [
+        "SRC-001099"
+       ],
+       "note": "APR Table A 2021 proposed above-moderate units"
       }
      ]
     }
@@ -123624,8 +123741,86 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search on 740 W San Carlos St and MP21-003; SGPA architect page now returns 404; apartments.com listing refused access",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 26415024: situs 740 W San Carlos St, San Jose; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "sanjoseca.gov refuses automated access",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "data.ca.gov APR Table A (2021) and Table A2 (2022) records for MP21-003",
+     "src": [
+      "SRC-001099",
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of Mercury News, SJ Spotlight for 740 W San Carlos",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of SF YIMBY, The Real Deal for 740 West San Carlos",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No developer named in public sources found",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "SGPA project page for 740 West San Carlos returns 404",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or public funding found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
@@ -123670,7 +123865,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "740 san carlos st san jose 264-15-024 740 w san carlos st, san jose, ca 740 san carlos st, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 136 units reported in entitlement and permit rows 129 units in the application as reported mixed-income 68 deed-restricted units reported to the state [\"streamlined / ministerial\"] sb 35 flagged in the state report mp21-003 local tracking number as reported to the state [{\"count\": 68, \"ami\": 80}] state report 2022, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. city of san jose permit mp21-003 (ministerial permit, folder year 2021), status approved, issue date 2022-11-04: \"sb 35 ministerial permit to allow the demolition of two existing buildings totaling approximately 2,146 square feet and the removal of 22 non-ordinance-size trees for the construction of a 50% affordable (68 units at up to 80% ami), six-story, 136 unit, a\" (city text cut off at 255 characters) application submitted entitlement approved"
+   "search": "740 san carlos st san jose 264-15-024 740 w san carlos st, san jose, ca 740 san carlos st, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 136 units reported in entitlement and permit rows 129 units in the application as reported mixed-income 68 deed-restricted units reported to the state apr table a (2021 application): 129 proposed units, 65 low-income deed-restricted and 64 above-moderate; density bonus requested. apr table a2 (2022 entitlement): 136 units, 68 low-income deed-restricted and 68 above-moderate, 55-year term, sb 35 and density bonus. [\"streamlined / ministerial\"] sb 35 flagged in the state report [\"streamlined / ministerial\", \"density bonus\"] apr table a2 2022: sb 35 approval; deed restriction type db; density bonus incentive: development standards modification mp21-003 local tracking number as reported to the state [{\"count\": 68, \"ami\": 80}] state report 2022, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) 55 68 apr table a2 2022 above-moderate units 64 apr table a 2021 proposed above-moderate units from the state housing element annual progress report, through 2025. city of san jose permit mp21-003 (ministerial permit, folder year 2021), status approved, issue date 2022-11-04: \"sb 35 ministerial permit to allow the demolition of two existing buildings totaling approximately 2,146 square feet and the removal of 22 non-ordinance-size trees for the construction of a 50% affordable (68 units at up to 80% ami), six-story, 136 unit, a\" (city text cut off at 255 characters) application submitted entitlement approved"
   },
   {
    "id": "SCC-000162",
@@ -232761,16 +232956,74 @@
      "src": [
       "SRC-001431"
      ]
+    },
+    {
+     "text": "County SB 330 list shows four preliminary versions: Project A, 135 single-family homes and 34 JADUs with 27 homes affordable to lower-income households; Project B, 136 homes and 34 affordable JADUs; Projects C and D, subdivisions of 170 and 171 parcels with 136 homes and 34 affordable JADUs. The formal application (PLN25-093-SB330) is Project D.",
+     "src": [
+      "SRC-001431"
+     ]
+    },
+    {
+     "text": "SF YIMBY (Sept 2024) reported options ranging from 135 to 171 homes of 3,000 to 3,800 square feet, with Projects C and D using 27 acres including a seven-acre parcel across Condit Road.",
+     "src": [
+      "SRC-002797"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Architect",
+     "company": "KTGY",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002797"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
     {
+     "date": "2024-12-09",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application, Project A (PLN24-251-PRE)",
+     "src": [
+      "SRC-001431"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2024-12-10",
+     "type": "Application filed",
+     "label": "SB 330 preliminary applications, Projects B, C and D (PLN24-252/253/254-PRE)",
+     "src": [
+      "SRC-001431"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2025-05-30",
      "type": "Application filed",
      "label": "Formal SB 330 application submitted",
+     "src": [
+      "SRC-001431"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-10-17",
+     "type": "Other",
+     "label": "Formal application (PLN25-093-SB330) deemed incomplete",
+     "src": [
+      "SRC-001431"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-08-27",
+     "type": "Other",
+     "label": "Appeal of incompleteness determination to Planning Commission",
      "src": [
       "SRC-001431"
      ],
@@ -232782,11 +233035,95 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on 1125 E Main Ave and Berns; SF YIMBY article",
+     "src": [
+      "SRC-002797"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 72829017: situs 1125 E Main Av, Morgan Hill, unincorporated; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "Unincorporated county project outside Morgan Hill city limits",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "County SB 330 / Builder's Remedy list: PRE file numbers, incompleteness date, PC appeal date",
+     "src": [
+      "SRC-001431"
+     ]
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "HCD HAU letters to Santa Clara County (2025) concern other projects; no APR, CEQAnet or CTCAC record",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search for Planning Commission appeal coverage; Green Foothills and SJ Spotlight items cover other projects",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SF YIMBY, Sept 21, 2024",
+     "src": [
+      "SRC-002797"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "Applicant and owner are private individuals; no company developer named",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "KTGY named by SF YIMBY; no KTGY project page found for this site",
+     "src": [
+      "SRC-002797"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or public funding found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001431": "S1",
-    "SRC-001098": "S2"
+    "SRC-002797": "S2",
+    "SRC-001098": "S3"
    },
    "lat": 37.144796078571424,
    "lng": -121.63899825,
@@ -232820,11 +233157,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2025-05-30",
+    "latest_event": "2026-08-27",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1125 e main ave (berns) other santa clara county unincorporated 728-29-017 1125 e main ave, adjacent to morgan hill, ca single-family proposed unincorporated other santa clara county 136 pln25-093-sb330 [\"builder's remedy\"] county list is titled sb 330 / builder's remedy applications and does not separate the two per project 19.6 mixed-income 34 jadus proposed affordable to lower-income households 136 single-family homes plus 34 jadus, on 171 parcels. county status: incomplete, october 17, 2025; appeal to planning commission august 27, 2026. earlier preliminary variants a to c expired. formal sb 330 application submitted"
+   "search": "1125 e main ave (berns) other santa clara county unincorporated 728-29-017 1125 e main ave, adjacent to morgan hill, ca single-family proposed unincorporated other santa clara county 136 pln25-093-sb330 [\"builder's remedy\"] county list is titled sb 330 / builder's remedy applications and does not separate the two per project 19.6 mixed-income 34 jadus proposed affordable to lower-income households 136 single-family homes plus 34 jadus, on 171 parcels. county status: incomplete, october 17, 2025; appeal to planning commission august 27, 2026. earlier preliminary variants a to c expired. county sb 330 list shows four preliminary versions: project a, 135 single-family homes and 34 jadus with 27 homes affordable to lower-income households; project b, 136 homes and 34 affordable jadus; projects c and d, subdivisions of 170 and 171 parcels with 136 homes and 34 affordable jadus. the formal application (pln25-093-sb330) is project d. sf yimby (sept 2024) reported options ranging from 135 to 171 homes of 3,000 to 3,800 square feet, with projects c and d using 27 acres including a seven-acre parcel across condit road. architect ktgy sb 330 preliminary application, project a (pln24-251-pre) sb 330 preliminary applications, projects b, c and d (pln24-252/253/254-pre) formal sb 330 application submitted formal application (pln25-093-sb330) deemed incomplete appeal of incompleteness determination to planning commission"
   },
   {
    "id": "SCC-000503",
@@ -266283,6 +266620,48 @@
        "note": "CTCAC housing type: Large Family"
       }
      ]
+    },
+    "total_development_cost": {
+     "claims": [
+      {
+       "value": 115855564,
+       "src": [
+        "SRC-001873"
+       ],
+       "note": "Project cost summary at application"
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001873"
+       ]
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 0,
+       "src": [
+        "SRC-001873"
+       ],
+       "note": "135 restricted units plus 1 unrestricted manager's unit"
+      }
+     ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "135 restricted units and 1 unrestricted manager's unit; average targeted affordability 59.93% AMI under the 40%/60% average income set-aside; 70% AMI units are CTCAC-restricted only.",
+       "src": [
+        "SRC-001873"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -266297,6 +266676,18 @@
      "text": "City memo (May 26, 2026) on the 0 Seely Mixed-Use Development counts a 136-unit restricted affordable building as its Phase 3.",
      "src": [
       "SRC-002017"
+     ]
+    },
+    {
+     "text": "CTCAC staff report: private placement purchaser Citibank, N.A.; bond counsel Orrick, Herrington & Sutcliffe LLP; general partners Central Valley Coalition for Affordable Housing and TPC Holdings IX, LLC (parent The Pacific Companies); census tract 5050.06; construction cost $473 per square foot; per-unit cost $851,879; developer fee $13,727,231; tax credit factor $0.81992.",
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "text": "SF YIMBY (Feb 2025) reported that The Pacific Companies will develop the Seely Avenue master plan's affordable component as a single 178-unit apartment complex.",
+     "src": [
+      "SRC-001923"
      ]
     }
    ],
@@ -266318,6 +266709,63 @@
      "src": [
       "SRC-001873"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "San Jose Trimble Associates, LP",
+     "contact": "Caleb Roope",
+     "linkedin": null,
+     "email": "calebr@tpchousing.com",
+     "phone": "208.461.0022",
+     "other_role": "CTCAC applicant / CDLAC sponsor",
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "role": "Co-developer / partner",
+     "company": "Central Valley Coalition for Affordable Housing",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "role": "Co-developer / partner",
+     "company": "TPC Holdings IX, LLC",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "role": "Equity partner",
+     "company": "Boston Financial",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "role": "Lender",
+     "company": "Citibank, N.A.",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "role": "Lender",
+     "company": "Bonneville",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001873"
+     ]
     }
    ],
    "financing": [
@@ -266327,6 +266775,86 @@
      "program": "CDLAC allocation",
      "amount": 31000000,
      "date": "2025-12-10",
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Construction loan",
+     "provider": "Citibank, N.A.",
+     "program": "Tax-exempt construction loan",
+     "amount": 31000000,
+     "date": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Construction loan",
+     "provider": "Citibank, N.A.",
+     "program": "Taxable construction loan",
+     "amount": 34696214,
+     "date": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Construction loan",
+     "provider": "Bonneville",
+     "program": "Tax-exempt",
+     "amount": 17500000,
+     "date": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Permanent loan",
+     "provider": "Citibank, N.A.",
+     "program": "Tax-exempt permanent loan",
+     "amount": 36400000,
+     "date": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Permanent loan",
+     "provider": "Bonneville",
+     "program": "Tax-exempt",
+     "amount": 17500000,
+     "date": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Tax-credit equity (4%)",
+     "provider": "Boston Financial",
+     "program": "Federal LIHTC, $5,472,589 annual credits",
+     "amount": 44870742,
+     "date": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Deferred developer fee",
+     "provider": "Pacific West Communities, Inc.",
+     "program": null,
+     "amount": 8484822,
+     "date": null,
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    {
+     "type": "Other",
+     "provider": "Donated land",
+     "program": "Donated land value",
+     "amount": 8600000,
+     "date": null,
      "src": [
       "SRC-001873"
      ]
@@ -266363,6 +266891,11 @@
      "date": "2026-11-18",
      "by": "Paul via Claude",
      "action": "Linked to Seely Avenue Mixed-Use as its Phase 3"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
    "related": [
@@ -266372,15 +266905,105 @@
      "note": "Phase 3 per the city memo of May 26, 2026"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on Trimble Apartments and Seely/Montague; CTCAC staff report read in full",
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 09715046: no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "blocked",
+     "note": "sanjoseca.gov refuses automated access; Legistar memo already on record",
+     "src": [
+      "SRC-002017"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No county funding item found",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "CTCAC/CDLAC staff report CA-25-741 (Dec 10, 2025); APR Table A2 shows only parent 0 Seely Ave PD22-002 entries",
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of Mercury News, SJ Spotlight, Bisnow for Trimble Apartments",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SF YIMBY Feb 2025 on Seely Avenue master plan affordable component",
+     "src": [
+      "SRC-001923"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "tpchousing.com featured project page returned 404",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No architect named in CTCAC report or other public source found",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "CTCAC report: Citibank, Bonneville, Boston Financial, donated land, deferred fee",
+     "src": [
+      "SRC-001873"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001873": "S1",
     "SRC-001603": "S2",
     "SRC-002017": "S3",
-    "SRC-001098": "S4"
+    "SRC-001923": "S4",
+    "SRC-001098": "S5"
    },
    "lat": 37.39634542941177,
    "lng": -121.91616472647058,
-   "calcs": {},
+   "calcs": {
+    "cost_per_unit": {
+     "value": 851879,
+     "how": "Total development cost $115,855,564 ÷ 136 total units"
+    },
+    "financing_total": {
+     "value": 146855564,
+     "how": "$31,000,000 + $36,400,000 + $17,500,000 + $44,870,742 + $8,484,822 + $8,600,000 (excludes short-term construction, bridge and predevelopment loans); compares with a $115,855,564 total development cost"
+    }
+   },
    "kinds": [
     "pipeline"
    ],
@@ -266414,15 +267037,15 @@
     "tax_credit": true,
     "owner": "",
     "developer": "Pacific West Communities, Inc.",
-    "cost_basis": "",
-    "cost": null,
-    "per_unit": null,
-    "main_lender": "California Municipal Finance Authority (CDLAC allocation)",
+    "cost_basis": "Total development cost",
+    "cost": 115855564,
+    "per_unit": 851879,
+    "main_lender": "Citibank, N.A. (Tax-exempt permanent loan)",
     "latest_event": "",
     "stale_since": "",
     "part_of": "SCC-000591"
    },
-   "search": "trimble apartments san jose 097-15-046 northwest corner of seely ave and montague expy, san jose, ca northwest corner of seely avenue and montague expressway, san jose, ca apartments approved tax credit reservation recommended dec. 2025; the site is within the seely avenue project approved aug. 2024. source doesn't confirm construction start. san jose 136 {\"studio\": 0, \"1br\": 64, \"2br\": 37, \"3br\": 35, \"4br+\": 0} 1.25 100% affordable [{\"count\": 15, \"ami\": 30}, {\"count\": 15, \"ami\": 50}, {\"count\": 46, \"ami\": 60}, {\"count\": 59, \"ami\": 70}] [\"family\"] ctcac housing type: large family parcel match: ctcac lists a portion of 097-15-033, no longer in county data. 097-15-046 is 1.24 acres against the stated 1.25-acre site, among the successor parcels. matched by location and area, not the source's own apn. city memo (may 26, 2026) on the 0 seely mixed-use development counts a 136-unit restricted affordable building as its phase 3. developer pacific west communities, inc. property manager conam management corporation california municipal finance authority tax-exempt bonds cdlac allocation construction expected to begin completion expected"
+   "search": "trimble apartments san jose 097-15-046 northwest corner of seely ave and montague expy, san jose, ca northwest corner of seely avenue and montague expressway, san jose, ca apartments approved tax credit reservation recommended dec. 2025; the site is within the seely avenue project approved aug. 2024. source doesn't confirm construction start. san jose 136 {\"studio\": 0, \"1br\": 64, \"2br\": 37, \"3br\": 35, \"4br+\": 0} 1.25 100% affordable [{\"count\": 15, \"ami\": 30}, {\"count\": 15, \"ami\": 50}, {\"count\": 46, \"ami\": 60}, {\"count\": 59, \"ami\": 70}] [\"family\"] ctcac housing type: large family 115855564 project cost summary at application 55 0 135 restricted units plus 1 unrestricted manager's unit 135 restricted units and 1 unrestricted manager's unit; average targeted affordability 59.93% ami under the 40%/60% average income set-aside; 70% ami units are ctcac-restricted only. parcel match: ctcac lists a portion of 097-15-033, no longer in county data. 097-15-046 is 1.24 acres against the stated 1.25-acre site, among the successor parcels. matched by location and area, not the source's own apn. city memo (may 26, 2026) on the 0 seely mixed-use development counts a 136-unit restricted affordable building as its phase 3. ctcac staff report: private placement purchaser citibank, n.a.; bond counsel orrick, herrington & sutcliffe llp; general partners central valley coalition for affordable housing and tpc holdings ix, llc (parent the pacific companies); census tract 5050.06; construction cost $473 per square foot; per-unit cost $851,879; developer fee $13,727,231; tax credit factor $0.81992. sf yimby (feb 2025) reported that the pacific companies will develop the seely avenue master plan's affordable component as a single 178-unit apartment complex. developer pacific west communities, inc. property manager conam management corporation other ctcac applicant / cdlac sponsor san jose trimble associates, lp caleb roope co-developer / partner central valley coalition for affordable housing co-developer / partner tpc holdings ix, llc equity partner boston financial lender citibank, n.a. lender bonneville california municipal finance authority tax-exempt bonds cdlac allocation citibank, n.a. construction loan tax-exempt construction loan citibank, n.a. construction loan taxable construction loan bonneville construction loan tax-exempt citibank, n.a. permanent loan tax-exempt permanent loan bonneville permanent loan tax-exempt boston financial tax-credit equity (4%) federal lihtc, $5,472,589 annual credits pacific west communities, inc. deferred developer fee donated land other donated land value construction expected to begin completion expected"
   },
   {
    "id": "SCC-000593",
@@ -396004,6 +396627,32 @@
       "SRC-001159",
       "SRC-001160"
      ]
+    },
+    {
+     "text": "County HAA findings letter (Nov 13, 2026) names the applicant as San Mateo Housing Group LLC and dates the formal application July 14, 2026; the county project page lists the formal application as received July 16, 2026. The April 28, 2026 preliminary letter is addressed to Belmont Housing Group and describes a 135-unit building.",
+     "src": [
+      "SRC-002794",
+      "SRC-001159",
+      "SRC-002796"
+     ]
+    },
+    {
+     "text": "County findings state the July 14, 2026 application was incomplete because it lacked items on the county Planning Permit Application Form checklist, including a Grading Permit application. The county received no comments on the applicant's HAA notice.",
+     "src": [
+      "SRC-002794"
+     ]
+    },
+    {
+     "text": "The formal plan set titles the project San Mateo Pointe.",
+     "src": [
+      "SRC-002795"
+     ]
+    },
+    {
+     "text": "County preliminary letter (Apr 28, 2026) states the parcel is in the County's Rural Area with an Open Space designation and that the project as proposed does not comply with General Plan water supply and wastewater policies.",
+     "src": [
+      "SRC-002796"
+     ]
     }
    ],
    "parties": [
@@ -396025,6 +396674,24 @@
      "src": [
       "SRC-001160"
      ]
+    },
+    {
+     "role": "Developer",
+     "company": "San Mateo Housing Group LLC",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002794"
+     ]
+    },
+    {
+     "role": "Civil engineer",
+     "company": "M2 Civil Engineering, Inc.",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002795"
+     ]
     }
    ],
    "financing": [],
@@ -396036,6 +396703,15 @@
      "label": "Preliminary application received (PRE2026-00012)",
      "src": [
       "SRC-001159"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-04-28",
+     "type": "Other",
+     "label": "County preliminary application letter identifies water supply and sewage disposal issues",
+     "src": [
+      "SRC-002796"
      ],
      "estimated": false
     },
@@ -396065,6 +396741,15 @@
       "SRC-001159"
      ],
      "estimated": false
+    },
+    {
+     "date": "2026-11-13",
+     "type": "Other",
+     "label": "County issues HAA response and written findings; application remains incomplete",
+     "src": [
+      "SRC-002794"
+     ],
+     "estimated": false
     }
    ],
    "history": [
@@ -396072,12 +396757,99 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on name, address, applicant; county documents located",
+     "src": [
+      "SRC-002794"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "nothing new",
+     "note": "SMC Active Parcels layer, APN 043-331-410: owners match record (trusts)",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "Unincorporated county project; Belmont adjoins but is not the lead agency",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "County project page; Apr 28, 2026 PRE letter; Nov 13, 2026 HAA findings letter; formal plan set",
+     "src": [
+      "SRC-001159",
+      "SRC-002794",
+      "SRC-002796",
+      "SRC-002795"
+     ]
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No APR, CEQAnet, CTCAC or HCD record found",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of Daily Journal and local news for Christian Drive / Ralston builder's remedy",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of SF YIMBY, The Real Deal for Christian Drive / San Mateo Pointe",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "San Mateo Housing Group LLC / Belmont Housing Group: no company website found",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Formal plan set architectural sheets carry an Anderson Architects Inc. title block labeled for a different project (Vista Capri Apartments, Los Gatos); no architect named for this project",
+     "src": [
+      "SRC-002795"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or public funding found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001159": "S1",
     "SRC-001160": "S2",
-    "SRC-001103": "S3"
+    "SRC-002794": "S3",
+    "SRC-002796": "S4",
+    "SRC-002795": "S5",
+    "SRC-001103": "S6"
    },
    "lat": 37.512372473333336,
    "lng": -122.32754258,
@@ -396106,16 +396878,16 @@
     "mix_types": [],
     "tax_credit": false,
     "owner": "Eugene Sussli Living Trust, Denise Fenzi Trustee",
-    "developer": "",
+    "developer": "San Mateo Housing Group LLC",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2026-08-17",
+    "latest_event": "2026-11-13",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "christian drive sb330 (builder's remedy) project other san mateo county unincorporated 043-331-410 christian drive at ralston ranch rd, unincorporated san mateo county (adjoins belmont), ca christian drive at ralston ranch road, unincorporated san mateo county (adjoins belmont) apartments sources say multi-family residential; rental or for-sale tenure is not stated proposed formal application deemed incomplete aug. 13, 2026 unincorporated other san mateo county county page locates the site adjoining the city of belmont 1.74 137 county description of the project application 135 sb 330 preliminary application form 325000 preliminary application form, 135-unit version 14 2 garage levels, 11 residential levels, 1 level of common amenities 292 mixed-income 13% of the 137 units designated affordable (18 units). preliminary application form describes 18 low-income units. [\"builder's remedy\"] pln2026-00261; pre2026-00012 general plan designation open space; zoning resource management (rm). undeveloped parcel. other applicant belmont housing group llc recorded owner eugene sussli living trust, denise fenzi trustee preliminary application received (pre2026-00012) formal application received (pln2026-00261) application deemed incomplete applicant written notice under gov. code 65589.5(h)(6)(e)"
+   "search": "christian drive sb330 (builder's remedy) project other san mateo county unincorporated 043-331-410 christian drive at ralston ranch rd, unincorporated san mateo county (adjoins belmont), ca christian drive at ralston ranch road, unincorporated san mateo county (adjoins belmont) apartments sources say multi-family residential; rental or for-sale tenure is not stated proposed formal application deemed incomplete aug. 13, 2026 unincorporated other san mateo county county page locates the site adjoining the city of belmont 1.74 137 county description of the project application 135 sb 330 preliminary application form 325000 preliminary application form, 135-unit version 14 2 garage levels, 11 residential levels, 1 level of common amenities 292 mixed-income 13% of the 137 units designated affordable (18 units). preliminary application form describes 18 low-income units. [\"builder's remedy\"] pln2026-00261; pre2026-00012 general plan designation open space; zoning resource management (rm). undeveloped parcel. county haa findings letter (nov 13, 2026) names the applicant as san mateo housing group llc and dates the formal application july 14, 2026; the county project page lists the formal application as received july 16, 2026. the april 28, 2026 preliminary letter is addressed to belmont housing group and describes a 135-unit building. county findings state the july 14, 2026 application was incomplete because it lacked items on the county planning permit application form checklist, including a grading permit application. the county received no comments on the applicant's haa notice. the formal plan set titles the project san mateo pointe. county preliminary letter (apr 28, 2026) states the parcel is in the county's rural area with an open space designation and that the project as proposed does not comply with general plan water supply and wastewater policies. other applicant belmont housing group llc recorded owner eugene sussli living trust, denise fenzi trustee developer san mateo housing group llc civil engineer m2 civil engineering, inc. preliminary application received (pre2026-00012) county preliminary application letter identifies water supply and sewage disposal issues formal application received (pln2026-00261) application deemed incomplete applicant written notice under gov. code 65589.5(h)(6)(e) county issues haa response and written findings; application remains incomplete"
   },
   {
    "id": "SMC-000226",
@@ -401955,6 +402727,48 @@
        37.4713313
       ]
      ]
+    },
+    {
+     "apn": "063-221-490",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-001103"
+     ],
+     "outline": [
+      [
+       -122.1384734,
+       37.4713313
+      ],
+      [
+       -122.1384721,
+       37.4712901
+      ],
+      [
+       -122.1384599,
+       37.4709035
+      ],
+      [
+       -122.1387129,
+       37.4708981
+      ],
+      [
+       -122.1387346,
+       37.4715869
+      ],
+      [
+       -122.1386761,
+       37.4715881
+      ],
+      [
+       -122.1386678,
+       37.4713272
+      ],
+      [
+       -122.1384734,
+       37.4713313
+      ]
+     ]
     }
    ],
    "addresses": [
@@ -401963,6 +402777,13 @@
      "role": "main",
      "src": [
       "SRC-001178"
+     ]
+    },
+    {
+     "text": "1600 to 1634 Bay Rd, East Palo Alto, CA 94303, East Palo Alto, CA",
+     "role": "other",
+     "src": [
+      "SRC-002799"
      ]
     }
    ],
@@ -402005,9 +402826,17 @@
       {
        "value": 136,
        "src": [
-        "SRC-001178"
+        "SRC-001178",
+        "SRC-002799"
        ],
        "note": "Single Room Occupancy units"
+      },
+      {
+       "value": 135,
+       "src": [
+        "SRC-002798"
+       ],
+       "note": "Dec 2025 community meeting flyer"
       }
      ]
     },
@@ -402016,7 +402845,8 @@
       {
        "value": 4,
        "src": [
-        "SRC-001178"
+        "SRC-001178",
+        "SRC-002799"
        ]
       }
      ]
@@ -402026,7 +402856,8 @@
       {
        "value": 67,
        "src": [
-        "SRC-001178"
+        "SRC-001178",
+        "SRC-002799"
        ]
       }
      ]
@@ -402038,6 +402869,27 @@
        "src": [
         "SRC-001178"
        ]
+      }
+     ]
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 26936,
+       "src": [
+        "SRC-002799"
+       ]
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 1.09,
+       "src": [
+        "SRC-002799"
+       ],
+       "note": "Total lot area 47,548 sq ft"
       }
      ]
     }
@@ -402054,6 +402906,29 @@
      "src": [
       "SRC-001178"
      ]
+    },
+    {
+     "text": "City page describes 28,000 sq ft, 4-story corporate housing with 136 SRO units; the December 2025 meeting flyer describes 135 SRO units. Plans show a typical unit of 133 sq ft, a separate 4,298 sq ft leasing and amenity building (leasing office, mail room, gym, shared offices, kitchen), a pool, Type V-A construction and a 50-foot height. Existing buildings, including a former post office, would be demolished.",
+     "src": [
+      "SRC-001178",
+      "SRC-002798",
+      "SRC-002799"
+     ]
+    },
+    {
+     "text": "Plan set lists the owner as Clarum Four Corners, LLC at 777 North 1st Street, San Jose, with a swenson.com contact; architectural sheets are by Swenson. The flyer names Mark Pilarczyk, President of Development, as project contact.",
+     "src": [
+      "SRC-002799",
+      "SRC-002798"
+     ]
+    },
+    {
+     "text": "City page lists APNs 063-221-010, -020, -030 and -090; the plan set lists 063-221-010, -020, -030 and -490. County parcel layer shows 063-221-490 with Clarum Four Corners LLC among owners and has no record for 063-221-090.",
+     "src": [
+      "SRC-001178",
+      "SRC-002799",
+      "SRC-001103"
+     ]
     }
    ],
    "parties": [
@@ -402065,6 +402940,55 @@
      "other_role": "Applicant",
      "src": [
       "SRC-001178"
+     ]
+    },
+    {
+     "role": "Recorded owner",
+     "company": "Clarum Four Corners, LLC",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001103",
+      "SRC-002799"
+     ]
+    },
+    {
+     "role": "Developer",
+     "company": "Swenson",
+     "contact": "Mark Pilarczyk",
+     "linkedin": null,
+     "email": "mark@swenson.com",
+     "phone": "(408) 287-0246",
+     "src": [
+      "SRC-002798",
+      "SRC-002799"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Swenson",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002799"
+     ]
+    },
+    {
+     "role": "Civil engineer",
+     "company": "CEA, Inc.",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002799"
+     ]
+    },
+    {
+     "role": "Landscape architect",
+     "company": "The Guzzardo Partnership, Inc.",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-002799"
      ]
     }
    ],
@@ -402078,6 +403002,15 @@
      "src": [
       "SRC-001178"
      ]
+    },
+    {
+     "date": "2025-03-05",
+     "type": "Other",
+     "label": "Internal Development Review Committee",
+     "src": [
+      "SRC-001178"
+     ],
+     "estimated": false
     },
     {
      "date": "2025-12-18",
@@ -402098,14 +403031,101 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-18",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Web search on 1600/1620 Bay Rd; city page, flyer and plan set opened",
+     "src": [
+      "SRC-001178",
+      "SRC-002798",
+      "SRC-002799"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "SMC Active Parcels layer: 063-221-020, -030, -490 list Clarum Four Corners LLC among owners",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "City of East Palo Alto project page PRE25-002, pre-app plan set, community meeting flyer",
+     "src": [
+      "SRC-001178",
+      "SRC-002799",
+      "SRC-002798"
+     ]
+    },
+    "county": {
+     "date": "2026-11-18",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Pre-application only; no APR, CEQAnet, CTCAC or HCD record found",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of Palo Alto Online, Daily Journal for 1600 Bay Road",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Search of SF YIMBY, The Real Deal for 1600 Bay Road / Swenson East Palo Alto",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No Swenson or Clarum project page found for this site",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-18",
+     "result": "found",
+     "note": "Swenson architectural sheets in plan set",
+     "src": [
+      "SRC-002799"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "No lender or public funding found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-18",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001178": "S1",
-    "SRC-001103": "S2"
+    "SRC-002799": "S2",
+    "SRC-002798": "S3",
+    "SRC-001103": "S4"
    },
-   "lat": 37.47144040869565,
-   "lng": -122.13905465652174,
+   "lat": 37.47140182,
+   "lng": -122.13894846333332,
    "calcs": {},
    "kinds": [
     "pipeline"
@@ -402117,10 +403137,10 @@
     "community": "",
     "county": "San Mateo County",
     "area": "East Palo Alto",
-    "total_units": 136,
-    "units_display": "136",
+    "total_units": null,
+    "units_display": "135–136",
     "units_range": [
-     136,
+     135,
      136
     ],
     "restricted_units": null,
@@ -402130,8 +403150,8 @@
     "aff_levels": [],
     "mix_types": [],
     "tax_credit": false,
-    "owner": "",
-    "developer": "",
+    "owner": "Clarum Four Corners, LLC",
+    "developer": "Swenson",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
@@ -402140,7 +403160,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1600 & 1620 bay road east palo alto 063-221-010 063-221-020 063-221-030 1600 & 1620 bay rd, east palo alto, ca 94303, east palo alto, ca apartments working label. single room occupancy units; tenure not stated proposed pre-application, city status: under review east palo alto 136 single room occupancy units 4 67 pre25-002 city lists a fourth apn, 063-221-090, which is not in the county parcel layer. city describes it as \"4-story corporate housing with 136 single room occupancy (sro) units\"; no affordability stated. other applicant swensen architecture pre-application received pre-application community meeting"
+   "search": "1600 & 1620 bay road east palo alto 063-221-010 063-221-020 063-221-030 063-221-490 1600 & 1620 bay rd, east palo alto, ca 94303, east palo alto, ca 1600 to 1634 bay rd, east palo alto, ca 94303, east palo alto, ca apartments working label. single room occupancy units; tenure not stated proposed pre-application, city status: under review east palo alto 136 single room occupancy units 135 dec 2025 community meeting flyer 4 67 pre25-002 26936 1.09 total lot area 47,548 sq ft city lists a fourth apn, 063-221-090, which is not in the county parcel layer. city describes it as \"4-story corporate housing with 136 single room occupancy (sro) units\"; no affordability stated. city page describes 28,000 sq ft, 4-story corporate housing with 136 sro units; the december 2025 meeting flyer describes 135 sro units. plans show a typical unit of 133 sq ft, a separate 4,298 sq ft leasing and amenity building (leasing office, mail room, gym, shared offices, kitchen), a pool, type v-a construction and a 50-foot height. existing buildings, including a former post office, would be demolished. plan set lists the owner as clarum four corners, llc at 777 north 1st street, san jose, with a swenson.com contact; architectural sheets are by swenson. the flyer names mark pilarczyk, president of development, as project contact. city page lists apns 063-221-010, -020, -030 and -090; the plan set lists 063-221-010, -020, -030 and -490. county parcel layer shows 063-221-490 with clarum four corners llc among owners and has no record for 063-221-090. other applicant swensen architecture recorded owner clarum four corners, llc developer swenson mark pilarczyk architect swenson civil engineer cea, inc. landscape architect the guzzardo partnership, inc. pre-application received internal development review committee pre-application community meeting"
   },
   {
    "id": "SMC-000234",

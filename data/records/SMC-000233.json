@@ -135,6 +135,48 @@
           37.4713313
         ]
       ]
+    },
+    {
+      "apn": "063-221-490",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.1384734,
+          37.4713313
+        ],
+        [
+          -122.1384721,
+          37.4712901
+        ],
+        [
+          -122.1384599,
+          37.4709035
+        ],
+        [
+          -122.1387129,
+          37.4708981
+        ],
+        [
+          -122.1387346,
+          37.4715869
+        ],
+        [
+          -122.1386761,
+          37.4715881
+        ],
+        [
+          -122.1386678,
+          37.4713272
+        ],
+        [
+          -122.1384734,
+          37.4713313
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -143,6 +185,13 @@
       "role": "main",
       "src": [
         "SRC-001178"
+      ]
+    },
+    {
+      "text": "1600 to 1634 Bay Rd, East Palo Alto, CA 94303, East Palo Alto, CA",
+      "role": "other",
+      "src": [
+        "SRC-002799"
       ]
     }
   ],
@@ -185,9 +234,17 @@
         {
           "value": 136,
           "src": [
-            "SRC-001178"
+            "SRC-001178",
+            "SRC-002799"
           ],
           "note": "Single Room Occupancy units"
+        },
+        {
+          "value": 135,
+          "src": [
+            "SRC-002798"
+          ],
+          "note": "Dec 2025 community meeting flyer"
         }
       ]
     },
@@ -196,7 +253,8 @@
         {
           "value": 4,
           "src": [
-            "SRC-001178"
+            "SRC-001178",
+            "SRC-002799"
           ]
         }
       ]
@@ -206,7 +264,8 @@
         {
           "value": 67,
           "src": [
-            "SRC-001178"
+            "SRC-001178",
+            "SRC-002799"
           ]
         }
       ]
@@ -218,6 +277,27 @@
           "src": [
             "SRC-001178"
           ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 26936,
+          "src": [
+            "SRC-002799"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.09,
+          "src": [
+            "SRC-002799"
+          ],
+          "note": "Total lot area 47,548 sq ft"
         }
       ]
     }
@@ -234,6 +314,29 @@
       "src": [
         "SRC-001178"
       ]
+    },
+    {
+      "text": "City page describes 28,000 sq ft, 4-story corporate housing with 136 SRO units; the December 2025 meeting flyer describes 135 SRO units. Plans show a typical unit of 133 sq ft, a separate 4,298 sq ft leasing and amenity building (leasing office, mail room, gym, shared offices, kitchen), a pool, Type V-A construction and a 50-foot height. Existing buildings, including a former post office, would be demolished.",
+      "src": [
+        "SRC-001178",
+        "SRC-002798",
+        "SRC-002799"
+      ]
+    },
+    {
+      "text": "Plan set lists the owner as Clarum Four Corners, LLC at 777 North 1st Street, San Jose, with a swenson.com contact; architectural sheets are by Swenson. The flyer names Mark Pilarczyk, President of Development, as project contact.",
+      "src": [
+        "SRC-002799",
+        "SRC-002798"
+      ]
+    },
+    {
+      "text": "City page lists APNs 063-221-010, -020, -030 and -090; the plan set lists 063-221-010, -020, -030 and -490. County parcel layer shows 063-221-490 with Clarum Four Corners LLC among owners and has no record for 063-221-090.",
+      "src": [
+        "SRC-001178",
+        "SRC-002799",
+        "SRC-001103"
+      ]
     }
   ],
   "parties": [
@@ -245,6 +348,55 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001178"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Clarum Four Corners, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103",
+        "SRC-002799"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Swenson",
+      "contact": "Mark Pilarczyk",
+      "linkedin": null,
+      "email": "mark@swenson.com",
+      "phone": "(408) 287-0246",
+      "src": [
+        "SRC-002798",
+        "SRC-002799"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Swenson",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002799"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "CEA, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002799"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002799"
       ]
     }
   ],
@@ -258,6 +410,15 @@
       "src": [
         "SRC-001178"
       ]
+    },
+    {
+      "date": "2025-03-05",
+      "type": "Other",
+      "label": "Internal Development Review Committee",
+      "src": [
+        "SRC-001178"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-12-18",
@@ -278,6 +439,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1600/1620 Bay Rd; city page, flyer and plan set opened",
+      "src": [
+        "SRC-001178",
+        "SRC-002798",
+        "SRC-002799"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels layer: 063-221-020, -030, -490 list Clarum Four Corners LLC among owners",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of East Palo Alto project page PRE25-002, pre-app plan set, community meeting flyer",
+      "src": [
+        "SRC-001178",
+        "SRC-002799",
+        "SRC-002798"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Pre-application only; no APR, CEQAnet, CTCAC or HCD record found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of Palo Alto Online, Daily Journal for 1600 Bay Road",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of SF YIMBY, The Real Deal for 1600 Bay Road / Swenson East Palo Alto",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Swenson or Clarum project page found for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Swenson architectural sheets in plan set",
+      "src": [
+        "SRC-002799"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

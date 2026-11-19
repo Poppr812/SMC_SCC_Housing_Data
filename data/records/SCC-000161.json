@@ -128,6 +128,13 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "APR Table A (2021 application): 129 proposed units, 65 low-income deed-restricted and 64 above-moderate; density bonus requested. APR Table A2 (2022 entitlement): 136 units, 68 low-income deed-restricted and 68 above-moderate, 55-year term, SB 35 and density bonus.",
+          "src": [
+            "SRC-001099",
+            "SRC-001107"
+          ]
         }
       ]
     },
@@ -142,6 +149,16 @@
             "SRC-001107"
           ],
           "note": "SB 35 flagged in the state report"
+        },
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "APR Table A2 2022: SB 35 approval; deed restriction type DB; density bonus incentive: development standards modification"
         }
       ]
     },
@@ -170,6 +187,34 @@
             "SRC-001107"
           ],
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 68,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "APR Table A2 2022 above-moderate units"
+        },
+        {
+          "value": 64,
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "APR Table A 2021 proposed above-moderate units"
         }
       ]
     }
@@ -220,6 +265,84 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search on 740 W San Carlos St and MP21-003; SGPA architect page now returns 404; apartments.com listing refused access",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 26415024: situs 740 W San Carlos St, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "data.ca.gov APR Table A (2021) and Table A2 (2022) records for MP21-003",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of Mercury News, SJ Spotlight for 740 W San Carlos",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of SF YIMBY, The Real Deal for 740 West San Carlos",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No developer named in public sources found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "SGPA project page for 740 West San Carlos returns 404",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
