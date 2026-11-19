@@ -286,6 +286,84 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 64,
+              "ami": 30
+            },
+            {
+              "count": 43,
+              "ami": 50
+            },
+            {
+              "count": 21,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001890"
+          ],
+          "note": "CTCAC 2021 aggregate targeting; 2 manager's units unrestricted"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 81883176,
+          "src": [
+            "SRC-001890"
+          ],
+          "note": "Total project cost at application, June 2021 staff report"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001890"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002872",
+            "SRC-001890"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 50,
+          "src": [
+            "SRC-002872"
+          ],
+          "note": "Ground-floor parking; 36 bike spaces"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2024,
+          "src": [
+            "SRC-001603"
+          ],
+          "note": "CTCAC placed-in-service date 2024-02-02"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -294,6 +372,25 @@
       "src": [
         "SRC-001603",
         "SRC-001891"
+      ]
+    },
+    {
+      "text": "CTCAC CA-21-467: census tract 5008.00; HUD Section 8 project-based vouchers on 64 units; bond issuer California Municipal Finance Authority, expected issuance 2021-06-30; per-unit cost $577,797; housing type Special Needs.",
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "text": "Eden press release: County funding totals $26M ($13.2M Measure A, $12.8M No Place Like Home); also names California Community Reinvestment Corporation, Silicon Valley Bank and National Equity Fund as partners without stating roles.",
+      "src": [
+        "SRC-002874"
+      ]
+    },
+    {
+      "text": "SF YIMBY 2022: about 116,440 sq ft, 60 feet tall; design by Office of Jerome King. Archinect lists Architects FORA as architect for Auzerais Apartments (aka The Astra) for Eden Housing.",
+      "src": [
+        "SRC-002872",
+        "SRC-002873"
       ]
     }
   ],
@@ -329,17 +426,222 @@
       "src": [
         "SRC-001890"
       ]
+    },
+    {
+      "role": "General contractor",
+      "company": "L+D Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002872"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Office of Jerome King (OJK)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002872"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architects FORA",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002873"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Hortus Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002872"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "JPMorgan Chase Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Eden Investments, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tax credit investor/consultant",
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001890"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "JPMorgan Chase Bank",
+      "program": "Tax-exempt",
+      "amount": 42017597,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "JPMorgan Chase Bank",
+      "program": "Taxable",
+      "amount": 6610746,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "JPMorgan Chase Bank",
+      "program": "Tax-exempt",
+      "amount": 20520284,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Department of Housing and Community Development",
+      "program": "Infill Infrastructure Grant (IIG)",
+      "amount": 5500000,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "County of Santa Clara",
+      "program": "No Place Like Home (NPLH)",
+      "amount": 12800000,
+      "date": null,
+      "src": [
+        "SRC-001890",
+        "SRC-002874"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Measure A (CTCAC 2021 application figure)",
+      "amount": 700000,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Measure A (2024 grand opening figure)",
+      "amount": 13200000,
+      "date": null,
+      "src": [
+        "SRC-002874"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "General Partner Contribution",
+      "program": null,
+      "amount": 3996490,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Eden Housing, Inc.",
+      "program": null,
+      "amount": 2773121,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Permanent tax credit equity per CTCAC staff report",
+      "amount": 35217620,
+      "date": null,
+      "src": [
+        "SRC-001890"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2021-06-16",
+      "type": "Other",
+      "label": "CTCAC staff report recommends $3,934,685 annual federal 4% credits (CA-21-467)",
+      "src": [
+        "SRC-001890"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-07",
+      "type": "Other",
+      "label": "Construction underway; foundation and podium complete",
+      "src": [
+        "SRC-002872"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-02-02",
       "type": "Completion",
       "label": "CTCAC placed-in-service date",
       "src": [
         "SRC-001603"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-04-22",
+      "type": "Other",
+      "label": "Grand opening",
+      "src": [
+        "SRC-002874",
+        "SRC-002875"
       ],
       "estimated": false
     }
@@ -359,6 +661,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address, developer",
+      "src": [
+        "SRC-002874",
+        "SRC-002872"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=26426102 and 26426103: both situs 427 Auzerais Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "news.santaclaracounty.gov grand opening release not opened (blocked); county funding taken from Eden release",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-21-467 financing and targeting; HCD press release 2024-05-03",
+      "src": [
+        "SRC-001890",
+        "SRC-002875"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Mercury News 2019 item only via PressReader; no other local news opened",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-07-26; Housing Finance profile returned 403",
+      "src": [
+        "SRC-002872"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Eden Housing grand opening release 2024-04-22",
+      "src": [
+        "SRC-002874"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Archinect Architects FORA page; architectsfora.squarespace.com returned 404; architizer 403",
+      "src": [
+        "SRC-002873"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC construction and permanent sources; Eden release county amounts",
+      "src": [
+        "SRC-001890",
+        "SRC-002874"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }

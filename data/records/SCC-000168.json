@@ -373,6 +373,49 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-002878"
+          ],
+          "note": "Affordable building and three apartment buildings are four floors; hotel five stories"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 1607,
+          "src": [
+            "SRC-002878"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 64,
+          "src": [
+            "SRC-002878"
+          ],
+          "note": "Development area; the property totals 591 acres"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 128000,
+          "src": [
+            "SRC-002878"
+          ],
+          "note": "Hotel floor area; housing over 725,000 sq ft; 855,000 sq ft total"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -386,6 +429,24 @@
       "text": "County: 69 single-family homes, 13 triplexes (39 units) and 129 multi-family units, plus an 81-unit hotel. The 129 on this record is the multi-family count only; county states no total. County also lists APN 503-46-008.",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "text": "County letter 2024-09-13: Builders Remedy application for 69 single-family residences, 39 triplex units, 129 multifamily units (48 affordable), an 81-room hotel, clubhouse, cellar and storage building, with a subdivision; received 2024-08-15; APNs 503-46-009 and 503-46-008.",
+      "src": [
+        "SRC-002879"
+      ]
+    },
+    {
+      "text": "SF YIMBY: project named Encore Estates; one 48-unit affordable building, three 27-unit apartment buildings, 13 triplexes and 69 single-family homes, 86 residential buildings; hotel 81 rooms including 4 casitas, about 75 employees.",
+      "src": [
+        "SRC-002878"
+      ]
+    },
+    {
+      "text": "Applicant project description: hotel of 77 standard rooms and 4 casita-style rooms with restaurants, spa, pool and retail; 70-80 employees for all commercial uses.",
+      "src": [
+        "SRC-002881"
       ]
     }
   ],
@@ -408,17 +469,84 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Chateau Masson, LLC",
+      "contact": "William F. Hirschman",
+      "linkedin": null,
+      "email": "whirschman@lexorbuilders.com",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002879"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lexor Builders",
+      "contact": "William Hirschman",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002878"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002878"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hanna-Brunetti",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Consultant (prepared responses to county comments)",
+      "src": [
+        "SRC-002880"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-03",
+      "type": "Other",
+      "label": "SB 330 preliminary application filed",
+      "src": [
+        "SRC-002878"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-08-15",
       "type": "Application filed",
       "label": "Formal SB 330 application submitted",
       "src": [
         "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-09-13",
+      "type": "Other",
+      "label": "County deemed application incomplete (PLN24-146-SB330)",
+      "src": [
+        "SRC-002879"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-05",
+      "type": "Other",
+      "label": "Applicant responses to county completeness comments",
+      "src": [
+        "SRC-002880"
       ],
       "estimated": false
     },
@@ -441,6 +569,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Mountain Winery, Encore, Hirschman",
+      "src": [
+        "SRC-002878"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=50346009: situs 14831 Pierce Rd, unincorporated; 50346008 no situs; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Unincorporated; Saratoga's Mountain Winery Annexation EIR (SCH 2019070155) covers APNs 503-46-005 to -007, a separate action",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County planning documents for PLN24-146: incomplete letter, applicant response, project description",
+      "src": [
+        "SRC-002879",
+        "SRC-002880",
+        "SRC-002881"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "CEQAnet: no document for PLN24-146; APR already on record",
+      "src": [
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal articles returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-08-25",
+      "src": [
+        "SRC-002878"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "lexorbuilders.com failed with an SSL error",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Dahlin Group Mountain Winery page covers winery commercial buildings only, not this housing project",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No public financing information found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }

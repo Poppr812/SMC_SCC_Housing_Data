@@ -74,8 +74,16 @@
             "SRC-001127"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-002238"
+          ],
+          "note": "Developer pipeline page lists the project under Under Construction, completion coming soon"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -152,6 +160,20 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": {
+            "studio": 20,
+            "1br": 40,
+            "2br": 35,
+            "3br": 34,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002869",
+            "SRC-002870"
+          ],
+          "note": "129-unit design reported in 2022 and 2025; CTCAC 2025 and the developer page show 24/40/33/33 for 130 units"
         }
       ]
     },
@@ -204,6 +226,74 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-002865",
+            "SRC-002866",
+            "SRC-002867"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 103,
+          "src": [
+            "SRC-002868",
+            "SRC-002867"
+          ],
+          "note": "CEQAnet: 103 vehicle and 152 bicycle spaces; developer page: 103 ground-floor spaces"
+        },
+        {
+          "value": 106,
+          "src": [
+            "SRC-002869"
+          ],
+          "note": "2022 entitlement filing: 106-car garage with parking lifts"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.14,
+          "src": [
+            "SRC-002866",
+            "SRC-002870"
+          ],
+          "note": "City project page gives a proposed new lot of 49,864 sq ft; CEQAnet lists 0.98 acres"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 96370,
+          "src": [
+            "SRC-002869"
+          ],
+          "note": "2022 filing: 136,950 sq ft total including 18,420 sq ft garage"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002865",
+            "SRC-002866"
+          ],
+          "note": "SB 330 pre-application filed May 17, 2022; four density bonus concessions requested"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -219,6 +309,30 @@
       "src": [
         "SRC-001664"
       ]
+    },
+    {
+      "text": "ARB staff report: replaces two vacant retail buildings (formerly Mike's Bikes, 9,000 sq ft) and a surface lot; most of the building is 60 feet, stair features reach 66 feet 3 inches; concessions include FAR from 0.6:1 to 2.7:1 and lot coverage from 50% to 74%. ARB also reviewed the project on 2022-11-17 and 2023-03-02.",
+      "src": [
+        "SRC-002866"
+      ]
+    },
+    {
+      "text": "Patch, on the county approval: 32 rapid rehousing units, 30 units for households earning up to $54,390, 65 for households earning up to $90,650, and 2 managers' units.",
+      "src": [
+        "SRC-002871"
+      ]
+    },
+    {
+      "text": "Developer page: 130 units restricted to 30%-60% AMI; 25% reserved for rapid-rehousing households referred by the County Office of Supportive Housing.",
+      "src": [
+        "SRC-002867"
+      ]
+    },
+    {
+      "text": "CEQAnet lists APN 132-37-055 for the project; the current county parcel layer has situs 3001 El Camino Real on APN 132-37-074.",
+      "src": [
+        "SRC-002868"
+      ]
     }
   ],
   "parties": [
@@ -230,7 +344,29 @@
       "src": [
         "SRC-001664"
       ],
-      "website": "https://charitieshousing.org/"
+      "website": "https://charitieshousing.org/",
+      "project_page": "https://charitieshousing.org/property/3001-el-camino-real/",
+      "project_page_basis": "opened"
+    },
+    {
+      "role": "Architect",
+      "company": "David Baker Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002869",
+        "SRC-002870"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Form/Work Landscape Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002869",
+        "SRC-002870"
+      ]
     }
   ],
   "financing": [
@@ -328,12 +464,58 @@
   "groups": {},
   "events": [
     {
+      "date": "2022-05-17",
+      "type": "Other",
+      "label": "SB 330 pre-application filed",
+      "src": [
+        "SRC-002866"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-02-13",
+      "type": "Other",
+      "label": "Draft IS/MND released for public review (SCH 2023020309), through 2023-03-15",
+      "src": [
+        "SRC-002868",
+        "SRC-002865"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-05-04",
+      "type": "Other",
+      "label": "Architectural Review Board hearing; staff recommended approval with conditions",
+      "src": [
+        "SRC-002866"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12",
+      "type": "Other",
+      "label": "County Board of Supervisors approved Measure A funding",
+      "src": [
+        "SRC-002871"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-01-21",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2025-02",
+      "type": "Other",
+      "label": "Demolition permits reported filed",
+      "src": [
+        "SRC-002870"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-08-05",
@@ -386,6 +568,103 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and developer; led to city, CEQAnet, SF YIMBY, Patch, developer pages",
+      "src": [
+        "SRC-002865",
+        "SRC-002869"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=13237074: situs 3001 El Camino Real, Palo Alto; no owner field. APN 132-37-055 not in current dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Palo Alto project page 22PLN-00229; ARB staff report 2023-05-04",
+      "src": [
+        "SRC-002865",
+        "SRC-002866"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Board of Supervisors Measure A approval Dec. 2023 as reported by Patch; Measure A/SAHF loans already on record",
+      "src": [
+        "SRC-002871",
+        "SRC-001664"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2023020309 (IS/MND); CTCAC CA-25-595 already on record",
+      "src": [
+        "SRC-002868",
+        "SRC-001664"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Patch 2023-12-06; Palo Alto Online articles returned no text or HTTP 429",
+      "src": [
+        "SRC-002871"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2022-07-16 and 2025-02-03; The Real Deal 2022 returned 403",
+      "src": [
+        "SRC-002869",
+        "SRC-002870"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "charitieshousing.org pipeline (Under Construction) and project page",
+      "src": [
+        "SRC-002238",
+        "SRC-002867"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "dbarchitect.com: no project page for this site found via search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC staff report sources already on record; no other lender or investor named publicly",
+      "src": [
+        "SRC-001664"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }
