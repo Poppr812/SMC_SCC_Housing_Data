@@ -165,7 +165,9 @@
         {
           "value": 8,
           "src": [
-            "SRC-001202"
+            "SRC-001202",
+            "SRC-002933",
+            "SRC-002934"
           ]
         }
       ]
@@ -209,6 +211,42 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001130"
+          ],
+          "note": "State report 2025: deed-restriction term"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001130",
+            "SRC-002932"
+          ],
+          "note": "State report: density bonus 69.7% with incentives; city page lists state and local density bonuses"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 117781,
+          "src": [
+            "SRC-002932"
+          ],
+          "note": "Gross floor area; revised plans have no commercial space"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -216,6 +254,32 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001130"
+      ]
+    },
+    {
+      "text": "City page: about 85 ft tall, FAR 4.10, 168 short-term and 17 long-term bike spaces, 10,764 sq ft of open space (4,670 sq ft publicly accessible); demolishes a 10,361 sq ft single-story commercial building. The 14 BMR units cover 10 for the 15% inclusionary requirement, 3 for the community amenity requirement and 1 moderate-income unit under State Density Bonus Law. Approvals: use permit for bonus-level development, architectural control, BMR housing agreement.",
+      "src": [
+        "SRC-002932"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption and SF YIMBY give the height as about 93 ft; the city page gives about 85 ft. The NOE says the building is all-electric and designed for LEED Gold.",
+      "src": [
+        "SRC-002933",
+        "SRC-002934",
+        "SRC-002932"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-03-19) reports an estimated construction cost of $77.7 million, about 22 months of construction, and 188 bicycle spaces.",
+      "src": [
+        "SRC-002934"
+      ]
+    },
+    {
+      "text": "County parcel layer lists the existing building on APN 055-170-240 as built in 1963, land area 28,808 sq ft.",
+      "src": [
+        "SRC-001103"
       ]
     }
   ],
@@ -238,6 +302,35 @@
       "src": [
         "SRC-001202"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "3705 Haven LLC",
+      "contact": "Ruby Huang, Project Manager",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-002933"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "March Capital Fund",
+      "contact": "Oliver Davis",
+      "linkedin": null,
+      "src": [
+        "SRC-002935"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LDP Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002935",
+        "SRC-002934"
+      ]
     }
   ],
   "financing": [],
@@ -250,6 +343,24 @@
       "src": [
         "SRC-001202"
       ]
+    },
+    {
+      "date": "2023-12-01",
+      "type": "Other",
+      "label": "Notice of Preparation of EIR received by State Clearinghouse (99-unit version)",
+      "src": [
+        "SRC-002936"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12-18",
+      "type": "Other",
+      "label": "Planning Commission study session and EIR scoping meeting",
+      "src": [
+        "SRC-002932"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-03-22",
@@ -266,6 +377,15 @@
       "src": [
         "SRC-001130"
       ]
+    },
+    {
+      "date": "2025-02-28",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Community Plan Exemption, 112 units)",
+      "src": [
+        "SRC-002933"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-12",
@@ -286,6 +406,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 3705 Haven Ave and March Capital; city page, CEQAnet and SF YIMBY opened",
+      "src": [
+        "SRC-002932",
+        "SRC-002934"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC parcel layer, APN 055-170-240: owner 3705 Haven LLC (on record), year built 1963, land 28,808 sq ft",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Menlo Park project page: entitled 2025-02-24, building permit submitted Dec 2025 and under review; height, FAR, GFA, BMR breakdown",
+      "src": [
+        "SRC-002932"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2023120023 NOP and NOE; APR Table A2 2025 (55-year term, density bonus); no CTCAC/HCD award",
+      "src": [
+        "SRC-002936",
+        "SRC-002933",
+        "SRC-001130"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No local news coverage beyond trade press found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2023-12-07 and 2025-03-19 articles",
+      "src": [
+        "SRC-002935",
+        "SRC-002934"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No March Capital project page found by web search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no LDP Architecture project page for 3705 Haven",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or public funding found; APR lists financial assistance as 'Other'",
+      "src": [
+        "SRC-001130"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
