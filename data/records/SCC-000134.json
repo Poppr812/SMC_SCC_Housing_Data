@@ -168,6 +168,16 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-002669"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -176,9 +186,26 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "SF YIMBY reports the site, at the corner of Warburton Avenue and Civic Center Drive, holds a medical complex; planning permits filed for an eight-story residential building",
+      "src": [
+        "SRC-002669"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Zolman Construction and Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner per city records",
+      "src": [
+        "SRC-002669"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -196,6 +223,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and PLN25-00002; found SF YIMBY 2025-01-07 article",
+      "src": [
+        "SRC-002669"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API APN 22449001: situs 1825 Civic Center Dr; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "santaclaraca.gov projects listing refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR Table A 2025: PLN25-00002, 176 above-moderate units, withdrawn; no Table A2 rows; no CEQAnet entry found",
+      "src": [
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched local news for 1825 Civic Center Drive; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-01-07: eight stories, owner Zolman Construction and Development",
+      "src": [
+        "SRC-002669"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "zolman.com redirects to a personal profile; no company project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing information found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn posts found",
+      "src": []
+    }
+  }
 }

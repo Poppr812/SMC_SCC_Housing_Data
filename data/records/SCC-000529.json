@@ -146,6 +146,12 @@
           "src": [
             "SRC-001480"
           ]
+        },
+        {
+          "value": "APR 2025 certificate of occupancy counts: 55 Extremely Low, 76 Very Low, 43 Low (deed-restricted), 2 Above Moderate. APR income categories are reported by the city and are not AMI percentages",
+          "src": [
+            "SRC-001119"
+          ]
         }
       ]
     },
@@ -217,6 +223,59 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "20207393",
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "Entitlement tracking ID in APR 2021; building permit BLDG-2022-5387 in APR 2023 and 2025"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001119"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 85,
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "APR 2023 and 2025"
+        },
+        {
+          "value": 55,
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "APR 2021 entitlement row"
+        }
+      ],
+      "best": 0
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2025,
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "Certificate of occupancy issued 2025-11-14 per APR 2025"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -224,6 +283,26 @@
       "text": "CTCAC CA-23-550 1178 Sonora Court: 176 total units, 174 low-income units; stage Preliminary Reservation; developer MidPen Housing Corporation; annual federal credit 7402819; total state credit 15125096.",
       "src": [
         "SRC-001603"
+      ]
+    },
+    {
+      "text": "City-owned site; first project under the Lawrence Station Area Plan, across from the Lawrence Caltrain Station",
+      "src": [
+        "SRC-002670",
+        "SRC-002671"
+      ]
+    },
+    {
+      "text": "Named for MidPen co-founder Ira D. Hall",
+      "src": [
+        "SRC-002670",
+        "SRC-002672"
+      ]
+    },
+    {
+      "text": "APR 2021 entitlement row lists the project as Sonora Court with 55 Very Low, 119 Low and 2 Above Moderate units; APR 2023 building permit row lists 131 Very Low (87 Extremely Low) and 43 Low",
+      "src": [
+        "SRC-001119"
       ]
     }
   ],
@@ -256,11 +335,178 @@
       "src": [
         "SRC-001480"
       ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bank of America",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002670"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "California Housing Finance Agency",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002670"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "MidPen Property Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002671"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MidPen Resident Services",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Resident services provider",
+      "src": [
+        "SRC-002671"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "City of Sunnyvale",
+      "program": "City funds for construction and land purchase, reported by the mayor as about $26.5 million split evenly",
+      "amount": 26500000,
+      "date": null,
+      "src": [
+        "SRC-002672"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Sunnyvale",
+      "program": "Sunnyvale Housing Mitigation Fund",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Measure A affordable housing bond",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001119",
+        "SRC-002670"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Housing Finance Agency",
+      "program": "Mixed-Income Program (reported in APR as CalHOME MIP)",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001119",
+        "SRC-002670"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "State of California",
+      "program": "No Place Like Home (NPLH)",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Housing Authority of the County of Santa Clara",
+      "program": "Named as financing participant in developer release",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002670"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Bank of America",
+      "program": "Named as financing participant in developer release",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002670"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Destination: Home",
+      "program": "Named as financing participant in developer release",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002670"
+      ]
+    }
+  ],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2021-11-08",
+      "type": "Approved",
+      "label": "Entitlement approval",
+      "src": [
+        "SRC-001119"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12-22",
+      "type": "Permit issued",
+      "label": "Building permit issued (BLDG-2022-5387)",
+      "src": [
+        "SRC-001119"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-01",
+      "type": "Construction start",
+      "label": "Construction began",
+      "src": [
+        "SRC-002672"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-26",
+      "type": "Other",
+      "label": "Wall-raising event",
+      "src": [
+        "SRC-002670",
+        "SRC-002672"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-14",
+      "type": "Completion",
+      "label": "Certificate of occupancy issued",
+      "src": [
+        "SRC-001119"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -276,6 +522,104 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address, MidPen; found MidPen release, SJ Spotlight, REBusinessOnline",
+      "src": [
+        "SRC-002670",
+        "SRC-002672",
+        "SRC-002671"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API APN 20550013: situs 1178 Sonora Ct; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sunnyvale.ca.gov Building Affordable Housing page returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "County Measure A funding per APR notes and MidPen release",
+      "src": [
+        "SRC-001119",
+        "SRC-002670"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A2 2021, 2023, 2025 rows for APN 20550013; CTCAC CA-23-550 staff report PDF returned 404",
+      "src": [
+        "SRC-001119",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight 2024-08-05: city funds, construction start; Real Deal 2022 and PressReader returned 403",
+      "src": [
+        "SRC-002672"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "REBusinessOnline 2026-10-26 completion article; SF YIMBY on record",
+      "src": [
+        "SRC-002671",
+        "SRC-001480"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "MidPen 2024-07-26 release: financing participants, architect, contractor",
+      "src": [
+        "SRC-002670"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Studio T Square already on record; no new facts found",
+      "src": [
+        "SRC-001480"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Financing participants from MidPen release and APR notes; amount only for city funds",
+      "src": [
+        "SRC-002670",
+        "SRC-001119",
+        "SRC-002672"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn posts found",
+      "src": []
+    }
+  }
 }

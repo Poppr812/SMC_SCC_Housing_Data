@@ -99,6 +99,72 @@
           37.2472563
         ]
       ]
+    },
+    {
+      "apn": "424-17-035",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.956177,
+          37.2468003
+        ],
+        [
+          -121.95616,
+          37.2467383
+        ],
+        [
+          -121.9561114,
+          37.2465612
+        ],
+        [
+          -121.9561759,
+          37.2465484
+        ],
+        [
+          -121.956239,
+          37.2465297
+        ],
+        [
+          -121.9563001,
+          37.2465053
+        ],
+        [
+          -121.9563587,
+          37.2464754
+        ],
+        [
+          -121.9564144,
+          37.2464403
+        ],
+        [
+          -121.9564666,
+          37.2464003
+        ],
+        [
+          -121.956515,
+          37.2463556
+        ],
+        [
+          -121.956559,
+          37.2463067
+        ],
+        [
+          -121.9566334,
+          37.2463433
+        ],
+        [
+          -121.9563458,
+          37.2468599
+        ],
+        [
+          -121.956177,
+          37.2468003
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -157,14 +223,18 @@
           "value": 175,
           "src": [
             "SRC-001120",
-            "SRC-001554"
+            "SRC-001554",
+            "SRC-002673",
+            "SRC-002674"
           ],
           "note": "Units in the application as reported"
         },
         {
           "value": 182,
           "src": [
-            "SRC-001594"
+            "SRC-001594",
+            "SRC-002675",
+            "SRC-002676"
           ],
           "note": "2024 news report on The Arya"
         }
@@ -195,7 +265,9 @@
             "Builder's remedy"
           ],
           "src": [
-            "SRC-001554"
+            "SRC-001554",
+            "SRC-002675",
+            "SRC-002676"
           ]
         }
       ]
@@ -226,6 +298,95 @@
           "note": "State report 2024, application stage: 35 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 21,
+            "1br": 21,
+            "2br": 70,
+            "3br": 63,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002673",
+            "SRC-002674"
+          ]
+        },
+        {
+          "value": {
+            "studio": 35,
+            "1br": 21,
+            "2br": 63,
+            "3br": 63,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002676"
+          ],
+          "note": "July 2024, 182-unit scheme"
+        }
+      ],
+      "best": 0
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 9,
+          "src": [
+            "SRC-002673"
+          ],
+          "note": "Seven residential levels over street-level commercial, with rooftop restaurant"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 41868,
+          "src": [
+            "SRC-002673"
+          ],
+          "note": "37,862 sq ft street-level commercial plus 4,006 sq ft rooftop eating establishment"
+        },
+        {
+          "value": 38100,
+          "src": [
+            "SRC-002676"
+          ],
+          "note": "Ground-floor retail; article also reports 4,200 sq ft rooftop commercial"
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.911,
+          "src": [
+            "SRC-002673"
+          ]
+        },
+        {
+          "value": 1.9,
+          "src": [
+            "SRC-002676",
+            "SRC-002677"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "CEQAnet NOP: 20% of units affordable. July 2024 article: 37 of 182 units for lower-income households",
+          "src": [
+            "SRC-002673",
+            "SRC-002676"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -240,6 +401,32 @@
       "src": [
         "SRC-001593"
       ]
+    },
+    {
+      "text": "CEQAnet NOP: 575,634 sq ft total, about 116 ft 6 in to the roof deck, three levels of underground parking, 6,988 sq ft street-level plaza, net export of 98,000 cubic yards of soil. July 2024 article reported 94 ft",
+      "src": [
+        "SRC-002673",
+        "SRC-002676"
+      ]
+    },
+    {
+      "text": "Site holds an Ace Hardware store and a laundromat among other uses, to be demolished",
+      "src": [
+        "SRC-002677",
+        "SRC-002674"
+      ]
+    },
+    {
+      "text": "Applicant's counsel states the project relies on the Builder's Remedy and will not file General Plan or zoning amendment applications; reserves Density Bonus Law rights",
+      "src": [
+        "SRC-002675"
+      ]
+    },
+    {
+      "text": "In 2018 Sand Hill Property Company considered a two-story medical office complex on the site",
+      "src": [
+        "SRC-002676"
+      ]
     }
   ],
   "parties": [
@@ -251,11 +438,60 @@
       "src": [
         "SRC-001594"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002676",
+        "SRC-002674"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Arya Properties, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner and applicant per CEQAnet",
+      "src": [
+        "SRC-002673"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "EMC Planning Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-002673"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Miller Starr Regalia",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant's legal counsel",
+      "src": [
+        "SRC-002675"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-11",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-002676"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-05-10",
       "type": "Application filed",
@@ -263,6 +499,34 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2024-06-05",
+      "type": "Other",
+      "label": "Town notice that formal application was incomplete",
+      "src": [
+        "SRC-002675"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-09-02",
+      "type": "Other",
+      "label": "Applicant resubmittal responding to incomplete notice",
+      "src": [
+        "SRC-002675"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-12",
+      "type": "Other",
+      "label": "Notice of Preparation of Draft EIR issued; comments through 2026-01-12",
+      "src": [
+        "SRC-002677",
+        "SRC-002673"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -280,6 +544,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Arya, builder's remedy; found SF YIMBY 2024 and 2025, CEQAnet, Town documents",
+      "src": [
+        "SRC-002676",
+        "SRC-002674",
+        "SRC-002673"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 42417036 and 42417035 (situs 15330 Los Gatos Blvd); CEQAnet and APR 2024 list both APNs",
+      "src": [
+        "SRC-002673",
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Town Document Center: NOP 2025-12-12 and applicant resubmittal letter 2024-09-02",
+      "src": [
+        "SRC-002677",
+        "SRC-002675"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Town project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2025120704 NOP; APR Table A 2024 on record, no Table A2 rows",
+      "src": [
+        "SRC-002673",
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "San Jose Spotlight article already on record",
+      "src": [
+        "SRC-001594"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-07-12 and 2025-12-19",
+      "src": [
+        "SRC-002676",
+        "SRC-002674"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Arya Properties website or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Anderson Architects (Campbell) named; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing information found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn posts found",
+      "src": []
+    }
+  }
 }
