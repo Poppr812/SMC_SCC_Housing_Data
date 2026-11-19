@@ -191,6 +191,168 @@
           37.4514447
         ]
       ]
+    },
+    {
+      "apn": "008-02-036",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1195281,
+          37.4514447
+        ],
+        [
+          -122.119829,
+          37.4514701
+        ],
+        [
+          -122.1199161,
+          37.4514258
+        ],
+        [
+          -122.1199444,
+          37.4514611
+        ],
+        [
+          -122.119985,
+          37.4514405
+        ],
+        [
+          -122.1200406,
+          37.45151
+        ],
+        [
+          -122.1201858,
+          37.4514362
+        ],
+        [
+          -122.1202779,
+          37.4515514
+        ],
+        [
+          -122.1203651,
+          37.4515072
+        ],
+        [
+          -122.1203972,
+          37.4515474
+        ],
+        [
+          -122.1205211,
+          37.4515647
+        ],
+        [
+          -122.1205895,
+          37.4515299
+        ],
+        [
+          -122.120633,
+          37.4515844
+        ],
+        [
+          -122.1207043,
+          37.4515482
+        ],
+        [
+          -122.1207422,
+          37.4515957
+        ],
+        [
+          -122.1209281,
+          37.4515013
+        ],
+        [
+          -122.1208837,
+          37.4514457
+        ],
+        [
+          -122.1209244,
+          37.451425
+        ],
+        [
+          -122.1209308,
+          37.4514331
+        ],
+        [
+          -122.1216301,
+          37.451078
+        ],
+        [
+          -122.1219241,
+          37.4514459
+        ],
+        [
+          -122.1220936,
+          37.4513599
+        ],
+        [
+          -122.122055,
+          37.4513116
+        ],
+        [
+          -122.1221015,
+          37.451288
+        ],
+        [
+          -122.1221401,
+          37.4513363
+        ],
+        [
+          -122.1224068,
+          37.4512008
+        ],
+        [
+          -122.1223562,
+          37.4511375
+        ],
+        [
+          -122.1222318,
+          37.4512007
+        ],
+        [
+          -122.1221782,
+          37.4511335
+        ],
+        [
+          -122.122266,
+          37.4510889
+        ],
+        [
+          -122.1221821,
+          37.4510383
+        ],
+        [
+          -122.1222694,
+          37.4509463
+        ],
+        [
+          -122.1224222,
+          37.4510384
+        ],
+        [
+          -122.1224513,
+          37.4510078
+        ],
+        [
+          -122.1224826,
+          37.4509921
+        ],
+        [
+          -122.1236424,
+          37.4522805
+        ],
+        [
+          -122.1196327,
+          37.4517192
+        ],
+        [
+          -122.1195281,
+          37.4514447
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -291,8 +453,15 @@
             "SRC-001126"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "24PLN-00356 and 24PLN-00357",
+          "src": [
+            "SRC-001295"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "stories": {
       "claims": [
@@ -363,8 +532,21 @@
             "SRC-001126"
           ],
           "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 19,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-001297"
+          ],
+          "note": "19 deed-restricted units for households earning around 60% of AMI"
         }
-      ]
+      ],
+      "best": 1
     }
   },
   "construction_notes": [
@@ -379,6 +561,28 @@
       "src": [
         "SRC-001296",
         "SRC-001298"
+      ]
+    },
+    {
+      "text": "Palo Alto Daily Post reports the City Council approved the project 7-0 on March 16, 2026.",
+      "src": [
+        "SRC-002745"
+      ]
+    },
+    {
+      "text": "48 detached townhomes and 97 units in 17 multi-unit rowhouse buildings; all three stories with three or four bedrooms. Below-market-rate units are attached three-bedroom townhomes.",
+      "src": [
+        "SRC-001297",
+        "SRC-002746",
+        "SRC-002745"
+      ]
+    },
+    {
+      "text": "The vesting tentative map merges two parcels and re-subdivides them for condominium purposes. County parcel data shows 008-02-036 at 2221 Bayshore Rd.",
+      "src": [
+        "SRC-001295",
+        "SRC-002747",
+        "SRC-001296"
       ]
     }
   ],
@@ -433,6 +637,33 @@
       ]
     },
     {
+      "date": "2025-10-16",
+      "type": "Other",
+      "label": "Architectural Review Board early feedback hearing",
+      "src": [
+        "SRC-001295"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-10",
+      "type": "Other",
+      "label": "Planning and Transportation Commission hearing",
+      "src": [
+        "SRC-001295"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-16",
+      "type": "Other",
+      "label": "Parks and Recreation Commission hearing",
+      "src": [
+        "SRC-001295"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-03-16",
       "type": "Approved",
       "label": "City Council approval per first Notice of Exemption",
@@ -466,6 +697,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Strada; Palo Alto Daily Post and San Jose Spotlight coverage",
+      "src": [
+        "SRC-002745",
+        "SRC-002746"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcels: 008-02-035 (2100 Geng Rd) and 008-02-036 (2221 Bayshore Rd); NOE lists both",
+      "src": [
+        "SRC-002747",
+        "SRC-001296"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Palo Alto project page: files 24PLN-00356/00357, ARB 2025-10-16, PTC 2025-12-10, Parks 2025-12-16, Council 2026-03-16",
+      "src": [
+        "SRC-001295"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "CEQAnet NOEs and APR entry already on record",
+      "src": [
+        "SRC-001296",
+        "SRC-001298",
+        "SRC-001126"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Palo Alto Daily Post 2026-03-16 (7-0 approval); San Jose Spotlight 2025-12-08",
+      "src": [
+        "SRC-002745",
+        "SRC-002746"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY approval article: 60% AMI for 19 units, unit types; The Real Deal not opened (403 on this domain)",
+      "src": [
+        "SRC-001297"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Strada Investment Group homepage lists no Geng Road project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Dahlin Group project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts found",
+      "src": []
+    }
+  }
 }

@@ -55,6 +55,100 @@
           37.57498
         ]
       ]
+    },
+    {
+      "apn": "029-225-180",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3427497,
+          37.5753418
+        ],
+        [
+          -122.3428793,
+          37.5752512
+        ],
+        [
+          -122.3431386,
+          37.5750699
+        ],
+        [
+          -122.3432525,
+          37.5751731
+        ],
+        [
+          -122.3428636,
+          37.575445
+        ],
+        [
+          -122.3427497,
+          37.5753418
+        ]
+      ]
+    },
+    {
+      "apn": "029-225-190",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3428636,
+          37.575445
+        ],
+        [
+          -122.3432525,
+          37.5751731
+        ],
+        [
+          -122.3433663,
+          37.5752763
+        ],
+        [
+          -122.3429775,
+          37.5755481
+        ],
+        [
+          -122.3428636,
+          37.575445
+        ]
+      ]
+    },
+    {
+      "apn": "029-225-200",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3434802,
+          37.5753794
+        ],
+        [
+          -122.3430913,
+          37.5756513
+        ],
+        [
+          -122.3429775,
+          37.5755481
+        ],
+        [
+          -122.3433663,
+          37.5752763
+        ],
+        [
+          -122.3434802,
+          37.5753794
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -208,6 +302,18 @@
           "src": [
             "SRC-001340"
           ]
+        },
+        {
+          "value": "12 below-market-rate units: 6 very low income and 6 moderate income",
+          "src": [
+            "SRC-002751"
+          ]
+        },
+        {
+          "value": "10 affordable units for moderate- to low-income families",
+          "src": [
+            "SRC-002752"
+          ]
         }
       ]
     },
@@ -238,6 +344,33 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 25,
+            "1br": 74,
+            "2br": 33,
+            "3br": 12,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002750"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 118470,
+          "src": [
+            "SRC-002750"
+          ],
+          "note": "About; total building about 209,070 sq ft with a 48,650 sq ft garage"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -245,6 +378,28 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001132"
+      ]
+    },
+    {
+      "text": "Planning Commission approvals on May 26, 2026: lot merger of 2, 12 and 16 Park Road, major design review and state density bonus. Zoning BMU / R-4 with R-4 Incentive Overlay.",
+      "src": [
+        "SRC-001352"
+      ]
+    },
+    {
+      "text": "Height: 82 feet 6 inches to top of parapet per the city; 84 feet per SF YIMBY. The site holds a former funeral home and a fitness center to be demolished.",
+      "src": [
+        "SRC-001352",
+        "SRC-002750",
+        "SRC-002751"
+      ]
+    },
+    {
+      "text": "County parcel data: 029-225-170 and 029-225-180 owned by 2 PK RD CO LLC; 029-225-190 (12 Park Rd) and 029-225-200 (16 Park Rd) owned by Park Road Properties LLC.",
+      "src": [
+        "SRC-002753",
+        "SRC-002754",
+        "SRC-001103"
       ]
     }
   ],
@@ -268,6 +423,34 @@
         "SRC-001352"
       ],
       "website": "https://windyhillpv.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002750"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002750"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Park Road Properties LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002753",
+        "SRC-002754"
+      ]
     }
   ],
   "financing": [],
@@ -289,6 +472,15 @@
         "SRC-001352"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-05-29",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (AB 130, SCH 2026051218)",
+      "src": [
+        "SRC-002751"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -306,6 +498,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Windy Hill; CEQAnet NOE and SF YIMBY",
+      "src": [
+        "SRC-002751",
+        "SRC-002750"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels: four APNs from the NOE; owners 2 PK RD CO LLC and Park Road Properties LLC",
+      "src": [
+        "SRC-002753",
+        "SRC-002754"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Burlingame 2 Park Road page: PC approval 2026-05-26, lot merger, design review, density bonus, zoning",
+      "src": [
+        "SRC-001352"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026051218 NOE received 2026-05-29, four APNs, 0.99 acres; APR entry already on record",
+      "src": [
+        "SRC-002751",
+        "SRC-001132"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the project returned 403; Greenbelt Alliance endorsement post opened",
+      "src": [
+        "SRC-002752"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY June 2, 2026: unit mix, architect, landscape architect, square footage",
+      "src": [
+        "SRC-002750"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Windy Hill Property Ventures homepage lists no 2 Park Road project",
+      "src": [
+        "SRC-002755"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No BDE Architecture page for this project found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts found",
+      "src": []
+    }
+  }
 }

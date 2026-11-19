@@ -1,6 +1,6 @@
 {
   "id": "SCC-000152",
-  "name": "3521-3591 Homestead Road",
+  "name": "Jade at Pariva (3521-3591 Homestead Road)",
   "parcels": [
     {
       "apn": "290-23-049",
@@ -51,6 +51,112 @@
           37.3387738
         ]
       ]
+    },
+    {
+      "apn": "290-23-053",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9945321,
+          37.3396373
+        ],
+        [
+          -121.9945206,
+          37.3379621
+        ],
+        [
+          -121.9948253,
+          37.3379612
+        ],
+        [
+          -121.9951725,
+          37.3379891
+        ],
+        [
+          -121.9952096,
+          37.3379923
+        ],
+        [
+          -121.9952456,
+          37.3380016
+        ],
+        [
+          -121.9952796,
+          37.3380169
+        ],
+        [
+          -121.9953105,
+          37.3380376
+        ],
+        [
+          -121.9953375,
+          37.3380632
+        ],
+        [
+          -121.9953598,
+          37.338093
+        ],
+        [
+          -121.9953768,
+          37.3381262
+        ],
+        [
+          -121.995388,
+          37.3381617
+        ],
+        [
+          -121.9954526,
+          37.3386893
+        ],
+        [
+          -121.9954644,
+          37.3395642
+        ],
+        [
+          -121.9954616,
+          37.3395774
+        ],
+        [
+          -121.9954567,
+          37.33959
+        ],
+        [
+          -121.9954497,
+          37.3396016
+        ],
+        [
+          -121.9954408,
+          37.3396118
+        ],
+        [
+          -121.9954303,
+          37.3396203
+        ],
+        [
+          -121.9954185,
+          37.3396269
+        ],
+        [
+          -121.9954057,
+          37.3396314
+        ],
+        [
+          -121.9953924,
+          37.3396336
+        ],
+        [
+          -121.9953789,
+          37.3396336
+        ],
+        [
+          -121.9945321,
+          37.3396373
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -87,8 +193,23 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-002739"
+          ],
+          "note": "57 three-story and 90 four-story townhomes in 14 buildings"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-002741"
+          ],
+          "note": "Seven four-story stacked flat condo buildings and seven three-story attached townhome buildings"
         }
-      ]
+      ],
+      "best": 2
     },
     "status": {
       "claims": [
@@ -145,6 +266,12 @@
             "SRC-001106"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN24-00665 (vesting tentative map)",
+          "src": [
+            "SRC-002743"
+          ]
         }
       ]
     },
@@ -174,6 +301,89 @@
           "note": "State report 2024, application stage: 23 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.55,
+          "src": [
+            "SRC-002739",
+            "SRC-002740"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-002739",
+            "SRC-002742"
+          ],
+          "note": "Buildings of three and four stories, 36 to 51 feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 341,
+          "src": [
+            "SRC-002739"
+          ],
+          "note": "Approximately; two-car garage per unit plus 47 guest spaces"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 4991,
+          "src": [
+            "SRC-002741",
+            "SRC-002742"
+          ]
+        },
+        {
+          "value": 5000,
+          "src": [
+            "SRC-002739"
+          ],
+          "note": "Standalone single-story commercial space"
+        }
+      ],
+      "best": 0
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "23 below-market-rate units",
+          "src": [
+            "SRC-002739"
+          ]
+        },
+        {
+          "value": "22 below-market-rate condos",
+          "src": [
+            "SRC-002742"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002739",
+            "SRC-002742"
+          ],
+          "note": "Density bonus with one concession and four waivers (setbacks, height, stories, daylight plane)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -181,6 +391,20 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "text": "City Council on Aug. 25, 2026 adopted Resolution No. 26-9601 approving the vesting tentative map for 147 condominium units and one commercial building; Silicon Valley Voice reports the vote as 5-0-1.",
+      "src": [
+        "SRC-001539",
+        "SRC-002742"
+      ]
+    },
+    {
+      "text": "Silicon Valley Voice reports a concession reducing required commercial space from 22,215 sq ft to 4,991 sq ft, and 16 displaced businesses. The site has three one-story commercial buildings to be demolished.",
+      "src": [
+        "SRC-002742",
+        "SRC-002739"
       ]
     }
   ],
@@ -203,6 +427,16 @@
       "src": [
         "SRC-001540"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-002739"
+      ]
     }
   ],
   "financing": [],
@@ -217,11 +451,38 @@
       ]
     },
     {
+      "date": "2026-05-08",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration circulated (SCH 2026050321)",
+      "src": [
+        "SRC-002739"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Other",
+      "label": "Planning Commission approved staff recommendations on vesting tentative map",
+      "src": [
+        "SRC-002743"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-08-25",
       "type": "Approved",
       "label": "City Council approved vesting map",
       "src": [
         "SRC-001539"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed",
+      "src": [
+        "SRC-002740"
       ],
       "estimated": false
     }
@@ -241,6 +502,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Pulte and project name led to CEQAnet SCH 2026050321",
+      "src": [
+        "SRC-002739"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcels: 290-23-053 (3591 Homestead Rd) and 290-23-049 (3521 Homestead Rd); CEQAnet lists both APNs",
+      "src": [
+        "SRC-002744",
+        "SRC-002739"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Santa Clara Legistar: files 26-624 (DRH, MND and architectural review), 26-727 (PC 2026-08-12), 26-808 (Council 2026-08-25)",
+      "src": [
+        "SRC-002741",
+        "SRC-002743",
+        "SRC-001539"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2026050321: MND received 2026-05-08, NOD 2026-08-28; APR entry already on record",
+      "src": [
+        "SRC-002739",
+        "SRC-002740",
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Silicon Valley Voice, Sept. 1, 2026, council approval",
+      "src": [
+        "SRC-002742"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "The Real Deal (June 22, 2026) returned 403; SF YIMBY item already on record",
+      "src": [
+        "SRC-001540"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Pulte project page found for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No William Hezmalhalch Architects page found for this project",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts found",
+      "src": []
+    }
+  }
 }

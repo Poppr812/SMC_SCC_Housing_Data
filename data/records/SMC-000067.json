@@ -226,10 +226,19 @@
         {
           "value": 144,
           "src": [
-            "SRC-000939"
+            "SRC-000939",
+            "SRC-002748"
           ]
+        },
+        {
+          "value": 156,
+          "src": [
+            "SRC-002749"
+          ],
+          "note": "Preliminary application, Nov. 2025"
         }
-      ]
+      ],
+      "best": 0
     },
     "unit_mix": {
       "claims": [
@@ -244,6 +253,19 @@
           "src": [
             "SRC-000939"
           ]
+        },
+        {
+          "value": {
+            "studio": 40,
+            "1br": 107,
+            "2br": 8,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002749"
+          ],
+          "note": "Preliminary application, Nov. 2025; figures sum to 155 against 156 stated"
         }
       ]
     },
@@ -285,6 +307,12 @@
           "src": [
             "SRC-000939"
           ]
+        },
+        {
+          "value": "24 affordable units in the Nov. 2025 preliminary application",
+          "src": [
+            "SRC-002749"
+          ]
         }
       ]
     },
@@ -310,12 +338,73 @@
           ]
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 83500,
+          "src": [
+            "SRC-002748"
+          ],
+          "note": "About; formal application"
+        },
+        {
+          "value": 86200,
+          "src": [
+            "SRC-002749"
+          ],
+          "note": "Preliminary application"
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.4,
+          "src": [
+            "SRC-002748",
+            "SRC-002749"
+          ],
+          "note": "Whole office campus"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 1974,
+          "src": [
+            "SRC-000940"
+          ],
+          "note": "County parcel layer office year built for the existing building"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 22000000,
+          "src": [
+            "SRC-002748"
+          ],
+          "note": "Purchase of the property in June 2025"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "Adaptive reuse of an existing 202,014 sq ft, 12-story office building; parcel to be subdivided into four parcels, one per existing building",
       "src": [
+        "SRC-000939"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Apr. 2026) gives the tower as 169 feet and about 109,500 sq ft; the Nov. 2025 article gave 175 feet and 121,150 sq ft. The city page gives the existing building as 202,014 sq ft. The tower is one building of a multi-building campus.",
+      "src": [
+        "SRC-002748",
+        "SRC-002749",
         "SRC-000939"
       ]
     }
@@ -338,11 +427,58 @@
       "src": [
         "SRC-000940"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Tourbineau Real Estate Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002748",
+        "SRC-002749"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "TCA Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002748",
+        "SRC-002749"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Kimley-Horn",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002748"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Kimley-Horn",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002748"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-06",
+      "type": "Sale",
+      "label": "Tourbineau purchased the property for $22 million",
+      "src": [
+        "SRC-002748"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-11-13",
       "type": "Application filed",
@@ -366,6 +502,24 @@
       "src": [
         "SRC-000939"
       ]
+    },
+    {
+      "date": "2026-07-01",
+      "type": "Other",
+      "label": "Project plans resubmittal (C2-PLAN)",
+      "src": [
+        "SRC-000939"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-01",
+      "type": "Other",
+      "label": "Planning drawing set resubmittal (C3-SPAR)",
+      "src": [
+        "SRC-000939"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -373,6 +527,88 @@
       "date": "2026-11-02",
       "by": "Paul via Claude",
       "action": "Record created from Business Journal leads (San Francisco Business Times / Silicon Valley Business Journal) and the sources listed"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address, Tourbineau and Stackhouse",
+      "src": [
+        "SRC-002748"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels 039-073-490: owner TREP 2121 ECR Holdings LLC & Stackhouse Development LLC, office year built 1974",
+      "src": [
+        "SRC-000940"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Mateo project page: PA-2026-0019, C2 plans 2026-07-01, C3 set 2026-10-01; no hearing listed",
+      "src": [
+        "SRC-000939"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "State APR Table A has no San Mateo entry for 2121 El Camino Real; no CEQAnet item found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Nov. 27, 2025 and Apr. 20, 2026; The Real Deal, Multi-Housing News, Connect CRE and Traded returned 403",
+      "src": [
+        "SRC-002749",
+        "SRC-002748"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Tourbineau project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No TCA Architects project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Newmark sale press release (June 2025) returned 403; no lender found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts found",
+      "src": []
+    }
+  }
 }
