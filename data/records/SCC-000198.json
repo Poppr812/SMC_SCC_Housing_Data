@@ -160,6 +160,14 @@
           "src": [
             "SRC-001552"
           ]
+        },
+        {
+          "value": "PLN-2023-166, PLN-2025-48",
+          "src": [
+            "SRC-001551",
+            "SRC-001549"
+          ],
+          "note": "Pre-application (2023) and SB 35 modification for a new concession (2025)"
         }
       ]
     },
@@ -170,6 +178,13 @@
           "src": [
             "SRC-001552"
           ]
+        },
+        {
+          "value": 5,
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Original 2024 SB 35 zoning clearance PLN-2024-51; the 2026 modification reduced the building height"
         }
       ]
     },
@@ -275,6 +290,18 @@
       "text": "CTCAC CA-26-627: Cleveland Commons, located at 60 West Hamilton Avenue in Campbell on a 1.21 acre site, requested and is being recommended for a reservation of $2,818,910 in annual federal tax credits, $7,050,757 in total state tax credits, and $17,080,193 of tax-exempt bond cap to finance the new construction of 92 units of housing, consisting of 91 restricted rental units and 1 unrestricted manager's unit.",
       "src": [
         "SRC-001683"
+      ]
+    },
+    {
+      "text": "CEQAnet SCH 2026020606: Notice of Exemption, ministerial (Sec. 21080(b)(1); 15268), received 2/17/2026; lead agency Santa Clara County, contact Santa Clara County Office of Supportive Housing; applicant Charities Housing (Marvel Ang, Director of Housing Development); 104 units on 1.2 acres, APN 305-21-003.",
+      "src": [
+        "SRC-003071"
+      ]
+    },
+    {
+      "text": "City planning data: PLN-2024-51 described a 5-story 100% affordable project of up to 104 units under SB 35 and density bonus law. PLN-2024-60 was a request by Charities and SCMRF for a city support letter for funding applications for the 60 W. Hamilton project.",
+      "src": [
+        "SRC-001549"
       ]
     }
   ],
@@ -447,6 +474,14 @@
   "groups": {},
   "events": [
     {
+      "date": "2023-09-28",
+      "type": "Other",
+      "label": "Pre-application PLN-2023-166 for a 100% affordable senior project (tribal notification)",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
       "date": "2024-03-26",
       "type": "Application filed",
       "label": "Application submitted",
@@ -460,6 +495,30 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001143"
+      ]
+    },
+    {
+      "date": "2025-04-04",
+      "type": "Other",
+      "label": "SB 35 modification application PLN-2025-48 for a new concession",
+      "src": [
+        "SRC-001549"
+      ]
+    },
+    {
+      "date": "2026-02-13",
+      "type": "Other",
+      "label": "Modification application PLN-2026-18 filed (101 to 92 units)",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (ministerial) received, SCH 2026020606",
+      "src": [
+        "SRC-003071"
       ]
     },
     {
@@ -510,6 +569,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Cleveland Commons Campbell; CEQAnet record opened.",
+      "src": [
+        "SRC-003071"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 305-21-003: situs 60 W Hamilton Av, Campbell; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Campbell ArcGIS planning layers (active and inactive): PLN-2023-166, PLN-2024-51, PLN-2024-60, PLN-2025-48, PLN-2026-18.",
+      "src": [
+        "SRC-001549",
+        "SRC-001551"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet lists Santa Clara County (Office of Supportive Housing) as lead agency on the NOE; county PLHA and IDD loans already on record.",
+      "src": [
+        "SRC-003071",
+        "SRC-001683"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2026020606; CTCAC staff report CA-26-627 already on record.",
+      "src": [
+        "SRC-003071",
+        "SRC-001683"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on Cleveland Commons Campbell returned none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of trade press returned none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Charities Housing project page is a placeholder: future project, details coming soon.",
+      "src": [
+        "SRC-003072"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in city data, CEQAnet or CTCAC staff report.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Financing from CTCAC staff report already on record.",
+      "src": [
+        "SRC-001683"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned none.",
+      "src": []
+    }
+  }
 }

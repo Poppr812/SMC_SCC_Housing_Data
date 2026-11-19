@@ -95,6 +95,108 @@
           37.1300477
         ]
       ]
+    },
+    {
+      "apn": "726-12-004",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.6470061,
+          37.1307522
+        ],
+        [
+          -121.6468134,
+          37.1305956
+        ],
+        [
+          -121.6466448,
+          37.1304585
+        ],
+        [
+          -121.6464763,
+          37.1303216
+        ],
+        [
+          -121.6463078,
+          37.1301846
+        ],
+        [
+          -121.6462877,
+          37.1301684
+        ],
+        [
+          -121.6468078,
+          37.1297582
+        ],
+        [
+          -121.6467184,
+          37.129743
+        ],
+        [
+          -121.646554,
+          37.1297446
+        ],
+        [
+          -121.6460343,
+          37.1293222
+        ],
+        [
+          -121.6463474,
+          37.1290764
+        ],
+        [
+          -121.6464164,
+          37.1290222
+        ],
+        [
+          -121.6468622,
+          37.1293373
+        ],
+        [
+          -121.6480981,
+          37.1303181
+        ],
+        [
+          -121.6479941,
+          37.1303997
+        ],
+        [
+          -121.6479561,
+          37.1304297
+        ],
+        [
+          -121.6478312,
+          37.1305278
+        ],
+        [
+          -121.6477064,
+          37.1306258
+        ],
+        [
+          -121.6475815,
+          37.1307239
+        ],
+        [
+          -121.6474566,
+          37.130822
+        ],
+        [
+          -121.6473317,
+          37.13092
+        ],
+        [
+          -121.6472709,
+          37.1309674
+        ],
+        [
+          -121.6470061,
+          37.1307522
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -130,8 +232,16 @@
             "SRC-001131"
           ],
           "note": "State categories: SFA, SFD"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003069"
+          ],
+          "note": "Approved design permit: 93 attached townhome-style units in 16 buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -181,6 +291,13 @@
           "src": [
             "SRC-001443"
           ]
+        },
+        {
+          "value": "PRE2024-0003",
+          "src": [
+            "SRC-003069"
+          ],
+          "note": "SB 330 preliminary application"
         }
       ]
     },
@@ -220,6 +337,16 @@
           "note": "State report 2025, application stage: 14 deed-restricted units"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "14 below-market-rate units (15%) restricted for sale to moderate-income buyers; Inclusionary Housing Ordinance Agreement required before final map",
+          "src": [
+            "SRC-003069"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -234,12 +361,49 @@
       "src": [
         "SRC-001443"
       ]
+    },
+    {
+      "text": "Planning Commission Resolution 25-07 (July 8, 2025): design permit SR2024-0019 approved for 93 attached townhome-style units in 16 buildings with private open space and neighborhood parks, at the northeast corner of Butterfield Blvd. and Diana Avenue; vote 5 ayes, 1 no, 1 absent. CEQA: Section 15183, no further review.",
+      "src": [
+        "SRC-003069"
+      ]
+    },
+    {
+      "text": "City's 2024 Annual Progress Report tables list the project as DIANA-VALLEY OAK PARTNERS, SR2024-0019, filed 7/22/2024, 93 units, density bonus Yes.",
+      "src": [
+        "SRC-003067"
+      ]
+    },
+    {
+      "text": "City project page: project renamed Diana-Walk, formerly Diana-Valley Oaks; status Planning Entitlements Approved.",
+      "src": [
+        "SRC-001443"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Valley Oak Partners, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003069",
+        "SRC-003070"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-02-26",
+      "type": "Other",
+      "label": "SB 330 preliminary application PRE2024-0003 submitted by Valley Oak Partners, LLC",
+      "src": [
+        "SRC-003069"
+      ]
+    },
     {
       "date": "2024-07-22",
       "type": "Application filed",
@@ -268,6 +432,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Diana-Walk, Diana-Valley Oak, 375 Diana Avenue; led to city resolution and NOE naming Valley Oak Partners, LLC.",
+      "src": [
+        "SRC-003069"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API: 726-12-001 and 726-12-004 both present; city page lists both APNs; no owner field.",
+      "src": [
+        "SRC-001098",
+        "SRC-001443"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Morgan Hill project page, PC Resolution 25-07, Notice of Exemption PDF, 2024 APR tables PDF.",
+      "src": [
+        "SRC-001443",
+        "SRC-003069",
+        "SRC-003070",
+        "SRC-003067"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project in Morgan Hill; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "State APR data already on record; CEQAnet search does not filter by title text.",
+      "src": [
+        "SRC-001131"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on Diana-Walk / Valley Oak Partners returned none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of trade press (SF YIMBY results were for 1245 Diana Avenue, a different project).",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Valley Oak Partners, LLC tied to this project.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in resolution or city page.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned none.",
+      "src": []
+    }
+  }
 }

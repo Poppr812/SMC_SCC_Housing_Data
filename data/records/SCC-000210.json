@@ -176,6 +176,67 @@
           "note": "State report 2021, application stage: 14 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 40,
+            "2br": 49,
+            "3br": 2,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003073"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003073",
+            "SRC-003074"
+          ],
+          "note": "Five stories on Middlefield Road, three stories on Flynn Avenue"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 101,
+          "src": [
+            "SRC-003073"
+          ],
+          "note": "One-level underground garage"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.15,
+          "src": [
+            "SRC-003073"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003073"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -184,18 +245,65 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "text": "EPC staff report (Oct 20, 2021): five-story, 91-unit condominium building over one level of underground parking on a vacant 1.15-acre lot in the East Whisman Precise Plan Village Center area; units 697 to 1,594 sq ft. Proposed FAR 2.46 against a 1.0 FAR base; staff recommended the EPC recommend Council deny the project and vesting tentative map. City found the application complete on August 19, 2021.",
+      "src": [
+        "SRC-003073"
+      ]
+    },
+    {
+      "text": "EPC staff report: the developer filed a complaint with HCD over the city's use of FAR as the density standard; HCD's October 8, 2021 technical assistance letter agreed with the city. The developer's attorney appealed a Zoning Administrator density interpretation on September 27, 2021.",
+      "src": [
+        "SRC-003073"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "DeNardi Wang Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003073"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-08-07",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-003073"
+      ]
+    },
+    {
+      "date": "2021-03-02",
+      "type": "Application filed",
+      "label": "Formal application submitted",
+      "src": [
+        "SRC-003073"
+      ]
+    },
     {
       "date": "2021-08-19",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001101"
+      ]
+    },
+    {
+      "date": "2021-10-20",
+      "type": "Other",
+      "label": "Environmental Planning Commission hearing; staff recommended denial",
+      "src": [
+        "SRC-003073",
+        "SRC-003074"
       ]
     }
   ],
@@ -209,6 +317,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 282 East Middlefield Road and DeNardi Wang Homes; led to Legistar staff report.",
+      "src": [
+        "SRC-003073"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 160-26-007: situs 282 E Middlefield; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Mountain View Legistar matter 201429 and EPC staff report Oct 20, 2021.",
+      "src": [
+        "SRC-003074",
+        "SRC-003073"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project in Mountain View; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "State APR data already on record (application withdrawn).",
+      "src": [
+        "SRC-001101"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for local news on 282 E Middlefield returned none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of trade press returned none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no website for DeNardi Wang Homes.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in staff report text.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Withdrawn for-sale application; no financing in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned none.",
+      "src": []
+    }
+  }
 }
