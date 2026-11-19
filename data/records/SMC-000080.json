@@ -119,6 +119,44 @@
           37.5762135
         ]
       ]
+    },
+    {
+      "apn": "033-171-060",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001035"
+      ],
+      "outline": [
+        [
+          -122.3181996,
+          37.5762873
+        ],
+        [
+          -122.3184344,
+          37.5761255
+        ],
+        [
+          -122.3185302,
+          37.5762135
+        ],
+        [
+          -122.318578,
+          37.5762576
+        ],
+        [
+          -122.3183433,
+          37.5764194
+        ],
+        [
+          -122.3182954,
+          37.5763753
+        ],
+        [
+          -122.3181996,
+          37.5762873
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -137,6 +175,13 @@
             "SRC-001003"
           ]
         }
+      ]
+    },
+    {
+      "text": "131 N Kingston St, San Mateo, CA",
+      "role": "other",
+      "src": [
+        "SRC-003264"
       ]
     }
   ],
@@ -233,6 +278,86 @@
           "src": [
             "SRC-001003"
           ]
+        },
+        {
+          "value": "PA24-066",
+          "src": [
+            "SRC-001034"
+          ],
+          "note": "Shown on plan images on the city page; Cycle 2 and 3 plans show PA25-041"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 4,
+            "1br": 42,
+            "2br": 12,
+            "3br": 12,
+            "4br+": 2
+          },
+          "src": [
+            "SRC-003262"
+          ],
+          "note": "Apartments: 4 studio, 8 junior 1BR, 34 1BR, 12 2BR, 4 3BR; townhomes: 8 3BR, 2 4BR"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.02,
+          "src": [
+            "SRC-003262",
+            "SRC-003263"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 91900,
+          "src": [
+            "SRC-003263"
+          ],
+          "note": "About 123,000 sq ft total including about 30,100 sq ft of parking"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 7,
+              "ami": 50
+            },
+            {
+              "count": 1,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003262",
+            "SRC-001034"
+          ],
+          "note": "7 very low-income and 1 low-income unit (state income categories)"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003262"
+          ],
+          "note": "Qualifies for a 42.5% state density bonus; filed as SB-330 preliminary / formal application"
         }
       ]
     }
@@ -242,6 +367,18 @@
       "text": "44,283 sq ft site; demolishes all existing structures",
       "src": [
         "SRC-001034"
+      ]
+    },
+    {
+      "text": "Site is APNs 033-171-180 and 033-171-060 (1.02 acres). Apartment building about 64 ft to top of plate with a subterranean garage; townhomes three stories, about 38 ft, with tuck-under parking. Apartments are rental; the 10 townhomes are for sale under a condo map.",
+      "src": [
+        "SRC-003262"
+      ]
+    },
+    {
+      "text": "Plans show 121,187 sq ft gross building area, 104,845 sq ft counted toward FAR (2.4), and 90 parking stalls (70 apartment, 20 townhome). Replaces existing commercial and residential buildings.",
+      "src": [
+        "SRC-003262"
       ]
     }
   ],
@@ -255,6 +392,59 @@
         "SRC-001034"
       ],
       "other_role": "Applicant"
+    },
+    {
+      "role": "Developer",
+      "company": "SC Properties",
+      "contact": "Chris Giotinis",
+      "linkedin": null,
+      "email": "cgiotinis@scpropsm.com",
+      "phone": "(650) 342-3030",
+      "src": [
+        "SRC-003262",
+        "SRC-003263"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T-SQ, Inc.",
+      "contact": "Chek Fong Tang",
+      "linkedin": null,
+      "email": "ctang@studiot-sq.com",
+      "phone": "(510) 451-2850",
+      "src": [
+        "SRC-003262",
+        "SRC-003263"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": "Jason Mansfield",
+      "linkedin": null,
+      "src": [
+        "SRC-003262"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "PLAT Studio",
+      "contact": "Fred Liao",
+      "linkedin": null,
+      "src": [
+        "SRC-003262",
+        "SRC-003263"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Michael C. & Athia M. Giotinis, Trustees",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001035",
+        "SRC-003264"
+      ]
     }
   ],
   "financing": [],
@@ -290,6 +480,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 1218 Monte Diablo and SC Properties led to the Cycle 3 plan set and SF YIMBY",
+      "src": [
+        "SRC-003262",
+        "SRC-003263"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC parcel layer: 033-171-180 and 033-171-060 owned by Giotinis trusts; 033-171-060 is 131 N Kingston St",
+      "src": [
+        "SRC-001035",
+        "SRC-003264"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City project page and PA25-041 Cycle 3 plans (2025-12-09)",
+      "src": [
+        "SRC-001034",
+        "SRC-003262"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "State APR Tables A/A2 for San Mateo searched for Monte Diablo; no row for 1218",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the project returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-06-07",
+      "src": [
+        "SRC-003263"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No SC Properties project page found in web search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Studio T-SQ named on plan set and in SF YIMBY",
+      "src": [
+        "SRC-003262",
+        "SRC-003263"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

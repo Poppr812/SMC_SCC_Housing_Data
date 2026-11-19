@@ -1,6 +1,6 @@
 {
   "id": "SCC-000248",
-  "name": "Watsonville-Hordness (Crossings at Monterey)",
+  "name": "Royal Oak Village (15460 Watsonville Road)",
   "parcels": [
     {
       "apn": "779-04-079",
@@ -77,6 +77,22 @@
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "15440 Monterey Rd, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-001892",
+        "SRC-003253",
+        "SRC-003254"
+      ]
+    },
+    {
+      "text": "15480 Monterey Rd, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-002523"
+      ]
     }
   ],
   "images": [],
@@ -102,8 +118,16 @@
             "SRC-001135"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-002523"
+          ],
+          "note": "Grand opening held Nov. 20, 2024"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -144,6 +168,19 @@
           "src": [
             "SRC-001135"
           ]
+        },
+        {
+          "value": "30 farmworker units, 18 rapid rehousing units, 24 units for households up to 50% AMI, 1 manager unit",
+          "src": [
+            "SRC-003252",
+            "SRC-002523"
+          ]
+        },
+        {
+          "value": "IS/MND: units for families earning 30% to 60% AMI; 36 of 73 units dedicated to farmworker housing",
+          "src": [
+            "SRC-003253"
+          ]
         }
       ]
     },
@@ -174,6 +211,97 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Farmworker",
+            "Family"
+          ],
+          "src": [
+            "SRC-003252",
+            "SRC-002523"
+          ],
+          "note": "30 farmworker units, 18 rapid rehousing units, 24 low-income family units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.7,
+          "src": [
+            "SRC-001892",
+            "SRC-003252"
+          ],
+          "note": "Portion of the 7.54-acre former Royal Oak Mushroom Farm"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 6,
+            "2br": 38,
+            "3br": 29,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003253"
+          ],
+          "note": "IS/MND, July 2021"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001892",
+            "SRC-003253"
+          ],
+          "note": "Three three-story buildings; the 2022 city release also lists one two-story building"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 140,
+          "src": [
+            "SRC-003253"
+          ],
+          "note": "Surface spaces, 73 under solar carports; the density bonus concession text adds 4 guest spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003253"
+          ],
+          "note": "Four density bonus concessions approved by City Council Jan. 20, 2021"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 49000000,
+          "src": [
+            "SRC-003254"
+          ],
+          "note": "About $49 million including land acquisition, as reported Sept. 2021"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -183,10 +311,91 @@
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "Former Royal Oak Mushroom Farm site, south of Monterey Road and Watsonville Road. CEQA documents list APN 779-04-075 and 15440 Monterey Road; county parcel data shows APN 779-04-079 at 15460 Watsonville Rd.",
+      "src": [
+        "SRC-001892",
+        "SRC-003255"
+      ]
+    },
+    {
+      "text": "Morgan Hill Times (Nov. 2024) reports more than $8 million in county Measure A funds; San José Spotlight (Sept. 2021) reports $9.9 million approved.",
+      "src": [
+        "SRC-002523",
+        "SRC-003254"
+      ]
+    },
+    {
+      "text": "City release (July 2022) describes it as the first affordable apartment project in Santa Clara County with dedicated farmworker housing and the city's fourth Blieu/UHC affordable community.",
+      "src": [
+        "SRC-003252"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Blieu Companies (formerly Urban Housing Communities)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003252",
+        "SRC-002523"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Ikaika Ohana",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003254"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "A0702 Morgan Hill L.P.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003253"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MH Engineering Co.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003253"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Measure A affordable housing bond",
+      "amount": 9900000,
+      "date": "2021-08-31",
+      "src": [
+        "SRC-003254"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Morgan Hill",
+      "program": "City contribution",
+      "amount": 400000,
+      "date": null,
+      "src": [
+        "SRC-003254",
+        "SRC-002523"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -198,11 +407,43 @@
       ]
     },
     {
+      "date": "2021-01-20",
+      "type": "Other",
+      "label": "City Council approved four density bonus concessions",
+      "src": [
+        "SRC-003253"
+      ]
+    },
+    {
+      "date": "2021-07-16",
+      "type": "Other",
+      "label": "IS/MND released for state review",
+      "src": [
+        "SRC-001892"
+      ]
+    },
+    {
       "date": "2021-08-24",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001135"
+      ]
+    },
+    {
+      "date": "2021-08-31",
+      "type": "Other",
+      "label": "County Board of Supervisors approved Measure A funding",
+      "src": [
+        "SRC-003254"
+      ]
+    },
+    {
+      "date": "2022-08-11",
+      "type": "Construction start",
+      "label": "Groundbreaking ceremony",
+      "src": [
+        "SRC-003252"
       ]
     },
     {
@@ -212,6 +453,14 @@
       "src": [
         "SRC-001135"
       ]
+    },
+    {
+      "date": "2024-11-20",
+      "type": "Completion",
+      "label": "Grand opening",
+      "src": [
+        "SRC-002523"
+      ]
     }
   ],
   "history": [
@@ -219,6 +468,98 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on project name, address and developer led to city release, CEQAnet and news",
+      "src": [
+        "SRC-003252",
+        "SRC-002523"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 77904079: 15460 Watsonville Rd, 3 situs addresses; no owner field",
+      "src": [
+        "SRC-003255"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City of Morgan Hill groundbreaking release (2022-07-27) and city-prepared IS/MND",
+      "src": [
+        "SRC-003252",
+        "SRC-003253"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County Measure A funding and Aug. 31, 2021 Board approval via San José Spotlight; county news site refuses automated access",
+      "src": [
+        "SRC-003254"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2021070311 (MND); CTCAC Dec. 2021 staff report 21-742 link returns 404",
+      "src": [
+        "SRC-001892",
+        "SRC-003253"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San José Spotlight 2021-09-15; Morgan Hill Times 2024-11-30",
+      "src": [
+        "SRC-003254",
+        "SRC-002523"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Royal Oak Village in trade press",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for a Blieu Companies project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in the release, MND excerpts or news",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County Measure A $9.9M and city $400K from news; CTCAC staff report not retrievable (404)",
+      "src": [
+        "SRC-003254",
+        "SRC-002523"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

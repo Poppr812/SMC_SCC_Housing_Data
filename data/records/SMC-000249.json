@@ -136,11 +136,22 @@
         {
           "value": 72,
           "src": [
-            "SRC-001222"
+            "SRC-001222",
+            "SRC-003268",
+            "SRC-001116"
           ],
           "note": "71 deed-restricted plus 1 manager unit"
+        },
+        {
+          "value": 86,
+          "src": [
+            "SRC-003269",
+            "SRC-003270"
+          ],
+          "note": "Earlier design (May 2024 endorsement; architect page marked design in progress)"
         }
-      ]
+      ],
+      "best": 0
     },
     "stories": {
       "claims": [
@@ -161,6 +172,81 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 31,
+              "ami": 50
+            },
+            {
+              "count": 40,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report 2024, entitlement stage"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001116"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "25% density bonus, 3 incentives; also an inclusionary project per the state report"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "AP2023-030",
+          "src": [
+            "SRC-001117",
+            "SRC-001116"
+          ],
+          "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.95,
+          "src": [
+            "SRC-003271"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Redwood City Pulse (Aug. 2026) says the 705 Veterans replacement has four more extremely low-income units (12) than the Woodside project",
+          "src": [
+            "SRC-001221"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -169,12 +255,105 @@
       "src": [
         "SRC-001222"
       ]
+    },
+    {
+      "text": "State report notes the project planned to apply for public subsidies not yet secured and was receiving donated land from an office developer.",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    {
+      "text": "City staff cited acquisition costs, site clearance and changed tax credit priority for the location when the council substituted 705 Veterans Blvd (Eden Housing, 76 senior units) on a 4-1 vote.",
+      "src": [
+        "SRC-001221"
+      ]
+    },
+    {
+      "text": "SF YIMBY's Sept. 2024 figures for floor area, height and parking match the 1900 Broadway office project, not this site.",
+      "src": [
+        "SRC-003271",
+        "SRC-001223"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Eden Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003271",
+        "SRC-003269",
+        "SRC-003270"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architects FORA",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://architectsfora.squarespace.com/portfolio/woodside-road-apartments",
+      "src": [
+        "SRC-003270",
+        "SRC-003271"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "BASE Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003270",
+        "SRC-003271"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Square Trufund LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003272"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-03-21",
+      "type": "Application filed",
+      "label": "Application submitted",
+      "src": [
+        "SRC-001117"
+      ]
+    },
+    {
+      "date": "2024-09-17",
+      "type": "Other",
+      "label": "Planning Commission approval",
+      "src": [
+        "SRC-003271"
+      ]
+    },
+    {
+      "date": "2024-10-28",
+      "type": "Approved",
+      "label": "Entitlement approved",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    {
+      "date": "2024-10-30",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Guidelines 15183)",
+      "src": [
+        "SRC-003268"
+      ]
+    },
     {
       "date": "2026-07-27",
       "type": "Other",
@@ -190,6 +369,99 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 847 Woodside Road and Eden Housing",
+      "src": [
+        "SRC-003271",
+        "SRC-003269"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC parcel layer: APN 059-240-810 owner Square Trufund LLC",
+      "src": [
+        "SRC-003272"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Redwood City project records 142 (847 Woodside) and 122 (1900 Broadway)",
+      "src": [
+        "SRC-001222",
+        "SRC-001223"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Tables A/A2 Redwood City 2024 (AP2023-030); CEQAnet NOE SCH 2024101313",
+      "src": [
+        "SRC-001117",
+        "SRC-001116",
+        "SRC-003268"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Redwood City Pulse 2026-08-01; San Mateo Daily Journal articles returned 403",
+      "src": [
+        "SRC-001221"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-09-20",
+      "src": [
+        "SRC-003271"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Eden Housing project page for 847 Woodside found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Architects FORA portfolio page, Woodside Road Apartments",
+      "src": [
+        "SRC-003270"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "State report says public subsidies not secured; no funders named",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }
