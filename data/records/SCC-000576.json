@@ -271,6 +271,63 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "AS 20-10",
+          "src": [
+            "SRC-001115",
+            "SRC-001138"
+          ],
+          "note": "Reported to the state as AS 20-10 (20060031); certificate-of-occupancy rows use building numbers 21060017 to 21060021."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001138"
+          ],
+          "note": "State report: density bonus with 3 incentives (development standards modification, on-site improvements) and a parking reduction."
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001602",
+            "SRC-001138"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003022"
+          ],
+          "note": "Five three-story buildings."
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 200,
+          "src": [
+            "SRC-003022"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -278,6 +335,24 @@
       "text": "CTCAC CA-21-512: Hecker Pass Apartments, located at 1520 Hecker Pass Highway in Gilroy, requested and is being recommended for a reservation of $1,470,942 in annual federal tax credits to finance the new construction of 99 units of housing serving large families with rents affordable to households earning 30-60% of area median income (AMI).",
       "src": [
         "SRC-001602"
+      ]
+    },
+    {
+      "text": "Gilroy Dispatch: five three-story buildings with two- and three-bedroom units, a 2,700 sq ft clubhouse and 200 parking spaces on nearly four acres at the southwest corner of Hecker Pass Highway and Santa Teresa Boulevard. Approved administratively March 12, 2021 with a CEQA infill exemption; home demolished and grading under way in late 2021.",
+      "src": [
+        "SRC-003022"
+      ]
+    },
+    {
+      "text": "CTCAC staff report: 5 residential buildings; bond issuer California Municipal Finance Authority with expected issuance September 1, 2021; investor Boston Financial; construction sources Align Finance tax-exempt $25,000,000, Align Finance $9,000,000, lease-up income $358,333, deferred reserve funding $1,127,064, deferred developer fee $4,147,074 and tax credit equity $9,222,467.",
+      "src": [
+        "SRC-001602"
+      ]
+    },
+    {
+      "text": "State report lists financial assistance as Sec 811, LIHTC and CDLAC.",
+      "src": [
+        "SRC-001138"
       ]
     }
   ],
@@ -307,6 +382,25 @@
       "company": "FPI Management",
       "contact": null,
       "linkedin": null,
+      "src": [
+        "SRC-001602"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Boston Financial",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001602"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
       "src": [
         "SRC-001602"
       ]
@@ -352,10 +446,58 @@
       "src": [
         "SRC-001602"
       ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Align Finance",
+      "program": "Tax-Exempt",
+      "amount": 25000000,
+      "date": null,
+      "src": [
+        "SRC-001602"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Align Finance",
+      "program": null,
+      "amount": 9000000,
+      "date": null,
+      "src": [
+        "SRC-001602"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2020-06-26",
+      "type": "Application filed",
+      "label": "Application AS 20-10 submitted",
+      "src": [
+        "SRC-001115",
+        "SRC-003022"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-03-12",
+      "type": "Approved",
+      "label": "Approved through the city's administrative process (no public hearing), per Gilroy Dispatch",
+      "src": [
+        "SRC-003022"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-03-17",
+      "type": "Approved",
+      "label": "Entitlement approval date reported to the state",
+      "src": [
+        "SRC-001138"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-04-28",
       "type": "Other",
@@ -366,11 +508,38 @@
       "estimated": false
     },
     {
+      "date": "2022-04-12",
+      "type": "Permit issued",
+      "label": "Building permits issued for 100 units",
+      "src": [
+        "SRC-001138"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-05-29",
       "type": "Completion",
       "label": "Placed in service per CTCAC list (CA-21-512)",
       "src": [
         "SRC-001603"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-05-29",
+      "type": "Other",
+      "label": "Certificates of occupancy issued for four buildings (81 units)",
+      "src": [
+        "SRC-001138"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-29",
+      "type": "Completion",
+      "label": "Certificate of occupancy issued for the fifth building (19 units)",
+      "src": [
+        "SRC-001138"
       ],
       "estimated": false
     }
@@ -390,6 +559,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name and address; Gilroy Dispatch 2021-12-16 opened. Listing sites (apartments.com) returned 403.",
+      "src": [
+        "SRC-003022"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 810-66-012; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City file AS 20-10 via state APR rows; administrative approval reported by Gilroy Dispatch.",
+      "src": [
+        "SRC-001115",
+        "SRC-003022"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county funding named in CTCAC staff report.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A (2020) and A2 (2021, 2022, 2024) rows for 1520 Hecker Pass Hwy; CTCAC staff report CA-21-512 re-read for construction sources, investor and bond issuer.",
+      "src": [
+        "SRC-001115",
+        "SRC-001138",
+        "SRC-001602"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Gilroy Dispatch 2021-12-16.",
+      "src": [
+        "SRC-003022"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage of this project.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "jemcorpartners.com returned a server error; pacifichousing.org portfolio page lists no Gilroy property.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report: Align Finance construction loans, Boston Financial equity, CMFA bond issuer.",
+      "src": [
+        "SRC-001602"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts.",
+      "src": []
+    }
+  }
 }

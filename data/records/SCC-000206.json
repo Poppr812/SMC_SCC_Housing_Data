@@ -223,6 +223,13 @@
           "src": [
             "SRC-001408"
           ]
+        },
+        {
+          "value": 68,
+          "src": [
+            "SRC-003027"
+          ],
+          "note": "RCD page: secure parking for 68 vehicles and 66 bikes."
         }
       ]
     },
@@ -233,6 +240,13 @@
           "src": [
             "SRC-001408"
           ]
+        },
+        {
+          "value": 2322,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit adjustment AD25-058 (approved 2025-03-20) decreased gross commercial floor area from 2,460 to 2,322 sq ft."
         }
       ]
     },
@@ -269,6 +283,20 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003027",
+            "SRC-003028"
+          ],
+          "note": "RCD: 25 units for formerly homeless households. Architect: one-third permanent supportive housing, one-third extremely low-income."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -303,6 +331,33 @@
       "text": "City of San Jose permit H21-013 (Ministerial Permit, folder year 2021), status Approved, issue date 2022-01-28: \"AB 2162 Streamlined Ministerial Permit for the demolition of two single-family homes, accessory structures, and a 2,689 sq. ft. commercial building; and the construction of a 6-story 100% affordable apartment project, consisting of 99 apartments and 2315\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "City GIS lists the owner/applicant entity as Almaden Affordable Housing, L.P. (c/o RCD) and files the newer records under APN 984-88-001; earlier files sit on APN 264-34-042 (771 Almaden Ave). Neither APN appears in the current county parcel dataset. Earlier preliminary review PRE20-139 (RCD) described 94 affordable apartments with ground-floor commercial.",
+      "src": [
+        "SRC-001956",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "Gross building area 102,119 sq ft per the architect and city file AD25-058. Architect lists all-electric design, targeted GreenPoint Rated Platinum, and an elevated ground floor for flood mitigation.",
+      "src": [
+        "SRC-003028",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "RCD page: ground floor holds an approximately 2,300 sq ft affordable childcare center operated by Kids First Academy and 3,300 sq ft of open space on S. Almaden Ave; units for households under 60% AMI.",
+      "src": [
+        "SRC-003027"
+      ]
+    },
+    {
+      "text": "Parking counts differ: SF YIMBY reports 92 spaces; RCD's page lists 68 vehicle spaces.",
+      "src": [
+        "SRC-001408",
+        "SRC-003027"
       ]
     }
   ],
@@ -356,6 +411,56 @@
       "src": [
         "SRC-001934",
         "SRC-001935"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Almaden Affordable Housing, L.P.",
+      "contact": "Dan Sawislak",
+      "linkedin": null,
+      "other_role": "Owner and applicant on city files ER23-069, T23-006, AD25-263",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rhoades Planning Group",
+      "contact": "Kelvin Yeoh",
+      "linkedin": null,
+      "other_role": "Applicant on permit adjustment AD25-377",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Abode Services",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services partner",
+      "src": [
+        "SRC-003027"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kids First Academy",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Childcare center operator",
+      "src": [
+        "SRC-003027"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The John Stewart Company",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named alongside RCD on the project page; role not stated",
+      "src": [
+        "SRC-003027"
       ]
     }
   ],
@@ -510,11 +615,47 @@
       ]
     },
     {
+      "date": "2023-10-25",
+      "type": "Other",
+      "label": "Vesting Tentative Map T23-006 approved, merging five lots into one",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-14",
+      "type": "Other",
+      "label": "Permit adjustment AD24-265 approved: studios reduced from 30 to 26, one-bedrooms increased from 24 to 28",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-03-20",
+      "type": "Other",
+      "label": "Permit adjustment AD25-058 approved: gross floor area 101,955 to 102,119 sq ft",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-04-08",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-25-492)",
       "src": [
         "SRC-001662"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-13",
+      "type": "Other",
+      "label": "Permit adjustment AD25-377 approved: building height from 98.6 to 99.6 feet",
+      "src": [
+        "SRC-001956"
       ],
       "estimated": false
     },
@@ -622,6 +763,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search on Lupina and 797 S Almaden; results repeat existing sources.",
+      "src": [
+        "SRC-001934"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 264-34-077 (797 Almaden Av); 264-34-042 and 984-88-001 not in current dataset; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer: H21-013, ER22-151, ER23-069, T23-006, AD24-265, AD25-058, AD25-263, AD25-377, AD25-466, PRE20-139.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "County Measure A and NPLH funding already on record from CTCAC staff report.",
+      "src": [
+        "SRC-001662"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC CA-25-492 and APR rows already on record.",
+      "src": [
+        "SRC-001662",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Construction Review, Construction Citizen and Silicon Valley at Home already on record.",
+      "src": [
+        "SRC-001934",
+        "SRC-001936"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY financing article already on record.",
+      "src": [
+        "SRC-001408"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "RCD Lupina project page.",
+      "src": [
+        "SRC-003027"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Leddy Maytum Stacy Architects project page.",
+      "src": [
+        "SRC-003028"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Chase, HCD AHSC/NHTF and county loans already on record from CTCAC and SF YIMBY.",
+      "src": [
+        "SRC-001662"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts.",
+      "src": []
+    }
+  }
 }

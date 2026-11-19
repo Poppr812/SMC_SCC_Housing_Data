@@ -1,6 +1,6 @@
 {
   "id": "SMC-000132",
-  "name": "920 Shasta/122 Buckeye",
+  "name": "Shasta Street Homes (920 Shasta/122 Buckeye)",
   "parcels": [
     {
       "apn": "053-343-110",
@@ -81,6 +81,36 @@
         [
           -122.2217012,
           37.4781926
+        ]
+      ]
+    },
+    {
+      "apn": "053-343-080",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.2220993,
+          37.4784641
+        ],
+        [
+          -122.2218072,
+          37.4783351
+        ],
+        [
+          -122.2218648,
+          37.4782509
+        ],
+        [
+          -122.2221715,
+          37.4783602
+        ],
+        [
+          -122.2220993,
+          37.4784641
         ]
       ]
     }
@@ -231,6 +261,32 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 74,
+          "src": [
+            "SRC-003023",
+            "SRC-003024"
+          ],
+          "note": "74 vehicle and 112 bicycle spaces."
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-003025",
+            "SRC-003026"
+          ],
+          "note": "Abode page: large families."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -247,6 +303,30 @@
         "SRC-001243",
         "SRC-001244"
       ]
+    },
+    {
+      "text": "CEQA Notice of Exemption: applicant Abode Communities (Jacqueline Figueroa, Associate Vice President); 99 below-market-rate units and 1 caretaker unit; APNs 053-343-110 and 053-343-080; exemption under CEQA Guidelines 15168, 15162, 15163 and 15183 relying on the General Plan Update EIR.",
+      "src": [
+        "SRC-003023"
+      ]
+    },
+    {
+      "text": "Redwood City Pulse: five stories, studios to three-bedroom units, 99 units for low- and very-low-income residents plus a manager unit; City Council approval was unanimous; land to be donated to Abode by El Camino Real Holdings JV as part of the 901 El Camino Real project.",
+      "src": [
+        "SRC-003026"
+      ]
+    },
+    {
+      "text": "SF YIMBY: ground-floor common areas below residential floors two through five; vehicle access on Shasta Street, main entry and courtyard on Buckeye Street.",
+      "src": [
+        "SRC-003024"
+      ]
+    },
+    {
+      "text": "Abode Communities lists Shasta Street Homes under Pipeline as a proposed, all-electric development.",
+      "src": [
+        "SRC-003025"
+      ]
     }
   ],
   "parties": [
@@ -257,6 +337,58 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Abode Communities",
+      "contact": "Jacqueline Figueroa",
+      "linkedin": null,
+      "website": "https://abodecommunities.org/",
+      "project_page": "https://abodecommunities.org/communities/shastastreethomes/",
+      "src": [
+        "SRC-003023",
+        "SRC-003025",
+        "SRC-003026"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "David Baker Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003025",
+        "SRC-003024"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "El Camino Real Holdings JV",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Land donor (developer of 901 El Camino Real)",
+      "src": [
+        "SRC-003026"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "BUTLER REALTY LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Abode Services",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Resident services partner",
+      "src": [
+        "SRC-003025"
       ]
     }
   ],
@@ -272,12 +404,30 @@
       ]
     },
     {
+      "date": "2025-04-15",
+      "type": "Other",
+      "label": "Planning Commission backs the project",
+      "src": [
+        "SRC-003026"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-04-28",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001116"
       ]
+    },
+    {
+      "date": "2025-04-30",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption posted (SCH 2025041426)",
+      "src": [
+        "SRC-003023"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -290,6 +440,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and developer; RWC Pulse, SF YIMBY and CEQAnet opened. San Mateo Daily Journal returned 403.",
+      "src": [
+        "SRC-003026",
+        "SRC-003023"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC Active Parcels: 053-343-110 (920 Shasta St) owner SHASTA STORAGE LLC; 053-343-080 (122 Buckeye St) owner BUTLER REALTY LLC.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Redwood City development project page 143; city does not use Legistar web API.",
+      "src": [
+        "SRC-001243"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county funding found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2025041426 Notice of Exemption; no CTCAC or HCD award found in search.",
+      "src": [
+        "SRC-003023"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Redwood City Pulse 2025-04-30. San Mateo Daily Journal articles returned 403.",
+      "src": [
+        "SRC-003026"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-05-08.",
+      "src": [
+        "SRC-003024"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Abode Communities project page Shasta Street Homes.",
+      "src": [
+        "SRC-003025"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "David Baker Architects named by Abode and SF YIMBY; no architect project page found.",
+      "src": [
+        "SRC-003025"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or public funding award found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts.",
+      "src": []
+    }
+  }
 }

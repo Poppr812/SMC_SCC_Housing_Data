@@ -87,6 +87,56 @@
           37.3336779
         ]
       ]
+    },
+    {
+      "apn": "261-02-009",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9094262,
+          37.3336522
+        ],
+        [
+          -121.9094821,
+          37.3336497
+        ],
+        [
+          -121.9096008,
+          37.3337501
+        ],
+        [
+          -121.9095727,
+          37.3337691
+        ],
+        [
+          -121.9094691,
+          37.3338395
+        ],
+        [
+          -121.9093591,
+          37.3339142
+        ],
+        [
+          -121.909247,
+          37.3339903
+        ],
+        [
+          -121.909137,
+          37.3340651
+        ],
+        [
+          -121.9090032,
+          37.3339395
+        ],
+        [
+          -121.9094262,
+          37.3336522
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -103,6 +153,14 @@
             "SRC-001363"
           ]
         }
+      ]
+    },
+    {
+      "text": "379 N Morrison Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-003021",
+        "SRC-001956"
       ]
     }
   ],
@@ -147,6 +205,13 @@
             "SRC-001363"
           ],
           "note": "Stated as up to 100. The article's mix (28 studios, 54 one-beds, 54 two-beds) adds to 136."
+        },
+        {
+          "value": 138,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE26-106 (Enhanced Preliminary Review, filed 2026-04-10): demolish a single-family house and an office building for a mixed-use building with 3,000 sq ft of ground-floor commercial and 138 residential units."
         }
       ]
     },
@@ -160,6 +225,36 @@
           "note": "Up to eight."
         }
       ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3000,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE26-106."
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PRE26-106",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Enhanced Preliminary Review for the 138-unit mixed-use building; status Complete."
+        },
+        {
+          "value": "GP22-008 / C22-023 / GPT22-005",
+          "src": [
+            "SRC-001956",
+            "SRC-003021"
+          ],
+          "note": "2022 General Plan Amendment (Mixed Use Commercial to Transit Residential), conforming rezoning (LI to TR) and General Plan text amendment; environmental review ER22-062."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -167,6 +262,26 @@
       "text": "Article says the effort is led by a team of individuals rather than a development company; no developer named.",
       "src": [
         "SRC-001363"
+      ]
+    },
+    {
+      "text": "City files GP22-008 and C22-023 changed the 0.46-gross-acre site from Mixed Use Commercial to Transit Residential and rezoned it from LI to TR. GPT22-005 added the Transit Residential designation to The Alameda Urban Village Plan, with a minimum 0.50 commercial FAR, and raised the height limit from 55 to 85 feet. The 2023 CEQA filing states no development was proposed at that time.",
+      "src": [
+        "SRC-001956",
+        "SRC-003021"
+      ]
+    },
+    {
+      "text": "Earlier city preliminary reviews on APN 261-02-053: PRE19-174 (Urban Tech Development, applicant Gustavo Auqui), a 7-story building with ground-floor office, second-floor parking and five residential floors; PRE21-083 (applicant Anthony Ho, LPMD Architects), a 9-story hotel of about 154 rooms.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "Unit counts differ by source: SF YIMBY (June 2026) reports up to 100 units with a mix of 28 studios, 54 one-bedrooms and 54 two-bedrooms (136 in total); city file PRE26-106 (April 2026) describes 138 units.",
+      "src": [
+        "SRC-001363",
+        "SRC-001956"
       ]
     }
   ],
@@ -179,16 +294,178 @@
       "src": [
         "SRC-001363"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "945 W Julian Street LLC",
+      "contact": "Gustavo Auqui",
+      "linkedin": null,
+      "other_role": "Applicant and owner on city files GP22-008, C22-023, GPT22-005 (2022)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Echelcon Construction, Inc.",
+      "contact": "Gustavo Auqui",
+      "linkedin": null,
+      "email": "gustavoa@echelcon.com",
+      "phone": "(415) 265-1086",
+      "other_role": "Applicant on CEQA negative declaration (2023)",
+      "src": [
+        "SRC-003021"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Anthony Ho",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant on city file PRE26-106 (2026)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "HILL/HO/PANG/NGUENPHUC/PANG",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner as listed on city file PRE26-106",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2022-03-11",
+      "type": "Application filed",
+      "label": "General Plan Amendment GP22-008 and rezoning C22-023 filed by 945 W Julian Street LLC",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-01-04",
+      "type": "Other",
+      "label": "Negative Declaration for the General Plan Amendment received by the State Clearinghouse (SCH 2023010040)",
+      "src": [
+        "SRC-003021"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-04-11",
+      "type": "Other",
+      "label": "General Plan Amendment GP22-008 and text amendment GPT22-005 approved (Transit Residential designation; Alameda Urban Village height diagram from 55 to 85 feet)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-10",
+      "type": "Application filed",
+      "label": "Enhanced Preliminary Review PRE26-106 filed for 138 units and 3,000 sq ft commercial",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address; CEQAnet SCH 2023010040 opened. The Real Deal article (2026-06-12) returned 403.",
+      "src": [
+        "SRC-003021"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel dataset: APN 261-02-053 and 261-02-009 (379 N Morrison Ave, San Jose); dataset carries no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer: GP22-008, C22-023, GPT22-005, ER22-062, PRE19-174, PRE21-083, PRE26-106.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2023010040 Negative Declaration; APR Table A/A2 searched for 945 W Julian with no match.",
+      "src": [
+        "SRC-003021"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY article (credited to Bay Area News Group reporting) reviewed; no further local news found.",
+      "src": [
+        "SRC-001363"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal articles of 2026-06-12 and 2026-07-09 returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No developer company named; applicants are individuals and an LLC. No company project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LPMD Architects and this site found no project page.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public funder found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }
