@@ -111,8 +111,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City approved Saturday construction hours for the duration of construction on 2025-05-07 (SPA19-064-02); CalHFA report estimated construction start 06/2024"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -219,6 +227,30 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": [
+            {
+              "count": 92,
+              "ami": 30
+            },
+            {
+              "count": 20,
+              "ami": 40
+            },
+            {
+              "count": 5,
+              "ami": 50
+            },
+            {
+              "count": 114,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-002531"
+          ],
+          "note": "2021 report; 2 manager units"
         }
       ]
     },
@@ -231,6 +263,116 @@
           "src": [
             "SRC-001603"
           ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.22,
+          "src": [
+            "SRC-002529"
+          ]
+        },
+        {
+          "value": 2.09,
+          "src": [
+            "SRC-002530",
+            "SRC-001956"
+          ],
+          "note": "Gross acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002529",
+            "SRC-002530",
+            "SRC-002531"
+          ],
+          "note": "Five stories over podium"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 290,
+          "src": [
+            "SRC-002529",
+            "SRC-002530",
+            "SRC-002531"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1795,
+          "src": [
+            "SRC-002529"
+          ]
+        },
+        {
+          "value": 1780,
+          "src": [
+            "SRC-002530",
+            "SRC-002531"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 188519,
+          "src": [
+            "SRC-002529"
+          ]
+        },
+        {
+          "value": 190050,
+          "src": [
+            "SRC-002531"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 182840127,
+          "src": [
+            "SRC-002529"
+          ],
+          "note": "Total permanent sources; $784,722 per unit"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-002529"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002529"
+          ],
+          "note": "Parking reduced from 389 to 113 required spaces and front setback reduced from 10 to 7 feet"
         }
       ]
     }
@@ -248,6 +390,30 @@
       "src": [
         "SRC-001603"
       ]
+    },
+    {
+      "text": "CalHFA final commitment (Senior Loan Committee 2024-03-06, Board 2024-03-21): one six-story building (five stories over podium) with 1,795 sq ft retail; 67 one-bedroom (585 sq ft), 90 two-bedroom (832 sq ft) and 76 three-bedroom (1,006 sq ft) units; 231 restricted between 30% and 70% AMI; two manager units.",
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "text": "73 units supported by HUD Project-Based Vouchers: 35 HUD-VASH units for chronically homeless veterans and 38 for large families.",
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "text": "Land purchase $15,700,000; City of San Jose permit and impact fees $8,388,000. Tax credit investor changed from R4 Capital LLC to Hudson Housing Capital.",
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "text": "2021 report gave an estimated cost of $90.6 million, with about $23 million in Section 8 Project-Based Vouchers over 20 years.",
+      "src": [
+        "SRC-002531"
+      ]
     }
   ],
   "parties": [
@@ -260,9 +426,165 @@
         "SRC-001603"
       ],
       "website": "https://www.roemcorp.com/"
+    },
+    {
+      "role": "Other",
+      "company": "Meridian Family Apartments, LP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Borrower",
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "ROEM Builders, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Withee Malcolm Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002529",
+        "SRC-002531"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "FPI Management Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citibank, N.A.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "California Housing Finance Agency",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Hudson Housing Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Pacific Housing, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Nonprofit sponsor (state tax credit certificates)",
+      "src": [
+        "SRC-002529"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citibank, N.A.",
+      "program": "Tax-exempt construction loan (CalHFA conduit bonds)",
+      "amount": 91400000,
+      "date": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank, N.A.",
+      "program": "Taxable tail construction loan",
+      "amount": 40000000,
+      "date": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Housing Finance Agency",
+      "program": "CDLAC allocation, CalHFA conduit issuance",
+      "amount": 87195898,
+      "date": "2023-08-23",
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "California Housing Finance Agency",
+      "program": "Tax-exempt permanent loan with HUD Risk Sharing",
+      "amount": 70550000,
+      "date": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Housing Finance Agency",
+      "program": "Mixed-Income Program (MIP) subsidy loan",
+      "amount": 4000000,
+      "date": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Hudson Housing Capital",
+      "program": "Federal 4% and state tax credit equity, permanent sources total",
+      "amount": 88871978,
+      "date": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "ROEM Development Corporation",
+      "program": null,
+      "amount": 16519462,
+      "date": null,
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "ROEM West LLC",
+      "program": "GP loan (permanent sources)",
+      "amount": 2000000,
+      "date": null,
+      "src": [
+        "SRC-002529"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -282,12 +604,48 @@
       ]
     },
     {
+      "date": "2024-06",
+      "type": "Construction start",
+      "label": "Estimated construction start (CalHFA report)",
+      "src": [
+        "SRC-002529"
+      ],
+      "estimated": true
+    },
+    {
       "date": "2024-06-28",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-05-07",
+      "type": "Other",
+      "label": "Permit amendment SPA19-064-02 approved: Saturday construction hours for the duration of construction",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-09-14",
+      "type": "Other",
+      "label": "Sign permit AD26-547 approved for an attached \"Meridian\" sign",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10",
+      "type": "Completion",
+      "label": "Estimated construction completion (CalHFA report)",
+      "src": [
+        "SRC-002529"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -305,6 +663,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name and address; led to CalHFA staff report and trade articles",
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 284-03-052 (969 Meridian Av); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer: AD23-725, AD23-731, SPA19-064-02, AD25-463, AD26-547",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for county housing authority or Measure A items for the project; none found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CalHFA final commitment staff report 2024-03; CTCAC staff report CA-23-548 URL returned 404",
+      "src": [
+        "SRC-002529",
+        "SRC-001603"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for Mercury News and local coverage of groundbreaking; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021-05-03; California Construction News 2020-05-03",
+      "src": [
+        "SRC-002531",
+        "SRC-002530"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "ROEM site already linked on record",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Architect named in CalHFA report and SF YIMBY",
+      "src": [
+        "SRC-002529",
+        "SRC-002531"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CalHFA report: Citibank construction loans, CalHFA permanent and MIP loans, Hudson Housing Capital equity; Citi Community Capital transaction page showed no listing",
+      "src": [
+        "SRC-002529"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project name",
+      "src": []
+    }
+  }
 }

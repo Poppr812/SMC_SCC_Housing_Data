@@ -262,6 +262,13 @@
           "src": [
             "SRC-001008"
           ]
+        },
+        {
+          "value": 10.3,
+          "src": [
+            "SRC-002532"
+          ],
+          "note": "Lot area 448,668 sq ft"
         }
       ]
     },
@@ -325,6 +332,35 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 35,
+            "2br": 20,
+            "3br": 179,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002532"
+          ],
+          "note": "Plans count 179 units as 3+ bedrooms (159 townhomes and 20 apartments)"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002532"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -332,6 +368,24 @@
       "text": "Demolishes a vacant hotel (formerly Marriott)",
       "src": [
         "SRC-001008"
+      ]
+    },
+    {
+      "text": "Plan set (Dahlin Group, dated April 14, 2026) names the applicant as 1770 SA Corporation, care of Woodmont Real Estate Services, Belmont; the city project page lists 1700 SA Corporation.",
+      "src": [
+        "SRC-002532"
+      ]
+    },
+    {
+      "text": "Plan set: 29 three-story townhome buildings (six 4-plex, three 5-plex, twenty 6-plex: 24, 15 and 120 units) and one six-story multifamily building with 35 one-, 20 two- and 20 three-bedroom units; 22.7 du/ac; total gross building area 483,207 sq ft; 371 parking spaces (318 in townhome garages, 40 in the multifamily garage, 13 surface); 57 units (24.4%) low income; zoning C3-1/R, General Plan Mixed-Use High.",
+      "src": [
+        "SRC-002532"
+      ]
+    },
+    {
+      "text": "County parcel record lists the owner as Hospitality Investment LLC, lessee, care of Oracle America Inc, property tax department.",
+      "src": [
+        "SRC-001009"
       ]
     }
   ],
@@ -354,6 +408,34 @@
       "src": [
         "SRC-001009"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002532"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "CBG Civil Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002532"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "1770 SA Corporation (c/o Woodmont Real Estate Services)",
+      "contact": "Jeffrey Atkinson",
+      "linkedin": null,
+      "other_role": "Applicant (as named on plan set)",
+      "src": [
+        "SRC-002532"
+      ]
     }
   ],
   "financing": [],
@@ -373,6 +455,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address; led to city plan set",
+      "src": [
+        "SRC-002532"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SMC Active Parcels APN 035-241-220 owner field",
+      "src": [
+        "SRC-001009"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page and April 2026 SB 330 preliminary plan set",
+      "src": [
+        "SRC-002532",
+        "SRC-001008"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "APR Table A (San Mateo) has no 1770 Amphlett row; no CEQAnet filing found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the 234-unit proposal returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched SF YIMBY and trade press for the address",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched for applicant 1770/1700 SA Corporation; no website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Plan set cover sheet names Dahlin Group",
+      "src": [
+        "SRC-002532"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

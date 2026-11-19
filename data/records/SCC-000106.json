@@ -288,6 +288,104 @@
             "SRC-001110"
           ],
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 33,
+              "ami": 50
+            },
+            {
+              "count": 9,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001697",
+            "SRC-001101"
+          ],
+          "note": "SB 330 replacement units: 33 at 50% AMI, 9 at 80% AMI; APR Table A reports the 9 as low income"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 44,
+            "1br": 139,
+            "2br": 50,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001697"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 9.14,
+          "src": [
+            "SRC-001697",
+            "SRC-002533"
+          ],
+          "note": "Whole Reserve at Mountain View site; new buildings occupy about 3.4 acres"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 235689,
+          "src": [
+            "SRC-001697",
+            "SRC-002533"
+          ],
+          "note": "Building F 109,169 sq ft and Building G 126,520 sq ft"
+        },
+        {
+          "value": 235700,
+          "src": [
+            "SRC-002534"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 505,
+          "src": [
+            "SRC-001697"
+          ],
+          "note": "Total stalls serving the whole site, including existing units"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001697",
+            "SRC-002535"
+          ],
+          "note": "35% density bonus, one concession, five waivers"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 191,
+          "src": [
+            "SRC-001101"
+          ]
         }
       ]
     }
@@ -298,6 +396,19 @@
       "src": [
         "SRC-001101",
         "SRC-001110"
+      ]
+    },
+    {
+      "text": "Council report 2022-09-27: two six-story buildings (Building F, 103 units; Building G, 130 units) over a two-level underground garage on part of the 9.14-acre Reserve at Mountain View site; demolishes 5 of 20 existing buildings (42 of 180 units) for 371 units on site, 191 net new.",
+      "src": [
+        "SRC-001697",
+        "SRC-002533"
+      ]
+    },
+    {
+      "text": "Mountain View Voice (2022-09-28) reported the developer planned to break ground in mid-2023 and would pay about $600,000 in lieu of physical public-benefit improvements.",
+      "src": [
+        "SRC-002535"
       ]
     }
   ],
@@ -311,11 +422,41 @@
       "src": [
         "SRC-001697"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.steinberghart.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.steinberghart.com/design/projects/east-el-camino-real/",
+      "src": [
+        "SRC-002534"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Equity Residential",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001697"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-03-03",
+      "type": "Other",
+      "label": "Virtual neighborhood meeting",
+      "src": [
+        "SRC-001697"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-03-24",
       "type": "Application filed",
@@ -325,12 +466,30 @@
       ]
     },
     {
+      "date": "2022-08-17",
+      "type": "Other",
+      "label": "Environmental Planning Commission recommends approval, 6-0-1",
+      "src": [
+        "SRC-001697"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-09-27",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2022-10-03",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed (SCH 2022100015)",
+      "src": [
+        "SRC-002533"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -343,6 +502,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and Equity Residential; architect page, news and CEQAnet found",
+      "src": [
+        "SRC-002534",
+        "SRC-002535"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 161-11-011; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar council report 2022-09-27 (unit mix, site, parking, density bonus, EPC date)",
+      "src": [
+        "SRC-001697"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet NOD SCH 2022100015; APR Table A 2022 row",
+      "src": [
+        "SRC-002533",
+        "SRC-001101"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mountain View Voice 2022-09-28",
+      "src": [
+        "SRC-002535"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched trade press for the project; none found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "ReserveatMountainView.com did not respond; Equity apartments pages show the existing community only",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Steinberg Hart project page: client Equity Residential, 233 units, 235,700 SF, status Entitled",
+      "src": [
+        "SRC-002534"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

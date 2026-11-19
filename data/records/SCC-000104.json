@@ -165,6 +165,66 @@
           37.3536069
         ]
       ]
+    },
+    {
+      "apn": "249-66-037",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8696508,
+          37.3535969
+        ],
+        [
+          -121.8699171,
+          37.3534133
+        ],
+        [
+          -121.8700372,
+          37.3535246
+        ],
+        [
+          -121.8697712,
+          37.353708
+        ],
+        [
+          -121.8696508,
+          37.3535969
+        ]
+      ]
+    },
+    {
+      "apn": "249-66-038",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8695471,
+          37.353501
+        ],
+        [
+          -121.869815,
+          37.3533186
+        ],
+        [
+          -121.8699171,
+          37.3534133
+        ],
+        [
+          -121.8696508,
+          37.3535969
+        ],
+        [
+          -121.8695471,
+          37.353501
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -182,6 +242,20 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "345 Wooster Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-002527"
+      ]
+    },
+    {
+      "text": "341 Wooster Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-002527"
       ]
     }
   ],
@@ -238,7 +312,8 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-002527"
           ]
         }
       ]
@@ -280,6 +355,64 @@
           "note": "State report 2022, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.49,
+          "src": [
+            "SRC-002527"
+          ],
+          "note": "Gross acres across four parcels"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002527",
+            "SRC-002528"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 90,
+          "src": [
+            "SRC-002527"
+          ],
+          "note": "87 residential and 3 commercial stalls in one basement level"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 820,
+          "src": [
+            "SRC-002527",
+            "SRC-002528"
+          ],
+          "note": "Approximate ground-floor commercial space"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002527"
+          ],
+          "note": "AB 2345 height waiver and State Density Bonus Law requests (FAR increase, stepdown, open space, balcony width)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -301,6 +434,25 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "IS/MND describes one six-story apartment building of 235 units (studio, one- and two-bedroom), 100 percent affordable, about 73 feet tall, on four parcels at 1298 Tripp Ave, 380 N 26th St and 341 and 345 Wooster Ave; demolishes two apartment buildings and two single-family homes. Requests parking reduction of up to 71 percent (0.25 stalls per unit).",
+      "src": [
+        "SRC-002527"
+      ]
+    },
+    {
+      "text": "The same IS/MND covers Vila de Camila (1325 E. Julian St, 633 units, H22-012) and Casa Inclusiva (1347 E. Julian St, 45 units, H22-001); 913 units in total.",
+      "src": [
+        "SRC-002527",
+        "SRC-002528"
+      ]
+    },
+    {
+      "text": "City preliminary review PRE19-106 (2019) described 304 units on two parcels of about 1.25 acres with a 90-stall garage off Tripp Avenue.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "parties": [
@@ -312,11 +464,40 @@
       "src": [
         "SRC-001815"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002527"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Diridon Investments, LLC",
+      "contact": "Loida C. Kirkley",
+      "linkedin": null,
+      "other_role": "Project owner and applicant (per IS/MND)",
+      "src": [
+        "SRC-002527",
+        "SRC-002528"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-06-24",
+      "type": "Other",
+      "label": "Enhanced preliminary review filed (PRE19-106): 304 units on two parcels, 90-stall garage",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-02-13",
       "type": "Application filed",
@@ -324,6 +505,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2023-10-13",
+      "type": "Other",
+      "label": "Julian & Tripp IS/MND released for public review (SCH 2023100356), through 2023-11-02",
+      "src": [
+        "SRC-002528"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-11-29",
@@ -349,6 +539,101 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address and Roygbiv; led to CEQAnet SCH 2023100356 and IS/MND",
+      "src": [
+        "SRC-002528"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel dataset: 249-66-037 (345 Wooster) and 249-66-038 (341 Wooster) added per IS/MND; dataset has no owner field",
+      "src": [
+        "SRC-001098",
+        "SRC-002527"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer: PRE19-106, ER21-297, H21-050",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2023100356 MND and IS/MND document; APR data already on record; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-002528",
+        "SRC-002527"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "Mercury News 2021 article appeared only as a PressReader search result; Mercury News is paywalled",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SF YIMBY 2021 and 2023 articles already on record",
+      "src": [
+        "SRC-001815",
+        "SRC-001816"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for a Roygbiv Real Estate Development website or project page returned none",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "IS/MND names Anderson Architects, Inc. as project proponent and plan author",
+      "src": [
+        "SRC-002527"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searched CTCAC/CDLAC staff reports and tax credit lists for the project name and address",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project name",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000023",
+      "relation": "adjacent",
+      "note": "Both sites are in the three-site, 913-unit Julian and Tripp plan (CEQAnet 2023100356)"
     }
   ]
 }
