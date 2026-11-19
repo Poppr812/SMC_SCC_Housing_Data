@@ -252,6 +252,12 @@
           "src": [
             "SRC-001061"
           ]
+        },
+        {
+          "value": 14.7,
+          "src": [
+            "SRC-001060"
+          ]
         }
       ]
     },
@@ -273,6 +279,13 @@
             "SRC-001061"
           ],
           "note": "512 garage spaces and 56 visitor spaces"
+        },
+        {
+          "value": 567,
+          "src": [
+            "SRC-002511"
+          ],
+          "note": "Plus 328 bicycle spaces"
         }
       ]
     },
@@ -292,6 +305,12 @@
           "value": "38 moderate-income units",
           "src": [
             "SRC-001061"
+          ]
+        },
+        {
+          "value": "38 affordable units: 9 single-family homes and 29 townhomes",
+          "src": [
+            "SRC-002511"
           ]
         }
       ]
@@ -317,6 +336,44 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-002510"
+          ],
+          "note": "Applicant at the March 26, 2025 neighborhood meeting: three stories, about 30 feet"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 38,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001108"
+          ],
+          "note": "State report 2025, application stage: deed-restricted moderate-income units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 218,
+          "src": [
+            "SRC-001108"
+          ],
+          "note": "State report 2025, application stage: above-moderate units"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -324,6 +381,18 @@
       "text": "Demolishes seven three-story office buildings and one commercial building; includes a 0.4-acre park",
       "src": [
         "SRC-001061"
+      ]
+    },
+    {
+      "text": "Applicant at the March 26, 2025 neighborhood meeting: townhomes 1,400 to 1,800 sq ft and single-family homes 2,100 to 2,200 sq ft; plan density about 20 units per acre against 50 allowed; team listed as B9 Sequoia Bayshore Owner LP, Dahlin Group and SAGE.",
+      "src": [
+        "SRC-002510"
+      ]
+    },
+    {
+      "text": "CEQA notice (February 13, 2026): site to be subdivided into seven parcels and 64 single-family lots, townhome units subdivided as condominiums; statutory exemption under Public Resources Code 21080.66 (AB 130) at 17.6 units per acre.",
+      "src": [
+        "SRC-001060"
       ]
     }
   ],
@@ -345,6 +414,37 @@
       "linkedin": null,
       "src": [
         "SRC-001062"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dahlingroup.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-002511",
+        "SRC-002510"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Jett",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002511"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Link Logistics",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (CEQA notice)",
+      "src": [
+        "SRC-001060"
       ]
     }
   ],
@@ -376,6 +476,14 @@
       ]
     },
     {
+      "date": "2025-11-26",
+      "type": "Application filed",
+      "label": "Application date for PA-2025-029 as reported to the state",
+      "src": [
+        "SRC-001108"
+      ]
+    },
+    {
       "date": "2026-02-10",
       "type": "Approved",
       "label": "Planning Commission approves the project, 5-0",
@@ -390,6 +498,15 @@
       "src": [
         "SRC-001060"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Construction start",
+      "label": "Applicant's expected start, Q1 2027 (March 2025 neighborhood meeting)",
+      "src": [
+        "SRC-002510"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -397,6 +514,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Bayshore Commons and 1650 S Amphlett: SF YIMBY 2026-02-22, city documents, CEQAnet",
+      "src": [
+        "SRC-002511"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer for the three APNs already on record",
+      "src": [
+        "SRC-001062"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page and March 26, 2025 neighborhood meeting summary; San Mateo does not use Legistar",
+      "src": [
+        "SRC-001061",
+        "SRC-002510"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "APR Table A 2025 row PA-2025-029 (38 moderate, 218 above-moderate); CEQAnet SCH 2026020560 NOE",
+      "src": [
+        "SRC-001108",
+        "SRC-001060"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the February 10 approval returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2026-02-22 (architect, landscape architect, affordable split, parking)",
+      "src": [
+        "SRC-002511"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Link Logistics or B9 Sequoia project page surfaced in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Dahlin Group project news page links the SF YIMBY approval article",
+      "src": [
+        "SRC-002512",
+        "SRC-002511"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for project posts: none surfaced",
+      "src": []
+    }
+  }
 }

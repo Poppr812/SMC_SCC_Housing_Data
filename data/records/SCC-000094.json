@@ -43,6 +43,104 @@
           37.3233322
         ]
       ]
+    },
+    {
+      "apn": "277-18-024",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9177321,
+          37.3229886
+        ],
+        [
+          -121.917261,
+          37.3229921
+        ],
+        [
+          -121.9172596,
+          37.3227998
+        ],
+        [
+          -121.91816,
+          37.3227931
+        ],
+        [
+          -121.9181612,
+          37.3229854
+        ],
+        [
+          -121.9177321,
+          37.3229886
+        ]
+      ]
+    },
+    {
+      "apn": "277-18-025",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9172596,
+          37.3227998
+        ],
+        [
+          -121.9172583,
+          37.3226076
+        ],
+        [
+          -121.9181588,
+          37.3226009
+        ],
+        [
+          -121.91816,
+          37.3227931
+        ],
+        [
+          -121.9172596,
+          37.3227998
+        ]
+      ]
+    },
+    {
+      "apn": "277-18-026",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9172583,
+          37.3226076
+        ],
+        [
+          -121.917257,
+          37.3224153
+        ],
+        [
+          -121.9181575,
+          37.3224086
+        ],
+        [
+          -121.9181582,
+          37.3225147
+        ],
+        [
+          -121.9181588,
+          37.3226009
+        ],
+        [
+          -121.9172583,
+          37.3226076
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -52,6 +150,34 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "315 S Willard Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-002508"
+      ]
+    },
+    {
+      "text": "325 S Willard Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-002508"
+      ]
+    },
+    {
+      "text": "329 S Willard Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-002508"
+      ]
+    },
+    {
+      "text": "345 S Willard Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-002508"
       ]
     }
   ],
@@ -98,7 +224,8 @@
           "value": 256,
           "src": [
             "SRC-001107",
-            "SRC-001812"
+            "SRC-001812",
+            "SRC-002508"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -128,6 +255,13 @@
           "value": "51 deed-restricted units reported to the state",
           "src": [
             "SRC-001107"
+          ]
+        },
+        {
+          "value": "39 affordable units in the 256-unit permit description (SJ Build); 25 affordable units in the earlier 202-unit plan (BVNA, 2022)",
+          "src": [
+            "SRC-001812",
+            "SRC-002509"
           ]
         }
       ]
@@ -167,6 +301,55 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.62,
+          "src": [
+            "SRC-002508",
+            "SRC-002509"
+          ],
+          "note": "Gross acres"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 15202,
+          "src": [
+            "SRC-002508"
+          ],
+          "note": "Approximate, per the 2023 CEQA filing"
+        },
+        {
+          "value": 15582,
+          "src": [
+            "SRC-002509"
+          ],
+          "note": "2022 description of the earlier 202-unit plan"
+        }
+      ],
+      "best": 0
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001812"
+          ],
+          "note": "Permit H23-004 description as summarized by SJ Build"
+        },
+        {
+          "value": 7,
+          "src": [
+            "SRC-002509"
+          ],
+          "note": "2022 description of the earlier 202-unit plan"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -175,6 +358,18 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "CEQA filing (May 2023): site is APNs 277-18-021, -024, -025 and -026 at 1520 W San Carlos St and 315, 325, 329 and 345 Willard Ave; demolition of one commercial building and 11 residential structures, removal of 29 trees, a tentative map combining four lots into one, and a requested parking reduction of about 38%.",
+      "src": [
+        "SRC-002508"
+      ]
+    },
+    {
+      "text": "The state report for 2021 (SP21-007, 202 units) lists the same four APNs.",
+      "src": [
+        "SRC-001099"
       ]
     }
   ],
@@ -188,6 +383,16 @@
       "src": [
         "SRC-001812"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "MV3",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (CEQA filing)",
+      "src": [
+        "SRC-002508"
+      ]
     }
   ],
   "financing": [],
@@ -199,6 +404,14 @@
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2023-05-17",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration circulated for public review (SCH 2023050426), through June 6, 2023",
+      "src": [
+        "SRC-002508"
       ]
     },
     {
@@ -225,6 +438,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address: CEQAnet SCH 2023050426, BVNA post, SJ Build tracker, broker listings",
+      "src": [
+        "SRC-002508",
+        "SRC-002509"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API for 27718021 (situs 1520 W San Carlos); added 277-18-024, -025, -026 named in the CEQA filing and APR",
+      "src": [
+        "SRC-001098",
+        "SRC-002508"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2023050426 (MND); APR Table A 2021 and A2 2023 rows already on record",
+      "src": [
+        "SRC-002508",
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Buena Vista Neighborhood Association post, February 2022 (202-unit, seven-story plan)",
+      "src": [
+        "SRC-002509"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "LoopNet land listing returned 403; Marcus & Millichap link opened only the general listings page",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No developer site for Urban Villas LLC or MV3 surfaced in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Architect not named in the CEQA filing or press",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for project posts: none surfaced",
+      "src": []
+    }
+  }
 }
