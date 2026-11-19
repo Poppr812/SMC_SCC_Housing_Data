@@ -199,6 +199,62 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.55,
+          "src": [
+            "SRC-001681",
+            "SRC-002679"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-002679"
+          ],
+          "note": "SF YIMBY 2025-04-14; city permit H24-032 text describes a seven-story project"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 120,
+          "src": [
+            "SRC-002679"
+          ],
+          "note": "At or below ground level"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001681"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State APR 2025: deed restriction type DB, 6 incentives (development standards modification)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -226,6 +282,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC CA-26-578 (2026-09-01): applicant contact block lists Community HousingWorks, San Diego; bond issuer California Municipal Finance Authority; private placement purchaser California Bank & Trust; BAHIF is the Bay Area Housing Investment Fund. Construction sources include SF Housing Accelerator Fund ICCF $2,500,000 plus $197,482 accrued interest and $3,013,089 of tax credit equity.",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-04-14): modular units built off site; amenities include a rooftop deck, gym and communal lounge; site was a vacant lot.",
+      "src": [
+        "SRC-002679"
+      ]
     }
   ],
   "parties": [
@@ -238,6 +306,85 @@
         "SRC-001681"
       ],
       "website": "https://www.cloudapartments.com"
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Community HousingWorks",
+      "contact": "Cynthia Wong",
+      "linkedin": null,
+      "email": "cwong@chworks.org",
+      "phone": "619-604-9939",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cloud The Alameda, L.P.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CTCAC applicant / CDLAC sponsor",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "CHW The Alameda Development Company, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cloud The Alameda AGP, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Aperto Property Management, Inc",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant listed in CTCAC report",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "California Bank & Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001681"
+      ]
     }
   ],
   "financing": [
@@ -330,6 +477,26 @@
       "src": [
         "SRC-001681"
       ]
+    },
+    {
+      "type": "Other",
+      "provider": "San Francisco Housing Accelerator Fund",
+      "program": "Industrialized Construction Catalyst Fund (ICCF), construction period",
+      "amount": 2500000,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "San Francisco Housing Accelerator Fund",
+      "program": "ICCF accrued interest, construction period",
+      "amount": 197482,
+      "date": null,
+      "src": [
+        "SRC-001681"
+      ]
     }
   ],
   "groups": {},
@@ -398,6 +565,93 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on name, address and Cloud Apartments; SF YIMBY and CTCAC report",
+      "src": [
+        "SRC-002679",
+        "SRC-001681"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 230-18-033: situs 2165 The Alameda, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit GIS data (H24-032, PRE23-247) already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC CA-26-578 parties and ICCF financing; APR Table A2 2025 density bonus details",
+      "src": [
+        "SRC-001681",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Mercury News, SJ Spotlight or other local coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2025-04-14: 7 stories, 120 parking spaces, 0.55 acres",
+      "src": [
+        "SRC-002679"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "cloudapartments.com home page opened; no project page for The Alameda",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in CTCAC report, SF YIMBY or other sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC report: SF Housing Accelerator Fund ICCF construction loan; California Bank & Trust; BAHIF already on record",
+      "src": [
+        "SRC-001681"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts returned nothing",
+      "src": []
+    }
+  }
 }

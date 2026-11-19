@@ -123,6 +123,18 @@
           "src": [
             "SRC-001477"
           ]
+        },
+        {
+          "value": "City DDA (Nov. 2024): 170 units at or below 80% AMI per TCAC, average income limit not above 50% AMI, 20% of affordable units at or below 30% AMI, intended as permanent supportive housing pending funding; deed restricted at least 85 years",
+          "src": [
+            "SRC-002681"
+          ]
+        },
+        {
+          "value": "SV@Home (Aug. 2024): 170 affordable units including 34 permanent supportive housing units for formerly unhoused residents",
+          "src": [
+            "SRC-002404"
+          ]
         }
       ]
     },
@@ -135,6 +147,103 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.3,
+          "src": [
+            "SRC-002681",
+            "SRC-002682"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 88,
+          "src": [
+            "SRC-002683"
+          ],
+          "note": "Project data table, PC 2026-03-23"
+        },
+        {
+          "value": 89,
+          "src": [
+            "SRC-002684"
+          ],
+          "note": "Applicant project description: 0.5 spaces per unit in a 2-story podium garage"
+        }
+      ],
+      "best": 0
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 136,
+              "ami": 80
+            },
+            {
+              "count": 34,
+              "ami": 110
+            }
+          ],
+          "src": [
+            "SRC-002684"
+          ],
+          "note": "Applicant density bonus letter: presently anticipated affordability mix, 136 lower income (80% AMI), 34 moderate (110% AMI), 2 manager units"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 85,
+          "src": [
+            "SRC-002681"
+          ],
+          "note": "At least 85 years per DDA"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002684"
+          ],
+          "note": "AB 1763 100% affordable density bonus request"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 180000000,
+          "src": [
+            "SRC-002681"
+          ],
+          "note": "City staff report, Nov. 2024: total proposed development cost anticipated at approximately $180 million"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 12500000,
+          "src": [
+            "SRC-002681",
+            "SRC-002682"
+          ],
+          "note": "MidPen bought the site June 2021 for $12.5 million; City of Sunnyvale purchase from MP Land Holdings, LLC approved 2024-11-19 at $12,500,000"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -142,6 +251,25 @@
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
         "SRC-001477"
+      ]
+    },
+    {
+      "text": "City staff report RTC 24-0921 (2024-11-19): existing 19,500 sq ft light industrial building leased month-to-month to Tech-Star Industries at $25,000 per month; ground lease rent is the lesser of $1,250,000 per year or the city's pro rata share of net operating income; MidPen to apply for tax credits no later than 2027.",
+      "src": [
+        "SRC-002681"
+      ]
+    },
+    {
+      "text": "Planning Commission file 26-0356: applicant MP Sonora Court Associates, L.P.; owner City of Sunnyvale; seven-story building with five levels of housing over two levels of podium parking; height 75 ft to roof, 86 ft to parapet per project data table; lot 56,715 sq ft.",
+      "src": [
+        "SRC-001477",
+        "SRC-002683"
+      ]
+    },
+    {
+      "text": "CEQAnet NOD (2026-03-30): City of Sunnyvale approved the MidPen Affordable Housing Project on 2026-03-23 within the Lawrence Station Area Plan EIR; mitigation measures made conditions of approval and a statement of overriding considerations adopted.",
+      "src": [
+        "SRC-002685"
       ]
     }
   ],
@@ -174,11 +302,107 @@
       "src": [
         "SRC-001478"
       ]
+    },
+    {
+      "role": "Buyer",
+      "company": "City of Sunnyvale",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002681"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "MP Land Holdings, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002681"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "City of Sunnyvale",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001477"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "City of Sunnyvale",
+      "program": "Housing Mitigation Fund predevelopment loan, 3% simple, residual receipts, 55-year term",
+      "amount": 1533000,
+      "date": "2024-11",
+      "src": [
+        "SRC-002681"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Sunnyvale",
+      "program": "2022 NOFA predevelopment award, Permanent Local Housing Allocation (PLHA) funds",
+      "amount": 500000,
+      "date": "2022-10",
+      "src": [
+        "SRC-002681",
+        "SRC-002682"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "City of Sunnyvale",
+      "program": "Housing Mitigation Fund land acquisition; city holds land and ground leases to MidPen for 85 years",
+      "amount": 12500000,
+      "date": "2024-11",
+      "src": [
+        "SRC-002681"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2021-06",
+      "type": "Sale",
+      "label": "MidPen acquired the site for $12.5 million",
+      "src": [
+        "SRC-002681",
+        "SRC-002682"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12-21",
+      "type": "Application filed",
+      "label": "MidPen submitted planning application",
+      "src": [
+        "SRC-002681"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-13",
+      "type": "Other",
+      "label": "City Council approved about $14 million NOFA award (land purchase and predevelopment loan)",
+      "src": [
+        "SRC-002681"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-19",
+      "type": "Other",
+      "label": "City Council approved purchase from MP Land Holdings, DDA and 85-year ground lease",
+      "src": [
+        "SRC-002681"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-03-23",
       "type": "Approved",
@@ -187,6 +411,24 @@
         "SRC-001479"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-03-30",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed (SCH 2013082030)",
+      "src": [
+        "SRC-002685"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2028",
+      "type": "Construction start",
+      "label": "Construction slated for 2028 per SV@Home",
+      "src": [
+        "SRC-002404"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -199,6 +441,103 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on address and MidPen; led to city purchase coverage and CEQAnet NOD",
+      "src": [
+        "SRC-002404",
+        "SRC-002685"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 205-50-024: situs 1171 Sonora Ct, no owner field; city files show City of Sunnyvale as owner",
+      "src": [
+        "SRC-001098",
+        "SRC-001477"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Legistar: Council RTC 24-0921 (2024-11-19) with presentation; PC 26-0356 attachments (project data table, project description letter); sunnyvale.ca.gov page returned 403",
+      "src": [
+        "SRC-002681",
+        "SRC-002682",
+        "SRC-002683",
+        "SRC-002684"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No county Measure A or other county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet NOD 2026-03-30; no APR row or CTCAC/CDLAC award found",
+      "src": [
+        "SRC-002685"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San Jose Spotlight story (Aug. 2024) reposted on MidPen site: $12.5 million lot purchase; Local News Matters returned 403",
+      "src": [
+        "SRC-002686"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SV@Home 2024-08-29: $14 million HMF, 34 PSH units, construction 2028; SF YIMBY Apr. 2026 already on record",
+      "src": [
+        "SRC-002404",
+        "SRC-001478"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "MidPen media center repost of SF YIMBY approval story; no project page found",
+      "src": [
+        "SRC-002686"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Studio T-SQ, Inc. named on plan sheets in the applicant letter; already on record",
+      "src": [
+        "SRC-002684"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City predevelopment loans ($500,000 PLHA, $1,533,000 HMF) and $12.5 million land acquisition from RTC 24-0921",
+      "src": [
+        "SRC-002681"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search returned nothing",
+      "src": []
+    }
+  }
 }

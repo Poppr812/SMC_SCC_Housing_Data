@@ -210,8 +210,16 @@
             "SRC-002219"
           ],
           "note": "CTCAC recommended tax credits 2023-08-23; city approved the two-phase split 2024-01-31 with this building as Phase 1"
+        },
+        {
+          "value": "Permitted",
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State APR 2024: building permit 2024 072069 MF issued 2024-02-22 for 173 units (APN 296-40-009)"
         }
-      ]
+      ],
+      "best": 1
     },
     "total_units": {
       "claims": [
@@ -276,6 +284,22 @@
             "SRC-001638"
           ],
           "note": "CTCAC staff report, Aug. 2023: 171 restricted units in the 173-unit affordable building (plus manager unit), 55-year term"
+        },
+        {
+          "value": [
+            {
+              "count": 58,
+              "ami": 50
+            },
+            {
+              "count": 113,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State APR 2024, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit); 18 extremely low-income units within the very low count; 2 above-moderate"
         }
       ]
     },
@@ -284,9 +308,106 @@
         {
           "value": 55,
           "src": [
-            "SRC-001638"
+            "SRC-001638",
+            "SRC-001107"
           ],
           "note": "Affordable building"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002678",
+            "SRC-002219"
+          ],
+          "note": "CalHFA: one elevator-served six-story residential building over one level of podium parking (7 stories); floors 2-5 modular"
+        },
+        {
+          "value": 5,
+          "src": [
+            "SRC-002217"
+          ],
+          "note": "Architects Orange project page describes three 5-story residential buildings across the master plan"
+        }
+      ],
+      "best": 0
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 87,
+          "src": [
+            "SRC-002678"
+          ],
+          "note": "87 covered podium spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.59,
+          "src": [
+            "SRC-002678"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 122389,
+          "src": [
+            "SRC-002678"
+          ],
+          "note": "CalHFA: total building area 166,610 sq ft; community area 42,093 sq ft"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 119084744,
+          "src": [
+            "SRC-001638"
+          ],
+          "note": "CTCAC staff report, Aug. 2023"
+        },
+        {
+          "value": 125596653,
+          "src": [
+            "SRC-002678"
+          ],
+          "note": "CalHFA final commitment report, Jan. 2024: total permanent sources"
+        }
+      ],
+      "best": 1
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107",
+            "SRC-002219"
+          ],
+          "note": "State APR: deed restriction type DB, one incentive (development standards modification), parking reduction"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PD20-012; PDA20-012-01",
+          "src": [
+            "SRC-002219"
+          ],
+          "note": "PDA20-012-01 approved 2024-01-31 made Building A the first phase"
         }
       ]
     }
@@ -302,6 +423,12 @@
       "text": "CTCAC CA-23-517 (Aug. 2023), affordable building: one residential building, 173 units (44 studio, 37 one-bedroom, 45 two-bedroom, 47 three-bedroom); total development cost $119,084,744; general partners Central Valley Coalition for Affordable Housing, TPC Holdings IX, LLC and Miramar Property Group, LLC; developer Pacific West Communities, Inc.; bond issuer CalHFA; investor Boston Financial; management agent ConAm Management Corporation.",
       "src": [
         "SRC-001638"
+      ]
+    },
+    {
+      "text": "CalHFA final commitment report (SLC 2024-01-05): seller MGP Stevens Creek Owner, LLC, an affiliate of master developer Miramar Capital, agreed to sell the site to San Jose Stevens Creek Associates for $3,470,000 under a purchase agreement dated 2023-02-07; a March 2023 land appraisal valued the site at $13,840,000 and an October 2023 appraisal at $4,000,000. Total bond issuance $108,550,152. The site is portions of two parcels to be split before construction.",
+      "src": [
+        "SRC-002678"
       ]
     }
   ],
@@ -383,6 +510,67 @@
       "src": [
         "SRC-001638"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architects Orange",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.aoarchitects.com",
+      "website_basis": "opened",
+      "project_page": "https://www.aoarchitects.com/?p=13575",
+      "src": [
+        "SRC-002678",
+        "SRC-002217",
+        "SRC-001783"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Pacific West Builders",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002678"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Miramar Property Group, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002678"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "San Jose Stevens Creek Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Borrower / project owner entity (CalHFA)",
+      "src": [
+        "SRC-002678"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "MGP Stevens Creek Owner, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002678"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MGP Stevens Creek Development LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Co-administrative general partner",
+      "src": [
+        "SRC-002678"
+      ]
     }
   ],
   "financing": [
@@ -455,6 +643,26 @@
       "src": [
         "SRC-001638"
       ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "California Housing Finance Agency (CalHFA)",
+      "program": "Tax-exempt permanent loan with HUD Risk Sharing, 40-year, 6.72% locked rate (CalHFA final commitment)",
+      "amount": 36052500,
+      "date": "2024-01",
+      "src": [
+        "SRC-002678"
+      ]
+    },
+    {
+      "type": "Taxable bonds",
+      "provider": "California Housing Finance Agency (CalHFA)",
+      "program": "Taxable conduit bond issuance for Citibank construction loan (CalHFA final commitment)",
+      "amount": 36550152,
+      "date": "2024-01",
+      "src": [
+        "SRC-002678"
+      ]
     }
   ],
   "groups": {},
@@ -469,6 +677,24 @@
       "estimated": false
     },
     {
+      "date": "2024-01-05",
+      "type": "Other",
+      "label": "CalHFA Senior Loan Committee approved final commitment (board date 2024-01-25)",
+      "src": [
+        "SRC-002678"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-01-31",
+      "type": "Approved",
+      "label": "City approved phasing plan PDA20-012-01 making this building Phase 1",
+      "src": [
+        "SRC-002219"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-02",
       "type": "Sale",
       "label": "Affordable building site sold for $3.5 million; Pacific West Builders to develop it",
@@ -476,6 +702,42 @@
         "SRC-001783"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-02",
+      "type": "Construction start",
+      "label": "Estimated construction start per CalHFA staff report",
+      "src": [
+        "SRC-002678"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2024-02-22",
+      "type": "Permit issued",
+      "label": "Building permit 2024 072069 MF issued for 173 units",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-02",
+      "type": "Completion",
+      "label": "Estimated construction completion per CalHFA staff report",
+      "src": [
+        "SRC-002678"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027-02",
+      "type": "Stabilized",
+      "label": "Estimated stabilization and permanent loan conversion per CalHFA staff report",
+      "src": [
+        "SRC-002678"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -483,9 +745,100 @@
       "date": "2026-11-18",
       "by": "Paul via Claude",
       "action": "Record created: split from Stevens Creek Promenade (SCC-000030), where it was a component"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
-  "research": {},
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on project name, address and Pacific West; led to CalHFA report and APR permit row",
+      "src": [
+        "SRC-002678"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset for APN 296-40-009: geometry and situs only, no owner field; owner of record per CalHFA (Jan. 2024) was MGP Stevens Creek Owner, LLC",
+      "src": [
+        "SRC-001098",
+        "SRC-002678"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov documents refuse automated access; city permit numbers taken from SJ Build and state APR",
+      "src": [
+        "SRC-002219"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "State APR Table A2 2024 building permit row; CalHFA MIP final commitment report Jan. 2024; CTCAC CA-23-517 already on record",
+      "src": [
+        "SRC-001107",
+        "SRC-002678",
+        "SRC-001638"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Mercury News coverage cited via SJ Build; Real Deal 2024-02-22 returned 403; no construction-progress coverage found",
+      "src": [
+        "SRC-002219"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-02-23 names Architects Orange",
+      "src": [
+        "SRC-001783"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No Pacific West Communities or Miramar project page found for this building",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Architects Orange project page: architect of record, client Miramar Capital and TPC",
+      "src": [
+        "SRC-002217"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CalHFA report: permanent loan $36,052,500, taxable bonds $36,550,152, Citibank and Bonneville construction lenders, Boston Financial investor",
+      "src": [
+        "SRC-002678"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the project returned nothing",
+      "src": []
+    }
+  },
   "related": [
     {
       "id": "SCC-000030",

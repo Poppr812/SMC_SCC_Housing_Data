@@ -455,12 +455,11 @@
     "product_type": {
       "claims": [
         {
-          "value": "Mixed product",
+          "value": "Single-family",
           "src": [
-            "SRC-001115",
-            "SRC-001138"
+            "SRC-001115"
           ],
-          "note": "State categories: SFA, SFD"
+          "note": "State category SFD, ownership (2022 row, AS 22-09)"
         }
       ]
     },
@@ -469,10 +468,9 @@
         {
           "value": "Approved",
           "src": [
-            "SRC-001115",
-            "SRC-001138"
+            "SRC-001115"
           ],
-          "note": "State report shows entitlement approval"
+          "note": "State report 2022 Table A row: application AS 22-09 shown as approved"
         }
       ]
     },
@@ -490,71 +488,33 @@
     "total_units": {
       "claims": [
         {
-          "value": 158,
-          "src": [
-            "SRC-001138"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
-          "value": 172,
+          "value": 18,
           "src": [
             "SRC-001115"
           ],
-          "note": "Units in the application as reported"
+          "note": "State APR 2022 Table A row named Canyon Estates: 18 single-family detached above-moderate units, APNs 808-18-003, 808-18-024, 810-74-001 to -014, 810-75-001 to -007 and 810-75-011"
         }
-      ],
-      "best": 1
+      ]
     },
     "affordability_type": {
       "claims": [
         {
-          "value": "100% affordable",
+          "value": "Market-rate",
           "src": [
-            "SRC-001138"
-          ]
-        }
-      ]
-    },
-    "affordability_notes": {
-      "claims": [
-        {
-          "value": "158 deed-restricted units reported to the state",
-          "src": [
-            "SRC-001138"
-          ]
+            "SRC-001115"
+          ],
+          "note": "State report 2022: 18 above-moderate units"
         }
       ]
     },
     "planning_file": {
       "claims": [
         {
-          "value": "AS",
+          "value": "AS 22-09",
           "src": [
-            "SRC-001115",
-            "SRC-001138"
+            "SRC-001115"
           ],
-          "note": "Local tracking number as reported to the state"
-        }
-      ]
-    },
-    "restricted_by_ami": {
-      "claims": [
-        {
-          "value": [
-            {
-              "count": 16,
-              "ami": 50
-            },
-            {
-              "count": 142,
-              "ami": 80
-            }
-          ],
-          "src": [
-            "SRC-001138"
-          ],
-          "note": "State report 2018, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+          "note": "State APR 2022 Table A row named Canyon Estates"
         }
       ]
     }
@@ -566,6 +526,18 @@
         "SRC-001115",
         "SRC-001138"
       ]
+    },
+    {
+      "text": "State APR Gilroy rows: the 2022 Table A row named Canyon Estates (AS 22-09, filed 2022-03-17, approved) lists 18 single-family detached above-moderate ownership units on Portrush Ct, Southerland Ct and Walton Heath Ct, APNs 808-18-003, 808-18-024, 810-74-001 to -014, 810-75-001 to -007 and 810-75-011.",
+      "src": [
+        "SRC-001115"
+      ]
+    },
+    {
+      "text": "State APR Gilroy 2018 Table A row (filed 2018-06-11) at Glen Loma Ranch, APN 808-18-003/014-016, lists 172 single-family attached above-moderate ownership units with no project name.",
+      "src": [
+        "SRC-001115"
+      ]
     }
   ],
   "parties": [],
@@ -573,20 +545,13 @@
   "groups": {},
   "events": [
     {
-      "date": "2018-06-11",
+      "date": "2022-03-17",
       "type": "Application filed",
-      "label": "Application submitted",
+      "label": "Canyon Estates application AS 22-09 submitted (18 SFD units), status approved per state report",
       "src": [
         "SRC-001115"
-      ]
-    },
-    {
-      "date": "2018-09-19",
-      "type": "Approved",
-      "label": "Entitlement approved",
-      "src": [
-        "SRC-001138"
-      ]
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -594,6 +559,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Split: the 158-unit Town Center / Glen Loma Ranch Apartments row moved to SCC-000645; the 2018 172-unit Glen Loma Ranch row is described in a note and not counted here"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web searches on Canyon Estates Gilroy and its street names returned no project pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel dataset: APN 810-74-001 situs 1501 Portrush Ln, Gilroy; 810-75-001 and 810-75-011 have no situs; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Gilroy housing pages searched; no Canyon Estates planning record found online",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "State APR Gilroy Table A 2018 and 2022, Table A2 2018; CTCAC CA-20-900",
+      "src": [
+        "SRC-001115",
+        "SRC-001138",
+        "SRC-002680"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No local news on Canyon Estates found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No developer named in any source found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing found for the 18-unit Canyon Estates row; LIHTC data relates to Glen Loma Ranch Apartments (CA-20-900)",
+      "src": [
+        "SRC-002680"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search returned nothing",
+      "src": []
+    }
+  }
 }
