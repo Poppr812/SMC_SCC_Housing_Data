@@ -197,10 +197,26 @@
         {
           "value": 96,
           "src": [
-            "SRC-001559"
+            "SRC-001559",
+            "SRC-003043"
           ]
+        },
+        {
+          "value": 97,
+          "src": [
+            "SRC-003043"
+          ],
+          "note": "August 12, 2024 application: 94 multi-family units and three single-family dwellings, 20 affordable"
+        },
+        {
+          "value": 85,
+          "src": [
+            "SRC-001559"
+          ],
+          "note": "Preliminary application (2024-02-15)"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -209,6 +225,13 @@
           "src": [
             "SRC-001558"
           ]
+        },
+        {
+          "value": "GEO24-0031",
+          "src": [
+            "SRC-003043"
+          ],
+          "note": "Geotechnical application filed with CPX24-0002"
         }
       ]
     },
@@ -233,6 +256,49 @@
           ]
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 219515,
+          "src": [
+            "SRC-001559"
+          ],
+          "note": "Total floor area, 26 buildings"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001559"
+          ],
+          "note": "Three stories except Building 26, four stories"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003043"
+          ],
+          "note": "13 of 96 units for low-income households"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "13 units for low-income households (April 2025 plans); the August 2024 application had 20 affordable units",
+          "src": [
+            "SRC-003043"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -247,18 +313,135 @@
       "src": [
         "SRC-001558"
       ]
+    },
+    {
+      "text": "City letter addressed to Ryan O'Toole, Ferris Development Group, 118 Turnpike Road, Southborough, MA. The project is called Chadwick Heights in city filings (APN 503-15-084).",
+      "src": [
+        "SRC-003043"
+      ]
+    },
+    {
+      "text": "Condition of Title Guarantee dated 7/22/2024 lists the owner as the David L. House Living Trust; the Vesting Tentative Map lists Ferris Development Group, LLC as owner.",
+      "src": [
+        "SRC-003043"
+      ]
+    },
+    {
+      "text": "Architectural plans (46 sheets) prepared by Dmarc Studio, dated August 12, 2024. City geotechnical consultant Cotton, Shires and Associates reviewed the application.",
+      "src": [
+        "SRC-003043"
+      ]
+    },
+    {
+      "text": "City page: seven-lot subdivision, 26 buildings in six unit types; the 15-unit building is reached only from Comer Drive and the rest from Chiquita Court; site average slope 16.7%.",
+      "src": [
+        "SRC-001559"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Ferris Development Group, LLC",
+      "contact": "Ryan O'Toole",
+      "linkedin": null,
+      "website": "https://www.ferrisdevelopment.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003043"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dmarc Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003043"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "David L. House Living Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003043"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-02-15",
+      "type": "Application filed",
+      "label": "Preliminary application received (85 units)",
+      "src": [
+        "SRC-001559"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-08-12",
       "type": "Application filed",
       "label": "Formal application received",
       "src": [
         "SRC-001559"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-09-11",
+      "type": "Other",
+      "label": "Application deemed incomplete",
+      "src": [
+        "SRC-003043"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-09",
+      "type": "Other",
+      "label": "Revised plans submitted",
+      "src": [
+        "SRC-003043"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-16",
+      "type": "Other",
+      "label": "Revised application deemed incomplete",
+      "src": [
+        "SRC-003043"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-04-15",
+      "type": "Other",
+      "label": "Revised plans submitted, opting into some AB 1893 provisions (96 units)",
+      "src": [
+        "SRC-003043"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-14",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-003043"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-12",
+      "type": "Other",
+      "label": "Notice of Inconsistent Application issued",
+      "src": [
+        "SRC-003043"
       ],
       "estimated": false
     }
@@ -268,6 +451,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Chadwick Heights, Vineyard Hill and Ferris Development Group; city document center letter",
+      "src": [
+        "SRC-003043"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel API (ubcd-cewv) APN 50315084: no owner field, no situs address",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Saratoga project page milestones and 2025-06-12 Notice of Inconsistent Application (CPX24-0002 / GEO24-0031) with attachments",
+      "src": [
+        "SRC-001559",
+        "SRC-003043"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Incorporated Saratoga project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR data Saratoga rows searched for Chiquita and APN: no rows; city page lists no environmental documents yet (EIR paused)",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SJ Spotlight Saratoga builder's remedy articles found cover other projects (14001 Chester Avenue)",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-16 article on Saratoga builder's remedy projects returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "ferrisdevelopment.com opened: Southborough MA office/flex leasing site, no Saratoga project",
+      "src": [
+        "SRC-003044"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Dmarc Studio returned no architecture firm page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in city filings or search results",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search showed Ferris Development Group company page only; no post on this project",
+      "src": []
+    }
+  }
 }

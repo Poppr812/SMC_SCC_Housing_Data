@@ -122,6 +122,13 @@
           "src": [
             "SRC-001218"
           ]
+        },
+        {
+          "value": 83,
+          "src": [
+            "SRC-003041"
+          ],
+          "note": "MidPen community meeting board (file dated November 2021): 81 affordable units plus 2 manager's units; unit mix and count subject to change through city review"
         }
       ]
     },
@@ -142,6 +149,38 @@
           "src": [
             "SRC-001218"
           ]
+        },
+        {
+          "value": "MidPen board: housing for families earning 30-60% of area median income; 81 affordable units",
+          "src": [
+            "SRC-003041"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 38,
+            "2br": 23,
+            "3br": 22
+          },
+          "src": [
+            "SRC-003041"
+          ],
+          "note": "Proposed mix: 38 one-bedroom, 21 two-bedroom, 22 three-bedroom, plus 2 two-bedroom manager's units"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003041"
+          ],
+          "note": "Manager's units"
         }
       ]
     }
@@ -152,9 +191,52 @@
       "src": [
         "SRC-001218"
       ]
+    },
+    {
+      "text": "MidPen board states Tishman Speyer will provide the site and predevelopment funds, described as more than double what would be due under the City's Affordable Housing Ordinance; the site will be dedicated for 100% affordable housing.",
+      "src": [
+        "SRC-003041"
+      ]
+    },
+    {
+      "text": "The 2021 MidPen board shows 83 units; the city project list shows 98 units (38 very low, 58 low, 2 property management).",
+      "src": [
+        "SRC-003041"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "MidPen Housing",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.midpen-housing.org",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003041"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "609 PRICE LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003042"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Tishman Speyer",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Provides site and predevelopment funds (2300 Broadway office developer)",
+      "src": [
+        "SRC-003041"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [],
@@ -163,6 +245,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 609 Price and 2300 Broadway: MidPen community meeting board hosted on coUrbanize",
+      "src": [
+        "SRC-003041"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Mateo County active parcels, APN 052-402-100: owner 609 PRICE LLC, situs 609 Price Ave",
+      "src": [
+        "SRC-003042"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Redwood City PlanningProjects API id 109 (2300 Broadway/609 Price), status Application Deemed Incomplete; Redwood City has no Legistar web API client",
+      "src": [
+        "SRC-001218"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "San Mateo County Legistar matters searched for Price Ave: no items",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR data (data.ca.gov) Redwood City rows searched for Price and the APN: no rows; web search found no CTCAC/CDLAC staff report for 609 Price",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "SM Daily Journal article on 2300 Broadway first approval (Sept 2024) returned 403; RWC Pulse 2026-08-01 article on affordable site swaps covers 1900 Broadway, not this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SF YIMBY 2300 Broadway category: only a June 2021 article on the office building, no mention of 609 Price",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "MidPen community meeting board names MidPen as developer; midpen-housing.org site search shows no 609 Price project page",
+      "src": [
+        "SRC-003041"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named for 609 Price in the city record or MidPen board; WRNS Studio is listed only for the 2300 Broadway office building",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "MidPen board: Tishman Speyer providing site and predevelopment funds; no amount stated; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-003041"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web searches returned no public LinkedIn posts on 609 Price",
+      "src": []
+    }
+  }
 }

@@ -35,6 +35,66 @@
           37.5051314
         ]
       ]
+    },
+    {
+      "apn": "050-131-070",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.2613199,
+          37.505032
+        ],
+        [
+          -122.2617066,
+          37.5047382
+        ],
+        [
+          -122.2618256,
+          37.5048376
+        ],
+        [
+          -122.2614389,
+          37.5051314
+        ],
+        [
+          -122.2613199,
+          37.505032
+        ]
+      ]
+    },
+    {
+      "apn": "050-131-080",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.2612011,
+          37.5049328
+        ],
+        [
+          -122.2615877,
+          37.5046388
+        ],
+        [
+          -122.2617066,
+          37.5047382
+        ],
+        [
+          -122.2613199,
+          37.505032
+        ],
+        [
+          -122.2612011,
+          37.5049328
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -261,6 +321,42 @@
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 8000000,
+          "src": [
+            "SRC-003045"
+          ],
+          "note": "County purchase of APNs 050-131-060, -070, -080 from Dragonfly Assets C-50, LLC; Board resolution 2024-02-13"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family",
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-001254"
+          ],
+          "note": "At least 75 units for large-family households; at least 25% reserved for City and County employees"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001146"
+          ],
+          "note": "2020 APR row for the earlier 35-unit plan (PLN2017-00093)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -274,6 +370,37 @@
       "text": "Site is three county-owned parcels: APNs 050-131-060, 050-131-070, 050-131-080.",
       "src": [
         "SRC-001254"
+      ]
+    },
+    {
+      "text": "County RFP: site approximately 26,500 sq ft; minimum 75 affordable units at or below 80% AMI with set-asides for extremely low income households and people experiencing homelessness, and preference for City and County employees. Ten developers submitted proposals; the selection committee unanimously recommended MidPen.",
+      "src": [
+        "SRC-003048",
+        "SRC-003049"
+      ]
+    },
+    {
+      "text": "County Board resolution 25-1051 authorizes site control through a ground lease of at least 55 years and a Development Agreement with MidPen.",
+      "src": [
+        "SRC-003047"
+      ]
+    },
+    {
+      "text": "City page (updated 2026-10-15): SB 330 preliminary application, AB 130 CEQA exemption and State Density Bonus Law; proposed height 84'-5\" where MU-DC-100 zoning allows 50 feet; 80 parking spaces in a two-level partially below-grade garage; 8 short-term and 50 long-term bike spaces; first-round comments issued, awaiting resubmission.",
+      "src": [
+        "SRC-001254"
+      ]
+    },
+    {
+      "text": "BASE Landscape Architecture lists Walnut Street Affordable Housing in San Carlos for client MidPen Housing, 0.6 acres, architect FORA Architects.",
+      "src": [
+        "SRC-003046"
+      ]
+    },
+    {
+      "text": "The 2020 APR row for the earlier plan (PLN2017-00093) reports 8 demolished rental units and 45-year deed restriction term.",
+      "src": [
+        "SRC-001146"
       ]
     }
   ],
@@ -306,9 +433,60 @@
         "SRC-001254"
       ],
       "website": "https://www.smcgov.org"
+    },
+    {
+      "role": "Seller",
+      "company": "Dragonfly Assets C-50, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003045"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "FORA Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003046"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "BASE Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.baselandscape.com",
+      "website_basis": "opened",
+      "project_page": "https://www.baselandscape.com/work-walnut-street-housing",
+      "src": [
+        "SRC-003046"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MidPen Housing",
+      "contact": "Rebecca Cirelli",
+      "linkedin": null,
+      "other_role": "Applicant contact (Senior Project Manager)",
+      "src": [
+        "SRC-001254"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Predevelopment loan",
+      "provider": "County of San Mateo Department of Housing",
+      "program": "Measure K (Affordable Housing Fund) initial predevelopment loan, not to exceed",
+      "amount": 250000,
+      "date": "2025-12-09",
+      "src": [
+        "SRC-003047"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -318,6 +496,42 @@
       "src": [
         "SRC-001146"
       ]
+    },
+    {
+      "date": "2024-02-13",
+      "type": "Sale",
+      "label": "County Board approves purchase from Dragonfly Assets C-50, LLC for $8,000,000",
+      "src": [
+        "SRC-003045"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-21",
+      "type": "Other",
+      "label": "County Department of Housing issues developer RFP",
+      "src": [
+        "SRC-003048"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-09",
+      "type": "Other",
+      "label": "County Board approves exclusive negotiating agreement with MidPen and $250,000 predevelopment loan",
+      "src": [
+        "SRC-003047"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-23",
+      "type": "Other",
+      "label": "Applicant community meeting",
+      "src": [
+        "SRC-001254"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-08-20",
@@ -344,6 +558,103 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on MidPen, Walnut Street and San Carlos: MidPen release, county RFP page, Patch, BASE Landscape project page",
+      "src": [
+        "SRC-003050",
+        "SRC-003048",
+        "SRC-003046"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Mateo County active parcels: 050-131-070 (640 Walnut) and 050-131-080 (648 Walnut) both owned by County of San Mateo & Real Property Division",
+      "src": [
+        "SRC-003051",
+        "SRC-003052"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Carlos project page updated 2026-10-15: height, bike parking, SB 330/AB 130 pathway, applicant contact",
+      "src": [
+        "SRC-001254"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SMC Legistar files 24-103 (purchase, 2024-02-13) and 25-1051 (ENA and predevelopment loan, 2025-12-09); county RFP page; county press release 2025-12-15",
+      "src": [
+        "SRC-003045",
+        "SRC-003047",
+        "SRC-003048",
+        "SRC-003049"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR data San Carlos 2020 row for 626 Walnut (PLN2017-00093): 45-year term, 8 demolished units",
+      "src": [
+        "SRC-001146"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Patch 2025-12-16 on developer selection; SM Daily Journal articles returned 403",
+      "src": [
+        "SRC-003053"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web searches returned no trade press items on the Walnut Street project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "MidPen news release 2025-12-15",
+      "src": [
+        "SRC-003050"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "BASE Landscape Architecture project page names FORA Architects as architect",
+      "src": [
+        "SRC-003046"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County Measure K predevelopment loan up to $250,000 (Legistar 25-1051)",
+      "src": [
+        "SRC-003047"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web searches returned no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -125,11 +125,69 @@
           "note": "\"including 10% as affordable housing\""
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PRE24-112",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Preliminary review, focused (policy review, no plans)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001956",
+            "SRC-001764"
+          ],
+          "note": "Five stories of residential over two stories of parking"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.71,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per the 2018 office rezoning and special use permit records for the same APN"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "Seven stories, 95 rental units, 10% affordable. Preliminary filing, July 2024.",
+      "src": [
+        "SRC-001764"
+      ]
+    },
+    {
+      "text": "PRE24-112 description: demolish existing buildings and build a seven-story mixed-use building with five stories of residential over two stories of parking, ground-floor commercial and residential lobby.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "Earlier office proposal on the same APN: rezoning C18-043 and special use permit SP18-049 for a 94,996 sq ft five-level office and retail building, both approved 2019-11-19 (applicant Courtenay Bauer, Verse Design).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City records show planning consultation AD22-587 (Pacific Row Development LLC, filed 2022-09-16) and a demolition-only special use permit SP25-009 with status New.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY: site holds a vacant commercial building, formerly Khanh's restaurant; the property has been listed for sale by Alliance Bay Realty.",
       "src": [
         "SRC-001764"
       ]
@@ -145,11 +203,60 @@
       "src": [
         "SRC-001764"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Pacific Row Development LLC",
+      "contact": "Paul Yu",
+      "linkedin": null,
+      "other_role": "Owner and applicant in city permit records (AD22-587, SP25-009)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "HPL Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner through Pacific Row Development LLC, per SF YIMBY",
+      "src": [
+        "SRC-001764"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Alliance Bay Realty",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001764"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "D3PA LLP",
+      "contact": "Lawrence DeSantis",
+      "linkedin": null,
+      "other_role": "Applicant, PRE24-112",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2024-05-02",
+      "type": "Application filed",
+      "label": "Preliminary review PRE24-112 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -160,6 +267,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search on 335 S Winchester: only the SF YIMBY article on record; other results are nearby apartment listings",
+      "src": [
+        "SRC-001764"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel API (ubcd-cewv) APN 30339047: situs 335 S Winchester Bl, no owner field",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer, APN 30339047: PRE24-112, AD22-587, SP25-009, SP18-049, C18-043",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "San Jose city project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR data San Jose rows searched for 335 Winchester and the APN: no rows",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web searches returned no local news on this address",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-07-07: owner HPL Development via Pacific Row Development LLC, listing broker Alliance Bay Realty; ConnectCRE Winchester article returned 403",
+      "src": [
+        "SRC-001764"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Pacific Row Development and HPL Development found only a business directory listing, no project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "D3PA site opened: lists work categories, no project page for this site",
+      "src": [
+        "SRC-003054"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in city records or press",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web searches returned no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
