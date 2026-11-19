@@ -246,6 +246,13 @@
           "src": [
             "SRC-001342"
           ]
+        },
+        {
+          "value": "P22-0024, DR22-0007, TDM22-0002",
+          "src": [
+            "SRC-002201"
+          ],
+          "note": "Entitlement resolution, Planning Commission March 2023"
         }
       ]
     },
@@ -256,6 +263,14 @@
           "src": [
             "SRC-001342"
           ]
+        },
+        {
+          "value": 7,
+          "src": [
+            "SRC-002200",
+            "SRC-002201"
+          ],
+          "note": "Approved entitlements: 7 stories, 85 feet (city resolution); SF YIMBY gives 77 feet. City map shows 5"
         }
       ]
     },
@@ -286,6 +301,72 @@
             "SRC-001113"
           ],
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 27,
+              "ami": 50
+            },
+            {
+              "count": 54,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-002202"
+          ],
+          "note": "Affordable Housing Agreement executed March 2025: 27 very low-income units (rents at 50% AMI) and 54 low-income units (rents at 60% AMI, eligibility up to 80% AMI), 15% of units"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 62,
+            "1br": 252,
+            "2br": 229,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002200"
+          ],
+          "note": "As presented to the Planning Commission, March 2023 (543 units)"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 563,
+          "src": [
+            "SRC-002200"
+          ],
+          "note": "563-car garage, March 2023 plans"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 464440,
+          "src": [
+            "SRC-002200"
+          ],
+          "note": "March 2023 plans; total building area about 910,740 sq ft"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 461,
+          "src": [
+            "SRC-002200"
+          ],
+          "note": "March 2023 plans: 461 market-rate, 82 deed-restricted"
         }
       ]
     }
@@ -296,6 +377,19 @@
       "src": [
         "SRC-001112",
         "SRC-001113"
+      ]
+    },
+    {
+      "text": "December 2025 Council item: Essex asked to amend the Affordable Housing Agreement. Option 1 kept 81 units (27 very low at 50% AMI, 27 low at 70% AMI, 27 moderate at 110% AMI); Option 2 cut to 54 very low-income units (10%). City consultant Economic & Planning Systems put the AHA rents at about $525,000 a year below the developer's assumed rents, a 2.2% reduction in project value. Taking no action leaves the AHA as executed. Legistar shows both amendment resolutions (25-1265, 25-1266) with status Filed.",
+      "src": [
+        "SRC-002202",
+        "SRC-002204"
+      ]
+    },
+    {
+      "text": "SF YIMBY, November 2021: Essex Property Trust and Infill Land Partners LLC bought the 4.2-acre site, with a 25,000 sq ft warehouse, from Sandhill Land Co. for $33.5 million; the 2021 plan was a five-story, 445-apartment building.",
+      "src": [
+        "SRC-002203"
       ]
     }
   ],
@@ -318,6 +412,42 @@
         "SRC-001342"
       ],
       "website": "https://www.essexapartmenthomes.com"
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002200"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002200"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "Sandhill Land Co.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002203"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Essex Portfolio, L.P.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002204"
+      ]
     }
   ],
   "financing": [],
@@ -349,12 +479,49 @@
       ]
     },
     {
+      "date": "2025-03",
+      "type": "Other",
+      "label": "Affordable Housing Agreement executed",
+      "src": [
+        "SRC-002202"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-03",
+      "type": "Other",
+      "label": "Grading permit issued",
+      "src": [
+        "SRC-002202"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-05-06",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001113"
       ]
+    },
+    {
+      "date": "2025-09",
+      "type": "Other",
+      "label": "Essex requested amendment to the Affordable Housing Agreement",
+      "src": [
+        "SRC-002202"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-10",
+      "type": "Other",
+      "label": "City Council considered Essex's Affordable Housing Agreement amendment request",
+      "src": [
+        "SRC-002202",
+        "SRC-002204"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -372,6 +539,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 7 S Linden Ave, Essex; SF YIMBY 2021 and 2023 articles",
+      "src": [
+        "SRC-002203",
+        "SRC-002200"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC active parcels layer, APN 014-074-010, owner Essex Portfolio LP already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SSF Legistar (ci-ssf-ca): PC 2023-03 matters 23-194/23-195/23-210; CC 2025-12-10 matters 25-1262/1265/1266 and presentation",
+      "src": [
+        "SRC-002201",
+        "SRC-002204",
+        "SRC-002202"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "APR rows already on record; no CTCAC or CEQAnet filing (market-rate project, CEQA streamlined under General Plan EIR per city resolution)",
+      "src": [
+        "SRC-001113"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (2023 approval, 2025 AHA amendment) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2021 and 2023; The Real Deal returned 403; ULI 2026 agenda snippet only",
+      "src": [
+        "SRC-002203",
+        "SRC-002200"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Essex Q2 2026 results release mentions one property in active development, not named",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "BDE Architecture and The Guzzardo Partnership named in SF YIMBY March 2023",
+      "src": [
+        "SRC-002200"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No construction lender or financing reported in any opened source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; nothing surfaced",
+      "src": []
+    }
+  }
 }

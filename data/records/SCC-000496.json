@@ -219,6 +219,13 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 576,
+          "src": [
+            "SRC-002196"
+          ],
+          "note": "Green Foothills, October 2025: 576 housing units. County list and SF YIMBY show 567"
         }
       ]
     },
@@ -229,6 +236,13 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "PLN24-217-PRE",
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "Preliminary application record number, submitted November 14, 2024"
         }
       ]
     },
@@ -252,6 +266,13 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 75,
+          "src": [
+            "SRC-002197"
+          ],
+          "note": "SF YIMBY: roughly 75 acres of agricultural land. County list shows parcel size 64.7 acres"
         }
       ]
     },
@@ -281,6 +302,24 @@
       "text": "220 townhomes, 237 single-family homes, 110 affordable apartments. County status: Incomplete, July 27, 2026.",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "text": "Green Foothills (October 21 and 23, 2025) calls the project Cameron Park and says the developer appealed the County's determination that the application was incomplete; the vote was postponed to November 20, 2025. It says the site has prime farmland soils and lies in a FEMA flood zone and a liquefaction zone.",
+      "src": [
+        "SRC-002196"
+      ]
+    },
+    {
+      "text": "County list: Supervisor District 1; development area TBD.",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "text": "SF YIMBY, November 2024: unaddressed agricultural property next to Cameron Boulevard and a storage facility, about two miles from Downtown Gilroy; Swenson Builders is applicant and owner, doing business as Green Valley Corporation.",
+      "src": [
+        "SRC-002197"
       ]
     }
   ],
@@ -319,11 +358,29 @@
   "groups": {},
   "events": [
     {
+      "date": "2024-11-14",
+      "type": "Application filed",
+      "label": "Preliminary application PLN24-217-PRE submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-04-17",
       "type": "Application filed",
       "label": "Formal SB 330 application submitted",
       "src": [
         "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-20",
+      "type": "Other",
+      "label": "County Planning Commission hearing date for developer's appeal of incompleteness determination (postponed from October 23, 2025)",
+      "src": [
+        "SRC-002196"
       ],
       "estimated": false
     }
@@ -338,6 +395,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on Cameron Park, Cameron Blvd Gilroy, Swenson, PLN25-066; Green Foothills and SF YIMBY pre-application article",
+      "src": [
+        "SRC-002196",
+        "SRC-002197"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 841-17-084: no situs address, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "Unincorporated county project; City of Gilroy not the reviewing agency",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list: preliminary PLN24-217-PRE (2024-11-14), formal PLN25-066-SB330 (2025-04-17), Incomplete July 27, 2026; County Legistar API not available",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No CEQAnet, CTCAC or APR entry found for the project",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Green Foothills posts October 21/23 and October 27, 2025 on incompleteness appeals; Gilroy Dispatch search found only other Gilroy projects",
+      "src": [
+        "SRC-002196"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY November 2024 pre-application article; December 2024 SB 330 article already on record",
+      "src": [
+        "SRC-002197",
+        "SRC-001432"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "swensonbuilders.com homepage: no mention of Gilroy or Cameron Park",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect or engineer named in county list or articles",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No financing reported; project application incomplete",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search only; nothing surfaced",
+      "src": []
+    }
+  }
 }
