@@ -208,24 +208,23 @@
     "product_type": {
       "claims": [
         {
-          "value": "Mixed product",
+          "value": "Apartments",
           "src": [
             "SRC-001099",
             "SRC-001107"
           ],
-          "note": "State categories: 5+, SFD"
+          "note": "State category 5+ units, rental tenure (file MP22-003)"
         }
       ]
     },
     "status": {
       "claims": [
         {
-          "value": "Under construction",
+          "value": "Approved",
           "src": [
-            "SRC-001099",
-            "SRC-001107"
+            "SRC-002555"
           ],
-          "note": "State report shows certificates of occupancy for some of the units, not all"
+          "note": "January 2025: the church had raised about $13 million of roughly $200 million needed and was seeking funding"
         }
       ]
     },
@@ -245,9 +244,18 @@
         {
           "value": 237,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-002553",
+            "SRC-002554"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 240,
+          "src": [
+            "SRC-002555"
+          ],
+          "note": "January 2025: 240 affordable homes in two complexes"
         }
       ]
     },
@@ -258,6 +266,14 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-002554",
+            "SRC-002553"
+          ],
+          "note": "MP22-003: 100% affordable, at least 60 supportive housing units"
         }
       ]
     },
@@ -274,7 +290,7 @@
     "planning_file": {
       "claims": [
         {
-          "value": "MP22-003, SF22-033",
+          "value": "MP22-003",
           "src": [
             "SRC-001099",
             "SRC-001107"
@@ -319,6 +335,42 @@
           "note": "State report 2022, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-002553"
+          ],
+          "note": "About 78 senior units; 159 for unhoused people, adults with disabilities and youth leaving foster care"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002554"
+          ],
+          "note": "Two six-story buildings"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.7,
+          "src": [
+            "SRC-002554"
+          ],
+          "note": "Approximate gross development site within the church's 13.4-acre parcel"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -330,7 +382,7 @@
       ]
     },
     {
-      "text": "The state report's rows for this project also name 333 Virginia St, 333 W Virginia St, 333 West Virginia Street. These may be separate projects, and the unit count may include them.",
+      "text": "State report rows for file MP22-003 (2022) give 333 W Virginia St and APN 264-35-039; the 2023 entitlement row gives 2315 Canoas Garden Ave and APN 456-25-005. Rows at 333 W Virginia St under SF22-033 and two ADU permits cover one single-family home and two ADUs, not this project.",
       "src": [
         "SRC-001099",
         "SRC-001107"
@@ -353,6 +405,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "San José Spotlight (2022-12-23): 237 apartments in two buildings on the Cathedral of Faith parking lot; Sand Hill estimated about $800,000 per apartment to build and planned to apply for city and state subsidies; SHP Christian Foundation committed undisclosed funds.",
+      "src": [
+        "SRC-002553"
+      ]
+    },
+    {
+      "text": "San José Spotlight (2025-01-23): the church plans 240 affordable homes in two complexes on its 13.4-acre property with Sand Hill Property Company and had raised about $13 million of roughly $200 million needed.",
+      "src": [
+        "SRC-002555"
+      ]
     }
   ],
   "parties": [
@@ -365,6 +429,27 @@
         "SRC-001814"
       ],
       "website": "https://www.shpco.com/"
+    },
+    {
+      "role": "Other",
+      "company": "SHP Christian Foundation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Funder (nonprofit affiliate of Sand Hill Property Company)",
+      "src": [
+        "SRC-002553"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cathedral of Faith",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Church on whose property the project sits",
+      "src": [
+        "SRC-002553",
+        "SRC-002555"
+      ]
     }
   ],
   "financing": [],
@@ -379,25 +464,17 @@
       ]
     },
     {
+      "date": "2022-12-22",
+      "type": "Other",
+      "label": "Mayor announces 237-unit affordable project at Cathedral of Faith",
+      "src": [
+        "SRC-002553"
+      ]
+    },
+    {
       "date": "2023-01-10",
       "type": "Approved",
       "label": "Entitlement approved",
-      "src": [
-        "SRC-001107"
-      ]
-    },
-    {
-      "date": "2023-11-20",
-      "type": "Permit issued",
-      "label": "Building permit issued",
-      "src": [
-        "SRC-001107"
-      ]
-    },
-    {
-      "date": "2025-05-22",
-      "type": "Other",
-      "label": "Certificate of occupancy reported for some units",
       "src": [
         "SRC-001107"
       ]
@@ -428,6 +505,100 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Removed the 333 W Virginia St single-family home and ADU rows (permit 2023-11-20, occupancy 2025-05-22) that were mixed into this record"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 2315 Canoas Garden and Cathedral of Faith housing",
+      "src": [
+        "SRC-002553",
+        "SRC-002555"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 456-25-005; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "City permits GIS layer (MP22-003, MPA22-003-01, T26-007) already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Search of treasurer.ca.gov and hcd.ca.gov for Canoas Garden: no CTCAC, CDLAC or HCD award",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San José Spotlight 2022-12-23 and 2025-01-23; localnewsmatters.org returned 403",
+      "src": [
+        "SRC-002553",
+        "SRC-002555"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SJ Build listing; SF YIMBY 2023 article already on record",
+      "src": [
+        "SRC-002554",
+        "SRC-001814"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "shpco.com home page: no mention of the project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SHP Christian Foundation funding commitment; January 2025 fundraising status",
+      "src": [
+        "SRC-002553",
+        "SRC-002555"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com; no matching posts",
+      "src": []
+    }
+  }
 }

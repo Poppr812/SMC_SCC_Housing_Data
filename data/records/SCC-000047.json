@@ -96,6 +96,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "4310 Monterey Rd, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001642"
+      ]
     }
   ],
   "images": [],
@@ -154,7 +161,8 @@
         {
           "value": 240,
           "src": [
-            "SRC-001792"
+            "SRC-001792",
+            "SRC-001642"
           ],
           "note": "June 2024 article: 240 units in two buildings. Earlier filings were 426, then 366."
         }
@@ -168,8 +176,17 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001642",
+            "SRC-001792"
+          ],
+          "note": "237 low-income units plus 3 market-rate manager units"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_notes": {
       "claims": [
@@ -234,6 +251,106 @@
             "SRC-001099"
           ],
           "note": "State report 2020, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 24,
+              "ami": 30
+            },
+            {
+              "count": 24,
+              "ami": 50
+            },
+            {
+              "count": 94,
+              "ami": 60
+            },
+            {
+              "count": 95,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001642"
+          ],
+          "note": "CTCAC staff report 2023-12-06; 3 manager units not restricted"
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 240,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001642"
+          ],
+          "note": "CTCAC unit mix: 240 one-bedroom units. AO Architects and SF YIMBY describe mainly studios and one-bedrooms."
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001642"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 119167043,
+          "src": [
+            "SRC-001642"
+          ],
+          "note": "Project cost summary at application"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001792",
+            "SRC-002539"
+          ],
+          "note": "SF YIMBY: five stories; AO Architects: 4 stories over a 1-story podium"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-002540"
+          ],
+          "note": "Real Deal story reposted by AO Architects: six-story complex"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1420,
+          "src": [
+            "SRC-001792"
+          ],
+          "note": "Retail in Building 1"
+        },
+        {
+          "value": 3025,
+          "src": [
+            "SRC-002539"
+          ],
+          "note": "AO project data; the same page's description says 1,075 sq ft of ground-floor retail"
         }
       ]
     }
@@ -268,6 +385,24 @@
       "text": "City of San Jose permit HA20-024-01 (Ministerial Permit, folder year 2023), status Approved, issue date 2024-05-09: \"SB 35 Streamlined Ministerial Permit Amendment to decrease the number of units from 426 multi-family units to 366 multifamily units; reduce the height of the buildings from approximately 76 feet, 6 inches to approximately 70 feet, 6 inches; change the pha\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "CTCAC staff report (2023-12-06): construction-period sources also list deferred costs of $1,979,480, deferred developer fee of $11,800,000 and tax credit equity of $9,733,408. Approved developer fee $11,800,000. Bond issuer CMFA; management agent ConAm Management Corporation.",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "text": "SF YIMBY: Building 1 has 124 units in 67,750 sq ft plus 1,420 sq ft of retail; Building 2 has 116 units in 54,800 sq ft. Parking uses stackers in each podium. Three units are market-rate manager units.",
+      "src": [
+        "SRC-001792"
+      ]
+    },
+    {
+      "text": "AO Architects describes the project as 3D volumetric modular construction over a podium, with modules by Prefab Logic, and lists AO as design architect and architect of record.",
+      "src": [
+        "SRC-002539"
       ]
     }
   ],
@@ -321,9 +456,188 @@
       ],
       "other_role": "Applicant (CTCAC)",
       "email": "calebr@tpchousing.com"
+    },
+    {
+      "role": "Developer",
+      "company": "Pacific West Communities, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Central Valley Coalition for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001642",
+        "SRC-002540"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "TPC Holdings IX, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner (CTCAC)",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Boston Financial",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citibank, N.A.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bonneville",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001642",
+        "SRC-002541"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "AO Architects",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://www.aoarchitects.com/project/monterey/",
+      "src": [
+        "SRC-002539",
+        "SRC-001792"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "AMG & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Client named by architect",
+      "src": [
+        "SRC-002539"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Prefab Logic",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Modular manufacturer",
+      "src": [
+        "SRC-002539"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citibank, N.A.",
+      "program": "Tax-exempt construction loan",
+      "amount": 63500000,
+      "date": "2023-12-06",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank, N.A.",
+      "program": "Taxable construction loan",
+      "amount": 14154155,
+      "date": "2023-12-06",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Bonneville",
+      "program": "Tax-exempt construction loan",
+      "amount": 18000000,
+      "date": "2023-12-06",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank, N.A.",
+      "program": "Tax-exempt permanent loan",
+      "amount": 46000000,
+      "date": "2023-12-06",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bonneville",
+      "program": "Tax-exempt permanent loan",
+      "amount": 18000000,
+      "date": "2023-12-06",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Boston Financial",
+      "program": "Federal 4% LIHTC, $5,794,275 annual credits (CA-23-609)",
+      "amount": 48667043,
+      "date": "2023-12-06",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Pacific West Communities, Inc.",
+      "program": "Permanent sources",
+      "amount": 6500000,
+      "date": "2023-12-06",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Municipal Finance Authority",
+      "program": "CDLAC 2024 supplemental pool allocation 24-573 (2023 carryforward)",
+      "amount": 3000000,
+      "date": "2024-12-11",
+      "src": [
+        "SRC-002541"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -343,11 +657,27 @@
       ]
     },
     {
+      "date": "2023-12-06",
+      "type": "Other",
+      "label": "CTCAC recommends 4% tax credit reservation (CA-23-609)",
+      "src": [
+        "SRC-001642"
+      ]
+    },
+    {
       "date": "2024-05-30",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2024-12-11",
+      "type": "Other",
+      "label": "CDLAC supplemental bond allocation of $3,000,000 (24-573)",
+      "src": [
+        "SRC-002541"
       ]
     }
   ],
@@ -381,6 +711,99 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 4300 Monterey Road; AO Architects project and news pages",
+      "src": [
+        "SRC-002539",
+        "SRC-002540"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 684-02-013: situs 4300 Monterey Rd; dataset has no owner field. A 4310 Monterey situs search returned only a Gilroy parcel.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "City permits GIS layer (H20-024, HA20-024-01) already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report CA-23-609; CDLAC 2024 supplemental allocation summary (24-573)",
+      "src": [
+        "SRC-001642",
+        "SRC-002541"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "Mercury News June 2024 loan story known only through trade coverage; therealdeal.com returned 403",
+      "src": [
+        "SRC-001792"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024-06-20; Real Deal story reposted on AO Architects site",
+      "src": [
+        "SRC-001792",
+        "SRC-002540"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "tpchousing.com home page: no project page for Monterey Road Apartments",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "AO Architects project page",
+      "src": [
+        "SRC-002539"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC sources and uses (Citibank, Bonneville, Boston Financial); CDLAC bond allocation",
+      "src": [
+        "SRC-001642",
+        "SRC-002541"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com for 4300 Monterey; no matching posts",
+      "src": []
+    }
+  }
 }

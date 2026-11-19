@@ -1,6 +1,6 @@
 {
   "id": "SCC-000101",
-  "name": "459 South 4th St",
+  "name": "Spartan Vista (The Mark), 459-475 S 4th St",
   "parcels": [
     {
       "apn": "467-47-057",
@@ -35,6 +35,44 @@
           37.3305636
         ]
       ]
+    },
+    {
+      "apn": "467-47-092",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8823804,
+          37.3301951
+        ],
+        [
+          -121.8825149,
+          37.3301347
+        ],
+        [
+          -121.8825871,
+          37.3302294
+        ],
+        [
+          -121.8826918,
+          37.3303698
+        ],
+        [
+          -121.8822846,
+          37.3305636
+        ],
+        [
+          -121.8821058,
+          37.3303263
+        ],
+        [
+          -121.8823804,
+          37.3301951
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -53,6 +91,14 @@
             "SRC-001107"
           ]
         }
+      ]
+    },
+    {
+      "text": "475 S 4th St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-002543",
+        "SRC-002546"
       ]
     }
   ],
@@ -98,7 +144,10 @@
         {
           "value": 240,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-002542",
+            "SRC-002543",
+            "SRC-002544"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -108,8 +157,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 200,
+          "src": [
+            "SRC-002545"
+          ],
+          "note": "200 units, 850 beds"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -140,6 +197,66 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 23,
+          "src": [
+            "SRC-002542",
+            "SRC-002543",
+            "SRC-002544"
+          ],
+          "note": "Height 248 ft per Spotlight; 274 ft maximum per CEQAnet and SF YIMBY"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 192,
+          "src": [
+            "SRC-002543"
+          ],
+          "note": "On-site; off-site parking allowed to supplement"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.45,
+          "src": [
+            "SRC-002542",
+            "SRC-002543"
+          ],
+          "note": "Gross site, four parcels consolidated"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Student"
+          ],
+          "src": [
+            "SRC-002544",
+            "SRC-002545",
+            "SRC-002546"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Approval required either 120 units rent-stabilized under the city apartment rent ordinance or 48 on-site affordable units (20%); the developer had not chosen as of October 2021",
+          "src": [
+            "SRC-002544"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -161,12 +278,95 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Urban Catalyst's project page names the project Spartan Vista at 459-475 S. 4th Street, 850+ student beds, status planned as of August 2026: site acquired February 2020, application SP20-021 submitted June 2020, city approval October 2021.",
+      "src": [
+        "SRC-002546"
+      ]
+    },
+    {
+      "text": "CEQAnet: 23-story tower, 240 units, maximum height 274 feet, four-level automated parking system with one basement level, four parcels consolidated on about 0.45 gross acres.",
+      "src": [
+        "SRC-002542"
+      ]
+    },
+    {
+      "text": "San José Spotlight (2021-10-13): 248-foot tower with one- to four-bedroom units for more than 850 students; the planning director approved the project in July 2021 and the Planning Commission denied an appeal. Urban Catalyst bought the land in early 2020 for $6.25 million.",
+      "src": [
+        "SRC-002544"
+      ]
+    },
+    {
+      "text": "REBusiness (2021-10-15): 200 units and 850 beds; groundbreaking expected by end of 2021 and completion in fall 2024; one of six projects in Urban Catalyst Fund I ($131 million).",
+      "src": [
+        "SRC-002545"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Urban Catalyst",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://www.urbancatalyst.com/spartan-vista",
+      "src": [
+        "SRC-002546",
+        "SRC-002544",
+        "SRC-002543"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002543",
+        "SRC-002545"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002543"
+      ]
+    },
+    {
+      "role": "Interior designer",
+      "company": "Gould Evans",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002545"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Asset Living",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002545"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-02",
+      "type": "Sale",
+      "label": "Urban Catalyst acquires site ($6.25 million per Spotlight)",
+      "src": [
+        "SRC-002546",
+        "SRC-002544"
+      ]
+    },
     {
       "date": "2020-06-29",
       "type": "Application filed",
@@ -176,11 +376,35 @@
       ]
     },
     {
+      "date": "2020-08-28",
+      "type": "Other",
+      "label": "CEQA notice of preparation filed",
+      "src": [
+        "SRC-002542"
+      ]
+    },
+    {
+      "date": "2021-04-23",
+      "type": "Other",
+      "label": "Supplemental environmental review document filed",
+      "src": [
+        "SRC-002542"
+      ]
+    },
+    {
       "date": "2021-10-13",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2021-10-13",
+      "type": "Other",
+      "label": "Planning Commission unanimously denies appeal, upholding approval",
+      "src": [
+        "SRC-002544"
       ]
     }
   ],
@@ -199,6 +423,99 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 459 and 475 South 4th Street and The Mark",
+      "src": [
+        "SRC-002544",
+        "SRC-002546"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SCC parcel API: 459 S 4th = 467-47-057; 475 S 4th = 467-47-092; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov project page for SP20-021 refuses automated access; city permits GIS layer already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CEQAnet SCH 2020080532 (NOP 2020-08-28, SIR 2021-04-23)",
+      "src": [
+        "SRC-002542"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "San José Spotlight 2021-10-13",
+      "src": [
+        "SRC-002544"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY July 2021; REBusiness 2021-10-15; businesswire.com returned 403",
+      "src": [
+        "SRC-002543",
+        "SRC-002545"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Urban Catalyst portfolio and Spartan Vista page",
+      "src": [
+        "SRC-002546"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "BDE Architecture named in trade coverage; no BDE project page found in search",
+      "src": [
+        "SRC-002543"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "REBusiness: Urban Catalyst Fund I; no lender found",
+      "src": [
+        "SRC-002545"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com; no matching posts",
+      "src": []
+    }
+  }
 }

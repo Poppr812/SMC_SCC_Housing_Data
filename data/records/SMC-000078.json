@@ -200,6 +200,20 @@
             "SRC-001025"
           ],
           "note": "Approximately 12,000 sq ft retail and 108,000 sq ft office"
+        },
+        {
+          "value": 137725,
+          "src": [
+            "SRC-002559"
+          ],
+          "note": "Developer project page"
+        },
+        {
+          "value": 119760,
+          "src": [
+            "SRC-002557"
+          ],
+          "note": "SF YIMBY, first formal submittal"
         }
       ]
     },
@@ -208,8 +222,18 @@
         {
           "value": 15,
           "src": [
-            "SRC-001025"
+            "SRC-001025",
+            "SRC-002559"
           ]
+        },
+        {
+          "value": 14,
+          "src": [
+            "SRC-002556",
+            "SRC-002557",
+            "SRC-002558"
+          ],
+          "note": "Plans v3 cover project data lists 14 stories; the same set describes a 9-story residential building over one floor of office/retail with a 5-story office structure above, and floor plans run Level 01 to Level 15"
         }
       ]
     },
@@ -265,6 +289,34 @@
           ]
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 174743,
+          "src": [
+            "SRC-002556"
+          ],
+          "note": "Total unit area, plans v3"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 80,
+            "1br": 136,
+            "2br": 20,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-002558"
+          ],
+          "note": "SB 330 preliminary application coverage, April 2025"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -272,6 +324,30 @@
       "text": "Demolishes all existing buildings",
       "src": [
         "SRC-001025"
+      ]
+    },
+    {
+      "text": "Plans v3 (2026-03-18): about 380,167 sq ft on a 39,928 sq ft site; 9-story residential building over one floor of office/retail and two below-grade parking levels, with a 5-story office structure above; top of plate 184 ft. Office about 110,204 sq ft, retail 6,232 sq ft, restaurant 4,266 sq ft. Existing building to be demolished: 28,504 sq ft retail and 28,504 sq ft office. All units rental.",
+      "src": [
+        "SRC-002556"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-08-04): 202 feet tall, about 379,200 sq ft above ground, 171 car spaces and 283 bicycle spaces in two basement levels; housing on the lower ten floors and office on the top four.",
+      "src": [
+        "SRC-002557"
+      ]
+    },
+    {
+      "text": "SF YIMBY (April 2025): 80 studios, 136 one-bedrooms and 20 two-bedrooms, rents of $3,000-$5,000 a month, aimed at retirees and empty nesters.",
+      "src": [
+        "SRC-002558"
+      ]
+    },
+    {
+      "text": "Mecah Ventures project page (4th & El Camino): 236 units, 15 stories, 312,424 sq ft including 137,725 sq ft commercial, 171 stalls; listed as actively raising equity.",
+      "src": [
+        "SRC-002559"
       ]
     }
   ],
@@ -295,6 +371,32 @@
       "linkedin": null,
       "src": [
         "SRC-001026"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Mecah Ventures",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://mecahventures.com/",
+      "project_page": "https://mecahventures.com/property/2755-el-camino-real/",
+      "src": [
+        "SRC-002559",
+        "SRC-002556",
+        "SRC-002557"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "ARC TEC Inc.",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.arctecinc.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-002556",
+        "SRC-002557",
+        "SRC-002558"
       ]
     }
   ],
@@ -326,6 +428,14 @@
       ]
     },
     {
+      "date": "2025-11-19",
+      "type": "Other",
+      "label": "Revised plans (second planning submittal) posted",
+      "src": [
+        "SRC-002560"
+      ]
+    },
+    {
       "date": "2026-03-18",
       "type": "Other",
       "label": "Current project plans",
@@ -352,6 +462,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search on 1 E 4th Ave San Mateo and Mecah Ventures",
+      "src": [
+        "SRC-002557",
+        "SRC-002558"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SMC active parcels for 034-143-260 and 034-143-310 already on record",
+      "src": [
+        "SRC-001026",
+        "SRC-001027"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City project page and plans v3 (PA25-057)",
+      "src": [
+        "SRC-002560",
+        "SRC-002556"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "not applicable",
+      "note": "City of San Mateo project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "APR Table A (data.ca.gov) San Mateo rows: no 1 E 4th Ave entry; no CTCAC/CDLAC role for a market-rate project",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY April and August 2025; therealdeal.com not opened",
+      "src": [
+        "SRC-002557",
+        "SRC-002558"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Mecah Ventures 4th & El Camino page",
+      "src": [
+        "SRC-002559"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "ARC TEC Inc. named on plan set",
+      "src": [
+        "SRC-002556"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Developer page lists an equity raise; no lender found",
+      "src": [
+        "SRC-002559"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com; no matching posts",
+      "src": []
+    }
+  }
 }
