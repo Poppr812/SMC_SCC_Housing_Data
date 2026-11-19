@@ -371,6 +371,53 @@
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 13,
+          "src": [
+            "SRC-002312",
+            "SRC-002313"
+          ],
+          "note": "Two 13-story mass timber towers over a concrete podium"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 94,
+          "src": [
+            "SRC-002314"
+          ],
+          "note": "Ground-level garage; also 17 motorcycle and 401 bicycle spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 344000,
+          "src": [
+            "SRC-002314"
+          ],
+          "note": "About; DuPont tower 194,250 sq ft and McEvoy tower 150,080 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-002314"
+          ],
+          "note": "29% state density bonus"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -392,6 +439,19 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "The site has two towers: McEvoy Apartments (workforce, 224 units) and Dupont Apartments (family, 141 one- to three-bedroom units). CTCAC CA-21-746 (Dec. 2021) covers the McEvoy tower only: 140 studios and 84 one-bedrooms, 222 restricted units (112 at 30% AMI, 20 at 50%, 90 at 60%), 20 VASH project-based vouchers, total project cost $132,176,093. SERA shows the McEvoy tower as 142 studios and 82 one-bedrooms.",
+      "src": [
+        "SRC-002315",
+        "SRC-002312"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Dec. 2021): about $135 million total cost including $66.4 million construction and $40 million soft costs; Google Endeavor LLC provided funding in November 2020; workforce tower construction expected to start mid-2022.",
+      "src": [
+        "SRC-002314"
+      ]
     }
   ],
   "parties": [
@@ -405,9 +465,221 @@
         "SRC-001799"
       ],
       "website": "https://www.firsthousing.org/"
+    },
+    {
+      "role": "Developer",
+      "company": "First Community Housing",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.firsthousing.org/",
+      "src": [
+        "SRC-002315",
+        "SRC-002314"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Lendlease",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002314",
+        "SRC-002312"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SERA Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://seradesign.com/",
+      "website_basis": "search",
+      "project_page": "https://seradesign.com/projects/mcevoy-and-dupont-apartments",
+      "src": [
+        "SRC-002314",
+        "SRC-002312"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "CMG",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002314"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "Fast + Epp",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://www.fastepp.com/portfolio/mcevoy-dupont-apartments/",
+      "src": [
+        "SRC-002314",
+        "SRC-002313"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "Daedalus",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002314"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKS",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002314"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "PAE",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "MEP engineer",
+      "src": [
+        "SRC-002314"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "The John Stewart Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "McEvoy Street, LP",
+      "contact": "Sophie Rubin",
+      "linkedin": null,
+      "email": "sophier@firsthousing.org",
+      "phone": "(408) 291-8650",
+      "other_role": "Tax credit applicant, McEvoy tower",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citi",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002316"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Acquisition loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "Acquisition and predevelopment loan, 280 McEvoy Street",
+      "amount": 15850000,
+      "date": "2018-08-08",
+      "src": [
+        "SRC-002316"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "Citi",
+      "program": "Construction, tax-exempt; McEvoy Apartments tower (224 units), CA-21-746",
+      "amount": 64160884,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citi",
+      "program": "Construction, taxable; McEvoy Apartments tower, CA-21-746",
+      "amount": 8288098,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citi",
+      "program": "Permanent, tax-exempt; McEvoy Apartments tower, CA-21-746",
+      "amount": 16144000,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "McEvoy Apartments tower, CA-21-746",
+      "amount": 20000000,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County",
+      "program": "McEvoy Apartments tower, CA-21-746",
+      "amount": 26251843,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Apple",
+      "program": "Permanent source; McEvoy Apartments tower, CA-21-746",
+      "amount": 12000000,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Not named (CTCAC lists The California Housing Partnership Corporation as investor/consultant)",
+      "program": "Permanent tax credit equity; $6,043,997 annual federal credits recommended; McEvoy Apartments tower",
+      "amount": 54769372,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "First Community Housing",
+      "program": "McEvoy Apartments tower, CA-21-746",
+      "amount": 2309025,
+      "date": "2021-12-08",
+      "src": [
+        "SRC-002315"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -425,6 +697,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2021-12-08",
+      "type": "Other",
+      "label": "CTCAC recommends $6,043,997 annual federal credits for the McEvoy Apartments tower (CA-21-746)",
+      "src": [
+        "SRC-002315"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -447,6 +728,102 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search led to SF YIMBY Dec. 2021, SERA and Fast + Epp project pages, and the CTCAC staff report.",
+      "src": [
+        "SRC-002314",
+        "SRC-002312",
+        "SRC-002315"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: seven APNs already on record (261-38-001 on McEvoy). Dataset has no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; council memo and permit text already on record.",
+      "src": [
+        "SRC-001800",
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report lists a $26,251,843 Santa Clara County loan for the McEvoy tower.",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report CA-21-746, Dec. 8, 2021. No CTCAC filing found for the Dupont tower.",
+      "src": [
+        "SRC-002315"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No 2023-2026 local news on construction or completion found; housingfinance.com refused access (403).",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY Dec. 2021.",
+      "src": [
+        "SRC-002314"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "First Community Housing homepage does not mention McEvoy or Dupont.",
+      "src": [
+        "SRC-002317"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SERA project page: two 13-story towers, 224 and 141 units; Fast + Epp page: 13 stories of mass timber over podium.",
+      "src": [
+        "SRC-002312",
+        "SRC-002313"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley Aug. 2018 loan post; CTCAC sources and uses.",
+      "src": [
+        "SRC-002316",
+        "SRC-002315"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts surfaced in web searches.",
+      "src": []
+    }
+  }
 }

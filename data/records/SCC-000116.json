@@ -39,6 +39,44 @@
           37.3306092
         ]
       ]
+    },
+    {
+      "apn": "467-47-058",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8823549,
+          37.330658
+        ],
+        [
+          -121.8827622,
+          37.3304643
+        ],
+        [
+          -121.8828326,
+          37.3305586
+        ],
+        [
+          -121.8827792,
+          37.3305827
+        ],
+        [
+          -121.8827205,
+          37.3306092
+        ],
+        [
+          -121.8824226,
+          37.3307488
+        ],
+        [
+          -121.8823549,
+          37.330658
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -63,6 +101,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "451 4th Street San Jose, CA 95112, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001610"
+      ]
     }
   ],
   "images": [],
@@ -72,7 +117,8 @@
         {
           "value": "Apartments",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001610"
           ],
           "note": "State category 5+ units, rental tenure"
         }
@@ -90,7 +136,9 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001395"
+            "SRC-001395",
+            "SRC-001610",
+            "SRC-001956"
           ],
           "note": "New proposal by a new owner; a similar plan was approved in 2024 under the prior owner."
         }
@@ -102,7 +150,8 @@
         {
           "value": "San Jose",
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001610"
           ]
         }
       ]
@@ -122,9 +171,16 @@
             "SRC-001395"
           ],
           "note": "Estimated 368 affordable units plus four manager units."
+        },
+        {
+          "value": 372,
+          "src": [
+            "SRC-001610"
+          ],
+          "note": "368 restricted rental units plus 4 unrestricted manager units"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -134,6 +190,20 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H26-037",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Site Development Permit, status New, folder on APN 467-47-096"
+        },
+        {
+          "value": "AD26-730",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Planning consultation opened 2026-10-21"
         }
       ]
     },
@@ -145,6 +215,13 @@
             "SRC-001395"
           ],
           "note": "Approximately."
+        },
+        {
+          "value": 15,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H26-037 description: 100% affordable, 15-story, 372-unit building"
         }
       ]
     },
@@ -155,6 +232,13 @@
           "src": [
             "SRC-001395"
           ]
+        },
+        {
+          "value": 0.52,
+          "src": [
+            "SRC-001610",
+            "SRC-001956"
+          ]
         }
       ]
     },
@@ -163,8 +247,127 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001395"
+            "SRC-001395",
+            "SRC-001610"
           ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 24,
+            "1br": 308,
+            "2br": 40,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001610"
+          ],
+          "note": "Current 372-unit affordable plan"
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 63,
+            "3br": 21,
+            "4br+": 126
+          },
+          "src": [
+            "SRC-002310"
+          ],
+          "note": "2024 approved 210-unit design for the prior owner: 84 four-bedroom and 42 five-bedroom"
+        }
+      ],
+      "best": 0
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 37,
+              "ami": 30
+            },
+            {
+              "count": 48,
+              "ami": 50
+            },
+            {
+              "count": 126,
+              "ami": 60
+            },
+            {
+              "count": 157,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001610"
+          ],
+          "note": "CTCAC 55-year targeting; 70% AMI units are CTCAC restricted only"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001610"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 156599180,
+          "src": [
+            "SRC-001610"
+          ],
+          "note": "Project cost at application"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "368 restricted units at 30% to 70% AMI, average targeted affordability 59.95% AMI; 4 unrestricted manager units",
+          "src": [
+            "SRC-001610"
+          ]
+        },
+        {
+          "value": "Rents affordable to households earning 30%-70% of AMI per CTCAC staff report.",
+          "src": [
+            "SRC-001610"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 168,
+          "src": [
+            "SRC-002310"
+          ],
+          "note": "2024 approved 210-unit design; also 70 bicycle spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 280000,
+          "src": [
+            "SRC-002310"
+          ],
+          "note": "Roughly; 2024 approved 210-unit design, plus a 50,000 sq ft garage"
         }
       ]
     }
@@ -181,6 +384,49 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CTCAC CA-26-655 lists the project as 451 4th Street on 0.52 acres: 372 units (24 studios, 308 one-bedrooms, 40 two-bedrooms), general partners American Housing Company 1 and Central Valley Coalition for Affordable Housing, management agent Aperto Property Management.",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "text": "SF YIMBY (March 2024): the city-approved design for the prior owner by Salvatore Caruso Design Corporation had 210 units, 25 stories and 261 feet, about 280,000 sq ft of housing and a 50,000 sq ft, 168-space garage, replacing 31 existing units.",
+      "src": [
+        "SRC-002310"
+      ]
+    },
+    {
+      "text": "CTCAC CA-26-655: The project, 451 4th Street, located at 451 4th Street in San Jose on a 0.52 acre site, requested and is being recommended for a reservation of $7,090,774 in annual federal tax credits and $39,176,819 of tax-exempt bond cap to finance the new construction of 372 units of housing, consisting of 368 restricted rental units and 4 unrestricted manager's units.",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "text": "The staff report gives 451 4th Street with no direction; APN taken from the county parcel at 451 S 4th St, ZIP 95112 per the report.",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "text": "City permit layer folder H26-037 describes a Site Development Permit for a 100% affordable, 15-story, 372-unit multifamily building with demolition of a single-family residence and a 31-unit multifamily building on about 0.52 gross acres; applicant American Housing Company 1 LLC.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "The site spans APNs 467-47-058 (451 S 4th St) and 467-47-096 (439 S 4th St). The earlier South Fourth Street Project (H17-004) proposed a 25-story, 274-foot building with up to 210 units on the same two parcels.",
+      "src": [
+        "SRC-002299",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "CTCAC staff report: census tract 5009.01, average targeted affordability 59.95% AMI, 40%/60% average income set-aside, project analyst listed, general partners American Housing Company 1 and Central Valley Coalition for Affordable Housing.",
+      "src": [
+        "SRC-001610"
+      ]
     }
   ],
   "parties": [
@@ -193,9 +439,224 @@
         "SRC-001395"
       ],
       "website": "https://www.owow.com/"
+    },
+    {
+      "role": "Developer",
+      "company": "American Housing Company 1",
+      "contact": "Jeremy Harris",
+      "linkedin": null,
+      "email": "jeremy@owow.com",
+      "phone": "(858) 449-5270",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Central Valley Coalition for Affordable Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Aperto Property Management",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "JLL Real Estate Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Salvatore Caruso Design Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002310"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "HMH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002310"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "HMH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002310"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Hudson Housing Capital LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jones Hall, A Professional Law Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond counsel",
+      "src": [
+        "SRC-001610"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "JLL Real Estate Capital",
+      "program": "Construction, tax-exempt; CMFA bond issuer",
+      "amount": 39176819,
+      "date": "2026-09-01",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "JLL Real Estate Capital",
+      "program": "Construction, taxable",
+      "amount": 77718824,
+      "date": "2026-09-01",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "JLL Real Estate Capital",
+      "program": "Permanent, tax-exempt",
+      "amount": 88086749,
+      "date": "2026-09-01",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Hudson Housing Capital LLC (CTCAC investor/consultant)",
+      "program": "Permanent tax credit equity; $7,090,774 annual federal credits recommended",
+      "amount": 56726192,
+      "date": "2026-09-01",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "American Housing Company 1",
+      "program": null,
+      "amount": 11786238,
+      "date": "2026-09-01",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "CDLAC allocation",
+      "program": "Tax-exempt bond cap recommended in staff report",
+      "amount": 39176819,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "JLLREC",
+      "program": "Tax-Exempt",
+      "amount": 39176819,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "JLLREC",
+      "program": "Taxable",
+      "amount": 77718824,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "JLLREC",
+      "program": "Tax-Exempt",
+      "amount": 88086749,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "Deferred Developer Fee",
+      "program": null,
+      "amount": 11786238,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor",
+      "program": "Tax credit equity as stated in staff report",
+      "amount": 56726192,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Deferred costs",
+      "program": "Construction-period source per CTCAC staff report",
+      "amount": 7518166,
+      "date": null,
+      "src": [
+        "SRC-001610"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -205,6 +666,51 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "type": "Other",
+      "label": "CTCAC/CDLAC staff report recommends $7,090,774 annual federal credits and $39,176,819 bond cap (CA-26-655)",
+      "src": [
+        "SRC-001610"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-21",
+      "type": "Other",
+      "label": "Planning consultation AD26-730 opened with the City of San Jose",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Other",
+      "label": "Environmental scope review opened for the revised 451 S 4th Street proposal",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2027-02",
+      "type": "Construction start",
+      "label": "Construction expected to begin (CTCAC staff report)",
+      "src": [
+        "SRC-001610"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2029-01",
+      "type": "Completion",
+      "label": "Construction expected to be complete (CTCAC staff report)",
+      "src": [
+        "SRC-001610"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -227,6 +733,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Merged duplicate SCC-000582 (451 4th Street): same site and project (CTCAC CA-26-655, 439-451 S 4th St)"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "Web search led to the CTCAC CA-26-655 staff report and SF YIMBY 2024 approval article.",
+      "src": [
+        "SRC-001610",
+        "SRC-002310"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-18",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 439 4th St is 467-47-096 (on record); 451 4th St is 467-47-058, which is on record SCC-000582. Dataset has no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "City of San Jose planning permit GIS layer by APN: H26-037, AD26-730, environmental scope review, H17-004; sanjoseca.gov pages not used",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "CTCAC sources list no county loan; no county funding item found.",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    "state": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC/CDLAC staff report Sept. 1, 2026, CA-26-655.",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    "news": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "Searches returned no local news coverage of the 2026 plan.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY March 2024 approval article; traded.co (Oct. 2026) refused access (403).",
+      "src": [
+        "SRC-002310"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No oWow project page for this site surfaced in searches.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "SF YIMBY 2024 names Salvatore Caruso Design Corporation and HMH for the prior design; architect for the 2026 plan not named.",
+      "src": [
+        "SRC-002310"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-18",
+      "result": "found",
+      "note": "CTCAC staff report: JLL Real Estate Capital construction and permanent loans, CMFA bonds, Hudson Housing Capital tax credit equity.",
+      "src": [
+        "SRC-001610"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-18",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts surfaced in web searches.",
+      "src": []
+    }
+  }
 }
