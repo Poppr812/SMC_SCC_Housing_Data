@@ -75,8 +75,16 @@
             "SRC-001139"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003817"
+          ],
+          "note": "Planning Commission approved the Major Subdivision 4-0-0-1 on 2023-02-08"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -118,6 +126,14 @@
             "SRC-001139"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN 2022-00136",
+          "src": [
+            "SRC-003818",
+            "SRC-003817"
+          ],
+          "note": "County planning file (Major Subdivision)"
         }
       ]
     },
@@ -147,6 +163,54 @@
           "note": "State report 2025, application stage: 3 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003818"
+          ],
+          "note": "54 ft to top of parapet via density bonus concession"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 33,
+          "src": [
+            "SRC-003818"
+          ],
+          "note": "Ground-level garage"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 3,
+            "2br": 20
+          },
+          "src": [
+            "SRC-003818"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003818"
+          ],
+          "note": "15 base units plus 8 State Density Bonus units; three concessions"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -154,6 +218,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001139"
+      ]
+    },
+    {
+      "text": "Staff report: four-story, 23-unit condominium building on an 18,951 sq ft parcel in the unincorporated Sequoia Tract, R-3/S-3 zoning, High Density Residential General Plan; 3 very-low-income inclusionary units (20% of 15 base units) plus 8 density bonus units; concessions for balcony setback encroachments, 67.8% lot coverage and 4 stories/54 ft; replaces a 1970s single-family home; 385 cy grading and three significant trees removed; CEQA addendum to the MND adopted May 18, 2021; park in-lieu fee $715,362.09.",
+      "src": [
+        "SRC-003818"
+      ]
+    },
+    {
+      "text": "Staff report and minutes list Canyon Vista Partners, LLC (c/o Ron Grove) as Applicant/Owner. The minutes state the application was deemed complete April 25, 2022; the staff report gives April 25, 2022 as the receipt date and November 10, 2022 as the completeness date.",
+      "src": [
+        "SRC-003818",
+        "SRC-003817"
       ]
     }
   ],
@@ -166,11 +243,104 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Canyon Vista Partners, LLC",
+      "contact": "Ron Grove",
+      "linkedin": null,
+      "src": [
+        "SRC-003818",
+        "SRC-003817"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "RYS Architects, Inc.",
+      "contact": "Robert Sauvageau",
+      "linkedin": null,
+      "phone": "(415) 841-9090 ext. 202",
+      "src": [
+        "SRC-003818"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "KLA, Inc.",
+      "contact": "Tom Holloway",
+      "linkedin": null,
+      "src": [
+        "SRC-003818"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MacLeod and Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003818"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "RHK Civil and Transportation Engineering",
+      "contact": "Richard K. Hopper",
+      "linkedin": null,
+      "other_role": "Transportation engineer",
+      "src": [
+        "SRC-003818"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-10-14",
+      "type": "Other",
+      "label": "General Plan Amendment and Rezone applications received (PLN 2020-00351)",
+      "src": [
+        "SRC-003818"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-05-18",
+      "type": "Other",
+      "label": "Board of Supervisors approved General Plan Amendment and Rezone; MND adopted",
+      "src": [
+        "SRC-003818"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-04-25",
+      "type": "Application filed",
+      "label": "Major Subdivision application received (PLN 2022-00136)",
+      "src": [
+        "SRC-003818"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-11-10",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-003818"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-02-08",
+      "type": "Approved",
+      "label": "Planning Commission approved Major Subdivision, 4-0-0-1",
+      "src": [
+        "SRC-003817"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-02-04",
       "type": "Application filed",
@@ -185,6 +355,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and applicant: county staff report and PC minutes",
+      "src": [
+        "SRC-003818",
+        "SRC-003817"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer: owner 206 SEQUOIA ESTATE LLC already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated Sequoia Tract; Redwood City is the mailing address only",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County PC staff report 2023-02-08 (PLN 2022-00136) and PC minutes 2023-02-08 (approved 4-0-0-1)",
+      "src": [
+        "SRC-003818",
+        "SRC-003817"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A (BLD2024-02249) already on record",
+      "src": [
+        "SRC-001139"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the PC approval returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press for 206 Sequoia",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Canyon Vista Partners, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Architect named on plan sheet A0 in staff report; rysarchitects.com redirects to studio-rys.com with no project page",
+      "src": [
+        "SRC-003818"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "traded.co deal listing for a 206 Sequoia Avenue construction loan returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

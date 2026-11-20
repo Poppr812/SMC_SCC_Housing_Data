@@ -116,6 +116,49 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 32,
+          "src": [
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.39,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approximately 0.39 gross acres"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001956"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -130,12 +173,53 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit records for 1030 Lincoln Av: H23-045 site development permit (Builder's Remedy, 22 units, 32 parking spaces), Inactive; ER23-265 environmental exemption, Under Review; AT23-015 lot line adjustment combining two parcels on about 0.39 gross acres, Preparing Permit. Applicant on all three: Thomas Wilson (Urban Pacific Homes and Development).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "Earlier city preliminary reviews at the site: PRE19-193 (filed 2019-12-18, Tom Wilson, Urban Pacific) for a 3-story mixed-use building with below-grade parking, ground-floor commercial and 12 affordable units on a vacant lot; PRE15-014 (filed 2015-02-03, Ryan Ford). Both Complete.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Urban Pacific Homes and Development",
+      "contact": "Thomas Wilson",
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Urban Pacific Homes and Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner named in city permit records",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-11-29",
+      "type": "Other",
+      "label": "Environmental review application ER23-265 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-11-30",
       "type": "Application filed",
@@ -143,6 +227,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2023-12-08",
+      "type": "Other",
+      "label": "Lot line adjustment AT23-015 filed to combine two parcels",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -155,6 +248,85 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 1030 Lincoln Ave and Urban Pacific: no project-specific pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 26453044: 1030 Lincoln Av, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City planning permits GIS layer queried by APN 26453044: H23-045, ER23-265, AT23-015, PRE19-193, PRE15-014",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A already on record",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Mercury News / SJ Spotlight for 1030 Lincoln Ave",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal 2023-12-21 San Jose builder's remedy article returned 403; Crexi 95125 listing returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "urbanpacific.com is a Long Beach firm led by Scott Choppin with no link to Thomas Wilson or this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in public sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing reported",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

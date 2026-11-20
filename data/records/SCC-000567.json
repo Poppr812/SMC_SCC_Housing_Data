@@ -343,6 +343,80 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001572"
+          ],
+          "note": "City page: two 2-unit duplexes designated affordable to low-income households"
+        },
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003815"
+          ],
+          "note": "Preliminary application (2024-02-29): 4 moderate-income units"
+        }
+      ],
+      "best": 0
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001572",
+            "SRC-003815"
+          ],
+          "note": "19 market-rate homes and 4 affordable duplex units"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 19,
+          "src": [
+            "SRC-001572",
+            "SRC-003815"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001572"
+          ],
+          "note": "Market-rate homes split-level three-story, max 46 ft from average natural grade; duplexes two-story, 40 ft"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 95000,
+          "src": [
+            "SRC-003815"
+          ],
+          "note": "Approximate residential floor area in the preliminary application"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -351,16 +425,88 @@
       "src": [
         "SRC-001572"
       ]
+    },
+    {
+      "text": "City page: market-rate homes about 2,682 to 6,060 sq ft; duplexes about 2,480 sq ft each; access by private street off Mt. Eden Rd with emergency access to Vista Regina; City will prepare an EIR and conditions of approval under Government Code 65589.5(f)(1).",
+      "src": [
+        "SRC-001572"
+      ]
+    },
+    {
+      "text": "Preliminary application: site address 0 Mount Eden Road, APN 503-13-067, vacant land, HS-Hillside Residential; applicant Sam Som, Balanced Success Inc, 500 East Calaveras Blvd Suite 214, Milpitas; property owner of record listed as Syed Ali, Saratoga.",
+      "src": [
+        "SRC-003815"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Balanced Success Inc",
+      "contact": "Sam Som",
+      "linkedin": null,
+      "email": "sam@foreverluxury.com",
+      "phone": "(408) 797-7648",
+      "src": [
+        "SRC-003815",
+        "SRC-003816"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Syed Ali",
+      "contact": "Syed Ali",
+      "linkedin": null,
+      "src": [
+        "SRC-003815"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-02-29",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application received",
+      "src": [
+        "SRC-001572",
+        "SRC-003815"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-08-19",
       "type": "Application filed",
       "label": "Formal application received",
+      "src": [
+        "SRC-001572"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-09-18",
+      "type": "Other",
+      "label": "Incomplete letter sent",
+      "src": [
+        "SRC-001572"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-30",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-001572",
+        "SRC-003816"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-03-01",
+      "type": "Other",
+      "label": "Inconsistency letter sent",
       "src": [
         "SRC-001572"
       ],
@@ -372,6 +518,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Web search on Mt. Eden builder's remedy: CEQAnet 22200 Mt Eden Rd is a separate 7-unit project; MLS land listings only",
+      "src": [
+        "SRC-001572"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 50313067: geometry only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page milestones; preliminary application (applicant, owner, unit breakdown); complete letter CPX24-0004",
+      "src": [
+        "SRC-001572",
+        "SRC-003815",
+        "SRC-003816"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated City of Saratoga project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "CEQAnet search: no EIR filed for this 23-unit project; 22200 Mt Eden Rd NOP is a different site",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SJ Spotlight Saratoga builder's remedy coverage is about 14001 Chester Ave, not this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-16 Saratoga builder's remedy article returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Balanced Success Inc; email domain foreverluxury.com is an unrelated Las Vegas logistics site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Preliminary application lists no architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing reported",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

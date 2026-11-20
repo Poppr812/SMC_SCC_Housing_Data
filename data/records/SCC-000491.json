@@ -149,6 +149,54 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003813"
+          ],
+          "note": "Three residences designated as moderate-income for-sale units"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003813"
+          ],
+          "note": "3 moderate-income for-sale units of 23"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 20,
+          "src": [
+            "SRC-003813"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 46,
+          "src": [
+            "SRC-003813"
+          ],
+          "note": "Two-car garages (46 covered); 20 homes also have two driveway spaces; 10 on-street guest spaces"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -157,9 +205,52 @@
       "src": [
         "SRC-001427"
       ]
+    },
+    {
+      "text": "Initial study (November 2024): 23 two-story homes of 2,536 to 3,116 sq ft with three to four bedrooms on lots of 2,896 to 4,259 sq ft; maximum height 29 ft 8 in; access by an extension of Cayman Street from Diana Avenue plus a 20-foot private street; 47 trees removed. Project applicant: Josh Vrotsos, Dividend Homes, Inc., 385 Woodview Avenue, Suite 100, Morgan Hill.",
+      "src": [
+        "SRC-003813"
+      ]
+    },
+    {
+      "text": "City project page lists Planning Commission Resolution No. 25-04, Approval Certificate No. 25-003, the approved tentative map and approved design review plans, with Planning Commission materials dated February 25, 2025.",
+      "src": [
+        "SRC-001427"
+      ]
+    },
+    {
+      "text": "Dividend Homes markets the community as Cayman, 720 Diana Avenue, Morgan Hill: homes of about 2,019 to 2,667 sq ft, from $1,350,000.",
+      "src": [
+        "SRC-003814"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Dividend Homes, Inc.",
+      "contact": "Josh Vrotsos",
+      "linkedin": null,
+      "website": "https://www.dividendhomes.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.dividendhomes.com/cayman/",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003813",
+        "SRC-003814"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Diana Avenue Investors, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Client named on geotechnical investigation",
+      "src": [
+        "SRC-003813"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -178,6 +269,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Diana Avenue / Dividend Homes: city page, initial study, Dividend Cayman page",
+      "src": [
+        "SRC-003813",
+        "SRC-003814"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 72606063: 760 Diana Av, Morgan Hill; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page (approvals list) and Modified Initial Study/15183 Checklist (applicant, unit sizes, parking, moderate-income units)",
+      "src": [
+        "SRC-001427",
+        "SRC-003813"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated City of Morgan Hill project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No CEQAnet or HCD award found for 730/760 Diana Ave in web search",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news for Diana-Dividend / Cayman",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press; SF YIMBY covers only 1245 Diana Ave, a separate project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Dividend Homes Cayman page: marketing name, address, home sizes, starting price",
+      "src": [
+        "SRC-003814"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named on city page or initial study",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing reported in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
