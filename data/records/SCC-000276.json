@@ -109,6 +109,12 @@
           "src": [
             "SRC-001127"
           ]
+        },
+        {
+          "value": "Article reports 25% of units target educators earning up to 70% of AMI. Quoted monthly rents: lower tier studio $2,049, one-bedroom $2,362; upper tier studio $3,338, one-bedroom $3,836.",
+          "src": [
+            "SRC-003440"
+          ]
         }
       ]
     },
@@ -141,6 +147,13 @@
           "src": [
             "SRC-001306"
           ]
+        },
+        {
+          "value": 32,
+          "src": [
+            "SRC-003440"
+          ],
+          "note": "32 garage spaces, unbundled from rent (city page shows 31)"
         }
       ]
     },
@@ -159,6 +172,43 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.17,
+          "src": [
+            "SRC-003441"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-001306",
+            "SRC-003440"
+          ],
+          "note": "Preference for members of the Palo Alto educator unions"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001306"
+          ],
+          "note": "Rezoning to Planned Community/Planned Home Zoning; CEQA streamlined under Section 15183"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -167,6 +217,24 @@
       "src": [
         "SRC-001126",
         "SRC-001127"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (Jan. 17, 2025): 55 apartments, up from 44; six stories, 70 feet; former Travelodge motel site. The article says the project uses no city or state subsidies, and that a commission condition requiring a lifelong city-enforced deed restriction was dropped.",
+      "src": [
+        "SRC-003440"
+      ]
+    },
+    {
+      "text": "The 2023 prescreening (23PLN-00105) described a five-story, 44-unit, 100% affordable building with first priority for vacancies to Palo Alto Educator Association teacher members.",
+      "src": [
+        "SRC-001306"
+      ]
+    },
+    {
+      "text": "City project page lists ARB hearings 2024-04-18 and 2024-11-21, PTC hearings 2024-04-10 and 2025-01-15, Council approval 2025-02-10, and Ad-Hoc Committee plans dated 07-17-25.",
+      "src": [
+        "SRC-001306"
       ]
     }
   ],
@@ -179,6 +247,36 @@
       "other_role": "Applicant (prescreening 23PLN-00105)",
       "src": [
         "SRC-001306"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Half Dome Capital LLC",
+      "contact": "Jason Matlof",
+      "linkedin": null,
+      "src": [
+        "SRC-003441",
+        "SRC-003440",
+        "SRC-001306"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Trachtenberg Architects",
+      "contact": "Isaiah Stackhouse",
+      "linkedin": null,
+      "src": [
+        "SRC-003441",
+        "SRC-003440"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Inside Out",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003441"
       ]
     }
   ],
@@ -194,12 +292,50 @@
       ]
     },
     {
+      "date": "2023-09-11",
+      "type": "Other",
+      "label": "City Council prescreening (23PLN-00105, 44-unit version)",
+      "src": [
+        "SRC-001306"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-01-10",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2024-04-10",
+      "type": "Other",
+      "label": "Planning and Transportation Commission hearing",
+      "src": [
+        "SRC-001306"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-21",
+      "type": "Other",
+      "label": "Architectural Review Board hearing",
+      "src": [
+        "SRC-001306",
+        "SRC-003441"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-15",
+      "type": "Other",
+      "label": "Planning and Transportation Commission recommends approval, 3-2",
+      "src": [
+        "SRC-001306",
+        "SRC-003440"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-02-10",
@@ -234,6 +370,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Searches on 3265 El Camino Real, Half Dome Capital and Trachtenberg returned city page, SF YIMBY and San Jose Spotlight.",
+      "src": [
+        "SRC-001306"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 132-38-020: situs 3265 El Camino Real, Palo Alto; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of Palo Alto project page (24PLN-00012, 23PLN-00105, hearing dates, planner).",
+      "src": [
+        "SRC-001306"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county funding found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR data already on record; CEQA streamlined under 15183 per city page; no CTCAC award found.",
+      "src": [
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight / Palo Alto Weekly 2025-01-17. Palo Alto Online 2026-11-12 returned HTTP 429.",
+      "src": [
+        "SRC-003440"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-11-20 design review article.",
+      "src": [
+        "SRC-003441"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Half Dome Capital website or project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Trachtenberg Architects project page for this site found in search.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight reports no city or state subsidies; no lender named.",
+      "src": [
+        "SRC-003440"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts.",
+      "src": []
+    }
+  }
 }

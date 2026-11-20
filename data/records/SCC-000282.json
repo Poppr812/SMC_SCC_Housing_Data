@@ -112,9 +112,17 @@
             "SRC-001597"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003445",
+            "SRC-003446"
+          ],
+          "note": "55 for-sale townhomes with live/work (2026 application)"
         }
       ],
-      "best": 0
+      "best": 1
     },
     "status": {
       "claims": [
@@ -186,8 +194,25 @@
             "SRC-001120"
           ],
           "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 80
+            },
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003447"
+          ],
+          "note": "2026 application: 4 lower-income (80% AMI) and 4 moderate-income (120% AMI) for-sale units"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -199,6 +224,42 @@
           "note": "State report 2023, application stage: 8 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.15,
+          "src": [
+            "SRC-003447"
+          ],
+          "note": "2.15 gross acres, 1.72 net acres"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003447",
+            "SRC-001597"
+          ],
+          "note": "SB 330 and AB 130; State Density Bonus Law incentive and 16 waivers requested, no bonus density requested"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "8 below market rate units (2026 application)",
+          "src": [
+            "SRC-003445",
+            "SRC-003447"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -207,9 +268,78 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "text": "2026 application (S-26-021, M-26-010, U-26-007, filed 2026-08-14, planner Erin Walters): 55-unit live/work townhome community on APN 529-23-018, zoned CH:PD:HEOZ, about 26 units per gross acre; site described as vacant and demolished commercial buildings. CEQA review pending.",
+      "src": [
+        "SRC-001597",
+        "SRC-003445",
+        "SRC-003447",
+        "SRC-003446"
+      ]
+    },
+    {
+      "text": "Los Gatan (July 10, 2024): prior developer LPG 405 (Randy Lamb) had a 52-unit plan with 8 affordable units, reduced from 60 units, and proposed growing it to 78 units with 114 parking spaces, 600 sq ft retail and 625 sq ft fitness on a 2.1-acre Highway Commercial site; it was the first SB 330 project in Los Gatos.",
+      "src": [
+        "SRC-003448"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Regis Homes Bay Area, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003445",
+        "SRC-003447"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "405 Alberto LG, LLC",
+      "contact": "Jeff Smith",
+      "linkedin": null,
+      "email": "jsmith@srgnc.com",
+      "phone": "(650) 377-5810",
+      "other_role": "Applicant entity (affiliate of Regis Homes Bay Area); listed as Owner/Developer on traffic questionnaire",
+      "src": [
+        "SRC-003445",
+        "SRC-003446"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Allen Matkins Leck Gamble Mallory & Natsis LLP",
+      "contact": "David H. Blackwell",
+      "linkedin": null,
+      "other_role": "Applicant's counsel (density bonus memo)",
+      "src": [
+        "SRC-003447"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "LPG 405",
+      "contact": "Randy Lamb, managing member",
+      "linkedin": null,
+      "other_role": "Prior developer (52-unit 2023 application)",
+      "src": [
+        "SRC-003448"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Greg G. Bucilla III",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Architect for prior LPG 405 plan",
+      "src": [
+        "SRC-003448"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -229,6 +359,24 @@
         "SRC-001597"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-09-09",
+      "type": "Other",
+      "label": "Town incompleteness letter",
+      "src": [
+        "SRC-003447"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-15",
+      "type": "Other",
+      "label": "Applicant resubmits responses to incompleteness letter",
+      "src": [
+        "SRC-003447"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -241,6 +389,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Searches on Alberto Way, 405 Alberto Way and Sares Regis led to Town documents and Los Gatan.",
+      "src": [
+        "SRC-001597"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 529-23-018: situs 401 Alberto Wy, Los Gatos; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Los Gatos Pending Planning Projects: Project Description, Revised State Density Bonus Law Memo (2026-10-15), Traffic Information Questionnaire (2026-08-14).",
+      "src": [
+        "SRC-001597",
+        "SRC-003445",
+        "SRC-003447",
+        "SRC-003446"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated town project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A2 has no Alberto Way rows; Table A data already on record. No CEQAnet filing found for the 2026 application.",
+      "src": [
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Los Gatan 2024-07-10 on prior LPG 405 plan.",
+      "src": [
+        "SRC-003448"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal article on the 2026 site sale (2026-05-01) returned HTTP 403; Crexi listing returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Regis Homes Bay Area project page for this site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect of the 2026 plan not identified in documents opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Sale and loan reported by The Real Deal could not be opened (403); no other public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts.",
+      "src": []
+    }
+  }
 }
