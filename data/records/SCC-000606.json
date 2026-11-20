@@ -226,6 +226,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "19685 Juniper Loop (Toll Brothers sales center), Morgan Hill, CA 95037, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-003346"
+      ]
     }
   ],
   "images": [],
@@ -321,6 +328,68 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 10,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001131"
+          ],
+          "note": "State report 2020 application row: 10 moderate-income deed-restricted, 57 above-moderate"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 57,
+          "src": [
+            "SRC-001131"
+          ],
+          "note": "Above-moderate units in the 2020 application row"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001135"
+          ],
+          "note": "Term reported on the deed-restricted moderate-income unit permit rows"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "15% of units deed-restricted for moderate-income households",
+          "src": [
+            "SRC-003344",
+            "SRC-003345"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003344"
+          ],
+          "note": "Planning Commission approved vesting tentative map, design permit and mitigated negative declaration; project filed under SB 330"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -329,12 +398,80 @@
       "src": [
         "SRC-001902"
       ]
+    },
+    {
+      "text": "Planning Commission voted 6-0 on 2022-03-22 (one recusal); 12 three-story buildings with six unit layouts and a two-car garage for every unit.",
+      "src": [
+        "SRC-003344"
+      ]
+    },
+    {
+      "text": "Toll Brothers bought the project from Dividend Homes after the March 2022 approval and planned to build it as designed.",
+      "src": [
+        "SRC-003345"
+      ]
+    },
+    {
+      "text": "Toll Brothers sales page lists five three-story condo plans, 2 to 4 bedrooms, 1,348 to 2,425 sq ft, starting prices $819,995 to $1,174,995, with quick move-in homes available.",
+      "src": [
+        "SRC-003346"
+      ]
+    },
+    {
+      "text": "State report permit rows list the Juniper Loop units under APNs 725-01-018 and 725-01-034; the 2020 application row lists APN 725-01-018.",
+      "src": [
+        "SRC-001131",
+        "SRC-001135"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Toll Brothers",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.tollbrothers.com",
+      "website_basis": "search",
+      "project_page": "https://tollbrothers.com/luxury-homes-for-sale/California/Manzanita-Park",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003346",
+        "SRC-003345"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "Dividend Homes",
+      "contact": "Dick Oliver",
+      "linkedin": null,
+      "src": [
+        "SRC-003344",
+        "SRC-003345"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "North Corridor Investors LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant named in city staff report",
+      "src": [
+        "SRC-003344"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-08-28",
+      "type": "Application filed",
+      "label": "Application submitted (SR2020-0017)",
+      "src": [
+        "SRC-001131"
+      ]
+    },
     {
       "date": "2022-03-22",
       "type": "Approved",
@@ -343,6 +480,22 @@
         "SRC-001901"
       ],
       "estimated": false
+    },
+    {
+      "date": "2023-08-23",
+      "type": "Other",
+      "label": "City Council approves final map, subdivision improvement and encroachment agreements",
+      "src": [
+        "SRC-003345"
+      ]
+    },
+    {
+      "date": "2024-06-19",
+      "type": "Permit issued",
+      "label": "Building permits issued for Juniper Loop units (BRES2022 series)",
+      "src": [
+        "SRC-001135"
+      ]
     }
   ],
   "history": [
@@ -350,6 +503,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and developer: Morgan Hill Times 2022 and 2023, Toll Brothers page",
+      "src": [
+        "SRC-003344",
+        "SRC-003345",
+        "SRC-003346"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 725-16-035: no situs address or owner shown",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "City project page already cited; Morgan Hill is not on Legistar",
+      "src": [
+        "SRC-001901"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A 2020 (SR2020-0017) and Table A2 2024 permit rows",
+      "src": [
+        "SRC-001131",
+        "SRC-001135"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Morgan Hill Times 2022-03-28 and 2023-09-07",
+      "src": [
+        "SRC-003344",
+        "SRC-003345"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2022 proposal article seen in search; facts already on record",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Toll Brothers Manzanita Park sales page",
+      "src": [
+        "SRC-003346"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city, news or developer sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only; no relevant public posts surfaced",
+      "src": []
+    }
+  }
 }

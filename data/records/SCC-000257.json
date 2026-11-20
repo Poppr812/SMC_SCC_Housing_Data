@@ -120,6 +120,13 @@
           "src": [
             "SRC-001135"
           ]
+        },
+        {
+          "value": "Set-asides: 28 farmworker, 16 homeless, 10 at risk of homelessness, 7 veterans; 16 Section 8 PBV and 7 HUD-VASH units",
+          "src": [
+            "SRC-003348",
+            "SRC-001661"
+          ]
         }
       ]
     },
@@ -153,6 +160,19 @@
           "src": [
             "SRC-001445"
           ]
+        },
+        {
+          "value": {
+            "studio": 15,
+            "1br": 16,
+            "2br": 17,
+            "3br": 18
+          },
+          "src": [
+            "SRC-001661",
+            "SRC-003348"
+          ],
+          "note": "Includes one 3BR manager unit"
         }
       ]
     },
@@ -184,6 +204,77 @@
           ]
         }
       ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 65448259,
+          "src": [
+            "SRC-001661"
+          ],
+          "note": "Project cost at application"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001661"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 68,
+          "src": [
+            "SRC-001445"
+          ],
+          "note": "64 resident, 4 guest"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001445"
+          ],
+          "note": "State Density Bonus Law and SB 330; height via design waiver"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 75150,
+          "src": [
+            "SRC-001445"
+          ],
+          "note": "Building area, about 75,150 sq ft"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Farmworker",
+            "Supportive",
+            "Family"
+          ],
+          "src": [
+            "SRC-003348",
+            "SRC-001661"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -198,6 +289,25 @@
       "text": "CTCAC CA-25-477: The Magnolias, located at 17965 Monterey Road in Morgan Hill on a 1.53 acre site, requested and is being recommended for a reservation of $3,124,138 in annual federal tax credits and $32,378,000 of tax-exempt bond cap to finance the new construction of 66 units of housing, consisting of 65 restricted rental units and 1 unrestricted manager's unit.",
       "src": [
         "SRC-001661"
+      ]
+    },
+    {
+      "text": "City page unit mix: 16 studios, 16 one-bedroom, 17 two-bedroom, 17 three-bedroom (one for on-site staff); CTCAC and Eden list 15, 16, 17 and 18. Building about 59 feet tall, reduced from 68 feet in the 2021 design; approval amended in 2024 for a cost-reduction redesign.",
+      "src": [
+        "SRC-001445",
+        "SRC-001661"
+      ]
+    },
+    {
+      "text": "CTCAC staff report: deferred developer fee $3,100,000; developer fee $5,900,000; per-unit cost $991,640; Type I construction; one residential building.",
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "text": "Eden release lists funding partners: City of Morgan Hill, County of Santa Clara, Santa Clara County Housing Authority, CTCAC, CDLAC, California Municipal Finance Authority, Capital One, National Equity Fund, Citibank and Destination: HOME.",
+      "src": [
+        "SRC-003349"
       ]
     }
   ],
@@ -223,6 +333,114 @@
       ],
       "website": "https://www.firsthousing.org/",
       "project_page": "https://www.firsthousing.org/development"
+    },
+    {
+      "role": "Other",
+      "company": "The Magnolias LP",
+      "contact": "Andrea Osgood",
+      "linkedin": null,
+      "email": "aosgood@edenhousing.org",
+      "phone": "(510) 247-8103",
+      "other_role": "CTCAC applicant / ownership partnership",
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Eden Magnolias, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "The Magnolias LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Eden Housing Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant",
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citibank, N.A.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003348"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "James Roberts-Obayashi Corp.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003348"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "National Equity Fund",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Financial partner listed by developer",
+      "src": [
+        "SRC-003348",
+        "SRC-003349"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Capital One",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Financial partner listed by developer",
+      "src": [
+        "SRC-003348",
+        "SRC-003349"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001661"
+      ]
     }
   ],
   "financing": [
@@ -251,6 +469,46 @@
       "provider": "Citibank",
       "program": "Taxable",
       "amount": 2424328,
+      "date": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": "Tax-exempt",
+      "amount": 9952000,
+      "date": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": null,
+      "amount": 22250000,
+      "date": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Morgan Hill",
+      "program": null,
+      "amount": 600000,
+      "date": null,
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor (not named in staff report)",
+      "program": "Federal 4% credits, $3,124,138 annual",
+      "amount": 28538198,
       "date": null,
       "src": [
         "SRC-001661"
@@ -302,6 +560,14 @@
       ]
     },
     {
+      "date": "2026-02-13",
+      "type": "Construction start",
+      "label": "Groundbreaking celebration",
+      "src": [
+        "SRC-003349"
+      ]
+    },
+    {
       "date": "2027-03",
       "type": "Completion",
       "label": "Expected completion per CTCAC staff report",
@@ -331,6 +597,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and developers: Eden release and property page",
+      "src": [
+        "SRC-003349",
+        "SRC-003348"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API APN 764-12-006: situs 17965 Monterey Rd, Morgan Hill",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City project page: parking, height, density bonus, unit mix",
+      "src": [
+        "SRC-001445"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County $22.25M loan per CTCAC staff report",
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-25-477 sources, costs, parties",
+      "src": [
+        "SRC-001661"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "NBC Bay Area and local items seen in search repeat known facts",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No trade press items found beyond those on record",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Eden Housing groundbreaking release and property page",
+      "src": [
+        "SRC-003349",
+        "SRC-003348"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "BDE Architecture named on Eden property page",
+      "src": [
+        "SRC-003348"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC permanent sources; Eden funding partner list",
+      "src": [
+        "SRC-001661",
+        "SRC-003349"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

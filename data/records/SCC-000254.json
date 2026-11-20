@@ -92,7 +92,9 @@
         {
           "value": 70,
           "src": [
-            "SRC-001127"
+            "SRC-001127",
+            "SRC-003352",
+            "SRC-003353"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -104,7 +106,7 @@
           "note": "Application 21PLN-00341; 70 units was the 2021 prescreening"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -145,6 +147,14 @@
           "src": [
             "SRC-001308"
           ]
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-003352",
+            "SRC-003353"
+          ],
+          "note": "Approved version; earlier four-story design"
         }
       ]
     },
@@ -161,6 +171,19 @@
           "src": [
             "SRC-001308"
           ]
+        },
+        {
+          "value": {
+            "studio": 28,
+            "1br": 33,
+            "2br": 9,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003353"
+          ],
+          "note": "70-unit version, October 2025"
         }
       ]
     },
@@ -172,6 +195,13 @@
             "SRC-001308"
           ],
           "note": "Ground-floor office"
+        },
+        {
+          "value": 1984,
+          "src": [
+            "SRC-003353"
+          ],
+          "note": "Ground-floor office, about 1,984 sq ft"
         }
       ]
     },
@@ -190,6 +220,47 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 59800,
+          "src": [
+            "SRC-003353"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 78,
+          "src": [
+            "SRC-003353"
+          ],
+          "note": "70-unit version; plus 88 bicycle spaces"
+        },
+        {
+          "value": 94,
+          "src": [
+            "SRC-003354"
+          ],
+          "note": "2022 four-story, 65-unit version"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003352"
+          ],
+          "note": "Planned Home Zoning rezoning approved by City Council"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -199,9 +270,48 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "Daily Post: six stories, 70 feet; 20% of apartments affordable; developer filed a builder's remedy application in 2024 before the city changed zoning to fit the project.",
+      "src": [
+        "SRC-003352"
+      ]
+    },
+    {
+      "text": "SF YIMBY: separate builder's remedy version would have 88 apartments in six floors; city page lists it under 680 University Ave.",
+      "src": [
+        "SRC-003353",
+        "SRC-001308"
+      ]
+    },
+    {
+      "text": "CEQAnet 2022 description: 65 units, 13 affordable (20%), rezone from RM-20 to Planned Community, 94 parking stalls.",
+      "src": [
+        "SRC-003354"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Smith Development",
+      "contact": "Boyd Smith",
+      "linkedin": null,
+      "src": [
+        "SRC-003352",
+        "SRC-003353"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KSH Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003353"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -211,6 +321,30 @@
       "label": "Application submitted",
       "src": [
         "SRC-001126"
+      ]
+    },
+    {
+      "date": "2022-11-04",
+      "type": "Other",
+      "label": "EIR Notice of Preparation filed with State Clearinghouse",
+      "src": [
+        "SRC-003354"
+      ]
+    },
+    {
+      "date": "2025-10-08",
+      "type": "Other",
+      "label": "Planning Commission review of revised Final EIR",
+      "src": [
+        "SRC-003353"
+      ]
+    },
+    {
+      "date": "2025-11-10",
+      "type": "Approved",
+      "label": "City Council approves, 4-1",
+      "src": [
+        "SRC-003352"
       ]
     },
     {
@@ -232,6 +366,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Smith Development: Daily Post, SF YIMBY",
+      "src": [
+        "SRC-003352",
+        "SRC-003353"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API APN 120-03-043: situs 660 University Av",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Palo Alto project page; Palo Alto not on Legistar",
+      "src": [
+        "SRC-001308"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2022110095; APR rows already on record",
+      "src": [
+        "SRC-003354",
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Palo Alto Daily Post 2025-11-11",
+      "src": [
+        "SRC-003352"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-10-07",
+      "src": [
+        "SRC-003353"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Smith Development project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "KSH Architects named; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR notes private financing",
+      "src": [
+        "SRC-001127"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

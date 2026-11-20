@@ -142,11 +142,81 @@
           "src": [
             "SRC-001264"
           ]
+        },
+        {
+          "value": "10 units (15%) Below Market Rate, moderate income",
+          "src": [
+            "SRC-003350",
+            "SRC-003351"
+          ]
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "24PLN-00212, 26PLN-00211",
+          "src": [
+            "SRC-003350"
+          ],
+          "note": "Major Architectural Review and Vesting Tentative Map"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003350"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 154,
+          "src": [
+            "SRC-003351"
+          ],
+          "note": "132 resident garage spaces and 22 guest spaces"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 10,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003351"
+          ],
+          "note": "Moderate-income"
         }
       ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City page: demolish Magnussen's Toyota dealership for 66 for-sale townhome condominiums under State Density Bonus Law on 3.3 acres; vesting map divides the parcel into 14 lots including 5 common lots; zoning PC-4843, CEQA status pending.",
+      "src": [
+        "SRC-003350"
+      ]
+    },
+    {
+      "text": "Mountain View Voice: nine buildings of seven to nine units; site is on the Cortese List for former fuel tanks removed in 1984; applicant's attorney argues an AB 130 CEQA exemption; Magnussen is relocating to Old Middlefield Road in Mountain View.",
+      "src": [
+        "SRC-003351"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -177,6 +247,26 @@
       "src": [
         "SRC-001264"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Trumark Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003351",
+        "SRC-001264"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Holland & Knight",
+      "contact": "Tamsen Plume",
+      "linkedin": null,
+      "other_role": "Applicant's attorney",
+      "src": [
+        "SRC-003351"
+      ]
     }
   ],
   "financing": [],
@@ -192,6 +282,88 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Trumark: city page, Mountain View Voice",
+      "src": [
+        "SRC-003350",
+        "SRC-003351"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API APN 147-09-065: situs 690 San Antonio Rd",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Palo Alto project page 24PLN-00212 / 26PLN-00211",
+      "src": [
+        "SRC-003350"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR tables: no row for 690 San Antonio or 24PLN-00212",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Mountain View Voice 2026-05-27",
+      "src": [
+        "SRC-003351"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY June 2026 already on record",
+      "src": [
+        "SRC-001264"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Trumark Homes site search: no Palo Alto project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "KTGY credited for rendering; no KTGY project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

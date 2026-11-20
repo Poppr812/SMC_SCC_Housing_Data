@@ -158,6 +158,54 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001108",
+            "SRC-001109"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 7,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001109"
+          ],
+          "note": "State report 2021 entitlement row: 7 low-income deed-restricted (inclusionary)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 60,
+          "src": [
+            "SRC-001108",
+            "SRC-001109"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "7 low-income inclusionary units, 60 above-moderate, per state report",
+          "src": [
+            "SRC-001109"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +213,24 @@
       "text": "Plans cite APNs 040-031-230 and -240, no longer active; 040-031-500 matches the plans' owner and 1.5-acre site",
       "src": [
         "SRC-001086"
+      ]
+    },
+    {
+      "text": "State report notes the modification reduced proposed residential units to 67 from 164 proposed under PA-2007-054; it lists APNs 040-031-210, -220, -230 and -240.",
+      "src": [
+        "SRC-001108"
+      ]
+    },
+    {
+      "text": "City Development Agreement page: Mixed Use Blocks 2 and 3 together include 303,000 sq ft of office and 67 housing units; Planning Commission annual reviews held 2024-11-12 and 2025-08-26, next set for 2026-10-27.",
+      "src": [
+        "SRC-001087"
+      ]
+    },
+    {
+      "text": "SFist, citing the San Francisco Business Times, reported in August 2025 that Wilson Meany was submitting permits for the last two buildings: 303,000 sq ft of office, ground-floor retail and 67 housing units.",
+      "src": [
+        "SRC-003347"
       ]
     }
   ],
@@ -195,6 +261,14 @@
   "groups": {},
   "events": [
     {
+      "date": "2021-06-11",
+      "type": "Application filed",
+      "label": "Application submitted (PA-2020-053, MU2 and MU3 SPAR modification)",
+      "src": [
+        "SRC-001108"
+      ]
+    },
+    {
       "date": "2021-06-22",
       "type": "Approved",
       "label": "Planning Commission approves the modification, 3-2",
@@ -209,6 +283,14 @@
       "src": [
         "SRC-001087"
       ]
+    },
+    {
+      "date": "2025-08",
+      "type": "Other",
+      "label": "Wilson Meany submitting building permits for the last two Bay Meadows buildings",
+      "src": [
+        "SRC-003347"
+      ]
     }
   ],
   "history": [
@@ -221,6 +303,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on Bay Meadows MU3 and Wilson Meany: SFist 2025-08-28",
+      "src": [
+        "SRC-003347"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC parcel record for 040-031-500 and owner already on record",
+      "src": [
+        "SRC-001089"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "City DA page and MU2/MU3 page; San Mateo not on Legistar",
+      "src": [
+        "SRC-001087"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A and A2 2021 rows for PA-2020-053",
+      "src": [
+        "SRC-001108",
+        "SRC-001109"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SFist 2025-08-28; SM Daily Journal Bay Meadows article refused access (403)",
+      "src": [
+        "SRC-003347"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Search found Stockbridge Feb 2026 release on final commercial parcels; no MU3 residential detail",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Stockbridge and Bay Meadows sites: no MU3 residential details",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No financing for MU3 residential found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }
