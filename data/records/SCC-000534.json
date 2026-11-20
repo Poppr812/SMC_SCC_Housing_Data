@@ -173,12 +173,110 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 17,
+            "4br+": 13
+          },
+          "src": [
+            "SRC-003705"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 63,
+          "src": [
+            "SRC-003705"
+          ],
+          "note": "60 assigned, 3 unassigned"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003706"
+          ],
+          "note": "4 on-site moderate-income ownership units; fee paid on the fractional remainder"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 26,
+          "src": [
+            "SRC-003706"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003706"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 0,
+          "src": [
+            "SRC-003705"
+          ],
+          "note": "Existing 2,600 sq ft restaurant removed"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
+        "SRC-001488"
+      ]
+    },
+    {
+      "text": "City Legistar names 4Terra Investments as applicant and Desmond Family Real Estate Limited Partners as owner. The January 2026 version (file 26-0304) was 29 townhome-style condominiums plus one live-work unit; the approved version (26-0710) is 30 townhomes in five three-story buildings with a vesting map for 30 condominium units.",
+      "src": [
+        "SRC-001488",
+        "SRC-003707"
+      ]
+    },
+    {
+      "text": "Project data table: 52,474 sq ft lot (1.20 acres), 30 units at 25 du/ac (29 base plus density bonus), 17 three-bedroom and 13 four-bedroom units of 2,204 to 3,034 sq ft, 33 ft 6 in tall, 63 parking spaces, FAR 134%. Several setback, coverage and design standards are waived under State Density Bonus Law.",
+      "src": [
+        "SRC-003705"
+      ]
+    },
+    {
+      "text": "Applicant counsel letter: ownership project under the Density Bonus Law; 15% inclusionary obligation (4.35 units) met with 4 on-site units at 120% AMI plus a fee on the fraction; 10% density bonus elected as one unit; 11 waivers requested.",
+      "src": [
+        "SRC-003706"
+      ]
+    },
+    {
+      "text": "The 2024 IS/MND evaluated 62 units and 7,579 sq ft of commercial on the two parcels. The 2026 Notice of Determination says the 898 E. Fremont Ave parcel (309-10-026) was approved for a separate development and describes the 30 townhouses on 1313 S. Wolfe Road; the city's 2026 Legistar item lists both 309-10-026 and 309-10-027 for this project.",
+      "src": [
+        "SRC-003708",
+        "SRC-003709",
         "SRC-001488"
       ]
     }
@@ -203,17 +301,69 @@
       "src": [
         "SRC-001489"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Desmond Family Real Estate Limited Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001488",
+        "SRC-003707"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "4Terra Investments",
+      "contact": "Amir Massih",
+      "linkedin": null,
+      "email": "AMassih@4TerraInvestments.com",
+      "phone": "(415) 235-5973",
+      "website": "https://www.4terrainvestments.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003708",
+        "SRC-001488"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Reuben, Junius & Rose",
+      "contact": "Mark Loper",
+      "linkedin": null,
+      "other_role": "Land use counsel for project sponsor",
+      "src": [
+        "SRC-003706"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-05-07",
+      "type": "Other",
+      "label": "General Plan amendment and rezoning to Medium Density Residential approved (R-3/MU and R-3/PD)",
+      "src": [
+        "SRC-003709"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-09-28",
       "type": "Approved",
       "label": "Planning Commission approved",
       "src": [
         "SRC-001490"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-09-30",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed (MND addendum)",
+      "src": [
+        "SRC-003708"
       ],
       "estimated": false
     }
@@ -228,6 +378,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer; CEQAnet SCH 2024020540 found",
+      "src": [
+        "SRC-003708"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 309-10-027 situs 1313 S Wolfe Rd; 309-10-026 has no situs; no owner field",
+      "src": [
+        "SRC-003710"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar files 26-0710 and 26-0304; RTC attachments 2 (data table) and 8 (density bonus letter)",
+      "src": [
+        "SRC-001488",
+        "SRC-003707",
+        "SRC-003705",
+        "SRC-003706"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2024020540: 2024 GPA/rezoning NOD and 2026 project NOD; no APR row for PLNG-2025-0493",
+      "src": [
+        "SRC-003709",
+        "SRC-003708"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SF YIMBY February 2026 article already on record",
+      "src": [
+        "SRC-001489"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "4terrainvestments.com projects page does not list a Sunnyvale project",
+      "src": [
+        "SRC-003711"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Kava Massih Architects project page found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; nothing found",
+      "src": []
+    }
+  }
 }

@@ -213,6 +213,62 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "AP2024-030",
+          "src": [
+            "SRC-001116",
+            "SRC-001117"
+          ],
+          "note": "Current application as reported to the state; the prior 28-unit application was AP2021-060"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 50
+            },
+            {
+              "count": 2,
+              "ami": 80
+            },
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report 2025, entitlement stage, AP2024-030 (AMI is the state income category's upper limit)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-001116"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001116"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -221,18 +277,87 @@
       "src": [
         "SRC-001224"
       ]
+    },
+    {
+      "text": "The city describes a 128,343 sq ft, 6-story building, 89 ft 2 in tall, with 2 levels of below-grade parking. Floors 1-4 are office; floors 5-6 are mainly residential with a small office area.",
+      "src": [
+        "SRC-001224"
+      ]
+    },
+    {
+      "text": "The Notice of Exemption names MECAH Ventures as applicant and as the party carrying out the project, and covers demolition of a vacant structure. The county parcel layer shows Singewald Stephen R & P A Trs as owner of both parcels.",
+      "src": [
+        "SRC-003693",
+        "SRC-003694"
+      ]
+    },
+    {
+      "text": "State report rows: AP2021-060, 28 units (1 very low, 2 low, 1 moderate), entitlement 2023-04-18; AP2024-030, 32 units (1 very low, 2 low, 1 moderate), entitlement 2025-08-19, density bonus 21.5% with 5 incentives or waivers, deed restrictions from inclusionary and density bonus requirements. The 2023 row notes staff recommending HOME and local city funds.",
+      "src": [
+        "SRC-001116"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Mecah Ventures",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.mecahventures.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003692",
+        "SRC-003693"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Singewald Stephen R & P A Trs",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003694"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-04-18",
+      "type": "Approved",
+      "label": "Prior 28-unit application approved (AP2021-060)",
+      "src": [
+        "SRC-001116"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-05",
       "type": "Application filed",
       "label": "Redesigned project resubmitted under a new application",
       "src": [
         "SRC-001224"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-19",
+      "type": "Approved",
+      "label": "Entitlement approved, redesigned 32-unit project (AP2024-030)",
+      "src": [
+        "SRC-001116"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-26",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003692",
+        "SRC-003693"
       ],
       "estimated": false
     }
@@ -242,6 +367,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer; CEQAnet NOE names Mecah Ventures",
+      "src": [
+        "SRC-003692"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Mateo County parcel layer: owner of record for 053-148-090 and -120",
+      "src": [
+        "SRC-003694"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Redwood City planning projects GIS entry 123; redwoodcity.org project page returned 403; Redwood City has no Legistar API",
+      "src": [
+        "SRC-001224"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "HCD APR Tables A and A2 (AP2021-060, AP2024-030); CEQAnet SCH 2025081164",
+      "src": [
+        "SRC-001116",
+        "SRC-001117",
+        "SRC-003692"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles on the 2025 Planning Commission review returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal returned 403; no SF YIMBY article found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "mecahventures.com lists projects; 1201 Main not listed",
+      "src": [
+        "SRC-003695"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city, CEQA or state sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "State report 2023 row notes staff recommending HOME and local city funds for AP2021-060",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found",
+      "src": []
+    }
+  }
 }

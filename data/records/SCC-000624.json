@@ -154,6 +154,18 @@
           "note": "City file MP26-006 (Ministerial Permit): \"Ministerial Permit to allow the construction of seven residential condominium units configured in one three-story townhouse building and a three-story, 23-unit for-rent multifamily apartment building, for a total of 30 units on an approximately 0.45-gross\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.45,
+          "src": [
+            "SRC-001956",
+            "SRC-003712"
+          ],
+          "note": "City text: approximately 0.45 gross acres; MLS: 19,602 sq ft lot, 302 ft deep"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -161,6 +173,12 @@
       "text": "City of San Jose permit MP26-006 (Ministerial Permit, folder year 2026), status Under Review: \"Ministerial Permit to allow the construction of seven residential condominium units configured in one three-story townhouse building and a three-story, 23-unit for-rent multifamily apartment building, for a total of 30 units on an approximately 0.45-gross\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "An MLS listing marketed the property as a development site: a 784 sq ft, two-bedroom house built in 1939 on a 19,602 sq ft (0.45 acre) R1-zoned lot, listed at $1,800,000 and shown as closed.",
+      "src": [
+        "SRC-003712"
       ]
     }
   ],
@@ -194,6 +212,85 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and applicant; MLS listing for the site",
+      "src": [
+        "SRC-003712"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 303-26-074, situs 337 Boynton Av; no owner field",
+      "src": [
+        "SRC-003713"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov planning pages refuse automated access; city permit layer already cited",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "HCD APR Tables A and A2 for San Jose: no 337 Boynton row (only 479 Boynton H25-011); no CEQAnet document found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no SF YIMBY or other trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Boynton Ave. LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; nothing found",
+      "src": []
+    }
+  }
 }

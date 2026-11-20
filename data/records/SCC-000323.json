@@ -39,6 +39,40 @@
           37.2212776
         ]
       ]
+    },
+    {
+      "apn": "529-28-002",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9774277,
+          37.2215266
+        ],
+        [
+          -121.9774616,
+          37.2212412
+        ],
+        [
+          -121.9776589,
+          37.2212486
+        ],
+        [
+          -121.977856,
+          37.2212599
+        ],
+        [
+          -121.9778167,
+          37.2215741
+        ],
+        [
+          -121.9774277,
+          37.2215266
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -145,6 +179,13 @@
             "SRC-001121"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "S-24-007, U-24-002, M-24-004, ND-24-003",
+          "src": [
+            "SRC-003699"
+          ],
+          "note": "Architecture and Site, Conditional Use Permit, Vesting Tentative Map and Mitigated Negative Declaration applications"
         }
       ]
     },
@@ -175,6 +216,110 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003696",
+            "SRC-003697"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2416,
+          "src": [
+            "SRC-003696",
+            "SRC-003697"
+          ]
+        },
+        {
+          "value": 2400,
+          "src": [
+            "SRC-003698"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 32750,
+          "src": [
+            "SRC-003698"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 15,
+            "2br": 13,
+            "3br": 2
+          },
+          "src": [
+            "SRC-003698"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 47,
+          "src": [
+            "SRC-003696",
+            "SRC-003698"
+          ],
+          "note": "Option 1, two-level garage"
+        },
+        {
+          "value": 39,
+          "src": [
+            "SRC-003696",
+            "SRC-003698"
+          ],
+          "note": "Option 2, one-level garage with 16 car stackers"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.43,
+          "src": [
+            "SRC-003696",
+            "SRC-003698"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 24,
+          "src": [
+            "SRC-003696",
+            "SRC-001121"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001121"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -190,9 +335,111 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "The May 2025 council report lists APNs 529-28-001 and -002, property owner David Blatt, CSPN LLC, and applicant Kenneth Rodrigues and Partners, Inc. SF YIMBY names Capstack Partners as developer.",
+      "src": [
+        "SRC-003699",
+        "SRC-003698",
+        "SRC-003700"
+      ]
+    },
+    {
+      "text": "CEQA document: SB 330 application invoking builder's remedy; four-story, 52 ft mixed-use building with underground parking, 2,416 sq ft ground-floor commercial and 30 units (24 market rate, 6 affordable). Two garage options: 47 stalls on two levels, or 39 stalls on one level with 16 car stackers.",
+      "src": [
+        "SRC-003696"
+      ]
+    },
+    {
+      "text": "Town Council approved 3-2 on May 27, 2025; Mayor Matthew Hudes and Councilmember Mary Badame voted no. Conditions require the developer to meet regularly with school staff and limit construction traffic at peak school times.",
+      "src": [
+        "SRC-003697",
+        "SRC-003702"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports about 78,580 sq ft total: 32,750 sq ft housing, 2,400 sq ft retail and a 31,000 sq ft garage; unit mix 15 one-bedroom, 13 two-bedroom, 2 three-bedroom.",
+      "src": [
+        "SRC-003698"
+      ]
+    },
+    {
+      "text": "Cushman & Wakefield lists the site for sale as fully entitled land for 30 for-sale condominiums with about 2,416 sq ft of ground-floor retail on 0.43 acres; price on request.",
+      "src": [
+        "SRC-003701"
+      ]
+    },
+    {
+      "text": "State report 2025 row: 6 low-income deed-restricted units for 55 years, required under Government Code 65589.5; 12 development standard modifications.",
+      "src": [
+        "SRC-001121"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "CSPN LLC",
+      "contact": "David Blatt",
+      "linkedin": null,
+      "src": [
+        "SRC-003699",
+        "SRC-003697"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Capstack Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003698",
+        "SRC-003700"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Kenneth Rodrigues & Partners, Inc.",
+      "contact": "Kenneth Rodrigues",
+      "linkedin": null,
+      "email": "kenr@kprarchitects.com",
+      "phone": "(650) 965-0700",
+      "src": [
+        "SRC-003696",
+        "SRC-003699"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kenneth Rodrigues & Partners, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003699",
+        "SRC-003696"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "EMC Planning Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-003696"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Cushman & Wakefield",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003701"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -203,6 +450,25 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2025-02-27",
+      "type": "Other",
+      "label": "Initial Study / Mitigated Negative Declaration released for review (SCH 2025021056)",
+      "src": [
+        "SRC-003696"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-03-26",
+      "type": "Other",
+      "label": "Planning Commission recommended approval, 4-2",
+      "src": [
+        "SRC-003699",
+        "SRC-003702"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-05-27",
@@ -242,6 +508,100 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcel corrected: the state report's APN didn't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Cafe Dio and developer",
+      "src": [
+        "SRC-003697",
+        "SRC-003698"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 529-28-002 is the second project parcel per town report and state report",
+      "src": [
+        "SRC-003703",
+        "SRC-003699"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Town Council 2025-05-27 addendum report (municodemeetings); town SB 330 list already cited",
+      "src": [
+        "SRC-003699",
+        "SRC-001554"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Town project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025021056 MND; HCD APR Tables A and A2",
+      "src": [
+        "SRC-003696",
+        "SRC-001121",
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-06-03; Los Gatan 2025-06-06; Mercury News (PressReader) returned 403",
+      "src": [
+        "SRC-003697",
+        "SRC-003702"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-02-28 and 2025-06-10",
+      "src": [
+        "SRC-003698",
+        "SRC-003700"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Capstack Partners project page found by search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "kprarchitects.com resolved to an unrelated UK firm; no KRP project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cushman & Wakefield land-sale listing; no lender or public funding found",
+      "src": [
+        "SRC-003701"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found",
+      "src": []
+    }
+  }
 }
