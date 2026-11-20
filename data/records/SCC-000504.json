@@ -60,6 +60,14 @@
           ]
         }
       ]
+    },
+    {
+      "text": "12805 Llagas Ave, San Martin, CA",
+      "role": "other",
+      "src": [
+        "SRC-003426",
+        "SRC-003425"
+      ]
     }
   ],
   "images": [],
@@ -111,6 +119,13 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 53,
+          "src": [
+            "SRC-003425"
+          ],
+          "note": "SF YIMBY June 2025: 44 single-family parcels and 9 ADUs, 53 residential units in total"
         }
       ]
     },
@@ -134,6 +149,15 @@
             "SRC-001431"
           ],
           "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        },
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003426"
+          ],
+          "note": "SF YIMBY Dec 2024: preliminary application uses the state Density Bonus program and SB 330"
         }
       ]
     },
@@ -144,6 +168,73 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-003426"
+          ],
+          "note": "SF YIMBY Dec 2024: about six acres of cropland (under the 12805 Llagas Avenue address)"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001431",
+            "SRC-003425"
+          ],
+          "note": "County: the ADUs will be deed restricted to low-income households; SF YIMBY: 6 below-market-rate and 3 market-rate ADUs"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "County list: the project's ADUs will be deed restricted to low-income households",
+          "src": [
+            "SRC-001431"
+          ]
+        },
+        {
+          "value": "6 below-market-rate ADUs and 3 market-rate ADUs",
+          "src": [
+            "SRC-003425"
+          ]
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2500,
+          "src": [
+            "SRC-003426"
+          ],
+          "note": "Average home size of about 2,500 sq ft with four bedrooms; ADUs about 400 sq ft each"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 190290,
+          "src": [
+            "SRC-003426"
+          ],
+          "note": "About 190,290 sq ft combined"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 90,
+          "src": [
+            "SRC-003426"
+          ]
         }
       ]
     }
@@ -153,6 +244,32 @@
       "text": "County description: 56 units, 45 single-family residences and 9 with ADUs. County status: In Review.",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "text": "County list: preliminary application PLN24-242-PRE dated December 6, 2024; formal application PLN25-091-SB330 dated May 28, 2025; status In Review; supervisorial district D1; county planner David Horwitz.",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "text": "SF YIMBY Dec 2024 (12805 Llagas Avenue): 45 single-family homes and 9 ADUs in the rear yards of nine homes; Swenson listed as developer and owner, filing through Green Valley Corporation; Swenson in charge of design; two-story wood-frame buildings in five building types.",
+      "src": [
+        "SRC-003426"
+      ]
+    },
+    {
+      "text": "SF YIMBY June 2025: project named Barrel Oak Meadows Residential Community at 13000 Depot Road, previously reported under 12805 Llagas Avenue; Swenson submitted two permit applications; 44 single-family parcels, 9 ADUs, a small neighborhood park and two-car garages.",
+      "src": [
+        "SRC-003425"
+      ]
+    },
+    {
+      "text": "Unit counts differ by source: county list 56 units (45 single-family residences and 9 with ADUs); SF YIMBY Dec 2024 45 homes plus 9 ADUs; SF YIMBY June 2025 53 units (44 homes plus 9 ADUs).",
+      "src": [
+        "SRC-001431",
+        "SRC-003426",
+        "SRC-003425"
       ]
     }
   ],
@@ -175,11 +292,51 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Swenson",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.swenson.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003426",
+        "SRC-003425"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Green Valley Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Filing entity",
+      "src": [
+        "SRC-003426"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003426"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-12-06",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application submitted (PLN24-242-PRE)",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-28",
       "type": "Application filed",
@@ -195,6 +352,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Barrel Oak Meadows / 13000 Depot Road found SF YIMBY coverage",
+      "src": [
+        "SRC-003425"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 82501013: situs 13000 Depot Rd, San Martin 95046, unincorporated",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated San Martin; county jurisdiction",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list row 37: prelim PLN24-242-PRE, planner, district, ADU restriction",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Tables A and A2 (Santa Clara County) searched for 825-01-013 and Depot: no row for this project; no CEQAnet or CTCAC match",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search returned no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY articles of Dec 14, 2024 and June 15, 2025",
+      "src": [
+        "SRC-003426",
+        "SRC-003425"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "swenson.com homepage opened; no San Martin or Barrel Oak Meadows project listed",
+      "src": [
+        "SRC-002923"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY says Swenson handles design; no separate architect named",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn result for the project",
+      "src": []
+    }
+  }
 }

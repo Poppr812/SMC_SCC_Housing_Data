@@ -198,6 +198,56 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003427",
+            "SRC-003428",
+            "SRC-003429"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.54,
+          "src": [
+            "SRC-003428",
+            "SRC-003429",
+            "SRC-003430"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 89674,
+          "src": [
+            "SRC-003427",
+            "SRC-003428"
+          ],
+          "note": "Total gross floor area"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003427"
+          ],
+          "note": "CEQAnet: 51 base-density units and 5 bonus-density units"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -206,6 +256,33 @@
       "src": [
         "SRC-001117",
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "Nine three-story wood-framed buildings; two-, three- and four-bedroom townhomes of roughly 1,200 to 1,700 sq ft (CEQAnet, SF YIMBY) or roughly 1,300 to 1,850 sq ft (The Registry, July 2023); two-car garages; all-electric with solar and EV charging.",
+      "src": [
+        "SRC-003427",
+        "SRC-003428",
+        "SRC-003429"
+      ]
+    },
+    {
+      "text": "The 2.54-acre site was home to Alan Steel; the development caps PCB-contaminated soil under a plan approved by the Regional Water Quality Control Board and U.S. EPA.",
+      "src": [
+        "SRC-003429",
+        "SRC-003430"
+      ]
+    },
+    {
+      "text": "BCDC: about 1.39 acres lie in Commission jurisdiction (0.15 acres in the Bay, 1.24 acres in the shoreline band), including three buildings with 20 townhomes; the permit requires 14,254 sq ft of dedicated public access, 6,426 sq ft of dedicated open space, a shoreline trail with overlooks, 5 public shore parking spaces and trail connections to the Bair Island trail network and the adjacent 557 East Bayshore Road project.",
+      "src": [
+        "SRC-003430"
+      ]
+    },
+    {
+      "text": "BCDC May 16, 2024: motion by Commissioner Addiego to approve the staff recommendation carried 14-0-1, Commissioner Kimball abstaining.",
+      "src": [
+        "SRC-003431"
       ]
     }
   ],
@@ -217,6 +294,41 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Regis Homes Bay Area, LLC",
+      "contact": "Chris DeHaan (Vice President for Development)",
+      "linkedin": null,
+      "src": [
+        "SRC-003429",
+        "SRC-003428",
+        "SRC-003430",
+        "SRC-003431"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Sares Regis Group of Northern California",
+      "contact": "Jeff Smith (Director of Development)",
+      "linkedin": null,
+      "website": "https://srgnc.com/",
+      "website_basis": "opened",
+      "other_role": "Parent company of the developer",
+      "src": [
+        "SRC-003429",
+        "SRC-003432"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003428",
+        "SRC-003429"
       ]
     }
   ],
@@ -232,12 +344,66 @@
       ]
     },
     {
+      "date": "2021-08-24",
+      "type": "Other",
+      "label": "CEQA Notice of Preparation received",
+      "src": [
+        "SRC-003427"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-09-21",
+      "type": "Other",
+      "label": "Draft EIR received by CEQAnet",
+      "src": [
+        "SRC-003427"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-06-26",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001116"
       ]
+    },
+    {
+      "date": "2023-07-13",
+      "type": "Other",
+      "label": "Final EIR received by CEQAnet",
+      "src": [
+        "SRC-003427"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-07-19",
+      "type": "Other",
+      "label": "CEQA Notice of Determination received",
+      "src": [
+        "SRC-003427"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-04-03",
+      "type": "Other",
+      "label": "BCDC permit application 2023.005.00 filed complete",
+      "src": [
+        "SRC-003430"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-05-16",
+      "type": "Approved",
+      "label": "BCDC approves permit 2023.005.00 (14-0-1)",
+      "src": [
+        "SRC-003431"
+      ],
+      "estimated": false
     },
     {
       "date": "2027-12-26",
@@ -259,6 +425,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 505 E. Bayshore found CEQAnet, BCDC and trade coverage",
+      "src": [
+        "SRC-003427"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer, APN 052-520-010, owner Forrest trust",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Redwood City PlanningProjects API, project 102: approved, 56 for-sale townhomes, 8 moderate, entitlement extended to 2027-12-26",
+      "src": [
+        "SRC-001249"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Redwood City",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2021080447 (NOP, DEIR, FEIR, NOD); BCDC staff recommendation and May 16, 2024 minutes for permit 2023.005.00",
+      "src": [
+        "SRC-003427",
+        "SRC-003430",
+        "SRC-003431"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (2019 proposal, 2023 approval) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2022-09-23; The Registry 2023-07-11 (PDF copy); ConnectCRE returned 403",
+      "src": [
+        "SRC-003428",
+        "SRC-003429"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "regishomes.com redirects to srgnc.com; homepage opened, no 505 East Bayshore page",
+      "src": [
+        "SRC-003432"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Dahlin Group named as architect; web search found no Dahlin project page for this site",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in any public source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn post for the project",
+      "src": []
+    }
+  }
 }
