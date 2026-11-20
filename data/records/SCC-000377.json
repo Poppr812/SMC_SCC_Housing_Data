@@ -123,6 +123,20 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE20-005",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 104017, preliminary review (Redevelopment), filed 2020-01-09, applicant Muthanna Omran, zoning R-M; city status Complete."
+        },
+        {
+          "value": "ER20-264",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 149720, environmental review (Exemption) for H20-048, filed 2020-12-19; city status Under Review."
         }
       ]
     },
@@ -160,12 +174,54 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit record lists RANCHO161 LLC as applicant and owner on H20-048 and ER20-264. Preliminary review PRE20-005 (filed 2020-01-09, applicant Muthanna Omran) shows zoning R-M.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY credits the project rendering to Rancho 161 LLC and describes exterior materials of white cement paneling, grey stone tiles and wood-like siding, with some on-site parking (no count given).",
+      "src": [
+        "SRC-001414"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "RANCHO161 LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner (city permit record for H20-048 and ER20-264)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Muthanna Omran",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, preliminary review PRE20-005 (city permit record)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-01-09",
+      "type": "Other",
+      "label": "Preliminary review filed (PRE20-005)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-12-19",
       "type": "Application filed",
@@ -218,6 +274,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address: only rental listings for nearby Rancho Dr buildings.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=49707022: situs 161 Rancho Dr, San Jose 95111, 2 situs addresses; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN: PRE20-005, ER20-264, H20-048 with applicants/owner. Legistar webapi (sanjose) matters search for Rancho/H20-048: no matters.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A via CKAN: 2020 row H20-048, 14 above-moderate units, already on record. CEQAnet search did not return address-filtered results.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address and project: no local news coverage found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-07-22 article: rendering credited to Rancho 161 LLC, exterior materials, on-site parking.",
+      "src": [
+        "SRC-001414"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicant is a single-asset LLC (RANCHO161 LLC); no developer website found in search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in SF YIMBY article or city permit record.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funder named in city, state or trade sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Rancho161 on LinkedIn: no results.",
+      "src": []
+    }
+  }
 }

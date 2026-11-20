@@ -39,6 +39,40 @@
           37.5812197
         ]
       ]
+    },
+    {
+      "apn": "029-132-110",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3495805,
+          37.58149
+        ],
+        [
+          -122.34978,
+          37.5811809
+        ],
+        [
+          -122.3499248,
+          37.581258
+        ],
+        [
+          -122.3498272,
+          37.5814018
+        ],
+        [
+          -122.3497271,
+          37.5815516
+        ],
+        [
+          -122.3495805,
+          37.58149
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -143,6 +177,36 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 50
+            },
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001340"
+          ],
+          "note": "City list: 1 very low (50% AMI) and 1 moderate income (120% AMI) unit"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001340"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -150,6 +214,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001132"
+      ]
+    },
+    {
+      "text": "State report 2019 application row lists APNs 029132120 and 029132110 with the note \"Under review, no action taken yet\". County parcel layer shows 029-132-110 as 511 California Dr (owner DENHAM LLC) and 029-132-120 as 509 California Dr (owner AHURA LLC).",
+      "src": [
+        "SRC-001132",
+        "SRC-001103"
+      ]
+    },
+    {
+      "text": "City list (November 2026) shows 509-511 California Drive under Proposed Projects with status Plans Under Review: 14 units, 9 net new, 2 BMR, rental.",
+      "src": [
+        "SRC-001340"
       ]
     }
   ],
@@ -200,6 +277,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address: only address directories and other California Dr projects.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC Active Parcels layer: 029-132-110 = 511 California Dr, owner DENHAM LLC (parcel not yet on record); 029-132-120 = 509 California Dr, owner AHURA LLC.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Burlingame Residential Applications Overview (Nov 2026): Plans Under Review, 14 units, 2 BMR (50% and 120% AMI, 55 years). No project information page linked. Burlingame not on Legistar.",
+      "src": [
+        "SRC-001340"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A via CKAN: 2019 row lists two APNs (029132120, 029132110), 24 units, note \"Under review, no action taken yet\".",
+      "src": [
+        "SRC-001132"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of SM Daily Journal and others for 509/511 California Drive: no coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search SF YIMBY / Real Deal: no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Owners are LLCs (DENHAM LLC, AHURA LLC); no developer named or site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in city list or state report.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any found source.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Ahura LLC on LinkedIn: no results.",
+      "src": []
+    }
+  }
 }

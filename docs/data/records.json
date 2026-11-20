@@ -262148,6 +262148,20 @@
         "SRC-001099"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "PRE20-005",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City folder 104017, preliminary review (Redevelopment), filed 2020-01-09, applicant Muthanna Omran, zoning R-M; city status Complete."
+      },
+      {
+       "value": "ER20-264",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City folder 149720, environmental review (Exemption) for H20-048, filed 2020-12-19; city status Under Review."
       }
      ]
     },
@@ -262185,12 +262199,54 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "City permit record lists RANCHO161 LLC as applicant and owner on H20-048 and ER20-264. Preliminary review PRE20-005 (filed 2020-01-09, applicant Muthanna Omran) shows zoning R-M.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "SF YIMBY credits the project rendering to Rancho 161 LLC and describes exterior materials of white cement paneling, grey stone tiles and wood-like siding, with some on-site parking (no count given).",
+     "src": [
+      "SRC-001414"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "RANCHO161 LLC",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant and owner (city permit record for H20-048 and ER20-264)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Muthanna Omran",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant, preliminary review PRE20-005 (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2020-01-09",
+     "type": "Other",
+     "label": "Preliminary review filed (PRE20-005)",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    },
     {
      "date": "2020-12-19",
      "type": "Application filed",
@@ -262243,8 +262299,89 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address: only rental listings for nearby Rancho Dr buildings.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel API apn=49707022: situs 161 Rancho Dr, San Jose 95111, 2 situs addresses; no owner field.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Permits Planning GIS layer by APN: PRE20-005, ER20-264, H20-048 with applicants/owner. Legistar webapi (sanjose) matters search for Rancho/H20-048: no matters.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR Table A via CKAN: 2020 row H20-048, 14 above-moderate units, already on record. CEQAnet search did not return address-filtered results.",
+     "src": [
+      "SRC-001099"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address and project: no local news coverage found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SF YIMBY 2026-07-22 article: rendering credited to Rancho 161 LLC, exterior materials, on-site parking.",
+     "src": [
+      "SRC-001414"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Applicant is a single-asset LLC (RANCHO161 LLC); no developer website found in search.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Architect not named in SF YIMBY article or city permit record.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or public funder named in city, state or trade sources.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search for Rancho161 on LinkedIn: no results.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001956": "S2",
@@ -262287,7 +262424,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "161 rancho drive san jose 497-07-022 161 rancho dr, san jose, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported approved city permit h20-048 (site development permit/amendment) shows status approved san jose 14 units in the application as reported h20-048 local tracking number as reported to the state 3 market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit h20-048 (site development permit/amendment, folder year 2020), status approved, issue date 2026-07-22: \"site development permit to allow the construction of a new three-story 14-unit apartment building, the demolition of all existing buildings on site totaling approximately 5,366 square feet, and the removal of 31 trees (24 ordinance-size and seven non-ordi\" (city text cut off at 255 characters) application submitted planning director's hearing; outcome not reported in source city issues site development permit/amendment h20-048"
+   "search": "161 rancho drive san jose 497-07-022 161 rancho dr, san jose, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported approved city permit h20-048 (site development permit/amendment) shows status approved san jose 14 units in the application as reported h20-048 local tracking number as reported to the state pre20-005 city folder 104017, preliminary review (redevelopment), filed 2020-01-09, applicant muthanna omran, zoning r-m; city status complete. er20-264 city folder 149720, environmental review (exemption) for h20-048, filed 2020-12-19; city status under review. 3 market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit h20-048 (site development permit/amendment, folder year 2020), status approved, issue date 2026-07-22: \"site development permit to allow the construction of a new three-story 14-unit apartment building, the demolition of all existing buildings on site totaling approximately 5,366 square feet, and the removal of 31 trees (24 ordinance-size and seven non-ordi\" (city text cut off at 255 characters) city permit record lists rancho161 llc as applicant and owner on h20-048 and er20-264. preliminary review pre20-005 (filed 2020-01-09, applicant muthanna omran) shows zoning r-m. sf yimby credits the project rendering to rancho 161 llc and describes exterior materials of white cement paneling, grey stone tiles and wood-like siding, with some on-site parking (no count given). other applicant and owner (city permit record for h20-048 and er20-264) rancho161 llc other applicant, preliminary review pre20-005 (city permit record) muthanna omran preliminary review filed (pre20-005) application submitted planning director's hearing; outcome not reported in source city issues site development permit/amendment h20-048"
   },
   {
    "id": "SCC-000378",
@@ -372039,6 +372176,20 @@
         "SRC-001956"
        ],
        "note": "City folder 134877, Site Development Permit/Amendment; city permit status: Under Review."
+      },
+      {
+       "value": "PRE26-127",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City folder 112046, SB 330 preliminary application, filed 2026-04-10, applicant Weiran Jia, zoning UR; city status Complete."
+      },
+      {
+       "value": "ER26-146",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City folder 134883, environmental review, filed 2026-08-26, applicant Martin Formico (AL Homes); city status Under Review."
       }
      ]
     },
@@ -372077,6 +372228,12 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "City permit record lists AL Homes in the owner name field and Martin Formico (AL Homes) as applicant on H26-028, T26-029 and ER26-146. SB 330 preliminary application PRE26-127 (applicant Weiran Jia) shows zoning UR.",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
    "parties": [
@@ -372089,11 +372246,49 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "Martin Formico",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant, listed as Martin Formico (AL Homes) on H26-028, T26-029 and ER26-146 (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Weiran Jia",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant, SB 330 preliminary application PRE26-127 (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2026-04-10",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application filed (PRE26-127)",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-08-26",
+     "type": "Other",
+     "label": "Environmental review application filed (ER26-146)",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    },
     {
      "date": "2026-09-15",
      "type": "Application filed",
@@ -372118,8 +372313,85 @@
      "date": "2026-11-09",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address: only MLS commercial-sale listings for the site; no project pages.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel API apn=45610015: situs 1856 Almaden Rd, San Jose 95125; no owner field.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Permits Planning GIS layer by APN: PRE26-127, ER26-146, H26-028, T26-029 with applicants. Legistar webapi (sanjose) search for Almaden Rd/H26-028: no matters.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "APR Table A/A2 via CKAN, San Jose, address and APN 45610015: no rows. CEQAnet search did not return address-filtered results.",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address and AL Homes: no local news coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search: no trade press coverage of 1856 Almaden Rd.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "AL Homes: only aggregator listings (NewHomeSource returned 403, Zillow); no company site or project page found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Architect not named in city permit record or any found source.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in any found source.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search for AL Homes on LinkedIn: only aggregator listings.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001956": "S1",
     "SRC-001098": "S2"
@@ -372160,7 +372432,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1856 almaden rd (al homes) san jose 456-10-015 1856 almaden rd, san jose, ca san jose condominiums 14 residential condominium units in two three-story buildings per city text proposed city file h26-028 under review t26-029 city folder 136880, tentative map; city permit status: under review. h26-028 city folder 134877, site development permit/amendment; city permit status: under review. 14 city file h26-028 (site development permit/amendment): \"site development permit to allow the construction two three-story multifamily buildings consisting of 14 residential condominium units, the demolition of multiple non-residential buildings totaling approximately 2,980 square feet, and the removal of six o\" (city text cut off at 255 characters) 3 city file h26-028 (site development permit/amendment): \"site development permit to allow the construction two three-story multifamily buildings consisting of 14 residential condominium units, the demolition of multiple non-residential buildings totaling approximately 2,980 square feet, and the removal of six o\" (city text cut off at 255 characters) city of san jose permit t26-029 (tentative map, folder year 2026), status under review: \"tentative map to merge two lots into one lot and allow up to 14 residential condominium units on an approximately 0.42-gross-acre site.\" city of san jose permit h26-028 (site development permit/amendment, folder year 2026), status under review: \"site development permit to allow the construction two three-story multifamily buildings consisting of 14 residential condominium units, the demolition of multiple non-residential buildings totaling approximately 2,980 square feet, and the removal of six o\" (city text cut off at 255 characters) other applicant (city permit record) al homes tentative map filed (t26-029) site development permit/amendment filed (h26-028)"
+   "search": "1856 almaden rd (al homes) san jose 456-10-015 1856 almaden rd, san jose, ca san jose condominiums 14 residential condominium units in two three-story buildings per city text proposed city file h26-028 under review t26-029 city folder 136880, tentative map; city permit status: under review. h26-028 city folder 134877, site development permit/amendment; city permit status: under review. pre26-127 city folder 112046, sb 330 preliminary application, filed 2026-04-10, applicant weiran jia, zoning ur; city status complete. er26-146 city folder 134883, environmental review, filed 2026-08-26, applicant martin formico (al homes); city status under review. 14 city file h26-028 (site development permit/amendment): \"site development permit to allow the construction two three-story multifamily buildings consisting of 14 residential condominium units, the demolition of multiple non-residential buildings totaling approximately 2,980 square feet, and the removal of six o\" (city text cut off at 255 characters) 3 city file h26-028 (site development permit/amendment): \"site development permit to allow the construction two three-story multifamily buildings consisting of 14 residential condominium units, the demolition of multiple non-residential buildings totaling approximately 2,980 square feet, and the removal of six o\" (city text cut off at 255 characters) city of san jose permit t26-029 (tentative map, folder year 2026), status under review: \"tentative map to merge two lots into one lot and allow up to 14 residential condominium units on an approximately 0.42-gross-acre site.\" city of san jose permit h26-028 (site development permit/amendment, folder year 2026), status under review: \"site development permit to allow the construction two three-story multifamily buildings consisting of 14 residential condominium units, the demolition of multiple non-residential buildings totaling approximately 2,980 square feet, and the removal of six o\" (city text cut off at 255 characters) city permit record lists al homes in the owner name field and martin formico (al homes) as applicant on h26-028, t26-029 and er26-146. sb 330 preliminary application pre26-127 (applicant weiran jia) shows zoning ur. other applicant (city permit record) al homes other applicant, listed as martin formico (al homes) on h26-028, t26-029 and er26-146 (city permit record) martin formico other applicant, sb 330 preliminary application pre26-127 (city permit record) weiran jia sb 330 preliminary application filed (pre26-127) environmental review application filed (er26-146) tentative map filed (t26-029) site development permit/amendment filed (h26-028)"
   },
   {
    "id": "SCC-000631",
@@ -493217,6 +493489,40 @@
        37.5812197
       ]
      ]
+    },
+    {
+     "apn": "029-132-110",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-001103"
+     ],
+     "outline": [
+      [
+       -122.3495805,
+       37.58149
+      ],
+      [
+       -122.34978,
+       37.5811809
+      ],
+      [
+       -122.3499248,
+       37.581258
+      ],
+      [
+       -122.3498272,
+       37.5814018
+      ],
+      [
+       -122.3497271,
+       37.5815516
+      ],
+      [
+       -122.3495805,
+       37.58149
+      ]
+     ]
     }
    ],
    "addresses": [
@@ -493321,6 +493627,36 @@
        ]
       }
      ]
+    },
+    "restricted_by_ami": {
+     "claims": [
+      {
+       "value": [
+        {
+         "count": 1,
+         "ami": 50
+        },
+        {
+         "count": 1,
+         "ami": 120
+        }
+       ],
+       "src": [
+        "SRC-001340"
+       ],
+       "note": "City list: 1 very low (50% AMI) and 1 moderate income (120% AMI) unit"
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001340"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -493328,6 +493664,19 @@
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
      "src": [
       "SRC-001132"
+     ]
+    },
+    {
+     "text": "State report 2019 application row lists APNs 029132120 and 029132110 with the note \"Under review, no action taken yet\". County parcel layer shows 029-132-110 as 511 California Dr (owner DENHAM LLC) and 029-132-120 as 509 California Dr (owner AHURA LLC).",
+     "src": [
+      "SRC-001132",
+      "SRC-001103"
+     ]
+    },
+    {
+     "text": "City list (November 2026) shows 509-511 California Drive under Proposed Projects with status Plans Under Review: 14 units, 9 net new, 2 BMR, rental.",
+     "src": [
+      "SRC-001340"
      ]
     }
    ],
@@ -493378,15 +493727,94 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address: only address directories and other California Dr projects.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SMC Active Parcels layer: 029-132-110 = 511 California Dr, owner DENHAM LLC (parcel not yet on record); 029-132-120 = 509 California Dr, owner AHURA LLC.",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Burlingame Residential Applications Overview (Nov 2026): Plans Under Review, 14 units, 2 BMR (50% and 120% AMI, 55 years). No project information page linked. Burlingame not on Legistar.",
+     "src": [
+      "SRC-001340"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "APR Table A via CKAN: 2019 row lists two APNs (029132120, 029132110), 24 units, note \"Under review, no action taken yet\".",
+     "src": [
+      "SRC-001132"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of SM Daily Journal and others for 509/511 California Drive: no coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search SF YIMBY / Real Deal: no coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Owners are LLCs (DENHAM LLC, AHURA LLC); no developer named or site found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Architect not named in city list or state report.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in any found source.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search for Ahura LLC on LinkedIn: no results.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001132": "S1",
     "SRC-001340": "S2",
     "SRC-001103": "S3"
    },
-   "lat": 37.581312383333334,
-   "lng": -122.34957893333335,
+   "lat": 37.58134150909091,
+   "lng": -122.34966483636363,
    "calcs": {},
    "kinds": [
     "pipeline"
@@ -493404,11 +493832,14 @@
      14,
      14
     ],
-    "restricted_units": null,
+    "restricted_units": 2,
     "aff_bucket": "Market",
     "aff_label": "Market, with inclusionary",
-    "aff_share": null,
-    "aff_levels": [],
+    "aff_share": 0.14285714285714285,
+    "aff_levels": [
+     "vl",
+     "m2"
+    ],
     "mix_types": [],
     "tax_credit": false,
     "owner": "DENHAM LLC; AHURA LLC",
@@ -493421,7 +493852,7 @@
     "stale_since": "2019-01-04",
     "part_of": ""
    },
-   "search": "509-511 california drive burlingame 029-132-120 509-511 california dr, burlingame, ca 509-511 california drive, burlingame, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported burlingame 24 units in the application as reported 14 9 net new units. the state report shows 24 509-511 local tracking number as reported to the state 1 very low (50% ami) and 1 moderate income (120% ami) units for 55 years mixed-income from the state housing element annual progress report, through 2025. recorded owner denham llc recorded owner ahura llc application submitted"
+   "search": "509-511 california drive burlingame 029-132-120 029-132-110 509-511 california dr, burlingame, ca 509-511 california drive, burlingame, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported burlingame 24 units in the application as reported 14 9 net new units. the state report shows 24 509-511 local tracking number as reported to the state 1 very low (50% ami) and 1 moderate income (120% ami) units for 55 years mixed-income [{\"count\": 1, \"ami\": 50}, {\"count\": 1, \"ami\": 120}] city list: 1 very low (50% ami) and 1 moderate income (120% ami) unit 55 from the state housing element annual progress report, through 2025. state report 2019 application row lists apns 029132120 and 029132110 with the note \"under review, no action taken yet\". county parcel layer shows 029-132-110 as 511 california dr (owner denham llc) and 029-132-120 as 509 california dr (owner ahura llc). city list (november 2026) shows 509-511 california drive under proposed projects with status plans under review: 14 units, 9 net new, 2 bmr, rental. recorded owner denham llc recorded owner ahura llc application submitted"
   },
   {
    "id": "SMC-000175",
@@ -494845,6 +495276,13 @@
        "src": [
         "SRC-001158"
        ]
+      },
+      {
+       "value": "UPR-07-17-12923",
+       "src": [
+        "SRC-001104"
+       ],
+       "note": "Tracking ID on the state report 2018 application row (22 units proposed and approved)"
       }
      ],
      "best": 1
@@ -494883,8 +495321,17 @@
         "SRC-001104"
        ],
        "note": "State report 2018, application stage: 3 deed-restricted units"
+      },
+      {
+       "value": "Market-rate",
+       "src": [
+        "SRC-001104",
+        "SRC-001105"
+       ],
+       "note": "State report 2022 application row (UPR-10-22-15907) and 2023 entitlement row: all 14 units above moderate income, no deed-restricted units"
       }
-     ]
+     ],
+     "best": 1
     }
    },
    "construction_notes": [
@@ -494899,6 +495346,30 @@
      "text": "City list describes this as an office conversion at 1784 Sullivan Avenue and prints APN 006-254-030, the same APN it gives for 141 Third Avenue. This record is on 008-082-180.",
      "src": [
       "SRC-001158"
+     ]
+    },
+    {
+     "text": "State report 2018 application row (Use Permit UPR-07-17-12923): 22 units proposed and 22 approved, 3 very low income deed-restricted; note \"AB744 parking reduction granted\". 2022 application row (UPR-10-22-15907, DR-2-23-16093): 14 units proposed and approved, all above moderate income, no density bonus; note \"AB 2097 utiltzed\".",
+     "src": [
+      "SRC-001104"
+     ]
+    },
+    {
+     "text": "State report 2023 entitlement row: 14 above-moderate units entitled 2023-03-27 under Use Permit UPR-10-22-15907.",
+     "src": [
+      "SRC-001105"
+     ]
+    },
+    {
+     "text": "City list (current as of 5/27/2026): status \"Approved but no permit application submitted\"; City Council approved March 27, 2023; proposed density 56.0 du/ac.",
+     "src": [
+      "SRC-001158"
+     ]
+    },
+    {
+     "text": "County parcel layer for 008-082-180 shows an existing office building, year built 1979, gross building area 9,949 sq ft, land area 11,004 sq ft.",
+     "src": [
+      "SRC-001103"
      ]
     }
    ],
@@ -494962,8 +495433,88 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address and project: only address directories.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SMC Active Parcels layer 008-082-180: owner NICE HOMELAND LLC, office building 1979, 9,949 sq ft on 11,004 sq ft land.",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Daly City Current Residential Project List (5/27/2026): approved, no permit application submitted; council approval 2023-03-27; 56.0 du/ac. Daly City not on Legistar.",
+     "src": [
+      "SRC-001158"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "APR Table A via CKAN: 2018 row (UPR-07-17-12923, 22 units, AB744) and 2022 row (14 above-moderate units, AB 2097). Table A2 2023 entitlement row.",
+     "src": [
+      "SRC-001104",
+      "SRC-001105"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search for Sullivan Avenue office conversion: no news coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search: no trade press coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on Nelson Tong / Nice Homeland LLC: no company site found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Architect not named in city list or state report.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in any found source.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search for Nice Homeland LLC on LinkedIn: no results.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001104": "S1",
     "SRC-001105": "S2",
@@ -494991,8 +495542,8 @@
     ],
     "restricted_units": 3,
     "aff_bucket": "Market",
-    "aff_label": "Market, with inclusionary",
-    "aff_share": 0.21428571428571427,
+    "aff_label": "Market (state report)",
+    "aff_share": 0.0,
     "aff_levels": [
      "vl"
     ],
@@ -495008,7 +495559,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "sullivan avenue apartments daly city 008-082-180 1784 sullivan ave, daly city, ca 1784 sullivan avenue, daly city, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval daly city 14 units reported in entitlement and permit rows 22 units in the application as reported upr-10-22-15907 local tracking number as reported to the state upr-10-22-15907, dr-2-23-16093 0.25 [{\"count\": 3, \"ami\": 50}] state report 2018, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2018, application stage: 3 deed-restricted units from the state housing element annual progress report, through 2025. city list describes this as an office conversion at 1784 sullivan avenue and prints apn 006-254-030, the same apn it gives for 141 third avenue. this record is on 008-082-180. recorded owner nice homeland llc other developer/contact per city list nelson tong application submitted intake date on city list entitlement approved"
+   "search": "sullivan avenue apartments daly city 008-082-180 1784 sullivan ave, daly city, ca 1784 sullivan avenue, daly city, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval daly city 14 units reported in entitlement and permit rows 22 units in the application as reported upr-10-22-15907 local tracking number as reported to the state upr-10-22-15907, dr-2-23-16093 upr-07-17-12923 tracking id on the state report 2018 application row (22 units proposed and approved) 0.25 [{\"count\": 3, \"ami\": 50}] state report 2018, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2018, application stage: 3 deed-restricted units market-rate state report 2022 application row (upr-10-22-15907) and 2023 entitlement row: all 14 units above moderate income, no deed-restricted units from the state housing element annual progress report, through 2025. city list describes this as an office conversion at 1784 sullivan avenue and prints apn 006-254-030, the same apn it gives for 141 third avenue. this record is on 008-082-180. state report 2018 application row (use permit upr-07-17-12923): 22 units proposed and 22 approved, 3 very low income deed-restricted; note \"ab744 parking reduction granted\". 2022 application row (upr-10-22-15907, dr-2-23-16093): 14 units proposed and approved, all above moderate income, no density bonus; note \"ab 2097 utiltzed\". state report 2023 entitlement row: 14 above-moderate units entitled 2023-03-27 under use permit upr-10-22-15907. city list (current as of 5/27/2026): status \"approved but no permit application submitted\"; city council approved march 27, 2023; proposed density 56.0 du/ac. county parcel layer for 008-082-180 shows an existing office building, year built 1979, gross building area 9,949 sq ft, land area 11,004 sq ft. recorded owner nice homeland llc other developer/contact per city list nelson tong application submitted intake date on city list entitlement approved"
   },
   {
    "id": "SMC-000178",
@@ -498943,11 +499494,27 @@
        "note": "State report 2021, application stage: 1 deed-restricted units"
       }
      ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "State report 2021 application: 1 very low income deed-restricted, 1 low income non-deed-restricted and 12 above moderate income units; no density bonus requested",
+       "src": [
+        "SRC-001125"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
     {
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
+     "src": [
+      "SRC-001125"
+     ]
+    },
+    {
+     "text": "State report 2021 application row shows application status Pending, not submitted under SB 35, density bonus not requested.",
      "src": [
       "SRC-001125"
      ]
@@ -498981,8 +499548,87 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address: only listings for other El Camino Real buildings.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SMC Active Parcels layer 024-154-240: 300 El Camino Real, owner FONG CHUNG KO TR & FONG MAY WAI CHOW TR, already on record.",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Millbrae Active Development Projects page: 300 El Camino Real not listed. Millbrae not on Legistar.",
+     "src": [
+      "SRC-001355"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "APR Table A via CKAN: 2021 row shows 1 low income non-deed-restricted unit, 12 above moderate, status Pending, no density bonus.",
+     "src": [
+      "SRC-001125"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search SM Daily Journal and others for 300 El Camino Real Millbrae: no coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search: no trade press coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer named in state report or city sources.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in any found source.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in any found source.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer name to search; address search returned nothing on LinkedIn.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001125": "S1",
     "SRC-001103": "S2"
@@ -499025,7 +499671,7 @@
     "stale_since": "2021-03-19",
     "part_of": ""
    },
-   "search": "300 el camino real millbrae 024-154-240 300 el camino real, millbrae, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported millbrae 14 units in the application as reported [{\"count\": 1, \"ami\": 50}] state report 2021, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2021, application stage: 1 deed-restricted units from the state housing element annual progress report, through 2025. recorded owner fong chung ko tr & fong may wai chow tr application submitted"
+   "search": "300 el camino real millbrae 024-154-240 300 el camino real, millbrae, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported millbrae 14 units in the application as reported [{\"count\": 1, \"ami\": 50}] state report 2021, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2021, application stage: 1 deed-restricted units state report 2021 application: 1 very low income deed-restricted, 1 low income non-deed-restricted and 12 above moderate income units; no density bonus requested from the state housing element annual progress report, through 2025. state report 2021 application row shows application status pending, not submitted under sb 35, density bonus not requested. recorded owner fong chung ko tr & fong may wai chow tr application submitted"
   },
   {
    "id": "SMC-000189",

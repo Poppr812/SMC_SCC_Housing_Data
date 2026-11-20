@@ -133,6 +133,13 @@
           "src": [
             "SRC-001158"
           ]
+        },
+        {
+          "value": "UPR-07-17-12923",
+          "src": [
+            "SRC-001104"
+          ],
+          "note": "Tracking ID on the state report 2018 application row (22 units proposed and approved)"
         }
       ],
       "best": 1
@@ -171,8 +178,17 @@
             "SRC-001104"
           ],
           "note": "State report 2018, application stage: 3 deed-restricted units"
+        },
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-001104",
+            "SRC-001105"
+          ],
+          "note": "State report 2022 application row (UPR-10-22-15907) and 2023 entitlement row: all 14 units above moderate income, no deed-restricted units"
         }
-      ]
+      ],
+      "best": 1
     }
   },
   "construction_notes": [
@@ -187,6 +203,30 @@
       "text": "City list describes this as an office conversion at 1784 Sullivan Avenue and prints APN 006-254-030, the same APN it gives for 141 Third Avenue. This record is on 008-082-180.",
       "src": [
         "SRC-001158"
+      ]
+    },
+    {
+      "text": "State report 2018 application row (Use Permit UPR-07-17-12923): 22 units proposed and 22 approved, 3 very low income deed-restricted; note \"AB744 parking reduction granted\". 2022 application row (UPR-10-22-15907, DR-2-23-16093): 14 units proposed and approved, all above moderate income, no density bonus; note \"AB 2097 utiltzed\".",
+      "src": [
+        "SRC-001104"
+      ]
+    },
+    {
+      "text": "State report 2023 entitlement row: 14 above-moderate units entitled 2023-03-27 under Use Permit UPR-10-22-15907.",
+      "src": [
+        "SRC-001105"
+      ]
+    },
+    {
+      "text": "City list (current as of 5/27/2026): status \"Approved but no permit application submitted\"; City Council approved March 27, 2023; proposed density 56.0 du/ac.",
+      "src": [
+        "SRC-001158"
+      ]
+    },
+    {
+      "text": "County parcel layer for 008-082-180 shows an existing office building, year built 1979, gross building area 9,949 sq ft, land area 11,004 sq ft.",
+      "src": [
+        "SRC-001103"
       ]
     }
   ],
@@ -250,6 +290,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address and project: only address directories.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC Active Parcels layer 008-082-180: owner NICE HOMELAND LLC, office building 1979, 9,949 sq ft on 11,004 sq ft land.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Daly City Current Residential Project List (5/27/2026): approved, no permit application submitted; council approval 2023-03-27; 56.0 du/ac. Daly City not on Legistar.",
+      "src": [
+        "SRC-001158"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A via CKAN: 2018 row (UPR-07-17-12923, 22 units, AB744) and 2022 row (14 above-moderate units, AB 2097). Table A2 2023 entitlement row.",
+      "src": [
+        "SRC-001104",
+        "SRC-001105"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Sullivan Avenue office conversion: no news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade press coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on Nelson Tong / Nice Homeland LLC: no company site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in city list or state report.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any found source.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Nice Homeland LLC on LinkedIn: no results.",
+      "src": []
+    }
+  }
 }

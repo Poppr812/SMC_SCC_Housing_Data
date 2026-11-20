@@ -92,6 +92,20 @@
             "SRC-001956"
           ],
           "note": "City folder 134877, Site Development Permit/Amendment; city permit status: Under Review."
+        },
+        {
+          "value": "PRE26-127",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 112046, SB 330 preliminary application, filed 2026-04-10, applicant Weiran Jia, zoning UR; city status Complete."
+        },
+        {
+          "value": "ER26-146",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 134883, environmental review, filed 2026-08-26, applicant Martin Formico (AL Homes); city status Under Review."
         }
       ]
     },
@@ -130,6 +144,12 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit record lists AL Homes in the owner name field and Martin Formico (AL Homes) as applicant on H26-028, T26-029 and ER26-146. SB 330 preliminary application PRE26-127 (applicant Weiran Jia) shows zoning UR.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "parties": [
@@ -142,11 +162,49 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Martin Formico",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, listed as Martin Formico (AL Homes) on H26-028, T26-029 and ER26-146 (city permit record)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Weiran Jia",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, SB 330 preliminary application PRE26-127 (city permit record)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2026-04-10",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application filed (PRE26-127)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Other",
+      "label": "Environmental review application filed (ER26-146)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-09-15",
       "type": "Application filed",
@@ -171,6 +229,83 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address: only MLS commercial-sale listings for the site; no project pages.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=45610015: situs 1856 Almaden Rd, San Jose 95125; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN: PRE26-127, ER26-146, H26-028, T26-029 with applicants. Legistar webapi (sanjose) search for Almaden Rd/H26-028: no matters.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A/A2 via CKAN, San Jose, address and APN 45610015: no rows. CEQAnet search did not return address-filtered results.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address and AL Homes: no local news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade press coverage of 1856 Almaden Rd.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "AL Homes: only aggregator listings (NewHomeSource returned 403, Zillow); no company site or project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in city permit record or any found source.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any found source.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for AL Homes on LinkedIn: only aggregator listings.",
+      "src": []
+    }
+  }
 }
