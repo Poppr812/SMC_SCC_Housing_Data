@@ -167,6 +167,13 @@
           "src": [
             "SRC-000621"
           ]
+        },
+        {
+          "value": 0.32,
+          "src": [
+            "SRC-003652",
+            "SRC-003651"
+          ]
         }
       ]
     },
@@ -308,6 +315,13 @@
             "SRC-001647"
           ],
           "note": "Total sources in CTCAC staff report."
+        },
+        {
+          "value": 42100000,
+          "src": [
+            "SRC-003651"
+          ],
+          "note": "Total cost as reported by San Carlos Life (Apr 25, 2025)"
         }
       ]
     }
@@ -329,6 +343,24 @@
       "text": "CTCAC CA-24-085: Cherry Street Commons, located at 1244 Cherry Street in San Carlos, requested and is being recommended for a reservation of $2,085,934 in annual federal tax credits to finance the new construction of 32 units of housing serving families with rents affordable to households earning 30%-60% of area median income (AMI).",
       "src": [
         "SRC-001647"
+      ]
+    },
+    {
+      "text": "Eden Housing project page lists the property as \"Now Accepting Applications\"; general contractor Echelcon, Inc.; 21 car spaces plus 2 accessible, 20 long-term bike and 8 scooter spaces; all-electric with rooftop PV.",
+      "src": [
+        "SRC-003653"
+      ]
+    },
+    {
+      "text": "Leasing site (2026 CTCAC limits): maximum rents 1BR/2BR/3BR of $1,068/$1,263/$1,439 at 30% AMI, $1,856/$2,208/$2,531 at 50% AMI, and $2,150/$2,681/$3,078 at 60% AMI. Leasing contact 1244cherry@hiphousing.org.",
+      "src": [
+        "SRC-003655"
+      ]
+    },
+    {
+      "text": "The Almanac (May 9, 2025): the city's former Redevelopment Agency envisioned the project in 2010; San Carlos is contributing $12.8 million from its Affordable Housing Fund.",
+      "src": [
+        "SRC-003654"
       ]
     }
   ],
@@ -393,6 +425,16 @@
       "linkedin": null,
       "src": [
         "SRC-001647"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Echelcon, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003653",
+        "SRC-003651"
       ]
     }
   ],
@@ -478,12 +520,30 @@
       "estimated": false
     },
     {
+      "date": "2025-03-08",
+      "type": "Other",
+      "label": "Utility relocation begins (about 10 weeks)",
+      "src": [
+        "SRC-001256"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-03-25",
       "type": "Permit issued",
       "label": "Building permit issued (BLD2024-00175)",
       "src": [
         "SRC-000619"
       ]
+    },
+    {
+      "date": "2025-04-05",
+      "type": "Other",
+      "label": "Demolition of existing building begins",
+      "src": [
+        "SRC-001256"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-04-23",
@@ -493,6 +553,15 @@
         "SRC-000620",
         "SRC-000621"
       ]
+    },
+    {
+      "date": "2025-04-25",
+      "type": "Construction start",
+      "label": "Groundbreaking (date as reported by The Almanac)",
+      "src": [
+        "SRC-003654"
+      ],
+      "estimated": false
     },
     {
       "date": "2026",
@@ -539,6 +608,105 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Cherry Street Commons: Eden project page, San Carlos Life, Almanac, leasing site 1244cherry.com.",
+      "src": [
+        "SRC-003653",
+        "SRC-003651",
+        "SRC-003654",
+        "SRC-003655"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels: 050-132-280 owner CHERRY STREET COMMONS L P (already on record). APR lists 050-132-100 and 050-680-040, which are not active parcels in the county layer.",
+      "src": [
+        "SRC-000622",
+        "SRC-000618"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of San Carlos project page: utility relocation 2025-03-08, demolition 2025-04-05, completion expected December 2026.",
+      "src": [
+        "SRC-001256"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for San Mateo County funding of the project: none found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "data.ca.gov APR Table A2 (San Carlos) 2023 and 2025 rows and CTCAC CA-24-085 staff report already on record.",
+      "src": [
+        "SRC-000618",
+        "SRC-001647"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "The Almanac May 9, 2025; San Carlos Life Apr 25, 2025. SM Daily Journal articles returned 403.",
+      "src": [
+        "SRC-003654",
+        "SRC-003651"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SF YIMBY groundbreaking article already on record.",
+      "src": [
+        "SRC-000621"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Eden Housing project page: GC Echelcon, now accepting applications. Leasing site 1244cherry.com eligibility page.",
+      "src": [
+        "SRC-003653",
+        "SRC-003655"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Van Meter Williams Pollack project page: 0.32-acre site, 15/9/9 unit mix plus manager's unit, under construction.",
+      "src": [
+        "SRC-003652"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "City $12.8 million contribution (Almanac, San Carlos Life) matches the $12.86 million city loan already on record.",
+      "src": [
+        "SRC-003654",
+        "SRC-001647"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts with new facts.",
+      "src": []
+    }
+  }
 }
