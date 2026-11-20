@@ -352,6 +352,13 @@
       "src": [
         "SRC-001903"
       ]
+    },
+    {
+      "text": "6680-6687 Royal Way, Gilroy, CA",
+      "role": "other",
+      "src": [
+        "SRC-003526"
+      ]
     }
   ],
   "images": [],
@@ -423,6 +430,13 @@
           "src": [
             "SRC-001903"
           ]
+        },
+        {
+          "value": "AS 21-17, TM 21-04 (21090001)",
+          "src": [
+            "SRC-001115"
+          ],
+          "note": "Local tracking number as reported to the state"
         }
       ]
     },
@@ -436,6 +450,18 @@
           "note": "City project page: \"The market-rate project includes two- and three-bedroom townhomes\""
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001115",
+            "SRC-001138"
+          ],
+          "note": "State report: all 45 units above moderate income"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -443,6 +469,21 @@
       "text": "Parcel match: the city's nine APNs (799-44-093 to -110) aren't in county data. 799-44-113 is 3.32 acres, close to the stated 3.37, at the geocoded address. Matched by location and area, not the source's own APN.",
       "src": [
         "SRC-001903"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption (signed 2022-12-07 by the city's senior planner) names TMP Royal Way LLC as applicant and as the party carrying out the project, attention Michael Cady, and lists APNs 799-44-093, -094, -095, -097, -098, -101 and -110. The CEQAnet summary also lists -109. The state report lists 799-44-093 through -098, -101, -109 and -110.",
+      "src": [
+        "SRC-003526",
+        "SRC-003527",
+        "SRC-001138"
+      ]
+    },
+    {
+      "text": "Site at Royal Way and Princevalle Street, adjacent to Gilroy High School and Uvas Creek. Exempted under CEQA Class 32 (infill).",
+      "src": [
+        "SRC-003527",
+        "SRC-003526"
       ]
     }
   ],
@@ -456,17 +497,55 @@
         "SRC-001903"
       ],
       "website": "https://www.lennar.com/"
+    },
+    {
+      "role": "Other",
+      "company": "TMP Royal Way LLC",
+      "contact": "Michael Cady",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003526"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2021-09-01",
+      "type": "Application filed",
+      "label": "Application submitted (state report)",
+      "src": [
+        "SRC-001115"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-11-21",
       "type": "Approved",
       "label": "City Council approval",
       "src": [
         "SRC-001903"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-12-02",
+      "type": "Approved",
+      "label": "Entitlement approval date as reported to the state",
+      "src": [
+        "SRC-001138"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-12-07",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003527",
+        "SRC-003526"
       ],
       "estimated": false
     }
@@ -486,6 +565,87 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project name, file numbers and applicant; found the CEQAnet Notice of Exemption.",
+      "src": [
+        "SRC-003527"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 799-44-113: Gilroy, no situs address, no owner field in the dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "City project page cityofgilroy.org/1076 returned 404; search found no council staff report for Z 21-05/TM 21-04/AS 21-17.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2022120159 (NOE); APR Table A (2021, 2022) and Table A2 (2022 entitlement row). No permit or completion rows found in APR.",
+      "src": [
+        "SRC-003527",
+        "SRC-001115",
+        "SRC-001138"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for Royal Way Townhomes in local news returned no coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search of trade press returned no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Lennar site search: no Royal Way community page. Lennar's Polesano community at 6660 Manor Lane, Gilroy, is not tied to Royal Way by any source found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Royal Way Gilroy returned nothing relevant.",
+      "src": []
+    }
+  }
 }

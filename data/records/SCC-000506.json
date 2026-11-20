@@ -137,10 +137,20 @@
         {
           "value": 44,
           "src": [
-            "SRC-001431"
+            "SRC-001431",
+            "SRC-003535",
+            "SRC-003536"
           ]
+        },
+        {
+          "value": 50,
+          "src": [
+            "SRC-003537"
+          ],
+          "note": "SF YIMBY 2025-07-30: 44 market-rate units plus 6 below-market-rate units"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -172,8 +182,18 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 16.75,
+          "src": [
+            "SRC-003535",
+            "SRC-003536",
+            "SRC-003537"
+          ],
+          "note": "Parcel area; development area is about 6.65 acres"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -194,6 +214,22 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003535"
+          ],
+          "note": "Six units deed-restricted for lower-income households"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -201,6 +237,20 @@
       "text": "County status: Complete February 2, 2026, in CEQA review.",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "text": "NOP: about 6.65-acre development area within the 16.75-acre parcel at Almaden Road and Topam Glen Court, within 1,000 feet of San Jose. Two existing homes, a barn and accessory structures would be demolished. Site designated Open Space Reserve and zoned A-20Ac-d1-sr. Plan includes private streets, two driveways from Almaden Road, a 0.8-acre onsite wastewater system, and an HOA; single-phase construction of about two years.",
+      "src": [
+        "SRC-003535"
+      ]
+    },
+    {
+      "text": "NOP states the project is processed by the County under SB 330. CEQAnet lists ROEM Corporation as applicant, contact Jim Campbell, Director of Development and Entitlements. SF YIMBY reported the proposal revised from 7 to 44 market-rate units plus 6 below-market-rate units.",
+      "src": [
+        "SRC-003535",
+        "SRC-003536",
+        "SRC-003537"
       ]
     }
   ],
@@ -213,6 +263,28 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "ROEM Corporation",
+      "contact": "Jim Campbell",
+      "linkedin": null,
+      "email": "jcampbell@roemcorp.com",
+      "phone": "(408) 761-1229",
+      "src": [
+        "SRC-003536",
+        "SRC-003537"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SWCA Environmental Consultants",
+      "contact": "Lee Moore",
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-003536"
       ]
     }
   ],
@@ -227,6 +299,24 @@
         "SRC-001431"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR filed (SCH 2026101193)",
+      "src": [
+        "SRC-003536"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Other",
+      "label": "EIR public scoping meeting",
+      "src": [
+        "SRC-003535"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -234,6 +324,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 19960 Almaden Road and Quicksilver Estates; found CEQAnet NOP and SF YIMBY.",
+      "src": [
+        "SRC-003536",
+        "SRC-003537"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 742-06-031: situs 19960 Almaden Rd, San Jose 95120, jurisdiction unincorporated; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated county project.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County NOP for the Quicksilver Estates EIR, file PLN25-128-SB330. County SB 330 projects page (plandev.santaclaracounty.gov) returned 403.",
+      "src": [
+        "SRC-003535"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026101193 (NOP received 2026-10-29, review through 2026-11-30).",
+      "src": [
+        "SRC-003536"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "San Jose Spotlight / Mountain View Voice builder's remedy coverage concerns other Almaden Road sites; no coverage of this project found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-07-30.",
+      "src": [
+        "SRC-003537"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no ROEM project page for Quicksilver Estates.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Quicksilver Estates returned nothing relevant.",
+      "src": []
+    }
+  }
 }

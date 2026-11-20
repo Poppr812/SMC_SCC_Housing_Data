@@ -385,6 +385,20 @@
         "SRC-001124",
         "SRC-001128"
       ]
+    },
+    {
+      "text": "1724 Sunnyhills Ct, Milpitas, CA",
+      "role": "other",
+      "src": [
+        "SRC-003528"
+      ]
+    },
+    {
+      "text": "1730 Sunnyhills Dr, Milpitas, CA",
+      "role": "other",
+      "src": [
+        "SRC-001128"
+      ]
     }
   ],
   "images": [],
@@ -410,8 +424,16 @@
             "SRC-001128"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "State report 2025: certificates of occupancy issued 2025-02-12 for all 44 units"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -452,6 +474,13 @@
           "src": [
             "SRC-001128"
           ]
+        },
+        {
+          "value": "Inclusionary units under the city's 15% requirement; state report notes the project did not receive public funding",
+          "src": [
+            "SRC-003528",
+            "SRC-001128"
+          ]
         }
       ]
     },
@@ -464,6 +493,13 @@
             "SRC-001128"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "B-BP21-0191",
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "Building permit number as reported to the state"
         }
       ]
     },
@@ -480,6 +516,121 @@
             "SRC-001128"
           ],
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 7,
+              "ami": 30
+            }
+          ],
+          "src": [
+            "SRC-003528"
+          ],
+          "note": "IS/MND (Sept 2020): 7 of 44 units proposed at Extremely Low Income, about 30% AMI"
+        },
+        {
+          "value": [
+            {
+              "count": 8,
+              "ami": 30
+            }
+          ],
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "State report 2025, completion stage: 8 extremely low-income deed-restricted units"
+        }
+      ],
+      "best": 2
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 37,
+          "src": [
+            "SRC-003529",
+            "SRC-001128"
+          ],
+          "note": "City letter and state report 2022 permit row: 37 market-rate units"
+        },
+        {
+          "value": 36,
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "State report 2025 completion row: 36 above-moderate units"
+        }
+      ],
+      "best": 1
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001128"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 14,
+            "2br": 30
+          },
+          "src": [
+            "SRC-003528"
+          ],
+          "note": "IS/MND Table 2.A (LPMD Architects, 2020)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003528"
+          ],
+          "note": "Five buildings of two stories; Building F three stories, 35 feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 87,
+          "src": [
+            "SRC-003528"
+          ],
+          "note": "New parking spaces added by the project"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.2,
+          "src": [
+            "SRC-003528"
+          ],
+          "note": "Project area within the 12.66-acre Sunnyhills Apartments complex"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "State report 2025: deed-restriction type DB;INC, density bonus reduction received"
         }
       ]
     }
@@ -491,9 +642,53 @@
         "SRC-001124",
         "SRC-001128"
       ]
+    },
+    {
+      "text": "The project adds 44 units in six residential buildings within the existing Sunnyhills Apartments (171 units in 45 one- to two-story buildings on 12.66 acres), replacing the leasing/community building with a new 1,791 sq ft leasing building. The IS/MND gives the complex APN as 026-06-009; the state report lists 2606009.",
+      "src": [
+        "SRC-003528",
+        "SRC-001128"
+      ]
+    },
+    {
+      "text": "The city's letter to residents says 149 units in the existing complex carry a HUD contract and that the owner moved forward with 44 new units (37 market rate, 7 affordable). GoMilpitas reports JMK Investments renewed the HUD contract through 2028.",
+      "src": [
+        "SRC-003529",
+        "SRC-003530"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Sunnyhills Investors LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project sponsor",
+      "src": [
+        "SRC-003528"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "JMK Investments",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner of Sunnyhills Apartments",
+      "src": [
+        "SRC-003530"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPMD Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003528"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -506,12 +701,39 @@
       ]
     },
     {
+      "date": "2020-09-17",
+      "type": "Other",
+      "label": "IS/MND public review opened (through 2020-10-07)",
+      "src": [
+        "SRC-003528"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2020-11-04",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001128"
       ]
+    },
+    {
+      "date": "2022-07-18",
+      "type": "Permit issued",
+      "label": "Building permit B-BP21-0191 issued for 44 units",
+      "src": [
+        "SRC-001128"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-12",
+      "type": "Completion",
+      "label": "Certificates of occupancy for 44 units",
+      "src": [
+        "SRC-001128"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -519,6 +741,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Sunnyhills, 1724 Sunnyhills, P-SD18-0004; found the city IS/MND and resident letter. Rental listing sites (apartmentfinder, forrent) returned 403.",
+      "src": [
+        "SRC-003528"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 026-06-031: situs 1724 Sunnyhills Dr, 152 situs addresses, Milpitas; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Milpitas DocumentCenter: 1724 Sunnyhills Court IS/MND (Sept 2020); council attachment letter to residents (2021).",
+      "src": [
+        "SRC-003528",
+        "SRC-003529"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2: 2020 entitlement, 2022 building permit B-BP21-0191, 2025 certificates of occupancy.",
+      "src": [
+        "SRC-001128"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Mercury News article (2020-11-19, via PressReader) returned 403. GoMilpitas 2023 article covers the HUD contract on the existing units.",
+      "src": [
+        "SRC-003530"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search of trade press returned no coverage of the 44 units.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No JMK Investments website or project page found by search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "LPMD Architects credited for plans in the IS/MND; search found no LPMD page for this project.",
+      "src": [
+        "SRC-003528"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "State report 2022 and 2025: financial assistance 'Other'; note says the project did not receive public funding.",
+      "src": [
+        "SRC-001128"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Sunnyhills Milpitas returned nothing relevant.",
+      "src": []
+    }
+  }
 }

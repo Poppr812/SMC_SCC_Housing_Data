@@ -160,6 +160,68 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 20,
+            "2br": 24
+          },
+          "src": [
+            "SRC-001567",
+            "SRC-003538"
+          ],
+          "note": "1BR at 670 sq ft, 2BR at 860 sq ft"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 43,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003538"
+          ],
+          "note": "Preliminary application: 43 low-income units plus 1 market-rate manager's unit"
+        },
+        {
+          "value": [
+            {
+              "count": 44,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003539"
+          ],
+          "note": "City letter 2025-06-27: all 44 units designated affordable for low-income households"
+        }
+      ],
+      "best": 1
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 34040,
+          "src": [
+            "SRC-003538"
+          ],
+          "note": "Preliminary application; four buildings of 8,510 sq ft"
+        },
+        {
+          "value": 41328,
+          "src": [
+            "SRC-003539"
+          ],
+          "note": "Proposed floor area from plan data table, per city letter"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -168,18 +230,95 @@
       "src": [
         "SRC-001568"
       ]
+    },
+    {
+      "text": "Four three-story buildings of 11 units each, about 38 feet tall, on a 40,000 sq ft parcel (net 38,670 sq ft) zoned R-1-40,000. One existing occupied single-family home would be demolished. Removal of 18 of 27 protected trees requested.",
+      "src": [
+        "SRC-003539",
+        "SRC-003538",
+        "SRC-001567"
+      ]
+    },
+    {
+      "text": "Preliminary application cites Government Code 65589.5(d)(5). The city's 2025-06-27 letter says it intends to impose conditions under 65589.5(f)(1) for height, floor area, setbacks and site coverage, and lists multifamily use and density as inconsistent with R-1-40,000 standards it does not intend to impose.",
+      "src": [
+        "SRC-003538",
+        "SRC-003539"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Mayberry Workshop",
+      "contact": "Adam Mayberry",
+      "linkedin": null,
+      "email": "plancheck@mayberryworkshop.com",
+      "phone": "408-359-1410",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003540"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Narayan Subbarao and Sindhu Payankulath",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-003540"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-07-03",
+      "type": "Other",
+      "label": "SB 330 preliminary application received",
+      "src": [
+        "SRC-001567",
+        "SRC-003538"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-12-20",
       "type": "Application filed",
       "label": "Formal application received, Application 2",
       "src": [
         "SRC-001567"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-05",
+      "type": "Other",
+      "label": "Incomplete letter sent",
+      "src": [
+        "SRC-001567"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-04",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-001567",
+        "SRC-003539"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-27",
+      "type": "Other",
+      "label": "Notice of inconsistent application sent",
+      "src": [
+        "SRC-001567",
+        "SRC-003539"
       ],
       "estimated": false
     }
@@ -189,6 +328,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 19521 Douglass Lane returned only resale/rental listings for the existing house.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 397-16-062: situs 19521 Douglass Ln, Saratoga; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Saratoga project page (Application 2) with milestones; preliminary application, formal application and inconsistency letter from DocumentCenter.",
+      "src": [
+        "SRC-001567",
+        "SRC-003538",
+        "SRC-003540",
+        "SRC-003539"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 for Saratoga: no rows for 19521 Douglass Lane (only ADUs on Douglass Lane). No CEQAnet filing found.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search of local news for Douglass Lane builder's remedy returned no coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search of trade press returned no coverage of this project.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named beyond applicant Mayberry Workshop; no project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Douglass Lane Saratoga returned nothing relevant.",
+      "src": []
+    }
+  }
 }

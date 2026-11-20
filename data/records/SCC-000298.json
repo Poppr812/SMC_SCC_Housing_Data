@@ -72,6 +72,13 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "82 N Winchester Blvd, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-003532"
+      ]
     }
   ],
   "images": [],
@@ -96,9 +103,16 @@
             "SRC-001544"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003531"
+          ],
+          "note": "City Council motion 2026-11-10 approved the rezone, vesting tentative map and EIR addendum, with staff directed to return 2026-12-01 with final resolutions and findings"
         }
       ],
-      "best": 0
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -157,6 +171,106 @@
             "SRC-001106"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001544",
+            "SRC-003531"
+          ],
+          "note": "Staff reports: 6 moderate-income for-sale units plus an in-lieu fee for the 0.6-unit fraction"
+        }
+      ],
+      "best": 1
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001544",
+            "SRC-003531"
+          ],
+          "note": "Six moderate-income units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001544",
+            "SRC-003531"
+          ],
+          "note": "Staff report: for-sale townhomes subject to a five-year affordability term"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "15% inclusionary under the city's Affordable Housing Ordinance: 6 moderate-income units and an in-lieu fee for 0.6 unit",
+          "src": [
+            "SRC-001544",
+            "SRC-003531"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.8,
+          "src": [
+            "SRC-001544",
+            "SRC-001545"
+          ],
+          "note": "78,482 sq ft per staff report"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 88,
+          "src": [
+            "SRC-001544",
+            "SRC-001545"
+          ],
+          "note": "Two garage spaces per townhome"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "2br": 34,
+            "3br": 10
+          },
+          "src": [
+            "SRC-001545"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001544"
+          ],
+          "note": "Rezone and vesting tentative map are discretionary; waivers requested under State Density Bonus Law"
         }
       ]
     }
@@ -173,6 +287,20 @@
       "src": [
         "SRC-001102",
         "SRC-001972"
+      ]
+    },
+    {
+      "text": "Staff report: the 44 townhomes replace 160 entitled mixed-income apartments (16 moderate-income) on this part of the Agrihood site. Site-wide totals go from 361 to 245 units and from 181 to 171 affordable units. Built so far: 165 affordable senior and veteran apartments and 36 market-rate townhomes. Staff recommended denial to both the Planning Commission and the Council.",
+      "src": [
+        "SRC-001544",
+        "SRC-003531"
+      ]
+    },
+    {
+      "text": "Five three-story buildings (one 12-unit, four 8-unit). Staff report gives a 45-foot maximum height; SF YIMBY reports about 41 feet. Density bonus waivers requested: height from 40 ft to 41 ft 6 in, front setback from 10 ft to 5 ft, rear setback from 15 ft to 8 ft.",
+      "src": [
+        "SRC-001544",
+        "SRC-001545"
       ]
     }
   ],
@@ -196,6 +324,26 @@
       "src": [
         "SRC-001545"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Agrihood Multi LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner",
+      "src": [
+        "SRC-001544"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Core Companies",
+      "contact": "Vince Cantore",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001544"
+      ]
     }
   ],
   "financing": [],
@@ -208,6 +356,52 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2025-07-03",
+      "type": "Application filed",
+      "label": "Architectural Review application PLN25-00255 filed",
+      "src": [
+        "SRC-001544"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-10",
+      "type": "Application filed",
+      "label": "Rezone application PLN25-00390 filed",
+      "src": [
+        "SRC-001544"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-16",
+      "type": "Application filed",
+      "label": "Vesting tentative map application PLN25-00409 filed",
+      "src": [
+        "SRC-001544"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-07",
+      "type": "Other",
+      "label": "Planning Commission voted 6-1 to recommend that Council deny the rezone and map",
+      "src": [
+        "SRC-001544",
+        "SRC-003531"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-10",
+      "type": "Approved",
+      "label": "City Council approved rezone, vesting tentative map and EIR addendum; final resolutions to return 2026-12-01",
+      "src": [
+        "SRC-003531"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -230,6 +424,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Agrihood townhomes, 1816 Worthington Circle and Core Companies.",
+      "src": [
+        "SRC-003532"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API, APN 303-17-055: situs 82 N Winchester Bl, Santa Clara; no owner field. Same address used by SF YIMBY.",
+      "src": [
+        "SRC-001098",
+        "SRC-003532"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Legistar: PC 2026-10-07 staff report and actions (26-1035); Council 2026-11-10 report and approval motion (26-1094).",
+      "src": [
+        "SRC-001544",
+        "SRC-003531"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; county Measure A funding relates to the senior phase, not this phase.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A (2025 application) already on record; Table A2 rows on Worthington cover the 2019 entitlement and the completed townhome and senior phases.",
+      "src": [
+        "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for news coverage of the 2026 townhome proposal and Council vote returned none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-09-12 (revised permits) and 2026-09-01 (PC meeting preview).",
+      "src": [
+        "SRC-003532",
+        "SRC-001545"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Core Companies Agrihood page lists the original 361-unit plan and does not mention the 44 townhomes.",
+      "src": [
+        "SRC-003533"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Steinberg Hart Santa Clara Agrihood page: 245 dwelling units site-wide, client City of Santa Clara / The Core Companies.",
+      "src": [
+        "SRC-003534"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found for the for-sale townhome phase.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Agrihood townhomes returned nothing relevant.",
+      "src": []
+    }
+  }
 }
