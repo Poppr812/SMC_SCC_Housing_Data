@@ -114,6 +114,12 @@
           "src": [
             "SRC-001552"
           ]
+        },
+        {
+          "value": "PLN-2024-92",
+          "src": [
+            "SRC-003878"
+          ]
         }
       ]
     },
@@ -126,6 +132,79 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.8,
+          "src": [
+            "SRC-003876",
+            "SRC-003877"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 40,
+          "src": [
+            "SRC-003876"
+          ],
+          "note": "In garages off a private street"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 20
+          },
+          "src": [
+            "SRC-003877"
+          ],
+          "note": "Each unit has four bedrooms"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003878"
+          ],
+          "note": "Minor Housing Development Project Permit with density bonus waivers/concessions and Tentative Subdivision Map"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003877"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Two low-income units and one moderate-income unit",
+          "src": [
+            "SRC-003877"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -133,6 +212,25 @@
       "text": "Two moderately priced homes and one low-income home per the news report. APN found from the city's coordinates for the Frontier Way permit address.",
       "src": [
         "SRC-001553"
+      ]
+    },
+    {
+      "text": "20 townhomes in four buildings on 20 residential lots and 2 common lots with one private street, 25 units per acre. Site previously a commercial building occupied by a childcare center (Casa di Mir Montessori per SF YIMBY). Applicant address 225 Demeter Street, East Palo Alto.",
+      "src": [
+        "SRC-003876",
+        "SRC-003877"
+      ]
+    },
+    {
+      "text": "City hearing notice lists APN 279-38-017 for the project site.",
+      "src": [
+        "SRC-003878"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports about 50,000 square feet across four structures and two low-income plus one moderate-income unit; the San Jose Spotlight report on record describes two moderately priced homes and one low-income home.",
+      "src": [
+        "SRC-003877"
       ]
     }
   ],
@@ -145,6 +243,45 @@
       "src": [
         "SRC-001553"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Granite Ridge Properties",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003878"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Granite Ridge Properties",
+      "contact": null,
+      "linkedin": null,
+      "email": "spatel@graniteridgellp.com",
+      "phone": "408-866-2144",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003876"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Granite Ridge Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003877"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003877"
+      ]
     }
   ],
   "financing": [],
@@ -156,6 +293,25 @@
       "label": "Planning Commission approval",
       "src": [
         "SRC-001553"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-26",
+      "type": "Approved",
+      "label": "Planning Commission approval (date of project approval on the Notice of Exemption)",
+      "src": [
+        "SRC-003876",
+        "SRC-003878"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-03",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed with the county clerk",
+      "src": [
+        "SRC-003876"
       ],
       "estimated": false
     },
@@ -183,6 +339,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer",
+      "src": [
+        "SRC-003877"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API: 279-38-096 situs 209 Frontier Wy; 279-38-017 (on city notice) not in the active parcel dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Campbell public hearing notice PLN-2024-92 (PC 2024-11-26); permit data already on record",
+      "src": [
+        "SRC-003878",
+        "SRC-001552"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated Campbell project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet attachment: NOE filed 2024-12-03 with applicant block",
+      "src": [
+        "SRC-003876"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Local News Matters article returned 403; San Jose Spotlight already on record",
+      "src": [
+        "SRC-001553"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-12-05",
+      "src": [
+        "SRC-003877"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched for Granite Ridge website and project page; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SDG Architects named by SF YIMBY; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

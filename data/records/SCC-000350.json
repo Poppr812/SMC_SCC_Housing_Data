@@ -44,6 +44,20 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "text": "420-428 2nd St, Los Altos, CA",
+      "role": "other",
+      "src": [
+        "SRC-003864"
+      ]
+    },
+    {
+      "text": "416 2nd St, Los Altos, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -53,7 +67,8 @@
         {
           "value": "Condominiums",
           "src": [
-            "SRC-001144"
+            "SRC-001144",
+            "SRC-003862"
           ],
           "note": "State category 5+ units, for-sale tenure"
         }
@@ -67,8 +82,16 @@
             "SRC-001144"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003862"
+          ],
+          "note": "Planning Commission unanimously approved the Design Review Permit on 2024-12-05 and recommended the Vesting Tentative Map to the City Council"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -85,7 +108,9 @@
         {
           "value": 20,
           "src": [
-            "SRC-001144"
+            "SRC-001144",
+            "SRC-003862",
+            "SRC-003863"
           ],
           "note": "Units in the application as reported"
         }
@@ -99,6 +124,13 @@
             "SRC-001144"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "TM22-0003",
+          "src": [
+            "SRC-003862"
+          ],
+          "note": "Vesting Tentative Map"
         }
       ]
     },
@@ -132,6 +164,92 @@
           "note": "State report 2022, application stage: 3 deed-restricted units"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-003864"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1495,
+          "src": [
+            "SRC-003862",
+            "SRC-003863"
+          ],
+          "note": "Ground-floor commercial (office) space"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003862"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.297,
+          "src": [
+            "SRC-003862"
+          ],
+          "note": "Gross lot area; net 0.28 acres after right-of-way dedication"
+        },
+        {
+          "value": 0.3,
+          "src": [
+            "SRC-003864"
+          ],
+          "note": "12,968 square feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 47,
+          "src": [
+            "SRC-003864"
+          ],
+          "note": "47 provided, 32 required under density bonus law; at-grade hydraulic parking system per the council report"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003863"
+          ],
+          "note": "Design review with state density bonus, one height concession and seven waivers"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "1 very low-income and 2 moderate-income for-sale units (18.75% of the 16 base units); the very low-income unit qualifies the project for a 22.5% density bonus",
+          "src": [
+            "SRC-003863",
+            "SRC-003864"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -140,9 +258,34 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "text": "Four-story, 36,354-square-foot mixed-use building replacing a one-story commercial building occupied by a personal services business and the Original Pancake House. Height concession to 52 feet 8 inches (45-foot CD district limit).",
+      "src": [
+        "SRC-003862",
+        "SRC-003863"
+      ]
+    },
+    {
+      "text": "The applicant's density bonus report lists APN 167-41-052 and the address 420-428 2nd Street. The county parcel dataset shows APN 167-41-072 with situs address 416 2nd St.",
+      "src": [
+        "SRC-003864",
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Jan R. Hochhauser",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003863"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -153,6 +296,24 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "date": "2024-12-05",
+      "type": "Approved",
+      "label": "Planning Commission approved Design Review Permit D22-0010 (unanimous)",
+      "src": [
+        "SRC-003862"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-28",
+      "type": "Other",
+      "label": "City Council agenda: Vesting Tentative Map TM22-0003 (20 residential condo units, 1 commercial unit)",
+      "src": [
+        "SRC-003862"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -160,6 +321,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, D22-0010 and applicant; led to Los Altos meeting documents",
+      "src": [
+        "SRC-003862"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API for 167-41-072: situs 416 2nd St, Los Altos; no owner field in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Los Altos PC draft resolution, density bonus report, 2025-01-28 council report on TM22-0003; losaltosca.gov design plans PDF returned 403",
+      "src": [
+        "SRC-003862",
+        "SRC-003863",
+        "SRC-003864"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated Los Altos project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A already on record; CEQA categorical exemption (Class 32) stated in the council report; no CEQAnet posting found",
+      "src": [
+        "SRC-001144"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Los Altos Town Crier and local news for the address and Original Pancake House site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched trade press for the address",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in city documents beyond the applicant",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Design plans PDF on losaltosca.gov (403); search snippet names Hochhauser Blatter Architecture & Planning but the page could not be opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no public posts found",
+      "src": []
+    }
+  }
 }

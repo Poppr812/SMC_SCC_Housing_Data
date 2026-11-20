@@ -94,6 +94,13 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "156 Crescent Ave, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-003867"
+      ]
     }
   ],
   "images": [],
@@ -138,7 +145,8 @@
         {
           "value": 18,
           "src": [
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-003867"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -148,6 +156,14 @@
             "SRC-001118"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 19,
+          "src": [
+            "SRC-003867",
+            "SRC-003868"
+          ],
+          "note": "Tentative map creates 19 condominium units (18 new plus the retained house)"
         }
       ],
       "best": 1
@@ -181,6 +197,14 @@
             "SRC-001119"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "2021-7265, 2021-7826",
+          "src": [
+            "SRC-003867",
+            "SRC-003869"
+          ],
+          "note": "2021-7265 Resource Alteration Permit; 2021-7826 Special Development Permit and Tentative Map"
         }
       ]
     },
@@ -199,6 +223,50 @@
           "note": "State report 2021, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.85,
+          "src": [
+            "SRC-003867",
+            "SRC-003868"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003867"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 41,
+          "src": [
+            "SRC-003868"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003867"
+          ],
+          "note": "Special Development Permit, Tentative Map and Resource Alteration Permit"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -208,9 +276,83 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "City documents list the site as APNs 211-35-008 and 211-35-009 (148 and 156 Crescent Avenue), zoned R-3/PD. The house at 156 Crescent Avenue is retained and was to be sold as a condominium unit after improvements; 148 Crescent Avenue is demolished.",
+      "src": [
+        "SRC-003867",
+        "SRC-003870"
+      ]
+    },
+    {
+      "text": "Heritage Preservation Commission condition: a plaque honoring the site's agricultural heritage (former Parish family poultry farm) placed before final occupancy.",
+      "src": [
+        "SRC-003869"
+      ]
+    },
+    {
+      "text": "CEQA Class 32 categorical exemption; Notices of Exemption received 2023-05-24 and 2023-08-31.",
+      "src": [
+        "SRC-003872"
+      ]
+    },
+    {
+      "text": "SF YIMBY describes 10-plex and 8-plex buildings with 6,328 square feet of landscaped open space.",
+      "src": [
+        "SRC-003868"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Terra Holdings",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003868"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Crescent Avenue LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003867"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Samir Sharma",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003867",
+        "SRC-003870"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Bassenian/Lagoni",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003868"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ripley Design",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Designer",
+      "src": [
+        "SRC-003868"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -221,6 +363,24 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "date": "2023-05-03",
+      "type": "Approved",
+      "label": "Heritage Preservation Commission approved Resource Alteration Permit (148 Crescent removed from Heritage Resource Inventory)",
+      "src": [
+        "SRC-003869"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-05-22",
+      "type": "Approved",
+      "label": "Planning Commission approved Special Development Permit and Tentative Map",
+      "src": [
+        "SRC-003870"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-08-29",
@@ -244,6 +404,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer",
+      "src": [
+        "SRC-003868"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for 211-35-120: situs 148 Crescent Av, Sunnyvale; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar matters 23-0521 (HPC 2023-05-03), 23-0590 (PC 2023-05-22), 23-0724 (Council appeal 2023-08-29)",
+      "src": [
+        "SRC-003869",
+        "SRC-003867",
+        "SRC-003870",
+        "SRC-003871"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated Sunnyvale project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2023050611 (two NOEs); APR rows already on record",
+      "src": [
+        "SRC-003872"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news for 148 Crescent Avenue",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-04-17",
+      "src": [
+        "SRC-003868"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched for Terra Holdings project page; none found for this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched for Bassenian/Lagoni project page; none found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }

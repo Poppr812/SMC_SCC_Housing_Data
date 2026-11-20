@@ -179,6 +179,13 @@
             "SRC-001956"
           ],
           "note": "City folder 120806, Tentative Map (permit type: Subdivision); city permit status: Approved. Matched by APN."
+        },
+        {
+          "value": "ER23-240",
+          "src": [
+            "SRC-003865"
+          ],
+          "note": "Environmental review file"
         }
       ]
     },
@@ -199,6 +206,27 @@
             "SRC-001107"
           ],
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003865"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.35,
+          "src": [
+            "SRC-003865"
+          ],
+          "note": "Approximately 0.35 gross acres"
         }
       ]
     }
@@ -222,9 +250,29 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Four-story, 20-unit multifamily building with two units deed-restricted at or below 50% AMI. Replaces two single-family residences and two accessory buildings; 11 trees removed (nine ordinance-size). Site at Wooster Avenue and Tripp Avenue. Applicant address 1885 Lundy Avenue, Suite 200, San Jose.",
+      "src": [
+        "SRC-003865",
+        "SRC-003866"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Jay Shen",
+      "contact": "Jay Shen",
+      "linkedin": null,
+      "email": "jay@vcicompanies.com",
+      "phone": "949-599-6069",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003866"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -243,6 +291,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-08-20",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption posted (infill, Guidelines 15332)",
+      "src": [
+        "SRC-003865"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -255,6 +312,88 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and file numbers; found CEQAnet NOE",
+      "src": [
+        "SRC-003865"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for 249-64-017: situs 449 Wooster Av, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit layer already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025080847 NOE and attached county filing (applicant block)",
+      "src": [
+        "SRC-003865",
+        "SRC-003866"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news for 449 Wooster",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched SF YIMBY and trade press",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer company named in public sources; applicant is an individual",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only",
+      "src": []
+    }
+  }
 }
