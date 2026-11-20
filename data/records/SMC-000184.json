@@ -78,6 +78,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "1412 Bellevue Ave, Burlingame, CA",
+      "role": "other",
+      "src": [
+        "SRC-003967"
+      ]
     }
   ],
   "images": [],
@@ -88,7 +95,9 @@
           "value": "Condominiums",
           "src": [
             "SRC-001132",
-            "SRC-001133"
+            "SRC-001133",
+            "SRC-003966",
+            "SRC-003968"
           ],
           "note": "State category 5+ units, for-sale tenure"
         }
@@ -145,6 +154,12 @@
           "src": [
             "SRC-001133"
           ]
+        },
+        {
+          "value": "SF YIMBY: two of the 15 units affordable to moderate-income households, using the state density bonus",
+          "src": [
+            "SRC-003967"
+          ]
         }
       ]
     },
@@ -163,6 +178,79 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003966",
+            "SRC-003967"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 10,
+            "2br": 5,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003966",
+            "SRC-003967"
+          ]
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 1033,
+          "src": [
+            "SRC-003966"
+          ],
+          "note": "Staff report: average proposed unit size"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 15500,
+          "src": [
+            "SRC-003967"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 19,
+          "src": [
+            "SRC-003967"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003966"
+          ],
+          "note": "Design Review, Condominium Permit, Density Bonus Concession and Waivers, Lot Split"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -171,6 +259,26 @@
       "src": [
         "SRC-001132",
         "SRC-001133"
+      ]
+    },
+    {
+      "text": "City staff report (Aug 9, 2021): lot split of the existing 28,333 SF lot at 1418 Bellevue Avenue. Parcel 1 (18,951 SF) keeps the existing four-story, 49-unit apartment building; the new six-story, 15-unit condominium building with an enclosed at-grade garage goes on Parcel 2 (9,832 SF). APN 029-112-350 covers the whole existing lot.",
+      "src": [
+        "SRC-003966"
+      ]
+    },
+    {
+      "text": "City staff report: 15 units on five floors above a ground-floor garage and lobby, plus a rooftop terrace; unit sizes 696 to 1,520 SF. SF YIMBY reports unit sizes of 700 to 1,520 SF and a height of 75 feet.",
+      "src": [
+        "SRC-003966",
+        "SRC-003967"
+      ]
+    },
+    {
+      "text": "City staff report: project found Categorically Exempt under CEQA Section 15332 (Class 32 infill). Legistar matter 20-0225 (2020) was an environmental scoping item for the same 15-unit condominium.",
+      "src": [
+        "SRC-003966",
+        "SRC-003968"
       ]
     }
   ],
@@ -182,6 +290,66 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Craig Rogers Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003967"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Craig Rogers Trust",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (city staff report)",
+      "src": [
+        "SRC-003966",
+        "SRC-003968"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "MH Architects",
+      "contact": "Matt Hollis",
+      "linkedin": null,
+      "src": [
+        "SRC-003966",
+        "SRC-003968",
+        "SRC-003967"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Stephanie O'Rourke",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003967"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Phillip Lesser",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (Project Manager)",
+      "src": [
+        "SRC-003966"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA Class 32 infill exemption analysis (July 15, 2021)",
+      "src": [
+        "SRC-003966"
       ]
     }
   ],
@@ -210,6 +378,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and owner; SF YIMBY article under 1412 Bellevue Avenue",
+      "src": [
+        "SRC-003967"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "County parcel layer: APN 029-112-350, owner already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Burlingame Legistar: matters 20-0225 (2020 scoping) and 21-0422; PC staff report and approval 2021-08-09",
+      "src": [
+        "SRC-003966",
+        "SRC-003969",
+        "SRC-003968"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State APR Table A/A2 rows already on record; city used a CEQA categorical exemption",
+      "src": [
+        "SRC-001133"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal and The Real Deal articles returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2021-08-25",
+      "src": [
+        "SRC-003967"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Craig Rogers Trust",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "mharchitects.com home page opened; no project page for this project and no match to the firm named by the city",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city or trade sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LinkedIn result in web searches",
+      "src": []
+    }
+  }
 }

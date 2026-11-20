@@ -409,6 +409,12 @@
           "src": [
             "SRC-001450"
           ]
+        },
+        {
+          "value": 18.54,
+          "src": [
+            "SRC-003972"
+          ]
         }
       ]
     },
@@ -422,6 +428,19 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001450"
+          ],
+          "note": "Planning Commission Resolutions 25-01 and 25-02; Subdivision Map and Design Permit"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -430,9 +449,83 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "text": "CEQAnet: subdivision of the site into 14 single-family residential lots of about 43,569 to 94,254 sq ft for future home construction; each lot includes a bio-swale. The existing house, detached garage and pool would be demolished; the Barney Machado Barn is on the site. General Plan Residential Estate; zoning RE-1 and RPD.",
+      "src": [
+        "SRC-003972"
+      ]
+    },
+    {
+      "text": "City project page: status Planning Entitlements Approved; Approval Certificate No. 25-004.",
+      "src": [
+        "SRC-001450"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Blackrock, LLC",
+      "contact": "Doug Blackwell",
+      "linkedin": null,
+      "email": "dblackwell@garlic.com",
+      "phone": "(408) 892-8345",
+      "src": [
+        "SRC-003972",
+        "SRC-003973"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MH Engineering",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003973"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Development Process Consultants",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Planner",
+      "src": [
+        "SRC-003973"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "EarthSystems",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Geotechnical engineer",
+      "src": [
+        "SRC-003973"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "H.T. Harvey & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Biologist",
+      "src": [
+        "SRC-003973"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Raney Planning & Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-003972"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -443,6 +536,15 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "date": "2024-11-04",
+      "type": "Other",
+      "label": "Initial Study/Mitigated Negative Declaration filed with State Clearinghouse (SCH 2024110069)",
+      "src": [
+        "SRC-003972"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-01-14",
@@ -464,6 +566,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project name, address and developer; CEQAnet record",
+      "src": [
+        "SRC-003972"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset for APN 77902023 shows geometry and situs only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Morgan Hill project page and Tentative Map PDF",
+      "src": [
+        "SRC-001450",
+        "SRC-003973"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2024110069",
+      "src": [
+        "SRC-003972"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Blackrock, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Custom-lot subdivision; no architect named",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LinkedIn result in web searches",
+      "src": []
+    }
+  }
 }

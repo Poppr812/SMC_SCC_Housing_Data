@@ -104,8 +104,17 @@
             "SRC-001099"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003974",
+            "SRC-003975"
+          ],
+          "note": "City: 14 townhouses for sale in four buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -155,6 +164,13 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "C19-027, T19-028, H19-031",
+          "src": [
+            "SRC-003975",
+            "SRC-003974"
+          ]
         }
       ]
     },
@@ -170,9 +186,127 @@
         {
           "value": "100% affordable",
           "src": [
-            "SRC-001956"
+            "SRC-001956",
+            "SRC-003974"
           ],
           "note": "City file H19-031 (Site Permit): \"Site Development Permit to allow the construction of a 100% affordable housing project consisting of 14 multi-family residential units configured in four two-story buildings. The project includes an application under State Density Bonus Law including a 42\""
+        }
+      ],
+      "best": 1
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 80
+            },
+            {
+              "count": 12,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003974"
+          ],
+          "note": "Council memo (July 2022): two low-income units (under 80% AMI) and 12 moderate-income units (under 120% AMI)"
+        },
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 80
+            },
+            {
+              "count": 2,
+              "ami": 110
+            }
+          ],
+          "src": [
+            "SRC-003976"
+          ],
+          "note": "Housing memo (June 2020): developer plan of up to 12 homes at 50-80% AMI and at least 2 at up to 110% AMI"
+        }
+      ],
+      "best": 0
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 2,
+            "3br": 9,
+            "4br+": 3
+          },
+          "src": [
+            "SRC-003975"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003975",
+            "SRC-003977"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 26,
+          "src": [
+            "SRC-003975",
+            "SRC-003974",
+            "SRC-003977"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.86,
+          "src": [
+            "SRC-003978",
+            "SRC-003974"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003974"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Council memo 2022: deed restriction recorded in connection with City acquisition funds provided in September 2020; a Regulatory Agreement is required before building or grading permits",
+          "src": [
+            "SRC-003974"
+          ]
+        },
+        {
+          "value": "California Local (Nov 2022), reporting the County: half of the 14 units designated for households earning 50% of AMI",
+          "src": [
+            "SRC-003979"
+          ]
         }
       ]
     }
@@ -189,10 +323,80 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Initial Study (2022): 14 two-story townhomes, maximum height about 26 feet, in two duplexes and two five-unit buildings; rezoning from R-1-8 to MUN; Woodset Court connected to Woodset Drive through the parcel. It states construction would begin September 2021 with operation in April 2024.",
+      "src": [
+        "SRC-003975"
+      ]
+    },
+    {
+      "text": "Council memo (2022): vesting tentative map for 16 lots (14 residential lots of 787 to 1,574 sq ft and two common lots); about a 42% density bonus (4 units) with concessions for side and right-of-way setbacks, a parking reduction and a private open space waiver.",
+      "src": [
+        "SRC-003974"
+      ]
+    },
+    {
+      "text": "Housing memo (2020): Heritage Bank and Fremont Bank named as construction lenders on Habitat's current and past projects; other planned sources were County Measure A, FHLB AHP/WISH and HCD programs.",
+      "src": [
+        "SRC-003976"
+      ]
+    },
+    {
+      "text": "California Local (Nov 2022): the Board approved the funding on Nov. 1 as part of a $31.5 million Measure A package; the project is named Jackson Avenue Townhomes.",
+      "src": [
+        "SRC-003979"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Habitat for Humanity East Bay/Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.habitatebsv.org",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003975",
+        "SRC-003976",
+        "SRC-003974",
+        "SRC-003977"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Geoffrey Holton Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003977",
+        "SRC-003980"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Acquisition loan",
+      "provider": "City of San Jose",
+      "program": "Affordable Housing Impact Fee Fund (Moderate-Income set-aside)",
+      "amount": 2200000,
+      "date": null,
+      "src": [
+        "SRC-003976"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Department of Housing and Community Development",
+      "program": "CalHome Homeownership Development Project Loan (\"HDPL- Jackson\", San Jose, 12 assisted units)",
+      "amount": 2400000,
+      "date": "2025-10-02",
+      "src": [
+        "SRC-003981"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -204,11 +408,57 @@
       ]
     },
     {
+      "date": "2020-06-30",
+      "type": "Other",
+      "label": "City Council agenda: $2.2M acquisition loan commitment to Habitat (File 20-745)",
+      "src": [
+        "SRC-003976",
+        "SRC-003982"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-04-15",
+      "type": "Other",
+      "label": "Initial Study/MND released for review (SCH 2022040343)",
+      "src": [
+        "SRC-003978"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06-22",
+      "type": "Other",
+      "label": "Planning Commission recommends approval 8-0-3",
+      "src": [
+        "SRC-003974"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-08-09",
       "type": "Approved",
       "label": "City issues Site Permit H19-031",
       "src": [
         "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-11-01",
+      "type": "Other",
+      "label": "County Board of Supervisors approves Measure A funding (first homeownership project funded under Measure A)",
+      "src": [
+        "SRC-003979"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-02",
+      "type": "Other",
+      "label": "State CalHome award, $2,400,000",
+      "src": [
+        "SRC-003981"
       ],
       "estimated": false
     }
@@ -228,6 +478,102 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer; CEQAnet, SF YIMBY, county funding coverage",
+      "src": [
+        "SRC-003978",
+        "SRC-003977"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset for APN 48122067 shows situs only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Legistar: File 20-745 (2020 acquisition loan memo) and File 22-1143 (2022 PC/Council memo)",
+      "src": [
+        "SRC-003976",
+        "SRC-003974",
+        "SRC-003983"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "County news release on Measure A funding at news.santaclaracounty.gov refuses automated access",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2022040343 and Initial Study; HCD 2024 HOSN Round 2 CalHome awardee list",
+      "src": [
+        "SRC-003978",
+        "SRC-003975",
+        "SRC-003981"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "California Local 2022-11-21",
+      "src": [
+        "SRC-003979"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2022-04-24 and 2022-09-06",
+      "src": [
+        "SRC-003980",
+        "SRC-003977"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "habitatebsv.org homeownership page lists no Jackson project",
+      "src": [
+        "SRC-003984"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Geoffrey Holton Associates",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City acquisition loan (2020 memo); state CalHome award (2025)",
+      "src": [
+        "SRC-003976",
+        "SRC-003981"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LinkedIn result in web searches",
+      "src": []
+    }
+  }
 }

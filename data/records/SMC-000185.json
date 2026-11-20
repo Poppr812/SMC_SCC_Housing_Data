@@ -163,7 +163,8 @@
         {
           "value": 14,
           "src": [
-            "SRC-001105"
+            "SRC-001105",
+            "SRC-003970"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -204,6 +205,12 @@
           "src": [
             "SRC-001158"
           ]
+        },
+        {
+          "value": 0.71,
+          "src": [
+            "SRC-003970"
+          ]
         }
       ]
     },
@@ -227,6 +234,30 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003970"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003970",
+            "SRC-002350"
+          ],
+          "note": "General Plan amendment, rezoning, subdivision, use permit, design review"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -235,6 +266,24 @@
       "src": [
         "SRC-001104",
         "SRC-001105"
+      ]
+    },
+    {
+      "text": "CEQAnet: General Plan amendment from Residential-Low Density to Residential-Medium Density and rezoning from I-D Interim District to R-3; 14 three-story townhomes, each with a two-car tandem garage, a 120-foot internal access road and private driveways. CEQAnet lists APNs 006-254-030 and 006-254-020.",
+      "src": [
+        "SRC-003970"
+      ]
+    },
+    {
+      "text": "City list (July 2025): Third Avenue Townhouses, 15 detached townhomes on 0.72 acres, 21.0 du/ac; no Affordable Housing Plan submitted or approved; City Council approved April 24, 2023.",
+      "src": [
+        "SRC-002350"
+      ]
+    },
+    {
+      "text": "Compass: site marketed as residential development land; listed at $3,880,000 on 2025-05-27, relisted at $2,680,000 on 2025-10-01, listing expired 2026-01-31; listing brokerage Cornish & Carey Commercial.",
+      "src": [
+        "SRC-003971"
       ]
     }
   ],
@@ -257,6 +306,29 @@
       "src": [
         "SRC-001158"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Clarum Homes",
+      "contact": "Nicole Gittelson",
+      "linkedin": null,
+      "email": "nicole@clarum.com",
+      "phone": "(650) 322-7069",
+      "website": "https://www.clarum.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003970"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-003970"
+      ]
     }
   ],
   "financing": [],
@@ -269,6 +341,24 @@
       "src": [
         "SRC-001104"
       ]
+    },
+    {
+      "date": "2021-09-27",
+      "type": "Sale",
+      "label": "Property sold for $2,700,000 (listing site record)",
+      "src": [
+        "SRC-003971"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-01-26",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with State Clearinghouse (SCH 2023010554)",
+      "src": [
+        "SRC-003970"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-04-24",
@@ -289,6 +379,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and project name; CEQAnet record and listing pages",
+      "src": [
+        "SRC-003970",
+        "SRC-003971"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "County parcel layer: owner 141 THIRD AVE LLC already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Daly City Current Residential Project List, July 2025",
+      "src": [
+        "SRC-002350"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2023010554 (MND); APR rows already on record",
+      "src": [
+        "SRC-003970"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Compass listing history for the site",
+      "src": [
+        "SRC-003971"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "clarum.com home page opened; no project page for 141 3rd Avenue",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in CEQAnet, city list or listings",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LinkedIn result in web searches",
+      "src": []
+    }
+  }
 }
