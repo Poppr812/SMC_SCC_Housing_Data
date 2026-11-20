@@ -199,6 +199,52 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003902",
+            "SRC-003903"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-003903"
+          ],
+          "note": "Plus four bicycle spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.23,
+          "src": [
+            "SRC-003902",
+            "SRC-003903"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003902"
+          ],
+          "note": "Site Development Permit H23-009"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -214,9 +260,41 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CEQA Notice of Exemption (ER23-106): one five-story, 16-unit multifamily building with a roof deck, two units deed-restricted (one very-low-income, one moderate-income), replacing a single-family house and removing three trees; about 0.23 gross acres at W Virginia Street and Bird Avenue.",
+      "src": [
+        "SRC-003902"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-08-30): 52 feet tall; two- to four-bedroom units; roughly 7,000 sq ft garage for 17 cars and four bicycles; 3,980 sq ft rooftop open space; site last sold in 2018 for $970,000 per public records.",
+      "src": [
+        "SRC-003903"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Philip Beitpoulince",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003903"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Nguyen Phuong Vy Hoang, Trustee",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003903"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -235,6 +313,14 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-08-20",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (Class 32 infill) filed, ER23-106",
+      "src": [
+        "SRC-003902"
+      ]
     }
   ],
   "history": [
@@ -247,6 +333,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 579 W Virginia St; opened SF YIMBY and CEQAnet",
+      "src": [
+        "SRC-003903"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 26418050: situs 579 W Virginia St, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit GIS entry H23-009 already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025080849 Notice of Exemption 2025-08-20",
+      "src": [
+        "SRC-003902"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found by search",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-08-30",
+      "src": [
+        "SRC-003903"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicant is an individual; no developer site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; nothing surfaced",
+      "src": []
+    }
+  }
 }

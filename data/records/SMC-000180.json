@@ -165,6 +165,55 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.68,
+          "src": [
+            "SRC-003899",
+            "SRC-003900"
+          ],
+          "note": "570 Crespi Drive parcel (0.98 acre) plus a portion of the city-owned 540 Crespi Drive parcel"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3165,
+          "src": [
+            "SRC-003900",
+            "SRC-003901"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003899",
+            "SRC-003901"
+          ],
+          "note": "One two-story mixed-use building and two three-story residential buildings"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-003899"
+          ],
+          "note": "General Plan amendment, Site Development Permit, Vesting Tentative Map, Use Permit and others; rezoning and Development Agreement ordinances introduced"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -173,6 +222,26 @@
       "src": [
         "SRC-001136",
         "SRC-001148"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Determination: on 2025-12-02 the Pacifica City Council, on call-up from the Planning Commission, approved a General Plan amendment, Site Development Permit, Vesting Tentative Map, Use Permit, Tree Removal Permit, Sign Permit and Parking Exception, and introduced rezoning and Development Agreement ordinances. An EIR was prepared and a Statement of Overriding Considerations adopted.",
+      "src": [
+        "SRC-003899"
+      ]
+    },
+    {
+      "text": "Condominium subdivision of one commercial condominium and 19 residential condominiums. SF YIMBY (2021): Building A has 3,165 sq ft of ground-floor commercial and three residential units above; Building B has seven townhomes and Building C nine townhomes; units from under 950 sq ft to over 2,200 sq ft; three affordable units under the city's inclusionary ordinance.",
+      "src": [
+        "SRC-003899",
+        "SRC-003901"
+      ]
+    },
+    {
+      "text": "Site includes APN 022-162-310 and part of APN 022-162-420 (540 Crespi Drive, Pacifica Community Center), which the county parcel layer lists as owned by the City of Pacifica and the City of Pacifica Financing Authority.",
+      "src": [
+        "SRC-003899",
+        "SRC-001103"
       ]
     }
   ],
@@ -184,6 +253,43 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BayWorks Construction, Inc.",
+      "contact": "Brendan Murphy",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003899"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "SC Properties",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003901"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "EID Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003901"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Michael Callan Landscape Architect",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003901"
       ]
     }
   ],
@@ -199,11 +305,27 @@
       ]
     },
     {
+      "date": "2021-12-08",
+      "type": "Other",
+      "label": "Initial Study/Mitigated Negative Declaration filed with the state",
+      "src": [
+        "SRC-003900"
+      ]
+    },
+    {
       "date": "2025-12-02",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001148"
+      ]
+    },
+    {
+      "date": "2025-12-05",
+      "type": "Other",
+      "label": "CEQA Notice of Determination posted (EIR certified)",
+      "src": [
+        "SRC-003899"
       ]
     }
   ],
@@ -212,6 +334,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 570 Crespi; opened CEQAnet and SF YIMBY; soar.com meeting summaries unreachable",
+      "src": [
+        "SRC-003899"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC parcel layer: 022162310 owner CRESPI BREAKWATER LLC (on record); 022162420 owner City of Pacifica",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "cityofpacifica.org documents refused access (403); Pacifica not on Legistar API",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2021120126: IS/MND 2021, NOD 2025-12-05",
+      "src": [
+        "SRC-003899",
+        "SRC-003900"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Pacifica Tribune or Daily Journal article found by search",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2021-12-11",
+      "src": [
+        "SRC-003901"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No SC Properties or BayWorks project page found by search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No EID Architects project page found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender found; council also approved sale of part of city parcel (price not seen in sources opened)",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; nothing surfaced",
+      "src": []
+    }
+  }
 }

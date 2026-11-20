@@ -83,8 +83,16 @@
             "SRC-001107"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-003892"
+          ],
+          "note": "2018 report: 19 for-sale residential condos above the hotel; state report does not give tenure"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -149,6 +157,29 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 9,
+          "src": [
+            "SRC-001956",
+            "SRC-003892"
+          ],
+          "note": "Nine-story hotel and residential building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.86,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit text: 0.86-gross acre site"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -164,9 +195,45 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "2018 report: Texas-based Kade Development planned a nine-story, 311-room dual-brand Courtyard by Marriott and Residence Inn hotel with 19 for-sale condos on the top floor, on a vacant lot at West Julian Street and Stockton Avenue. The 2020 city permit text describes a 303-room hotel with 19 attached residential units.",
+      "src": [
+        "SRC-003892",
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Kade Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003892"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architectural Dimensions",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003892"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Schoennauer Company",
+      "contact": "Erik Schoennauer",
+      "linkedin": null,
+      "other_role": "Land use consultant",
+      "src": [
+        "SRC-003892"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -197,6 +264,90 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 292 Stockton / Kade Development; opened Hotel Online republication of 2018 article",
+      "src": [
+        "SRC-003892"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 25928049: situs 292 Stockton Av, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov Stockton Avenue Hotel and Condominiums EIR page refuses automated access; city permit GIS entry SP19-063 already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR rows already on record; no CEQAnet record located for this project",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Mercury News 2018 and 2020 articles via PressReader refused access (403)",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Hotel Online 2018-08-07; The Real Deal 2023 roundup refused access",
+      "src": [
+        "SRC-003892"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Kade Development project page found by search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architectural Dimensions named in 2018 report; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; nothing surfaced",
+      "src": []
+    }
+  }
 }

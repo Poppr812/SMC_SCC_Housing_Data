@@ -117,6 +117,29 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-003889"
+          ],
+          "note": "Existing seven-story Hanover Diridon building in which the 19 units are being created"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 26500,
+          "src": [
+            "SRC-003890",
+            "SRC-001956"
+          ],
+          "note": "Approximate existing ground-floor commercial space proposed for conversion to 19 apartments"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -132,9 +155,54 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "The 19 units are a conversion of about 26,500 sq ft of vacant ground-floor commercial space inside Hanover Diridon, a 249-unit, seven-story apartment building at 715 W. Julian Street completed in 2021. San Jose Spotlight (Oct. 2023) reports the owner had not found a ground-floor tenant in six years.",
+      "src": [
+        "SRC-003890",
+        "SRC-003889"
+      ]
+    },
+    {
+      "text": "SEC 8-K: Hines Global Income Trust acquired Hanover Diridon on 2024-01-19 for a contract purchase price of about $117.5 million (whole building, about 206,800 sq ft net rentable, 95% leased); seller not affiliated with the buyer. REBusinessOnline reports the building was rebranded Diridon West.",
+      "src": [
+        "SRC-003891",
+        "SRC-003889"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "The Hanover Company",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner and applicant at time of 2023 conversion application",
+      "src": [
+        "SRC-003890"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Schoennauer Company",
+      "contact": "Erik Schoennauer",
+      "linkedin": null,
+      "other_role": "Land use consultant (owner's representative)",
+      "src": [
+        "SRC-003890"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Hines Global Income Trust, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003891",
+        "SRC-003889"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -153,6 +221,14 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2024-01-19",
+      "type": "Sale",
+      "label": "Hines Global Income Trust acquired the 249-unit Hanover Diridon building (contract price about $117.5 million)",
+      "src": [
+        "SRC-003891"
+      ]
     }
   ],
   "history": [
@@ -165,6 +241,94 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 717/715 W Julian; found San Jose Spotlight and sale coverage identifying the building as Hanover Diridon",
+      "src": [
+        "SRC-003890"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 26101113: situs 717 W Julian St, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city permit GIS entry H23-016 already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A/A2 rows already on record; CEQAnet search found no filing for this address",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2023-10-10; Local News Matters 2023-10-12 refused access (403)",
+      "src": [
+        "SRC-003890"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "REBusinessOnline 2024-01-24 on Hines acquisition; The Real Deal refused access",
+      "src": [
+        "SRC-003889"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Hanover Company site: communities page returned 404; Hines Diridon West page refused access (403)",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named for the conversion in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SEC 8-K for the 2024 acquisition (no loan disclosed)",
+      "src": [
+        "SRC-003891"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no public LinkedIn posts on the conversion surfaced",
+      "src": []
+    }
+  }
 }
