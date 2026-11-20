@@ -128,8 +128,16 @@
             "SRC-001099"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001866"
+          ],
+          "note": "JLL flyer: 60 rowhouse-style attached townhomes in nine three-story buildings; city T23-019 maps them as condominium units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -193,6 +201,13 @@
             "SRC-001956"
           ],
           "note": "City folder 114276, Vesting Tentative Map (permit type: Subdivision); city permit status: Approved. Matched by APN."
+        },
+        {
+          "value": "ER23-196",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review, exemption; city status Approved/Certified, issue date 2026-03-25"
         }
       ]
     },
@@ -209,6 +224,18 @@
             "SRC-001099"
           ],
           "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 8,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001866"
+          ],
+          "note": "JLL flyer: 8 affordable units restricted to households up to 80% AMI"
         }
       ]
     },
@@ -220,6 +247,69 @@
             "SRC-001099"
           ],
           "note": "State report 2023, application stage: 12 deed-restricted units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.78,
+          "src": [
+            "SRC-001956",
+            "SRC-001866"
+          ],
+          "note": "Gross acres per city file T23-019 and JLL flyer"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001866"
+          ],
+          "note": "Nine three-story buildings"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 52,
+          "src": [
+            "SRC-001866"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 28,
+            "4br+": 32
+          },
+          "src": [
+            "SRC-001866"
+          ],
+          "note": "JLL flyer: 28 three-bed/three-bath units of 1,260 SF (8 BMR); 32 units listed as 4 bed/3.5 bath, 1,649 to 1,717 SF, which the flyer describes as 3 bedrooms upstairs plus a ground-floor bonus room; each unit has 2 garage spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file H23-023: submitted under the Housing Accountability Act (Builder's Remedy); PRE23-055: SB 330 preliminary application for a 60-unit Builder's Remedy project"
         }
       ]
     }
@@ -248,6 +338,18 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City file H23-023 covers demolition of two commercial buildings totaling about 16,350 SF and removal of 19 trees. Zoning on PRE23-055: R-1-8(PD).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "JLL, as exclusive advisor, markets the entitled site for sale. The flyer states the Final Map has not been recorded and that the Final Map and Public Street Improvement Permit are estimated to take 6 to 8 months.",
+      "src": [
+        "SRC-001866"
+      ]
     }
   ],
   "parties": [
@@ -259,11 +361,40 @@
       "src": [
         "SRC-001866"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "OICC Ventures LLC",
+      "contact": "Mark Conroe",
+      "linkedin": null,
+      "other_role": "Owner and applicant (city files H23-023, T23-019, ER23-196)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Richard Johnson",
+      "contact": "Richard Johnson",
+      "linkedin": null,
+      "other_role": "Applicant, SB 330 preliminary application PRE23-055",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-05-03",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application filed (PRE23-055)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-09-11",
       "type": "Application filed",
@@ -271,6 +402,16 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-03-25",
+      "type": "Approved",
+      "label": "Site Development Permit H23-023 approved and CEQA exemption ER23-196 certified; JLL flyer reports the Vesting Tentative Map approved March 2026",
+      "src": [
+        "SRC-001956",
+        "SRC-001866"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -288,6 +429,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 1175-1199 Saratoga: JLL listing and flyer",
+      "src": [
+        "SRC-001866"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 38117149: situs 1175 Saratoga, jurisdiction San Jose",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Planning permits GIS layer by APN: H23-023, T23-019, PRE23-055, ER23-196. City calendar pages on sanjoseca.gov not opened (site refuses automated access). Legistar matter search: no item",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR row already on record; CEQAnet text search returned no match",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news: none for this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "invest.jll.com listing page and therealdeal.com returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer website found for OICC Ventures LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city records or flyer",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named; JLL flyer lists a debt advisory contact only",
+      "src": [
+        "SRC-001866"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only: none",
+      "src": []
+    }
+  }
 }

@@ -109,6 +109,34 @@
             "SRC-001956"
           ],
           "note": "City folder 112945, Site Development Permit/Amendment; city permit status: Under Review."
+        },
+        {
+          "value": "T26-009",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Tentative Map: subdivide 6 lots into 9 lots and allow up to 61 residential condominium units on about 2.5 gross acres; city status Under Review, filed 2026-04-17"
+        },
+        {
+          "value": "GP25-006",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Privately initiated General Plan Amendment from Neighborhood/Community Commercial to Mixed Use Neighborhood on a 2.5-gross-acre site; city status Review Letter Sent, filed 2025-10-29"
+        },
+        {
+          "value": "ER25-221, ER26-056",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review folders (Negative Declaration/Mitigated Negative Declaration); city status Under Review"
+        },
+        {
+          "value": "Cambrian 38",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City annexation folder, filed 2026-05-28, status New"
         }
       ]
     },
@@ -133,11 +161,35 @@
           "note": "City file H26-012 (Site Development Permit/Amendment): \"Site Development Permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. The project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.5,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per City of San Jose files H26-012, T26-009 and GP25-006"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "City of San Jose permit H26-012 (Site Development Permit/Amendment, folder year 2026), status Under Review: \"Site Development Permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. The project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "The county parcel dataset shows APN 414-26-001 (15194 Camden Ave) in unincorporated Santa Clara County. The City of San Jose has an annexation folder (Cambrian 38) for the site, and its files describe a 2.5-gross-acre site with six existing single-family houses to be demolished.",
+      "src": [
+        "SRC-001098",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City of San Jose file PRE25-248 (preliminary review, annexation) at 15162 Camden Ave, APN 414-26-003, filed 2025-05-30 by De Nguyen, status Complete.",
       "src": [
         "SRC-001956"
       ]
@@ -153,11 +205,48 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Kellogg & Kay LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner and applicant (city files GP25-006, ER25-221, T26-009, Cambrian 38)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-10-29",
+      "type": "Application filed",
+      "label": "General Plan Amendment filed (GP25-006)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-17",
+      "type": "Application filed",
+      "label": "Tentative Map filed (T26-009)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-28",
+      "type": "Other",
+      "label": "Annexation file opened with City of San Jose (Cambrian 38)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-07-17",
       "type": "Application filed",
@@ -173,6 +262,85 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 15194 Camden Ave, AlphaX and Kellogg & Kay: only MLS listings of the existing house",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API, APN 41426001: situs 15194 Camden, jurisdiction Unincorporated; neighboring 414-26-002 to -004 also unincorporated",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Planning permits GIS layer queried by APN: GP25-006, T26-009, ER25-221, ER26-056, Cambrian 38, PRE25-248. Legistar (sanjose) matter search on Camden: no item for this site",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Site is unincorporated pending annexation; no county planning item found in search",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR data and CEQAnet text search: no entry for this site",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news for Camden Ave 61 condominiums: none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press: none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "alphax-capital.com homepage opened: no Camden Ave project listed",
+      "src": [
+        "SRC-003391"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city records or search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only: no posts on this project",
+      "src": []
+    }
+  }
 }

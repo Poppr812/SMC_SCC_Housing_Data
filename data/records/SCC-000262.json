@@ -122,8 +122,16 @@
             "SRC-001127"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003395"
+          ],
+          "note": "City of Palo Alto, Dec 2022: Wilton Court Apartments held its grand opening and ribbon cutting"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -163,8 +171,17 @@
           "src": [
             "SRC-001127"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-003398",
+            "SRC-003397"
+          ],
+          "note": "58 of 59 units restricted; 1 manager unit"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_notes": {
       "claims": [
@@ -172,6 +189,14 @@
           "value": "58 deed-restricted units reported to the state",
           "src": [
             "SRC-001127"
+          ]
+        },
+        {
+          "value": "21 units restricted for adults with developmental disabilities; services through Housing Choices and San Andreas Regional Center",
+          "src": [
+            "SRC-003397",
+            "SRC-003395",
+            "SRC-003399"
           ]
         }
       ]
@@ -205,8 +230,162 @@
             "SRC-001126"
           ],
           "note": "State report 2018, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 14,
+              "ami": 30
+            },
+            {
+              "count": 19,
+              "ami": 50
+            },
+            {
+              "count": 25,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003398"
+          ],
+          "note": "CTCAC 2020 aggregate targeting; 1 manager unit unrestricted"
+        },
+        {
+          "value": [
+            {
+              "count": 16,
+              "ami": 30
+            },
+            {
+              "count": 17,
+              "ami": 50
+            },
+            {
+              "count": 25,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003397"
+          ],
+          "note": "City staff report 2019, Table 1; 1 exempt manager unit"
+        }
+      ],
+      "best": 1
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2022,
+          "src": [
+            "SRC-003395"
+          ],
+          "note": "Grand opening reported December 2022"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003396"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 50,
+          "src": [
+            "SRC-003397"
+          ],
+          "note": "Two levels of garage parking with 50 residential spaces"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 55,
+            "1br": 4,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003398"
+          ],
+          "note": "CTCAC 2020: 55 SRO/studio and 4 one-bedroom, including one manager unit"
+        },
+        {
+          "value": {
+            "studio": 56,
+            "1br": 3,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003397"
+          ],
+          "note": "City staff report 2019: 56 studios and 3 one-bedrooms"
+        }
+      ],
+      "best": 0
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003398",
+            "SRC-003397"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003397"
+          ],
+          "note": "City Council approved parcel combination, rezoning to the Affordable Housing Combining District, and a retail preservation waiver on 2019-01-14"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 48831279,
+          "src": [
+            "SRC-003398"
+          ],
+          "note": "CTCAC staff report, cost at application"
+        },
+        {
+          "value": 46127456,
+          "src": [
+            "SRC-003397"
+          ],
+          "note": "Applicant estimate in city staff report 2019"
+        },
+        {
+          "value": 46300000,
+          "src": [
+            "SRC-003396"
+          ],
+          "note": "Reported at groundbreaking, Jan 2021"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -216,10 +395,203 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "City staff report of 2019-06-03 recommended a $10 million city loan to Palo Alto Housing Corporation ($1 million Residential Housing In-Lieu Fund, $9 million Commercial Housing Fund) at 3% simple interest from residual receipts, forgivable if affordable in perpetuity.",
+      "src": [
+        "SRC-003397"
+      ]
+    },
+    {
+      "text": "City of Palo Alto press release, Dec 2022: the city contributed $20.5 million to the project.",
+      "src": [
+        "SRC-003395"
+      ]
+    },
+    {
+      "text": "Groundbreaking report names funders City of Palo Alto, Santa Clara County, Wells Fargo Bank, Enterprise Community Partners, California Community Reinvestment Corp., CTCAC, HCD and California Municipal Finance Authority, without amounts.",
+      "src": [
+        "SRC-003396"
+      ]
+    },
+    {
+      "text": "The project combined the parcels at 3703-3705 and 3707-3709 El Camino Real and was the first use of Palo Alto's Affordable Housing Combining District.",
+      "src": [
+        "SRC-003397"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "PAHC Properties Corporation",
+      "contact": "Randal Tsuda",
+      "linkedin": null,
+      "email": "rtsuda@pah.community",
+      "phone": "650-321-9709",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Alta Housing (formerly Palo Alto Housing)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003396"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Wilton Court LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner (nonprofit), CTCAC",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant, CTCAC",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Palo Alto Housing Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "PYATOK",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003396"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "L&D Construction Co.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003396"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "JP Morgan Chase",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Housing Choices",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services provider",
+      "src": [
+        "SRC-003399",
+        "SRC-003395"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "JP Morgan Chase",
+      "program": "Tax-exempt bonds, construction phase (issuer California Municipal Finance Authority)",
+      "amount": 23817500,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "JP Morgan Chase",
+      "program": "Taxable construction loan",
+      "amount": 5837297,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "JP Morgan Chase",
+      "program": "Permanent tax-exempt bond loan (issuer California Municipal Finance Authority)",
+      "amount": 4091000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Palo Alto",
+      "program": "Permanent source per CTCAC",
+      "amount": 19188737,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Permanent source per CTCAC",
+      "amount": 2800000,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Tax credit investor (not named in CTCAC report)",
+      "program": "Federal $1,792,883 annual credits; state $3,190,000 total credits",
+      "amount": 19800975,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "PAHC Properties Corporation",
+      "program": null,
+      "amount": 1192231,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "PAHC Properties Corporation",
+      "program": "Contributed developer fee",
+      "amount": 1370695,
+      "date": "2020-04-14",
+      "src": [
+        "SRC-003398"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -231,6 +603,15 @@
       ]
     },
     {
+      "date": "2019-01-14",
+      "type": "Approved",
+      "label": "City Council approved parcel combination, AHCD rezoning and retail waiver",
+      "src": [
+        "SRC-003397"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2019-02-06",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -239,12 +620,39 @@
       ]
     },
     {
+      "date": "2020-04-14",
+      "type": "Other",
+      "label": "CTCAC staff report recommends 4% tax credit reservation (CA-20-487)",
+      "src": [
+        "SRC-003398"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2020-10-15",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "date": "2021-01",
+      "type": "Construction start",
+      "label": "Groundbreaking reported",
+      "src": [
+        "SRC-003396"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-12",
+      "type": "Completion",
+      "label": "Grand opening and ribbon cutting reported",
+      "src": [
+        "SRC-003395"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-02-10",
@@ -265,6 +673,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Wilton Court / 3705 El Camino Real: REBusinessOnline, city news, Housing Choices",
+      "src": [
+        "SRC-003396",
+        "SRC-003395"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 13235050: situs 3705 El Camino Real, Palo Alto",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto Council staff report ID 10143 (2019-06-03); city news release Dec 2022",
+      "src": [
+        "SRC-003397",
+        "SRC-003395"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "County of Santa Clara loan of $2.8M appears in CTCAC report; no separate county item opened",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC staff report CA-20-487 (2020-04-14)",
+      "src": [
+        "SRC-003398"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Palo Alto Online articles (2019-01-14, 2022-12-09) returned 429",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "REBusinessOnline groundbreaking article; housingfinance.com returned 403",
+      "src": [
+        "SRC-003396"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Alta Housing site not reached in search results for a project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "pyatok.com news archive returned 403",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC construction and permanent sources; city staff report sources table",
+      "src": [
+        "SRC-003398",
+        "SRC-003397"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only: no LinkedIn result",
+      "src": []
+    }
+  }
 }

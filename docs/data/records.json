@@ -32649,6 +32649,114 @@
    "wayback": null,
    "copyright": false,
    "sha256": null
+  },
+  "SRC-003391": {
+   "id": "SRC-003391",
+   "title": "AlphaX RE Capital",
+   "publisher": "AlphaX RE Capital",
+   "date": null,
+   "type": "Developer web page",
+   "url": "https://alphax-capital.com",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-003392": {
+   "id": "SRC-003392",
+   "title": "Notice of Public Hearing, Planning Commission May 24, 2022, 601 Almarida Drive (PLN-2018-202), with planning submittal",
+   "publisher": "City of Campbell",
+   "date": "2022-05-24",
+   "type": "Government document",
+   "url": "https://campbellca.gov/Archive.aspx?ADID=1719",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-003393": {
+   "id": "SRC-003393",
+   "title": "Notice of Public Hearing, Planning Commission May 14, 2024, 601 Almarida Drive (PLN-2024-44), with approved project plans",
+   "publisher": "City of Campbell",
+   "date": "2024-05-03",
+   "type": "Government document",
+   "url": "https://campbellca.gov/Archive.aspx?ADID=3166",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-003394": {
+   "id": "SRC-003394",
+   "title": "60 Unit Addition to The Franciscan",
+   "publisher": "Raintree Partners",
+   "date": null,
+   "type": "Developer web page",
+   "url": "https://raintreepartners.com/property/the-franciscan-ii",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-003395": {
+   "id": "SRC-003395",
+   "title": "New Affordable Housing Units Open in Palo Alto",
+   "publisher": "City of Palo Alto",
+   "date": "2022-12-20",
+   "type": "Government press release",
+   "url": "https://www.paloalto.gov/News-Articles/City-Manager/New-Affordable-Housing-Units-Open-in-Palo-Alto",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-003396": {
+   "id": "SRC-003396",
+   "title": "Alta Housing Breaks Ground on $46.3M Wilton Court Affordable Housing Project in Palo Alto",
+   "publisher": "REBusinessOnline",
+   "date": "2021-01-12",
+   "type": "Trade publication",
+   "url": "https://rebusinessonline.com/alta-housing-breaks-ground-on-46-3m-wilton-court-affordable-housing-project-in-palo-alto/",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-003397": {
+   "id": "SRC-003397",
+   "title": "City Council Staff Report ID 10143: Approve Funding Request for Wilton Court",
+   "publisher": "City of Palo Alto",
+   "date": "2019-06-03",
+   "type": "Government document",
+   "url": "https://www.paloalto.gov/civicax/filebank/documents/71434",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-003398": {
+   "id": "SRC-003398",
+   "title": "CTCAC Project Staff Report, Wilton Court Apartments (CA-20-487)",
+   "publisher": "California Tax Credit Allocation Committee",
+   "date": "2020-04-14",
+   "type": "Government document",
+   "url": "https://treasurer.ca.gov/sites/default/files/ctcac/CA-20-487.pdf",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-003399": {
+   "id": "SRC-003399",
+   "title": "Wilton Court",
+   "publisher": "Housing Choices",
+   "date": null,
+   "type": "Trade listing",
+   "url": "https://housingchoicesorganization.squarespace.com/santa-clara-properties/wilton-court",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -191979,8 +192087,16 @@
         "SRC-001127"
        ],
        "note": "State report shows certificates of occupancy for some of the units, not all"
+      },
+      {
+       "value": "Existing",
+       "src": [
+        "SRC-003395"
+       ],
+       "note": "City of Palo Alto, Dec 2022: Wilton Court Apartments held its grand opening and ribbon cutting"
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -192020,8 +192136,17 @@
        "src": [
         "SRC-001127"
        ]
+      },
+      {
+       "value": "100% affordable",
+       "src": [
+        "SRC-003398",
+        "SRC-003397"
+       ],
+       "note": "58 of 59 units restricted; 1 manager unit"
       }
-     ]
+     ],
+     "best": 1
     },
     "affordability_notes": {
      "claims": [
@@ -192029,6 +192154,14 @@
        "value": "58 deed-restricted units reported to the state",
        "src": [
         "SRC-001127"
+       ]
+      },
+      {
+       "value": "21 units restricted for adults with developmental disabilities; services through Housing Choices and San Andreas Regional Center",
+       "src": [
+        "SRC-003397",
+        "SRC-003395",
+        "SRC-003399"
        ]
       }
      ]
@@ -192062,8 +192195,162 @@
         "SRC-001126"
        ],
        "note": "State report 2018, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+      },
+      {
+       "value": [
+        {
+         "count": 14,
+         "ami": 30
+        },
+        {
+         "count": 19,
+         "ami": 50
+        },
+        {
+         "count": 25,
+         "ami": 60
+        }
+       ],
+       "src": [
+        "SRC-003398"
+       ],
+       "note": "CTCAC 2020 aggregate targeting; 1 manager unit unrestricted"
+      },
+      {
+       "value": [
+        {
+         "count": 16,
+         "ami": 30
+        },
+        {
+         "count": 17,
+         "ami": 50
+        },
+        {
+         "count": 25,
+         "ami": 60
+        }
+       ],
+       "src": [
+        "SRC-003397"
+       ],
+       "note": "City staff report 2019, Table 1; 1 exempt manager unit"
+      }
+     ],
+     "best": 1
+    },
+    "year_built": {
+     "claims": [
+      {
+       "value": 2022,
+       "src": [
+        "SRC-003395"
+       ],
+       "note": "Grand opening reported December 2022"
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 4,
+       "src": [
+        "SRC-003396"
+       ]
+      }
+     ]
+    },
+    "parking_spaces": {
+     "claims": [
+      {
+       "value": 50,
+       "src": [
+        "SRC-003397"
+       ],
+       "note": "Two levels of garage parking with 50 residential spaces"
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "studio": 55,
+        "1br": 4,
+        "2br": 0,
+        "3br": 0,
+        "4br+": 0
+       },
+       "src": [
+        "SRC-003398"
+       ],
+       "note": "CTCAC 2020: 55 SRO/studio and 4 one-bedroom, including one manager unit"
+      },
+      {
+       "value": {
+        "studio": 56,
+        "1br": 3,
+        "2br": 0,
+        "3br": 0,
+        "4br+": 0
+       },
+       "src": [
+        "SRC-003397"
+       ],
+       "note": "City staff report 2019: 56 studios and 3 one-bedrooms"
+      }
+     ],
+     "best": 0
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-003398",
+        "SRC-003397"
+       ]
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary"
+       ],
+       "src": [
+        "SRC-003397"
+       ],
+       "note": "City Council approved parcel combination, rezoning to the Affordable Housing Combining District, and a retail preservation waiver on 2019-01-14"
+      }
+     ]
+    },
+    "total_development_cost": {
+     "claims": [
+      {
+       "value": 48831279,
+       "src": [
+        "SRC-003398"
+       ],
+       "note": "CTCAC staff report, cost at application"
+      },
+      {
+       "value": 46127456,
+       "src": [
+        "SRC-003397"
+       ],
+       "note": "Applicant estimate in city staff report 2019"
+      },
+      {
+       "value": 46300000,
+       "src": [
+        "SRC-003396"
+       ],
+       "note": "Reported at groundbreaking, Jan 2021"
+      }
+     ],
+     "best": 0
     }
    },
    "construction_notes": [
@@ -192073,10 +192360,203 @@
       "SRC-001126",
       "SRC-001127"
      ]
+    },
+    {
+     "text": "City staff report of 2019-06-03 recommended a $10 million city loan to Palo Alto Housing Corporation ($1 million Residential Housing In-Lieu Fund, $9 million Commercial Housing Fund) at 3% simple interest from residual receipts, forgivable if affordable in perpetuity.",
+     "src": [
+      "SRC-003397"
+     ]
+    },
+    {
+     "text": "City of Palo Alto press release, Dec 2022: the city contributed $20.5 million to the project.",
+     "src": [
+      "SRC-003395"
+     ]
+    },
+    {
+     "text": "Groundbreaking report names funders City of Palo Alto, Santa Clara County, Wells Fargo Bank, Enterprise Community Partners, California Community Reinvestment Corp., CTCAC, HCD and California Municipal Finance Authority, without amounts.",
+     "src": [
+      "SRC-003396"
+     ]
+    },
+    {
+     "text": "The project combined the parcels at 3703-3705 and 3707-3709 El Camino Real and was the first use of Palo Alto's Affordable Housing Combining District.",
+     "src": [
+      "SRC-003397"
+     ]
     }
    ],
-   "parties": [],
-   "financing": [],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "PAHC Properties Corporation",
+     "contact": "Randal Tsuda",
+     "linkedin": null,
+     "email": "rtsuda@pah.community",
+     "phone": "650-321-9709",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "role": "Developer",
+     "company": "Alta Housing (formerly Palo Alto Housing)",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003396"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Wilton Court LLC",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "General partner (nonprofit), CTCAC",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "California Housing Partnership",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Investor/consultant, CTCAC",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "role": "Property manager",
+     "company": "Palo Alto Housing Corporation",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "PYATOK",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003396"
+     ]
+    },
+    {
+     "role": "General contractor",
+     "company": "L&D Construction Co.",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003396"
+     ]
+    },
+    {
+     "role": "Lender",
+     "company": "JP Morgan Chase",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Housing Choices",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Supportive services provider",
+     "src": [
+      "SRC-003399",
+      "SRC-003395"
+     ]
+    }
+   ],
+   "financing": [
+    {
+     "type": "Construction loan",
+     "provider": "JP Morgan Chase",
+     "program": "Tax-exempt bonds, construction phase (issuer California Municipal Finance Authority)",
+     "amount": 23817500,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "type": "Construction loan",
+     "provider": "JP Morgan Chase",
+     "program": "Taxable construction loan",
+     "amount": 5837297,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "type": "Tax-exempt bonds",
+     "provider": "JP Morgan Chase",
+     "program": "Permanent tax-exempt bond loan (issuer California Municipal Finance Authority)",
+     "amount": 4091000,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "type": "Local soft loan",
+     "provider": "City of Palo Alto",
+     "program": "Permanent source per CTCAC",
+     "amount": 19188737,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "type": "Local soft loan",
+     "provider": "County of Santa Clara",
+     "program": "Permanent source per CTCAC",
+     "amount": 2800000,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "type": "Tax-credit equity (4%)",
+     "provider": "Tax credit investor (not named in CTCAC report)",
+     "program": "Federal $1,792,883 annual credits; state $3,190,000 total credits",
+     "amount": 19800975,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "type": "Deferred developer fee",
+     "provider": "PAHC Properties Corporation",
+     "program": null,
+     "amount": 1192231,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    {
+     "type": "Sponsor / GP equity",
+     "provider": "PAHC Properties Corporation",
+     "program": "Contributed developer fee",
+     "amount": 1370695,
+     "date": "2020-04-14",
+     "src": [
+      "SRC-003398"
+     ]
+    }
+   ],
    "groups": {},
    "events": [
     {
@@ -192088,6 +192568,15 @@
      ]
     },
     {
+     "date": "2019-01-14",
+     "type": "Approved",
+     "label": "City Council approved parcel combination, AHCD rezoning and retail waiver",
+     "src": [
+      "SRC-003397"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2019-02-06",
      "type": "Approved",
      "label": "Entitlement approved",
@@ -192096,12 +192585,39 @@
      ]
     },
     {
+     "date": "2020-04-14",
+     "type": "Other",
+     "label": "CTCAC staff report recommends 4% tax credit reservation (CA-20-487)",
+     "src": [
+      "SRC-003398"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2020-10-15",
      "type": "Permit issued",
      "label": "Building permit issued",
      "src": [
       "SRC-001127"
      ]
+    },
+    {
+     "date": "2021-01",
+     "type": "Construction start",
+     "label": "Groundbreaking reported",
+     "src": [
+      "SRC-003396"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2022-12",
+     "type": "Completion",
+     "label": "Grand opening and ribbon cutting reported",
+     "src": [
+      "SRC-003395"
+     ],
+     "estimated": false
     },
     {
      "date": "2023-02-10",
@@ -192122,23 +192638,127 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Web search on Wilton Court / 3705 El Camino Real: REBusinessOnline, city news, Housing Choices",
+     "src": [
+      "SRC-003396",
+      "SRC-003395"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 13235050: situs 3705 El Camino Real, Palo Alto",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Palo Alto Council staff report ID 10143 (2019-06-03); city news release Dec 2022",
+     "src": [
+      "SRC-003397",
+      "SRC-003395"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "County of Santa Clara loan of $2.8M appears in CTCAC report; no separate county item opened",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "CTCAC staff report CA-20-487 (2020-04-14)",
+     "src": [
+      "SRC-003398"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Palo Alto Online articles (2019-01-14, 2022-12-09) returned 429",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "REBusinessOnline groundbreaking article; housingfinance.com returned 403",
+     "src": [
+      "SRC-003396"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Alta Housing site not reached in search results for a project page",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "pyatok.com news archive returned 403",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "CTCAC construction and permanent sources; city staff report sources table",
+     "src": [
+      "SRC-003398",
+      "SRC-003397"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search only: no LinkedIn result",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001126": "S1",
     "SRC-001127": "S2",
-    "SRC-001301": "S3",
-    "SRC-001098": "S4"
+    "SRC-003395": "S3",
+    "SRC-001301": "S4",
+    "SRC-003398": "S5",
+    "SRC-003397": "S6",
+    "SRC-003396": "S7",
+    "SRC-003399": "S8",
+    "SRC-001098": "S9"
    },
    "lat": 37.41836096111111,
    "lng": -122.1324076277778,
-   "calcs": {},
+   "calcs": {
+    "cost_per_unit": {
+     "value": 827649,
+     "how": "Total development cost $48,831,279 ÷ 59 total units"
+    },
+    "financing_total": {
+     "value": 48443638,
+     "how": "$4,091,000 + $19,188,737 + $2,800,000 + $19,800,975 + $1,192,231 + $1,370,695 (excludes short-term construction, bridge and predevelopment loans); compares with a $48,831,279 total development cost"
+    }
+   },
    "kinds": [
-    "pipeline"
+    "existing"
    ],
    "summary": {
     "product_type": "Apartments",
-    "status": "Under construction",
+    "status": "Existing",
     "jurisdiction": "Palo Alto",
     "community": "",
     "county": "Santa Clara County",
@@ -192149,28 +192769,31 @@
      59,
      59
     ],
-    "restricted_units": 59,
+    "restricted_units": 58,
     "aff_bucket": "Affordable",
     "aff_label": "Affordable, 100%",
     "aff_share": 1.0,
     "aff_levels": [
+     "el",
      "vl",
-     "m1",
-     "m2"
+     "lo"
     ],
-    "mix_types": [],
-    "tax_credit": false,
+    "mix_types": [
+     "studio",
+     "1br"
+    ],
+    "tax_credit": true,
     "owner": "",
-    "developer": "",
-    "cost_basis": "",
-    "cost": null,
-    "per_unit": null,
-    "main_lender": "",
+    "developer": "PAHC Properties Corporation; Alta Housing (formerly Palo Alto Housing)",
+    "cost_basis": "Total development cost",
+    "cost": 48831279,
+    "per_unit": 827649,
+    "main_lender": "JP Morgan Chase (Tax-exempt bonds, construction phase (issuer California Municipal Finance Authority))",
     "latest_event": "2023-02-10",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "wilton court palo alto 132-35-050 3705 el camino real, palo alto, ca apartments state category 5+ units, rental tenure under construction state report shows certificates of occupancy for some of the units, not all palo alto 64 units reported in entitlement and permit rows 59 units in the application as reported mixed-income 58 deed-restricted units reported to the state 18pln-00136, 20000-00728 local tracking number as reported to the state [{\"count\": 58, \"ami\": 50}, {\"count\": 1, \"ami\": 120}] state report 2018, application stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. application submitted entitlement approved building permit issued certificate of occupancy reported for some units"
+   "search": "wilton court palo alto 132-35-050 3705 el camino real, palo alto, ca apartments state category 5+ units, rental tenure under construction state report shows certificates of occupancy for some of the units, not all existing city of palo alto, dec 2022: wilton court apartments held its grand opening and ribbon cutting palo alto 64 units reported in entitlement and permit rows 59 units in the application as reported mixed-income 100% affordable 58 of 59 units restricted; 1 manager unit 58 deed-restricted units reported to the state 21 units restricted for adults with developmental disabilities; services through housing choices and san andreas regional center 18pln-00136, 20000-00728 local tracking number as reported to the state [{\"count\": 58, \"ami\": 50}, {\"count\": 1, \"ami\": 120}] state report 2018, application stage: deed-restricted units by state income category (ami is the category's upper limit) [{\"count\": 14, \"ami\": 30}, {\"count\": 19, \"ami\": 50}, {\"count\": 25, \"ami\": 60}] ctcac 2020 aggregate targeting; 1 manager unit unrestricted [{\"count\": 16, \"ami\": 30}, {\"count\": 17, \"ami\": 50}, {\"count\": 25, \"ami\": 60}] city staff report 2019, table 1; 1 exempt manager unit 2022 grand opening reported december 2022 4 50 two levels of garage parking with 50 residential spaces {\"studio\": 55, \"1br\": 4, \"2br\": 0, \"3br\": 0, \"4br+\": 0} ctcac 2020: 55 sro/studio and 4 one-bedroom, including one manager unit {\"studio\": 56, \"1br\": 3, \"2br\": 0, \"3br\": 0, \"4br+\": 0} city staff report 2019: 56 studios and 3 one-bedrooms 55 [\"discretionary\"] city council approved parcel combination, rezoning to the affordable housing combining district, and a retail preservation waiver on 2019-01-14 48831279 ctcac staff report, cost at application 46127456 applicant estimate in city staff report 2019 46300000 reported at groundbreaking, jan 2021 from the state housing element annual progress report, through 2025. city staff report of 2019-06-03 recommended a $10 million city loan to palo alto housing corporation ($1 million residential housing in-lieu fund, $9 million commercial housing fund) at 3% simple interest from residual receipts, forgivable if affordable in perpetuity. city of palo alto press release, dec 2022: the city contributed $20.5 million to the project. groundbreaking report names funders city of palo alto, santa clara county, wells fargo bank, enterprise community partners, california community reinvestment corp., ctcac, hcd and california municipal finance authority, without amounts. the project combined the parcels at 3703-3705 and 3707-3709 el camino real and was the first use of palo alto's affordable housing combining district. developer pahc properties corporation randal tsuda developer alta housing (formerly palo alto housing) other general partner (nonprofit), ctcac wilton court llc other investor/consultant, ctcac california housing partnership property manager palo alto housing corporation architect pyatok general contractor l&d construction co. lender jp morgan chase other supportive services provider housing choices jp morgan chase construction loan tax-exempt bonds, construction phase (issuer california municipal finance authority) jp morgan chase construction loan taxable construction loan jp morgan chase tax-exempt bonds permanent tax-exempt bond loan (issuer california municipal finance authority) city of palo alto local soft loan permanent source per ctcac county of santa clara local soft loan permanent source per ctcac tax credit investor (not named in ctcac report) tax-credit equity (4%) federal $1,792,883 annual credits; state $3,190,000 total credits pahc properties corporation deferred developer fee pahc properties corporation sponsor / gp equity contributed developer fee application submitted city council approved parcel combination, ahcd rezoning and retail waiver entitlement approved ctcac staff report recommends 4% tax credit reservation (ca-20-487) building permit issued groundbreaking reported grand opening and ribbon cutting reported certificate of occupancy reported for some units"
   },
   {
    "id": "SCC-000263",
@@ -196399,7 +197022,7 @@
   },
   {
    "id": "SCC-000270",
-   "name": "601 Almarida Dr",
+   "name": "The Franciscan 60-unit addition (601 Almarida Dr)",
    "parcels": [
     {
      "apn": "279-30-043",
@@ -196619,6 +197242,13 @@
         "SRC-001143"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "PLN-2024-44",
+       "src": [
+        "SRC-003393"
+       ],
+       "note": "Request for a 24-month extension of PLN2018-00202"
       }
      ]
     },
@@ -196637,6 +197267,48 @@
        "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-003392",
+        "SRC-003393"
+       ],
+       "note": "Three-story, 60-unit apartment building"
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "studio": 7,
+        "1br": 36,
+        "2br": 17,
+        "3br": 0,
+        "4br+": 0
+       },
+       "src": [
+        "SRC-003392"
+       ],
+       "note": "Planning submittal dated 2020-08-17"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-003392"
+       ],
+       "note": "Density bonus of about 19%, reduced parking, concessions for setback between structures and open space, waivers of FAR and lot coverage"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -196646,12 +197318,114 @@
       "SRC-001134",
       "SRC-001143"
      ]
+    },
+    {
+     "text": "The 60-unit building is an addition to The Franciscan, a 180-unit garden apartment community built in 1971 (16 two-story and 2 one-story buildings, 90 one-bedroom and 90 two-bedroom units, 7.5 gross acres). It replaces the leasing office, fitness facility, laundry room, pool and spa; no existing apartments are removed.",
+     "src": [
+      "SRC-003392",
+      "SRC-003394"
+     ]
+    },
+    {
+     "text": "Planning submittal: 263 parking spaces proposed for the combined existing and new buildings, 73 of them in a subterranean garage; 178 required under density bonus standards. Construction planned in one phase over 18 to 24 months.",
+     "src": [
+      "SRC-003392"
+     ]
+    },
+    {
+     "text": "Raintree Partners lists the 60 units as entitled, with a new 1,500 SF clubhouse and pool deck.",
+     "src": [
+      "SRC-003394"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "Raintree Partners",
+     "contact": "Nick Leone",
+     "linkedin": null,
+     "email": "nleone@raintreepartners.com",
+     "phone": "415.272.7541",
+     "project_page": "https://raintreepartners.com/property/the-franciscan-ii",
+     "src": [
+      "SRC-003392",
+      "SRC-003393",
+      "SRC-003394"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Raintree Campbell LLC",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Property owner (city notice 2024); applicant entity (city notice 2022)",
+     "src": [
+      "SRC-003392",
+      "SRC-003393"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Raintree Franciscan LLC",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Owner of The Franciscan per 2020 planning submittal",
+     "src": [
+      "SRC-003392"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Lowney Architecture",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003392"
+     ]
+    },
+    {
+     "role": "Landscape architect",
+     "company": "Lowney Architecture",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003392"
+     ]
+    },
+    {
+     "role": "Civil engineer",
+     "company": "Talus Engineering",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-003392"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "HLB Lighting",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Lighting designer",
+     "src": [
+      "SRC-003392"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2022-05-24",
+     "type": "Approved",
+     "label": "Planning Commission hearing; approved plans stamped PC Meeting May 24, 2022 (PLN-2018-202)",
+     "src": [
+      "SRC-003392",
+      "SRC-003393"
+     ],
+     "estimated": false
+    },
     {
      "date": "2022-06-14",
      "type": "Approved",
@@ -196667,6 +197441,15 @@
      "src": [
       "SRC-001134"
      ]
+    },
+    {
+     "date": "2024-05-14",
+     "type": "Other",
+     "label": "Planning Commission hearing on 24-month extension of approval (PLN-2024-44)",
+     "src": [
+      "SRC-003393"
+     ],
+     "estimated": false
     }
    ],
    "history": [
@@ -196674,12 +197457,99 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Web search on 601 Almarida: The Franciscan (Greystar-managed, Raintree) and city notices",
+     "src": [
+      "SRC-003394"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 27930043: situs 601 Almarida, jurisdiction Campbell",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Campbell Archive ADID 1719 (PC notice for 2022-05-24 plus plan set) and ADID 3166 (PC notice 2024-05-14, PLN-2024-44, approved plans)",
+     "src": [
+      "SRC-003392",
+      "SRC-003393"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR rows already on record; CEQAnet text search returned no match (city notice recommends categorical exemption)",
+     "src": [
+      "SRC-001143"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of local news: none",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of trade press: none",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "raintreepartners.com project page The Franciscan II",
+     "src": [
+      "SRC-003394"
+     ]
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Lowney Architecture named in plan set; search of its site and press found no project page",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or equity partner named in public sources",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search only: none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001134": "S1",
     "SRC-001143": "S2",
-    "SRC-001098": "S3"
+    "SRC-003392": "S3",
+    "SRC-003393": "S4",
+    "SRC-003394": "S5",
+    "SRC-001098": "S6"
    },
    "lat": 37.29693787586206,
    "lng": -121.9418081,
@@ -196707,19 +197577,23 @@
     "aff_levels": [
      "vl"
     ],
-    "mix_types": [],
+    "mix_types": [
+     "studio",
+     "1br",
+     "2br"
+    ],
     "tax_credit": false,
     "owner": "",
-    "developer": "",
+    "developer": "Raintree Partners",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2022-12-19",
+    "latest_event": "2024-05-14",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "601 almarida dr campbell 279-30-043 601 almarida dr, campbell, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval campbell 60 units reported in entitlement and permit rows mixed-income 20 deed-restricted units reported to the state bld-2022-1884, pln-2018-202 local tracking number as reported to the state [{\"count\": 20, \"ami\": 50}] state report 2025, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. entitlement approved application submitted"
+   "search": "the franciscan 60-unit addition (601 almarida dr) campbell 279-30-043 601 almarida dr, campbell, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval campbell 60 units reported in entitlement and permit rows mixed-income 20 deed-restricted units reported to the state bld-2022-1884, pln-2018-202 local tracking number as reported to the state pln-2024-44 request for a 24-month extension of pln2018-00202 [{\"count\": 20, \"ami\": 50}] state report 2025, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) 3 three-story, 60-unit apartment building {\"studio\": 7, \"1br\": 36, \"2br\": 17, \"3br\": 0, \"4br+\": 0} planning submittal dated 2020-08-17 [\"density bonus\"] density bonus of about 19%, reduced parking, concessions for setback between structures and open space, waivers of far and lot coverage from the state housing element annual progress report, through 2025. the 60-unit building is an addition to the franciscan, a 180-unit garden apartment community built in 1971 (16 two-story and 2 one-story buildings, 90 one-bedroom and 90 two-bedroom units, 7.5 gross acres). it replaces the leasing office, fitness facility, laundry room, pool and spa; no existing apartments are removed. planning submittal: 263 parking spaces proposed for the combined existing and new buildings, 73 of them in a subterranean garage; 178 required under density bonus standards. construction planned in one phase over 18 to 24 months. raintree partners lists the 60 units as entitled, with a new 1,500 sf clubhouse and pool deck. developer raintree partners nick leone other property owner (city notice 2024); applicant entity (city notice 2022) raintree campbell llc other owner of the franciscan per 2020 planning submittal raintree franciscan llc architect lowney architecture landscape architect lowney architecture civil engineer talus engineering other lighting designer hlb lighting planning commission hearing; approved plans stamped pc meeting may 24, 2022 (pln-2018-202) entitlement approved application submitted planning commission hearing on 24-month extension of approval (pln-2024-44)"
   },
   {
    "id": "SCC-000271",
@@ -196851,8 +197725,16 @@
         "SRC-001099"
        ],
        "note": "State category 5+ units, rental tenure"
+      },
+      {
+       "value": "Townhomes",
+       "src": [
+        "SRC-001866"
+       ],
+       "note": "JLL flyer: 60 rowhouse-style attached townhomes in nine three-story buildings; city T23-019 maps them as condominium units"
       }
-     ]
+     ],
+     "best": 1
     },
     "status": {
      "claims": [
@@ -196916,6 +197798,13 @@
         "SRC-001956"
        ],
        "note": "City folder 114276, Vesting Tentative Map (permit type: Subdivision); city permit status: Approved. Matched by APN."
+      },
+      {
+       "value": "ER23-196",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Environmental review, exemption; city status Approved/Certified, issue date 2026-03-25"
       }
      ]
     },
@@ -196932,6 +197821,18 @@
         "SRC-001099"
        ],
        "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+      },
+      {
+       "value": [
+        {
+         "count": 8,
+         "ami": 80
+        }
+       ],
+       "src": [
+        "SRC-001866"
+       ],
+       "note": "JLL flyer: 8 affordable units restricted to households up to 80% AMI"
       }
      ]
     },
@@ -196943,6 +197844,69 @@
         "SRC-001099"
        ],
        "note": "State report 2023, application stage: 12 deed-restricted units"
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 2.78,
+       "src": [
+        "SRC-001956",
+        "SRC-001866"
+       ],
+       "note": "Gross acres per city file T23-019 and JLL flyer"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-001866"
+       ],
+       "note": "Nine three-story buildings"
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 52,
+       "src": [
+        "SRC-001866"
+       ]
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "studio": 0,
+        "1br": 0,
+        "2br": 0,
+        "3br": 28,
+        "4br+": 32
+       },
+       "src": [
+        "SRC-001866"
+       ],
+       "note": "JLL flyer: 28 three-bed/three-bath units of 1,260 SF (8 BMR); 32 units listed as 4 bed/3.5 bath, 1,649 to 1,717 SF, which the flyer describes as 3 bedrooms upstairs plus a ground-floor bonus room; each unit has 2 garage spaces"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Builder's remedy"
+       ],
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City file H23-023: submitted under the Housing Accountability Act (Builder's Remedy); PRE23-055: SB 330 preliminary application for a 60-unit Builder's Remedy project"
       }
      ]
     }
@@ -196971,6 +197935,18 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "City file H23-023 covers demolition of two commercial buildings totaling about 16,350 SF and removal of 19 trees. Zoning on PRE23-055: R-1-8(PD).",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "JLL, as exclusive advisor, markets the entitled site for sale. The flyer states the Final Map has not been recorded and that the Final Map and Public Street Improvement Permit are estimated to take 6 to 8 months.",
+     "src": [
+      "SRC-001866"
+     ]
     }
    ],
    "parties": [
@@ -196982,11 +197958,40 @@
      "src": [
       "SRC-001866"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "OICC Ventures LLC",
+     "contact": "Mark Conroe",
+     "linkedin": null,
+     "other_role": "Owner and applicant (city files H23-023, T23-019, ER23-196)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Richard Johnson",
+     "contact": "Richard Johnson",
+     "linkedin": null,
+     "other_role": "Applicant, SB 330 preliminary application PRE23-055",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2023-05-03",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application filed (PRE23-055)",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    },
     {
      "date": "2023-09-11",
      "type": "Application filed",
@@ -196994,6 +197999,16 @@
      "src": [
       "SRC-001099"
      ]
+    },
+    {
+     "date": "2026-03-25",
+     "type": "Approved",
+     "label": "Site Development Permit H23-023 approved and CEQA exemption ER23-196 certified; JLL flyer reports the Vesting Tentative Map approved March 2026",
+     "src": [
+      "SRC-001956",
+      "SRC-001866"
+     ],
+     "estimated": false
     }
    ],
    "history": [
@@ -197011,8 +198026,91 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Web search on 1175-1199 Saratoga: JLL listing and flyer",
+     "src": [
+      "SRC-001866"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 38117149: situs 1175 Saratoga, jurisdiction San Jose",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Planning permits GIS layer by APN: H23-023, T23-019, PRE23-055, ER23-196. City calendar pages on sanjoseca.gov not opened (site refuses automated access). Legistar matter search: no item",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR row already on record; CEQAnet text search returned no match",
+     "src": [
+      "SRC-001099"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of local news: none for this site",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "invest.jll.com listing page and therealdeal.com returned 403",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer website found for OICC Ventures LLC",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in city records or flyer",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named; JLL flyer lists a debt advisory contact only",
+     "src": [
+      "SRC-001866"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search only: none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001866": "S2",
@@ -197026,7 +198124,7 @@
     "pipeline"
    ],
    "summary": {
-    "product_type": "Apartments",
+    "product_type": "Townhomes",
     "status": "Approved",
     "jurisdiction": "San Jose",
     "community": "",
@@ -197038,14 +198136,15 @@
      60,
      60
     ],
-    "restricted_units": 12,
+    "restricted_units": null,
     "aff_bucket": "Market",
     "aff_label": "Market, with inclusionary",
-    "aff_share": 0.2,
-    "aff_levels": [
-     "lo"
+    "aff_share": null,
+    "aff_levels": [],
+    "mix_types": [
+     "3br",
+     "4br+"
     ],
-    "mix_types": [],
     "tax_credit": false,
     "owner": "",
     "developer": "",
@@ -197053,11 +198152,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2023-09-11",
+    "latest_event": "2026-03-25",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1175-1199 saratoga avenue san jose 381-17-149 1175 saratoga ave, san jose, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported approved jll flyer: fully entitled 60-unit townhome opportunity, offered for sale. san jose 60 units in the application as reported h23-023 local tracking number as reported to the state pre23-055 city folder 097786, prelim - focused (policy review, no plans) (permit type: all other permits); city permit status: complete. matched by apn. t23-019 city folder 114276, vesting tentative map (permit type: subdivision); city permit status: approved. matched by apn. [{\"count\": 12, \"ami\": 80}] state report 2023, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2023, application stage: 12 deed-restricted units from the state housing element annual progress report, through 2025. city of san jose permit h23-023 (site development permit/amendment, folder year 2023), status approved, issue date 2026-03-25: \"submitted under the housing accountability act (\"builder's remedy\") this project consists of a site development permit to allow the demolition of two existing commercial buildings totaling approximately 16,350 square feet and the removal of 19 trees (17\" (city text cut off at 255 characters) city of san jose permit pre23-055 (prelim - focused (policy review, no plans), folder year 2023), status complete: \"sb 330 preliminary application for a 60-unit builder's remedy project.\" city of san jose permit t23-019 (vesting tentative map, folder year 2023), status approved: \"vesting tentative map to allow up to 60 residential condominium units on an approximately 2.78-gross acre site.\" broker jll application submitted"
+   "search": "1175-1199 saratoga avenue san jose 381-17-149 1175 saratoga ave, san jose, ca apartments state category 5+ units, rental tenure townhomes jll flyer: 60 rowhouse-style attached townhomes in nine three-story buildings; city t23-019 maps them as condominium units proposed state report shows an application with no approval reported approved jll flyer: fully entitled 60-unit townhome opportunity, offered for sale. san jose 60 units in the application as reported h23-023 local tracking number as reported to the state pre23-055 city folder 097786, prelim - focused (policy review, no plans) (permit type: all other permits); city permit status: complete. matched by apn. t23-019 city folder 114276, vesting tentative map (permit type: subdivision); city permit status: approved. matched by apn. er23-196 environmental review, exemption; city status approved/certified, issue date 2026-03-25 [{\"count\": 12, \"ami\": 80}] state report 2023, application stage: deed-restricted units by state income category (ami is the category's upper limit) [{\"count\": 8, \"ami\": 80}] jll flyer: 8 affordable units restricted to households up to 80% ami mixed-income state report 2023, application stage: 12 deed-restricted units 2.78 gross acres per city file t23-019 and jll flyer 3 nine three-story buildings 52 {\"studio\": 0, \"1br\": 0, \"2br\": 0, \"3br\": 28, \"4br+\": 32} jll flyer: 28 three-bed/three-bath units of 1,260 sf (8 bmr); 32 units listed as 4 bed/3.5 bath, 1,649 to 1,717 sf, which the flyer describes as 3 bedrooms upstairs plus a ground-floor bonus room; each unit has 2 garage spaces [\"builder's remedy\"] city file h23-023: submitted under the housing accountability act (builder's remedy); pre23-055: sb 330 preliminary application for a 60-unit builder's remedy project from the state housing element annual progress report, through 2025. city of san jose permit h23-023 (site development permit/amendment, folder year 2023), status approved, issue date 2026-03-25: \"submitted under the housing accountability act (\"builder's remedy\") this project consists of a site development permit to allow the demolition of two existing commercial buildings totaling approximately 16,350 square feet and the removal of 19 trees (17\" (city text cut off at 255 characters) city of san jose permit pre23-055 (prelim - focused (policy review, no plans), folder year 2023), status complete: \"sb 330 preliminary application for a 60-unit builder's remedy project.\" city of san jose permit t23-019 (vesting tentative map, folder year 2023), status approved: \"vesting tentative map to allow up to 60 residential condominium units on an approximately 2.78-gross acre site.\" city file h23-023 covers demolition of two commercial buildings totaling about 16,350 sf and removal of 19 trees. zoning on pre23-055: r-1-8(pd). jll, as exclusive advisor, markets the entitled site for sale. the flyer states the final map has not been recorded and that the final map and public street improvement permit are estimated to take 6 to 8 months. broker jll other owner and applicant (city files h23-023, t23-019, er23-196) oicc ventures llc mark conroe other applicant, sb 330 preliminary application pre23-055 richard johnson richard johnson sb 330 preliminary application filed (pre23-055) application submitted site development permit h23-023 approved and ceqa exemption er23-196 certified; jll flyer reports the vesting tentative map approved march 2026"
   },
   {
    "id": "SCC-000272",
@@ -323886,6 +324985,34 @@
         "SRC-001956"
        ],
        "note": "City folder 112945, Site Development Permit/Amendment; city permit status: Under Review."
+      },
+      {
+       "value": "T26-009",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Tentative Map: subdivide 6 lots into 9 lots and allow up to 61 residential condominium units on about 2.5 gross acres; city status Under Review, filed 2026-04-17"
+      },
+      {
+       "value": "GP25-006",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Privately initiated General Plan Amendment from Neighborhood/Community Commercial to Mixed Use Neighborhood on a 2.5-gross-acre site; city status Review Letter Sent, filed 2025-10-29"
+      },
+      {
+       "value": "ER25-221, ER26-056",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Environmental review folders (Negative Declaration/Mitigated Negative Declaration); city status Under Review"
+      },
+      {
+       "value": "Cambrian 38",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City annexation folder, filed 2026-05-28, status New"
       }
      ]
     },
@@ -323910,11 +325037,35 @@
        "note": "City file H26-012 (Site Development Permit/Amendment): \"Site Development Permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. The project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters)"
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 2.5,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Gross acres per City of San Jose files H26-012, T26-009 and GP25-006"
+      }
+     ]
     }
    },
    "construction_notes": [
     {
      "text": "City of San Jose permit H26-012 (Site Development Permit/Amendment, folder year 2026), status Under Review: \"Site Development Permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. The project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "The county parcel dataset shows APN 414-26-001 (15194 Camden Ave) in unincorporated Santa Clara County. The City of San Jose has an annexation folder (Cambrian 38) for the site, and its files describe a 2.5-gross-acre site with six existing single-family houses to be demolished.",
+     "src": [
+      "SRC-001098",
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "City of San Jose file PRE25-248 (preliminary review, annexation) at 15162 Camden Ave, APN 414-26-003, filed 2025-05-30 by De Nguyen, status Complete.",
      "src": [
       "SRC-001956"
      ]
@@ -323930,11 +325081,48 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "Kellogg & Kay LLC",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Owner and applicant (city files GP25-006, ER25-221, T26-009, Cambrian 38)",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2025-10-29",
+     "type": "Application filed",
+     "label": "General Plan Amendment filed (GP25-006)",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-04-17",
+     "type": "Application filed",
+     "label": "Tentative Map filed (T26-009)",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-05-28",
+     "type": "Other",
+     "label": "Annexation file opened with City of San Jose (Cambrian 38)",
+     "src": [
+      "SRC-001956"
+     ],
+     "estimated": false
+    },
     {
      "date": "2026-07-17",
      "type": "Application filed",
@@ -323950,8 +325138,87 @@
      "date": "2026-11-09",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on 15194 Camden Ave, AlphaX and Kellogg & Kay: only MLS listings of the existing house",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SCC parcel API, APN 41426001: situs 15194 Camden, jurisdiction Unincorporated; neighboring 414-26-002 to -004 also unincorporated",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Planning permits GIS layer queried by APN: GP25-006, T26-009, ER25-221, ER26-056, Cambrian 38, PRE25-248. Legistar (sanjose) matter search on Camden: no item for this site",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Site is unincorporated pending annexation; no county planning item found in search",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "APR data and CEQAnet text search: no entry for this site",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of local news for Camden Ave 61 condominiums: none",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of trade press: none",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "alphax-capital.com homepage opened: no Camden Ave project listed",
+     "src": [
+      "SRC-003391"
+     ]
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in city records or search",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in any public source found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search only: no posts on this project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001956": "S1",
     "SRC-001098": "S2"
@@ -323992,7 +325259,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "15194 camden ave san jose 414-26-001 15194 camden ave, san jose, ca san jose condominiums 61 residential condominium units in nine three-story buildings per city text proposed city file h26-012 under review h26-012 city folder 112945, site development permit/amendment; city permit status: under review. 61 city file h26-012 (site development permit/amendment): \"site development permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. the project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters) 3 city file h26-012 (site development permit/amendment): \"site development permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. the project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters) city of san jose permit h26-012 (site development permit/amendment, folder year 2026), status under review: \"site development permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. the project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters) other applicant (city permit record) alphax re capital, inc. site development permit/amendment filed (h26-012)"
+   "search": "15194 camden ave san jose 414-26-001 15194 camden ave, san jose, ca san jose condominiums 61 residential condominium units in nine three-story buildings per city text proposed city file h26-012 under review h26-012 city folder 112945, site development permit/amendment; city permit status: under review. t26-009 tentative map: subdivide 6 lots into 9 lots and allow up to 61 residential condominium units on about 2.5 gross acres; city status under review, filed 2026-04-17 gp25-006 privately initiated general plan amendment from neighborhood/community commercial to mixed use neighborhood on a 2.5-gross-acre site; city status review letter sent, filed 2025-10-29 er25-221, er26-056 environmental review folders (negative declaration/mitigated negative declaration); city status under review cambrian 38 city annexation folder, filed 2026-05-28, status new 61 city file h26-012 (site development permit/amendment): \"site development permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. the project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters) 3 city file h26-012 (site development permit/amendment): \"site development permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. the project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters) 2.5 gross acres per city of san jose files h26-012, t26-009 and gp25-006 city of san jose permit h26-012 (site development permit/amendment, folder year 2026), status under review: \"site development permit to allow the construction of 61 residential condominium units configured in nine three-story buildings on an approximately 2.5-gross-acre site. the project includes the demolition of six existing single-family houses and associated\" (city text cut off at 255 characters) the county parcel dataset shows apn 414-26-001 (15194 camden ave) in unincorporated santa clara county. the city of san jose has an annexation folder (cambrian 38) for the site, and its files describe a 2.5-gross-acre site with six existing single-family houses to be demolished. city of san jose file pre25-248 (preliminary review, annexation) at 15162 camden ave, apn 414-26-003, filed 2025-05-30 by de nguyen, status complete. other applicant (city permit record) alphax re capital, inc. other owner and applicant (city files gp25-006, er25-221, t26-009, cambrian 38) kellogg & kay llc general plan amendment filed (gp25-006) tentative map filed (t26-009) annexation file opened with city of san jose (cambrian 38) site development permit/amendment filed (h26-012)"
   },
   {
    "id": "SCC-000620",
@@ -432280,6 +433547,60 @@
        37.5779259
       ]
      ]
+    },
+    {
+     "apn": "029-204-240",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-001103"
+     ],
+     "outline": [
+      [
+       -122.3451044,
+       37.5778081
+      ],
+      [
+       -122.3453118,
+       37.5776631
+      ],
+      [
+       -122.3454257,
+       37.5777662
+      ],
+      [
+       -122.3455395,
+       37.5778694
+      ],
+      [
+       -122.3456534,
+       37.5779725
+      ],
+      [
+       -122.345446,
+       37.5781176
+      ],
+      [
+       -122.345446,
+       37.5781175
+      ],
+      [
+       -122.3454005,
+       37.5780763
+      ],
+      [
+       -122.3453322,
+       37.5780144
+      ],
+      [
+       -122.3452183,
+       37.5779112
+      ],
+      [
+       -122.3451044,
+       37.5778081
+      ]
+     ]
     }
    ],
    "addresses": [
@@ -432288,6 +433609,14 @@
      "role": "main",
      "src": [
       "SRC-001132"
+     ]
+    },
+    {
+     "text": "1220 Howard Ave, Burlingame, CA",
+     "role": "other",
+     "src": [
+      "SRC-001132",
+      "SRC-001103"
      ]
     }
    ],
@@ -432362,6 +433691,19 @@
        "note": "State report 2022, application stage: 6 deed-restricted units"
       }
      ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-001132"
+       ],
+       "note": "State report 2022: density bonus received Yes, approved Yes; application status Pending"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -432369,6 +433711,13 @@
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
      "src": [
       "SRC-001132"
+     ]
+    },
+    {
+     "text": "The 2022 state report row for 1200 Howard Ave lists APNs 029-204-120 and 029-204-240. The county parcel layer shows 029-204-240 at 1220 Howard Ave, owned by Green Banker LLC, and 029-204-120 at 1200 Howard Ave, owned by Ichinyosha International USA Inc.",
+     "src": [
+      "SRC-001132",
+      "SRC-001103"
      ]
     }
    ],
@@ -432414,14 +433763,91 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on 1200 Howard Ave Burlingame and 61 units: only listings for other Howard Ave buildings",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SMC parcel layer: 029-204-120 = 1200 Howard (Ichinyosha International USA Inc); 029-204-240 = 1220 Howard (Green Banker LLC)",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "burlingame.org major projects pages returned 404; site search found no 1200 Howard project page",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "APR Table A 2022 row via CKAN API: 61 units, 6 moderate DR, density bonus Yes, status Pending, both APNs",
+     "src": [
+      "SRC-001132"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of Daily Journal and local news: none",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search of trade press: none",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer named in any source found",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in any source found",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search only: none",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001132": "S1",
     "SRC-001103": "S2"
    },
-   "lat": 37.578051063636366,
-   "lng": -122.34523693636362,
+   "lat": 37.57799419047619,
+   "lng": -122.34530876666668,
    "calcs": {},
    "kinds": [
     "pipeline"
@@ -432459,7 +433885,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1200 howard ave burlingame 029-204-120 1200 howard ave, burlingame, ca condominiums state category 5+ units, for-sale tenure proposed state report shows an application with no approval reported burlingame 61 units in the application as reported [{\"count\": 6, \"ami\": 120}] state report 2022, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2022, application stage: 6 deed-restricted units from the state housing element annual progress report, through 2025. recorded owner ichinyosha international usa inc recorded owner green banker llc application submitted"
+   "search": "1200 howard ave burlingame 029-204-120 029-204-240 1200 howard ave, burlingame, ca 1220 howard ave, burlingame, ca condominiums state category 5+ units, for-sale tenure proposed state report shows an application with no approval reported burlingame 61 units in the application as reported [{\"count\": 6, \"ami\": 120}] state report 2022, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2022, application stage: 6 deed-restricted units [\"density bonus\"] state report 2022: density bonus received yes, approved yes; application status pending from the state housing element annual progress report, through 2025. the 2022 state report row for 1200 howard ave lists apns 029-204-120 and 029-204-240. the county parcel layer shows 029-204-240 at 1220 howard ave, owned by green banker llc, and 029-204-120 at 1200 howard ave, owned by ichinyosha international usa inc. recorded owner ichinyosha international usa inc recorded owner green banker llc application submitted"
   },
   {
    "id": "SMC-000149",

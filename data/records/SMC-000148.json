@@ -59,6 +59,60 @@
           37.5779259
         ]
       ]
+    },
+    {
+      "apn": "029-204-240",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3451044,
+          37.5778081
+        ],
+        [
+          -122.3453118,
+          37.5776631
+        ],
+        [
+          -122.3454257,
+          37.5777662
+        ],
+        [
+          -122.3455395,
+          37.5778694
+        ],
+        [
+          -122.3456534,
+          37.5779725
+        ],
+        [
+          -122.345446,
+          37.5781176
+        ],
+        [
+          -122.345446,
+          37.5781175
+        ],
+        [
+          -122.3454005,
+          37.5780763
+        ],
+        [
+          -122.3453322,
+          37.5780144
+        ],
+        [
+          -122.3452183,
+          37.5779112
+        ],
+        [
+          -122.3451044,
+          37.5778081
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -67,6 +121,14 @@
       "role": "main",
       "src": [
         "SRC-001132"
+      ]
+    },
+    {
+      "text": "1220 Howard Ave, Burlingame, CA",
+      "role": "other",
+      "src": [
+        "SRC-001132",
+        "SRC-001103"
       ]
     }
   ],
@@ -141,6 +203,19 @@
           "note": "State report 2022, application stage: 6 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001132"
+          ],
+          "note": "State report 2022: density bonus received Yes, approved Yes; application status Pending"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -148,6 +223,13 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001132"
+      ]
+    },
+    {
+      "text": "The 2022 state report row for 1200 Howard Ave lists APNs 029-204-120 and 029-204-240. The county parcel layer shows 029-204-240 at 1220 Howard Ave, owned by Green Banker LLC, and 029-204-120 at 1200 Howard Ave, owned by Ichinyosha International USA Inc.",
+      "src": [
+        "SRC-001132",
+        "SRC-001103"
       ]
     }
   ],
@@ -193,6 +275,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 1200 Howard Ave Burlingame and 61 units: only listings for other Howard Ave buildings",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC parcel layer: 029-204-120 = 1200 Howard (Ichinyosha International USA Inc); 029-204-240 = 1220 Howard (Green Banker LLC)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "burlingame.org major projects pages returned 404; site search found no 1200 Howard project page",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2022 row via CKAN API: 61 units, 6 moderate DR, density bonus Yes, status Pending, both APNs",
+      "src": [
+        "SRC-001132"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Daily Journal and local news: none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press: none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in any source found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only: none",
+      "src": []
+    }
+  }
 }
