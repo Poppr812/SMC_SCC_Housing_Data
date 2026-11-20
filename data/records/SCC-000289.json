@@ -68,6 +68,20 @@
           ]
         }
       ]
+    },
+    {
+      "text": "585 Columbia Ave, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-003506"
+      ]
+    },
+    {
+      "text": "595 Columbia Ave, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-003506"
+      ]
     }
   ],
   "images": [],
@@ -110,16 +124,11 @@
     "total_units": {
       "claims": [
         {
-          "value": 48,
-          "src": [
-            "SRC-001119"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 18,
           "src": [
-            "SRC-001118"
+            "SRC-001118",
+            "SRC-003506",
+            "SRC-003507"
           ],
           "note": "Units in the application as reported"
         }
@@ -172,6 +181,60 @@
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.82,
+          "src": [
+            "SRC-003506",
+            "SRC-003507"
+          ],
+          "note": "2020 Planning Commission and Council items"
+        },
+        {
+          "value": 0.8,
+          "src": [
+            "SRC-003508"
+          ],
+          "note": "2019 Planning Commission item"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003506"
+          ],
+          "note": "Three-story townhomes"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "State report, inclusionary deed restriction term"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003506"
+          ],
+          "note": "Rezone (PD combining district), Special Development Permit, Vesting Tentative Map; Class 32 categorical exemption"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -181,9 +244,60 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "City of Sunnyvale File 2019-7415, 475 N. Fair Oaks and 585 & 595 Columbia Ave: demolition of existing residential structures and an 18-unit subdivision of three-story townhomes with deviations for rear setback, building separation and trash enclosure distance. Planning Commission approved with modifications 2020-06-22; City Council approved as amended 2020-07-28.",
+      "src": [
+        "SRC-003507",
+        "SRC-003506"
+      ]
+    },
+    {
+      "text": "State report rows: 2020 row (tracking 20197415, APN 204-38-008, 475 N Fair Oaks Av) shows 18 units approved 2020-07-28, 2 moderate-income deed-restricted, 15 rental units demolished; 2019 row (tracking 20197137, APN 20438008, 475 Fair Oaks) shows 30 units approved 2019-04-03 with 2 moderate-income deed-restricted, geocoded by the state to 475 S Fair Oaks Ave.",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    {
+      "text": "County parcel layer: APN 209-21-039 has situs 475 S Fair Oaks Av; APN 204-38-008 does not appear in the current layer.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "ADL 11 LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003506",
+        "SRC-003508"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Henry E Shepherd Trustee",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003506",
+        "SRC-003508"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Chung Tai Intl Chan Buddhist Assn",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003506",
+        "SRC-003508"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -194,6 +308,15 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "date": "2020-06-22",
+      "type": "Other",
+      "label": "Planning Commission approved with modifications",
+      "src": [
+        "SRC-003507"
+      ],
+      "estimated": false
     },
     {
       "date": "2020-07-28",
@@ -209,6 +332,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Removed total_units claim 48: it added two state report rows (30 and 18 units); the city approved an 18-unit subdivision"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 475 N Fair Oaks townhomes and file numbers; only resale listings on Compton Terrace",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API: 209-21-039 situs 475 S Fair Oaks Av; 204-38-008 not in layer",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar matters 19-1208, 20-0353 (PC 2020-06-22), 20-0648 (Council 2020-07-28)",
+      "src": [
+        "SRC-003508",
+        "SRC-003507",
+        "SRC-003506"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "State APR Table A2, Sunnyvale: restriction term, demolished units, 2019 row",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Local news searches on 475 N Fair Oaks Sunnyvale",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY and trade press searches",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for ADL 11 LLC found no company site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city items",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on 475 N Fair Oaks",
+      "src": []
+    }
+  }
 }

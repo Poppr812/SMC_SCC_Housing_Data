@@ -298,7 +298,9 @@
         {
           "value": 49,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001658",
+            "SRC-001938"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -309,7 +311,8 @@
           ],
           "note": "CTCAC CA-25-054"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -359,8 +362,26 @@
           "src": [
             "SRC-001658"
           ]
+        },
+        {
+          "value": [
+            {
+              "count": 25,
+              "ami": 30
+            },
+            {
+              "count": 23,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001658",
+            "SRC-003499"
+          ],
+          "note": "CTCAC rent table: 25 units at 30% AMI, 23 at 50% AMI, 1 manager's unit. San Jose Spotlight: 25 extremely low-income, 23 very low-income."
         }
-      ]
+      ],
+      "best": 1
     },
     "population": {
       "claims": [
@@ -384,6 +405,52 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 11,
+            "1br": 10,
+            "2br": 13,
+            "3br": 15,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001658"
+          ],
+          "note": "CTCAC CA-25-054 unit mix; includes one 3-bedroom manager's unit"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.46,
+          "src": [
+            "SRC-001938"
+          ],
+          "note": "SV@Home: 1.46-acre lot, formerly a surface parking lot"
+        },
+        {
+          "value": 1.6,
+          "src": [
+            "SRC-003499"
+          ],
+          "note": "San Jose Spotlight: 1.6 acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit MP22-009 text: three new buildings, 3 stories each"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -404,6 +471,18 @@
       "text": "City of San Jose permit MP22-009 (Ministerial Permit, folder year 2022), status Approved, issue date 2023-04-21: \"SB 35 Ministerial Permit (MP22-009) to allow for the of the demolition of an existing parking lot and construction of three (3) new buildings (3-stories each) of 100% affordable housing project consisting of 49 for-rent apartment units, removal of 18 tre\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "CTCAC CA-25-054: 3 residential buildings; 21 units with HUD Section 8 project-based vouchers; 24 special-needs units (homeless); construction cost $738 per sq ft; per-unit cost $926,430; construction-period sources also include deferred costs of $3,010,043 and tax credit equity of $2,513,951; approved developer fee $2,800,000.",
+      "src": [
+        "SRC-001658"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (June 24, 2024): $7.3 million in city Measure E funds; more than $4 million from Santa Clara County; $720,000 from the Federal Home Loan Bank of New York; bank loan of about $6.6 million; projected private equity of $26.7 million; Santa Clara County Housing Authority more than $19 million for 21 rent-subsidy vouchers; 520 sq ft community room with full kitchen and food pantry; rapid rehousing for families exiting homelessness.",
+      "src": [
+        "SRC-003499"
       ]
     }
   ],
@@ -440,6 +519,35 @@
         "SRC-001658"
       ],
       "website": "https://www.charitieshousing.org"
+    },
+    {
+      "role": "Other",
+      "company": "Santa Teresa Charities LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001658"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Housing Partnership",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Investor/consultant",
+      "src": [
+        "SRC-001658"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust of Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001658"
+      ]
     }
   ],
   "financing": [
@@ -502,6 +610,26 @@
       "src": [
         "SRC-001658"
       ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Housing Trust of Silicon Valley",
+      "program": "Construction-period source in CTCAC staff report",
+      "amount": 6250000,
+      "date": null,
+      "src": [
+        "SRC-001658"
+      ]
+    },
+    {
+      "type": "FHLB AHP",
+      "provider": "Federal Home Loan Bank of New York",
+      "program": null,
+      "amount": 720000,
+      "date": null,
+      "src": [
+        "SRC-003499"
+      ]
     }
   ],
   "groups": {},
@@ -521,6 +649,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2024-06",
+      "type": "Other",
+      "label": "City Council approved city funding, reported June 24, 2024",
+      "src": [
+        "SRC-003499"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-06-18",
@@ -579,6 +716,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer; San Jose Spotlight 2024-06-24 article",
+      "src": [
+        "SRC-003499"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 695-24-072: situs 6125 Snell Av, 3 situs addresses, jurisdiction San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov pages (project page ER23-247, staff reports) refuse automated access; city permit GIS layer already on record",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "County of Santa Clara $4 million loan shown in CTCAC report and San Jose Spotlight, already on record",
+      "src": [
+        "SRC-001658"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC CA-25-054 staff report re-read: unit mix, rent table, construction-period sources, general partner",
+      "src": [
+        "SRC-001658"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2024-06-24; SV@Home 2026-02-12 groundbreaking item",
+      "src": [
+        "SRC-003499",
+        "SRC-001938"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY, The Real Deal, Bisnow searches on 5885 Santa Teresa Blvd",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Charities Housing project page: future property, details coming soon",
+      "src": [
+        "SRC-003500"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searches for architect and contractor of 5885 Santa Teresa Blvd; CTCAC report does not name them",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Housing Trust of Silicon Valley construction loan (CTCAC); FHLB AHP $720,000 (San Jose Spotlight)",
+      "src": [
+        "SRC-001658",
+        "SRC-003499"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Charities Housing Santa Teresa groundbreaking",
+      "src": []
+    }
+  }
 }

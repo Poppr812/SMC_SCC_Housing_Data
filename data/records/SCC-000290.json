@@ -99,8 +99,16 @@
             "SRC-001144"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003509"
+          ],
+          "note": "CEQA Notice of Determination: approved by the City of Los Altos 2022-09-06"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -164,6 +172,98 @@
           "note": "State report 2021, application stage: 7 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 10,
+            "2br": 31,
+            "3br": 6,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003510",
+            "SRC-003509"
+          ],
+          "note": "Revised mix in July 2022 staff report and the Notice of Determination"
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 10,
+            "2br": 32,
+            "3br": 5,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003511",
+            "SRC-003512"
+          ],
+          "note": "Mix in the January 2022 MND and SF YIMBY"
+        }
+      ],
+      "best": 0
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003510",
+            "SRC-003509"
+          ],
+          "note": "Five stories over two below-ground parking levels"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.66,
+          "src": [
+            "SRC-003510",
+            "SRC-003511"
+          ],
+          "note": "28,562 sq ft"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 40,
+          "src": [
+            "SRC-003510"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 84,
+          "src": [
+            "SRC-003513"
+          ],
+          "note": "2020 plan set: two-level below-grade garage"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003510"
+          ],
+          "note": "Design Review, Conditional Use Permit, Vesting Tentative Map, Density Bonus with incentives and waivers; 88% bonus requested over 25-unit base density"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -172,9 +272,69 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "text": "July 21, 2022 Planning Commission report: 47 for-sale condominiums in a 53.85-ft five-story building with two underground parking levels on a 0.66-acre site (APN 167-11-041) now a gas station; 7 BMR units (3 very low-income, 4 moderate-income); unit sizes 580-774 sq ft (1BR), 767-1,449 sq ft (2BR), 1,023-1,675 sq ft (3BR); about 12,359 sq ft of common open space; applicant requested an 88% density bonus (47 units on a 25-unit base).",
+      "src": [
+        "SRC-003510"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Determination: approved 2022-09-06; mitigated negative declaration adopted; building 56 ft plus 6 ft 4 in to the tops of mechanical screens and stair tower. The CEQAnet MND page lists APN 015-10-500.",
+      "src": [
+        "SRC-003509",
+        "SRC-003511"
+      ]
+    },
+    {
+      "text": "State report 2021: application 19-D-01 submitted 2021-12-15, density bonus requested, status pending.",
+      "src": [
+        "SRC-001144"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Angela and Gregory Galatolo",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003510",
+        "SRC-003514"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Angela and Gregory Galatolo",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003510",
+        "SRC-003514"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Seidel Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003512",
+        "SRC-003514"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Reed Gilliand",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003512"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -185,6 +345,42 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "date": "2022-01-11",
+      "type": "Other",
+      "label": "Draft IS/MND circulated (SCH 2022010139)",
+      "src": [
+        "SRC-003511"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-04-07",
+      "type": "Other",
+      "label": "Planning Commission continued the applications, 5-0",
+      "src": [
+        "SRC-003510"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-07-21",
+      "type": "Other",
+      "label": "Planning Commission hearing; staff recommended approval to City Council",
+      "src": [
+        "SRC-003510"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-09-06",
+      "type": "Approved",
+      "label": "Project approved by City of Los Altos",
+      "src": [
+        "SRC-003509"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -192,6 +388,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address; CEQAnet, SF YIMBY and city meeting documents",
+      "src": [
+        "SRC-003509",
+        "SRC-003512"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 167-11-041: situs 4350 El Camino Real, Los Altos; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Los Altos PC agenda report 2022-07-21 and plan sets via city meeting portal; losaltosca.gov pages refuse automated access",
+      "src": [
+        "SRC-003510",
+        "SRC-003513",
+        "SRC-003514"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2022010139: MND and Notice of Determination",
+      "src": [
+        "SRC-003511",
+        "SRC-003509"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Los Altos Town Crier and Mercury News searches on 4350 El Camino Real",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2022-09-15",
+      "src": [
+        "SRC-003512"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Owners Angela and Gregory Galatolo; no developer website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Seidel Architects site has no page for this project in search results",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on 4350 El Camino Real",
+      "src": []
+    }
+  }
 }

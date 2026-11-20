@@ -305,6 +305,13 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "PLN23-185-PRE (Project A, expired), PLN24-029-PRE, PLN24-063-SB330",
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "Preliminary applications and formal application on the county list"
         }
       ]
     },
@@ -358,6 +365,24 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "text": "County SB 330 / Builder's Remedy list: property owner/common name Labarbera; Applicant: Kurt Anderson; Owner: Mike Labarbera; development area about 6.29 acres of an 18.95-acre parcel; Supervisorial District 5.",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (September 27, 2025): developer Mike LaBarbera submitted the applications in April 2024; attorney Travis Brooks and architect Kurt Sanderson spoke for him; the Planning Commission voted 5-2 to deny the appeal, with the county finding the application incomplete and the 90-day resubmittal deadline missed; the site is in the Alamitos Creek wildlife corridor area.",
+      "src": [
+        "SRC-003504"
+      ]
+    },
+    {
+      "text": "Green Foothills (September 19, 2025, updated after the vote): 49 homes on Almaden Road south of San Jose next to the Alamitos Creek wildlife corridor; the proposed septic field would be in a FEMA floodplain and liquefaction zone.",
+      "src": [
+        "SRC-003505"
+      ]
     }
   ],
   "parties": [
@@ -370,15 +395,89 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Mike Labarbera",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Mike LaBarbera",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003504"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Kurt Sanderson",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003504"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Travis Brooks",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Attorney for applicant",
+      "src": [
+        "SRC-003504"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2023-10-13",
+      "type": "Application filed",
+      "label": "Preliminary application PLN23-185-PRE (Project A, later expired)",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-02-08",
+      "type": "Application filed",
+      "label": "Preliminary application PLN24-029-PRE (Project B)",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-04-05",
       "type": "Application filed",
       "label": "Formal SB 330 application submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-25",
+      "type": "Other",
+      "label": "Planning Commission denied appeal of incompleteness determination, 5-2",
+      "src": [
+        "SRC-003504",
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-13",
+      "type": "Other",
+      "label": "County deemed application complete; under CEQA review",
       "src": [
         "SRC-001431"
       ],
@@ -390,6 +489,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and builder's remedy; San Jose Spotlight and Green Foothills",
+      "src": [
+        "SRC-003504",
+        "SRC-003505"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 742-07-001: situs 19780 Almaden Rd, jurisdiction unincorporated; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated county project",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list re-read: preliminary applications, owner and applicant, completeness date",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "CEQAnet search and HCD Housing Accountability Unit letters for Santa Clara County; none for this address",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-09-27; Green Foothills 2025-09-19",
+      "src": [
+        "SRC-003504",
+        "SRC-003505"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY and trade press searches",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No company website found for Mike LaBarbera",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Kurt Sanderson",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on 19780 Almaden",
+      "src": []
+    }
+  }
 }

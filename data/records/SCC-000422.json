@@ -98,6 +98,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "17020 Depot St, Morgan Hill, CA",
+      "role": "other",
+      "src": [
+        "SRC-003501"
+      ]
     }
   ],
   "images": [],
@@ -110,8 +117,16 @@
             "SRC-001135"
           ],
           "note": "State category: single-family attached"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-003501"
+          ],
+          "note": "Initial Study: residential condominiums, 40 townhouse-style and 9 flats. MLS listing: 49 modern flats and townhomes."
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -169,6 +184,13 @@
           "src": [
             "SRC-001454"
           ]
+        },
+        {
+          "value": "BRES2022-0395 to BRES2022-0645, BRES2025-0157 to BRES2025-0170",
+          "src": [
+            "SRC-001135"
+          ],
+          "note": "49 building permit numbers reported to the state, 2023-2025"
         }
       ]
     },
@@ -180,6 +202,81 @@
             "SRC-001135"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 5,
+            "2br": 10,
+            "3br": 33,
+            "4br+": 1
+          },
+          "src": [
+            "SRC-003501"
+          ],
+          "note": "Initial Study Table 2, August 2019"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003501"
+          ],
+          "note": "Each building three stories, 39 ft 2 in to 43 ft 10 in"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 108,
+          "src": [
+            "SRC-003501"
+          ],
+          "note": "Mixed-use site: 84 private garage, 15 guest, 4 apron, 5 carport spaces"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3076,
+          "src": [
+            "SRC-003501"
+          ],
+          "note": "Commercial office space; city project page says about 3,000 sq ft, available for nonprofits"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 5.2,
+          "src": [
+            "SRC-003501"
+          ],
+          "note": "Initial Study project site includes the Hale Lumber property, the adjacent Depot Street segment and the Community and Cultural Center parking lot"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-001454"
+          ],
+          "note": "Design Review Permit, Tentative Map, RDCS allotments, Development Agreement (Ordinance No. 2300) and Disposition Development Agreement"
         }
       ]
     }
@@ -196,6 +293,30 @@
       "src": [
         "SRC-001454"
       ]
+    },
+    {
+      "text": "State report (2023-2025): 49 building permit rows named The Lumberyard, all single-family attached, owner tenure, no deed-restricted units. Permits by date: 8 on 2023-05-25, 9 on 2023-06-27, 8 on 2024-12-19, 11 on 2025-05-15, 9 on 2025-05-28, 4 on 2025-08-04. Certificates of occupancy: 4 on 2025-12-19, 1 on 2025-12-29.",
+      "src": [
+        "SRC-001135"
+      ]
+    },
+    {
+      "text": "Initial Study (August 2019): project sponsor Paul Latala, The Latala Group, LLC, Campbell; site APNs 726-13-049 and 726-13-052; parcel to be split into two lots, Lot 1 with 33 units and Lot 2 with 16 units and the office space; two existing buildings demolished.",
+      "src": [
+        "SRC-003501"
+      ]
+    },
+    {
+      "text": "County parcel layer shows parcels 726-61-001 through 726-61-050 with Depot St and E Dunne Ave situs addresses at the project site.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "MLS listing ML81967147: The Lumberyard, 49 modern flats and townhomes in 4 buildings; builder Van Daele Homes, listing office Van Daele Development; 17110 Depot St, built 2024, 2 bedrooms, 1,261 sq ft, HOA $303 per month, price $841,622.",
+      "src": [
+        "SRC-003502"
+      ]
     }
   ],
   "parties": [
@@ -208,11 +329,86 @@
       "src": [
         "SRC-001454"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Van Daele Homes",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.vandaele.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003502"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Van Daele Development",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003502"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Latala Group, LLC",
+      "contact": "Paul Latala",
+      "linkedin": null,
+      "other_role": "Project sponsor",
+      "src": [
+        "SRC-003501"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-04-18",
+      "type": "Other",
+      "label": "City Council approved Exclusive Negotiating Agreement",
+      "src": [
+        "SRC-001454"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2018-10-03",
+      "type": "Other",
+      "label": "City Council approved Disposition Development Agreement (Resolution No. 18-075)",
+      "src": [
+        "SRC-001454"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-01-22",
+      "type": "Other",
+      "label": "Planning Commission awarded 49 RDCS allotments (Resolutions 19-01, 19-02)",
+      "src": [
+        "SRC-001454"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-04-17",
+      "type": "Other",
+      "label": "City Council approved RDCS Development Agreement (Ordinance No. 2300)",
+      "src": [
+        "SRC-001454"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-09-10",
+      "type": "Other",
+      "label": "Planning Commission approved Tentative Map (Resolution 19-13), recommended Design Review",
+      "src": [
+        "SRC-001454"
+      ],
+      "estimated": false
+    },
     {
       "date": "2019-10-02",
       "type": "Approved",
@@ -222,12 +418,39 @@
       ]
     },
     {
+      "date": "2023-05-25",
+      "type": "Permit issued",
+      "label": "First building permits issued (8 units)",
+      "src": [
+        "SRC-001135"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-05-28",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001135"
       ]
+    },
+    {
+      "date": "2025-08-04",
+      "type": "Permit issued",
+      "label": "Last building permits reported (4 units); 49 permits in total",
+      "src": [
+        "SRC-001135"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-19",
+      "type": "Other",
+      "label": "Certificates of occupancy reported for 4 units",
+      "src": [
+        "SRC-001135"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-12-29",
@@ -248,6 +471,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project name and address; MLS listing names builder",
+      "src": [
+        "SRC-003502"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API: 726-61-030 situs 193 E Dunne Av; 726-61-001 to 726-61-050 at the site; 726-13-049 not in layer",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Morgan Hill project page (approval history) and Depot-Hale Initial Study, August 2019",
+      "src": [
+        "SRC-001454",
+        "SRC-003501"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "State APR Table A2, Morgan Hill: 49 permit rows 2023-2025 and certificates of occupancy",
+      "src": [
+        "SRC-001135"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Morgan Hill Times and Mercury News searches on Hale Lumber site and The Lumberyard",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY, Bisnow, The Real Deal searches",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Van Daele Homes homepage lists no Morgan Hill community; NewHomeSource and Homes.com pages refused access",
+      "src": [
+        "SRC-003503"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city page, Initial Study or listings",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Van Daele Lumberyard",
+      "src": []
+    }
+  }
 }
