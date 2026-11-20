@@ -165,12 +165,30 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003626"
+          ],
+          "note": "2023 Planning Commission staff report: six stories maximum"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "City list gives APNs 004-031-160 and 170, which are not in the current county parcel layer. The record uses 004-031-260, which the county layer shows at 6098 Mission St, owner 6098 Mission St LLC.",
       "src": [
+        "SRC-001158"
+      ]
+    },
+    {
+      "text": "A November 7, 2023 Planning Commission staff report on the C-MU zone lists 6098 Mission Street among corridor buildings constructed with added height through density bonus concessions, PD zoning or variances, at six stories maximum. The city's residential project list (July 1, 2026) shows all entitlements approved September 13, 2016 and all permits expiring April 26, 2027.",
+      "src": [
+        "SRC-003626",
         "SRC-001158"
       ]
     }
@@ -205,6 +223,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Mission/Goethe and owner LLC; found Daly City C-MU staff report reference",
+      "src": [
+        "SRC-003626"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC active parcel layer: 004-031-260 at 6098 Mission St, already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Daly City residential project lists July 1, 2025 and July 1, 2026 (same entry); PC staff report 2023-11-07 on C-MU zone. Daly City Legistar API returned errors",
+      "src": [
+        "SRC-001158",
+        "SRC-003626"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for CEQAnet or state award listings on 6098 Mission Street; none found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news on 6098 Mission Street Daly City; no articles",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and trade press; no coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Owner is a single-asset LLC (6098 Mission Street, LLC); no website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city lists or search results",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

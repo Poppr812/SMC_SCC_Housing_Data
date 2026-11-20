@@ -62,6 +62,14 @@
           ]
         }
       ]
+    },
+    {
+      "text": "1310 S Sunnyvale-Saratoga Rd, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-003627",
+        "SRC-003628"
+      ]
     }
   ],
   "images": [],
@@ -106,7 +114,10 @@
         {
           "value": 35,
           "src": [
-            "SRC-001119"
+            "SRC-001119",
+            "SRC-003627",
+            "SRC-003628",
+            "SRC-003629"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -128,6 +139,12 @@
           "value": "5 deed-restricted units reported to the state",
           "src": [
             "SRC-001119"
+          ]
+        },
+        {
+          "value": "4 for-sale BMR units (12.5% requirement at March 2021 application) plus in-lieu fee for 0.37 unit",
+          "src": [
+            "SRC-003627"
           ]
         }
       ]
@@ -159,6 +176,91 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.81,
+          "src": [
+            "SRC-003627"
+          ],
+          "note": "June 2022 PC staff report; data table shows 1.80 ac net"
+        },
+        {
+          "value": 1.84,
+          "src": [
+            "SRC-003629",
+            "SRC-003630"
+          ],
+          "note": "February 2022 notice and SF YIMBY; data table gross lot size"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003627",
+            "SRC-003628"
+          ],
+          "note": "Three residential buildings, three to four stories"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3384,
+          "src": [
+            "SRC-003627",
+            "SRC-003628"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 72155,
+          "src": [
+            "SRC-003630"
+          ],
+          "note": "Residential gross floor area per project data table"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 82,
+          "src": [
+            "SRC-003630"
+          ],
+          "note": "Project data table: 53 assigned residential, 12 unassigned, 18 commercial (shown for restaurant use)"
+        },
+        {
+          "value": 100,
+          "src": [
+            "SRC-003629"
+          ],
+          "note": "SF YIMBY, March 2022 plans"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003627",
+            "SRC-003630"
+          ],
+          "note": "Waivers, concession and reduced parking under State Density Bonus Law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -168,9 +270,81 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "Westerly portion of the Fremont Corners shopping center: 35 townhome-style condominiums in three buildings plus 3,384 sq ft of commercial space; tentative map for five lots and 35 condominiums. Units range from 1,364 to 2,037 sq ft of living area with two or three bedrooms and assigned tandem garages.",
+      "src": [
+        "SRC-003627"
+      ]
+    },
+    {
+      "text": "The Planning Commission denied the project on June 27, 2022; the applicant appealed to the City Council, which heard it August 9, 2022. A CEQA Notice of Determination filed August 12, 2022 lists an approval date of August 9, 2022.",
+      "src": [
+        "SRC-003633",
+        "SRC-003631",
+        "SRC-003628"
+      ]
+    },
+    {
+      "text": "The state Annual Progress Report shows 5 deed-restricted units; the June 2022 Planning Commission staff report shows 4 BMR units plus an in-lieu fee for 0.37 unit.",
+      "src": [
+        "SRC-003627"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "The True Life Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003629",
+        "SRC-003631"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "TTLC Sunnyvale FC, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant per city staff report",
+      "src": [
+        "SRC-003627"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Fremont Corners, Inc. et al",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner per city staff report",
+      "src": [
+        "SRC-003627",
+        "SRC-003629"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003629",
+        "SRC-003632"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "R3 Studios",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003629",
+        "SRC-003632"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -183,12 +357,30 @@
       ]
     },
     {
+      "date": "2022-06-27",
+      "type": "Other",
+      "label": "Planning Commission denied the project",
+      "src": [
+        "SRC-003633"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-08-09",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "date": "2022-08-12",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed",
+      "src": [
+        "SRC-003628"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -196,6 +388,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Fremont Corners and True Life; found SF YIMBY coverage and CEQAnet NOD",
+      "src": [
+        "SRC-003629",
+        "SRC-003628"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 309-01-002, situs 1310 Sunnyvale Saratoga Rd, already on record; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar: 22-0318 notice, PC 2022-06-27 (22-0462) staff report and data table, CC 2022-08-09 appeal (22-0775)",
+      "src": [
+        "SRC-003627",
+        "SRC-003630",
+        "SRC-003633",
+        "SRC-003631"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet 2012032003 NOD #2 (received 2022-08-12, approval 2022-08-09)",
+      "src": [
+        "SRC-003628"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Mercury News, Silicon Valley Voice; only articles on the separate 166 E Fremont phase",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2022-03-01 and 2022-06-26 articles; The Real Deal April 2022 article returned 403",
+      "src": [
+        "SRC-003629",
+        "SRC-003632"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for a True Life Companies project page for 102 E Fremont; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SDG Architects named in SF YIMBY; no project page found",
+      "src": [
+        "SRC-003629"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal article on Madison Realty Capital financing for True Life Bay Area projects returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no LinkedIn posts on this site",
+      "src": []
+    }
+  }
 }

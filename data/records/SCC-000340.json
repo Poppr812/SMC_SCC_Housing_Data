@@ -47,6 +47,44 @@
           37.2948584
         ]
       ]
+    },
+    {
+      "apn": "366-10-126",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.033474,
+          37.2940391
+        ],
+        [
+          -122.0338109,
+          37.2940278
+        ],
+        [
+          -122.0338109,
+          37.2941852
+        ],
+        [
+          -122.0338109,
+          37.2943631
+        ],
+        [
+          -122.0338109,
+          37.2944512
+        ],
+        [
+          -122.033474,
+          37.29445
+        ],
+        [
+          -122.033474,
+          37.2940391
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -85,8 +123,17 @@
             "SRC-001137"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001510",
+            "SRC-003640"
+          ],
+          "note": "Current scheme: 35 for-sale townhome condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -94,7 +141,8 @@
           "value": "Approved",
           "src": [
             "SRC-001100",
-            "SRC-001137"
+            "SRC-001137",
+            "SRC-001510"
           ],
           "note": "State report shows entitlement approval"
         },
@@ -106,7 +154,7 @@
           "note": "New application under review; older claims on this record are the prior scheme"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -138,9 +186,20 @@
         {
           "value": 35,
           "src": [
-            "SRC-001510"
+            "SRC-001510",
+            "SRC-003640",
+            "SRC-003641"
           ],
           "note": "Current application; older claims are the prior scheme"
+        },
+        {
+          "value": 34,
+          "src": [
+            "SRC-003642",
+            "SRC-003643",
+            "SRC-003644"
+          ],
+          "note": "Prior Coach House scheme approved June 21, 2023: 23 apartments and 11 townhomes"
         }
       ],
       "best": 2
@@ -168,6 +227,12 @@
           "src": [
             "SRC-001510"
           ]
+        },
+        {
+          "value": "5 for-sale BMR units (3 very low, 1 median, 1 moderate income), 99-year term; in-lieu fee for 0.2 unit",
+          "src": [
+            "SRC-003640"
+          ]
         }
       ]
     },
@@ -180,6 +245,21 @@
             "SRC-001137"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "U-2025-005, ASA-2025-014, TM-2025-006, TR-2025-030",
+          "src": [
+            "SRC-001510",
+            "SRC-003640"
+          ],
+          "note": "Current scheme"
+        },
+        {
+          "value": "TM-2021-003, ASA-2021-004, DP-2021-002, U-2021-001, TR-2022-006, EA-2022-005",
+          "src": [
+            "SRC-003642"
+          ],
+          "note": "Prior Coach House scheme"
         }
       ]
     },
@@ -200,6 +280,124 @@
             "SRC-001100"
           ],
           "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 50
+            },
+            {
+              "count": 1,
+              "ami": 100
+            },
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003640"
+          ],
+          "note": "Current scheme: 3 very low, 1 median, 1 moderate income for-sale BMR units"
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 23,
+            "4br+": 12
+          },
+          "src": [
+            "SRC-003640"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-003640",
+            "SRC-003641"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-003640"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003640"
+          ],
+          "note": "Three-story buildings with fourth-floor roof deck access; CEQA notice describes 3 to 4 stories, up to 44 ft 9 in"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 77,
+          "src": [
+            "SRC-003640",
+            "SRC-003641"
+          ],
+          "note": "70 garage spaces plus 7 guest spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 94215,
+          "src": [
+            "SRC-003641"
+          ],
+          "note": "Total building floor area"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.67,
+          "src": [
+            "SRC-001510",
+            "SRC-003640"
+          ],
+          "note": "Net; 2 acres gross"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003640"
+          ],
+          "note": "SB 330 preliminary application; density bonus waivers and concession"
         }
       ]
     }
@@ -210,6 +408,20 @@
       "src": [
         "SRC-001100",
         "SRC-001137"
+      ]
+    },
+    {
+      "text": "Current scheme (Dividend Homes): 35 townhome condominiums in five three-story 7-plex buildings with rooftop decks, 2,137 to 2,704 sq ft, three and four bedrooms, replacing a 13,500 sq ft single-story strip mall (Coach House) on two parcels, 1655 S De Anza Blvd and 7357 Prospect Rd.",
+      "src": [
+        "SRC-003640"
+      ]
+    },
+    {
+      "text": "Prior scheme approved June 21, 2023 (applicant Prospect Venture LLC): 34 units (23 apartments over ground-floor commercial and parking, 11 townhomes) and about 7,500 sq ft of commercial space; SF YIMBY named Dahlin Group (architect), Ripley Design Group (landscape), Sandis (civil) and FTF Engineering (structural). The state Annual Progress Report shows 22 to 23 units under file DP-2021-002.",
+      "src": [
+        "SRC-003642",
+        "SRC-003643",
+        "SRC-003644"
       ]
     }
   ],
@@ -232,6 +444,41 @@
       "src": [
         "SRC-001510"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Dividend Homes, Inc.",
+      "contact": "Joshua Vrotsos",
+      "linkedin": null,
+      "email": "jvrotsos@dividendhomes.com",
+      "phone": "(858) 682-9062",
+      "website": "https://www.dividendhomes.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003641",
+        "SRC-003640"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Prospect Venture LLC",
+      "contact": "Carlson Yin Chan",
+      "linkedin": null,
+      "other_role": "Applicant for prior 2023 Coach House scheme",
+      "src": [
+        "SRC-003643",
+        "SRC-003642"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Propriis",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner per SF YIMBY (2023)",
+      "src": [
+        "SRC-003644"
+      ]
     }
   ],
   "financing": [],
@@ -246,6 +493,15 @@
       ]
     },
     {
+      "date": "2023-05-23",
+      "type": "Other",
+      "label": "Planning Commission approved prior 34-unit scheme as amended",
+      "src": [
+        "SRC-003645"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-06-21",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -254,11 +510,48 @@
       ]
     },
     {
+      "date": "2025-09-12",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-001510"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-09-29",
       "type": "Application filed",
       "label": "Formal application filed",
       "src": [
         "SRC-001510"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Other",
+      "label": "Planning Commission recommended approval 5-0",
+      "src": [
+        "SRC-001510",
+        "SRC-003646"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-06",
+      "type": "Approved",
+      "label": "City Council approved 5-0",
+      "src": [
+        "SRC-001510"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-09",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-003641"
       ],
       "estimated": false
     }
@@ -273,6 +566,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Dividend Homes and Coach House; found CEQAnet 2026 NOE and city pages",
+      "src": [
+        "SRC-003641",
+        "SRC-001510"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 366-10-126 situs 7357 Prospect Rd, part of project per city",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page; Legistar PC 2026-09-08 (26-15374), CC 2026-10-06 staff report (26-15408), PC 2023-05-23 and CC 2023-06-21 prior scheme",
+      "src": [
+        "SRC-001510",
+        "SRC-003640",
+        "SRC-003646",
+        "SRC-003642",
+        "SRC-003645"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet 2026100308 NOE (2026-10-09); CEQAnet 2022100314 NOD (2023-06-22) for prior scheme",
+      "src": [
+        "SRC-003641",
+        "SRC-003643"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; The Registry Nov 2025 item seen only via aggregator excerpt, no further local coverage opened",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-07-02 on prior scheme",
+      "src": [
+        "SRC-003644"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Dividend Homes site lists Cayman, Kenison, Sundara, 3200 Park; no page for this project",
+      "src": [
+        "SRC-003647"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Dahlin Group already on record; no project page opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; nothing found",
+      "src": []
+    }
+  }
 }

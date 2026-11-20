@@ -334,6 +334,27 @@
             "SRC-001956"
           ],
           "note": "City folder 088757, Tentative Map (permit type: Subdivision); city permit status: Under Review. Matched by APN."
+        },
+        {
+          "value": "H24-064",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Planned Development Permit for up to 35 single-family houses on a 33.2-gross-acre lot; city permit status: Inactive"
+        },
+        {
+          "value": "GP24-004",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Privately initiated General Plan Amendment from Open Space, Parkland and Habitat to Rural Residential on about 32.2 gross acres; status: Review Letter Sent"
+        },
+        {
+          "value": "PRE23-260",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SB 330 preliminary application to construct 36 single-family units; status: Complete"
         }
       ]
     },
@@ -345,6 +366,24 @@
             "SRC-001099"
           ],
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 33.2,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per H24-064 description"
+        },
+        {
+          "value": 32.2,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per GP24-004 description"
         }
       ]
     }
@@ -361,12 +400,76 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit records for APN 676-04-057: GP24-004 General Plan Amendment (Open Space, Parkland and Habitat to Rural Residential, about 32.2 gross acres), H24-064 Planned Development Permit for up to 35 houses (Inactive), T24-024 tentative map (Under Review), ER24-064 environmental review (Under Review), and ER26-079 geotechnical investigation of 21 test pits, 3 borings and 2 infiltration tests for a 35-unit development (Under Review). Zoning shown as A(PD).",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Pocola LLC",
+      "contact": "Stuart Whang",
+      "linkedin": null,
+      "other_role": "Applicant and owner name in city permit records (GP24-004, H24-064, T24-024)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "V.E.R. Consultants",
+      "contact": "Vince Rivero",
+      "linkedin": null,
+      "other_role": "Applicant for 2014 and 2023 preliminary reviews",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cornerstone Earth",
+      "contact": "Ben Moss",
+      "linkedin": null,
+      "other_role": "Applicant for geotechnical testing environmental review (ER26-079)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2014-03-13",
+      "type": "Other",
+      "label": "Preliminary review PRE14-032: 11 single-family lots",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12-06",
+      "type": "Other",
+      "label": "SB 330 preliminary application PRE23-260: 36 single-family units",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-03-18",
+      "type": "Other",
+      "label": "General Plan Amendment GP24-004 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-06-11",
       "type": "Application filed",
@@ -374,6 +477,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-05-13",
+      "type": "Other",
+      "label": "Environmental review filed for geotechnical testing (ER26-079)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -386,6 +498,83 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 2159 Chisin St, PD24-009 and Pocola LLC; no project pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 676-04-057, situs 2159 Chisin St, already on record; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer queried by APN (7 folders). sanjoseca.gov web pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for CEQAnet filings on Chisin or Pocola LLC; none found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news; no articles",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and trade press; no coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on Pocola LLC; no website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in public sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; nothing found",
+      "src": []
+    }
+  }
 }
