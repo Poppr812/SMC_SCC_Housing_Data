@@ -152,6 +152,14 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "ER20-072",
+          "src": [
+            "SRC-001956",
+            "SRC-003491"
+          ],
+          "note": "Initial Study/Mitigated Negative Declaration for H20-008, approved 2020-04-29"
         }
       ]
     },
@@ -165,6 +173,54 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003491",
+            "SRC-003492"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 4996,
+          "src": [
+            "SRC-003491",
+            "SRC-001956"
+          ],
+          "note": "Ground-floor commercial/retail"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.49,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City files CP12-009 and PRE25-387 describe an approximately 0.49-acre site"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001956",
+            "SRC-003491"
+          ],
+          "note": "Site Development Permit H20-008 with an Initial Study/Mitigated Negative Declaration"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -174,12 +230,65 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "City file H20-008 (formerly PDC18-005 and PD18-003): demolition of an approximately 1,300 sq ft commercial building and sign, and a four-story mixed-use building of about 69,890 sq ft with 46 apartments, about 4,996 sq ft of ground-floor retail, a sub-grade garage off Cadillac Drive and a second-floor courtyard; maximum height about 53 feet.",
+      "src": [
+        "SRC-001956",
+        "SRC-003491",
+        "SRC-003492"
+      ]
+    },
+    {
+      "text": "City file PRE25-387 (filed 2025-09-12, completed 2025-11-25; applicant Subhendu Datta, Livio) is an enhanced preliminary review of a different scheme on the same parcel: a 13-story, 259-unit building with 100 percent affordable units for low- and very-low-income residents.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Aron Developers, Inc.",
+      "contact": "Robert Dowling",
+      "linkedin": null,
+      "src": [
+        "SRC-001956",
+        "SRC-003492"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "ADL 9, LLC",
+      "contact": "Rob Dowling",
+      "linkedin": null,
+      "other_role": "CEQA applicant",
+      "src": [
+        "SRC-003491"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Livio",
+      "contact": "Subhendu Datta",
+      "linkedin": null,
+      "other_role": "Applicant (permit extension AD24-341)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-10-20",
+      "type": "Application filed",
+      "label": "Preliminary review PRE17-181 filed (46 units, 20,305 sq ft commercial)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2018-01-30",
       "type": "Application filed",
@@ -195,6 +304,22 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2021-03-09",
+      "type": "Other",
+      "label": "Demolition permit 2021-018285-CI issued (retail building)",
+      "src": [
+        "SRC-003493"
+      ]
+    },
+    {
+      "date": "2025-04-08",
+      "type": "Other",
+      "label": "One-year extension of H20-008 approved (AD24-341)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "history": [
@@ -207,6 +332,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer; found CEQAnet NOD and SF YIMBY",
+      "src": [
+        "SRC-003491",
+        "SRC-003492"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 305-02-001 situs 1495 S Winchester Bl; no owner shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning and building permit GIS layers (sanjoseca.gov pages are blocked): H20-008, ER20-072, PRE17-181, AD24-341, PRE25-387, demolition permit",
+      "src": [
+        "SRC-001956",
+        "SRC-003493"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2020050201 NOD (approved 2020-04-29); APR rows already on record",
+      "src": [
+        "SRC-003491"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news for 1495 S Winchester; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2021-02-07",
+      "src": [
+        "SRC-003492"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Aron Developers and Livio project pages; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city layer, CEQA notice or SF YIMBY",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -171,6 +171,12 @@
           "src": [
             "SRC-001119"
           ]
+        },
+        {
+          "value": "Seven units (15% of base) for moderate-income households, per applicant density bonus letter",
+          "src": [
+            "SRC-003497"
+          ]
         }
       ]
     },
@@ -201,6 +207,84 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 18,
+            "3br": 16,
+            "4br+": 12
+          },
+          "src": [
+            "SRC-003494",
+            "SRC-003495"
+          ],
+          "note": "Unit sizes 1,415 to 2,236 sq ft (Project Data Table)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001522",
+            "SRC-003496"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.2,
+          "src": [
+            "SRC-001522",
+            "SRC-003496",
+            "SRC-003495"
+          ],
+          "note": "Project Data Table lists 2.2 ac existing and 2.17 ac proposed"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 96,
+          "src": [
+            "SRC-003495"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 107195,
+          "src": [
+            "SRC-003494"
+          ],
+          "note": "Gross floor area, Project Data Table; SF YIMBY reports 74,820 sq ft of unit space"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus",
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-003497",
+            "SRC-001522"
+          ],
+          "note": "State density bonus: one concession (residential-only use) and waivers; no bonus units requested; El Camino Real Specific Plan zoning ECR-MU24"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -209,6 +293,14 @@
       "src": [
         "SRC-001118",
         "SRC-001119"
+      ]
+    },
+    {
+      "text": "Special Development Permit for a 46-unit, three-story townhouse development replacing the Bell Plaza shopping center (19,750 sq ft of retail per SF YIMBY), plus a Tentative Map for seven lots and four parcels creating 46 condominiums; seven buildings (three six-plexes and four seven-plexes).",
+      "src": [
+        "SRC-001522",
+        "SRC-003496",
+        "SRC-003495"
       ]
     }
   ],
@@ -223,6 +315,25 @@
         "SRC-001522"
       ],
       "website": "https://balboaretail.com"
+    },
+    {
+      "role": "Other",
+      "company": "BRFII Bell, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (density bonus letter)",
+      "src": [
+        "SRC-003497"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003495"
+      ]
     }
   ],
   "financing": [],
@@ -243,6 +354,14 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "date": "2024-11-14",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed (El Camino Real Specific Plan EIR)",
+      "src": [
+        "SRC-003496"
+      ]
     }
   ],
   "history": [
@@ -260,6 +379,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Bell Plaza; found SF YIMBY and CEQAnet NOD",
+      "src": [
+        "SRC-003495",
+        "SRC-003496"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 313-04-026 situs 1040 E El Camino Real; no owner shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar file 24-1113: Project Data Table and State Density Bonus letter attachments",
+      "src": [
+        "SRC-003494",
+        "SRC-003497",
+        "SRC-001522"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2017102082 NOD received 2024-11-14; APR rows already on record",
+      "src": [
+        "SRC-003496"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news for Bell Plaza / 1040 E El Camino Real; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-10-21",
+      "src": [
+        "SRC-003495"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Balboa Retail Partners already on record with website; no project page found",
+      "src": [
+        "SRC-001522"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "KTGY project page (ktgy.com) returned 403",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city filings or press",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
