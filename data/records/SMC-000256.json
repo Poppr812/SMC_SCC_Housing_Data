@@ -409,6 +409,63 @@
           "src": [
             "SRC-001233"
           ]
+        },
+        {
+          "value": 3.22,
+          "src": [
+            "SRC-003926"
+          ],
+          "note": "NOD project description; the CEQAnet location field and the city page give 3.12 acres"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003925"
+          ],
+          "note": "BMR plan: 1 moderate-income home (Lot 8) of 9 single-family homes"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003925"
+          ],
+          "note": "BMR plan, 2023-12-15: one moderate-income unit (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "BMR plan: 15% of 9 units required (1.35); 1 moderate-income 4-bedroom home proposed at Lot 8 (2,540 sq ft); average market-rate home 3,072 sq ft.",
+          "src": [
+            "SRC-003925"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003927"
+          ],
+          "note": "Design Review, CUP, Vesting Tentative Map, General Plan Amendment and Rezoning to RS-6"
         }
       ]
     }
@@ -419,12 +476,102 @@
       "src": [
         "SRC-001233"
       ]
+    },
+    {
+      "text": "City page: 308 Phelps Road was 2.19 acres with a 1920 home, 310 Phelps Road 0.93 acres with a 1937 home, plus a 0.10-acre strip (APN 049-292-060). Plan: nine lots, nine homes, eight with ADUs; Spring Valley Way extended to serve six homes; rezoning from RS-3 to RS-6. The applicant requested an extension of entitlements through April 2026; the city states all entitlements have expired.",
+      "src": [
+        "SRC-003927"
+      ]
+    },
+    {
+      "text": "BMR plan unit table: all nine homes 4 bedrooms, 2,540 to 4,228 sq ft including garage. Letter signed by Nicole Gittleson, Executive Vice President, Clarum Homes, on behalf of applicant/owner Phelps San Carlos LLC.",
+      "src": [
+        "SRC-003925"
+      ]
+    },
+    {
+      "text": "CEQAnet NOD: City of San Carlos approved the project on 2024-03-11 with a Mitigated Negative Declaration and mitigation monitoring plan.",
+      "src": [
+        "SRC-003926"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Clarum Homes",
+      "contact": "John Suppes",
+      "linkedin": null,
+      "email": "john@clarum.com",
+      "website": "https://www.clarum.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003927",
+        "SRC-003925"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "PHELPS SAN CARLOS LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Phelps San Carlos LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant/owner per BMR plan",
+      "src": [
+        "SRC-003925"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "John Lum Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://johnlumarchitecture.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003925"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-04-20",
+      "type": "Other",
+      "label": "Draft IS/MND circulated (SCH 2023040525)",
+      "src": [
+        "SRC-003928"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-02-05",
+      "type": "Other",
+      "label": "Planning and Transportation Commission hearing",
+      "src": [
+        "SRC-003927"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-03-11",
+      "type": "Approved",
+      "label": "City Council adopted IS/MND and General Plan amendment (Res. 2024-22, 2024-23); rezoning ordinance 1613 introduced",
+      "src": [
+        "SRC-003927",
+        "SRC-003926"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-04-25",
       "type": "Approved",
@@ -440,6 +587,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address: CEQAnet SCH 2023040525, city project page.",
+      "src": [
+        "SRC-003928",
+        "SRC-003927"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Mateo County parcel layer, APNs 049-292-050 and 049-292-040: owner PHELPS SAN CARLOS LLC.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Carlos project page (PTC 2024-02-05, Council 2024-03-11, entitlements expired) and BMR plan attachment. San Carlos has no Legistar client; agendas on PrimeGov.",
+      "src": [
+        "SRC-003927",
+        "SRC-003925"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2023040525 MND (2023-04-20) and NOD (2024-03-13). APR Tables A and A2 searched for Phelps: no rows.",
+      "src": [
+        "SRC-003928",
+        "SRC-003926"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for local news on 308-310 Phelps Road found none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "clarum.com projects page lists no San Carlos or Phelps Road project.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "johnlumarchitecture.com home page does not mention the project.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

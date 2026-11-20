@@ -1,6 +1,6 @@
 {
   "id": "SMC-000236",
-  "name": "801 Donohoe Street",
+  "name": "801 Donohoe Cohousing (Donohoe Cooperative)",
   "parcels": [
     {
       "apn": "063-374-170",
@@ -111,8 +111,17 @@
           "src": [
             "SRC-001181"
           ]
+        },
+        {
+          "value": 18,
+          "src": [
+            "SRC-003922",
+            "SRC-003923"
+          ],
+          "note": "Entitlement set dated 2026-04-10: (2) 3BD, (2) 2BD, (4) 1BD+den, (10) 1BD; developer page also says 18 homes"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -123,9 +132,88 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 14,
+            "2br": 2,
+            "3br": 2,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003922"
+          ],
+          "note": "1BR count includes 4 one-bedroom-plus-den units"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003922"
+          ],
+          "note": "Front block 3 stories, rear block 2 stories; proposed height 35'-10\""
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 11,
+          "src": [
+            "SRC-003922"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.45,
+          "src": [
+            "SRC-003922"
+          ],
+          "note": "20,063.9 sq ft"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Developer describes cooperatively owned, permanently affordable homes for Placekeepers, with land held by PAHALI Community Land Trust; downpayments $20k-$40k, prices TBD. Plans label two units LI 80%.",
+          "src": [
+            "SRC-003923",
+            "SRC-003922"
+          ]
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City page lists the applicant as 801 Donohoe Development LLC / Duane Bay and says the applicant is requesting the application under SB 330. Zoning R-MD-2.",
+      "src": [
+        "SRC-001181"
+      ]
+    },
+    {
+      "text": "Plans (2026-04-10) show one 3-story front building and a 2-story rear building, Type V-A construction, 8,757 sq ft of common open space, 18 Class I bike spaces, proposed FAR 0.88 against 0.65 allowed. Plans are titled 801 Donohoe Cohousing, Frolic Community + EPACANDO.",
+      "src": [
+        "SRC-003922"
+      ]
+    },
+    {
+      "text": "Frolic Community's project page shows status Under Development and an expected opening in Summer 2028.",
+      "src": [
+        "SRC-003923"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -135,6 +223,65 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001181"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "BAY DUANE G",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Frolic Community",
+      "contact": "Natasha Sadikin",
+      "linkedin": null,
+      "email": "natasha@frolic.community",
+      "phone": "(415) 350-9563",
+      "website": "https://frolic.community/",
+      "website_basis": "opened",
+      "project_page": "https://frolic.community/projects/donohoe-cooperative",
+      "src": [
+        "SRC-003923",
+        "SRC-003924",
+        "SRC-003922"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "EPACANDO (East Palo Alto Community Alliance and Neighborhood Development Organization)",
+      "contact": "Ofelia Bello",
+      "linkedin": null,
+      "email": "obello@epacando.org",
+      "phone": "(650) 473-9838 ext. 006",
+      "src": [
+        "SRC-003923",
+        "SRC-003924"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "PAHALI Community Land Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003923"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Figure",
+      "contact": null,
+      "linkedin": null,
+      "phone": "(415) 985-4808",
+      "website": "https://figure.us",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003922",
+        "SRC-003923"
       ]
     }
   ],
@@ -150,12 +297,39 @@
       ]
     },
     {
+      "date": "2025-10-09",
+      "type": "Other",
+      "label": "Community meeting (moved from 2025-10-02)",
+      "src": [
+        "SRC-003924"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-10-20",
       "type": "Other",
       "label": "Planning Commission study session",
       "src": [
         "SRC-001181"
       ]
+    },
+    {
+      "date": "2026-04-10",
+      "type": "Other",
+      "label": "Entitlement plan set issued (18 units)",
+      "src": [
+        "SRC-003922"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Other",
+      "label": "Second community meeting as listed by the city",
+      "src": [
+        "SRC-001181"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-11-02",
@@ -171,6 +345,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and partners: city plan set, meeting flyer, Frolic project page.",
+      "src": [
+        "SRC-003922",
+        "SRC-003923"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Mateo County parcel layer, APN 063-374-170: owner BAY DUANE G.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "East Palo Alto project page, entitlement plans (2026-04-10), community meeting flyers. No Legistar client for East Palo Alto; PC 2026-11-02 outcome not posted.",
+      "src": [
+        "SRC-001181",
+        "SRC-003922",
+        "SRC-003924"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county funding found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 (data.ca.gov) searched for Donohoe: no 801 Donohoe row. No CEQAnet, CTCAC or HCD entries found.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Palo Alto Online and other local news found no article on 801 Donohoe.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Frolic Community project page: 18 cooperatively owned homes, partners EPACANDO and PAHALI CLT, architect Figure, opening Summer 2028.",
+      "src": [
+        "SRC-003923"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Plans title block names Figure, 2601 Mission St #404, San Francisco (figure.us); site not opened.",
+      "src": [
+        "SRC-003922"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named for this project; SFF article on EPACANDO Placekeeper Fund does not mention it.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

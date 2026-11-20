@@ -1,6 +1,6 @@
 {
   "id": "SCC-000362",
-  "name": "220 Carroll",
+  "name": "Carroll Commons (220-228 Carroll Street)",
   "parcels": [
     {
       "apn": "209-49-002",
@@ -504,6 +504,14 @@
             "SRC-001119"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "2019-7233",
+          "src": [
+            "SRC-003930",
+            "SRC-003931"
+          ],
+          "note": "Special Development Permit and Tentative Map"
         }
       ]
     },
@@ -533,6 +541,74 @@
           "note": "State report 2024, completion stage: 1 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003932"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 32,
+          "src": [
+            "SRC-003932"
+          ],
+          "note": "16 assigned, 16 unassigned"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.58,
+          "src": [
+            "SRC-003932",
+            "SRC-003930"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 25480,
+          "src": [
+            "SRC-003933"
+          ],
+          "note": "SF YIMBY: 28,740 sq ft built area including 3,260 sq ft parking; city data table: 28,738 sq ft gross floor area"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003930",
+            "SRC-003932"
+          ],
+          "note": "Rear setback deviation granted as a State Density Bonus Law concession"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2024,
+          "src": [
+            "SRC-003934"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -542,9 +618,82 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "Sunnyvale PC 2020-12-14: demolition of two single-family homes and 16 two- to three-story townhomes on a 0.58-acre site at 220 and 228 Carroll Street (then APNs 209-10-051 and 209-10-052), with one common lot and 16 condominiums; Class 32 CEQA exemption; zoning DSP Block 6.",
+      "src": [
+        "SRC-003930"
+      ]
+    },
+    {
+      "text": "City project data table: 3 buildings, height 35'-9\", lot coverage 44%, 16 units where 20 were allowed, 378 sq ft usable open space per unit.",
+      "src": [
+        "SRC-003932"
+      ]
+    },
+    {
+      "text": "SF YIMBY: three buildings, units about 1,280 to 2,130 sq ft, Spanish colonial-inspired design.",
+      "src": [
+        "SRC-003933"
+      ]
+    },
+    {
+      "text": "MLS listing for 220 Carroll St #1: closed at $1,980,000, 4 bedrooms, 2,005 sq ft, built 2024, HOA $397 per month; remarks describe 16 units in 3 buildings with four floor plans.",
+      "src": [
+        "SRC-003934"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Terra Holdings",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003933"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "220 Carroll LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner per city hearing notice (SF YIMBY: 220 Carroll Street LLC)",
+      "src": [
+        "SRC-003930",
+        "SRC-003933"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Samir Sharma",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003930"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPMD Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003933"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Greg Lewis Landscape",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003933"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -555,6 +704,24 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "date": "2020-08-10",
+      "type": "Other",
+      "label": "Planning Commission study session",
+      "src": [
+        "SRC-003931"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-12-14",
+      "type": "Approved",
+      "label": "Planning Commission approved Special Development Permit and Tentative Map with modifications",
+      "src": [
+        "SRC-003930"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-04-07",
@@ -583,6 +750,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Carroll Commons: SF YIMBY article, MLS listings; NewHomeSource, Estately and Homes.com refused access.",
+      "src": [
+        "SRC-003933",
+        "SRC-003934"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 209-49-002: situs 220 Carroll St unit 2; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar: PC study session 2020-08-10 (20-0732), PC hearing 2020-12-14 (20-1002) with project data table and plans.",
+      "src": [
+        "SRC-003930",
+        "SRC-003931",
+        "SRC-003932"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Tables A and A2 (data.ca.gov): rows already on record. CEQA Class 32 exemption; no CTCAC or HCD entries.",
+      "src": [
+        "SRC-001118",
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2021-02-13: developer Terra Holdings, architect LPMD, landscape Greg Lewis Landscape.",
+      "src": [
+        "SRC-003933"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Terra Holdings website found; NewHomeSource builder listing refused access.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LPMD Architects project page found; plan cover sheet shows architect office at 1288 Kifer Road #206, Sunnyvale.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

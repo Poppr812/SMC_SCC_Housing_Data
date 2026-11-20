@@ -1,6 +1,6 @@
 {
   "id": "SCC-000361",
-  "name": "0 Land Only",
+  "name": "Evergreen Village Townhomes",
   "parcels": [
     {
       "apn": "659-57-015",
@@ -71,6 +71,48 @@
           37.3139029
         ]
       ]
+    },
+    {
+      "apn": "659-84-093",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.7744039,
+          37.314403
+        ],
+        [
+          -121.7743167,
+          37.3142767
+        ],
+        [
+          -121.7744382,
+          37.3140321
+        ],
+        [
+          -121.7747555,
+          37.3141327
+        ],
+        [
+          -121.7747333,
+          37.3142999
+        ],
+        [
+          -121.7747474,
+          37.3143393
+        ],
+        [
+          -121.7745821,
+          37.3143236
+        ],
+        [
+          -121.7744039,
+          37.314403
+        ]
+      ]
     }
   ],
   "addresses": [],
@@ -85,8 +127,16 @@
             "SRC-001107"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003929"
+          ],
+          "note": "CEQA: 16 townhomes in three buildings. The approved PD permit text says condominium units; the 2026 amendment application would change the units to townhomes"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -119,6 +169,20 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 14,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Proposed: PD amendment PDA21-020-01 (filed 2026-07-06, under review) would reduce the count from 16 to 14"
+        },
+        {
+          "value": 13,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Proposed: tentative map T26-020 (filed 2026-07-22, under review) for 13 residential lots and 2 common lots; preliminary review PRE25-486 described 12 townhomes and one single-family house"
         }
       ]
     },
@@ -165,6 +229,36 @@
             "SRC-001956"
           ],
           "note": "City folder 126196, Planned Development Permit/Amendment (permit type: Development Permit); city permit status: Under Review. Matched by APN."
+        },
+        {
+          "value": "PDC21-036",
+          "src": [
+            "SRC-001956",
+            "SRC-003929"
+          ],
+          "note": "PD rezoning A(PD) to MUN(PD), approved"
+        },
+        {
+          "value": "GP21-015",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "General Plan amendment OS to Mixed Use Neighborhood on the 0.54-acre site, approved 2023-06-20"
+        },
+        {
+          "value": "ER21-281",
+          "src": [
+            "SRC-001956",
+            "SRC-003929"
+          ],
+          "note": "Environmental review (MND), SCH 2025020654"
+        },
+        {
+          "value": "T26-020",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Vesting tentative map, 13 residential lots, under review"
         }
       ]
     },
@@ -181,6 +275,24 @@
             "SRC-001107"
           ],
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.81,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City rezoning file PDC21-036: two sites totaling about 0.81 acres (0.54 and 0.27 gross acres per T23-010)"
+        },
+        {
+          "value": 1.5,
+          "src": [
+            "SRC-003929"
+          ],
+          "note": "CEQAnet project record"
         }
       ]
     }
@@ -210,9 +322,61 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Site is two vacant parcels at Classico Avenue and Evergreen Village Square, San Jose 95135 (APNs 659-57-015 and 659-84-093). City permit records show no street address (\"0 Land Only\").",
+      "src": [
+        "SRC-003929",
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit records list HawkStone Development (Reyad Katwan) as applicant and owner on the 2021-2023 files; QM Investments LLC (Thanh Nguyen) on the 2026 amendment, environmental review ER26-109 and tentative map files; and HILL/HO/PANG/NGUENPHUC/PANG (Anthony Ho) on a 2025 preliminary review for 13 units.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "CEQAnet lists Denise Duffy & Associates as the environmental consultant and Cort Hitchens as the city planner.",
+      "src": [
+        "SRC-003929"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "HawkStone Development",
+      "contact": "Reyad M. Katwan",
+      "linkedin": null,
+      "email": "rkatwan@hawkstonedev.com",
+      "phone": "(650) 380-1760",
+      "src": [
+        "SRC-003929",
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "QM Investments LLC",
+      "contact": "Thanh Nguyen",
+      "linkedin": null,
+      "other_role": "Applicant and owner listed on 2026 PD amendment and tentative map files",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "HILL/HO/PANG/NGUENPHUC/PANG",
+      "contact": "Anthony Ho",
+      "linkedin": null,
+      "other_role": "Owner and applicant listed on 2025 preliminary review PRE25-486",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -225,12 +389,57 @@
       ]
     },
     {
+      "date": "2023-06-20",
+      "type": "Approved",
+      "label": "General Plan amendment GP21-015 approved",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-25",
+      "type": "Other",
+      "label": "Draft IS/MND public review began (SCH 2025020654)",
+      "src": [
+        "SRC-003929"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-06-17",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-11-17",
+      "type": "Other",
+      "label": "Preliminary review PRE25-486 filed (13 units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-06",
+      "type": "Application filed",
+      "label": "PD amendment PDA21-020-01 filed (16 to 14 units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-22",
+      "type": "Application filed",
+      "label": "Vesting tentative map T26-020 filed (13 residential lots)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -243,6 +452,88 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on file numbers and Evergreen Village: CEQAnet SCH 2025020654; sanjoseca.gov pages refused automated access.",
+      "src": [
+        "SRC-003929"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SCC parcel dataset for 659-57-015 and 659-84-093: no situs address or owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer queried by APN: PDC21-036, GP21-015, ER21-281, PD21-020, T23-010, PRE25-486, PDA21-020-01, ER26-109, T26-020. sanjoseca.gov document pages blocked.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025020654 (MND, 2025). APR rows already on record.",
+      "src": [
+        "SRC-003929",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news on this project; an SF YIMBY item on 3315 Sierra Road is a different project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "hawkstonedev.com returned an empty page; no web presence found for QM Investments LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }
