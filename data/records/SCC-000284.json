@@ -50,6 +50,21 @@
           ]
         }
       ]
+    },
+    {
+      "text": "355, 365, 371 and 373 1st St, Los Altos, CA",
+      "role": "other",
+      "src": [
+        "SRC-003468"
+      ],
+      "written_as": [
+        {
+          "text": "355, 365, 371 and 373 First St, Los Altos, CA",
+          "src": [
+            "SRC-003468"
+          ]
+        }
+      ]
     }
   ],
   "images": [],
@@ -129,6 +144,12 @@
             "SRC-001145"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "TM21-0001, D21-0003",
+          "src": [
+            "SRC-003469"
+          ]
         }
       ]
     },
@@ -151,6 +172,69 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003468"
+          ],
+          "note": "Four-story building over two levels of underground parking"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 113,
+          "src": [
+            "SRC-003468"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 2,
+            "1br": 7,
+            "2br": 30,
+            "3br": 11,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003468"
+          ],
+          "note": "Table 2 of the June 28, 2022 agenda report, affordable and market-rate units combined"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001145"
+          ],
+          "note": "State report 2022, entitlement row"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001145",
+            "SRC-003469"
+          ],
+          "note": "35% density bonus with one incentive (height); state report also marks inclusionary"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -160,9 +244,45 @@
         "SRC-001144",
         "SRC-001145"
       ]
+    },
+    {
+      "text": "June 28, 2022 agenda report: the project demolishes six commercial buildings and one single-family residence and builds a four-story, 50-unit condominium building with two levels of underground parking (113 spaces), 34 interior bicycle spaces and a private rooftop area. The draft resolution grants a 35% density bonus and one incentive allowing a 46-foot height where 35 feet applies, plus a waiver for a 17.5-foot elevator overrun.",
+      "src": [
+        "SRC-003468",
+        "SRC-003469"
+      ]
+    },
+    {
+      "text": "Affordable units: the agenda report's Table 2 lists 7 BMR units (1 very low-income studio, 3 one-bedrooms with 2 very low-income and 1 moderate, and 3 moderate two-bedrooms). The draft resolution findings list three very low-income and four moderate units, and its recitals list one very low-income, two low-income and four moderate units. The state report shows 3 very low-income and 4 moderate.",
+      "src": [
+        "SRC-003468",
+        "SRC-003469",
+        "SRC-001145"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "DeNardi Wang Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003469"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "355 1st St LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant / project proponent",
+      "src": [
+        "SRC-003468",
+        "SRC-003469"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -173,6 +293,42 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "date": "2021-11-02",
+      "type": "Other",
+      "label": "Notice of Intent to adopt a Mitigated Negative Declaration filed with the County Clerk",
+      "src": [
+        "SRC-003468"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-12-02",
+      "type": "Other",
+      "label": "Joint Planning Commission and Complete Streets Commission hearing",
+      "src": [
+        "SRC-003469"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-12-16",
+      "type": "Other",
+      "label": "Joint Planning Commission and Complete Streets Commission hearing; both recommended approval",
+      "src": [
+        "SRC-003469"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-02-08",
+      "type": "Other",
+      "label": "City Council hearing",
+      "src": [
+        "SRC-003469"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-06-28",
@@ -188,6 +344,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 355 First Street and DeNardi: June 28, 2022 Council packet on the city's meeting portal",
+      "src": [
+        "SRC-003468"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcels dataset: APN 16741029 at 355 1st St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "June 28, 2022 Council agenda report and draft resolution (meeting portal); losaltosca.gov project page, plans and signed Resolution 2022-54 returned 403",
+      "src": [
+        "SRC-003468",
+        "SRC-003469"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 2022: 35% density bonus, 55-year affordability term, no building permit reported through 2025",
+      "src": [
+        "SRC-001145"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Los Altos Town Crier or other news article found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "LoopNet listing for 355 1st St and its offering memorandum returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No DeNardi project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect named only in the blocked plan set",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

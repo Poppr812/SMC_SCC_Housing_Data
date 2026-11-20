@@ -221,6 +221,20 @@
           "note": "State report 2023, application stage: 49 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001139"
+          ],
+          "note": "State report 2023: SB 35 application, density bonus requested and approved, ministerial project type"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -234,6 +248,12 @@
       "text": "San Mateo County AHF predevelopment pipeline, September 2024: 2809 ECR (Alta Housing): 50 total units, 26% at 15-30% AMI and 74% at 31-60% AMI.",
       "src": [
         "SRC-001649"
+      ]
+    },
+    {
+      "text": "Alta Housing presentation to the North Fair Oaks Community Council (September 25, 2025): Magnolia provides 51 affordable senior units, 25% for extremely low-income households, with on-site parking, next to Alta's Fair Oaks Commons. Committed funding: $983K from the County of San Mateo and $1M from Senator Josh Becker; Alta will apply for more county funds in 2026. Timeline: county funding 2026, state funding 2027, building permits 2027, tax credit funding 2028, construction start February 2029, construction end and move-in 2030.",
+      "src": [
+        "SRC-003467"
       ]
     }
   ],
@@ -257,6 +277,15 @@
         "SRC-001172"
       ],
       "website": "https://altahousing.org/"
+    },
+    {
+      "role": "Property manager",
+      "company": "Alta Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003467"
+      ]
     }
   ],
   "financing": [
@@ -289,6 +318,16 @@
       "src": [
         "SRC-001649"
       ]
+    },
+    {
+      "type": "Other",
+      "provider": "Senator Josh Becker",
+      "program": "Committed funding listed by Alta Housing as \"$1M - Senator Josh Becker\"",
+      "amount": 1000000,
+      "date": "2025-09",
+      "src": [
+        "SRC-003467"
+      ]
     }
   ],
   "groups": {},
@@ -300,6 +339,24 @@
       "src": [
         "SRC-001139"
       ]
+    },
+    {
+      "date": "2029-02",
+      "type": "Construction start",
+      "label": "Planned construction start per Alta Housing timeline",
+      "src": [
+        "SRC-003467"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2030",
+      "type": "Completion",
+      "label": "Planned construction end and resident move-in per Alta Housing timeline",
+      "src": [
+        "SRC-003467"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -322,6 +379,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Magnolia, 2809 El Camino Real, Alta Housing: Alta presentation posted by the county (Sept 25, 2025)",
+      "src": [
+        "SRC-003467"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer: APN 054284330, 2809 El Camino Real, owner AH 2801 ECR LP",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated North Fair Oaks; county is the planning agency",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "AHF 14.0 HCDC hearing list (2026) does not include Magnolia; no county planning project page found for the PLN file",
+      "src": [
+        "SRC-003307"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2023 row: SB 35 application, density bonus approved, ministerial, approved status; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-001139"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "altahousing.org search and Future Developments page list only La Bella and Corso",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in public sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Alta presentation lists $1M from Senator Josh Becker and $983K county funding",
+      "src": [
+        "SRC-003467"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

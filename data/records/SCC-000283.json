@@ -124,8 +124,16 @@
             "SRC-001144"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 15,
+          "src": [
+            "SRC-001144"
+          ],
+          "note": "State report 2022: application D22-0005 submitted 2022-04-19, 15 units"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -151,6 +159,18 @@
             "SRC-001144"
           ],
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001144"
+          ],
+          "note": "State report 2022, application D22-0005: 3 very low-income deed-restricted units (AMI is the category's upper limit)"
         }
       ]
     },
@@ -164,11 +184,30 @@
           "note": "State report 2025, application stage: 6 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001144"
+          ],
+          "note": "State report: density bonus requested in both the 2022 and 2025 applications"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001144"
+      ]
+    },
+    {
+      "text": "The state Annual Progress Report lists two applications on APN 167-39-136: D22-0005, submitted 2022-04-19 for 15 for-sale units (3 very low-income, 12 above moderate), and D25-0007, submitted 2025-12-09 for 51 for-sale units (6 low-income, 45 above moderate). Both are shown as pending.",
       "src": [
         "SRC-001144"
       ]
@@ -185,6 +224,15 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "date": "2025-12-09",
+      "type": "Application filed",
+      "label": "Application D25-0007 submitted (51 units)",
+      "src": [
+        "SRC-001144"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -192,6 +240,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 95 First Street, D22-0005 and the applicant returned only City of Los Altos pages, which refuse automated access",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcels dataset: APN 16739136 at 95 1st St, Los Altos; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "losaltosca.gov project page for 95 First Street and its documents returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A: separate 2022 (D22-0005, 15 units) and 2025 (D25-0007, 51 units) application rows",
+      "src": [
+        "SRC-001144"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Los Altos Town Crier, Palo Alto Daily Post (Windy Hill tag page); no article on 95 First Street",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicant named only in blocked city pages; no developer project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect found in opened sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

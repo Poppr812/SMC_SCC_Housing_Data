@@ -454,6 +454,12 @@
           "src": [
             "SRC-001465"
           ]
+        },
+        {
+          "value": "11 affordable units",
+          "src": [
+            "SRC-003473"
+          ]
         }
       ]
     },
@@ -464,6 +470,13 @@
           "src": [
             "SRC-001465"
           ]
+        },
+        {
+          "value": 2.55,
+          "src": [
+            "SRC-003472"
+          ],
+          "note": "Application project description"
         }
       ]
     },
@@ -478,9 +491,100 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003470",
+            "SRC-003471"
+          ],
+          "note": "Ten three-story buildings; Resolution 26-030 asks the applicant to work toward reducing five end units to two stories"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 102,
+          "src": [
+            "SRC-003471"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 5,
+              "ami": 120
+            },
+            {
+              "count": 5,
+              "ami": 100
+            }
+          ],
+          "src": [
+            "SRC-003471"
+          ],
+          "note": "5 median-income (100-120% AMI) and 5 moderate-income (80-100% AMI) BMR units"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2158,
+          "src": [
+            "SRC-003472"
+          ],
+          "note": "Approximate average living area in the December 2024 application"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 145500,
+          "src": [
+            "SRC-003473"
+          ],
+          "note": "About 145,500 sq ft across ten structures"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Resolution 26-030 (April 1, 2026; Moore, Chao, Fruen and Mohan yes, Wang no) approves 51 townhomes, 102 parking spaces, 51 private bicycle spaces, 12 shared bicycle racks, 11,728 sq ft of private and 30,132 sq ft of common open space. It grants one density bonus concession (BMR unit type) and six waivers: building height up to 41 feet where 30 feet applies, setbacks, private outdoor space dimensions, floor area ratio, parking space dimensions, and setbacks for a voluntary height reduction of five end units in Buildings 5, 7, 8, 9 and 10 to two stories.",
+      "src": [
+        "SRC-003471"
+      ]
+    },
+    {
+      "text": "CEQA: the Notice of Exemption cites a statutory exemption under Public Resources Code 21080.66. Resolution 26-030 cites a CEQA Exemption Memorandum by David J. Powers & Associates dated February 18, 2026.",
+      "src": [
+        "SRC-003470",
+        "SRC-003471"
+      ]
+    },
+    {
+      "text": "The December 2024 project description shows 51 three-story townhome-style condominiums in ten buildings on 2.55 acres, three- and four-bedroom plans averaging about 2,158 sq ft, a two-car garage for each home (41 side-by-side, 10 tandem), and 10 BMR units for median- and moderate-income households plus an in-lieu fee for the 0.2 fractional unit. SF YIMBY describes each townhouse as four bedrooms and reports 11 affordable units.",
+      "src": [
+        "SRC-003472",
+        "SRC-003473"
+      ]
+    },
+    {
+      "text": "El Estoque reports the original proposal was 87 townhomes (35 at Linda Vista Park and 52 along Linda Vista Drive), that residents filed a petition asking the council to suspend the project, and that Council Member Ray Wang voted no, citing fire risk, water pressure and evacuation routes.",
+      "src": [
+        "SRC-003474"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -501,6 +605,25 @@
         "SRC-001465"
       ],
       "website": "https://www.sdgarchitectsinc.com/"
+    },
+    {
+      "role": "Landscape architect",
+      "company": "R3 Studios",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003473"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-003471"
+      ]
     }
   ],
   "financing": [],
@@ -525,11 +648,38 @@
       "estimated": false
     },
     {
+      "date": "2026-02-24",
+      "type": "Other",
+      "label": "Planning Commission recommended approval 3-2",
+      "src": [
+        "SRC-001465"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-17",
+      "type": "Other",
+      "label": "City Council item postponed",
+      "src": [
+        "SRC-001465"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-04-01",
       "type": "Approved",
       "label": "City Council approved 4-1",
       "src": [
         "SRC-001465"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-03",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (SCH 2026040172)",
+      "src": [
+        "SRC-003470"
       ],
       "estimated": false
     }
@@ -544,6 +694,98 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Linda Vista Dr, Evulich Court and SummerHill: SF YIMBY, El Estoque, CEQAnet NOE",
+      "src": [
+        "SRC-003473",
+        "SRC-003474",
+        "SRC-003470"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcels dataset and Resolution 26-030 show APNs 356-06-001 to -004; no owner field in the dataset",
+      "src": [
+        "SRC-001098",
+        "SRC-003471"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page, Resolution 26-030 (ASA-2024-015), application project description dated 2024-12-13",
+      "src": [
+        "SRC-001465",
+        "SRC-003471",
+        "SRC-003472"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026040172 Notice of Exemption received 2026-04-03",
+      "src": [
+        "SRC-003470"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "El Estoque, May 14, 2026",
+      "src": [
+        "SRC-003474"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY, April 11, 2026",
+      "src": [
+        "SRC-003473"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No SummerHill Homes project page found for the Linda Vista site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SDG Architects already on record from the city page; no SDG project page found",
+      "src": [
+        "SRC-001465"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "For-sale project; no lender or financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

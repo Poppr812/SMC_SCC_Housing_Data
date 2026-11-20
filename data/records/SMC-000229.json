@@ -200,6 +200,13 @@
           "src": [
             "SRC-001166"
           ]
+        },
+        {
+          "value": 51,
+          "src": [
+            "SRC-003466"
+          ],
+          "note": "County Department of Housing presentation lists Metzgar Street Apartments in pre-development: 51 affordable rental homes in Half Moon Bay"
         }
       ]
     },
@@ -249,6 +256,13 @@
           "src": [
             "SRC-001166"
           ]
+        },
+        {
+          "value": 69,
+          "src": [
+            "SRC-003465"
+          ],
+          "note": "Approximately 69 spaces in two parking areas accessed from Metzgar Street (report revised January 2026)"
         }
       ]
     },
@@ -284,6 +298,30 @@
           "note": "SB 35"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.91,
+          "src": [
+            "SRC-003465"
+          ],
+          "note": "Project Site envelope where project activities occur; the report describes the property as about 2 acres"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Farmworker"
+          ],
+          "src": [
+            "SRC-003466"
+          ],
+          "note": "County presentation: 13 units set aside for agricultural workers at Metzgar Street Apartments"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -291,6 +329,18 @@
       "text": "APN comes from the county parcel layer at 940 Main St, the address on the city's Major Development Projects page. The city project page gives no APN, so the site may include other parcels.",
       "src": [
         "SRC-001167"
+      ]
+    },
+    {
+      "text": "The Biological Resource Evaluation (WRA, September 2025, revised January 2026) describes one building with 52 affordable units for households up to 60% AMI on APN 064-272-100, about 2 acres near 940 Main Street, east of Highway 1 between Poplar and Metzgar Streets. It was prepared to support a Half Moon Bay Coastal Development Permit application. The occupied residence at 940 Main Street stays in place because of its historic significance. The city project page describes three separate three-story buildings.",
+      "src": [
+        "SRC-003465"
+      ]
+    },
+    {
+      "text": "A County of San Mateo Department of Housing presentation lists Metzgar Street Apartments in pre-development: 51 affordable rental homes in Half Moon Bay, 13 set aside for agricultural workers. The city page and the biological report each show 52 units.",
+      "src": [
+        "SRC-003466"
       ]
     }
   ],
@@ -304,6 +354,26 @@
         "SRC-001166"
       ],
       "website": "https://www.midpen-housing.org"
+    },
+    {
+      "role": "Developer",
+      "company": "MidPen Housing Corporation",
+      "contact": "Allison Vogt",
+      "linkedin": null,
+      "email": "allison.vogt@midpen-housing.org",
+      "src": [
+        "SRC-003465"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "WRA, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Biological resources consultant",
+      "src": [
+        "SRC-003465"
+      ]
     }
   ],
   "financing": [],
@@ -338,6 +408,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on MidPen, Metzgar, 940 Main: city document center biological report (WRA, revised Jan 2026)",
+      "src": [
+        "SRC-003465"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer: APN 064272100 at 940 Main St, no owner name in the layer; biological report confirms the same APN",
+      "src": [
+        "SRC-001103",
+        "SRC-003465"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Half Moon Bay project page (NOI June 3, 2026; council June 16, 2026) and document center biological report for the Coastal Development Permit application",
+      "src": [
+        "SRC-001166",
+        "SRC-003465"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County Department of Housing farmworker presentation lists Metzgar Street Apartments (51 units, 13 farmworker); not in the AHF 14.0 application list",
+      "src": [
+        "SRC-003466",
+        "SRC-003307"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A for Half Moon Bay has no row for 940 Main St or this MidPen project; no CTCAC/CDLAC award or CEQAnet filing found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the Metzgar/Main proposal returned 403; no Half Moon Bay Review article found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No SF YIMBY or other trade coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "midpen-housing.org search for Metzgar returns no project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in the city page or the biological report",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "County AHF 14.0 hearing list does not include this project; no state awards found",
+      "src": [
+        "SRC-003307"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }
