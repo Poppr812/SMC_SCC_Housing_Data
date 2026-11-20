@@ -163,8 +163,16 @@
             "SRC-001956"
           ],
           "note": "21 single-family residences and 14 accessory dwelling units per city text"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-003836"
+          ],
+          "note": "17 single-family homes plus 4 affordable townhouses, with 14 attached ADUs of about 425 sq ft; state report 2025 certificates of occupancy list some homes as single-family attached"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -174,8 +182,17 @@
             "SRC-001956"
           ],
           "note": "City file PD21-012, status Approved, issued 2022-08-30"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-001107",
+            "SRC-003835"
+          ],
+          "note": "State report 2025: certificates of occupancy for 17 homes on LaNelle Pl (APN 984-45-006 / 414-21-083), 2025-02-14 to 2025-07-17; NewHomeSource listing describes one final home remaining"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -185,6 +202,34 @@
             "SRC-001956"
           ],
           "note": "City folder 040081, Planned Development Permit/Amendment; city permit status: Approved."
+        },
+        {
+          "value": "PDC21-011",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Planned Development Zoning R-1-8 to R-1-8(PD), approved 2022-08-30"
+        },
+        {
+          "value": "PT21-034",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Vesting Tentative Map, 23 lots (21 residential, 2 private street), approved 2022-08-30"
+        },
+        {
+          "value": "GP20-003",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "General Plan amendment Public/Quasi-Public to Residential Neighborhood, applicant Cambrian School District, approved 2021-02-23"
+        },
+        {
+          "value": "ER21-135",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review (Negative Declaration/Mitigated Negative Declaration)"
         }
       ]
     },
@@ -209,6 +254,86 @@
           "note": "City text: \"including four affordable units\". City file PD21-012 (Planned Development Permit/Amendment): \"Planned Development Permit to allow the removal of three ordinance-size trees and the construction of 21 single-family residences and 14 accessory dwelling units, including four affordable units, on an approximately 2.85-gross acre site. Includes extended\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.85,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per PD21-012 and PT21-034"
+        },
+        {
+          "value": 2.74,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per PD zoning file PDC21-011"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-003836"
+          ],
+          "note": "Four townhouses to be sold to buyers earning 70% of area median income"
+        },
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2022, entitlement ADU row: 4 deed-restricted low-income units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Four affordable for-sale townhouses of about 1,600 sq ft at 70% AMI; city required three units at up to 120% AMI",
+          "src": [
+            "SRC-003836"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2022 ADU entitlement row lists deed-restriction type DB with 2 development standard incentives"
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2024,
+          "src": [
+            "SRC-003837"
+          ],
+          "note": "Resale listing for 1965 Cambrianna Dr (Rose Lane home with ADU)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -220,6 +345,37 @@
     },
     {
       "text": "Parcel: the city record's APN 984-45-006 is not a county parcel; this is the county parcel at 1975 Cambrianna Dr.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "Marketed by Robson Homes as Rose Lane, 21 single-family homes. Homes carry LaNelle Pl addresses (3208 to 3298 LaNelle Pl) in the state report.",
+      "src": [
+        "SRC-003835",
+        "SRC-001107"
+      ]
+    },
+    {
+      "text": "State report 2025 lists certificates of occupancy for 17 homes on LaNelle Pl between 2025-02-14 and 2025-07-17, plus ADU certificates of occupancy on the same street.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    {
+      "text": "State report 2022 entitlement rows for PD21-012: 21 SFD units approved 2022-04-21 and 14 ADUs approved 2022-08-09.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight: site of about 3 acres on a 10-acre Cambrian School District campus closed nearly 50 years earlier; the district sells the land for about $10 million per its finance head; Mayor Liccardo cast the only no vote at Council approval.",
+      "src": [
+        "SRC-003836"
+      ]
+    },
+    {
+      "text": "Later city permit adjustments: AD23-538 regulatory agreement (approved 2024-02-14), AD23-580 floor plan and elevation changes (approved 2023-12-21), AD24-657 and AD25-086 lot-level design changes.",
       "src": [
         "SRC-001956"
       ]
@@ -235,11 +391,48 @@
         "SRC-001956"
       ],
       "website": "https://robsonhomes.com/"
+    },
+    {
+      "role": "Seller",
+      "company": "Cambrian School District",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003836",
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-03-12",
+      "type": "Application filed",
+      "label": "General Plan amendment filed by Cambrian School District (GP20-003)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-02-23",
+      "type": "Approved",
+      "label": "General Plan amendment approved (GP20-003)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-04-15",
+      "type": "Application filed",
+      "label": "Planned Development zoning filed (PDC21-011)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-08-04",
       "type": "Application filed",
@@ -257,6 +450,24 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-04-25",
+      "type": "Permit issued",
+      "label": "First ADU building permits reported on LaNelle Pl",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-14",
+      "type": "Completion",
+      "label": "First certificate of occupancy reported (3283 LaNelle Pl)",
+      "src": [
+        "SRC-001107"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -269,6 +480,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Robson Homes Cambrianna; found San Jose Spotlight article, NewHomeSource Rose Lane page, MLS resale listing.",
+      "src": [
+        "SRC-003836",
+        "SRC-003835",
+        "SRC-003837"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SCC parcel API: 414-21-087 situs 1975 Cambrianna Dr; no owner field; individual Rose Lane lots on LaNelle Pl not confirmed in the parcel layer.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose permits GIS layer by address/APN: PDC21-011, PT21-034, GP20-003, ER21-135, AD23-538, AD23-580, AD24-657, AD25-086. sanjoseca.gov document pages blocked.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 via data.ca.gov API: 2022 entitlement rows; 2024 ADU permits; 2025 certificates of occupancy on LaNelle Pl. CEQAnet hits (SCH 279002 attachments) not opened.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2022-09-02. Mercury News items on PressReader refused access (403).",
+      "src": [
+        "SRC-003836"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "NewHomeSource Rose Lane listing; MLSListings resale of 1965 Cambrianna Dr.",
+      "src": [
+        "SRC-003835",
+        "SRC-003837"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "robsonhomes.com home page lists Marabel and Parklane only; /neighborhood/rose-lane/ returns 404.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in any opened source.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender found; land sale terms in notes.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn posts found.",
+      "src": []
+    }
+  }
 }

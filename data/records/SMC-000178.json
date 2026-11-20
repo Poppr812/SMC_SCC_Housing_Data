@@ -101,11 +101,91 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003840",
+            "SRC-003841",
+            "SRC-003842"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.35,
+          "src": [
+            "SRC-003841",
+            "SRC-003842"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 36,
+          "src": [
+            "SRC-003840",
+            "SRC-003842"
+          ],
+          "note": "2020 notice: 32 lift spaces and 4 non-lift spaces"
+        },
+        {
+          "value": 37,
+          "src": [
+            "SRC-003841"
+          ],
+          "note": "2017 MND: 35 automated garage spaces plus 2 grade-level spaces"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 3,
+            "2br": 12,
+            "3br": 6
+          },
+          "src": [
+            "SRC-003842"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 29010,
+          "src": [
+            "SRC-003842"
+          ],
+          "note": "About 29,010 sq ft of housing"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001133"
+      ]
+    },
+    {
+      "text": "Replaces a two-story 14-unit apartment building. 2017 MND: 55-foot height, 3,086 sq ft common open space, about 22 months of construction. SF YIMBY (2023): 52 feet; plans first filed in early 2014; describes the units as apartments.",
+      "src": [
+        "SRC-003841",
+        "SRC-003842"
+      ]
+    },
+    {
+      "text": "State report 2018 row (prior APN 029-111-260): 7 above-moderate units, entitlement date 2018-05-29, note \"Denied\". State report 2020 row: 21 units approved 2020-05-11.",
       "src": [
         "SRC-001133"
       ]
@@ -120,11 +200,49 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Roman Knop",
+      "contact": "Roman Knop",
+      "linkedin": null,
+      "other_role": "Applicant (2020 CEQA notice); property owner per SF YIMBY",
+      "src": [
+        "SRC-003840",
+        "SRC-003842"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "RSS Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003842"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "Consulting Structural Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003842"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-02-06",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed (SCH 2017022015)",
+      "src": [
+        "SRC-003841"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-05-11",
       "type": "Approved",
@@ -132,6 +250,15 @@
       "src": [
         "SRC-001133"
       ]
+    },
+    {
+      "date": "2020-05-26",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (SCH 2020050524)",
+      "src": [
+        "SRC-003840"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -139,6 +266,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 556 El Camino Real Burlingame; found CEQAnet records and SF YIMBY article.",
+      "src": [
+        "SRC-003841",
+        "SRC-003840",
+        "SRC-003842"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner already on record (Burlingame Investors LP).",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Burlingame project page (business_detail_T54_R28.php), Major Projects page and April 2024 residential overview PDF now return 404.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2017022015 (MND) and 2020050524 (NOE); APR Table A2 via data.ca.gov API (2018 and 2020 rows, no permit rows).",
+      "src": [
+        "SRC-003841",
+        "SRC-003840",
+        "SRC-001133"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search incl. Daily Journal; no coverage of this project found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-01-13.",
+      "src": [
+        "SRC-003842"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Owner/applicant is an individual (Roman Knop); no developer website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "RSS Architecture named in SF YIMBY; no project page on an architect site found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn posts found.",
+      "src": []
+    }
+  }
 }

@@ -61,7 +61,8 @@
         {
           "value": "Condominiums",
           "src": [
-            "SRC-001447"
+            "SRC-001447",
+            "SRC-003830"
           ]
         }
       ],
@@ -122,6 +123,12 @@
           "src": [
             "SRC-001135"
           ]
+        },
+        {
+          "value": "Market-rate project with 15 percent of units (3) restricted for sale to moderate-income buyers",
+          "src": [
+            "SRC-003830"
+          ]
         }
       ]
     },
@@ -178,6 +185,31 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003830",
+            "SRC-001135"
+          ],
+          "note": "Resolution 23-040 grants six development standard waivers under Government Code 65915; state report 2023 lists deed-restriction type DB"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001135"
+          ],
+          "note": "State report 2023, entitlement row: affordability term 45 years"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -187,9 +219,46 @@
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "Initial Study (August 2023) lists the applicant as TTLC Morgan Hill - Edes, LLC, 12647 Alcosta Boulevard, Suite 470, San Ramon. The True Life Companies' website gives the same office address.",
+      "src": [
+        "SRC-003831",
+        "SRC-003833"
+      ]
+    },
+    {
+      "text": "Initial Study: seven three-story buildings of about 2,390 sq ft each, three townhomes per building; three street parking spaces on Edes Court and four bicycle spaces; buildings raised on about two feet of fill above the FEMA flood zone.",
+      "src": [
+        "SRC-003831"
+      ]
+    },
+    {
+      "text": "City project page status: Processing Building Permits. Design Permit approved 2023-09-07 (Approval Certificate 23-017); Planning Commission Resolution 23-11 (2023-09-12).",
+      "src": [
+        "SRC-001447"
+      ]
+    },
+    {
+      "text": "State report 2023 project name: Edes - Alcini (TTLC MH LLC); 5 other density bonus incentives (development standards modification).",
+      "src": [
+        "SRC-001135"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "TTLC Morgan Hill - Edes, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003830",
+        "SRC-003831",
+        "SRC-003832"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -202,12 +271,30 @@
       ]
     },
     {
+      "date": "2023-09-06",
+      "type": "Approved",
+      "label": "City Council approved six density bonus waivers (Resolution 23-040), 5-0",
+      "src": [
+        "SRC-003830"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-09-07",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001135"
       ]
+    },
+    {
+      "date": "2023-09-12",
+      "type": "Other",
+      "label": "Notice of Exemption signed (CEQA Class 32 infill)",
+      "src": [
+        "SRC-003832"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -220,6 +307,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project name and TTLC; found city documents (Resolution 23-040, Initial Study, Notice of Exemption).",
+      "src": [
+        "SRC-003830",
+        "SRC-003831"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 76718046: situs Monterey Rd, Morgan Hill, no house number; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page; Council Resolution 23-040 (2023-09-06); Initial Study (Aug 2023); Notice of Exemption. Approval Certificate 23-017 and PC Resolution 23-11 PDFs are scanned images with no extractable text.",
+      "src": [
+        "SRC-001447",
+        "SRC-003830",
+        "SRC-003831",
+        "SRC-003832"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 via data.ca.gov API (2023 row: DB, 45-year term, 3 moderate). CEQAnet text search did not return the project.",
+      "src": [
+        "SRC-001135"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Edes Court / Edes-Alcini Morgan Hill townhomes; no news coverage found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; trade results were about other Morgan Hill projects (Trumark Jasper).",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "thetruelifecompanies.com home page: office address matches the applicant address; no Morgan Hill project listed.",
+      "src": [
+        "SRC-003833"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in the text-readable city documents; architectural plan set (135 MB, scanned) not readable.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city documents or web search.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for project and TTLC Morgan Hill; no LinkedIn posts found.",
+      "src": []
+    }
+  }
 }

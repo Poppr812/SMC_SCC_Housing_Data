@@ -64,8 +64,16 @@
             "SRC-001099"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City files H25-026 and T25-020 describe a 20- or 21-unit townhome development"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -157,6 +165,30 @@
           "note": "State report 2025, application stage: 3 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.61,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per city files H25-026 and T25-020"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H25-026: townhome development under State Density Bonus Law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -183,12 +215,64 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit layer names Amir Moeini (Aria Build & Construction Inc.) as applicant and Aria Build & Construction Inc. as owner on PRE25-280, ER25-151, H25-026 and T25-020.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "Earlier proposal on the same parcel: PRE19-011 (filed 2019-01-25, address 531 Page St, applicant Jun Zhang), focused preliminary review for a 44-unit multifamily building with subterranean parking; status Complete.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "MLS listing ML81991765 (status Closed, price $1,785,000) marketed two adjacent parcels, 529 Page St and 541 Page St, as one development site; it described 529/533 Page as two single-family homes and 541 Page as four one-bedroom units.",
+      "src": [
+        "SRC-003834"
+      ]
+    },
+    {
+      "text": "County parcel 277-19-034 lists situs 529 Page St with 3 situs addresses; adjacent parcel 277-19-035 is 541 Page St.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Aria Build & Construction Inc.",
+      "contact": "Amir Moeini",
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-06-20",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application filed (PRE25-280), 21 townhomes",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-18",
+      "type": "Application filed",
+      "label": "Environmental review filed (ER25-151)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-08-11",
       "type": "Application filed",
@@ -208,6 +292,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 529 Page St / H25-026; found MLS site listing. City documents on sanjoseca.gov not opened (site refuses automated access).",
+      "src": [
+        "SRC-003834"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API: 277-19-034 situs 529 Page St (3 addresses); 277-19-035 is 541 Page St. No owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose permits GIS layer queried by address/APN: H25-026, T25-020, PRE25-280, ER25-151 (applicant Aria Build & Construction), PRE19-011. sanjoseca.gov document pages blocked.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR data via data.ca.gov API: only the 2025 Table A application row already on record; no CEQAnet document found by search.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for 529 Page Street San Jose townhomes; no news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no trade press coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Aria Build & Construction Inc. tied to this project.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in any public source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn posts found.",
+      "src": []
+    }
+  }
 }
