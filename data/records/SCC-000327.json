@@ -91,6 +91,68 @@
           37.4051381
         ]
       ]
+    },
+    {
+      "apn": "148-09-010",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1177189,
+          37.405151
+        ],
+        [
+          -122.1180979,
+          37.4048711
+        ],
+        [
+          -122.1181092,
+          37.4048645
+        ],
+        [
+          -122.1181213,
+          37.4048598
+        ],
+        [
+          -122.118134,
+          37.4048571
+        ],
+        [
+          -122.1181471,
+          37.4048565
+        ],
+        [
+          -122.11816,
+          37.4048579
+        ],
+        [
+          -122.1181726,
+          37.4048614
+        ],
+        [
+          -122.1181844,
+          37.4048668
+        ],
+        [
+          -122.1181952,
+          37.4048741
+        ],
+        [
+          -122.118359,
+          37.4050152
+        ],
+        [
+          -122.1179903,
+          37.4053848
+        ],
+        [
+          -122.1177189,
+          37.405151
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -133,8 +195,16 @@
             "SRC-001127"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-003729"
+          ],
+          "note": "Developer page says Cesano is currently under construction and now selling"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -215,6 +285,55 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.35,
+          "src": [
+            "SRC-003730",
+            "SRC-003731"
+          ],
+          "note": "0.40-acre commercial site plus 0.95-acre motel site"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 20,
+            "4br+": 9
+          },
+          "src": [
+            "SRC-003731"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 58,
+          "src": [
+            "SRC-003732"
+          ],
+          "note": "56 resident spaces and 2 guest spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001307"
+          ],
+          "note": "City page lists the project as subject to State Density Bonus Law; approved under the city's Streamlined Housing Review"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -230,9 +349,76 @@
       "src": [
         "SRC-001307"
       ]
+    },
+    {
+      "text": "CEQAnet NOE: Site 1 (0.40 acres, existing commercial building) gets 8 townhomes in two buildings; Site 2 (0.95 acres, existing motel) gets 21 townhomes in three buildings; 4 BMR units; APNs 148-09-010 and 148-09-011.",
+      "src": [
+        "SRC-003730"
+      ]
+    },
+    {
+      "text": "Mountain View Voice: Planning Director approved the project under the city's streamlined process in February 2025; the 4 BMR units are moderate income (80% to 120% of AMI); all-electric buildings with solar; replaces a commercial building and the Country Inn Motel. A 2022 Toll Brothers proposal for 55 condominiums plus six condominiums and six ADUs did not proceed.",
+      "src": [
+        "SRC-003732"
+      ]
+    },
+    {
+      "text": "SF YIMBY: SummerHill took over from Toll Brothers, which had considered a 67-unit complex as recently as 2022; facades of brick veneer, fiber cement siding and plaster.",
+      "src": [
+        "SRC-003731"
+      ]
+    },
+    {
+      "text": "SummerHill Homes markets the project as Cesano: 29 three-story townhomes, 3 to 4 bedrooms, about 1,493 to 2,097 sq ft, estimated HOA dues about $588 per month; sales office at 4335 W. El Camino Real.",
+      "src": [
+        "SRC-003729"
+      ]
+    },
+    {
+      "text": "State Annual Progress Report 2025 notes private financing.",
+      "src": [
+        "SRC-001127"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "SummerHill Homes",
+      "contact": "Austin Lin",
+      "linkedin": null,
+      "email": "alin@shhomes.com",
+      "phone": "(510) 330-3064",
+      "website": "https://www.summerhillhomes.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.summerhillhomes.com/palo-alto/cesano",
+      "src": [
+        "SRC-003730",
+        "SRC-003732",
+        "SRC-003729"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.sdgarchitectsinc.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003731"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "R3 Studios",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003731"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -245,12 +431,30 @@
       ]
     },
     {
+      "date": "2025-02-26",
+      "type": "Other",
+      "label": "Planning and Transportation Commission approves vesting tentative map",
+      "src": [
+        "SRC-003732"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-03-06",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "date": "2025-03-07",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003730"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-04-06",
@@ -272,6 +476,98 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on addresses, SummerHill and Cesano; The Real Deal 2026-03-18 and Trulia/Zillow/traded.co returned 403",
+      "src": [
+        "SRC-003731"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.sccgov.org parcels 14809011 (4345 ECR) and 14809010 (4335 ECR); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "City of Palo Alto project page re-read (files 24PLN-00152, 24PLN-00153, 25PLN-00160); Palo Alto does not use Legistar",
+      "src": [
+        "SRC-001307"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025030261 NOE; data.ca.gov APR Table A2 2025 row (private financing); no CTCAC/HCD awards",
+      "src": [
+        "SRC-003730",
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Voice / Palo Alto Online 2025-03-17",
+      "src": [
+        "SRC-003732"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-06 townhomes article",
+      "src": [
+        "SRC-003731"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "summerhillhomes.com Cesano page",
+      "src": [
+        "SRC-003729"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "sdgarchitectsinc.com home page: no page for this project",
+      "src": [
+        "SRC-003719"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR notes private financing; no named lender found",
+      "src": [
+        "SRC-001127"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }

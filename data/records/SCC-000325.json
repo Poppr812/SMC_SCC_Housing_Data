@@ -230,6 +230,90 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.53,
+          "src": [
+            "SRC-003720"
+          ],
+          "note": "Proposed lot size 22,943 sq ft after right-of-way dedication; existing 0.54 acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-003721",
+            "SRC-003722"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 52,
+          "src": [
+            "SRC-003720",
+            "SRC-003723"
+          ],
+          "note": "Mechanized puzzle-lift garage; 50 required"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 5,
+            "4br+": 24
+          },
+          "src": [
+            "SRC-003724"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 41610,
+          "src": [
+            "SRC-003724"
+          ],
+          "note": "Housing area; about 76,800 sq ft total including 27,700 sq ft of parking"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003721",
+            "SRC-003723",
+            "SRC-001119"
+          ],
+          "note": "Special Development Permit with State Density Bonus Law waivers"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001119"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -239,9 +323,93 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "City of Sunnyvale Legistar: Planning Commission approved the Special Development Permit (File 2021-7110) on 2023-10-23 to demolish a two-story office building and build a 29-unit, seven-story apartment building. Applicant Pacific General Construction; owner Neoelixir, Inc.",
+      "src": [
+        "SRC-003721"
+      ]
+    },
+    {
+      "text": "Project data table: gross floor area 76,797 sq ft (FAR 335%), building height 83 ft, 55 units per acre, unit sizes 1,360 to 1,548 sq ft, 8 Class I and 3 Class II bike spaces. Development standards in effect on 2021-10-10 applied because of an SB 330 preliminary application. SF YIMBY gives the height as 82 ft.",
+      "src": [
+        "SRC-003720",
+        "SRC-003724"
+      ]
+    },
+    {
+      "text": "Applicant letter: rental project designed for roommates with a bathroom per bedroom; 4 BMR units (3 low income, 1 very low income), one of each of four unit types; density bonus waivers for podium setbacks and open space; mechanized CityLift Puzzle parking; estimated 80-week single-phase construction.",
+      "src": [
+        "SRC-003723"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight: 111 beds on a half-acre site replacing a two-story office; Planning Commission vote was unanimous with two commissioners absent.",
+      "src": [
+        "SRC-003725"
+      ]
+    },
+    {
+      "text": "State Annual Progress Report 2023: 12 density bonus units; 12 non-restricted units counted as moderate income based on the city's rent analysis.",
+      "src": [
+        "SRC-001119"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Pacific General Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003721",
+        "SRC-003722",
+        "SRC-003725"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Neoelixir, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003721",
+        "SRC-003725"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio T-SQ",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.studiot-sq.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003723",
+        "SRC-003725",
+        "SRC-003724"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "AMS Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003724"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003724"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -254,12 +422,30 @@
       ]
     },
     {
+      "date": "2023-09-25",
+      "type": "Other",
+      "label": "Planning Commission study session",
+      "src": [
+        "SRC-003726"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-10-23",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "date": "2023-10-25",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003722"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -267,6 +453,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer; LoopNet listing returned 403, The Broker List listing returned 404",
+      "src": [
+        "SRC-003725"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "data.sccgov.org parcel 21627018: situs and outline only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar: PC 2023-09-25 study session (23-0908) and PC 2023-10-23 approval (23-0960) with project data table and applicant letter",
+      "src": [
+        "SRC-003721",
+        "SRC-003726",
+        "SRC-003720",
+        "SRC-003723"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2023100703 NOE; data.ca.gov APR Table A2 2023 row (55-year term, density bonus); no CTCAC/HCD awards",
+      "src": [
+        "SRC-003722",
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2023-10-24; The Real Deal 2023-10-04 returned 403",
+      "src": [
+        "SRC-003725"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-10-02",
+      "src": [
+        "SRC-003724"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Pacific General Construction (Milpitas); no company project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "studiot-sq.com home page: no page for this project",
+      "src": [
+        "SRC-003727"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public posts; none specific to this project opened",
+      "src": []
+    }
+  }
 }

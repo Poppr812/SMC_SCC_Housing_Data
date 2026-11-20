@@ -39,6 +39,64 @@
           37.3185204
         ]
       ]
+    },
+    {
+      "apn": "277-24-002",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9189974,
+          37.3185179
+        ],
+        [
+          -121.9189789,
+          37.3172386
+        ],
+        [
+          -121.91922,
+          37.3172678
+        ],
+        [
+          -121.9194616,
+          37.3172915
+        ],
+        [
+          -121.9199385,
+          37.3173329
+        ],
+        [
+          -121.9199736,
+          37.3173328
+        ],
+        [
+          -121.9199806,
+          37.3180881
+        ],
+        [
+          -121.9199818,
+          37.3182232
+        ],
+        [
+          -121.9199831,
+          37.3183605
+        ],
+        [
+          -121.9199843,
+          37.3184978
+        ],
+        [
+          -121.9199844,
+          37.3185088
+        ],
+        [
+          -121.9189974,
+          37.3185179
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -146,12 +204,59 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City of San Jose planning permit layer: SP18-031 (Special Use Permit) at 1605 Parkmoor Av is mapped to APN 277-24-002; applicant and owner VISTA SACK ASSCS LP; zoning R-M; received 2018-06-18, issued 2019-06-26, final date 2019-07-06.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "County parcel dataset: APN 277-24-001 has situs 1605 Parkmoor Av and APN 277-24-002 has situs 1609 Parkmoor Av.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "Walker & Dunlop property record for 1609 Parkmoor Ave: 104 units, built 1977; 2011-06-13 sale for $15,349,750, buyer Vista Sack Associates LP, seller Ulla M Fasahat.",
+      "src": [
+        "SRC-003728"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Vista Sack Associates LP",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Vista Sack Associates LP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2011-06-13",
+      "type": "Sale",
+      "label": "Existing 104-unit complex sold to Vista Sack Associates LP for $15,349,750",
+      "src": [
+        "SRC-003728"
+      ],
+      "estimated": false
+    },
     {
       "date": "2018-06-18",
       "type": "Application filed",
@@ -190,6 +295,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and owner; Walker & Dunlop property record; GlobeSt 2011 article returned 403",
+      "src": [
+        "SRC-003728"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.sccgov.org parcels 27724001 (1605 Parkmoor) and 27724002 (1609 Parkmoor); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "geo.sanjoseca.gov planning permit layer query for SP18-031 (APN, owner, dates); sanjoseca.gov web pages not used",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "data.ca.gov APR Table A row for SP18-031 already on record; no CTCAC/HCD awards or CEQAnet filing found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for local news on the 29-unit addition; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press; none found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Sack Properties project page for the addition; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funding found in any source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }

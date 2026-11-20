@@ -155,6 +155,14 @@
             "SRC-001511"
           ],
           "note": "8 single-family, 6 townhomes, 15 condominiums"
+        },
+        {
+          "value": 18,
+          "src": [
+            "SRC-003734",
+            "SRC-003733"
+          ],
+          "note": "2022 council-approved plan DP-2018-07: 5 apartments, 5 single-family homes, 8 townhomes"
         }
       ],
       "best": 1
@@ -226,6 +234,63 @@
             "SRC-001137"
           ],
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 50
+            },
+            {
+              "count": 3,
+              "ami": 110
+            }
+          ],
+          "src": [
+            "SRC-001511"
+          ],
+          "note": "Current 29-unit application: 2 very low income, 3 moderate income"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.556,
+          "src": [
+            "SRC-001511"
+          ]
+        },
+        {
+          "value": 1.57,
+          "src": [
+            "SRC-003733"
+          ],
+          "note": "APNs 342-16-087 and 342-16-088 as listed in 2022"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 4536,
+          "src": [
+            "SRC-003733"
+          ],
+          "note": "2022 approved plan; the council item describes 4,500 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001511"
+          ],
+          "note": "SB 330 preliminary application; density bonus waivers and incentives requested"
         }
       ]
     }
@@ -236,6 +301,36 @@
       "src": [
         "SRC-001100",
         "SRC-001137"
+      ]
+    },
+    {
+      "text": "City of Cupertino Legistar: City Council adopted, as amended, on 2022-01-13 the 18-unit mixed-use plan (5 apartments, 5 single-family homes, 8 townhomes, 4,500 sq ft commercial; files EA-2018-06, Z-2018-02, DP-2018-07, TM-2018-04, U-2018-04, ASA-2018-09, TR-2018-39); applicant Dan Shaw (SCR Enterprises); APNs 342-16-087 and -088.",
+      "src": [
+        "SRC-003734"
+      ]
+    },
+    {
+      "text": "CEQAnet NOD (received 2022-07-20): 2022 plan had a maximum height of 30 feet, two stories, with one level of below-grade parking under the mixed-use building; IS/MND approved by council 2022-01-13.",
+      "src": [
+        "SRC-003733"
+      ]
+    },
+    {
+      "text": "County parcel dataset now lists only APN 342-16-087 at 10625 S Foothill Bl; 342-16-088 returns no record.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "City project page: the site was the Foothill Market, since demolished; the current application is made under the Housing Accountability Act and SB 330.",
+      "src": [
+        "SRC-001511"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025): pre-application for 29 units filed under SB 330; owner SCR Enterprises LLC of Los Gatos.",
+      "src": [
+        "SRC-003735"
       ]
     }
   ],
@@ -257,6 +352,27 @@
       "linkedin": null,
       "src": [
         "SRC-001511"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "SCR Enterprises LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003733",
+        "SRC-003735"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SCR Enterprises LLC",
+      "contact": "Dan Shaw",
+      "linkedin": null,
+      "other_role": "Applicant (2018 plan)",
+      "src": [
+        "SRC-003734",
+        "SRC-003733"
       ]
     }
   ],
@@ -280,6 +396,34 @@
       ]
     },
     {
+      "date": "2022-02-01",
+      "type": "Other",
+      "label": "City Council enacts rezoning ordinance for Canyon Crossing",
+      "src": [
+        "SRC-003736"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-07-07",
+      "type": "Other",
+      "label": "City Council modifies construction noticing mitigation measure",
+      "src": [
+        "SRC-003737",
+        "SRC-003733"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-26",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-001511"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-10-15",
       "type": "Application filed",
       "label": "Formal application filed",
@@ -299,6 +443,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project name, address, owner and applicant",
+      "src": [
+        "SRC-003735"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.sccgov.org parcel 34216087; 34216088 no longer listed; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page; Legistar council items 21-10287 (2022-01-13), 22-10331 (2022-02-01), 22-11123 (2022-07-07)",
+      "src": [
+        "SRC-001511",
+        "SRC-003734",
+        "SRC-003736",
+        "SRC-003737"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2022070383 NOD; APR rows already on record; no CTCAC/HCD awards",
+      "src": [
+        "SRC-003733",
+        "SRC-001137"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news; none found beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-07 pre-application article",
+      "src": [
+        "SRC-003735"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Canyon Crossings, LLC and SCR Enterprises; no company site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "lpmd.com domain is parked; no LPMD Architects project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funding found in any source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public posts; none found",
+      "src": []
+    }
+  }
 }
