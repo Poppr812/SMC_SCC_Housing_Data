@@ -78,7 +78,18 @@
       "text": "510 Mathilda, Sunnyvale, CA",
       "role": "main",
       "src": [
-        "SRC-001118"
+        "SRC-001118",
+        "SRC-003457",
+        "SRC-003455"
+      ],
+      "written_as": [
+        {
+          "text": "510 S Mathilda Ave, Sunnyvale, CA",
+          "src": [
+            "SRC-003457",
+            "SRC-003455"
+          ]
+        }
       ]
     }
   ],
@@ -168,6 +179,18 @@
           "note": "State report 2019, application stage: 8 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.72,
+          "src": [
+            "SRC-003455",
+            "SRC-003456"
+          ],
+          "note": "510-528 S. Mathilda Avenue, two parcels"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -176,12 +199,73 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "text": "Block 20 of the Downtown Specific Plan covers 510 and 528 S. Mathilda (APNs 209-29-060 and -061) and 562 and 568 S. Mathilda (APNs 209-29-057 and -067). The amendments raised the block's residential allocation from 51 to 70 units and do not pre-approve the conceptual projects; each needs a Special Development Permit.",
+      "src": [
+        "SRC-003455",
+        "SRC-003456"
+      ]
+    },
+    {
+      "text": "Conceptual plan for 510-528 S. Mathilda: a four- to five-story mixed-use building on 0.72 acres with 10,230 square feet of ground-floor office/commercial and 30 to 46 residential units, up to 60 feet tall. The site holds a two-story 8,883 square foot office building (1956, Mezzetta building) and an eight-unit apartment building (1950).",
+      "src": [
+        "SRC-003455",
+        "SRC-003456"
+      ]
+    },
+    {
+      "text": "City records name Shawn Karimi as applicant and owner of 510 and 528 S. Mathilda (2018 and 2023 Legistar). The 2018 item names SiliconSage Builders, LLC as applicant and owner of 562 and 566 S. Mathilda; the 2022 staff report says 510 and 528 were then owned by Silicon Sage. The same staff report's allocation discussion pairs the 10,230 sq ft, 30-46 unit request with Shawn Taheri.",
+      "src": [
+        "SRC-003458",
+        "SRC-003457",
+        "SRC-003455"
+      ]
+    },
+    {
+      "text": "The state Annual Progress Report lists a 2019 application (20197303) for 54 units at 510 Mathilda under the project name SilconSage. Sunnyvale Legistar shows no Special Development Permit hearing for 510-528 S. Mathilda through 2026.",
+      "src": [
+        "SRC-001118",
+        "SRC-003457"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Shawn Karimi (Karimi Shahriar Trustee)",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner",
+      "src": [
+        "SRC-003457",
+        "SRC-003458",
+        "SRC-003455"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SiliconSage Builders, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Former owner",
+      "src": [
+        "SRC-003455"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-05-08",
+      "type": "Other",
+      "label": "City Council approved initiation of a Downtown Specific Plan amendment for Block 20",
+      "src": [
+        "SRC-003458"
+      ],
+      "estimated": false
+    },
     {
       "date": "2019-04-18",
       "type": "Application filed",
@@ -189,6 +273,15 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "date": "2023-02-14",
+      "type": "Other",
+      "label": "City Council approved Block 20 Specific Plan and General Plan amendments",
+      "src": [
+        "SRC-003457"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -196,6 +289,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 510 S Mathilda and SiliconSage led to CEQAnet Block 20 filing and Sunnyvale Legistar",
+      "src": [
+        "SRC-003456"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 209-29-061: situs 510 S Mathilda Av, Sunnyvale; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar matters 7024 (CC 2018-05-08) and 13446 (CC 2023-02-14); PC report 22-0912. sunnyvale.ca.gov project pages returned 403",
+      "src": [
+        "SRC-003458",
+        "SRC-003457",
+        "SRC-003455"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2018052020 NOD for Block 20 amendments; APR Table A 2019 row (54 units); no A2 row",
+      "src": [
+        "SRC-003456",
+        "SRC-001118"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news for 510 S Mathilda and Block 20; no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched trade press; no coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found SiliconSage Builders' headquarters at 560 S Mathilda but no project page for 510 S Mathilda",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city or state records found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in public records found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000324",
+      "relation": "adjacent",
+      "note": "Both on the city's Block 20 site (510 and 528 S Mathilda Ave)"
     }
   ]
 }

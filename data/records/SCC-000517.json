@@ -134,6 +134,14 @@
           ]
         }
       ]
+    },
+    {
+      "text": "19610 Stevens Creek Blvd, Cupertino, CA",
+      "role": "other",
+      "src": [
+        "SRC-003452",
+        "SRC-003454"
+      ]
     }
   ],
   "images": [],
@@ -207,6 +215,13 @@
           "src": [
             "SRC-001464"
           ]
+        },
+        {
+          "value": 2.68,
+          "src": [
+            "SRC-003452"
+          ],
+          "note": "Used in the staff report's density calculation; the same report's subject line gives 2.72 acres"
         }
       ]
     },
@@ -221,6 +236,83 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "2br": 10,
+            "3br": 10,
+            "4br+": 35
+          },
+          "src": [
+            "SRC-003452"
+          ],
+          "note": "From the staff report parking table; three-bedroom units include an ADU. Units range from 2,011 to 2,780 sq ft including garage"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 119,
+          "src": [
+            "SRC-003452"
+          ],
+          "note": "Two enclosed garage spaces per unit (110) plus 9 guest spaces"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003452",
+            "SRC-003453"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 120
+            },
+            {
+              "count": 5,
+              "ami": 100
+            }
+          ],
+          "src": [
+            "SRC-003452"
+          ],
+          "note": "For-sale BMR units: 6 median-income (100-120% AMI), 5 moderate-income (80-100% AMI)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 44,
+          "src": [
+            "SRC-003452"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-003452"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -228,6 +320,24 @@
       "text": "55 townhome condominiums plus 10 ADUs.",
       "src": [
         "SRC-001464"
+      ]
+    },
+    {
+      "text": "The site holds one 35,170 square foot multi-tenant commercial building with the United Furniture store and vacant spaces. It was named a Priority Housing Site in the 2024 Housing Element and rezoned in July 2024.",
+      "src": [
+        "SRC-003452"
+      ]
+    },
+    {
+      "text": "The staff report lists APNs 369-06-002, -003 and -004 and the location as 10075 E. Estates and 19610 Stevens Creek Blvd. Density bonus waivers were requested for setbacks, common open space and lot coverage, and a concession for the mixed-use requirement.",
+      "src": [
+        "SRC-003452"
+      ]
+    },
+    {
+      "text": "San José Spotlight reports the 2024 Housing Element assumed 163 homes on this site, 93 of them moderate-income, and that the approval started a 180-day no-net-loss period on December 16.",
+      "src": [
+        "SRC-003453"
       ]
     }
   ],
@@ -251,6 +361,17 @@
         "SRC-001464"
       ],
       "website": "https://www.sdgarchitectsinc.com/"
+    },
+    {
+      "role": "Other",
+      "company": "Toll Brothers",
+      "contact": "Nick Kosla",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003454",
+        "SRC-003452"
+      ]
     }
   ],
   "financing": [],
@@ -269,6 +390,15 @@
       "date": "2024-07-31",
       "type": "Application filed",
       "label": "Formal application filed",
+      "src": [
+        "SRC-001464"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-12",
+      "type": "Other",
+      "label": "Planning Commission recommended approval 5-0",
       "src": [
         "SRC-001464"
       ],
@@ -294,6 +424,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project name, address and Toll Brothers led to the Cupertino Legistar items and San José Spotlight",
+      "src": [
+        "SRC-003454"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 369-06-002 (10065 E Estates Dr) and 369-06-003 (10075 E Estates Dr); staff report adds 369-06-004; no owner field",
+      "src": [
+        "SRC-001098",
+        "SRC-003452"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page; Legistar matters 15490 (PC 2025-11-12) and 15491 (CC 2025-12-16); PC staff report",
+      "src": [
+        "SRC-001464",
+        "SRC-003454",
+        "SRC-003452"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Staff report cites a CEQA categorical exemption; no APR row or CEQAnet filing found for the project",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San José Spotlight 2026-01-13 on Cupertino housing goals",
+      "src": [
+        "SRC-003453"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched SF YIMBY, The Real Deal and Bisnow; no coverage of this project found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Toll Brothers site search showed no community page for this Cupertino project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "City page names SDG Architects, Inc.; no project page found",
+      "src": [
+        "SRC-001464"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city records or search results",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
