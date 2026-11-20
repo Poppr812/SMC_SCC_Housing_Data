@@ -145,6 +145,19 @@
           "src": [
             "SRC-001603"
           ]
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 18,
+            "2br": 10,
+            "3br": 9,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003594"
+          ],
+          "note": "Architect's portfolio page; the June 2025 Linc release gives 9 two-bedroom and 10 three-bedroom"
         }
       ]
     },
@@ -180,6 +193,17 @@
           "src": [
             "SRC-001648"
           ]
+        },
+        {
+          "value": [
+            "Family",
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003593",
+            "SRC-003595"
+          ],
+          "note": "18 one-bedroom units for formerly unhoused people with project-based vouchers; remaining units by lottery"
         }
       ]
     },
@@ -191,6 +215,27 @@
             "SRC-001648"
           ],
           "note": "Total sources in CTCAC staff report."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003593"
+          ],
+          "note": "Two five-story buildings"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.27,
+          "src": [
+            "SRC-003594"
+          ]
         }
       ]
     }
@@ -227,6 +272,18 @@
       "src": [
         "SRC-001939"
       ]
+    },
+    {
+      "text": "Linc Housing release (2025-06-17): the 18 one-bedroom units are for formerly unhoused individuals, each with a Section 8 project-based voucher from the San Mateo County Housing Authority, with referrals from the Health Plan of San Mateo. County funding named: Measure K, ARPA, HOME and CDBG. Bank of America provides the construction loan and is the tax credit investor; California Community Reinvestment Corporation provides the permanent loan.",
+      "src": [
+        "SRC-003593"
+      ]
+    },
+    {
+      "text": "Housing Trust Silicon Valley (2025-04-23): $1,784,500 construction-to-permanent loan through the Apple Affordable Housing Fund.",
+      "src": [
+        "SRC-003595"
+      ]
     }
   ],
   "parties": [
@@ -259,6 +316,37 @@
       ],
       "email": "cngo@linchousing.org",
       "phone": "(562)564-1134"
+    },
+    {
+      "role": "Architect",
+      "company": "Torti Gallas + Partners",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://tortigallas.com/",
+      "website_basis": "opened",
+      "project_page": "https://tortigallas.com/portfolio/belmont-affordable-housing",
+      "src": [
+        "SRC-003594",
+        "SRC-003593"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bank of America",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003593"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Bank of America",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003593"
+      ]
     }
   ],
   "financing": [
@@ -467,6 +555,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Added applicant contact and partners from the CTCAC staff report"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on The Corners at Belmont / Hill Street Apartments",
+      "src": [
+        "SRC-003593"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels: 045-163-070 owner LINC-HILL STREET LP, already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "belmont.gov development projects page returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "County AHF pipeline already on record",
+      "src": [
+        "SRC-001649"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "CTCAC CA-24-103 staff report and APR already on record",
+      "src": [
+        "SRC-001648",
+        "SRC-001142"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "SM Daily Journal groundbreaking article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "PR Newswire release 2025-06-17",
+      "src": [
+        "SRC-003593"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "linchousing.org returned 403",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Torti Gallas + Partners portfolio page",
+      "src": [
+        "SRC-003594"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley loan page; Linc release names Bank of America",
+      "src": [
+        "SRC-003595",
+        "SRC-003593"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts",
+      "src": []
+    }
+  }
 }

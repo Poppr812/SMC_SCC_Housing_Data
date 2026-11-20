@@ -236,6 +236,13 @@
             "SRC-001190"
           ],
           "note": "Residential development on 7.4 acres; the rest stays open space"
+        },
+        {
+          "value": 75.2,
+          "src": [
+            "SRC-003581"
+          ],
+          "note": "The Almanac: 75.2-acre site; only the 10.8-acre northeastern portion would be developed"
         }
       ]
     },
@@ -279,9 +286,89 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 6,
+            "1br": 3,
+            "2br": 3,
+            "3br": 19,
+            "4br+": 8
+          },
+          "src": [
+            "SRC-003580"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 80
+            },
+            {
+              "count": 6,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003580"
+          ],
+          "note": "Six below-market apartments at 80% AMI and six at up to 120% AMI"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 89,
+          "src": [
+            "SRC-003580",
+            "SRC-003581"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003580"
+          ],
+          "note": "SF YIMBY: the project uses the State Density Bonus law"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "The Almanac (Dec. 2024): about 84% of the property stays open space; conditions of approval include a $100,000 Stanford contribution toward traffic analysis or improvements near the site, an overflow parking plan, and a trail connection along Alpine Road.",
+      "src": [
+        "SRC-003581"
+      ]
+    },
+    {
+      "text": "SF YIMBY: the 12 rental units are in three fourplexes; exterior is fiber cement siding with cedar accents.",
+      "src": [
+        "SRC-003580"
+      ]
+    },
+    {
+      "text": "Stanford's construction updates page cites Construction General Permit WDID 2 41C411208 under the project's stormwater pollution prevention plan.",
+      "src": [
+        "SRC-003582"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -293,6 +380,33 @@
       ],
       "website": "https://www.stanford.edu/",
       "project_page": "https://portolaterrace.stanford.edu/"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "LELAND STANFORD JR UNIVERSITY & STANFORD LINEAR ACCELERATOR CENTER & C/O STANFORD REAL ESTATE OFFICE",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Seigel & Strain Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003580"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Lutsko Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003580"
+      ]
     }
   ],
   "financing": [],
@@ -334,6 +448,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Portola Terrace / Stanford Wedge / 3530 Alpine Rd",
+      "src": [
+        "SRC-003580",
+        "SRC-003581"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC Active Parcels: APN 077-281-020 owner of record Leland Stanford Jr University",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "portolavalley.net Stanford project page returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Project is in the Town of Portola Valley",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "CEQAnet SCH 2020010203 NOD already on record",
+      "src": [
+        "SRC-001190"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "The Almanac, 2024-12-11",
+      "src": [
+        "SRC-003581"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY, 2025-01-12",
+      "src": [
+        "SRC-003580"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "portolaterrace.stanford.edu construction updates; news.stanford.edu returned 403",
+      "src": [
+        "SRC-003582"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect named by SF YIMBY (Seigel & Strain); no project page found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in sources read",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts",
+      "src": []
+    }
+  }
 }

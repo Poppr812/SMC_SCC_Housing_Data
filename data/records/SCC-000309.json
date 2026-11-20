@@ -1,6 +1,6 @@
 {
   "id": "SCC-000309",
-  "name": "922, 924 & 950 San Leandro",
+  "name": "922-950 San Leandro Ave Rowhomes",
   "parcels": [
     {
       "apn": "153-18-026",
@@ -55,6 +55,36 @@
           37.406981
         ]
       ]
+    },
+    {
+      "apn": "153-18-031",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.0704493,
+          37.4072559
+        ],
+        [
+          -122.0704476,
+          37.4069812
+        ],
+        [
+          -122.0716493,
+          37.4069959
+        ],
+        [
+          -122.071644,
+          37.4072705
+        ],
+        [
+          -122.0704493,
+          37.4072559
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -70,6 +100,13 @@
       "role": "other",
       "src": [
         "SRC-001101"
+      ]
+    },
+    {
+      "text": "922, 944 and 950 San Leandro Ave, Mountain View, CA",
+      "role": "other",
+      "src": [
+        "SRC-003589"
       ]
     }
   ],
@@ -94,8 +131,18 @@
             "SRC-001101"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003586",
+            "SRC-003587",
+            "SRC-003588"
+          ],
+          "note": "City Council adopted the project resolutions on 2026-03-24; zoning ordinance second reading 2026-04-14"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -112,7 +159,9 @@
         {
           "value": 38,
           "src": [
-            "SRC-001101"
+            "SRC-001101",
+            "SRC-003589",
+            "SRC-003590"
           ],
           "note": "Units in the application as reported"
         }
@@ -146,8 +195,30 @@
             "SRC-001101"
           ],
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 80
+            },
+            {
+              "count": 5,
+              "ami": 120
+            },
+            {
+              "count": 2,
+              "ami": 150
+            }
+          ],
+          "src": [
+            "SRC-003589",
+            "SRC-003591"
+          ],
+          "note": "Council report: 10 BMR for-sale units (3 low, 5 moderate, 2 above-moderate); AMI caps per Mountain View Voice"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -159,6 +230,88 @@
           "note": "State report 2025, application stage: 8 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 38,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003589"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-003589"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003589"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 90,
+          "src": [
+            "SRC-003589"
+          ],
+          "note": "76 resident garage spaces plus 14 guest spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.69,
+          "src": [
+            "SRC-003589",
+            "SRC-003590"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003589"
+          ],
+          "note": "General Plan and Zoning Map amendments (Gatekeeper), PUD and Development Review permits, vesting tentative map; State Density Bonus Law used for one concession and four waivers, no added units"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "10 of 38 for-sale rowhomes (25%) below market rate: 3 low-income, 5 moderate-income, 2 above-moderate-income",
+          "src": [
+            "SRC-003589"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -167,12 +320,114 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "text": "Council report (2026-03-24): 38 for-sale three-bedroom rowhouses of 1,351 to 1,727 sq ft in four three-story buildings, replacing a multi-tenant industrial building (922 San Leandro) and two single-family homes (944 and 950 San Leandro), on APNs 153-18-026 and 153-18-031. All units have two-car garages, 19 tandem. Rezoning from MM (General Industrial) to R3-1.5; General Plan from General Industrial to Medium Density Residential. Formal application deemed complete 2024-10-10.",
+      "src": [
+        "SRC-003589"
+      ]
+    },
+    {
+      "text": "Mountain View Voice: about $865,000 park land in-lieu fee; 31 trees removed, including five heritage trees, and 94 planted; all-electric with rooftop solar.",
+      "src": [
+        "SRC-003587"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "City Ventures",
+      "contact": "Kian Malek",
+      "linkedin": null,
+      "email": "kmalek@cityventures.com",
+      "phone": "(650) 248-8388",
+      "website": "https://www.cityventures.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003590",
+        "SRC-003589"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "City Ventures",
+      "contact": "Kian Malek",
+      "linkedin": null,
+      "other_role": "Applicant / owner (per council report)",
+      "src": [
+        "SRC-003589"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003592"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "CSW ST2",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003592"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "C2 Collaborative",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003592"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Quantum Geotechnical",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Geotechnical engineer",
+      "src": [
+        "SRC-003592"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-003590"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-12-15",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application and formal planning application submitted",
+      "src": [
+        "SRC-003589"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-01-19",
+      "type": "Other",
+      "label": "SB 330 preliminary application deemed complete",
+      "src": [
+        "SRC-003589"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-10-10",
       "type": "Application filed",
@@ -180,6 +435,44 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2025-09-16",
+      "type": "Other",
+      "label": "Draft IS/MND released for review (SCH 2025090718), through 2025-10-17",
+      "src": [
+        "SRC-003590"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-02-18",
+      "type": "Other",
+      "label": "Environmental Planning Commission recommends approval, 5-0",
+      "src": [
+        "SRC-003591",
+        "SRC-003589"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-24",
+      "type": "Approved",
+      "label": "City Council approves (resolutions adopted, zoning ordinance introduced)",
+      "src": [
+        "SRC-003586",
+        "SRC-003587"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-14",
+      "type": "Other",
+      "label": "Zoning Map Amendment ordinance second reading on Council consent calendar",
+      "src": [
+        "SRC-003588"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -192,6 +485,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 922-950 San Leandro Ave and PL-2023-240",
+      "src": [
+        "SRC-003590",
+        "SRC-003587"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcels API: 153-18-026 (922 San Leandro), 153-18-031 (944 San Leandro Ave); no owner field in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Legistar matters 205778, 205779, 205954; Council report 2026-03-24 and second reading 2026-04-14; project plans",
+      "src": [
+        "SRC-003589",
+        "SRC-003586",
+        "SRC-003588",
+        "SRC-003592"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Mountain View project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025090718 MND",
+      "src": [
+        "SRC-003590"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Voice 2026-02-26 and 2026-03-25",
+      "src": [
+        "SRC-003591",
+        "SRC-003587"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "cityventures.com home page does not list the project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Hunt Hale Jones Architects named on plan cover sheet",
+      "src": [
+        "SRC-003592"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender named in sources read",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts",
+      "src": []
+    }
+  }
 }
