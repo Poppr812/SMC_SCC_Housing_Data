@@ -156,6 +156,12 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "State report 2025, Table A2: deed restriction type inclusionary for the 2 moderate-income units; notes field reads \"Private financing.\"",
+      "src": [
+        "SRC-001127"
+      ]
     }
   ],
   "parties": [],
@@ -189,6 +195,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool returned a usage-limit error; DuckDuckGo HTML refused the automated request.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=12034006: situs 70 Encina Av, Palo Alto; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "paloalto.gov Current Planning Projects, Staff Level Decisions, ARB and Director's Hearing pages: no 70 Encina entry. Palo Alto is not a Legistar Web API client.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Palo Alto.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2024 and Table A2 2025 rows for 24PLN-00095.",
+      "src": [
+        "SRC-001127",
+        "SRC-001126"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Palo Alto Online site search for \"70 Encina\": 0 results.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (usage limit).",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer or applicant named in sources opened.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR notes private financing; no lender named.",
+      "src": [
+        "SRC-001127"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool returned a usage-limit error when this row was run; no LinkedIn pages opened.",
+      "src": []
+    }
+  }
 }

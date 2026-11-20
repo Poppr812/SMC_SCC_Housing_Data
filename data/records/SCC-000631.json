@@ -102,6 +102,30 @@
           "note": "The 11 new units from the conversion only; the existing building's units are not counted. City file PDA15-055-02 (Planned Development Permit/Amendment): \"Planned Development Permit Amendment to allow the conversion of approximately 14,500 square feet of ground-floor retail space into 11 residential units and minor exterior modifications to an existing six-story mixed-use building on an approximately 1.69-g\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2025, Table A: project type Discretionary, application PDA15-055-02 pending."
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2025, Table A: 11 above-moderate-income units, none deed-restricted."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -109,6 +133,20 @@
       "text": "City of San Jose permit PDA15-055-02 (Planned Development Permit/Amendment, folder year 2025), status Approved, issue date 2026-03-04: \"Planned Development Permit Amendment to allow the conversion of approximately 14,500 square feet of ground-floor retail space into 11 residential units and minor exterior modifications to an existing six-story mixed-use building on an approximately 1.69-g\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer: PRE25-036 (Enhanced Preliminary Review, filed 2025-01-23) describes converting about 14,000 sq ft of ground-floor retail into 11 units, applicant Sean McEachern (Shea Properties). ER25-101 (CEQA addendum, in-house) and PDA15-055-02 list Sean McEachern (ICS Corporate Yard Multifamily, LLC). A 2023 Development Agreement amendment (DA22-001) names ICS Corporate Yard Multifamily, LLC for the Japantown Corporation Yard Redevelopment Project.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "The existing building is Sixth & Jackson, 620 N. 6th Street: six stories, 518 apartments and 19,000 sq ft of ground-floor retail, built 2023 (Shea Properties). IREI (2023-11-16) reports it was completed by Ivanhoé Cambridge and Shea Properties. State report Table A2 shows 219 units permitted at 620 N 6th St in 2019 and 219 units with certificates of occupancy in 2023.",
+      "src": [
+        "SRC-004054",
+        "SRC-004055",
+        "SRC-001107"
       ]
     }
   ],
@@ -122,11 +160,43 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Shea Properties",
+      "contact": "Sean McEachern",
+      "linkedin": null,
+      "website": "https://sheaproperties.com/",
+      "website_basis": "search",
+      "project_page": "https://sheaproperties.com/portfolio/sixth-jackson-apt/",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-001956",
+        "SRC-004054"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-01-23",
+      "type": "Other",
+      "label": "Enhanced preliminary review filed (PRE25-036)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-12",
+      "type": "Other",
+      "label": "CEQA addendum file opened (ER25-101)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-27",
       "type": "Application filed",
@@ -144,6 +214,15 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-03-04",
+      "type": "Other",
+      "label": "CEQA addendum issued (ER25-101)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -151,6 +230,92 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 620 N 6th St / Shea Japantown; Shea portfolio page opened.",
+      "src": [
+        "SRC-004054"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=24939046: situs 620 N 6th St, San Jose; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose permit GIS layer queried by APN: PRE25-036, ER25-015, ER25-101, PDA15-055-02, DA22-001. sanjoseca.gov pages not used.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in San Jose.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2025 row for PDA15-055-02 (11 above-moderate units, discretionary, pending); Table A2 rows for the existing 219-unit permit.",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: Mercury News 2017 coverage concerns the original Japantown building; nothing on the retail conversion.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "IREI 2023-11-16 opened (existing building, JV partners). Multi-Housing News article returned 403.",
+      "src": [
+        "SRC-004055"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "sheaproperties.com Sixth & Jackson page opened; no mention of the conversion.",
+      "src": [
+        "SRC-004054"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named for the conversion in sources opened.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool returned a usage-limit error when this row was run; no LinkedIn pages opened.",
+      "src": []
+    }
+  }
 }

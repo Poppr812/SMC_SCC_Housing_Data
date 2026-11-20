@@ -162,6 +162,41 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.8,
+          "src": [
+            "SRC-001575",
+            "SRC-004049"
+          ],
+          "note": "City page: lot size 34,848 sq ft (about 0.8 acre). Inconsistency letter: approximately 0.8-acre parcel."
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001575"
+          ],
+          "note": "City page lists 2 affordable units of 11."
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "City page: 2 affordable units, income levels not stated. Preliminary application (2024-03-14, 10 units): 2 low-income units, the ADUs to be deed restricted as low-income rentals. City letter of 2025-06-28: the applicant's May 29, 2025 letter proposed 1 low-income unit; the city stated at least 2 affordable units are required if the ADUs count toward the base.",
+          "src": [
+            "SRC-001575",
+            "SRC-004050",
+            "SRC-004049"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -170,18 +205,125 @@
       "src": [
         "SRC-001575"
       ]
+    },
+    {
+      "text": "City project page lists the formal application as received 09.14.24; the city's June 28, 2025 letter says September 16, 2024. The owner signed the formal application on 9/16/2024.",
+      "src": [
+        "SRC-001575",
+        "SRC-004049",
+        "SRC-004051"
+      ]
+    },
+    {
+      "text": "Preliminary application: the site holds one occupied single-family residence (880 sq ft) to be demolished; zoning R-M-4,000; the project would seek a tentative map; part of the site is in the FEMA 100-year flood zone and the site is directly adjacent to Saratoga Creek. That application proposed 10 units (8 townhomes, 2 attached ADUs) and 16 covered parking spaces.",
+      "src": [
+        "SRC-004050"
+      ]
+    },
+    {
+      "text": "City letter of 2025-06-28: the applicant's May 29, 2025 letter indicated partial opt-in to AB 1893; the city cited the R-M district limits of 30 feet and two stories, which each of the three proposed structures exceeds. City page: townhomes about 2,117 to 3,893 sq ft, ADUs about 233 to 719 sq ft, maximum height 39 feet; hearing dates TBD.",
+      "src": [
+        "SRC-004049",
+        "SRC-001575"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "20440ARBELECHE LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (city application form)",
+      "src": [
+        "SRC-004051"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "GKW Architects",
+      "contact": "Gordon K Wong",
+      "linkedin": null,
+      "email": "gordonkwong@gkwarchitects.com",
+      "phone": "(408) 315-2125",
+      "website": "https://www.gkwarchitects.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004051",
+        "SRC-004052",
+        "SRC-004053"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "GKW Architects",
+      "contact": "Gordon K Wong",
+      "linkedin": null,
+      "other_role": "Applicant (city application form)",
+      "src": [
+        "SRC-004051"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-03-14",
+      "type": "Other",
+      "label": "SB 330 preliminary application received",
+      "src": [
+        "SRC-001575",
+        "SRC-004050"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-09-14",
       "type": "Application filed",
       "label": "Formal application received",
       "src": [
         "SRC-001575"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-15",
+      "type": "Other",
+      "label": "Application deemed incomplete",
+      "src": [
+        "SRC-004052",
+        "SRC-004049"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-30",
+      "type": "Other",
+      "label": "Application deemed incomplete a second time",
+      "src": [
+        "SRC-001575",
+        "SRC-004052"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-04-30",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-001575",
+        "SRC-004052"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-28",
+      "type": "Other",
+      "label": "Notice of inconsistent application sent",
+      "src": [
+        "SRC-001575",
+        "SRC-004049"
       ],
       "estimated": false
     }
@@ -191,6 +333,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and builder's remedy; city project page and its linked application documents opened.",
+      "src": [
+        "SRC-001575"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=39727029: situs 20440 Arbeleche Ln, Saratoga; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Saratoga project page and DocumentCenter files 5850 (formal application), 5852 (preliminary application), 5954 (complete letter), 5999 (inconsistency letter).",
+      "src": [
+        "SRC-001575",
+        "SRC-004051",
+        "SRC-004050",
+        "SRC-004052",
+        "SRC-004049"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Saratoga.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A and A2 (data.ca.gov datastore) searched for Arbeleche in Saratoga: no rows. CEQAnet search runs through a JavaScript Google search; no results returned.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Arbeleche builder's remedy: SJ Spotlight Saratoga builder's remedy stories concern other sites.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-16 Saratoga builder's remedy article returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in city documents; owner on the application is 20440ARBELECHE LLC.",
+      "src": [
+        "SRC-004051"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "gkwarchitects.com opened; no Arbeleche project listed.",
+      "src": [
+        "SRC-004053"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city documents opened.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool returned a usage-limit error when this row was run; no LinkedIn pages opened.",
+      "src": []
+    }
+  }
 }

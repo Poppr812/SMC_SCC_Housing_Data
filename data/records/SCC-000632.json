@@ -167,6 +167,92 @@
           37.2521484
         ]
       ]
+    },
+    {
+      "apn": "690-25-026",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8276244,
+          37.2518333
+        ],
+        [
+          -121.8276243,
+          37.2518318
+        ],
+        [
+          -121.8276186,
+          37.2518318
+        ],
+        [
+          -121.8276187,
+          37.2518333
+        ],
+        [
+          -121.8275588,
+          37.2518338
+        ],
+        [
+          -121.8275588,
+          37.2518323
+        ],
+        [
+          -121.8275531,
+          37.2518324
+        ],
+        [
+          -121.8275531,
+          37.2518337
+        ],
+        [
+          -121.8274897,
+          37.2518342
+        ],
+        [
+          -121.8274883,
+          37.2517496
+        ],
+        [
+          -121.8275619,
+          37.251749
+        ],
+        [
+          -121.8275615,
+          37.2517188
+        ],
+        [
+          -121.8274878,
+          37.2517193
+        ],
+        [
+          -121.827486,
+          37.251608
+        ],
+        [
+          -121.8276877,
+          37.2516065
+        ],
+        [
+          -121.8276891,
+          37.2518315
+        ],
+        [
+          -121.8276845,
+          37.2518316
+        ],
+        [
+          -121.8276845,
+          37.2518328
+        ],
+        [
+          -121.8276244,
+          37.2518333
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -221,6 +307,13 @@
             "SRC-001956"
           ],
           "note": "City folder 144632, Ministerial Permit; city permit status: Under Review."
+        },
+        {
+          "value": "PRE26-076",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Focused Preliminary Review, filed 2026-03-02, status Complete."
         }
       ]
     },
@@ -247,6 +340,16 @@
           "note": "City file MP26-008 (Ministerial Permit): \"Ministerial Permit under Assembly Bill 507 (AB 507) to allow the conversion of approximately 12,000 square feet of existing ground floor commercial space within a mixed-use building into 11 multifamily residential units.\""
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "PRE26-076 (preliminary review, 2026-03-02) described converting about 11,000 sq ft of ground-floor commercial space into nine affordable units; MP26-008 (2026-10-28) describes about 12,000 sq ft converted into 11 multifamily units without stating affordability.",
+          "src": [
+            "SRC-001956"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -254,6 +357,20 @@
       "text": "City of San Jose permit MP26-008 (Ministerial Permit, folder year 2026), status Under Review: \"Ministerial Permit under Assembly Bill 507 (AB 507) to allow the conversion of approximately 12,000 square feet of existing ground floor commercial space within a mixed-use building into 11 multifamily residential units.\"",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer lists PRE26-076, MP26-008 and sign permit AD26-585 at 399 Blossom Hill Rd under APN 690-25-026; the county parcel dataset gives that parcel the situs 399 Blossom Hill, San Jose. Applicants: Kathy Robinson (PRE26-076) and Miguel Sanchez (MP26-008), both of Charities Housing Development Corporation. PRE26-076 places the building on part of an approximately 2.0-gross-acre site.",
+      "src": [
+        "SRC-001956",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "The existing building is Blossom Valley Senior Apartments, 147 units for residents 62+ (Charities Housing). State report Table A2 (2021) shows building permits issued 2021-06-21 for 147 units at 399 Blossom Hill Rd (145 very low income deed-restricted, 2 above moderate), with funding listed as tax-exempt permanent loan, City of San Jose, SCC Measure A and deferred developer fee.",
+      "src": [
+        "SRC-004056",
+        "SRC-001107"
       ]
     }
   ],
@@ -274,6 +391,15 @@
   "groups": {},
   "events": [
     {
+      "date": "2026-03-02",
+      "type": "Other",
+      "label": "Focused preliminary review filed (PRE26-076)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-10-28",
       "type": "Application filed",
       "label": "Ministerial Permit filed (MP26-008)",
@@ -293,6 +419,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Web searches on 399 Blossom Hill / Charities conversion: results cover the 2024 senior building only.",
+      "src": [
+        "SRC-004056"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API: 690-25-023 (record APN) and 690-25-026 (situs 399 Blossom Hill, the APN on the city files).",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose permit GIS layer by address: PRE26-076, MP26-008, AD26-585.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Measure A funding appears only for the existing building (APR notes); nothing for the conversion.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 2021 row for the existing 147-unit building; no APR row yet for MP26-008.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no coverage of the AB 507 conversion.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade coverage of the conversion.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Charities Housing Blossom Valley Senior Apartments page opened; no mention of the conversion.",
+      "src": [
+        "SRC-004056"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No funder named for the conversion.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool returned a usage-limit error when this row was run; no LinkedIn pages opened.",
+      "src": []
+    }
+  }
 }

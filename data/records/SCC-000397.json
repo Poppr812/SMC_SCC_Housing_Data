@@ -120,6 +120,17 @@
           "note": "State report (through 2018): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.337,
+          "src": [
+            "SRC-004057"
+          ],
+          "note": "MLS listing: lot 14,720 sq ft (0.337 acre)."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -128,9 +139,25 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "text": "MLS listing ML82022787 (active, 422 days on market when opened) offers the parcel as bare land for $3,000,000, zoning MXD, development status design review required. The listing describes a seven-story concept of 48 one-, two- and three-bedroom condominium units with 1,062 sq ft of commercial space and an underground garage, about 75,000 sq ft total floor area.",
+      "src": [
+        "SRC-004057"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Broker",
+      "company": "Alliance Bay Realty",
+      "contact": "Frank Liu",
+      "linkedin": null,
+      "src": [
+        "SRC-004057"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -148,6 +175,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 27 S Main St Milpitas and P-SD18-0006; MLS listing opened. Search tool then hit a usage limit.",
+      "src": [
+        "SRC-004057"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=02224024: situs 27 S Main St, Milpitas; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Milpitas site search returns results only by JavaScript, none retrieved; Milpitas is not a Legistar Web API client.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Milpitas.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A 2018 row P-SD18-0006 (10 owner units, above moderate); no Table A2 rows found for the address.",
+      "src": [
+        "SRC-001124"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: Mercury News 2017 South Main condo item concerns 808 S. Main St, not this site.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "MLS listing ML82022787 opened.",
+      "src": [
+        "SRC-004057"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer or applicant named in sources opened.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in sources opened.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool returned a usage-limit error when this row was run; no LinkedIn pages opened.",
+      "src": []
+    }
+  }
 }
