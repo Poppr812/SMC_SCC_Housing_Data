@@ -71,6 +71,36 @@
           37.3940765
         ]
       ]
+    },
+    {
+      "apn": "154-35-014",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.0951304,
+          37.3940151
+        ],
+        [
+          -122.0953414,
+          37.3936669
+        ],
+        [
+          -122.0954961,
+          37.3937272
+        ],
+        [
+          -122.0952844,
+          37.3940765
+        ],
+        [
+          -122.0951304,
+          37.3940151
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -174,6 +204,12 @@
           "src": [
             "SRC-001110"
           ]
+        },
+        {
+          "value": "Four BMR units for low- and moderate-income households (two studios, one 1BR, one 2BR); the 2BR is also the SB 330 replacement unit",
+          "src": [
+            "SRC-003797"
+          ]
         }
       ]
     },
@@ -186,6 +222,20 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2020-048",
+          "src": [
+            "SRC-003801"
+          ],
+          "note": "Lot line adjustment"
+        },
+        {
+          "value": "PL-2024-011",
+          "src": [
+            "SRC-003799"
+          ],
+          "note": "Two-year permit extension"
         }
       ]
     },
@@ -208,6 +258,76 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003797",
+            "SRC-003798"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 10,
+            "1br": 11,
+            "2br": 4,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003797"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2400,
+          "src": [
+            "SRC-003797",
+            "SRC-003799"
+          ],
+          "note": "Ground-floor commercial"
+        },
+        {
+          "value": 2329,
+          "src": [
+            "SRC-003798"
+          ],
+          "note": "Ground-floor retail per Initial Study"
+        }
+      ],
+      "best": 0
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 63,
+          "src": [
+            "SRC-003797",
+            "SRC-003798"
+          ],
+          "note": "50 residential/guest, 13 commercial; 36 in mechanical stackers"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.45,
+          "src": [
+            "SRC-003797",
+            "SRC-003800"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -217,12 +337,84 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "Council report: three-story building with 25 apartments over 2,400 sq ft of ground-floor commercial and one level of underground parking; replaces two commercial buildings (about 6,075 sq ft) and a single-family home; includes General Plan and zoning map amendments for 1873 Latham St. Park land in-lieu fees estimated at $1.33 million.",
+      "src": [
+        "SRC-003797"
+      ]
+    },
+    {
+      "text": "Permit extension findings (2024-03-27): construction documents submitted to the Building Division; lot line adjustment merging APNs 154-35-013 and 154-35-014 being finalized with Public Works.",
+      "src": [
+        "SRC-003799"
+      ]
+    },
+    {
+      "text": "Initial Study: 23,154 sq ft building up to 45 feet tall; units range from studios to two-bedroom.",
+      "src": [
+        "SRC-003798"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Guggenheim Realty Group Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003802"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects, Inc.",
+      "contact": "Kurt Anderson",
+      "linkedin": null,
+      "website": "https://www.andarchinc.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003798",
+        "SRC-003799"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Anderson Architects, Inc.",
+      "contact": "Kurt Anderson",
+      "linkedin": null,
+      "email": "kanderson@andarchinc.com",
+      "phone": "(408) 371-1269",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003798",
+        "SRC-003799"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dave Voorhies",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (lot line adjustment PL-2020-048)",
+      "src": [
+        "SRC-003801"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-10-20",
+      "type": "Other",
+      "label": "IS/MND received by State Clearinghouse (SCH 2021100335)",
+      "src": [
+        "SRC-003800"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-11-06",
       "type": "Application filed",
@@ -232,12 +424,31 @@
       ]
     },
     {
+      "date": "2022-01-05",
+      "type": "Other",
+      "label": "Environmental Planning Commission recommended approval (unanimous)",
+      "src": [
+        "SRC-003803",
+        "SRC-003797"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2022-02-08",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2024-03-27",
+      "type": "Other",
+      "label": "Zoning Administrator conditionally approved two-year permit extension PL-2024-011 (to 2026-03-08)",
+      "src": [
+        "SRC-003799"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -250,6 +461,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and project name; CEQAnet and Mountain View Voice",
+      "src": [
+        "SRC-003800",
+        "SRC-003802"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 154-35-013 (601 Escuela) and 154-35-014 (1873 Latham); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Legistar: EPC 2022-01-05, Council 2022-02-08 report, PL-2020-048, PL-2024-011 findings",
+      "src": [
+        "SRC-003803",
+        "SRC-003797",
+        "SRC-003801",
+        "SRC-003799"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2021100335 and IS/MND",
+      "src": [
+        "SRC-003800",
+        "SRC-003798"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Voice 2022-02-11",
+      "src": [
+        "SRC-003802"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press for 601-649 Escuela",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Guggenheim Realty Group project page; none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "andarchinc.com shows Website Under Construction, no projects",
+      "src": [
+        "SRC-003804"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of public LinkedIn pages for Guggenheim Realty",
+      "src": []
+    }
+  }
 }

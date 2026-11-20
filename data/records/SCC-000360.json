@@ -137,11 +137,19 @@
         {
           "value": 26,
           "src": [
-            "SRC-001431"
+            "SRC-001431",
+            "SRC-003786"
           ]
+        },
+        {
+          "value": 23,
+          "src": [
+            "SRC-003785"
+          ],
+          "note": "NOP: 17 single-family detached homes and 6 duet units"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -164,6 +172,16 @@
             "SRC-001431"
           ],
           "note": "County list is titled SB 330 / Builder's Remedy Applications and does not separate the two per project"
+        },
+        {
+          "value": [
+            "Builder's remedy",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003786"
+          ],
+          "note": "SF YIMBY reports builder's remedy plus State Density Bonus and SB 330"
         }
       ]
     },
@@ -183,6 +201,12 @@
           "value": "6 units deed-restricted to low-income households",
           "src": [
             "SRC-001431"
+          ]
+        },
+        {
+          "value": "6 duet units deed-restricted as affordable to low-income households",
+          "src": [
+            "SRC-003785"
           ]
         }
       ]
@@ -212,6 +236,34 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 6,
+            "3br": 10,
+            "4br+": 10
+          },
+          "src": [
+            "SRC-003786"
+          ],
+          "note": "2024 preliminary plans: six two-bedroom duplex units, ten three-bedroom and ten four-bedroom single-family homes"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 62,
+          "src": [
+            "SRC-003786"
+          ],
+          "note": "2024 preliminary plans"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -226,6 +278,19 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "text": "County NOP (2026): demolition of all existing structures; 23 units on about 4.8 acres; private internal loop road; water from two new groundwater wells; community wastewater treatment system with leach field; right-of-way dedication on Sycamore Drive and Sunnyside Avenue. Required approvals: tentative subdivision map, grading permits and EIR certification.",
+      "src": [
+        "SRC-003785"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2024) reports 26 homes on a 5.2-acre site with the project covering 4.75 acres, 62 parking spaces, and one existing home to be demolished. The county NOP (2026) shows 23 units.",
+      "src": [
+        "SRC-003786",
+        "SRC-003785"
+      ]
     }
   ],
   "parties": [
@@ -238,11 +303,63 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "The Latala Group (Latala Homes)",
+      "contact": "Paul Latala, CEO",
+      "linkedin": null,
+      "email": "paul@latalahomes.com",
+      "phone": "(408) 515-9205",
+      "website": "https://latalahomes.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003785",
+        "SRC-003786"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Joan and Richard Della Maggiore",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-003786"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Bassenian Lagoni Architecture + Planning",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003786"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dudek",
+      "contact": "Katherine Waugh",
+      "linkedin": null,
+      "other_role": "EIR consultant",
+      "src": [
+        "SRC-003785"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2000",
+      "type": "Sale",
+      "label": "Site last sold for $1.3 million, per public records cited by SF YIMBY",
+      "src": [
+        "SRC-003786"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-12-11",
       "type": "Application filed",
@@ -259,6 +376,15 @@
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "date": "2026-03-27",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR received by the State Clearinghouse (SCH 2026031254); review 2026-03-30 to 2026-04-29",
+      "src": [
+        "SRC-003785"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -271,6 +397,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Latala and builder's remedy; SF YIMBY article and CEQAnet NOP",
+      "src": [
+        "SRC-003786",
+        "SRC-003785"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 773-31-041: situs 15395 Sycamore Dr; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated; processed by the County of Santa Clara",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "County SB 330/Builder's Remedy list; county is lead agency on the CEQAnet NOP",
+      "src": [
+        "SRC-001431",
+        "SRC-003785"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026031254 (NOP, 2026-03-27); APR data already on record",
+      "src": [
+        "SRC-003785",
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Morgan Hill Times / Mercury News coverage of Latala Sycamore Drive",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-04-28",
+      "src": [
+        "SRC-003786"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "latalahomes.com portfolio lists Franquette Ave, 3rd St Campbell, Winterbrook Rd, Pajaros Ct; no Sycamore project",
+      "src": [
+        "SRC-003787"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Bassenian Lagoni and Sycamore Drive Morgan Hill",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in NOP, SF YIMBY or search results",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of public LinkedIn pages for Latala and Sycamore",
+      "src": []
+    }
+  }
 }

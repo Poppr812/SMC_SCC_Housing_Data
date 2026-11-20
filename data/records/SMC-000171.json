@@ -105,8 +105,16 @@
             "SRC-001133"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 25,
+          "src": [
+            "SRC-003796"
+          ],
+          "note": "25 live/work units; the state report shows 26"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -130,6 +138,27 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 25,
+          "src": [
+            "SRC-003796"
+          ],
+          "note": "In pit stackers"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.24,
+          "src": [
+            "SRC-003796"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -138,6 +167,12 @@
       "src": [
         "SRC-001132",
         "SRC-001133"
+      ]
+    },
+    {
+      "text": "CEQA notice: one new building of about 30,248 gross sq ft with 25 live/work units and 25 parking spaces in pit stackers; ground floor garage, conference center, exercise room, bicycle storage and lobby; 0.24 acres at California Drive and Floribunda Avenue in the Downtown Specific Plan, North California Drive Commercial District.",
+      "src": [
+        "SRC-003796"
       ]
     }
   ],
@@ -149,6 +184,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Renovattio Construction",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003796"
       ]
     }
   ],
@@ -170,6 +215,15 @@
       "src": [
         "SRC-001133"
       ]
+    },
+    {
+      "date": "2020-09-29",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (Class 32 infill) posted, SCH 2020090537",
+      "src": [
+        "SRC-003796"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -177,6 +231,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and applicant; CEQAnet notice",
+      "src": [
+        "SRC-003796"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC active parcel layer, APN 029-131-380: Duffy Family Trust",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "burlingame.org project pages (business_detail_T54_R181, majorprojects_new) return 404 to automated fetch",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2020090537 Notice of Exemption",
+      "src": [
+        "SRC-003796"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "smdailyjournal.com returns 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press for 601 California Drive",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Renovattio Construction site; no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of public LinkedIn pages for Renovattio",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SMC-000154",
+      "relation": "adjacent",
+      "note": "Neighboring California Dr sites in Burlingame"
     }
   ]
 }
