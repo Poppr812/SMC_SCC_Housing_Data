@@ -99,8 +99,17 @@
             "SRC-001116"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003617",
+            "SRC-003618"
+          ],
+          "note": "HIP Housing leasing flyer lists rents and move-in occupancy; Housing Choices lists the property as operating with HIP Housing and Greystar as managers"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -121,8 +130,23 @@
             "SRC-001117"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 39,
+          "src": [
+            "SRC-003619"
+          ],
+          "note": "38 low-income units plus a 2-bedroom manager's unit"
+        },
+        {
+          "value": 38,
+          "src": [
+            "SRC-003618"
+          ],
+          "note": "30 studios and 8 one-bedrooms"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -153,6 +177,26 @@
             "SRC-001116"
           ],
           "note": "State report 2023, completion stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 15,
+              "ami": 30
+            },
+            {
+              "count": 15,
+              "ami": 50
+            },
+            {
+              "count": 8,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003619"
+          ],
+          "note": "CTCAC 55-year targeting"
         }
       ]
     },
@@ -166,6 +210,65 @@
           "note": "State report 2023, completion stage: 38 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 30,
+            "1br": 8,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003619"
+          ],
+          "note": "The 2-bedroom is the manager's unit"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 0,
+          "src": [
+            "SRC-003619"
+          ],
+          "note": "One manager's unit"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003619"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 13137244,
+          "src": [
+            "SRC-003619"
+          ],
+          "note": "At application; land $1 (donated)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "15 studios have a leasing preference for people with intellectual and developmental disabilities.",
+          "src": [
+            "SRC-003618"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -174,6 +277,28 @@
       "src": [
         "SRC-001117",
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "Built as an off-site 100% affordable building (Parcel F) tied to the South Main mixed-use redevelopment in Redwood City, at the corner of Jackson Avenue.",
+      "src": [
+        "SRC-003620",
+        "SRC-003621"
+      ]
+    },
+    {
+      "text": "CTCAC staff report lists the site address as 1304 El Camino Real, Redwood City 94061; HIP Housing and Housing Choices list ZIP 94063. One residential building.",
+      "src": [
+        "SRC-003619",
+        "SRC-003617",
+        "SRC-003618"
+      ]
+    },
+    {
+      "text": "Walking Redwood City (Sept. 2021) described 39 units as 30 studios and 9 one-bedrooms with a one-bedroom manager's unit; CTCAC shows the manager's unit as a 2-bedroom.",
+      "src": [
+        "SRC-003620",
+        "SRC-003619"
       ]
     }
   ],
@@ -186,11 +311,167 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "GS HIP 1304 ECR, LP",
+      "contact": "Jonathan Fearn",
+      "linkedin": null,
+      "email": "jonathan.fearn@greystar.com",
+      "phone": "415-527-2869",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "GS HIP 1304 MM Venture, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "HIP Housing Development Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "National Housing Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Greystar",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Greystar California",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003619",
+        "SRC-003618"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "HIP Housing",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003618",
+        "SRC-003617"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Redstone Equity Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citi Community Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003619"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citi Community Capital",
+      "program": null,
+      "amount": 6473200,
+      "date": "2021-08",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citi Community Capital",
+      "program": null,
+      "amount": 4625000,
+      "date": "2021-08",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Redstone Equity Partners",
+      "program": "$640,847 annual federal credits at $0.92 factor (CA-21-632)",
+      "amount": 5895789,
+      "date": "2021-08",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Municipal Finance Authority",
+      "program": "Bond issuer; amount not stated in staff report",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "General partner",
+      "program": "GP loan",
+      "amount": 2327875,
+      "date": "2021-08",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Redstone Equity Partners",
+      "program": "Solar tax credit equity",
+      "amount": 28579,
+      "date": "2021-08",
+      "src": [
+        "SRC-003619"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2021-08-11",
+      "type": "Other",
+      "label": "CTCAC recommends $640,847 in annual federal 4% tax credits (CA-21-632)",
+      "src": [
+        "SRC-003619"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-02-22",
       "type": "Permit issued",
@@ -221,6 +502,98 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and HIP: CTCAC staff report, Housing Choices listing, HIP flyer",
+      "src": [
+        "SRC-003619",
+        "SRC-003618",
+        "SRC-003617"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner GS HIP 1304 ECR LP already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Redwood City planning for 1304 El Camino Real: no project page found",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County-hosted HIP Housing leasing flyer",
+      "src": [
+        "SRC-003617"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC staff report CA-21-632, Aug. 11, 2021",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Walking Redwood City Sept. 17, 2021",
+      "src": [
+        "SRC-003620"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Urbanize SF Apr. 13, 2025 (Parcel F)",
+      "src": [
+        "SRC-003621"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Housing Choices property page; HIP Housing flyer",
+      "src": [
+        "SRC-003618",
+        "SRC-003617"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC staff report: Citi Community Capital, Redstone Equity Partners, CMFA bonds",
+      "src": [
+        "SRC-003619"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com: nothing on Miramontes",
+      "src": []
+    }
+  }
 }

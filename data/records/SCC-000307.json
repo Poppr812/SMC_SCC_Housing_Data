@@ -75,6 +75,56 @@
           37.2856613
         ]
       ]
+    },
+    {
+      "apn": "404-01-036",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9747797,
+          37.2856613
+        ],
+        [
+          -121.9747709,
+          37.2854903
+        ],
+        [
+          -121.9752345,
+          37.2854751
+        ],
+        [
+          -121.9754292,
+          37.2854687
+        ],
+        [
+          -121.9756215,
+          37.2854624
+        ],
+        [
+          -121.9756282,
+          37.2855927
+        ],
+        [
+          -121.9756481,
+          37.285979
+        ],
+        [
+          -121.9753511,
+          37.2859909
+        ],
+        [
+          -121.9753332,
+          37.2856432
+        ],
+        [
+          -121.9747797,
+          37.2856613
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -147,9 +197,17 @@
         {
           "value": 40,
           "src": [
-            "SRC-001549"
+            "SRC-001549",
+            "SRC-003597"
           ],
           "note": "City's current description"
+        },
+        {
+          "value": 37,
+          "src": [
+            "SRC-003596"
+          ],
+          "note": "September 2025 courtesy notice and plan set"
         }
       ],
       "best": 1
@@ -172,7 +230,8 @@
             "Density bonus"
           ],
           "src": [
-            "SRC-001549"
+            "SRC-001549",
+            "SRC-003596"
           ]
         }
       ]
@@ -207,6 +266,45 @@
           "note": "State report 2025, application stage: 6 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.096,
+          "src": [
+            "SRC-003597"
+          ]
+        },
+        {
+          "value": 1.119,
+          "src": [
+            "SRC-003596"
+          ],
+          "note": "Plan set: current lot area 48,787 sq ft; proposed 1.063 acres (46,304 sq ft) after dedication"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003597",
+            "SRC-003596"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 78,
+          "src": [
+            "SRC-003596"
+          ],
+          "note": "37-unit plan: 58 tandem and 16 side-by-side garage spaces, 4 guest spaces; 2.1 per unit"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -221,6 +319,20 @@
       "src": [
         "SRC-001549"
       ]
+    },
+    {
+      "text": "The 2025 plan set describes 37 three-story townhomes with private two-car garages and 6 below-market-rate units under the state density bonus law; the October 2026 Notice of Exemption describes 40 units in six three-story townhome buildings, with subdivision of the property.",
+      "src": [
+        "SRC-003596",
+        "SRC-003597"
+      ]
+    },
+    {
+      "text": "Project spans two parcels: 404-01-004 (1380 W Campbell Ave) and 404-01-036 (1400 W Campbell Ave).",
+      "src": [
+        "SRC-003597",
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [
@@ -233,11 +345,79 @@
       "src": [
         "SRC-001549"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Madrone Ventures Inc.",
+      "contact": "Jared Gamelin",
+      "linkedin": null,
+      "website": "https://www.madroneventures.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003596",
+        "SRC-003598"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Madrone Ventures Inc.",
+      "contact": "Jared Gamelin",
+      "linkedin": null,
+      "src": [
+        "SRC-003596"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Sullivan Land Development LLC",
+      "contact": "James Sullivan",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003597",
+        "SRC-003596"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio Current",
+      "contact": "Jeffrey Current",
+      "linkedin": null,
+      "src": [
+        "SRC-003596"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Civil Engineering Associates, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003596"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Spiegel Aihara Workshop (SAW)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003596"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-05-16",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application filed (PLN-2025-72)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-08-12",
       "type": "Application filed",
@@ -245,6 +425,24 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "date": "2025-09-17",
+      "type": "Other",
+      "label": "City courtesy notice of the 37-unit application mailed",
+      "src": [
+        "SRC-003596"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Other",
+      "label": "City files CEQA Notice of Exemption (Class 32 infill) for the 40-unit project",
+      "src": [
+        "SRC-003597"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -257,6 +455,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Madrone Ventures led to CEQAnet NOE and the city courtesy notice",
+      "src": [
+        "SRC-003597",
+        "SRC-003596"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API: 404-01-004 = 1380 W Campbell Ave, 404-01-036 = 1400 W Campbell Ave; owner of record not in this dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Campbell ArcGIS planning layers (PLN-2025-117 Decision Rendered, PLN-2025-72 preapp); courtesy notice and plan set (Archive ADID 3361)",
+      "src": [
+        "SRC-001549",
+        "SRC-001551",
+        "SRC-003596"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026101163 Notice of Exemption, Oct. 29, 2026",
+      "src": [
+        "SRC-003597"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for the address and developer: no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade press coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "madroneventures.com: company homepage, no project page",
+      "src": [
+        "SRC-003598"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Studio Current named in plan set; no project page found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com: no posts about the project",
+      "src": []
+    }
+  }
 }

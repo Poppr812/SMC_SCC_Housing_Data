@@ -1,6 +1,6 @@
 {
   "id": "SCC-000544",
-  "name": "320 Virginia Ave",
+  "name": "Meadowbrook (320 Virginia Ave)",
   "parcels": [
     {
       "apn": "404-07-043",
@@ -114,8 +114,16 @@
             "SRC-001551"
           ],
           "note": "City building data shows the grading permit issued"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003611"
+          ],
+          "note": "KB Home page shows model homes open and a move-in-ready home (homesite 011, 107 Platform Way) available now"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -158,6 +166,77 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.44,
+          "src": [
+            "SRC-003612"
+          ],
+          "note": "Gross, including street dedication and flood control easement; 2.08 acres net"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 12,
+            "3br": 0,
+            "4br+": 28
+          },
+          "src": [
+            "SRC-003612"
+          ],
+          "note": "September 2023 plan set; KB Home now lists 2 to 4 bedroom plans"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 1831,
+          "src": [
+            "SRC-003612"
+          ],
+          "note": "September 2023 plan set, gross sq ft; KB Home lists plans of 1,326 to 1,979 sq ft"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003612",
+            "SRC-001552"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 94,
+          "src": [
+            "SRC-003612"
+          ],
+          "note": "80 garage spaces (2 per unit) and 14 surface spaces"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "KB Home lists homes from $1,149,990; a move-in-ready 4-bedroom, 1,874 sq ft home listed at $1,594,205.",
+          "src": [
+            "SRC-003611"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +244,26 @@
       "text": "Permit shown is for grading and site improvements. Described as townhome style condominium units. APN found from the city's coordinates for the case.",
       "src": [
         "SRC-001551"
+      ]
+    },
+    {
+      "text": "Sold as Meadowbrook by KB Home: three-story townhomes, 2 to 4 bedrooms, 1,326 to 1,979 sq ft, two-car garages; sales office at 100 Platform Way.",
+      "src": [
+        "SRC-003611"
+      ]
+    },
+    {
+      "text": "The 2023 courtesy notice lists APN 404-07-033, which is not in the current county parcel layer; the tentative map creates 6 private lots and 9 common lots.",
+      "src": [
+        "SRC-003612",
+        "SRC-001551",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "Building permit records name KB Home South Bay Inc. and VOP Ref Virginia LLC; the master plan permit describes 3-story buildings, Building 1 a 7-unit building with 12,916 sq ft habitable space.",
+      "src": [
+        "SRC-001552"
       ]
     }
   ],
@@ -178,15 +277,110 @@
       "src": [
         "SRC-001551"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "KB Home South Bay Inc.",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.kbhome.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.kbhome.com/new-homes-bay-area-south/meadowbrook",
+      "src": [
+        "SRC-001552",
+        "SRC-003611"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "VOP Ref Virginia, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003612",
+        "SRC-001552"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": "Eric Muzzy",
+      "linkedin": null,
+      "src": [
+        "SRC-003612"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Civil Engineering Associates (CEA)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003612"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "vanderToolen Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003612"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2023-06-27",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application for 40 rowhouse units (PLN-2023-121)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-09-06",
+      "type": "Application filed",
+      "label": "Housing development permit and vesting tentative map application (PLN-2023-157)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-24",
+      "type": "Other",
+      "label": "Appeal submitted (PLN-2024-109)",
+      "src": [
+        "SRC-001549"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-06-17",
       "type": "Permit issued",
       "label": "Grading and site improvement permit for 40 townhouses",
+      "src": [
+        "SRC-001552"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-29",
+      "type": "Permit issued",
+      "label": "Building permit for 40 townhome-style condominiums in 6 buildings (BLD-2025-280)",
+      "src": [
+        "SRC-001552"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-30",
+      "type": "Other",
+      "label": "Sales office permit issued for KB Home (BLD-2025-1439)",
       "src": [
         "SRC-001552"
       ],
@@ -198,6 +392,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Valley Oak Partners led to KB Home's Meadowbrook community",
+      "src": [
+        "SRC-003611"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API: 404-07-043 has no situs address; original APN 404-07-033 from the 2023 notice is no longer in the layer",
+      "src": [
+        "SRC-001098",
+        "SRC-003612"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Campbell ArcGIS planning and building layers (PLN-2023-121, PLN-2023-157, PLN-2024-109, BLD-2025-87, BLD-2025-280, BLD-2025-1439); courtesy notice and plan set (Archive ADID 3012)",
+      "src": [
+        "SRC-001551",
+        "SRC-001549",
+        "SRC-001552",
+        "SRC-003612"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched CEQAnet and state data by address: no filing found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no local news coverage; KB Home press release pages were not readable (403)",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "KB Home Meadowbrook page; valleyoakpartners.com failed with an expired certificate",
+      "src": [
+        "SRC-003611"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Dahlin Group named in plan set; no project page found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in public sources found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com: nothing on the project",
+      "src": []
+    }
+  }
 }

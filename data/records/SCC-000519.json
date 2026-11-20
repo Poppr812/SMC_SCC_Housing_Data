@@ -156,6 +156,13 @@
           "src": [
             "SRC-001466"
           ]
+        },
+        {
+          "value": "19 units for households with a person with an intellectual or developmental disability; 21 units for extremely low, very low and low income households; 30% to 60% AMI, average not above 40% AMI. City sells the site (valued at $7.2 million in the staff report, $7.4 million in the CTCAC application) for $1, with an option to reacquire it after the 55-year regulatory agreement.",
+          "src": [
+            "SRC-003600",
+            "SRC-003599"
+          ]
         }
       ]
     },
@@ -168,9 +175,181 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 3,
+            "1br": 22,
+            "2br": 14,
+            "3br": 1,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003599"
+          ],
+          "note": "CTCAC application CA-26-066; the 3-bedroom is the staff unit"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 19,
+              "ami": 30
+            },
+            {
+              "count": 2,
+              "ami": 40
+            },
+            {
+              "count": 11,
+              "ami": 50
+            },
+            {
+              "count": 7,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003599"
+          ],
+          "note": "CTCAC application rent table; 39 restricted units plus 1 staff unit"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 0,
+          "src": [
+            "SRC-003599"
+          ],
+          "note": "One staff unit"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003600"
+          ],
+          "note": "City regulatory agreement recorded at closing"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003600",
+            "SRC-003599",
+            "SRC-003601"
+          ],
+          "note": "Two two-story buildings"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 22,
+          "src": [
+            "SRC-003600",
+            "SRC-003599"
+          ],
+          "note": "12 required under state density bonus law"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 25524,
+          "src": [
+            "SRC-003599"
+          ],
+          "note": "Residential unit area excluding the staff unit; all structures 32,241 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003600"
+          ],
+          "note": "Architectural and Site Approval with density bonus waivers and two concessions"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 39228679,
+          "src": [
+            "SRC-003600"
+          ],
+          "note": "Total estimated cost in the Feb. 3, 2026 staff report"
+        },
+        {
+          "value": 38900172,
+          "src": [
+            "SRC-003602"
+          ],
+          "note": "CTCAC application CA-26-034"
+        },
+        {
+          "value": 37836808,
+          "src": [
+            "SRC-003599"
+          ],
+          "note": "CTCAC application CA-26-066"
+        }
+      ],
+      "best": 2
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Charities Housing filed two 2026 competitive 9% tax credit applications, CA-26-034 and CA-26-066. Neither appears in CTCAC's first-round (June 22, 2026) or second-round (Oct. 6, 2026) preliminary recommendations; the South and West Bay region had no first-round recommendation and Winchester Blvd Apartments in the second.",
+      "src": [
+        "SRC-003608",
+        "SRC-003602",
+        "SRC-003599",
+        "SRC-003609",
+        "SRC-003610"
+      ]
+    },
+    {
+      "text": "Under the DDA, closing waits on full financing; if tax credits are not won in the first 2026 round the developer may apply again, and either party may end the DDA after two failed attempts. The staff report projected closing around January 2027 and about 24 months of construction.",
+      "src": [
+        "SRC-003600"
+      ]
+    },
+    {
+      "text": "Plaintiffs allege rushed approvals, skipped environmental review and improper use of public land; a Superior Court judge denied a request to halt the project at the end of March 2026. The project removes 89 public parking spaces.",
+      "src": [
+        "SRC-003603"
+      ]
+    },
+    {
+      "text": "Site is an 860 by 38 foot strip of the Mary Avenue right-of-way next to Highway 85; buildings are 23 feet tall.",
+      "src": [
+        "SRC-003600"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -191,9 +370,195 @@
       "src": [
         "SRC-001466"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Mary Avenue, L.P.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Developer entity (DDA counterparty)",
+      "src": [
+        "SRC-003600"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Mary Avenue Charities LLC",
+      "contact": "Mark J. Mikl",
+      "linkedin": null,
+      "other_role": "Managing general partner",
+      "src": [
+        "SRC-003599",
+        "SRC-003603"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Charities Housing Development Corporation of Santa Clara County",
+      "contact": "Andy Lief",
+      "linkedin": null,
+      "email": "alief@charitieshousing.org",
+      "phone": "408-439-1159",
+      "other_role": "CTCAC applicant",
+      "src": [
+        "SRC-003599",
+        "SRC-003604"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Charities Housing Development Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "City of Cupertino",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003600",
+        "SRC-003599"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citi Bank",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley (Apple Affordable Housing Fund)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Housing Choices Coalition",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001466",
+        "SRC-003601"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Rotary Club of Cupertino",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001466",
+        "SRC-003601"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Construction loan",
+      "provider": "Citi Bank",
+      "program": "Conventional construction loan, 24 months",
+      "amount": 14672586,
+      "date": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "Apple loan, 18-year term",
+      "amount": 2900000,
+      "date": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Cupertino",
+      "program": "BMR Affordable Housing Fund residual receipts loan",
+      "amount": 3000000,
+      "date": "2025-04-15",
+      "src": [
+        "SRC-003600",
+        "SRC-003599"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara (City of Cupertino allocation)",
+      "program": "Permanent Local Housing Allocation (PLHA) loan",
+      "amount": 908683,
+      "date": "2025-04-15",
+      "src": [
+        "SRC-003600",
+        "SRC-003599"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "County of Santa Clara",
+      "program": "HOME loan",
+      "amount": 1000000,
+      "date": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "City of Cupertino",
+      "program": "CDBG sponsor loan (staff report shows a $174,567.37 CDBG grant for public infrastructure)",
+      "amount": 152626,
+      "date": null,
+      "src": [
+        "SRC-003599",
+        "SRC-003600"
+      ]
+    },
+    {
+      "type": "State soft loan",
+      "provider": "California Department of Developmental Services",
+      "program": "IDD residual receipts loan",
+      "amount": 1500000,
+      "date": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (9%)",
+      "provider": "Investor TBD",
+      "program": "LIHTC equity as applied in CA-26-066; $2,381,956 annual federal credits requested",
+      "amount": 18600575,
+      "date": null,
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "City of Cupertino",
+      "program": "Park development fee waiver",
+      "amount": 2160000,
+      "date": null,
+      "src": [
+        "SRC-003600",
+        "SRC-003599"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -206,6 +571,24 @@
       "estimated": false
     },
     {
+      "date": "2025-04-15",
+      "type": "Other",
+      "label": "City Council allocates $4,083,250 in cash assistance (BMR fund, PLHA, CDBG)",
+      "src": [
+        "SRC-003600"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-15",
+      "type": "Other",
+      "label": "City Council study session on the application",
+      "src": [
+        "SRC-003605"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-02-03",
       "type": "Approved",
       "label": "City Council approved ASA 3-1-1",
@@ -213,6 +596,53 @@
         "SRC-001466"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-03-03",
+      "type": "Other",
+      "label": "Council vacates part of Mary Avenue right-of-way and declares the parcel exempt surplus land",
+      "src": [
+        "SRC-001466"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-03-11",
+      "type": "Other",
+      "label": "Garden Gate Coalition for Mary Avenue Safety sues the city, Charities Housing and Mary Avenue Charities LLC (Case 26CV488611)",
+      "src": [
+        "SRC-003603",
+        "SRC-003606"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-01",
+      "type": "Other",
+      "label": "Council votes 4-1 not to reconsider its approvals",
+      "src": [
+        "SRC-003603",
+        "SRC-003607"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2027-04",
+      "type": "Construction start",
+      "label": "Construction start as projected in the CTCAC application",
+      "src": [
+        "SRC-003599"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028-07",
+      "type": "Completion",
+      "label": "Construction completion as projected in the CTCAC application",
+      "src": [
+        "SRC-003599"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -225,6 +655,104 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project name, Charities Housing and funding",
+      "src": [
+        "SRC-003603",
+        "SRC-003608"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API 326-27-053: Cupertino jurisdiction, no situs address, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page; Legistar matters 26-14737 (Feb. 3, 2026 staff report), 26-14935, 26-14995",
+      "src": [
+        "SRC-001466",
+        "SRC-003600",
+        "SRC-003607",
+        "SRC-003606"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County HOME and PLHA loans shown in the CTCAC application sources",
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC received applications CA-26-034 and CA-26-066; 2026 R1 and R2 preliminary recommendations; CEQAnet SCH 2026020165",
+      "src": [
+        "SRC-003602",
+        "SRC-003599",
+        "SRC-003609",
+        "SRC-003610",
+        "SRC-003604"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San José Spotlight Apr. 7, 2026 (Local News Matters returned 403)",
+      "src": [
+        "SRC-003603"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade press beyond local news",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "mary-ave-villas.com project site (two 2-story buildings, 30-60% AMI)",
+      "src": [
+        "SRC-003601",
+        "SRC-001466"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Ko Architects named; no project page found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC application lender list: Citi, Housing Trust Silicon Valley Apple loan, City, County, CA DDS",
+      "src": [
+        "SRC-003599"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com: nothing on the project",
+      "src": []
+    }
+  }
 }
