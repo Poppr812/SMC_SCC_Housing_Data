@@ -133,9 +133,45 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-001471"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001471"
+          ],
+          "note": "City page: submitted under the Housing Accountability Act, requesting Density Bonus waivers and incentives"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City page: replaces an existing single-family use; land use Residential, Medium Density; zoning R3/TH. Site shares property lines with Sunnyvale on the north, south and east and a PG&E utility use on the west.",
+      "src": [
+        "SRC-001471"
+      ]
+    },
+    {
+      "text": "City Major Residential Projects table: Housing Element site Yes; Builder's Remedy project No; SB 330 preapplication vested to 2025-06-04; status In Review.",
+      "src": [
+        "SRC-002065"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -184,6 +220,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, project name and applicant; led to the city Major Residential Projects table",
+      "src": [
+        "SRC-002065"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 31604064: situs 19820 Homestead Rd, jurisdiction Cupertino; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page (site area, zoning, density bonus basis) and Major Residential Projects table",
+      "src": [
+        "SRC-001471",
+        "SRC-002065"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 searched by APN and address; CEQAnet search on Homestead Cupertino",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage of this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; Real Deal Cupertino builder's remedy coverage does not name this site",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicant is an individual (William Pan); no developer site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Tectonic Builders Corporation; only directory listings, no company site",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

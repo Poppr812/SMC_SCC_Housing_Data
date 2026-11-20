@@ -112,6 +112,16 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.224,
+          "src": [
+            "SRC-004033"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -120,12 +130,44 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "City building permit 2025-110390-MF, issued 2025-05-29: additions/alterations to a residential care facility, valuation $1,341,934, contractor Huston General Contracting Inc., owner Heritage Vila LLC.",
+      "src": [
+        "SRC-004034"
+      ]
+    },
+    {
+      "text": "PropertyShark: property type residential care facility; sales on 2005-09-16 for $500,000 and 2014-12-19 for $1,800,000; 2025-26 assessed value $1,081,661.",
+      "src": [
+        "SRC-004033"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Heritage Vila LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (city permit record)",
+      "src": [
+        "SRC-004034"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2014-12-19",
+      "type": "Sale",
+      "label": "Sale, $1,800,000 (PropertyShark)",
+      "src": [
+        "SRC-004033"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-04-01",
       "type": "Application filed",
@@ -140,6 +182,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 144 N 5th St, CP21-005 and owner name; no project coverage",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 46719044: situs 144 N 5th St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "sanjoseca.gov pages blocked; San Jose open data building permit datasets (data.sanjoseca.gov) show 2025 care-facility permit and owner",
+      "src": [
+        "SRC-004034"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row 2021 CP21-005 (11 units, pending); no Table A2 row",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "PropertyShark property record (sale history, lot size); LoopNet returned 403",
+      "src": [
+        "SRC-004033"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer identified",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect identified",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

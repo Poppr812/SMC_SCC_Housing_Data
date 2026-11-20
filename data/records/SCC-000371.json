@@ -95,11 +95,13 @@
           "value": "Approved",
           "src": [
             "SRC-001101",
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-004030"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -134,9 +136,17 @@
             "SRC-001332"
           ],
           "note": "11 apartments plus two detached ADUs; SF YIMBY counts 13. Replaces an eight-unit complex"
+        },
+        {
+          "value": 13,
+          "src": [
+            "SRC-004029",
+            "SRC-004030"
+          ],
+          "note": "11 apartments plus two detached ADUs, as approved by Council 2026-06-23"
         }
       ],
-      "best": 2
+      "best": 3
     },
     "planning_file": {
       "claims": [
@@ -147,8 +157,15 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-8889",
+          "src": [
+            "SRC-004031"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "stories": {
       "claims": [
@@ -168,8 +185,15 @@
           "src": [
             "SRC-001333"
           ]
+        },
+        {
+          "value": 0.172,
+          "src": [
+            "SRC-004029"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "approval_type": {
       "claims": [
@@ -191,6 +215,84 @@
             "SRC-001110"
           ],
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-004029",
+            "SRC-001333"
+          ]
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 3,
+            "1br": 7,
+            "2br": 3,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004029",
+            "SRC-001333"
+          ],
+          "note": "Apartments: 3 studios, 6 one-bedroom, 2 two-bedroom; ADUs: one 1BR and one 2BR"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 50
+            },
+            {
+              "count": 7,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-004029"
+          ],
+          "note": "8 BMR units (6 apartments and both ADUs) replacing 8 demolished units under SB 330"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-004029"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 8717,
+          "src": [
+            "SRC-004029"
+          ],
+          "note": "Apartment building only; the two ADUs total about 1,474 sq ft"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004029",
+            "SRC-001333"
+          ]
         }
       ]
     }
@@ -208,6 +310,19 @@
       "src": [
         "SRC-001332",
         "SRC-001333"
+      ]
+    },
+    {
+      "text": "2026 council report: site previously held an eight-unit rent-stabilized building, demolished in 2025; zoning P(19) Downtown Precise Plan Area B; building height 34 ft 2 in; third floor set into roof gables.",
+      "src": [
+        "SRC-004029"
+      ]
+    },
+    {
+      "text": "2020 council report: a separate 15-unit condominium project over underground parking at 325-339 Franklin Street, on four parcels totaling about 0.52 acres including 333 Franklin (then eight units), went to Council on 2020-12-08. The state report lists that application under APN 158-12-069 with notes naming APNs 158-12-048, 158-12-067 and 158-12-068.",
+      "src": [
+        "SRC-004032",
+        "SRC-001101"
       ]
     }
   ],
@@ -232,6 +347,37 @@
       "src": [
         "SRC-001333"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Silicon Valley Custom Homes, Inc.",
+      "contact": "Jenny Kang",
+      "linkedin": null,
+      "website": "https://www.svcustomhomes.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004029",
+        "SRC-004030"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Silicon Valley Custom Homes, Inc.",
+      "contact": "Hau-Ching Liao",
+      "linkedin": null,
+      "src": [
+        "SRC-004030"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Global Investors Team, Inc.",
+      "contact": "David Chao",
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-004029"
+      ]
     }
   ],
   "financing": [],
@@ -252,6 +398,70 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2023-03-21",
+      "type": "Other",
+      "label": "Informal planning application submitted",
+      "src": [
+        "SRC-004029"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025",
+      "type": "Other",
+      "label": "Prior eight-unit building demolished",
+      "src": [
+        "SRC-004029"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-15",
+      "type": "Application filed",
+      "label": "Formal application submitted",
+      "src": [
+        "SRC-004029"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-06",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-004029"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-21",
+      "type": "Other",
+      "label": "Design Review Consultation meeting",
+      "src": [
+        "SRC-004029"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-27",
+      "type": "Other",
+      "label": "Zoning Administrator recommended approval",
+      "src": [
+        "SRC-004029",
+        "SRC-004031"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-23",
+      "type": "Approved",
+      "label": "City Council approved (Resolution No. 19132)",
+      "src": [
+        "SRC-004030"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-06-25",
@@ -278,6 +488,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Web search on 333 Franklin Street Mountain View",
+      "src": [
+        "SRC-001333"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 15812069: situs 333 Franklin St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Legistar: Council 2026-06-23 report and action (Res. 19132), AZH 2026-05-27 (PL-8889); Council 2020-12-08 report for 325-339 Franklin",
+      "src": [
+        "SRC-004029",
+        "SRC-004030",
+        "SRC-004031",
+        "SRC-004032"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "CEQAnet NOE 2026061129; APR rows re-checked",
+      "src": [
+        "SRC-001332",
+        "SRC-001101"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-06-30: unit mix, parking, 8 deed-restricted units",
+      "src": [
+        "SRC-001333"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SF YIMBY is the only trade coverage found",
+      "src": [
+        "SRC-001333"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Silicon Valley Custom Homes site and projects page; Franklin listings are single-family/ADU work, not this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Architect is in-house at Silicon Valley Custom Homes; no separate project page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
