@@ -190,9 +190,33 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "County parcel dataset lists the situs of APN 467-23-102 as 100 E Santa Clara St, the Hotel Clariana address.",
+      "src": [
+        "SRC-001098",
+        "SRC-003571"
+      ]
+    },
+    {
+      "text": "Commercial Search (June 2017): RSTP Investments LLC, owner of the 44-room Hotel Clariana at 100 E Santa Clara St, planned 60 more rooms, a pool and a new lobby on a parking lot it owns next to the hotel.",
+      "src": [
+        "SRC-003571"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "RSTP Investments LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner of Hotel Clariana and adjacent parking lot per 2017 news",
+      "src": [
+        "SRC-003571"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -228,6 +252,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, HA17-059 and Hotel Clariana; Commercial Search 2017 article opened",
+      "src": [
+        "SRC-003571"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset APN 46723102: situs 100 E Santa Clara St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov Hotel Clariana Phase II (HA17-059-01) environmental pages refuse automated access; San Jose Legistar matters searched for Clariana and HA17-059: none",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR rows already on record; CEQAnet search for Clariana returned no match",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Cambrian Resident (Mercury News group) Sept. 2021 article on PressReader returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Commercial Search June 2017",
+      "src": [
+        "SRC-003571"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No RSTP Investments project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect for the condominium building found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LinkedIn results for the project in web search",
+      "src": []
+    }
+  }
 }

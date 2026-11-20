@@ -154,6 +154,64 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Student"
+          ],
+          "src": [
+            "SRC-003566",
+            "SRC-003567"
+          ],
+          "note": "Described as student housing, 147 bedrooms"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003568",
+            "SRC-003569"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3804,
+          "src": [
+            "SRC-003569"
+          ],
+          "note": "Approximately 3,804 sq ft commercial space"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-003568"
+          ]
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 2900000,
+          "src": [
+            "SRC-003566",
+            "SRC-003570"
+          ],
+          "note": "Lot purchased by Tripalink; MLS shows status Sold at $2,900,000"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -169,9 +227,67 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Six-story mixed-use building, 41 units with 147 bedrooms, on a 0.44-acre site at the northwest corner of E Santa Clara St and N 12th St, replacing a vacant restaurant building (about 4,300 sq ft) formerly occupied by Vung Tau. Enclosed garage reached from N 12th St; ground-level courtyard 1,237 sq ft and second-floor podium courtyard 2,647 sq ft.",
+      "src": [
+        "SRC-003569",
+        "SRC-003566",
+        "SRC-003568"
+      ]
+    },
+    {
+      "text": "Sale timing: SF YIMBY (Sept. 7, 2025) says Tripalink purchased the lot on August 25th for $2.9 million; Global Student Living (Sept. 8, 2025) says the site was acquired for $2.9 million in August 2024. MLS listing ML82018582 (Marcus & Millichap) shows Sold at $2,900,000 and describes the site as approved for a 41-unit student housing development.",
+      "src": [
+        "SRC-003566",
+        "SRC-003567",
+        "SRC-003570"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Tripalink Real Estate Group",
+      "contact": "Jay Chang, Director",
+      "linkedin": null,
+      "email": "jay.chang@tripalink.com",
+      "phone": "(424) 256-9528",
+      "src": [
+        "SRC-003568",
+        "SRC-003566"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Tripalink",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003566",
+        "SRC-003567"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "VTBS Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003566",
+        "SRC-003567"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Marcus & Millichap",
+      "contact": "Joshua Johnson",
+      "linkedin": null,
+      "src": [
+        "SRC-003570"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -190,6 +306,22 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-03-27",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption posted (Class 32 infill)",
+      "src": [
+        "SRC-003568"
+      ]
+    },
+    {
+      "date": "2025-08-25",
+      "type": "Sale",
+      "label": "Tripalink purchased the lot for $2.9 million",
+      "src": [
+        "SRC-003566"
+      ]
     }
   ],
   "history": [
@@ -202,6 +334,95 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Tripalink, VTBS; CEQAnet, SF YIMBY, GSL, MLS opened",
+      "src": [
+        "SRC-003568",
+        "SRC-003566"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 46716088: situs 535 E Santa Clara St, jurisdiction San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; San Jose Legistar matters searched for 535 E Santa Clara: none; city permit GIS already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025031190 Notice of Exemption, applicant block",
+      "src": [
+        "SRC-003568"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news; a Mercury News-derived aggregator page returned 404",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY Mar. 2025 and Sept. 2025; Global Student Living Sept. 2025; MLSListings; Crexi returned 403",
+      "src": [
+        "SRC-003569",
+        "SRC-003566",
+        "SRC-003567",
+        "SRC-003570"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Tripalink project page for this site found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "VTBS Architects named in news; no firm project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found; construction cost not established per SF YIMBY",
+      "src": [
+        "SRC-003566"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for Tripalink and the site: unrelated profiles only",
+      "src": []
+    }
+  }
 }

@@ -97,8 +97,16 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001543"
+          ],
+          "note": "Jan. 2026 preliminary permits: 41 attached townhouse-style units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -164,6 +172,17 @@
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1800,
+          "src": [
+            "SRC-001543"
+          ],
+          "note": "Commercial space facing El Camino Real, Jan. 2026 preliminary permits"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -171,6 +190,18 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Jan. 2026): an earlier proposal of a 65-unit affordable senior apartment building and 23 townhouse-style units, filed by AJ Craig Development and Warmington Group, was withdrawn. The new preliminary permits invoke SB 330 and the State Density Bonus Law; the site is roughly two acres between Bowers Avenue and Calabazas Boulevard, last sold in 2022; the applicant is not listed.",
+      "src": [
+        "SRC-001543"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Dec. 2020) reported development permits filed for 26 townhomes and 62 senior apartments with a rezoning from planned development; the headline gives 2855 and the body gives 2885 El Camino Real.",
+      "src": [
+        "SRC-003565"
       ]
     }
   ],
@@ -184,11 +215,39 @@
       "src": [
         "SRC-001738"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "AJ Craig Development",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant of earlier withdrawn proposal per news",
+      "src": [
+        "SRC-001543"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Warmington Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant of earlier withdrawn proposal per news",
+      "src": [
+        "SRC-001543"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-12-15",
+      "type": "Other",
+      "label": "News report: development permits filed for 26 townhomes and 62 senior apartments (article body gives the address as 2885 El Camino Real)",
+      "src": [
+        "SRC-003565"
+      ]
+    },
     {
       "date": "2022-03-23",
       "type": "Application filed",
@@ -213,6 +272,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, AJ Craig, Warmington; SF YIMBY Jan. 2026 and Dec. 2020 articles opened",
+      "src": [
+        "SRC-001543",
+        "SRC-003565"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 22031082: geometry only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "santaclaraca.gov community meeting notice and project listings refuse automated access; Santa Clara Legistar matters searched for 2855: only Stevens Creek Blvd items",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR data already on record (PLN22-00160); CEQAnet search showed no filing for this address; no CTCAC/HCD award found",
+      "src": [
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news for 2855 El Camino Real; no local news article found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY Jan. 2026 and Dec. 2020",
+      "src": [
+        "SRC-001543",
+        "SRC-003565"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Current applicant not named in any source; no AJ Craig or Warmington project page for this site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for 2855 El Camino: no results",
+      "src": []
+    }
+  }
 }

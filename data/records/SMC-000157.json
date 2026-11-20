@@ -143,7 +143,8 @@
             "Density bonus"
           ],
           "src": [
-            "SRC-001205"
+            "SRC-001205",
+            "SRC-003578"
           ]
         }
       ]
@@ -163,6 +164,28 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 38,
+          "src": [
+            "SRC-001205"
+          ],
+          "note": "Including 26 in mechanical stackers"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.39,
+          "src": [
+            "SRC-003577"
+          ],
+          "note": "17,033 sq ft"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -170,6 +193,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001149"
+      ]
+    },
+    {
+      "text": "City project page: seven stories, 81.7 ft tall, 60,154 sq ft gross floor area, FAR 3.53; 5,704 sq ft total open space (1,527 sq ft common). Required actions: environmental review, architectural control, major subdivision, BMR housing agreement, heritage tree removal permits. Application deemed complete Sept. 18, 2025.",
+      "src": [
+        "SRC-001205"
+      ]
+    },
+    {
+      "text": "Mountain View Voice (Nov. 2024): the site houses Jeffrey's Hamburgers; the restaurant owner said the property owners expected closure at least three to five years away.",
+      "src": [
+        "SRC-003578"
+      ]
+    },
+    {
+      "text": "City El Camino Real/Downtown Specific Plan summary (Mar. 16, 2026): Base level, entitlement pending, 41 net new units, -4,575 net new non-residential sq ft.",
+      "src": [
+        "SRC-003579"
       ]
     }
   ],
@@ -192,11 +233,54 @@
       "src": [
         "SRC-001205"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "LDP Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003578"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Brick Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Architect of June 2023 four-story mixed-use proposal",
+      "src": [
+        "SRC-003577"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-06-14",
+      "type": "Other",
+      "label": "Earlier proposal: four-story mixed-use office and housing building (12 upper-floor units plus 4 at-grade units)",
+      "src": [
+        "SRC-003577"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "type": "Other",
+      "label": "Preliminary application submitted for the all-residential design",
+      "src": [
+        "SRC-003578"
+      ]
+    },
+    {
+      "date": "2024-11",
+      "type": "Application filed",
+      "label": "Formal development application for 41 units received by the city",
+      "src": [
+        "SRC-003578"
+      ]
+    },
     {
       "date": "2025-09-18",
       "type": "Application filed",
@@ -224,6 +308,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and architect; city page, MV Voice, applicant project description opened",
+      "src": [
+        "SRC-001205",
+        "SRC-003578"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Recorded owner 888 EL CAMINO LLC already on record from SMC parcel layer",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Menlo Park project page; 2023 applicant project description PDF; ECR/D project summary 2026-03-16",
+      "src": [
+        "SRC-001205",
+        "SRC-003577",
+        "SRC-003579"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet filing or tax-credit award found",
+      "src": [
+        "SRC-001149"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Voice Nov. 25, 2024 (updated Jan. 21, 2025)",
+      "src": [
+        "SRC-003578"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched trade press; none found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "888 El Camino LLC has no public site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LDP Architecture or Brick project page for this site found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of linkedin.com for 888 El Camino Menlo Park: no results",
+      "src": []
+    }
+  }
 }
