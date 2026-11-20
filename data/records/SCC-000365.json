@@ -1,6 +1,6 @@
 {
   "id": "SCC-000365",
-  "name": "130 Stockton Ave",
+  "name": "Vespaio live/work conversion (130 Stockton Ave)",
   "parcels": [
     {
       "apn": "259-28-046",
@@ -143,6 +143,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H23-035, C23-118, ER23-241, PRE23-070",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City GIS: Site Development Permit H23-035, Conforming Rezoning C23-118 (A(PD) to DC, approved), environmental addendum ER23-241, preliminary review PRE23-070"
         }
       ]
     },
@@ -176,12 +183,90 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "The conversion is inside Vespaio, a seven-story mixed-use building built under PD16-006 (Hudson Companies, approved 2016: 164 units and at least 37,500 sf commercial). City GIS PRE23-070 describes converting part of the first-floor commercial space into a leasing office and second- and third-floor commercial space; H23-035 converts about 22,051 sf of upper-level commercial space into 16 units including 10 live/work units.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "RENTV (2023-07-06): Windy Hill Property Ventures and Rockwood Capital joint venture bought Vespaio, 162 units on 1.72 acres built in 2020, from Hudson Companies for $83.5 million ($515k per unit); Cushman & Wakefield represented the seller and arranged acquisition debt. Windy Hill's investments page lists Vespaio as 162 units and about 10,000 sf retail.",
+      "src": [
+        "SRC-003916",
+        "SRC-002504"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Windy Hill Property Ventures",
+      "contact": "Jamie D'Alessandro",
+      "linkedin": null,
+      "website": "https://windyhillpv.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-001956",
+        "SRC-002504"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Windy Hill Property Ventures",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003916"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Rockwood Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003916"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "Hudson Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003916"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Cushman & Wakefield",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003916"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-07",
+      "type": "Sale",
+      "label": "Whole Vespaio building (162 apartments) sold to Windy Hill / Rockwood Capital JV for $83.5 million",
+      "src": [
+        "SRC-003916"
+      ]
+    },
+    {
+      "date": "2023-07-07",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE23-070 completed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2023-12-19",
       "type": "Application filed",
@@ -209,6 +294,93 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 130 Stockton/Vespaio: The Real Deal, Multi-Housing News, ConnectCRE and Traded returned 403; RENTV opened.",
+      "src": [
+        "SRC-003916"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 25928046: situs 130 Stockton Av, San Jose; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer, APN 25928046: H23-035 applicant Windy Hill Property Ventures, C23-118, ER23-241, PRE23-070. sanjoseca.gov documents blocked.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated San Jose project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR rows already on record; no CEQAnet, CTCAC or HCD entries found.",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news; SFGATE adaptive-reuse article (Oct 2025) does not mention 130 Stockton.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "RENTV 2023-07-06 sale report. The Real Deal, Multi-Housing News, ConnectCRE returned 403.",
+      "src": [
+        "SRC-003916"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Windy Hill Property Ventures investments page lists Vespaio; no project page for the conversion.",
+      "src": [
+        "SRC-002504"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named for the conversion in any source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "RENTV: Cushman & Wakefield arranged acquisition debt for the 2023 purchase; lender not named.",
+      "src": [
+        "SRC-003916"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn posts on the conversion.",
+      "src": []
+    }
+  }
 }

@@ -116,8 +116,17 @@
             "SRC-001138"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "AS 19-07 (19030038)",
+          "src": [
+            "SRC-001115",
+            "SRC-001138"
+          ],
+          "note": "Full local tracking number in the 2020 state report rows"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -138,6 +147,13 @@
         "SRC-001115",
         "SRC-001138"
       ]
+    },
+    {
+      "text": "State report 2019 (Table A) lists 7888 Monterey St. with 16 proposed above-moderate units, unit category MH, application date 2019-03-20. State report 2020 (Tables A and A2) lists Cantera Commons at 7888 Monterey Rd., AS 19-07 (19030038), 10 proposed and 10 approved above-moderate rental units in the 5+ category, entitlement approved 2020-11-17.",
+      "src": [
+        "SRC-001115",
+        "SRC-001138"
+      ]
     }
   ],
   "parties": [],
@@ -148,6 +164,14 @@
       "date": "2019-03-20",
       "type": "Application filed",
       "label": "Application submitted",
+      "src": [
+        "SRC-001115"
+      ]
+    },
+    {
+      "date": "2020-10-20",
+      "type": "Application filed",
+      "label": "Application submitted for 10 units (AS 19-07), per 2020 state report",
       "src": [
         "SRC-001115"
       ]
@@ -166,6 +190,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches on Cantera Commons, 7888 Monterey Rd/St and AS 19-07: no pages about this project. A BLDUP tracker entry for 7888 Monterey Road appeared in results but the site returned 403.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 84102009: situs 7888 Monterey Rd, Gilroy, 2 situs addresses; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "City of Gilroy Development Activity Projects page and Planning Current Project Log (9/24/2026): project not listed. Gilroy has no Legistar API client.",
+      "src": [
+        "SRC-001420"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated Gilroy project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Tables A and A2, Gilroy 2019 and 2020 rows: project name Cantera Commons, tracking number AS 19-07 (19030038), 2020-10-20 application for 10 units. CEQAnet search did not return a match.",
+      "src": [
+        "SRC-001115",
+        "SRC-001138"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Gilroy Dispatch and local news for 7888 Monterey and Cantera Commons.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "BLDUP Gilroy project pages (listing for 7888 Monterey Road) returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in any source found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn posts on Cantera Commons.",
+      "src": []
+    }
+  }
 }

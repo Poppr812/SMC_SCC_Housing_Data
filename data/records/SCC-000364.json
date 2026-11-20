@@ -1,6 +1,6 @@
 {
   "id": "SCC-000364",
-  "name": "420 Acacia",
+  "name": "Acacia (420 Acacia Ave)",
   "parcels": [
     {
       "apn": "132-37-075",
@@ -95,8 +95,18 @@
             "SRC-001127"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003912",
+            "SRC-003913",
+            "SRC-003914"
+          ],
+          "note": "City: 16 two- and three-bedroom condominium units in four buildings; SB 330 pre-application describes a townhome project; CEQA notice: 16 townhomes"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -149,6 +159,12 @@
           "src": [
             "SRC-001127"
           ]
+        },
+        {
+          "value": "2 Below Market Rate units (city page); SB 330 pre-application listed 15% BMR on-site",
+          "src": [
+            "SRC-003912"
+          ]
         }
       ]
     },
@@ -161,6 +177,13 @@
             "SRC-001127"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "23PLN-00058, 23PLN-00002 (SB 330 pre-application)",
+          "src": [
+            "SRC-003912"
+          ],
+          "note": "City page also lists 23PLN-0059 as written"
         }
       ]
     },
@@ -179,6 +202,70 @@
           "note": "State report 2025, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.8,
+          "src": [
+            "SRC-003912",
+            "SRC-003913"
+          ],
+          "note": "City page: about 0.8 acres (35,753 sf)"
+        },
+        {
+          "value": 0.81,
+          "src": [
+            "SRC-003914"
+          ],
+          "note": "CEQA notice: 0.81 total acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003912"
+          ],
+          "note": "City page: two and three stories. SF YIMBY: Buildings A, B and D about 40 feet, Building C about 24 feet"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 32,
+          "src": [
+            "SRC-003913"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 36610,
+          "src": [
+            "SRC-003913"
+          ],
+          "note": "SF YIMBY: 40,010 sf total including 36,610 sf housing and 6,400 sf private garages"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003912"
+          ],
+          "note": "Concessions and waivers requested under State Density Bonus Law; processed under SB 330"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -188,18 +275,80 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "City page: Vesting Tentative Map and Major Architectural Review for 16 two- and three-bedroom condominium units in four buildings, replacing a paved 68-space surface parking lot; split RM-30 and R-1 zoning. SF YIMBY: four buildings (A-D), two driveways on Acacia Avenue.",
+      "src": [
+        "SRC-003912",
+        "SRC-003913"
+      ]
+    },
+    {
+      "text": "Dividend Homes markets the project as Acacia, 16 townhome-style residences, and its page states the community is sold out.",
+      "src": [
+        "SRC-003915"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Dividend Homes",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dividendhomes.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.dividendhomes.com/acacia/",
+      "src": [
+        "SRC-003913",
+        "SRC-003915"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Acacia Camino Investors LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003912"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003913"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-01-04",
+      "type": "Other",
+      "label": "SB 330 pre-application submitted (23PLN-00002)",
+      "src": [
+        "SRC-003912"
+      ]
+    },
     {
       "date": "2023-03-07",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001126"
+      ]
+    },
+    {
+      "date": "2023-12-20",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003914"
       ]
     },
     {
@@ -224,6 +373,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 420 Acacia Ave: city project page, CEQAnet notice, SF YIMBY, Dividend Homes. Listing aggregators (Zillow, Trulia, NewHomeSource, Homes.com) not used; NewHomeSource and Homes.com returned 403.",
+      "src": [
+        "SRC-003912",
+        "SRC-003913"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 13237075: situs 420 Acacia Av, Palo Alto; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of Palo Alto 420 Acacia Avenue page: applicant, file numbers, BMR units, density bonus, site area.",
+      "src": [
+        "SRC-003912"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated Palo Alto project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet 2023120570 Notice of Exemption (Class 32), received 2023-12-20, APN 132-37-075. APR rows already on record.",
+      "src": [
+        "SRC-003914",
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Palo Alto Online article (2023-03-21) on the project returned an empty page and then HTTP 429.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-02-11: Dividend Homes, Dahlin Group, 32 parking spaces, floor areas.",
+      "src": [
+        "SRC-003913"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Dividend Homes Acacia page: 16 townhome-style residences, sold out.",
+      "src": [
+        "SRC-003915"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Dahlin Group site search returned no Acacia project page.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funder found in any source.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

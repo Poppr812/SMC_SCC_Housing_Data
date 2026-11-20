@@ -107,6 +107,13 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "ER22-001, PRE18-238",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City GIS: environmental review ER22-001 for a Site Development Permit; enhanced preliminary review PRE18-238"
         }
       ]
     },
@@ -120,6 +127,42 @@
           "note": "State report (through 2019): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "ER22-001 (2022): five-story mixed-use building"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PRE18-238 preliminary review (2018-2019): six-story building"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 7100,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "ER22-001: 7,100 sf commercial"
+        },
+        {
+          "value": 5400,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PRE18-238: 5,400 sf ground-floor commercial"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -128,12 +171,52 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "City GIS ER22-001 (status Under Review): Site Development Permit to demolish an existing 4,420 sf retail building, remove two ordinance-size trees and build a five-story mixed-use building with 7,100 sf commercial, 16 residential units and two levels (text cut off by the city field).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "State report 2019 (Table A) row for SP19-031 lists 16 proposed units and 16 disapproved units.",
+      "src": [
+        "SRC-001099"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Luxury Estates and Development",
+      "contact": "Sam Som",
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Mavrik Studio",
+      "contact": "Nik Sernande",
+      "linkedin": null,
+      "other_role": "Preliminary review applicant (PRE18-238)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-03-06",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE18-238 completed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2019-11-06",
       "type": "Application filed",
@@ -148,6 +231,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 395 S Winchester Blvd and SP19-031: only sanjoseca.gov documents (blocked) and commercial listings.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 30339062: situs 395 S Winchester Bl, San Jose; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer, APN 30339062: ER22-001 (Luxury Estates and Development), PRE18-238 (Mavrik Studio). SP19-031 not in the layer. sanjoseca.gov documents blocked.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated San Jose project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2019 row: 16 units disapproved. No CEQAnet filing found.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news for 395 S Winchester.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched trade press; only LoopNet and CommercialSearch listings for the building.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Luxury Estates and Development.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Mavrik Studio search found only a directory listing; no project page.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }
