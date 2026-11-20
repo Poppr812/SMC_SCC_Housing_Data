@@ -1,6 +1,6 @@
 {
   "id": "SCC-000384",
-  "name": "Main Street Townhomes",
+  "name": "Main Street Townhomes (808 S Main St)",
   "parcels": [
     {
       "apn": "086-25-051",
@@ -120,8 +120,16 @@
             "SRC-001124"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 27,
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "State report 2018: four building permit applications for Main Street Townhomes (B-BP18-0284 to -0287) of 12, 5, 6 and 4 units"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -131,6 +139,13 @@
             "SRC-001124"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "B-BP18-0284, B-BP18-0285, B-BP18-0286, B-BP18-0287",
+          "src": [
+            "SRC-001124"
+          ],
+          "note": "Four 2018 application rows in the state report"
         }
       ]
     },
@@ -152,6 +167,18 @@
       "src": [
         "SRC-001124"
       ]
+    },
+    {
+      "text": "State report 2018 Table A lists four rows for Main Street Townhomes at 808 S Main St (APN 086-25-021): B-BP18-0284 (12 owner units, submitted 2018-06-12), B-BP18-0285 (5 units), B-BP18-0286 (6 units) and B-BP18-0287 (4 units), the last three submitted 2018-06-08 with renter tenure. The four rows total 27 units.",
+      "src": [
+        "SRC-001124"
+      ]
+    },
+    {
+      "text": "County parcel dataset shows APN 086-25-051 with situs 808 S Main St, Milpitas; APN 086-25-021 (as listed in the state report) returns no parcel.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [],
@@ -172,6 +199,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on name and address; results pointed to a Mercury News 2017-11-26 article on a 27-condo proposal at 808 S. Main St (pressreader 403); no other project pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 08625051 situs 808 S Main St; 08625021 not found",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "milpitas.gov searches; archive PDF opened was an unrelated 2018 press release",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2018 rows B-BP18-0284 to 0287; no A2 rows; no CEQAnet filing found",
+      "src": [
+        "SRC-001124"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Mercury News article via pressreader returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press found; bldup.com 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Developer not confirmed from an opened source",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Nothing surfaced in web search",
+      "src": []
+    }
+  }
 }

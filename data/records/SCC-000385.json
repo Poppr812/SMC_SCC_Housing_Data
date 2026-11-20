@@ -118,7 +118,11 @@
         {
           "value": 12,
           "src": [
-            "SRC-001127"
+            "SRC-001127",
+            "SRC-004010",
+            "SRC-004011",
+            "SRC-004012",
+            "SRC-001126"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -129,7 +133,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -160,6 +165,13 @@
             "SRC-001127"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "24PLN-00005",
+          "src": [
+            "SRC-004010"
+          ],
+          "note": "Vesting Tentative Map to subdivide the parcel"
         }
       ]
     },
@@ -176,6 +188,94 @@
             "SRC-001127"
           ],
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001126",
+            "SRC-004011"
+          ],
+          "note": "State report 2025 building permit application 25BLD-01590: 2 low-income units; SF YIMBY 2022: two units for low-income households"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 12,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004010"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004010",
+            "SRC-004011",
+            "SRC-004012"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.38,
+          "src": [
+            "SRC-004010",
+            "SRC-004012"
+          ],
+          "note": "16,720 sq ft parcel"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004010",
+            "SRC-001127"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001127"
+          ],
+          "note": "State report 2024 entitlement row, density bonus deed restriction"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 10,
+          "src": [
+            "SRC-004011",
+            "SRC-001127"
+          ]
         }
       ]
     }
@@ -187,12 +287,98 @@
         "SRC-001126",
         "SRC-001127"
       ]
+    },
+    {
+      "text": "Replaces an existing 8-unit rental apartment building. Zoning RM-20. City prepared a Class 32 infill CEQA exemption. City project planner: Claire Raybould.",
+      "src": [
+        "SRC-004010",
+        "SRC-004011"
+      ]
+    },
+    {
+      "text": "SF YIMBY 2022 reports a requested 50 percent density bonus with waivers; state report 2024 entitlement row lists density bonus total 0.1, 14 other incentives (on-site improvements, development standards modification) and no financial subsidies.",
+      "src": [
+        "SRC-004011",
+        "SRC-001127"
+      ]
+    },
+    {
+      "text": "Restricted units: state report 2024 entitlement row (22PLN-00201) lists 2 moderate-income units; 2025 building permit row 25BLD-01590 lists 2 low-income units.",
+      "src": [
+        "SRC-001127",
+        "SRC-001126"
+      ]
+    },
+    {
+      "text": "SF YIMBY 2022: 16,770 sq ft total floor area, units 1,200 to 1,600 sq ft, 35 feet, two-car garage per unit. SF YIMBY 2024 (revised design): 18,256 sq ft built-up area, 33 feet. City page: about 18,000 sq ft.",
+      "src": [
+        "SRC-004011",
+        "SRC-004012",
+        "SRC-004010"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Sutter 739 Associates LLC",
+      "contact": "Grace Li",
+      "linkedin": null,
+      "src": [
+        "SRC-004011",
+        "SRC-004012"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "DAHLIN Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004011",
+        "SRC-004012"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004011",
+        "SRC-004012"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Anyi Landscape Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004011",
+        "SRC-004012"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-11-02",
+      "type": "Other",
+      "label": "Architectural Review Board hearing listed on city project page",
+      "src": [
+        "SRC-004010"
+      ]
+    },
+    {
+      "date": "2024-03-27",
+      "type": "Other",
+      "label": "Project review meeting",
+      "src": [
+        "SRC-004012"
+      ]
+    },
     {
       "date": "2024-04-22",
       "type": "Approved",
@@ -215,6 +401,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address; city page, SF YIMBY articles opened",
+      "src": [
+        "SRC-004010",
+        "SRC-004011"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 12735200: situs 739 Sutter Av, 8 situs addresses; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto project page (22PLN-00201, 24PLN-00005); ARB minutes not located",
+      "src": [
+        "SRC-004010"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2025 (25BLD-01589, 25BLD-01590) and A2 2024 (22PLN-00201); CEQAnet NOE attachment too large to open",
+      "src": [
+        "SRC-001126",
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Palo Alto Online 2025-10-13 article returned 429; 2024-01-09 article returned no content",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2022-05-16 and 2024-03-26",
+      "src": [
+        "SRC-004011",
+        "SRC-004012"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Sutter 739 Associates LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "DAHLIN Group named by SF YIMBY; firm project page not found",
+      "src": [
+        "SRC-004011"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State report notes no financial subsidies",
+      "src": [
+        "SRC-001127"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Nothing surfaced in web search",
+      "src": []
+    }
+  }
 }

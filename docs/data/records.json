@@ -40029,6 +40029,90 @@
    "wayback": null,
    "copyright": false,
    "sha256": null
+  },
+  "SRC-004006": {
+   "id": "SRC-004006",
+   "title": "996 Loraine Avenue Mixed Use Development (SCH 2025061276), Mitigated Negative Declaration",
+   "publisher": "CEQAnet, Governor's Office of Land Use and Climate Innovation",
+   "date": "2025-06-26",
+   "type": "Government web page",
+   "url": "https://ceqanet.lci.ca.gov/2025061276",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004007": {
+   "id": "SRC-004007",
+   "title": "996 Loraine Avenue - Mixed Use Development (SCH 2025110817), Notice of Exemption",
+   "publisher": "CEQAnet, Governor's Office of Land Use and Climate Innovation",
+   "date": "2025-11-20",
+   "type": "Government web page",
+   "url": "https://ceqanet.lci.ca.gov/2025110817",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004008": {
+   "id": "SRC-004008",
+   "title": "CEQA Documents filed for Mixed Use Development at 996 Loraine Avenue in Los Altos",
+   "publisher": "San Francisco YIMBY",
+   "date": "2025-07-03",
+   "type": "Trade publication",
+   "url": "https://sfyimby.com/?p=41719",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004009": {
+   "id": "SRC-004009",
+   "title": "996 Loraine Avenue - Vesting Tentative Map (SCH 2026020052), Notice of Exemption",
+   "publisher": "CEQAnet, Governor's Office of Land Use and Climate Innovation",
+   "date": "2026-02-03",
+   "type": "Government web page",
+   "url": "https://ceqanet.lci.ca.gov/2026020052",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004010": {
+   "id": "SRC-004010",
+   "title": "739 Sutter Ave (project page)",
+   "publisher": "City of Palo Alto",
+   "date": null,
+   "type": "Government web page",
+   "url": "https://www.paloalto.gov/Departments/Planning-Development-Services/Current-Planning/Projects/739-Sutter-Ave",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004011": {
+   "id": "SRC-004011",
+   "title": "New Renderings for Townhomes at 739 Sutter Avenue, Palo Alto",
+   "publisher": "San Francisco YIMBY",
+   "date": "2022-05-16",
+   "type": "Trade publication",
+   "url": "https://sfyimby.com/2022/05/new-renderings-for-townhomes-at-739-sutter-avenue-palo-alto.html",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004012": {
+   "id": "SRC-004012",
+   "title": "New Renderings Revealed for Townhomes at 739 Sutter Avenue, Palo Alto",
+   "publisher": "San Francisco YIMBY",
+   "date": "2024-03-26",
+   "type": "Trade publication",
+   "url": "https://sfyimby.com/2024/03/new-renderings-revealed-for-townhomes-at-739-sutter-avenue-santa-clara.html",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -264370,7 +264454,10 @@
       {
        "value": 12,
        "src": [
-        "SRC-001145"
+        "SRC-001145",
+        "SRC-004006",
+        "SRC-004007",
+        "SRC-004008"
        ],
        "note": "Units reported in entitlement and permit rows"
       }
@@ -264392,6 +264479,13 @@
        "value": "2 deed-restricted units reported to the state",
        "src": [
         "SRC-001145"
+       ]
+      },
+      {
+       "value": "2 low-income units in the approved project (Notice of Exemption 2025-11-20); state report 2022 application row listed the 2 units as moderate-income",
+       "src": [
+        "SRC-004007",
+        "SRC-001144"
        ]
       }
      ]
@@ -264421,6 +264515,87 @@
         "SRC-001145"
        ],
        "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+      },
+      {
+       "value": [
+        {
+         "count": 2,
+         "ami": 120
+        }
+       ],
+       "src": [
+        "SRC-001144"
+       ],
+       "note": "State report 2022, application stage: 2 moderate-income deed-restricted units"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-004006",
+        "SRC-004007"
+       ],
+       "note": "Three-story mixed-use building with a rooftop terrace on the fourth level"
+      }
+     ]
+    },
+    "commercial_sf": {
+     "claims": [
+      {
+       "value": 962,
+       "src": [
+        "SRC-004006",
+        "SRC-004007",
+        "SRC-004008"
+       ],
+       "note": "Ground-floor commercial/retail"
+      },
+      {
+       "value": 932,
+       "src": [
+        "SRC-004006"
+       ],
+       "note": "Commercial square footage as listed on the 2021 Notice of Completion form attached to the MND filing"
+      }
+     ],
+     "best": 0
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.2,
+       "src": [
+        "SRC-004006",
+        "SRC-004009"
+       ]
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-004006",
+        "SRC-001144"
+       ],
+       "note": "MND: uses State Density Bonus Law and the City's Affordable Housing Ordinance to exceed the maximum height and obtain waivers"
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001145"
+       ],
+       "note": "State report 2025 entitlement row: inclusionary deed restriction, 55-year term"
       }
      ]
     }
@@ -264432,9 +264607,63 @@
       "SRC-001144",
       "SRC-001145"
      ]
+    },
+    {
+     "text": "MND description: demolish existing improvements and build a three-story mixed-use building of about 17,674 sq ft with about 962 sq ft of ground-floor retail, 12 residential units on the second and third floors, and a rooftop terrace. Waivers requested for front and side setbacks, third-story step-back, building recess, side-yard window and balcony orientation, and parking and loading requirements. Zoning CN, General Plan Neighborhood Commercial.",
+     "src": [
+      "SRC-004006"
+     ]
+    },
+    {
+     "text": "Vesting tentative map would subdivide the 0.2-acre site into 13 condominium lots and one common lot. Statutory exemption PRC 21080.66. City contact: Sean Gallegos, Senior Planner.",
+     "src": [
+      "SRC-004007",
+      "SRC-004009"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "DeNardi Wang Homes",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004008"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "996 Loraine Avenue LLC",
+     "contact": "Albert Wang, Manager",
+     "linkedin": null,
+     "email": "albert@denardiwang.com",
+     "phone": "(650) 937-9373",
+     "other_role": "Applicant",
+     "src": [
+      "SRC-004006"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "SDG Architects",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004008"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "David J. Powers & Associates",
+     "contact": "Carolyn Mogollon, Project Manager",
+     "linkedin": null,
+     "other_role": "CEQA consultant",
+     "src": [
+      "SRC-004006"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
@@ -264447,11 +264676,35 @@
      ]
     },
     {
+     "date": "2025-06-26",
+     "type": "Other",
+     "label": "Mitigated Negative Declaration filed with the state clearinghouse (review 2025-06-25 to 2025-07-14)",
+     "src": [
+      "SRC-004006"
+     ]
+    },
+    {
      "date": "2025-11-06",
      "type": "Approved",
      "label": "Entitlement approved",
      "src": [
       "SRC-001145"
+     ]
+    },
+    {
+     "date": "2025-11-20",
+     "type": "Other",
+     "label": "Notice of Exemption filed for vesting tentative map (13 condominium lots and one common lot)",
+     "src": [
+      "SRC-004007"
+     ]
+    },
+    {
+     "date": "2026-02-03",
+     "type": "Other",
+     "label": "Notice of Exemption filed for vesting tentative map",
+     "src": [
+      "SRC-004009"
      ]
     }
    ],
@@ -264460,12 +264713,104 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Web search on address and developer; CEQAnet and SF YIMBY results opened",
+     "src": [
+      "SRC-004006",
+      "SRC-004008"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel dataset APN 18915086: situs 996 Loraine Av, Los Altos 94024; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "losaltosca.gov project page and PC study session report (2022-03-17) returned 403",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project; no county role found",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "CEQAnet SCH 2025061276 (MND), 2025110817 and 2026020052 (NOEs); APR Table A 2022 and A2 2025 rows",
+     "src": [
+      "SRC-004006",
+      "SRC-004007",
+      "SRC-004009",
+      "SRC-001144",
+      "SRC-001145"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Search for Los Altos Town Crier and other local coverage found none",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SF YIMBY 2025-07-03 article",
+     "src": [
+      "SRC-004008"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "denardiwang.com did not resolve",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SDG Architects named by SF YIMBY; firm site not opened",
+     "src": [
+      "SRC-004008"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder found; no public funding in state report",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No LinkedIn posts surfaced in web search",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001144": "S1",
     "SRC-001145": "S2",
-    "SRC-001098": "S3"
+    "SRC-004006": "S3",
+    "SRC-004009": "S4",
+    "SRC-004007": "S5",
+    "SRC-004008": "S6",
+    "SRC-001098": "S7"
    },
    "lat": 37.35483633076923,
    "lng": -122.08706924615385,
@@ -264486,26 +264831,24 @@
      12,
      12
     ],
-    "restricted_units": 2,
+    "restricted_units": null,
     "aff_bucket": "Market",
     "aff_label": "Market, with inclusionary",
-    "aff_share": 0.16666666666666666,
-    "aff_levels": [
-     "lo"
-    ],
+    "aff_share": null,
+    "aff_levels": [],
     "mix_types": [],
     "tax_credit": false,
     "owner": "",
-    "developer": "",
+    "developer": "DeNardi Wang Homes",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2025-11-06",
+    "latest_event": "2026-02-03",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "996 loraine ave los altos 189-15-086 996 loraine ave, los altos, ca condominiums state category 5+ units, for-sale tenure approved state report shows entitlement approval los altos 12 units reported in entitlement and permit rows mixed-income 2 deed-restricted units reported to the state d22-0013 local tracking number as reported to the state [{\"count\": 2, \"ami\": 80}] state report 2025, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. application submitted entitlement approved"
+   "search": "996 loraine ave los altos 189-15-086 996 loraine ave, los altos, ca condominiums state category 5+ units, for-sale tenure approved state report shows entitlement approval los altos 12 units reported in entitlement and permit rows mixed-income 2 deed-restricted units reported to the state 2 low-income units in the approved project (notice of exemption 2025-11-20); state report 2022 application row listed the 2 units as moderate-income d22-0013 local tracking number as reported to the state [{\"count\": 2, \"ami\": 80}] state report 2025, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) [{\"count\": 2, \"ami\": 120}] state report 2022, application stage: 2 moderate-income deed-restricted units 3 three-story mixed-use building with a rooftop terrace on the fourth level 962 ground-floor commercial/retail 932 commercial square footage as listed on the 2021 notice of completion form attached to the mnd filing 0.2 [\"density bonus\"] mnd: uses state density bonus law and the city's affordable housing ordinance to exceed the maximum height and obtain waivers 55 state report 2025 entitlement row: inclusionary deed restriction, 55-year term from the state housing element annual progress report, through 2025. mnd description: demolish existing improvements and build a three-story mixed-use building of about 17,674 sq ft with about 962 sq ft of ground-floor retail, 12 residential units on the second and third floors, and a rooftop terrace. waivers requested for front and side setbacks, third-story step-back, building recess, side-yard window and balcony orientation, and parking and loading requirements. zoning cn, general plan neighborhood commercial. vesting tentative map would subdivide the 0.2-acre site into 13 condominium lots and one common lot. statutory exemption prc 21080.66. city contact: sean gallegos, senior planner. developer denardi wang homes other applicant 996 loraine avenue llc albert wang, manager architect sdg architects other ceqa consultant david j. powers & associates carolyn mogollon, project manager application submitted mitigated negative declaration filed with the state clearinghouse (review 2025-06-25 to 2025-07-14) entitlement approved notice of exemption filed for vesting tentative map (13 condominium lots and one common lot) notice of exemption filed for vesting tentative map"
   },
   {
    "id": "SCC-000382",
@@ -264587,8 +264930,17 @@
         "SRC-001107"
        ],
        "note": "State categories: 5+, SFA"
+      },
+      {
+       "value": "Townhomes",
+       "src": [
+        "SRC-001956",
+        "SRC-001107"
+       ],
+       "note": "Six attached single-family residences (state category SFA)"
       }
-     ]
+     ],
+     "best": 1
     },
     "status": {
      "claims": [
@@ -264616,16 +264968,11 @@
     "total_units": {
      "claims": [
       {
-       "value": 12,
-       "src": [
-        "SRC-001107"
-       ],
-       "note": "Units reported in entitlement and permit rows"
-      },
-      {
        "value": 6,
        "src": [
-        "SRC-001099"
+        "SRC-001099",
+        "SRC-001956",
+        "SRC-001107"
        ],
        "note": "Units in the application as reported"
       }
@@ -264647,6 +264994,20 @@
         "SRC-001956"
        ],
        "note": "City folder 131962, Vesting Tentative Map (permit type: Subdivision); city permit status: Approved. Matched by APN."
+      },
+      {
+       "value": "C18-030",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Conventional rezoning from A Agricultural to RM Multiple Residence; approved 2021-04-13"
+      },
+      {
+       "value": "PD26-009",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Planned Development Permit/Amendment for 6 residential units; filed 2026-11-17, under review"
       }
      ]
     },
@@ -264658,6 +265019,17 @@
         "SRC-001107"
        ],
        "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.3,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "0.30-gross acre site per H18-051, C18-030 and T25-021"
       }
      ]
     }
@@ -264675,12 +265047,67 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "State report Table A2 lists H18-051 twice: 2021 (6 units, entitlement approved 2021-04-13) and 2022 (6 units, entitlement approved 2022-03-11). City permit data shows H18-051 approved 2021-04-13 for six attached single-family residences.",
+     "src": [
+      "SRC-001107",
+      "SRC-001956"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Recorded owner",
+     "company": "Martin Quintana et al",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Martin Quintana",
+     "contact": "Martin Quintana",
+     "linkedin": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Dylan Nguyen",
+     "contact": "Dylan Nguyen",
+     "linkedin": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Ninh Le",
+     "contact": "Ninh Le",
+     "linkedin": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2017-09-11",
+     "type": "Other",
+     "label": "Preliminary review PRE17-149 filed (nine townhomes, rezoning A to A(PD))",
+     "src": [
+      "SRC-001956"
+     ]
+    },
     {
      "date": "2018-10-30",
      "type": "Application filed",
@@ -264690,11 +265117,52 @@
      ]
     },
     {
+     "date": "2021-04-13",
+     "type": "Approved",
+     "label": "Site Development Permit H18-051 and rezoning C18-030 approved",
+     "src": [
+      "SRC-001956",
+      "SRC-001107"
+     ]
+    },
+    {
      "date": "2022-03-11",
      "type": "Approved",
      "label": "Entitlement approved",
      "src": [
       "SRC-001107"
+     ]
+    },
+    {
+     "date": "2025-09-25",
+     "type": "Application filed",
+     "label": "Vesting Tentative Map T25-021 filed (six condominiums and one common lot)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2025-12-18",
+     "type": "Approved",
+     "label": "Minor Permit Adjustment AD25-676 issued (building and trash enclosure placement, one added parking space)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "type": "Application filed",
+     "label": "Planned Development Permit/Amendment PD26-009 filed for 6 residential units",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "type": "Application filed",
+     "label": "Tentative map filed for 7 lots (6 single-family residences and 1 common lot) on 0.31 gross acres",
+     "src": [
+      "SRC-001956"
      ]
     }
    ],
@@ -264708,8 +265176,94 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Removed total_units claim 12: the state report counts file H18-051 twice (2021 and 2022 rows)"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address; MLS and LoopNet land listings (LoopNet 403, MLS page did not load the listing)",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SCC parcel dataset APN 25429019: situs 967 N Capitol Av; city permit data names owner Quintana Martin et al",
+     "src": [
+      "SRC-001098",
+      "SRC-001956"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "City of San Jose planning permit GIS layer: PRE17-149, C18-030, H18-051, T25-021, ER25-208, AD25-676, PD26-009; sanjoseca.gov pages blocked",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "APR Table A 2018 and A2 2021/2022 rows; no CEQAnet or tax credit filings found",
+     "src": [
+      "SRC-001099",
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No local news coverage found",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No trade press found",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer company identified beyond individual applicants",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in sources found",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No financing found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Nothing surfaced in web search",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
@@ -264723,17 +265277,17 @@
     "pipeline"
    ],
    "summary": {
-    "product_type": "Mixed product",
+    "product_type": "Townhomes",
     "status": "Approved",
     "jurisdiction": "San Jose",
     "community": "",
     "county": "Santa Clara County",
     "area": "San Jose",
-    "total_units": null,
-    "units_display": "6–12",
+    "total_units": 6,
+    "units_display": "6",
     "units_range": [
      6,
-     12
+     6
     ],
     "restricted_units": null,
     "aff_bucket": "Market",
@@ -264742,17 +265296,17 @@
     "aff_levels": [],
     "mix_types": [],
     "tax_credit": false,
-    "owner": "",
+    "owner": "Martin Quintana et al",
     "developer": "",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2022-03-11",
+    "latest_event": "2026-11-18",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "967 capitol av san jose 254-29-019 967 n capitol ave, san jose, ca 967 capitol av, san jose, ca 967 n capitol av, san jose, ca mixed product state categories: 5+, sfa approved state report shows entitlement approval san jose 12 units reported in entitlement and permit rows 6 units in the application as reported h18-051 local tracking number as reported to the state t25-021 city folder 131962, vesting tentative map (permit type: subdivision); city permit status: approved. matched by apn. market-rate state report (through 2022): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit t25-021 (vesting tentative map, folder year 2025), status approved: \"vesting tentative map to allow six residential condominiums and one common lot on an approximately 0.30-gross acre site\" application submitted entitlement approved"
+   "search": "967 capitol av san jose 254-29-019 967 n capitol ave, san jose, ca 967 capitol av, san jose, ca 967 n capitol av, san jose, ca mixed product state categories: 5+, sfa townhomes six attached single-family residences (state category sfa) approved state report shows entitlement approval san jose 6 units in the application as reported h18-051 local tracking number as reported to the state t25-021 city folder 131962, vesting tentative map (permit type: subdivision); city permit status: approved. matched by apn. c18-030 conventional rezoning from a agricultural to rm multiple residence; approved 2021-04-13 pd26-009 planned development permit/amendment for 6 residential units; filed 2026-11-17, under review market-rate state report (through 2022): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 0.3 0.30-gross acre site per h18-051, c18-030 and t25-021 from the state housing element annual progress report, through 2025. city of san jose permit t25-021 (vesting tentative map, folder year 2025), status approved: \"vesting tentative map to allow six residential condominiums and one common lot on an approximately 0.30-gross acre site\" state report table a2 lists h18-051 twice: 2021 (6 units, entitlement approved 2021-04-13) and 2022 (6 units, entitlement approved 2022-03-11). city permit data shows h18-051 approved 2021-04-13 for six attached single-family residences. recorded owner martin quintana et al other applicant martin quintana martin quintana other applicant dylan nguyen dylan nguyen other applicant ninh le ninh le preliminary review pre17-149 filed (nine townhomes, rezoning a to a(pd)) application submitted site development permit h18-051 and rezoning c18-030 approved entitlement approved vesting tentative map t25-021 filed (six condominiums and one common lot) minor permit adjustment ad25-676 issued (building and trash enclosure placement, one added parking space) planned development permit/amendment pd26-009 filed for 6 residential units tentative map filed for 7 lots (6 single-family residences and 1 common lot) on 0.31 gross acres"
   },
   {
    "id": "SCC-000383",
@@ -264891,12 +265445,46 @@
       "SRC-001099",
       "SRC-001107"
      ]
+    },
+    {
+     "text": "City preliminary review PRE18-134 (filed 2018-06-28, status Under Review): combine two lots into one, build one new 12-unit residential building and keep one existing commercial building as a mixed-use development. Zoning CP. Applicant Kurt Anderson (Anderson Architects); owner field lists Anderson Architects.",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Architect",
+     "company": "Anderson Architects",
+     "contact": "Kurt Anderson",
+     "linkedin": null,
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Anderson Architects",
+     "contact": "Kurt Anderson",
+     "linkedin": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2018-06-28",
+     "type": "Other",
+     "label": "Focused preliminary review PRE18-134 filed",
+     "src": [
+      "SRC-001956"
+     ]
+    },
     {
      "date": "2018-10-29",
      "type": "Application filed",
@@ -264919,12 +265507,95 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on address and CP18-041 found no project pages",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel dataset APN 26407048: situs 760 Meridian Wy, San Jose 95126; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose planning permit GIS layer: PRE18-134 at APN 26407048; CP18-041 not in the layer; sanjoseca.gov pages blocked",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR Table A 2018 (CP18-041, 12 rental units) and A2 2019 (approved 2019-11-13); no CEQAnet filing found",
+     "src": [
+      "SRC-001099",
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No local news found",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No trade press found",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer identified",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Anderson Architects named as applicant in city permit data",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No financing found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Nothing surfaced in web search",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
-    "SRC-001098": "S3"
+    "SRC-001956": "S3",
+    "SRC-001098": "S4"
    },
    "lat": 37.31341596,
    "lng": -121.91331852,
@@ -264962,11 +265633,11 @@
     "stale_since": "2019-11-13",
     "part_of": ""
    },
-   "search": "760 meridian wy san jose 264-07-048 760 meridian way, san jose, ca 760 meridian wy, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 12 units reported in entitlement and permit rows cp18-041 local tracking number as reported to the state market-rate state report (through 2019): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. application submitted entitlement approved"
+   "search": "760 meridian wy san jose 264-07-048 760 meridian way, san jose, ca 760 meridian wy, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 12 units reported in entitlement and permit rows cp18-041 local tracking number as reported to the state market-rate state report (through 2019): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city preliminary review pre18-134 (filed 2018-06-28, status under review): combine two lots into one, build one new 12-unit residential building and keep one existing commercial building as a mixed-use development. zoning cp. applicant kurt anderson (anderson architects); owner field lists anderson architects. architect anderson architects kurt anderson other applicant anderson architects kurt anderson focused preliminary review pre18-134 filed application submitted entitlement approved"
   },
   {
    "id": "SCC-000384",
-   "name": "Main Street Townhomes",
+   "name": "Main Street Townhomes (808 S Main St)",
    "parcels": [
     {
      "apn": "086-25-051",
@@ -265086,8 +265757,16 @@
         "SRC-001124"
        ],
        "note": "Units in the application as reported"
+      },
+      {
+       "value": 27,
+       "src": [
+        "SRC-001124"
+       ],
+       "note": "State report 2018: four building permit applications for Main Street Townhomes (B-BP18-0284 to -0287) of 12, 5, 6 and 4 units"
       }
-     ]
+     ],
+     "best": 1
     },
     "planning_file": {
      "claims": [
@@ -265097,6 +265776,13 @@
         "SRC-001124"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "B-BP18-0284, B-BP18-0285, B-BP18-0286, B-BP18-0287",
+       "src": [
+        "SRC-001124"
+       ],
+       "note": "Four 2018 application rows in the state report"
       }
      ]
     },
@@ -265118,6 +265804,18 @@
      "src": [
       "SRC-001124"
      ]
+    },
+    {
+     "text": "State report 2018 Table A lists four rows for Main Street Townhomes at 808 S Main St (APN 086-25-021): B-BP18-0284 (12 owner units, submitted 2018-06-12), B-BP18-0285 (5 units), B-BP18-0286 (6 units) and B-BP18-0287 (4 units), the last three submitted 2018-06-08 with renter tenure. The four rows total 27 units.",
+     "src": [
+      "SRC-001124"
+     ]
+    },
+    {
+     "text": "County parcel dataset shows APN 086-25-051 with situs 808 S Main St, Milpitas; APN 086-25-021 (as listed in the state report) returns no parcel.",
+     "src": [
+      "SRC-001098"
+     ]
     }
    ],
    "parties": [],
@@ -265138,8 +265836,90 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Web search on name and address; results pointed to a Mercury News 2017-11-26 article on a 27-condo proposal at 808 S. Main St (pressreader 403); no other project pages",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SCC parcel dataset: 08625051 situs 808 S Main St; 08625021 not found",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "milpitas.gov searches; archive PDF opened was an unrelated 2018 press release",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "APR Table A 2018 rows B-BP18-0284 to 0287; no A2 rows; no CEQAnet filing found",
+     "src": [
+      "SRC-001124"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Mercury News article via pressreader returned 403",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No trade press found; bldup.com 403",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Developer not confirmed from an opened source",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect found",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No financing found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Nothing surfaced in web search",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001124": "S1",
     "SRC-001098": "S2"
@@ -265157,11 +265937,11 @@
     "community": "",
     "county": "Santa Clara County",
     "area": "Milpitas",
-    "total_units": 12,
-    "units_display": "12",
+    "total_units": 27,
+    "units_display": "27",
     "units_range": [
-     12,
-     12
+     27,
+     27
     ],
     "restricted_units": null,
     "aff_bucket": "Market",
@@ -265180,7 +265960,7 @@
     "stale_since": "2018-06-08",
     "part_of": ""
    },
-   "search": "main street townhomes milpitas 086-25-051 808 s main st, milpitas, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported milpitas 12 units in the application as reported b-bp18-0284, b-bp18-0285, b-bp18-0286 local tracking number as reported to the state market-rate state report (through 2018): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. application submitted"
+   "search": "main street townhomes (808 s main st) milpitas 086-25-051 808 s main st, milpitas, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported milpitas 12 units in the application as reported 27 state report 2018: four building permit applications for main street townhomes (b-bp18-0284 to -0287) of 12, 5, 6 and 4 units b-bp18-0284, b-bp18-0285, b-bp18-0286 local tracking number as reported to the state b-bp18-0284, b-bp18-0285, b-bp18-0286, b-bp18-0287 four 2018 application rows in the state report market-rate state report (through 2018): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. state report 2018 table a lists four rows for main street townhomes at 808 s main st (apn 086-25-021): b-bp18-0284 (12 owner units, submitted 2018-06-12), b-bp18-0285 (5 units), b-bp18-0286 (6 units) and b-bp18-0287 (4 units), the last three submitted 2018-06-08 with renter tenure. the four rows total 27 units. county parcel dataset shows apn 086-25-051 with situs 808 s main st, milpitas; apn 086-25-021 (as listed in the state report) returns no parcel. application submitted"
   },
   {
    "id": "SCC-000385",
@@ -265302,7 +266082,11 @@
       {
        "value": 12,
        "src": [
-        "SRC-001127"
+        "SRC-001127",
+        "SRC-004010",
+        "SRC-004011",
+        "SRC-004012",
+        "SRC-001126"
        ],
        "note": "Units reported in entitlement and permit rows"
       },
@@ -265313,7 +266097,8 @@
        ],
        "note": "Units in the application as reported"
       }
-     ]
+     ],
+     "best": 0
     },
     "affordability_type": {
      "claims": [
@@ -265344,6 +266129,13 @@
         "SRC-001127"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "24PLN-00005",
+       "src": [
+        "SRC-004010"
+       ],
+       "note": "Vesting Tentative Map to subdivide the parcel"
       }
      ]
     },
@@ -265360,6 +266152,94 @@
         "SRC-001127"
        ],
        "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+      },
+      {
+       "value": [
+        {
+         "count": 2,
+         "ami": 80
+        }
+       ],
+       "src": [
+        "SRC-001126",
+        "SRC-004011"
+       ],
+       "note": "State report 2025 building permit application 25BLD-01590: 2 low-income units; SF YIMBY 2022: two units for low-income households"
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "studio": 0,
+        "1br": 0,
+        "2br": 0,
+        "3br": 12,
+        "4br+": 0
+       },
+       "src": [
+        "SRC-004010"
+       ]
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-004010",
+        "SRC-004011",
+        "SRC-004012"
+       ]
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.38,
+       "src": [
+        "SRC-004010",
+        "SRC-004012"
+       ],
+       "note": "16,720 sq ft parcel"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-004010",
+        "SRC-001127"
+       ]
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001127"
+       ],
+       "note": "State report 2024 entitlement row, density bonus deed restriction"
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 10,
+       "src": [
+        "SRC-004011",
+        "SRC-001127"
+       ]
       }
      ]
     }
@@ -265371,12 +266251,98 @@
       "SRC-001126",
       "SRC-001127"
      ]
+    },
+    {
+     "text": "Replaces an existing 8-unit rental apartment building. Zoning RM-20. City prepared a Class 32 infill CEQA exemption. City project planner: Claire Raybould.",
+     "src": [
+      "SRC-004010",
+      "SRC-004011"
+     ]
+    },
+    {
+     "text": "SF YIMBY 2022 reports a requested 50 percent density bonus with waivers; state report 2024 entitlement row lists density bonus total 0.1, 14 other incentives (on-site improvements, development standards modification) and no financial subsidies.",
+     "src": [
+      "SRC-004011",
+      "SRC-001127"
+     ]
+    },
+    {
+     "text": "Restricted units: state report 2024 entitlement row (22PLN-00201) lists 2 moderate-income units; 2025 building permit row 25BLD-01590 lists 2 low-income units.",
+     "src": [
+      "SRC-001127",
+      "SRC-001126"
+     ]
+    },
+    {
+     "text": "SF YIMBY 2022: 16,770 sq ft total floor area, units 1,200 to 1,600 sq ft, 35 feet, two-car garage per unit. SF YIMBY 2024 (revised design): 18,256 sq ft built-up area, 33 feet. City page: about 18,000 sq ft.",
+     "src": [
+      "SRC-004011",
+      "SRC-004012",
+      "SRC-004010"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "Sutter 739 Associates LLC",
+     "contact": "Grace Li",
+     "linkedin": null,
+     "src": [
+      "SRC-004011",
+      "SRC-004012"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "DAHLIN Group",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004011",
+      "SRC-004012"
+     ]
+    },
+    {
+     "role": "Civil engineer",
+     "company": "BKF Engineers",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004011",
+      "SRC-004012"
+     ]
+    },
+    {
+     "role": "Landscape architect",
+     "company": "Anyi Landscape Studio",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004011",
+      "SRC-004012"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2023-11-02",
+     "type": "Other",
+     "label": "Architectural Review Board hearing listed on city project page",
+     "src": [
+      "SRC-004010"
+     ]
+    },
+    {
+     "date": "2024-03-27",
+     "type": "Other",
+     "label": "Project review meeting",
+     "src": [
+      "SRC-004012"
+     ]
+    },
     {
      "date": "2024-04-22",
      "type": "Approved",
@@ -265399,12 +266365,105 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Web search on address; city page, SF YIMBY articles opened",
+     "src": [
+      "SRC-004010",
+      "SRC-004011"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel dataset APN 12735200: situs 739 Sutter Av, 8 situs addresses; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Palo Alto project page (22PLN-00201, 24PLN-00005); ARB minutes not located",
+     "src": [
+      "SRC-004010"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "APR Table A 2025 (25BLD-01589, 25BLD-01590) and A2 2024 (22PLN-00201); CEQAnet NOE attachment too large to open",
+     "src": [
+      "SRC-001126",
+      "SRC-001127"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Palo Alto Online 2025-10-13 article returned 429; 2024-01-09 article returned no content",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SF YIMBY 2022-05-16 and 2024-03-26",
+     "src": [
+      "SRC-004011",
+      "SRC-004012"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No website found for Sutter 739 Associates LLC",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "DAHLIN Group named by SF YIMBY; firm project page not found",
+     "src": [
+      "SRC-004011"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "State report notes no financial subsidies",
+     "src": [
+      "SRC-001127"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Nothing surfaced in web search",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001126": "S1",
     "SRC-001127": "S2",
-    "SRC-001098": "S3"
+    "SRC-004010": "S3",
+    "SRC-004012": "S4",
+    "SRC-004011": "S5",
+    "SRC-001098": "S6"
    },
    "lat": 37.433077825,
    "lng": -122.12619855,
@@ -265419,24 +266478,23 @@
     "community": "",
     "county": "Santa Clara County",
     "area": "Palo Alto",
-    "total_units": null,
-    "units_display": "7–12",
+    "total_units": 12,
+    "units_display": "12",
     "units_range": [
-     7,
+     12,
      12
     ],
-    "restricted_units": 2,
+    "restricted_units": null,
     "aff_bucket": "Market",
     "aff_label": "Market, with inclusionary",
     "aff_share": 0.16666666666666666,
-    "aff_levels": [
-     "m1",
-     "m2"
+    "aff_levels": [],
+    "mix_types": [
+     "3br"
     ],
-    "mix_types": [],
     "tax_credit": false,
     "owner": "",
-    "developer": "",
+    "developer": "Sutter 739 Associates LLC",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
@@ -265445,7 +266503,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "739 sutter av palo alto 127-35-200 739 sutter ave, palo alto, ca 739 sutter av, palo alto, ca 739 sutter ave*, palo alto, ca condominiums state category 5+ units, for-sale tenure approved state report shows entitlement approval palo alto 12 units reported in entitlement and permit rows 7 units in the application as reported mixed-income 2 deed-restricted units reported to the state 22pln-00201, 25bld-01589, 25bld-01590 local tracking number as reported to the state [{\"count\": 2, \"ami\": 120}] state report 2024, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. entitlement approved application submitted"
+   "search": "739 sutter av palo alto 127-35-200 739 sutter ave, palo alto, ca 739 sutter av, palo alto, ca 739 sutter ave*, palo alto, ca condominiums state category 5+ units, for-sale tenure approved state report shows entitlement approval palo alto 12 units reported in entitlement and permit rows 7 units in the application as reported mixed-income 2 deed-restricted units reported to the state 22pln-00201, 25bld-01589, 25bld-01590 local tracking number as reported to the state 24pln-00005 vesting tentative map to subdivide the parcel [{\"count\": 2, \"ami\": 120}] state report 2024, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) [{\"count\": 2, \"ami\": 80}] state report 2025 building permit application 25bld-01590: 2 low-income units; sf yimby 2022: two units for low-income households {\"studio\": 0, \"1br\": 0, \"2br\": 0, \"3br\": 12, \"4br+\": 0} 3 0.38 16,720 sq ft parcel [\"density bonus\"] 55 state report 2024 entitlement row, density bonus deed restriction 10 from the state housing element annual progress report, through 2025. replaces an existing 8-unit rental apartment building. zoning rm-20. city prepared a class 32 infill ceqa exemption. city project planner: claire raybould. sf yimby 2022 reports a requested 50 percent density bonus with waivers; state report 2024 entitlement row lists density bonus total 0.1, 14 other incentives (on-site improvements, development standards modification) and no financial subsidies. restricted units: state report 2024 entitlement row (22pln-00201) lists 2 moderate-income units; 2025 building permit row 25bld-01590 lists 2 low-income units. sf yimby 2022: 16,770 sq ft total floor area, units 1,200 to 1,600 sq ft, 35 feet, two-car garage per unit. sf yimby 2024 (revised design): 18,256 sq ft built-up area, 33 feet. city page: about 18,000 sq ft. developer sutter 739 associates llc grace li architect dahlin group civil engineer bkf engineers landscape architect anyi landscape studio architectural review board hearing listed on city project page project review meeting entitlement approved application submitted"
   },
   {
    "id": "SCC-000386",

@@ -121,7 +121,10 @@
         {
           "value": 12,
           "src": [
-            "SRC-001145"
+            "SRC-001145",
+            "SRC-004006",
+            "SRC-004007",
+            "SRC-004008"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -143,6 +146,13 @@
           "value": "2 deed-restricted units reported to the state",
           "src": [
             "SRC-001145"
+          ]
+        },
+        {
+          "value": "2 low-income units in the approved project (Notice of Exemption 2025-11-20); state report 2022 application row listed the 2 units as moderate-income",
+          "src": [
+            "SRC-004007",
+            "SRC-001144"
           ]
         }
       ]
@@ -172,6 +182,87 @@
             "SRC-001145"
           ],
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001144"
+          ],
+          "note": "State report 2022, application stage: 2 moderate-income deed-restricted units"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004006",
+            "SRC-004007"
+          ],
+          "note": "Three-story mixed-use building with a rooftop terrace on the fourth level"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 962,
+          "src": [
+            "SRC-004006",
+            "SRC-004007",
+            "SRC-004008"
+          ],
+          "note": "Ground-floor commercial/retail"
+        },
+        {
+          "value": 932,
+          "src": [
+            "SRC-004006"
+          ],
+          "note": "Commercial square footage as listed on the 2021 Notice of Completion form attached to the MND filing"
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.2,
+          "src": [
+            "SRC-004006",
+            "SRC-004009"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004006",
+            "SRC-001144"
+          ],
+          "note": "MND: uses State Density Bonus Law and the City's Affordable Housing Ordinance to exceed the maximum height and obtain waivers"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001145"
+          ],
+          "note": "State report 2025 entitlement row: inclusionary deed restriction, 55-year term"
         }
       ]
     }
@@ -183,9 +274,63 @@
         "SRC-001144",
         "SRC-001145"
       ]
+    },
+    {
+      "text": "MND description: demolish existing improvements and build a three-story mixed-use building of about 17,674 sq ft with about 962 sq ft of ground-floor retail, 12 residential units on the second and third floors, and a rooftop terrace. Waivers requested for front and side setbacks, third-story step-back, building recess, side-yard window and balcony orientation, and parking and loading requirements. Zoning CN, General Plan Neighborhood Commercial.",
+      "src": [
+        "SRC-004006"
+      ]
+    },
+    {
+      "text": "Vesting tentative map would subdivide the 0.2-acre site into 13 condominium lots and one common lot. Statutory exemption PRC 21080.66. City contact: Sean Gallegos, Senior Planner.",
+      "src": [
+        "SRC-004007",
+        "SRC-004009"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "DeNardi Wang Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004008"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "996 Loraine Avenue LLC",
+      "contact": "Albert Wang, Manager",
+      "linkedin": null,
+      "email": "albert@denardiwang.com",
+      "phone": "(650) 937-9373",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004006"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004008"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": "Carolyn Mogollon, Project Manager",
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-004006"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -198,11 +343,35 @@
       ]
     },
     {
+      "date": "2025-06-26",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the state clearinghouse (review 2025-06-25 to 2025-07-14)",
+      "src": [
+        "SRC-004006"
+      ]
+    },
+    {
       "date": "2025-11-06",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001145"
+      ]
+    },
+    {
+      "date": "2025-11-20",
+      "type": "Other",
+      "label": "Notice of Exemption filed for vesting tentative map (13 condominium lots and one common lot)",
+      "src": [
+        "SRC-004007"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "type": "Other",
+      "label": "Notice of Exemption filed for vesting tentative map",
+      "src": [
+        "SRC-004009"
       ]
     }
   ],
@@ -211,6 +380,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer; CEQAnet and SF YIMBY results opened",
+      "src": [
+        "SRC-004006",
+        "SRC-004008"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 18915086: situs 996 Loraine Av, Los Altos 94024; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "losaltosca.gov project page and PC study session report (2022-03-17) returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025061276 (MND), 2025110817 and 2026020052 (NOEs); APR Table A 2022 and A2 2025 rows",
+      "src": [
+        "SRC-004006",
+        "SRC-004007",
+        "SRC-004009",
+        "SRC-001144",
+        "SRC-001145"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for Los Altos Town Crier and other local coverage found none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-07-03 article",
+      "src": [
+        "SRC-004008"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "denardiwang.com did not resolve",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SDG Architects named by SF YIMBY; firm site not opened",
+      "src": [
+        "SRC-004008"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found; no public funding in state report",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No LinkedIn posts surfaced in web search",
+      "src": []
+    }
+  }
 }

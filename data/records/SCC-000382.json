@@ -78,8 +78,17 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001956",
+            "SRC-001107"
+          ],
+          "note": "Six attached single-family residences (state category SFA)"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -107,16 +116,11 @@
     "total_units": {
       "claims": [
         {
-          "value": 12,
-          "src": [
-            "SRC-001107"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 6,
           "src": [
-            "SRC-001099"
+            "SRC-001099",
+            "SRC-001956",
+            "SRC-001107"
           ],
           "note": "Units in the application as reported"
         }
@@ -138,6 +142,20 @@
             "SRC-001956"
           ],
           "note": "City folder 131962, Vesting Tentative Map (permit type: Subdivision); city permit status: Approved. Matched by APN."
+        },
+        {
+          "value": "C18-030",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Conventional rezoning from A Agricultural to RM Multiple Residence; approved 2021-04-13"
+        },
+        {
+          "value": "PD26-009",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Planned Development Permit/Amendment for 6 residential units; filed 2026-11-17, under review"
         }
       ]
     },
@@ -149,6 +167,17 @@
             "SRC-001107"
           ],
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.3,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "0.30-gross acre site per H18-051, C18-030 and T25-021"
         }
       ]
     }
@@ -166,12 +195,67 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "State report Table A2 lists H18-051 twice: 2021 (6 units, entitlement approved 2021-04-13) and 2022 (6 units, entitlement approved 2022-03-11). City permit data shows H18-051 approved 2021-04-13 for six attached single-family residences.",
+      "src": [
+        "SRC-001107",
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Martin Quintana et al",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Martin Quintana",
+      "contact": "Martin Quintana",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dylan Nguyen",
+      "contact": "Dylan Nguyen",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ninh Le",
+      "contact": "Ninh Le",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-09-11",
+      "type": "Other",
+      "label": "Preliminary review PRE17-149 filed (nine townhomes, rezoning A to A(PD))",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2018-10-30",
       "type": "Application filed",
@@ -181,11 +265,52 @@
       ]
     },
     {
+      "date": "2021-04-13",
+      "type": "Approved",
+      "label": "Site Development Permit H18-051 and rezoning C18-030 approved",
+      "src": [
+        "SRC-001956",
+        "SRC-001107"
+      ]
+    },
+    {
       "date": "2022-03-11",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "type": "Application filed",
+      "label": "Vesting Tentative Map T25-021 filed (six condominiums and one common lot)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2025-12-18",
+      "type": "Approved",
+      "label": "Minor Permit Adjustment AD25-676 issued (building and trash enclosure placement, one added parking space)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Application filed",
+      "label": "Planned Development Permit/Amendment PD26-009 filed for 6 residential units",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Application filed",
+      "label": "Tentative map filed for 7 lots (6 single-family residences and 1 common lot) on 0.31 gross acres",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -199,6 +324,92 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Removed total_units claim 12: the state report counts file H18-051 twice (2021 and 2022 rows)"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address; MLS and LoopNet land listings (LoopNet 403, MLS page did not load the listing)",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset APN 25429019: situs 967 N Capitol Av; city permit data names owner Quintana Martin et al",
+      "src": [
+        "SRC-001098",
+        "SRC-001956"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of San Jose planning permit GIS layer: PRE17-149, C18-030, H18-051, T25-021, ER25-208, AD25-676, PD26-009; sanjoseca.gov pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2018 and A2 2021/2022 rows; no CEQAnet or tax credit filings found",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer company identified beyond individual applicants",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Nothing surfaced in web search",
+      "src": []
+    }
+  }
 }
