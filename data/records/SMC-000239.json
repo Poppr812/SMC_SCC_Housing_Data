@@ -168,6 +168,13 @@
           "src": [
             "SRC-001187"
           ]
+        },
+        {
+          "value": "70% state density bonus: 20 base units plus 14 bonus units; BMR units are two-bedroom units of about 1,205 to 1,230 sq ft",
+          "src": [
+            "SRC-003668",
+            "SRC-001187"
+          ]
         }
       ]
     },
@@ -182,9 +189,80 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 16,
+            "3br": 18,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003668"
+          ]
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 1562,
+          "src": [
+            "SRC-003668"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 44,
+          "src": [
+            "SRC-001187",
+            "SRC-003669"
+          ],
+          "note": "Ground floor; plus 51 long-term and 6 short-term bicycle spaces"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 50
+            },
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001187",
+            "SRC-003668"
+          ]
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Replaces three one- and two-story apartment buildings; required actions include architectural control, major subdivision into 34 condominium parcels, BMR housing agreement, heritage tree removal permits and tenant relocation assistance. Height 63 ft plus 10 ft rooftop stair towers; gross floor area 93,088 sq ft (FAR 3.13).",
+      "src": [
+        "SRC-001187"
+      ]
+    },
+    {
+      "text": "The Almanac reported an estimated 22-month construction period if approved.",
+      "src": [
+        "SRC-003669"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -194,6 +272,34 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001187"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Hoover Capital Partners LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Luxuriant Investments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003669",
+        "SRC-001187"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Levy Design Partners, Inc. (LDP Architecture)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003670"
       ]
     }
   ],
@@ -207,6 +313,42 @@
       "src": [
         "SRC-001187"
       ]
+    },
+    {
+      "date": "2026-05-07",
+      "type": "Other",
+      "label": "Application deemed incomplete",
+      "src": [
+        "SRC-001187"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-17",
+      "type": "Other",
+      "label": "Application resubmitted",
+      "src": [
+        "SRC-001187"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-16",
+      "type": "Other",
+      "label": "Application deemed incomplete",
+      "src": [
+        "SRC-001187"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Other",
+      "label": "Application resubmitted",
+      "src": [
+        "SRC-001187"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-09-01",
@@ -230,6 +372,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Luxuriant Investments",
+      "src": [
+        "SRC-003669"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC parcel layer: APNs 071-103-270 and 071-103-280 owned by Hoover Capital Partners LLC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Menlo Park project page; August 2026 project description letter and plan set",
+      "src": [
+        "SRC-001187",
+        "SRC-003668",
+        "SRC-003670"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "State APR data: no row for 1300/1308 Hoover; no CEQAnet filing found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "The Almanac, May 14, 2026",
+      "src": [
+        "SRC-003669"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Luxuriant Investments website or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect identified from plan set; no LDP Architecture project page found",
+      "src": [
+        "SRC-003670"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; nothing found",
+      "src": []
+    }
+  }
 }

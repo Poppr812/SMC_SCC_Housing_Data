@@ -156,6 +156,12 @@
           "src": [
             "SRC-001145"
           ]
+        },
+        {
+          "value": "2 very low-income and 3 moderate-income units (15% inclusionary of ownership units); 4 affordable two-bedroom and 1 affordable three-bedroom",
+          "src": [
+            "SRC-003671"
+          ]
         }
       ]
     },
@@ -168,8 +174,15 @@
             "SRC-001145"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "D23-0011, CUP23-0001, TM23-0003",
+          "src": [
+            "SRC-003671"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "restricted_by_ami": {
       "claims": [
@@ -190,6 +203,93 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 11,
+            "3br": 22,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003671"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003671",
+            "SRC-003672",
+            "SRC-003673"
+          ],
+          "note": "75.21 ft by density bonus waiver"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 111,
+          "src": [
+            "SRC-003671"
+          ],
+          "note": "8 at grade and 103 in a two-level underground garage; 70 bicycle stalls"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 16140,
+          "src": [
+            "SRC-003671",
+            "SRC-003672"
+          ],
+          "note": "Office space on ground floor and part of second floor"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.91,
+          "src": [
+            "SRC-003671",
+            "SRC-003672"
+          ],
+          "note": "Gross; 0.84 acre net after right-of-way dedication on Jordan Ave"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003671"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001145"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -199,12 +299,114 @@
         "SRC-001144",
         "SRC-001145"
       ]
+    },
+    {
+      "text": "Planning Commission unanimously approved design review and the conditional use permit on Nov. 21, 2024 and recommended the vesting tentative map to the City Council. Map creates 33 residential condominium units, one commercial condominium unit and a common area.",
+      "src": [
+        "SRC-003675",
+        "SRC-003671"
+      ]
+    },
+    {
+      "text": "Site held a Jack in the Box restaurant and a tenant-occupied single-family house; building is about 97,487 sq ft. SF YIMBY describes the residential units as apartments; city reports describe a condominium map.",
+      "src": [
+        "SRC-003671",
+        "SRC-003673"
+      ]
+    },
+    {
+      "text": "An earlier proposal for the site (city file PPR19-0007) had four condominiums and 45,080 sq ft of offices in four stories, designed by Hayes Group Architects, per SF YIMBY.",
+      "src": [
+        "SRC-003673"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Doheny-Vidovich Partners",
+      "contact": "Jennifer Tersigni",
+      "linkedin": null,
+      "email": "jtersigni@deanzaproperties.com",
+      "phone": "650-209-3232",
+      "src": [
+        "SRC-003671",
+        "SRC-003674",
+        "SRC-003673"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Doheny-Vidovich Partners",
+      "contact": "John Vidovich",
+      "linkedin": null,
+      "other_role": "Property owner (plan set and tenant relocation plan)",
+      "src": [
+        "SRC-003674",
+        "SRC-003673"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Winkleman Designs",
+      "contact": "Bill Winkleman",
+      "linkedin": null,
+      "other_role": "Designer",
+      "src": [
+        "SRC-003674"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT Landscape Architecture + Design",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003674"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "JMH Weiss",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003674"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kamangar Consulting LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Project coordinator",
+      "src": [
+        "SRC-003674"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Revival Development Services",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tenant relocation consultant",
+      "src": [
+        "SRC-003671"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-06-15",
+      "type": "Other",
+      "label": "SB 330 preliminary application filed",
+      "src": [
+        "SRC-003671"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-12-07",
       "type": "Application filed",
@@ -220,6 +422,24 @@
       "src": [
         "SRC-001145"
       ]
+    },
+    {
+      "date": "2024-12-03",
+      "type": "Other",
+      "label": "CEQA notice of exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003672"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-14",
+      "type": "Other",
+      "label": "City Council agenda: vesting tentative map TM23-0003 (34 condominium lots and one common lot)",
+      "src": [
+        "SRC-003675"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -227,6 +447,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Doheny-Vidovich; led to Los Altos meeting documents",
+      "src": [
+        "SRC-003671"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 17002026: situs 4896 El Camino Real; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Los Altos PC agenda report and packet 2024-11-21; Council report 2025-01-14; city project page losaltosca.gov returned 403",
+      "src": [
+        "SRC-003671",
+        "SRC-003674",
+        "SRC-003675"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2024120054; APR 2024 entitlement row (55-year term, no government funding)",
+      "src": [
+        "SRC-003672",
+        "SRC-001145"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Los Altos Town Crier and local news; no article found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY Dec. 2024 (earlier proposal history)",
+      "src": [
+        "SRC-003673"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Doheny-Vidovich Partners project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Designer Winkleman Designs from plan set; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "State report: no government funding; no lender named",
+      "src": [
+        "SRC-001145"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; nothing found",
+      "src": []
+    }
+  }
 }

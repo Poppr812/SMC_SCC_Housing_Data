@@ -270,8 +270,30 @@
           "src": [
             "SRC-001571"
           ]
+        },
+        {
+          "value": 44,
+          "src": [
+            "SRC-003656"
+          ],
+          "note": "SB 330 preliminary application, April 2024: 16 market-rate, 4 very low, 20 low and 4 moderate income units"
+        },
+        {
+          "value": 20,
+          "src": [
+            "SRC-003657"
+          ],
+          "note": "City letter: formal application received 9/19/24 was for a 20-unit project"
+        },
+        {
+          "value": 17,
+          "src": [
+            "SRC-003657"
+          ],
+          "note": "City letter of Aug. 4, 2025 is titled Housing Development Project - 17 Units"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -294,6 +316,76 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.13,
+          "src": [
+            "SRC-001571"
+          ],
+          "note": "City lists a 136,279 sq ft site"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001571"
+          ],
+          "note": "Most units two stories, 28 ft maximum height; one home is three stories with a basement"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001571"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 30
+            }
+          ],
+          "src": [
+            "SRC-001571"
+          ],
+          "note": "One unit of each type (home, junior ADU, ADU) deed-restricted to extremely low income"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 50000,
+          "src": [
+            "SRC-003656"
+          ],
+          "note": "Preliminary application, April 2024 (44-unit version)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Preliminary application (April 2024) listed 4 very low, 20 low and 4 moderate income units of 44; current 35-unit plan restricts 3 units to extremely low income",
+          "src": [
+            "SRC-003656",
+            "SRC-001571"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -302,18 +394,122 @@
       "src": [
         "SRC-001571"
       ]
+    },
+    {
+      "text": "City page shows a CEQA exemption request under Public Resources Code Section 21080.66 under review; public hearing not yet scheduled.",
+      "src": [
+        "SRC-001571"
+      ]
+    },
+    {
+      "text": "City page describes homes of about 3,525 to 4,215 sq ft, each single-family home with a two-car garage, and two private driveways to Parker Ranch Rd. and Burnett Dr. Site is zoned R1 Hillside Residential per the preliminary application.",
+      "src": [
+        "SRC-001571",
+        "SRC-003656"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "WZW Investment LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003656"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Wei Wang",
+      "contact": "Wei Wang",
+      "linkedin": null,
+      "other_role": "Property owner named on formal application",
+      "src": [
+        "SRC-003658"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SC Design Group",
+      "contact": "Susan Chen",
+      "linkedin": null,
+      "email": "susanchen8@yahoo.com",
+      "phone": "408-421-5920",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003656",
+        "SRC-003658",
+        "SRC-003657"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-04-11",
+      "type": "Other",
+      "label": "SB 330 preliminary application received",
+      "src": [
+        "SRC-001571"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-09-19",
       "type": "Application filed",
       "label": "Formal application received",
       "src": [
         "SRC-001571"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-21",
+      "type": "Other",
+      "label": "Application deemed incomplete",
+      "src": [
+        "SRC-003657"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-21",
+      "type": "Other",
+      "label": "Incomplete letter sent",
+      "src": [
+        "SRC-001571",
+        "SRC-003657"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-19",
+      "type": "Other",
+      "label": "Application revisions received",
+      "src": [
+        "SRC-001571",
+        "SRC-003657"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-18",
+      "type": "Other",
+      "label": "Submittal complete for processing (city letter gives 6/17/25)",
+      "src": [
+        "SRC-001571",
+        "SRC-003657"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-04",
+      "type": "Other",
+      "label": "City inconsistency letter: hillside General Plan policies LU 8.1, 9.1, 9.2, 10.1",
+      "src": [
+        "SRC-003657"
       ],
       "estimated": false
     }
@@ -323,6 +519,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Parker Ranch and builder's remedy; led to city project page and application documents",
+      "src": [
+        "SRC-001571"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 36643018: situs 12048 Parker Ranch Rd, no owner field; owner of record from preliminary application",
+      "src": [
+        "SRC-001098",
+        "SRC-003656"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Saratoga project page; preliminary application, formal application, Aug. 4, 2025 inconsistency letter (CPX24-0018)",
+      "src": [
+        "SRC-001571",
+        "SRC-003656",
+        "SRC-003658",
+        "SRC-003657"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Saratoga; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "State APR data: only a 2022 ADU (TEC21-0155) at this address, no CPX24-0018 row; no CEQAnet filing found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Saratoga builder's remedy news; no article on this address found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal Saratoga builder's remedy article returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for SC Design Group or WZW Investment LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Site plan lists an architect at a Kifer Road, Sunnyvale address; firm name not legible in the posted PDF text",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city documents or search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; no public post on this project",
+      "src": []
+    }
+  }
 }

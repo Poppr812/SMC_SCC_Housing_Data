@@ -93,11 +93,22 @@
         {
           "value": 34,
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-001106"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 39,
+          "src": [
+            "SRC-003663",
+            "SRC-003664",
+            "SRC-003665"
+          ],
+          "note": "Approved by City Council Aug. 29, 2023"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -115,6 +126,12 @@
           "value": "5 deed-restricted units reported to the state",
           "src": [
             "SRC-001102"
+          ]
+        },
+        {
+          "value": "City inclusionary ordinance: 15% of rental units at an average 100% AMI (5 units plus in-lieu fee for the fraction, or 6 units)",
+          "src": [
+            "SRC-003663"
           ]
         }
       ]
@@ -144,6 +161,127 @@
             "SRC-001102"
           ],
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 80
+            },
+            {
+              "count": 3,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001102"
+          ],
+          "note": "State report 2024, building permit stage"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Student"
+          ],
+          "src": [
+            "SRC-003665"
+          ],
+          "note": "Described as student housing near Santa Clara University"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003663",
+            "SRC-003666"
+          ],
+          "note": "2023 approval: four-story mixed-use building"
+        },
+        {
+          "value": 3,
+          "src": [
+            "SRC-001102"
+          ],
+          "note": "State report 2024 permit row: three stories of residential apartments"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1500,
+          "src": [
+            "SRC-003663",
+            "SRC-003665"
+          ]
+        },
+        {
+          "value": 1540,
+          "src": [
+            "SRC-003666",
+            "SRC-003664"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 38,
+          "src": [
+            "SRC-003663",
+            "SRC-003664"
+          ],
+          "note": "24 below grade and 14 at grade, plus 8 motorcycle spaces (2023 approval)"
+        },
+        {
+          "value": 33,
+          "src": [
+            "SRC-003666"
+          ],
+          "note": "Draft MND, April 2023"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.4,
+          "src": [
+            "SRC-003663",
+            "SRC-003664"
+          ],
+          "note": "Triangular lot at The Alameda, Bellomy Street and Park Avenue"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 27520,
+          "src": [
+            "SRC-003664"
+          ],
+          "note": "2023 39-unit design; about 46,540 sq ft total"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003663"
+          ],
+          "note": "General Plan Amendment and rezone to Planned Development"
         }
       ]
     }
@@ -155,12 +293,107 @@
         "SRC-001106",
         "SRC-001102"
       ]
+    },
+    {
+      "text": "Site was a gas and service station, vacant since its 1993 demolition. General Plan changed from Neighborhood Mixed Use to Very High Density Residential and zoning from CN to PD (Resolutions 23-9256, 23-9257, 23-9258).",
+      "src": [
+        "SRC-003663"
+      ]
+    },
+    {
+      "text": "The 2023 approval used the address 2655 The Alameda; the state report's 2024 permit row notes a new address, 2685 The Alameda, for the same parcel 230-12-012.",
+      "src": [
+        "SRC-003663",
+        "SRC-001102"
+      ]
+    },
+    {
+      "text": "Western Real Estate Business (Nov. 2023) reported construction planned to start in 2024 and finish in 2025.",
+      "src": [
+        "SRC-003665"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Kapital Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003664",
+        "SRC-003665"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kapital Alameda, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003663"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Kenneth Rodrigues & Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003664"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Sandis",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003664"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003664"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-04-13",
+      "type": "Other",
+      "label": "Draft MND released for public review (to May 15, 2023)",
+      "src": [
+        "SRC-003666"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-07-13",
+      "type": "Other",
+      "label": "Planning Commission recommended approval of MND, GPA and rezone",
+      "src": [
+        "SRC-003667",
+        "SRC-003663"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-08-29",
+      "type": "Approved",
+      "label": "City Council adopted MND, General Plan Amendment and rezone to PD for 39 units",
+      "src": [
+        "SRC-003663"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-06-18",
       "type": "Application filed",
@@ -191,6 +424,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 2685 and 2655 The Alameda and Kapital Partners",
+      "src": [
+        "SRC-003665"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 23012012: situs 2685 The Alameda; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Santa Clara Legistar matters 22284 (PC 2023-07-13) and 22544 (Council 2023-08-29); santaclaraca.gov not used (blocks automated access)",
+      "src": [
+        "SRC-003667",
+        "SRC-003663"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2023040354 MND; APR rows PLN24-00316 (minor amendment 39 to 34 units) and BLD23-71853",
+      "src": [
+        "SRC-003666",
+        "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news article found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY Sept. 2023; Western Real Estate Business Nov. 2023",
+      "src": [
+        "SRC-003664",
+        "SRC-003665"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Kapital Partners project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Kenneth Rodrigues & Partners site did not load a project page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "State report: no financial assistance; no lender named",
+      "src": [
+        "SRC-001102"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search only; leasing listing sites (apartments.com, apartmentfinder) returned 403",
+      "src": []
+    }
+  }
 }
