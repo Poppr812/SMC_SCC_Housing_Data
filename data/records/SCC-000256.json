@@ -135,7 +135,8 @@
         {
           "value": "Inactive pipeline",
           "src": [
-            "SRC-001856"
+            "SRC-001856",
+            "SRC-003325"
           ],
           "note": "SJ Build tracker lists this file as Withdrawn; single secondary source, not confirmed with the city."
         }
@@ -171,6 +172,12 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE23-218 (SB 330 preliminary application)",
+          "src": [
+            "SRC-003327"
+          ]
         }
       ]
     },
@@ -200,6 +207,45 @@
           "note": "State report 2024, application stage: 14 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.87,
+          "src": [
+            "SRC-003325"
+          ],
+          "note": "Approximately 3.87 gross acres."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003326"
+          ],
+          "note": "Three-story townhomes."
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 12,
+            "3br": 56,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003326"
+          ],
+          "note": "12 two-bedroom; 28 three-bedroom; 28 three-bedroom with optional fourth bedroom. Blog cites the Silicon Valley Business Journal, April 11, 2024."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -207,6 +253,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "City permit system: H24-019 development permit for demolition of an industrial building and 68 condominium units (townhomes) in 14 buildings, status Withdrawn; companion stormwater record also Withdrawn.",
+      "src": [
+        "SRC-003325"
+      ]
+    },
+    {
+      "text": "City permit system: PRE23-218 SB 330 preliminary application for 63 townhomes, status Expired.",
+      "src": [
+        "SRC-003327"
+      ]
+    },
+    {
+      "text": "Blog describes unit sizes of about 1,428 to 2,030 sq ft and an existing single-story industrial building in the Spartan Keyes neighborhood.",
+      "src": [
+        "SRC-003326"
       ]
     }
   ],
@@ -220,11 +284,29 @@
       "src": [
         "SRC-001856"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Valley Oak Partners",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003326",
+        "SRC-001856"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-11-14",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PRE23-218 (63 townhomes)",
+      "src": [
+        "SRC-001856"
+      ]
+    },
     {
       "date": "2024-04-08",
       "type": "Application filed",
@@ -244,6 +326,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, developer and file number; San Jose Blog post (May 2024) and sjbuild page opened.",
+      "src": [
+        "SRC-003326",
+        "SRC-001856"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC open parcel data for APN 477-02-063: situs 185 E Humboldt St; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "sjpermits.org queries for H24-019 (Withdrawn) and PRE23-218 (Expired). sanjoseca.gov not used (blocks automated access).",
+      "src": [
+        "SRC-003325",
+        "SRC-003327"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A 2024: H24-019, 68 units, 14 low-income, Pending; already on record.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "The San Jose Blog, 2024-05-26 (cites paywalled SVBJ article of 2024-04-11, not opened).",
+      "src": [
+        "SRC-003326"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "sjbuild listing already on record; Real Deal Valley Oak items cover other projects.",
+      "src": [
+        "SRC-001856"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "valleyoakpartners.com failed with an expired TLS certificate.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city permit records, blog or sjbuild.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for Valley Oak Partners LinkedIn posts on this site returned none.",
+      "src": []
+    }
+  }
 }

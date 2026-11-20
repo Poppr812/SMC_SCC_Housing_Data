@@ -206,7 +206,8 @@
           "value": 68,
           "src": [
             "SRC-001367",
-            "SRC-001368"
+            "SRC-001368",
+            "SRC-003328"
           ]
         },
         {
@@ -246,6 +247,75 @@
           "src": [
             "SRC-001368"
           ]
+        },
+        {
+          "value": "HUD Section 8 Project-based Vouchers on 20 units and HUD Section 202 Capital Advance and PRAC on 43 units.",
+          "src": [
+            "SRC-003328"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 67,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003328"
+          ],
+          "note": "2-bedroom is the manager unit."
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 20,
+              "ami": 30
+            },
+            {
+              "count": 43,
+              "ami": 50
+            },
+            {
+              "count": 4,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003328"
+          ],
+          "note": "CTCAC unit type table; 20 special needs units at 30% AMI."
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003328"
+          ],
+          "note": "CTCAC 55-year use/affordability."
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 58239147,
+          "src": [
+            "SRC-003328"
+          ],
+          "note": "Project cost at application."
         }
       ]
     }
@@ -255,6 +325,24 @@
       "text": "Part of the 2.8-acre former hospital site; The Core Companies is developing a separate part.",
       "src": [
         "SRC-001367"
+      ]
+    },
+    {
+      "text": "CTCAC CA-25-110 lists the site as 675 East Santa Clara Street, census tract 5012.00; the legal description and APN were not yet final because the project site is part of a larger site.",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "text": "CTCAC staff report shows residential construction cost of $677 per sq ft and $856,458 per unit at application.",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "text": "SV@Home reports historic Building 800, IBM's first West Coast manufacturing plant, will be restored as community space within the East Santa Clara Master Plan.",
+      "src": [
+        "SRC-003329"
       ]
     }
   ],
@@ -299,6 +387,99 @@
         "SRC-001983"
       ],
       "website": "https://thecorecompanies.com"
+    },
+    {
+      "role": "Developer",
+      "company": "Eden Housing, Inc.",
+      "contact": "Andrea Osgood",
+      "linkedin": null,
+      "email": "aosgood@edenhousing.org",
+      "phone": "510-363-4026",
+      "website": "https://edenhousing.org/",
+      "website_basis": "opened",
+      "project_page": "https://edenhousing.org/properties/east-santa-clara-senior/",
+      "src": [
+        "SRC-003328",
+        "SRC-001983"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "ESC Senior, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner / principal owner",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Community Economics, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tax credit consultant",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Eden Housing Management, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "James Roberts-Obayashi Corp.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001983"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Bank of California",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hudson Housing Capital",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Financial partner (role not stated)",
+      "src": [
+        "SRC-001983"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Capital One, National Association",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Financial partner (role not stated)",
+      "src": [
+        "SRC-001983"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara County Housing Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Funding partner",
+      "src": [
+        "SRC-001983",
+        "SRC-003329"
+      ]
     }
   ],
   "financing": [
@@ -311,10 +492,108 @@
       "src": [
         "SRC-001368"
       ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Bank of California",
+      "program": null,
+      "amount": 22257864,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (9%)",
+      "provider": "Tax credit investor (not named)",
+      "program": "$2,500,000 annual federal credits; factor $0.84272",
+      "amount": 21068000,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Bay Area Housing Innovation Fund",
+      "program": "BAHIF loan",
+      "amount": 9880000,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Bay Area Housing Innovation Fund",
+      "program": "BAHIF soft loan",
+      "amount": 6800000,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Bay Area Housing Innovation Fund",
+      "program": "BAHIF mezzanine loan",
+      "amount": 1300000,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "U.S. Department of Housing and Urban Development",
+      "program": "Section 202",
+      "amount": 5877717,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "County of Santa Clara",
+      "program": "County land contribution",
+      "amount": 4020000,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "City fee waivers",
+      "program": "Waived fees",
+      "amount": 993330,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
+    },
+    {
+      "type": "Sponsor / GP equity",
+      "provider": "ESC Senior, LLC",
+      "program": "General partner equity",
+      "amount": 100,
+      "date": "2025-09-30",
+      "src": [
+        "SRC-003328"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2025-09-30",
+      "type": "Other",
+      "label": "CTCAC recommends $2,500,000 annual federal 9% tax credit reservation (2025 waiting list)",
+      "src": [
+        "SRC-003328"
+      ]
+    },
     {
       "date": "2026-08-06",
       "type": "Construction start",
@@ -346,6 +625,11 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -354,5 +638,94 @@
       "relation": "part_of",
       "note": "Senior building in the 213-unit MP23-008 phase"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on project name, address and Eden Housing; Eden property page and SV@Home opened.",
+      "src": [
+        "SRC-001983",
+        "SRC-003329"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC open parcel data for APN 467-14-087: situs 675 E Santa Clara St; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov blocks automated access; not used.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "County $8.3M commitment and County land already on record from the Eden release; news.santaclaracounty.gov blocks automated access.",
+      "src": [
+        "SRC-001368"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC staff report CA-25-110 (2025-09-30); CEQAnet NOE 2025051254 already on record.",
+      "src": [
+        "SRC-003328",
+        "SRC-001369"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SV@Home 2026-08-12 groundbreaking article.",
+      "src": [
+        "SRC-003329"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY groundbreaking article already on record.",
+      "src": [
+        "SRC-001367"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Eden Housing property page: general contractor, financial and funding partners.",
+      "src": [
+        "SRC-001983"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Architects FORA already on record; Eden page confirms.",
+      "src": [
+        "SRC-001983"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC construction and permanent sources; Eden page financial partners.",
+      "src": [
+        "SRC-003328",
+        "SRC-001983"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the groundbreaking returned none.",
+      "src": []
+    }
+  }
 }

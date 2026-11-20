@@ -1,6 +1,6 @@
 {
   "id": "SCC-000272",
-  "name": "911 Duane Avenue",
+  "name": "Hacienda Village (911 Duane Avenue)",
   "parcels": [
     {
       "apn": "205-12-004",
@@ -242,6 +242,27 @@
           ]
         }
       ]
+    },
+    {
+      "text": "919 E Duane Ave, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-003343"
+      ]
+    },
+    {
+      "text": "929 E Duane Ave, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-003343"
+      ]
+    },
+    {
+      "text": "933 E Duane Ave, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-003343"
+      ]
     }
   ],
   "images": [],
@@ -340,6 +361,70 @@
             "SRC-001118"
           ],
           "note": "State report 2022, application stage: 8 deed-restricted units"
+        },
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-003339"
+          ],
+          "note": "Project description states the project qualifies for removal of the BMR requirement under SMC 19.77.040(c) (Village Mixed Use with over 10% retail FAR). The 2022 SB 330 preliminary application in the APR reported 8 moderate-income units."
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.22,
+          "src": [
+            "SRC-001521",
+            "SRC-003339"
+          ],
+          "note": "Residential portion 3.42 acres and retail 0.8 acres per project description."
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 18535,
+          "src": [
+            "SRC-001521",
+            "SRC-003339"
+          ],
+          "note": "New 15,635 sq ft two-story retail building plus existing 2,900 sq ft Speedy's Tacos building."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003339"
+          ],
+          "note": "Maximum height 38 feet per description; plans show up to 39'-10 1/2\"."
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 216,
+          "src": [
+            "SRC-003340"
+          ],
+          "note": "Plans list 134 covered and 32 unassigned residential spaces and 50 commercial spaces."
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "No BMR requirement: Village Center Retail Preservation Incentive Program, over 10% commercial FAR.",
+          "src": [
+            "SRC-003339"
+          ]
         }
       ]
     }
@@ -355,6 +440,25 @@
       "text": "City item lists APNs 205-12-001, -002, -003 and -004.",
       "src": [
         "SRC-001521"
+      ]
+    },
+    {
+      "text": "Project description: 67 residential condominiums (55 townhomes, 12 flats) in 14 residential buildings of 4, 6 or 7 units, 15.87 units per acre; tentative map for 17 lots and two common lots; most existing improvements, including a 55,867 sq ft 1959 retail building, to be demolished.",
+      "src": [
+        "SRC-003339",
+        "SRC-001521"
+      ]
+    },
+    {
+      "text": "City item: zoning C-1; CEQA review under the LUTE EIR per Guidelines Section 15183; applicant Paul Meuser, owner Nicholas Gera.",
+      "src": [
+        "SRC-001521"
+      ]
+    },
+    {
+      "text": "2018 city item lists Hacienda Garden Properties LLC as owner of 919 East Duane Avenue (APN 205-12-003).",
+      "src": [
+        "SRC-003341"
       ]
     }
   ],
@@ -377,6 +481,25 @@
       "src": [
         "SRC-001521"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Hacienda Garden Properties LLC",
+      "contact": "Nicholas Gera",
+      "linkedin": null,
+      "src": [
+        "SRC-003339",
+        "SRC-003340"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Hacienda Garden Properties LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003341"
+      ]
     }
   ],
   "financing": [],
@@ -388,6 +511,14 @@
       "label": "Application submitted",
       "src": [
         "SRC-001118"
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "type": "Other",
+      "label": "Planning Commission study session",
+      "src": [
+        "SRC-003342"
       ]
     }
   ],
@@ -411,6 +542,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search on 911 E Duane, Hacienda Village and Paul Meuser found no project coverage beyond city records.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC open parcel data: 205-12-004 (911 E Duane), -003 (919), -001 (929), -002 (933); no owner field.",
+      "src": [
+        "SRC-003343",
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Sunnyvale Legistar 26-0488 attachments (project description, plans, presentation) and PC minutes 2026-04-27 (study session); 2018 item 18-0512.",
+      "src": [
+        "SRC-003339",
+        "SRC-003340",
+        "SRC-003342",
+        "SRC-001521",
+        "SRC-003341"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A 2022: 20227282 SB 330 preliminary application, 59 units, 8 moderate; already on record.",
+      "src": [
+        "SRC-001118"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no trade press coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Hacienda Garden Properties LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Plan set title block names only Hacienda Garden Properties LLC; no architect firm found.",
+      "src": [
+        "SRC-003340"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Hacienda Village or Hacienda Garden Properties returned none.",
+      "src": []
+    }
+  }
 }
