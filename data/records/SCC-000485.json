@@ -385,6 +385,20 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-001418",
+            "SRC-003180"
+          ],
+          "note": "Tentative map under the Glen Loma Ranch Specific Plan; architectural and site review at staff level per the Specific Plan"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -392,6 +406,19 @@
       "text": "Tentative map for 42 single-family duet lots.",
       "src": [
         "SRC-001418"
+      ]
+    },
+    {
+      "text": "The map includes 1.44 acres of private open space and is for mapping purposes only; architectural and site review is at staff level under the Specific Plan.",
+      "src": [
+        "SRC-001418"
+      ]
+    },
+    {
+      "text": "Approved with TM 24-03 (Canyon Creek, Rocky Knoll and Malvasia II, 84 lots on 41.36 acres) under the Glen Loma Ranch Specific Plan, which plans 1,467 units on about 359 acres. CEQA relies on Addendum #2 to the 2005 certified EIR, adopted October 7, 2024.",
+      "src": [
+        "SRC-001418",
+        "SRC-003180"
       ]
     }
   ],
@@ -406,17 +433,47 @@
         "SRC-001418"
       ],
       "website": "https://www.glenlomaranch.com"
+    },
+    {
+      "role": "Other",
+      "company": "Glen Loma Group",
+      "contact": "John M. Filice, Jr., President",
+      "linkedin": null,
+      "email": "filicej@glenloma.com",
+      "phone": "(408) 847-4224",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003180"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-02-20",
+      "type": "Other",
+      "label": "Planning Commission recommended approval of TM 24-02",
+      "src": [
+        "SRC-001418"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-03-17",
       "type": "Approved",
       "label": "City Council approved tentative map",
       "src": [
         "SRC-001418"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-03-24",
+      "type": "Other",
+      "label": "Notice of Determination filed for Glen Loma Ranch Specific Plan EIR addendum covering TM 24-02 and TM 24-03",
+      "src": [
+        "SRC-003180"
       ],
       "estimated": false
     }
@@ -431,6 +488,92 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on Glen Loma Ranch Town Center duet homes found builder pages for other Glen Loma neighborhoods only",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 808-58-002 and 808-58-003: no situs address, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City Glen Loma Ranch page: TM 24-02 approved 2025-03-17; Planning Commission 2025-02-20; 1.44 acres private open space",
+      "src": [
+        "SRC-001418"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Gilroy",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2003042018 NOD received 2025-03-24, applicant block",
+      "src": [
+        "SRC-003180"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Gilroy Dispatch for TM 24-02 / Town Center Flex found only older Glen Loma coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for trade press on Town Center Flex found none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no project page for Town Center Flex on Glen Loma sites",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named on city page or NOD",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city or state documents",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Glen Loma Town Center found none",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000484",
+      "relation": "adjacent",
+      "note": "Both in the Glen Loma Ranch Specific Plan area"
     }
   ]
 }

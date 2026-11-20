@@ -109,9 +109,81 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.99,
+          "src": [
+            "SRC-001417",
+            "SRC-003558"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 98,
+          "src": [
+            "SRC-001417"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-003558"
+          ],
+          "note": "Resolution findings describe in-fill market-rate townhome housing"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003558"
+          ]
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Nine residential buildings up to 39 feet tall; three- and four-bedroom townhomes of 1,430 to 1,900 sq ft, each with an attached two-car garage. Picnic area and playground on site.",
+      "src": [
+        "SRC-001417",
+        "SRC-003558"
+      ]
+    },
+    {
+      "text": "Project demolishes 14,557 sq ft of commercial buildings. An open soil contamination case with the Department of Environmental Health is to be remediated before occupancy.",
+      "src": [
+        "SRC-001417",
+        "SRC-003558"
+      ]
+    },
+    {
+      "text": "The variance allows reduced front and street side setbacks to accommodate a public right-of-way dedication. CEQA: categorical exemption, Class 32 in-fill.",
+      "src": [
+        "SRC-001417",
+        "SRC-003558"
+      ]
+    },
+    {
+      "text": "Tentative map is a single-lot parcel map for 42 residential condominiums with HOA-owned common areas.",
+      "src": [
+        "SRC-003560"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -121,6 +193,25 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001417"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Bebek Development Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003558",
+        "SRC-003559"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "WHA",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003558"
       ]
     }
   ],
@@ -133,6 +224,35 @@
       "label": "Architectural and Site Review application received",
       "src": [
         "SRC-001417"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-30",
+      "type": "Other",
+      "label": "Variance application V 26-01 submitted",
+      "src": [
+        "SRC-001417"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-02-03",
+      "type": "Other",
+      "label": "Application accepted as complete",
+      "src": [
+        "SRC-003558",
+        "SRC-003559"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-02",
+      "type": "Other",
+      "label": "Planning Commission approved Variance V 26-01 and recommended approval of AS 24-07 and TM 24-01",
+      "src": [
+        "SRC-001417",
+        "SRC-003558"
       ],
       "estimated": false
     },
@@ -151,6 +271,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 95 Howson St and Bebek Development: only listing and property-data pages, no project coverage",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 790-36-012: situs 95 Howson St, Gilroy, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page; Council Resolutions 2026-27 and 2026-28 (May 4, 2026); vesting tentative map sheet",
+      "src": [
+        "SRC-001417",
+        "SRC-003558",
+        "SRC-003559",
+        "SRC-003560"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Gilroy",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 search on Howson (Gilroy) returned no rows; project is CEQA-exempt with no CEQAnet document found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Gilroy Dispatch and other local coverage of 95 Howson found none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for trade press on 95 Howson Street found none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no website for Bebek Development Company",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Resolution names WHA as plan preparer; no WHA project page found in search",
+      "src": [
+        "SRC-003558"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city documents or search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn pages on Bebek Development Company found none",
+      "src": []
+    }
+  }
 }

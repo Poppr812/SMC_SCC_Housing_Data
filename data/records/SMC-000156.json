@@ -43,10 +43,10 @@
   ],
   "addresses": [
     {
-      "text": "837 7th Ave, San Bruno, CA",
+      "text": "3300 College Dr, San Bruno, CA",
       "role": "main",
       "src": [
-        "SRC-001129",
+        "SRC-003562",
         "SRC-001123"
       ]
     }
@@ -62,8 +62,17 @@
             "SRC-001123"
           ],
           "note": "State categories: 5+, SFD"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-003562",
+            "SRC-001123"
+          ],
+          "note": "1, 2 and 3 bedroom rental apartments at 3300 College Dr"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -74,8 +83,16 @@
             "SRC-001123"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003562"
+          ],
+          "note": "District page: construction completed May 2022, occupancy July 2022"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -98,11 +115,13 @@
           "note": "Units reported in entitlement and permit rows"
         },
         {
-          "value": 1,
+          "value": 30,
           "src": [
-            "SRC-001129"
+            "SRC-003562",
+            "SRC-003563",
+            "SRC-001123"
           ],
-          "note": "Units in the application as reported"
+          "note": "Skyline College employee housing (College Ridge) at 3300 College Dr: two 15-unit buildings"
         }
       ]
     },
@@ -135,6 +154,13 @@
             "SRC-001123"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PD17-002",
+          "src": [
+            "SRC-001123"
+          ],
+          "note": "State report 2018 rows for 3300 College Dr"
         }
       ]
     },
@@ -157,6 +183,61 @@
           "note": "State report 2019, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003562",
+            "SRC-003564"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003562"
+          ],
+          "note": "District page: about 2 acres"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-003562",
+            "SRC-001123"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001123"
+          ]
+        }
+      ]
+    },
+    "year_built": {
+      "claims": [
+        {
+          "value": 2022,
+          "src": [
+            "SRC-003562"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -169,6 +250,32 @@
     },
     {
       "text": "The state report's rows for this project also name 10 Miraluna Dr, 12 Miraluna Dr, 3300 College Dr, 521 San Anselmo. These may be separate projects, and the unit count may include them.",
+      "src": [
+        "SRC-001129",
+        "SRC-001123"
+      ]
+    },
+    {
+      "text": "College Ridge: two three-story buildings of 15 units each, 1, 2 and 3 bedroom apartments, one covered parking space per unit, EV charging, designed to LEED Gold. Units are assigned to college faculty and staff at below-market rates.",
+      "src": [
+        "SRC-003562"
+      ]
+    },
+    {
+      "text": "State report rows for 3300 College Dr (APN 017-080-150) show 30 rental units: 6 low-income and 5 moderate-income deed-restricted, plus 19 low-income units not deed-restricted that the district says will serve low-income faculty families; 55-year term.",
+      "src": [
+        "SRC-001123"
+      ]
+    },
+    {
+      "text": "The district sold Parcel B at the campus edge to SummerHill Homes, which planned 40 single-family homes on the adjoining land; SF YIMBY reports the 40 homes were built by D.R. Horton.",
+      "src": [
+        "SRC-003563",
+        "SRC-003564"
+      ]
+    },
+    {
+      "text": "The record's parcel 020-162-020 and address 837 7th Ave match a one-unit ADU in the state report (ADU 20-013; certificate of occupancy 2021-08-13), not the Skyline College housing at 3300 College Dr. Planning file ADU20-020 belongs to 521 San Anselmo Ave in the state report.",
       "src": [
         "SRC-001129",
         "SRC-001123"
@@ -202,11 +309,69 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "San Mateo County Community College District",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003562",
+        "SRC-003563"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Architecture & Planning",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003562",
+        "SRC-003564"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Guzman Construction Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003562"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SummerHill Homes",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Buyer and developer of adjoining Parcel B",
+      "src": [
+        "SRC-003563",
+        "SRC-003564"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-03-13",
+      "type": "Approved",
+      "label": "Entitlement approved for Skyline College housing, PD17-002 (state report)",
+      "src": [
+        "SRC-001123"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-05-02",
+      "type": "Permit issued",
+      "label": "Building permits B1807-0066 and B1807-0067 issued for 30 multifamily units (state report)",
+      "src": [
+        "SRC-001123"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-04-15",
       "type": "Application filed",
@@ -224,12 +389,39 @@
       ]
     },
     {
+      "date": "2021",
+      "type": "Construction start",
+      "label": "Construction start per district page",
+      "src": [
+        "SRC-003562"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2021-09-28",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001123"
       ]
+    },
+    {
+      "date": "2022-05",
+      "type": "Completion",
+      "label": "Construction completed per district page",
+      "src": [
+        "SRC-003562"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-07",
+      "type": "Lease-up start",
+      "label": "Occupancy per district page",
+      "src": [
+        "SRC-003562"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-11-02",
@@ -250,6 +442,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels narrowed to the record's main address; other addresses moved to a note"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Removed the one-unit ADU at 837 7th Ave (address and unit claim): a different property; the college housing is at 3300 College Dr"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Skyline College faculty housing: district page, SF YIMBY, Skyline Shines",
+      "src": [
+        "SRC-003562",
+        "SRC-003564",
+        "SRC-003563"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer: 020-162-020 owner Kuver trusts (837 7th Ave), already on record; 017-080-150 not in active parcel layer",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for San Bruno PD17-002 staff reports found none",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in San Bruno; district is the developer",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 rows for 3300 College Dr (2018, 2019) and 837 7th Ave",
+      "src": [
+        "SRC-001123",
+        "SRC-001129"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (2018 approval, 2022 opening) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-02-07",
+      "src": [
+        "SRC-003564"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMCCCD College Ridge project page",
+      "src": [
+        "SRC-003562"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "ktgy.com project and press pages returned 403",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named on district page, SF YIMBY or state report",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on College Ridge found none",
+      "src": []
+    }
+  }
 }

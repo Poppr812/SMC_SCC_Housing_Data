@@ -1,6 +1,6 @@
 {
   "id": "SCC-000301",
-  "name": "PD15-066, AD20-269",
+  "name": "Santana Row Lot 12",
   "parcels": [
     {
       "apn": "277-40-017",
@@ -230,8 +230,16 @@
             "SRC-001107"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-003557"
+          ],
+          "note": "Listed under current active residential development underway, estimated delivery 2028"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -252,8 +260,18 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 258,
+          "src": [
+            "SRC-003555",
+            "SRC-003556",
+            "SRC-003557"
+          ],
+          "note": "Developer releases and SF YIMBY; the state report's application row shows 42"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -291,6 +309,50 @@
             "SRC-001107"
           ],
           "note": "State report 2025, building permit stage: 13 deed-restricted units"
+        },
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-003555"
+          ],
+          "note": "SF YIMBY describes the units as market-rate housing; the state report shows 13 deed-restricted moderate-income units at building permit"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 95,
+            "1br": 131,
+            "2br": 32,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003555"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003555"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 145000000,
+          "src": [
+            "SRC-003556"
+          ],
+          "note": "Expected total investment of approximately $145 million, July 2025 release"
         }
       ]
     }
@@ -302,9 +364,43 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "Site is a surface parking lot at Santana Row, across Hatton Street from the Misora apartments. Design has a courtyard and pool.",
+      "src": [
+        "SRC-003555"
+      ]
+    },
+    {
+      "text": "SF YIMBY (July 2025) reported construction of about 26 months with tentative completion in mid to late 2027. Federal Realty's February 2026 release gives a $140-148 million cost range and estimated delivery in 2028.",
+      "src": [
+        "SRC-003555",
+        "SRC-003557"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Federal Realty Investment Trust",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003555",
+        "SRC-003556",
+        "SRC-003557"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003555"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -315,6 +411,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2025",
+      "type": "Construction start",
+      "label": "Federal Realty release: construction begins summer 2025 on Lot 12",
+      "src": [
+        "SRC-003556"
+      ],
+      "estimated": true
     },
     {
       "date": "2025-07-18",
@@ -330,6 +435,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 358 Hatton St and PD15-066: SF YIMBY, Federal Realty releases",
+      "src": [
+        "SRC-003555",
+        "SRC-003556"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 277-40-017: situs 358 Hatton St Bldg 1, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov (PD15-066 CEQA determination, MHIP waiver memo) returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in San Jose",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row 2018 (PDA15-066-01, 42 units) already on record; CEQAnet lists the Santana Row Expansion EIR",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Mercury News (pressreader 2018-06-09) and The Real Deal articles returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-07-08: 258 units, 5 stories, mix, BDE Architecture",
+      "src": [
+        "SRC-003555"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Federal Realty releases 2025-07-09 and 2026-02-26 via Stock Titan; ir.federalrealty.com returned 403",
+      "src": [
+        "SRC-003556",
+        "SRC-003557"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on BDE Architecture and Santana Row Lot 12 turned up no project page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Federal Realty releases give total investment; no lender named",
+      "src": [
+        "SRC-003556",
+        "SRC-003557"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Santana Row Lot 12 found none",
+      "src": []
+    }
+  }
 }
