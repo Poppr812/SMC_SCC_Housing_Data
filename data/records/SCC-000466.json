@@ -71,8 +71,16 @@
           "src": [
             "SRC-001263"
           ]
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-003297"
+          ],
+          "note": "City page describes a residential condominium building; SF YIMBY describes apartments"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -170,9 +178,32 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "26PLN-00026",
+          "src": [
+            "SRC-003297"
+          ]
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City page: request for City Council prescreening to rezone the site from RM-20 to Planned Community; CEQA status listed as Not a Project. No hearing outcome posted.",
+      "src": [
+        "SRC-003297"
+      ]
+    },
+    {
+      "text": "Plan set parcel report: net lot 50,094 sq ft (1.15 acres), existing building built 1956; proposed FAR 2.69, height 16 to 85 ft, 130 car and 119 bicycle spaces.",
+      "src": [
+        "SRC-003298"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -206,12 +237,115 @@
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2025-01-31",
+      "type": "Other",
+      "label": "Planning pre-application plan set dated",
+      "src": [
+        "SRC-003298"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-20",
+      "type": "Other",
+      "label": "City Council prescreening hearing, tentative date per city page",
+      "src": [
+        "SRC-003297"
+      ],
+      "estimated": true
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Cloverleaf and Carrasco; city project page",
+      "src": [
+        "SRC-003297"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API for 120-05-037: situs 910 Webster St, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Palo Alto project page (26PLN-00026) and Cycle 1 plan set; Palo Alto has no Legistar API",
+      "src": [
+        "SRC-003297",
+        "SRC-003298"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 for Palo Alto searched for Webster; no 910 Webster row",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searches of Palo Alto Online found no article on this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-02-21 already on record",
+      "src": [
+        "SRC-001263"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website for Cloverleaf Corporation found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Plan set confirms Carrasco & Associates, 1885 El Camino Real, Palo Alto; no firm project page found",
+      "src": [
+        "SRC-003298"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or funder named in any source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts found none",
+      "src": []
+    }
+  }
 }

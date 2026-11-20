@@ -345,6 +345,54 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 42,
+            "3br": 28,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003303"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003303"
+          ],
+          "note": "Five three-story buildings with 10 to 16 units each"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 114400,
+          "src": [
+            "SRC-003303"
+          ],
+          "note": "About 114,400 sq ft across five buildings"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "No on-site below-market-rate units; in-lieu fees satisfy the city's affordable housing requirement",
+          "src": [
+            "SRC-003303"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -353,6 +401,19 @@
       "src": [
         "SRC-001112",
         "SRC-001113"
+      ]
+    },
+    {
+      "text": "Project name The Gateway in the state Annual Progress Report and The Registry; the city's project map calls it Railroad Avenue Townhomes.",
+      "src": [
+        "SRC-001112",
+        "SRC-003304"
+      ]
+    },
+    {
+      "text": "Site runs along Railroad Avenue between South Linden Avenue and South Spruce Avenue. SF YIMBY estimates about 24 months from groundbreaking to completion.",
+      "src": [
+        "SRC-003303"
       ]
     }
   ],
@@ -384,6 +445,35 @@
       "src": [
         "SRC-001360"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Newlife Investments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003303",
+        "SRC-003304"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SIM Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003303",
+        "SRC-003304"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Gates + Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003303"
+      ]
     }
   ],
   "financing": [],
@@ -396,6 +486,15 @@
       "src": [
         "SRC-001112"
       ]
+    },
+    {
+      "date": "2025-05-15",
+      "type": "Other",
+      "label": "Planning Commission hearing scheduled",
+      "src": [
+        "SRC-003303"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-08",
@@ -425,6 +524,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and Newlife Investments; SF YIMBY and The Registry",
+      "src": [
+        "SRC-003303",
+        "SRC-003304"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner Newlife Investments LLC already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SSF development projects map layer: Entitled August 2025, construction date TBD; SSF Legistar API not available",
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A 2024 and A2 2025 rows list project name The Gateway",
+      "src": [
+        "SRC-001112",
+        "SRC-001113"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-05-14; The Registry 2025-06-25 (paywalled; visible text only)",
+      "src": [
+        "SRC-003303",
+        "SRC-003304"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Newlife Investments website or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SIM Architects credited as architect; Gates + Associates landscape",
+      "src": [
+        "SRC-003303"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender or equity partner named in any source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts found none",
+      "src": []
+    }
+  }
 }
