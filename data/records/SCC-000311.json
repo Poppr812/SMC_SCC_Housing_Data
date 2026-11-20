@@ -79,6 +79,76 @@
           37.385503
         ]
       ]
+    },
+    {
+      "apn": "158-06-011",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.0823078,
+          37.3857519
+        ],
+        [
+          -122.0824676,
+          37.385503
+        ],
+        [
+          -122.0827545,
+          37.385641
+        ],
+        [
+          -122.0827045,
+          37.385728
+        ],
+        [
+          -122.0826234,
+          37.3858557
+        ],
+        [
+          -122.0826163,
+          37.3858633
+        ],
+        [
+          -122.0826081,
+          37.3858695
+        ],
+        [
+          -122.0825989,
+          37.3858741
+        ],
+        [
+          -122.082589,
+          37.3858771
+        ],
+        [
+          -122.0825787,
+          37.3858784
+        ],
+        [
+          -122.0825684,
+          37.3858778
+        ],
+        [
+          -122.0825584,
+          37.3858755
+        ],
+        [
+          -122.0825489,
+          37.3858714
+        ],
+        [
+          -122.0824858,
+          37.3858382
+        ],
+        [
+          -122.0823078,
+          37.3857519
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -143,6 +213,13 @@
             "SRC-001101"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2024-031 / PL-7897",
+          "src": [
+            "SRC-001101"
+          ],
+          "note": "Tracking ID as reported to the state in 2024"
         }
       ]
     },
@@ -176,11 +253,30 @@
           "note": "State report 2024, application stage: 8 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001101"
+          ],
+          "note": "State report 2024: density bonus requested"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001101"
+      ]
+    },
+    {
+      "text": "State report 2024 lists the project on APNs 158-06-007 (969 Hope St) and 158-06-011 (679 Fairmont Ave): 5 low-income and 3 moderate-income deed-restricted units, 28 above-moderate, ownership tenure, discretionary review, application pending.",
       "src": [
         "SRC-001101"
       ]
@@ -209,6 +305,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Web search on 969 Hope St, 679 Fairmont Ave and PL-2024-031: city project page and resale listings only",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: APN 158-06-007 situs 969 Hope St; APN 158-06-011 situs 679 Fairmont Av, Mountain View; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "mountainview.gov project page for 969 Hope Street returned 403; Mountain View Legistar matters searched for 969 Hope, Fairmont and PL-2024-031: no matter found",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2024 row: APNs, density bonus, tracking ID PL-2024-031 / PL-7897; no CEQAnet filing found",
+      "src": [
+        "SRC-001101"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Mountain View Voice search: coverage found only of the separate Castro Commons project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and trade press: no coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicant not named in any opened page; the city page that names the applicant returned 403",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any opened source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

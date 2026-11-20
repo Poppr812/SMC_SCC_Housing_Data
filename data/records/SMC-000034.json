@@ -189,6 +189,65 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003624"
+          ],
+          "note": "Planning Commission Resolution 2866-2020 approved 36 rental units using the State Density Bonus Law"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "UP19-0005, DR19-0022",
+          "src": [
+            "SRC-003624"
+          ],
+          "note": "Conditional Use Permit and Design Review"
+        },
+        {
+          "value": "P19-0021",
+          "src": [
+            "SRC-000643"
+          ],
+          "note": "Tracking ID in state reports 2019-2020"
+        },
+        {
+          "value": "B20-1912",
+          "src": [
+            "SRC-000643"
+          ],
+          "note": "Building permit"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-003624"
+          ],
+          "note": "Regulatory agreement: 23 required, owner elected to provide 28"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.32,
+          "src": [
+            "SRC-003624"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -196,6 +255,31 @@
       "text": "CTCAC CA-22-080 Baden Station: 36 total units, 35 low-income units; stage Preliminary Reservation; developer Baden Station Investors, LLC; annual federal credit 1690560; total state credit None.",
       "src": [
         "SRC-001603"
+      ]
+    },
+    {
+      "text": "The 2020 entitlement was a market-rate project with three very-low-income density bonus units. In October 2021 the City approved assignment of the purchase agreement to For the Future Housing and a change to a fully affordable 36-unit project, with 35 units restricted for 55 years plus a manager unit.",
+      "src": [
+        "SRC-003624"
+      ]
+    },
+    {
+      "text": "432 Baden Avenue (APN 012-321-160) was a former redevelopment agency parcel; the Countywide Oversight Board approved its sale to Baden Development LLC for $1,100,000 on 2020-02-10, under a purchase agreement dated 2020-02-19. 428 Baden Avenue (APN 012-321-170) was owned by Baden Development LLC. The county parcel layer now shows the site as APN 012-321-290.",
+      "src": [
+        "SRC-003624"
+      ]
+    },
+    {
+      "text": "City funding list shows the $4,050,000 loan with Resolution 180-2021 and a Council date of October 13, 2020; the resolution itself records the Council vote on 2021-10-13.",
+      "src": [
+        "SRC-002106",
+        "SRC-003624"
+      ]
+    },
+    {
+      "text": "Housing Choices listing describes 35 affordable units with 18 set aside for people with intellectual and developmental disabilities, managed by FPI Management.",
+      "src": [
+        "SRC-003625"
       ]
     }
   ],
@@ -208,11 +292,127 @@
       "src": [
         "SRC-000631"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "For the Future Housing, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003624",
+        "SRC-002106"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Baden Development LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Original applicant (market-rate entitlement); assigned purchase rights to For the Future Housing in 2021",
+      "src": [
+        "SRC-003624"
+      ]
+    },
+    {
+      "role": "Seller",
+      "company": "City of South San Francisco",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003624"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Baden Station Apartments Investors, L.P.",
+      "contact": "Jim Rendler",
+      "linkedin": null,
+      "phone": "(408) 891-8303",
+      "other_role": "Tax credit owner/applicant",
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Baden Station Investors, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "PacH Lancaster Holdings, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001603"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "FPI Management (FPI MGT dba Asset Living)",
+      "contact": "Sherri Kittle",
+      "linkedin": null,
+      "phone": "(916) 357-5300",
+      "src": [
+        "SRC-001603",
+        "SRC-003625"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Acquisition loan",
+      "provider": "City of South San Francisco",
+      "program": "Commercial Linkage Fee funds: $2,000,000 short-term component plus $2,050,000 55-year residual-receipts component",
+      "amount": 4050000,
+      "date": "2021-10-13",
+      "src": [
+        "SRC-003624",
+        "SRC-002106"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (9%)",
+      "provider": "California Tax Credit Allocation Committee",
+      "program": "CA-2022-080, annual federal credit award",
+      "amount": 1690560,
+      "date": null,
+      "src": [
+        "SRC-001603"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2019-03-15",
+      "type": "Application filed",
+      "label": "Planning application submitted (P19-0021)",
+      "src": [
+        "SRC-000643"
+      ]
+    },
+    {
+      "date": "2020-08-06",
+      "type": "Approved",
+      "label": "Planning Commission Resolution 2866-2020: UP19-0005 and DR19-0022, 36 rental units",
+      "src": [
+        "SRC-003624",
+        "SRC-000643"
+      ]
+    },
+    {
+      "date": "2021-10-13",
+      "type": "Other",
+      "label": "City Council approves assignment to For the Future Housing, change to fully affordable, and $4.05M acquisition loan (RES 179-2021, RES 180-2021)",
+      "src": [
+        "SRC-003624"
+      ]
+    },
     {
       "date": "2023-04-10",
       "type": "Permit issued",
@@ -240,6 +440,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Baden Station, 428-432 Baden Ave and For the Future Housing: city resolution, funding list, Housing Choices listing",
+      "src": [
+        "SRC-003624",
+        "SRC-003625"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 012-321-290: owner Baden Station Apartments Investors LP attn For The Future Housing Inc",
+      "src": [
+        "SRC-000631"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SSF RES 180-2021 with loan and regulatory agreements; SSF affordable housing funding list",
+      "src": [
+        "SRC-003624",
+        "SRC-002106"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Countywide Oversight Board sale approval is cited in the city resolution; no county housing funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CTCAC Active Projects list (CA-2022-080); APR Table A 2019-2020 and A2 2020 rows",
+      "src": [
+        "SRC-001603",
+        "SRC-000643"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the 2021 approval returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press: no Baden Station coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no For the Future Housing website or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any opened source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City acquisition loan (RES 180-2021); CTCAC 9% federal credit award",
+      "src": [
+        "SRC-003624",
+        "SRC-001603"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

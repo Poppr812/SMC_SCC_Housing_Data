@@ -39,6 +39,86 @@
           37.3597737
         ]
       ]
+    },
+    {
+      "apn": "484-24-100",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.830414,
+          37.3599275
+        ],
+        [
+          -121.8304917,
+          37.3598908
+        ],
+        [
+          -121.8309547,
+          37.3605214
+        ],
+        [
+          -121.8307361,
+          37.3606246
+        ],
+        [
+          -121.830273,
+          37.359994
+        ],
+        [
+          -121.830414,
+          37.3599275
+        ]
+      ]
+    },
+    {
+      "apn": "484-24-101",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.830028,
+          37.3601097
+        ],
+        [
+          -121.830273,
+          37.359994
+        ],
+        [
+          -121.8307361,
+          37.3606246
+        ],
+        [
+          -121.8304961,
+          37.360738
+        ],
+        [
+          -121.8304875,
+          37.3607264
+        ],
+        [
+          -121.8302993,
+          37.3604739
+        ],
+        [
+          -121.8302131,
+          37.3603582
+        ],
+        [
+          -121.8300759,
+          37.3601741
+        ],
+        [
+          -121.830028,
+          37.3601097
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -58,6 +138,20 @@
           ]
         }
       ]
+    },
+    {
+      "text": "2840 Florence Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "2848 Florence Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -71,18 +165,26 @@
             "SRC-001107"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003622",
+            "SRC-003623"
+          ],
+          "note": "CEQA notice: 36 residential townhome units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
         {
-          "value": "Permitted",
+          "value": "Approved",
           "src": [
-            "SRC-001099",
             "SRC-001107"
           ],
-          "note": "State report shows a building permit issued; it does not say whether construction started"
+          "note": "State report 2025: entitlement approved 2025-06-11 under SP25-011; no building permit for the townhome project reported"
         }
       ]
     },
@@ -176,6 +278,31 @@
           "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.5,
+          "src": [
+            "SRC-003622"
+          ],
+          "note": "Gross acres per CEQA notice"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003622",
+            "SRC-001107"
+          ],
+          "note": "State report 2025: 50% density bonus, 12 incentives/waivers (development standards modification)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -203,20 +330,36 @@
       "src": [
         "SRC-001956"
       ]
-    }
-  ],
-  "parties": [],
-  "financing": [],
-  "groups": {},
-  "events": [
+    },
     {
-      "date": "2018-05-01",
-      "type": "Permit issued",
-      "label": "Building permit issued",
+      "text": "CEQA notice: Special Use Permit and Tentative Map for 36 townhome units on APNs 484-24-099, 484-24-100 and 484-24-101; demolition of four houses and three accessory structures; removal of 80 trees, 36 ordinance-size; retaining walls up to seven feet. City planner: Kara Hawkins, Planner III.",
+      "src": [
+        "SRC-003622"
+      ]
+    },
+    {
+      "text": "The state Table A2 row dated 2018-05-01 for 2820 Florence Ave is a one-unit ADU building permit, not the 36-unit townhome project.",
       "src": [
         "SRC-001107"
       ]
-    },
+    }
+  ],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "City Ventures",
+      "contact": "Pamela Nieting, Vice President",
+      "linkedin": null,
+      "email": "pnieting@cityventures.com",
+      "phone": "(650) 465-3628",
+      "src": [
+        "SRC-003622"
+      ]
+    }
+  ],
+  "financing": [],
+  "groups": {},
+  "events": [
     {
       "date": "2024-09-20",
       "type": "Application filed",
@@ -232,6 +375,14 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-06-16",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 in-fill), SCH 2025060704",
+      "src": [
+        "SRC-003622"
+      ]
     }
   ],
   "history": [
@@ -244,6 +395,93 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Removed the 2018 building permit and Permitted status: they came from a one-unit ADU state report row"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 2820 Florence Ave and City Ventures: CEQAnet notice and SF YIMBY article",
+      "src": [
+        "SRC-003622"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: APNs 484-24-099 (2820 Florence), 484-24-100 (2840 Florence), 484-24-101 (2848 Florence); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet NOE SCH 2025060704; APR Table A 2024 and A2 2025 rows",
+      "src": [
+        "SRC-003622",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Mercury News and SJ Spotlight: no coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-06-28: 36 townhomes, Lyndale neighborhood",
+      "src": [
+        "SRC-003623"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for a City Ventures project page for Florence Ave: none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any opened source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

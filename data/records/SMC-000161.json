@@ -121,7 +121,15 @@
       ]
     }
   ],
-  "addresses": [],
+  "addresses": [
+    {
+      "text": "Higgins Way, Pacifica, CA",
+      "role": "main",
+      "src": [
+        "SRC-001136"
+      ]
+    }
+  ],
   "images": [],
   "facts": {
     "product_type": {
@@ -132,8 +140,16 @@
             "SRC-001136"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001136"
+          ],
+          "note": "State report notes: 18 townhomes plus 18 ADUs"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -208,11 +224,27 @@
           "note": "State report 2021, application stage: 5 deed-restricted units"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "State report notes cite Pacifica Municipal Code Article 47, requiring 15% of units to be below-market-rate in projects of 8 or more units",
+          "src": [
+            "SRC-001136"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001136"
+      ]
+    },
+    {
+      "text": "State reports 2019-2021 list Hillside Meadows on Higgins Way, APN 023-361-160, as 36 units: 18 townhomes plus 18 ADUs; 3 very-low and 2 moderate deed-restricted, 31 above-moderate; ownership tenure; application status Pending in 2021.",
       "src": [
         "SRC-001136"
       ]
@@ -246,6 +278,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on Hillside Meadows, Higgins Way and Hengli 15 LLC: no project coverage",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 023-361-160: owner HENGLI 15 LLC c/o Shizao Zheng, no situs address; LoopNet property record returned 403",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "cityofpacifica.org returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2019-2021 rows for file 2019-022; no CEQAnet filing found",
+      "src": [
+        "SRC-001136"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Pacifica Tribune and Daily Journal: no coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named beyond the parcel owner",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any opened source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }
