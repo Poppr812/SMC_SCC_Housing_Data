@@ -35,6 +35,36 @@
           37.3515579
         ]
       ]
+    },
+    {
+      "apn": "290-02-096",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9868709,
+          37.351705
+        ],
+        [
+          -121.9868705,
+          37.3515579
+        ],
+        [
+          -121.9874699,
+          37.3515551
+        ],
+        [
+          -121.9874689,
+          37.3516926
+        ],
+        [
+          -121.9868709,
+          37.351705
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -54,6 +84,14 @@
           ]
         }
       ]
+    },
+    {
+      "text": "1540 Pomeroy Ave, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-004036",
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -67,8 +105,16 @@
             "SRC-001102"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-004038"
+          ],
+          "note": "NOD 2025-09-26: 11 attached townhomes for sale"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -98,11 +144,22 @@
         {
           "value": 11,
           "src": [
-            "SRC-001102"
+            "SRC-001102",
+            "SRC-004037",
+            "SRC-004038"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-004035",
+            "SRC-004036"
+          ],
+          "note": "2017 MND: eight attached townhomes"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -151,6 +208,47 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.48,
+          "src": [
+            "SRC-004035",
+            "SRC-004038"
+          ]
+        },
+        {
+          "value": 0.482,
+          "src": [
+            "SRC-004036"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 22,
+          "src": [
+            "SRC-004037",
+            "SRC-004038"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004037"
+          ],
+          "note": "Architectural review with addendum to the adopted IS/MND"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -160,12 +258,75 @@
         "SRC-001106",
         "SRC-001102"
       ]
+    },
+    {
+      "text": "The 2021 MND describes six attached three-story 1,970 sq ft units and two detached two-story 2,165 sq ft single-family homes, all with attached garages. 1530 Pomeroy was zoned R3-18D and 1540 Pomeroy was zoned Agriculture.",
+      "src": [
+        "SRC-004036"
+      ]
+    },
+    {
+      "text": "The May 2025 NOD describes demolition of two single-family homes and construction of 11 townhomes with 22 parking spaces.",
+      "src": [
+        "SRC-004037"
+      ]
+    },
+    {
+      "text": "County parcel data shows APN 290-02-097 with situs 1548 Pomeroy Av and five situs addresses, and APN 290-02-096 with situs 1540 Pomeroy Av.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "The Ridgecrest Group",
+      "contact": "Omid Shakeri",
+      "linkedin": null,
+      "email": "omidshakeri@comcast.net",
+      "phone": "(408) 666-6556",
+      "src": [
+        "SRC-004037",
+        "SRC-004038"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-12-06",
+      "type": "Other",
+      "label": "MND for eight townhomes and rezoning to PD received by the state",
+      "src": [
+        "SRC-004035"
+      ]
+    },
+    {
+      "date": "2018-08-22",
+      "type": "Other",
+      "label": "Planning Commission forwarded eight-townhouse project to Council with no recommendation (3-3 votes on MND, rezoning and map)",
+      "src": [
+        "SRC-004039"
+      ]
+    },
+    {
+      "date": "2018-11-13",
+      "type": "Other",
+      "label": "City Council denied the eight-townhouse rezoning project",
+      "src": [
+        "SRC-004040"
+      ]
+    },
+    {
+      "date": "2021-05-21",
+      "type": "Other",
+      "label": "MND for six townhomes and two single-family homes received by the state",
+      "src": [
+        "SRC-004036"
+      ]
+    },
     {
       "date": "2021-10-29",
       "type": "Application filed",
@@ -175,11 +336,27 @@
       ]
     },
     {
+      "date": "2025-05-14",
+      "type": "Approved",
+      "label": "Architectural review and IS/MND addendum approved for 11 townhomes",
+      "src": [
+        "SRC-004037"
+      ]
+    },
+    {
       "date": "2025-07-23",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001102"
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "type": "Approved",
+      "label": "Vesting tentative subdivision map approved for 11 attached townhomes",
+      "src": [
+        "SRC-004038"
       ]
     }
   ],
@@ -188,6 +365,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 1530/1540 Pomeroy Ave and Ridgecrest Group led to CEQAnet filings",
+      "src": [
+        "SRC-004038"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: APN 29002097 (situs 1548 Pomeroy) and APN 29002096 (situs 1540 Pomeroy); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Santa Clara Legistar: files 18-708 (PC 2018-08-22) and 18-1131 (Council 2018-11-13); santaclaraca.gov project pages refuse automated access",
+      "src": [
+        "SRC-004039",
+        "SRC-004040"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2017122016 (MND) and SCH 2021050512 (MND, NODs 2025-05-20 and 2025-09-26)",
+      "src": [
+        "SRC-004035",
+        "SRC-004036",
+        "SRC-004037",
+        "SRC-004038"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no local news coverage found for this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for The Ridgecrest Group: no company website or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in the sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no LinkedIn posts found",
+      "src": []
+    }
+  }
 }

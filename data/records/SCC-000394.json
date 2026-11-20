@@ -80,8 +80,16 @@
             "SRC-001120"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Mixed product",
+          "src": [
+            "SRC-004042"
+          ],
+          "note": "Six detached single-family homes, one attached single-family home, three multi-family attached homes, all for sale"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -109,11 +117,21 @@
         {
           "value": 11,
           "src": [
-            "SRC-001120"
+            "SRC-001120",
+            "SRC-001596"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 10,
+          "src": [
+            "SRC-004041",
+            "SRC-004042"
+          ],
+          "note": "Revised application (AB 130 letter dated 2026-08-14): 10 for-sale units"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -141,6 +159,15 @@
           "src": [
             "SRC-001554"
           ]
+        },
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004041"
+          ],
+          "note": "Letter of justification requests a 30% state density bonus, one concession and waivers"
         }
       ]
     },
@@ -157,8 +184,22 @@
             "SRC-001120"
           ],
           "note": "State report 2024, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-004041",
+            "SRC-004042"
+          ],
+          "note": "Revised application: one for-sale unit for a very low income household (AMI is the category's upper limit)"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -168,6 +209,17 @@
             "SRC-001120"
           ],
           "note": "State report 2024, application stage: 3 deed-restricted units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.56,
+          "src": [
+            "SRC-004041",
+            "SRC-004042"
+          ]
         }
       ]
     }
@@ -184,9 +236,76 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "The site is an 88.6 by 288.8 ft parcel with a 1978 office building over parking fronting N. Santa Cruz Avenue and a c.1924 Craftsman house and garage at the rear (651 N. Santa Cruz Ave).",
+      "src": [
+        "SRC-004044"
+      ]
+    },
+    {
+      "text": "Revised application: six detached single-family homes, one attached single-family home and three multi-family attached homes, with one affordable for-sale condominium unit for a very low income household, on a 0.56-acre lot.",
+      "src": [
+        "SRC-004042",
+        "SRC-004041"
+      ]
+    },
+    {
+      "text": "The document posted as the revised project description for 647 N Santa Cruz Ave names 674 N. Santa Cruz Avenue in its text and describes 10 for-sale units (6 detached homes, 1 attached townhome, 3 flats) with 14 garage and 3 uncovered parking spaces.",
+      "src": [
+        "SRC-004046"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "647 N. Santa Cruz Ave, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004042"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "647 N. Santa Cruz Ave, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004043"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "North Side Plaza LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004044"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lance Tate",
+      "contact": "Lance Tate",
+      "linkedin": null,
+      "other_role": "Applicant (historic inventory request)",
+      "src": [
+        "SRC-004043"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Holland & Knight LLP",
+      "contact": "Letitia Moore",
+      "linkedin": null,
+      "other_role": "Land use counsel",
+      "src": [
+        "SRC-004042"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -206,6 +325,22 @@
         "SRC-001596"
       ],
       "estimated": false
+    },
+    {
+      "date": "2025-11-19",
+      "type": "Other",
+      "label": "Historic Preservation Committee considered request to remove the pre-1941 residence from the Historic Resources Inventory (PHST-25-022)",
+      "src": [
+        "SRC-004043"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "type": "Other",
+      "label": "Appeal of denial of Historic Inventory removal scheduled at Planning Commission",
+      "src": [
+        "SRC-004045"
+      ]
     }
   ],
   "history": [
@@ -218,6 +353,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 647 N. Santa Cruz Ave led to town project documents and HPC packets",
+      "src": [
+        "SRC-001596"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 41014015: situs 647 N Santa Cruz Av; no owner field. Owner names come from town filings",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Los Gatos pending projects page (S-24-060, U-24-018, M-24-020), revised letter of justification, AB 130 letter, HPC report 11/19/2025, HPC minutes 1/28/2026, SB 330 list",
+      "src": [
+        "SRC-001596",
+        "SRC-004041",
+        "SRC-004042",
+        "SRC-004043",
+        "SRC-004045",
+        "SRC-001554"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Town project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "CEQAnet search: no filing found; the AB 130 exemption request is with the town",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Local News Matters article on Los Gatos builder's remedy projects returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal Los Gatos articles returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "647 N. Santa Cruz Ave, LLC: no website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Plan set PDF has no extractable text; the consulting architect report is the town's reviewer (Cannon Design Group), not the project architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no LinkedIn posts found",
+      "src": []
+    }
+  }
 }

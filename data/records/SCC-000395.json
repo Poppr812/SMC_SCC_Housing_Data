@@ -106,6 +106,13 @@
             "SRC-001956"
           ],
           "note": "City folder 070842, Tentative Map (permit type: Subdivision); city permit status: Under Review. Matched by APN."
+        },
+        {
+          "value": "C19-030, T19-029",
+          "src": [
+            "SRC-004047"
+          ],
+          "note": "Earlier 2019 rezoning (R-1-1 to R-2) and three-lot tentative map applications for the same parcel"
         }
       ]
     },
@@ -117,6 +124,18 @@
             "SRC-001099"
           ],
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.413,
+          "src": [
+            "SRC-004047",
+            "SRC-004048"
+          ],
+          "note": "Gross acreage in the 2020 rezoning file C19-030"
         }
       ]
     }
@@ -139,12 +158,63 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "The 2020 staff report describes the site, at the southwest corner of Hayes Avenue and Lean Avenue, as occupied by a one-story 1,638 sq ft single-family house, with a General Plan designation of Mixed Use Neighborhood. The 2019 applications sought to rezone it from R-1-1 to R-2 and subdivide it into three lots.",
+      "src": [
+        "SRC-004047"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Sharon Xu",
+      "contact": "Sharon Xu",
+      "linkedin": null,
+      "src": [
+        "SRC-004047"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Henry Cord",
+      "contact": "Henry Cord",
+      "linkedin": null,
+      "other_role": "Applicant (2019 rezoning)",
+      "src": [
+        "SRC-004047"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-08-08",
+      "type": "Application filed",
+      "label": "Rezoning C19-030 and three-lot tentative map T19-029 filed",
+      "src": [
+        "SRC-004047"
+      ]
+    },
+    {
+      "date": "2020-02-26",
+      "type": "Other",
+      "label": "Planning Commission recommended rezoning to R-2 (7-0-0)",
+      "src": [
+        "SRC-004047"
+      ]
+    },
+    {
+      "date": "2020-03-24",
+      "type": "Other",
+      "label": "Rezoning ordinance on City Council agenda",
+      "src": [
+        "SRC-004047",
+        "SRC-004048"
+      ]
+    },
     {
       "date": "2024-02-08",
       "type": "Application filed",
@@ -164,6 +234,86 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 200 Hayes Ave: resale listing pages only (refused or not found when opened)",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 69029001: situs 200 Hayes Av, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Legistar file 20-323 (C19-030 rezoning, Council 2020-03-24) memo and draft ordinance; sanjoseca.gov refuses automated access",
+      "src": [
+        "SRC-004047",
+        "SRC-004048"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; CEQAnet search found no filing",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named for the 11-townhome application",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search: no LinkedIn posts found",
+      "src": []
+    }
+  }
 }
