@@ -212,6 +212,13 @@
           ]
         }
       ]
+    },
+    {
+      "text": "18555 Black Rd, Los Gatos, CA 95033, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -273,8 +280,15 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "PLN24-223-PRE (preliminary), PLN25-086-SB330 (formal)",
+          "src": [
+            "SRC-001431"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "approval_type": {
       "claims": [
@@ -326,6 +340,19 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "text": "SF YIMBY (Nov. 27, 2024) reported the SB 330 builder's remedy pre-application for 16 single-family homes on about 18 acres, with four moderate-income deed-restricted homes; owner Silicon Valley Properties, architect Anderson Architects.",
+      "src": [
+        "SRC-003965"
+      ]
+    },
+    {
+      "text": "County parcel data lists situs 18675 Black Rd, Los Gatos 95033 for APN 544-58-006 and 18555 Black Rd for APN 544-58-008; the county SB 330 list names San Jose as the adjacent city.",
+      "src": [
+        "SRC-001098",
+        "SRC-001431"
+      ]
     }
   ],
   "parties": [
@@ -347,11 +374,30 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.andarchinc.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003965"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-11-21",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application submitted (PLN24-223-PRE)",
+      "src": [
+        "SRC-001431"
+      ]
+    },
     {
       "date": "2025-05-16",
       "type": "Application filed",
@@ -367,6 +413,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and project name; found SF YIMBY article",
+      "src": [
+        "SRC-003965"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: situs addresses for 544-58-006 and 544-58-008; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated county project",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list: preliminary application PLN24-223-PRE dated Nov. 21, 2024; formal status Incomplete June 4, 2026",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR data for Santa Clara County searched for Black Rd: no rows for this site; no CEQAnet filing found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news on this application",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY, Nov. 27, 2024",
+      "src": [
+        "SRC-003965"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Silicon Valley Properties LP tied to this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "andarchinc.com opened (site under construction, no project page)",
+      "src": [
+        "SRC-003957",
+        "SRC-003965"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder in any source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

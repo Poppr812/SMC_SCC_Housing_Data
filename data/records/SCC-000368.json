@@ -43,6 +43,86 @@
           37.3556616
         ]
       ]
+    },
+    {
+      "apn": "224-29-010",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9453555,
+          37.3559739
+        ],
+        [
+          -121.9453144,
+          37.3558676
+        ],
+        [
+          -121.9452686,
+          37.3557494
+        ],
+        [
+          -121.945515,
+          37.3556616
+        ],
+        [
+          -121.9456675,
+          37.3560552
+        ],
+        [
+          -121.9454211,
+          37.356143
+        ],
+        [
+          -121.9453555,
+          37.3559739
+        ]
+      ]
+    },
+    {
+      "apn": "224-29-023",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9448224,
+          37.3559084
+        ],
+        [
+          -121.9452686,
+          37.3557494
+        ],
+        [
+          -121.9453144,
+          37.3558676
+        ],
+        [
+          -121.9451008,
+          37.3559437
+        ],
+        [
+          -121.9448703,
+          37.3560258
+        ],
+        [
+          -121.9448372,
+          37.3560376
+        ],
+        [
+          -121.9447908,
+          37.3559197
+        ],
+        [
+          -121.9448224,
+          37.3559084
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -79,8 +159,16 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003953"
+          ],
+          "note": "14 for-sale attached townhomes plus a two-unit building; the subdivision map is for condominium purposes"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -90,8 +178,16 @@
             "SRC-001106"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003952"
+          ],
+          "note": "Architectural Review approved at the June 17, 2026 Development Review Hearing; the approval remained in effect after the Aug. 25, 2026 Council appeal motion failed"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -123,8 +219,16 @@
             "SRC-001106"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN24-00533 (Architectural Review), PLN24-00613 (Vesting Tentative Map), PLN26-00318 (appeal)",
+          "src": [
+            "SRC-003952",
+            "SRC-001546"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "restricted_by_ami": {
       "claims": [
@@ -152,6 +256,86 @@
           "note": "State report 2024, application stage: 2 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.61,
+          "src": [
+            "SRC-003953",
+            "SRC-003952"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003953"
+          ],
+          "note": "Two four-story townhome buildings; the two-unit building is three stories"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 2,
+            "4br+": 14
+          },
+          "src": [
+            "SRC-003953"
+          ],
+          "note": "14 four-bedroom townhomes and 2 three-bedroom units; two 1-bedroom ADUs (521 sq ft each) not counted"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 715,
+          "src": [
+            "SRC-003953",
+            "SRC-003954"
+          ]
+        },
+        {
+          "value": 750,
+          "src": [
+            "SRC-003955"
+          ],
+          "note": "Figure given in the news article"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003953"
+          ],
+          "note": "Four density bonus waivers and one concession (commercial FAR)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "2 moderate-income units plus in-lieu fee for 0.4 unit (15%)",
+          "src": [
+            "SRC-003953"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +349,27 @@
       "text": "Appeal PLN26-00318: on Aug. 25, 2026 a Council motion to overrule the appeal and uphold the approval failed. Current status not determined.",
       "src": [
         "SRC-001548"
+      ]
+    },
+    {
+      "text": "City staff report for the Nov. 18, 2026 Planning Commission: after the Aug. 25, 2026 Council motion to overrule the appeal failed and no other motion was made, the June 17, 2026 Development Review Hearing approval of the Architectural Review permit remained in effect. The City Council is the final authority on the tentative map.",
+      "src": [
+        "SRC-003952"
+      ]
+    },
+    {
+      "text": "Silicon Valley Voice reports five Council members voting on Aug. 25, 2026 (Cox absent, Mayor Gillmor recused); Chahal opposed the motion and Park abstained, so it fell short of four votes. The article spells the owner's name Damien Spino; the city staff report spells it Damien Speno.",
+      "src": [
+        "SRC-003955",
+        "SRC-003952"
+      ]
+    },
+    {
+      "text": "Three buildings: an eight-unit 20,672 sq ft building, a six-unit 15,323 sq ft building, and a two-unit 6,012 sq ft building with two ADUs and 715 sq ft of commercial space. Townhomes are about 2,048 to 2,130 sq ft with tandem two-car garages; heights 44 ft (density bonus waiver from 40 ft) and about 35 ft. Exempt from CEQA under Public Resources Code 21080.66 (AB 130). Density 26.2 units per acre.",
+      "src": [
+        "SRC-003953",
+        "SRC-003952",
+        "SRC-003954"
       ]
     }
   ],
@@ -186,6 +391,40 @@
       "src": [
         "SRC-001547"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Speno Enterprises",
+      "contact": "Damien Speno",
+      "linkedin": null,
+      "src": [
+        "SRC-003952"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Anderson Architects, Inc.",
+      "contact": "Kurt Anderson",
+      "linkedin": null,
+      "email": "kanderson@andarchinc.com",
+      "phone": "(408) 298-1885",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003954",
+        "SRC-003953"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects, Inc.",
+      "contact": "Kurt Anderson",
+      "linkedin": null,
+      "website": "https://www.andarchinc.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003954",
+        "SRC-003955"
+      ]
     }
   ],
   "financing": [],
@@ -197,6 +436,65 @@
       "label": "Application submitted",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "date": "2024-10-21",
+      "type": "Application filed",
+      "label": "Architectural Review application submitted (PLN24-00533), per city staff report",
+      "src": [
+        "SRC-003952"
+      ]
+    },
+    {
+      "date": "2024-11-14",
+      "type": "Application filed",
+      "label": "Vesting Tentative Subdivision Map application filed (PLN24-00613)",
+      "src": [
+        "SRC-003952"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "type": "Approved",
+      "label": "Architectural Review approved at Development Review Hearing",
+      "src": [
+        "SRC-003952",
+        "SRC-003953"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "type": "Other",
+      "label": "Appeal filed by neighbors (PLN26-00318)",
+      "src": [
+        "SRC-003952"
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (SCH 2026061275)",
+      "src": [
+        "SRC-003954"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Other",
+      "label": "Council motion to overrule appeal failed; Development Review Hearing approval stands",
+      "src": [
+        "SRC-003952",
+        "SRC-001548",
+        "SRC-003955"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Other",
+      "label": "Planning Commission agenda: recommendation on Vesting Tentative Map",
+      "src": [
+        "SRC-003956"
       ]
     }
   ],
@@ -210,6 +508,99 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, owner and appeal; found CEQAnet notice and Silicon Valley Voice article",
+      "src": [
+        "SRC-003954",
+        "SRC-003955"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 224-29-010 (858 Civic Center Dr) and 224-29-023 (1526 Alviso St) added per staff report APN list; dataset shows no owner field",
+      "src": [
+        "SRC-001098",
+        "SRC-003953"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Legistar: DRH 2026-06-17 staff report (26-614), Council appeal 26-728 history, PC 2026-11-18 staff report (26-1093)",
+      "src": [
+        "SRC-003953",
+        "SRC-001548",
+        "SRC-003952"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet NOE SCH 2026061275 (statutory exemption 21080.66); APR data already on record",
+      "src": [
+        "SRC-003954",
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Silicon Valley Voice, Aug. 26, 2026",
+      "src": [
+        "SRC-003955"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SF YIMBY June 2026 article already on record",
+      "src": [
+        "SRC-001547"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Speno Enterprises found no company website",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "andarchinc.com opened (site under construction, no project page); firm contact from CEQAnet NOE",
+      "src": [
+        "SRC-003957",
+        "SRC-003954"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city, state or news sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for owner and architect found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

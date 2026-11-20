@@ -109,8 +109,16 @@
           "src": [
             "SRC-001422"
           ]
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003962"
+          ],
+          "note": "Single-family attached townhome-style condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -137,10 +145,20 @@
         {
           "value": 16,
           "src": [
-            "SRC-001422"
+            "SRC-001422",
+            "SRC-003962",
+            "SRC-003873"
           ]
+        },
+        {
+          "value": 15,
+          "src": [
+            "SRC-003963"
+          ],
+          "note": "Vesting tentative map sheet in the city's posted plan set reads TOTAL UNITS: 15 RESIDENTIAL"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -161,9 +179,112 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 16,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003873"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003873"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 34,
+          "src": [
+            "SRC-003873"
+          ],
+          "note": "32 in garages plus 2 guest spaces"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003873"
+          ],
+          "note": "Two deed-restricted moderate-income units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003873"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "2 deed-restricted moderate-income units (Building 4, units 3 and 5, 1,350 sq ft each) plus in-lieu fee for 0.4 unit under 15% inclusionary rule",
+          "src": [
+            "SRC-003873"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003873",
+            "SRC-003962"
+          ],
+          "note": "City Council approved density bonus concessions and waivers"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Planning Commission adopted Resolution 25-15 on Oct. 28, 2025, 6-0 (Habib absent), adding a condition that residents use garages for parking, to be written into the CC&Rs. CEQA: statutory exemption under Public Resources Code 21080.66 (AB 130).",
+      "src": [
+        "SRC-003875",
+        "SRC-003962"
+      ]
+    },
+    {
+      "text": "Four townhome buildings of 3, 3, 4 and 6 units; 16 three-bedroom units of 1,350 to 1,817 sq ft, each with an attached garage; about 3,905 sq ft of common landscaping; single driveway from Myrtle Avenue. The two existing single-family homes will be removed. The vesting tentative map sheet names Diamond Construction, Lafayette, as owner/developer.",
+      "src": [
+        "SRC-003873",
+        "SRC-003963",
+        "SRC-001429"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -174,11 +295,85 @@
       "src": [
         "SRC-001429"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Myrtle Investments, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (as named in staff report)",
+      "src": [
+        "SRC-003873",
+        "SRC-003962"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Diamond Construction",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003963"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Ascend Architecture",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.ascend-arch.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003963"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "DeBolt Civil Engineering, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003963"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Frank Electric Partners, LP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Client (named on architectural plan sheets)",
+      "src": [
+        "SRC-003963"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-12",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-003873"
+      ]
+    },
+    {
+      "date": "2024-05-06",
+      "type": "Application filed",
+      "label": "Vesting Tentative Map and Design Permit applications submitted",
+      "src": [
+        "SRC-003962"
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "type": "Other",
+      "label": "City Council approved density bonus concessions and waivers",
+      "src": [
+        "SRC-003873"
+      ]
+    },
     {
       "date": "2025-10-28",
       "type": "Approved",
@@ -194,6 +389,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and project name; found city plans and a for-sale listing (listing pages refused access)",
+      "src": [
+        "SRC-003963"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 817-01-021 (30 Myrtle Av) and 817-01-022 (50 Myrtle Av); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Morgan Hill project page, Resolution 25-15, plan set, CivicClerk PC 2025-10-28 packet and minutes",
+      "src": [
+        "SRC-001429",
+        "SRC-003962",
+        "SRC-003963",
+        "SRC-003873",
+        "SRC-003875"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A and A2 (data.ca.gov) searched by street and APN: no Morgan Hill rows for this site",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Crexi and LoopNet listing pages for 30-50 Myrtle Ave returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Myrtle Investments LLC or Diamond Construction (Lafayette)",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "ascend-arch.com opened (no Morgan Hill project page); firm identified from plan sheet contact",
+      "src": [
+        "SRC-003964",
+        "SRC-003963"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder in any source",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
