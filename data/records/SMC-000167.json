@@ -136,11 +136,28 @@
           "note": "State report 2020, application stage: 4 deed-restricted units"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 25,
+          "src": [
+            "SRC-001112"
+          ],
+          "note": "State report 2019 and 2020, application stage: 25 above-moderate units of 29 proposed"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001112"
+      ]
+    },
+    {
+      "text": "State Annual Progress Report rows for 2019 and 2020 list the project as \"Penna Miller Condo\", local tracking number P19-0041, application submitted 2019-05-15, 29 proposed for-sale units (2 low-income and 2 moderate-income deed-restricted, 25 above-moderate), not filed under SB 35. City note in the report: \"Project review underway\".",
       "src": [
         "SRC-001112"
       ]
@@ -174,6 +191,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 219 Miller Ave, Penna Miller Condo and P19-0041 returned only land-sale listings for the parcel; listing pages (LoopNet) refused access, MLS and broker pages showed no listing text",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APN 012-315-220 and recorded owner already on the record from the county parcel layer",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "South San Francisco has no public Legistar Web API (client not configured); web search for P19-0041 on ssf.net found no staff report or agenda item",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A rows 2019 and 2020 for APN 012315220: unit split by income and city status note added; CEQAnet search found no filing for the address",
+      "src": [
+        "SRC-001112"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched San Mateo Daily Journal and general news for 219 Miller Ave condominium; no coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found for 219 Miller Ave",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in any public source beyond the recorded owner trust",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any public source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

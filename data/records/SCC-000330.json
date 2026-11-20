@@ -1,6 +1,6 @@
 {
   "id": "SCC-000330",
-  "name": "824 San Antonio Rd",
+  "name": "824 San Antonio Road Senior Living",
   "parcels": [
     {
       "apn": "147-03-040",
@@ -81,11 +81,29 @@
         {
           "value": 28,
           "src": [
-            "SRC-001127"
+            "SRC-001127",
+            "SRC-003742",
+            "SRC-003743"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 25,
+          "src": [
+            "SRC-003744"
+          ],
+          "note": "August 2023 proposal: 15 independent living, 9 assisted living, 1 owner's residence"
+        },
+        {
+          "value": 22,
+          "src": [
+            "SRC-003745",
+            "SRC-003746"
+          ],
+          "note": "2021-2022 preliminary proposal: 13 independent senior units, 1 owner's unit, 8 assisted living units, plus an 8-bed skilled nursing facility"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -95,6 +113,13 @@
             "SRC-001127"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "21PLN-00339",
+          "src": [
+            "SRC-003748"
+          ],
+          "note": "Preliminary Architectural Review"
         }
       ]
     },
@@ -106,6 +131,135 @@
             "SRC-001127"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003742"
+          ],
+          "note": "CEQA Notice of Determination (2025): 4 affordable units, 20% of total"
+        }
+      ],
+      "best": 1
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 11,
+            "1br": 15,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003742"
+          ],
+          "note": "Independent units: 14 one-bedroom, 1 two-bedroom; assisted living: 11 studio, 1 one-bedroom. The owner's unit type is not stated."
+        },
+        {
+          "value": {
+            "studio": 9,
+            "1br": 13,
+            "2br": 3,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003744"
+          ],
+          "note": "August 2023 25-unit proposal"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-003742",
+            "SRC-003743"
+          ],
+          "note": "Private residential senior living care facility"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003743",
+            "SRC-003742",
+            "SRC-003747"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.5,
+          "src": [
+            "SRC-003742"
+          ]
+        },
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-003744"
+          ],
+          "note": "Parcel 19,412 sq ft per SF YIMBY December 2023"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 30746,
+          "src": [
+            "SRC-003747"
+          ],
+          "note": "December 2023 plans; total built-up area 56,674 sq ft"
+        },
+        {
+          "value": 32750,
+          "src": [
+            "SRC-003744"
+          ],
+          "note": "August 2023 proposal; total about 52,130 sq ft including a 13,880 sq ft basement garage"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 6268,
+          "src": [
+            "SRC-003747",
+            "SRC-003743"
+          ],
+          "note": "Leasable ground-floor commercial space (city page gives this figure for the 21PLN-00339 preliminary review)"
+        },
+        {
+          "value": 930,
+          "src": [
+            "SRC-003744"
+          ],
+          "note": "August 2023 proposal: retail"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 32,
+          "src": [
+            "SRC-003744"
+          ],
+          "note": "August 2023 proposal: 32 car spaces in a basement garage, 34 bicycle spaces"
         }
       ]
     }
@@ -116,12 +270,106 @@
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "text": "City of Palo Alto 23PLN-00181: Major Architectural Review to demolish a 2-story office building and build a 4-story private residential senior living facility with 15 independent dwelling units, 12 assisted living units and 1 owner-occupied unit, resident amenities on every floor, underground parking and leasable ground-floor commercial space; zoning CS. The city found the project consistent with the previously adopted Housing Incentive Program Expansion and 788 San Antonio Road Mixed-Use Project EIR (memo dated 2025-01-16).",
+      "src": [
+        "SRC-003743"
+      ]
+    },
+    {
+      "text": "City of Palo Alto 21PLN-00339: Preliminary Architectural Review for a four-story private residential care facility of about 30,746 sq ft with 15 independent senior units, 1 owner's unit, 9 assisted living units, an 8-bed skilled nursing facility and about 6,268 sq ft of ground-floor commercial space.",
+      "src": [
+        "SRC-003748"
+      ]
+    },
+    {
+      "text": "Mountain View Voice (2022-09-01): the applicant is pursuing approval under the city's Housing Incentive Program; the site then housed Mayweather Boxing and Fitness.",
+      "src": [
+        "SRC-003746"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Rachelle Cagampan LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003744",
+        "SRC-003745"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rachelle Cagampan",
+      "contact": "Rachelle Cagampan",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003746"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Architects FORA",
+      "contact": "Leah Bayer",
+      "linkedin": null,
+      "website": "https://architectsfora.squarespace.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003746",
+        "SRC-003747",
+        "SRC-003749"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "BASE Landscape Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003747"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-12",
+      "type": "Application filed",
+      "label": "Preliminary Architectural Review filed (21PLN-00339)",
+      "src": [
+        "SRC-003745",
+        "SRC-003746"
+      ]
+    },
+    {
+      "date": "2022-08",
+      "type": "Other",
+      "label": "Application resubmitted",
+      "src": [
+        "SRC-003746"
+      ]
+    },
+    {
+      "date": "2023-12-21",
+      "type": "Other",
+      "label": "Architectural Review Board hearing on Major Architectural Review (23PLN-00181)",
+      "src": [
+        "SRC-003747"
+      ]
+    },
+    {
+      "date": "2025-01-21",
+      "type": "Approved",
+      "label": "City approval per CEQA Notice of Determination; project found consistent with the 2020 HIP Expansion and 788 San Antonio Road EIR",
+      "src": [
+        "SRC-003742"
+      ]
+    },
     {
       "date": "2025-02-05",
       "type": "Approved",
@@ -136,6 +384,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 824 San Antonio Rd led to city project pages, CEQAnet NOD, SF YIMBY and Mountain View Voice",
+      "src": [
+        "SRC-003743"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "data.sccgov.org parcel API for APN 14703040: situs 824 San Antonio, Palo Alto; no owner field in the dataset; CEQA NOD lists the same APN",
+      "src": [
+        "SRC-001098",
+        "SRC-003742"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto project pages for 23PLN-00181 and 21PLN-00339",
+      "src": [
+        "SRC-003743",
+        "SRC-003748"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2019090070 NOD received 2025-01-22, approval 2025-01-21, unit mix and 4 affordable units",
+      "src": [
+        "SRC-003742"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Voice 2022-09-01; Palo Alto Online 2022 article page returned no text and the 2026 article returned 429",
+      "src": [
+        "SRC-003746"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2021-12-21, 2023-08-08, 2023-12-20",
+      "src": [
+        "SRC-003745",
+        "SRC-003744",
+        "SRC-003747"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Rachelle Cagampan LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Architects FORA portfolio lists San Antonio Senior Living",
+      "src": [
+        "SRC-003749"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found; broker offering memorandum (LoopNet) refused access",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

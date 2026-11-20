@@ -136,6 +136,52 @@
           "note": "State report 2021, application stage: 4 deed-restricted units"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 25,
+          "src": [
+            "SRC-001136"
+          ],
+          "note": "State report 2019 to 2021, application stage: 25 above-moderate units of 29 proposed"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001136"
+          ],
+          "note": "State report 2021: density bonus requested \"Yes\", density bonus approved \"N/A\", application status Pending"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.2,
+          "src": [
+            "SRC-003738",
+            "SRC-003739"
+          ],
+          "note": "Earlier Pacifica Bowl proposals on APNs 009-402-250 and 009-402-260 (CEQA notices 1999 and 2001)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Pacifica's report cites Article 47 of the Pacifica Municipal Code, which requires 15% of units to be below-market-rate in projects of 8 or more units.",
+          "src": [
+            "SRC-001136"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -143,6 +189,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001136"
+      ]
+    },
+    {
+      "text": "State Annual Progress Report rows for 2019, 2020 and 2021 list \"The Bowl Duplexes and Triplexes\" at 4000 Palmetto, tracking number 2019-028, application submitted 2019-10-01, 29 proposed for-sale units (2 very-low-income and 2 moderate-income deed-restricted, 25 above-moderate). The 2021 row shows application status Pending.",
+      "src": [
+        "SRC-001136"
+      ]
+    },
+    {
+      "text": "CEQAnet shows two City of Pacifica Notices of Preparation for a Pacifica Bowl EIR (SCH 1999122078) on vacant, bowl-shaped land on the east side of the 4000 block of Palmetto Avenue south of the Daly City line: 1999-12-22 for 30 units on about 4.2 acres (APNs listed as 009-402-520 and 009-402-260), and 2001-12-27 for 43 single-family homes and townhomes with access from Palmetto Avenue and Edgemar Road (APNs 009-402-250 and 009-402-260).",
+      "src": [
+        "SRC-003738",
+        "SRC-003739"
       ]
     }
   ],
@@ -161,6 +220,22 @@
   "groups": {},
   "events": [
     {
+      "date": "1999-12-22",
+      "type": "Other",
+      "label": "Earlier proposal: City of Pacifica Notice of Preparation of a Draft EIR for the Pacifica Bowl, 30 units on about 4.2 acres",
+      "src": [
+        "SRC-003738"
+      ]
+    },
+    {
+      "date": "2001-12-27",
+      "type": "Other",
+      "label": "Earlier proposal: City of Pacifica Notice of Preparation of a Draft EIR for the Pacifica Bowl, 43 single-family homes and townhomes",
+      "src": [
+        "SRC-003739"
+      ]
+    },
+    {
       "date": "2019-10-01",
       "type": "Application filed",
       "label": "Application submitted",
@@ -174,6 +249,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on The Bowl, 4000 Palmetto and Pacifica Bowl led to CEQAnet notices for earlier proposals on the same parcel",
+      "src": [
+        "SRC-003738"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APN 009-402-250 and recorded owners already on the record from the county parcel layer; CEQA notices pair it with 009-402-260",
+      "src": [
+        "SRC-001103",
+        "SRC-003739"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "cityofpacifica.org documents (active planning applications list) returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A rows 2019 to 2021 (density bonus, income split); CEQAnet SCH 1999122078 NOPs 1999 and 2001",
+      "src": [
+        "SRC-001136",
+        "SRC-003738",
+        "SRC-003739"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Pacifica Tribune, Pacifica Riptide and general news for The Bowl and 4000 Palmetto; no coverage of the 2019 application",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No applicant or developer named in any public source opened",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any public source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
