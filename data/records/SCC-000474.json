@@ -121,6 +121,13 @@
             "SRC-001274"
           ],
           "note": "30 units at 10728 and 32 at 10758. Multifamily; tenure not stated"
+        },
+        {
+          "value": 88,
+          "src": [
+            "SRC-003377"
+          ],
+          "note": "Applicant's attorney letter, Feb 24, 2025: 88 units on about 0.77 acres; the 10728 Mora Drive building is 43 units, 69,369 sq ft, with a 27-space garage"
         }
       ]
     },
@@ -157,9 +164,41 @@
           "note": "Developer Forrest Linebarger described Silver Oaks as \"a senior housing development with affordable units\"; no count or income level given"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.77,
+          "src": [
+            "SRC-003377"
+          ],
+          "note": "Approximate, per applicant's attorney letter"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003377"
+          ],
+          "note": "Revised builder's remedy application under AB 1893 adding the Density Bonus Law"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Applicant's February 25, 2025 supplemental submission for CDP23-0001 states the revised application was filed January 30, 2025, the date Town staff scheduled the project for denial at City Council, and describes a 25% density reduction from the original February 1, 2023 application. Building height for 10728 Mora Drive: 62'4\" on the Mora Drive elevation, 73'2\" on the east elevation. The Town's index sheet lists Forrest Linebarger as legal owner and Tower Investments LLC as applicant for APN 331-15-061.",
+      "src": [
+        "SRC-003377"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -170,11 +209,59 @@
       "src": [
         "SRC-001274"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Tower Investments LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003377"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Patterson & O'Neill, PC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant's attorney",
+      "src": [
+        "SRC-003377"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-02-01",
+      "type": "Application filed",
+      "label": "Original builder's remedy application",
+      "src": [
+        "SRC-003377"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-30",
+      "type": "Application filed",
+      "label": "Revised builder's remedy application (AB 1893)",
+      "src": [
+        "SRC-003377"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-26",
+      "type": "Other",
+      "label": "AB 1633 90-day notice received by Town",
+      "src": [
+        "SRC-003378",
+        "SRC-001275"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-06",
       "type": "Other",
@@ -204,6 +291,85 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on Silver Oaks, Mora Drive and Linebarger; results on the earlier builder's remedy filings were from sites that could not be opened (therealdeal.com 403).",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APNs 331-15-061 (10728 Mora Dr) and 331-15-062 (10758 Mora Dr); no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Town public notices page; AB 1633 notice cover page; CDP23-0001 applicant package (index sheet, applicant letter, attorney letter).",
+      "src": [
+        "SRC-001275",
+        "SRC-003378",
+        "SRC-003377"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated town project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A and A2 searched for Mora Drive rows in Los Altos Hills; none returned.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "CalHDF April 2026 lawsuit page covers the Town housing element and Twin Oaks, not this project; web search found no ruling.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal article on Los Altos Hills (October 2025) returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicant is an individual and Tower Investments LLC; no project website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in the applicant package pages reviewed.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no lenders or funders found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

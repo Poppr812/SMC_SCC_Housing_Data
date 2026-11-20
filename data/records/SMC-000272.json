@@ -220,6 +220,60 @@
           "src": [
             "SRC-001258"
           ]
+        },
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001141",
+            "SRC-001142"
+          ],
+          "note": "Table A 2024: SB 423 (2023), ministerial, density bonus approved. Table A2 2025: streamlining listed as SB 4 (2023), density bonus with concessions, AB 1763"
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "PA2024-0065",
+          "src": [
+            "SRC-001141",
+            "SRC-001142"
+          ],
+          "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001142"
+          ],
+          "note": "State report 2025, entitlement row"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 9,
+              "ami": 30
+            },
+            {
+              "count": 53,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001142"
+          ],
+          "note": "State report 2025, entitlement row: 9 extremely low-income (reported as not deed-restricted in Table A2; Table A 2024 lists 9 very low-income deed-restricted), 53 low-income deed-restricted, 1 above moderate. AMI is the category's upper limit"
         }
       ]
     }
@@ -229,6 +283,20 @@
       "text": "Split out of SMC-000126, where state report rows combined it with The Ridge at Ralston (678 Ralston Ave). Same developer; separate parcels and owners.",
       "src": [
         "SRC-001258"
+      ]
+    },
+    {
+      "text": "State report rows for Ridge at Masonic list APN 040-313-280. The county parcel layer shows 040-313-280 as 678 Ralston Ave, owned by Ridge at Ralston LP, and 951 Old County Rd as APN 040-313-430, owned by CRP 951 Old County LLC.",
+      "src": [
+        "SRC-001141",
+        "SRC-001142",
+        "SRC-001103"
+      ]
+    },
+    {
+      "text": "State report 2025 lists financial assistance as RDA, LIHTC and HOME.",
+      "src": [
+        "SRC-001142"
       ]
     }
   ],
@@ -252,6 +320,15 @@
       "linkedin": null,
       "src": [
         "SRC-001258"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "CRP 951 Old County LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
       ]
     }
   ],
@@ -279,7 +356,27 @@
     }
   ],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2024-12-22",
+      "type": "Application filed",
+      "label": "Application submitted (PA2024-0065)",
+      "src": [
+        "SRC-001141"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-23",
+      "type": "Approved",
+      "label": "Entitlement approved",
+      "src": [
+        "SRC-001142",
+        "SRC-001141"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -290,6 +387,11 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -298,5 +400,87 @@
       "relation": "adjacent",
       "note": "Both by CRP Affordable Housing; reported together in the state report (128 units)"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Web search on 951 Old County Road, Ridge on Masonic and CRP; results repeated SF YIMBY and city facts on record.",
+      "src": [
+        "SRC-001258"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC parcel layer: APN 040-313-430, 951 Old County Rd, owner CRP 951 Old County LLC.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "belmont.gov project pages returned 403.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "County of San Mateo Department of Housing HUD environmental assessment found in search covers The Ridge at Ralston (678 Ralston Ave), not this site.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2024 and Table A2 2025 (Belmont): PA2024-0065, approved 2025-01-23, 55-year term; CTCAC search found an award only for The Ridge at Ralston.",
+      "src": [
+        "SRC-001141",
+        "SRC-001142"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the Belmont council loan returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SF YIMBY May 2026 article already on record.",
+      "src": [
+        "SRC-001258"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "crpaffordable.com Our Projects page lists only The Ridge at Ralston in Belmont; no page for this project.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "AO news page already on record.",
+      "src": [
+        "SRC-001913"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 2025 lists RDA, LIHTC and HOME assistance; Housing Trust and city loans already on record.",
+      "src": [
+        "SRC-001142",
+        "SRC-001912"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

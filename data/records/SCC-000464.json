@@ -100,6 +100,23 @@
           ]
         }
       ]
+    },
+    {
+      "text": "2225 E Bayshore Rd, Palo Alto, CA",
+      "role": "other",
+      "src": [
+        "SRC-003375",
+        "SRC-003376"
+      ],
+      "written_as": [
+        {
+          "text": "2225 East Bayshore Rd, Palo Alto, CA",
+          "src": [
+            "SRC-003375",
+            "SRC-003376"
+          ]
+        }
+      ]
     }
   ],
   "images": [],
@@ -193,10 +210,105 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 33,
+            "4br+": 29
+          },
+          "src": [
+            "SRC-003375",
+            "SRC-003376"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 145,
+          "src": [
+            "SRC-003375",
+            "SRC-003376"
+          ],
+          "note": "Garages and on-street spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 127660,
+          "src": [
+            "SRC-003375"
+          ],
+          "note": "Total floor area across twelve structures, preliminary filing"
+        },
+        {
+          "value": 127600,
+          "src": [
+            "SRC-003376"
+          ],
+          "note": "Total floor area across 11 structures, entitlement filing"
+        }
+      ]
     }
   },
-  "construction_notes": [],
-  "parties": [],
+  "construction_notes": [
+    {
+      "text": "City project page: Site and Design Review, Conditional Use Permit and Vesting Tentative Map to demolish two office/R&D buildings and build 12 three-story buildings with 62 for-sale townhomes; map creates 12 lots for condominium purposes; zoning ROLM(E)(D)(AD); CEQA review in progress; no hearings scheduled.",
+      "src": [
+        "SRC-001261"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports the project under the address 2225 East Bayshore Road and describes the 62 homes as apartments in a townhouse development. The county parcel dataset lists 2225 E Bayshore Rd on APNs 008-02-029 and 008-02-030, and 2197 E Bayshore Rd on APN 008-02-031.",
+      "src": [
+        "SRC-003375",
+        "SRC-003376",
+        "SRC-001098"
+      ]
+    }
+  ],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "BGO",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.bgo.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003375",
+        "SRC-003376"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003375",
+        "SRC-003376"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003375",
+        "SRC-003376"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -215,6 +327,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 2197 and 2225 East Bayshore Road, BGO and KTGY; found SF YIMBY coverage.",
+      "src": [
+        "SRC-003375",
+        "SRC-003376"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 2197 E Bayshore on 008-02-031 (3 situs addresses); 2225 E Bayshore on 008-02-029 and 008-02-030. No owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto project page: 26PLN-00098 and 26PLN-00117, entitlements requested, 12 three-story buildings, zoning.",
+      "src": [
+        "SRC-001261"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated city project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A and A2 searched for Bayshore rows in Palo Alto; only 2850 W Bayshore rows returned.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Palo Alto Online and local news for 2197/2225 East Bayshore.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-05-04 and 2026-05-18 articles: BGO, KTGY, Guzzardo, unit mix, parking.",
+      "src": [
+        "SRC-003375",
+        "SRC-003376"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "bgo.com home page opened; no mention of Palo Alto or this project.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "KTGY named by SF YIMBY; ktgy.com returned 403 for other project pages and no page for this project was found in search.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no lenders or funders found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

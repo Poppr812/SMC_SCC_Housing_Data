@@ -111,6 +111,13 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2023-231",
+          "src": [
+            "SRC-003373"
+          ],
+          "note": "Two-year permit extension request"
         }
       ]
     },
@@ -122,6 +129,77 @@
             "SRC-001110"
           ],
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003371"
+          ],
+          "note": "Four stories at 48'-3\", three-story frontage on El Monte Avenue"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 59,
+          "src": [
+            "SRC-003371"
+          ],
+          "note": "One-level underground garage"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.24,
+          "src": [
+            "SRC-003371",
+            "SRC-003372"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Senior"
+          ],
+          "src": [
+            "SRC-003371"
+          ],
+          "note": "90-room senior-care facility"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003371",
+            "SRC-001110"
+          ],
+          "note": "20% State Density Bonus on a senior housing development, with nine waivers"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "State report notes 28 memory care units are not included in the 62 units reported. City findings describe 90 rooms with a 20% density bonus over a 75-room base project; no affordable units stated.",
+          "src": [
+            "SRC-001110",
+            "SRC-003371"
+          ]
         }
       ]
     }
@@ -138,6 +216,12 @@
       "src": [
         "SRC-001707"
       ]
+    },
+    {
+      "text": "Findings report (2022-02-23): conditionally approved four-story, 90-room senior-care facility with 59 parking spaces replacing three commercial buildings; 20% density bonus, FAR 1.48 against a 1.05 maximum; permit expiration February 23, 2024. Plans by KTGY Group dated November 19, 2021; project letters prepared by El Monte Senior, LLC.",
+      "src": [
+        "SRC-003371"
+      ]
     }
   ],
   "parties": [
@@ -150,11 +234,50 @@
       "src": [
         "SRC-001707"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "KTGY Group, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003371"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "El Monte LLC",
+      "contact": "Mitra Malek",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003371",
+        "SRC-003374",
+        "SRC-003372"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-02-16",
+      "type": "Application filed",
+      "label": "Development Review Permit application filed (PL-2021-031)",
+      "src": [
+        "SRC-003372"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-12-08",
+      "type": "Other",
+      "label": "Administrative Zoning hearing; item continued",
+      "src": [
+        "SRC-003372"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-02-23",
       "type": "Approved",
@@ -162,6 +285,24 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2023-11-28",
+      "type": "Other",
+      "label": "Two-year permit extension requested (PL-2023-231)",
+      "src": [
+        "SRC-003373"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-02-14",
+      "type": "Other",
+      "label": "Administrative Zoning hearing on permit extension",
+      "src": [
+        "SRC-003373"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -174,6 +315,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 1057-1061 El Monte Avenue; results were senior-living directory listings for 1059 El Monte Ave (MorningStar of Mountain View) that were not used as sources.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 189-33-027, situs 1057 El Monte Av, 3 situs addresses; the dataset has no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Legistar matters 6057/6263 (PL-2021-031, AZ hearing 2022-02-23) with findings report and staff memo; matter 8189 (PL-2023-231) staff memo.",
+      "src": [
+        "SRC-003374",
+        "SRC-003371",
+        "SRC-003372",
+        "SRC-003373"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Incorporated city project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 (Mountain View) 2022 row: 20% density bonus, nine incentives, 28 memory care units not counted.",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of Mountain View Voice and local news for the El Monte Avenue senior care facility.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press; HCO News item found covers 855 W El Camino Real, a different project.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "MorningStar Senior Living communities and under-development pages list no Mountain View community; no site found for El Monte Senior LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "ktgy.com project page for MorningStar of Mountain View returned 403.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no lenders or funders found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }
