@@ -1,6 +1,6 @@
 {
   "id": "SCC-000536",
-  "name": "494 S. Bernardo Avenue",
+  "name": "S Bernardo Townhomes (494 S. Bernardo Avenue)",
   "parcels": [
     {
       "apn": "161-24-001",
@@ -159,6 +159,13 @@
           "src": [
             "SRC-001494"
           ]
+        },
+        {
+          "value": "PLNG-2025-0130",
+          "src": [
+            "SRC-003754"
+          ],
+          "note": "File number cited in the applicant's attorney letter of 2026-05-22"
         }
       ]
     },
@@ -179,6 +186,76 @@
           "src": [
             "SRC-001494"
           ]
+        },
+        {
+          "value": 1.63,
+          "src": [
+            "SRC-003755",
+            "SRC-003756"
+          ],
+          "note": "Gross lot area 70,946 sq ft; 1.45 acres net"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003754"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "4 moderate-income below-market-rate ownership units (about 14.2%) plus an in-lieu fee for the remaining fraction",
+          "src": [
+            "SRC-003754"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003754"
+          ],
+          "note": "4 moderate-income for-sale units (AMI is the moderate category's upper limit)"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003754",
+            "SRC-001495"
+          ],
+          "note": "State Density Bonus Law waivers and one concession; no bonus units"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 64,
+          "src": [
+            "SRC-003755",
+            "SRC-003756"
+          ],
+          "note": "56 residential, 7 visitor, 1 shared visitor/loading"
         }
       ]
     }
@@ -188,6 +265,26 @@
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
         "SRC-001494"
+      ]
+    },
+    {
+      "text": "Use Permit and Vesting Tentative Map: demolish an existing commercial building and build six 3-story buildings with 28 for-sale townhomes on 28 lots plus one common parcel.",
+      "src": [
+        "SRC-001494",
+        "SRC-003755"
+      ]
+    },
+    {
+      "text": "CEQA: statutory exemption under Public Resources Code 21080.66 (AB 130). The project requested 16 waivers and is subject to the Housing Accountability Act.",
+      "src": [
+        "SRC-001494",
+        "SRC-001495"
+      ]
+    },
+    {
+      "text": "Gross floor area 73,706 sq ft; building height 40 ft 9 in; density 19.3 units per acre.",
+      "src": [
+        "SRC-003755"
       ]
     }
   ],
@@ -200,6 +297,68 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001494"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "California Communities",
+      "contact": "Forrest Mozart",
+      "linkedin": null,
+      "email": "fmozart@mozartdev.com",
+      "phone": "(650) 380-5399",
+      "src": [
+        "SRC-003756",
+        "SRC-001494"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "494 Bernardo L P",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-001494"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": "Eric Muzzy",
+      "linkedin": null,
+      "website": "https://www.dahlingroup.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003756"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": "Scott Schork",
+      "linkedin": null,
+      "src": [
+        "SRC-003756",
+        "SRC-001495"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "VanderToolen Associates",
+      "contact": "Alicia Chandler",
+      "linkedin": null,
+      "src": [
+        "SRC-003756"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Shartsis Friese LLP",
+      "contact": "Dana Kennedy",
+      "linkedin": null,
+      "other_role": "Applicant's counsel",
+      "src": [
+        "SRC-003754"
       ]
     }
   ],
@@ -221,6 +380,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address, California Communities, Dahlin and Forrest Mozart found no project coverage",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 16124001: situs 494 S Bernardo Av, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Legistar 26-0684: PC 2026-08-10 minutes, project data table, attorney waiver letter, plan set",
+      "src": [
+        "SRC-001494",
+        "SRC-001495",
+        "SRC-003755",
+        "SRC-003754",
+        "SRC-003756"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR data.ca.gov Tables A and A2: no 494 S Bernardo row; no CEQAnet listing found by search",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no trade press coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Developer identified from plan set project team block; no developer project page found",
+      "src": [
+        "SRC-003756"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Plan set by Dahlin Group (project no. 263.009); search found no Dahlin project page",
+      "src": [
+        "SRC-003756"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city filings",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "SCC-000331",
-  "name": "444 Old Sf",
+  "name": "444 Old San Francisco Road",
   "parcels": [
     {
       "apn": "211-01-031",
@@ -98,8 +98,15 @@
             "SRC-001119"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003765"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -127,16 +134,11 @@
     "total_units": {
       "claims": [
         {
-          "value": 27,
-          "src": [
-            "SRC-001119"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 8,
           "src": [
-            "SRC-001118"
+            "SRC-001118",
+            "SRC-003765",
+            "SRC-001119"
           ],
           "note": "Units in the application as reported"
         }
@@ -159,8 +161,15 @@
           "src": [
             "SRC-001119"
           ]
+        },
+        {
+          "value": "1 moderate-income deed-restricted ownership unit, 30-year term (2023 entitlement)",
+          "src": [
+            "SRC-001119"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -187,6 +196,83 @@
             "SRC-001119"
           ],
           "note": "State report 2019, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "State report 2023, entitlement stage: 1 moderate-income ownership unit (AMI is the category's upper limit)"
+        }
+      ],
+      "best": 1
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003766"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 16,
+          "src": [
+            "SRC-003766"
+          ],
+          "note": "2 covered per unit plus 4 unassigned"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.4,
+          "src": [
+            "SRC-003765"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001119"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001119"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001118",
+            "SRC-003765"
+          ]
         }
       ]
     }
@@ -198,9 +284,41 @@
         "SRC-001118",
         "SRC-001119"
       ]
+    },
+    {
+      "text": "Earlier version (city file 2020-7112, 2021): 19 rental units in a four-story building with 3 below-market-rate units, using State Density Bonus Law concession and waivers.",
+      "src": [
+        "SRC-003767"
+      ]
+    },
+    {
+      "text": "The state report lists two rows for the parcel: 2019 tracking 20197782, 19 rental units entitled 2019-10-30 (2 moderate); 2023 tracking 20207112, 8 owner townhomes entitled 2023-08-28 (1 moderate).",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    {
+      "text": "Approved plan: demolish one single-family home, build eight three-story townhomes on eight lots plus a common lot; 19,918 sq ft gross floor area; 47 ft tall; Class 32 CEQA exemption; deviations for front setback and usable open space.",
+      "src": [
+        "SRC-003765",
+        "SRC-003766",
+        "SRC-003769"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Silicon Valley Wzredwood Capital LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and property owner",
+      "src": [
+        "SRC-003765",
+        "SRC-003767"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -211,6 +329,33 @@
       "src": [
         "SRC-001118"
       ]
+    },
+    {
+      "date": "2021-11-22",
+      "type": "Other",
+      "label": "Planning Commission agenda item: 19 rental units in a four-story building",
+      "src": [
+        "SRC-003767"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-04-10",
+      "type": "Other",
+      "label": "Planning Commission agenda item: eight condominium units",
+      "src": [
+        "SRC-003768"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-06-29",
+      "type": "Application filed",
+      "label": "Application submitted (state report)",
+      "src": [
+        "SRC-001118"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-08-28",
@@ -226,6 +371,96 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Removed total_units claim 27: it added an earlier 19-unit rental version to the current 8-townhome plan"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address found only resale listings for other Old San Francisco Rd addresses",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 21101031: situs 444 Old San Francisco Rd, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Legistar 21-1069 (2021), 23-0469 (2023-04-10), 23-0704 PC approval 2023-08-28 with data table and deviation letter",
+      "src": [
+        "SRC-003767",
+        "SRC-003768",
+        "SRC-003765",
+        "SRC-003770",
+        "SRC-003766",
+        "SRC-003769"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Tables A and A2 rows for APN 21101031 (2019 and 2023)",
+      "src": [
+        "SRC-001118",
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no trade press",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Silicon Valley Wzredwood Capital LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in the text-searchable documents",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

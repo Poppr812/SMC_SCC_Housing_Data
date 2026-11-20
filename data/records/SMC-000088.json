@@ -166,6 +166,13 @@
           "src": [
             "SRC-001058"
           ]
+        },
+        {
+          "value": "4 BMR units (15%) for very low-income households",
+          "src": [
+            "SRC-003761"
+          ],
+          "note": "Density bonus letter dated 2025-11-20; the plan set and city page show moderate income"
         }
       ]
     },
@@ -190,6 +197,44 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 4,
+            "1br": 16,
+            "2br": 8,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003760"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 20576,
+          "src": [
+            "SRC-003760"
+          ],
+          "note": "Total unit area, excluding 1,052 sq ft of balconies; total building area 34,150 sq ft"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.26,
+          "src": [
+            "SRC-003760"
+          ],
+          "note": "11,464 sq ft lot"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -197,6 +242,30 @@
       "text": "Vacant lot",
       "src": [
         "SRC-001058"
+      ]
+    },
+    {
+      "text": "Parking is 5 stalls plus 11 stackers; building top of plate 63 ft; ground floor 19 ft floor-to-floor.",
+      "src": [
+        "SRC-003760"
+      ]
+    },
+    {
+      "text": "The project merges three existing lots into one parcel and maps 28 condominiums; the site is a former gas station whose cleanup was closed by San Mateo County Environmental Health.",
+      "src": [
+        "SRC-003763"
+      ]
+    },
+    {
+      "text": "The CEQA notice lists Alex Mortazavi, property owner, 230 El Camino Real LLC, as applicant contact.",
+      "src": [
+        "SRC-003763"
+      ]
+    },
+    {
+      "text": "State APR 2025 Table A lists PA-2025-038 with an application date of 2025-12-24, 4 moderate and 24 above-moderate units, density bonus approved, status pending.",
+      "src": [
+        "SRC-003764"
       ]
     }
   ],
@@ -218,6 +287,46 @@
       "linkedin": null,
       "src": [
         "SRC-001059"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Habitat 8",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003762"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "ARC TEC Inc.",
+      "contact": "Evan Sockalosky",
+      "linkedin": null,
+      "website": "https://www.arctecinc.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003760",
+        "SRC-003762",
+        "SRC-003761"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": "Mike O'Connell",
+      "linkedin": null,
+      "src": [
+        "SRC-003760"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Taniguchi Landscape Architecture",
+      "contact": "Dennis Taniguchi",
+      "linkedin": null,
+      "src": [
+        "SRC-003760"
       ]
     }
   ],
@@ -247,6 +356,15 @@
       "src": [
         "SRC-001058"
       ]
+    },
+    {
+      "date": "2026-03-12",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003763"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -254,6 +372,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address: CEQAnet NOE and SF YIMBY opened; Daily Journal returned 403",
+      "src": [
+        "SRC-003763",
+        "SRC-003762"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 034-093-050 owner 230 El Camino LLC already on record",
+      "src": [
+        "SRC-001059"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page, 3rd planning submittal plan set and density bonus letter",
+      "src": [
+        "SRC-001058",
+        "SRC-003760",
+        "SRC-003761"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026030527 NOE 2026-03-12; APR 2025 Table A row",
+      "src": [
+        "SRC-003763",
+        "SRC-003764"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal approval article returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-02-24: developer Habitat 8, architect Arc Tec",
+      "src": [
+        "SRC-003762"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Habitat 8 website or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "ARC TEC plan set; no project page found on arctecinc.com by search",
+      "src": [
+        "SRC-003760"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city, state or press sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

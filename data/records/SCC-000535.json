@@ -1,6 +1,6 @@
 {
   "id": "SCC-000535",
-  "name": "845 Stewart Drive",
+  "name": "The Arcade (845 Stewart Drive)",
   "parcels": [
     {
       "apn": "205-21-010",
@@ -157,6 +157,91 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003750",
+            "SRC-003751"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "4 below-market-rate for-sale units (15%) at moderate income; 24 market-rate",
+          "src": [
+            "SRC-003750",
+            "SRC-003751"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003750"
+          ],
+          "note": "4 moderate-income for-sale units (AMI is the moderate category's upper limit)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 24,
+          "src": [
+            "SRC-003751"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003750",
+            "SRC-001493"
+          ],
+          "note": "State Density Bonus Law concession and waivers; no bonus units requested"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 61,
+          "src": [
+            "SRC-003752",
+            "SRC-003750"
+          ],
+          "note": "56 in attached garages, 5 unassigned"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 43484,
+          "src": [
+            "SRC-003750"
+          ],
+          "note": "Residential living space; 12,672 sq ft of garages in addition"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -164,6 +249,38 @@
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
         "SRC-001491"
+      ]
+    },
+    {
+      "text": "Plans name the project The Arcade: 28 all-electric, three-story townhome-style condominiums of 1,419 to 1,841 sq ft with 3 to 4 bedrooms, in four buildings.",
+      "src": [
+        "SRC-003751"
+      ]
+    },
+    {
+      "text": "The plan set lists Hunt Hale Jones Architects as architect and Fournier Design Studio as designer; SF YIMBY credits Ascent Architecture with the designs and renderings.",
+      "src": [
+        "SRC-003751",
+        "SRC-001492"
+      ]
+    },
+    {
+      "text": "The site holds an office building with a restaurant (Agape Grill) and three commercial spaces that the applicant said had been vacant for a couple of years.",
+      "src": [
+        "SRC-003750",
+        "SRC-001493"
+      ]
+    },
+    {
+      "text": "Planning Commission approval added a condition that the CC&Rs disclose the vapor barrier and ongoing monitoring and prohibit basements or other foundation penetrations; the site is near a Superfund site.",
+      "src": [
+        "SRC-001493"
+      ]
+    },
+    {
+      "text": "City Ventures staff at the hearing: Julia Koppman Norton, Senior Development Manager, and Samantha Hauser, Head of Development and Executive Vice President.",
+      "src": [
+        "SRC-001493"
       ]
     }
   ],
@@ -186,6 +303,54 @@
       "src": [
         "SRC-001492"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Jenab Family Ventures",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-001491"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": "Dan Hale",
+      "linkedin": null,
+      "website_basis": "filing",
+      "src": [
+        "SRC-003751"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Fournier Design Studio",
+      "contact": "Roland Fournier",
+      "linkedin": null,
+      "other_role": "Designer",
+      "src": [
+        "SRC-003751"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Ruggeri Jensen Azar",
+      "contact": "David Terhune",
+      "linkedin": null,
+      "src": [
+        "SRC-003751"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "C2 Collaborative",
+      "contact": "Quinn DeBence",
+      "linkedin": null,
+      "src": [
+        "SRC-003751"
+      ]
     }
   ],
   "financing": [],
@@ -197,6 +362,15 @@
       "label": "Planning Commission approved",
       "src": [
         "SRC-001493"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-02-02",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003753"
       ],
       "estimated": false
     }
@@ -211,6 +385,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and City Ventures: CEQAnet NOE and SF YIMBY article opened",
+      "src": [
+        "SRC-003753",
+        "SRC-001492"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 20521010: situs 845 Stewart Dr, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Legistar 26-0212: PC 2026-01-26 minutes, project data table, density bonus letter, plan set",
+      "src": [
+        "SRC-001491",
+        "SRC-001493",
+        "SRC-003752",
+        "SRC-003750",
+        "SRC-003751"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026020012 NOE received 2026-02-02; APR data has no row for 845 Stewart",
+      "src": [
+        "SRC-003753"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address and project name found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SF YIMBY 2026-02-12 article",
+      "src": [
+        "SRC-001492"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no cityventures.com page for this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Plan set names Hunt Hale Jones Architects; no project page found by search",
+      "src": [
+        "SRC-003751"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city, state or press sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

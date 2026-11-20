@@ -164,10 +164,19 @@
         {
           "value": 28,
           "src": [
-            "SRC-001564"
+            "SRC-001564",
+            "SRC-003757"
           ]
+        },
+        {
+          "value": 25,
+          "src": [
+            "SRC-003758"
+          ],
+          "note": "SB 330 preliminary application, 2024-06-18: 20 single-family homes and 5 low-income attached ADUs or JADUs"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -176,6 +185,13 @@
           "src": [
             "SRC-001558"
           ]
+        },
+        {
+          "value": "CPX24-0022",
+          "src": [
+            "SRC-001564"
+          ],
+          "note": "Number used on the city's inconsistency letters"
         }
       ]
     },
@@ -196,6 +212,13 @@
           "src": [
             "SRC-001564"
           ]
+        },
+        {
+          "value": 1.83,
+          "src": [
+            "SRC-003757"
+          ],
+          "note": "CEQA Notice of Exemption"
         }
       ]
     },
@@ -210,6 +233,28 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001564",
+            "SRC-003757"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "6 attached ADUs restricted as affordable; 22 market-rate homes",
+          "src": [
+            "SRC-001564",
+            "SRC-003757"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -218,18 +263,132 @@
       "src": [
         "SRC-001564"
       ]
+    },
+    {
+      "text": "A resident appealed the Planning Commission approval; the city page lists a City Council appeal hearing tentatively set for 2026-12-02.",
+      "src": [
+        "SRC-001564"
+      ]
+    },
+    {
+      "text": "Homes are three stories, about 35 to 39 ft tall, 3,674 to 4,543 sq ft, each with an attached two-car garage; access from Comer Drive and Pierce Road.",
+      "src": [
+        "SRC-001564"
+      ]
+    },
+    {
+      "text": "Protected trees: the city page shows 71 of 77 proposed for removal; the CEQA notice shows 73 of 85.",
+      "src": [
+        "SRC-001564",
+        "SRC-003757"
+      ]
+    },
+    {
+      "text": "The preliminary application cites Government Code 65589.5(d) (builder's remedy) and states no density bonus was anticipated.",
+      "src": [
+        "SRC-003758"
+      ]
+    },
+    {
+      "text": "The 2024 application form lists Zaka LP (attn. Keyur Shah) as owner and applicant; Keyur Shah signed as Managing Member, Extend Ventures LLC; the CEQA notice names Extend Ventures LP.",
+      "src": [
+        "SRC-003759",
+        "SRC-003757"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Zaka LP",
+      "contact": "Keyur Shah",
+      "linkedin": null,
+      "other_role": "Property owner and applicant",
+      "src": [
+        "SRC-003759",
+        "SRC-003758"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Extend Ventures LP",
+      "contact": "Keyur Shah",
+      "linkedin": null,
+      "email": "extendvtrs@gmail.com",
+      "phone": "(408) 582-2774",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003757",
+        "SRC-003759"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Tiffany (Lowen) Thorsen, Trustee",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner of record (2024 preliminary application)",
+      "src": [
+        "SRC-003758"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cox Castle",
+      "contact": "Linda Klein",
+      "linkedin": null,
+      "other_role": "Agent / representative",
+      "src": [
+        "SRC-003758"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-06-18",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application received",
+      "src": [
+        "SRC-001564",
+        "SRC-003758"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-09-27",
+      "type": "Application filed",
+      "label": "Formal application received",
+      "src": [
+        "SRC-001564"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-26",
+      "type": "Other",
+      "label": "AB 1633 notice filed",
+      "src": [
+        "SRC-001564"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-10-14",
       "type": "Approved",
       "label": "Planning Commission approval, 5-2-0",
       "src": [
         "SRC-001564"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-10-16",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (AB 130, PRC 21080.66)",
+      "src": [
+        "SRC-003757"
       ],
       "estimated": false
     }
@@ -239,6 +398,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and project name: CEQAnet NOE opened; listing and Real Deal pages refused access",
+      "src": [
+        "SRC-003757"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 50316047: situs 12991 Pierce Rd, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Saratoga project page, formal application form, SB 330 preliminary application",
+      "src": [
+        "SRC-001564",
+        "SRC-003759",
+        "SRC-003758"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026100576 NOE 2026-10-16; APR Tables A and A2 have no row for 12991 Pierce",
+      "src": [
+        "SRC-003757"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news on this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-16 builder's remedy article returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Extend Ventures or Zaka LP",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in the documents opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city or state sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
