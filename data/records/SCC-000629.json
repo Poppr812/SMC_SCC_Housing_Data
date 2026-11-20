@@ -1,6 +1,6 @@
 {
   "id": "SCC-000629",
-  "name": "125 Kirk Ave",
+  "name": "The Kirk (125 Kirk Ave)",
   "parcels": [
     {
       "apn": "601-07-106",
@@ -90,8 +90,16 @@
             "SRC-001956"
           ],
           "note": "City file PD22-013, status Approved, issued 2024-10-30"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-003909"
+          ],
+          "note": "August 2026 article: some homes available as early as October 2026, construction planned for completion by February 2027"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -115,6 +123,13 @@
             "SRC-001956"
           ],
           "note": "City folder 145163, Planned Development Permit/Amendment; city permit status: Under Review."
+        },
+        {
+          "value": "T21-045",
+          "src": [
+            "SRC-003910"
+          ],
+          "note": "Tentative Map; annexation McKee 139"
         }
       ]
     },
@@ -126,6 +141,97 @@
             "SRC-001956"
           ],
           "note": "City file PD22-013 (Planned Development Permit/Amendment): \"Planned Development Permit to allow the demolition of an approximately 1,088-square-foot single-family residence, removal of 18 ordinance-size trees, and eight non-ordinance-size trees, and the construction of up to 18 attached single-family residences (s\" (city text cut off at 255 characters)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.49,
+          "src": [
+            "SRC-003910",
+            "SRC-003911"
+          ],
+          "note": "Gross acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003911"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 18
+          },
+          "src": [
+            "SRC-003911"
+          ],
+          "note": "2023 plans: Plan A 15 units (~1,909 sq ft, 4 BR), Plan B 3 units (~1,481 sq ft, 4 BR). San José Spotlight (2026) describes the two below-market homes as three-bedroom."
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003911",
+            "SRC-003909"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-003911"
+          ],
+          "note": "Two very-low-income units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "2 very-low-income units under a 50% state density bonus; San José Spotlight reports two three-bedroom homes selling below market for about $300,000",
+          "src": [
+            "SRC-003911",
+            "SRC-003909"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003911",
+            "SRC-003910"
+          ]
         }
       ]
     }
@@ -160,6 +266,24 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CEQAnet: Planned Development Permit, Tentative Map, prezoning and annexation into San Jose (McKee 139) to subdivide the 1.49-acre site into 18 lots for 18 attached single-family homes; demolition of a 1,088 sq ft residence, removal of 26 trees, solar panels. CEQAnet lists the original APN 601-07-066.",
+      "src": [
+        "SRC-003910"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2023): nine two-story buildings; Plan A homes have 397 sq ft two-car garages and Plan B homes 242 sq ft one-car garages; 11 surface visitor spaces; site bounded by Kirk Avenue, Hyland Avenue, El Campo Drive and Madeline Drive.",
+      "src": [
+        "SRC-003911"
+      ]
+    },
+    {
+      "text": "San José Spotlight (2026-08-14): market-rate homes priced $1.18 million to $1.3 million, 1,481 to 1,909 sq ft; AlphaX says three homes qualify for a $50,000 credit and 3.99% to 6% interest rates; site across from Linda Vista Elementary School.",
+      "src": [
+        "SRC-003909"
+      ]
     }
   ],
   "parties": [
@@ -182,6 +306,59 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "AlphaX RE Capital",
+      "contact": "Stephanie Yi",
+      "linkedin": null,
+      "website": "https://www.alphax-capital.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003909"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "AL Homes",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Homebuilder brand",
+      "src": [
+        "SRC-003909"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hestia Development",
+      "contact": "Melanie Griswold",
+      "linkedin": null,
+      "email": "mg@hestia-re.com",
+      "phone": "(415) 265-1086",
+      "other_role": "Applicant (CEQAnet filing)",
+      "src": [
+        "SRC-003910",
+        "SRC-003911"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "The Design and Development Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003911"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Denise Duffy & Associates",
+      "contact": "Leianne Humble",
+      "linkedin": null,
+      "other_role": "CEQA consultant",
+      "src": [
+        "SRC-003910"
+      ]
     }
   ],
   "financing": [],
@@ -202,6 +379,15 @@
       "label": "Planned Development Permit/Amendment filed (PD22-013)",
       "src": [
         "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-10-03",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with State Clearinghouse (SCH 2023100113); review through 2023-10-23",
+      "src": [
+        "SRC-003910"
       ],
       "estimated": false
     },
@@ -231,6 +417,15 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2027-02",
+      "type": "Completion",
+      "label": "Planned construction completion per developer",
+      "src": [
+        "SRC-003909"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -238,6 +433,92 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and applicant names; led to CEQAnet, SF YIMBY and San José Spotlight.",
+      "src": [
+        "SRC-003910",
+        "SRC-003909"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 601-07-106: situs 22 Silver Elm Ct, a small post-subdivision lot; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov environmental review page for 125 Kirk Avenue refuses automated access.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Project annexed from unincorporated county (LAFCO annexation McKee 139); no county funding or board item found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2023100113: MND 2023-10-03, applicant Hestia Development, T21-045, annexation.",
+      "src": [
+        "SRC-003910"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San José Spotlight 2026-08-14: developer AlphaX/AL Homes, below-market homes, completion by February 2027.",
+      "src": [
+        "SRC-003909"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-10-04: owner KirkAve LLC, designer, plans, density bonus.",
+      "src": [
+        "SRC-003911"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "alphax-capital.com homepage opened; no project page for The Kirk. newhomesource.com AL Homes listing returned 403.",
+      "src": [
+        "SRC-003718"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "The Design and Development Group; no project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funding found; buyer incentives only (see notes).",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found through web search.",
+      "src": []
+    }
+  }
 }

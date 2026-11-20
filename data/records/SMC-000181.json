@@ -145,11 +145,39 @@
           "note": "State report 2019, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001146"
+          ],
+          "note": "State report 2019: affordability term for deed-restricted units; restriction type inclusionary"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 15,
+          "src": [
+            "SRC-001146"
+          ],
+          "note": "Above-moderate units at entitlement and permit"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001146"
+      ]
+    },
+    {
+      "text": "State report 2019 notes \"17 NET new units (condos, incl. 3 BMR)\"; one existing owner-occupied unit demolished; inclusionary restriction, 45-year term; no certificate of occupancy reported.",
       "src": [
         "SRC-001146"
       ]
@@ -191,6 +219,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address and owner name; a San Mateo Daily Journal snippet mentions a BMR plan for an 18-unit condo project here, but the article returned 403.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer, APN 050-123-170: still one parcel, owner GTW801 CORPORATION.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched San Carlos planning agendas and project pages for 1525 San Carlos Ave; none found online.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Carlos project.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2 2019 row (BLD2016-00166): 45-year inclusionary term, 15 market-rate, 1 unit demolished.",
+      "src": [
+        "SRC-001146"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on San Carlos condo approvals returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for GTW801 Corporation found no company site.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in any source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funding source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found through web search.",
+      "src": []
+    }
+  }
 }
