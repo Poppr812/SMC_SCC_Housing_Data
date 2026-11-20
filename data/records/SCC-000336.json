@@ -162,6 +162,12 @@
           "src": [
             "SRC-001143"
           ]
+        },
+        {
+          "value": "San José Spotlight: three homes will serve households earning 30% to 50% of Santa Clara County AMI",
+          "src": [
+            "SRC-003805"
+          ]
         }
       ]
     },
@@ -202,6 +208,28 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.45,
+          "src": [
+            "SRC-003805"
+          ],
+          "note": "Roughly 1.45 acres, per San José Spotlight"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003805"
+          ],
+          "note": "Article describes buildings of three and four stories"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -217,6 +245,24 @@
       "src": [
         "SRC-001551"
       ]
+    },
+    {
+      "text": "CEQA Notice of Determination describes 25 townhomes, 12 of them with junior ADUs, a 10-unit apartment building, and a subdivision creating 33 lots. Addresses listed: 60 Dillon Ave and 57, 63, 71, 85 and 101 Gilman Ave.",
+      "src": [
+        "SRC-003807"
+      ]
+    },
+    {
+      "text": "San José Spotlight (2024-05-13) reports the City Council approved the project unanimously in May 2024 with 25 townhomes, 10 apartments and 12 junior ADUs; two houses on Gilman Avenue and several businesses on Gilman and Dillon avenues would be demolished.",
+      "src": [
+        "SRC-003805"
+      ]
+    },
+    {
+      "text": "Robson Homes markets the townhomes as Parklane, marked Now Selling, with the sales office at 127 Gilman Ave. Fee-simple, all-electric three-story townhomes in four plans of 1,403 to 2,410 sq ft, 2 to 4 bedrooms; two plans include a first-floor junior ADU. Site plan shows lots 2 through 26.",
+      "src": [
+        "SRC-003806"
+      ]
     }
   ],
   "parties": [
@@ -230,6 +276,19 @@
         "SRC-001551"
       ],
       "website": "https://robsonhomes.com/"
+    },
+    {
+      "role": "Developer",
+      "company": "Robson Homes",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://robsonhomes.com/",
+      "website_basis": "opened",
+      "project_page": "https://robsonhomes.com/neighborhood/parklane/",
+      "src": [
+        "SRC-003805",
+        "SRC-003806"
+      ]
     }
   ],
   "financing": [],
@@ -250,6 +309,15 @@
       "src": [
         "SRC-001143"
       ]
+    },
+    {
+      "date": "2024-05-21",
+      "type": "Other",
+      "label": "CEQA Notice of Determination lists City of Campbell approval date; mitigated negative declaration adopted",
+      "src": [
+        "SRC-003807"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-11-12",
@@ -275,6 +343,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Gilman Ave/Dillon Ave/Robson Homes: Parklane marketing name, CEQAnet NOD, San José Spotlight article",
+      "src": [
+        "SRC-003806",
+        "SRC-003807"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for 412-52-025: situs 101 Gilman Ave, Campbell; no owner field in the public dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "campbellca.gov site search for Gilman returned no project page; Archive.aspx?ADID=3122 final MND file too large to open",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2024051139: Notice of Determination, MND, approved 2024-05-21",
+      "src": [
+        "SRC-003807"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San José Spotlight 2024-05-13 opened; Local News Matters reprint returned 403",
+      "src": [
+        "SRC-003805"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for trade coverage of Parklane/Gilman Ave returned only listing sites (NewHomeSource 403, Zillow, Trulia)",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "robsonhomes.com home page and Parklane neighborhood page opened",
+      "src": [
+        "SRC-003806"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named on the developer page, CEQAnet or news; search found none",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in the sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search surfaced no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

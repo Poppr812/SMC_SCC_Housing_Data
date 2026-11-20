@@ -615,6 +615,39 @@
           ]
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 20,
+          "src": [
+            "SRC-001566",
+            "SRC-003812"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001565",
+            "SRC-003812"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "5 for-sale homes for lower-income households, on lots 1-4 and 8",
+          "src": [
+            "SRC-001565",
+            "SRC-001566"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -623,16 +656,93 @@
       "src": [
         "SRC-001566"
       ]
+    },
+    {
+      "text": "Development on the northern 18.38 acres; the southern 54.06 acres stay undeveloped except an emergency access road. 367 trees proposed for removal. Lot sizes 2,086 to 86,351 sq ft.",
+      "src": [
+        "SRC-001566",
+        "SRC-001565"
+      ]
+    },
+    {
+      "text": "Home sizes: the city page shows 2,375 to 7,723 sq ft; the CEQA Notice of Preparation shows 2,375 sq ft for lots 1-8 and up to 7,091 sq ft for lots 9-25.",
+      "src": [
+        "SRC-001565",
+        "SRC-001566"
+      ]
+    },
+    {
+      "text": "Draft EIR found significant and unavoidable impacts on emergency response and evacuation, wildland fire, emergency access, land use plan conflict, VMT, and wildfire pollutant exposure. Applicant's attorney sent a letter on 2025-09-03 about review delays.",
+      "src": [
+        "SRC-001565"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Lexor Builders",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003812"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Chateau Masson, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003812"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2023-07-20",
+      "type": "Other",
+      "label": "Preliminary application received (21 homes)",
+      "src": [
+        "SRC-001565"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-12-20",
       "type": "Application filed",
       "label": "Formal application received",
+      "src": [
+        "SRC-001565"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-05-10",
+      "type": "Other",
+      "label": "Notice of Preparation of Draft EIR",
+      "src": [
+        "SRC-001566",
+        "SRC-001565"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-29",
+      "type": "Other",
+      "label": "Draft EIR released for 45-day review (through 2026-02-12)",
+      "src": [
+        "SRC-001565"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-17",
+      "type": "Other",
+      "label": "Final EIR published",
       "src": [
         "SRC-001565"
       ],
@@ -646,6 +756,15 @@
         "SRC-001565"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-08-21",
+      "type": "Other",
+      "label": "CEQA Notice of Determination posted; Statement of Overriding Considerations adopted",
+      "src": [
+        "SRC-003812"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -653,6 +772,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Masson Estates/Pierce Road/Lexor: CEQAnet NOD, city page, Sierra Club appeal letter",
+      "src": [
+        "SRC-003812"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for 503-46-005: no owner field in the public dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Saratoga project page 641/Pierce-Road opened: dates, affordable lots, EIR milestones",
+      "src": [
+        "SRC-001565"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2024050461: NOP 2024-05-10 and NOD approved 2026-08-19, posted 2026-08-21",
+      "src": [
+        "SRC-001566",
+        "SRC-003812"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news article on the council approval",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal articles on Saratoga builder's remedy projects returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no Lexor Builders project page for Masson Estates",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in the city page or CEQAnet records",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in the sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search surfaced no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

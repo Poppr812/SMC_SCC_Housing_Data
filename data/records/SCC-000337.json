@@ -103,8 +103,17 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFD"
+        },
+        {
+          "value": "Single-family",
+          "src": [
+            "SRC-003808",
+            "SRC-003809"
+          ],
+          "note": "25 detached single-family homes; up to 5 attached ADUs"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -162,6 +171,28 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.7,
+          "src": [
+            "SRC-003808"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003808",
+            "SRC-003809"
+          ],
+          "note": "Most units two stories (26 to 28 ft); four units two-and-a-half stories (about 32 ft)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -171,9 +202,57 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CEQAnet: 25 detached homes at 9.7 units per net acre, 1,976 to 2,771 sq ft in eight plans; detached ADUs up to 444 sq ft. Private street with two driveways off Sierra Road. Two-car garage per home, six homes with an extra space, and 13 spaces along the private street. Local action listed: rezone. Present land use: agriculture.",
+      "src": [
+        "SRC-003808"
+      ]
+    },
+    {
+      "text": "Historic Resource Evaluation prepared at Robson Homes' request: the parcel holds a c. 1935 single-family house, a warehouse complex and accessory structures, associated with the Olivera Egg Ranch since at least 1959; the property was found not eligible for the national, state or city landmark registers.",
+      "src": [
+        "SRC-003810"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports construction expected to take about 16 months.",
+      "src": [
+        "SRC-003809"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Robson Homes",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://robsonhomes.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003810"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Civil Engineering Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003809"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Design Focus",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003809"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -184,6 +263,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2025-02-19",
+      "type": "Other",
+      "label": "Initial Study / Mitigated Negative Declaration public review opened (through 2025-03-10)",
+      "src": [
+        "SRC-003808"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-05-20",
@@ -199,6 +287,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 3315 Sierra Road and Robson Homes: CEQAnet SCH 2025020579, SF YIMBY, Real Deal (403)",
+      "src": [
+        "SRC-003808"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for 595-10-067: situs 3315 Sierra Rd; no owner field in the public dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov project page for PDC23-008 refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025020579 (MND, received 2025-02-18) and its Appendix C historic report opened",
+      "src": [
+        "SRC-003808",
+        "SRC-003810"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found the ranch sale reported only through syndicated copies that could not be opened (404); no original article opened",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-02-21 opened; The Real Deal 2025-02-27 returned 403",
+      "src": [
+        "SRC-003809"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "robsonhomes.com lists only Marabel and Parklane; no Sierra Road page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named; SF YIMBY credits the civil engineer and landscape architect",
+      "src": [
+        "SRC-003809"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in the sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search surfaced no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

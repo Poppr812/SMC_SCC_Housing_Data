@@ -261,6 +261,12 @@
           "src": [
             "SRC-001468"
           ]
+        },
+        {
+          "value": "SF YIMBY: 3 of 19 units deed-restricted in the preliminary application",
+          "src": [
+            "SRC-003811"
+          ]
         }
       ]
     },
@@ -282,9 +288,82 @@
           "note": "SF YIMBY, on preliminary permits"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.99,
+          "src": [
+            "SRC-001468"
+          ],
+          "note": "City project page, formal application: three parcels, about 0.99 net acres"
+        },
+        {
+          "value": 0.78,
+          "src": [
+            "SRC-003811"
+          ],
+          "note": "SF YIMBY, preliminary application"
+        }
+      ],
+      "best": 0
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 21,
+          "src": [
+            "SRC-001468"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001468"
+          ],
+          "note": "Filed under the Housing Accountability Act and State Density Bonus law; SB 330 vesting"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 1,
+            "3br": 12,
+            "4br+": 6
+          },
+          "src": [
+            "SRC-003811"
+          ],
+          "note": "19-unit preliminary application as reported by SF YIMBY; the formal application has 25 units"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City project page: would replace a single-story office building, a veterinary clinic and a single-family home. Requested waivers and concessions cover setbacks, height, floor area ratio, and BMR unit size and dispersal. Zoning P(OA) and R1-10. Status under review; no hearings scheduled.",
+      "src": [
+        "SRC-001468"
+      ]
+    },
+    {
+      "text": "SF YIMBY describes the preliminary application as 19 townhouse units in four structures replacing two commercial buildings, designed by Alignment Architects; the city page for the formal application names SDG Architects.",
+      "src": [
+        "SRC-003811",
+        "SRC-001468"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -305,11 +384,29 @@
         "SRC-001468"
       ],
       "website": "https://www.sdgarchitectsinc.com/"
+    },
+    {
+      "role": "Architect",
+      "company": "Alignment Architects, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003811"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2026-05-07",
+      "type": "Other",
+      "label": "SB 330 vesting date",
+      "src": [
+        "SRC-001468"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-05-12",
       "type": "Application filed",
@@ -330,6 +427,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 10012 N Foothill and AlphaX: SF YIMBY article, city page",
+      "src": [
+        "SRC-003811"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for 326-50-062, 326-50-051, 326-50-077: situs addresses only, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino Major Projects page opened: 0.99 acres, 21 market-rate/4 affordable, SB 330 vesting 2026-05-07, waivers",
+      "src": [
+        "SRC-001468"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Application filed 2026; not yet in state APR data (through 2025); no CEQAnet document opened for the site",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-05-12 opened",
+      "src": [
+        "SRC-003811"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No AlphaX RE Capital website found; alphaxrecapital.com does not resolve; NewHomeSource AL Homes profile returned 403",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SDG Architects already on record; no project page found on its site",
+      "src": [
+        "SRC-001468"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in the sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search surfaced no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

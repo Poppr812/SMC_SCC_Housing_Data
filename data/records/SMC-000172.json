@@ -160,6 +160,40 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 23,
+          "src": [
+            "SRC-001141"
+          ],
+          "note": "State report 2025, application: 23 above-moderate units"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001141"
+          ],
+          "note": "State report: density bonus received Yes; project type Ministerial"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "State report 2025 lists 2 very low-income units coded as non-deed-restricted and 23 above-moderate units",
+          "src": [
+            "SRC-001141"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -198,6 +232,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Web search on 815 Belmont Ave found only the city Development Projects page (403) and unrelated listings",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels layer: 044-172-210 at 815 Belmont Ave owned by BANI HOLDINGS LLC (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "belmont.gov Development Projects page and published documents return 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2025 row PA2025-0027: 2 very low-income NDR, 23 above-moderate, density bonus Yes, status Pending; no Table A2 row",
+      "src": [
+        "SRC-001141"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search of Daily Journal coverage found only the nearby 800-803 Belmont Ave project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No SF YIMBY or other trade coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in any source opened",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in the sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search surfaced no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
