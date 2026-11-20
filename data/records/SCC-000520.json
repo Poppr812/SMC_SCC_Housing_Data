@@ -136,9 +136,148 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003779",
+            "SRC-003780"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 59,
+          "src": [
+            "SRC-003779",
+            "SRC-003780"
+          ],
+          "note": "Two-car garage per unit plus 5 guest spaces"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 67668,
+          "src": [
+            "SRC-003780"
+          ],
+          "note": "Total gross square feet in the CEQA exemption notice"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 22,
+          "src": [
+            "SRC-003779",
+            "SRC-001100"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 100
+            },
+            {
+              "count": 2,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003779"
+          ],
+          "note": "Council staff report: 3 for-sale units to median-income (80-100% AMI) and 2 to moderate-income (100-120% AMI) households"
+        },
+        {
+          "value": [
+            {
+              "count": 5,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001100"
+          ],
+          "note": "State report 2025, application stage: 5 moderate-income deed-restricted units"
+        }
+      ],
+      "best": 0
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-003779"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003779",
+            "SRC-001100"
+          ],
+          "note": "SB 330 project using state density bonus law: one concession and four waivers, no bonus units"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Council staff report: 27 townhome condominiums in three 6-plex and one 9-plex buildings, all three stories; each unit has three or four bedrooms and an attached two-car garage; habitable space about 1,507 to 2,292 sq ft (2,120 to 2,822 sq ft with garage); replaces a commercial office building.",
+      "src": [
+        "SRC-003779"
+      ]
+    },
+    {
+      "text": "BMR requirement is 5.4 units: 5 on site plus an in-lieu fee for 0.4 unit. Parkland in-lieu fee of $1,320,000 applies to the 22 market-rate units.",
+      "src": [
+        "SRC-003779"
+      ]
+    },
+    {
+      "text": "City resolutions: Planning Commission 2026-16, 2026-17, 2026-18; City Council 26-069 (ASA), 26-070 (TM), 26-071 (TR).",
+      "src": [
+        "SRC-001467"
+      ]
+    },
+    {
+      "text": "State report 2025 row lists an application submitted 2025-12-23 under ASA-2025-016, with density bonus received.",
+      "src": [
+        "SRC-001100"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (August 2025): the existing Bandley Center houses a tax business, a Chinese language school, a clay studio and small law and architecture offices; SummerHill did not plan to keep commercial space.",
+      "src": [
+        "SRC-003781"
+      ]
+    },
+    {
+      "text": "SF YIMBY names the architect as William Hezmalhalch Architects (WHA).",
+      "src": [
+        "SRC-003782"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -157,6 +296,16 @@
       "linkedin": null,
       "src": [
         "SRC-001467"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SummerHill Homes, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003779"
       ]
     }
   ],
@@ -182,6 +331,22 @@
       "estimated": false
     },
     {
+      "date": "2025-12-23",
+      "type": "Application filed",
+      "label": "Application submitted (state report)",
+      "src": [
+        "SRC-001100"
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "type": "Approved",
+      "label": "Planning Commission approved 4-1",
+      "src": [
+        "SRC-001467"
+      ]
+    },
+    {
       "date": "2026-06-02",
       "type": "Approved",
       "label": "City Council approved 5-0",
@@ -189,6 +354,14 @@
         "SRC-001467"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-06-03",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (SCH 2026060146, PRC 21080.66)",
+      "src": [
+        "SRC-003780"
+      ]
     }
   ],
   "history": [
@@ -201,6 +374,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and SummerHill; found Council staff report, CEQAnet NOE, SJ Spotlight, SF YIMBY",
+      "src": [
+        "SRC-003779",
+        "SRC-003780"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 32633097: situs 10268 Bandley Dr, Cupertino; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page; Legistar CC 2026-06-02 (26-15006) staff report and PC 2026-05-12 (26-15112)",
+      "src": [
+        "SRC-001467",
+        "SRC-003779"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Cupertino project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2025 row; CEQAnet SCH 2026060146 NOE",
+      "src": [
+        "SRC-001100",
+        "SRC-003780"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-08-19",
+      "src": [
+        "SRC-003781"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-06-01 formal application article",
+      "src": [
+        "SRC-003782"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "summerhillhomes.com lists no Bandley Drive community; only Cassis, Cupertino, as future with no page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No WHA project page found via search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found via web search",
+      "src": []
+    }
+  }
 }

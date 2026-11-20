@@ -166,6 +166,67 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 8,
+            "2br": 15,
+            "3br": 4,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003771"
+          ],
+          "note": "Floor-by-floor counts in the 2020 Initial Study: level 2 has 4 two-bedroom and 1 three-bedroom; levels 3-4 have 8 one-bedroom, 9 two-bedroom and 1 three-bedroom; level 5 has 2 two-bedroom and 2 three-bedroom penthouses"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003771"
+          ],
+          "note": "Five-story mixed-use building, maximum height 65 feet, over two underground parking levels"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 8000,
+          "src": [
+            "SRC-003771"
+          ],
+          "note": "About 8,000 sq ft ground-floor retail/commercial; about 5,000 sq ft of office on the second floor is separate"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 93,
+          "src": [
+            "SRC-003771"
+          ],
+          "note": "Total on-site parking as stated in the 2020 Initial Study"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.55,
+          "src": [
+            "SRC-003771"
+          ],
+          "note": "Gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -175,9 +236,57 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "2020 Initial Study (SP19-065, T19-042): demolish a gas station; five-story building with about 8,000 sq ft of ground-floor retail, about 5,000 sq ft of second-floor office, three residential levels with 27 units, and two underground parking levels. Applicant listed as KT Urban, Mark Tersini.",
+      "src": [
+        "SRC-003771"
+      ]
+    },
+    {
+      "text": "The state report's 2019 application row lists 27 units as disapproved; its 2020 entitlement row reports approval of 27 units on 2020-10-22.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    {
+      "text": "In October 2023 the City of San Jose circulated an MND (SCH 2023100474) for a seven-story, 85-foot hotel with 176 rooms on this site, with a General Plan amendment, rezoning and Special Use Permit; SF YIMBY reports KT Urban as applicant, Lowney Architecture as architect, 45 parking spaces, and a preliminary application filed in 2022. Neither source mentions housing units.",
+      "src": [
+        "SRC-003774",
+        "SRC-003775"
+      ]
+    },
+    {
+      "text": "C2K Architecture lists The Olin Condominiums as an unbuilt 5-story, 110,200 sq ft mixed-use building with 27 residential units in the Santana Row Urban Village.",
+      "src": [
+        "SRC-003773"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "KT Urban Acquisitions, LLC",
+      "contact": "Mark Tersini",
+      "linkedin": null,
+      "phone": "(408) 257-2100",
+      "src": [
+        "SRC-003771",
+        "SRC-003772"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "C2K Architecture Inc.",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://lynx-avocado-blz8.squarespace.com/the-olin",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003773"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -190,11 +299,27 @@
       ]
     },
     {
+      "date": "2020-07-15",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the State Clearinghouse (SCH 2020070308)",
+      "src": [
+        "SRC-003772"
+      ]
+    },
+    {
       "date": "2020-10-22",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2023-10-17",
+      "type": "Other",
+      "label": "City released an MND for a 176-room, seven-story hotel on the same site (SCH 2023100474)",
+      "src": [
+        "SRC-003774"
       ]
     }
   ],
@@ -203,6 +328,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, SP19-065 and KT Urban; found CEQAnet records, SF YIMBY and C2K project page",
+      "src": [
+        "SRC-003772",
+        "SRC-003773"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 30339044: situs 425 S Winchester Bl, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov project and notice pages refuse automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2020070308 (2020 MND for this project) and SCH 2023100474 (2023 hotel MND); APR Table A rows rechecked",
+      "src": [
+        "SRC-003771",
+        "SRC-003772",
+        "SRC-003774",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Mercury News coverage of the hotel plan surfaced only via search; The Real Deal articles returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-10-13 hotel renderings article",
+      "src": [
+        "SRC-003775"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No KT Urban project page for 425 S Winchester found via search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "C2K Architecture project page, The Olin Condominiums",
+      "src": [
+        "SRC-003773"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found in search, CEQA or trade sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the project returned nothing relevant",
+      "src": []
+    }
+  }
 }

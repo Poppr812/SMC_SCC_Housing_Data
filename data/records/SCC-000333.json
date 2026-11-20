@@ -175,6 +175,31 @@
           "note": "State report 2024, application stage: 3 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.99,
+          "src": [
+            "SRC-001509",
+            "SRC-003776"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001509",
+            "SRC-001100"
+          ],
+          "note": "City page: requests a 7-unit density bonus and waivers"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -182,6 +207,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001100"
+      ]
+    },
+    {
+      "text": "City page: 27 townhomes in six three-story buildings replacing a single-family home on a 0.99-acre Housing Element site; Medium Density Residential (10-20 du/ac), R3 zoning; requests a 7-unit density bonus and waivers; 4 of 27 units affordable; status under review with no hearings scheduled; a December 2025 proposed site plan is posted.",
+      "src": [
+        "SRC-001509"
+      ]
+    },
+    {
+      "text": "The state report (2024) lists 3 very low income deed-restricted units; the city page lists 4 affordable units.",
+      "src": [
+        "SRC-001100",
+        "SRC-001509"
+      ]
+    },
+    {
+      "text": "The site is Priority Housing Site No. 24 in Cupertino's 6th Cycle Housing Element; the city's zoning map amendment Z-2024-001 went to the Planning Commission 2024-12-03 and City Council 2025-02-19, with second reading 2025-03-04.",
+      "src": [
+        "SRC-003777"
       ]
     }
   ],
@@ -204,11 +248,28 @@
       "src": [
         "SRC-001509"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Terra Holdings",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003776"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-10-08",
+      "type": "Other",
+      "label": "SB 330 preliminary application filed (PR-2024-061)",
+      "src": [
+        "SRC-001509"
+      ]
+    },
     {
       "date": "2024-10-17",
       "type": "Application filed",
@@ -225,6 +286,14 @@
       "src": [
         "SRC-001100"
       ]
+    },
+    {
+      "date": "2025-02-19",
+      "type": "Other",
+      "label": "City Council hearing on zoning map amendment to correct zoning for Housing Element Priority Housing Site No. 24 (Z-2024-001)",
+      "src": [
+        "SRC-003777"
+      ]
     }
   ],
   "history": [
@@ -237,6 +306,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and project name; found SF YIMBY 2024 article naming Terra Holdings",
+      "src": [
+        "SRC-003776"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 35913019: situs 20865 McClellan Rd, Cupertino; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino project page; Legistar matters 24-13514, 24-13553, 25-13779 (zoning correction for the site); no project hearing yet",
+      "src": [
+        "SRC-001509",
+        "SRC-003777"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Cupertino project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A 2024 row rechecked; no 2025 row or CEQAnet record found",
+      "src": [
+        "SRC-001100"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-10-09",
+      "src": [
+        "SRC-003776"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Terra Holdings project page found via search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No SDG Architects project page found via search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found via web search",
+      "src": []
+    }
+  }
 }

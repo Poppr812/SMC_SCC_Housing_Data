@@ -60,8 +60,16 @@
             "SRC-001099"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-003778"
+          ],
+          "note": "Sale listing describes a proposed 27-unit apartment community; the state report (2024) lists for-sale tenure"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -116,6 +124,39 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003778"
+          ],
+          "note": "Sale listing: proposed five-story building"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 31,
+          "src": [
+            "SRC-003778"
+          ],
+          "note": "Sale listing: 31 structured spaces proposed"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.2851,
+          "src": [
+            "SRC-003778"
+          ],
+          "note": "Sale listing lot size"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -124,9 +165,31 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "July 2026 sale listing markets the site for a proposed five-story, 27-unit building of one- and two-bedroom units with 31 structured parking spaces. It states the seller completed architectural, civil, environmental and transportation work and paid City of San Jose application and review fees. The lot has an existing 1,606 sq ft house built about 1950.",
+      "src": [
+        "SRC-003778"
+      ]
+    },
+    {
+      "text": "State report (2024): application H23-043 for 27 units, all above moderate income, owner tenure, status pending, no density bonus requested.",
+      "src": [
+        "SRC-001099"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Broker",
+      "company": "eXp Realty",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003778"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -137,6 +200,14 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-07-09",
+      "type": "Other",
+      "label": "Site listed for sale at $1,899,000 (MLS 41141120)",
+      "src": [
+        "SRC-003778"
+      ]
     }
   ],
   "history": [
@@ -144,6 +215,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and H23-043; listing pages found (Crexi, Showcase, LoopNet, Cityfeet returned 403; eXp Realty opened)",
+      "src": [
+        "SRC-003778"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 45609005: situs 1966 Almaden Rd, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row 2024 rechecked; no A2 rows; no CEQAnet record found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Crexi, LoopNet and Showcase listings returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in any opened source",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any opened source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found via web search",
+      "src": []
+    }
+  }
 }
