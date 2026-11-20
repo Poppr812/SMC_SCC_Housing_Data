@@ -115,7 +115,9 @@
             "4br+": 0
           },
           "src": [
-            "SRC-001165"
+            "SRC-001165",
+            "SRC-003307",
+            "SRC-003305"
           ]
         }
       ]
@@ -134,6 +136,24 @@
             "SRC-001953"
           ],
           "note": "\"The development will provide very low income to workforce housing, at 30% to 80% above median income (AMI).\""
+        },
+        {
+          "value": "Developer page: 18 units for adults with I/DD, 18 PSH units for people meeting the HUD homeless definition, 40 units restricted at 60% AMI; fact box lists 30-50% AMI while the description says 15% to 60% AMI",
+          "src": [
+            "SRC-003305"
+          ]
+        },
+        {
+          "value": "County AHF 13.0 presentation (Sept. 2025): about 50% of units for IDD residents, serving 30-70% AMI",
+          "src": [
+            "SRC-003306"
+          ]
+        },
+        {
+          "value": "County AHF 14.0 presentation (July 2026): 28% of units for IDD residents, serving 20-70% AMI",
+          "src": [
+            "SRC-003307"
+          ]
         }
       ]
     },
@@ -147,9 +167,82 @@
           "note": "\"3051 Edison Way 70 unit 100% affordable housing development in Redwood City has been endorsed.\""
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.54,
+          "src": [
+            "SRC-003305"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003305"
+          ],
+          "note": "Five residential levels over a concrete podium parking garage"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-003305"
+          ],
+          "note": "28 car stalls (8 with EV chargers) and 36 indoor bike spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-003305",
+            "SRC-003306"
+          ],
+          "note": "Entitled in 2022 under SB 35"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003305"
+          ],
+          "note": "18 units for adults with I/DD and 18 permanent supportive housing units"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "County AHF 14.0 presentation: entitled in 2022 under SB 35, modified in March 2026. AHF 14.0 conditions: revised community engagement plan; apply for MHP in 2028. AHF 13.0 conditions had listed applying for MHP in 2026 and a 4% tax credit/bond award in 2027.",
+      "src": [
+        "SRC-003307",
+        "SRC-003306"
+      ]
+    },
+    {
+      "text": "Developer page: Type III over Type I podium construction; about 130 units per acre.",
+      "src": [
+        "SRC-003305"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -161,11 +254,174 @@
       ],
       "website": "https://novindevelopment.com/",
       "project_page": "https://novindevelopment.com/project/3051-edison-way-north-fair-oaks-ca/"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "NDC Edison Way LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003308"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "BAR Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003305"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "The John Stewart Company",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003307",
+        "SRC-003306"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Housing Choices",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services",
+      "src": [
+        "SRC-003307",
+        "SRC-003305"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "LifeSTEPS",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services",
+      "src": [
+        "SRC-003307"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Mental Health Association of San Mateo County",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Supportive services (permanent supportive housing)",
+      "src": [
+        "SRC-003305"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Predevelopment loan",
+      "provider": "CSH",
+      "program": "Pre-development loan approved Feb. 2025",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-003306",
+        "SRC-003307"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": "AHF 13.0 (Measure K); request $8,100,000, recommended $1,000,000; reported secured Jan. 2026",
+      "amount": 1000000,
+      "date": null,
+      "src": [
+        "SRC-003306",
+        "SRC-003307"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": "AHF 14.0 (Measure K; impact fees); request $7,810,000; staff recommendation adopted by HCDC on 2026-07-29",
+      "amount": 1537897,
+      "date": "2026-07-29",
+      "src": [
+        "SRC-003307",
+        "SRC-003309"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of San Mateo",
+      "program": "Affordable Housing Fund award approved by Board of Supervisors, reported as $1.5 million",
+      "amount": 1500000,
+      "date": null,
+      "src": [
+        "SRC-003310"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "County of San Mateo",
+      "program": "Impact fee waiver",
+      "amount": 604218,
+      "date": null,
+      "src": [
+        "SRC-003306",
+        "SRC-003307"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Housing Choices",
+      "program": "In-kind supportive services commitment, $105,269 per year over 20 years (AHF 13.0 presentation)",
+      "amount": 2105380,
+      "date": null,
+      "src": [
+        "SRC-003306"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Housing Choices",
+      "program": "In-kind supportive services commitment, $60,155 per year over 20 years (AHF 14.0 presentation)",
+      "amount": 1203100,
+      "date": null,
+      "src": [
+        "SRC-003307"
+      ]
+    }
+  ],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2025-09-10",
+      "type": "Other",
+      "label": "Presented at County AHF 13.0 NOFA public hearing; staff recommended $1,000,000",
+      "src": [
+        "SRC-003306"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Other",
+      "label": "County HCDC AHF 14.0 hearing; $1,537,897 recommendation adopted for the Board of Supervisors",
+      "src": [
+        "SRC-003307",
+        "SRC-003309"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Other",
+      "label": "Board of Supervisors approval of $1.5 million AHF award reported",
+      "src": [
+        "SRC-003310"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -181,6 +437,96 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and developer; opened Novin project page and County DOH hearing documents. The Real Deal 2022 acquisition article returned 403.",
+      "src": [
+        "SRC-003305"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County Active Parcels layer, APN 060-041-080: owner of record NDC Edison Way LLC",
+      "src": [
+        "SRC-003308"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Unincorporated North Fair Oaks; no city role",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County DOH AHF 13.0 (2025-09-10) and AHF 14.0 (2026-07-29) hearing presentations and HCDC minutes; NFO progress report 2025-08-28. No County Planning file number found by search.",
+      "src": [
+        "SRC-003306",
+        "SRC-003307",
+        "SRC-003309",
+        "SRC-001165"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 searched by APN and Edison Way address for San Mateo County; no row for 3051 Edison. No CTCAC/CDLAC award; County documents show tax credits not yet applied for.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Redwood City Pulse 2026-08-26 on Board of Supervisors AHF awards",
+      "src": [
+        "SRC-003310"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "The Real Deal 2022-12-19 Novin acquisition article returned HTTP 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Novin Development project page",
+      "src": [
+        "SRC-003305"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search of BAR Architects site and listings found no Edison Way project page",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County AHF 13.0/14.0 awards, CSH predevelopment loan, impact fee waiver, Housing Choices in-kind commitment",
+      "src": [
+        "SRC-003306",
+        "SRC-003307",
+        "SRC-003310"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search turned up no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

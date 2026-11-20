@@ -1,6 +1,6 @@
 {
   "id": "SCC-000603",
-  "name": "332-350 Forest Avenue (Sares Regis)",
+  "name": "Forest Commons (332-350 Forest Avenue)",
   "parcels": [
     {
       "apn": "120-16-038",
@@ -151,9 +151,19 @@
         {
           "value": 82,
           "src": [
-            "SRC-001895"
+            "SRC-001895",
+            "SRC-003314",
+            "SRC-003315"
           ],
           "note": "City page"
+        },
+        {
+          "value": 89,
+          "src": [
+            "SRC-003316",
+            "SRC-003317"
+          ],
+          "note": "Planned home zoning version as reported by Palo Alto Online, 2026"
         }
       ],
       "best": 0
@@ -184,6 +194,21 @@
           "src": [
             "SRC-001896"
           ]
+        },
+        {
+          "value": 0.57,
+          "src": [
+            "SRC-003315",
+            "SRC-003314"
+          ],
+          "note": "25,000 sq ft net (15,000 + 10,000)"
+        },
+        {
+          "value": 0.72,
+          "src": [
+            "SRC-003314"
+          ],
+          "note": "31,398 sq ft after lot line adjustment"
         }
       ]
     },
@@ -204,6 +229,19 @@
           "src": [
             "SRC-001896"
           ]
+        },
+        {
+          "value": "PHZ version: 20% of units affordable, provided offsite per the June 2026 plan set",
+          "src": [
+            "SRC-003314",
+            "SRC-003317"
+          ]
+        },
+        {
+          "value": "SB 79 version: 69 apartments with nine affordable units",
+          "src": [
+            "SRC-003316"
+          ]
         }
       ]
     },
@@ -216,6 +254,56 @@
           ]
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 113,
+          "src": [
+            "SRC-003314"
+          ],
+          "note": "PHZ version, June 2026 plan set"
+        },
+        {
+          "value": 110,
+          "src": [
+            "SRC-003315"
+          ],
+          "note": "PHZ version, May 2025 plan set"
+        },
+        {
+          "value": 137,
+          "src": [
+            "SRC-003318"
+          ],
+          "note": "Reported for the prescreening plan"
+        },
+        {
+          "value": 98,
+          "src": [
+            "SRC-003316"
+          ],
+          "note": "SB 79 version, 69 units"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 105371,
+          "src": [
+            "SRC-003314"
+          ],
+          "note": "Gross building area, PHZ version, June 2026"
+        },
+        {
+          "value": 105230,
+          "src": [
+            "SRC-003315"
+          ],
+          "note": "Building area, PHZ version, May 2025"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -224,6 +312,20 @@
       "src": [
         "SRC-001895",
         "SRC-001896"
+      ]
+    },
+    {
+      "text": "Two parallel applications: a planned home zoning (PHZ) version (city page and June 2026 plans: 8 stories, 82 units, 85 ft plus parapet; Palo Alto Online: 89 units) and an SB 79 version (69 units, 65 ft, 98 parking spaces, 76 bike spaces, nine affordable units). Palo Alto Online reports the SB 79 version as six stories.",
+      "src": [
+        "SRC-003314",
+        "SRC-003316",
+        "SRC-003317"
+      ]
+    },
+    {
+      "text": "Existing two-story, 16-unit, 12,000 sq ft apartment building to be demolished. PHZ version: Type IA/IIIA, wood frame over a three-story concrete podium with one level below grade; community room opens onto the grounds of Casa Real.",
+      "src": [
+        "SRC-003314"
       ]
     }
   ],
@@ -246,11 +348,97 @@
       "src": [
         "SRC-001896"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Steinberg Hart",
+      "contact": "Katia McClain",
+      "linkedin": null,
+      "email": "kmcclain@steinberghart.com",
+      "phone": "408-295-5446",
+      "src": [
+        "SRC-003314",
+        "SRC-003315"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "CMG Landscape Architecture",
+      "contact": "Willett Moss",
+      "linkedin": null,
+      "email": "wmoss@cmgsite.com",
+      "phone": "415-495-3070",
+      "src": [
+        "SRC-003314",
+        "SRC-003315"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Kier + Wright",
+      "contact": "Mark Knudsen",
+      "linkedin": null,
+      "email": "mknudsen@kierwright.com",
+      "phone": "408-727-6665",
+      "src": [
+        "SRC-003314"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Vittoria Management, Inc.",
+      "contact": "Alex Giovannotto",
+      "linkedin": null,
+      "email": "city@vrent.com",
+      "phone": "650-328-7480",
+      "other_role": "Property owner and project applicant",
+      "src": [
+        "SRC-003314",
+        "SRC-003316"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "VRENT",
+      "contact": "Alex Giovannotto",
+      "linkedin": null,
+      "other_role": "Owner (May 2025 plan set)",
+      "src": [
+        "SRC-003315"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2025-08-11",
+      "type": "Other",
+      "label": "City Council prescreening hearing on 8-story, 82-unit PHZ proposal; no vote taken",
+      "src": [
+        "SRC-003318"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-16",
+      "type": "Application filed",
+      "label": "SB 79 application for 69-unit version filed during the July 1-16, 2026 window",
+      "src": [
+        "SRC-003316"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Other",
+      "label": "Planning and Transportation Commission voted 4-2 to forward the PHZ version to the Architectural Review Board",
+      "src": [
+        "SRC-003317"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -261,6 +449,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on addresses and developer; opened city plan sets and Palo Alto Online articles",
+      "src": [
+        "SRC-003314"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 120-16-038 (situs 332 Forest) and 120-16-070 (situs 360 Forest); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City project page and its May 2025 and June 2026 plan sets (26PLN-00043)",
+      "src": [
+        "SRC-001895",
+        "SRC-003315",
+        "SRC-003314"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 searched by both APNs and Forest Ave for Palo Alto; no row",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Palo Alto Online 2025-08-11, 2026-07-22 and 2026-08-15",
+      "src": [
+        "SRC-003318",
+        "SRC-003316",
+        "SRC-003317"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY July 2026 article already on record",
+      "src": [
+        "SRC-001896"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No Forest Commons page found on srgnc.com through web search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Architect Steinberg Hart named on plan sets; no project page found on the firm's site",
+      "src": [
+        "SRC-003314"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lenders or equity partners named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found through web search",
+      "src": []
+    }
+  }
 }

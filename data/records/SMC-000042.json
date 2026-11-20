@@ -279,6 +279,41 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001133"
+          ],
+          "note": "State report: approved under SB 35 (2017) with a density bonus of 35%"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001133"
+          ]
+        }
+      ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "SB3522-0001",
+          "src": [
+            "SRC-001133"
+          ],
+          "note": "Local tracking number reported to the state"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -304,6 +339,18 @@
       "text": "CTCAC CA-23-450: Eucalyptus Grove Apartments, located at 1875 California Drive in Burlingame, requested and is being recommended for a reservation of $3,091,584 in annual federal tax credits and $10,727,825 in total state tax credits to finance the new construction of 68 units of housing serving families with rents affordable to households earning 20%-50% of area median income (AMI).",
       "src": [
         "SRC-001636"
+      ]
+    },
+    {
+      "text": "State report lists financial assistance as LIHTC, MHP, VHHP, CDLAC, AHP and other (San Mateo County Measure K, AHF 10.0, and City of Burlingame).",
+      "src": [
+        "SRC-001133"
+      ]
+    },
+    {
+      "text": "County Department of Housing (Jan. 2024): construction started in late December 2023.",
+      "src": [
+        "SRC-003319"
       ]
     }
   ],
@@ -530,16 +577,53 @@
       "src": [
         "SRC-001636"
       ]
+    },
+    {
+      "type": "FHLB AHP",
+      "provider": "Federal Home Loan Bank",
+      "program": "AHP, listed among financial assistance programs in the state report",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-001133"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2022-08-04",
+      "type": "Application filed",
+      "label": "SB 35 application submitted",
+      "src": [
+        "SRC-001132"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-03-02",
+      "type": "Approved",
+      "label": "Entitlement approved (SB 35), 69 units",
+      "src": [
+        "SRC-001133"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-05-10",
       "type": "Other",
       "label": "CTCAC staff report recommends tax credit reservation (CA-23-450)",
       "src": [
         "SRC-001636"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-11-03",
+      "type": "Permit issued",
+      "label": "Building permit issued, 69 units",
+      "src": [
+        "SRC-001133"
       ],
       "estimated": false
     },
@@ -594,6 +678,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search on project name and address; county, Citi, SF YIMBY pages already on record",
+      "src": [
+        "SRC-000721"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "County Active Parcels, APN 025-150-010: Eucalyptus Grove Apartments LP already on record",
+      "src": [
+        "SRC-000723"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Burlingame Major Development Projects page already on record",
+      "src": [
+        "SRC-001349"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "County DOH news release 2024-01-25: construction start late December 2023, AHF loan $5,698,107",
+      "src": [
+        "SRC-003319"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "APR Table A (2022) and Table A2 (2023) by APN: SB 35 approval 2023-03-02, building permit 2023-11-03, 55-year term",
+      "src": [
+        "SRC-001132",
+        "SRC-001133"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles (2024 car wash site; 2026 opening) returned HTTP 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SF YIMBY 2024 article already on record",
+      "src": [
+        "SRC-000722"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CRP and Abode project pages already linked",
+      "src": [
+        "SRC-000721"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no Studio T-Square project page for Eucalyptus Grove",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "State APR lists AHP among financing; other loans already on record from CTCAC staff report",
+      "src": [
+        "SRC-001133",
+        "SRC-001636"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found through web search",
+      "src": []
+    }
+  }
 }

@@ -47,6 +47,44 @@
           37.2513556
         ]
       ]
+    },
+    {
+      "apn": "424-31-027",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.965744,
+          37.2498562
+        ],
+        [
+          -121.9656914,
+          37.2494795
+        ],
+        [
+          -121.9664981,
+          37.2497511
+        ],
+        [
+          -121.966497,
+          37.2499007
+        ],
+        [
+          -121.9664908,
+          37.2501194
+        ],
+        [
+          -121.9657119,
+          37.2500539
+        ],
+        [
+          -121.965744,
+          37.2498562
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -75,6 +113,14 @@
             "SRC-001595"
           ],
           "note": "68 multi-family units; rental or for-sale not stated"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003320",
+            "SRC-003321"
+          ],
+          "note": "68 townhouses in 12 buildings; units defined by a condominium plan with an HOA"
         }
       ],
       "best": 1
@@ -131,6 +177,16 @@
           "src": [
             "SRC-001554"
           ]
+        },
+        {
+          "value": [
+            "Builder's remedy",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003321"
+          ],
+          "note": "Requests waivers, incentives/concessions and parking reductions under the State Density Bonus Law"
         }
       ]
     },
@@ -160,6 +216,97 @@
           "note": "State report 2024, application stage: 11 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.04,
+          "src": [
+            "SRC-003320",
+            "SRC-003321"
+          ],
+          "note": "APNs 424-31-028 and 424-31-027"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003322"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 68
+          },
+          "src": [
+            "SRC-003321"
+          ],
+          "note": "Updated plan, Oct. 2025: all units 4 bed/3.5 bath"
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 44,
+            "4br+": 24
+          },
+          "src": [
+            "SRC-003321"
+          ],
+          "note": "Prior site plan"
+        }
+      ],
+      "best": 0
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 57,
+          "src": [
+            "SRC-003321"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 149,
+          "src": [
+            "SRC-003321"
+          ],
+          "note": "Two-car garage for each of 68 units plus 13 guest spaces (Oct. 2025)"
+        },
+        {
+          "value": 150,
+          "src": [
+            "SRC-003323"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "11 below-market-rate for-sale units for lower-income households and 57 market-rate units; letter states the Town formula requires 10 and the builder's remedy minimum is 9. Town list: 11 (16%).",
+          "src": [
+            "SRC-003321",
+            "SRC-003322"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -174,12 +321,124 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "Existing 66,400 sq ft office/R&D building built in 1968, remodeled and expanded in 1986, to be demolished. General Plan Light Industrial, zoned CM; site not in the Housing Element inventory. Unit living areas 1,940 to 2,279 sq ft in the Oct. 2025 plans (1,905 to 2,247 sq ft in the 2024 application).",
+      "src": [
+        "SRC-003320",
+        "SRC-003321"
+      ]
+    },
+    {
+      "text": "Town project list: application includes a condominium vesting tentative map, grading and removal of large protected trees; APNs 424-31-027 and 424-31-028; CEQA review pending; status pending.",
+      "src": [
+        "SRC-001595"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Toll Brothers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003321",
+        "SRC-003323"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "980 University, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (formal application)",
+      "src": [
+        "SRC-003320"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "980 JR, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (formal application)",
+      "src": [
+        "SRC-003320"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "980 ER, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (formal application)",
+      "src": [
+        "SRC-003320"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Boccardo Management Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (as reported)",
+      "src": [
+        "SRC-003323"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "James Rees",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (as reported)",
+      "src": [
+        "SRC-003323"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003323"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "HMH",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003323"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cox, Castle & Nicholson LLP",
+      "contact": "Arielle O. Harris",
+      "linkedin": null,
+      "other_role": "Applicant's counsel",
+      "src": [
+        "SRC-003320",
+        "SRC-003321"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-04-05",
+      "type": "Other",
+      "label": "SB 330 / builder's remedy preliminary application submitted (Town deemed it submitted 2024-04-09)",
+      "src": [
+        "SRC-003320"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-09-23",
       "type": "Application filed",
@@ -190,12 +449,40 @@
       "estimated": false
     },
     {
+      "date": "2024-09-24",
+      "type": "Application filed",
+      "label": "Formal development application submitted",
+      "src": [
+        "SRC-003320",
+        "SRC-003321"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-09-25",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2025-02-12",
+      "type": "Other",
+      "label": "HCD Notice of Potential Violation to the Town over its Permit Streamlining Act completeness interpretation for this project",
+      "src": [
+        "SRC-003324"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-31",
+      "type": "Other",
+      "label": "Updated letter of justification submitted for revised plans",
+      "src": [
+        "SRC-003321"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -208,6 +495,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address and developer; opened Town documents, HCD notice and SF YIMBY",
+      "src": [
+        "SRC-003320"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SCC parcel API, APN 424-31-028: situs 980A University Ave, no owner field. Second APN 424-31-027 from the application letter and Town project list.",
+      "src": [
+        "SRC-003320",
+        "SRC-001595"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Town Pending Projects page, SB 330 list, formal application cover letter (2024-09-24) and updated justification letter (2025-10-31)",
+      "src": [
+        "SRC-001595",
+        "SRC-003322",
+        "SRC-003320",
+        "SRC-003321"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "Town project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "HCD Notice of Potential Violation 2025-02-12; APR Table A 2024 row already on record",
+      "src": [
+        "SRC-003324",
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "Local News Matters 2025-12-26 builder's remedy article returned HTTP 403; no other coverage naming this project found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2024-10-01",
+      "src": [
+        "SRC-003323"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search found no Toll Brothers community page for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SDG Architects named by SF YIMBY; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lenders or funders named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found through web search",
+      "src": []
+    }
+  }
 }

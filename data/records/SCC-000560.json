@@ -139,8 +139,16 @@
             "SRC-001560"
           ],
           "note": "Denied by the Planning Commission on 2026-10-14 but under appeal, so kept as Proposed"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001560"
+          ],
+          "note": "City Council upheld appeal APCC26-0004 and approved the project on 2026-11-18"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -169,6 +177,12 @@
           "src": [
             "SRC-001558"
           ]
+        },
+        {
+          "value": "CPX24-0007, SUB26-0003; appeal APCC26-0004",
+          "src": [
+            "SRC-003312"
+          ]
         }
       ]
     },
@@ -193,6 +207,88 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003311",
+            "SRC-003312"
+          ],
+          "note": "Average building heights 31.4 to 46.5 feet depending on slope; city page says about 37 to 38 feet"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 133386,
+          "src": [
+            "SRC-003313"
+          ],
+          "note": "Total of 55 townhome/condominium units and 14 ADUs in 12 buildings"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 125,
+          "src": [
+            "SRC-003312"
+          ],
+          "note": "110 enclosed garage spaces plus 15 visitor spaces"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003311",
+            "SRC-003312"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 14,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003313"
+          ],
+          "note": "14 attached ADUs affordable to low-income households"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003311"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "14 attached 504 sq ft ADUs affordable to low-income households; 55 market-rate units. Preliminary application proposed 20% of units affordable to lower-income households.",
+          "src": [
+            "SRC-003311",
+            "SRC-003313"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -201,16 +297,62 @@
       "src": [
         "SRC-001560"
       ]
+    },
+    {
+      "text": "Subdivision of 3.85 acres into 14 lots: 12 building lots (two 3-unit, three 4-unit, five 5-unit and two 6-unit buildings) plus a stormwater lot and an open space lot. Staff reports: four unit types, all three-bedroom, 1,728 to 2,392 sq ft with the ADUs; the city project page lists 2,170 to 2,864 sq ft.",
+      "src": [
+        "SRC-003311",
+        "SRC-003312",
+        "SRC-001560"
+      ]
+    },
+    {
+      "text": "Planning Commission voted unanimously on 2026-10-14 to deny the project as \"objectively unsafe\"; the applicant appealed on 2026-10-15. CEQA: statutorily exempt under Public Resources Code 21080.66 (AB 130). Site zoned R-1-10,000, General Plan Medium Density Residential (M-10).",
+      "src": [
+        "SRC-003312",
+        "SRC-003313"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Acme Development, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant / property owner",
+      "src": [
+        "SRC-003311",
+        "SRC-003313"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-03-18",
+      "type": "Other",
+      "label": "Builder's remedy preliminary application submitted",
+      "src": [
+        "SRC-003311",
+        "SRC-001560"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-09-10",
       "type": "Application filed",
       "label": "Formal application received",
+      "src": [
+        "SRC-001560"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-12",
+      "type": "Other",
+      "label": "Submittal deemed complete for processing",
       "src": [
         "SRC-001560"
       ],
@@ -224,6 +366,16 @@
         "SRC-001560"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Approved",
+      "label": "City Council upheld appeal and approved Design Review and Tentative Map",
+      "src": [
+        "SRC-001560",
+        "SRC-003312"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -231,6 +383,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Web search on address, builder's remedy and applicant; only property listing sites and unrelated Saratoga projects",
+      "src": [
+        "SRC-001560"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "SCC parcel API, APN 403-22-016: situs 14076 Quito Rd only; no owner field",
+      "src": []
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "City project page; PC agenda and staff report 2026-10-14; CC staff report 2026-11-18 (appeal APCC26-0004)",
+      "src": [
+        "SRC-001560",
+        "SRC-003313",
+        "SRC-003311",
+        "SRC-003312"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 searched by APN 403-22-016 and Quito Road for Saratoga; no row. CEQA handled by AB 130 exemption.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searches of local news found no coverage of this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searches found only The Real Deal's 2024 Saratoga builder's remedy roundup headline (domain returns 403); no trade coverage naming this project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No website found for Acme Development, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Architect not named in staff reports or agenda",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lenders or funders named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found through web search",
+      "src": []
+    }
+  }
 }
