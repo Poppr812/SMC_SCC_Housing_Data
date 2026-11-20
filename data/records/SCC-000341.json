@@ -193,6 +193,13 @@
           "src": [
             "SRC-001446"
           ]
+        },
+        {
+          "value": "SR2020-0028, SD2021-0010",
+          "src": [
+            "SRC-003828"
+          ],
+          "note": "Design permit certificate cites Tentative Subdivision Map SD2021-0010; the city project page shows SD2020-0010"
         }
       ]
     },
@@ -221,6 +228,30 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003828",
+            "SRC-003829"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003828"
+          ],
+          "note": "Design Permit and Tentative Subdivision Map; SB 330 objective standards with one concession"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -230,9 +261,33 @@
         "SRC-001131",
         "SRC-001135"
       ]
+    },
+    {
+      "text": "Design permit: 18 single-family attached and 5 single-family detached homes, all two stories, each with an enclosed ground-floor garage; 6,595 sq ft common open space/park; private driveway from Spring Avenue connecting to the Barnell Avenue emergency access; 33 of 41 trees removed.",
+      "src": [
+        "SRC-003828"
+      ]
+    },
+    {
+      "text": "Conditions require an Inclusionary Affordable Housing Agreement recorded before building permit issuance; state report 2020 lists 3 moderate-income deed-restricted units in the application.",
+      "src": [
+        "SRC-003828",
+        "SRC-001131"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Joe and Shelia Giancola",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (design permit)",
+      "src": [
+        "SRC-003828"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -245,6 +300,14 @@
       ]
     },
     {
+      "date": "2020-12-02",
+      "type": "Other",
+      "label": "Development Review Committee review",
+      "src": [
+        "SRC-003828"
+      ]
+    },
+    {
       "date": "2021-10-12",
       "type": "Approved",
       "label": "Planning Commission meeting (Resolution 21-11)",
@@ -252,6 +315,14 @@
         "SRC-001446"
       ],
       "estimated": false
+    },
+    {
+      "date": "2021-10-18",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Section 15332 infill)",
+      "src": [
+        "SRC-003829"
+      ]
     },
     {
       "date": "2021-11-01",
@@ -272,6 +343,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Spring-Giancola / 335 Spring Ave; opened city design permit certificate and CEQAnet page.",
+      "src": [
+        "SRC-003828",
+        "SRC-003829"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 76711030: situs 335 Spring; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Morgan Hill project page, Approval Certificate 21-008, Significant Projects list (July 2026: Processing Building Permits). Resolution 21-11 PDF is a scanned image with no text.",
+      "src": [
+        "SRC-001446",
+        "SRC-003828",
+        "SRC-001422"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2021100288 NOE; APR Table A 2020 (3 moderate).",
+      "src": [
+        "SRC-003829",
+        "SRC-001131"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Morgan Hill Times and Mercury News; no articles.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched trade press; no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicants are individuals; no builder website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Final plan set exceeds fetch size limit; no architect named in opened sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lenders or funders found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts.",
+      "src": []
+    }
+  }
 }

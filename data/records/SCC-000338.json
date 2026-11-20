@@ -121,8 +121,17 @@
             "SRC-001119"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-003819",
+            "SRC-003820"
+          ],
+          "note": "City record: 24 condominium dwelling units in two four-story buildings, for-sale"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -173,6 +182,12 @@
           "src": [
             "SRC-001119"
           ]
+        },
+        {
+          "value": "3 of 24 condominiums for purchase by moderate-income households (80-120% of county AMI)",
+          "src": [
+            "SRC-003820"
+          ]
         }
       ]
     },
@@ -184,6 +199,20 @@
             "SRC-001119"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "2018-7006",
+          "src": [
+            "SRC-003819"
+          ],
+          "note": "Special Development Permit and Tentative Map"
+        },
+        {
+          "value": "BLDG-2025-5600, BLDG-2025-5601, BLDG-2025-5602, BLDG-2025-5603",
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "State report 2025 lists four building permits of 6 units each, issued 2025-12-29"
         }
       ]
     },
@@ -202,6 +231,66 @@
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003819",
+            "SRC-003821"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 58,
+          "src": [
+            "SRC-003821"
+          ],
+          "note": "48 assigned (2 per unit) plus 10 unassigned, per the 2020 project data table"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.72,
+          "src": [
+            "SRC-003819",
+            "SRC-003820"
+          ],
+          "note": "Two lots; project data table shows 31,576 sq ft less 575 sq ft right-of-way = 31,001 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003819",
+            "SRC-003820"
+          ],
+          "note": "Special Development Permit and Tentative Map; State Density Bonus Law waivers for side setbacks and usable open space"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "Affordability term reported to the state"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -210,12 +299,82 @@
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "text": "City records describe the project on former parcels 204-03-002 and 204-03-003 (210 and 214 W. Ahwanee Ave), merged by the tentative map; existing structures demolished.",
+      "src": [
+        "SRC-003819"
+      ]
+    },
+    {
+      "text": "State report 2019 also lists 210 W Ahwanee Av under tracking number 20188035 with 24 units entitled 2019-01-29 (1 moderate-income); the 2020 report lists tracking number 20187006 with 24 units entitled 2020-08-10 (3 moderate-income).",
+      "src": [
+        "SRC-001119"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Tapti LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner (city record)",
+      "src": [
+        "SRC-003819",
+        "SRC-003820"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Tapti LLC",
+      "contact": "Kishore Polakala",
+      "linkedin": null,
+      "other_role": "Applicant/owner, 2017 General Plan Amendment and rezoning (210 W. Ahwanee)",
+      "src": [
+        "SRC-003822"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "M Designs Architects",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, 2017 General Plan Amendment and rezoning (210 W. Ahwanee)",
+      "src": [
+        "SRC-003822"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Buchalter",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Entitlement counsel (density bonus request)",
+      "src": [
+        "SRC-003820"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-04-25",
+      "type": "Other",
+      "label": "City Council adopted Ordinance 3113-17 rezoning 210, 214 and 220 W. Ahwanee Ave to R-4/PD",
+      "src": [
+        "SRC-003823"
+      ]
+    },
+    {
+      "date": "2020-07-13",
+      "type": "Other",
+      "label": "Planning Commission study session on density bonus request",
+      "src": [
+        "SRC-003820"
+      ]
+    },
     {
       "date": "2020-08-10",
       "type": "Approved",
@@ -238,6 +397,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on address, Tapti LLC and Sunnyvale 24; only sale listings, which were not openable (404 / home page).",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 20403046: situs 214 W Ahwanee Av; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Sunnyvale Legistar: PC 2020-08-10 item 20-0738 with project data table and density bonus letter; 2017 GPA/rezoning items 17-0129, 17-0489.",
+      "src": [
+        "SRC-003819",
+        "SRC-003821",
+        "SRC-003820",
+        "SRC-003822",
+        "SRC-003823"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2: 2019, 2020 and 2025 rows; fourth permit BLDG-2025-5603, 30-year term. No CTCAC/CEQAnet entry.",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news for 210 W Ahwanee and Tapti; no articles.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched trade press; no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Tapti LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "M Designs Architects named only as 2017 GPA applicant; no project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city or state records.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }

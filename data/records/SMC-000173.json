@@ -1,6 +1,6 @@
 {
   "id": "SMC-000173",
-  "name": "817 Walnut",
+  "name": "Walnut Studios",
   "parcels": [
     {
       "apn": "050-163-190",
@@ -93,8 +93,17 @@
             "SRC-001146"
           ],
           "note": "State report shows a building permit issued; it does not say whether construction started"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003825",
+            "SRC-003116"
+          ],
+          "note": "City release (June 2023) says completed June 2022; Charities Housing lists it as accepting applications"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -135,6 +144,13 @@
           "src": [
             "SRC-001146"
           ]
+        },
+        {
+          "value": "23 studios at 30-60% AMI; 2 for formerly homeless tenants; manager unit unrestricted. State report 2019 notes City density bonus and a disposition, development and loan agreement with the City.",
+          "src": [
+            "SRC-003826",
+            "SRC-001146"
+          ]
         }
       ]
     },
@@ -163,6 +179,87 @@
             "SRC-001146"
           ],
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 30
+            },
+            {
+              "count": 6,
+              "ami": 40
+            },
+            {
+              "count": 6,
+              "ami": 50
+            },
+            {
+              "count": 5,
+              "ami": 60
+            }
+          ],
+          "src": [
+            "SRC-003826"
+          ],
+          "note": "Studios by rent restriction; page also lists 2 for formerly homeless tenants"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 23,
+            "1br": 0,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003826"
+          ],
+          "note": "23 studios plus a 2-bedroom staff unit"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003826"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 20,
+          "src": [
+            "SRC-003826"
+          ],
+          "note": "Assigned parking lifts"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001146",
+            "SRC-003827"
+          ],
+          "note": "State report 2019 and CMFA release"
+        },
+        {
+          "value": 75,
+          "src": [
+            "SRC-001146"
+          ],
+          "note": "State report 2020"
         }
       ]
     }
@@ -172,6 +269,12 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001140",
+        "SRC-001146"
+      ]
+    },
+    {
+      "text": "State report 2019 and 2020 rows show 7 rental units demolished, 17 net new apartments; LIHTC financial assistance; 2 extremely low-income units.",
+      "src": [
         "SRC-001146"
       ]
     }
@@ -185,9 +288,57 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Charities Housing",
+      "contact": null,
+      "linkedin": null,
+      "email": "walnutstudios@charitiesHousing.org",
+      "phone": "(650) 226-5174",
+      "website": "https://charitieshousing.org/",
+      "website_basis": "opened",
+      "project_page": "https://charitieshousing.org/property/walnut-studios/",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003826",
+        "SRC-003116"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Catholic Charities of Santa Clara County",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Resident services and case management",
+      "src": [
+        "SRC-003826",
+        "SRC-003120"
+      ]
     }
   ],
-  "financing": [],
+  "financing": [
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Carlos",
+      "program": null,
+      "amount": 7300000,
+      "date": null,
+      "src": [
+        "SRC-003825"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "California Municipal Finance Authority",
+      "program": null,
+      "amount": 8125728,
+      "date": null,
+      "src": [
+        "SRC-003827"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -213,6 +364,14 @@
       "src": [
         "SRC-001146"
       ]
+    },
+    {
+      "date": "2022-06",
+      "type": "Completion",
+      "label": "Construction completed",
+      "src": [
+        "SRC-003825"
+      ]
     }
   ],
   "history": [
@@ -220,6 +379,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 817 Walnut / Walnut Studios; opened Charities Housing, CMFA, Catholic Charities and city release pages.",
+      "src": [
+        "SRC-003826",
+        "SRC-003827",
+        "SRC-003120"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner already on record (Walnut Street LP lessee & City of San Carlos).",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of San Carlos June 2023 release (republished by VMWP): completion June 2022, $7.3M city loan. cityofsancarlos.org project pages not found in search.",
+      "src": [
+        "SRC-003825"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SMC Department of Housing documents found concern 626-648 Walnut St, a different site.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2 2019/2020 rows (restriction terms, demolitions). CTCAC CA-19-595 and CDLAC 12/11/2019 staff reports return 404 at treasurer.ca.gov.",
+      "src": [
+        "SRC-001146"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Daily Journal and Patch results concern the separate MidPen 600-block Walnut project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched trade press; no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Charities Housing property page and Property Showcase.",
+      "src": [
+        "SRC-003826",
+        "SRC-003116"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched for architect; none named in opened sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CMFA bond release ($8,125,728); city loan $7.3M. CTCAC/CDLAC reports with full sources unavailable (404).",
+      "src": [
+        "SRC-003827",
+        "SRC-003825"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts.",
+      "src": []
+    }
+  }
 }

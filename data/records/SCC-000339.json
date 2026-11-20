@@ -141,11 +141,47 @@
           "note": "State report 2018, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001110"
+          ],
+          "note": "Deed restriction type DB in the state report 2018"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001110"
+          ],
+          "note": "Affordability term reported to the state, 2018"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    {
+      "text": "Mountain View Legistar lists an Administrative Zoning Hearing item on 2024-08-28: 1313 W. El Camino Real, Mohammad Taha, PL-2023-245, APN 189-32-086; attachments include a business description letter.",
+      "src": [
+        "SRC-003824"
+      ]
+    },
+    {
+      "text": "State reports through 2025 show only the 2018 entitlement row for 285-16-PM; no building permit or completion rows.",
       "src": [
         "SRC-001110"
       ]
@@ -169,6 +205,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 1313-1347 W El Camino Real; only broker listings (cityfeet, LoopNet), both returned 403.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 18932085: situs 1347 W El Camino Real; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Legistar matters search for 1313/1347: only the 2024 Administrative Zoning Hearing item PL-2023-245; no 2018 entitlement item in Legistar. Staff memo PDF encrypted.",
+      "src": [
+        "SRC-003824"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2 2018 row: density bonus, 55-year term. No CEQAnet or CTCAC entry found.",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news (Mountain View Voice, Mercury News); no articles.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Broker offering memorandum (images1.cityfeet.com) and LoopNet listing returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in any opened source.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in any opened source.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lenders or funders found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search showed no LinkedIn posts.",
+      "src": []
+    }
+  }
 }
