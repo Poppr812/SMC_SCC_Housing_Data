@@ -139,6 +139,76 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 18,
+            "2br": 25,
+            "3br": 18,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001863"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001863"
+          ],
+          "note": "65-foot tall structure"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 103440,
+          "src": [
+            "SRC-001863"
+          ],
+          "note": "Of 162,820 sq ft total"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 17970,
+          "src": [
+            "SRC-001863"
+          ],
+          "note": "Divisible into up to nine spaces"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 109,
+          "src": [
+            "SRC-001863"
+          ],
+          "note": "First floor and basement; 58 bicycle spaces"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "No on-site affordable housing; project will pay under the city's Inclusionary Housing Ordinance (SFYIMBY, May 2021)",
+          "src": [
+            "SRC-001863"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -147,6 +217,18 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "SFYIMBY (May 28, 2021): environmental review (mitigated negative declaration) published; six-story building in the Winchester Boulevard Urban Village; 162,820 sq ft total; parking across 44,110 sq ft for 109 vehicles, 55 fewer than city requirements. SFYIMBY calls the 61 units apartments; the state report lists them as for-sale.",
+      "src": [
+        "SRC-001863"
+      ]
+    },
+    {
+      "text": "County parcel data: APN 299-25-038 situs 1087 S Winchester Bl.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -177,6 +259,15 @@
       "other_role": "Named project party (SJ Build tracker)",
       "src": [
         "SRC-001864"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Carpira Design Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001863"
       ]
     }
   ],
@@ -215,6 +306,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 1073-1087 S Winchester, SP20-002 and Cord Associates; opened SFYIMBY",
+      "src": [
+        "SRC-001863"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 299-25-038 situs 1087 S Winchester Bl, already on record; owner not in dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov IS/MND page and documents for SP20-002 refuse automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project, no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet entry found for this MND",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched local news; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SFYIMBY May 28, 2021: architect, unit mix, stories, areas, parking",
+      "src": [
+        "SRC-001863"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Cord Associates or A&Z Development",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Carpira Design Group project page not found in search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts; none found",
+      "src": []
+    }
+  }
 }

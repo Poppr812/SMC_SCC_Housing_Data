@@ -1,6 +1,6 @@
 {
   "id": "SCC-000267",
-  "name": "Michael Kohl",
+  "name": "950 Monroe Street Mixed-Use (906-950 Monroe St)",
   "parcels": [
     {
       "apn": "269-20-095",
@@ -75,6 +75,82 @@
           37.3476065
         ]
       ]
+    },
+    {
+      "apn": "269-20-086",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9479126,
+          37.347887
+        ],
+        [
+          -121.9483902,
+          37.3477181
+        ],
+        [
+          -121.9484598,
+          37.3478437
+        ],
+        [
+          -121.9484519,
+          37.3478465
+        ],
+        [
+          -121.9482947,
+          37.3479021
+        ],
+        [
+          -121.948505,
+          37.3482813
+        ],
+        [
+          -121.9481963,
+          37.3483912
+        ],
+        [
+          -121.9479126,
+          37.347887
+        ]
+      ]
+    },
+    {
+      "apn": "269-20-087",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9478422,
+          37.3477617
+        ],
+        [
+          -121.9483205,
+          37.3475925
+        ],
+        [
+          -121.9483839,
+          37.3477068
+        ],
+        [
+          -121.9483902,
+          37.3477181
+        ],
+        [
+          -121.9479126,
+          37.347887
+        ],
+        [
+          -121.9478422,
+          37.3477617
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -83,6 +159,22 @@
       "role": "main",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "text": "950 Monroe St, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-003384",
+        "SRC-003385"
+      ]
+    },
+    {
+      "text": "1341 Homestead Rd, Santa Clara, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098",
+        "SRC-003384"
       ]
     }
   ],
@@ -96,8 +188,18 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-003383",
+            "SRC-003384",
+            "SRC-003385"
+          ],
+          "note": "Condominiums plus four townhomes in the 2021-2023 project descriptions"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -125,11 +227,29 @@
         {
           "value": 61,
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-003383"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 57,
+          "src": [
+            "SRC-003384",
+            "SRC-003386"
+          ],
+          "note": "53 condominium units plus four townhomes (NOP, Oct 2021)"
+        },
+        {
+          "value": 54,
+          "src": [
+            "SRC-003387",
+            "SRC-003385"
+          ],
+          "note": "50 multifamily/condominium units plus four townhouses (Draft EIR Oct 2022; Silicon Valley Voice Aug 2023)"
         }
-      ]
+      ],
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -150,6 +270,93 @@
             "SRC-001106"
           ],
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003385"
+          ],
+          "note": "Eleven condos would be below-market-rate"
+        }
+      ],
+      "best": 1
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003383"
+          ],
+          "note": "2021 plans"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-003384",
+            "SRC-003387"
+          ],
+          "note": "Six-story mixed-use building; townhouses two stories"
+        }
+      ],
+      "best": 1
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.87,
+          "src": [
+            "SRC-003384",
+            "SRC-003386",
+            "SRC-003387"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 10088,
+          "src": [
+            "SRC-003383"
+          ],
+          "note": "3,844 sq ft retail plus 6,244 sq ft restaurant (2021 plans)"
+        },
+        {
+          "value": 2000,
+          "src": [
+            "SRC-003384",
+            "SRC-003387"
+          ],
+          "note": "About 2,000 sq ft ground-floor retail/restaurant"
+        },
+        {
+          "value": 3800,
+          "src": [
+            "SRC-003385"
+          ],
+          "note": "3,800 sq ft ground-floor retail plus 871 sq ft art space"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 187,
+          "src": [
+            "SRC-003383"
+          ],
+          "note": "116 residential plus 71 retail spaces (2021 plans)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Eleven of the condos would be below-market-rate (Silicon Valley Voice, Aug 2023)",
+          "src": [
+            "SRC-003385"
+          ]
         }
       ]
     }
@@ -160,9 +367,66 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "NOP (Oct 25, 2021): site is 906-950 Monroe Street and 1341 Homestead Road, northwest corner of Monroe Street and Homestead Road, APNs 269-20-095, 269-20-087, 269-20-086; requests General Plan Amendment and rezoning from Historic Combining, General Office and Community Commercial to Planned Development. City contact Associate Planner Steve Le.",
+      "src": [
+        "SRC-003384"
+      ]
+    },
+    {
+      "text": "SFYIMBY (Apr 2021): plans included relocating two historic houses at 906 and 930 Monroe; site 38,217 sq ft. Draft EIR (Oct 2022): existing residences fronting Monroe Street and Homestead Road retained in place; one basement parking level accessed from Franklin Street; building about 90 feet tall, 72,000 sq ft.",
+      "src": [
+        "SRC-003383",
+        "SRC-003387"
+      ]
+    },
+    {
+      "text": "Silicon Valley Voice (Aug 23, 2023): Planning Commission supported the project; Historic Landmarks Commission and Downtown Community Task Force opposed it; City Council voted 4-1 to defer the item to an uncertain date so the applicant could adjust the project. Three to six stories, three historic homes remain in the footprint.",
+      "src": [
+        "SRC-003385"
+      ]
+    },
+    {
+      "text": "County parcel data: APN 269-20-095 situs 1341 Homestead Rd, Santa Clara.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Salvatore Caruso Design Corporation",
+      "contact": "Salvatore Caruso",
+      "linkedin": null,
+      "src": [
+        "SRC-003385",
+        "SRC-003383",
+        "SRC-003384"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Salvatore Caruso Design Corporation",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003383"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lamb Partners LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (SFYIMBY 2021); NOP lists applicant/owner as Salvatore Caruso/Lamb Partners LLC",
+      "src": [
+        "SRC-003383",
+        "SRC-003384"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -173,6 +437,24 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2021-10-29",
+      "type": "Other",
+      "label": "Notice of Preparation of Draft EIR received by State Clearinghouse (SCH 2021100581)",
+      "src": [
+        "SRC-003386"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-10-26",
+      "type": "Other",
+      "label": "Draft EIR received by State Clearinghouse; review through 2022-12-05",
+      "src": [
+        "SRC-003387"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -180,6 +462,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 906 Monroe, 950 Monroe and PLN2020-14457; opened SFYIMBY, CEQAnet and Silicon Valley Voice",
+      "src": [
+        "SRC-003383",
+        "SRC-003385"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: APN 269-20-095 situs 1341 Homestead Rd; owner not in dataset. CEQAnet adds APNs 269-20-086 and 269-20-087",
+      "src": [
+        "SRC-001098",
+        "SRC-003386"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "santaclaraca.gov project documents returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project, no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2021100581: NOP received 2021-10-29, Draft EIR received 2022-10-26; NOP PDF read",
+      "src": [
+        "SRC-003386",
+        "SRC-003387",
+        "SRC-003384"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Silicon Valley Voice Aug 23, 2023 council deferral; San Jose Spotlight returned 403",
+      "src": [
+        "SRC-003385"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SFYIMBY Apr 8, 2021: owner, applicant, 61 condos, retail, parking, stories",
+      "src": [
+        "SRC-003383"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website or project page found for Salvatore Caruso Design Corporation",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect is the same firm (SCDC); no firm website found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on 950 Monroe; none found",
+      "src": []
+    }
+  }
 }
