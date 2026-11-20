@@ -1,6 +1,6 @@
 {
   "id": "SCC-000374",
-  "name": "2011 Rock St",
+  "name": "2005 Rock St (Dividend Homes rowhouses and townhouses)",
   "parcels": [
     {
       "apn": "153-41-023",
@@ -87,8 +87,16 @@
             "SRC-001110"
           ],
           "note": "State categories: SFA, SFD"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003944"
+          ],
+          "note": "15 ownership units: 8 rowhouse and 7 townhouse units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -133,6 +141,12 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2018-022 (PUD and development review), PL-2018-023 (vesting tentative map); Tract No. 10517",
+          "src": [
+            "SRC-003945"
+          ]
         }
       ]
     },
@@ -146,6 +160,56 @@
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 3,
+            "3br": 11,
+            "4br+": 1
+          },
+          "src": [
+            "SRC-003944"
+          ],
+          "note": "Units about 1,400 to 2,700 sq ft"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.1,
+          "src": [
+            "SRC-003944"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003944"
+          ],
+          "note": "Planned Unit Development Permit, Development Review Permit, Heritage Tree Removal Permit and Vesting Tentative Map"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "No on-site BMR units; BMR ordinance requirement met by in-lieu payment, estimated by staff at about $45,000 per unit, $675,000 total",
+          "src": [
+            "SRC-003944"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -155,9 +219,53 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "Project at 2005 Rock Street replaced the 20-unit Royal Viking Apartments (20 two-bedroom rent-stabilized units) on a site fronting Rock Street and West Middlefield Road.",
+      "src": [
+        "SRC-003944",
+        "SRC-003948"
+      ]
+    },
+    {
+      "text": "The record's parcel 153-41-023 (2011 Rock St) is one unit lot within Tract No. 10517, which created 15 townhouse lots and four common lots.",
+      "src": [
+        "SRC-003945",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "Developer Dividend Homes agreed to keep the existing apartments open until December 31, 2019; the Daily Post reported expected sale prices of $1.3 million.",
+      "src": [
+        "SRC-003946"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Dividend Homes",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dividendhomes.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003946",
+        "SRC-003947",
+        "SRC-003945"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MV Cantera 2019 Inc.",
+      "contact": "Joshua Vrotsos",
+      "linkedin": null,
+      "other_role": "Subdivider entity",
+      "src": [
+        "SRC-003945"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -170,11 +278,53 @@
       ]
     },
     {
+      "date": "2018-08-22",
+      "type": "Other",
+      "label": "Zoning Administrator and Subdivision Committee recommend approval",
+      "src": [
+        "SRC-003944"
+      ]
+    },
+    {
+      "date": "2018-12-11",
+      "type": "Approved",
+      "label": "City Council approves PUD, development review and vesting tentative map (4-3)",
+      "src": [
+        "SRC-003944",
+        "SRC-003946",
+        "SRC-003948"
+      ]
+    },
+    {
+      "date": "2020-04-14",
+      "type": "Other",
+      "label": "City Council final map approval, Tract No. 10517",
+      "src": [
+        "SRC-003945"
+      ]
+    },
+    {
+      "date": "2020-04-24",
+      "type": "Other",
+      "label": "Public improvement plans approved for construction",
+      "src": [
+        "SRC-003947"
+      ]
+    },
+    {
       "date": "2022-02-25",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
       "src": [
         "SRC-001110"
+      ]
+    },
+    {
+      "date": "2022-04-26",
+      "type": "Other",
+      "label": "City Council accepts completed public improvements",
+      "src": [
+        "SRC-003947"
       ]
     }
   ],
@@ -183,6 +333,102 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 2005/2011 Rock St; Daily Post, SV@Home, MV Voice",
+      "src": [
+        "SRC-003946",
+        "SRC-003948"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SCC parcel dataset APN 153-41-023: situs 2011 Rock St; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Legistar: council report 2018-12-11, final map report 2020-04-14, public improvements report 2022-04-26",
+      "src": [
+        "SRC-003944",
+        "SRC-003945",
+        "SRC-003947"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Mountain View project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State APR rows already on record; no CEQAnet or HCD item found",
+      "src": [
+        "SRC-001101",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto Daily Post 2018-12-12; SV@Home 2018-12-18; MV Voice 2019-04-03",
+      "src": [
+        "SRC-003946",
+        "SRC-003948",
+        "SRC-003949"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Livabl Cantera article and Mercury News PressReader page returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "dividendhomes.com homepage opened; lists current communities only, no page for this project",
+      "src": [
+        "SRC-003647"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in council reports opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found; final map report notes subdivision bonds only",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

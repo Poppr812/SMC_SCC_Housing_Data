@@ -60,8 +60,16 @@
             "SRC-001141"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003020"
+          ],
+          "note": "City staff report: 16 residential for-sale townhome units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -116,6 +124,19 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003020"
+          ],
+          "note": "Includes rezoning to Planned Development (PD) District; City Council is the review authority"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -123,6 +144,12 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001141"
+      ]
+    },
+    {
+      "text": "Belmont Planning Commission staff report of May 18, 2021 lists 800 Laurel Avenue as 16 for-sale townhome units with rezoning to a Planned Development district, applicant Galen Ma & Victor Lo for Sierra Investments, City Council review, public hearing anticipated late fall 2021.",
+      "src": [
+        "SRC-003020"
       ]
     }
   ],
@@ -134,6 +161,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Sierra Investments",
+      "contact": "Galen Ma & Victor Lo",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003020"
       ]
     }
   ],
@@ -154,6 +191,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 800 Laurel Ave / Hill Street Townhomes Belmont; led to Belmont May 18, 2021 staff report",
+      "src": [
+        "SRC-003020"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 045-152-350: owner HILL STREET TOWNHOUSES LLC, situs 800 Laurel Ave (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Belmont PC staff report 2021-05-18 opened. belmont.gov project page and council staff reports returned 403",
+      "src": [
+        "SRC-003020"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Belmont project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State APR Table A row for PA2019-0025 already on record; no CTCAC/HCD award or CEQAnet item found",
+      "src": [
+        "SRC-001141"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on Belmont rezoning for Hill Street townhomes returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for 800 Laurel / Hill Street Townhomes in SF YIMBY and trade press found nothing",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Sierra Investments or Hill Street Townhouses LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

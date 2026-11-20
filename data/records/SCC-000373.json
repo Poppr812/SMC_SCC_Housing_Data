@@ -79,8 +79,17 @@
             "SRC-001102"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-003938",
+            "SRC-003939"
+          ],
+          "note": "15 affordable for-sale condominium units; the state report lists rental tenure"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -136,6 +145,139 @@
             "SRC-001102"
           ],
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-003938",
+            "SRC-003940"
+          ],
+          "note": "City staff report: 5 very low-, 8 low- and 2 moderate-income units. The state report shows no deed-restricted units"
+        }
+      ],
+      "best": 1
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 5,
+              "ami": 50
+            },
+            {
+              "count": 8,
+              "ami": 80
+            },
+            {
+              "count": 2,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003938",
+            "SRC-003940"
+          ],
+          "note": "Very low, low and moderate income categories (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 0,
+          "src": [
+            "SRC-003938"
+          ]
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-003939"
+          ],
+          "note": "Affordable condominiums for families"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 2,
+            "2br": 7,
+            "3br": 5,
+            "4br+": 1
+          },
+          "src": [
+            "SRC-003938"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.69,
+          "src": [
+            "SRC-003938",
+            "SRC-003940",
+            "SRC-003939"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 19415,
+          "src": [
+            "SRC-003940"
+          ],
+          "note": "Building square footage; DRH staff report describes an approximately 20,000 sq ft building"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003940",
+            "SRC-003938"
+          ],
+          "note": "41 feet 6 inches"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-003940"
+          ],
+          "note": "15 covered and 15 uncovered; 15 Class I bicycle spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003938"
+          ],
+          "note": "Architectural review and vesting tentative map; AB 3194 used for R1-6L objective standards; four density bonus concessions (front setback, height, parking, fence). CEQA infill streamlining under the 2010-2035 General Plan EIR"
         }
       ]
     }
@@ -147,12 +289,57 @@
         "SRC-001106",
         "SRC-001102"
       ]
+    },
+    {
+      "text": "Site is a vacant City-owned parcel, formerly a City fire station, reserved for affordable housing; the City selected Habitat for Humanity to develop it as a 100% affordable homeownership project.",
+      "src": [
+        "SRC-003938",
+        "SRC-003941"
+      ]
+    },
+    {
+      "text": "Planning Commission resolution gives the application filing date as October 26, 2022; the state report lists 2022-09-08.",
+      "src": [
+        "SRC-003938",
+        "SRC-001106"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Habitat for Humanity East Bay/Silicon Valley",
+      "contact": "Cameron Delaney",
+      "linkedin": null,
+      "website": "https://www.habitatebsv.org",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003938",
+        "SRC-003941"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "City of Santa Clara",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-003938"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-04-09",
+      "type": "Other",
+      "label": "City Council approves Exclusive Negotiation Agreement with Habitat for Humanity East Bay / Silicon Valley",
+      "src": [
+        "SRC-003942"
+      ]
+    },
     {
       "date": "2022-09-08",
       "type": "Application filed",
@@ -162,11 +349,52 @@
       ]
     },
     {
+      "date": "2022-10-26",
+      "type": "Application filed",
+      "label": "Application PLN22-00518 filed (per Planning Commission resolution)",
+      "src": [
+        "SRC-003938"
+      ]
+    },
+    {
+      "date": "2023-02-01",
+      "type": "Approved",
+      "label": "Architectural review approved at Development Review Hearing",
+      "src": [
+        "SRC-003938",
+        "SRC-003940"
+      ]
+    },
+    {
+      "date": "2023-03-08",
+      "type": "Other",
+      "label": "Planning Commission recommends approval of vesting tentative map",
+      "src": [
+        "SRC-003938"
+      ]
+    },
+    {
+      "date": "2023-04-04",
+      "type": "Approved",
+      "label": "City Council approves vesting tentative subdivision map for 15 condominium units",
+      "src": [
+        "SRC-003943"
+      ]
+    },
+    {
       "date": "2023-05-30",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001102"
+      ]
+    },
+    {
+      "date": "2025-12-09",
+      "type": "Other",
+      "label": "City Council extends Exclusive Negotiation Agreement and license agreement with Habitat by one year (Amendment No. 9)",
+      "src": [
+        "SRC-003941"
       ]
     }
   ],
@@ -175,6 +403,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 3575 De La Cruz Blvd; SF YIMBY preliminary application article",
+      "src": [
+        "SRC-003939"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SCC parcel dataset APN 101-15-049: no situs or owner fields; City staff report names City of Santa Clara as owner",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Santa Clara Legistar: PC report 22-1556 (2023-03-08) with DRH report, project data table, council matter 23-422 history (approved 2023-04-04), ENA matters 19-299 and 25-1575. santaclaraca.gov pages returned 403",
+      "src": [
+        "SRC-003938",
+        "SRC-003940",
+        "SRC-003943",
+        "SRC-003942",
+        "SRC-003941"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No County of Santa Clara Measure A item found for this site",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State APR rows for PLN22-00518 already on record; no CTCAC/HCD award found",
+      "src": [
+        "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no local news coverage beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY, 2021-12-09",
+      "src": [
+        "SRC-003939"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "habitatebsv.org home construction page opened; lists no Santa Clara project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect name not legible in plan text extracted from the PC packet",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Only the City land and ENA/license agreements found; no loan or grant amounts for this site",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
