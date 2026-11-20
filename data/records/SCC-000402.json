@@ -1,62 +1,42 @@
 {
   "id": "SCC-000402",
-  "name": "99 Pullman Wy",
+  "name": "7246 Sharon Dr (live-work, SP22-016)",
   "parcels": [
     {
-      "apn": "456-41-005",
+      "apn": "372-21-003",
       "from": null,
       "to": null,
       "src": [
-        "SRC-001098"
+        "SRC-001956"
       ],
       "outline": [
         [
-          -121.8504008,
-          37.2910789
+          -122.0309749,
+          37.2966831
         ],
         [
-          -121.8504975,
-          37.2909777
+          -122.0309737,
+          37.2964661
         ],
         [
-          -121.8500876,
-          37.2907277
+          -122.0314154,
+          37.2964612
         ],
         [
-          -121.8499909,
-          37.2908289
+          -122.0314129,
+          37.2970041
         ],
         [
-          -121.8498543,
-          37.2907456
+          -122.0309766,
+          37.2970036
         ],
         [
-          -121.8495811,
-          37.2905789
+          -122.0309763,
+          37.2969487
         ],
         [
-          -121.8498523,
-          37.2902951
-        ],
-        [
-          -121.8501246,
-          37.2904612
-        ],
-        [
-          -121.850672,
-          37.2907951
-        ],
-        [
-          -121.8508437,
-          37.2908999
-        ],
-        [
-          -121.8505725,
-          37.2911837
-        ],
-        [
-          -121.8504008,
-          37.2910789
+          -122.0309749,
+          37.2966831
         ]
       ]
     }
@@ -75,6 +55,13 @@
             "SRC-001099"
           ]
         }
+      ]
+    },
+    {
+      "text": "7246 Sharon Dr, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -99,8 +86,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit SP22-016 (filed 2022-05-04, same file number and date as the state report) approved 2026-07-15; the city record places it at 7246 Sharon Dr, APN 372-21-003"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -144,6 +139,39 @@
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 23248,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SP22-016: approximately 23,248 sq ft of living space (7246 Sharon Dr)"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2712,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SP22-016: approximately 2,712 sq ft of commercial space in live-work units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.56,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross site area in tentative map T22-017 (7246 Sharon Dr)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -152,18 +180,83 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "The state report lists planning file SP22-016 at 99 Pullman Wy. In the City of San Jose permit layer, SP22-016 (filed 2022-05-04, approved 2026-07-15) is at 7246 Sharon Dr, APN 372-21-003: a Special Use Permit for ten detached live-work units (about 23,248 sq ft living, 2,712 sq ft commercial) replacing an approximately 9,960 sq ft office building; tentative map T22-017 subdivides that 0.56-gross-acre lot into 10 residential lots and a common lot.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit records for 99 Pullman Wy (APN 456-41-005), owner and applicant Coastal Properties Pullman Way LLC: H22-010 Site Development Permit to allow continued use of three existing warehouse structures (about 16,000 sq ft) built without permits, filed 2022-03-18, under review; ER22-053 filed 2022-03-04. No residential permit is shown for that parcel.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Ben Wang",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city permits SP22-016, T22-017)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lexicon Developments",
+      "contact": "Kirk Tang",
+      "linkedin": null,
+      "other_role": "Applicant (city permits PRE20-181, GP21-004, C21-009 at 7246 Sharon Dr)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-12-22",
+      "type": "Application filed",
+      "label": "Preliminary review PRE20-181 filed (10 live/work units, 7246 Sharon Dr)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2022-02-08",
+      "type": "Approved",
+      "label": "General Plan amendment GP21-004 and rezoning C21-009 to Mixed Use Neighborhood approved (7246 Sharon Dr)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2022-05-04",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2022-05-11",
+      "type": "Application filed",
+      "label": "Tentative map T22-017 filed (10 residential lots and a common lot)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "type": "Approved",
+      "label": "Special Use Permit SP22-016 approved",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -172,6 +265,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Parcel corrected: 456-41-005 -> 372-21-003: the city permit layer places file SP22-016 on 7246 Sharon Dr"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset APN 45641005: no situs address; APN 37221003: situs 7246 Sharon Dr, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer: APN 45641005 (H22-010, ER22-053) and file SP22-016 / APN 37221003 (SP22-016, T22-017, ER22-105, PRE20-181, GP21-004, C21-009); sanjoseca.gov itself blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; CEQAnet search returned no matching project",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "San Jose Spotlight site searches for Pullman Way and Sharon Drive: no matches",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY site search for Sharon Drive: no matches",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer website named in city records",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city records",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in public records found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    }
+  }
 }

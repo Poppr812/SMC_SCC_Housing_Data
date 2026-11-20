@@ -40653,6 +40653,66 @@
    "wayback": null,
    "copyright": true,
    "sha256": null
+  },
+  "SRC-004058": {
+   "id": "SRC-004058",
+   "title": "San Jose hilltop development moves forward after delays",
+   "publisher": "San Jose Spotlight",
+   "date": "2023-05-19",
+   "type": "News article",
+   "url": "https://sanjosespotlight.com/san-jose-almaden-valley-hilltop-housing-development-moves-forward-after-delays/",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004059": {
+   "id": "SRC-004059",
+   "title": "PLN24-260-SB330 plans, 3193 McKee Rd privately-owned new townhomes",
+   "publisher": "County of Santa Clara",
+   "date": null,
+   "type": "Application document",
+   "url": "https://stgenpln.blob.core.windows.net/document/PLN24_260_SB330_Plans.pdf",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004060": {
+   "id": "SRC-004060",
+   "title": "Planning Commission agenda packet, September 10, 2024 (staff report SD2022-0003/SR2022-0023/EA2022-0013)",
+   "publisher": "City of Morgan Hill",
+   "date": "2024-09-06",
+   "type": "Government document",
+   "url": "https://morganhillca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2162,plainText=false)",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004061": {
+   "id": "SRC-004061",
+   "title": "270 West Dunne Ave Townhomes, Site and Architecture Plans",
+   "publisher": "City of Morgan Hill",
+   "date": null,
+   "type": "Application document",
+   "url": "https://www.morganhill.ca.gov/DocumentCenter/View/49732/Site-and-Architecture-Plans-PDF",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004062": {
+   "id": "SRC-004062",
+   "title": "Planning Commission meeting minutes, September 10, 2024",
+   "publisher": "City of Morgan Hill",
+   "date": "2024-11-22",
+   "type": "Government document",
+   "url": "https://morganhillca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=2235,plainText=false)",
+   "retrieved": "2026-11-20",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
   }
  },
  "records": [
@@ -272702,6 +272762,17 @@
        "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 7.94,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Gross site area in the PD16-014 and PT23-001 permit descriptions"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -272717,18 +272788,130 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "City permit records: PD16-014 and tentative map PT16-019 (12 parcels: 10 single-family lots, a private road lot and an open space lot on 7.94 gross acres) issued 2018-02-07; extended by AD20-072, AD20-423, AD21-042, AD21-454 and AD24-072. PT23-001 re-approved the same tentative map on 2023-05-17, with a CEQA consistency determination against the Brasilia Way Residential Development Project Mitigated Negative Declaration (Resolution No. 77033).",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "San Jose Spotlight (2023-05-19): owner-developer Sridhar Pillarisetty bought the nearly 8-acre hilltop site near Coleman Avenue and Almaden Expressway in fall 2021; the planning director renewed the approval that week; Pillarisetty said construction could start in about six months.",
+     "src": [
+      "SRC-004058"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Developer",
+     "company": "Sridhar Pillarisetty",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004058"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Brasilia Hills Partners, LLC",
+     "contact": "Sridhar Pillarisetty",
+     "linkedin": null,
+     "other_role": "Applicant and owner (city permit AD24-072)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Brasilia Hills LLC",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant and owner (city permits PD16-014, PT16-019, PT23-001, ER22-201)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "JSM Enterprises, Inc",
+     "contact": "Colin Gray",
+     "linkedin": null,
+     "other_role": "Applicant and owner (city permits PRE12-010, PDC12-018)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Synergy Development",
+     "contact": "Darryl Wong",
+     "linkedin": null,
+     "other_role": "Applicant (city permit adjustments AD20-423, AD21-042, AD21-454)",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2012-02-10",
+     "type": "Application filed",
+     "label": "Preliminary review PRE12-010 filed (12 single-family homes)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2012-07-10",
+     "type": "Application filed",
+     "label": "Planned Development rezoning PDC12-018 filed",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2014-06-10",
+     "type": "Approved",
+     "label": "Planned Development rezoning PDC12-018 approved (up to 10 single-family homes)",
+     "src": [
+      "SRC-001956",
+      "SRC-004058"
+     ]
+    },
+    {
+     "date": "2016-04-08",
+     "type": "Application filed",
+     "label": "PD permit PD16-014 and tentative map PT16-019 filed",
+     "src": [
+      "SRC-001956"
+     ]
+    },
     {
      "date": "2018-02-07",
      "type": "Approved",
      "label": "Entitlement approved",
      "src": [
       "SRC-001107"
+     ]
+    },
+    {
+     "date": "2023-05-17",
+     "type": "Approved",
+     "label": "Tentative map PT23-001 approved; CEQA consistency determination ER22-201",
+     "src": [
+      "SRC-001956",
+      "SRC-004058"
+     ]
+    },
+    {
+     "date": "2024-02-08",
+     "type": "Other",
+     "label": "PD16-014 extended to March 17, 2025 (AD24-072)",
+     "src": [
+      "SRC-001956"
      ]
     },
     {
@@ -272758,13 +272941,96 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel dataset APN 57754014: situs 5827 Brasilia Wy, San Jose; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Permits Planning GIS layer, APN 57754014: PRE12-010, PDC12-018, PD16-014, PT16-019, PT23-001, ER22-201, AD20/21/24 extensions (sanjoseca.gov itself blocked)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City of San Jose project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR rows already on record; CEQAnet search for Brasilia returned no matching project",
+     "src": [
+      "SRC-001099",
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Spotlight 2023-05-19 article on 5827 Brasilia Way",
+     "src": [
+      "SRC-004058"
+     ]
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "SF YIMBY site search for Brasilia: no matches",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer website named in city records or the Spotlight article",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in city permit records or news",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in city records or news",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
     "SRC-001956": "S3",
-    "SRC-001098": "S4"
+    "SRC-004058": "S4",
+    "SRC-001098": "S5"
    },
    "lat": 37.24099270769231,
    "lng": -121.87523821923077,
@@ -272793,7 +273059,7 @@
     "mix_types": [],
     "tax_credit": false,
     "owner": "",
-    "developer": "",
+    "developer": "Sridhar Pillarisetty",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
@@ -272802,7 +273068,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "5827 brasilia way san jose 577-54-014 5827 brasilia way, san jose, ca 5827 brasilia wy, san jose, ca 5839 brasilia hill ct, san jose, ca 5843 brasilia hill ct, san jose, ca 5831 brasilia hill ct, san jose, ca 5835 brasilia hill ct, san jose, ca single-family state category: single-family detached permitted state report shows a building permit issued; it does not say whether construction started san jose 10 units reported in entitlement and permit rows 1 units in the application as reported pd16-014 local tracking number as reported to the state market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit pd16-014 (pd permit, folder year 2016), status approved, issue date 2018-02-07: \"planned development permit to allow the construction of 10 single-family residences and removal of 13 ordinance size trees on 7.94 gross acre site\" entitlement approved application submitted building permit issued"
+   "search": "5827 brasilia way san jose 577-54-014 5827 brasilia way, san jose, ca 5827 brasilia wy, san jose, ca 5839 brasilia hill ct, san jose, ca 5843 brasilia hill ct, san jose, ca 5831 brasilia hill ct, san jose, ca 5835 brasilia hill ct, san jose, ca single-family state category: single-family detached permitted state report shows a building permit issued; it does not say whether construction started san jose 10 units reported in entitlement and permit rows 1 units in the application as reported pd16-014 local tracking number as reported to the state market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 7.94 gross site area in the pd16-014 and pt23-001 permit descriptions from the state housing element annual progress report, through 2025. city of san jose permit pd16-014 (pd permit, folder year 2016), status approved, issue date 2018-02-07: \"planned development permit to allow the construction of 10 single-family residences and removal of 13 ordinance size trees on 7.94 gross acre site\" city permit records: pd16-014 and tentative map pt16-019 (12 parcels: 10 single-family lots, a private road lot and an open space lot on 7.94 gross acres) issued 2018-02-07; extended by ad20-072, ad20-423, ad21-042, ad21-454 and ad24-072. pt23-001 re-approved the same tentative map on 2023-05-17, with a ceqa consistency determination against the brasilia way residential development project mitigated negative declaration (resolution no. 77033). san jose spotlight (2023-05-19): owner-developer sridhar pillarisetty bought the nearly 8-acre hilltop site near coleman avenue and almaden expressway in fall 2021; the planning director renewed the approval that week; pillarisetty said construction could start in about six months. developer sridhar pillarisetty other applicant and owner (city permit ad24-072) brasilia hills partners, llc sridhar pillarisetty other applicant and owner (city permits pd16-014, pt16-019, pt23-001, er22-201) brasilia hills llc other applicant and owner (city permits pre12-010, pdc12-018) jsm enterprises, inc colin gray other applicant (city permit adjustments ad20-423, ad21-042, ad21-454) synergy development darryl wong preliminary review pre12-010 filed (12 single-family homes) planned development rezoning pdc12-018 filed planned development rezoning pdc12-018 approved (up to 10 single-family homes) pd permit pd16-014 and tentative map pt16-019 filed entitlement approved tentative map pt23-001 approved; ceqa consistency determination er22-201 pd16-014 extended to march 17, 2025 (ad24-072) application submitted building permit issued"
   },
   {
    "id": "SCC-000400",
@@ -272928,6 +273194,12 @@
         "SRC-001114"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "PLN24-260-SB330 (formal); PLN24-088-PRE and PLN24-108-PRE (preliminary)",
+       "src": [
+        "SRC-001431"
+       ]
       }
      ]
     },
@@ -272961,6 +273233,12 @@
        "src": [
         "SRC-001431"
        ]
+      },
+      {
+       "value": "Plans list 1 BMR unit (Unit 8), moderate income",
+       "src": [
+        "SRC-004059"
+       ]
       }
      ]
     },
@@ -272971,6 +273249,13 @@
        "src": [
         "SRC-001431"
        ]
+      },
+      {
+       "value": 0.5,
+       "src": [
+        "SRC-004059"
+       ],
+       "note": "Lot area 21,780 sq ft in plans"
       }
      ]
     },
@@ -272989,6 +273274,55 @@
        "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
       }
      ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "studio": 0,
+        "1br": 0,
+        "2br": 0,
+        "3br": 10,
+        "4br+": 0
+       },
+       "src": [
+        "SRC-004059"
+       ],
+       "note": "Plans: each unit 3 bed, 2.5 bath with a 2-car garage"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-004059"
+       ]
+      }
+     ]
+    },
+    "avg_unit_sf": {
+     "claims": [
+      {
+       "value": 1722,
+       "src": [
+        "SRC-004059"
+       ],
+       "note": "Average unit size in plans project data; living area 1,739 sq ft (Type A) and 1,711 sq ft (Type B)"
+      }
+     ]
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 21612,
+       "src": [
+        "SRC-004059"
+       ],
+       "note": "Total floor area in plans, including 4,390 sq ft of garages (living area 17,222 sq ft)"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -272996,6 +273330,20 @@
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
      "src": [
       "SRC-001114"
+     ]
+    },
+    {
+     "text": "Formal SB 330 builder's remedy plans (PLN24-260-SB330): demolish an existing single-family residence and build two 5-unit, three-story privately-owned townhouse buildings (10 units) on a 21,780 sq ft lot zoned R1-6, 2 parking spaces per unit, density 20 du/ac. Owner listed as 6A Holdings LLC; the county SB 330 list names the property owner as SS Reality LLC.",
+     "src": [
+      "SRC-004059",
+      "SRC-001431"
+     ]
+    },
+    {
+     "text": "Affordable units: application plans show 1 moderate-income BMR unit; the county SB 330 list shows 2 units deed-restricted to low-income households.",
+     "src": [
+      "SRC-004059",
+      "SRC-001431"
      ]
     }
    ],
@@ -273018,11 +273366,76 @@
      "src": [
       "SRC-001431"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "6A Holdings LLC",
+     "contact": null,
+     "linkedin": null,
+     "email": "projects@alphainbay.com",
+     "other_role": "Owner (listed in application plans)",
+     "src": [
+      "SRC-004059"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Alignment Architects Inc.",
+     "contact": "Weiran Jia",
+     "linkedin": null,
+     "email": "permit@aeddynamic.com",
+     "src": [
+      "SRC-004059"
+     ]
+    },
+    {
+     "role": "Civil engineer",
+     "company": "JMH Weiss",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004059"
+     ]
+    },
+    {
+     "role": "Landscape architect",
+     "company": "Anyi Landscape Studio",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004059"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Tarrar Utility Consultants",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Utility consultant",
+     "src": [
+      "SRC-004059"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2024-05-15",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application PLN24-088-PRE submitted",
+     "src": [
+      "SRC-001431"
+     ]
+    },
+    {
+     "date": "2024-07-01",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application PLN24-108-PRE submitted",
+     "src": [
+      "SRC-001431"
+     ]
+    },
     {
      "date": "2024-12-23",
      "type": "Application filed",
@@ -273038,6 +273451,14 @@
      "label": "Application submitted",
      "src": [
       "SRC-001114"
+     ]
+    },
+    {
+     "date": "2025-09-11",
+     "type": "Other",
+     "label": "Formal application PLN24-260-SB330 deemed complete",
+     "src": [
+      "SRC-001431"
      ]
     },
     {
@@ -273060,12 +273481,93 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel dataset APN 59901052: situs 3193 McKee Rd, jurisdiction Unincorporated; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "Unincorporated county parcel; San Jose is the adjacent city only",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "County SB 330 / Builder's Remedy list row 13 and linked PLN24-260-SB330 plan set; county Planning Commission not on Legistar (API returned no client)",
+     "src": [
+      "SRC-001431",
+      "SRC-004059"
+     ]
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR Table A row already on record; CEQAnet search returned no matching project",
+     "src": [
+      "SRC-001114"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "San Jose Spotlight site search for McKee Road townhomes: no matches",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "SF YIMBY site search: no matches",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "Owner email domain alphainbay.com redirects to AlphaX RE Capital homepage; no project page found",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "alignmentarchitects.com and aeddynamic.com homepages opened; no page for this project",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in county list or plans",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001114": "S1",
     "SRC-001431": "S2",
-    "SRC-001098": "S3"
+    "SRC-004059": "S3",
+    "SRC-001098": "S4"
    },
    "lat": 37.37622286,
    "lng": -121.83510220000001,
@@ -273094,7 +273596,9 @@
      "m1",
      "m2"
     ],
-    "mix_types": [],
+    "mix_types": [
+     "3br"
+    ],
     "tax_credit": false,
     "owner": "SS Reality LLC",
     "developer": "",
@@ -273106,7 +273610,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "3193 mckee road other santa clara county unincorporated 599-01-052 3193 mckee rd, san jose, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported approved approved by planning commission april 23, 2026 unincorporated other santa clara county community not stated in the state report 10 units in the application as reported pln24-260-sb330 local tracking number as reported to the state [\"builder's remedy\"] county list is titled sb 330 / builder's remedy applications and does not separate the two per project mixed-income 2 units deed-restricted to low-income households 0.49 [{\"count\": 1, \"ami\": 120}] state report 2025, application stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. other applicant de nguyen recorded owner ss reality llc formal sb 330 application submitted application submitted approved by planning commission"
+   "search": "3193 mckee road other santa clara county unincorporated 599-01-052 3193 mckee rd, san jose, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported approved approved by planning commission april 23, 2026 unincorporated other santa clara county community not stated in the state report 10 units in the application as reported pln24-260-sb330 local tracking number as reported to the state pln24-260-sb330 (formal); pln24-088-pre and pln24-108-pre (preliminary) [\"builder's remedy\"] county list is titled sb 330 / builder's remedy applications and does not separate the two per project mixed-income 2 units deed-restricted to low-income households plans list 1 bmr unit (unit 8), moderate income 0.49 0.5 lot area 21,780 sq ft in plans [{\"count\": 1, \"ami\": 120}] state report 2025, application stage: deed-restricted units by state income category (ami is the category's upper limit) {\"studio\": 0, \"1br\": 0, \"2br\": 0, \"3br\": 10, \"4br+\": 0} plans: each unit 3 bed, 2.5 bath with a 2-car garage 3 1722 average unit size in plans project data; living area 1,739 sq ft (type a) and 1,711 sq ft (type b) 21612 total floor area in plans, including 4,390 sq ft of garages (living area 17,222 sq ft) from the state housing element annual progress report, through 2025. formal sb 330 builder's remedy plans (pln24-260-sb330): demolish an existing single-family residence and build two 5-unit, three-story privately-owned townhouse buildings (10 units) on a 21,780 sq ft lot zoned r1-6, 2 parking spaces per unit, density 20 du/ac. owner listed as 6a holdings llc; the county sb 330 list names the property owner as ss reality llc. affordable units: application plans show 1 moderate-income bmr unit; the county sb 330 list shows 2 units deed-restricted to low-income households. other applicant de nguyen recorded owner ss reality llc other owner (listed in application plans) 6a holdings llc architect alignment architects inc. weiran jia civil engineer jmh weiss landscape architect anyi landscape studio other utility consultant tarrar utility consultants sb 330 preliminary application pln24-088-pre submitted sb 330 preliminary application pln24-108-pre submitted formal sb 330 application submitted application submitted formal application pln24-260-sb330 deemed complete approved by planning commission"
   },
   {
    "id": "SCC-000401",
@@ -273209,8 +273713,16 @@
         "SRC-001107"
        ],
        "note": "State categories: SFA, SFD"
+      },
+      {
+       "value": "Single-family",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City permit H23-044 (approved 2025-12-10): five two-story single-family residences"
       }
-     ]
+     ],
+     "best": 1
     },
     "status": {
      "claims": [
@@ -273283,6 +273795,27 @@
        "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.49,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Gross site area in tentative map T23-031"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 2,
+       "src": [
+        "SRC-001956"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -273298,12 +273831,37 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "City permit records: H23-044 Site Development Permit for five two-story single-family residences, replacing an existing house, garage and ADU and removing 17 trees, approved 2025-12-10; T23-031 tentative map (one lot into five residential lots and a private street, 0.49 gross acres) approved; ER23-264 environmental clearance 2025-12-10. The earlier SB 330 preliminary application PRE23-096 proposed 10 units in two 3-story buildings (15,714 sq ft).",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "Urban Pacific Homes and Development",
+     "contact": "Thomas Wilson",
+     "linkedin": null,
+     "other_role": "Applicant and owner (city permits PRE23-096, H23-044, T23-031, ER23-264)",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2023-06-20",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application PRE23-096 filed (10 units in two 3-story buildings)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
     {
      "date": "2023-12-08",
      "type": "Application filed",
@@ -273331,8 +273889,88 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel dataset APN 43917007: situs 879 Franquette Av, San Jose; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Permits Planning GIS layer, APN 43917007: PRE23-096, H23-044, T23-031, ER23-264 (sanjoseca.gov itself blocked)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City of San Jose project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR rows already on record; CEQAnet search returned no matching project",
+     "src": [
+      "SRC-001099",
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "San Jose Spotlight site search for Franquette: no matches",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "SF YIMBY site search for Franquette: no matches",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "urbanpacific.com homepage (Urban Pacific, workforce housing) opened; no link to Urban Pacific Homes and Development or this project shown",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in city permit records",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in public records found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
     "SRC-001107": "S2",
@@ -273346,7 +273984,7 @@
     "pipeline"
    ],
    "summary": {
-    "product_type": "Mixed product",
+    "product_type": "Single-family",
     "status": "Approved",
     "jurisdiction": "San Jose",
     "community": "",
@@ -273375,67 +274013,47 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "879 franquette ave san jose 439-17-007 879 franquette ave, san jose, ca 879 framquette ave, san jose, ca mixed product state categories: sfa, sfd approved state report shows entitlement approval san jose 5 units reported in entitlement and permit rows 10 units in the application as reported h23-044 local tracking number as reported to the state pre23-096 city folder 104624, prelim - focused (policy review, no plans) (permit type: all other permits); city permit status: complete. matched by apn. market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit pre23-096 (prelim - focused (policy review, no plans), folder year 2023), status complete: \"sb330 preliminary application to construct (2) two buildings, each 3-stories tall with five residential units at 7,857 sf. the total project consists of 10 units totaling 15,714 sf of residential multiple dwelling (r-m multiple residence)\" application submitted entitlement approved"
+   "search": "879 franquette ave san jose 439-17-007 879 franquette ave, san jose, ca 879 framquette ave, san jose, ca mixed product state categories: sfa, sfd single-family city permit h23-044 (approved 2025-12-10): five two-story single-family residences approved state report shows entitlement approval san jose 5 units reported in entitlement and permit rows 10 units in the application as reported h23-044 local tracking number as reported to the state pre23-096 city folder 104624, prelim - focused (policy review, no plans) (permit type: all other permits); city permit status: complete. matched by apn. market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 0.49 gross site area in tentative map t23-031 2 from the state housing element annual progress report, through 2025. city of san jose permit pre23-096 (prelim - focused (policy review, no plans), folder year 2023), status complete: \"sb330 preliminary application to construct (2) two buildings, each 3-stories tall with five residential units at 7,857 sf. the total project consists of 10 units totaling 15,714 sf of residential multiple dwelling (r-m multiple residence)\" city permit records: h23-044 site development permit for five two-story single-family residences, replacing an existing house, garage and adu and removing 17 trees, approved 2025-12-10; t23-031 tentative map (one lot into five residential lots and a private street, 0.49 gross acres) approved; er23-264 environmental clearance 2025-12-10. the earlier sb 330 preliminary application pre23-096 proposed 10 units in two 3-story buildings (15,714 sq ft). other applicant and owner (city permits pre23-096, h23-044, t23-031, er23-264) urban pacific homes and development thomas wilson sb 330 preliminary application pre23-096 filed (10 units in two 3-story buildings) application submitted entitlement approved"
   },
   {
    "id": "SCC-000402",
-   "name": "99 Pullman Wy",
+   "name": "7246 Sharon Dr (live-work, SP22-016)",
    "parcels": [
     {
-     "apn": "456-41-005",
+     "apn": "372-21-003",
      "from": null,
      "to": null,
      "src": [
-      "SRC-001098"
+      "SRC-001956"
      ],
      "outline": [
       [
-       -121.8504008,
-       37.2910789
+       -122.0309749,
+       37.2966831
       ],
       [
-       -121.8504975,
-       37.2909777
+       -122.0309737,
+       37.2964661
       ],
       [
-       -121.8500876,
-       37.2907277
+       -122.0314154,
+       37.2964612
       ],
       [
-       -121.8499909,
-       37.2908289
+       -122.0314129,
+       37.2970041
       ],
       [
-       -121.8498543,
-       37.2907456
+       -122.0309766,
+       37.2970036
       ],
       [
-       -121.8495811,
-       37.2905789
+       -122.0309763,
+       37.2969487
       ],
       [
-       -121.8498523,
-       37.2902951
-      ],
-      [
-       -121.8501246,
-       37.2904612
-      ],
-      [
-       -121.850672,
-       37.2907951
-      ],
-      [
-       -121.8508437,
-       37.2908999
-      ],
-      [
-       -121.8505725,
-       37.2911837
-      ],
-      [
-       -121.8504008,
-       37.2910789
+       -122.0309749,
+       37.2966831
       ]
      ]
     }
@@ -273454,6 +274072,13 @@
         "SRC-001099"
        ]
       }
+     ]
+    },
+    {
+     "text": "7246 Sharon Dr, San Jose, CA",
+     "role": "other",
+     "src": [
+      "SRC-001956"
      ]
     }
    ],
@@ -273478,8 +274103,16 @@
         "SRC-001099"
        ],
        "note": "State report shows an application with no approval reported"
+      },
+      {
+       "value": "Approved",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City permit SP22-016 (filed 2022-05-04, same file number and date as the state report) approved 2026-07-15; the city record places it at 7246 Sharon Dr, APN 372-21-003"
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -273523,6 +274156,39 @@
        "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 23248,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "SP22-016: approximately 23,248 sq ft of living space (7246 Sharon Dr)"
+      }
+     ]
+    },
+    "commercial_sf": {
+     "claims": [
+      {
+       "value": 2712,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "SP22-016: approximately 2,712 sq ft of commercial space in live-work units"
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.56,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Gross site area in tentative map T22-017 (7246 Sharon Dr)"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -273531,18 +274197,83 @@
      "src": [
       "SRC-001099"
      ]
+    },
+    {
+     "text": "The state report lists planning file SP22-016 at 99 Pullman Wy. In the City of San Jose permit layer, SP22-016 (filed 2022-05-04, approved 2026-07-15) is at 7246 Sharon Dr, APN 372-21-003: a Special Use Permit for ten detached live-work units (about 23,248 sq ft living, 2,712 sq ft commercial) replacing an approximately 9,960 sq ft office building; tentative map T22-017 subdivides that 0.56-gross-acre lot into 10 residential lots and a common lot.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "City permit records for 99 Pullman Wy (APN 456-41-005), owner and applicant Coastal Properties Pullman Way LLC: H22-010 Site Development Permit to allow continued use of three existing warehouse structures (about 16,000 sq ft) built without permits, filed 2022-03-18, under review; ER22-053 filed 2022-03-04. No residential permit is shown for that parcel.",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "Ben Wang",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant (city permits SP22-016, T22-017)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Lexicon Developments",
+     "contact": "Kirk Tang",
+     "linkedin": null,
+     "other_role": "Applicant (city permits PRE20-181, GP21-004, C21-009 at 7246 Sharon Dr)",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2020-12-22",
+     "type": "Application filed",
+     "label": "Preliminary review PRE20-181 filed (10 live/work units, 7246 Sharon Dr)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2022-02-08",
+     "type": "Approved",
+     "label": "General Plan amendment GP21-004 and rezoning C21-009 to Mixed Use Neighborhood approved (7246 Sharon Dr)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
     {
      "date": "2022-05-04",
      "type": "Application filed",
      "label": "Application submitted",
      "src": [
       "SRC-001099"
+     ]
+    },
+    {
+     "date": "2022-05-11",
+     "type": "Application filed",
+     "label": "Tentative map T22-017 filed (10 residential lots and a common lot)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2026-07-15",
+     "type": "Approved",
+     "label": "Special Use Permit SP22-016 approved",
+     "src": [
+      "SRC-001956"
      ]
     }
    ],
@@ -273551,21 +274282,110 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Parcel corrected: 456-41-005 -> 372-21-003: the city permit layer places file SP22-016 on 7246 Sharon Dr"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "SCC parcel dataset APN 45641005: no situs address; APN 37221003: situs 7246 Sharon Dr, San Jose; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "San Jose Permits Planning GIS layer: APN 45641005 (H22-010, ER22-053) and file SP22-016 / APN 37221003 (SP22-016, T22-017, ER22-105, PRE20-181, GP21-004, C21-009); sanjoseca.gov itself blocked",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City of San Jose project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR Table A row already on record; CEQAnet search returned no matching project",
+     "src": [
+      "SRC-001099"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "San Jose Spotlight site searches for Pullman Way and Sharon Drive: no matches",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "SF YIMBY site search for Sharon Drive: no matches",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No developer website named in city records",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No architect named in city records",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in public records found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
-    "SRC-001098": "S2"
+    "SRC-001956": "S2"
    },
-   "lat": 37.290779336363634,
-   "lng": -121.85022520909091,
+   "lat": 37.296761133333334,
+   "lng": -122.03112163333333,
    "calcs": {},
    "kinds": [
     "pipeline"
    ],
    "summary": {
     "product_type": "Single-family",
-    "status": "Proposed",
+    "status": "Approved",
     "jurisdiction": "San Jose",
     "community": "",
     "county": "Santa Clara County",
@@ -273589,11 +274409,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2022-05-04",
+    "latest_event": "2026-07-15",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "99 pullman wy san jose 456-41-005 99 pullman way, san jose, ca 99 pullman wy, san jose, ca single-family state category: single-family detached proposed state report shows an application with no approval reported san jose 10 units in the application as reported sp22-016 local tracking number as reported to the state market-rate state report (through 2022): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. application submitted"
+   "search": "7246 sharon dr (live-work, sp22-016) san jose 372-21-003 99 pullman way, san jose, ca 99 pullman wy, san jose, ca 7246 sharon dr, san jose, ca single-family state category: single-family detached proposed state report shows an application with no approval reported approved city permit sp22-016 (filed 2022-05-04, same file number and date as the state report) approved 2026-07-15; the city record places it at 7246 sharon dr, apn 372-21-003 san jose 10 units in the application as reported sp22-016 local tracking number as reported to the state market-rate state report (through 2022): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 23248 sp22-016: approximately 23,248 sq ft of living space (7246 sharon dr) 2712 sp22-016: approximately 2,712 sq ft of commercial space in live-work units 0.56 gross site area in tentative map t22-017 (7246 sharon dr) from the state housing element annual progress report, through 2025. the state report lists planning file sp22-016 at 99 pullman wy. in the city of san jose permit layer, sp22-016 (filed 2022-05-04, approved 2026-07-15) is at 7246 sharon dr, apn 372-21-003: a special use permit for ten detached live-work units (about 23,248 sq ft living, 2,712 sq ft commercial) replacing an approximately 9,960 sq ft office building; tentative map t22-017 subdivides that 0.56-gross-acre lot into 10 residential lots and a common lot. city permit records for 99 pullman wy (apn 456-41-005), owner and applicant coastal properties pullman way llc: h22-010 site development permit to allow continued use of three existing warehouse structures (about 16,000 sq ft) built without permits, filed 2022-03-18, under review; er22-053 filed 2022-03-04. no residential permit is shown for that parcel. other applicant (city permits sp22-016, t22-017) ben wang other applicant (city permits pre20-181, gp21-004, c21-009 at 7246 sharon dr) lexicon developments kirk tang preliminary review pre20-181 filed (10 live/work units, 7246 sharon dr) general plan amendment gp21-004 and rezoning c21-009 to mixed use neighborhood approved (7246 sharon dr) application submitted tentative map t22-017 filed (10 residential lots and a common lot) special use permit sp22-016 approved"
   },
   {
    "id": "SCC-000403",
@@ -273797,6 +274617,73 @@
        "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 1.03,
+       "src": [
+        "SRC-004060"
+       ],
+       "note": "Planning Commission staff report"
+      },
+      {
+       "value": 1.15,
+       "src": [
+        "SRC-004061"
+       ],
+       "note": "Site acreage on plans title sheet"
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "studio": 0,
+        "1br": 0,
+        "2br": 0,
+        "3br": 10,
+        "4br+": 0
+       },
+       "src": [
+        "SRC-004060"
+       ],
+       "note": "Staff report: each duet unit three bedrooms, two and a half baths"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 2,
+       "src": [
+        "SRC-004060",
+        "SRC-004061"
+       ]
+      }
+     ]
+    },
+    "avg_unit_sf": {
+     "claims": [
+      {
+       "value": 2500,
+       "src": [
+        "SRC-004060"
+       ],
+       "note": "Staff report: each unit approximately 2,500 sq ft; plans show 2,504 to 2,544 sq ft including a 433 sq ft garage"
+      }
+     ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "Inclusionary requirement met by paying 100% housing in-lieu fees",
+       "src": [
+        "SRC-004060"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -273805,9 +274692,64 @@
      "src": [
       "SRC-001131"
      ]
+    },
+    {
+     "text": "Planning Commission staff report (2024-09-10): demolish a 1953 house, ADU and outbuildings on a 1.03-acre parcel and build 10 townhome-style single-family attached duet units, each about 2,500 sq ft, two stories, three bedrooms, with a two-car garage; density 9.71 units per acre; General Plan and zoning Residential Attached Low (RAL 3,500); 27 trees removed and 47 planted; CEQA Class 32 infill exemption; project also called Borello Orchards.",
+     "src": [
+      "SRC-004060"
+     ]
+    },
+    {
+     "text": "Planning Commission minutes 2024-09-10: resolution approving the tentative subdivision map and design permit passed 4-0 (Downey, Habib, Mueller, Tanda); Commissioner Wilson recused; David Robertson spoke during the hearing.",
+     "src": [
+      "SRC-004062"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "Ricard & Barbara Borello",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Owner (listed in application plans)",
+     "src": [
+      "SRC-004061"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "DRP Builders, Inc.",
+     "contact": "David Robertson",
+     "linkedin": null,
+     "email": "david@drpbuilders.com",
+     "other_role": "Builder (listed in application plans)",
+     "src": [
+      "SRC-004061"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Weston Miles Architects, Inc.",
+     "contact": "Charles Weston",
+     "linkedin": null,
+     "email": "charles@wmarchitects.com",
+     "website": "https://www.wmarchitects.com",
+     "website_basis": "opened",
+     "src": [
+      "SRC-004061"
+     ]
+    },
+    {
+     "role": "Civil engineer",
+     "company": "MH Engineering",
+     "contact": "Harry Singla",
+     "linkedin": null,
+     "src": [
+      "SRC-004061"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
@@ -273839,12 +274781,99 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-20",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "SCC parcel dataset APN 76712060: situs 270 W Dunne Av, Morgan Hill; no owner field",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-20",
+     "result": "found",
+     "note": "Morgan Hill project page and plan set; CivicClerk PC 2024-09-10 agenda packet staff report and minutes; Resolution 24-09 PDF is a scanned image",
+     "src": [
+      "SRC-001451",
+      "SRC-004061",
+      "SRC-004060",
+      "SRC-004062"
+     ]
+    },
+    "county": {
+     "date": "2026-11-20",
+     "result": "not applicable",
+     "note": "City of Morgan Hill project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "APR Table A row already on record; CEQAnet search for Dunne returned no matching project (city filed a Class 32 notice of exemption)",
+     "src": [
+      "SRC-001131"
+     ]
+    },
+    "news": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Morgan Hill Times site search returned 403",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "SF YIMBY site search for Dunne: no matches",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "drpbuilders.com homepage returned no content",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-20",
+     "result": "nothing new",
+     "note": "Weston Miles Architects homepage opened; no project page found",
+     "src": [
+      "SRC-004061"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-20",
+     "result": "nothing found",
+     "note": "No lender or funder named in city documents",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-20",
+     "result": "blocked",
+     "note": "Web search tool unavailable (rate limit) during this pass; not run",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001131": "S1",
     "SRC-001451": "S2",
-    "SRC-001098": "S3"
+    "SRC-004060": "S3",
+    "SRC-004061": "S4",
+    "SRC-004062": "S5",
+    "SRC-001098": "S6"
    },
    "lat": 37.12316966666666,
    "lng": -121.65589190952382,
@@ -273870,7 +274899,9 @@
     "aff_label": "Market (state report)",
     "aff_share": 0.0,
     "aff_levels": [],
-    "mix_types": [],
+    "mix_types": [
+     "3br"
+    ],
     "tax_credit": false,
     "owner": "",
     "developer": "",
@@ -273882,7 +274913,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "w. dunne-robertson morgan hill 767-12-060 270 w dunne ave, morgan hill, ca 270 w dunne av, morgan hill, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported approved planning entitlements approved morgan hill 10 units in the application as reported sr2022-0023 local tracking number as reported to the state sr2022-0023, sd2022-0003, ea2022-0013 market-rate state report (through 2022): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. application submitted planning commission meeting (resolution 24-09)"
+   "search": "w. dunne-robertson morgan hill 767-12-060 270 w dunne ave, morgan hill, ca 270 w dunne av, morgan hill, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported approved planning entitlements approved morgan hill 10 units in the application as reported sr2022-0023 local tracking number as reported to the state sr2022-0023, sd2022-0003, ea2022-0013 market-rate state report (through 2022): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 1.03 planning commission staff report 1.15 site acreage on plans title sheet {\"studio\": 0, \"1br\": 0, \"2br\": 0, \"3br\": 10, \"4br+\": 0} staff report: each duet unit three bedrooms, two and a half baths 2 2500 staff report: each unit approximately 2,500 sq ft; plans show 2,504 to 2,544 sq ft including a 433 sq ft garage inclusionary requirement met by paying 100% housing in-lieu fees from the state housing element annual progress report, through 2025. planning commission staff report (2024-09-10): demolish a 1953 house, adu and outbuildings on a 1.03-acre parcel and build 10 townhome-style single-family attached duet units, each about 2,500 sq ft, two stories, three bedrooms, with a two-car garage; density 9.71 units per acre; general plan and zoning residential attached low (ral 3,500); 27 trees removed and 47 planted; ceqa class 32 infill exemption; project also called borello orchards. planning commission minutes 2024-09-10: resolution approving the tentative subdivision map and design permit passed 4-0 (downey, habib, mueller, tanda); commissioner wilson recused; david robertson spoke during the hearing. other owner (listed in application plans) ricard & barbara borello other builder (listed in application plans) drp builders, inc. david robertson architect weston miles architects, inc. charles weston civil engineer mh engineering harry singla application submitted planning commission meeting (resolution 24-09)"
   },
   {
    "id": "SCC-000404",

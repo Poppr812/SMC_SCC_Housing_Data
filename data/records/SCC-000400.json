@@ -122,6 +122,12 @@
             "SRC-001114"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN24-260-SB330 (formal); PLN24-088-PRE and PLN24-108-PRE (preliminary)",
+          "src": [
+            "SRC-001431"
+          ]
         }
       ]
     },
@@ -155,6 +161,12 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "Plans list 1 BMR unit (Unit 8), moderate income",
+          "src": [
+            "SRC-004059"
+          ]
         }
       ]
     },
@@ -165,6 +177,13 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 0.5,
+          "src": [
+            "SRC-004059"
+          ],
+          "note": "Lot area 21,780 sq ft in plans"
         }
       ]
     },
@@ -183,6 +202,55 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004059"
+          ],
+          "note": "Plans: each unit 3 bed, 2.5 bath with a 2-car garage"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004059"
+          ]
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 1722,
+          "src": [
+            "SRC-004059"
+          ],
+          "note": "Average unit size in plans project data; living area 1,739 sq ft (Type A) and 1,711 sq ft (Type B)"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 21612,
+          "src": [
+            "SRC-004059"
+          ],
+          "note": "Total floor area in plans, including 4,390 sq ft of garages (living area 17,222 sq ft)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -190,6 +258,20 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001114"
+      ]
+    },
+    {
+      "text": "Formal SB 330 builder's remedy plans (PLN24-260-SB330): demolish an existing single-family residence and build two 5-unit, three-story privately-owned townhouse buildings (10 units) on a 21,780 sq ft lot zoned R1-6, 2 parking spaces per unit, density 20 du/ac. Owner listed as 6A Holdings LLC; the county SB 330 list names the property owner as SS Reality LLC.",
+      "src": [
+        "SRC-004059",
+        "SRC-001431"
+      ]
+    },
+    {
+      "text": "Affordable units: application plans show 1 moderate-income BMR unit; the county SB 330 list shows 2 units deed-restricted to low-income households.",
+      "src": [
+        "SRC-004059",
+        "SRC-001431"
       ]
     }
   ],
@@ -212,11 +294,76 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "6A Holdings LLC",
+      "contact": null,
+      "linkedin": null,
+      "email": "projects@alphainbay.com",
+      "other_role": "Owner (listed in application plans)",
+      "src": [
+        "SRC-004059"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Alignment Architects Inc.",
+      "contact": "Weiran Jia",
+      "linkedin": null,
+      "email": "permit@aeddynamic.com",
+      "src": [
+        "SRC-004059"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "JMH Weiss",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004059"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Anyi Landscape Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004059"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Tarrar Utility Consultants",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Utility consultant",
+      "src": [
+        "SRC-004059"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-05-15",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PLN24-088-PRE submitted",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "date": "2024-07-01",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PLN24-108-PRE submitted",
+      "src": [
+        "SRC-001431"
+      ]
+    },
     {
       "date": "2024-12-23",
       "type": "Application filed",
@@ -232,6 +379,14 @@
       "label": "Application submitted",
       "src": [
         "SRC-001114"
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "type": "Other",
+      "label": "Formal application PLN24-260-SB330 deemed complete",
+      "src": [
+        "SRC-001431"
       ]
     },
     {
@@ -254,6 +409,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 59901052: situs 3193 McKee Rd, jurisdiction Unincorporated; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated county parcel; San Jose is the adjacent city only",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list row 13 and linked PLN24-260-SB330 plan set; county Planning Commission not on Legistar (API returned no client)",
+      "src": [
+        "SRC-001431",
+        "SRC-004059"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; CEQAnet search returned no matching project",
+      "src": [
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "San Jose Spotlight site search for McKee Road townhomes: no matches",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY site search: no matches",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Owner email domain alphainbay.com redirects to AlphaX RE Capital homepage; no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "alignmentarchitects.com and aeddynamic.com homepages opened; no page for this project",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in county list or plans",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    }
+  }
 }

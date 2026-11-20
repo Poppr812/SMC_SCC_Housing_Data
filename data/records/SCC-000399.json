@@ -249,6 +249,17 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 7.94,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross site area in the PD16-014 and PT23-001 permit descriptions"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -264,18 +275,130 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit records: PD16-014 and tentative map PT16-019 (12 parcels: 10 single-family lots, a private road lot and an open space lot on 7.94 gross acres) issued 2018-02-07; extended by AD20-072, AD20-423, AD21-042, AD21-454 and AD24-072. PT23-001 re-approved the same tentative map on 2023-05-17, with a CEQA consistency determination against the Brasilia Way Residential Development Project Mitigated Negative Declaration (Resolution No. 77033).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (2023-05-19): owner-developer Sridhar Pillarisetty bought the nearly 8-acre hilltop site near Coleman Avenue and Almaden Expressway in fall 2021; the planning director renewed the approval that week; Pillarisetty said construction could start in about six months.",
+      "src": [
+        "SRC-004058"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Sridhar Pillarisetty",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004058"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Brasilia Hills Partners, LLC",
+      "contact": "Sridhar Pillarisetty",
+      "linkedin": null,
+      "other_role": "Applicant and owner (city permit AD24-072)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Brasilia Hills LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner (city permits PD16-014, PT16-019, PT23-001, ER22-201)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "JSM Enterprises, Inc",
+      "contact": "Colin Gray",
+      "linkedin": null,
+      "other_role": "Applicant and owner (city permits PRE12-010, PDC12-018)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Synergy Development",
+      "contact": "Darryl Wong",
+      "linkedin": null,
+      "other_role": "Applicant (city permit adjustments AD20-423, AD21-042, AD21-454)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2012-02-10",
+      "type": "Application filed",
+      "label": "Preliminary review PRE12-010 filed (12 single-family homes)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2012-07-10",
+      "type": "Application filed",
+      "label": "Planned Development rezoning PDC12-018 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2014-06-10",
+      "type": "Approved",
+      "label": "Planned Development rezoning PDC12-018 approved (up to 10 single-family homes)",
+      "src": [
+        "SRC-001956",
+        "SRC-004058"
+      ]
+    },
+    {
+      "date": "2016-04-08",
+      "type": "Application filed",
+      "label": "PD permit PD16-014 and tentative map PT16-019 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2018-02-07",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2023-05-17",
+      "type": "Approved",
+      "label": "Tentative map PT23-001 approved; CEQA consistency determination ER22-201",
+      "src": [
+        "SRC-001956",
+        "SRC-004058"
+      ]
+    },
+    {
+      "date": "2024-02-08",
+      "type": "Other",
+      "label": "PD16-014 extended to March 17, 2025 (AD24-072)",
+      "src": [
+        "SRC-001956"
       ]
     },
     {
@@ -305,6 +428,88 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 57754014: situs 5827 Brasilia Wy, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer, APN 57754014: PRE12-010, PDC12-018, PD16-014, PT16-019, PT23-001, ER22-201, AD20/21/24 extensions (sanjoseca.gov itself blocked)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR rows already on record; CEQAnet search for Brasilia returned no matching project",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2023-05-19 article on 5827 Brasilia Way",
+      "src": [
+        "SRC-004058"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY site search for Brasilia: no matches",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer website named in city records or the Spotlight article",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in city permit records or news",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city records or news",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    }
+  }
 }

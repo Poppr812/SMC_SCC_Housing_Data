@@ -200,6 +200,73 @@
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.03,
+          "src": [
+            "SRC-004060"
+          ],
+          "note": "Planning Commission staff report"
+        },
+        {
+          "value": 1.15,
+          "src": [
+            "SRC-004061"
+          ],
+          "note": "Site acreage on plans title sheet"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 10,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004060"
+          ],
+          "note": "Staff report: each duet unit three bedrooms, two and a half baths"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004060",
+            "SRC-004061"
+          ]
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2500,
+          "src": [
+            "SRC-004060"
+          ],
+          "note": "Staff report: each unit approximately 2,500 sq ft; plans show 2,504 to 2,544 sq ft including a 433 sq ft garage"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Inclusionary requirement met by paying 100% housing in-lieu fees",
+          "src": [
+            "SRC-004060"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -208,9 +275,64 @@
       "src": [
         "SRC-001131"
       ]
+    },
+    {
+      "text": "Planning Commission staff report (2024-09-10): demolish a 1953 house, ADU and outbuildings on a 1.03-acre parcel and build 10 townhome-style single-family attached duet units, each about 2,500 sq ft, two stories, three bedrooms, with a two-car garage; density 9.71 units per acre; General Plan and zoning Residential Attached Low (RAL 3,500); 27 trees removed and 47 planted; CEQA Class 32 infill exemption; project also called Borello Orchards.",
+      "src": [
+        "SRC-004060"
+      ]
+    },
+    {
+      "text": "Planning Commission minutes 2024-09-10: resolution approving the tentative subdivision map and design permit passed 4-0 (Downey, Habib, Mueller, Tanda); Commissioner Wilson recused; David Robertson spoke during the hearing.",
+      "src": [
+        "SRC-004062"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Ricard & Barbara Borello",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (listed in application plans)",
+      "src": [
+        "SRC-004061"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "DRP Builders, Inc.",
+      "contact": "David Robertson",
+      "linkedin": null,
+      "email": "david@drpbuilders.com",
+      "other_role": "Builder (listed in application plans)",
+      "src": [
+        "SRC-004061"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Weston Miles Architects, Inc.",
+      "contact": "Charles Weston",
+      "linkedin": null,
+      "email": "charles@wmarchitects.com",
+      "website": "https://www.wmarchitects.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004061"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MH Engineering",
+      "contact": "Harry Singla",
+      "linkedin": null,
+      "src": [
+        "SRC-004061"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -242,6 +364,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 76712060: situs 270 W Dunne Av, Morgan Hill; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Morgan Hill project page and plan set; CivicClerk PC 2024-09-10 agenda packet staff report and minutes; Resolution 24-09 PDF is a scanned image",
+      "src": [
+        "SRC-001451",
+        "SRC-004061",
+        "SRC-004060",
+        "SRC-004062"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Morgan Hill project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; CEQAnet search for Dunne returned no matching project (city filed a Class 32 notice of exemption)",
+      "src": [
+        "SRC-001131"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Morgan Hill Times site search returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY site search for Dunne: no matches",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "drpbuilders.com homepage returned no content",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Weston Miles Architects homepage opened; no project page found",
+      "src": [
+        "SRC-004061"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city documents",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Web search tool unavailable (rate limit) during this pass; not run",
+      "src": []
+    }
+  }
 }
