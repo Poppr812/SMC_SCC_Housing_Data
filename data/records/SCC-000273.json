@@ -1,6 +1,6 @@
 {
   "id": "SCC-000273",
-  "name": "Post Office (101 S Santa Cruz Ave)",
+  "name": "Park Place (101 S Santa Cruz Ave)",
   "parcels": [
     {
       "apn": "529-01-022",
@@ -92,6 +92,14 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "text": "101 S Santa Cruz Ave, Los Gatos, CA 95030, Los Gatos, CA",
+      "role": "other",
+      "src": [
+        "SRC-001596",
+        "SRC-003412"
+      ]
     }
   ],
   "images": [],
@@ -165,6 +173,16 @@
           "src": [
             "SRC-001554"
           ]
+        },
+        {
+          "value": [
+            "Builder's remedy",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003412"
+          ],
+          "note": "Applicant invokes the Builder's Remedy (AB 1893) and the state Density Bonus Law for waivers"
         }
       ]
     },
@@ -181,8 +199,22 @@
             "SRC-001120"
           ],
           "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 8,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003412",
+            "SRC-003411"
+          ],
+          "note": "Applicant elected AB 1893 conversion on July 23, 2025: 8 of 58 units (13%) deed-restricted for lower-income households"
         }
-      ]
+      ],
+      "best": 1
     },
     "affordability_type": {
       "claims": [
@@ -192,6 +224,67 @@
             "SRC-001120"
           ],
           "note": "State report 2023, application stage: 12 deed-restricted units"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-003411",
+            "SRC-001554"
+          ],
+          "note": "Seven residential levels over ground-floor commercial and parking"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.82,
+          "src": [
+            "SRC-003412"
+          ],
+          "note": "Letter of justification gives the site as 35,914 sq ft"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 4148,
+          "src": [
+            "SRC-003411"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 131,
+          "src": [
+            "SRC-003411"
+          ],
+          "note": "131 residential stalls provided in the building; guest and commercial parking uses 23 stalls assigned to the property in the parking district"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "8 of 58 units (13%) deed-restricted for lower-income households (Health and Safety Code 50079.5); BMR units to be owned by the developer and rented to qualifying renters",
+          "src": [
+            "SRC-003412",
+            "SRC-003411"
+          ]
+        },
+        {
+          "value": "12 below-market units (21%)",
+          "src": [
+            "SRC-001554"
+          ]
         }
       ]
     }
@@ -208,12 +301,109 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "Letter of justification: project named Park Place, at the southeast corner of Montebello Way and S. Santa Cruz; demolition of the 12,444 sq ft post office building (occupied by USPS since 1967) on a 35,914 sq ft C-2 site; seven-level luxury condominium project over ground-floor commercial space and parking, eight stories total; 233,373 sq ft total building area including garage; 105 ft to top of elevator tower; 61 units per acre; commercial space is also a condominium unit. Redesign removed basement parking, raising the building from seven to eight stories.",
+      "src": [
+        "SRC-003411"
+      ]
+    },
+    {
+      "text": "Letter of justification unit layout: five stacked residential levels, each with one studio, one 1-bedroom, four 2-bedroom and five 3-bedroom units; three penthouse units on the roof level with a community room, fitness area and roof deck.",
+      "src": [
+        "SRC-003411"
+      ]
+    },
+    {
+      "text": "Town pending projects page: Architecture and Site S-23-040, Conditional Use Permit U-23-016, Subdivision M-23-008; mixed-use development with 58 multi-family units, ground-floor commercial and a condominium tentative map under SB 330 on C-2 property, APN 529-01-022; CEQA review pending; planner Erin Walters; status Pending.",
+      "src": [
+        "SRC-001596"
+      ]
+    },
+    {
+      "text": "Town SB 330 list: Post Office Proposal 1, 58 units, 12 (21%) below market, 8 stories, vested to 6/7/2023, completeness Complete, status Pending, invokes Builder's Remedy. Proposal 2: 20 units, 4 (20%) below market, 4 stories, Expired.",
+      "src": [
+        "SRC-001554"
+      ]
+    },
+    {
+      "text": "Los Gatan (Aug. 10, 2023): CSM Investments, LLC revealed plans on June 2, 2023 for a five-story, 72-condo mixed-use building with 20% lower-income units under the Builder's Remedy.",
+      "src": [
+        "SRC-003413"
+      ]
+    },
+    {
+      "text": "State report 2023, application stage: density bonus requested; 12 low-income and 46 above-moderate units.",
+      "src": [
+        "SRC-001120"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "CSM Investments, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003412",
+        "SRC-003413"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Mike LaBarbera",
+      "contact": "Mike LaBarbera",
+      "linkedin": null,
+      "other_role": "Property owner (per applicant's letter of justification)",
+      "src": [
+        "SRC-003411"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kurt B. Anderson, AIA",
+      "contact": "Kurt B. Anderson",
+      "linkedin": null,
+      "other_role": "Author of letter of justification for the owner (AIA, Principal)",
+      "src": [
+        "SRC-003411"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Miller Starr Regalia",
+      "contact": "Travis Brooks",
+      "linkedin": null,
+      "email": "travis.brooks@msrlegal.com",
+      "other_role": "Applicant's attorney",
+      "src": [
+        "SRC-003412"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-06-07",
+      "type": "Other",
+      "label": "SB 330 preliminary application invoking Builder's Remedy; project vested to this date",
+      "src": [
+        "SRC-001554",
+        "SRC-003411"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-11-30",
+      "type": "Application filed",
+      "label": "Formal application submitted (per letter of justification)",
+      "src": [
+        "SRC-003411"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-12-04",
       "type": "Application filed",
@@ -221,6 +411,34 @@
       "src": [
         "SRC-001120"
       ]
+    },
+    {
+      "date": "2023-12-21",
+      "type": "Other",
+      "label": "Town issues first incompleteness letter",
+      "src": [
+        "SRC-003411"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-04-17",
+      "type": "Other",
+      "label": "Town deems application complete",
+      "src": [
+        "SRC-003411",
+        "SRC-003412"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-23",
+      "type": "Other",
+      "label": "Applicant converts project to an AB 1893 Builder's Remedy project (13% lower-income units)",
+      "src": [
+        "SRC-003412"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -233,6 +451,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and post office: Town document center letters, Los Gatan",
+      "src": [
+        "SRC-003411",
+        "SRC-003412",
+        "SRC-003413"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 529-01-022 active; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Town pending projects page S, SB 330 list, revised letter of justification and attorney letter (2025-07-23)",
+      "src": [
+        "SRC-001596",
+        "SRC-001554",
+        "SRC-003411",
+        "SRC-003412"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Town of Los Gatos project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A 2023 (S-23-040, 58 units, 12 low-income, density bonus Yes); no Table A2 row",
+      "src": [
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Los Gatan, Aug. 10, 2023; Local News Matters Dec. 2025 builder's remedy article returned 403",
+      "src": [
+        "SRC-003413"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "The Real Deal July 2024 Los Gatos builder's remedy roundup returned 403; no other trade coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for CSM Investments, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Letter of justification signed by Kurt B. Anderson, AIA, 120 W. Campbell Ave., Campbell; no firm website or project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on Park Place Los Gatos, CSM Investments and LaBarbera returned no LinkedIn posts",
+      "src": []
+    }
+  }
 }

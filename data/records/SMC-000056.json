@@ -251,6 +251,17 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "AP2018-085",
+          "src": [
+            "SRC-001117"
+          ],
+          "note": "Earlier 72-unit application as reported to the state"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -279,6 +290,18 @@
       "text": "City status: Application Deemed Incomplete. For-sale townhome-style condominiums replacing Mi Rancho Supermarket.",
       "src": [
         "SRC-001248"
+      ]
+    },
+    {
+      "text": "State report 2021: 72 units entitled 2021-05-04, 11 moderate-income deed-restricted and 61 above-moderate, owner tenure, APN 054-112-170.",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    {
+      "text": "Walking Redwood City (May 21, 2021): the approved 72-unit design had a one-story ground-level garage with three-story townhouses above, seven single-story two-bedroom ground-floor units facing Charter Street, 164 vehicle spaces (144 resident, 18 guest), and 11 moderate-income units; ground-floor units about 990 sq ft, townhouses up to about 1,550 sq ft.",
+      "src": [
+        "SRC-003414"
       ]
     }
   ],
@@ -327,12 +350,30 @@
   "groups": {},
   "events": [
     {
+      "date": "2018-11-27",
+      "type": "Application filed",
+      "label": "Application AP2018-085 submitted for the earlier 72-unit design",
+      "src": [
+        "SRC-001117"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2021-05",
       "type": "Approved",
       "label": "Planning Commission approves earlier 72-unit, four-story condo design",
       "src": [
         "SRC-000827"
       ]
+    },
+    {
+      "date": "2021-05-04",
+      "type": "Approved",
+      "label": "Entitlement for the earlier 72-unit design (state report)",
+      "src": [
+        "SRC-001116"
+      ],
+      "estimated": false
     },
     {
       "date": "2021-05-21",
@@ -361,6 +402,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Web search on 150 Charter, Mi Rancho and Chengde: SF YIMBY and RWC Pulse already on record; Crexi and Real Deal listing pages returned 403",
+      "src": [
+        "SRC-000826",
+        "SRC-000827"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC active parcels: 054-112-170 and 054-112-180, owner LMT Home Corp, already on record",
+      "src": [
+        "SRC-000829"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Redwood City development projects API: status Application Deemed Incomplete, 58 units, 9 BMR, planner Evelyn Garcia; Redwood City is not on the Legistar web API",
+      "src": [
+        "SRC-001248"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Redwood City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2018 (AP2018-085, 72 units) and Table A2 2021 (entitlement 2021-05-04); CEQAnet 2021050469 already on record",
+      "src": [
+        "SRC-001117",
+        "SRC-001116",
+        "SRC-000828"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Walking Redwood City May 21, 2021; Daily Journal 2021 approval article returned 403",
+      "src": [
+        "SRC-003414"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SF YIMBY Aug. 2026 already on record; The Real Deal March 2023 $34M listing article returned 403",
+      "src": [
+        "SRC-000826"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no website for Chengde Capital LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Levy Design Partners 110-150 Charter project page failed to load (certificate error); no Studio T Square project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on Chengde Capital returned no LinkedIn posts",
+      "src": []
+    }
+  }
 }

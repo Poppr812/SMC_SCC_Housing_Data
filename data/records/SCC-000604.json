@@ -84,6 +84,14 @@
           ]
         }
       ]
+    },
+    {
+      "text": "20850 Stevens Creek Blvd, Cupertino, CA 95014, Cupertino, CA",
+      "role": "other",
+      "src": [
+        "SRC-003406",
+        "SRC-003410"
+      ]
     }
   ],
   "images": [],
@@ -137,6 +145,14 @@
           "src": [
             "SRC-001897"
           ]
+        },
+        {
+          "value": 4,
+          "src": [
+            "SRC-003407",
+            "SRC-003409"
+          ],
+          "note": "CEQA notice (July 9, 2025): eight buildings of three and four stories, maximum height 45 ft 10 in"
         }
       ]
     },
@@ -159,6 +175,105 @@
           ]
         }
       ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 1829,
+          "src": [
+            "SRC-003406"
+          ],
+          "note": "Project description: average living area approximately 1,829 sq ft; three- and four-bedroom plans"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 130,
+          "src": [
+            "SRC-003406"
+          ],
+          "note": "Project description (2024-07-12): approximately 130 off-street spaces; two-car garage per unit, 38 side-by-side and 21 tandem"
+        },
+        {
+          "value": 129,
+          "src": [
+            "SRC-003407",
+            "SRC-003408"
+          ],
+          "note": "CEQA notice: 118 garage spaces and 11 uncovered guest spaces"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001100",
+            "SRC-003406"
+          ],
+          "note": "State report 2024, application stage: 12 moderate-income deed-restricted units (AMI is the category's upper limit). Project description: 12 BMR units for median- and moderate-income households"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 47,
+          "src": [
+            "SRC-001100"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001100",
+            "SRC-003406"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "12 of 59 units below market rate for median- and moderate-income households under the City's BMR Housing Mitigation Program",
+          "src": [
+            "SRC-003406"
+          ]
+        },
+        {
+          "value": "Moderately priced homes for households earning about 80% of county AMI and above; no units for low-income households",
+          "src": [
+            "SRC-003409"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003406",
+            "SRC-001897",
+            "SRC-003408"
+          ],
+          "note": "Density bonus waivers and incentives; SB 330 vesting"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -166,6 +281,38 @@
       "text": "Parcel match: the city page gives no APN and no site address is in county data. 359-08-031 is 2.92 acres, close to the stated 2.97, on the south frontage at the geocoded 20800 block. Matched by location and area.",
       "src": [
         "SRC-001897"
+      ]
+    },
+    {
+      "text": "State report 2024 lists APNs 359-08-025, 359-08-026 and 359-08-028; CEQA notice SCH 2025070351 lists APN 359-08-025. None of these is an active parcel in county data, where the site falls on 359-08-031.",
+      "src": [
+        "SRC-001100",
+        "SRC-003407"
+      ]
+    },
+    {
+      "text": "Project description (2024-07-12): 59 three-story townhome-style condominiums in eight buildings at about 20 units per acre; Mission-style architecture; private decks or patios and a private roof deck per unit; small public plaza with seating and public art on Stevens Creek Blvd; all-electric; site zoned P(CG, Res) in the Heart of the City Specific Plan. Density bonus requests: waive the retail/commercial component, reduce setbacks, allow porches 9 ft into the front setback, raise lot coverage from 40% to 42.1%, and reduce parking under Gov. Code 65915(p).",
+      "src": [
+        "SRC-003406"
+      ]
+    },
+    {
+      "text": "CEQA notice (July 9, 2025): demolition of three commercial buildings; average 276 sq ft private open space per unit; 13,939 sq ft common usable open space; site in a Plan Bay Area Priority Development Area and Transit Priority Area.",
+      "src": [
+        "SRC-003407",
+        "SRC-003410"
+      ]
+    },
+    {
+      "text": "SF YIMBY (June 10, 2025): units of 1,799 to 2,723 sq ft, three to four units per building; construction expected to take about two years in eight phases, one per building; contemporary Spanish style by SDG Architects.",
+      "src": [
+        "SRC-003408"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (July 28, 2025): construction expected to start the following year after the Staples lease expires in February; about $2.54 million in park in-lieu fees; the city had planned about 200 homes for the site and the developer used SB 330 to build 59; the city loses about 30,000 sq ft of commercial space.",
+      "src": [
+        "SRC-003409"
       ]
     }
   ],
@@ -188,17 +335,85 @@
       "src": [
         "SRC-001897"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "SummerHill Homes LLC",
+      "contact": "Austin Lin (Associate Development Manager)",
+      "linkedin": null,
+      "email": "alin@shhomes.com",
+      "phone": "(408) 777-3308",
+      "other_role": "Applicant contact (CEQA notice)",
+      "src": [
+        "SRC-003407",
+        "SRC-003410"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-01-29",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-001897"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-22",
+      "type": "Application filed",
+      "label": "Formal application submitted",
+      "src": [
+        "SRC-001897"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-31",
+      "type": "Application filed",
+      "label": "Application submittal date as reported to the state",
+      "src": [
+        "SRC-001100"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-10",
+      "type": "Other",
+      "label": "Planning Commission recommends approval 5-0",
+      "src": [
+        "SRC-001897",
+        "SRC-003408"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-07-01",
       "type": "Approved",
       "label": "City Council approved 5-0",
       "src": [
         "SRC-001897"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-02",
+      "type": "Other",
+      "label": "CEQA notice of exemption, Class 32 infill (SCH 2025070140)",
+      "src": [
+        "SRC-003410"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-09",
+      "type": "Other",
+      "label": "CEQA notice of exemption, Class 32 infill (SCH 2025070351)",
+      "src": [
+        "SRC-003407"
       ],
       "estimated": false
     }
@@ -213,6 +428,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on project, addresses and SummerHill: CEQAnet notices, San Jose Spotlight, SF YIMBY",
+      "src": [
+        "SRC-003407",
+        "SRC-003409",
+        "SRC-003408"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 359-08-031 active, no situs or owner; 359-08-025 not active. Prior APNs from state report and CEQA notice",
+      "src": [
+        "SRC-001098",
+        "SRC-001100",
+        "SRC-003407"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino major project page (timeline, PC 2025-06-10, CC 2025-07-01) and project description PDF dated 2024-07-12",
+      "src": [
+        "SRC-001897",
+        "SRC-003406"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Cupertino project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025070140 and 2025070351 (Class 32 NOEs); APR Table A 2024 (Cupertino)",
+      "src": [
+        "SRC-003410",
+        "SRC-003407",
+        "SRC-001100"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight, July 28, 2025",
+      "src": [
+        "SRC-003409"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY, June 10, 2025; The Real Deal June 2026 SummerHill Cupertino article returned 403",
+      "src": [
+        "SRC-003408"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no SummerHill Homes project page for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SDG Architects named on city page and SF YIMBY; no SDG project page found",
+      "src": [
+        "SRC-001897",
+        "SRC-003408"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on SummerHill Cupertino Stevens Creek returned none",
+      "src": []
+    }
+  }
 }
