@@ -169,6 +169,20 @@
             "SRC-001956"
           ],
           "note": "City folder 117538, Tentative Map (permit type: Subdivision); city permit status: Approved. Matched by APN."
+        },
+        {
+          "value": "ER25-133",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 117506, Environmental Review, filed 2025-06-30, status Approved/Certified. Matched by APN."
+        },
+        {
+          "value": "AD26-605",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 135242, Major Permit Adjustment filed 2026-08-28, status Under Review: permit adjustment to fulfil condition #7 of permit H25-021. Matched by APN."
         }
       ]
     },
@@ -180,6 +194,30 @@
             "SRC-001099"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004013"
+          ],
+          "note": "CEQA Notice of Exemption: Site Development Permit subject to State Density Bonus Law, one incentive and fourteen waivers"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.65,
+          "src": [
+            "SRC-004013"
+          ],
+          "note": "Approximately 0.65 gross acres per CEQA Notice of Exemption"
         }
       ]
     }
@@ -208,12 +246,64 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CEQA Notice of Exemption (Class 32 infill, CEQA Guidelines 15332), received 2026-08-21: 12 condominium units, 8 on separate lots and 4 on two lots; one density bonus incentive to allow a two-family dwelling use; fourteen waivers covering height, number of stories, floor area ratio, common and private open space, tree canopy coverage, parking, building entrances and lot depth ratio; demolition of one single-family home and removal of 21 trees. Applicant: Cyrus Jahanian, City Connect Partners, Inc., 1018 Lincoln Avenue, San Jose. Lead agency contact: Cort Hitchens, Supervising Planner.",
+      "src": [
+        "SRC-004013"
+      ]
+    },
+    {
+      "text": "City of San Jose permit TR22-126 (2022-04-18, Approved): dead tree removal of one California incense cedar from the front yard of a 0.70-gross-acre single-family lot; applicant and owner listed as Dombro Stephen N and Janet F.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City Connect describes itself as a real estate development, construction and property management company founded in 2021; its site does not list this project.",
+      "src": [
+        "SRC-004014"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "City Connect Partners, Inc.",
+      "contact": "Cyrus Jahanian",
+      "linkedin": null,
+      "email": "cyrus@cityconnect.dev",
+      "phone": "(408) 821-3112",
+      "website": "https://cityconnect.dev",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004013",
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Stephen N and Janet F Dombro",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner named on 2022 city tree permit",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-06-24",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PRE25-282 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-07-10",
       "type": "Application filed",
@@ -226,6 +316,24 @@
       "date": "2026-03-25",
       "type": "Approved",
       "label": "City issues Site Development Permit/Amendment H25-021",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-21",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (Class 32 infill) posted, SCH 2026080804",
+      "src": [
+        "SRC-004013"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Other",
+      "label": "Major permit adjustment AD26-605 filed to fulfil condition #7 of H25-021",
       "src": [
         "SRC-001956"
       ],
@@ -247,6 +355,90 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 1295 Curtner Ave and City Connect Partners: CEQAnet NOE SCH 2026080804.",
+      "src": [
+        "SRC-004013"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 43906042: situs 1295 Curtner Av, San Jose 95125-3608.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose AMANDA planning permit layer by APN: H25-021, T25-017, PRE25-282, ER25-133, AD26-605, TR22-126. City calendar page on sanjoseca.gov not opened (site refuses automated access).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet NOE SCH 2026080804; APR row already on record.",
+      "src": [
+        "SRC-004013",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for local news on 1295 Curtner: none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY and other trade coverage: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "cityconnect.dev opened: company profile; no project page for 1295 Curtner.",
+      "src": [
+        "SRC-004014"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in the CEQA filing or city permit records.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the project: none.",
+      "src": []
+    }
+  }
 }

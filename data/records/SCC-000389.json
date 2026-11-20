@@ -88,8 +88,17 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-004017",
+            "SRC-004018"
+          ],
+          "note": "SF YIMBY: 12 townhouses on 12 lots; 2025 article calls the project a townhome-style condominium complex"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -117,7 +126,9 @@
         {
           "value": 12,
           "src": [
-            "SRC-001106"
+            "SRC-001106",
+            "SRC-004017",
+            "SRC-004018"
           ],
           "note": "Units in the application as reported"
         }
@@ -144,6 +155,35 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-004017"
+          ],
+          "note": "Preliminary application: 12 four-story townhouses"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.38,
+          "src": [
+            "SRC-004018"
+          ],
+          "note": "SF YIMBY 2025: narrow lot extending roughly 400 feet from Homestead Road to Saratoga Creek"
+        },
+        {
+          "value": 0.39,
+          "src": [
+            "SRC-004017"
+          ],
+          "note": "SF YIMBY 2024"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -152,12 +192,69 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "SF YIMBY (2024-05-26): preliminary application by V.C.I Companies to demolish an existing single-family house and divide the parcel into 12 lots for 12 four-story townhouses; the ground-floor road would be an easement shared by the HOA.",
+      "src": [
+        "SRC-004017"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-07-24): formal permits filed by VCI Company for a townhome-style complex of about a dozen condominiums on a concrete podium; property owner Apex Fund LLC; site last sold in 2025 for $3.5 million. The article describes the site as currently unincorporated county land within the City of Santa Clara's boundaries.",
+      "src": [
+        "SRC-004018"
+      ]
+    },
+    {
+      "text": "The county parcel dataset lists APN 290-39-080 (2891 Homestead Rd) with jurisdiction Santa Clara.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "VCI Company",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004018",
+        "SRC-004017"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Apex Fund LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004018"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-05",
+      "type": "Application filed",
+      "label": "Preliminary application for 12 townhouses (reported by SF YIMBY 2024-05-26)",
+      "src": [
+        "SRC-004017"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2025",
+      "type": "Sale",
+      "label": "Site last sold for $3.5 million (SF YIMBY citing public records)",
+      "src": [
+        "SRC-004018"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-07-30",
       "type": "Application filed",
@@ -172,6 +269,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 2891 Homestead Rd, PLN25-00331 and VCI: SF YIMBY 2024 and 2025 articles.",
+      "src": [
+        "SRC-004017",
+        "SRC-004018"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset, APN 29039080: situs 2891 Homestead Rd, Santa Clara 95051-5223, jurisdiction Santa Clara.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "City of Santa Clara planning pages (santaclaraca.gov) refuse automated access.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY calls the site unincorporated; county parcel dataset lists jurisdiction Santa Clara; no county planning item found in web search.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State APR row already on record; no CEQAnet document found by web search.",
+      "src": [
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for local news (Mercury News, Silicon Valley Voice): none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-05-26 and 2025-07-24.",
+      "src": [
+        "SRC-004017",
+        "SRC-004018"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for VCI Company / V.C.I Companies: no company site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in public sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named; only the 2025 site sale price reported by SF YIMBY.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the project: none.",
+      "src": []
+    }
+  }
 }

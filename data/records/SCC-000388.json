@@ -1,6 +1,6 @@
 {
   "id": "SCC-000388",
-  "name": "1030 Mckendrie St",
+  "name": "1030-1038 McKendrie Street",
   "parcels": [
     {
       "apn": "230-42-014",
@@ -39,6 +39,36 @@
           37.3420606
         ]
       ]
+    },
+    {
+      "apn": "230-42-013",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9225903,
+          37.3419722
+        ],
+        [
+          -121.9227138,
+          37.3418872
+        ],
+        [
+          -121.9231655,
+          37.3423082
+        ],
+        [
+          -121.9230423,
+          37.3423937
+        ],
+        [
+          -121.9225903,
+          37.3419722
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -47,6 +77,13 @@
       "role": "main",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "1038 McKendrie St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-004015"
       ]
     }
   ],
@@ -60,8 +97,16 @@
             "SRC-001099"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-004015"
+          ],
+          "note": "Draft MND: two buildings with 12 townhome-style units; city permit H25-043 calls them residential condominiums"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -117,6 +162,34 @@
             "SRC-001956"
           ],
           "note": "City folder 140267, Tentative Map (permit type: Subdivision); city permit status: Under Review. Matched by APN."
+        },
+        {
+          "value": "GP25-005",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 110707, GP Diagram Amendment, filed 2025-05-19, status Notice Sent: Residential Neighborhood and Neighborhood/Community Commercial to Mixed Use Neighborhood on a 0.46-gross-acre site."
+        },
+        {
+          "value": "ER25-107",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 110755, Environmental Review (Negative Declaration/Mitigated Negative Declaration), filed 2025-05-19, status Under Review."
+        },
+        {
+          "value": "C26-002",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Rezoning file named in the description of city permit H25-043."
+        },
+        {
+          "value": "ER26-019",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 103597, Environmental Review, filed 2026-02-13, status New. Matched by APN."
         }
       ]
     },
@@ -128,6 +201,35 @@
             "SRC-001099"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.46,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approximately 0.46 gross acres per city permits H25-043 and GP25-005"
+        },
+        {
+          "value": 0.45,
+          "src": [
+            "SRC-004015"
+          ],
+          "note": "CEQAnet document summary"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004015"
+          ],
+          "note": "Each unit three stories with an attached ground-floor garage"
         }
       ]
     }
@@ -156,12 +258,67 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Draft MND (SCH 2026080193): merge parcels at 1030 and 1038 McKendrie Street (APNs 230-42-014 and 230-42-013), demolish the existing surface parking lot and development, and build two multi-family buildings with 12 three-story townhome-style units, each with an attached ground-floor garage; one 26-foot driveway from McKendrie Street, a private internal road serving the garages, and six visitor parking spaces. Requires a General Plan Amendment to Mixed Use Neighborhood and a rezoning. Existing zoning listed as Single-Family Residential and Commercial Pedestrian. Cross streets McKendrie and Myrtle. Lead agency contact: Charlotte Yuen, Planner II; environmental consultant Rincon Consultants.",
+      "src": [
+        "SRC-004015"
+      ]
+    },
+    {
+      "text": "City of San Jose permit layer lists Martin Menne (MCM Diversified) as applicant on GP25-005, ER25-107, PRE25-489, H25-043, T25-026 and ER26-019.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "MCM Diversified",
+      "contact": "Martin Menne",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Studio Current",
+      "contact": "Michaelle Williams",
+      "linkedin": null,
+      "email": "michaelle@studiocurrent.com",
+      "phone": "(408) 816-2000",
+      "website": "https://www.studiocurrent.com",
+      "website_basis": "opened",
+      "other_role": "Project applicant (CEQA filing contact)",
+      "src": [
+        "SRC-004015"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-05-19",
+      "type": "Application filed",
+      "label": "General Plan Amendment GP25-005 and environmental review ER25-107 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-10",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PRE25-489 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-11-24",
       "type": "Application filed",
@@ -169,6 +326,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Other",
+      "label": "Draft Mitigated Negative Declaration received by State Clearinghouse (SCH 2026080193); review 2026-08-10 to 2026-09-08",
+      "src": [
+        "SRC-004015"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -181,6 +347,90 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 1030 McKendrie and MCM Diversified: CEQAnet MND SCH 2026080193.",
+      "src": [
+        "SRC-004015"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 1030 McKendrie is APN 23042014; 1038 McKendrie is APN 23042013.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose AMANDA planning permit layer by APN: GP25-005, ER25-107, ER26-019, PRE25-489, H25-043, T25-026. City MND news page on sanjoseca.gov not opened (site refuses automated access).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet MND SCH 2026080193; APR row already on record.",
+      "src": [
+        "SRC-004015",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for local news on 1030-1038 McKendrie: none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY and other trade coverage: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for MCM Diversified: directory listings only, no company project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "studiocurrent.com opened (architecture and planning firm named as applicant contact in the CEQA filing); no McKendrie project page.",
+      "src": [
+        "SRC-004016"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the project: none.",
+      "src": []
+    }
+  }
 }

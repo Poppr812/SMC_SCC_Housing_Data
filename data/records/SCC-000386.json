@@ -139,6 +139,27 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE23-252",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 127218, Prelim - Enhanced, filed 2023-12-08, status Complete: Enhanced Preliminary Review for a 15-unit townhome complex on a 0.61-gross-acre lot. Matched by APN."
+        },
+        {
+          "value": "ER24-305",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 117041, Environmental Review, filed 2024-12-10, status Under Review. Matched by APN."
+        },
+        {
+          "value": "PRE18-160",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 128862, Prelim - Enhanced, filed 2018-08-03, status Complete; applicant Gerry De Young (Ruth and Going, Inc.). Matched by APN."
         }
       ]
     },
@@ -150,6 +171,41 @@
             "SRC-001099"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H24-063 text: project includes State Density Bonus Law provisions for additional density"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.69,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approximately 0.69 gross acres per city permit H24-063"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H24-063: 12 dwelling units in two two-story buildings"
         }
       ]
     }
@@ -166,12 +222,72 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City of San Jose permit layer lists David Kuoppamaki (Kuop Designs) as applicant on H24-063 and ER24-305, and David Kuoppamaki (Kuoppamaki Drafting & Design) on PRE23-252, an Enhanced Preliminary Review for a 15-unit townhome complex on a 0.61-gross-acre lot. Zoning shown on the preliminary files: A(PD).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City of San Jose permit PRE18-160 (2018, status Complete): Enhanced Preliminary Review with architectural plans for development options on the site; applicant Gerry De Young (Ruth and Going, Inc.).",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Kuop Designs",
+      "contact": "David Kuoppamaki",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ruth and Going, Inc.",
+      "contact": "Gerry De Young",
+      "linkedin": null,
+      "other_role": "Applicant (2018 preliminary review PRE18-160)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-08-03",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE18-160 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-12-08",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE23-252 filed (15 townhomes)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-10",
+      "type": "Other",
+      "label": "Environmental review ER24-305 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-01-22",
       "type": "Application filed",
@@ -191,6 +307,85 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 0 Herald Ave, APN 472-36-017 and Kuop Designs: only an MLS land listing, whose page did not load.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 47236017: situs Herald Av, San Jose 95116, no house number.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose AMANDA planning permit layer by APN: H24-063, ER24-305, PRE23-252, PRE18-160 with applicants.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Jose project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State APR row already on record; no CEQAnet document found by web search; market-rate, no CTCAC/HCD role.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for local news on the Herald Ave project: none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY and other trade coverage: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website for Kuop Designs found in web search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in public sources; applicant is a drafting/design firm with no website found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the project: none.",
+      "src": []
+    }
+  }
 }

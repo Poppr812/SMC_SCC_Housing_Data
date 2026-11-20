@@ -60,8 +60,16 @@
             "SRC-001127"
           ],
           "note": "State categories: SFA, SFD"
+        },
+        {
+          "value": "Single-family",
+          "src": [
+            "SRC-004019"
+          ],
+          "note": "16 two-story single-family residences with basements"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -92,6 +100,13 @@
             "SRC-001127"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 16,
+          "src": [
+            "SRC-004019"
+          ],
+          "note": "ARB staff report: 16 two-story single-family residences on 16 lots; the city project page shows a Final Map (17PLN-00158) creating 16 parcels. The state APR reports 12 units under 17PLN-00158."
         }
       ]
     },
@@ -103,6 +118,13 @@
             "SRC-001127"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "15PLN-00248",
+          "src": [
+            "SRC-004019"
+          ],
+          "note": "Major Architectural Review, ARB hearing 2017-02-02"
         }
       ]
     },
@@ -116,6 +138,38 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004019"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 32,
+          "src": [
+            "SRC-004019"
+          ],
+          "note": "Two parking spaces per unit, 32 total"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.47,
+          "src": [
+            "SRC-004019"
+          ],
+          "note": "326 ft x 316 ft (2.47 acres); the report text also gives 2.46 acres (R-2 0.81 acres, RM-15 1.65 acres)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -124,12 +178,72 @@
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "text": "Palo Alto ARB staff report (2017-02-02, 15PLN-00248): demolish four single-story single-family homes built 1953-1968 and build 16 two-story single-family homes with basements, consistent with a previously approved tentative map of 16 lots and a private street. Five homes front Maybell Avenue (four sharing two driveways); 11 interior homes are reached by a private street from Clemo Avenue. Zoning R-2 (0.81 acres) and RM-15 (1.65 acres); the RM-15 portion is a vacant former orchard. The tentative map was evaluated in a Mitigated Negative Declaration. Neighborhood: Green Acres.",
+      "src": [
+        "SRC-004019"
+      ]
+    },
+    {
+      "text": "City of Palo Alto project page: application 17PLN-00158, a Final Map to create 16 new parcels of about 5,000 to 6,184 sq ft; zoning R-2 and RM-15; applicant John Koroyan; project planner Sheldon Ahsing.",
+      "src": [
+        "SRC-004020"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Golden Gate Homes, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004019"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Studio S Squared Architecture, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004019"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Ted O'Hanlon",
+      "contact": "Ted O'Hanlon",
+      "linkedin": null,
+      "other_role": "Representative",
+      "src": [
+        "SRC-004019"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "John Koroyan",
+      "contact": "John Koroyan",
+      "linkedin": null,
+      "other_role": "Applicant (Final Map 17PLN-00158)",
+      "src": [
+        "SRC-004020"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2017-02-02",
+      "type": "Other",
+      "label": "Architectural Review Board public hearing on 15PLN-00248 (staff recommended continuance)",
+      "src": [
+        "SRC-004019"
+      ],
+      "estimated": false
+    },
     {
       "date": "2018-02-26",
       "type": "Approved",
@@ -152,6 +266,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 567 Maybell Ave and Golden Gate Homes: City of Palo Alto project page and 2017 ARB staff report.",
+      "src": [
+        "SRC-004020",
+        "SRC-004019"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 13725134: situs 567 Maybell Av, Palo Alto 94306.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto project page for 567 Maybell Ave and ARB staff report 2017-02-02.",
+      "src": [
+        "SRC-004020",
+        "SRC-004019"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Palo Alto project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "State APR row already on record; market-rate, no CTCAC/HCD role.",
+      "src": [
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Palo Alto Online articles on the Maybell site returned HTTP 429 or empty pages.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for trade coverage of Golden Gate Homes' Maybell project: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for a Golden Gate Homes, LLC website: none found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Studio S Squared Architecture named in ARB report; no firm project page found in web search.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on the project: none.",
+      "src": []
+    }
+  }
 }
