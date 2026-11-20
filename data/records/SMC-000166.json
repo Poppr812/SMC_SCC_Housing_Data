@@ -161,6 +161,12 @@
             "SRC-001116"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "AP2025-005, TM2025-001, CP2025-001",
+          "src": [
+            "SRC-003691"
+          ]
         }
       ]
     },
@@ -193,6 +199,17 @@
           "src": [
             "SRC-001250"
           ]
+        },
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001117",
+            "SRC-001250"
+          ],
+          "note": "SB 330 application; one concession and two waivers under state density bonus law"
         }
       ]
     },
@@ -211,6 +228,50 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 27,
+          "src": [
+            "SRC-001116"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report 2025: deed restriction from inclusionary and density bonus requirements"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 32
+          },
+          "src": [
+            "SRC-003690"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 81190,
+          "src": [
+            "SRC-003690"
+          ],
+          "note": "Includes 14,660 sq ft of parking"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -219,6 +280,19 @@
       "src": [
         "SRC-001117",
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "CEQA notice of exemption (SCH 2025120855): demolition of a storage/warehouse and data center with surface parking, a religious institution and a restaurant; 32 for-sale units in four four-story buildings up to 50 feet, 5 moderate-income and 4 accessible units. City GIS: zoning MUC-SB.",
+      "src": [
+        "SRC-003691",
+        "SRC-001250"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-09-28): sponsor City Ventures, owner J&R Realty Co.; four structures; each unit three bedrooms with a private deck or porch; 32 two-car garages; site of about one acre zoned up to 80 units per acre; Spanish Revival design.",
+      "src": [
+        "SRC-003690"
       ]
     }
   ],
@@ -230,6 +304,33 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "City Ventures",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003690"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003690"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "C2 Collaborative",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003690"
       ]
     }
   ],
@@ -251,6 +352,15 @@
       "src": [
         "SRC-001116"
       ]
+    },
+    {
+      "date": "2025-12-18",
+      "type": "Other",
+      "label": "CEQA notice of exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003691"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -263,6 +373,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Redwood Square; opened SF YIMBY, CEQAnet, city GIS",
+      "src": [
+        "SRC-003690"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer: owner J & R Realty Co already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City GIS planning project 144 (SB 330, one concession, two waivers, MUC-SB); redwoodcity.org project page returned 403",
+      "src": [
+        "SRC-001250"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 2025 (27 above-moderate, 30-year restriction); CEQAnet SCH 2025120855 NOE 2025-12-18",
+      "src": [
+        "SRC-001116",
+        "SRC-003691"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on 32 townhomes at 1320 Marshall returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-09-28",
+      "src": [
+        "SRC-003690"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no City Ventures project page for 1320 Marshall",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no Hunt Hale Jones project page for 1320 Marshall",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lenders or funders named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts found none",
+      "src": []
+    }
+  }
 }

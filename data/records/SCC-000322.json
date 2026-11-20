@@ -83,8 +83,17 @@
             "SRC-001100"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001508",
+            "SRC-003688"
+          ],
+          "note": "City and CEQA notice: 32 townhomes"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -135,6 +144,13 @@
             "SRC-001100"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "DP-2025-002, U-2025-007, ASA-2025-004, TM-2025-002, TR-2025-005",
+          "src": [
+            "SRC-001508"
+          ],
+          "note": "City page; its resolution list cites TR-2025-002"
         }
       ]
     },
@@ -144,6 +160,12 @@
           "value": "6 of 32 units affordable",
           "src": [
             "SRC-001508"
+          ]
+        },
+        {
+          "value": "6 median/moderate-income units and 26 market-rate",
+          "src": [
+            "SRC-003688"
           ]
         }
       ]
@@ -174,6 +196,74 @@
           "note": "State report 2025, application stage: 6 deed-restricted units"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 26,
+          "src": [
+            "SRC-003688",
+            "SRC-001100"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.77,
+          "src": [
+            "SRC-001508",
+            "SRC-003688"
+          ]
+        },
+        {
+          "value": 1.8,
+          "src": [
+            "SRC-003689"
+          ]
+        }
+      ],
+      "best": 0
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003688"
+          ],
+          "note": "About 45 feet at the highest point"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 64,
+          "src": [
+            "SRC-003688",
+            "SRC-003689"
+          ],
+          "note": "Private garage spaces; CEQA notice also lists 5 street and 6 bicycle spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001508",
+            "SRC-003689",
+            "SRC-001100"
+          ],
+          "note": "Density bonus waivers for setbacks and common open space and an incentive for retail uses; SB 330 application"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -181,6 +271,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001100"
+      ]
+    },
+    {
+      "text": "CEQA notice of exemption (SCH 2026010772): Phase 2; demolish office buildings and build five residential buildings with 32 three-story townhomes of 1,548 to 2,156 sq ft, 18 units per acre, zoning P(CG, Res); applicant Dividend Homes, Joshua Vrotsos, Vice President of Real Estate Development. SF YIMBY (2026-04-05) describes six structures, units of 1,550 to 2,150 sq ft, and new building permits filed that week.",
+      "src": [
+        "SRC-003688",
+        "SRC-003689"
+      ]
+    },
+    {
+      "text": "City Council adopted Resolutions 26-011 through 26-015 on 2026-01-21.",
+      "src": [
+        "SRC-001508"
       ]
     }
   ],
@@ -203,11 +306,29 @@
       "src": [
         "SRC-001508"
       ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Michael Arnone + Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003689"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-02-13",
+      "type": "Other",
+      "label": "SB 330 preliminary application",
+      "src": [
+        "SRC-001508"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-03-03",
       "type": "Application filed",
@@ -226,11 +347,38 @@
       ]
     },
     {
+      "date": "2025-08-12",
+      "type": "Other",
+      "label": "Vesting date",
+      "src": [
+        "SRC-001508"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-09",
+      "type": "Other",
+      "label": "Planning Commission approved 5-0",
+      "src": [
+        "SRC-001508"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-01-21",
       "type": "Approved",
       "label": "City Council approved 4-0-1",
       "src": [
         "SRC-001508"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-23",
+      "type": "Other",
+      "label": "CEQA notice of exemption filed",
+      "src": [
+        "SRC-003688"
       ],
       "estimated": false
     }
@@ -250,6 +398,11 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -263,5 +416,86 @@
       "relation": "adjacent",
       "note": "Dividend Homes II and III, neighboring Stevens Creek Blvd sites"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Dividend Homes; opened city page, CEQAnet and SF YIMBY",
+      "src": [
+        "SRC-003689"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 31623095: 20045 Stevens Creek Bl; no owner field. 20065 Stevens Creek Bl is APN 316-23-096 in the same dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Cupertino major projects page: file numbers, PC 2025-12-09 5-0, resolutions 26-011 to 26-015",
+      "src": [
+        "SRC-001508"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2025 (26 above-moderate, density bonus); CEQAnet SCH 2026010772 NOE 2026-01-23",
+      "src": [
+        "SRC-001100",
+        "SRC-003688"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for local news on Dividend Homes II found only trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-04-05; The Real Deal 2026-04-06 returned 403",
+      "src": [
+        "SRC-003689"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "dividendhomes.com lists Cayman, Kenison, Sundara and 3200 Park; no Cupertino page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Dahlin Group named on city page already on record",
+      "src": [
+        "SRC-001508"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lenders or funders named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts found none",
+      "src": []
+    }
+  }
 }

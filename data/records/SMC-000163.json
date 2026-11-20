@@ -144,6 +144,13 @@
             "SRC-001117"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 70,
+          "src": [
+            "SRC-003676"
+          ],
+          "note": "Architect's project page: affordable housing building of 70 units"
         }
       ]
     },
@@ -192,11 +199,87 @@
           "note": "State report 2023, application stage: 33 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001117"
+          ],
+          "note": "State report 2023: project type Discretionary; density bonus received and approved"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 55052,
+          "src": [
+            "SRC-003677"
+          ],
+          "note": "CEQA notice of preparation: multi-family housing building"
+        },
+        {
+          "value": 57252,
+          "src": [
+            "SRC-003678"
+          ],
+          "note": "CEQA Draft EIR: multi-family building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.477,
+          "src": [
+            "SRC-003677"
+          ],
+          "note": "Residential portion of a 3.5-acre mixed-use site"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-003679"
+          ],
+          "note": "For-sale homes for low-income families"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001117"
+      ]
+    },
+    {
+      "text": "CEQA filings describe a horizontal mixed-use project at 1111-1227 Arguello St on six parcels totaling 3.5 acres (APNs listed as 052-252-080, 052-252-090, 050-252-040, 052-252-030, 052-252-020, 052-252-060): about 300,000 sq ft of office in a four-story building (3.024 acres), a 4,132 sq ft childcare facility, three levels of shared underground parking, and a residential building with 33 affordable units (0.477 acres). The Draft EIR lists a Use Permit among local actions.",
+      "src": [
+        "SRC-003677",
+        "SRC-003678"
+      ]
+    },
+    {
+      "text": "Housing Action Coalition endorsed the project on 2021-07-21 as 33 for-sale, 100% affordable homes by Hines and Habitat for Humanity Greater San Francisco. Pickard Chilton's page lists Hines as client, DLR Group as architect of record, a 70-unit affordable housing building, a 30-child day care in preserved historic homes, and a status of proposed, in entitlements.",
+      "src": [
+        "SRC-003679",
+        "SRC-003676"
+      ]
+    },
+    {
+      "text": "State report 2023 lists the application (AP2020-057) as pending.",
       "src": [
         "SRC-001117"
       ]
@@ -211,11 +294,87 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Hines",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003679",
+        "SRC-003676"
+      ]
+    },
+    {
+      "role": "Co-developer / partner",
+      "company": "Habitat for Humanity Greater San Francisco",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003679"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "DLR Group",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003679",
+        "SRC-003676"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Pickard Chilton",
+      "contact": null,
+      "linkedin": null,
+      "website_basis": "opened",
+      "project_page": "https://www.pickardchilton.com/work/1125-arguello",
+      "src": [
+        "SRC-003676"
+      ]
+    },
+    {
+      "role": "Structural engineer",
+      "company": "Magnusson Klemencic Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003676"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Meyer Studio Land Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003676"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-10-19",
+      "type": "Other",
+      "label": "CEQA notice of preparation of a Draft EIR",
+      "src": [
+        "SRC-003677"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-02-03",
+      "type": "Other",
+      "label": "Draft EIR released; review period to 2023-03-20",
+      "src": [
+        "SRC-003678"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-04-06",
       "type": "Application filed",
@@ -230,6 +389,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address, Hines, Habitat; opened CEQAnet, Housing Action Coalition and Pickard Chilton pages",
+      "src": [
+        "SRC-003679",
+        "SRC-003676"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer: owner Arguello RWC I LLC already on record; CEQA lists five more site parcels (office portion)",
+      "src": [
+        "SRC-001103",
+        "SRC-003677"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "redwoodcity.org returned 403; city GIS planning project list has no Arguello entry",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role in sources opened",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2023 (density bonus, discretionary, pending); CEQAnet SCH 2021100322 NOP 2021-10-19 and Draft EIR 2023-02-03",
+      "src": [
+        "SRC-001117",
+        "SRC-003677",
+        "SRC-003678"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles on 1125 Arguello returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Housing Action Coalition endorsement page 2021-07-21",
+      "src": [
+        "SRC-003679"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for Hines and Habitat for Humanity Greater San Francisco project pages found none for this site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Pickard Chilton project page: 70-unit affordable building, consultant team",
+      "src": [
+        "SRC-003676"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 1125 Arguello found none",
+      "src": []
+    }
+  }
 }

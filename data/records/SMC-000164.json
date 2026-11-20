@@ -83,6 +83,166 @@
           37.4690513
         ]
       ]
+    },
+    {
+      "apn": "063-201-250",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.1416151,
+          37.468614
+        ],
+        [
+          -122.1418219,
+          37.4686218
+        ],
+        [
+          -122.1418138,
+          37.468759
+        ],
+        [
+          -122.1418723,
+          37.4687612
+        ],
+        [
+          -122.1418674,
+          37.4688435
+        ],
+        [
+          -122.1420249,
+          37.4688518
+        ],
+        [
+          -122.142008,
+          37.4689281
+        ],
+        [
+          -122.141996,
+          37.4689822
+        ],
+        [
+          -122.1416525,
+          37.4689698
+        ],
+        [
+          -122.1416542,
+          37.4689423
+        ],
+        [
+          -122.1415784,
+          37.4689395
+        ],
+        [
+          -122.1415794,
+          37.468923
+        ],
+        [
+          -122.1415668,
+          37.4689225
+        ],
+        [
+          -122.1415674,
+          37.4689116
+        ],
+        [
+          -122.1413992,
+          37.4689053
+        ],
+        [
+          -122.1414527,
+          37.4688304
+        ],
+        [
+          -122.1415014,
+          37.4687473
+        ],
+        [
+          -122.1415251,
+          37.4687
+        ],
+        [
+          -122.1415463,
+          37.468652
+        ],
+        [
+          -122.1415506,
+          37.4686437
+        ],
+        [
+          -122.1415566,
+          37.4686361
+        ],
+        [
+          -122.141564,
+          37.4686294
+        ],
+        [
+          -122.1415727,
+          37.4686237
+        ],
+        [
+          -122.1415824,
+          37.4686193
+        ],
+        [
+          -122.1415929,
+          37.4686161
+        ],
+        [
+          -122.1416039,
+          37.4686143
+        ],
+        [
+          -122.1416151,
+          37.468614
+        ]
+      ]
+    },
+    {
+      "apn": "063-201-260",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.1418138,
+          37.468759
+        ],
+        [
+          -122.1418219,
+          37.4686218
+        ],
+        [
+          -122.1418804,
+          37.468624
+        ],
+        [
+          -122.1420736,
+          37.4686312
+        ],
+        [
+          -122.1420249,
+          37.4688518
+        ],
+        [
+          -122.1418674,
+          37.4688435
+        ],
+        [
+          -122.1418723,
+          37.4687612
+        ],
+        [
+          -122.1418138,
+          37.468759
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -220,12 +380,72 @@
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 26,
+          "src": [
+            "SRC-001147"
+          ],
+          "note": "State report 2020, entitlement stage: above-moderate units"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 75,
+          "src": [
+            "SRC-003680"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2500,
+          "src": [
+            "SRC-003680",
+            "SRC-003681"
+          ],
+          "note": "Ground-floor retail"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001208"
+          ],
+          "note": "Design Review DR19-007, approved by City Council"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
+        "SRC-001147"
+      ]
+    },
+    {
+      "text": "City and CEQA filings describe a four-story, 47,594 sq ft mixed-use building at the northwest corner of University Ave and Runnymede St with ground-floor retail (about 2,500 sq ft), parking and a residential lobby, and 33 units above. The parcels would be combined into one 38,905 sq ft lot; the city page lists APNs 063-201-250, 260 and 290 and says four parcels; the CEQA notice says three. Zoning MUC-2.",
+      "src": [
+        "SRC-001208",
+        "SRC-003681"
+      ]
+    },
+    {
+      "text": "Palo Alto Daily Post (2020-05-19): developer John Suppes of Palo Alto-based Clarum Homes; 33 apartments with 7 affordable (4 at 80% AMI, 3 at 120% AMI); four stories, 59.5 feet; 75 parking spaces; 5,150 sq ft ground-floor lobby; Clarum has owned the lot since 2007, and a tenant relocation agreement required council approval. The state report lists owner tenure.",
+      "src": [
+        "SRC-003680",
         "SRC-001147"
       ]
     }
@@ -249,11 +469,48 @@
       "src": [
         "SRC-001208"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Clarum Homes",
+      "contact": "John Suppes",
+      "linkedin": null,
+      "src": [
+        "SRC-003680"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-03-13",
+      "type": "Application filed",
+      "label": "Complete Design Review application received",
+      "src": [
+        "SRC-001208"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-03-09",
+      "type": "Other",
+      "label": "Planning Commission hearing",
+      "src": [
+        "SRC-001208"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-04-13",
+      "type": "Other",
+      "label": "Planning Commission hearing; unanimous recommendation of approval",
+      "src": [
+        "SRC-001208",
+        "SRC-003680"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-05-19",
       "type": "Approved",
@@ -261,6 +518,24 @@
       "src": [
         "SRC-001147"
       ]
+    },
+    {
+      "date": "2020-05-21",
+      "type": "Other",
+      "label": "CEQA notice of exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-003681"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2020-07-02",
+      "type": "Other",
+      "label": "Master Fee Reimbursement Agreement executed",
+      "src": [
+        "SRC-001208"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -273,6 +548,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on name, address and Clarum; opened city page, CEQAnet and Daily Post",
+      "src": [
+        "SRC-003680"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City page lists APNs 063-201-250, 260, 290; SMC parcel layer owner Clarum University LLC already on record",
+      "src": [
+        "SRC-001208",
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of East Palo Alto project page DR19-007: hearing dates, building area, lot size",
+      "src": [
+        "SRC-001208"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A2 2020 (26 above-moderate units); CEQAnet SCH 2020050464 NOE 2020-05-21",
+      "src": [
+        "SRC-001147",
+        "SRC-003681"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto Daily Post 2020-05-19",
+      "src": [
+        "SRC-003680"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no trade press on Clarum University Corner",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "clarumhomes.com failed with a TLS certificate mismatch",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "City page and filings opened do not name an architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lenders or funders named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts found none",
+      "src": []
+    }
+  }
 }

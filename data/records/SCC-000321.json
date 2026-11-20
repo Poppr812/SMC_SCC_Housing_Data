@@ -132,6 +132,12 @@
           "src": [
             "SRC-001110"
           ]
+        },
+        {
+          "value": "For sale: 2 units at 50% AMI and 2 at 120% AMI. If leased as rentals: 2 at 50% AMI and 2 at 80% AMI",
+          "src": [
+            "SRC-003682"
+          ]
         }
       ]
     },
@@ -144,6 +150,12 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2021-154, PL-2021-155",
+          "src": [
+            "SRC-003686"
+          ]
         }
       ]
     },
@@ -166,6 +178,87 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 3,
+            "2br": 29
+          },
+          "src": [
+            "SRC-003682"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-003683",
+            "SRC-003682",
+            "SRC-003684"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 43669,
+          "src": [
+            "SRC-003683",
+            "SRC-003682"
+          ],
+          "note": "Building area"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.72,
+          "src": [
+            "SRC-003683",
+            "SRC-003682"
+          ]
+        },
+        {
+          "value": 0.71,
+          "src": [
+            "SRC-003685",
+            "SRC-003684"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-001101",
+            "SRC-003682"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001101",
+            "SRC-001110"
+          ],
+          "note": "State report 2023: discretionary; density bonus of 27.5% with 5 other incentives (development standards modification)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -175,12 +268,75 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "Legistar 2022-11-17: Development Review Permit for a five-story, 32-unit condominium building with one level of underground parking, a 28% state density bonus with waivers, and removal of three heritage trees on a vacant 0.71-acre site in the R3-1 district. The 2023-04-26 item lists a density bonus with one concession and waivers and two heritage trees. CEQA (SCH 2023050590): up to 58.5 feet, about 13,822 sq ft of common amenity space, tentative map.",
+      "src": [
+        "SRC-003685",
+        "SRC-003684",
+        "SRC-003683"
+      ]
+    },
+    {
+      "text": "Mountain View Voice (2023-10-25): City Council approved the project unanimously; owner-developer Greg Xiong of Ardenview Homes asked to lease units as rentals before selling them as condos; fourth and fifth floors stepped back; impact fees on the 28 market-rate units of $1.44 million park in-lieu and $102,840 transportation impact fee.",
+      "src": [
+        "SRC-003682"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Ardenview Homes, LLC",
+      "contact": "Greg Xiong",
+      "linkedin": null,
+      "src": [
+        "SRC-003684",
+        "SRC-003686",
+        "SRC-003682",
+        "SRC-003683"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Stoecker + Norway Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003685"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-11-17",
+      "type": "Other",
+      "label": "Development Review Committee hearing",
+      "src": [
+        "SRC-003685"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-04-26",
+      "type": "Other",
+      "label": "Development Review Committee hearing",
+      "src": [
+        "SRC-003684"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-05-24",
+      "type": "Other",
+      "label": "Initial Study / Mitigated Negative Declaration released; review to 2023-06-13",
+      "src": [
+        "SRC-003683"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-06-14",
       "type": "Application filed",
@@ -188,6 +344,15 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2023-08-28",
+      "type": "Other",
+      "label": "Administrative Zoning Hearing (development review and vesting tentative map)",
+      "src": [
+        "SRC-003686"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-10-24",
@@ -203,6 +368,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Ardenview Homes; opened CEQAnet and Mountain View Voice",
+      "src": [
+        "SRC-003682"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 18933028: Rich Av, Mountain View; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Legistar matters 7008, 7521, 7823, 7830 (Council approval 2023-10-24)",
+      "src": [
+        "SRC-003685",
+        "SRC-003684",
+        "SRC-003686",
+        "SRC-003687"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A and A2 2023 (density bonus 27.5%, 28 above-moderate units); CEQAnet SCH 2023050590",
+      "src": [
+        "SRC-001101",
+        "SRC-001110",
+        "SRC-003683"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Voice 2023-10-25",
+      "src": [
+        "SRC-003682"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no trade press on 918 Rich Ave",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for Ardenview Homes found no company site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search for Stoecker architects found no project page for 918 Rich Ave",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lenders or funders named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts found none",
+      "src": []
+    }
+  }
 }
