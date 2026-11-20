@@ -31,6 +31,40 @@
           37.5759115
         ]
       ]
+    },
+    {
+      "apn": "029-221-040",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.3466319,
+          37.5758971
+        ],
+        [
+          -122.3463162,
+          37.5761178
+        ],
+        [
+          -122.3462023,
+          37.5760147
+        ],
+        [
+          -122.3464616,
+          37.5758334
+        ],
+        [
+          -122.34648,
+          37.5758205
+        ],
+        [
+          -122.3466319,
+          37.5758971
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -46,6 +80,14 @@
       "role": "other",
       "src": [
         "SRC-001132"
+      ]
+    },
+    {
+      "text": "135 Primrose Rd, Burlingame, CA",
+      "role": "other",
+      "src": [
+        "SRC-001103",
+        "SRC-003992"
       ]
     }
   ],
@@ -141,6 +183,53 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003992"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 7,
+            "2br": 6,
+            "3br": 1,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003992"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 16,
+          "src": [
+            "SRC-003992"
+          ],
+          "note": "Plus 14 bicycle spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.25,
+          "src": [
+            "SRC-003992"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -148,6 +237,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001133"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2023): four-story, 53-foot building of about 29,150 sq ft including a 5,750 sq ft ground-level garage, replacing a 1,400 sq ft single-story home and gravel surface parking at 123-135 Primrose Road.",
+      "src": [
+        "SRC-003992"
+      ]
+    },
+    {
+      "text": "County parcel layer shows 123 Primrose Rd (029-221-050) and 135 Primrose Rd (029-221-040) both owned by the Wong trusts; SF YIMBY lists Kai Development Corporation as property owner.",
+      "src": [
+        "SRC-001103",
+        "SRC-003992"
       ]
     }
   ],
@@ -169,6 +271,43 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Kai Development Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Listed property owner",
+      "src": [
+        "SRC-003992"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Carrasco & Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003992"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Triad Holmes Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003992"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "NatureWalk Landscapes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003992"
+      ]
     }
   ],
   "financing": [],
@@ -180,6 +319,14 @@
       "label": "Application submitted",
       "src": [
         "SRC-001132"
+      ]
+    },
+    {
+      "date": "2023-06-26",
+      "type": "Other",
+      "label": "Planning Commission regular action item scheduled",
+      "src": [
+        "SRC-003992"
       ]
     },
     {
@@ -201,6 +348,87 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Merged duplicate record SMC-000188"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 123-135 Primrose Road and Kai Development; SF YIMBY article opened",
+      "src": [
+        "SRC-003992"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC Active Parcels: 029-221-050 (123 Primrose) and 029-221-040 (135 Primrose), both WONG ALBERT & THERESA TRS et al.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Burlingame project page (business_detail_T54_R121) and April 2024 residential overview PDF return 404 after site change",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet filing or funding award found",
+      "src": [
+        "SRC-001133"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of SM Daily Journal and local news; no article on this project found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-06-26 opened",
+      "src": [
+        "SRC-003992"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Kai Development Corporation",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Carrasco & Associates named by SF YIMBY; no project page found on its site via search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Kai Development Corporation LinkedIn; no match",
+      "src": []
+    }
+  }
 }

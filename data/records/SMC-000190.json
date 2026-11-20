@@ -100,8 +100,16 @@
             "SRC-001111"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001210"
+          ],
+          "note": "City describes a condominium townhome project"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -129,11 +137,21 @@
         {
           "value": 14,
           "src": [
-            "SRC-001111"
+            "SRC-001111",
+            "SRC-001210",
+            "SRC-003989"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-003990"
+          ],
+          "note": "Undated listing describes a proposed 6-lot subdivision with 2,058 sq ft homes and 440 sq ft garages"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -143,6 +161,13 @@
             "SRC-001111"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "TTM23-002 / DR18-023 / TRP23-001",
+          "src": [
+            "SRC-003989"
+          ],
+          "note": "Condominium Tentative Map, Design Review Permit and Tree Removal Permit as listed in the hearing notice"
         }
       ]
     },
@@ -156,6 +181,40 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003989"
+          ],
+          "note": "14 three-story condominium units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.656,
+          "src": [
+            "SRC-003989"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003989"
+          ],
+          "note": "Planning Commission approval of tentative map, design review and tree removal permits"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -163,6 +222,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001111"
+      ]
+    },
+    {
+      "text": "City hearing notice: one-lot subdivision for 14 three-story condominium units and common amenities on 0.656 acres, plus removal of five protected trees; staff proposed a CEQA categorical exemption under Guidelines Section 15332 (in-fill development). Zoning R-MD-2 per the city project page.",
+      "src": [
+        "SRC-003989",
+        "SRC-001210"
+      ]
+    },
+    {
+      "text": "The state report lists the tentative map as TTM23-001; the city hearing notice lists TTM23-002.",
+      "src": [
+        "SRC-003989"
+      ]
+    },
+    {
+      "text": "Domine Group Realty listing (undated) describes an earlier plan: a 6-lot subdivision on 28,575 sq ft with lots of 4,621 to 5,414 sq ft and homes of 2,058 sq ft plus 440 sq ft garages.",
+      "src": [
+        "SRC-003990"
       ]
     }
   ],
@@ -185,6 +263,15 @@
       "src": [
         "SRC-001210"
       ]
+    },
+    {
+      "role": "Broker",
+      "company": "Domine Group Realty",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003990"
+      ]
     }
   ],
   "financing": [],
@@ -196,6 +283,31 @@
       "label": "Application received",
       "src": [
         "SRC-001210"
+      ]
+    },
+    {
+      "date": "2023-09-08",
+      "type": "Other",
+      "label": "Remote community meeting",
+      "src": [
+        "SRC-001210"
+      ]
+    },
+    {
+      "date": "2023-09-27",
+      "type": "Other",
+      "label": "In-person community meeting",
+      "src": [
+        "SRC-001210"
+      ]
+    },
+    {
+      "date": "2024-03-11",
+      "type": "Other",
+      "label": "Planning Commission public hearing noticed",
+      "src": [
+        "SRC-001210",
+        "SRC-003989"
       ]
     },
     {
@@ -225,6 +337,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 717 Donohoe Street; Domine Group listing opened",
+      "src": [
+        "SRC-003990"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC Active Parcels: 063-374-350, 717 Donohoe St, owner 8M PROPERTY-4 LLC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "EPA project page DR18-023 and 2024-03-11 PC hearing notice opened; architectural plans PDF is image-only",
+      "src": [
+        "SRC-001210",
+        "SRC-003989"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet filing, CTCAC or HCD award found",
+      "src": [
+        "SRC-001111"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of local news for 717 Donohoe; no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and other trade press; no coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for 8M Property-4 LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named on city page; plans PDF has no extractable text",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for 8M Property LinkedIn; only an unrelated-looking post mentioning an 8M team",
+      "src": []
+    }
+  }
 }
