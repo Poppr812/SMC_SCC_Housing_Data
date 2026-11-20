@@ -112,6 +112,28 @@
           ]
         }
       ]
+    },
+    {
+      "text": "800 Glenview Dr, San Bruno, CA 94066, San Bruno, CA",
+      "role": "other",
+      "src": [
+        "SRC-003418"
+      ]
+    },
+    {
+      "text": "850 Glenview Dr, San Bruno, CA 94066, San Bruno, CA",
+      "role": "other",
+      "src": [
+        "SRC-003419",
+        "SRC-001123"
+      ]
+    },
+    {
+      "text": "2880-2890 San Bruno Ave W, San Bruno, CA 94066, San Bruno, CA",
+      "role": "other",
+      "src": [
+        "SRC-003419"
+      ]
     }
   ],
   "images": [],
@@ -134,8 +156,23 @@
             "SRC-001910"
           ],
           "note": "Approved May 21, 2024. Reported sales opening in 2026 came only from pages that wouldn't open, so not claimed here"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003418"
+          ],
+          "note": "Developer page lists the community as New Release with models and sales office at 800 Glenview Dr; APR shows building permits issued June 2025"
+        },
+        {
+          "value": "Permitted",
+          "src": [
+            "SRC-001123"
+          ],
+          "note": "2025 APR: building permits for Building C (6 units, 2025-06-06) and Building G (5 units, 2025-06-30)"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -206,6 +243,93 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "AR23-014, TM23-002",
+          "src": [
+            "SRC-001123",
+            "SRC-001129"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 80
+            },
+            {
+              "count": 6,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001123",
+            "SRC-001129"
+          ],
+          "note": "APR: 3 low-income and 6 moderate-income deed-restricted for-sale units"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001123"
+          ],
+          "note": "2024 APR entitlement row"
+        },
+        {
+          "value": 55,
+          "src": [
+            "SRC-001123"
+          ],
+          "note": "2025 APR building permit rows"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 123,
+          "src": [
+            "SRC-003419"
+          ],
+          "note": "SFO comment letter in the ALUC packet: nine buildings, 58 townhomes, 123 parking spaces"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 58
+          },
+          "src": [
+            "SRC-003419"
+          ],
+          "note": "ALUC project description: three-bedroom townhomes, 1,290 to 1,800 sq ft. Developer page lists 3 to 4 bedrooms (Plan 2 has a den/optional 4th bedroom)"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001129"
+          ],
+          "note": "APR Table A: Discretionary, SB 330 application, no density bonus"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -214,18 +338,116 @@
       "src": [
         "SRC-001910"
       ]
+    },
+    {
+      "text": "HCD APR lists the project as Highland Ridge (2024 entitlement row, 850 Glenview Dr, APNs 019-042-150, -160, -170, 58 units approved 2024-05-21) and Glenview Highlands (2023 application row). The developer markets it as The Highlands at 800 Glenview Dr. The 2022 APR shows the earlier Glenview Terrace approval on the same APNs: 29 single-family units (1 low, 3 moderate, 25 above moderate), entitled 2022-07-01.",
+      "src": [
+        "SRC-001123",
+        "SRC-001129",
+        "SRC-003418"
+      ]
+    },
+    {
+      "text": "ALUC application: site is a parking lot, vacant church and vacant house on 3.28 acres; nine three-story buildings (A through I), 41 ft tall. Developer page: Plan 1 1,450 sf from $1,249,990; Plan 3 1,480 sf from $1,419,990; Plan 2 1,760 sf from $1,449,990; all three-story with two-car garages, owned solar.",
+      "src": [
+        "SRC-003419",
+        "SRC-003418"
+      ]
+    },
+    {
+      "text": "2025 APR building permit rows cover Buildings C (6 units, incl. 1 low-income, issued 2025-06-06) and G (5 units, incl. 1 moderate-income, issued 2025-06-30) only.",
+      "src": [
+        "SRC-001123"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "City Ventures",
+      "contact": "Samantha Hauser",
+      "linkedin": null,
+      "email": "samantha@cityventures.com",
+      "phone": "646.522.4260",
+      "website": "https://www.cityventures.com",
+      "project_page": "https://cityventures.com/new-homes/ca/san-bruno/san-bruno-the-highlands/",
+      "src": [
+        "SRC-003419",
+        "SRC-003418"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": "Dan Hale",
+      "linkedin": null,
+      "email": "dhale@hhja.com",
+      "phone": "415.568.3833",
+      "website": "https://www.hunthalejones.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003419"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "CSW/ST2",
+      "contact": "Michael Vidra",
+      "linkedin": null,
+      "website": "https://www.cswst2.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003419"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "C2 Collaborative",
+      "contact": "Christopher Fortunato",
+      "linkedin": null,
+      "website": "https://www.c2collaborative.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003419"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-06-28",
+      "type": "Other",
+      "label": "City Council approved the earlier 29-unit Glenview Terrace project on the site and its IS/MND (Res. 2022-61)",
+      "src": [
+        "SRC-003419"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-10-12",
+      "type": "Application filed",
+      "label": "Glenview Highlands application filed (AR23-014, TM23-002)",
+      "src": [
+        "SRC-001129"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-05-21",
       "type": "Approved",
       "label": "City of San Bruno approval (Notice of Determination)",
       "src": [
         "SRC-001910"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-06",
+      "type": "Permit issued",
+      "label": "Building permit, Building C, 6 units (BLD-2024-602)",
+      "src": [
+        "SRC-001123"
       ],
       "estimated": false
     }
@@ -235,6 +457,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Glenview Highlands / 800 Glenview / City Ventures; BusinessWire release and newhomesource returned 403",
+      "src": [
+        "SRC-003418",
+        "SRC-003419"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer: record APN 019-042-190 is a block match; APR and ALUC list 019-042-150, -160, -170, which are not in the county layer. No owner shown",
+      "src": [
+        "SRC-001103",
+        "SRC-003419"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no San Bruno project page or staff report for AR23-014; city-submitted ALUC application covered under county",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "C/CAG ALUC packet (May 2024): city application, plan cover sheet with project team, SFO comment letter",
+      "src": [
+        "SRC-003419"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "HCD APR Table A (2023) and A2 (2022, 2024, 2025) for San Bruno; CEQAnet SCH 2021040782 already on record",
+      "src": [
+        "SRC-001123",
+        "SRC-001129",
+        "SRC-001910"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "SM Daily Journal article on the townhouse opening returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "BusinessWire grand-opening release returned 403; no other trade coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City Ventures community page: plans, prices, sales office at 800 Glenview Dr",
+      "src": [
+        "SRC-003418"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Hunt Hale Jones Architects named on ALUC plan cover sheet",
+      "src": [
+        "SRC-003419"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

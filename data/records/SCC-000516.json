@@ -164,9 +164,167 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.65,
+          "src": [
+            "SRC-003420"
+          ],
+          "note": "2.65 net, 2.69 gross"
+        },
+        {
+          "value": 2.6,
+          "src": [
+            "SRC-001463"
+          ]
+        },
+        {
+          "value": 2.7,
+          "src": [
+            "SRC-003421"
+          ],
+          "note": "Approximately 2.7 acres per application letter"
+        }
+      ],
+      "best": 0
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003420",
+            "SRC-003422"
+          ],
+          "note": "Up to about 45 ft; waivers for Buildings 4-6 up to 45 ft 7 in"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 40,
+            "4br+": 17
+          },
+          "src": [
+            "SRC-003420"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 126,
+          "src": [
+            "SRC-003420"
+          ],
+          "note": "114 garage spaces plus 12 guest spaces"
+        },
+        {
+          "value": 124,
+          "src": [
+            "SRC-003422",
+            "SRC-003421"
+          ],
+          "note": "Application letter: 110 garage plus 14 guest spaces; NOE: 124 vehicle spaces"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 46,
+          "src": [
+            "SRC-003422",
+            "SRC-003420"
+          ]
+        },
+        {
+          "value": 45,
+          "src": [
+            "SRC-001100"
+          ],
+          "note": "2024 APR Table A: 45 above-moderate units"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 120
+            },
+            {
+              "count": 5,
+              "ami": 100
+            }
+          ],
+          "src": [
+            "SRC-003420"
+          ],
+          "note": "6 for-sale to median-income households (100-120% AMI), 5 to moderate-income households (80-100% AMI)"
+        },
+        {
+          "value": [
+            {
+              "count": 12,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001100"
+          ],
+          "note": "2024 APR Table A: 12 moderate-income deed-restricted"
+        }
+      ],
+      "best": 0
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 99,
+          "src": [
+            "SRC-003420"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003420"
+          ],
+          "note": "SB 330 vesting; density bonus waivers and one concession, no bonus units. City page also cites Builder's Remedy provisions of the HAA"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Ten three-story buildings; units 2,136 to 2,704 sq ft including garage per staff report, 1,548 to 2,156 sq ft per the NOE. Replaces two office buildings of about 26,000 and 13,000 sq ft. Parkland in-lieu fee of $2,430,000 for 45 market-rate units per staff report.",
+      "src": [
+        "SRC-003420",
+        "SRC-003422"
+      ]
+    },
+    {
+      "text": "NOE calls this Phase 1; Dividend Homes II at 20045 and 20065 Stevens Creek Blvd (32 townhomes) is Phase 2 on the adjacent site to the east.",
+      "src": [
+        "SRC-003422",
+        "SRC-001100"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -185,6 +343,28 @@
       "linkedin": null,
       "src": [
         "SRC-001463"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Dividend Homes, Inc.",
+      "contact": "Joshua Vrotsos",
+      "linkedin": null,
+      "email": "jvrotsos@dividendhomes.com",
+      "phone": "(858) 682-9062",
+      "other_role": "Applicant contact (CEQA notice)",
+      "src": [
+        "SRC-003422"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Miller Starr Regalia",
+      "contact": "Bryan W. Wenter",
+      "linkedin": null,
+      "other_role": "Applicant's counsel",
+      "src": [
+        "SRC-003421"
       ]
     }
   ],
@@ -210,11 +390,29 @@
       "estimated": false
     },
     {
+      "date": "2025-12-09",
+      "type": "Other",
+      "label": "Planning Commission approved 4-1",
+      "src": [
+        "SRC-001463"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-01-21",
       "type": "Approved",
       "label": "City Council approved 4-0-1",
       "src": [
         "SRC-001463"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-01-23",
+      "type": "Other",
+      "label": "Notice of Exemption filed (PRC 21080.66), SCH 2026010770",
+      "src": [
+        "SRC-003422"
       ],
       "estimated": false
     }
@@ -229,6 +427,99 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and Dividend Homes; led to CEQAnet NOE and Legistar",
+      "src": [
+        "SRC-003422"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API: 316-23-025 (20085 Stevens Creek Bl) and 316-23-026 (20111) match the record; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page; Legistar CC 2026-01-21 staff report (file 25-14471); application cover letter 2024-12-19",
+      "src": [
+        "SRC-001463",
+        "SRC-003420",
+        "SRC-003421"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Cupertino; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet NOE SCH 2026010770; HCD APR Table A 2024 (Cupertino)",
+      "src": [
+        "SRC-003422",
+        "SRC-001100"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news on Dividend Homes I",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found SF YIMBY coverage of the adjacent Phase 2 site only",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no Dividend Homes project page for this site; homepage already on record",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Dahlin Group named on city page; already on record",
+      "src": [
+        "SRC-001463"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity partner found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000322",
+      "relation": "adjacent",
+      "note": "Dividend Homes I and II, neighboring Stevens Creek Blvd sites"
     }
   ]
 }

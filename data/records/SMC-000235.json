@@ -150,15 +150,24 @@
           "src": [
             "SRC-001180"
           ]
+        },
+        {
+          "value": 2.124,
+          "src": [
+            "SRC-003415"
+          ],
+          "note": "92,532 sq ft townhouse parcel, split from a 2.536-acre lot; the 0.412-acre market parcel is not part of the design review"
         }
-      ]
+      ],
+      "best": 1
     },
     "total_units": {
       "claims": [
         {
           "value": 58,
           "src": [
-            "SRC-001180"
+            "SRC-001180",
+            "SRC-003415"
           ]
         }
       ]
@@ -170,8 +179,15 @@
           "src": [
             "SRC-001180"
           ]
+        },
+        {
+          "value": "20% inclusionary under EPAMC 18.37: 9 on-site for-sale units (5 median/80% AMI, 4 moderate/120% AMI) plus an in-lieu fee for 0.34 unit",
+          "src": [
+            "SRC-003415"
+          ]
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -182,9 +198,119 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 8,
+            "3br": 18,
+            "4br+": 32
+          },
+          "src": [
+            "SRC-003415"
+          ],
+          "note": "Staff report Table 3: types A (3 BR, 10), B (4 BR, 16), D (4 BR, 16), F (3 BR, 8), G (1 BR, 8)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003415",
+            "SRC-003416"
+          ],
+          "note": "3 stories, 40 ft 5 in; ten 3-story building sections over an underground garage"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 120,
+          "src": [
+            "SRC-003415"
+          ],
+          "note": "115 resident spaces at density bonus ratios plus 5 guest spaces, podium/below-grade garage"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 115685,
+          "src": [
+            "SRC-003415"
+          ],
+          "note": "Floor area used in the FAR calculation (115,685 sf on 92,532 sf, FAR 1.25)"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003415"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 5,
+              "ami": 80
+            },
+            {
+              "count": 4,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003415",
+            "SRC-003417"
+          ],
+          "note": "For-sale inclusionary units: 5 median income (80% AMI) and 4 moderate income (120% AMI); in-lieu fee for 0.34 unit"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 49,
+          "src": [
+            "SRC-003415"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003415"
+          ],
+          "note": "25% state density bonus (12 bonus units over a 46-unit base); CEQA Class 32 infill exemption"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Staff report lists Wawaland LLC / Wa Li / Riyad Ghannam (RG Architecture) as owner/applicant. Existing site: four one-story houses and a shed; the 5,551 sq ft Garden Super Market stays on a separate 0.412-acre parcel. Plan removes 71 trees and plants 62.",
+      "src": [
+        "SRC-003415"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -195,11 +321,62 @@
       "src": [
         "SRC-001180"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Wawaland LLC",
+      "contact": "Wa Li",
+      "linkedin": null,
+      "email": "citiviewepa@gmail.com",
+      "phone": "650.699.6999",
+      "src": [
+        "SRC-003415",
+        "SRC-003417"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "rg-architecture, Inc.",
+      "contact": "Riyad Ghannam",
+      "linkedin": null,
+      "website": "https://rg-architecture.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003415",
+        "SRC-003416"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-01-29",
+      "type": "Other",
+      "label": "Pre-application (PRE24-001) filed",
+      "src": [
+        "SRC-003415"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-11-19",
+      "type": "Other",
+      "label": "City Council approved rezoning from R-MD-1 to R-MD-2",
+      "src": [
+        "SRC-003415"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-01-08",
+      "type": "Other",
+      "label": "SB 330 preliminary application filed",
+      "src": [
+        "SRC-003415"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-04-07",
       "type": "Application filed",
@@ -222,6 +399,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and applicant led to the city project page and its attachments",
+      "src": [
+        "SRC-001180",
+        "SRC-003415"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer: APN 063-492-280 already on record; the layer shows no owner. Staff report confirms APN and 2.536-acre parent lot",
+      "src": [
+        "SRC-001103",
+        "SRC-003415"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "EPA project page; PC staff report 2026-02-23; signed Inclusionary Housing Plan; application project description",
+      "src": [
+        "SRC-003415",
+        "SRC-003417",
+        "SRC-003416"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in East Palo Alto; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "HCD APR Table A and A2 (East Palo Alto, Pulgas Ave): no row for 1933 Pulgas; staff report cites a CEQA Class 32 exemption (no CEQAnet document found)",
+      "src": [
+        "SRC-001111"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage of 1933 Pulgas Avenue",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no trade press coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Wawaland LLC; IHP lists a Fremont address and a gmail contact",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Architect named in application project description: rg-architecture, Inc., San Francisco",
+      "src": [
+        "SRC-003416"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in city documents or search results",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

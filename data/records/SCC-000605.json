@@ -178,6 +178,20 @@
           ]
         }
       ]
+    },
+    {
+      "text": "624-662 S Main St, Milpitas, CA 95035, Milpitas, CA",
+      "role": "other",
+      "src": [
+        "SRC-001128"
+      ]
+    },
+    {
+      "text": "648-718 Ohlone St, Milpitas, CA 95035, Milpitas, CA",
+      "role": "other",
+      "src": [
+        "SRC-001128"
+      ]
     }
   ],
   "images": [],
@@ -245,6 +259,76 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "P-SD22-0007",
+          "src": [
+            "SRC-001128"
+          ]
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001128"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 9,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "9 moderate-income deed-restricted for-sale units, 48 above moderate"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 48,
+          "src": [
+            "SRC-001128"
+          ]
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "2025 APR building permit rows for moderate-income units"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001128"
+          ],
+          "note": "2025 APR: DB;INC, two development-standard incentives and a parking reduction"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -252,6 +336,24 @@
       "text": "Parcel match: 612 S Main isn't in county data. These are new unaddressed lots on the east frontage directly south of 554 S Main, at the geocoded address. Matched by location only.",
       "src": [
         "SRC-001898"
+      ]
+    },
+    {
+      "text": "2025 APR lists 32 single-unit building permits for Toll Brothers at South Main (B-MU25-0001 to -0026 and -0052 to -0057), issued 2025-08-20 (26), 2025-10-22 (1) and 2025-10-23 (5), including 4 moderate-income units, at 624-662 S Main St and 648-718 Ohlone St under parent APN 086-25-027.",
+      "src": [
+        "SRC-001128"
+      ]
+    },
+    {
+      "text": "Developer page (Nov. 2026): three-story condos, 3 bed / 3 bath, Myra 1,565 sf from $1,199,995 and Sana / Sana Elite 1,695 sf from $1,314,995 / $1,364,995; quick move-in homes at 646, 658 and 660 S Main and 660 Ohlone listed from $1,099,000.",
+      "src": [
+        "SRC-003424"
+      ]
+    },
+    {
+      "text": "SF YIMBY (Jan. 2024): a June 2023 county assessment valued the property at about $4.4 million; earlier TTLC plans had nine three-story buildings with homes of 1,420 to 2,090 sq ft.",
+      "src": [
+        "SRC-003423"
       ]
     }
   ],
@@ -287,11 +389,66 @@
       "src": [
         "SRC-001898"
       ]
+    },
+    {
+      "role": "Seller",
+      "company": "The True Life Companies",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003423"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Toll Brothers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003423"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "R3 Studios",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003423"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2023-04-06",
+      "type": "Approved",
+      "label": "Entitlement approved (SB 330 57-unit townhome project, P-SD22-0007)",
+      "src": [
+        "SRC-001128"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-09",
+      "type": "Sale",
+      "label": "Toll Brothers bought the 2.35-acre site from The True Life Companies",
+      "src": [
+        "SRC-003423"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-20",
+      "type": "Permit issued",
+      "label": "First building permits issued (26 single-unit permits that day)",
+      "src": [
+        "SRC-001128"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
@@ -302,6 +459,91 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 612 S Main and P-SD22-0007; SF YIMBY permit article opened",
+      "src": [
+        "SRC-003423"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API: 086-09-109, -110, -115 are unaddressed with no owner field; APR parent APN 086-25-027 no longer in the dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search of milpitas.gov found no staff report for P-SD22-0007; Milpitas DocumentCenter items 8215 and 8216 were unrelated",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Milpitas; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "HCD APR Table A2 Milpitas: 2023 entitlement row and 2025 building permit rows",
+      "src": [
+        "SRC-001128"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search found no local news beyond SF YIMBY",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-01-13 permits article; The Real Deal 2023-02-21 returned 403",
+      "src": [
+        "SRC-003423"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Toll Brothers community page: designs, prices, quick move-in addresses",
+      "src": [
+        "SRC-003424"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SDG Architects already on record; no project page found",
+      "src": [
+        "SRC-001898"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
