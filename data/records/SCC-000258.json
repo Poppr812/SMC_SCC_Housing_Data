@@ -144,6 +144,29 @@
           "note": "State report 2024, application stage: 10 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001857",
+            "SRC-001956"
+          ],
+          "note": "H24-015: 8-story multifamily building"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.4,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit text: approximately 0.40 gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -157,6 +180,12 @@
       "text": "City of San Jose permit H24-015 (Site Development Permit/Amendment, folder year 2024), status Under Review: \"Development Permit for the demolition of one existing single-family residence, the removal of 25 trees (seven ordinance-size and 18 non-ordinance-size), and the construction of an 8-story, 64-unit multifamily building on an approximately 0.40-gross-acre s\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "An earlier city file, PRE23-026 (2023-03-28), was a focused preliminary review for demolishing the single-family house and building an 18-unit multifamily building.",
+      "src": [
+        "SRC-001857"
       ]
     }
   ],
@@ -175,6 +204,15 @@
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-03-28",
+      "type": "Other",
+      "label": "Focused preliminary review PRE23-026 filed for an 18-unit multifamily building",
+      "src": [
+        "SRC-001857"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-03-13",
       "type": "Application filed",
@@ -199,6 +237,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, H24-015 and VCI Companies; SJ Build tracker page lists PRE23-026 and 8 stories",
+      "src": [
+        "SRC-001857"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 48112004: situs 36 N 34th St, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city GIS permit layer already on record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "APR Table A 2024 row H24-015 (66 units, 10 very-low DR, pending); no Table A2 row; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searches for 36 N 34th St and VCI returned no local news on this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Trade results covered other VCI projects (826 N Winchester), not this site",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "vcicompanies.com returned 403",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search shows no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

@@ -141,6 +141,48 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "CPX25-0004",
+          "src": [
+            "SRC-001561"
+          ],
+          "note": "Application number on the city's incomplete-application notice"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 6,
+              "ami": 50
+            },
+            {
+              "count": 6,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001561"
+          ],
+          "note": "12 ADUs: 6 very-low income and 6 moderate income rental households"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001561"
+          ],
+          "note": "12 deed-restricted ADUs of 64 units"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -155,6 +197,36 @@
       "src": [
         "SRC-001563"
       ]
+    },
+    {
+      "text": "City: 52 primary dwellings use a 100% density bonus over a 26-unit base density under State Density Bonus Law.",
+      "src": [
+        "SRC-001561"
+      ]
+    },
+    {
+      "text": "Applicant's cover letter cites a separate pending application on the same property, City Application No. MISC23-0017.",
+      "src": [
+        "SRC-003363"
+      ]
+    },
+    {
+      "text": "Lennar markets the community as Vineyard One, luxury single-family homes; no prices or sales dates posted.",
+      "src": [
+        "SRC-003362"
+      ]
+    },
+    {
+      "text": "SFYIMBY (2025) described the earlier Vineyard One builder's remedy plan as 85 townhomes, 84 flats, 24 single-family detached homes and 38 attached ADUs on 11.6 acres.",
+      "src": [
+        "SRC-003364"
+      ]
+    },
+    {
+      "text": "City: initial site work (clearing and grubbing the vineyard and trees, 15 to 20 workers) was scheduled to end 2026-08-24; utilities, paving and home construction follow.",
+      "src": [
+        "SRC-001561"
+      ]
     }
   ],
   "parties": [
@@ -167,17 +239,188 @@
         "SRC-001561"
       ],
       "website": "https://www.lennar.com/"
+    },
+    {
+      "role": "Buyer",
+      "company": "Lennar Homes",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001561"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Vineyard One Holdings LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant; party to the 2025 MOU with the city",
+      "src": [
+        "SRC-001561",
+        "SRC-003363"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Thomas J. Wilson",
+      "contact": "Thomas J. Wilson",
+      "linkedin": null,
+      "src": [
+        "SRC-003364"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Dustin T. Mannina",
+      "contact": "Dustin T. Mannina",
+      "linkedin": null,
+      "src": [
+        "SRC-003364"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Sachneel Patel",
+      "contact": "Sachneel Patel",
+      "linkedin": null,
+      "src": [
+        "SRC-003364"
+      ]
+    },
+    {
+      "role": "Buyer",
+      "company": "Jeffrey Bader",
+      "contact": "Jeffrey Bader",
+      "linkedin": null,
+      "src": [
+        "SRC-003364"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Site plan and rendering for the earlier 231-unit Vineyard One plan",
+      "src": [
+        "SRC-003364"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Environmental Foresight",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.environmentalforesight.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003365"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "CBG (Civil Engineers, Surveyors, Planners)",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.cbandg.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003366"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Cox, Castle & Nicholson LLP",
+      "contact": "Scott B. Birkey",
+      "linkedin": null,
+      "other_role": "Applicant's counsel",
+      "src": [
+        "SRC-003363"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-06",
+      "type": "Sale",
+      "label": "SFYIMBY reports the 11.6-acre site bought for $30.6 million by Thomas J. Wilson, Dustin T. Mannina, Sachneel Patel and Jeffrey Bader (article date)",
+      "src": [
+        "SRC-003364"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2025-09-10",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted for the 64-unit project",
+      "src": [
+        "SRC-001561"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-11",
+      "type": "Application filed",
+      "label": "Formal application filed (CPX25-0004)",
+      "src": [
+        "SRC-001561",
+        "SRC-003363"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-19",
+      "type": "Other",
+      "label": "Application deemed complete; City Council approved MOU on tolling and withdrawal of the builder's remedy project",
+      "src": [
+        "SRC-001561"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-03",
+      "type": "Other",
+      "label": "MOU executed",
+      "src": [
+        "SRC-001561"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-02-25",
+      "type": "Approved",
+      "label": "Planning Commission unanimously approved the tentative map and subdivision; CEQA Section 15183 exemption approved",
+      "src": [
+        "SRC-001561"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-05-06",
       "type": "Approved",
       "label": "Approval date of the alternative project, per the city's Chester/Allendale page",
       "src": [
         "SRC-001562"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-05-06",
+      "type": "Other",
+      "label": "City Council approved the Final Map and Williamson Act cancellation",
+      "src": [
+        "SRC-001561"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-01",
+      "type": "Sale",
+      "label": "Lennar Homes bought the property",
+      "src": [
+        "SRC-001561"
       ],
       "estimated": false
     },
@@ -210,6 +453,98 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on 14001 Chester Ave, Vineyard One, Lennar; Lennar promo page opened",
+      "src": [
+        "SRC-003362"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 39701071: situs Chester Av, Saratoga; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Saratoga project page and posted documents: cover letter, site plan, tentative map",
+      "src": [
+        "SRC-001561",
+        "SRC-003363",
+        "SRC-003365",
+        "SRC-003366"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; Williamson Act cancellation handled by City Council per city page",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "APR Table A/A2 searched for CPX25-0004 and Chester Ave in Saratoga: no row for this project; CEQAnet keyword search returned no match",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "Searches returned the SJ Spotlight article already on record",
+      "src": [
+        "SRC-001563"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SFYIMBY 2025 article opened; The Real Deal (2026-07-06) and Traded sale pages returned 403",
+      "src": [
+        "SRC-003364"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Lennar Vineyard One promo page",
+      "src": [
+        "SRC-003362"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Site plan (Environmental Foresight), tentative map (CBG); elevations carry no firm name in text; SDG Architects named for the earlier plan",
+      "src": [
+        "SRC-003365",
+        "SRC-003366",
+        "SRC-003364"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "2026 sale price reported by The Real Deal and Traded; both returned 403",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search shows no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }
