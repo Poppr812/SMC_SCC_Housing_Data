@@ -303,6 +303,21 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 17,
+          "src": [
+            "SRC-001431",
+            "SRC-003996"
+          ],
+          "note": "County list: 13 single-family homes and 4 detached ADUs on 13 parcels"
+        },
+        {
+          "value": 20,
+          "src": [
+            "SRC-003997"
+          ],
+          "note": "SF YIMBY (April 2024): plan grew to 16 single-family homes, four with ADUs, for 20 units"
         }
       ]
     },
@@ -313,6 +328,13 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "PLN23-184-PRE",
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "Preliminary application"
         }
       ]
     },
@@ -336,6 +358,14 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": 6.27,
+          "src": [
+            "SRC-001431",
+            "SRC-003996"
+          ],
+          "note": "Development area within the 97.5-acre parcel"
         }
       ]
     },
@@ -358,6 +388,33 @@
           ]
         }
       ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 4,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "4 ADUs proposed affordable to low-income households"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003997"
+          ],
+          "note": "Two-story homes in concept art"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -365,6 +422,18 @@
       "text": "13 single-family homes and 4 detached ADUs. County status: Incomplete, July 10, 2026.",
       "src": [
         "SRC-001431"
+      ]
+    },
+    {
+      "text": "County SB 330 list: common name Circle Hill Estates, property owner name [Labarbera], Supervisorial District 5, assigned planner Erin Freitas, formal application PLN24-062-SB330 marked incomplete as of July 10, 2026.",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "text": "SF YIMBY (April 2024) places the homes on about five acres of hillside on a cul-de-sac off Circle Hill Drive, part of the nearly 100-acre Almaden Mountain Winery property owned by the LaBarbera family; Wood Rodgers is credited on the site map.",
+      "src": [
+        "SRC-003997"
       ]
     }
   ],
@@ -378,15 +447,62 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Mike Labarbera",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Terracommercial Real Estate Corporation",
+      "contact": "Michael LaBarbera",
+      "linkedin": null,
+      "src": [
+        "SRC-003997",
+        "SRC-003996"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003997"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2023-10-13",
+      "type": "Other",
+      "label": "Preliminary SB 330 application submitted (PLN23-184-PRE)",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-04-05",
       "type": "Application filed",
       "label": "Formal SB 330 application submitted",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-07-10",
+      "type": "Other",
+      "label": "County completeness status: incomplete",
       "src": [
         "SRC-001431"
       ],
@@ -398,6 +514,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Circle Hill Estates / 6591 Woodcliff Ct led to SF YIMBY coverage",
+      "src": [
+        "SRC-003997"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 575-20-037: situs 6591 Woodcliff Ct, unincorporated; no owner shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Unincorporated county project; San Jose is adjacent city only",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list (current PDF): PLN23-184-PRE, PLN24-062-SB330 incomplete 2026-07-10, applicant and owner",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No CEQAnet or APR entry found for PLN24-062 or 6591 Woodcliff Ct",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for local news on 6591 Woodcliff Ct and Circle Hill Estates",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-10-28 and 2024-04-14",
+      "src": [
+        "SRC-003997",
+        "SRC-003996"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no project page for Terracommercial Real Estate Corporation",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Anderson Architects credited in SF YIMBY (April 2024); no firm project page found",
+      "src": [
+        "SRC-003997"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

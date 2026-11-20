@@ -137,9 +137,24 @@
             "SRC-001309"
           ],
           "note": "13 new single-family homes on 13 lots; 16 counting three additional dwelling units"
+        },
+        {
+          "value": 16,
+          "src": [
+            "SRC-003993",
+            "SRC-001309"
+          ],
+          "note": "City: Streamlined Housing Development Review 25PLN-00296 proposes 16 units on nine residential lots plus a common lot; SF YIMBY (July 2026) describes 13 single-family homes plus 3 additional dwelling units"
+        },
+        {
+          "value": 15,
+          "src": [
+            "SRC-003993"
+          ],
+          "note": "SB 330 pre-application 25PLN-00249: eight parcels including one common lot, 15 units (7 main dwellings with JADUs plus one ADU)"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -149,6 +164,20 @@
             "SRC-001126"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "25PLN-00298",
+          "src": [
+            "SRC-003993"
+          ],
+          "note": "Tentative map"
+        },
+        {
+          "value": "25PLN-00249",
+          "src": [
+            "SRC-003993"
+          ],
+          "note": "SB 330 pre-application"
         }
       ]
     },
@@ -165,6 +194,18 @@
             "SRC-001126"
           ],
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 100
+            }
+          ],
+          "src": [
+            "SRC-003993"
+          ],
+          "note": "City: the attached home on Lot 9 would be Below Market Rate, affordable to moderate-income households at or below 100% of AMI"
         }
       ]
     },
@@ -178,6 +219,32 @@
           "note": "State report 2025, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.02,
+          "src": [
+            "SRC-003993",
+            "SRC-001309"
+          ],
+          "note": "City: existing 44,449 sq ft parcel; pre-application describes a vacant 1.02-acre parcel"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003993"
+          ],
+          "note": "Streamlined Housing Development Review; requests concessions and waivers under State Density Bonus Law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -185,6 +252,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001126"
+      ]
+    },
+    {
+      "text": "City project page: 25PLN-00296 proposes five detached single-family homes with attached ADUs, two single-family homes with JADUs, two attached single-family homes with JADUs, and two attached single-family homes without accessory units. The tentative map (25PLN-00298) creates nine residential lots and one common lot for a private street, utilities and landscaping. The city is evaluating CEQA eligibility under AB 130. Zoning RE.",
+      "src": [
+        "SRC-003993"
+      ]
+    },
+    {
+      "text": "SF YIMBY (October 2025) described the preliminary plan as seven single-family homes, each with an ADU, by Steel Bridge Capital with Ponderosa Architecture. SF YIMBY (July 2026) names the developer as Steel Bridge Homes Palo Alto.",
+      "src": [
+        "SRC-003994",
+        "SRC-001309"
       ]
     }
   ],
@@ -206,6 +286,16 @@
       "src": [
         "SRC-001309"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Steel Bridge Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003994",
+        "SRC-003995"
+      ]
     }
   ],
   "financing": [],
@@ -218,6 +308,24 @@
       "src": [
         "SRC-001126"
       ]
+    },
+    {
+      "date": "2026-03-05",
+      "type": "Other",
+      "label": "Architectural Review Board study session",
+      "src": [
+        "SRC-003993"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-29",
+      "type": "Other",
+      "label": "Planning and Transportation Commission hearing",
+      "src": [
+        "SRC-003993"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -230,6 +338,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 4103 Old Trace Rd led to the City of Palo Alto project page and SF YIMBY coverage",
+      "src": [
+        "SRC-003993"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 175-20-078: situs 4103 Old Trace Rd, Palo Alto; no owner shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of Palo Alto project page: 25PLN-00296, 25PLN-00298, 25PLN-00249, ARB 2026-03-05, PTC 2026-04-29",
+      "src": [
+        "SRC-003993"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; no CEQAnet filing found (city evaluating AB 130 exemption)",
+      "src": [
+        "SRC-001126"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Palo Alto Online article (2025-10-13) returned HTTP 429 to automated access",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY articles 2025-10-11, 2026-05-22 and 2026-07-30",
+      "src": [
+        "SRC-003994",
+        "SRC-003995",
+        "SRC-001309"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no website for Steel Bridge Capital or Steel Bridge Homes Palo Alto",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Ponderosa Architecture credited in SF YIMBY renderings; already on record",
+      "src": [
+        "SRC-001309"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

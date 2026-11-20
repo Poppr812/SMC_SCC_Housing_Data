@@ -149,8 +149,26 @@
           "src": [
             "SRC-001556"
           ]
+        },
+        {
+          "value": 14,
+          "src": [
+            "SRC-003998",
+            "SRC-003999",
+            "SRC-004000",
+            "SRC-004001"
+          ],
+          "note": "Applicant documents (2026): 14 for-sale single-family homes; Lot 14 added as S-26-006"
+        },
+        {
+          "value": 30,
+          "src": [
+            "SRC-001554"
+          ],
+          "note": "Expired SB 330 application invoking Builder's Remedy: 30 units, 6 below market (20%), 2 stories"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -159,6 +177,99 @@
           "src": [
             "SRC-001556"
           ]
+        },
+        {
+          "value": "S-25-012 through S-25-025, S-26-006, M-25-002, GP-24-002",
+          "src": [
+            "SRC-004001",
+            "SRC-003998"
+          ],
+          "note": "Round 3 resubmittal file list"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.3,
+          "src": [
+            "SRC-003998",
+            "SRC-004000"
+          ],
+          "note": "Southern 4.3-acre portion of the 9.1-acre parcel; the 4.8-acre northern portion stays a school site"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-003998"
+          ]
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-003998",
+            "SRC-003999",
+            "SRC-004000"
+          ],
+          "note": "One four-bedroom home deed-restricted for a very low-income household"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003998",
+            "SRC-004000"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "One four-bedroom single-family home deed-restricted for a very low-income household (1 of 14 for-sale units, 7.1%)",
+          "src": [
+            "SRC-004000",
+            "SRC-003999"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003999",
+            "SRC-003998"
+          ],
+          "note": "20% density bonus under Gov. Code 65915(b)(1)(B) with waivers"
+        },
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001554"
+          ],
+          "note": "Earlier 30-unit SB 330 application, now expired"
         }
       ]
     }
@@ -169,18 +280,80 @@
       "src": [
         "SRC-001554"
       ]
+    },
+    {
+      "text": "Letter of Justification: the site is the former Mirassou Elementary School, owned by Union School District, declared surplus in 1980 and closed in 1989. The northern 4.8 acres are leased to Stratford Elementary and Bright Horizons Preschool. Lots exceed 10,000 sq ft and average over 11,750 sq ft. Robson Homes proposes a $350,000 contribution toward a traffic signal at Belgatos Road and Blossom Hill Road.",
+      "src": [
+        "SRC-004000"
+      ]
+    },
+    {
+      "text": "A public comment exhibit in a Town of Los Gatos meeting packet reproduces a Union School District account: the district issued an RFQ/P for the approximately 4.28-acre Mirassou A field area, received three proposals by January 12, 2024, selected Robson Homes (proposal of 12 homes), and approved an Exchange Agreement and Joint Escrow Instructions with Robson Homes, LLC at an exchange value of $12,722,100.",
+      "src": [
+        "SRC-004002"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Robson Homes, LLC",
+      "contact": "Jack Robson (Project Manager)",
+      "linkedin": null,
+      "email": "Jack@Robson.com",
+      "phone": "(408) 345-1767",
+      "src": [
+        "SRC-004000"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Union School District",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-004000",
+        "SRC-004002"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-02-11",
+      "type": "Other",
+      "label": "Union School District Board Resolution 23-24-07: intent to exchange the Mirassou A site with Robson Homes",
+      "src": [
+        "SRC-004002"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-06-26",
+      "type": "Other",
+      "label": "General Plan Committee unanimously recommended approval of the General Plan Amendment",
+      "src": [
+        "SRC-004000"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-04-30",
       "type": "Application filed",
       "label": "Pending application filed",
       "src": [
         "SRC-001556"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-06-11",
+      "type": "Other",
+      "label": "Round 3 resubmittal responding to Town comments",
+      "src": [
+        "SRC-004001"
       ],
       "estimated": false
     }
@@ -190,6 +363,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Robson Homes / Belgatos Road / Union School District led to the Letter of Justification and a Town meeting packet attachment",
+      "src": [
+        "SRC-004000",
+        "SRC-004002"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 527-25-005: situs 220 Belgatos Rd, Los Gatos; no owner shown",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Town of Los Gatos pending projects page B, SB 330 tracker, and application documents (project description, density bonus waiver memo, letter of justification, Round 3 response memo)",
+      "src": [
+        "SRC-001556",
+        "SRC-001554",
+        "SRC-003998",
+        "SRC-003999",
+        "SRC-004000",
+        "SRC-004001"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "Town project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No CEQAnet entry found (Town lists CEQA initial study pending); APR row not located",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Mercury News and Los Gatos news coverage of 220 Belgatos Rd",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY and trade coverage of 220 Belgatos Rd",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no Robson Homes project page for 220 Belgatos Rd",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in documents opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funder named; land exchange with Union School District noted",
+      "src": [
+        "SRC-004002"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "SMC-000193",
-  "name": "Building B",
+  "name": "Willow Commons",
   "parcels": [
     {
       "apn": "079-072-120",
@@ -139,8 +139,16 @@
             "SRC-001155"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-004003"
+          ],
+          "note": "First residents moved in the weekend of June 7, 2025; 8 of 16 tenants in place at publication"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -181,6 +189,13 @@
           "src": [
             "SRC-001155"
           ]
+        },
+        {
+          "value": "11 one-bedroom units for adults with intellectual and developmental disabilities, deed-restricted for 55 years; residents must earn below 80% AMI; 2 units for on-site staff",
+          "src": [
+            "SRC-004004",
+            "SRC-004003"
+          ]
         }
       ]
     },
@@ -211,6 +226,51 @@
           "note": "State report 2021, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.23,
+          "src": [
+            "SRC-004004"
+          ],
+          "note": "Almanac: 53,473 sq ft site"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 12500000,
+          "src": [
+            "SRC-004004"
+          ],
+          "note": "About $12.5 million"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-004004"
+          ],
+          "note": "11 units deed-restricted for 55 years for lower-income residents under state density bonus law"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004004"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -219,6 +279,18 @@
       "src": [
         "SRC-001154",
         "SRC-001155"
+      ]
+    },
+    {
+      "text": "Almanac (2023): Willow Commons at 4388 Alpine Road, next to Roberts Market in the Nathhorst Triangle, has 11 one-bedroom apartments under 500 sq ft for adults with intellectual and developmental disabilities, 2 staff units, an attached ADU and a detached two-bedroom ADU of about 870 sq ft. Buildings are set back about 75 feet from the street. The Whites acquired adjacent 4394 Alpine Road in 2021.",
+      "src": [
+        "SRC-004004"
+      ]
+    },
+    {
+      "text": "Almanac (2025): the complex houses 16 tenants, with 40% of its square footage as community space. Common Grounds, a coffee shop staffed by residents and operated with Cat and Cloud, is planned to open by 2026. Jim White said permit delays cost the project about $1 million and a year.",
+      "src": [
+        "SRC-004003"
       ]
     }
   ],
@@ -230,6 +302,19 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Jim and Patty White",
+      "contact": null,
+      "linkedin": null,
+      "project_page": "https://willowcommons.com",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-004004",
+        "SRC-004003",
+        "SRC-004005"
       ]
     }
   ],
@@ -253,6 +338,15 @@
       ]
     },
     {
+      "date": "2023-06-14",
+      "type": "Construction start",
+      "label": "Groundbreaking ceremony",
+      "src": [
+        "SRC-004004"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-07-17",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -267,6 +361,15 @@
       "src": [
         "SRC-001155"
       ]
+    },
+    {
+      "date": "2025-06-07",
+      "type": "Lease-up start",
+      "label": "First residents moved in",
+      "src": [
+        "SRC-004003"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -274,6 +377,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 4388 Alpine Rd identified the project as Willow Commons",
+      "src": [
+        "SRC-004004"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC active parcels layer: APN 079-072-120, owner IACPV LLC already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "portolavalley.net Willow Commons project page and documents returned HTTP 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Santa Clara County District 5 page on Stanford Affordable Housing Fund support (d5.santaclaracounty.gov) returned HTTP 403",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Tables A and A2 already on record",
+      "src": [
+        "SRC-001154",
+        "SRC-001155"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "The Almanac 2023-06-20 (groundbreaking) and 2025-06-11 (first tenants)",
+      "src": [
+        "SRC-004004",
+        "SRC-004003"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for trade coverage of Willow Commons",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "willowcommons.com opened: address and population served only",
+      "src": [
+        "SRC-004005"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "County D5 page describing Stanford Affordable Housing Fund support returned HTTP 403; no other funder named in sources opened",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts naming project parties",
+      "src": []
+    }
+  }
 }
