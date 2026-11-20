@@ -86,8 +86,16 @@
             "SRC-001107"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Lease-up / selling",
+          "src": [
+            "SRC-003355"
+          ],
+          "note": "Housing Trust Silicon Valley (2025-09-18): families moved in the prior week"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -210,6 +218,50 @@
           "note": "Total sources in CTCAC staff report."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file CP20-017: 5-story 100% affordable housing development"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 3190,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file CP20-017: 3,190 square feet of commercial space"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 42,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file ER22-054 (NEPA EA for CP20-017): 60 units and 42 surface parking spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.71,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PRE20-040 (2020 preliminary review, 65-unit scheme): approximately 0.71 gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -230,6 +282,13 @@
       "text": "City of San Jose permit CP20-017 (Ministerial Permit, folder year 2020), status Approved, issue date 2021-09-09: \"SB 35 Streamlined Ministerial Permit to demolish two commercial structures of 5,760 square feet and construct a 5-story 100% affordable housing development with 60 units and 3,190 square feet of commercial space, with a State Density Bonus Request for thr\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "Housing Trust Silicon Valley states the County of Santa Clara funded the project through the 2016 Measure A Housing Bond, and names the City of San Jose, Santa Clara County Housing Authority, Destination: Home and Amigos de Guadalupe as partners. Charities Housing lists the property as 1860 Alum Rock Apartments.",
+      "src": [
+        "SRC-003355",
+        "SRC-003356"
       ]
     }
   ],
@@ -265,6 +324,35 @@
       "other_role": "Applicant (CTCAC)",
       "email": "mang@charitieshousing.org",
       "phone": "408-550-8308"
+    },
+    {
+      "role": "Other",
+      "company": "Charities Housing Development Corporation",
+      "contact": "Kathy Robinson",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Catholic Charities",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner named in city preliminary review file PRE20-040",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Housing Trust Silicon Valley",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003355"
+      ]
     }
   ],
   "financing": [
@@ -367,10 +455,39 @@
       "src": [
         "SRC-001630"
       ]
+    },
+    {
+      "type": "Acquisition loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "Google Launch Initiative and TECH Fund",
+      "amount": 3000000,
+      "date": null,
+      "src": [
+        "SRC-003355"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Housing Trust Silicon Valley",
+      "program": "Construction-to-permanent loan, Apple Affordable Housing Fund",
+      "amount": 2700000,
+      "date": null,
+      "src": [
+        "SRC-003355"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2020-04-09",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE20-040 filed (65-unit scheme)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-06-18",
       "type": "Application filed",
@@ -403,6 +520,15 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2025-09",
+      "type": "Lease-up start",
+      "label": "Families moved in, per Housing Trust Silicon Valley article of 2025-09-18",
+      "src": [
+        "SRC-003355"
+      ],
+      "estimated": true
     },
     {
       "date": "2025-09-16",
@@ -443,6 +569,97 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and developer; Housing Trust Silicon Valley article opened",
+      "src": [
+        "SRC-003355"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC open parcel data for APN 481-18-064: situs 1860 Alum Rock Av, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning GIS layer by APN: CP20-017, PRE20-040, ER22-054, AD22-250, AD24-753, AD25-320. sanjoseca.gov news and documents refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Measure A 2016 Housing Bond funding per Housing Trust article; county loan amount already on record",
+      "src": [
+        "SRC-003355",
+        "SRC-001630"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "CTCAC CA-22-618 staff report and APR rows already on record",
+      "src": [
+        "SRC-001630",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley opening article 2025-09-18",
+      "src": [
+        "SRC-003355"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched trade press for Alum Rock Multifamily and 1860 Alum Rock; nothing specific found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Charities Housing site lists 1860 Alum Rock Apartments; no project page",
+      "src": [
+        "SRC-003356"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched for architect and contractor of 1860 Alum Rock; none named in public sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Housing Trust Silicon Valley acquisition and construction-to-permanent loans",
+      "src": [
+        "SRC-003355"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts; none found",
+      "src": []
+    }
+  }
 }

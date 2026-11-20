@@ -145,6 +145,57 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-001956",
+            "SRC-001858"
+          ],
+          "note": "City file PD25-009: four-story multifamily residential building"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 38,
+            "3br": 27,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-001858"
+          ],
+          "note": "SF YIMBY: 38 two-bedroom and 27 three-bedroom units"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 171,
+          "src": [
+            "SRC-001858"
+          ],
+          "note": "SF YIMBY (2025-11-05): 171 vehicle, 11 motorcycle and 40 bicycle spaces in a below-grade garage. City file PDA25-009-01, filed 2026-11-16, proposes at-grade parking instead of sub-grade parking"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.24,
+          "src": [
+            "SRC-001858"
+          ],
+          "note": "SF YIMBY: 1.24-acre vacant lot"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -160,6 +211,13 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City file PD25-009 describes a four-story multifamily residential building including 65 townhome units and below-ground parking; SF YIMBY describes a multi-story apartment complex. The file also covers removal of 16 trees (four ordinance-size, 12 non-ordinance-size) with 49 replacement trees. SF YIMBY reports a 55-foot maximum height and an exterior designed to resemble the adjacent Skyline at Tamien Station condominiums.",
+      "src": [
+        "SRC-001956",
+        "SRC-001858"
+      ]
     }
   ],
   "parties": [
@@ -170,6 +228,16 @@
       "linkedin": null,
       "src": [
         "SRC-001858"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "GR Tamien LLC",
+      "contact": "Melissa Durkin",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -191,6 +259,24 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Other",
+      "label": "Environmental review file ER26-199 opened, under review",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-11-16",
+      "type": "Other",
+      "label": "PD amendment PDA25-009-01 filed: at-grade parking instead of sub-grade parking, plus retaining walls",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -208,6 +294,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, GR Tamien LLC and PD25-009; SF YIMBY article opened",
+      "src": [
+        "SRC-001858"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC open parcel data for APN 434-13-042: San Jose, no situs address, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning GIS layer by APN: PD25-009 (approved 2025-11-05), ER26-199 and PDA25-009-01 (filed Nov 2026). sanjoseca.gov calendar and documents refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "State APR rows already on record; no CEQAnet entry found for 1325 Lick or ER25-109; no CTCAC/CDLAC award",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched local news for 1325 Lick Ave and GR Tamien; no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2025-11-05: stories, unit mix, parking, site area",
+      "src": [
+        "SRC-001858"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No developer site found for GR Tamien LLC; only the owner entity name appears in public sources",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No architect named in city GIS or SF YIMBY",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project; none found",
+      "src": []
+    }
+  }
 }

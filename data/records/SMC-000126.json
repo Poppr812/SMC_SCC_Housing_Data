@@ -45,14 +45,6 @@
         "SRC-001141",
         "SRC-001142"
       ]
-    },
-    {
-      "text": "951 Old County Rd, Belmont, CA",
-      "role": "other",
-      "src": [
-        "SRC-001141",
-        "SRC-001142"
-      ]
     }
   ],
   "images": [],
@@ -95,29 +87,14 @@
     "total_units": {
       "claims": [
         {
-          "value": 128,
-          "src": [
-            "SRC-001142"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 65,
           "src": [
             "SRC-001141",
             "SRC-001667"
           ],
           "note": "Units in the application as reported"
-        },
-        {
-          "value": 63,
-          "src": [
-            "SRC-001755"
-          ],
-          "note": "63 affordable units at 951 Old County Road only, eight stories; this record also holds 678 Ralston"
         }
-      ],
-      "best": 1
+      ]
     },
     "affordability_type": {
       "claims": [
@@ -126,6 +103,14 @@
           "src": [
             "SRC-001142"
           ]
+        },
+        {
+          "value": "100% affordable",
+          "src": [
+            "SRC-001667",
+            "SRC-003359"
+          ],
+          "note": "CTCAC: 64 restricted units plus 1 unrestricted manager's unit"
         }
       ]
     },
@@ -184,6 +169,105 @@
             "SRC-001142"
           ],
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 17,
+              "ami": 30
+            },
+            {
+              "count": 35,
+              "ami": 50
+            },
+            {
+              "count": 12,
+              "ami": 70
+            }
+          ],
+          "src": [
+            "SRC-001667"
+          ],
+          "note": "CTCAC 55-year targeting; the 70% AMI units are CTCAC-restricted only. 17 units in the homeless set-aside"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.36,
+          "src": [
+            "SRC-001667"
+          ],
+          "note": "CTCAC: 678 Ralston Avenue on a 0.36 acre site"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-003359",
+            "SRC-003360"
+          ],
+          "note": "Eight stories: seven residential levels over a ground-level podium garage; about 91 feet to the top of the stair tower"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 19,
+          "src": [
+            "SRC-003359"
+          ],
+          "note": "County FONSI notice (2023-12-15): 19 automobile spaces, 62 long-term and 2 short-term bicycle spaces"
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 57237817,
+          "src": [
+            "SRC-001667"
+          ],
+          "note": "CTCAC 2025-12-10 project cost summary at application"
+        },
+        {
+          "value": 61272000,
+          "src": [
+            "SRC-003359"
+          ],
+          "note": "County FONSI notice (2023-12-15): total project cost estimated at $61,272,000"
+        }
+      ],
+      "best": 0
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-003360"
+          ],
+          "note": "ALUC application: 65-unit 100% affordable project pursuant to SB 35, ministerial"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Family"
+          ],
+          "src": [
+            "SRC-001667"
+          ],
+          "note": "CTCAC housing type: Large Family; 17 units restricted to special needs populations"
         }
       ]
     }
@@ -224,6 +308,19 @@
       "text": "Split: The Ridge on Masonic (951 Old County Rd, APN 040-313-430) now has its own record. The 951 Old County address and combined state rows remain on this record.",
       "src": [
         "SRC-001667"
+      ]
+    },
+    {
+      "text": "County FONSI notice (2023-12-15): average unit sizes 560 sq ft (one-bedroom), 694 sq ft (two-bedroom) and 982 sq ft (three-bedroom); 100% affordable for 55 years; replaces an existing dry-cleaning business at APN 040-313-280.",
+      "src": [
+        "SRC-003359"
+      ]
+    },
+    {
+      "text": "951 Old County Road, Belmont, is reported by SF YIMBY and AO as a separate 63-unit, eight-story affordable project (The Ridge On Masonic) by CRP Affordable Housing and Community Development on a 0.35-acre lot, with 21 one-, 21 two- and 21 three-bedroom units and a $2 million additional City of Belmont loan reported in May 2026.",
+      "src": [
+        "SRC-001755",
+        "SRC-001913"
       ]
     }
   ],
@@ -289,6 +386,113 @@
       "src": [
         "SRC-001667"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "AO",
+      "contact": "Ioanna Magiati",
+      "linkedin": null,
+      "website": "https://www.aoarchitects.com/",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003360"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT",
+      "contact": "Whitney Miller",
+      "linkedin": null,
+      "src": [
+        "SRC-003360"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": "Joey Bernadi",
+      "linkedin": null,
+      "src": [
+        "SRC-003360"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "CRP Affordable Housing & Community Development",
+      "contact": "Sam Knutson",
+      "linkedin": null,
+      "other_role": "Applicant / owner on SB 35 plan set",
+      "src": [
+        "SRC-003360"
+      ]
+    },
+    {
+      "role": "Lender",
+      "company": "Citi Community Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "role": "Equity partner",
+      "company": "Enterprise Housing Credits Investments, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Municipal Finance Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond issuer",
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Orrick, Herrington & Sutcliffe LLP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Bond counsel",
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Abode HD 678 Ralston LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Ridge at Ralston AGP LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "General partner",
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Ridge at Ralston LP",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "CTCAC applicant / CDLAC sponsor",
+      "src": [
+        "SRC-001667"
+      ]
     }
   ],
   "financing": [
@@ -300,6 +504,107 @@
       "date": "2024-07",
       "src": [
         "SRC-001649"
+      ]
+    },
+    {
+      "type": "Tax-exempt bonds",
+      "provider": "Citi Community Capital",
+      "program": "Private placement; issuer California Municipal Finance Authority (construction period)",
+      "amount": 16000000,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Construction loan",
+      "provider": "Citibank",
+      "program": null,
+      "amount": 8076407,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Permanent loan",
+      "provider": "Citibank",
+      "program": null,
+      "amount": 3750688,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "San Mateo County Affordable Housing Fund",
+      "program": "HOME-ARP",
+      "amount": 4403263,
+      "date": null,
+      "src": [
+        "SRC-001667",
+        "SRC-003359"
+      ]
+    },
+    {
+      "type": "Federal grant / loan",
+      "provider": "San Mateo County Affordable Housing Fund",
+      "program": "HOME & MTW",
+      "amount": 4000000,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County Affordable Housing Fund",
+      "program": "MTW & Measure K",
+      "amount": 3000000,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "San Mateo County Affordable Housing Fund",
+      "program": "AHF",
+      "amount": 11000000,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of Belmont",
+      "program": null,
+      "amount": 1000000,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Deferred developer fee",
+      "provider": "CRP Affordable Housing and Community Development LLC",
+      "program": null,
+      "amount": 3905043,
+      "date": null,
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    {
+      "type": "Tax-credit equity (4%)",
+      "provider": "Enterprise Housing Credits Investments, LLC",
+      "program": "Federal and state tax credit equity at permanent financing",
+      "amount": 26178823,
+      "date": null,
+      "src": [
+        "SRC-001667"
       ]
     }
   ],
@@ -314,12 +619,30 @@
       ]
     },
     {
+      "date": "2023-12-15",
+      "type": "Other",
+      "label": "County publishes NEPA Finding of No Significant Impact and intent to request release of $4,403,263 HOME-ARP funds",
+      "src": [
+        "SRC-003359"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-01-23",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001142"
       ]
+    },
+    {
+      "date": "2025-12-10",
+      "type": "Other",
+      "label": "CTCAC/CDLAC staff report recommends tax credits and $16,000,000 bond allocation (CA-25-689)",
+      "src": [
+        "SRC-001667"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-06",
@@ -375,6 +698,107 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Removed 951 Old County Rd (The Ridge on Masonic, SMC-000272) data: its address, 63-unit claim and the 128-unit combined state report figure"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on name, address and CRP; C/CAG ALUC application and county FONSI notice opened",
+      "src": [
+        "SRC-003360",
+        "SRC-003359"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner RIDGE AT RALSTON LP already on record; APN 040-313-280 confirmed by FONSI and ALUC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "belmont.gov development projects page returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Mateo County DOH FONSI/RROF notice 2023-12-15 (HOME-ARP $4,403,263)",
+      "src": [
+        "SRC-003359"
+      ]
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC/CDLAC staff report CA-25-689 (2025-12-10); SB 35 ministerial, no CEQAnet filing",
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "SF YIMBY 2026-05-09 on 951 Old County Road (separate sibling project)",
+      "src": [
+        "SRC-001755"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No CRP or Abode project page for 678 Ralston found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "AO named on the SB 35 plan set; AO news page covers 951 Old County Road",
+      "src": [
+        "SRC-003360",
+        "SRC-001913"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CTCAC construction and permanent sources, bond issuer, lender and equity investor",
+      "src": [
+        "SRC-001667"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts; none found",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SMC-000272",
+      "relation": "adjacent",
+      "note": "Both by CRP Affordable Housing; reported together in the state report (128 units)"
     }
   ]
 }

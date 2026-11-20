@@ -85,6 +85,14 @@
             "SRC-001956"
           ],
           "note": "City folder 119854, Planned Development Permit/Amendment; city permit status: Approved."
+        },
+        {
+          "value": "PD20-004, ER22-112",
+          "src": [
+            "SRC-001956",
+            "SRC-003358"
+          ],
+          "note": "PD20-004 planned development permit; ER22-112 addendum to the Japantown Corporation Yard Redevelopment Project Final EIR (SCH 2007102015)"
         }
       ]
     },
@@ -109,6 +117,41 @@
           "note": "City file PD20-004 (Planned Development Permit/Amendment): \"Planned Development Permit to allow construction of a new mixed use building (six stories) with 65 residential units and approximately 14,070 square feet of commercial use, including a Taiko performance building and an office, workshop, and gallery space,\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 72,
+          "src": [
+            "SRC-003357"
+          ],
+          "note": "ER22-112 addendum: one level of below-grade parking containing 72 spaces"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 14070,
+          "src": [
+            "SRC-003357",
+            "SRC-003358"
+          ],
+          "note": "Approximately 14,070 sq ft of commercial and community amenity space for San Jose Taiko (office, workshop, galleries)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.74,
+          "src": [
+            "SRC-003357",
+            "SRC-003358"
+          ],
+          "note": "Approximately 0.74-gross acre vacant site"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -116,6 +159,13 @@
       "text": "City of San Jose permit PD20-004 (Planned Development Permit/Amendment, folder year 2020), status Approved, issue date 2026-07-08: \"Planned Development Permit to allow construction of a new mixed use building (six stories) with 65 residential units and approximately 14,070 square feet of commercial use, including a Taiko performance building and an office, workshop, and gallery space,\" (city text cut off at 255 characters)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "text": "The ER22-112 addendum places the 65-unit building, plus a separate 1-story Taiko performance and storage building, on a 0.74-acre vacant area between the existing North and South buildings of the former Japantown corporation yard site, where 529 residential units and 3,500 sq ft of commercial space were already approved and built. The 2008 Final EIR covered up to 600 residential units on the 5.23-acre site. The project includes extended Saturday construction hours (8 a.m. to 5 p.m.) and removal of one ordinance-size tree.",
+      "src": [
+        "SRC-003357",
+        "SRC-003358"
       ]
     }
   ],
@@ -129,6 +179,21 @@
         "SRC-001956"
       ],
       "website": "https://www.sheaproperties.com"
+    },
+    {
+      "role": "Other",
+      "company": "Shea Properties",
+      "contact": "Sean McEachern",
+      "linkedin": null,
+      "email": "sean.mceachern@sheaproperties.com",
+      "phone": "(949) 389-7078",
+      "website": "https://sheaproperties.com/",
+      "website_basis": "filing",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003358",
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
@@ -144,11 +209,29 @@
       "estimated": false
     },
     {
+      "date": "2022-04-29",
+      "type": "Other",
+      "label": "Environmental review ER22-112 (addendum) filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-07-08",
       "type": "Approved",
       "label": "Planned Development Permit/Amendment approved (PD20-004)",
       "src": [
         "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed with the state (SCH 2007102015)",
+      "src": [
+        "SRC-003358"
       ],
       "estimated": false
     }
@@ -163,6 +246,89 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-19",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "Web search on address, Japantown Corporation Yard and Shea Properties; CEQAnet NOD and addendum opened",
+      "src": [
+        "SRC-003358",
+        "SRC-003357"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-19",
+      "result": "nothing new",
+      "note": "SCC open parcel data for APN 249-39-044: no situs address, no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "San Jose planning GIS layer by APN: PD20-004 and ER22-112, both issued 2026-07-08. sanjoseca.gov pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-19",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-19",
+      "result": "found",
+      "note": "CEQAnet SCH 2007102015 NOD (received 2026-08-04) and ER22-112 addendum",
+      "src": [
+        "SRC-003358",
+        "SRC-003357"
+      ]
+    },
+    "news": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched local news for the 653 N 7th St / Taiko building; only older coverage of the wider corporation yard",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Searched trade press; coverage found concerns the adjacent 518-unit Sixth & Jackson, not this building",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Shea Properties site search shows Sixth & Jackson pages only; no page for this building",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Addendum plan sheets (PD20-004 resubmittal, 2026-04-10) carry a job number but no named architect",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-19",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts; none found",
+      "src": []
+    }
+  }
 }
