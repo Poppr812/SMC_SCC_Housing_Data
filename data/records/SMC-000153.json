@@ -164,7 +164,8 @@
         {
           "value": "Townhomes",
           "src": [
-            "SRC-001204"
+            "SRC-001204",
+            "SRC-003478"
           ],
           "note": "Townhome community on 50 condominium parcels"
         }
@@ -289,6 +290,56 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 23,
+            "4br+": 27
+          },
+          "src": [
+            "SRC-003477"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 82,
+          "src": [
+            "SRC-001204"
+          ]
+        },
+        {
+          "value": 84,
+          "src": [
+            "SRC-003477"
+          ],
+          "note": "84 cars and 12 bicycles"
+        }
+      ],
+      "best": 0
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 108856,
+          "src": [
+            "SRC-001204"
+          ],
+          "note": "Total gross floor area"
+        },
+        {
+          "value": 121250,
+          "src": [
+            "SRC-003477"
+          ],
+          "note": "Approximately 121,250 sq ft across eight structures"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -296,6 +347,32 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001149"
+      ]
+    },
+    {
+      "text": "CEQA Notice of Exemption lists the applicant as Chase Rapp, Project Manager, Willow Owner LLC, with a princestreetpartners.com email; SF YIMBY names Prince Street Partners as the applicant; the city page names 68 Willow Owner, LLC.",
+      "src": [
+        "SRC-003478",
+        "SRC-003477",
+        "SRC-001204"
+      ]
+    },
+    {
+      "text": "City page: buildings approximately 41 feet tall; C-1 zoning; the project includes a concession to raise the maximum residential parking ratio; building permit applications under review.",
+      "src": [
+        "SRC-001204"
+      ]
+    },
+    {
+      "text": "SF YIMBY (June 2026) reports construction expected to start early the next year and last 20 months; the project replaces a commercial office building between Willow Road and San Francisquito Creek.",
+      "src": [
+        "SRC-003477"
+      ]
+    },
+    {
+      "text": "Prince Street Partners describes itself as a Bay Area commercial real estate firm based at 800 Oak Grove, Suite 200, Menlo Park.",
+      "src": [
+        "SRC-003479"
       ]
     }
   ],
@@ -317,6 +394,39 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001204"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Prince Street Partners",
+      "contact": "Chase Rapp",
+      "linkedin": null,
+      "email": "chase@princestreetpartners.com",
+      "phone": "(650) 815-6969",
+      "website": "https://www.princestreetpartners.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-003477",
+        "SRC-003478",
+        "SRC-003479"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003477"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Environmental Foresight Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003477"
       ]
     }
   ],
@@ -340,6 +450,14 @@
       ]
     },
     {
+      "date": "2026-05-28",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption (Class 32 infill) filed",
+      "src": [
+        "SRC-003478"
+      ]
+    },
+    {
       "date": "2026-06-09",
       "type": "Approved",
       "label": "City Council approves tentative subdivision map",
@@ -358,6 +476,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 68 Willow Road, Premia and Prince Street Partners; SF YIMBY and CEQAnet pages found",
+      "src": [
+        "SRC-003477",
+        "SRC-003478"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner 68 Willow Owner LLC c/o Premia Capital LLC already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Menlo Park approved-projects page: 82 parking spaces, 108,856 sq ft GFA, about 41 ft height, planner Chris Turner",
+      "src": [
+        "SRC-001204"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2026051163 NOE received 2026-05-28 (applicant Chase Rapp, Willow Owner LLC); APR row already on record",
+      "src": [
+        "SRC-003478"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searches for Almanac coverage of 68 Willow returned no article",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-06-08: Prince Street Partners, SDG Architects, unit mix, parking",
+      "src": [
+        "SRC-003477"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "princestreetpartners.com homepage opened; no 68 Willow project page listed",
+      "src": [
+        "SRC-003479"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SDG Architects named in SF YIMBY; no firm project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found; Premia Capital appears only in the parcel owner care-of line",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

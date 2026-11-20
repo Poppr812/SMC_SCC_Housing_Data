@@ -86,8 +86,16 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PD22-020: 12 units in four three-story multifamily buildings plus the reconstructed single-family house; 2022 preliminary review described twelve 3-story townhomes and conversion of the house into two condo units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -127,9 +135,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 14,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approved Vesting Tentative Map (2023-08-29): one lot into two lots, up to 14 residential condominiums; Planned Development Permit PD22-020 covers the reconstructed historic house and 12 new units"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "planning_file": {
       "claims": [
@@ -167,6 +182,37 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PD22-020 three-story buildings"
+        },
+        {
+          "value": 4,
+          "src": [
+            "SRC-003476",
+            "SRC-001956"
+          ],
+          "note": "Earlier SP18-033 plan: four-story 40-unit apartment building"
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.63,
+          "src": [
+            "SRC-003476",
+            "SRC-001956"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -188,9 +234,59 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "CEQA document (2020): Special Use Permit to relocate and convert an existing historic single-family home into a six-unit building and build a new four-story, 40-unit apartment building over a basement garage, 46 units total, on 0.63 acres at Mitzi Drive and Ranchero Way.",
+      "src": [
+        "SRC-003476"
+      ]
+    },
+    {
+      "text": "City permit layer: Planned Development Rezoning from RM to UR(PD) for on-site relocation and rehabilitation of the existing house and up to 12 three-story units, approved; applicant Edge Development Group, LLC.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer refers to the existing house as the historic Graves House.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Edge Development Group, LLC",
+      "contact": "Ciyavash Moazzami",
+      "linkedin": null,
+      "other_role": "Applicant (PD22-020, rezoning, vesting tentative map)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kurt Anderson",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (SP18-033)",
+      "src": [
+        "SRC-003476",
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "BDE Architecture",
+      "contact": "Trevor Schur",
+      "linkedin": null,
+      "other_role": "Applicant (2021 permit adjustments to the SP18-033 design)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -203,11 +299,35 @@
       ]
     },
     {
+      "date": "2020-06-18",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration (Mitzi Place Apartments) submitted to the State Clearinghouse",
+      "src": [
+        "SRC-003476"
+      ]
+    },
+    {
+      "date": "2022-08-02",
+      "type": "Application filed",
+      "label": "Planned Development Rezoning, Planned Development Permit and Vesting Tentative Map applications filed by Edge Development Group",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
       "date": "2023-08-29",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2025-04-04",
+      "type": "Other",
+      "label": "Major Permit Adjustment to PD22-020 approved (window and elevation changes)",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -221,6 +341,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 4146 Mitzi Dr and Mitzi Place; CEQAnet MND page opened",
+      "src": [
+        "SRC-003476"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 29916001: situs 4146 Mitzi Dr, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer by APN 29916001: rezoning, PD22-020, VTM for 14 condos approved 2023-08-29, Edge Development Group applicant; sanjoseca.gov pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2020060366 (MND 2020-06-18, applicant Kurt Anderson); APR rows already on record",
+      "src": [
+        "SRC-003476"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searches returned no local news on this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "LoopNet sale listing returned 403; CommercialSearch and CommercialCafe listing URLs redirected to search pages",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Edge Development Group project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "BDE Architecture appears as permit adjustment applicant; no firm project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

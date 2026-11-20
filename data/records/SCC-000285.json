@@ -91,8 +91,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit layer shows development permit folder 129175 (H23-048) status Inactive, last updated 2024-11-07"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -143,6 +151,30 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H23-048 text: submitted under the Housing Accountability Act (Builder's Remedy)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit H23-048 text: six-story mixed-use building"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -163,12 +195,71 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit layer lists an environmental review folder (129178) filed 2023-12-15 by Surinder Singh, status Under Review, and the development permit folder 129175 filed 2023-12-16, status Inactive.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer lists a 2021 enhanced preliminary review (folder 044004) by Chris Hall of Eaton Hall Architecture for a mixed-use building with ground-floor retail and seven stories of residential units, completed 2021-10-14.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Surinder Singh",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (development permit H23-048)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "MANU Studios, Inc.",
+      "contact": "Chris Hall",
+      "linkedin": null,
+      "other_role": "Applicant (SB 330 preliminary application PRE23-098)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Eaton Hall Architecture",
+      "contact": "Chris Hall",
+      "linkedin": null,
+      "other_role": "Applicant (2021 enhanced preliminary review)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-08-19",
+      "type": "Other",
+      "label": "Enhanced preliminary review filed for a mixed-use building with ground-floor retail and seven stories of residential above",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2023-06-20",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application filed for 50-unit multifamily building (PRE23-098)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2023-12-16",
       "type": "Application filed",
@@ -188,6 +279,85 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches on 203 S King Rd, H23-048 and builder's remedy found no project-specific page",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 48147049: situs 203 S King Rd, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer queried by APN 48147049: applicants Surinder Singh (H23-048) and Chris Hall/MANU Studios (PRE23-098), 2021 preliminary review; sanjoseca.gov pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "APR Table A row H23-048 already on record; CEQAnet search returned no document for this address; no CTCAC/CDLAC or HCD award found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searches for 203 S King Rd returned only general San Jose builder's remedy coverage, none naming this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "The Real Deal and SF YIMBY builder's remedy coverage did not name this site",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer website identified; applicants are an individual and MANU Studios",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Chris Hall (Eaton Hall Architecture / MANU Studios) appears only as applicant in city permits; no architect project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

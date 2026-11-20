@@ -103,7 +103,9 @@
           "value": "Townhomes",
           "src": [
             "SRC-001131",
-            "SRC-001135"
+            "SRC-001135",
+            "SRC-003481",
+            "SRC-003480"
           ],
           "note": "State category: single-family attached"
         },
@@ -183,6 +185,12 @@
           "src": [
             "SRC-001135"
           ]
+        },
+        {
+          "value": "7 moderate-income below market rate units under the City's Inclusionary Housing Ordinance",
+          "src": [
+            "SRC-003481"
+          ]
         }
       ]
     },
@@ -229,6 +237,28 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-003480"
+          ],
+          "note": "Three-story townhome plans"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 63,
+          "src": [
+            "SRC-003481"
+          ],
+          "note": "63 spaces for residential uncovered, guest and commercial parking, plus about 24 on-site spaces shared with the adjacent commercial plaza; each unit has an attached garage"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -244,12 +274,102 @@
       "src": [
         "SRC-001444"
       ]
+    },
+    {
+      "text": "Approval Certificate 23-020: 49 townhome-style condominiums (three-bedroom, some upgradable to four) from 1,403 to 2,310 sq ft and 5 flexible commercial units from 600 to 1,440 sq ft, with solar, common open space, play area, bocce courts and barbecue areas; application received 2023-05-05, deemed complete 2023-09-25.",
+      "src": [
+        "SRC-003481"
+      ]
+    },
+    {
+      "text": "2022 CEQA document described seven residential buildings with 44 townhomes plus one mixed-use building with five townhomes and five commercial spaces (four of 665 sq ft and one of 1,350 sq ft), on APNs 764-10-013 and 764-10-015.",
+      "src": [
+        "SRC-003484"
+      ]
+    },
+    {
+      "text": "City Ventures lists three plans of 1,405, 1,700 and 2,230 sq ft with 3 to 4 bedrooms, 2-car garages and owned solar, starting at $849,990, with a sales office at 18459 Monterey Road.",
+      "src": [
+        "SRC-003480"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "City Ventures",
+      "contact": "Samantha Hauser",
+      "linkedin": null,
+      "email": "samantha@cityventures.com",
+      "phone": "646.522.4260",
+      "website": "https://www.cityventures.com/",
+      "website_basis": "opened",
+      "project_page": "https://cityventures.com/new-homes/ca/morgan-hill/morgan-hill-the-gates/",
+      "src": [
+        "SRC-003482",
+        "SRC-003480",
+        "SRC-003483"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": "Dan Hale",
+      "linkedin": null,
+      "email": "dhale@hhja.com",
+      "phone": "415.568.3833",
+      "website": "https://www.hhja.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-003482"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "C2 Collaborative",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003482"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MH Engineering",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003482"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-11-14",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration submitted to the State Clearinghouse",
+      "src": [
+        "SRC-003484"
+      ]
+    },
+    {
+      "date": "2022-12-13",
+      "type": "Other",
+      "label": "Planning Commission hearing",
+      "src": [
+        "SRC-001444"
+      ]
+    },
+    {
+      "date": "2023-02",
+      "type": "Approved",
+      "label": "City Council adopts mitigated negative declaration, General Plan amendment and rezoning",
+      "src": [
+        "SRC-003483"
+      ]
+    },
     {
       "date": "2023-05-05",
       "type": "Application filed",
@@ -285,6 +405,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on The Gates, City Ventures and Monterey Road; city, CEQAnet and builder pages found",
+      "src": [
+        "SRC-003480"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 76465002: situs 18492 Azul Ln, Morgan Hill; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Morgan Hill project page, Approval Certificate 23-020 and approved architectural plan set (applicant, architect, landscape, civil)",
+      "src": [
+        "SRC-001444",
+        "SRC-003481",
+        "SRC-003482"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2022110254 MND received 2022-11-14; APR rows already on record",
+      "src": [
+        "SRC-003484"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Morgan Hill Times 2023-10-25: Planning Commission 5-0 vote on vesting tentative map",
+      "src": [
+        "SRC-003483"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Business Wire grand-opening release and NewHomeSource returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "cityventures.com project page: three-story plans, sizes, prices, sales office",
+      "src": [
+        "SRC-003480"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Hunt Hale Jones Architects named on the approved plan set cover sheet",
+      "src": [
+        "SRC-003482"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

@@ -56,6 +56,13 @@
       "src": [
         "SRC-001868"
       ]
+    },
+    {
+      "text": "644 E Santa Clara St, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -69,8 +76,16 @@
             "SRC-001107"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approved Vesting Tentative Map merges three lots for up to 50 residential condominium units and up to seven commercial condominium units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -78,11 +93,14 @@
           "value": "Approved",
           "src": [
             "SRC-001099",
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-001956",
+            "SRC-003475"
           ],
           "note": "State report shows entitlement approval"
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -100,7 +118,9 @@
         {
           "value": 50,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-003475",
+            "SRC-001867"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -110,8 +130,16 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 45,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Environmental review folder (filed 2022-02-10) describes 45 residential units"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -135,6 +163,74 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-003475",
+            "SRC-001867",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 60,
+          "src": [
+            "SRC-003475"
+          ],
+          "note": "60 automobile and 21 motorcycle spaces in one underground level"
+        },
+        {
+          "value": 62,
+          "src": [
+            "SRC-001867"
+          ],
+          "note": "62 cars and 24 bicycles"
+        }
+      ],
+      "best": 0
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 14183,
+          "src": [
+            "SRC-003475"
+          ],
+          "note": "About 7,012 sq ft retail and 7,171 sq ft office"
+        },
+        {
+          "value": 7708,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City Special Use Permit text: approximately 7,708 gross sq ft of retail (city text cut off)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.45,
+          "src": [
+            "SRC-001867",
+            "SRC-001956"
+          ],
+          "note": "City environmental folder: approximately 0.45 gross acres"
+        },
+        {
+          "value": 0.41,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Vesting Tentative Map folder: approximately 0.41 gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -143,6 +239,24 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "CEQA document: Special Use Permit to demolish an existing commercial building and build a six-story building with 50 residential units, about 7,012 sq ft retail, about 7,171 sq ft office, one level of underground parking (60 automobile, 21 motorcycle spaces) and deck and rooftop open space.",
+      "src": [
+        "SRC-003475"
+      ]
+    },
+    {
+      "text": "City Special Use Permit text: demolition of an existing 13,669 sq ft commercial building and construction of a 6-story, approximately 87,750 sq ft mixed-use building.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports a 65-foot height, about 87,750 sq ft total, 7,010 sq ft retail, 7,100 sq ft office and a 15,500 sq ft basement and second-story garage, on about 0.45 acres at East Santa Clara and South 14th Streets.",
+      "src": [
+        "SRC-001867"
       ]
     }
   ],
@@ -156,11 +270,48 @@
       "src": [
         "SRC-001867"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "HS Santa Clara LLC",
+      "contact": "Sophie Xu",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Fillon Solis",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001867"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Frank Chiu",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (2018 focused preliminary review)",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-03-08",
+      "type": "Other",
+      "label": "Focused preliminary review filed for a six-story mixed-use building with 38 units and about 11,012 sq ft commercial",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2022-02-18",
       "type": "Application filed",
@@ -170,11 +321,43 @@
       ]
     },
     {
+      "date": "2022-02-23",
+      "type": "Application filed",
+      "label": "Special Use Permit application filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2022-07-14",
+      "type": "Application filed",
+      "label": "Vesting Tentative Map application filed (up to 50 residential and 7 commercial condominiums)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2025-04-30",
+      "type": "Other",
+      "label": "Draft Mitigated Negative Declaration submitted to the State Clearinghouse",
+      "src": [
+        "SRC-003475"
+      ]
+    },
+    {
       "date": "2025-11-05",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2025-11-13",
+      "type": "Other",
+      "label": "Notice of Determination received by the State Clearinghouse",
+      "src": [
+        "SRC-003475"
       ]
     }
   ],
@@ -188,6 +371,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 650/644 E Santa Clara St, SP24-015 and Frank Chiu; CEQAnet project page found",
+      "src": [
+        "SRC-003475"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel API, APN 46727039: situs 644 E Santa Clara St, 13 situs addresses; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning permit GIS layer by APN 46727039: SUP approved 2025-11-05, VTM approved, applicant Sophie Xu (HS Santa Clara LLC); sanjoseca.gov project pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2025041448: MND 2025-04-30, NOD 2025-11-13; APR rows already on record; no CTCAC/CDLAC award",
+      "src": [
+        "SRC-003475"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searches returned no local news article on this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2025-04-29 article (already on record): architect, parking and area details added from it",
+      "src": [
+        "SRC-001867"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for HS Santa Clara LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Fillon Solis named in SF YIMBY; no firm project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }
