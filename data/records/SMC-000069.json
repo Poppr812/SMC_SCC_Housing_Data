@@ -119,6 +119,13 @@
           "src": [
             "SRC-001006"
           ]
+        },
+        {
+          "value": 19650,
+          "src": [
+            "SRC-003881"
+          ],
+          "note": "SF YIMBY: about 22,000 sq ft total including 19,650 sq ft of housing; city page states about 20,000 sq ft"
         }
       ]
     },
@@ -165,6 +172,70 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-003881"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "2 very low-income and 2 moderate-income deed-restricted units; 16 unrestricted",
+          "src": [
+            "SRC-003881"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 50
+            },
+            {
+              "count": 2,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-003881"
+          ],
+          "note": "SF YIMBY: 2 very low-income and 2 moderate-income units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 16,
+          "src": [
+            "SRC-003881"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.1,
+          "src": [
+            "SRC-003881"
+          ],
+          "note": "City page: 4,400 sq ft site"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -172,6 +243,18 @@
       "text": "Five-story building on a 4,400 sq ft site; demolishes a 1,140 sq ft single-family home",
       "src": [
         "SRC-001006"
+      ]
+    },
+    {
+      "text": "City page: 65-foot height under SB 79; zoning R4; General Plan Residential Medium I; SB 79 base density 100 units/acre and FAR 3.0; additional density requested under State Density Bonus Law; SB 330 preliminary plan set dated 2026-07-16.",
+      "src": [
+        "SRC-001006"
+      ]
+    },
+    {
+      "text": "SF YIMBY: ground-floor laundry room, rooftop deck with lawn, seating and outdoor kitchen; bicycle parking for 21 (city page lists 20 bicycle spaces); invokes SB 79 and SB 330.",
+      "src": [
+        "SRC-003881"
       ]
     }
   ],
@@ -185,6 +268,15 @@
         "SRC-001006"
       ],
       "other_role": "Applicant"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "HORNOS GUSTAVO & SALOMON JESICA",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
     }
   ],
   "financing": [],
@@ -204,6 +296,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 606 S Delaware St and owner names: SF YIMBY article",
+      "src": [
+        "SRC-003881"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SMC parcel layer: 033-282-080, situs 606 Delaware St S, owner Hornos Gustavo & Salomon Jesica",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page PA-2026-0055: height, zoning, density details",
+      "src": [
+        "SRC-001006"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Table A and A2, San Mateo: no rows for 606 S Delaware St",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Daily Journal search returned other San Mateo projects only",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-08-01",
+      "src": [
+        "SRC-003881"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Applicants are individuals; no company or website named",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named on city page or in SF YIMBY",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

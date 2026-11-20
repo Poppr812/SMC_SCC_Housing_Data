@@ -110,6 +110,20 @@
             "SRC-001337",
             "SRC-001338"
           ]
+        },
+        {
+          "value": 10,
+          "src": [
+            "SRC-001144"
+          ],
+          "note": "2022 application D22-0003 as reported to the state"
+        },
+        {
+          "value": 12,
+          "src": [
+            "SRC-003888"
+          ],
+          "note": "Earlier four-story plan, per SF YIMBY"
         }
       ],
       "best": 1
@@ -180,6 +194,31 @@
             "SRC-001144"
           ],
           "note": "State report 2023, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001144"
+          ],
+          "note": "State report 2022, application D22-0003: 2 moderate-income deed-restricted units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.16,
+          "src": [
+            "SRC-001337",
+            "SRC-001338",
+            "SRC-003888"
+          ],
+          "note": ""
         }
       ]
     }
@@ -187,6 +226,25 @@
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001144"
+      ]
+    },
+    {
+      "text": "CEQA notice (2026-08-07): demolishes a two-story commercial building; six stories, maximum height 84 ft 11.5 in; 4 below-market-rate units (21%) for low-income households; garage with at-grade parking and an automated basement parking system; rooftop terrace; about 117 units per acre; Builder's Remedy under Government Code 65589(d)(5); statutory exemption PRC 21080.66. Applicant title shown as Chief Executive Officer; the 2026-08-26 map notice shows Managing Director.",
+      "src": [
+        "SRC-001337",
+        "SRC-001338"
+      ]
+    },
+    {
+      "text": "SF YIMBY: 84-foot, six-story building at 1st and Whitney streets with podium garage and rooftop amenity deck; Octane Capital previously filed a four-story, 12-unit plan; latest plans submitted late 2023.",
+      "src": [
+        "SRC-003888"
+      ]
+    },
+    {
+      "text": "State report 2022 row (D22-0003): 10 units, owner tenure, density bonus received.",
       "src": [
         "SRC-001144"
       ]
@@ -203,6 +261,15 @@
         "SRC-001337",
         "SRC-001338"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Octane Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003888"
+      ]
     }
   ],
   "financing": [],
@@ -215,6 +282,15 @@
       "src": [
         "SRC-001144"
       ]
+    },
+    {
+      "date": "2023-09-01",
+      "type": "Application filed",
+      "label": "Application D23-0009 submitted (20 units as reported to the state)",
+      "src": [
+        "SRC-001144"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-08-07",
@@ -245,6 +321,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 349 First St, Octane and Emeric McDonald: SF YIMBY, CEQAnet notices",
+      "src": [
+        "SRC-003888",
+        "SRC-001337"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API: 167-40-047, situs 349 1st St, Los Altos 94022-3604; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "losaltosca.gov PC study session report returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2022 and 2023 rows; CEQAnet SCH 2026080222 and 2026080984",
+      "src": [
+        "SRC-001144",
+        "SRC-001337",
+        "SRC-001338"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Los Altos Town Crier or other local coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2026-08-17; LoopNet and Crexi listings returned 403",
+      "src": [
+        "SRC-003888"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "octanecapital.com refused the connection",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in CEQA notices or SF YIMBY",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

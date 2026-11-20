@@ -142,6 +142,20 @@
           "src": [
             "SRC-001147"
           ]
+        },
+        {
+          "value": "City Council approved alternative inclusionary unit compliance on 2023-06-20",
+          "src": [
+            "SRC-001209"
+          ],
+          "note": ""
+        },
+        {
+          "value": "State report 2024 (20 units, approved): 1 low-income and 2 moderate-income units reported as not deed-restricted, 17 above moderate",
+          "src": [
+            "SRC-001111"
+          ],
+          "note": ""
         }
       ]
     },
@@ -160,6 +174,14 @@
           "src": [
             "SRC-001209"
           ]
+        },
+        {
+          "value": "DR20-004",
+          "src": [
+            "SRC-003883",
+            "SRC-003882"
+          ],
+          "note": "2020 design review for the earlier 32-unit design"
         }
       ]
     },
@@ -190,6 +212,41 @@
             "SRC-001147"
           ],
           "note": "State report 2020, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001111"
+          ],
+          "note": "State report 2023, application stage (TPM23-001/DR23-001, 20 units): 3 moderate-income deed-restricted units (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.932,
+          "src": [
+            "SRC-003882",
+            "SRC-003883"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-001111"
+          ],
+          "note": "State report 2023 and 2024 application rows for the 20-unit project"
         }
       ]
     }
@@ -200,6 +257,31 @@
       "src": [
         "SRC-001111",
         "SRC-001147"
+      ]
+    },
+    {
+      "text": "2020 CEQA notice (DR20-004): two-story residential building over a ground-level parking podium; 32 units (30 two-bedroom, 2 one-bedroom, 755 to 1,074 sq ft); 6 inclusionary units; 55 parking spaces and 16 bicycle spaces; 34.33 units/acre; Urban Residential zoning in the Ravenswood/Four Corners Specific Plan area.",
+      "src": [
+        "SRC-003882"
+      ]
+    },
+    {
+      "text": "City Notice of Development Proposal lists Village One LLC as Applicant/Owner; the county parcel layer lists the owner as Runnymede Portfolio LLC c/o Jiachun Lin.",
+      "src": [
+        "SRC-003885",
+        "SRC-001103"
+      ]
+    },
+    {
+      "text": "Site plan titled Village EPA carries the Carrasco & Associates Architects title block and shows townhomes in groups of five.",
+      "src": [
+        "SRC-003884"
+      ]
+    },
+    {
+      "text": "State report 2023 application row names the project Village EPA.",
+      "src": [
+        "SRC-001111"
       ]
     }
   ],
@@ -222,6 +304,15 @@
       "src": [
         "SRC-001209"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Carrasco & Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003884"
+      ]
     }
   ],
   "financing": [],
@@ -236,12 +327,58 @@
       ]
     },
     {
+      "date": "2020-11-25",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed for DR20-004 (SCH 2020110455, Class 32 infill)",
+      "src": [
+        "SRC-003883",
+        "SRC-003882"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2023-02-06",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001111"
       ]
+    },
+    {
+      "date": "2023-06-20",
+      "type": "Other",
+      "label": "City Council approved alternative inclusionary unit compliance",
+      "src": [
+        "SRC-001209"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024",
+      "type": "Approved",
+      "label": "20-unit application reported to the state as approved (2024 report)",
+      "src": [
+        "SRC-001111"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-06-03",
+      "type": "Other",
+      "label": "Community meeting",
+      "src": [
+        "SRC-001209"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-06-24",
+      "type": "Other",
+      "label": "Planning Commission hearing scheduled",
+      "src": [
+        "SRC-001209"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -254,6 +391,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 1201 Runnymede and Village One: city project page, CEQAnet NOE, site plan",
+      "src": [
+        "SRC-001209",
+        "SRC-003883"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC parcel layer: 063-271-090 owner Runnymede Portfolio LLC c/o Jiachun Lin (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City project page, Notice of Development Proposal and site plan",
+      "src": [
+        "SRC-001209",
+        "SRC-003885",
+        "SRC-003884"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2023 and 2024 rows; CEQAnet SCH 2020110455 and NOE PDF",
+      "src": [
+        "SRC-001111",
+        "SRC-003883",
+        "SRC-003882"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No trade press coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Village One LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Carrasco & Associates named in site plan title block; firm site not opened",
+      "src": [
+        "SRC-003884"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

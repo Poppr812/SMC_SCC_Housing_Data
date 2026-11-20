@@ -150,6 +150,131 @@
           "note": "City file H23-025 (Site Development Permit/Amendment): \"Site Development Permit to allow the demolition of two duplexes and the removal of seven trees, including five ordinance-size trees, for the construction of a four-story, 26,882-square-foot multifamily residential building with 20 dwelling units, includin\" (city text cut off at 255 characters)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.41,
+          "src": [
+            "SRC-003879",
+            "SRC-003880"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 26882,
+          "src": [
+            "SRC-003880"
+          ],
+          "note": "SF YIMBY: 26,882 sq ft residential building (same figure as city file H23-025)"
+        },
+        {
+          "value": 28830,
+          "src": [
+            "SRC-003879"
+          ],
+          "note": "CEQA notice: approximately 28,830-square-foot condominium building"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 3,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2024, entitlement approved 2024-07-10: 3 very-low-income deed-restricted units (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 50
+            }
+          ],
+          "src": [
+            "SRC-001099",
+            "SRC-003879"
+          ],
+          "note": "State report 2023 application row and 2024 CEQA notice: 2 very-low-income units"
+        }
+      ],
+      "best": 0
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 17,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2024, entitlement stage"
+        },
+        {
+          "value": 18,
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2023, application stage"
+        }
+      ],
+      "best": 0
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2024, entitlement stage"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001107",
+            "SRC-003880"
+          ],
+          "note": "State report 2024: deed restriction type density bonus, 50% density bonus, 2 incentives (development standards modification)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "3 very-low-income deed-restricted units, 55-year term, under the State Density Bonus Law",
+          "src": [
+            "SRC-001107",
+            "SRC-003880"
+          ],
+          "note": ""
+        },
+        {
+          "value": "2 units affordable to very-low-income households",
+          "src": [
+            "SRC-003879",
+            "SRC-001099"
+          ],
+          "note": "CEQA notice (2024) and state report 2023 application row"
+        }
+      ],
+      "best": 0
     }
   },
   "construction_notes": [
@@ -176,6 +301,31 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "SF YIMBY (2024-07-13) titles its article 426-433 Page Street and names Page I Estate LLC as owner; the city permit record names Page II Estate LLC as applicant. The article's figures (20 units, 26,882 sq ft, two duplexes demolished, seven trees removed) match city file H23-025. 427 Page St is a separate record (SCC-000627).",
+      "src": [
+        "SRC-003880"
+      ]
+    },
+    {
+      "text": "CEQA notice lists APN 277-21-049 and the address 426 & 428 Page St (cross street Douglas St). The project includes surface parking; five ordinance-size trees are proposed for removal.",
+      "src": [
+        "SRC-003879"
+      ]
+    },
+    {
+      "text": "SF YIMBY: the project includes a one-story community room and a covered breezeway.",
+      "src": [
+        "SRC-003880"
+      ]
+    },
+    {
+      "text": "State report 2023 application row lists renter tenure; the 2024 entitlement row lists owner tenure and reports 4 demolished rental units.",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
     }
   ],
   "parties": [
@@ -197,6 +347,16 @@
       "other_role": "Applicant (city permit record)",
       "src": [
         "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Page I Estate LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (per SF YIMBY)",
+      "src": [
+        "SRC-003880"
       ]
     }
   ],
@@ -247,6 +407,15 @@
         "SRC-001956"
       ],
       "estimated": false
+    },
+    {
+      "date": "2024-07-19",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption posted (SCH 2024070743, Class 32 infill)",
+      "src": [
+        "SRC-003879"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -254,6 +423,90 @@
       "date": "2026-11-09",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 426 Page St, Page II Estate LLC and Hestia Construction: CEQAnet NOE and SF YIMBY article",
+      "src": [
+        "SRC-003879",
+        "SRC-003880"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API: 277-51-002 is in San Jose with no situs address; 277-21-049 (city and CEQA APN) returns no row",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov (relocation plan and planning pages) refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "data.ca.gov APR Table A 2023 and Table A2 2024 rows for H23-025; CEQAnet SCH 2024070743",
+      "src": [
+        "SRC-001099",
+        "SRC-001107",
+        "SRC-003879"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Searched Mercury News and SJ Spotlight coverage of 426 Page St; none found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2024-07-13",
+      "src": [
+        "SRC-003880"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Page II Estate LLC or Hestia Construction Inc.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Architect not named in CEQA notice, state data or SF YIMBY",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
