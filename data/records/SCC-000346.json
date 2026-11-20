@@ -117,6 +117,13 @@
           "src": [
             "SRC-001110"
           ]
+        },
+        {
+          "value": "City findings 2022: three affordable units, two at 50% AMI and one at 95% AMI, under the State Density Bonus Law",
+          "src": [
+            "SRC-003854",
+            "SRC-003853"
+          ]
         }
       ]
     },
@@ -149,6 +156,88 @@
             "SRC-001110"
           ],
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 50
+            },
+            {
+              "count": 1,
+              "ami": 95
+            }
+          ],
+          "src": [
+            "SRC-003853",
+            "SRC-003854",
+            "SRC-003855"
+          ],
+          "note": "City findings and CEQA filing: two units at 50% AMI and one at 95% AMI"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-003853",
+            "SRC-003854",
+            "SRC-003855"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 11,
+          "src": [
+            "SRC-003853",
+            "SRC-003854",
+            "SRC-003855"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 21
+          },
+          "src": [
+            "SRC-003855",
+            "SRC-003854"
+          ],
+          "note": "All one-bedroom units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.24,
+          "src": [
+            "SRC-003853",
+            "SRC-003854"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus",
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003853",
+            "SRC-003854"
+          ],
+          "note": "Conditional Use Permit and Development Review Permit with a 42.5% State Density Bonus"
         }
       ]
     }
@@ -160,12 +249,66 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "Site is the former Motor Car Tune Up auto repair shop on the north side of Central Avenue between Moffett Boulevard and Horizon Avenue. Units are 559 to 679 sq ft, with 21 bike spaces; height waiver to 53'10\" at the ridge.",
+      "src": [
+        "SRC-003855",
+        "SRC-003858",
+        "SRC-003854"
+      ]
+    },
+    {
+      "text": "The 2024 extension findings say the extension was requested to secure construction financing, citing the financial climate.",
+      "src": [
+        "SRC-003856"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "MCZ Central LLC",
+      "contact": "Zachary Trailer",
+      "linkedin": null,
+      "src": [
+        "SRC-003855",
+        "SRC-003856",
+        "SRC-003857"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003855"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rincon Consultants Inc",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Environmental consultant",
+      "src": [
+        "SRC-003855"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-03-23",
+      "type": "Other",
+      "label": "Initial Study/MND received by the State Clearinghouse; public review to April 22, 2022",
+      "src": [
+        "SRC-003853"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-03-26",
       "type": "Application filed",
@@ -181,6 +324,24 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2024-05-10",
+      "type": "Other",
+      "label": "Two-year permit extension requested (PL-2024-088)",
+      "src": [
+        "SRC-003857"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-24",
+      "type": "Other",
+      "label": "Permit extension conditionally approved; zoning permit expiration June 22, 2026",
+      "src": [
+        "SRC-003856"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -188,6 +349,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on 730 Central Avenue: CEQAnet, SF YIMBY, MV Voice; MLS and Crexi sale listings (MLS page did not load listing data, Crexi 403)",
+      "src": [
+        "SRC-003853"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 158-45-001: situs 730 Central Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Legistar: ZA items PL-2021-007 (2022) and PL-2024-088 permit extension (2024) findings and memo",
+      "src": [
+        "SRC-003854",
+        "SRC-003857",
+        "SRC-003856"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project in Mountain View; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2022030625 (MND, March 2022)",
+      "src": [
+        "SRC-003853"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Mountain View Voice, 2022-04-26",
+      "src": [
+        "SRC-003858"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY, 2022-07-04",
+      "src": [
+        "SRC-003855"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for an MCZ Central LLC site: none found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for a Hunt Hale Jones project page for 730 Central: none found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity named; 2024 findings say construction financing was not yet secured",
+      "src": [
+        "SRC-003856"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 730 Central Avenue: none found",
+      "src": []
+    }
+  }
 }

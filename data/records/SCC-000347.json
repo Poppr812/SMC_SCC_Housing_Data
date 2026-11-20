@@ -307,8 +307,17 @@
             "SRC-001151"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 36,
+          "src": [
+            "SRC-003859",
+            "SRC-003860"
+          ],
+          "note": "CEQA filing and architect: 36 homes (21 single-family, 7 townhomes, 8 duets). State report rows cover 21 units"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -332,6 +341,35 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 4.45,
+          "src": [
+            "SRC-003859"
+          ]
+        },
+        {
+          "value": 4.35,
+          "src": [
+            "SRC-003860"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003859"
+          ],
+          "note": "General Plan amendment, prezone, Planned Unit Development, subdivision and annexation"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -341,9 +379,50 @@
         "SRC-001150",
         "SRC-001151"
       ]
+    },
+    {
+      "text": "CEQA filing: site at Saratoga-Los Gatos Road (SR 9) and Austin Way, APNs 510-08-018 and 510-08-019, annexed into Monte Sereno and redesignated multi-family residential at 3 to 9 units per acre.",
+      "src": [
+        "SRC-003859"
+      ]
+    },
+    {
+      "text": "Architect: 21 single-family homes, 7 townhomes and 8 small-lot cluster duets, 1,730 to 3,700 sq ft, 3 to 5 bedrooms; former motel and bar site, 8.28 units per acre, eight floor plans, Monterey-style exteriors.",
+      "src": [
+        "SRC-003860"
+      ]
+    },
+    {
+      "text": "MLS listing for 18828 Montalvo Oaks Cir shows a 5-bedroom, 3,076 sq ft home built in 2022 by SummerHill Homes, HOA $280 per month.",
+      "src": [
+        "SRC-003861"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "SummerHill Homes",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.summerhillhomes.com/",
+      "src": [
+        "SRC-003860",
+        "SRC-003861"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "WHA (William Hezmalhalch Architects)",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.whainc.com/",
+      "project_page": "https://www.whainc.com/montalvo-oaks",
+      "src": [
+        "SRC-003860"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -362,6 +441,15 @@
       "src": [
         "SRC-001151"
       ]
+    },
+    {
+      "date": "2018-05-04",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration received by the State Clearinghouse; review to June 4, 2018",
+      "src": [
+        "SRC-003859"
+      ],
+      "estimated": false
     },
     {
       "date": "2020-11-20",
@@ -385,6 +473,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on Montalvo Oaks: CEQAnet, WHA project page, MLS listings",
+      "src": [
+        "SRC-003859",
+        "SRC-003860"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel API, APNs 510-61-007, -030, -031: situs 18817, 18866, 18868 Montalvo Oaks Cl; original APNs 510-08-018/019 not in current dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for Monte Sereno planning and council records on Montalvo Oaks: no city documents found online; LAFCO 2018 annual report lists a Monte Sereno USA/SOI amendment without naming the project",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "LAFCO FY2017-18 annual report checked; no item naming Montalvo Oaks",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2018052014 (MND, May 2018)",
+      "src": [
+        "SRC-003859"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "Mercury News June 2018 article on council approval via PressReader returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search of trade press for Montalvo Oaks: none found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "summerhillhomes.com home and portfolio pages: Montalvo Oaks not listed",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "WHA project page",
+      "src": [
+        "SRC-003860"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or equity named in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on Montalvo Oaks: none found",
+      "src": []
+    }
+  }
 }
