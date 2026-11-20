@@ -1,6 +1,6 @@
 {
   "id": "SCC-000296",
-  "name": "4747 Narvaez Rd",
+  "name": "Branham Station Townhomes",
   "parcels": [
     {
       "apn": "462-02-024",
@@ -83,8 +83,18 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-001956",
+            "SRC-003520",
+            "SRC-003521"
+          ],
+          "note": "45 for-sale townhome-style condominium units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -137,6 +147,13 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "For-sale homes for first-time, income-eligible buyers at 30% to 120% AMI on a long-term VTA ground lease; several units include junior ADUs",
+          "src": [
+            "SRC-003520",
+            "SRC-002341"
+          ]
         }
       ]
     },
@@ -184,9 +201,94 @@
             }
           ],
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-003520",
+            "SRC-002341"
           ],
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+        },
+        {
+          "value": [
+            {
+              "count": 22,
+              "ami": 80
+            },
+            {
+              "count": 23,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2024 Table A, application stage (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 31,
+            "4br+": 14
+          },
+          "src": [
+            "SRC-003520",
+            "SRC-003521",
+            "SRC-003522"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 3.03,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "SB 330 preliminary application PRE24-125"
+        },
+        {
+          "value": 2.98,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Vesting tentative map T24-037"
+        },
+        {
+          "value": 2.5,
+          "src": [
+            "SRC-003521",
+            "SRC-003522"
+          ],
+          "note": "Existing VTA service parking lot, as reported"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001099",
+            "SRC-001956"
+          ],
+          "note": "State report lists SB 423 (2023) and density bonus received; city permit text describes an SB 35 ministerial permit with a density bonus request"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-003520"
+          ],
+          "note": "Resale restrictions for a minimum of 55 years; final period set by the County of Santa Clara and VTA"
         }
       ]
     }
@@ -216,10 +318,127 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Developer site: 31 three-bedroom townhomes of about 1,268 sq ft and 14 four-bedroom townhomes of about 2,121 sq ft; three units fully accessible; HOA dues expected about $450/month; sales prices not finalized; buyer orientation early 2027, buyer and lot selection tentatively spring 2027, completion expected by summer 2028.",
+      "src": [
+        "SRC-003520"
+      ]
+    },
+    {
+      "text": "January-February 2025 reporting: construction targeted to begin by 2027 and opening by 2029; Charities Housing to manage the property once built.",
+      "src": [
+        "SRC-003521",
+        "SRC-003522"
+      ]
+    },
+    {
+      "text": "Charities Housing development pipeline lists the Branham Ave Homeownership Project (San Jose, homeownership townhomes) under Predevelopment.",
+      "src": [
+        "SRC-002238"
+      ]
+    },
+    {
+      "text": "State APR 2024 Table A lists MP24-009 at 4747 Narvaez Rd as 45 owner-occupied single-family attached units, submitted 2024-10-15 under SB 423 (2023), ministerial, density bonus received.",
+      "src": [
+        "SRC-001099"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Charities Housing",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://charitieshousing.org/",
+      "project_page": "https://branhamstationhomes.com/",
+      "src": [
+        "SRC-003520",
+        "SRC-002238",
+        "SRC-003521",
+        "SRC-002341"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara Valley Transportation Authority (VTA)",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Landowner and ground lessor",
+      "src": [
+        "SRC-003521",
+        "SRC-003522",
+        "SRC-002341"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "HousingINC",
+      "contact": "Robyn van Ekelenburg",
+      "linkedin": null,
+      "src": [
+        "SRC-003520"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "State soft loan",
+      "provider": "California Department of Housing and Community Development",
+      "program": "CalHOME",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002341"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara (Office of Supportive Housing)",
+      "program": null,
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002341",
+        "SRC-003521",
+        "SRC-003522"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": null,
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002341"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Destination: Home",
+      "program": "Early-phase funding",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-002341",
+        "SRC-003521",
+        "SRC-003522"
+      ]
+    },
+    {
+      "type": "Other",
+      "provider": "Metropolitan Transportation Commission",
+      "program": "Early-phase funding",
+      "amount": null,
+      "date": null,
+      "src": [
+        "SRC-003521",
+        "SRC-003522"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
     {
@@ -229,6 +448,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2025-01-31",
+      "type": "Other",
+      "label": "VTA announces ground lease with Charities Housing for 45 for-sale townhomes",
+      "src": [
+        "SRC-003521"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-07-18",
@@ -249,6 +477,101 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address returned nothing; search on Branham station townhomes found San Jose Spotlight, NBC Bay Area and the project site",
+      "src": [
+        "SRC-003521",
+        "SRC-003522",
+        "SRC-003520"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 462-02-024 no situs; 462-02-026 and 462-02-028 (Branham Ln) also named in PRE24-125; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "San Jose planning permits GIS layer: MP24-009, PRE24-125, T24-037 already on record; sanjoseca.gov pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County Office of Supportive Housing named as funder in VTA report and news; county press site news.santaclaracounty.gov blocked",
+      "src": [
+        "SRC-002341"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2024 row MP24-009 (SB 423, density bonus, 22 low and 23 moderate); CalHOME named as funder in VTA report; no CEQAnet filing found",
+      "src": [
+        "SRC-001099",
+        "SRC-002341"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight 2025-01-31; NBC Bay Area 2025-02-01; The Real Deal returned 403",
+      "src": [
+        "SRC-003521",
+        "SRC-003522"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "The Real Deal 2025-02-07 article returned 403; Metro Magazine and Connect CRE results repeat the VTA announcement",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "branhamstationhomes.com and charitieshousing.org development pipeline",
+      "src": [
+        "SRC-003520",
+        "SRC-002238"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named; the VTA 2025 report credits a project image to Dahlin Group",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "VTA 2025 Affordable Housing Report: CalHOME, Destination HOME, Santa Clara County and City of San Jose; news adds MTC. vta.gov project page and community boards blocked by an expired certificate",
+      "src": [
+        "SRC-002341",
+        "SRC-003521"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts with new facts",
+      "src": []
+    }
+  }
 }

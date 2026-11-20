@@ -185,6 +185,40 @@
           37.4233643
         ]
       ]
+    },
+    {
+      "apn": "132-38-061",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1352314,
+          37.4228876
+        ],
+        [
+          -122.1354054,
+          37.4226771
+        ],
+        [
+          -122.1358064,
+          37.4228874
+        ],
+        [
+          -122.1358004,
+          37.4229999
+        ],
+        [
+          -122.1356933,
+          37.4231298
+        ],
+        [
+          -122.1352314,
+          37.4228876
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -233,10 +267,21 @@
         {
           "value": 45,
           "src": [
-            "SRC-001272"
+            "SRC-001272",
+            "SRC-003523",
+            "SRC-003524"
           ]
+        },
+        {
+          "value": 49,
+          "src": [
+            "SRC-003525",
+            "SRC-003524"
+          ],
+          "note": "2021 prescreening concept"
         }
-      ]
+      ],
+      "best": 0
     },
     "stories": {
       "claims": [
@@ -275,6 +320,12 @@
           "src": [
             "SRC-001272"
           ]
+        },
+        {
+          "value": "2021 prescreening concept: 10 income-restricted units (20% inclusionary) under Planned Home Zoning",
+          "src": [
+            "SRC-003525"
+          ]
         }
       ]
     },
@@ -285,6 +336,14 @@
           "src": [
             "SRC-001272"
           ]
+        },
+        {
+          "value": "21PLN-00133",
+          "src": [
+            "SRC-001272",
+            "SRC-003525"
+          ],
+          "note": "2021 prescreening application"
         }
       ]
     },
@@ -300,6 +359,58 @@
           "note": "Applicant indicated intent to invoke"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "1br": 6,
+            "2br": 35,
+            "3br": 4
+          },
+          "src": [
+            "SRC-003523",
+            "SRC-003524"
+          ],
+          "note": "2023 SB 330 pre-application plan"
+        },
+        {
+          "value": {
+            "1br": 23,
+            "2br": 21,
+            "3br": 5
+          },
+          "src": [
+            "SRC-003525"
+          ],
+          "note": "2021 prescreening concept, 49 units"
+        }
+      ],
+      "best": 0
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 79162,
+          "src": [
+            "SRC-003523"
+          ],
+          "note": "Gross floor area per plan set; SF YIMBY gives about 79,160 sq ft of housing"
+        }
+      ],
+      "best": 0
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.61,
+          "src": [
+            "SRC-003523",
+            "SRC-003524"
+          ],
+          "note": "26,591 sq ft, two merged parcels"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -308,12 +419,76 @@
       "src": [
         "SRC-001272"
       ]
+    },
+    {
+      "text": "SB 330 plan set (2023-03-10): five stories (Type V-B over Type II podium), 65 ft, FAR 2.98:1, two basement levels with 85 parking stalls and 70 bike racks; 9 BMR units (20%) reserved for low-income households; demolition of about 10,740 sq ft of 1968 and 1970 automotive repair buildings. Plan lists APNs 132-38-060 and 132-38-061.",
+      "src": [
+        "SRC-003523"
+      ]
+    },
+    {
+      "text": "2021 prescreening concept (49 units): a 35-ft building with 10 townhouse-style condominiums and a five-story building with 39 condominiums, replacing 10,125 sq ft of automobile service buildings; rezoning from CS to Planned Home Zoning; no formal Council action at the study session.",
+      "src": [
+        "SRC-003525"
+      ]
+    },
+    {
+      "text": "City project page lists SB 330 pre-application 23PLN-00073 submitted 2023-03-22 and states the formal application is due within 180 days of a complete pre-application; the page shows no formal application.",
+      "src": [
+        "SRC-001272"
+      ]
+    },
+    {
+      "text": "County parcel data: APN 132-38-060 situs 280 Lambert; APN 132-38-061 situs 290 Lambert (3 situs addresses).",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Peninsula Land & Capital",
+      "contact": "Roger Fields",
+      "linkedin": null,
+      "src": [
+        "SRC-003523",
+        "SRC-003524"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lambert Fields, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner and applicant (2021 prescreening)",
+      "src": [
+        "SRC-003525"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hayes Group Architects",
+      "contact": "Jeff Galbraith",
+      "linkedin": null,
+      "src": [
+        "SRC-003523",
+        "SRC-003524"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-08-16",
+      "type": "Other",
+      "label": "City Council prescreening study session on 49-unit Planned Home Zoning concept (21PLN-00133)",
+      "src": [
+        "SRC-003525"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-03-22",
       "type": "Application filed",
@@ -329,6 +504,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and developer: SF YIMBY, Palo Alto Online, The Real Deal results",
+      "src": [
+        "SRC-003524"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 132-38-060 (280 Lambert) and 132-38-061 (290 Lambert) match the plan-set APNs; no owner field",
+      "src": [
+        "SRC-001098",
+        "SRC-003523"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Palo Alto project page, SB 330 plan set, 2021 prescreening staff report ID 12325",
+      "src": [
+        "SRC-001272",
+        "SRC-003523",
+        "SRC-003525"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A and A2 searched for Lambert in Palo Alto: no rows; no CEQAnet filing (city lists CEQA not applicable)",
+      "src": [
+        "SRC-001126"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Palo Alto Online 2023-04-03 article page returned no content; no newer local coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY 2023-03-31: unit mix, 118,760 sq ft, 85 cars, Hayes Group; The Real Deal returned 403",
+      "src": [
+        "SRC-003524"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No Peninsula Land & Capital project page found in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "Hayes Group Architects named on the plan set; no project page found",
+      "src": [
+        "SRC-003523"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

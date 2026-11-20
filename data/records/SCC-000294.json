@@ -1,6 +1,6 @@
 {
   "id": "SCC-000294",
-  "name": "1347 E. Julian St",
+  "name": "Casa Inclusiva (1347 E Julian St)",
   "parcels": [
     {
       "apn": "249-65-060",
@@ -29,6 +29,40 @@
         [
           -121.8676919,
           37.3534496
+        ]
+      ]
+    },
+    {
+      "apn": "249-65-058",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.8679918,
+          37.3537327
+        ],
+        [
+          -121.8682134,
+          37.3535824
+        ],
+        [
+          -121.8684127,
+          37.3537698
+        ],
+        [
+          -121.8680797,
+          37.3539956
+        ],
+        [
+          -121.8678804,
+          37.3538083
+        ],
+        [
+          -121.8679918,
+          37.3537327
         ]
       ]
     }
@@ -117,6 +151,12 @@
           "src": [
             "SRC-001107"
           ]
+        },
+        {
+          "value": "Initial Study: all 45 units offered as 100 percent affordable housing, in studio, one-bedroom and two-bedroom configurations",
+          "src": [
+            "SRC-002527"
+          ]
         }
       ]
     },
@@ -129,6 +169,20 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PDC21-027",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 038714, Planned Development Zoning for a 6-story building with 100 affordable units on an approximately 0.52-gross-acre site (filed 2021-07-22); city permit status: Under Review"
+        },
+        {
+          "value": "ER22-003",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City folder 654845, environmental review for 1347 East Julian Street; city permit status: Under Review"
         }
       ]
     },
@@ -151,6 +205,62 @@
           "note": "State report 2023, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 6,
+          "src": [
+            "SRC-002527",
+            "SRC-002528",
+            "SRC-001956"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2454,
+          "src": [
+            "SRC-002527",
+            "SRC-001956"
+          ],
+          "note": "City permit H22-001 and Initial Study project detail"
+        },
+        {
+          "value": 2500,
+          "src": [
+            "SRC-002527",
+            "SRC-002528"
+          ],
+          "note": "Approximate figure in the Initial Study summary"
+        }
+      ],
+      "best": 0
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 21,
+          "src": [
+            "SRC-002527"
+          ],
+          "note": "16 surface stalls plus 5 ground-floor garage stalls; 15 bicycle and 8 motorcycle spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.52,
+          "src": [
+            "SRC-002527",
+            "SRC-001956"
+          ],
+          "note": "Gross acres, two parcels"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -160,12 +270,73 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "Casa Inclusiva is one of three sites in the Julian & Tripp Mixed-Use Development (913 units total) covered by one Initial Study/MND: Vila de Camila at 1325 E Julian St (H22-012), Casa Inclusiva at 1347 E Julian St (H22-001) and Residencias Arianna at 1298 Tripp Ave (H21-050).",
+      "src": [
+        "SRC-002527",
+        "SRC-002528"
+      ]
+    },
+    {
+      "text": "Initial Study: one six-story, about 63,097 sq ft apartment building, maximum height about 77.5 ft, on two vacant parcels (APN 249-65-060 designated Urban Village, APN 249-65-058 Residential Neighborhood); residential and commercial components are on APN 249-65-060. Zoning HI and R-1-8. 11 trees removed. Site plans credited to Anderson Architects, February 2023.",
+      "src": [
+        "SRC-002527"
+      ]
+    },
+    {
+      "text": "State APR 2022 Table A lists H22-001 with 45 low-income deed-restricted rental units, submitted 2022-03-01, no density bonus.",
+      "src": [
+        "SRC-001099"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Roygbiv",
+      "contact": "Loida Kirkley",
+      "linkedin": null,
+      "other_role": "Applicant (city permits H22-001, ER22-003)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Diridon Investments, LLC",
+      "contact": "Loida C. Kirkley",
+      "linkedin": null,
+      "email": "kirkleyred@gmail.com",
+      "phone": "(408) 838-2601",
+      "other_role": "Applicant (CEQA filing)",
+      "src": [
+        "SRC-002528"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects",
+      "contact": "Kurt Anderson",
+      "linkedin": null,
+      "src": [
+        "SRC-001956",
+        "SRC-002527"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-07-22",
+      "type": "Application filed",
+      "label": "Planned Development Zoning application PDC21-027 (100 affordable units)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-03-01",
       "type": "Application filed",
@@ -173,6 +344,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2023-10-13",
+      "type": "Other",
+      "label": "Julian & Tripp Initial Study / MND released for public review (SCH 2023100356)",
+      "src": [
+        "SRC-002528"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-11-29",
@@ -188,6 +368,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on address and project name: CEQAnet Julian & Tripp record (SCH 2023100356)",
+      "src": [
+        "SRC-002528"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 249-65-060 situs 1347 E Julian St; 249-65-058 no situs; county dataset carries no owner field. Second APN from the Initial Study",
+      "src": [
+        "SRC-001098",
+        "SRC-002527"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer: H22-001 approved 2023-11-29, PDC21-027, ER22-003; sanjoseca.gov pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project; no county funding found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2023100356 MND and Initial Study; APR Table A 2022 row H22-001; no CTCAC/CDLAC award found",
+      "src": [
+        "SRC-002528",
+        "SRC-002527",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Search of local news for Casa Inclusiva and 1347 E Julian returned only the separate 1271-1279 E Julian project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY coverage found only for the separate 1271-1279 E Julian project",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No website found for Roygbiv or Diridon Investments, LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Anderson Architects named in city and CEQA records; no project page found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, tax credit or public funding award found for Casa Inclusiva",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

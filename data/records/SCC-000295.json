@@ -321,6 +321,17 @@
           "note": "Local tracking number as reported to the state"
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2022 Table A lists all 45 proposed units as above-moderate income"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -328,6 +339,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "text": "State APR 2022 Table A lists H22-005 at 1200 El Paseo de Saratoga with APN 403-33-015: 45 rental units in the 5+ category, all above-moderate income, submitted 2022-02-23, application status Pending, no SB 35 and no density bonus.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    {
+      "text": "San Jose planning permits GIS layer has no folder H22-005. Folders on APN 403-33-016 (1200 El Paseo de Saratoga) are commercial: H22-002 (demolition of a 7,627 sq ft commercial building and construction of a 6,803 sq ft commercial building, approved 2022-10-26, applicant Kenneth Rodrigues & Partners), sign and restaurant permits, and AD26-040 (2026-04-21) for Building 3 of the El Paseo de Saratoga Mixed Use project at 300 El Paseo de Saratoga. Folders on APN 403-33-015 are sign and restaurant permits.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "County parcel data: APN 403-33-016 carries situs 1200 El Paseo de Saratoga with 34 situs addresses; APN 403-33-015 carries situs 400 El Paseo de Saratoga.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -354,6 +383,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on 1200 El Paseo de Saratoga and H22-005 returned only the El Paseo de Saratoga mixed-use village at 1312 El Paseo / 1777 Saratoga Ave",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SCC parcel dataset: 403-33-016 situs 1200 El Paseo de Saratoga (34 situs addresses); APR row cites 403-33-015 (situs 400 El Paseo de Saratoga); no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer queried by APN 403-33-016, 403-33-015 and file H22-005: no H22-005 folder; commercial permits only",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "APR Table A 2022 row H22-005 (APN 403-33-015, 45 above-moderate units, pending); no CEQAnet filing found for H22-005",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Local news covers only the El Paseo de Saratoga village redevelopment",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "SF YIMBY and The Real Deal cover only the El Paseo de Saratoga village redevelopment",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No developer named in any source for H22-005",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named for H22-005; Kenneth Rodrigues & Partners appears only on commercial permits H22-002 and AD26-040",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000008",
+      "relation": "adjacent",
+      "note": "Same El Paseo de Saratoga shopping center site; the state report places file H22-005 at 1200 El Paseo de Saratoga, APN 403-33-015"
     }
   ]
 }
