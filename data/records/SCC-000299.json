@@ -1,6 +1,6 @@
 {
   "id": "SCC-000299",
-  "name": "BLDG # 2 - CATALINA II",
+  "name": "Catalina II (1433 El Camino Real)",
   "parcels": [
     {
       "apn": "224-78-039",
@@ -126,8 +126,17 @@
             "SRC-001102"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003546",
+            "SRC-003547"
+          ],
+          "note": "39 townhouse units in five buildings"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -167,9 +176,18 @@
             "SRC-001106"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 39,
+          "src": [
+            "SRC-003546",
+            "SRC-003547",
+            "SRC-001106"
+          ],
+          "note": "Whole Catalina II project (39 townhouses, 7 live/work). APR Table A 2019 shows 43 proposed, 39 approved, 4 disapproved. This record's own APR rows are for individual buildings."
         }
       ],
-      "best": 1
+      "best": 2
     },
     "affordability_type": {
       "claims": [
@@ -200,6 +218,13 @@
             "SRC-001102"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN2018-13609",
+          "src": [
+            "SRC-001106"
+          ],
+          "note": "Planning file reported to the state; CEQA SCH 2019039150"
         }
       ]
     },
@@ -218,6 +243,40 @@
           "note": "State report 2019, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.7,
+          "src": [
+            "SRC-003546"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-003546"
+          ],
+          "note": "Rezoning from CT and OG to Planned Development"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 20,
+          "src": [
+            "SRC-001102"
+          ],
+          "note": "APR Table A2 2020: ownership units under the City's Below Market Purchase Program"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -227,9 +286,35 @@
         "SRC-001106",
         "SRC-001102"
       ]
+    },
+    {
+      "text": "CEQA documents describe Catalina II at 1433-1499 El Camino Real: rezoning from CT and OG to Planned Development, demolition of existing improvements, 39 townhouses in five buildings, 7 of them live/work, maximum height 41.25 feet, about 23 du/ac, APNs 224-048-004, -005, -006.",
+      "src": [
+        "SRC-003546",
+        "SRC-003547"
+      ]
+    },
+    {
+      "text": "APR Table A2 lists Catalina II building permits by building: BLD2019-55273 (1460 Civic Center Dr, 8 units), BLD2019-55274 (1440 Civic Center Dr, 8 units), BLD2019-55275 (1420 Civic Center Dr, 8 units), BLD2019-55276 (1465 El Camino Real, 7 units), BLD2019-55277 (1435 El Camino Real, 8 units), issued July to October 2020.",
+      "src": [
+        "SRC-001102"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "SCS Development Co.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-003546",
+        "SRC-003547",
+        "SRC-001106"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -242,6 +327,15 @@
       ]
     },
     {
+      "date": "2019-03-26",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the State Clearinghouse (SCH 2019039150)",
+      "src": [
+        "SRC-003546"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2019-06-05",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -250,12 +344,39 @@
       ]
     },
     {
+      "date": "2019-07-01",
+      "type": "Other",
+      "label": "Notice of Determination filed",
+      "src": [
+        "SRC-003547"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2020-10-23",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001102"
       ]
+    },
+    {
+      "date": "2021-04-15",
+      "type": "Other",
+      "label": "Certificate of occupancy, Building 2 (BLD2019-55274, 1440 Civic Center Dr, 8 units)",
+      "src": [
+        "SRC-001102"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-08-03",
+      "type": "Other",
+      "label": "Certificate of occupancy, Building 3 (BLD2019-55275, 1420 Civic Center Dr, 8 units)",
+      "src": [
+        "SRC-001102"
+      ],
+      "estimated": false
     },
     {
       "date": "2022-11-08",
@@ -271,6 +392,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web searches on Catalina II and 1433 El Camino Real; found CEQAnet records.",
+      "src": [
+        "SRC-003546"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 22478039: a 112 SF condominium parcel with situs 1465 El Camino Real; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "santaclaraca.gov project listings refuse automated access.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Santa Clara project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "CEQAnet SCH 2019039150 MND and NOD; APR Table A and A2 (data.ca.gov CKAN) rows by building.",
+      "src": [
+        "SRC-003546",
+        "SRC-003547",
+        "SRC-001106",
+        "SRC-001102"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Silicon Valley Voice and Mercury News coverage found covers the earlier 54-unit Catalina phase, not Catalina II.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "GlobeSt articles on the Catalina community returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No SCS Development or builder project page for Catalina II found; Architect Magazine's Catalina listing covers the 54-home first phase at 1320 Civic Center Dr.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No architect named in CEQA records or search results.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funding found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches returned no LinkedIn posts on Catalina II.",
+      "src": []
+    }
+  }
 }

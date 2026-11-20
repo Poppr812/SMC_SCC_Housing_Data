@@ -1,6 +1,6 @@
 {
   "id": "SCC-000300",
-  "name": "1280 N. 4th Street",
+  "name": "Sunrise Pavilion (1280 N 4th St)",
   "parcels": [
     {
       "apn": "235-05-018",
@@ -75,8 +75,17 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003548",
+            "SRC-003549"
+          ],
+          "note": "Grand opening announced November 1, 2024; HCD reported the opening in August 2025"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -93,11 +102,22 @@
         {
           "value": 43,
           "src": [
-            "SRC-001099"
+            "SRC-001099",
+            "SRC-003549",
+            "SRC-003550",
+            "SRC-003551"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 42,
+          "src": [
+            "SRC-003548"
+          ],
+          "note": "Opening release: 42 homes for transitional age youth"
         }
-      ]
+      ],
+      "best": 0
     },
     "planning_file": {
       "claims": [
@@ -136,6 +156,81 @@
           "note": "State report 2022, application stage: 43 deed-restricted units"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 30,
+            "1br": 12,
+            "2br": 1,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003550"
+          ],
+          "note": "Studios 313 SF, one-bedrooms 626 SF, two-bedroom 700 SF"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Supportive"
+          ],
+          "src": [
+            "SRC-003549",
+            "SRC-003550"
+          ],
+          "note": "Transitional age youth (18 to 24) exiting foster care; more than half permanent supportive housing, the rest transitional"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.15,
+          "src": [
+            "SRC-003550"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Jamboree page: affordability at 30% AMI. 2022 SCCHA release: 14 permanent units for youth with young children, 25 interim units (THP-Plus), 3 mentor units, 1 manager unit. 21 Section 8 project-based vouchers from SCCHA.",
+          "src": [
+            "SRC-003550",
+            "SRC-003551",
+            "SRC-003548"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 15760000,
+          "src": [
+            "SRC-003550"
+          ],
+          "note": "As stated on the Jamboree project page"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 16250000,
+          "src": [
+            "SRC-003551"
+          ],
+          "note": "Acquisition price for the Pavilion Inn stated in the June 2022 SCCHA release announcing the Homekey award"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -144,12 +239,220 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "Conversion of the former Pavilion Inn motel (61 rooms per San Jose Spotlight) into 43 apartments, a community center, laundry and an on-site Workforce Center.",
+      "src": [
+        "SRC-003552",
+        "SRC-003549",
+        "SRC-003548"
+      ]
+    },
+    {
+      "text": "San Jose Spotlight (Nov 2023) reported the Housing Authority leased the property to Jamboree to manage construction and operations, with completion expected summer 2024. Funding amounts in the HCD release differ slightly: it lists $2 million in HHAP from the City of San Jose.",
+      "src": [
+        "SRC-003552",
+        "SRC-003549"
+      ]
     }
   ],
-  "parties": [],
-  "financing": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Jamboree Housing Corporation",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.jamboreehousing.com/",
+      "website_basis": "opened",
+      "project_page": "https://www.jamboreehousing.com/blogs/affordable-housing-developer-partner/sunrise-pavilion-affordable-housing-development-partner-in-san-jose",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-003550",
+        "SRC-003549",
+        "SRC-003551"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Santa Clara County Housing Authority",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner",
+      "src": [
+        "SRC-003552",
+        "SRC-003549"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jamboree Housing Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (per developer page)",
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Basis Architecture and Consulting, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "Echelcon, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Quality Development and Construction, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Construction manager",
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "role": "Property manager",
+      "company": "Housing with Heart",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Domus Management Co.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Leasing",
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Bill Wilson Center",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Service provider",
+      "src": [
+        "SRC-003550",
+        "SRC-003549",
+        "SRC-003551"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Community Solutions",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Service provider",
+      "src": [
+        "SRC-003550",
+        "SRC-003549"
+      ]
+    }
+  ],
+  "financing": [
+    {
+      "type": "State soft loan",
+      "provider": "California Department of Housing and Community Development",
+      "program": "Homekey 2.0 grant",
+      "amount": 14328401,
+      "date": "2022-06-17",
+      "src": [
+        "SRC-003550",
+        "SRC-003551",
+        "SRC-003549"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County Housing Authority",
+      "program": "Moving to Work funds",
+      "amount": 8700000,
+      "date": null,
+      "src": [
+        "SRC-003550",
+        "SRC-003548"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "Santa Clara County Housing Authority",
+      "program": "Additional Housing Authority funds",
+      "amount": 2125822,
+      "date": null,
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "No Place Like Home and Measure A",
+      "amount": 4200000,
+      "date": null,
+      "src": [
+        "SRC-003550",
+        "SRC-003552"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara Office of Supportive Housing",
+      "program": null,
+      "amount": 2000000,
+      "date": null,
+      "src": [
+        "SRC-003550",
+        "SRC-003552"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "Homeless Housing, Assistance and Prevention (HHAP)",
+      "amount": 2276283,
+      "date": null,
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "City of San Jose",
+      "program": "Measure E",
+      "amount": 500000,
+      "date": null,
+      "src": [
+        "SRC-003550",
+        "SRC-003552"
+      ]
+    }
+  ],
   "groups": {},
   "events": [
+    {
+      "date": "2022-06-17",
+      "type": "Other",
+      "label": "State Homekey award of $14.3 million announced for purchase and renovation of the Pavilion Inn",
+      "src": [
+        "SRC-003551"
+      ],
+      "estimated": false
+    },
     {
       "date": "2022-10-28",
       "type": "Application filed",
@@ -157,6 +460,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2024-11-01",
+      "type": "Completion",
+      "label": "Grand opening announced",
+      "src": [
+        "SRC-003548"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -164,6 +476,101 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on the address identified Sunrise Pavilion (former Pavilion Inn).",
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 23505018: situs 1280 N 4th St, San Jose; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "County NPLH/Measure A and Office of Supportive Housing funding per Jamboree page; SCCHA June 2022 Homekey release.",
+      "src": [
+        "SRC-003550",
+        "SRC-003551"
+      ]
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "HCD newsroom release (Aug 2025) on the Homekey project; APR Table A 2022 row already on record.",
+      "src": [
+        "SRC-003549",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "San Jose Spotlight, Nov 29, 2023.",
+      "src": [
+        "SRC-003552"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "blocked",
+      "note": "The Real Deal article on Jamboree's $32M hotel conversion returned 403.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Jamboree project page and November 2024 opening release.",
+      "src": [
+        "SRC-003550",
+        "SRC-003548"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Architect named on the Jamboree project page; search found Basis Architecture directory listings but no project page for Sunrise Pavilion.",
+      "src": [
+        "SRC-003550"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Funding sources and amounts from the Jamboree project page, opening release, SCCHA release and San Jose Spotlight.",
+      "src": [
+        "SRC-003550",
+        "SRC-003548",
+        "SRC-003551",
+        "SRC-003552"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search limited to linkedin.com returned nothing on Sunrise Pavilion.",
+      "src": []
+    }
+  }
 }

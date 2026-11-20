@@ -185,6 +185,13 @@
             "SRC-001015"
           ],
           "note": "Approximate"
+        },
+        {
+          "value": 2640,
+          "src": [
+            "SRC-003553"
+          ],
+          "note": "Three retail spaces"
         }
       ]
     },
@@ -238,6 +245,51 @@
           ]
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 61000,
+          "src": [
+            "SRC-003553"
+          ],
+          "note": "About 61,000 SF of housing within about 110,720 SF total"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.31,
+          "src": [
+            "SRC-003554"
+          ],
+          "note": "Lot size 13,677.43 SF"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 800,
+          "src": [
+            "SRC-003554"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-003553"
+          ],
+          "note": "Pre-application invokes SB 330 and the State Density Bonus Law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -245,6 +297,13 @@
       "text": "Vacant site",
       "src": [
         "SRC-001015"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports a height of 80 feet, a three-level basement garage with 38 spaces, and a second-floor social lounge and fitness center. Project plans show 6 stories over 2 basement levels, Type I-A construction, zoning C2-2/R4, 160 du/ac and 120,110 SF total gross construction.",
+      "src": [
+        "SRC-003553",
+        "SRC-003554"
       ]
     }
   ],
@@ -268,6 +327,36 @@
       "src": [
         "SRC-001016"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "LF George Properties Corp.",
+      "contact": "George Lam",
+      "linkedin": null,
+      "src": [
+        "SRC-003553",
+        "SRC-003554"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "LF George Properties Corp.",
+      "contact": "George Lam",
+      "linkedin": null,
+      "other_role": "Owner (per project plans)",
+      "src": [
+        "SRC-003554"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Costa Brown Architecture, Inc.",
+      "contact": "Albert Costa",
+      "linkedin": null,
+      "src": [
+        "SRC-003554",
+        "SRC-003553"
+      ]
     }
   ],
   "financing": [],
@@ -288,6 +377,15 @@
       "src": [
         "SRC-001015"
       ]
+    },
+    {
+      "date": "2026-04-29",
+      "type": "Other",
+      "label": "Second neighborhood meeting scheduled (Zoom)",
+      "src": [
+        "SRC-001015"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -300,6 +398,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web search on the address found SF YIMBY coverage and sale listings (LoopNet/Crexi listings not opened; Crexi returned 403).",
+      "src": [
+        "SRC-003553"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SMC GIS active parcels, APN 039-030-260: owner El Camino Terraces LLC already on record.",
+      "src": [
+        "SRC-001016"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "City of San Mateo project page PA-2026-0004 and plan set dated 2026-02-13.",
+      "src": [
+        "SRC-001015",
+        "SRC-003554"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of San Mateo project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A and A2 (data.ca.gov CKAN) searched for 1990 in San Mateo: no row. No CEQAnet record found.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no local news article on this project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "SF YIMBY, March 1, 2026.",
+      "src": [
+        "SRC-003553"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search on LF George Properties Corp. found only business directory listings, no company website.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Architect and project architect named on the plan cover sheet.",
+      "src": [
+        "SRC-003554"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender or funding found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches returned no LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

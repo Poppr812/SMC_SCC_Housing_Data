@@ -208,6 +208,73 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 20,
+            "2br": 24,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-003541"
+          ],
+          "note": "Preliminary application: 20 one-bedroom units at 670 SF and 24 two-bedroom units at 860 SF"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 34040,
+          "src": [
+            "SRC-003541"
+          ],
+          "note": "Preliminary application, zoning floor area; 36,720 SF total construction including 2,680 SF of parking"
+        },
+        {
+          "value": 38032,
+          "src": [
+            "SRC-001569"
+          ],
+          "note": "City project page, gross square feet"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 30
+            },
+            {
+              "count": 43,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-003541"
+          ],
+          "note": "Preliminary application unit table: 1 extremely low income, 43 low income (the form also lists 44 under moderate income)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "City project page: all 44 units designated low-income. Preliminary application: 1 extremely low income and 43 low income units. City data: 43 BMR.",
+          "src": [
+            "SRC-001569",
+            "SRC-003541",
+            "SRC-001558"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -222,18 +289,108 @@
       "src": [
         "SRC-001558"
       ]
+    },
+    {
+      "text": "Application 2: 44 apartments in four 3-story buildings on a 49,967 SF site, maximum height 39 feet, units 700 to 860 SF, 44 parking spaces reached by a private driveway off Surrey Lane. The existing use is one single-family home.",
+      "src": [
+        "SRC-001569",
+        "SRC-003541"
+      ]
+    },
+    {
+      "text": "The preliminary application did not request density bonus incentives, waivers or concessions and reserved the right to use them later.",
+      "src": [
+        "SRC-003541"
+      ]
+    },
+    {
+      "text": "The July 2, 2025 inconsistency letter finds multifamily use is not permitted in the R-1-40,000 district, the unit count exceeds the district standard, maximum allowable floor area is 5,766 SF, and proposed buildings encroach into required setbacks. The city states it will impose some standards as conditions under Government Code 65589.5(f)(1).",
+      "src": [
+        "SRC-003543"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Deepak H. Chandani and Geeta Karishma Chandani Living Trust dated July 10, 1997",
+      "contact": "Deepak H. Chandani",
+      "linkedin": null,
+      "other_role": "Applicant and property owner",
+      "src": [
+        "SRC-003541",
+        "SRC-003542"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Mayberry Workshop Architecture",
+      "contact": "Adam Mayberry, AIA",
+      "linkedin": null,
+      "src": [
+        "SRC-003541",
+        "SRC-003542"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-03-19",
+      "type": "Application filed",
+      "label": "Application 1 (CPX24-0012) filed: four 2-story single-family homes with four attached ADUs, 2 BMR, subdivision",
+      "src": [
+        "SRC-001558"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-07-03",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application received, Application 2",
+      "src": [
+        "SRC-003541",
+        "SRC-001569"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-12-23",
       "type": "Application filed",
       "label": "Formal application received, Application 2",
       "src": [
         "SRC-001569"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-05",
+      "type": "Other",
+      "label": "Incomplete letter sent",
+      "src": [
+        "SRC-001569",
+        "SRC-003543"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-04",
+      "type": "Other",
+      "label": "Application deemed complete for processing",
+      "src": [
+        "SRC-001569",
+        "SRC-003543"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-02",
+      "type": "Other",
+      "label": "Inconsistency letter sent",
+      "src": [
+        "SRC-001569",
+        "SRC-003543"
       ],
       "estimated": false
     }
@@ -243,6 +400,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-20",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Web searches on the address, owner and architect; found the city's application documents. Listing sites show the existing single-family home.",
+      "src": [
+        "SRC-003541"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-20",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 50316009: situs 13605 Surrey Ln, Saratoga; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Saratoga project page for Application 2, preliminary and formal application PDFs, July 2, 2025 inconsistency letter, and the city's Residential Design Review ArcGIS layer (CPX24-0012, CPX24-0023).",
+      "src": [
+        "SRC-001569",
+        "SRC-003541",
+        "SRC-003542",
+        "SRC-003543",
+        "SRC-001558"
+      ]
+    },
+    "county": {
+      "date": "2026-11-20",
+      "result": "not applicable",
+      "note": "City of Saratoga project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "APR Table A and A2 (data.ca.gov CKAN) searched for Surrey in Saratoga: only an unrelated ADU at 13750 Surrey Ln. No CTCAC or CEQAnet record found.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search for the address and builder's remedy coverage of Saratoga; no article names this project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web search; no trade article names this address.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "The applicant is the owners' living trust; no developer company or website named.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-20",
+      "result": "found",
+      "note": "Architect named in the preliminary application and formal application SB 1214 form. Web search found Mayberry Workshop directory listings (San Jose) but no project page for this site.",
+      "src": [
+        "SRC-003541"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "No lender, equity or public funding found in city documents or web search.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-20",
+      "result": "nothing found",
+      "note": "Web searches returned no LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }
