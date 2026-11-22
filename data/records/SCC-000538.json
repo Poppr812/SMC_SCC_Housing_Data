@@ -157,6 +157,47 @@
           ]
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 0,
+            "4br+": 5
+          },
+          "src": [
+            "SRC-004242",
+            "SRC-004243"
+          ],
+          "note": "Plan types A, BR, B-ALT, B (4 BR each) and C (5 BR), one of each"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 14,
+          "src": [
+            "SRC-004242"
+          ],
+          "note": "10 garage spaces (2-car garage per unit) plus 4 visitor"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 11787,
+          "src": [
+            "SRC-004242",
+            "SRC-004243"
+          ],
+          "note": "Gross floor area / building area including garages; living areas 1,789 to 2,004 sq ft per unit"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -164,6 +205,25 @@
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
         "SRC-001498"
+      ]
+    },
+    {
+      "text": "Legistar 26-0214: Special Development Permit for five three-story townhome-style condominium units with deviations from front setback, height, garage size and usable open space requirements, and a Tentative Map for five condominium units; zoning R-3/PD; applicant Samir Sharma, owner Gregory Cary; CEQA exempt under Public Resources Code 21080.66 (AB 130).",
+      "src": [
+        "SRC-001498"
+      ]
+    },
+    {
+      "text": "Project data table: gross lot 12,981 sq ft (0.30 ac), net 12,813 sq ft (0.29 ac); 5 units at 17.2 du/ac; FAR 92%; lot coverage 29%; height 38 ft; existing one 2-bedroom house of 2,102 sq ft. Plans dated September 23, 2025 list Samir Sharma as developer; civil sheets carry BKF; the photometric report is prepared for SDG Architects.",
+      "src": [
+        "SRC-004242",
+        "SRC-004243"
+      ]
+    },
+    {
+      "text": "Planning Commission minutes 2026-01-26: Lance Crannell spoke as architect; no public speakers; motion by Commissioner Davis, seconded by Commissioner Shukla, to approve Alternative 1 (CEQA exemption, Special Development Permit and Tentative Map) carried.",
+      "src": [
+        "SRC-001499"
       ]
     }
   ],
@@ -176,6 +236,44 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001498"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Gregory Cary",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner",
+      "src": [
+        "SRC-001498"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Samir Sharma",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004243"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects",
+      "contact": "Lance Crannell",
+      "linkedin": null,
+      "src": [
+        "SRC-004243",
+        "SRC-001499"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004243"
       ]
     }
   ],
@@ -197,6 +295,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web search on 1001 S Wolfe Road: sale listings for a five-unit townhome site; no new public facts",
+      "src": [
+        "SRC-001498"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 21116042: situs 1001 S Wolfe Rd, Sunnyvale; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Sunnyvale Legistar matter 16591 (file 26-0214), histories, project data table and plan set attachments",
+      "src": [
+        "SRC-001498",
+        "SRC-001499",
+        "SRC-004242",
+        "SRC-004243"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project, no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "CEQA exemption under AB 130 (no CEQAnet filing found); no APR row found by search",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for local news on 1001 S Wolfe: San Jose Spotlight Wolfe Road coverage concerns other sites",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "SF YIMBY search: coverage of 925 and 1313 S Wolfe Road only",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Samir Sharma: no company site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Architect named in minutes (Lance Crannell) and plan set (SDG Architects); firm website not confirmed by search",
+      "src": [
+        "SRC-001499",
+        "SRC-004243"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: none",
+      "src": []
+    }
+  }
 }

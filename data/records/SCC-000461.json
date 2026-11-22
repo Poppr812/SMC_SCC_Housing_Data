@@ -167,6 +167,39 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "CP17-021: 3-story mixed-use building"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1250,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "CP17-021: approximately 1,250 sq ft of office space"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.19,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "0.19 gross acres per CP17-021 and GP15-005"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -181,12 +214,73 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City planning records for APN 414-05-004: GP15-005 (2015, owner Schwartz Jeffrey A and Barry Cynthia Trustees), PRE17-044 (2017, The Ridgecrest Group, ground-floor commercial with apartments above), CP17-021 (applicant Omid Shakeri, approved 2018-07-25, zoning CP), AD19-157 (2019) and AD22-333 (2022). The state report through 2025 shows the 2020 building permit and no certificate of occupancy.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Omid Shakeri",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (CP17-021)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Ridgecrest Group",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner named in preliminary review PRE17-044",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Schwartz Jeffrey A and Barry Cynthia Trustees",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner named in General Plan amendment GP15-005",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2015-12-15",
+      "type": "Other",
+      "label": "General Plan amendment GP15-005 approved: Neighborhood/Community Commercial to Mixed Use Neighborhood, site removed from Urban Village boundary",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2017-03-08",
+      "type": "Other",
+      "label": "Preliminary review PRE17-044 filed (vertical mixed use)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2017-06-08",
+      "type": "Application filed",
+      "label": "Conditional Use Permit CP17-021 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2018-07-25",
       "type": "Approved",
@@ -196,11 +290,27 @@
       ]
     },
     {
+      "date": "2019-02-15",
+      "type": "Other",
+      "label": "Permit adjustment AD19-157 approved (door, electrical closet and layout changes)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
       "date": "2020-01-09",
       "type": "Permit issued",
       "label": "Building permit issued",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2022-05-26",
+      "type": "Other",
+      "label": "Permit adjustment AD22-333 approved (ADA ramp and lobby door on Joseph Avenue)",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -214,6 +324,87 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web search on 2898 Joseph Ave, CP17-021 and applicant name: city meeting notice (sanjoseca.gov, blocked) and listing sites only",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 41405004: situs 2896 Joseph Av, San Jose 95124; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer, APN 41405004: GP15-005, PRE17-044, CP17-021, AD19-157, AD22-333; sanjoseca.gov documents refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project, no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "data.ca.gov APR Table A2 San Jose, APN 41405004: 2018 entitlement and 2020 permit rows, 5 above-moderate units, no completion row",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for local news on 2898 Joseph Ave: none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for trade press on 2898 Joseph Ave: none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched applicant Omid Shakeri and The Ridgecrest Group: no developer site or project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in city GIS records; none found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "APR shows no financial assistance; no lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project: none",
+      "src": []
+    }
+  }
 }

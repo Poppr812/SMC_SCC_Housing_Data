@@ -128,6 +128,14 @@
           ]
         }
       ]
+    },
+    {
+      "text": "2880 Ruby Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098",
+        "SRC-001956"
+      ]
     }
   ],
   "images": [],
@@ -151,8 +159,17 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-001956",
+            "SRC-004240"
+          ],
+          "note": "Site later rezoned R-1-5 to PQP (C20-012) and approved for a Buddhist temple (SP20-024, 2023-03-28); permit adjustments for the temple approved 2023 and 2024"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -172,6 +189,13 @@
             "SRC-001107"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H17-006: six single-family homes after demolition of one existing house; T16-061: one lot into six lots"
         }
       ]
     },
@@ -196,6 +220,17 @@
           "note": "State report (through 2018): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.86,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "1.86 gross acres per H17-006 and T16-061"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -204,18 +239,98 @@
       "src": [
         "SRC-001107"
       ]
+    },
+    {
+      "text": "City planning records at 2740 Ruby Av: PRE15-117 (2015, Howell Development & Investments, 8-13 homes), T16-061 (17230 Buena Vista Partners, six lots, approved 2018-01-24), H17-006 (applicant Gregory Howell, demolition of one house, removal of 18 ordinance-size trees, six single-family homes, approved 2018-01-24, zoning R-1-5). Later files on the same 1.86-acre site: PRE18-190 (Buddhist temple complex), C20-012 rezoning R-1-5 to PQP, SP20-024 Special Use Permit for an approximately 13,902 sq ft private gathering facility approved 2023-03-28 (applicant A Khmer Buddhist Foundation), AD23-659 and AD24-374 at 2880 Ruby Av (APN 652-29-014, zoning PQP).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "CEQAnet SCH 2021050524 (Wat Khmer Kampuchea Krom Temple Project, NOP received 2021-05-24, lead agency City of San Jose): APN 652-29-014, Ruby Avenue and Norwood Avenue; rezoning R-1-5 to PQP for a temple sanctuary and community building with a residence hall for monks.",
+      "src": [
+        "SRC-004240"
+      ]
+    },
+    {
+      "text": "County parcel dataset lists the situs address of APN 652-29-014 as 2880 Ruby Av, San Jose 95148-2238.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Howell Development & Investments",
+      "contact": "Gregory Howell",
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "17230 Buena Vista Partners",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Tentative map applicant and owner (T16-061)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "A Khmer Buddhist Foundation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner named in later temple permits (SP20-024, AD23-659)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2015-06-30",
+      "type": "Other",
+      "label": "Preliminary review PRE15-117 filed (8-13 homes on about 2 acres)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2016-12-20",
+      "type": "Application filed",
+      "label": "Tentative map T16-061 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2017-02-02",
+      "type": "Application filed",
+      "label": "Site Development Permit H17-006 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2018-01-24",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2023-03-28",
+      "type": "Other",
+      "label": "Special Use Permit SP20-024 approved for a temple and community building on the site",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -224,6 +339,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 2740 Ruby Ave and H17-006: city documents (sanjoseca.gov, blocked); temple coverage led to CEQAnet and city GIS",
+      "src": [
+        "SRC-004240"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel dataset APN 65229014: situs 2880 Ruby Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by address and APN: PRE15-117, T16-061, H17-006, PRE18-190, CP20-002, C20-012, SP20-024, AD23-659, AD24-374",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project, no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2021050524 (temple project on the same APN); APR row already on record",
+      "src": [
+        "SRC-004240",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "Local News Matters temple article returned 403; San Jose Spotlight and ABC7 coverage concern the temple, not the housing project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for trade press on the six-home subdivision: none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched Howell Development & Investments: no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named for the housing project",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the housing project: none",
+      "src": []
+    }
+  }
 }

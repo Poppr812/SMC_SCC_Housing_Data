@@ -105,9 +105,47 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Five new three-story detached single-family residences"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001549",
+            "SRC-003790"
+          ],
+          "note": "Zoning Clearance (ministerial review) and Tentative Subdivision Map under SB 1123"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City active planning data (updated 2026-11-03): PLN-2026-37, application PLN-APP19108, Zoning Clearance (ministerial review) and Tentative Subdivision Map; demolition of one existing single-family residence and construction of five new three-story detached single-family residences on five lots under SB 1123; SB 330 pre-application PLN-2025-132 dated 9/25/2025; status Incomplete.",
+      "src": [
+        "SRC-001549"
+      ]
+    },
+    {
+      "text": "City Starter Home Projects page (last updated 11/19/2026): 930 S San Tomas Aquino Rd, PLN-2026-37, submittal date 03/24/2026, 5 units, zoning Mixed-Use, status Under Review.",
+      "src": [
+        "SRC-003790"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -124,6 +162,14 @@
   "groups": {},
   "events": [
     {
+      "date": "2025-09-25",
+      "type": "Other",
+      "label": "SB 330 preliminary application PLN-2025-132 filed",
+      "src": [
+        "SRC-001549"
+      ]
+    },
+    {
       "date": "2026-03-23",
       "type": "Application filed",
       "label": "Zoning clearance under SB 1123",
@@ -138,6 +184,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 930 S San Tomas Aquino Rd and SB 1123: city Starter Home Projects page",
+      "src": [
+        "SRC-003790"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 40606006: situs 930 S San Tomas Aquino Rd, Campbell; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell active planning feature service (PLN-2026-37) and Starter Home Projects page",
+      "src": [
+        "SRC-001549",
+        "SRC-003790"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project, no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Ministerial SB 1123 project; no CEQAnet or APR entry found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: San Jose Spotlight and ABC7 Campbell starter-home coverage does not name this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for trade press: none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant listed only as Alamdari; no developer site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in city data",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: none",
+      "src": []
+    }
+  }
 }
