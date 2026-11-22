@@ -105,8 +105,17 @@
           "src": [
             "SRC-001549"
           ]
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-004246",
+            "SRC-003790"
+          ],
+          "note": "Ministerial approval by the Community Development Director on 2026-11-18, effective immediately"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -137,9 +146,98 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004246",
+            "SRC-001549"
+          ],
+          "note": "Five two-story detached single-family dwellings"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.237,
+          "src": [
+            "SRC-004246"
+          ],
+          "note": "Approx. 0.237 gross acres (10,329 sq ft)"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-004246"
+          ],
+          "note": "One covered space per unit"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-004246"
+          ],
+          "note": "SB 1123 Starter Home Revitalization Act zoning clearance and tentative map under Interim Ordinance No. 2334; CEQA exempt as ministerial"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-004246"
+          ],
+          "note": "City found the project not subject to inclusionary housing because the preliminary application predated the expansion to 5+ unit projects"
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Site at the southeast corner of Budd Avenue and Emory Avenue; zoned R-1-8, Low Density Residential, San Tomas Area Neighborhood Plan. Subdivides the parcel into five lots.",
+      "src": [
+        "SRC-004246"
+      ]
+    },
+    {
+      "text": "The site holds an existing single-family house; Demolition Permit BLD-2026-1410 authorizes whole-house demolition, required before final map recordation or building permit issuance. Net increase of four units.",
+      "src": [
+        "SRC-004246"
+      ]
+    },
+    {
+      "text": "The city found the parcel was not vacant at submittal but applied Interim Ordinance No. 2334, Section 4.C, in effect when the preliminary application was filed. The approval cites HCD's July 17, 2026 technical assistance letter stating that the vacancy requirement should be met at application submittal, and imposes an indemnification condition.",
+      "src": [
+        "SRC-004246"
+      ]
+    },
+    {
+      "text": "Each unit is two stories with an attached one-car garage; modern style with white stucco, wood siding and flat roofs.",
+      "src": [
+        "SRC-004246"
+      ]
+    },
+    {
+      "text": "A separate 2025 city application, PLN-2025-26 (applicant listed as Liu, filed 2025-02-25), proposed splitting the parcel into two lots, keeping the existing house and adding one new house; city data shows it as Under Review.",
+      "src": [
+        "SRC-001549"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -150,11 +248,39 @@
       "src": [
         "SRC-001549"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Yang Wang",
+      "contact": "Yang Wang",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004246"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Chen Hailiang and Liu Yan Rong",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-004246"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-10-02",
+      "type": "Application filed",
+      "label": "Preliminary application PLN-2025-139 filed (SB 330)",
+      "src": [
+        "SRC-004246"
+      ]
+    },
     {
       "date": "2026-01-27",
       "type": "Application filed",
@@ -163,6 +289,23 @@
         "SRC-001549"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Approved",
+      "label": "Zoning Clearance and Tentative Subdivision Map approved (SB 1123, ministerial)",
+      "src": [
+        "SRC-004246",
+        "SRC-003790"
+      ]
+    },
+    {
+      "date": "2028-11-18",
+      "type": "Other",
+      "label": "Approval expires unless a tract map is recorded or a building permit is issued",
+      "src": [
+        "SRC-004246"
+      ]
     }
   ],
   "history": [
@@ -170,6 +313,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and SB 1123; led to Campbell Starter Home Projects page (status Approved, updated 2026-11-19)",
+      "src": [
+        "SRC-003790"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 40427014: situs 474 Budd Av, Campbell; no owner field. Owner names come from the city approval",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell Active Planning ArcGIS layer (PLN-2026-13, PLN-2025-26) and MGO project files: Approval Letter and SB 1123 ministerial approval dated 2026-11-18, project description",
+      "src": [
+        "SRC-001549",
+        "SRC-004246"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "APR Table A/A2 for Campbell queried for 474 Budd: no rows (filed 2026). No CEQAnet filing; approval is CEQA-exempt as ministerial",
+      "src": [
+        "SRC-001134"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searches for 474 Budd in local news; Campbell SB 1123 coverage did not name this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for SB 1123 Campbell projects in trade press; no mention of 474 Budd",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant is an individual (Yang Wang); no developer website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Approved plan sheets are scanned images with no readable architect name; no firm found by search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in city files or search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 474 Budd; none",
+      "src": []
+    }
+  }
 }

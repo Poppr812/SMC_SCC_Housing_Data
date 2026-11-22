@@ -1,6 +1,6 @@
 {
   "id": "SMC-000217",
-  "name": "Mixed-use",
+  "name": "340 Waterford Street",
   "parcels": [
     {
       "apn": "009-058-040",
@@ -108,6 +108,13 @@
             "SRC-001148"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "RESO 2020-021",
+          "src": [
+            "SRC-001148"
+          ],
+          "note": "Tracking number in state Table A2 rows for 2020 to 2022"
         }
       ]
     },
@@ -121,6 +128,17 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.22,
+          "src": [
+            "SRC-004253"
+          ],
+          "note": "From a 2005 CEQA filing for an earlier proposal on the same parcel"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -129,6 +147,25 @@
       "src": [
         "SRC-001136",
         "SRC-001148"
+      ]
+    },
+    {
+      "text": "State Table A (2020, 2021) lists the application as owner tenure, noting 'Mixed-use with 5 condos'; Table A2 rows for 2020 to 2024 list renter tenure.",
+      "src": [
+        "SRC-001136",
+        "SRC-001148"
+      ]
+    },
+    {
+      "text": "State Table A2 notes: 2022 'reported in prior years - no activity in 2022'; 2023 and 2024 'permit ready to be issued'. No building permit issue date reported.",
+      "src": [
+        "SRC-001148"
+      ]
+    },
+    {
+      "text": "A 2005 Negative Declaration (SCH 2005022031) for APN 009-058-040 described a three-story mixed-use building with 1,571 sq ft of ground-floor commercial space, five second-floor residential units (8,609 sq ft of living area) and a 16-space ground-level garage. The filing predates the 2020 application; it does not show whether the 2020 approval follows the same design.",
+      "src": [
+        "SRC-004253"
       ]
     }
   ],
@@ -168,6 +205,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address: CEQAnet 2005 filing for the same APN; LoopNet listing (blocked)",
+      "src": [
+        "SRC-004253"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC Active Parcels, APN 009058040: owner Hu Bryan & Liu Yong Dong, already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "cityofpacifica.org Planning Commission documents returned 403; Pacifica has no Legistar API",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A 2020-2021 (owner tenure, 5 condos) and Table A2 2020-2024 (RESO 2020-021, 'permit ready to be issued'); CEQAnet SCH 2005022031",
+      "src": [
+        "SRC-001136",
+        "SRC-001148",
+        "SRC-004253"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for 340 Waterford in Pacifica Tribune, Riptide, Daily Journal; none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "LoopNet listing for 340 Waterford St (loopnet.com and loopnet.ca) returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Owners are individuals; no developer named in sources found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender named; state report lists no financial assistance programs",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 340 Waterford; none",
+      "src": []
+    }
+  }
 }

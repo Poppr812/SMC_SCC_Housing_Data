@@ -68,8 +68,17 @@
             "SRC-001149"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-004254",
+            "SRC-004255"
+          ],
+          "note": "Six-unit townhouse development on six condominium parcels; four 2-bedroom detached units and two 1-bedroom attached units; city notice (2026) is newer than the state report"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -100,8 +109,17 @@
             "SRC-001149"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-004254",
+            "SRC-004255"
+          ],
+          "note": "Six townhouse units replacing an existing four-unit building; state report (2025) lists 5 proposed units"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -142,6 +160,100 @@
             "SRC-001149"
           ],
           "note": "State report 2025, application stage: 2 deed-restricted units"
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-004255",
+            "SRC-004254"
+          ],
+          "note": "Two of six units proposed as for-sale BMR units: one low income, one extremely low income"
+        }
+      ],
+      "best": 1
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-004255",
+            "SRC-001149"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 2,
+            "2br": 4,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004255"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004255"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 10,
+          "src": [
+            "SRC-004255"
+          ],
+          "note": "6 covered (one-car garage per unit) and 4 uncovered"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.204,
+          "src": [
+            "SRC-004255"
+          ],
+          "note": "Lot area 8,877 sq ft per plan cover sheet"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004255",
+            "SRC-001149"
+          ],
+          "note": "Use Permit, Architectural Control and Major Subdivision under State Density Bonus Law; processed as an SB 330 application"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 2400000,
+          "src": [
+            "SRC-004256"
+          ],
+          "note": "Closed MLS sale of the existing four-unit property; sale date not shown on the listing"
         }
       ]
     }
@@ -151,6 +263,37 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001149"
+      ]
+    },
+    {
+      "text": "Demolishes an existing two-story, four-unit building (built 1948, four 1-bedroom units, described by the applicant as unoccupied) on a lot substandard in width in the R-3 district. The project replaces two protected units under SB 330.",
+      "src": [
+        "SRC-004255",
+        "SRC-004256"
+      ]
+    },
+    {
+      "text": "Density bonus waivers requested: front setback to 6 ft, rear setback to 5 ft, daylight plane setback to 6 ft, covered parking for Units E and F in the front setback, and waivers of BMR Guidelines subsections 5.1 and 5.4 for the two affordable units.",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "text": "Shared driveway with 632 University Drive to be widened to 20 ft (two 10 ft easements), as approved by the Menlo Park Fire District.",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "text": "City notice: requires Planning Commission review; meeting date not set. Comment period on the application ran to May 18, 2026.",
+      "src": [
+        "SRC-004254"
+      ]
+    },
+    {
+      "text": "The MLS listing marketed 624 University Dr with neighboring 632 University Dr (combined almost 18,000 sq ft and 8 units); listing agents Carlos Azucena and Mitchell Zurich of Marcus & Millichap.",
+      "src": [
+        "SRC-004256"
       ]
     }
   ],
@@ -163,17 +306,117 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Park South 624, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (plan set)",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Mark Gross & Associates, Inc.",
+      "contact": "Doug McBeth",
+      "linkedin": null,
+      "website": "https://www.markgrossinc.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "MacLeod & Associates, Inc.",
+      "contact": "Dan Koss",
+      "linkedin": null,
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Carson Douglas Landscape Architecture",
+      "contact": "Michael Brennan",
+      "linkedin": null,
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kielty Arborist Services, LLC",
+      "contact": "David Beckham",
+      "linkedin": null,
+      "other_role": "Arborist",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Monchamp Meldrum LLP",
+      "contact": "Rob Taboada",
+      "linkedin": null,
+      "other_role": "Applicant's legal counsel",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Marcus & Millichap",
+      "contact": "Carlos Azucena",
+      "linkedin": null,
+      "src": [
+        "SRC-004256"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-02-21",
+      "type": "Other",
+      "label": "City project completeness letter",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "date": "2025-04-23",
+      "type": "Other",
+      "label": "Applicant neighborhood information session (Zoom)",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
       "date": "2025-09-05",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001149"
+      ]
+    },
+    {
+      "date": "2025-10-03",
+      "type": "Other",
+      "label": "City consistency review comments issued",
+      "src": [
+        "SRC-004255"
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "type": "Other",
+      "label": "Revised application submitted",
+      "src": [
+        "SRC-004255"
       ]
     }
   ],
@@ -182,6 +425,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and file number: city notice, application letter and plans, MLS listing",
+      "src": [
+        "SRC-004254",
+        "SRC-004255",
+        "SRC-004256"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC Active Parcels, APN 071312300: owner Park South 624 LLC c/o Cortland James Bohacek, already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Menlo Park planning application submittal page and 7-day notice PDF (revised project description 2025-11-24, plan set)",
+      "src": [
+        "SRC-004254",
+        "SRC-004255"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A 2025 row PLN2024-00047: density bonus received, discretionary, 1 ELI + 1 low + 4 above-moderate units",
+      "src": [
+        "SRC-001149"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for 624 University in The Almanac and other local news; none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLSListings closed listing ML81954182 ($2,400,000 sale of the existing 4-unit property)",
+      "src": [
+        "SRC-004256"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search on Park South 624 LLC and Cortland Bohacek; no developer site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Mark Gross & Associates homepage project list: no Menlo Park or 624 University project",
+      "src": [
+        "SRC-004257"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in city, state or listing sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 624 University Drive; none",
+      "src": []
+    }
+  }
 }

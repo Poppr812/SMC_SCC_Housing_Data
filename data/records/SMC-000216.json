@@ -75,8 +75,16 @@
             "SRC-001116"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-004251"
+          ],
+          "note": "Blog describes one building of five three-story for-sale townhouses; city describes five condominium lots; blog (2025) is the newer description of the built product"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -153,6 +161,47 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 5,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004251"
+          ],
+          "note": "Each unit three bedrooms plus a ground-floor office or bonus room"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2200,
+          "src": [
+            "SRC-004251"
+          ],
+          "note": "About 2,200 sq ft per unit"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001252"
+          ],
+          "note": "Architectural Permit, Tentative Map and Condominium Permit, applying General Plan density"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -161,6 +210,24 @@
       "src": [
         "SRC-001117",
         "SRC-001116"
+      ]
+    },
+    {
+      "text": "City description: Architectural Permit, Tentative Map and Condominium Permit to construct a 3-story, five-unit residential building applying General Plan density, and subdivide the lot into five condominium lots.",
+      "src": [
+        "SRC-001252"
+      ]
+    },
+    {
+      "text": "Each unit has a 500 sq ft two-car garage, a small entry patio and a 63 sq ft second-floor deck; small common space at the rear. Lot is 75 by 155 feet; the site previously held a single-family house.",
+      "src": [
+        "SRC-004251"
+      ]
+    },
+    {
+      "text": "A January 30, 2026 blog visit found the site locked with no evidence of work, describing the project as close to completion but apparently stalled.",
+      "src": [
+        "SRC-004252"
       ]
     }
   ],
@@ -213,6 +280,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address: Walking Redwood City posts 2025-09-05 and 2026-01-30",
+      "src": [
+        "SRC-004251",
+        "SRC-004252"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC Active Parcels, APN 053091050: owner Green Global Inc, already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Redwood City planning projects API, project 120 (description, Under Construction). redwoodcity.org project page returned 403",
+      "src": [
+        "SRC-001252"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A2 Redwood City: 2021 entitlement row ('5-Unit Condo') and 2024 permit row B22-0229; no completion row",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Walking Redwood City blog posts on unit details and the January 2026 stalled site",
+      "src": [
+        "SRC-004251",
+        "SRC-004252"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for 239 Vera in trade press and listings; none",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search on owner Green Global Inc with Redwood City; no developer site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in city data or blog",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender named in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on 239 Vera; none",
+      "src": []
+    }
+  }
 }
