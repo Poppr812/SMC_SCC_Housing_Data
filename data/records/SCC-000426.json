@@ -139,8 +139,17 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFD"
+        },
+        {
+          "value": "Single-family",
+          "src": [
+            "SRC-004162",
+            "SRC-004163"
+          ],
+          "note": "CEQA notice: seven single-family houses on a private cul-de-sac"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -185,6 +194,12 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H23-006; ER23-057",
+          "src": [
+            "SRC-004163"
+          ]
         }
       ]
     },
@@ -198,6 +213,41 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.6,
+          "src": [
+            "SRC-004162",
+            "SRC-004163"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "Site development permit; state report project type Discretionary"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 8600000,
+          "src": [
+            "SRC-004164"
+          ],
+          "note": "MLS listing of the 1.6-acre property with a 1935 house of 2,750 sq ft, shown as sold after 361 days on market; no sale date shown"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -207,9 +257,41 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "Site development permit to demolish existing structures and build seven single-family houses on a private cul-de-sac. Lots 1-6 range from 9,405 to 10,591 sq ft; Lot 7, off Dry Creek Road, about 8,436 sq ft. Each house has a covered veranda, porch, 2-car garage and private driveway. 37 of 49 ordinance-size trees would be removed.",
+      "src": [
+        "SRC-004163"
+      ]
+    },
+    {
+      "text": "State report: 2023 application row lists 7 single-family (SFD) units; 2025 entitlement row lists 7 units in the 5+ category and one demolished owner unit.",
+      "src": [
+        "SRC-001099"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Hanna Brunetti",
+      "contact": "Teresa Price",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004163"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Coldwell Banker Realty",
+      "contact": "Joe Piazza",
+      "linkedin": null,
+      "src": [
+        "SRC-004164"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -219,6 +301,15 @@
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2024-10-29",
+      "type": "Other",
+      "label": "Notice of Exemption (CEQA Section 15332 in-fill) filed with the state",
+      "src": [
+        "SRC-004162",
+        "SRC-004163"
       ]
     },
     {
@@ -235,6 +326,90 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 2130 Dry Creek Rd and H23-006; opened CEQAnet entry and MLS listing",
+      "src": [
+        "SRC-004162",
+        "SRC-004164"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 44201045: situs 2130 Dry Creek Rd",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access; city documents read via CEQAnet attachment instead",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2024101214 NOE; APR Tables A and A2 rows for H23-006",
+      "src": [
+        "SRC-004162",
+        "SRC-004163",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched San Jose Spotlight and local news for 2130 Dry Creek; nothing",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLS listing ML82028310 (sold $8,600,000)",
+      "src": [
+        "SRC-004164"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named; applicant is Teresa Price at Hanna Brunetti",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no public posts found",
+      "src": []
+    }
+  }
 }

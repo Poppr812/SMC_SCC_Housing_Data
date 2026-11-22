@@ -192,6 +192,14 @@
             "SRC-001143"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2021-150; PLN-2022-32; PLN-2020-139 (preliminary application); BLD-2022-1935 to BLD-2022-1938",
+          "src": [
+            "SRC-004161",
+            "SRC-004160",
+            "SRC-001143"
+          ]
         }
       ]
     },
@@ -210,6 +218,79 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 6,
+            "3br": 0,
+            "4br+": 1
+          },
+          "src": [
+            "SRC-004159"
+          ],
+          "note": "Listing: six 2-bed/2.5-bath units and one 4-bed/4.5-bath unit"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004159"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.25,
+          "src": [
+            "SRC-004160"
+          ],
+          "note": "2020 preliminary plan set: lot size 10,930.91 sq ft. Listing shows 10,953 sq ft net lot area."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004161",
+            "SRC-001143"
+          ],
+          "note": "One moderate-income for-sale unit under State Density Bonus law, with waivers of R-3 standards and a concession eliminating frontage utility undergrounding"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001143"
+          ]
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 2260000,
+          "src": [
+            "SRC-004159"
+          ],
+          "note": "Listing marketed the land with approved entitlements for seven townhomes; shown as sold, no sale date shown"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -219,12 +300,71 @@
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "September 2022 hearing notice: request by GKW Architects for a 7-unit townhome development with 7 private lots and one common lot; one unit restricted for sale to a moderate-income household under State Density Bonus law; applications are a Site and Architectural Review Permit, Tentative Subdivision Map and Tree Removal Permit; project planner Daniel Fama.",
+      "src": [
+        "SRC-004161"
+      ]
+    },
+    {
+      "text": "2020 preliminary plans (PLN-2020-139) showed five 3-story townhouses of 3 bed/3 bath and about 1,244 sq ft each on APN 412-30-045, zoned R-3. State report rows use APN 412-30-045 and show one demolished owner unit and seven development standards modifications.",
+      "src": [
+        "SRC-004160",
+        "SRC-001143"
+      ]
+    },
+    {
+      "text": "The record's APN 412-30-056 is a single lot with situs 523 Union Av in the county parcel dataset; parent APN 412-30-045 is not in the current dataset.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Architect",
+      "company": "GKW Architects, Inc.",
+      "contact": "Gordon Wong",
+      "linkedin": null,
+      "email": "gordonkwong@gkwarchitects.com",
+      "phone": "408-315-2125",
+      "src": [
+        "SRC-004161",
+        "SRC-004160"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Yi Chun",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (per 2020 preliminary plan set)",
+      "src": [
+        "SRC-004160"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "SALA Homes & Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004159"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-12-08",
+      "type": "Other",
+      "label": "Planning Commission study session on preliminary application PLN-2020-139 (5 townhomes, rezoning R-3 to C-PD)",
+      "src": [
+        "SRC-004160"
+      ]
+    },
     {
       "date": "2022-08-08",
       "type": "Application filed",
@@ -239,6 +379,22 @@
       "label": "Entitlement approved",
       "src": [
         "SRC-001143"
+      ]
+    },
+    {
+      "date": "2022-09-13",
+      "type": "Other",
+      "label": "Planning Commission public hearing on PLN-2021-150 (7 townhomes, tentative map, tree removal)",
+      "src": [
+        "SRC-004161"
+      ]
+    },
+    {
+      "date": "2022-12-20",
+      "type": "Application filed",
+      "label": "Building permit applications submitted for the seven units",
+      "src": [
+        "SRC-001134"
       ]
     },
     {
@@ -263,6 +419,94 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 523 Union Ave and PLN-2021-150; opened city notices and MLS listing",
+      "src": [
+        "SRC-004161",
+        "SRC-004159"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel dataset APN 41230056 (situs 523 Union Av); parent 41230045 returns no row",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell PC notices: 2020-12-08 study session (with plans), 2022-09-13 public hearing; Campbell not on Legistar",
+      "src": [
+        "SRC-004160",
+        "SRC-004161"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Tables A and A2: PLN-2021-150, density bonus, 45-year term, BLD-2022-1932 to 1938",
+      "src": [
+        "SRC-001134",
+        "SRC-001143"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched local news for 523 Union Ave Campbell; nothing",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLS listing ML81938361: entitled land, 7 townhomes, sold $2,260,000",
+      "src": [
+        "SRC-004159"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer entity named beyond owner on 2020 plan set",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "gkwarchitects.com lists 'Union Townhomes, Campbell, CA' by name only; no project page",
+      "src": [
+        "SRC-004161"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no public posts found",
+      "src": []
+    }
+  }
 }

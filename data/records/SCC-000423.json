@@ -128,18 +128,25 @@
     "total_units": {
       "claims": [
         {
-          "value": 7,
-          "src": [
-            "SRC-001110"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 1,
           "src": [
             "SRC-001101"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 4,
+          "src": [
+            "SRC-001110"
+          ],
+          "note": "State report 2023 rows under project name '349 Martens Ave': single-family homes at 343 and 351 Martens (2020-0850, 2020-0851) and ADUs at 347 and 355 Martens (2020-0852, 2020-0853)"
+        },
+        {
+          "value": 3,
+          "src": [
+            "SRC-001110"
+          ],
+          "note": "State report 2018: entitlement PL-2017-306 at 349 Martens Ave for 3 single-family homes"
         }
       ]
     },
@@ -152,6 +159,13 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2017-306; 2020-0853",
+          "src": [
+            "SRC-001110"
+          ],
+          "note": "PL-2017-306 is the 2018 entitlement for 349 Martens Ave; 2020-0853 is the ADU permit at 355 Martens"
         }
       ]
     },
@@ -174,12 +188,33 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "State report rows for this project use APN 197-40-001 and the project name '349 Martens Ave'; the county parcel dataset shows APN 197-40-047 with situs 351 Martens Ave. Rows show one existing owner-occupied unit demolished.",
+      "src": [
+        "SRC-001110",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "343 Martens Ave listing: newly built 2023 home of about 4,139 sq ft plus an ADU of about 699 sq ft on a 13,550 sq ft lot; listed at $5,795,000 on 2023-06-08 and sold for $5,800,000 on 2023-08-08.",
+      "src": [
+        "SRC-004153"
+      ]
     }
   ],
   "parties": [],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-05-23",
+      "type": "Approved",
+      "label": "Entitlement PL-2017-306 approved for 3 single-family homes at 349 Martens Ave",
+      "src": [
+        "SRC-001110"
+      ]
+    },
     {
       "date": "2020-03-31",
       "type": "Application filed",
@@ -205,11 +240,35 @@
       ]
     },
     {
+      "date": "2023-06-15",
+      "type": "Completion",
+      "label": "Certificate of occupancy for ADU at 355 Martens Ave",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    {
+      "date": "2023-06-16",
+      "type": "Completion",
+      "label": "Certificates of occupancy for 343 Martens Ave (single-family) and ADU at 347 Martens Ave",
+      "src": [
+        "SRC-001110"
+      ]
+    },
+    {
       "date": "2023-06-26",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
       "src": [
         "SRC-001110"
+      ]
+    },
+    {
+      "date": "2023-08-08",
+      "type": "Sale",
+      "label": "343 Martens Ave sold for $5,800,000 (6 bd, 4,838 sq ft incl. ~699 sq ft ADU, built 2023)",
+      "src": [
+        "SRC-004153"
       ]
     }
   ],
@@ -218,6 +277,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Removed total_units claim 7: It summed the 3-home entitlement row and the 4 permit rows (2 homes, 2 ADUs) for the same site"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 343-355 Martens Ave and 349 Martens; opened Coldwell Banker listing for 343 Martens",
+      "src": [
+        "SRC-004153"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel dataset APN 19740047: situs 351 Martens Av, 2 situs addresses; parent APN 197-40-001 not in current dataset",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Mountain View Legistar matters API searched for 'Martens': only street projects; no planning item for this site",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Tables A and A2 (data.ca.gov datastore) for 343-355 Martens: PL-2017-306 2018 entitlement, ADU rows, CO dates",
+      "src": [
+        "SRC-001101",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for Martens Ave project in MV Voice and other local news; none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLS-based listing for 343 Martens Ave (sale 2023-08-08)",
+      "src": [
+        "SRC-004153"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer or builder named in any source found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no public posts found",
+      "src": []
+    }
+  }
 }

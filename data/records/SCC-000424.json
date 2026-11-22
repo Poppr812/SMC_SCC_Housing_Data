@@ -120,6 +120,13 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2019-353 (tentative map); PL-2022-250, PL-2022-251 (2023 permit extension)",
+          "src": [
+            "SRC-004156",
+            "SRC-004155"
+          ]
         }
       ]
     },
@@ -133,6 +140,91 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 5,
+            "3br": 1,
+            "4br+": 1
+          },
+          "src": [
+            "SRC-004154"
+          ],
+          "note": "Units range from about 1,327 to 2,027 sq ft"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 4540,
+          "src": [
+            "SRC-004154",
+            "SRC-004155"
+          ],
+          "note": "Ground-floor commercial for retail and office tenants"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-004154",
+            "SRC-004155"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-004154"
+          ],
+          "note": "Two underground levels; 16 residential and guest spaces, 12 commercial; in-lieu fee for 3 more spaces"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.25,
+          "src": [
+            "SRC-004154",
+            "SRC-004155"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-004154"
+          ],
+          "note": "Planned Community Permit and Development Review Permit under the P-19 Downtown Precise Plan, Area G; no exceptions requested"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Subject to BMR Ordinance Phase I; BMR in-lieu fee estimated at about $315,000 based on the applicant's projected average sales price of $1.5 million per unit",
+          "src": [
+            "SRC-004154"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -142,9 +234,95 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "City Council report (2020-12-08): four-story mixed-use building with seven residential condominiums on three floors above 4,540 sq ft of ground-floor commercial and two levels of underground parking, replacing a 5,733 sq ft one-story commercial building at the northeast corner of West Dana and Hope Streets. Tentative map creates condominium lots for 7 residential and 2 commercial units plus a common lot. CEQA: categorically exempt, Section 15332.",
+      "src": [
+        "SRC-004154",
+        "SRC-004156"
+      ]
+    },
+    {
+      "text": "Legistar matter 7174 lists APNs 147-02-018 and 147-02-019 for the 2023 extension; the county parcel dataset shows 676 W Dana St at APN 158-22-019.",
+      "src": [
+        "SRC-004158",
+        "SRC-001098"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Dana and Hope, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004156",
+        "SRC-004157"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "William Maston Architect & Associates",
+      "contact": "Bill Maston",
+      "linkedin": null,
+      "email": "billm@mastonarchitect.com",
+      "src": [
+        "SRC-004157",
+        "SRC-004155"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Lea & Braze Engineers",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004157"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Levesque Design",
+      "contact": "Kevin Levesque",
+      "linkedin": null,
+      "src": [
+        "SRC-004157"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Romig Engineers, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Geotechnical engineer",
+      "src": [
+        "SRC-004157"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Fard Engineers",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "MEP engineer",
+      "src": [
+        "SRC-004157"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Kielty Arborist Services",
+      "contact": "Kevin Kielty",
+      "linkedin": null,
+      "other_role": "Arborist",
+      "src": [
+        "SRC-004157",
+        "SRC-004154"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -157,11 +335,36 @@
       ]
     },
     {
+      "date": "2020-11-10",
+      "type": "Other",
+      "label": "Zoning Administrator and Subdivision Committee recommend conditional approval",
+      "src": [
+        "SRC-004154"
+      ]
+    },
+    {
       "date": "2020-12-08",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001110"
+      ]
+    },
+    {
+      "date": "2022-11-29",
+      "type": "Application filed",
+      "label": "One-year permit extension request filed (PL-2022-250, PL-2022-251)",
+      "src": [
+        "SRC-004155"
+      ]
+    },
+    {
+      "date": "2023-01-25",
+      "type": "Approved",
+      "label": "Joint Administrative Zoning and Subdivision Committee approves one-year permit extension",
+      "src": [
+        "SRC-004155",
+        "SRC-004158"
       ]
     }
   ],
@@ -170,6 +373,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web searches on 676 W Dana St and PL-2019-128 returned no project pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 15822019: situs 676 W Dana St, 6 situs addresses",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Mountain View Legistar matter 4844 (Council 2020-12-08: report, resolutions, plans) and matter 7174 (AZH 2023-01-25 extension memo)",
+      "src": [
+        "SRC-004154",
+        "SRC-004156",
+        "SRC-004157",
+        "SRC-004155"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Tables A and A2 rows for 676 W Dana (PL-2019-128) match the record; no CEQAnet filing found",
+      "src": [
+        "SRC-001101",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched MV Voice and local news for 676 W Dana; nothing",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched trade press for 676 W Dana; nothing",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant Dana and Hope, LLC has no website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "William Maston Architect & Associates named on plan set and 2023 memo; architect's site not opened",
+      "src": [
+        "SRC-004157",
+        "SRC-004155"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no public posts found",
+      "src": []
+    }
+  }
 }

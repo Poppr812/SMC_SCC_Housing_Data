@@ -148,11 +148,128 @@
           "src": [
             "SRC-001189"
           ]
+        },
+        {
+          "value": "All homes for households under 80% of San Mateo County AMI; most for households at 50% to 80% AMI, one home set aside for a household below 50% AMI. Sale prices set at sale by formula.",
+          "src": [
+            "SRC-004151"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 3,
+            "3br": 3,
+            "4br+": 2
+          },
+          "src": [
+            "SRC-004148",
+            "SRC-004149"
+          ],
+          "note": "Three 2-bedroom, three 3-bedroom, two 4-bedroom (January 2026 and December 2025 reports)"
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 3,
+            "3br": 2,
+            "4br+": 3
+          },
+          "src": [
+            "SRC-004150"
+          ],
+          "note": "Updated plans reported June 2026: three 2-bedroom, two 3-bedroom, three 4-bedroom"
+        }
+      ],
+      "best": 1
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 1255,
+          "src": [
+            "SRC-001978",
+            "SRC-004151",
+            "SRC-004149"
+          ],
+          "note": "Average home size as reported"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 10050,
+          "src": [
+            "SRC-004148"
+          ],
+          "note": "Housing area; parking area reported separately as 2,880 sq ft. City page shows 13,076 sq ft total gross floor area."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.35,
+          "src": [
+            "SRC-004148"
+          ]
+        },
+        {
+          "value": 0.36,
+          "src": [
+            "SRC-001978"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 11600000,
+          "src": [
+            "SRC-004151"
+          ],
+          "note": "Estimated total project cost as of January 2025"
         }
       ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "The site previously held four affordable units operated by MidPen Housing (Almanac). SF YIMBY reports the project requires demolition of an existing single-family house.",
+      "src": [
+        "SRC-004151",
+        "SRC-004150"
+      ]
+    },
+    {
+      "text": "In August 2026 the City Council declined Habitat's request to waive development impact and permitting fees and asked Habitat to resubmit closer to when fees are due. Habitat estimated the fees at about $944,000; the city estimated about $596,000.",
+      "src": [
+        "SRC-004152"
+      ]
+    },
+    {
+      "text": "Habitat sought waivers from city standards including minimum land area per unit, setbacks, floor area ratio, parking and driveway requirements. The Council approved a vesting tentative map combining the parcels at 335 and 355 Pierce Road.",
+      "src": [
+        "SRC-004151",
+        "SRC-004152"
+      ]
+    },
+    {
+      "text": "City page lists staff contact Calvin Chan, Senior Planner, and shows the next step as a building permit application. Habitat's page says the project is in the building permit process.",
+      "src": [
+        "SRC-001189",
+        "SRC-001978"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -174,6 +291,35 @@
         "SRC-001978"
       ],
       "website": "https://www.midpen-housing.org"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Habitat for Humanity Greater San Francisco",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "TCA Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004148",
+        "SRC-004150"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "TS Studio",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004148",
+        "SRC-004150"
+      ]
     }
   ],
   "financing": [
@@ -186,10 +332,30 @@
       "src": [
         "SRC-001189"
       ]
+    },
+    {
+      "type": "Local soft loan",
+      "provider": "County of Santa Clara",
+      "program": "Stanford Affordable Housing Fund allocation reported December 2025; Almanac reported in August 2026 that the grant is no longer available",
+      "amount": 1500000,
+      "date": "2025-12",
+      "src": [
+        "SRC-004151",
+        "SRC-004152"
+      ]
     }
   ],
   "groups": {},
   "events": [
+    {
+      "date": "2025-06",
+      "type": "Sale",
+      "label": "MidPen Housing sells the site to Habitat for Humanity Greater San Francisco",
+      "src": [
+        "SRC-004151",
+        "SRC-001978"
+      ]
+    },
     {
       "date": "2026-07-13",
       "type": "Approved",
@@ -205,6 +371,34 @@
       "src": [
         "SRC-001189"
       ]
+    },
+    {
+      "date": "2026-12",
+      "type": "Construction start",
+      "label": "Construction start expected by December 2026 (Almanac, August 2026)",
+      "src": [
+        "SRC-004152"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2027",
+      "type": "Construction start",
+      "label": "Groundbreaking expected in 2027 (Habitat project page)",
+      "src": [
+        "SRC-001978"
+      ],
+      "estimated": true
+    },
+    {
+      "date": "2028",
+      "type": "Completion",
+      "label": "Completion and move-ins projected for summer 2028",
+      "src": [
+        "SRC-004151",
+        "SRC-004152"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -227,6 +421,101 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on project name, address and Habitat; opened Almanac, InMenlo, SF YIMBY articles",
+      "src": [
+        "SRC-004151",
+        "SRC-004149"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SMC Active Parcels layer query for APN 062-013-170 (335 Pierce Rd): owner Habitat for Humanity Greater San Francisco",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Menlo Park approved-project page for 335-355 Pierce Rd; facts already on record apart from staff contact and next step",
+      "src": [
+        "SRC-001189"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Santa Clara County Stanford Affordable Housing Fund allocation, as reported by the Almanac (no county page found)",
+      "src": [
+        "SRC-004151",
+        "SRC-004152"
+      ]
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Menlo Park APR Tables A and A2 (data.ca.gov) searched for Pierce Rd: no rows; owner-occupied Habitat project, no CTCAC/CDLAC award found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Almanac 2025-12-09 and 2026-08-12; InMenlo 2025-12-09",
+      "src": [
+        "SRC-004151",
+        "SRC-004152",
+        "SRC-004149"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2026-01-23 and 2026-06-26 (architect, landscape architect, unit mix)",
+      "src": [
+        "SRC-004148",
+        "SRC-004150"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Habitat GSF project page: 0.36-acre site, June 2025 closing, groundbreaking expected 2027",
+      "src": [
+        "SRC-001978"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched for TCA Architects project page for Laurel Landing; none found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Almanac: $11.6M estimated cost, $3.6M city BMR funds, $1.5M Stanford fund later withdrawn",
+      "src": [
+        "SRC-004151",
+        "SRC-004152"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for public LinkedIn posts on Laurel Landing; none returned",
+      "src": []
+    }
+  }
 }
