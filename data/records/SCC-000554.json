@@ -97,6 +97,17 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "City description: a three-story townhouse row"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -104,6 +115,18 @@
       "text": "The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-10-22. The city's data does not say how it was decided.",
       "src": [
         "SRC-001551"
+      ]
+    },
+    {
+      "text": "City data show an earlier SB 330 pre-application at the site, PLN-2025-137 (2265 S Winchester Blvd (PREAPP-I) (Chiou)), created 2025-10-02 and shown as Project Closed, last updated 2025-10-06.",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "City building permit data show the existing building in use as a retail bakery (Haleh Pastry Shop, tenant improvement permit issued 2011).",
+      "src": [
+        "SRC-004115"
       ]
     }
   ],
@@ -117,11 +140,30 @@
       "src": [
         "SRC-001551"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Chiou",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (SB 330 pre-application)",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-10-02",
+      "type": "Application filed",
+      "label": "SB 330 pre-application (PLN-2025-137)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-03-23",
       "type": "Application filed",
@@ -137,6 +179,84 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on address returned a commercial listing for the existing bakery, no project coverage",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=30534002: situs 2265 S Winchester Bl, Campbell; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell ArcGIS permit layers: Inactive Planning (PLN-2026-36, PLN-2025-137), Inactive Building; no active planning or building record",
+      "src": [
+        "SRC-001551",
+        "SRC-004115"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "APR Tables A and A2: no Campbell rows for 2265 Winchester",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicants named only by surname; no developer site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in public sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

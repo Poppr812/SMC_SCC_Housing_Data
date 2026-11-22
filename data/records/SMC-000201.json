@@ -138,11 +138,40 @@
           "note": "State report 2021, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 45,
+          "src": [
+            "SRC-001146"
+          ],
+          "note": "State report: inclusionary deed restriction term"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001140",
+            "SRC-001146"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001140",
+        "SRC-001146"
+      ]
+    },
+    {
+      "text": "State report entitlement dates differ by year: the 2019 Table A2 row shows 2019-10-21, the 2019 Table A notes say planning approval 10/31/2019, and the 2021 Table A2 row shows 2021-06-24. The 2019 row notes 8 net new units; the restricted unit is moderate income, inclusionary, with a 45-year term.",
       "src": [
         "SRC-001140",
         "SRC-001146"
@@ -172,6 +201,33 @@
       ]
     },
     {
+      "date": "2019-10-01",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-001140"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-10-21",
+      "type": "Approved",
+      "label": "Entitlement approved (state report 2019 Table A2 row)",
+      "src": [
+        "SRC-001146"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2019-10-31",
+      "type": "Approved",
+      "label": "Planning approval (state report 2019 Table A notes)",
+      "src": [
+        "SRC-001140"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2021-06-24",
       "type": "Approved",
       "label": "Entitlement approved",
@@ -193,6 +249,84 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web searches on address, PLN2018-00065 and the owner LLC found no project pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer APN 051336140: owner H&T SAN CARLOS PROPERTIES LLC",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No San Carlos Legistar client; city site search found no page for the address",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A 2018-2019 and Table A2 2019, 2021 rows for 1240 El Camino Real",
+      "src": [
+        "SRC-001140",
+        "SRC-001146"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of Daily Journal and others found no coverage of this address",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No web presence found for the owner LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in public sources",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

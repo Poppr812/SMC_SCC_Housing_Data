@@ -108,6 +108,66 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-004105",
+            "SRC-004106"
+          ],
+          "note": "Two buildings: a four-story mixed-use building (retail with three floors of condominiums) and a two-story retail/office building"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 74,
+          "src": [
+            "SRC-004105"
+          ],
+          "note": "Surface parking plus one below-grade level"
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 11984,
+          "src": [
+            "SRC-004105"
+          ],
+          "note": "City page: 11,984 sq ft commercial. CEQA filings: 9,035 sq ft retail (9,036 in the NOD) plus 2,949 sq ft office"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 17265,
+          "src": [
+            "SRC-004106",
+            "SRC-004107"
+          ],
+          "note": "Of 29,249 sq ft total gross floor area"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004105",
+            "SRC-004107"
+          ],
+          "note": "Architectural Review with a Mitigated Negative Declaration"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -116,12 +176,76 @@
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "text": "Replaces a 7,000 sq ft single-story retail building (Footlocker) and its surface parking lot. Total gross floor area 29,249 sq ft; the two buildings connect by a second-level walkway and a ground-level plaza. Zoning CS (Service Commercial). Requests included a 1% (1 space) shared parking reduction and a Design Enhancement Exception for a 3% Build-To-Line reduction.",
+      "src": [
+        "SRC-004105",
+        "SRC-004106"
+      ]
+    },
+    {
+      "text": "The CEQA filings and the state progress report list the parcel as APN 132-38-042; the county parcel dataset shows 3225 El Camino Real as APN 132-38-073.",
+      "src": [
+        "SRC-004107",
+        "SRC-001127"
+      ]
+    },
+    {
+      "text": "Hayes Group Architects lists the project at 29,962 sq ft; the city and CEQA filings show 29,249 sq ft.",
+      "src": [
+        "SRC-004108",
+        "SRC-004105"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Architect",
+      "company": "Hayes Group Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.thehayesgroup.com",
+      "website_basis": "search",
+      "project_page": "https://www.thehayesgroup.com/project/3225-el-camino-real/",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-004105",
+        "SRC-004108"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hayes Group Architects",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004105"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2015-12-04",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the State Clearinghouse (SCH 2015122014)",
+      "src": [
+        "SRC-004106"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2016-04-21",
+      "type": "Approved",
+      "label": "City approval under the Mitigated Negative Declaration (CEQA Notice of Determination decision date)",
+      "src": [
+        "SRC-004107"
+      ],
+      "estimated": false
+    },
     {
       "date": "2016-05-06",
       "type": "Approved",
@@ -144,6 +268,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and file 15PLN-00003 led to the city page, CEQAnet and the architect page",
+      "src": [
+        "SRC-004105"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=13238073: situs 3225 El Camino Real, Palo Alto; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Palo Alto Current Planning project page for 15PLN-00003",
+      "src": [
+        "SRC-004105"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2015122014 (MND 2015-12-04, NOD 2016-05-03); APR Table A2 2020-2021 rows, no completion reported",
+      "src": [
+        "SRC-004106",
+        "SRC-004107",
+        "SRC-001127"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Palo Alto Online 2015-12-16 article URL returned no readable text; no other local coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer or owner named in city, CEQA or architect pages",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Hayes Group Architects project page",
+      "src": [
+        "SRC-004108"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

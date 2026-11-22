@@ -156,6 +156,17 @@
           "note": "State report 2020, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001211"
+          ],
+          "note": "City description: 2-3 story buildings, 8 town house style condos"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -170,6 +181,19 @@
       "src": [
         "SRC-001211"
       ]
+    },
+    {
+      "text": "City describes the project as 2-3 story buildings for 8 town house style condos; zoning R-MD-2. The civil plan set labels it a common interest development.",
+      "src": [
+        "SRC-001211",
+        "SRC-004116"
+      ]
+    },
+    {
+      "text": "State report 2020 Table A: one deed-restricted low-income unit, noted as the inclusionary obligation, and 7 above-moderate units.",
+      "src": [
+        "SRC-001111"
+      ]
     }
   ],
   "parties": [
@@ -181,11 +205,49 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Susan Chen",
+      "contact": "Susan Chen",
+      "linkedin": null,
+      "other_role": "Applicant / owner (city lists both together)",
+      "src": [
+        "SRC-001211"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Yanhua Zhu",
+      "contact": "Yanhua Zhu",
+      "linkedin": null,
+      "other_role": "Applicant / owner (city lists both together)",
+      "src": [
+        "SRC-001211"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Amin Ghafooripour",
+      "contact": "Amin Ghafooripour",
+      "linkedin": null,
+      "src": [
+        "SRC-004116"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-08-24",
+      "type": "Other",
+      "label": "Complete Design Review application packet received",
+      "src": [
+        "SRC-001211"
+      ],
+      "estimated": false
+    },
     {
       "date": "2020-09-01",
       "type": "Application filed",
@@ -193,6 +255,24 @@
       "src": [
         "SRC-001111"
       ]
+    },
+    {
+      "date": "2020-09-09",
+      "type": "Other",
+      "label": "Design Review Committee meeting",
+      "src": [
+        "SRC-001211"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-03-03",
+      "type": "Other",
+      "label": "First comment letter",
+      "src": [
+        "SRC-001211"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -205,6 +285,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web search on address returned the city project page and resale listings for the existing house",
+      "src": [
+        "SRC-001211"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer APN 063201190: owner ZHU YANHUA",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "East Palo Alto project page DR20-011 and civil plan set",
+      "src": [
+        "SRC-001211",
+        "SRC-004116"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A 2020 row; no Table A2 rows",
+      "src": [
+        "SRC-001111"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicants are individuals; no developer site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named on city page or civil set",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

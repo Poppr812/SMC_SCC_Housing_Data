@@ -121,6 +121,103 @@
           "src": [
             "SRC-001496"
           ]
+        },
+        {
+          "value": 0.69,
+          "src": [
+            "SRC-004109",
+            "SRC-004110",
+            "SRC-004111"
+          ],
+          "note": "The 2025 GPA/rezone items and the applicant letter say 0.69 acre; the 2026 Planning Commission items say 0.57 acre"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001496",
+            "SRC-004109"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 32,
+          "src": [
+            "SRC-004109"
+          ],
+          "note": "Each home: two garage spaces and two driveway spaces"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "4br+": 8
+          },
+          "src": [
+            "SRC-004109"
+          ],
+          "note": "Eight 4-bedroom homes of about 2,550-2,593 sq ft including garages"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001497"
+          ],
+          "note": "One below-market-rate for-sale unit plus a fractional in-lieu fee of 0.05 units"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001497",
+            "SRC-004112"
+          ],
+          "note": "Applicant letter: one unit for moderate-income households; PC approval condition GC-6: one BMR for-sale unit"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001497"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001496",
+            "SRC-004112"
+          ],
+          "note": "Special Development Permit and Vesting Tentative Map; state density bonus adds one unit to the 7-unit base, with waivers. Applicant letter says it was submitted as an SB 330 project"
         }
       ]
     }
@@ -130,6 +227,20 @@
       "text": "Planning Commission approved; appeal status not checked.",
       "src": [
         "SRC-001496"
+      ]
+    },
+    {
+      "text": "Eight two-story detached homes on eight lots plus a common lot, replacing one single-story house; access from Lusterleaf Drive; an HOA maintains common areas. Planning Commission approved 2026-09-14 on Alternative 2, adopting an addendum to the Negative Declaration, with condition GC-6 revised to require 15% BMR ownership units: one BMR unit plus a fractional in-lieu fee of 0.05 units.",
+      "src": [
+        "SRC-001497",
+        "SRC-004109"
+      ]
+    },
+    {
+      "text": "Earlier city file numbers: PLNG-2024-0344 (GPA and rezone), PLNG-2025-0229 (preliminary review, PRC comments 2025-05-21), PLNG-2025-0555 (SB 330 pre-application).",
+      "src": [
+        "SRC-004109",
+        "SRC-004110"
       ]
     }
   ],
@@ -144,11 +255,92 @@
         "SRC-001496"
       ],
       "website": "https://www.dahlingroup.com"
+    },
+    {
+      "role": "Other",
+      "company": "Forrest Mozart",
+      "contact": "Forrest Mozart",
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-004110",
+        "SRC-001497"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": "Jaime Matheron",
+      "linkedin": null,
+      "website": "https://www.dahlingroup.com",
+      "website_basis": "filing",
+      "src": [
+        "SRC-001497",
+        "SRC-004109"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "California Communities, LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant / owner (per 2026 staff report title)",
+      "src": [
+        "SRC-001496",
+        "SRC-004112"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Shartsis Friese LLP",
+      "contact": "Dana Kennedy",
+      "linkedin": null,
+      "other_role": "Land use counsel",
+      "src": [
+        "SRC-004112",
+        "SRC-001497"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-05-27",
+      "type": "Other",
+      "label": "Planning Commission acted on General Plan amendment and rezone (PLNG-2024-0344)",
+      "src": [
+        "SRC-004110"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-01",
+      "type": "Approved",
+      "label": "City Council approved General Plan amendment and rezone to R-2/PD; Negative Declaration adopted",
+      "src": [
+        "SRC-004111"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-29",
+      "type": "Other",
+      "label": "City Council adopted rezoning Ordinance No. 3243-25",
+      "src": [
+        "SRC-004113"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-09-04",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application submitted (PLNG-2025-0555)",
+      "src": [
+        "SRC-004109"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-09-14",
       "type": "Approved",
@@ -169,6 +361,90 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 781 S Wolfe returned only nearby resale listings",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=21105009: situs 781 S Wolfe Rd, Sunnyvale; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Sunnyvale Legistar: PC 2026-09-14 file 26-0743 minutes and attachments; PC 2025-05-27 file 25-0523; CC 2025-07-01 file 25-0687; CC 2025-07-29 Ord. 3243-25. No later item for the site in Legistar",
+      "src": [
+        "SRC-001497",
+        "SRC-004114",
+        "SRC-004109",
+        "SRC-004110",
+        "SRC-004111",
+        "SRC-004113"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "APR Tables A and A2: no Sunnyvale rows for 781 S Wolfe",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No web page found for California Communities, LLC on this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Dahlin Group project description letter in the staff report; Dahlin architect presented at PC",
+      "src": [
+        "SRC-004109"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
