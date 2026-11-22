@@ -35,6 +35,36 @@
           37.2281249
         ]
       ]
+    },
+    {
+      "apn": "532-09-050",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.9604246,
+          37.2281037
+        ],
+        [
+          -121.9605167,
+          37.2277305
+        ],
+        [
+          -121.9606515,
+          37.2277517
+        ],
+        [
+          -121.9605594,
+          37.2281249
+        ],
+        [
+          -121.9604246,
+          37.2281037
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -119,13 +149,6 @@
     "total_units": {
       "claims": [
         {
-          "value": 8,
-          "src": [
-            "SRC-001121"
-          ],
-          "note": "Units reported in entitlement and permit rows"
-        },
-        {
           "value": 2,
           "src": [
             "SRC-001120"
@@ -143,6 +166,14 @@
             "SRC-001121"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "ULS22-003, ADR23-0058, TUD22-001, TUD25-002, D-21-051, D-23-025, B23-1091, B23-1121",
+          "src": [
+            "SRC-001121",
+            "SRC-001120"
+          ],
+          "note": "All tracking numbers on the state report rows for 16619-16623 Marchmont Dr"
         }
       ]
     },
@@ -156,6 +187,20 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001121",
+            "SRC-001120"
+          ],
+          "note": "State report rows list SB 9 (2021) residential lot split and SB 9 duplex; TUD25-002 is listed as ministerial"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -164,6 +209,26 @@
       "src": [
         "SRC-001120",
         "SRC-001121"
+      ]
+    },
+    {
+      "text": "State report rows show an SB 9 urban lot split (ULS22-003) of former parcel 532-09-039 into 532-09-049 (16623 Marchmont Dr) and 532-09-050 (16619 Marchmont Dr).",
+      "src": [
+        "SRC-001121",
+        "SRC-001120"
+      ]
+    },
+    {
+      "text": "State report 2025: on 532-09-049, a single-family home at 16623 (owner tenure) and an ADU at 16623-A, building permits issued 2024-12-18. Table A 2025: TUD25-002 for 2 units at 16619/16621 on 532-09-050, pending. Earlier rows report an ADU at 16619 (D-21-051) approved 2021-12-20.",
+      "src": [
+        "SRC-001121",
+        "SRC-001120"
+      ]
+    },
+    {
+      "text": "County parcel data: 532-09-049 situs 16623 Marchmont Dr and 532-09-050 situs 16619 Marchmont Dr, each with 2 situs addresses.",
+      "src": [
+        "SRC-001098"
       ]
     }
   ],
@@ -177,6 +242,30 @@
       "label": "Application submitted",
       "src": [
         "SRC-001120"
+      ]
+    },
+    {
+      "date": "2022-05-17",
+      "type": "Application filed",
+      "label": "SB 9 two-unit application TUD22-001 submitted (2 units)",
+      "src": [
+        "SRC-001120"
+      ]
+    },
+    {
+      "date": "2023-05-17",
+      "type": "Application filed",
+      "label": "ADU application D-23-025 submitted",
+      "src": [
+        "SRC-001120"
+      ]
+    },
+    {
+      "date": "2023-10-25",
+      "type": "Approved",
+      "label": "SB 9 lot split and two-unit approval (ULS22-003, TUD22-001)",
+      "src": [
+        "SRC-001121"
       ]
     },
     {
@@ -194,6 +283,14 @@
       "src": [
         "SRC-001121"
       ]
+    },
+    {
+      "date": "2025-02-27",
+      "type": "Application filed",
+      "label": "SB 9 two-unit application TUD25-002 submitted for 16619/16621 (2 units, pending)",
+      "src": [
+        "SRC-001120"
+      ]
     }
   ],
   "history": [
@@ -201,6 +298,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Removed the 8-unit total: it summed overlapping state report rows for an SB 9 lot split of two to four units"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 16619 and 16623 Marchmont Dr: only listing-site pages for the existing house",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel dataset: 532-09-049 (16623) and 532-09-050 (16619); former parcel 532-09-039 no longer listed",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of losgatosca.gov and Town agenda files for Marchmont / ULS22-003: no project document returned (SB 9 approvals are staff-level)",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Town of Los Gatos project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A and A2 rows 2021-2025 for Marchmont Dr: SB 9 lot split, duplex and ADU filings and permits",
+      "src": [
+        "SRC-001121",
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no trade press coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer or applicant named in sources found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: nothing found",
+      "src": []
+    }
+  }
 }

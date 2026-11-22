@@ -125,6 +125,59 @@
           "note": "State report (through 2023): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-004094"
+          ],
+          "note": "Approximately 0.44 gross acres"
+        },
+        {
+          "value": 0.436,
+          "src": [
+            "SRC-004095"
+          ],
+          "note": "Listing lot size 0.436 acres (19,000 sq ft)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2023: 8 above-moderate-income units at entitlement"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004094"
+          ],
+          "note": "Planned development rezoning with development permits and tentative map"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 3580000,
+          "src": [
+            "SRC-004095"
+          ],
+          "note": "MLS listing shows sold at $3,580,000; sale date not shown. Listing describes the site as recently entitled for 8 single-family homes."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -134,12 +187,50 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "SF YIMBY: eight detached single-family homes on a tentative map of nine lots (eight home lots and one common lot), with a planned development rezoning, in the Vermont McKendrie area.",
+      "src": [
+        "SRC-004094"
+      ]
+    },
+    {
+      "text": "State report 2023 entitlement row shows 1 owner-occupied unit demolished. The 2020 application row lists APN 249-50-083, which county parcel data places at 345 E Julian St.",
+      "src": [
+        "SRC-001107",
+        "SRC-001099",
+        "SRC-001098"
+      ]
+    },
+    {
+      "text": "MLS listing describes the parcel as a redevelopment opportunity entitled for 8 single-family homes, with a possible plan of up to 13 units.",
+      "src": [
+        "SRC-004095"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Broker",
+      "company": "Sunrise Value Investments",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004095"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2020-11-28",
+      "type": "Other",
+      "label": "SF YIMBY reports permits filed for 8 homes",
+      "src": [
+        "SRC-004094"
+      ]
+    },
     {
       "date": "2020-12-04",
       "type": "Application filed",
@@ -167,6 +258,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 972 Elm St / PD20-010: SF YIMBY article and MLS sale listing opened",
+      "src": [
+        "SRC-004094",
+        "SRC-004095"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 230-41-025, situs 972 Elm St; Table A APN 249-50-083 is 345 E Julian St",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "sanjoseca.gov (972 Elm Street Villas IS/MND page) refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A 2020 and A2 2023 rows for PD20-010: 1 owner unit demolished; CEQAnet search did not return the project",
+      "src": [
+        "SRC-001107",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no local news coverage beyond trade press",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2020-11-28 article on the filing",
+      "src": [
+        "SRC-004094"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named in sources opened",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLS listing: site sold for $3,580,000; listing brokerage Sunrise Value Investments",
+      "src": [
+        "SRC-004095"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: nothing found",
+      "src": []
+    }
+  }
 }

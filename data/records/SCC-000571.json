@@ -106,6 +106,66 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001576"
+          ],
+          "note": "Two stories, maximum height 27 feet"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001576"
+          ],
+          "note": "Seven market-rate single-family homes"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001576"
+          ],
+          "note": "Two townhome units designated low-income (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001576"
+          ],
+          "note": "Two of nine units designated low-income"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.98,
+          "src": [
+            "SRC-001576"
+          ],
+          "note": "City page gives a 42,714 sq ft site"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -114,18 +174,112 @@
       "src": [
         "SRC-001576"
       ]
+    },
+    {
+      "text": "City page: single-family homes about 2,933 to 2,965 sq ft each; townhome units about 1,535 sq ft each. Parking is two garage spaces per single-family home, one garage space per townhome, plus two open spaces. Access is by a private driveway from Saratoga Los Gatos Rd. The city is reviewing the level of environmental analysis required.",
+      "src": [
+        "SRC-001576"
+      ]
+    },
+    {
+      "text": "The July 17, 2025 inconsistency letter lists the site as zoned R-1-40,000 and finds the project inconsistent with that district's standards for site coverage (35% maximum), floor area, building height (26 feet), minimum lot size (40,000 sq ft), lot dimensions and setbacks, and states that the multifamily dwellings on Lot 8 are not a permitted use in the district.",
+      "src": [
+        "SRC-004097"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Shan Jiang",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (named on application)",
+      "src": [
+        "SRC-004096"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "SC Design Group",
+      "contact": "Susan Chen",
+      "linkedin": null,
+      "email": "susanchen8@yahoo.com",
+      "phone": "408-865-0577",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004096",
+        "SRC-004097"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-05-06",
+      "type": "Other",
+      "label": "Preliminary application received",
+      "src": [
+        "SRC-001576"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-09-19",
       "type": "Application filed",
       "label": "Formal application received",
       "src": [
         "SRC-001576"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-10-21",
+      "type": "Other",
+      "label": "Application determined incomplete",
+      "src": [
+        "SRC-004097"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-18",
+      "type": "Other",
+      "label": "Incomplete letter sent",
+      "src": [
+        "SRC-001576",
+        "SRC-004097"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-05-19",
+      "type": "Other",
+      "label": "Application revisions received",
+      "src": [
+        "SRC-001576",
+        "SRC-004097"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-06-18",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-001576",
+        "SRC-004097"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07-17",
+      "type": "Other",
+      "label": "Inconsistency letter sent",
+      "src": [
+        "SRC-001576",
+        "SRC-004097"
       ],
       "estimated": false
     }
@@ -135,6 +289,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address, CPX24-0020 and builder's remedy; led to city application documents",
+      "src": [
+        "SRC-004096"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=39719020: situs 19765 Saratoga-Los Gatos Rd, Saratoga; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Saratoga project page 665, formal application and inconsistency letter (DocumentCenter 5904, 6021)",
+      "src": [
+        "SRC-001576",
+        "SRC-004096",
+        "SRC-004097"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Saratoga",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "APR Tables A and A2 searched for 19765 in Saratoga: no rows; no CEQAnet filing found",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news for the address: no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-16 Saratoga builder's remedy article returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for SC Design Group in search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named on the city page or application cover sheet",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lenders or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

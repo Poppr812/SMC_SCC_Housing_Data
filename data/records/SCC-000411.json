@@ -207,6 +207,30 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-001107"
+          ],
+          "note": "State report 2025 entitlement row: 7 above-moderate-income units"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001099"
+          ],
+          "note": "State report 2023 application row: project type Discretionary"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -215,6 +239,13 @@
       "src": [
         "SRC-001099",
         "SRC-001107"
+      ]
+    },
+    {
+      "text": "State report 2025 entitlement row lists the project as 5+ units, owner tenure, with 1 renter-occupied unit demolished. The 2023 application row lists it as single-family detached, 8 units proposed, owner tenure.",
+      "src": [
+        "SRC-001107",
+        "SRC-001099"
       ]
     }
   ],
@@ -244,6 +275,84 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 2595 Quimby Rd and PD23-012: only listing-site address pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: 491-03-049, situs 2595 Quimby Rd, already on record",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A 2023 and A2 2025 rows for PD23-012: discretionary review, 1 rental unit demolished; no CEQAnet or CTCAC item found",
+      "src": [
+        "SRC-001107",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search including SF YIMBY: no coverage of 2595 Quimby",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named in sources found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: nothing found",
+      "src": []
+    }
+  }
 }

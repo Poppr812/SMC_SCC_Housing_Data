@@ -54,8 +54,16 @@
             "SRC-001133"
           ],
           "note": "State category 5+ units, tenure not clear"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-004098"
+          ],
+          "note": "Notice of Exemption: nine market-rate condominium units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -101,11 +109,34 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.19,
+          "src": [
+            "SRC-004098"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001132",
+        "SRC-001133"
+      ]
+    },
+    {
+      "text": "Notice of Exemption: demolition of two existing residential buildings and construction of nine market-rate condominium units; lead agency City of Burlingame.",
+      "src": [
+        "SRC-004098"
+      ]
+    },
+    {
+      "text": "State report 2018 (Table A) notes 9 units total, 6 net new, and lists owner tenure; the 2020 entitlement row (Table A2) lists renter tenure.",
       "src": [
         "SRC-001132",
         "SRC-001133"
@@ -120,6 +151,16 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rabih Balout",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004098"
       ]
     }
   ],
@@ -141,6 +182,15 @@
       "src": [
         "SRC-001133"
       ]
+    },
+    {
+      "date": "2020-02-12",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption posted (Class 32 infill, Section 15332)",
+      "src": [
+        "SRC-004098"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -148,6 +198,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and applicant; led to CEQAnet NOE",
+      "src": [
+        "SRC-004098"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Owner of record already on record from county parcel layer",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Burlingame project page (business_detail_T54_R120) and CEQA exemption PDF now return 404; Legistar API not available",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Burlingame",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2020020242 NOE; APR Tables A and A2 rows for 1457 El Camino Real (no permit or completion rows)",
+      "src": [
+        "SRC-004098",
+        "SRC-001132",
+        "SRC-001133"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news: no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer company or site found for the applicant",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lenders or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts found",
+      "src": []
+    }
+  }
 }

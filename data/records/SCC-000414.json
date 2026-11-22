@@ -1,6 +1,6 @@
 {
   "id": "SCC-000414",
-  "name": "EPR (BEPM 100%) NEW 2ND UNIT",
+  "name": "49 S 20th St (H18-022)",
   "parcels": [
     {
       "apn": "467-30-046",
@@ -48,6 +48,12 @@
             "SRC-001099",
             "SRC-001107"
           ]
+        },
+        {
+          "text": "49 S 20th St Unit 2, San Jose, CA",
+          "src": [
+            "SRC-001107"
+          ]
         }
       ]
     }
@@ -69,12 +75,11 @@
     "status": {
       "claims": [
         {
-          "value": "Under construction",
+          "value": "Proposed",
           "src": [
-            "SRC-001099",
-            "SRC-001107"
+            "SRC-001099"
           ],
-          "note": "State report shows certificates of occupancy for some of the units, not all"
+          "note": "State report 2018 application row H18-022; no later rows for the 8-unit project"
         }
       ]
     },
@@ -131,6 +136,19 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "State report Table A 2018 row (H18-022) lists 8 units proposed, 5+ category, owner tenure. The A2 rows are for one ADU: 2020 building permit 1838230 described as EPR (BEPM 100%) NEW 2ND UNIT, issued 2020-07-23, and a 2022 certificate of occupancy for 1 ADU under permit 2019 143022 000 00 RS.",
+      "src": [
+        "SRC-001107",
+        "SRC-001099"
+      ]
+    },
+    {
+      "text": "County parcel data: 467-30-046, situs 49 S 20th St, with 2 situs addresses.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [],
@@ -144,22 +162,6 @@
       "src": [
         "SRC-001099"
       ]
-    },
-    {
-      "date": "2020-07-23",
-      "type": "Permit issued",
-      "label": "Building permit issued",
-      "src": [
-        "SRC-001107"
-      ]
-    },
-    {
-      "date": "2022-06-14",
-      "type": "Other",
-      "label": "Certificate of occupancy reported for some units",
-      "src": [
-        "SRC-001107"
-      ]
     }
   ],
   "history": [
@@ -167,6 +169,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Removed the 2020 ADU building permit, its occupancy date, permit number and Under construction status; renamed from the ADU permit description to 49 S 20th St (H18-022)"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 49 S 20th St and H18-022: listing-site pages only, no project detail",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel dataset: 467-30-046, situs 49 S 20th St, 2 situs addresses",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "sanjoseca.gov refuses automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City of San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A 2018 (H18-022) and A2 2020/2022 rows (ADU permit and CO)",
+      "src": [
+        "SRC-001107",
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no trade press coverage",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named in sources found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: nothing found",
+      "src": []
+    }
+  }
 }

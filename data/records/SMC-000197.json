@@ -141,6 +141,13 @@
             "SRC-001122"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "1509-002",
+          "src": [
+            "SRC-004099"
+          ],
+          "note": "Application number on the city project page; the state report shows 1507-002"
         }
       ]
     },
@@ -164,6 +171,17 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.13,
+          "src": [
+            "SRC-004099"
+          ],
+          "note": "City page gives a 5,807 sq ft site"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -172,6 +190,18 @@
       "src": [
         "SRC-001125",
         "SRC-001122"
+      ]
+    },
+    {
+      "text": "City page: design review, conditional use permit and lot merger/subdivision to replace a paved surface parking lot with a 4-story condominium building of 9 residential units and 2 commercial spaces, in the Commercial (C) district. Planning Commission recommended approval; City Council approved it on 10/13/20.",
+      "src": [
+        "SRC-004099"
+      ]
+    },
+    {
+      "text": "The city's Active Development Projects page lists the project under In Building Permit Review.",
+      "src": [
+        "SRC-001355"
       ]
     }
   ],
@@ -183,6 +213,28 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Tram Nguyen",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (city project page)",
+      "src": [
+        "SRC-004099"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Moshe Dinar",
+      "contact": "Moshe Dinar",
+      "linkedin": null,
+      "email": "dinararch@sbcglobal.net",
+      "phone": "510-759-2133",
+      "other_role": "Applicant / agent",
+      "src": [
+        "SRC-004099"
       ]
     }
   ],
@@ -216,6 +268,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and applicant; led to city project page 237",
+      "src": [
+        "SRC-004099"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Owner of record already on record from county parcel layer",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Millbrae project page 237 and Active Development Projects page 215",
+      "src": [
+        "SRC-004099",
+        "SRC-001355"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Millbrae",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Tables A and A2 rows for 480 El Camino Real already on record; no permit rows; no CEQAnet filing found",
+      "src": [
+        "SRC-001125",
+        "SRC-001122"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news: no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for applicant Moshe Dinar: a Dinar & Associates Architects listing in Oakland, not tied to this project by any source",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lenders or public funding found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts found",
+      "src": []
+    }
+  }
 }
