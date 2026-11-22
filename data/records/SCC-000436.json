@@ -1,6 +1,6 @@
 {
   "id": "SCC-000436",
-  "name": "1631 Hacienda Ave",
+  "name": "Hacienda Avenue Planned Development Subdivision",
   "parcels": [
     {
       "apn": "403-13-147",
@@ -161,7 +161,9 @@
         {
           "value": 6,
           "src": [
-            "SRC-001143"
+            "SRC-001143",
+            "SRC-004201",
+            "SRC-004202"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -183,6 +185,15 @@
             "SRC-001143"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN2018-155 (zoning map amendment), PLN2018-156 (PD permit), PLN2018-157 (tentative map), PLN2018-158 (tree removal), PLN2018-325 (variance), PLN2018-159 (MND), PRE2018-03 (pre-application)",
+          "src": [
+            "SRC-004203",
+            "SRC-004201",
+            "SRC-004202"
+          ],
+          "note": "City of Campbell file numbers"
         }
       ]
     },
@@ -196,6 +207,42 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.13,
+          "src": [
+            "SRC-004201"
+          ],
+          "note": "Draft MND project data: 2.13 acres gross, 2.02 acres net, 2.8 units per gross acre"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004201",
+            "SRC-004202"
+          ],
+          "note": "Two-story homes"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004202"
+          ],
+          "note": "Rezoning R-1-9 to P-D, PD permit, tentative map and variance before the Planning Commission"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -205,12 +252,84 @@
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "City notices describe rezoning from R-1-9 to P-D, six two-story single-family homes, an accessory dwelling unit, a new private street, six private lots and one common lot, a variance to keep existing overhead utility lines, and removal of protected trees. The draft MND lists the site as APN 403-13-004/005, about two acres in the San Tomas Area Neighborhood Plan area.",
+      "src": [
+        "SRC-004201",
+        "SRC-004202"
+      ]
+    },
+    {
+      "text": "Draft MND project data lists home living areas of about 3,600 to 4,200 sq ft across lots of 9,372 to 18,436 sq ft (first and second story combined, excluding garages).",
+      "src": [
+        "SRC-004201"
+      ]
+    },
+    {
+      "text": "Project sponsor in the draft MND: Hacienda Street Holdings LLC, c/o Sachneel Patel, 225 Demeter Street, East Palo Alto.",
+      "src": [
+        "SRC-004201"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Hacienda Street Holdings LLC",
+      "contact": "Sachneel Patel",
+      "linkedin": null,
+      "src": [
+        "SRC-004201",
+        "SRC-004204",
+        "SRC-004202"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Hacienda Street Holdings LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004201"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2018-03-27",
+      "type": "Other",
+      "label": "Planning Commission study session on pre-application PRE2018-03 (conceptual six-lot subdivision)",
+      "src": [
+        "SRC-004203"
+      ]
+    },
+    {
+      "date": "2018-11-21",
+      "type": "Other",
+      "label": "Draft Mitigated Negative Declaration released for public review",
+      "src": [
+        "SRC-004201"
+      ]
+    },
+    {
+      "date": "2018-12-11",
+      "type": "Other",
+      "label": "Planning Commission public hearing noticed",
+      "src": [
+        "SRC-004204"
+      ]
+    },
+    {
+      "date": "2019-04-23",
+      "type": "Other",
+      "label": "Continued Planning Commission public hearing noticed",
+      "src": [
+        "SRC-004202"
+      ]
+    },
     {
       "date": "2019-05-21",
       "type": "Approved",
@@ -241,6 +360,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and Campbell planning led to City of Campbell public notice archive items 1029, 1160, 1166, 1214.",
+      "src": [
+        "SRC-004202"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 40313147: situs 108 Hickory Ct, Campbell; no owner field in dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell public notices: study session notice 2018-03-22, NOI/draft MND 2018-11-21, PC hearing notices 2018-11-30 and 2019-04-12.",
+      "src": [
+        "SRC-004203",
+        "SRC-004201",
+        "SRC-004204",
+        "SRC-004202"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated Campbell project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet record found for the Campbell MND in searches.",
+      "src": [
+        "SRC-001134",
+        "SRC-001143"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No local news coverage found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No trade press found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for Hacienda Street Holdings LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in the notices or draft MND opened; MND consultants were environmental, arborist and geotechnical firms.",
+      "src": [
+        "SRC-004201"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found.",
+      "src": []
+    }
+  }
 }

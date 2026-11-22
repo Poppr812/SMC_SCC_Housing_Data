@@ -45,7 +45,15 @@
       ]
     }
   ],
-  "addresses": [],
+  "addresses": [
+    {
+      "text": "6682 Adare Ct, Gilroy, CA",
+      "role": "main",
+      "src": [
+        "SRC-001098"
+      ]
+    }
+  ],
   "images": [],
   "facts": {
     "product_type": {
@@ -88,7 +96,9 @@
         {
           "value": 6,
           "src": [
-            "SRC-001138"
+            "SRC-001138",
+            "SRC-004199",
+            "SRC-004200"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -103,6 +113,13 @@
             "SRC-001138"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "TM 13-03, Z 15-09",
+          "src": [
+            "SRC-004199"
+          ],
+          "note": "City of Gilroy tentative map and zoning file numbers in the CEQA filing"
         }
       ]
     },
@@ -116,6 +133,30 @@
           "note": "State report (through 2021): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 2.67,
+          "src": [
+            "SRC-004199"
+          ],
+          "note": "CEQAnet MND summary"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004199"
+          ],
+          "note": "Tentative map, PUD amendment, and architectural and site approval"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -125,12 +166,49 @@
         "SRC-001115",
         "SRC-001138"
       ]
+    },
+    {
+      "text": "CEQAnet describes a six-lot residential subdivision on 2.67 acres: six single-family lots of about 7,900 to 11,050 sq ft, three open space parcels and private streets connecting to existing Eagle Ridge Court, built to the Eagle Ridge planned unit development standards, with stormwater infiltration basins, water and sewer improvements, and dedications to the Eagle Ridge HOA for park expansion. Parcels listed: 810-42-001, -72-036. City contact: Melissa Durkin.",
+      "src": [
+        "SRC-004199",
+        "SRC-004200"
+      ]
+    },
+    {
+      "text": "County parcel dataset shows APN 810-88-001 with situs 6682 Adare Ct, Gilroy.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2016-04-22",
+      "type": "Other",
+      "label": "Mitigated Negative Declaration filed with the State Clearinghouse (SCH 2016042064)",
+      "src": [
+        "SRC-004199"
+      ]
+    },
+    {
+      "date": "2016-07-05",
+      "type": "Approved",
+      "label": "Tentative map and PUD amendment approved (date per Notice of Determination)",
+      "src": [
+        "SRC-004200"
+      ]
+    },
+    {
+      "date": "2016-07-12",
+      "type": "Other",
+      "label": "Notice of Determination posted",
+      "src": [
+        "SRC-004200"
+      ]
+    },
     {
       "date": "2021-03-16",
       "type": "Application filed",
@@ -153,6 +231,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on Kroeger Subdivision Gilroy led to CEQAnet SCH 2016042064.",
+      "src": [
+        "SRC-004199"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel API, APN 81088001: situs 6682 Adare Ct, Gilroy; no owner field in dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched cityofgilroy.org for Kroeger, Adare Court and AS 2021 files; no staff report found.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated Gilroy project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2016042064: MND (2016-04-22) and NOD (posted 2016-07-12, approved 2016-07-05).",
+      "src": [
+        "SRC-004199",
+        "SRC-004200"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No local news coverage found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No trade press found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "MLSListings pages for Adare Ct homes returned no listing content when opened; no builder site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public LinkedIn posts found.",
+      "src": []
+    }
+  }
 }

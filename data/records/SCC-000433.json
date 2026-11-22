@@ -125,7 +125,9 @@
         {
           "value": 6,
           "src": [
-            "SRC-001143"
+            "SRC-001143",
+            "SRC-004190",
+            "SRC-004191"
           ],
           "note": "Units reported in entitlement and permit rows"
         }
@@ -140,6 +142,15 @@
             "SRC-001143"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2023-135 (Planned Development Permit, Tentative Subdivision Map, Tree Removal Permit); PLN-2023-43 (preliminary application)",
+          "src": [
+            "SRC-004192",
+            "SRC-004190",
+            "SRC-004191"
+          ],
+          "note": "City of Campbell file numbers"
         }
       ]
     },
@@ -153,6 +164,19 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004191"
+          ],
+          "note": "Planned Development Permit and Tentative Subdivision Map heard by Planning Commission and City Council; submitted under an SB-330 preliminary application"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -162,18 +186,114 @@
         "SRC-001134",
         "SRC-001143"
       ]
+    },
+    {
+      "text": "City notices describe demolition of three existing structures, removal of fourteen trees (two 'protected' trees in the Council notice), construction of six single-family residences and creation of six new lots on 44 and 56 Sunnyside Avenue. Zoning P-D.",
+      "src": [
+        "SRC-004190",
+        "SRC-004191"
+      ]
+    },
+    {
+      "text": "The March 2023 preliminary application notice lists the site as APN 412-04-018/019, applicant Granite Ridge Properties and property owner Chad Hester. The July 2023 notice lists 44 Sunnyside LLC (Sachneel Patel) as applicant and property owner.",
+      "src": [
+        "SRC-004192",
+        "SRC-004190"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "44 Sunnyside LLC",
+      "contact": "Sachneel Patel",
+      "linkedin": null,
+      "src": [
+        "SRC-004190",
+        "SRC-004193",
+        "SRC-004191"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "44 Sunnyside LLC",
+      "contact": "Sachneel Patel",
+      "linkedin": null,
+      "src": [
+        "SRC-004190",
+        "SRC-004193"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Granite Ridge Properties",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant, preliminary application PLN-2023-43",
+      "src": [
+        "SRC-004192"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Chad Hester",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004192"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "IDLA, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004193"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-03-07",
+      "type": "Other",
+      "label": "City courtesy notice: preliminary application PLN-2023-43 for a 6-unit small-lot detached single-family development",
+      "src": [
+        "SRC-004192"
+      ]
+    },
     {
       "date": "2023-07-12",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001134"
+      ]
+    },
+    {
+      "date": "2023-07-18",
+      "type": "Other",
+      "label": "City courtesy notice: application PLN-2023-135 received",
+      "src": [
+        "SRC-004190"
+      ]
+    },
+    {
+      "date": "2023-12-12",
+      "type": "Other",
+      "label": "Planning Commission public hearing noticed",
+      "src": [
+        "SRC-004193"
+      ]
+    },
+    {
+      "date": "2024-02-20",
+      "type": "Other",
+      "label": "City Council public hearing noticed",
+      "src": [
+        "SRC-004191"
       ]
     },
     {
@@ -198,6 +318,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and project name; led to City of Campbell public notice archive items 2882, 2995, 3058, 3107. Builder sales page on newhomesource.com returned 403.",
+      "src": [
+        "SRC-004190"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 41204109: situs 44 Sunnyside Av, Campbell; no owner field in dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell public notices: courtesy notices 2023-03-07 and 2023-07-18, PC hearing notice (2023-12-12), Council hearing notice (2024-02-20).",
+      "src": [
+        "SRC-004192",
+        "SRC-004190",
+        "SRC-004193",
+        "SRC-004191"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated Campbell project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR data already on record; no CEQAnet or CTCAC entry found for the address.",
+      "src": [
+        "SRC-001134",
+        "SRC-001143"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on address and Sunnyside Heights returned listings only, no news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No SF YIMBY or other trade coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "Sales page for Sunnyside Heights by 44 Sunnyside LLC on newhomesource.com returned 403; no separate developer site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Plan set attached to the PC hearing notice names IDLA, Inc. as landscape architect; building architect not legible in the extracted plans.",
+      "src": [
+        "SRC-004193"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project.",
+      "src": []
+    }
+  }
 }
