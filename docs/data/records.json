@@ -42885,6 +42885,30 @@
    "wayback": null,
    "copyright": false,
    "sha256": null
+  },
+  "SRC-004244": {
+   "id": "SRC-004244",
+   "title": "New Building Permits For 2857 El Camino Real, Redwood City",
+   "publisher": "San Francisco YIMBY",
+   "date": "2025-08-06",
+   "type": "Trade publication",
+   "url": "https://sfyimby.com/2025/08/new-building-permits-for-2857-el-camino-real-redwood-city.html",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004245": {
+   "id": "SRC-004245",
+   "title": "Planning Commission Approved Minutes, December 3, 2018",
+   "publisher": "City of Menlo Park",
+   "date": "2018-12-03",
+   "type": "Government document",
+   "url": "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/planning-commission/2018-meetings/20181203-planning-minutes.pdf",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
   }
  },
  "records": [
@@ -459017,11 +459041,39 @@
        ]
       }
      ]
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 2825,
+       "src": [
+        "SRC-001021"
+       ],
+       "note": "Living area; 3,255 sq ft total including a 430 sq ft garage"
+      }
+     ]
+    },
+    "parking_spaces": {
+     "claims": [
+      {
+       "value": 2,
+       "src": [
+        "SRC-001021"
+       ],
+       "note": "Two-car garage"
+      }
+     ]
     }
    },
    "construction_notes": [
     {
      "text": "One new 3,255 sq ft home with five bedrooms on a vacant lot",
+     "src": [
+      "SRC-001021"
+     ]
+    },
+    {
+     "text": "The 2019 approved revision (PA-2016-074) was a 3,951 sq ft one-story house with a 641 sq ft three-car garage; the current application is a 3,255 sq ft house with 3 full and 2 half baths.",
      "src": [
       "SRC-001021"
      ]
@@ -459037,15 +459089,56 @@
       "SRC-001021"
      ],
      "other_role": "Applicant"
+    },
+    {
+     "role": "Recorded owner",
+     "company": "CHU KELSON & JIANG QING",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001022"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
     {
+     "date": "2016-08-18",
+     "type": "Application filed",
+     "label": "PA-2016-074 submitted",
+     "src": [
+      "SRC-001021"
+     ]
+    },
+    {
+     "date": "2018-06-26",
+     "type": "Approved",
+     "label": "Planning Commission approves PA-2016-074",
+     "src": [
+      "SRC-001021"
+     ]
+    },
+    {
+     "date": "2018-07-06",
+     "type": "Other",
+     "label": "Appeal filed; Commission re-reviews revised plans",
+     "src": [
+      "SRC-001021"
+     ]
+    },
+    {
      "date": "2019-10-22",
      "type": "Approved",
      "label": "Planning Commission approves an earlier revised house (PA-2016-074), since expired",
+     "src": [
+      "SRC-001021"
+     ]
+    },
+    {
+     "date": "2025-04",
+     "type": "Other",
+     "label": "PA-2022-088 (revision) expires and is closed",
      "src": [
       "SRC-001021"
      ]
@@ -459065,6 +459158,14 @@
      "src": [
       "SRC-001021"
      ]
+    },
+    {
+     "date": "2026-11-05",
+     "type": "Other",
+     "label": "Cycle 3 plans resubmitted",
+     "src": [
+      "SRC-001021"
+     ]
     }
    ],
    "history": [
@@ -459072,8 +459173,87 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "Web search on address; city project page only",
+     "src": [
+      "SRC-001021"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "SMC Active Parcels APN 042-271-070: owner CHU KELSON & JIANG QING",
+     "src": [
+      "SRC-001022"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "City of San Mateo project page: PA-2016-074 history, PA-2022-088 expiry, cycle 3 resubmittal 2026-11-05",
+     "src": [
+      "SRC-001021"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "data.ca.gov APR Tables A and A2 searched for 866 Viewridge; no rows",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search; no coverage found",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search; no trade press found",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Single-family home; applicant J.C. Design (Jack Chu) has no project page found",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "J.C. Design site not found in web search",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search found no LinkedIn posts",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001021": "S1",
     "SRC-001003": "S2",
@@ -459107,17 +459287,17 @@
      "4br+"
     ],
     "tax_credit": false,
-    "owner": "",
+    "owner": "CHU KELSON & JIANG QING",
     "developer": "",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2026-08-14",
+    "latest_event": "2026-11-05",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "866 viewridge drive san mateo 042-271-070 866 viewridge dr, san mateo, ca single-family proposed listed as under review san mateo 1 {\"studio\": 0, \"1br\": 0, \"2br\": 0, \"3br\": 0, \"4br+\": 1} 1 pa-2026-0023 (prior pa-2022-088 expired; prior approval pa-2016-074) one new 3,255 sq ft home with five bedrooms on a vacant lot other applicant j.c. design jack chu planning commission approves an earlier revised house (pa-2016-074), since expired current application filed cycle 2 plans resubmitted"
+   "search": "866 viewridge drive san mateo 042-271-070 866 viewridge dr, san mateo, ca single-family proposed listed as under review san mateo 1 {\"studio\": 0, \"1br\": 0, \"2br\": 0, \"3br\": 0, \"4br+\": 1} 1 pa-2026-0023 (prior pa-2022-088 expired; prior approval pa-2016-074) 2825 living area; 3,255 sq ft total including a 430 sq ft garage 2 two-car garage one new 3,255 sq ft home with five bedrooms on a vacant lot the 2019 approved revision (pa-2016-074) was a 3,951 sq ft one-story house with a 641 sq ft three-car garage; the current application is a 3,255 sq ft house with 3 full and 2 half baths. other applicant j.c. design jack chu recorded owner chu kelson & jiang qing pa-2016-074 submitted planning commission approves pa-2016-074 appeal filed; commission re-reviews revised plans planning commission approves an earlier revised house (pa-2016-074), since expired pa-2022-088 (revision) expires and is closed current application filed cycle 2 plans resubmitted cycle 3 plans resubmitted"
   },
   {
    "id": "SMC-000077",
@@ -462191,6 +462371,12 @@
      "src": [
       "SRC-001036"
      ]
+    },
+    {
+     "text": "City project page lists six bicycle parking spaces in addition to the two-space attached carport.",
+     "src": [
+      "SRC-001036"
+     ]
     }
    ],
    "parties": [
@@ -462204,15 +462390,40 @@
      ],
      "other_role": "Applicant",
      "website": "https://www.reidlerner.com/"
+    },
+    {
+     "role": "Recorded owner",
+     "company": "PRASAD ANDRIKA TR & SHARM MOHANKUMARI TR",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001037"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
     {
+     "date": "2023-08",
+     "type": "Other",
+     "label": "Applicant-led neighborhood informational meeting",
+     "src": [
+      "SRC-001036"
+     ]
+    },
+    {
      "date": "2023-11-11",
      "type": "Application filed",
      "label": "Application filed",
+     "src": [
+      "SRC-001036"
+     ]
+    },
+    {
+     "date": "2024-04-24",
+     "type": "Other",
+     "label": "First resubmittal",
      "src": [
       "SRC-001036"
      ]
@@ -462236,8 +462447,89 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Linked developer website / project page"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "Web search on address; city project page only",
+     "src": [
+      "SRC-001036"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "SMC Active Parcels APN 032-323-010: owner PRASAD ANDRIKA TR & SHARM MOHANKUMARI TR",
+     "src": [
+      "SRC-001037"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "City of San Mateo project page: neighborhood meeting Aug 2023, resubmittals 2024-04-24 and 2024-12-19; no hearing listed",
+     "src": [
+      "SRC-001036"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "data.ca.gov APR Tables A and A2 searched for 328 Tilton; no rows",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search; no coverage found",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search; no trade press found",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer named beyond the applicant architect",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "reidlerner.com homepage: slideshow image titled Tilton Apartments San Mateo, no project page",
+     "src": [
+      "SRC-001036"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search found no LinkedIn posts",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001036": "S1",
     "SRC-001003": "S2",
@@ -462272,7 +462564,7 @@
      "4br+"
     ],
     "tax_credit": false,
-    "owner": "",
+    "owner": "PRASAD ANDRIKA TR & SHARM MOHANKUMARI TR",
     "developer": "",
     "cost_basis": "",
     "cost": null,
@@ -462282,7 +462574,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "328 tilton avenue san mateo 032-323-010 328 tilton ave, san mateo, ca apartments four-unit building, closest category; the category is defined as 5+ units; tenure not stated proposed listed as under review san mateo 4 {\"studio\": 0, \"1br\": 2, \"2br\": 0, \"3br\": 0, \"4br+\": 2} 5800 2 2 attached carport pa-2023-071 replaces a single-family home and a three-unit building (4 existing homes), so no net gain other applicant reid lerner architects mazi motamedi application filed latest resubmittal"
+   "search": "328 tilton avenue san mateo 032-323-010 328 tilton ave, san mateo, ca apartments four-unit building, closest category; the category is defined as 5+ units; tenure not stated proposed listed as under review san mateo 4 {\"studio\": 0, \"1br\": 2, \"2br\": 0, \"3br\": 0, \"4br+\": 2} 5800 2 2 attached carport pa-2023-071 replaces a single-family home and a three-unit building (4 existing homes), so no net gain city project page lists six bicycle parking spaces in addition to the two-space attached carport. other applicant reid lerner architects mazi motamedi recorded owner prasad andrika tr & sharm mohankumari tr applicant-led neighborhood informational meeting application filed first resubmittal latest resubmittal"
   },
   {
    "id": "SMC-000082",
@@ -537371,6 +537663,13 @@
         "SRC-001139"
        ],
        "note": "Units in the application as reported"
+      },
+      {
+       "value": 8,
+       "src": [
+        "SRC-004244"
+       ],
+       "note": "Eight rental apartments as described by SF YIMBY; the state report shows 5 units in the application"
       }
      ]
     },
@@ -537411,11 +537710,44 @@
        "note": "State report 2025, application stage: 1 deed-restricted units"
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 5,
+       "src": [
+        "SRC-004244"
+       ]
+      }
+     ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "SF YIMBY reports one unit deed-restricted as affordable; the state report shows 1 moderate-income deed-restricted unit and 4 above-moderate units",
+       "src": [
+        "SRC-004244",
+        "SRC-001139"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
     {
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
+     "src": [
+      "SRC-001139"
+     ]
+    },
+    {
+     "text": "SF YIMBY reports a five-story residential infill building replacing three small structures on a narrow lot, between Berkshire Avenue and Dumbarton Avenue across from the Atherton border, with demolition permits filed; the owner is described as a Florida-based individual.",
+     "src": [
+      "SRC-004244"
+     ]
+    },
+    {
+     "text": "State report 2025 lists the application as ministerial and pending, not filed under SB 35, with no density bonus.",
      "src": [
       "SRC-001139"
      ]
@@ -537449,11 +537781,93 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web search on address; SF YIMBY article 2025-08-06",
+     "src": [
+      "SRC-004244"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SMC Active Parcels APN 054-284-220: unincorporated, owner HASHEMIAN MICHAEL (already on record)",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "Parcel is unincorporated per county parcel layer; Redwood City is the mailing city only",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of smcgov.org planning documents for 2857 El Camino Real; only nearby North Fair Oaks items (2875, 2821 El Camino Real)",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR Table A, San Mateo County 2025: BLD2025-02038, ministerial, pending, 1 moderate DR + 4 above-moderate",
+     "src": [
+      "SRC-001139"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on address; no local news coverage found",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "SF YIMBY 2025-08-06: 8 rental units, five stories, one affordable unit",
+     "src": [
+      "SRC-004244"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer named; SF YIMBY describes owner only as a Florida-based individual",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in SF YIMBY or other sources found",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found in web search",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search found no LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001139": "S1",
-    "SRC-001103": "S2"
+    "SRC-004244": "S2",
+    "SRC-001103": "S3"
    },
    "lat": 37.470125083333336,
    "lng": -122.21250188333333,
@@ -537468,11 +537882,11 @@
     "community": "Other San Mateo County",
     "county": "San Mateo County",
     "area": "Unincorporated (Other San Mateo County)",
-    "total_units": 5,
-    "units_display": "5",
+    "total_units": null,
+    "units_display": "5–8",
     "units_range": [
      5,
-     5
+     8
     ],
     "restricted_units": 1,
     "aff_bucket": "Market",
@@ -537494,7 +537908,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "2857 el camino real, redwood city other san mateo county unincorporated 054-284-220 2857 el camino real, redwood city, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported unincorporated other san mateo county community not stated in the state report 5 units in the application as reported bld2025-02038 local tracking number as reported to the state [{\"count\": 1, \"ami\": 120}] state report 2025, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2025, application stage: 1 deed-restricted units from the state housing element annual progress report, through 2025. recorded owner hashemian michael application submitted"
+   "search": "2857 el camino real, redwood city other san mateo county unincorporated 054-284-220 2857 el camino real, redwood city, ca apartments state category 5+ units, rental tenure proposed state report shows an application with no approval reported unincorporated other san mateo county community not stated in the state report 5 units in the application as reported 8 eight rental apartments as described by sf yimby; the state report shows 5 units in the application bld2025-02038 local tracking number as reported to the state [{\"count\": 1, \"ami\": 120}] state report 2025, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2025, application stage: 1 deed-restricted units 5 sf yimby reports one unit deed-restricted as affordable; the state report shows 1 moderate-income deed-restricted unit and 4 above-moderate units from the state housing element annual progress report, through 2025. sf yimby reports a five-story residential infill building replacing three small structures on a narrow lot, between berkshire avenue and dumbarton avenue across from the atherton border, with demolition permits filed; the owner is described as a florida-based individual. state report 2025 lists the application as ministerial and pending, not filed under sb 35, with no density bonus. recorded owner hashemian michael application submitted"
   },
   {
    "id": "SMC-000220",
@@ -537590,6 +538004,13 @@
         "SRC-001130"
        ],
        "note": "Units reported in entitlement and permit rows"
+      },
+      {
+       "value": 8,
+       "src": [
+        "SRC-004245"
+       ],
+       "note": "Eight units total on the site: three existing units plus five new; the state report counts the 5 net new units"
       }
      ]
     },
@@ -537609,6 +538030,12 @@
        "value": "1 deed-restricted units reported to the state",
        "src": [
         "SRC-001130"
+       ]
+      },
+      {
+       "value": "Applicant stated the seven apartments include one below market rate (BMR) unit",
+       "src": [
+        "SRC-004245"
        ]
       }
      ]
@@ -537639,6 +538066,29 @@
        "note": "State report 2018, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 2,
+       "src": [
+        "SRC-004245"
+       ]
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary"
+       ],
+       "src": [
+        "SRC-004245"
+       ],
+       "note": "Architectural control and use permit with a Mitigated Negative Declaration"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -537646,6 +538096,18 @@
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
      "src": [
       "SRC-001130"
+     ]
+    },
+    {
+     "text": "Planning Commission item F2 (Staff Report #18-097-PC) covers 409 Glenwood Avenue, 417 Glenwood Avenue and 1357 Laurel Street: demolish two residences, relocate the historic two-story house at 417 Glenwood on site, and build two new two-story multifamily buildings (three and four units) over an underground parking garage; one heritage tree removed; R-3 zoning. Approved 7-0 with adoption of a Mitigated Negative Declaration.",
+     "src": [
+      "SRC-004245"
+     ]
+    },
+    {
+     "text": "Applicant described seven one- to two-bedroom apartments of 800 to 1,030 sq ft plus the relocated four-bedroom historic house, which is rented.",
+     "src": [
+      "SRC-004245"
      ]
     }
    ],
@@ -537658,11 +538120,46 @@
      "src": [
       "SRC-001103"
      ]
+    },
+    {
+     "role": "Architect",
+     "company": "G + S Architecture",
+     "contact": "Mark Sutherland",
+     "linkedin": null,
+     "src": [
+      "SRC-004245"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Smulski family",
+     "contact": "Michael Smulski",
+     "linkedin": null,
+     "other_role": "Property owner (family purchased the property in 2011)",
+     "src": [
+      "SRC-004245"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2011",
+     "type": "Sale",
+     "label": "Smulski family purchases the property",
+     "src": [
+      "SRC-004245"
+     ]
+    },
+    {
+     "date": "2013",
+     "type": "Application filed",
+     "label": "Original permit application with plans submitted",
+     "src": [
+      "SRC-004245"
+     ]
+    },
     {
      "date": "2018-12-03",
      "type": "Approved",
@@ -537677,17 +538174,101 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web search on address; Menlo Park PC minutes 2018-12-03",
+     "src": [
+      "SRC-004245"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SMC Active Parcels APN 061-401-010: owner ADVEST INC (already on record); no separate parcels for 417 Glenwood or 1357 Laurel in block 061-401",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Menlo Park PC approved minutes 2018-12-03, item F2, Staff Report #18-097-PC",
+     "src": [
+      "SRC-004245"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "data.ca.gov APR Table A2, Menlo Park 2018: PLN2013-00067, 5 units entitled 2018-12-03, 1 low DR, BMR Agreement",
+     "src": [
+      "SRC-001130"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search including Almanac; no coverage found",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search; no trade press found",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer company named; owner family identified in PC minutes",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for G + S Architecture / Mark Sutherland found no firm site with this project",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search found no LinkedIn posts",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001130": "S1",
-    "SRC-001103": "S2"
+    "SRC-004245": "S2",
+    "SRC-001103": "S3"
    },
    "lat": 37.45834838333334,
    "lng": -122.18510246666666,
    "calcs": {},
    "kinds": [
-    "pipeline"
+    "pipeline",
+    "sale",
+    "transaction"
    ],
    "summary": {
     "product_type": "Apartments",
@@ -537696,11 +538277,11 @@
     "community": "",
     "county": "San Mateo County",
     "area": "Menlo Park",
-    "total_units": 5,
-    "units_display": "5",
+    "total_units": null,
+    "units_display": "5–8",
     "units_range": [
      5,
-     5
+     8
     ],
     "restricted_units": 1,
     "aff_bucket": "Market",
@@ -537721,7 +538302,7 @@
     "stale_since": "2018-12-03",
     "part_of": ""
    },
-   "search": "409 glenwood ave menlo park 061-401-010 409 glenwood ave, menlo park, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval menlo park 5 units reported in entitlement and permit rows mixed-income 1 deed-restricted units reported to the state pln2013-00067 local tracking number as reported to the state [{\"count\": 1, \"ami\": 80}] state report 2018, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) from the state housing element annual progress report, through 2025. recorded owner advest inc entitlement approved"
+   "search": "409 glenwood ave menlo park 061-401-010 409 glenwood ave, menlo park, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval menlo park 5 units reported in entitlement and permit rows 8 eight units total on the site: three existing units plus five new; the state report counts the 5 net new units mixed-income 1 deed-restricted units reported to the state applicant stated the seven apartments include one below market rate (bmr) unit pln2013-00067 local tracking number as reported to the state [{\"count\": 1, \"ami\": 80}] state report 2018, entitlement stage: deed-restricted units by state income category (ami is the category's upper limit) 2 [\"discretionary\"] architectural control and use permit with a mitigated negative declaration from the state housing element annual progress report, through 2025. planning commission item f2 (staff report #18-097-pc) covers 409 glenwood avenue, 417 glenwood avenue and 1357 laurel street: demolish two residences, relocate the historic two-story house at 417 glenwood on site, and build two new two-story multifamily buildings (three and four units) over an underground parking garage; one heritage tree removed; r-3 zoning. approved 7-0 with adoption of a mitigated negative declaration. applicant described seven one- to two-bedroom apartments of 800 to 1,030 sq ft plus the relocated four-bedroom historic house, which is rented. recorded owner advest inc architect g + s architecture mark sutherland other property owner (family purchased the property in 2011) smulski family michael smulski smulski family purchases the property original permit application with plans submitted entitlement approved"
   },
   {
    "id": "SMC-000221",
@@ -537792,8 +538373,16 @@
         "SRC-001153"
        ],
        "note": "State report shows entitlement approval"
+      },
+      {
+       "value": "Existing",
+       "src": [
+        "SRC-003985"
+       ],
+       "note": "Housing Element (Aug 2024 draft) describes the project as complete, two units over commercial space"
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -537813,6 +538402,13 @@
         "SRC-001153"
        ],
        "note": "Units reported in entitlement and permit rows"
+      },
+      {
+       "value": 2,
+       "src": [
+        "SRC-003985"
+       ],
+       "note": "Housing Element pipeline table lists 2 units; the state report shows 5 units entitled"
       }
      ]
     },
@@ -537837,6 +538433,17 @@
        "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "Housing Element counts both units as moderate income; the state report (2020) shows 5 moderate-income units, not deed-restricted",
+       "src": [
+        "SRC-003985",
+        "SRC-001153"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -537844,6 +538451,12 @@
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
      "src": [
       "SRC-001153"
+     ]
+    },
+    {
+     "text": "Half Moon Bay Housing Element Appendix C lists 795 Main Street (APN 056-192-160) as a mixed-use building with two units over commercial space, described as complete, on a C-D zoned commercial site.",
+     "src": [
+      "SRC-003985"
      ]
     }
    ],
@@ -537875,29 +538488,109 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on address and PDP-16-061; only listing and property-record pages",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SMC Active Parcels APN 056-192-160: owner MOODY PROPERTIES LLC (already on record)",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Half Moon Bay Housing Element Appendix C (Third HCD Draft, 2024-08-28), pipeline table and text",
+     "src": [
+      "SRC-003985"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "data.ca.gov APR Table A2, Half Moon Bay 2020: PDP-16-061, 5 moderate non-DR units entitled 2020-11-20",
+     "src": [
+      "SRC-001153"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search; no coverage found",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search; no trade press found",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer named; owner Moody Properties LLC has no project page found",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in sources found",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search found no LinkedIn posts",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001153": "S1",
-    "SRC-001103": "S2"
+    "SRC-003985": "S2",
+    "SRC-001103": "S3"
    },
    "lat": 37.45863882,
    "lng": -122.42972222,
    "calcs": {},
    "kinds": [
-    "pipeline"
+    "existing"
    ],
    "summary": {
     "product_type": "Apartments",
-    "status": "Inactive pipeline",
+    "status": "Existing",
     "jurisdiction": "Half Moon Bay",
     "community": "",
     "county": "San Mateo County",
     "area": "Half Moon Bay",
-    "total_units": 5,
-    "units_display": "5",
+    "total_units": null,
+    "units_display": "2–5",
     "units_range": [
-     5,
+     2,
      5
     ],
     "restricted_units": null,
@@ -537914,10 +538607,10 @@
     "per_unit": null,
     "main_lender": "",
     "latest_event": "2020-11-20",
-    "stale_since": "2020-11-20",
+    "stale_since": "",
     "part_of": ""
    },
-   "search": "795 main st half moon bay 056-192-160 795 main st, half moon bay, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval half moon bay 5 units reported in entitlement and permit rows pdp-16-061 local tracking number as reported to the state market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. recorded owner moody properties llc entitlement approved"
+   "search": "795 main st half moon bay 056-192-160 795 main st, half moon bay, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval existing housing element (aug 2024 draft) describes the project as complete, two units over commercial space half moon bay 5 units reported in entitlement and permit rows 2 housing element pipeline table lists 2 units; the state report shows 5 units entitled pdp-16-061 local tracking number as reported to the state market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. housing element counts both units as moderate income; the state report (2020) shows 5 moderate-income units, not deed-restricted from the state housing element annual progress report, through 2025. half moon bay housing element appendix c lists 795 main street (apn 056-192-160) as a mixed-use building with two units over commercial space, described as complete, on a c-d zoned commercial site. recorded owner moody properties llc entitlement approved"
   },
   {
    "id": "SMC-000222",

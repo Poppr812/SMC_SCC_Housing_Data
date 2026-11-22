@@ -142,11 +142,39 @@
           ]
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 2825,
+          "src": [
+            "SRC-001021"
+          ],
+          "note": "Living area; 3,255 sq ft total including a 430 sq ft garage"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001021"
+          ],
+          "note": "Two-car garage"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "One new 3,255 sq ft home with five bedrooms on a vacant lot",
+      "src": [
+        "SRC-001021"
+      ]
+    },
+    {
+      "text": "The 2019 approved revision (PA-2016-074) was a 3,951 sq ft one-story house with a 641 sq ft three-car garage; the current application is a 3,255 sq ft house with 3 full and 2 half baths.",
       "src": [
         "SRC-001021"
       ]
@@ -162,15 +190,56 @@
         "SRC-001021"
       ],
       "other_role": "Applicant"
+    },
+    {
+      "role": "Recorded owner",
+      "company": "CHU KELSON & JIANG QING",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001022"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2016-08-18",
+      "type": "Application filed",
+      "label": "PA-2016-074 submitted",
+      "src": [
+        "SRC-001021"
+      ]
+    },
+    {
+      "date": "2018-06-26",
+      "type": "Approved",
+      "label": "Planning Commission approves PA-2016-074",
+      "src": [
+        "SRC-001021"
+      ]
+    },
+    {
+      "date": "2018-07-06",
+      "type": "Other",
+      "label": "Appeal filed; Commission re-reviews revised plans",
+      "src": [
+        "SRC-001021"
+      ]
+    },
+    {
       "date": "2019-10-22",
       "type": "Approved",
       "label": "Planning Commission approves an earlier revised house (PA-2016-074), since expired",
+      "src": [
+        "SRC-001021"
+      ]
+    },
+    {
+      "date": "2025-04",
+      "type": "Other",
+      "label": "PA-2022-088 (revision) expires and is closed",
       "src": [
         "SRC-001021"
       ]
@@ -190,6 +259,14 @@
       "src": [
         "SRC-001021"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "type": "Other",
+      "label": "Cycle 3 plans resubmitted",
+      "src": [
+        "SRC-001021"
+      ]
     }
   ],
   "history": [
@@ -197,6 +274,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web search on address; city project page only",
+      "src": [
+        "SRC-001021"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SMC Active Parcels APN 042-271-070: owner CHU KELSON & JIANG QING",
+      "src": [
+        "SRC-001022"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "City of San Mateo project page: PA-2016-074 history, PA-2022-088 expiry, cycle 3 resubmittal 2026-11-05",
+      "src": [
+        "SRC-001021"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Tables A and A2 searched for 866 Viewridge; no rows",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Single-family home; applicant J.C. Design (Jack Chu) has no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "J.C. Design site not found in web search",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

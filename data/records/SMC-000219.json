@@ -103,6 +103,13 @@
             "SRC-001139"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 8,
+          "src": [
+            "SRC-004244"
+          ],
+          "note": "Eight rental apartments as described by SF YIMBY; the state report shows 5 units in the application"
         }
       ]
     },
@@ -143,11 +150,44 @@
           "note": "State report 2025, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-004244"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "SF YIMBY reports one unit deed-restricted as affordable; the state report shows 1 moderate-income deed-restricted unit and 4 above-moderate units",
+          "src": [
+            "SRC-004244",
+            "SRC-001139"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
+      "src": [
+        "SRC-001139"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports a five-story residential infill building replacing three small structures on a narrow lot, between Berkshire Avenue and Dumbarton Avenue across from the Atherton border, with demolition permits filed; the owner is described as a Florida-based individual.",
+      "src": [
+        "SRC-004244"
+      ]
+    },
+    {
+      "text": "State report 2025 lists the application as ministerial and pending, not filed under SB 35, with no density bonus.",
       "src": [
         "SRC-001139"
       ]
@@ -181,6 +221,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address; SF YIMBY article 2025-08-06",
+      "src": [
+        "SRC-004244"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 054-284-220: unincorporated, owner HASHEMIAN MICHAEL (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Parcel is unincorporated per county parcel layer; Redwood City is the mailing city only",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of smcgov.org planning documents for 2857 El Camino Real; only nearby North Fair Oaks items (2875, 2821 El Camino Real)",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR Table A, San Mateo County 2025: BLD2025-02038, ministerial, pending, 1 moderate DR + 4 above-moderate",
+      "src": [
+        "SRC-001139"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on address; no local news coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2025-08-06: 8 rental units, five stories, one affordable unit",
+      "src": [
+        "SRC-004244"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named; SF YIMBY describes owner only as a Florida-based individual",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in SF YIMBY or other sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in web search",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

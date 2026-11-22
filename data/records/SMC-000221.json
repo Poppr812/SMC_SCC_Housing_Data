@@ -67,8 +67,16 @@
             "SRC-001153"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-003985"
+          ],
+          "note": "Housing Element (Aug 2024 draft) describes the project as complete, two units over commercial space"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -88,6 +96,13 @@
             "SRC-001153"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 2,
+          "src": [
+            "SRC-003985"
+          ],
+          "note": "Housing Element pipeline table lists 2 units; the state report shows 5 units entitled"
         }
       ]
     },
@@ -112,6 +127,17 @@
           "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Housing Element counts both units as moderate income; the state report (2020) shows 5 moderate-income units, not deed-restricted",
+          "src": [
+            "SRC-003985",
+            "SRC-001153"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -119,6 +145,12 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001153"
+      ]
+    },
+    {
+      "text": "Half Moon Bay Housing Element Appendix C lists 795 Main Street (APN 056-192-160) as a mixed-use building with two units over commercial space, described as complete, on a C-D zoned commercial site.",
+      "src": [
+        "SRC-003985"
       ]
     }
   ],
@@ -150,6 +182,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on address and PDP-16-061; only listing and property-record pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 056-192-160: owner MOODY PROPERTIES LLC (already on record)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Half Moon Bay Housing Element Appendix C (Third HCD Draft, 2024-08-28), pipeline table and text",
+      "src": [
+        "SRC-003985"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "data.ca.gov APR Table A2, Half Moon Bay 2020: PDP-16-061, 5 moderate non-DR units entitled 2020-11-20",
+      "src": [
+        "SRC-001153"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no coverage found",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no trade press found",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named; owner Moody Properties LLC has no project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }
