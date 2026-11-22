@@ -118,6 +118,12 @@
             "SRC-001114"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN24-232-PRE, PLN25-090-SB330",
+          "src": [
+            "SRC-001431"
+          ]
         }
       ]
     },
@@ -151,6 +157,12 @@
           "src": [
             "SRC-001431"
           ]
+        },
+        {
+          "value": "State report 2025: 1 unit low income deed-restricted, 6 above moderate",
+          "src": [
+            "SRC-001114"
+          ]
         }
       ]
     },
@@ -169,6 +181,17 @@
           "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.0,
+          "src": [
+            "SRC-001431"
+          ],
+          "note": "County list: parcel size 1 acre, development area 42,364 sq ft"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -176,6 +199,19 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001114"
+      ]
+    },
+    {
+      "text": "County SB 330 list: subdivision for 7 single-family homes, 2 deed-restricted for moderate-income households; parcel 1 acre, development area 42,364 sq ft; Supervisor District 2. State report 2025 shows 1 low-income and 6 above-moderate units, status pending, discretionary.",
+      "src": [
+        "SRC-001431",
+        "SRC-001114"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2024-12-04): 42,364 sq ft lot with one existing residence; scope is grading, 7 residences and a private street; owner 379 Meadow LLC; design by Anderson Architects.",
+      "src": [
+        "SRC-004170"
       ]
     }
   ],
@@ -198,11 +234,38 @@
       "src": [
         "SRC-001431"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Anderson Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004170"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "379 Meadow LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004170"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-11-25",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application submitted (PLN24-232-PRE)",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-23",
       "type": "Application filed",
@@ -219,6 +282,24 @@
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "date": "2025-10-17",
+      "type": "Other",
+      "label": "Application deemed complete",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Other",
+      "label": "Planning Commission hearing listed on county SB 330 list",
+      "src": [
+        "SRC-001431"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -231,6 +312,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 379 Meadow Lane: SF YIMBY article",
+      "src": [
+        "SRC-004170"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 601-25-125, situs 379 Meadow Ln, unincorporated; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Unincorporated county project with a San Jose mailing address",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "County SB 330 / Builder's Remedy list: preliminary 2024-11-25, formal 2025-05-23, complete 2025-10-17, PC hearing 2026-08-27; no PC outcome found by web search",
+      "src": [
+        "SRC-001431"
+      ]
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A 2025 row PLN25-090-SB330; HCD HAU letter 2432 checked, does not name this project",
+      "src": [
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2024-12-04",
+      "src": [
+        "SRC-004170"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "379 Meadow LLC has no website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Anderson Architects named by SF YIMBY; no project page found",
+      "src": [
+        "SRC-004170"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

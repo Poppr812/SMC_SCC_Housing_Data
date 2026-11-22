@@ -199,6 +199,78 @@
           37.418447
         ]
       ]
+    },
+    {
+      "apn": "142-08-151",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1666831,
+          37.4186632
+        ],
+        [
+          -122.1669041,
+          37.418478
+        ],
+        [
+          -122.1672384,
+          37.4187305
+        ],
+        [
+          -122.1670165,
+          37.4189164
+        ],
+        [
+          -122.1668536,
+          37.4187927
+        ],
+        [
+          -122.166704,
+          37.4186791
+        ],
+        [
+          -122.1666831,
+          37.4186632
+        ]
+      ]
+    },
+    {
+      "apn": "142-08-154",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.1663098,
+          37.4187704
+        ],
+        [
+          -122.1665544,
+          37.4185655
+        ],
+        [
+          -122.1666831,
+          37.4186632
+        ],
+        [
+          -122.166704,
+          37.4186791
+        ],
+        [
+          -122.1664594,
+          37.418884
+        ],
+        [
+          -122.1663098,
+          37.4187704
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -243,6 +315,20 @@
       "src": [
         "SRC-001156"
       ]
+    },
+    {
+      "text": "630 Constanzo St, Stanford, CA",
+      "role": "other",
+      "src": [
+        "SRC-001156"
+      ]
+    },
+    {
+      "text": "614 San Juan St, Stanford, CA",
+      "role": "other",
+      "src": [
+        "SRC-001156"
+      ]
     }
   ],
   "images": [],
@@ -266,8 +352,16 @@
             "SRC-001156"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-001156"
+          ],
+          "note": "State report 2024 shows certificates of occupancy for all seven homes (633 Cabrillo, 722 and 712 Dolores, 614 San Juan, 624, 630 and 634 Constanzo), 2024-02-16 to 2024-03-15"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -309,6 +403,13 @@
             "SRC-001156"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "DEV21-0873, DEV21-0877, DEV21-0879, DEV21-0883, DEV21-0887, DEV21-0889, DEV21-0892",
+          "src": [
+            "SRC-001156"
+          ],
+          "note": "One tracking number per home in the 2024 certificate of occupancy rows"
         }
       ]
     },
@@ -330,9 +431,46 @@
       "src": [
         "SRC-001156"
       ]
+    },
+    {
+      "text": "Palo Alto Daily Post (2018-10-27): Stanford sought to subdivide a lot at Cabrillo Avenue and Dolores Street in its faculty residential area for seven new single-family homes for faculty, in Monterey Ranch, Cape Cod and Spanish Colonial designs; a neighbor petition with 120 signatures opposed it.",
+      "src": [
+        "SRC-004171"
+      ]
+    },
+    {
+      "text": "State report 2021 rows list the owner as Leland Stanford Jr University Board of Trustees, in care of Faculty Staff Housing, with entitlement and building permit dated 2021-11-12. 2024 rows give certificate of occupancy dates for seven homes on APNs 142-08-148, -149, -151, -152, -153, -154 and -155.",
+      "src": [
+        "SRC-001156"
+      ]
+    },
+    {
+      "text": "Stanford Faculty Staff Housing lists 633 Cabrillo Ave as a direct-sale home.",
+      "src": [
+        "SRC-004172"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Stanford University",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004171"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Leland Stanford Jr University Board of Trustees (c/o Faculty Staff Housing)",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001156"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -353,12 +491,39 @@
       ]
     },
     {
+      "date": "2024-02-16",
+      "type": "Other",
+      "label": "Certificates of occupancy: 633 Cabrillo, 722 Dolores",
+      "src": [
+        "SRC-001156"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-02-27",
+      "type": "Other",
+      "label": "Certificates of occupancy: 624, 630 and 634 Constanzo",
+      "src": [
+        "SRC-001156"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2024-03-15",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
       "src": [
         "SRC-001156"
       ]
+    },
+    {
+      "date": "2024-03-15",
+      "type": "Completion",
+      "label": "Certificates of occupancy: 614 San Juan, 712 Dolores (last of seven homes)",
+      "src": [
+        "SRC-001156"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -371,6 +536,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on Cabrillo / Dolores / Constanzo Stanford faculty homes: Daily Post 2018, Stanford FSH listing",
+      "src": [
+        "SRC-004171",
+        "SRC-004172"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel API confirms 142-08-148 at 633 Cabrillo; APR rows tie 142-08-151 (614 San Juan) and 142-08-154 (630 Constanzo) to the same group",
+      "src": [
+        "SRC-001098",
+        "SRC-001156"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Unincorporated Stanford lands",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for DEV21 file numbers found no county planning page",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2: 2021 entitlement/permit rows and 2024 certificate of occupancy rows for seven homes",
+      "src": [
+        "SRC-001156"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Palo Alto Daily Post 2018-10-27",
+      "src": [
+        "SRC-004171"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade press",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Stanford Faculty Staff Housing page for 633 Cabrillo Ave (direct sale); sale details page requires login",
+      "src": [
+        "SRC-004172"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "A Houzz page by John Lum Architecture describes a Stanford faculty subdivision of a two-acre, two-home parcel into nine lots with seven homes but gives no address",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "University-developed faculty housing; no outside financing found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

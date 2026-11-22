@@ -116,6 +116,18 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "text": "State report 2018 row for PL-2018-286 notes: Under review. Decision expected 2019. No later state report row for this address was found.",
+      "src": [
+        "SRC-001101"
+      ]
+    },
+    {
+      "text": "PropertyShark shows APN 150-04-007 as an existing 9-unit five-or-more-family building built in 1963, 8,622 sq ft on a 22,788 sq ft (0.52 acre) lot, last sold 2019-04-30 for $4,275,000.",
+      "src": [
+        "SRC-004169"
+      ]
     }
   ],
   "parties": [],
@@ -129,6 +141,15 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2019-04-30",
+      "type": "Sale",
+      "label": "Last recorded sale of the parcel, $4,275,000 (PropertyShark)",
+      "src": [
+        "SRC-004169"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -136,6 +157,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 2010 San Ramon Ave: rental listings (2010 San Ramon Apartments) and PropertyShark property record",
+      "src": [
+        "SRC-004169"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel API confirms APN 150-04-007 at 2010 San Ramon Av, no owner field; PropertyShark property record (owner name locked)",
+      "src": [
+        "SRC-001098",
+        "SRC-004169"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Mountain View Legistar matters search for San Ramon returned only a 2020 heritage tree appeal at 1950 San Ramon; web search for PL-2018-286 found no city record",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "data.ca.gov APR Table A and A2 searched by address: only the 2018 application row",
+      "src": [
+        "SRC-001101"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade press",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No applicant named in any source found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }

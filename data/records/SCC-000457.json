@@ -145,6 +145,12 @@
             "SRC-001157"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "CPX24-0001, ARB23-0018",
+          "src": [
+            "SRC-004173"
+          ]
         }
       ]
     },
@@ -194,6 +200,68 @@
             "SRC-001157"
           ],
           "note": "State report 2025, application stage: 2 deed-restricted units"
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001598",
+            "SRC-004173"
+          ],
+          "note": "Five market homes plus two 504 sq ft ADUs for very low- and low-income households"
+        }
+      ],
+      "best": 1
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001598",
+            "SRC-004173"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 16,
+          "src": [
+            "SRC-001598"
+          ],
+          "note": "16 on-site spaces, 10 in enclosed garages"
+        },
+        {
+          "value": 25,
+          "src": [
+            "SRC-004174"
+          ],
+          "note": "Preliminary application: 10 covered garage spaces and 15 uncovered"
+        }
+      ],
+      "best": 0
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 21500,
+          "src": [
+            "SRC-004174"
+          ],
+          "note": "Preliminary application floor area"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "ADUs on Lots 1 and 5 (Parcels A and E), 504 sq ft each, for very low- and low-income households; preliminary application says ADUs to be deed restricted as low-income rentals",
+          "src": [
+            "SRC-004173",
+            "SRC-001598",
+            "SRC-004174"
+          ]
         }
       ]
     }
@@ -210,9 +278,68 @@
       "src": [
         "SRC-001598"
       ]
+    },
+    {
+      "text": "Planning Commission agenda 2025-08-13 (Resolution 25-012): subdivide a 1.6-acre parcel into five lots of 11,301 to 22,780 sq ft, each with a two-story home of 4,203 to 4,656 sq ft; Lots 1 and 5 add 504 sq ft detached ADUs. Five existing homes on the site are to be removed. Zoned R-1-20,000, General Plan Residential Low Density. Staff recommended removal of 31 protected trees (description says 32). City project page gives home sizes of 4,156 to 4,656 sq ft.",
+      "src": [
+        "SRC-004173",
+        "SRC-001598"
+      ]
+    },
+    {
+      "text": "Preliminary application (dated 2024-01-03) states the project is processed under the builder's remedy, Gov. Code 65589.5(d)(5), with the applicant reserving rights under the Density Bonus Law.",
+      "src": [
+        "SRC-004174"
+      ]
+    },
+    {
+      "text": "City found the project CEQA-exempt (Class 32 infill); FirstCarbon Solutions prepared the exemption memo and Michael Baker International peer reviewed it.",
+      "src": [
+        "SRC-001598"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Jura Ventures, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004175"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jura Ventures, LLC",
+      "contact": "Michael Steele",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004174",
+        "SRC-004173"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Reuben, Junius & Rose, LLP",
+      "contact": "Matthew Visick",
+      "linkedin": null,
+      "other_role": "Agent / land use counsel",
+      "src": [
+        "SRC-004174"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Hanna-Brunetti",
+      "contact": "Amanda Musy-Verdel",
+      "linkedin": null,
+      "src": [
+        "SRC-004174"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -223,6 +350,33 @@
       "src": [
         "SRC-001157"
       ]
+    },
+    {
+      "date": "2024-06-03",
+      "type": "Application filed",
+      "label": "Formal application received",
+      "src": [
+        "SRC-001598"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-09",
+      "type": "Other",
+      "label": "Submittal complete for processing",
+      "src": [
+        "SRC-001598"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-12",
+      "type": "Other",
+      "label": "Inconsistency letter sent",
+      "src": [
+        "SRC-001598"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-08-13",
@@ -244,6 +398,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 13845 Saratoga Ave / Jura Ventures: city page, land-sale listings, Real Deal headline on a Saratoga site sale to Lennar/TPG",
+      "src": [
+        "SRC-001598"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API: APN 393-45-016 at 13845 Saratoga Av; no owner field. Formal application names owner Jura Ventures, LLC.",
+      "src": [
+        "SRC-001098",
+        "SRC-004175"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Saratoga project page, preliminary and formal applications, PC agenda 2025-08-13",
+      "src": [
+        "SRC-001598",
+        "SRC-004174",
+        "SRC-004175",
+        "SRC-004173"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A 2025: SFD row (5 units, submitted 2024-01-04) and ADU row (2 low-income units, submitted 2025-01-04), both approved",
+      "src": [
+        "SRC-001157"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news on this site",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "The Real Deal 2026-07-06 article on a Saratoga development site sold to Lennar and TPG returned 403; LoopNet listing also returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Jura Ventures, LLC has no website found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in the applications or agenda; site plan PDF has no readable title block",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts",
+      "src": []
+    }
+  }
 }
