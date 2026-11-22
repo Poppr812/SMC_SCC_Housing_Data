@@ -1,6 +1,6 @@
 {
   "id": "SMC-000099",
-  "name": "200 S. Fremont Street (abandoned)",
+  "name": "Fremont Terrace, 200 S. Fremont Street (abandoned)",
   "parcels": [
     {
       "apn": "033-163-160",
@@ -67,7 +67,8 @@
         {
           "value": "Apartments",
           "src": [
-            "SRC-001096"
+            "SRC-001096",
+            "SRC-001109"
           ],
           "note": "City lists it as multi-family; tenure not stated"
         }
@@ -102,6 +103,61 @@
           "src": [
             "SRC-001003"
           ]
+        },
+        {
+          "value": "BD-2018-269636 (building permit)",
+          "src": [
+            "SRC-001109"
+          ]
+        }
+      ]
+    },
+    "total_units": {
+      "claims": [
+        {
+          "value": 15,
+          "src": [
+            "SRC-001109"
+          ],
+          "note": "State report 2021: building permits issued for 15 units (tracking ID BD-2018-269636)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 13,
+          "src": [
+            "SRC-001109"
+          ],
+          "note": "State report 2021, permit stage: 13 above-moderate units"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 120
+            }
+          ],
+          "src": [
+            "SRC-001109"
+          ],
+          "note": "State report 2021, permit stage: 2 deed-restricted moderate-income units (AMI is the category's upper limit); restriction type listed as inclusionary"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001109"
+          ],
+          "note": "2 of 15 permitted units deed-restricted (inclusionary)"
         }
       ]
     }
@@ -127,12 +183,106 @@
   ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2021-06-30",
+      "type": "Permit issued",
+      "label": "Building permit issued for 15 units (BD-2018-269636)",
+      "src": [
+        "SRC-001109"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web searches on 200/210 S. Fremont, Fremont Terrace, PA-2015-048 and PA-2021-073 returned the city page and listing sites only",
+      "src": [
+        "SRC-001096"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC Active Parcels APN 033-163-160: situs 200 S Fremont St, owner Builders Capital Finance LLC (already on record)",
+      "src": [
+        "SRC-001097"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "City project page and Current Development Projects list: abandoned, approvals expired, owner Builders Capital, PA-2021-073/PA-2015-048; no unit count or documents posted. City does not use the Legistar API",
+      "src": [
+        "SRC-001096",
+        "SRC-001003"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2, San Mateo 2021: Fremont Terrace, 15 units permitted 2021-06-30, 2 moderate deed-restricted, 13 above moderate, renter",
+      "src": [
+        "SRC-001109"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles on the site (code compliance on South Fremont parcels; 15-unit condo plan at 210 Fremont) returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No SF YIMBY, Real Deal or Bisnow coverage found for the address",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer site found for the prior developer; no public source opened names it",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any source opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Builders Capital Finance LLC is the owner of record; no loan or foreclosure filing found in public sources opened",
+      "src": [
+        "SRC-001097"
+      ]
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

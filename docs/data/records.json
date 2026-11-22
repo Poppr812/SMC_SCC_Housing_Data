@@ -43149,6 +43149,66 @@
    "wayback": null,
    "copyright": true,
    "sha256": null
+  },
+  "SRC-004266": {
+   "id": "SRC-004266",
+   "title": "Sobrato, Redwood City School District Propose 108-Unit Workforce Housing and Office Project",
+   "publisher": "The Registry SF",
+   "date": "2025-04-09",
+   "type": "Trade publication",
+   "url": "https://news.theregistrysf.com/sobrato-redwood-city-school-district-propose-108-unit-workforce-housing-and-office-project/",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004267": {
+   "id": "SRC-004267",
+   "title": "In Partnership",
+   "publisher": "Walking Redwood City (local blog)",
+   "date": "2021-07-09",
+   "type": "News article",
+   "url": "https://walkingredwoodcity.com/2021/07/09/in-partnership/",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004268": {
+   "id": "SRC-004268",
+   "title": "Active Parcels, APN 052-373-040",
+   "publisher": "San Mateo County GIS",
+   "date": "2026-11-21",
+   "type": "Government dataset",
+   "url": "https://gis.smcgov.org/maps/rest/services/Common/ACTIVE_PARCELS_APN/MapServer/0/query?where=APN%3D%27052373040%27&outFields=*&f=html",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004269": {
+   "id": "SRC-004269",
+   "title": "Active Parcels, APN 052-373-120",
+   "publisher": "San Mateo County GIS",
+   "date": "2026-11-21",
+   "type": "Government dataset",
+   "url": "https://gis.smcgov.org/maps/rest/services/Common/ACTIVE_PARCELS_APN/MapServer/0/query?where=APN%3D%27052373120%27&outFields=*&f=html",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004270": {
+   "id": "SRC-004270",
+   "title": "Eight-Story Condos Headed for Redwood City",
+   "publisher": "Bisnow",
+   "date": "2015-09-21",
+   "type": "Trade publication",
+   "url": "https://www.bisnow.com/news/san-francisco/mixed-use/eight-story-mixed-use-project-proposed-for-downtown-redwood-city-50223",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -473978,7 +474038,7 @@
   },
   {
    "id": "SMC-000099",
-   "name": "200 S. Fremont Street (abandoned)",
+   "name": "Fremont Terrace, 200 S. Fremont Street (abandoned)",
    "parcels": [
     {
      "apn": "033-163-160",
@@ -474045,7 +474105,8 @@
       {
        "value": "Apartments",
        "src": [
-        "SRC-001096"
+        "SRC-001096",
+        "SRC-001109"
        ],
        "note": "City lists it as multi-family; tenure not stated"
       }
@@ -474080,6 +474141,61 @@
        "src": [
         "SRC-001003"
        ]
+      },
+      {
+       "value": "BD-2018-269636 (building permit)",
+       "src": [
+        "SRC-001109"
+       ]
+      }
+     ]
+    },
+    "total_units": {
+     "claims": [
+      {
+       "value": 15,
+       "src": [
+        "SRC-001109"
+       ],
+       "note": "State report 2021: building permits issued for 15 units (tracking ID BD-2018-269636)"
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 13,
+       "src": [
+        "SRC-001109"
+       ],
+       "note": "State report 2021, permit stage: 13 above-moderate units"
+      }
+     ]
+    },
+    "restricted_by_ami": {
+     "claims": [
+      {
+       "value": [
+        {
+         "count": 2,
+         "ami": 120
+        }
+       ],
+       "src": [
+        "SRC-001109"
+       ],
+       "note": "State report 2021, permit stage: 2 deed-restricted moderate-income units (AMI is the category's upper limit); restriction type listed as inclusionary"
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Mixed-income",
+       "src": [
+        "SRC-001109"
+       ],
+       "note": "2 of 15 permitted units deed-restricted (inclusionary)"
       }
      ]
     }
@@ -474105,18 +474221,113 @@
    ],
    "financing": [],
    "groups": {},
-   "events": [],
+   "events": [
+    {
+     "date": "2021-06-30",
+     "type": "Permit issued",
+     "label": "Building permit issued for 15 units (BD-2018-269636)",
+     "src": [
+      "SRC-001109"
+     ],
+     "estimated": false
+    }
+   ],
    "history": [
     {
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "Web searches on 200/210 S. Fremont, Fremont Terrace, PA-2015-048 and PA-2021-073 returned the city page and listing sites only",
+     "src": [
+      "SRC-001096"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SMC Active Parcels APN 033-163-160: situs 200 S Fremont St, owner Builders Capital Finance LLC (already on record)",
+     "src": [
+      "SRC-001097"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "City project page and Current Development Projects list: abandoned, approvals expired, owner Builders Capital, PA-2021-073/PA-2015-048; no unit count or documents posted. City does not use the Legistar API",
+     "src": [
+      "SRC-001096",
+      "SRC-001003"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project; no county role found",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR Table A2, San Mateo 2021: Fremont Terrace, 15 units permitted 2021-06-30, 2 moderate deed-restricted, 13 above moderate, renter",
+     "src": [
+      "SRC-001109"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "blocked",
+     "note": "San Mateo Daily Journal articles on the site (code compliance on South Fremont parcels; 15-unit condo plan at 210 Fremont) returned 403",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No SF YIMBY, Real Deal or Bisnow coverage found for the address",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer site found for the prior developer; no public source opened names it",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in any source opened",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Builders Capital Finance LLC is the owner of record; no loan or foreclosure filing found in public sources opened",
+     "src": [
+      "SRC-001097"
+     ]
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search found no public LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001096": "S1",
     "SRC-001003": "S2",
-    "SRC-001097": "S3"
+    "SRC-001109": "S3",
+    "SRC-001097": "S4"
    },
    "lat": 37.5687025,
    "lng": -122.31911003333333,
@@ -474131,14 +474342,20 @@
     "community": "",
     "county": "San Mateo County",
     "area": "San Mateo",
-    "total_units": null,
-    "units_display": "",
-    "units_range": null,
-    "restricted_units": null,
-    "aff_bucket": null,
-    "aff_label": "Not stated",
-    "aff_share": null,
-    "aff_levels": [],
+    "total_units": 15,
+    "units_display": "15",
+    "units_range": [
+     15,
+     15
+    ],
+    "restricted_units": 2,
+    "aff_bucket": "Market",
+    "aff_label": "Market, with inclusionary",
+    "aff_share": 0.13333333333333333,
+    "aff_levels": [
+     "m1",
+     "m2"
+    ],
     "mix_types": [],
     "tax_credit": false,
     "owner": "Builders Capital Finance LLC",
@@ -474147,11 +474364,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "",
+    "latest_event": "2021-06-30",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "200 s. fremont street (abandoned) san mateo 033-163-160 200 s fremont st, san mateo, ca 200 s. fremont st, san mateo, ca apartments city lists it as multi-family; tenure not stated inactive pipeline city: incomplete; all approvals and entitlements expired; considered abandoned san mateo pa-2021-073 / pa-2015-048 previous development on the site is incomplete; city names builders capital as the new owner recorded owner builders capital finance llc"
+   "search": "fremont terrace, 200 s. fremont street (abandoned) san mateo 033-163-160 200 s fremont st, san mateo, ca 200 s. fremont st, san mateo, ca apartments city lists it as multi-family; tenure not stated inactive pipeline city: incomplete; all approvals and entitlements expired; considered abandoned san mateo pa-2021-073 / pa-2015-048 bd-2018-269636 (building permit) 15 state report 2021: building permits issued for 15 units (tracking id bd-2018-269636) 13 state report 2021, permit stage: 13 above-moderate units [{\"count\": 2, \"ami\": 120}] state report 2021, permit stage: 2 deed-restricted moderate-income units (ami is the category's upper limit); restriction type listed as inclusionary mixed-income 2 of 15 permitted units deed-restricted (inclusionary) previous development on the site is incomplete; city names builders capital as the new owner recorded owner builders capital finance llc building permit issued for 15 units (bd-2018-269636)"
   },
   {
    "id": "SMC-000100",
@@ -568587,6 +568804,60 @@
        37.4885466
       ]
      ]
+    },
+    {
+     "apn": "052-373-120",
+     "from": null,
+     "to": null,
+     "src": [
+      "SRC-001103"
+     ],
+     "outline": [
+      [
+       -122.226931,
+       37.4885849
+      ],
+      [
+       -122.226931,
+       37.4885844
+      ],
+      [
+       -122.2269219,
+       37.4884683
+      ],
+      [
+       -122.2269129,
+       37.4883523
+      ],
+      [
+       -122.2269022,
+       37.4882153
+      ],
+      [
+       -122.2268995,
+       37.4881795
+      ],
+      [
+       -122.2276388,
+       37.4881425
+      ],
+      [
+       -122.2276489,
+       37.4882724
+      ],
+      [
+       -122.2276675,
+       37.4885466
+      ],
+      [
+       -122.2276677,
+       37.4885484
+      ],
+      [
+       -122.226931,
+       37.4885849
+      ]
+     ]
     }
    ],
    "addresses": [
@@ -568624,7 +568895,8 @@
       {
        "value": "Proposed",
        "src": [
-        "SRC-001909"
+        "SRC-001909",
+        "SRC-001117"
        ],
        "note": "Updated plans filed as of Sept. 2025"
       }
@@ -568648,6 +568920,13 @@
         "SRC-001909"
        ],
        "note": "Apartment building"
+      },
+      {
+       "value": 7,
+       "src": [
+        "SRC-004267"
+       ],
+       "note": "2021 submission: both buildings seven stories; residential building 82 ft"
       }
      ]
     },
@@ -568669,6 +568948,20 @@
         "SRC-001909"
        ],
        "note": "Office, including about 20,500 sq ft for the school district"
+      },
+      {
+       "value": 165524,
+       "src": [
+        "SRC-004266"
+       ],
+       "note": "Registry April 2025: office area"
+      },
+      {
+       "value": 166000,
+       "src": [
+        "SRC-004267"
+       ],
+       "note": "2021 submission: about 166,000 sq ft office"
       }
      ]
     },
@@ -568679,6 +568972,13 @@
        "src": [
         "SRC-001909"
        ]
+      },
+      {
+       "value": 263,
+       "src": [
+        "SRC-004267"
+       ],
+       "note": "2021 submission: 263 vehicle spaces, 60 bicycle spaces"
       }
      ]
     },
@@ -568688,6 +568988,110 @@
        "value": 1.25,
        "src": [
         "SRC-001909"
+       ]
+      }
+     ]
+    },
+    "total_units": {
+     "claims": [
+      {
+       "value": 108,
+       "src": [
+        "SRC-001117",
+        "SRC-004266"
+       ],
+       "note": "State report 2025, application submitted 2025-01-10 (AP2021-025); Registry April 2025 headline"
+      },
+      {
+       "value": 87,
+       "src": [
+        "SRC-004267"
+       ],
+       "note": "2021 submission as described by Walking Redwood City: 87 workforce units"
+      }
+     ],
+     "best": 0
+    },
+    "restricted_by_ami": {
+     "claims": [
+      {
+       "value": [
+        {
+         "count": 6,
+         "ami": 50
+        },
+        {
+         "count": 5,
+         "ami": 80
+        },
+        {
+         "count": 37,
+         "ami": 120
+        }
+       ],
+       "src": [
+        "SRC-001117"
+       ],
+       "note": "State report 2025, application stage: deed-restricted units by state income category (AMI is the category's upper limit)"
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 60,
+       "src": [
+        "SRC-001117"
+       ],
+       "note": "State report 2025, application stage: 60 above-moderate units"
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Mixed-income",
+       "src": [
+        "SRC-001117"
+       ],
+       "note": "48 of 108 proposed units deed-restricted"
+      }
+     ]
+    },
+    "population": {
+     "claims": [
+      {
+       "value": [
+        "Workforce / educator"
+       ],
+       "src": [
+        "SRC-004266",
+        "SRC-004267"
+       ],
+       "note": "Described as workforce housing for school district teachers and staff"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary",
+        "Density bonus"
+       ],
+       "src": [
+        "SRC-001117"
+       ],
+       "note": "State report: project type discretionary; density bonus requested, approval listed N/A while pending"
+      }
+     ]
+    },
+    "planning_file": {
+     "claims": [
+      {
+       "value": "AP2021-025",
+       "src": [
+        "SRC-001117"
        ]
       }
      ]
@@ -568704,6 +569108,32 @@
      "text": "Parcel match: county situs 603 Jefferson, owner SI 57 LLC, attn. The Sobrato Org. No parcel shows 750 Bradford, so the site may include others.",
      "src": [
       "SRC-001909"
+     ]
+    },
+    {
+     "text": "SF YIMBY names Van Meter Williams Pollack as residential architect and STUDIOS Architecture for core and shell.",
+     "src": [
+      "SRC-001909"
+     ]
+    },
+    {
+     "text": "APN 052-373-120 (no situs address, adjoining 603 Jefferson to the east) is owned by Redwood City Elem School Dist; the state report lists 750 Bradford under APN 52373120. APN 052-373-040 (603 Jefferson) is owned by SI 57 LLC, attn. The Sobrato Org LLC.",
+     "src": [
+      "SRC-004269",
+      "SRC-004268",
+      "SRC-001117"
+     ]
+    },
+    {
+     "text": "2021 submission as described: two seven-story buildings on a shared podium; units from studios to three bedrooms, 62 one- or two-bedroom and 6 three-bedroom; 574 spaces required, in-lieu fee proposed for 311.",
+     "src": [
+      "SRC-004267"
+     ]
+    },
+    {
+     "text": "Earlier proposal on 603 Jefferson (2015): Pauls Corp proposed an eight-story building with 92 condos and about 4,500 sq ft of ground-floor retail, designed by BDE Architecture.",
+     "src": [
+      "SRC-004270"
      ]
     }
    ],
@@ -568727,11 +569157,57 @@
      "src": [
       "SRC-001909"
      ]
+    },
+    {
+     "role": "Recorded owner",
+     "company": "SI 57 LLC",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004268"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Van Meter Williams Pollack",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001909"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "STUDIOS Architecture",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001909"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
-   "events": [],
+   "events": [
+    {
+     "date": "2021-06",
+     "type": "Application filed",
+     "label": "Initial submission to the city via the Gatekeeper process (87 units, 166,000 sq ft office)",
+     "src": [
+      "SRC-004267"
+     ],
+     "estimated": true
+    },
+    {
+     "date": "2025-01-10",
+     "type": "Application filed",
+     "label": "Application submitted, 108 units (AP2021-025)",
+     "src": [
+      "SRC-001117"
+     ],
+     "estimated": false
+    }
+   ],
    "history": [
     {
      "date": "2026-11-03",
@@ -568742,14 +569218,109 @@
      "date": "2026-11-17",
      "by": "Paul via Claude",
      "action": "Linked developer website / project page"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web searches on 603 Jefferson, 750 Bradford, Sobrato and RCSD found the Registry 2025 article and the 2021 Walking Redwood City post",
+     "src": [
+      "SRC-004266",
+      "SRC-004267"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "SMC Active Parcels block 052-373: 040 = 603 Jefferson, SI 57 LLC attn. Sobrato; 120 = no situs, Redwood City Elem School Dist, adjoining to the east",
+     "src": [
+      "SRC-004268",
+      "SRC-004269"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "blocked",
+     "note": "redwoodcity.org development projects page returned 403; city has no Legistar API client",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project; no county role found",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR Table A, Redwood City 2025: 750 Bradford, APN 52373120, AP2021-025, submitted 2025-01-10, 108 units (6 VLI, 5 LI, 37 mod, 60 above mod), density bonus, pending. CEQAnet search found no record",
+     "src": [
+      "SRC-001117"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "blocked",
+     "note": "San Mateo Daily Journal 2020 article and Local News Matters article returned 403; Walking Redwood City 2021 post opened; RWC Pulse result was a different Sobrato project",
+     "src": [
+      "SRC-004267"
+     ]
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Registry 2025-04-09 (paywalled, opening paragraph only): 108 units, 165,524 sq ft office; Bisnow 2015 on earlier Pauls Corp proposal; SF YIMBY 2025 already cited",
+     "src": [
+      "SRC-004266",
+      "SRC-004270",
+      "SRC-001909"
+     ]
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Search of sobrato.com found no project page for this site",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Architects from SF YIMBY: Van Meter Williams Pollack (residential), STUDIOS Architecture (core and shell); vmwp.com Redwood City tag has no page for this project",
+     "src": [
+      "SRC-001909"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender, equity or public funding found; Registry teaser and APR give none",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search found no public LinkedIn posts on the project",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001909": "S1",
-    "SRC-001103": "S2"
+    "SRC-001117": "S2",
+    "SRC-004266": "S3",
+    "SRC-004267": "S4",
+    "SRC-004269": "S5",
+    "SRC-004268": "S6",
+    "SRC-004270": "S7",
+    "SRC-001103": "S8"
    },
-   "lat": 37.488324157142856,
-   "lng": -122.22782924285714,
+   "lat": 37.48836257058824,
+   "lng": -122.22746624117647,
    "calcs": {},
    "kinds": [
     "pipeline"
@@ -568761,27 +569332,35 @@
     "community": "",
     "county": "San Mateo County",
     "area": "Redwood City",
-    "total_units": null,
-    "units_display": "",
-    "units_range": null,
-    "restricted_units": null,
-    "aff_bucket": null,
-    "aff_label": "Not stated",
-    "aff_share": null,
-    "aff_levels": [],
+    "total_units": 108,
+    "units_display": "108",
+    "units_range": [
+     108,
+     108
+    ],
+    "restricted_units": 48,
+    "aff_bucket": "Affordable",
+    "aff_label": "Affordable, 44%",
+    "aff_share": 0.4444444444444444,
+    "aff_levels": [
+     "vl",
+     "lo",
+     "m1",
+     "m2"
+    ],
     "mix_types": [],
     "tax_credit": false,
-    "owner": "Redwood City School District",
+    "owner": "Redwood City School District; SI 57 LLC",
     "developer": "",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "",
+    "latest_event": "2025-01-10",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "603 jefferson avenue & 750 bradford street (sobrato / rcsd) redwood city 052-373-040 603 jefferson ave and 750 bradford st, redwood city, ca 603 jefferson avenue and 750 bradford street, redwood city, ca apartments apartment building alongside an office building proposed updated plans filed as of sept. 2025 redwood city 10 apartment building 140090 186000 office, including about 20,500 sq ft for the school district 236 1.25 unit count not recorded: a first pass noted 108 units, but no source that could be opened states one. the city's project record (id 69, bradford / rcsd) came back empty. parcel match: county situs 603 jefferson, owner si 57 llc, attn. the sobrato org. no parcel shows 750 bradford, so the site may include others. other project sponsor the sobrato organization recorded owner redwood city school district"
+   "search": "603 jefferson avenue & 750 bradford street (sobrato / rcsd) redwood city 052-373-040 052-373-120 603 jefferson ave and 750 bradford st, redwood city, ca 603 jefferson avenue and 750 bradford street, redwood city, ca apartments apartment building alongside an office building proposed updated plans filed as of sept. 2025 redwood city 10 apartment building 7 2021 submission: both buildings seven stories; residential building 82 ft 140090 186000 office, including about 20,500 sq ft for the school district 165524 registry april 2025: office area 166000 2021 submission: about 166,000 sq ft office 236 263 2021 submission: 263 vehicle spaces, 60 bicycle spaces 1.25 108 state report 2025, application submitted 2025-01-10 (ap2021-025); registry april 2025 headline 87 2021 submission as described by walking redwood city: 87 workforce units [{\"count\": 6, \"ami\": 50}, {\"count\": 5, \"ami\": 80}, {\"count\": 37, \"ami\": 120}] state report 2025, application stage: deed-restricted units by state income category (ami is the category's upper limit) 60 state report 2025, application stage: 60 above-moderate units mixed-income 48 of 108 proposed units deed-restricted [\"workforce / educator\"] described as workforce housing for school district teachers and staff [\"discretionary\", \"density bonus\"] state report: project type discretionary; density bonus requested, approval listed n/a while pending ap2021-025 unit count not recorded: a first pass noted 108 units, but no source that could be opened states one. the city's project record (id 69, bradford / rcsd) came back empty. parcel match: county situs 603 jefferson, owner si 57 llc, attn. the sobrato org. no parcel shows 750 bradford, so the site may include others. sf yimby names van meter williams pollack as residential architect and studios architecture for core and shell. apn 052-373-120 (no situs address, adjoining 603 jefferson to the east) is owned by redwood city elem school dist; the state report lists 750 bradford under apn 52373120. apn 052-373-040 (603 jefferson) is owned by si 57 llc, attn. the sobrato org llc. 2021 submission as described: two seven-story buildings on a shared podium; units from studios to three bedrooms, 62 one- or two-bedroom and 6 three-bedroom; 574 spaces required, in-lieu fee proposed for 311. earlier proposal on 603 jefferson (2015): pauls corp proposed an eight-story building with 92 condos and about 4,500 sq ft of ground-floor retail, designed by bde architecture. other project sponsor the sobrato organization recorded owner redwood city school district recorded owner si 57 llc architect van meter williams pollack architect studios architecture initial submission to the city via the gatekeeper process (87 units, 166,000 sq ft office) application submitted, 108 units (ap2021-025)"
   },
   {
    "id": "SMC-000270",
