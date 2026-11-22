@@ -119,8 +119,17 @@
             "SRC-001148"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-004143",
+            "SRC-001148"
+          ],
+          "note": "Surfrider reports the Coastal Commission denied the proposal 6-5 on 2020-06-10. State report 2022 row: project denied by the Coastal Commission, city unable to issue building permit. State report 2023 and 2024 rows say 'permit ready to be issued'."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -153,6 +162,13 @@
             "SRC-001148"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "CDP-395-18; RESO 2019-016; Coastal Commission appeal A-2-PAC-19-0160",
+          "src": [
+            "SRC-004144",
+            "SRC-001148"
+          ]
         }
       ]
     },
@@ -166,6 +182,65 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.447,
+          "src": [
+            "SRC-004144"
+          ],
+          "note": "19,476 sq ft vacant parcel"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 14028,
+          "src": [
+            "SRC-004144"
+          ],
+          "note": "Living area: 6,779 sq ft (four-unit building) plus 7,249 sq ft (three-unit building), excluding garages"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 15,
+          "src": [
+            "SRC-004144"
+          ],
+          "note": "Two per unit plus one guest space"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004144"
+          ],
+          "note": "One two-story, 24.5 ft building and one three-story, about 35 ft building"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "2br": 1,
+            "3br": 3,
+            "4br+": 3
+          },
+          "src": [
+            "SRC-004144"
+          ],
+          "note": "One 2-bedroom, three 3-bedroom, two 4-bedroom and one 5-bedroom unit"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -173,6 +248,25 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001136",
+        "SRC-001148"
+      ]
+    },
+    {
+      "text": "Coastal Commission staff report: two buildings, a four-unit building facing Beach Blvd and a three-unit building inland, on a vacant parcel. Appellants were GRG/Pacific Ventures, Ltd. and Nicholas Langhoff. Staff recommended substantial issue and approval with a 105-foot coastal hazard setback, which it expected to cut the project to about 3 to 4 units. The report lists the APN as 016-011-019.",
+      "src": [
+        "SRC-004144"
+      ]
+    },
+    {
+      "text": "Coastal Commission staff report: a prior nine-unit condominium project on this parcel (CDP A-2-PAC-07-022, Pacific Beach LLC/Weng) was approved by the Commission in 2008; its city permits expired October 2016 and its Commission CDP expired March 2017, after which the owner sold the site to the current applicant.",
+      "src": [
+        "SRC-004144"
+      ]
+    },
+    {
+      "text": "Surfrider Foundation reports the Coastal Commission denied the entire proposal in a 6-5 vote on 2020-06-10. The state report's 2022 row says the project was denied by the Coastal Commission and the city could not issue a building permit; its 2023 and 2024 rows say 'permit ready to be issued'.",
+      "src": [
+        "SRC-004143",
         "SRC-001148"
       ]
     }
@@ -185,6 +279,15 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Phoenix Capital LXV LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004144"
       ]
     }
   ],
@@ -206,6 +309,38 @@
       "src": [
         "SRC-001148"
       ]
+    },
+    {
+      "date": "2019-05-16",
+      "type": "Other",
+      "label": "Planning Commission approval appealed to City Council",
+      "src": [
+        "SRC-004144"
+      ]
+    },
+    {
+      "date": "2019-06-24",
+      "type": "Approved",
+      "label": "City Council denied appeal and approved CDP-395-18",
+      "src": [
+        "SRC-004144"
+      ]
+    },
+    {
+      "date": "2019-07-29",
+      "type": "Other",
+      "label": "Appeal to the Coastal Commission filed",
+      "src": [
+        "SRC-004144"
+      ]
+    },
+    {
+      "date": "2020-06-10",
+      "type": "Other",
+      "label": "Coastal Commission denied the project (6-5, per Surfrider)",
+      "src": [
+        "SRC-004143"
+      ]
     }
   ],
   "history": [
@@ -213,6 +348,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 1567 Beach Blvd and file 2018-006; led to Coastal Commission W10a June 2020 documents",
+      "src": [
+        "SRC-004144"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer owner already on record (Pacific Beach Group LLC)",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "cityofpacifica.org PC minutes document returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated Pacifica project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Coastal Commission staff report A-2-PAC-19-0160; state APR Table A2 rows 2019-2024 incl. 2022 note on Commission denial",
+      "src": [
+        "SRC-004144",
+        "SRC-001148"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Surfrider Foundation campaign page 2020-06-10 on the Commission vote; no local news article found",
+      "src": [
+        "SRC-004143"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Only LoopNet/estately land listings; no trade press",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for Phoenix Capital LXV LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Architect not named in the staff report pages read",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No LinkedIn results for the project or applicant",
+      "src": []
+    }
+  }
 }

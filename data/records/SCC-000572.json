@@ -291,6 +291,13 @@
           "src": [
             "SRC-001577"
           ]
+        },
+        {
+          "value": 5.09,
+          "src": [
+            "SRC-004142"
+          ],
+          "note": "Acreage in the Notice of Preparation"
         }
       ]
     },
@@ -305,6 +312,74 @@
           ]
         }
       ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001577"
+          ],
+          "note": "City page: the duplex is designated for low-income households"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 2,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001577"
+          ],
+          "note": "City page: the two-unit duplex is for low-income households (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001577"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 20,
+          "src": [
+            "SRC-001577"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001577"
+          ],
+          "note": "Single-family homes are three-story split-levels; the duplex is two stories"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Two-unit duplex designated for low-income households; five market-rate single-family homes",
+          "src": [
+            "SRC-001577"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -313,17 +388,182 @@
       "src": [
         "SRC-001577"
       ]
+    },
+    {
+      "text": "City page: single-family homes about 5,608 to 5,819 sq ft, up to 35 ft tall; duplex about 4,428 sq ft. Private court driveway for the homes and a separate driveway for the duplex off Mt. Eden Rd. City page lists the planner as Kyle Rathbone, Associate Planner.",
+      "src": [
+        "SRC-001577"
+      ]
+    },
+    {
+      "text": "Notice of Preparation: demolish existing structures, subdivide into six lots with a private cul-de-sac and a drainage basin at the southern corner; rooftop solar on each unit; tallest home about 37 ft. Processed under SB 330 and the Housing Accountability Act builder's remedy. Applicant address 500 East Calaveras Blvd #218, Milpitas.",
+      "src": [
+        "SRC-004142"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Balanced Success, Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant / owner",
+      "src": [
+        "SRC-004142"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "David J. Powers & Associates",
+      "contact": "Patrick Kallas, Project Manager",
+      "linkedin": null,
+      "email": "pkallas@davidjpowers.com",
+      "phone": "(408) 454-3432",
+      "other_role": "EIR consultant",
+      "src": [
+        "SRC-004142"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2024-03-11",
+      "type": "Application filed",
+      "label": "Preliminary application received",
+      "src": [
+        "SRC-001577"
+      ]
+    },
+    {
+      "date": "2024-07-29",
+      "type": "Application filed",
+      "label": "Formal application received",
+      "src": [
+        "SRC-001577"
+      ]
+    },
+    {
+      "date": "2024-12-23",
+      "type": "Other",
+      "label": "Application deemed complete for processing",
+      "src": [
+        "SRC-001577"
+      ]
+    },
+    {
+      "date": "2025-02-05",
+      "type": "Other",
+      "label": "City sent inconsistency letter",
+      "src": [
+        "SRC-001577"
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "type": "Other",
+      "label": "Notice of Preparation of a Draft EIR filed (SCH 2026010218)",
+      "src": [
+        "SRC-004142"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "type": "Other",
+      "label": "EIR scoping meeting",
+      "src": [
+        "SRC-001577"
+      ]
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and builder's remedy; led to CEQAnet NOP and city page",
+      "src": [
+        "SRC-004142"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API for APN 50380003: situs 22200 Mt Eden Rd, Saratoga; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "City of Saratoga project page 621: timeline, unit sizes, parking, affordable duplex, EIR schedule",
+      "src": [
+        "SRC-001577"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated Saratoga project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2026010218 NOP: applicant, acreage, lots, consultant",
+      "src": [
+        "SRC-004142"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched local news for Mt. Eden Road builder's remedy; no article on this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "The Real Deal 2024-07-16 article on Saratoga builder's remedy filings returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for Balanced Success, Inc. found no company site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named on city page or CEQAnet",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder in any source found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for Balanced Success, Inc. returned no LinkedIn results",
+      "src": []
+    }
+  }
 }

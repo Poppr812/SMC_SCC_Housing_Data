@@ -1,6 +1,6 @@
 {
   "id": "SMC-000207",
-  "name": "Priory",
+  "name": "Woodside Priory Staff Housing",
   "parcels": [
     {
       "apn": "079-053-320",
@@ -146,8 +146,16 @@
             "SRC-001155"
           ],
           "note": "State report shows certificates of occupancy for some of the units, not all"
+        },
+        {
+          "value": "Existing",
+          "src": [
+            "SRC-004145"
+          ],
+          "note": "Construction completed October 2021; residents moved in November 1, 2021"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -172,7 +180,9 @@
         {
           "value": 6,
           "src": [
-            "SRC-001154"
+            "SRC-001154",
+            "SRC-004145",
+            "SRC-004146"
           ],
           "note": "Units in the application as reported"
         }
@@ -194,6 +204,12 @@
           "value": "1 deed-restricted units reported to the state",
           "src": [
             "SRC-001155"
+          ]
+        },
+        {
+          "value": "Faculty and staff housing offered at a reduced rate; helps satisfy Portola Valley's affordable housing requirement",
+          "src": [
+            "SRC-004145"
           ]
         }
       ]
@@ -225,6 +241,43 @@
           "note": "State report 2020, building permit stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "2br": 2,
+            "3br": 4
+          },
+          "src": [
+            "SRC-004145",
+            "SRC-004146"
+          ]
+        }
+      ]
+    },
+    "total_development_cost": {
+      "claims": [
+        {
+          "value": 6000000,
+          "src": [
+            "SRC-004145"
+          ],
+          "note": "Reported as about $6 million"
+        }
+      ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Workforce / educator"
+          ],
+          "src": [
+            "SRC-004145"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -240,6 +293,12 @@
       "src": [
         "SRC-001154",
         "SRC-001155"
+      ]
+    },
+    {
+      "text": "The Almanac: six homes at the top of Gambetta Lane on the campus; four 3-bed/3-bath and two 2-bed/2-bath. Faculty and staff apply and a housing committee including the monks reviews applications. The project brings on-campus housing to 23 units; the school's conditional use permit calls for 30.",
+      "src": [
+        "SRC-004145"
       ]
     }
   ],
@@ -260,6 +319,28 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Woodside Priory School",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004145"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "MBH Architects",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.mbharch.com",
+      "website_basis": "opened",
+      "project_page": "https://www.mbharch.com/post/project-profile-woodside-priory",
+      "project_page_basis": "opened",
+      "src": [
+        "SRC-004146"
       ]
     }
   ],
@@ -291,11 +372,35 @@
       ]
     },
     {
+      "date": "2020-07",
+      "type": "Construction start",
+      "label": "Construction began",
+      "src": [
+        "SRC-004145"
+      ]
+    },
+    {
       "date": "2021-07-23",
       "type": "Other",
       "label": "Certificate of occupancy reported for some units",
       "src": [
         "SRC-001155"
+      ]
+    },
+    {
+      "date": "2021-10",
+      "type": "Completion",
+      "label": "Construction completed",
+      "src": [
+        "SRC-004145"
+      ]
+    },
+    {
+      "date": "2021-11-01",
+      "type": "Other",
+      "label": "Residents moved in",
+      "src": [
+        "SRC-004145"
       ]
     }
   ],
@@ -309,6 +414,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels narrowed to the record's main address; other addresses moved to a note"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on Woodside Priory staff housing at 302 Portola Rd",
+      "src": [
+        "SRC-004145"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer owners already on record",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "portolavalley.net ASCC staff report (Sept 9, 2019, PLN_ARCH 8-2019) and Woodside Priory project page returned 403",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated Portola Valley project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR rows already on record",
+      "src": [
+        "SRC-001155"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "The Almanac 2021-11-09 completion article",
+      "src": [
+        "SRC-004145"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Architect Magazine/Archello listings only; contractor listing on thebluebook.com returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No project page found on the school's site via search",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MBH Architects project profile",
+      "src": [
+        "SRC-004146"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No LinkedIn results surfaced in search",
+      "src": []
+    }
+  }
 }
