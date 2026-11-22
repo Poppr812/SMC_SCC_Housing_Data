@@ -42597,6 +42597,66 @@
    "wayback": null,
    "copyright": false,
    "sha256": null
+  },
+  "SRC-004220": {
+   "id": "SRC-004220",
+   "title": "616 Maple Avenue (P23-0086: SA26-0001), Notice of Exemption (SCH 2026040983)",
+   "publisher": "CEQAnet, State of California",
+   "date": "2026-04-21",
+   "type": "Government dataset",
+   "url": "https://ceqanet.lci.ca.gov/2026040983",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004221": {
+   "id": "SRC-004221",
+   "title": "198 Easy Street Residential Rowhouse Development, City Council staff report, January 28, 2025",
+   "publisher": "City of Mountain View",
+   "date": "2025-01-28",
+   "type": "Government document",
+   "url": "https://legistar1.granicus.com/mountainview/attachments/4ea47f75-6811-4da9-ae41-0650efb77c24.pdf",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004222": {
+   "id": "SRC-004222",
+   "title": "Legistar matter 200970: 198 Easy Street, Phoi Phan for Phan Architects, PL-2018-087 and PL-2018-088 (Administrative Zoning Hearing, March 24, 2021)",
+   "publisher": "City of Mountain View",
+   "date": "2021-03-24",
+   "type": "Government web page",
+   "url": "https://webapi.legistar.com/v1/mountainview/matters/5432",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004223": {
+   "id": "SRC-004223",
+   "title": "Legistar matter 204449: 198 Easy Street, Phoi Phan for Phan Architects, PL-2024-018 and PL-2024-019 (Administrative Zoning Hearing, December 18, 2024)",
+   "publisher": "City of Mountain View",
+   "date": "2024-12-18",
+   "type": "Government web page",
+   "url": "https://webapi.legistar.com/v1/mountainview/matters/8866",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004224": {
+   "id": "SRC-004224",
+   "title": "Rowhouse Development at 198 Easy Street, City Council staff report, May 11, 2021",
+   "publisher": "City of Mountain View",
+   "date": "2021-05-11",
+   "type": "Government document",
+   "url": "https://legistar1.granicus.com/mountainview/attachments/256c0c38-dabd-48d6-a90b-8ff9e2ceae03.pdf",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
   }
  },
  "records": [
@@ -299747,8 +299807,16 @@
         "SRC-001110"
        ],
        "note": "State categories: SFA, SFD"
+      },
+      {
+       "value": "Single-family",
+       "src": [
+        "SRC-004221"
+       ],
+       "note": "City staff report: five detached ownership rowhouse units; the state report lists the units as SFA and SFD in different years"
       }
-     ]
+     ],
+     "best": 1
     },
     "status": {
      "claims": [
@@ -299793,6 +299861,13 @@
         "SRC-001110"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "PL-2018-087, PL-2018-088, PL-2024-018, PL-2024-019",
+       "src": [
+        "SRC-004222",
+        "SRC-004223"
+       ]
       }
      ]
     },
@@ -299806,6 +299881,75 @@
        "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.51,
+       "src": [
+        "SRC-004221"
+       ]
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "2br": 1,
+        "3br": 3,
+        "4br+": 1
+       },
+       "src": [
+        "SRC-004221"
+       ],
+       "note": "Units approx. 2,300 to 3,500 sq ft"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-004221"
+       ],
+       "note": "Units have three-story elements; Unit 5 steps down to one story with a roof deck"
+      }
+     ]
+    },
+    "parking_spaces": {
+     "claims": [
+      {
+       "value": 12,
+       "src": [
+        "SRC-004221"
+       ],
+       "note": "Two-car garage per unit (10) plus 2 guest spaces"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary"
+       ],
+       "src": [
+        "SRC-004221"
+       ]
+      }
+     ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "Fewer than seven units, so the project pays a BMR in-lieu fee instead of on-site units: $439,153 (25% x 11,869 net new habitable sq ft x $148). Park Land Dedication fee condition: $193,200.",
+       "src": [
+        "SRC-004221"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -299815,9 +299959,42 @@
       "SRC-001101",
       "SRC-001110"
      ]
+    },
+    {
+     "text": "City staff report Jan 28, 2025: Council approved a similar project on the site on May 11, 2021, which expired May 11, 2023. The 2025 proposal differs only in retaining two more Heritage trees and relocating one; it removes eight Heritage trees. Site has one existing 1-story single-family home; zoning R3-3/sd, General Plan Medium-Density Residential. Approvals: PUD Permit, Special Design Permit, Development Review Permit, Heritage Tree Removal Permit and a Vesting Tentative Map for five lots and one common lot.",
+     "src": [
+      "SRC-004221"
+     ]
+    },
+    {
+     "text": "State report 2021 Table A2 shows 4 units entitled on 2021-05-11 under PL-2018-087, with the note \"5 Rowhomes to replace 1 SFR\"; 2025 Table A2 shows 5 units entitled 2025-01-28 under PL-2024-018.",
+     "src": [
+      "SRC-001110"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Architect",
+     "company": "Phan Architects",
+     "contact": "Phoi Phan",
+     "linkedin": null,
+     "src": [
+      "SRC-004221",
+      "SRC-004223"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Phan Architects",
+     "contact": "Phoi Phan",
+     "linkedin": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-004221"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
@@ -299828,6 +300005,53 @@
      "src": [
       "SRC-001101"
      ]
+    },
+    {
+     "date": "2021-03-24",
+     "type": "Other",
+     "label": "Administrative Zoning Hearing (PL-2018-087)",
+     "src": [
+      "SRC-004222"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2021-05-11",
+     "type": "Approved",
+     "label": "City Council approved first entitlement (PL-2018-087)",
+     "src": [
+      "SRC-004221",
+      "SRC-001110"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2023-05-11",
+     "type": "Other",
+     "label": "First entitlement expired (no extension requested)",
+     "src": [
+      "SRC-004221"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2024-08-19",
+     "type": "Application filed",
+     "label": "New application submitted (PL-2024-018)",
+     "src": [
+      "SRC-001101"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2024-12-18",
+     "type": "Other",
+     "label": "Zoning Administrator and Subdivision Committee recommended approval",
+     "src": [
+      "SRC-004221",
+      "SRC-004223"
+     ],
+     "estimated": false
     },
     {
      "date": "2025-01-28",
@@ -299843,12 +300067,98 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on 198 Easy Street Mountain View rowhomes: only listing results for neighboring Easy Street addresses.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 16037005: situs 198 Easy St; the dataset carries no owner name.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Mountain View Legistar: Council 2021-05-11 (matter 200867) and 2025-01-28 (matter 204419) staff reports; ZA hearings 2021-03-24 and 2024-12-18.",
+     "src": [
+      "SRC-004221",
+      "SRC-004224",
+      "SRC-004222",
+      "SRC-004223"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Mountain View; no county role found.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR datastore SQL query: Table A rows 2018, 2021, 2024; Table A2 rows 2021 and 2025.",
+     "src": [
+      "SRC-001101",
+      "SRC-001110"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for Mountain View Voice coverage of 198 Easy Street: none found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for SF YIMBY and trade coverage of 198 Easy Street: none.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Applicant is Phoi Phan for Phan Architects; no company website found by web search.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for Phan Architects / Phoi Phan returned no firm website.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lenders or public funding found; staff report shows BMR in-lieu fee, not public financing.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search turned up no LinkedIn page for Phan Architects or posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001101": "S1",
     "SRC-001110": "S2",
-    "SRC-001098": "S3"
+    "SRC-004221": "S3",
+    "SRC-004222": "S4",
+    "SRC-004223": "S5",
+    "SRC-001098": "S6"
    },
    "lat": 37.39538002,
    "lng": -122.06778321142858,
@@ -299857,7 +300167,7 @@
     "pipeline"
    ],
    "summary": {
-    "product_type": "Mixed product",
+    "product_type": "Single-family",
     "status": "Approved",
     "jurisdiction": "Mountain View",
     "community": "",
@@ -299874,7 +300184,11 @@
     "aff_label": "Market (state report)",
     "aff_share": 0.0,
     "aff_levels": [],
-    "mix_types": [],
+    "mix_types": [
+     "2br",
+     "3br",
+     "4br+"
+    ],
     "tax_credit": false,
     "owner": "",
     "developer": "",
@@ -299886,7 +300200,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "198 easy st mountain view 160-37-005 198 easy st, mountain view, ca 198 easy street, mountain view, ca mixed product state categories: sfa, sfd approved state report shows entitlement approval mountain view 5 units reported in entitlement and permit rows pl-2018-087, pl-2024-018 local tracking number as reported to the state market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. application submitted entitlement approved"
+   "search": "198 easy st mountain view 160-37-005 198 easy st, mountain view, ca 198 easy street, mountain view, ca mixed product state categories: sfa, sfd single-family city staff report: five detached ownership rowhouse units; the state report lists the units as sfa and sfd in different years approved state report shows entitlement approval mountain view 5 units reported in entitlement and permit rows pl-2018-087, pl-2024-018 local tracking number as reported to the state pl-2018-087, pl-2018-088, pl-2024-018, pl-2024-019 market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 0.51 {\"2br\": 1, \"3br\": 3, \"4br+\": 1} units approx. 2,300 to 3,500 sq ft 3 units have three-story elements; unit 5 steps down to one story with a roof deck 12 two-car garage per unit (10) plus 2 guest spaces [\"discretionary\"] fewer than seven units, so the project pays a bmr in-lieu fee instead of on-site units: $439,153 (25% x 11,869 net new habitable sq ft x $148). park land dedication fee condition: $193,200. from the state housing element annual progress report, through 2025. city staff report jan 28, 2025: council approved a similar project on the site on may 11, 2021, which expired may 11, 2023. the 2025 proposal differs only in retaining two more heritage trees and relocating one; it removes eight heritage trees. site has one existing 1-story single-family home; zoning r3-3/sd, general plan medium-density residential. approvals: pud permit, special design permit, development review permit, heritage tree removal permit and a vesting tentative map for five lots and one common lot. state report 2021 table a2 shows 4 units entitled on 2021-05-11 under pl-2018-087, with the note \"5 rowhomes to replace 1 sfr\"; 2025 table a2 shows 5 units entitled 2025-01-28 under pl-2024-018. architect phan architects phoi phan other applicant phan architects phoi phan application submitted administrative zoning hearing (pl-2018-087) city council approved first entitlement (pl-2018-087) first entitlement expired (no extension requested) new application submitted (pl-2024-018) zoning administrator and subdivision committee recommended approval entitlement approved"
   },
   {
    "id": "SCC-000453",
@@ -300051,6 +300365,16 @@
        "note": "State report 2021, application stage: 1 deed-restricted units"
       }
      ]
+    },
+    "affordability_notes": {
+     "claims": [
+      {
+       "value": "State report 2021, application stage: 1 moderate-income deed-restricted unit and 4 moderate-income non-deed-restricted units; 5 units proposed, 1 unit reported as approved.",
+       "src": [
+        "SRC-001120"
+       ]
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -300079,8 +300403,87 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web searches on 14926 Los Gatos Blvd with planning and apartment terms: only third-party parcel pages and other Los Gatos Blvd projects.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SCC parcel API, APN 42410009: situs 14926 Los Gatos Bl, jurisdiction Los Gatos; no owner name in the dataset.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Town of Los Gatos pending planning projects page for Los Gatos Boulevard (8 projects): 14926 not listed.",
+     "src": [
+      "SRC-002904"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "Town project in Los Gatos; no county role found.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR datastore SQL query: one Table A row (2021) with moderate-income detail; no Table A2 rows.",
+     "src": [
+      "SRC-001120"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for local news on 14926 Los Gatos Blvd: none.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for trade coverage: none.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer named in any source found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in any source found.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lenders or public funding found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search turned up no LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001120": "S1",
     "SRC-001098": "S2"
@@ -300124,7 +300527,7 @@
     "stale_since": "2021-04-20",
     "part_of": ""
    },
-   "search": "14926 los gatos blvd los gatos 424-10-009 14926 los gatos blvd, los gatos, ca apartments state category 5+ units, rental tenure approved state report shows the application approved los gatos 5 units in the application as reported [{\"count\": 1, \"ami\": 120}] state report 2021, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2021, application stage: 1 deed-restricted units from the state housing element annual progress report, through 2025. application submitted"
+   "search": "14926 los gatos blvd los gatos 424-10-009 14926 los gatos blvd, los gatos, ca apartments state category 5+ units, rental tenure approved state report shows the application approved los gatos 5 units in the application as reported [{\"count\": 1, \"ami\": 120}] state report 2021, application stage: deed-restricted units by state income category (ami is the category's upper limit) mixed-income state report 2021, application stage: 1 deed-restricted units state report 2021, application stage: 1 moderate-income deed-restricted unit and 4 moderate-income non-deed-restricted units; 5 units proposed, 1 unit reported as approved. from the state housing element annual progress report, through 2025. application submitted"
   },
   {
    "id": "SCC-000454",
@@ -532781,6 +533184,12 @@
      "src": [
       "SRC-001125"
      ]
+    },
+    {
+     "text": "State Annual Progress Report data lists this application only in the 2019 report (Table A, submitted 2019-10-16, 6 above-moderate units, not filed under SB 35), with the note \"project pending\". No entitlement, permit or completion rows appear for this address in the reports through 2025.",
+     "src": [
+      "SRC-001125"
+     ]
     }
    ],
    "parties": [
@@ -532811,8 +533220,85 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on 319 Cedar Street, Millbrae with townhome/condominium and planning terms: only listing-site results for nearby addresses.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "San Mateo County active parcel layer, APN 021-302-080: owner of record LEUNG POLLY TR, ET AL & WONG TAI CHIU TR & WONG TAI CHIU & POLLY LEUNG TRUST, same as the record.",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for Millbrae planning commission items on 319 Cedar Street; Millbrae 6th cycle draft Housing Element (HCD copy, Oct 2022) text has no Cedar Street entry.",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Millbrae; no county role found.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR datastore SQL query on 319 Cedar: one Table A row (2019), no Table A2 rows.",
+     "src": [
+      "SRC-001125"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for local news (Daily Journal, Patch) on 319 Cedar Street Millbrae: no coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for trade coverage of a 6-unit Cedar Street project in Millbrae: none.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer named in any source found; owner of record is a family trust.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in any source found.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lenders or public funding found; APR row shows no deed-restricted units.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search turned up no LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001125": "S1",
     "SRC-001103": "S2"
@@ -532853,7 +533339,7 @@
     "stale_since": "2019-10-16",
     "part_of": ""
    },
-   "search": "319 cedar street millbrae 021-302-080 319 cedar st, millbrae, ca 319 cedar street, millbrae, ca condominiums state category 5+ units, for-sale tenure proposed state report shows an application with no approval reported millbrae 6 units in the application as reported market-rate state report (through 2019): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. recorded owner leung polly tr, et al & wong tai chiu tr & wong tai chiu & polly leung trust application submitted"
+   "search": "319 cedar street millbrae 021-302-080 319 cedar st, millbrae, ca 319 cedar street, millbrae, ca condominiums state category 5+ units, for-sale tenure proposed state report shows an application with no approval reported millbrae 6 units in the application as reported market-rate state report (through 2019): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. state annual progress report data lists this application only in the 2019 report (table a, submitted 2019-10-16, 6 above-moderate units, not filed under sb 35), with the note \"project pending\". no entitlement, permit or completion rows appear for this address in the reports through 2025. recorded owner leung polly tr, et al & wong tai chiu tr & wong tai chiu & polly leung trust application submitted"
   },
   {
    "id": "SMC-000215",
@@ -552650,6 +553136,28 @@
        ]
       }
      ]
+    },
+    "planning_file": {
+     "claims": [
+      {
+       "value": "AP2020-060",
+       "src": [
+        "SRC-001116"
+       ],
+       "note": "Local tracking number as reported to the state"
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Market-rate",
+       "src": [
+        "SRC-001116"
+       ],
+       "note": "State report 2023: all 6 entitled units above-moderate income, no deed-restricted units"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -552658,22 +553166,150 @@
      "src": [
       "SRC-001226"
      ]
+    },
+    {
+     "text": "County parcel layer shows two parcels at 2336 El Camino Real: 053-309-220 owned by REDWOOD SQUARE TOWNHOMES LLC and 053-309-210 owned by AUZERAIS INVESTMENTS LLC. The state report (2023) lists the project under APN 053-309-120, which is not in the current county parcel layer.",
+     "src": [
+      "SRC-001103",
+      "SRC-001116"
+     ]
+    },
+    {
+     "text": "City project page: application for an Architectural Permit, Tentative Map and Condominium Permit; site zoned Mixed-Use Corridor El Camino Real (MUC-ECR).",
+     "src": [
+      "SRC-001226"
+     ]
+    },
+    {
+     "text": "State report 2023 lists the 6 units in category SFA (single-family attached), owner tenure.",
+     "src": [
+      "SRC-001116"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Recorded owner",
+     "company": "REDWOOD SQUARE TOWNHOMES LLC",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    {
+     "role": "Recorded owner",
+     "company": "AUZERAIS INVESTMENTS LLC",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001103"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
-   "events": [],
+   "events": [
+    {
+     "date": "2023-04-04",
+     "type": "Approved",
+     "label": "Entitlement approved (6 units)",
+     "src": [
+      "SRC-001116"
+     ],
+     "estimated": false
+    }
+   ],
    "history": [
     {
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web searches on 2336 El Camino Real Redwood City, Redwood Square, AP2020-060 and Redwood Square Townhomes LLC: no project-specific results.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "San Mateo County active parcel layer: owners of record for 053-309-210 and 053-309-220; 053-309-120 (APN in state report) not found.",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Redwood City PlanningProjects API, project 118 (status Approved, permits applied for, MUC-ECR zoning). The city's development-projects web page returned 403.",
+     "src": [
+      "SRC-001226"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Redwood City; no county role found.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR datastore SQL query: Table A2 2023 row, AP2020-060, 6 SFA owner units entitled 2023-04-04. No Table A row.",
+     "src": [
+      "SRC-001116"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for Daily Journal, RWC Pulse and Walking Redwood City coverage of Redwood Square / 2336 El Camino Real: none found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for trade press on Redwood Square Redwood City: none.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer named in city or state sources; owner LLC names searched with no company web presence found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in any source found.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lenders or public funding found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search turned up no LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001226": "S1",
-    "SRC-001103": "S2"
+    "SRC-001116": "S2",
+    "SRC-001103": "S3"
    },
    "lat": 37.474704925,
    "lng": -122.22049071875,
@@ -552696,22 +553332,22 @@
     ],
     "restricted_units": null,
     "aff_bucket": "Market",
-    "aff_label": "Market (by product type)",
-    "aff_share": null,
+    "aff_label": "Market (state report)",
+    "aff_share": 0.0,
     "aff_levels": [],
     "mix_types": [],
     "tax_credit": false,
-    "owner": "",
+    "owner": "REDWOOD SQUARE TOWNHOMES LLC; AUZERAIS INVESTMENTS LLC",
     "developer": "",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "",
+    "latest_event": "2023-04-04",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "redwood square (2336 el camino real) redwood city 053-309-220 053-309-210 2336 el camino real, redwood city, ca condominiums approved redwood city 6 3 14 existing day care center on the site remains, with 13 separate spaces."
+   "search": "redwood square (2336 el camino real) redwood city 053-309-220 053-309-210 2336 el camino real, redwood city, ca condominiums approved redwood city 6 3 14 ap2020-060 local tracking number as reported to the state market-rate state report 2023: all 6 entitled units above-moderate income, no deed-restricted units existing day care center on the site remains, with 13 separate spaces. county parcel layer shows two parcels at 2336 el camino real: 053-309-220 owned by redwood square townhomes llc and 053-309-210 owned by auzerais investments llc. the state report (2023) lists the project under apn 053-309-120, which is not in the current county parcel layer. city project page: application for an architectural permit, tentative map and condominium permit; site zoned mixed-use corridor el camino real (muc-ecr). state report 2023 lists the 6 units in category sfa (single-family attached), owner tenure. recorded owner redwood square townhomes llc recorded owner auzerais investments llc entitlement approved (6 units)"
   },
   {
    "id": "SMC-000253",
@@ -559014,11 +559650,93 @@
        "src": [
         "SRC-001345"
        ]
+      },
+      {
+       "value": "P23-0086; SA26-0001",
+       "src": [
+        "SRC-004220"
+       ],
+       "note": "SA26-0001 is the tentative subdivision map"
+      }
+     ]
+    },
+    "affordability_type": {
+     "claims": [
+      {
+       "value": "Mixed-income",
+       "src": [
+        "SRC-001113"
+       ],
+       "note": "State report 2025: 1 low-income deed-restricted inclusionary unit among 6 entitled units"
+      }
+     ]
+    },
+    "restricted_by_ami": {
+     "claims": [
+      {
+       "value": [
+        {
+         "count": 1,
+         "ami": 80
+        }
+       ],
+       "src": [
+        "SRC-001113",
+        "SRC-001112"
+       ],
+       "note": "State report 2025: 1 low-income deed-restricted unit (AMI is the category's upper limit)"
+      }
+     ]
+    },
+    "market_rate_units": {
+     "claims": [
+      {
+       "value": 5,
+       "src": [
+        "SRC-001113"
+       ],
+       "note": "State report 2025: 2 SFD and 3 of the 4 units in the 2-to-4 category are above-moderate"
+      }
+     ]
+    },
+    "restriction_term_years": {
+     "claims": [
+      {
+       "value": 55,
+       "src": [
+        "SRC-001113"
+       ]
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Discretionary"
+       ],
+       "src": [
+        "SRC-001112"
+       ]
       }
      ]
     }
    },
-   "construction_notes": [],
+   "construction_notes": [
+    {
+     "text": "State report 2025 splits the project into 2 single-family detached units and 4 units in the 2-to-4 category, all owner tenure, reported as one planning application with multiple housing types. It reports 1 existing rental unit demolished.",
+     "src": [
+      "SRC-001112",
+      "SRC-001113"
+     ]
+    },
+    {
+     "text": "CEQAnet April 2026: Tentative Subdivision Map for the previously entitled six-unit development, Downtown Residential Medium (DRM) zoning, categorically exempt under Classes 3 and 32. Party undertaking the project: Winnie Tam.",
+     "src": [
+      "SRC-004220"
+     ]
+    }
+   ],
    "parties": [
     {
      "role": "Developer",
@@ -559028,17 +559746,53 @@
      "src": [
       "SRC-001342"
      ]
+    },
+    {
+     "role": "Recorded owner",
+     "company": "LEE RICHARD MON HON & LAURIE ANN WONG TR & LEE RICHARD & LAURIE TRUST 10/24/2025",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-001103"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
     {
+     "date": "2025-03-28",
+     "type": "Application filed",
+     "label": "Application submitted",
+     "src": [
+      "SRC-001112"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2025-10",
      "type": "Approved",
      "label": "Entitled",
      "src": [
       "SRC-001342"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-10-16",
+     "type": "Approved",
+     "label": "Entitlement approved (6 units)",
+     "src": [
+      "SRC-001113"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-04-21",
+     "type": "Other",
+     "label": "Notice of Exemption filed for Tentative Subdivision Map SA26-0001",
+     "src": [
+      "SRC-004220"
      ],
      "estimated": false
     }
@@ -559048,12 +559802,98 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web search on 616 Maple Avenue South San Francisco: CEQAnet NOE 2026040983 (subdivision map) and Daily Journal articles.",
+     "src": [
+      "SRC-004220"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "San Mateo County active parcel layer, APN 012-171-170: owner of record Lee/Wong trust dated 10/24/2025.",
+     "src": [
+      "SRC-001103"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SSF development projects data layer (P23-0086, Winnie Tam, entitled October 2025). SSF is not on the Legistar web API.",
+     "src": [
+      "SRC-001342"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in South San Francisco; no county role found.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "data.ca.gov APR datastore SQL query: Table A and A2 2025 rows (P23-0086); CEQAnet SCH 2026040983.",
+     "src": [
+      "SRC-001112",
+      "SRC-001113",
+      "SRC-004220"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "blocked",
+     "note": "San Mateo Daily Journal articles on 616 Maple Ave planning commission review returned 403.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for SF YIMBY and other trade coverage of 616 Maple Avenue: none.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Developer Winnie Tam (individual); no company website found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in city, state or CEQAnet sources opened.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lenders or public funding found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search turned up no LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001342": "S1",
     "SRC-001345": "S2",
-    "SRC-001103": "S3"
+    "SRC-001113": "S3",
+    "SRC-001112": "S4",
+    "SRC-004220": "S5",
+    "SRC-001103": "S6"
    },
    "lat": 37.6590847,
    "lng": -122.41092628333332,
@@ -559074,24 +559914,26 @@
      6,
      6
     ],
-    "restricted_units": null,
-    "aff_bucket": null,
-    "aff_label": "Not stated",
-    "aff_share": null,
-    "aff_levels": [],
+    "restricted_units": 1,
+    "aff_bucket": "Market",
+    "aff_label": "Market, with inclusionary",
+    "aff_share": 0.16666666666666666,
+    "aff_levels": [
+     "lo"
+    ],
     "mix_types": [],
     "tax_credit": false,
-    "owner": "",
+    "owner": "LEE RICHARD MON HON & LAURIE ANN WONG TR & LEE RICHARD & LAURIE TRUST 10/24/2025",
     "developer": "Winnie Tam",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2025-10",
+    "latest_event": "2026-04-21",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "616 maple avenue south san francisco 012-171-170 616 maple ave, south san francisco, ca 616 maple avenue mixed product city: detached townhomes and four condominium units approved entitled october 2025; construction date tbd south san francisco 6 3 0.24 p23-0086; dr23-0019 developer winnie tam entitled"
+   "search": "616 maple avenue south san francisco 012-171-170 616 maple ave, south san francisco, ca 616 maple avenue mixed product city: detached townhomes and four condominium units approved entitled october 2025; construction date tbd south san francisco 6 3 0.24 p23-0086; dr23-0019 p23-0086; sa26-0001 sa26-0001 is the tentative subdivision map mixed-income state report 2025: 1 low-income deed-restricted inclusionary unit among 6 entitled units [{\"count\": 1, \"ami\": 80}] state report 2025: 1 low-income deed-restricted unit (ami is the category's upper limit) 5 state report 2025: 2 sfd and 3 of the 4 units in the 2-to-4 category are above-moderate 55 [\"discretionary\"] state report 2025 splits the project into 2 single-family detached units and 4 units in the 2-to-4 category, all owner tenure, reported as one planning application with multiple housing types. it reports 1 existing rental unit demolished. ceqanet april 2026: tentative subdivision map for the previously entitled six-unit development, downtown residential medium (drm) zoning, categorically exempt under classes 3 and 32. party undertaking the project: winnie tam. developer winnie tam recorded owner lee richard mon hon & laurie ann wong tr & lee richard & laurie trust 10/24/2025 application submitted entitled entitlement approved (6 units) notice of exemption filed for tentative subdivision map sa26-0001"
   },
   {
    "id": "SMC-000264",

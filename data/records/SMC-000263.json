@@ -131,11 +131,93 @@
           "src": [
             "SRC-001345"
           ]
+        },
+        {
+          "value": "P23-0086; SA26-0001",
+          "src": [
+            "SRC-004220"
+          ],
+          "note": "SA26-0001 is the tentative subdivision map"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-001113"
+          ],
+          "note": "State report 2025: 1 low-income deed-restricted inclusionary unit among 6 entitled units"
+        }
+      ]
+    },
+    "restricted_by_ami": {
+      "claims": [
+        {
+          "value": [
+            {
+              "count": 1,
+              "ami": 80
+            }
+          ],
+          "src": [
+            "SRC-001113",
+            "SRC-001112"
+          ],
+          "note": "State report 2025: 1 low-income deed-restricted unit (AMI is the category's upper limit)"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 5,
+          "src": [
+            "SRC-001113"
+          ],
+          "note": "State report 2025: 2 SFD and 3 of the 4 units in the 2-to-4 category are above-moderate"
+        }
+      ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 55,
+          "src": [
+            "SRC-001113"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001112"
+          ]
         }
       ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "State report 2025 splits the project into 2 single-family detached units and 4 units in the 2-to-4 category, all owner tenure, reported as one planning application with multiple housing types. It reports 1 existing rental unit demolished.",
+      "src": [
+        "SRC-001112",
+        "SRC-001113"
+      ]
+    },
+    {
+      "text": "CEQAnet April 2026: Tentative Subdivision Map for the previously entitled six-unit development, Downtown Residential Medium (DRM) zoning, categorically exempt under Classes 3 and 32. Party undertaking the project: Winnie Tam.",
+      "src": [
+        "SRC-004220"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Developer",
@@ -145,17 +227,53 @@
       "src": [
         "SRC-001342"
       ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "LEE RICHARD MON HON & LAURIE ANN WONG TR & LEE RICHARD & LAURIE TRUST 10/24/2025",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-03-28",
+      "type": "Application filed",
+      "label": "Application submitted",
+      "src": [
+        "SRC-001112"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-10",
       "type": "Approved",
       "label": "Entitled",
       "src": [
         "SRC-001342"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-10-16",
+      "type": "Approved",
+      "label": "Entitlement approved (6 units)",
+      "src": [
+        "SRC-001113"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-21",
+      "type": "Other",
+      "label": "Notice of Exemption filed for Tentative Subdivision Map SA26-0001",
+      "src": [
+        "SRC-004220"
       ],
       "estimated": false
     }
@@ -165,6 +283,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 616 Maple Avenue South San Francisco: CEQAnet NOE 2026040983 (subdivision map) and Daily Journal articles.",
+      "src": [
+        "SRC-004220"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Mateo County active parcel layer, APN 012-171-170: owner of record Lee/Wong trust dated 10/24/2025.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SSF development projects data layer (P23-0086, Winnie Tam, entitled October 2025). SSF is not on the Legistar web API.",
+      "src": [
+        "SRC-001342"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in South San Francisco; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR datastore SQL query: Table A and A2 2025 rows (P23-0086); CEQAnet SCH 2026040983.",
+      "src": [
+        "SRC-001112",
+        "SRC-001113",
+        "SRC-004220"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles on 616 Maple Ave planning commission review returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY and other trade coverage of 616 Maple Avenue: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Developer Winnie Tam (individual); no company website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in city, state or CEQAnet sources opened.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lenders or public funding found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

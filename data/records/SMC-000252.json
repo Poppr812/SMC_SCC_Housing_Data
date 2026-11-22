@@ -165,6 +165,28 @@
           ]
         }
       ]
+    },
+    "planning_file": {
+      "claims": [
+        {
+          "value": "AP2020-060",
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "Local tracking number as reported to the state"
+        }
+      ]
+    },
+    "affordability_type": {
+      "claims": [
+        {
+          "value": "Market-rate",
+          "src": [
+            "SRC-001116"
+          ],
+          "note": "State report 2023: all 6 entitled units above-moderate income, no deed-restricted units"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -173,17 +195,144 @@
       "src": [
         "SRC-001226"
       ]
+    },
+    {
+      "text": "County parcel layer shows two parcels at 2336 El Camino Real: 053-309-220 owned by REDWOOD SQUARE TOWNHOMES LLC and 053-309-210 owned by AUZERAIS INVESTMENTS LLC. The state report (2023) lists the project under APN 053-309-120, which is not in the current county parcel layer.",
+      "src": [
+        "SRC-001103",
+        "SRC-001116"
+      ]
+    },
+    {
+      "text": "City project page: application for an Architectural Permit, Tentative Map and Condominium Permit; site zoned Mixed-Use Corridor El Camino Real (MUC-ECR).",
+      "src": [
+        "SRC-001226"
+      ]
+    },
+    {
+      "text": "State report 2023 lists the 6 units in category SFA (single-family attached), owner tenure.",
+      "src": [
+        "SRC-001116"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "REDWOOD SQUARE TOWNHOMES LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "AUZERAIS INVESTMENTS LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001103"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
-  "events": [],
+  "events": [
+    {
+      "date": "2023-04-04",
+      "type": "Approved",
+      "label": "Entitlement approved (6 units)",
+      "src": [
+        "SRC-001116"
+      ],
+      "estimated": false
+    }
+  ],
   "history": [
     {
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web searches on 2336 El Camino Real Redwood City, Redwood Square, AP2020-060 and Redwood Square Townhomes LLC: no project-specific results.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Mateo County active parcel layer: owners of record for 053-309-210 and 053-309-220; 053-309-120 (APN in state report) not found.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Redwood City PlanningProjects API, project 118 (status Approved, permits applied for, MUC-ECR zoning). The city's development-projects web page returned 403.",
+      "src": [
+        "SRC-001226"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Redwood City; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR datastore SQL query: Table A2 2023 row, AP2020-060, 6 SFA owner units entitled 2023-04-04. No Table A row.",
+      "src": [
+        "SRC-001116"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for Daily Journal, RWC Pulse and Walking Redwood City coverage of Redwood Square / 2336 El Camino Real: none found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for trade press on Redwood Square Redwood City: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named in city or state sources; owner LLC names searched with no company web presence found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lenders or public funding found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

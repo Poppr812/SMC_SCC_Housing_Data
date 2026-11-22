@@ -187,8 +187,16 @@
             "SRC-001110"
           ],
           "note": "State categories: SFA, SFD"
+        },
+        {
+          "value": "Single-family",
+          "src": [
+            "SRC-004221"
+          ],
+          "note": "City staff report: five detached ownership rowhouse units; the state report lists the units as SFA and SFD in different years"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -233,6 +241,13 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2018-087, PL-2018-088, PL-2024-018, PL-2024-019",
+          "src": [
+            "SRC-004222",
+            "SRC-004223"
+          ]
         }
       ]
     },
@@ -246,6 +261,75 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.51,
+          "src": [
+            "SRC-004221"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "2br": 1,
+            "3br": 3,
+            "4br+": 1
+          },
+          "src": [
+            "SRC-004221"
+          ],
+          "note": "Units approx. 2,300 to 3,500 sq ft"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004221"
+          ],
+          "note": "Units have three-story elements; Unit 5 steps down to one story with a roof deck"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 12,
+          "src": [
+            "SRC-004221"
+          ],
+          "note": "Two-car garage per unit (10) plus 2 guest spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004221"
+          ]
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Fewer than seven units, so the project pays a BMR in-lieu fee instead of on-site units: $439,153 (25% x 11,869 net new habitable sq ft x $148). Park Land Dedication fee condition: $193,200.",
+          "src": [
+            "SRC-004221"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -255,9 +339,42 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "City staff report Jan 28, 2025: Council approved a similar project on the site on May 11, 2021, which expired May 11, 2023. The 2025 proposal differs only in retaining two more Heritage trees and relocating one; it removes eight Heritage trees. Site has one existing 1-story single-family home; zoning R3-3/sd, General Plan Medium-Density Residential. Approvals: PUD Permit, Special Design Permit, Development Review Permit, Heritage Tree Removal Permit and a Vesting Tentative Map for five lots and one common lot.",
+      "src": [
+        "SRC-004221"
+      ]
+    },
+    {
+      "text": "State report 2021 Table A2 shows 4 units entitled on 2021-05-11 under PL-2018-087, with the note \"5 Rowhomes to replace 1 SFR\"; 2025 Table A2 shows 5 units entitled 2025-01-28 under PL-2024-018.",
+      "src": [
+        "SRC-001110"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Architect",
+      "company": "Phan Architects",
+      "contact": "Phoi Phan",
+      "linkedin": null,
+      "src": [
+        "SRC-004221",
+        "SRC-004223"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Phan Architects",
+      "contact": "Phoi Phan",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004221"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -268,6 +385,53 @@
       "src": [
         "SRC-001101"
       ]
+    },
+    {
+      "date": "2021-03-24",
+      "type": "Other",
+      "label": "Administrative Zoning Hearing (PL-2018-087)",
+      "src": [
+        "SRC-004222"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-05-11",
+      "type": "Approved",
+      "label": "City Council approved first entitlement (PL-2018-087)",
+      "src": [
+        "SRC-004221",
+        "SRC-001110"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2023-05-11",
+      "type": "Other",
+      "label": "First entitlement expired (no extension requested)",
+      "src": [
+        "SRC-004221"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-19",
+      "type": "Application filed",
+      "label": "New application submitted (PL-2024-018)",
+      "src": [
+        "SRC-001101"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-12-18",
+      "type": "Other",
+      "label": "Zoning Administrator and Subdivision Committee recommended approval",
+      "src": [
+        "SRC-004221",
+        "SRC-004223"
+      ],
+      "estimated": false
     },
     {
       "date": "2025-01-28",
@@ -283,6 +447,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 198 Easy Street Mountain View rowhomes: only listing results for neighboring Easy Street addresses.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 16037005: situs 198 Easy St; the dataset carries no owner name.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Mountain View Legistar: Council 2021-05-11 (matter 200867) and 2025-01-28 (matter 204419) staff reports; ZA hearings 2021-03-24 and 2024-12-18.",
+      "src": [
+        "SRC-004221",
+        "SRC-004224",
+        "SRC-004222",
+        "SRC-004223"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Mountain View; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR datastore SQL query: Table A rows 2018, 2021, 2024; Table A2 rows 2021 and 2025.",
+      "src": [
+        "SRC-001101",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for Mountain View Voice coverage of 198 Easy Street: none found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for SF YIMBY and trade coverage of 198 Easy Street: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant is Phoi Phan for Phan Architects; no company website found by web search.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for Phan Architects / Phoi Phan returned no firm website.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lenders or public funding found; staff report shows BMR in-lieu fee, not public financing.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn page for Phan Architects or posts on this project.",
+      "src": []
+    }
+  }
 }

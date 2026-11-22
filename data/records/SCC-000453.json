@@ -161,6 +161,16 @@
           "note": "State report 2021, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "State report 2021, application stage: 1 moderate-income deed-restricted unit and 4 moderate-income non-deed-restricted units; 5 units proposed, 1 unit reported as approved.",
+          "src": [
+            "SRC-001120"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -189,6 +199,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web searches on 14926 Los Gatos Blvd with planning and apartment terms: only third-party parcel pages and other Los Gatos Blvd projects.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 42410009: situs 14926 Los Gatos Bl, jurisdiction Los Gatos; no owner name in the dataset.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Town of Los Gatos pending planning projects page for Los Gatos Boulevard (8 projects): 14926 not listed.",
+      "src": [
+        "SRC-002904"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Town project in Los Gatos; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR datastore SQL query: one Table A row (2021) with moderate-income detail; no Table A2 rows.",
+      "src": [
+        "SRC-001120"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for local news on 14926 Los Gatos Blvd: none.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for trade coverage: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named in any source found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lenders or public funding found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search turned up no LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }
