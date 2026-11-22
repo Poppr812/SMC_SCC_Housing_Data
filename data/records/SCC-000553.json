@@ -87,7 +87,8 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001551"
+            "SRC-001551",
+            "SRC-003790"
           ]
         }
       ]
@@ -121,12 +122,49 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "Nine three-story detached single-family homes."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "Zoning Clearance and Vesting Tentative Map under SB 1123."
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-09-24. The city's data does not say how it was decided.",
       "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "City permit data for PLN-2026-24: demolition of one existing single-family home and construction of nine three-story detached single-family homes, with a Tentative Subdivision Map creating ten lots (nine residential lots and one common lot), under SB 1123. Case manager Stephen Rose.",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "Sources differ on status: the city's Starter Home Projects page (updated 2026-11-19) lists PLN-2026-24 as Under Review; the city's Inactive Planning data shows Project Closed, updated 2026-09-24.",
+      "src": [
+        "SRC-003790",
         "SRC-001551"
       ]
     }
@@ -138,6 +176,16 @@
       "contact": null,
       "linkedin": null,
       "other_role": "Applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jia",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Preliminary applicant",
       "src": [
         "SRC-001551"
       ]
@@ -154,6 +202,15 @@
         "SRC-001551"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-04-15",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PLN-2026-50 (Jia), 9 units; closed",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -161,6 +218,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web search on the address and applicant. Found only the city records already cited.",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 40622031: situs 661 W Parr Av; no owner of record shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell Inactive and Active Planning datasets (PLN-2026-24, PLN-2026-50) and Starter Home Projects page. Project Files link (geodesy.net) refused automated access (HTTP 406).",
+      "src": [
+        "SRC-001551",
+        "SRC-003790"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Campbell; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project. HCD technical assistance letter to Campbell (2026-07-17) does not name this project.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "SJ Spotlight article on Campbell's starter home law changes (2026-04-25) does not name this address; no other coverage found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No trade press coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant named only by surname in city data; no company website identified.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in opened sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+      "src": []
+    }
+  }
 }

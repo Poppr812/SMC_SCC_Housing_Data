@@ -138,8 +138,16 @@
           "src": [
             "SRC-001549"
           ]
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003790"
+          ],
+          "note": "City Starter Home Projects page (updated 2026-11-19) lists PLN-2026-20 as Approved."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -170,9 +178,53 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Nine new three-story townhomes."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Zoning Clearance and Vesting Tentative Map under the Starter Home Revitalization Act as locally implemented."
+        }
+      ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City permit data for PLN-2026-20: nine new three-story townhomes with a Tentative Subdivision Map, easements and right-of-way dedication, under the Starter Home Revitalization Act. Status Decision Rendered, updated 2026-11-02. Case manager Stephen Rose. The city's Starter Home Projects page lists the zoning as Multi-Family.",
+      "src": [
+        "SRC-001549",
+        "SRC-003790"
+      ]
+    },
+    {
+      "text": "Preliminary application PLN-2025-120 (Ohadi) described demolition of two existing warehouse buildings and a 9-unit townhome development of about 1,400 to 1,500 sq ft per unit with private garages. A 2022 zoning letter request (PLN-2022-144) described 120 and 132 Kennedy Ave as office and warehouse.",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "MLS ML81954871 (listed 2024-02-20, closed 2024-04-09): 120 Kennedy has a 1,344 sq ft building on 5,347 sq ft of land and 132 Kennedy a 2,640 sq ft building on a 5,938 sq ft lot; zoning described as PD Medium to High Density Residential.",
+      "src": [
+        "SRC-004103"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -183,11 +235,58 @@
       "src": [
         "SRC-001549"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Ohadi",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Preliminary applicant",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "DeLeon",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Zoning letter requester",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-04-09",
+      "type": "Sale",
+      "label": "MLS ML81954871 (120 and 132 Kennedy Ave, land) closed; listed at $2,400,000",
+      "src": [
+        "SRC-004103"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-02-11",
+      "type": "Other",
+      "label": "Zoning verification letter request PLN-2025-20 (DeLeon): 5 detached three-story units under SB 684",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-08-19",
+      "type": "Application filed",
+      "label": "Preliminary application PLN-2025-120 (Ohadi): 9 townhomes",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
     {
       "date": "2026-02-23",
       "type": "Application filed",
@@ -203,6 +302,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on the address and applicant; opened MLS ML81954871 listing page.",
+      "src": [
+        "SRC-004103"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APNs 41202015 (120 Kennedy) and 41202016 (132 Kennedy); no owner of record shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell Active and Inactive Planning datasets (PLN-2026-20, PLN-2025-120, PLN-2025-20, PLN-2022-144) and Starter Home Projects page. Project Files link (geodesy.net) refused automated access (HTTP 406).",
+      "src": [
+        "SRC-001549",
+        "SRC-001551",
+        "SRC-003790"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Campbell; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No local news coverage found for 120-132 Kennedy Ave.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No trade press coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched for Adobe Real Estate (applicant name in city data); no company project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in opened sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+      "src": []
+    }
+  }
 }

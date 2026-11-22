@@ -93,8 +93,16 @@
           "src": [
             "SRC-001549"
           ]
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-003790"
+          ],
+          "note": "City Starter Home Projects page (updated 2026-11-19) lists PLN-2026-33 as Approved."
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -125,6 +133,52 @@
           ]
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Nine new three-story townhomes."
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001549"
+          ],
+          "note": "Zoning Clearance (Ministerial Review) and Vesting Tentative Subdivision Map under SB 1123 as locally implemented."
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 2450000,
+          "src": [
+            "SRC-004102"
+          ],
+          "note": "MLS 82025929 marked Closed; sale of the existing 1940 house on a 16,500 sq ft lot, listed 2025-10-24. The page gives no closing date."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.378,
+          "src": [
+            "SRC-004102"
+          ],
+          "note": "MLS listing: lot 16,500 sq ft (0.378 acres)."
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -132,6 +186,25 @@
       "text": "City status Decision Rendered, last updated 2026-10-23. The city's data does not say what the decision was.",
       "src": [
         "SRC-001549"
+      ]
+    },
+    {
+      "text": "City permit data for PLN-2026-33: demolition of an existing single-family residence and construction of nine three-story townhomes, with a Vesting Tentative Subdivision Map creating nine lots, under SB 1123. Filed under SB 330 preliminary application PLN-2025-169 (preliminary application date 12/03/2025). Status Decision Rendered, updated 2026-10-23. Case manager Stephen Rose.",
+      "src": [
+        "SRC-001549"
+      ]
+    },
+    {
+      "text": "The city's Starter Home Projects page gives a submittal date of 04/01/2026 for PLN-2026-33 and lists the zoning as Single-Family; the city's permit data gives a create date of 2026-03-19.",
+      "src": [
+        "SRC-003790",
+        "SRC-001549"
+      ]
+    },
+    {
+      "text": "MLS 82025929 (Coldwell Banker Realty) marketed the site as a development opportunity, including a possible eight units under the city's starter home program.",
+      "src": [
+        "SRC-004102"
       ]
     }
   ],
@@ -145,17 +218,45 @@
       "src": [
         "SRC-001549"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Nguyen",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Preliminary applicant",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2025-12-03",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PLN-2025-169 (Nguyen)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-03-19",
       "type": "Application filed",
       "label": "Zoning clearance under SB 1123",
       "src": [
         "SRC-001549"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2026-04-15",
+      "type": "Application filed",
+      "label": "SB 330 preliminary application PLN-2026-51 (Jia), 9 units; closed",
+      "src": [
+        "SRC-001551"
       ],
       "estimated": false
     }
@@ -165,6 +266,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on the address; opened the MLS 82025929 listing page on Sereno.",
+      "src": [
+        "SRC-004102"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 40310093: situs 935 S San Tomas Aquino Rd; no owner of record shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell Active and Inactive Planning datasets (PLN-2026-33, PLN-2025-169, PLN-2026-51) and Starter Home Projects page. Project Files link (geodesy.net) refused automated access (HTTP 406).",
+      "src": [
+        "SRC-001549",
+        "SRC-001551",
+        "SRC-003790"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project in Campbell; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project. HCD technical assistance letter to Campbell (2026-07-17) on SHRA implementation does not name this project.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "SJ Spotlight article on Campbell's starter home law changes (2026-04-25) does not name this address; no other coverage found.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No trade press coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant listed only as Jia; no company website identified.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in opened sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+      "src": []
+    }
+  }
 }

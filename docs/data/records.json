@@ -41181,6 +41181,42 @@
    "wayback": null,
    "copyright": true,
    "sha256": null
+  },
+  "SRC-004102": {
+   "id": "SRC-004102",
+   "title": "935 S San Tomas Aquino Road, Campbell (MLS 82025929)",
+   "publisher": "Sereno",
+   "date": "2025-12-04",
+   "type": "Trade listing",
+   "url": "https://www.sereno.com/82025929/935-s-san-tomas-aquino-road-campbell-california-95008-mlslisting",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004103": {
+   "id": "SRC-004103",
+   "title": "120 Kennedy Ave, Campbell, CA 95008 (MLS ML81954871)",
+   "publisher": "Ashkon Group",
+   "date": "2024-04-09",
+   "type": "Trade listing",
+   "url": "https://ashkongroup.com/ca/campbell/120-kennedy-av",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
+  },
+  "SRC-004104": {
+   "id": "SRC-004104",
+   "title": "Campbell Real Estate Just Sold - Nov 30, 2025",
+   "publisher": "Juliana Lee",
+   "date": "2025-11-30",
+   "type": "Trade listing",
+   "url": "https://julianalee.com/campbell/real-estate-sales/campbell-home-sales-2025-11.htm",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": true,
+   "sha256": null
   }
  },
  "records": [
@@ -298969,9 +299005,27 @@
        ]
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.7,
+       "src": [
+        "SRC-001273"
+       ],
+       "note": "CEQAnet listing gives the site as 0.7 acres."
+      }
+     ]
     }
    },
-   "construction_notes": [],
+   "construction_notes": [
+    {
+     "text": "CEQA Notice of Exemption (signed 2026-03-23, posted 2026-03-24): two stand-alone three-story multi-family buildings with nine units, using a State Density Bonus with one concession and waivers, replacing a vacant commercial building, with nine condominium lots and one common lot. Exempt under CEQA Guidelines Section 15332 (Class 32, in-fill). Lead agency contact: Jia Liu, Associate Planner, City of Los Altos.",
+     "src": [
+      "SRC-001273"
+     ]
+    }
+   ],
    "parties": [
     {
      "role": "Other",
@@ -299002,8 +299056,87 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web searches on 901 Fremont Avenue and Worldco; opened CEQAnet listing 2026030976 and its NOE PDF. A citizen-portal summary of an April 14, 2026 council tentative map item appeared in results, but its host (cpo.soar.com) did not resolve.",
+     "src": [
+      "SRC-001273"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SCC parcel dataset, APN 18915106: situs 901 Fremont Av, Los Altos 94024; no owner of record shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "blocked",
+     "note": "losaltosca.gov development projects page returned 403.",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Los Altos; no county role found.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "CEQAnet NOE 2026030976: site area 0.7 acres, applicant contact, project description. data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project.",
+     "src": [
+      "SRC-001273"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Searched Los Altos Town Crier and local news for 901 Fremont Avenue: no article found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Searched SF YIMBY and trade press: no coverage found.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "worldco.com could not be opened (TLS certificate does not match the host); no project page found by search.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in the CEQA filing or any opened source.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender, equity or public funding found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001273": "S1",
     "SRC-001098": "S2"
@@ -299044,7 +299177,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "901 fremont avenue los altos 189-15-106 901 fremont ave, los altos, ca 901 fremont avenue, los altos condominiums proposed los altos 9 3 [\"density bonus\"] other applicant worldco holding, llc ceqa notice of exemption filed"
+   "search": "901 fremont avenue los altos 189-15-106 901 fremont ave, los altos, ca 901 fremont avenue, los altos condominiums proposed los altos 9 3 [\"density bonus\"] 0.7 ceqanet listing gives the site as 0.7 acres. ceqa notice of exemption (signed 2026-03-23, posted 2026-03-24): two stand-alone three-story multi-family buildings with nine units, using a state density bonus with one concession and waivers, replacing a vacant commercial building, with nine condominium lots and one common lot. exempt under ceqa guidelines section 15332 (class 32, in-fill). lead agency contact: jia liu, associate planner, city of los altos. other applicant worldco holding, llc ceqa notice of exemption filed"
   },
   {
    "id": "SCC-000474",
@@ -341164,8 +341297,16 @@
        "src": [
         "SRC-001549"
        ]
+      },
+      {
+       "value": "Approved",
+       "src": [
+        "SRC-003790"
+       ],
+       "note": "City Starter Home Projects page (updated 2026-11-19) lists PLN-2026-33 as Approved."
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -341196,6 +341337,52 @@
        ]
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-001549"
+       ],
+       "note": "Nine new three-story townhomes."
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Streamlined / ministerial"
+       ],
+       "src": [
+        "SRC-001549"
+       ],
+       "note": "Zoning Clearance (Ministerial Review) and Vesting Tentative Subdivision Map under SB 1123 as locally implemented."
+      }
+     ]
+    },
+    "sale_price": {
+     "claims": [
+      {
+       "value": 2450000,
+       "src": [
+        "SRC-004102"
+       ],
+       "note": "MLS 82025929 marked Closed; sale of the existing 1940 house on a 16,500 sq ft lot, listed 2025-10-24. The page gives no closing date."
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.378,
+       "src": [
+        "SRC-004102"
+       ],
+       "note": "MLS listing: lot 16,500 sq ft (0.378 acres)."
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -341203,6 +341390,25 @@
      "text": "City status Decision Rendered, last updated 2026-10-23. The city's data does not say what the decision was.",
      "src": [
       "SRC-001549"
+     ]
+    },
+    {
+     "text": "City permit data for PLN-2026-33: demolition of an existing single-family residence and construction of nine three-story townhomes, with a Vesting Tentative Subdivision Map creating nine lots, under SB 1123. Filed under SB 330 preliminary application PLN-2025-169 (preliminary application date 12/03/2025). Status Decision Rendered, updated 2026-10-23. Case manager Stephen Rose.",
+     "src": [
+      "SRC-001549"
+     ]
+    },
+    {
+     "text": "The city's Starter Home Projects page gives a submittal date of 04/01/2026 for PLN-2026-33 and lists the zoning as Single-Family; the city's permit data gives a create date of 2026-03-19.",
+     "src": [
+      "SRC-003790",
+      "SRC-001549"
+     ]
+    },
+    {
+     "text": "MLS 82025929 (Coldwell Banker Realty) marketed the site as a development opportunity, including a possible eight units under the city's starter home program.",
+     "src": [
+      "SRC-004102"
      ]
     }
    ],
@@ -341216,17 +341422,45 @@
      "src": [
       "SRC-001549"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "Nguyen",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Preliminary applicant",
+     "src": [
+      "SRC-001551"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
     {
+     "date": "2025-12-03",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application PLN-2025-169 (Nguyen)",
+     "src": [
+      "SRC-001551"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2026-03-19",
      "type": "Application filed",
      "label": "Zoning clearance under SB 1123",
      "src": [
       "SRC-001549"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-04-15",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application PLN-2026-51 (Jia), 9 units; closed",
+     "src": [
+      "SRC-001551"
      ],
      "estimated": false
     }
@@ -341236,21 +341470,110 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web search on the address; opened the MLS 82025929 listing page on Sereno.",
+     "src": [
+      "SRC-004102"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SCC parcel dataset, APN 40310093: situs 935 S San Tomas Aquino Rd; no owner of record shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Campbell Active and Inactive Planning datasets (PLN-2026-33, PLN-2025-169, PLN-2026-51) and Starter Home Projects page. Project Files link (geodesy.net) refused automated access (HTTP 406).",
+     "src": [
+      "SRC-001549",
+      "SRC-001551",
+      "SRC-003790"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Campbell; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project. HCD technical assistance letter to Campbell (2026-07-17) on SHRA implementation does not name this project.",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "SJ Spotlight article on Campbell's starter home law changes (2026-04-25) does not name this address; no other coverage found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No trade press coverage found.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Applicant listed only as Jia; no company website identified.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in opened sources.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001549": "S1",
-    "SRC-001098": "S2"
+    "SRC-003790": "S2",
+    "SRC-004102": "S3",
+    "SRC-001551": "S4",
+    "SRC-001098": "S5"
    },
    "lat": 37.273518091666666,
    "lng": -121.97198655833334,
-   "calcs": {},
+   "calcs": {
+    "price_per_unit": {
+     "value": 272222,
+     "how": "Sale price $2,450,000 ÷ 9 total units"
+    }
+   },
    "kinds": [
     "pipeline"
    ],
    "summary": {
     "product_type": "Townhomes",
-    "status": "Proposed",
+    "status": "Approved",
     "jurisdiction": "Campbell",
     "community": "",
     "county": "Santa Clara County",
@@ -341270,15 +341593,15 @@
     "tax_credit": false,
     "owner": "",
     "developer": "",
-    "cost_basis": "",
-    "cost": null,
-    "per_unit": null,
+    "cost_basis": "Sale price",
+    "cost": 2450000,
+    "per_unit": 272222,
     "main_lender": "",
-    "latest_event": "2026-03-19",
+    "latest_event": "2026-04-15",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "935 s san tomas aquino rd campbell 403-10-093 935 s san tomas aquino rd, campbell, ca townhomes proposed campbell 9 pln-2026-33 city status decision rendered, last updated 2026-10-23. the city's data does not say what the decision was. other applicant jia zoning clearance under sb 1123"
+   "search": "935 s san tomas aquino rd campbell 403-10-093 935 s san tomas aquino rd, campbell, ca townhomes proposed approved city starter home projects page (updated 2026-11-19) lists pln-2026-33 as approved. campbell 9 pln-2026-33 3 nine new three-story townhomes. [\"streamlined / ministerial\"] zoning clearance (ministerial review) and vesting tentative subdivision map under sb 1123 as locally implemented. 2450000 mls 82025929 marked closed; sale of the existing 1940 house on a 16,500 sq ft lot, listed 2025-10-24. the page gives no closing date. 0.378 mls listing: lot 16,500 sq ft (0.378 acres). city status decision rendered, last updated 2026-10-23. the city's data does not say what the decision was. city permit data for pln-2026-33: demolition of an existing single-family residence and construction of nine three-story townhomes, with a vesting tentative subdivision map creating nine lots, under sb 1123. filed under sb 330 preliminary application pln-2025-169 (preliminary application date 12/03/2025). status decision rendered, updated 2026-10-23. case manager stephen rose. the city's starter home projects page gives a submittal date of 04/01/2026 for pln-2026-33 and lists the zoning as single-family; the city's permit data gives a create date of 2026-03-19. mls 82025929 (coldwell banker realty) marketed the site as a development opportunity, including a possible eight units under the city's starter home program. other applicant jia other preliminary applicant nguyen sb 330 preliminary application pln-2025-169 (nguyen) zoning clearance under sb 1123 sb 330 preliminary application pln-2026-51 (jia), 9 units; closed"
   },
   {
    "id": "SCC-000547",
@@ -341420,8 +341743,16 @@
        "src": [
         "SRC-001549"
        ]
+      },
+      {
+       "value": "Approved",
+       "src": [
+        "SRC-003790"
+       ],
+       "note": "City Starter Home Projects page (updated 2026-11-19) lists PLN-2026-20 as Approved."
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -341452,9 +341783,53 @@
        ]
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-001549"
+       ],
+       "note": "Nine new three-story townhomes."
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Streamlined / ministerial"
+       ],
+       "src": [
+        "SRC-001549"
+       ],
+       "note": "Zoning Clearance and Vesting Tentative Map under the Starter Home Revitalization Act as locally implemented."
+      }
+     ]
     }
    },
-   "construction_notes": [],
+   "construction_notes": [
+    {
+     "text": "City permit data for PLN-2026-20: nine new three-story townhomes with a Tentative Subdivision Map, easements and right-of-way dedication, under the Starter Home Revitalization Act. Status Decision Rendered, updated 2026-11-02. Case manager Stephen Rose. The city's Starter Home Projects page lists the zoning as Multi-Family.",
+     "src": [
+      "SRC-001549",
+      "SRC-003790"
+     ]
+    },
+    {
+     "text": "Preliminary application PLN-2025-120 (Ohadi) described demolition of two existing warehouse buildings and a 9-unit townhome development of about 1,400 to 1,500 sq ft per unit with private garages. A 2022 zoning letter request (PLN-2022-144) described 120 and 132 Kennedy Ave as office and warehouse.",
+     "src": [
+      "SRC-001551"
+     ]
+    },
+    {
+     "text": "MLS ML81954871 (listed 2024-02-20, closed 2024-04-09): 120 Kennedy has a 1,344 sq ft building on 5,347 sq ft of land and 132 Kennedy a 2,640 sq ft building on a 5,938 sq ft lot; zoning described as PD Medium to High Density Residential.",
+     "src": [
+      "SRC-004103"
+     ]
+    }
+   ],
    "parties": [
     {
      "role": "Other",
@@ -341465,11 +341840,58 @@
      "src": [
       "SRC-001549"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "Ohadi",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Preliminary applicant",
+     "src": [
+      "SRC-001551"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "DeLeon",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Zoning letter requester",
+     "src": [
+      "SRC-001551"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2024-04-09",
+     "type": "Sale",
+     "label": "MLS ML81954871 (120 and 132 Kennedy Ave, land) closed; listed at $2,400,000",
+     "src": [
+      "SRC-004103"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-02-11",
+     "type": "Other",
+     "label": "Zoning verification letter request PLN-2025-20 (DeLeon): 5 detached three-story units under SB 684",
+     "src": [
+      "SRC-001551"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2025-08-19",
+     "type": "Application filed",
+     "label": "Preliminary application PLN-2025-120 (Ohadi): 9 townhomes",
+     "src": [
+      "SRC-001551"
+     ],
+     "estimated": false
+    },
     {
      "date": "2026-02-23",
      "type": "Application filed",
@@ -341485,21 +341907,107 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web search on the address and applicant; opened MLS ML81954871 listing page.",
+     "src": [
+      "SRC-004103"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SCC parcel dataset, APNs 41202015 (120 Kennedy) and 41202016 (132 Kennedy); no owner of record shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Campbell Active and Inactive Planning datasets (PLN-2026-20, PLN-2025-120, PLN-2025-20, PLN-2022-144) and Starter Home Projects page. Project Files link (geodesy.net) refused automated access (HTTP 406).",
+     "src": [
+      "SRC-001549",
+      "SRC-001551",
+      "SRC-003790"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Campbell; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project.",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No local news coverage found for 120-132 Kennedy Ave.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No trade press coverage found.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Searched for Adobe Real Estate (applicant name in city data); no company project page found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in opened sources.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001549": "S1",
-    "SRC-001098": "S2"
+    "SRC-003790": "S2",
+    "SRC-001551": "S3",
+    "SRC-004103": "S4",
+    "SRC-001098": "S5"
    },
    "lat": 37.28179738888889,
    "lng": -121.94766447222221,
    "calcs": {},
    "kinds": [
-    "pipeline"
+    "pipeline",
+    "sale",
+    "transaction"
    ],
    "summary": {
     "product_type": "Townhomes",
-    "status": "Proposed",
+    "status": "Approved",
     "jurisdiction": "Campbell",
     "community": "",
     "county": "Santa Clara County",
@@ -341527,7 +342035,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "120-132 kennedy ave campbell 412-02-015 412-02-016 132 kennedy ave, campbell, ca 120 kennedy ave, campbell, ca townhomes proposed campbell 9 pln-2026-20 other applicant adobe real estate zoning clearance and vesting tentative map"
+   "search": "120-132 kennedy ave campbell 412-02-015 412-02-016 132 kennedy ave, campbell, ca 120 kennedy ave, campbell, ca townhomes proposed approved city starter home projects page (updated 2026-11-19) lists pln-2026-20 as approved. campbell 9 pln-2026-20 3 nine new three-story townhomes. [\"streamlined / ministerial\"] zoning clearance and vesting tentative map under the starter home revitalization act as locally implemented. city permit data for pln-2026-20: nine new three-story townhomes with a tentative subdivision map, easements and right-of-way dedication, under the starter home revitalization act. status decision rendered, updated 2026-11-02. case manager stephen rose. the city's starter home projects page lists the zoning as multi-family. preliminary application pln-2025-120 (ohadi) described demolition of two existing warehouse buildings and a 9-unit townhome development of about 1,400 to 1,500 sq ft per unit with private garages. a 2022 zoning letter request (pln-2022-144) described 120 and 132 kennedy ave as office and warehouse. mls ml81954871 (listed 2024-02-20, closed 2024-04-09): 120 kennedy has a 1,344 sq ft building on 5,347 sq ft of land and 132 kennedy a 2,640 sq ft building on a 5,938 sq ft lot; zoning described as pd medium to high density residential. other applicant adobe real estate other preliminary applicant ohadi other zoning letter requester deleon mls ml81954871 (120 and 132 kennedy ave, land) closed; listed at $2,400,000 zoning verification letter request pln-2025-20 (deleon): 5 detached three-story units under sb 684 preliminary application pln-2025-120 (ohadi): 9 townhomes zoning clearance and vesting tentative map"
   },
   {
    "id": "SCC-000548",
@@ -342473,7 +342981,8 @@
       {
        "value": "Proposed",
        "src": [
-        "SRC-001551"
+        "SRC-001551",
+        "SRC-003790"
        ]
       }
      ]
@@ -342507,12 +343016,60 @@
        ]
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-001551"
+       ],
+       "note": "Nine three-story detached single-family homes."
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Streamlined / ministerial"
+       ],
+       "src": [
+        "SRC-001551"
+       ],
+       "note": "Zoning Clearance and Vesting Tentative Map under SB 1123."
+      }
+     ]
+    },
+    "sale_price": {
+     "claims": [
+      {
+       "value": 2900000,
+       "src": [
+        "SRC-004104"
+       ],
+       "note": "Close of escrow 2025-11-10; list price $2,900,000; 2,292 sq ft house. Sale of the existing home."
+      }
+     ]
     }
    },
    "construction_notes": [
     {
      "text": "The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-09-24. The city's data does not say how it was decided.",
      "src": [
+      "SRC-001551"
+     ]
+    },
+    {
+     "text": "City permit data for PLN-2026-23: demolition of one existing single-family home and construction of nine three-story detached single-family homes, with a Tentative Subdivision Map creating ten lots (nine residential lots and one common lot), under SB 1123. Case manager Stephen Rose.",
+     "src": [
+      "SRC-001551"
+     ]
+    },
+    {
+     "text": "Sources differ on status: the city's Starter Home Projects page (updated 2026-11-19) lists PLN-2026-23 as Under Review; the city's Inactive Planning data shows Project Closed, updated 2026-09-24.",
+     "src": [
+      "SRC-003790",
       "SRC-001551"
      ]
     }
@@ -342527,15 +343084,43 @@
      "src": [
       "SRC-001551"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "Jia",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Preliminary applicant",
+     "src": [
+      "SRC-001551"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
     {
+     "date": "2025-11-10",
+     "type": "Sale",
+     "label": "Existing home sold for $2,900,000 (close of escrow)",
+     "src": [
+      "SRC-004104"
+     ],
+     "estimated": false
+    },
+    {
      "date": "2026-02-26",
      "type": "Application filed",
      "label": "Zoning clearance under SB 1123",
+     "src": [
+      "SRC-001551"
+     ],
+     "estimated": false
+    },
+    {
+     "date": "2026-04-15",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application PLN-2026-48 (Jia), 9 units; closed",
      "src": [
       "SRC-001551"
      ],
@@ -342547,17 +343132,106 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web search on the address and applicant. Opened Juliana Lee November 2025 Campbell sales list.",
+     "src": [
+      "SRC-004104"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SCC parcel dataset, APN 40622030: situs 1573 Walnut Dr; no owner of record shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Campbell Inactive and Active Planning datasets (PLN-2026-23, PLN-2026-48) and Starter Home Projects page. Project Files link (geodesy.net) refused automated access (HTTP 406).",
+     "src": [
+      "SRC-001551",
+      "SRC-003790"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Campbell; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project. HCD technical assistance letter to Campbell (2026-07-17) does not name this project.",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "SJ Spotlight article on Campbell's starter home law changes (2026-04-25) does not name this address; no other coverage found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No trade press coverage found.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Applicant named only by surname in city data; no company website identified.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in opened sources.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001551": "S1",
-    "SRC-001098": "S2"
+    "SRC-003790": "S2",
+    "SRC-004104": "S3",
+    "SRC-001098": "S4"
    },
    "lat": 37.26469488,
    "lng": -121.96157338,
-   "calcs": {},
+   "calcs": {
+    "price_per_unit": {
+     "value": 322222,
+     "how": "Sale price $2,900,000 ÷ 9 total units"
+    }
+   },
    "kinds": [
-    "pipeline"
+    "pipeline",
+    "sale",
+    "transaction"
    ],
    "summary": {
     "product_type": "Single-family",
@@ -342581,15 +343255,15 @@
     "tax_credit": false,
     "owner": "",
     "developer": "",
-    "cost_basis": "",
-    "cost": null,
-    "per_unit": null,
+    "cost_basis": "Sale price",
+    "cost": 2900000,
+    "per_unit": 322222,
     "main_lender": "",
-    "latest_event": "2026-02-26",
+    "latest_event": "2026-04-15",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1573 walnut dr campbell 406-22-030 1573 walnut dr, campbell, ca single-family proposed campbell 9 pln-2026-23 the city moved this case to its inactive list and shows it as project closed, last updated 2026-09-24. the city's data does not say how it was decided. other applicant kellogg & kay zoning clearance under sb 1123"
+   "search": "1573 walnut dr campbell 406-22-030 1573 walnut dr, campbell, ca single-family proposed campbell 9 pln-2026-23 3 nine three-story detached single-family homes. [\"streamlined / ministerial\"] zoning clearance and vesting tentative map under sb 1123. 2900000 close of escrow 2025-11-10; list price $2,900,000; 2,292 sq ft house. sale of the existing home. the city moved this case to its inactive list and shows it as project closed, last updated 2026-09-24. the city's data does not say how it was decided. city permit data for pln-2026-23: demolition of one existing single-family home and construction of nine three-story detached single-family homes, with a tentative subdivision map creating ten lots (nine residential lots and one common lot), under sb 1123. case manager stephen rose. sources differ on status: the city's starter home projects page (updated 2026-11-19) lists pln-2026-23 as under review; the city's inactive planning data shows project closed, updated 2026-09-24. other applicant kellogg & kay other preliminary applicant jia existing home sold for $2,900,000 (close of escrow) zoning clearance under sb 1123 sb 330 preliminary application pln-2026-48 (jia), 9 units; closed"
   },
   {
    "id": "SCC-000553",
@@ -342680,7 +343354,8 @@
       {
        "value": "Proposed",
        "src": [
-        "SRC-001551"
+        "SRC-001551",
+        "SRC-003790"
        ]
       }
      ]
@@ -342714,12 +343389,49 @@
        ]
       }
      ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-001551"
+       ],
+       "note": "Nine three-story detached single-family homes."
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Streamlined / ministerial"
+       ],
+       "src": [
+        "SRC-001551"
+       ],
+       "note": "Zoning Clearance and Vesting Tentative Map under SB 1123."
+      }
+     ]
     }
    },
    "construction_notes": [
     {
      "text": "The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-09-24. The city's data does not say how it was decided.",
      "src": [
+      "SRC-001551"
+     ]
+    },
+    {
+     "text": "City permit data for PLN-2026-24: demolition of one existing single-family home and construction of nine three-story detached single-family homes, with a Tentative Subdivision Map creating ten lots (nine residential lots and one common lot), under SB 1123. Case manager Stephen Rose.",
+     "src": [
+      "SRC-001551"
+     ]
+    },
+    {
+     "text": "Sources differ on status: the city's Starter Home Projects page (updated 2026-11-19) lists PLN-2026-24 as Under Review; the city's Inactive Planning data shows Project Closed, updated 2026-09-24.",
+     "src": [
+      "SRC-003790",
       "SRC-001551"
      ]
     }
@@ -342731,6 +343443,16 @@
      "contact": null,
      "linkedin": null,
      "other_role": "Applicant",
+     "src": [
+      "SRC-001551"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Jia",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Preliminary applicant",
      "src": [
       "SRC-001551"
      ]
@@ -342747,6 +343469,15 @@
       "SRC-001551"
      ],
      "estimated": false
+    },
+    {
+     "date": "2026-04-15",
+     "type": "Application filed",
+     "label": "SB 330 preliminary application PLN-2026-50 (Jia), 9 units; closed",
+     "src": [
+      "SRC-001551"
+     ],
+     "estimated": false
     }
    ],
    "history": [
@@ -342754,11 +343485,92 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "Web search on the address and applicant. Found only the city records already cited.",
+     "src": [
+      "SRC-001551"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "SCC parcel dataset, APN 40622031: situs 661 W Parr Av; no owner of record shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Campbell Inactive and Active Planning datasets (PLN-2026-24, PLN-2026-50) and Starter Home Projects page. Project Files link (geodesy.net) refused automated access (HTTP 406).",
+     "src": [
+      "SRC-001551",
+      "SRC-003790"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project in Campbell; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "data.ca.gov APR housing application tables (CKAN datastore search on address and APN): no row for this project. HCD technical assistance letter to Campbell (2026-07-17) does not name this project.",
+     "src": []
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "SJ Spotlight article on Campbell's starter home law changes (2026-04-25) does not name this address; no other coverage found.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No trade press coverage found.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Applicant named only by surname in city data; no company website identified.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in opened sources.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search for LinkedIn posts on the project and applicant: none found.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001551": "S1",
-    "SRC-001098": "S2"
+    "SRC-003790": "S2",
+    "SRC-001098": "S3"
    },
    "lat": 37.26428531818181,
    "lng": -121.96165905454545,
@@ -342792,11 +343604,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2026-02-26",
+    "latest_event": "2026-04-15",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "661 w parr ave campbell 406-22-031 661 w parr ave, campbell, ca single-family proposed campbell 9 pln-2026-24 the city moved this case to its inactive list and shows it as project closed, last updated 2026-09-24. the city's data does not say how it was decided. other applicant rinck zoning clearance under sb 1123"
+   "search": "661 w parr ave campbell 406-22-031 661 w parr ave, campbell, ca single-family proposed campbell 9 pln-2026-24 3 nine three-story detached single-family homes. [\"streamlined / ministerial\"] zoning clearance and vesting tentative map under sb 1123. the city moved this case to its inactive list and shows it as project closed, last updated 2026-09-24. the city's data does not say how it was decided. city permit data for pln-2026-24: demolition of one existing single-family home and construction of nine three-story detached single-family homes, with a tentative subdivision map creating ten lots (nine residential lots and one common lot), under sb 1123. case manager stephen rose. sources differ on status: the city's starter home projects page (updated 2026-11-19) lists pln-2026-24 as under review; the city's inactive planning data shows project closed, updated 2026-09-24. other applicant rinck other preliminary applicant jia zoning clearance under sb 1123 sb 330 preliminary application pln-2026-50 (jia), 9 units; closed"
   },
   {
    "id": "SCC-000554",
