@@ -47,6 +47,13 @@
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "text": "566 La Conner Dr, Sunnyvale, CA",
+      "role": "other",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "images": [],
@@ -140,6 +147,17 @@
           "note": "State report 2019, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "restriction_term_years": {
+      "claims": [
+        {
+          "value": 30,
+          "src": [
+            "SRC-001119"
+          ],
+          "note": "File 20197281: 2 moderate-income inclusionary units, 30-year term"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -148,12 +166,32 @@
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "text": "State report Table A2 (2019) has two rows on APN 323-36-009: 564 La Conner (file 20197281), 6 for-sale units in the 5+ category, 2 moderate-income deed-restricted (inclusionary, 30-year term) and 4 above-moderate, entitled 2019-05-15, 4 owner units demolished; 565 La Conner (file 20197682), 3 above-moderate for-sale units, entitled 2019-10-02, 2 owner units demolished. No building permits or completions reported.",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    {
+      "text": "County parcel dataset shows APN 323-36-009 with situs 566 La Conner Dr, Sunnyvale, and two situs addresses.",
+      "src": [
+        "SRC-001098"
+      ]
     }
   ],
   "parties": [],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2019-05-15",
+      "type": "Approved",
+      "label": "Entitlement approved for 6 units (file 20197281, 564 La Conner)",
+      "src": [
+        "SRC-001119"
+      ]
+    },
     {
       "date": "2019-10-02",
       "type": "Approved",
@@ -168,6 +206,83 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 564/565/566 La Conner and file numbers 2019-7281 and 2019-7682: only resale listings for 566 La Conner Dr; no project coverage.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel dataset, APN 323-36-009: situs 566 La Conner Dr, Sunnyvale; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Sunnyvale Legistar web API matters searched for La Conner, 2019-7281 and 2019-7682: no results. Web search of sunnyvale.ca.gov: no matching documents.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2, Sunnyvale, queried for La Conner: two rows on the same APN.",
+      "src": [
+        "SRC-001119"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news: no articles on this project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named in any public source found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any public source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

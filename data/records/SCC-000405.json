@@ -59,6 +59,40 @@
           37.3933509
         ]
       ]
+    },
+    {
+      "apn": "104-12-026",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -121.960424,
+          37.3934234
+        ],
+        [
+          -121.9608787,
+          37.3932283
+        ],
+        [
+          -121.9609603,
+          37.3933492
+        ],
+        [
+          -121.9607329,
+          37.3934468
+        ],
+        [
+          -121.9605056,
+          37.3935444
+        ],
+        [
+          -121.960424,
+          37.3934234
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -91,8 +125,17 @@
             "SRC-001106"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-004087",
+            "SRC-004088"
+          ],
+          "note": "City Council approved the project on 2025-07-15; Notice of Determination filed 2025-07-16"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -136,6 +179,87 @@
           "note": "State report (through 2018): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.5,
+          "src": [
+            "SRC-004087"
+          ],
+          "note": "CEQAnet project data"
+        },
+        {
+          "value": 0.51,
+          "src": [
+            "SRC-004088"
+          ]
+        },
+        {
+          "value": 0.52,
+          "src": [
+            "SRC-004089"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004087",
+            "SRC-004089"
+          ]
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2070,
+          "src": [
+            "SRC-004089"
+          ],
+          "note": "Nine identically sized three-bedroom units of 2,070 sq ft each"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 20771,
+          "src": [
+            "SRC-004090"
+          ],
+          "note": "Total gross square feet in the MND project description"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 9
+          },
+          "src": [
+            "SRC-004089"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004087"
+          ],
+          "note": "General Plan Amendment, rezoning, tentative subdivision map, site development permit and architectural review"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -144,9 +268,60 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "CEQAnet (SCH 2024120531): General Plan Amendment from Very Low to Low Density Residential, rezoning from R1-6L to R2, tentative subdivision map, site development permit and architectural review for nine two-story townhomes with individual at-grade garages, up to 25 feet tall, about 10,211 sq ft of combined footprint (45% lot coverage), in two rows around an L-shaped driveway, each with a private yard. APNs 104-12-025 and 104-12-026. Applicant: MFA Construction, Inc. Mitigated Negative Declaration adopted with a mitigation monitoring plan.",
+      "src": [
+        "SRC-004087",
+        "SRC-004090"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2025-08-19): nine for-sale three-bedroom units of 2,070 sq ft each in four two-story structures, each with a two-car garage; design by MFA Engineers & Associates; owner listed as Maruti Builders of Milpitas.",
+      "src": [
+        "SRC-004089"
+      ]
+    },
+    {
+      "text": "Silicon Valley Voice (2025-07-16): the City Council unanimously approved the project on July 15 on a 0.51-acre vacant lot.",
+      "src": [
+        "SRC-004088"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "MFA Construction, Inc.",
+      "contact": "Saul Flores, CEO/CFO",
+      "linkedin": null,
+      "email": "saul.f@mfaconstruct.com",
+      "phone": "(408) 710-6725",
+      "other_role": "Project applicant (CEQA filing)",
+      "src": [
+        "SRC-004087"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Maruti Builders",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner (as reported by SF YIMBY)",
+      "src": [
+        "SRC-004089"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "MFA Engineers & Associates",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004089"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -157,6 +332,39 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "date": "2024-12-13",
+      "type": "Other",
+      "label": "Draft Mitigated Negative Declaration circulated (SCH 2024120531), review through 2025-01-13",
+      "src": [
+        "SRC-004090"
+      ]
+    },
+    {
+      "date": "2025-07-15",
+      "type": "Approved",
+      "label": "City Council approved General Plan Amendment, rezoning and project (unanimous)",
+      "src": [
+        "SRC-004087",
+        "SRC-004088"
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "type": "Other",
+      "label": "Notice of Determination filed with the State Clearinghouse",
+      "src": [
+        "SRC-004087"
+      ]
+    },
+    {
+      "date": "2025-08-20",
+      "type": "Other",
+      "label": "Development Review Hearing on architectural review",
+      "src": [
+        "SRC-004089"
+      ]
     }
   ],
   "history": [
@@ -164,6 +372,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 4249 Cheeney St led to CEQAnet SCH 2024120531, SF YIMBY and Silicon Valley Voice.",
+      "src": [
+        "SRC-004087",
+        "SRC-004089",
+        "SRC-004088"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 104-12-025: situs Cheeney St, Santa Clara; no owner field. Second parcel 104-12-026 comes from the CEQA filing.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "santaclaraca.gov project listing refuses automated access; not used.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2024120531: MND (2024-12-13) and NOD (2025-07-16). APR row already on record.",
+      "src": [
+        "SRC-004087",
+        "SRC-004090"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Silicon Valley Voice 2025-07-16 on the council approval.",
+      "src": [
+        "SRC-004088"
+      ]
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2025-08-19 article on the Development Review Hearing.",
+      "src": [
+        "SRC-004089"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "mfaconstruct.com did not resolve; no project page found for MFA Construction or Maruti Builders.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "MFA Engineers & Associates named by SF YIMBY; no firm project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

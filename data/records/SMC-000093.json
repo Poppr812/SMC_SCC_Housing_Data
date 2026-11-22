@@ -285,6 +285,31 @@
           ]
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.123,
+          "src": [
+            "SRC-004077"
+          ],
+          "note": "Four parcels totaling 49,478 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001108"
+          ],
+          "note": "APR 2022 Table A: density bonus received and approved"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -292,6 +317,37 @@
       "text": "City page gives an approval expiration of December 1, 2026; building permit submitted in May 2024 has not been issued",
       "src": [
         "SRC-001073"
+      ]
+    },
+    {
+      "text": "County parcel layer lists APNs 034-176-070 and 034-176-080 under Lane SM LLC as lessee and Robert R. and Susan J. Benedetti, Trustees; APNs 034-176-050 and 034-176-090 under Lane SM LLC.",
+      "src": [
+        "SRC-001075",
+        "SRC-001076"
+      ]
+    },
+    {
+      "text": "Lane Partners project page: 150,000 sq ft office and 20,000 sq ft retail in one 5-story building, 10 residential units, status Under Development.",
+      "src": [
+        "SRC-004079"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2022): total building 152,533 sq ft; 221 parking spaces on a surface level and two below-grade levels.",
+      "src": [
+        "SRC-004077"
+      ]
+    },
+    {
+      "text": "City page: Zoning Administrator granted a two-year extension of PA-2021-071 to December 1, 2026; Planning Commission recommended approval 3-2 before the 4-0 Council approval.",
+      "src": [
+        "SRC-001073"
+      ]
+    },
+    {
+      "text": "APR 2022 Table A: 10 deed-restricted low-income units; demolish commercial building and build a new mixed-use building, net new 10 units.",
+      "src": [
+        "SRC-001108"
       ]
     }
   ],
@@ -315,6 +371,35 @@
       "linkedin": null,
       "src": [
         "SRC-001074"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "KSH Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004077"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Robert R. & Susan J. Benedetti, Trustees",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001075",
+        "SRC-001076"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Woodlands Market",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Grocery tenant",
+      "src": [
+        "SRC-004078"
       ]
     }
   ],
@@ -360,6 +445,14 @@
       "src": [
         "SRC-001073"
       ]
+    },
+    {
+      "date": "2025-12",
+      "type": "Other",
+      "label": "Woodlands Market signs long-term lease for about 19,000 sq ft ground-floor grocery",
+      "src": [
+        "SRC-004078"
+      ]
     }
   ],
   "history": [
@@ -372,6 +465,94 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on project name, address and developer: Registry, SF YIMBY, Lane Partners page, LoopNet listing (403).",
+      "src": [
+        "SRC-004078",
+        "SRC-004077"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SMC Active Parcels for the four APNs: Benedetti trustees on -070 and -080 with Lane SM LLC as lessee.",
+      "src": [
+        "SRC-001075",
+        "SRC-001076"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "City of San Mateo project page: approval extension to 2026-12-01, PC 3-2 vote, building permit submitted May 2024 not issued.",
+      "src": [
+        "SRC-001073"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR 2022 Table A row PA-2021-071: density bonus received/approved, 10 low-income deed-restricted units.",
+      "src": [
+        "SRC-001108"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal articles on the project and Woodlands lease returned 403.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "The Registry 2025-12-03 (Woodlands Market lease, paywalled beyond lead); SF YIMBY 2022-11-30 (KSH Architects, site area).",
+      "src": [
+        "SRC-004078",
+        "SRC-004077"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Lane Partners project page: 150,000 sq ft office, 20,000 sq ft retail, 10 units, status Under Development.",
+      "src": [
+        "SRC-004079"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "KSH Architects site (ksha.com) opened; project page not reachable.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender, equity partner or public funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on B Street South: none opened.",
+      "src": []
+    }
+  }
 }

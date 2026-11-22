@@ -131,6 +131,12 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H24-016, T24-006, ER24-067; preliminary reviews PRE22-208, PRE23-125",
+          "src": [
+            "SRC-001956"
+          ]
         }
       ]
     },
@@ -160,6 +166,30 @@
           "note": "State report 2024, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H24-016 description: subject to State Density Bonus Law"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.39,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acreage in PRE22-208 description"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -174,18 +204,87 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City of San Jose planning permits on APN 601-03-070: PRE22-208 (filed 2022-12-16, complete), enhanced preliminary review for demolition of two single-family residences and maximum build-out of a 0.39 gross acre corner lot, zoning R-M; PRE23-125 (filed 2023-07-20, complete), focused preliminary review for 11 three-story townhomes; ER24-067 (filed 2024-03-20), environmental review, under review; T24-006 (filed 2024-06-25), vesting tentative map to subdivide 1 lot into 10, under review; H24-016 (filed 2024-06-25), site development permit for nine townhome condominium units under State Density Bonus Law, status Inactive.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "T Square Consulting Group, Inc",
+      "contact": "Wendy Chen; Rachel Liu (PRE23-125)",
+      "linkedin": null,
+      "other_role": "Applicant and owner of record field on city permits H24-016, T24-006, ER24-067, PRE23-125",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Gilbert Fernandez",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant and owner field on city permit H24-016",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Gary J. Schoennauer",
+      "contact": "Erik Schoennauer (applicant)",
+      "linkedin": null,
+      "other_role": "Owner on city permit PRE22-208",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-12-16",
+      "type": "Other",
+      "label": "Enhanced preliminary review filed (PRE22-208); completed 2023-01-24",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2023-07-20",
+      "type": "Other",
+      "label": "Focused preliminary review filed for 11 three-story townhomes (PRE23-125); completed 2023-08-17",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2024-03-20",
+      "type": "Other",
+      "label": "Environmental review application filed (ER24-067)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2024-06-25",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2024-06-25",
+      "type": "Other",
+      "label": "Vesting Tentative Map filed to subdivide 1 lot into 10 (T24-006)",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -199,6 +298,85 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 226 N White Rd and file numbers: only a resale listing for the existing house; no project coverage.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 601-03-070: situs 226 N White Rd, San Jose; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer queried by APN 601-03-070: PRE22-208, PRE23-125, ER24-067, T24-006, H24-016. sanjoseca.gov pages refuse automated access.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; no CEQAnet entry found.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news: no articles on this project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage found.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant is a consultant (T Square Consulting Group); no developer project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Architect not named in public records found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

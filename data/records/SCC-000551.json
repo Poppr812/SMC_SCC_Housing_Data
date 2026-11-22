@@ -97,12 +97,38 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "Zoning Clearance (Ministerial Review) and Vesting Tentative Subdivision Map under SB 1123 as locally implemented"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "Nine townhomes and one single-family home. The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-10-29. The city's data does not say how it was decided.",
       "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "City inactive-permit data (PLN-2026-35, PLN-APP19097, case manager Stephen Rose): demolition of an existing single-family residence and construction of nine three-story townhomes and one three-story single-family residence, with a Vesting Tentative Subdivision Map creating eleven lots, under SB 1123. Submitted under SB 330 preliminary application PLN-2025-169 dated 2025-12-03.",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "The city's Starter Home Projects page lists 1170 Steinway Ave, PLN-2026-35, submitted 2026-04-01, 10 units, Single-Family zoning, status Under Review. The city's inactive-permit data shows the same file as Project Closed with a create date of 2026-03-20.",
+      "src": [
+        "SRC-003790",
         "SRC-001551"
       ]
     }
@@ -123,6 +149,15 @@
   "groups": {},
   "events": [
     {
+      "date": "2025-12-03",
+      "type": "Other",
+      "label": "SB 330 preliminary application filed (PLN-2025-169)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-03-20",
       "type": "Application filed",
       "label": "Zoning clearance under SB 1123",
@@ -137,6 +172,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on address, file number and applicant name; no project coverage beyond city pages",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API APN 40616010: situs 1170 Steinway Av, Campbell, jurisdiction Campbell; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell Inactive Planning layer (PLN-2026-35 description, SB 330 pre-app PLN-2025-169); Campbell Starter Home Projects page; MGO project files API requires login",
+      "src": [
+        "SRC-001551",
+        "SRC-003790"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "HCD APR data (data.ca.gov) Campbell, Steinway: no record for 1170 Steinway; no CEQAnet or CTCAC item found",
+      "src": [
+        "SRC-000643"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news (SJ Spotlight, Mercury News) for 1170 Steinway",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of SF YIMBY and trade press",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant shown only as Jia; no developer site identified",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in city data",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn post found",
+      "src": []
+    }
+  }
 }

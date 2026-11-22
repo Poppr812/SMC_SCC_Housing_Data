@@ -89,8 +89,18 @@
             "SRC-001017"
           ],
           "note": "Tenure not stated; multifamily units treated as apartments"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-004063",
+            "SRC-004064",
+            "SRC-004065"
+          ],
+          "note": "Applicant at neighborhood meeting: townhouses for sale, not rental; plans: 4-story townhouse (R-2) building over one level of subterranean parking"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -157,6 +167,13 @@
           "src": [
             "SRC-001017"
           ]
+        },
+        {
+          "value": 3,
+          "src": [
+            "SRC-004065"
+          ],
+          "note": "SF YIMBY describes three stories; the plan set describes a 4-story building"
         }
       ]
     },
@@ -200,6 +217,19 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004063"
+          ],
+          "note": "Applicant stated the project does not use the state density bonus; filed under SB 330"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -207,6 +237,27 @@
       "text": "Replaces an existing single-story five-unit residential building, so the net gain is 5 homes",
       "src": [
         "SRC-001017"
+      ]
+    },
+    {
+      "text": "Plan set cover sheet: owner DNL Real Estate Development LLC; site area about 12,820 sq ft; zoning Mixed Use Medium II (General Plan 2040); 20 resident and 2 visitor parking spaces; demolition of three existing single-story residential buildings containing six units. The city page describes the existing building as a single-story five-unit residential building.",
+      "src": [
+        "SRC-004064",
+        "SRC-001017"
+      ]
+    },
+    {
+      "text": "Neighborhood meeting summary dates the meeting July 8, 2026, held on Zoom; the city page gives July 14, 2026. Applicant team at the meeting: Haonan Jia and Yidan Hu of Haonan Studio. The applicant described the units as three bedrooms plus an office; the city page describes each unit as 4 bedrooms.",
+      "src": [
+        "SRC-004063",
+        "SRC-001017"
+      ]
+    },
+    {
+      "text": "An earlier planning application at this site, 'One Hayward', proposed a 4-story mixed-use building with ground-floor business space and 18 rental units (3 junior one-bedrooms, 15 one-bedrooms) over one level of subterranean parking, using the state density bonus with 16% very low income BMR units. Owner shown as One Hayward Avenue LLC (Redwood City); architect Arc Tec Inc.; civil engineer BKF Engineers; landscape architect JETT. Submittals ran from 2019-10-03 to resubmittal V on 2021-07-22. The 2026 neighborhood meeting summary refers to a 2021 approved apartment building at the site.",
+      "src": [
+        "SRC-004066",
+        "SRC-004063"
       ]
     }
   ],
@@ -229,6 +280,46 @@
       "src": [
         "SRC-001018"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Haonan Studio",
+      "contact": "Yidan Hu, Haonan Jia",
+      "linkedin": null,
+      "email": "haonan@haonanstudio.com",
+      "website": "https://haonanstudio.com/",
+      "src": [
+        "SRC-004064",
+        "SRC-004065"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "BKF Engineers",
+      "contact": "Melinda Thomas",
+      "linkedin": null,
+      "src": [
+        "SRC-004064"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "JETT Landscape Architecture + Design",
+      "contact": "Bruce Jett",
+      "linkedin": null,
+      "src": [
+        "SRC-004064"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "DNL Real Estate Development LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004065",
+        "SRC-004064"
+      ]
     }
   ],
   "financing": [],
@@ -241,6 +332,15 @@
       "src": [
         "SRC-001017"
       ]
+    },
+    {
+      "date": "2027",
+      "type": "Construction start",
+      "label": "Applicant's estimate at neighborhood meeting: construction start late 2027, 10-14 months",
+      "src": [
+        "SRC-004063"
+      ],
+      "estimated": true
     }
   ],
   "history": [
@@ -248,6 +348,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address, Haonan Studio and DNL Real Estate Development; found SF YIMBY article and the earlier One Hayward plan set",
+      "src": [
+        "SRC-004065",
+        "SRC-004066"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer APN 034-275-130: owner DNL Real Estate Development LLC, land area 12,826 sq ft, year built 1938",
+      "src": [
+        "SRC-001018"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "City project page; first-submittal plan set cover sheet; neighborhood meeting summary; 2021 One Hayward plan set. Former city page for the earlier application now returns 404. San Mateo has no Legistar API",
+      "src": [
+        "SRC-001017",
+        "SRC-004064",
+        "SRC-004063",
+        "SRC-004066"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "HCD APR data San Mateo by APN 034275130 and Hayward: no record; no CEQAnet item found",
+      "src": [
+        "SRC-000643"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of Daily Journal and local news for the 2026 1 Hayward Ave proposal",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2026-08-30",
+      "src": [
+        "SRC-004065"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for DNL Real Estate Development LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Haonan Studio named on plan set; haonanstudio.com is a placeholder page with no project content",
+      "src": [
+        "SRC-004064"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn post found",
+      "src": []
+    }
+  }
 }

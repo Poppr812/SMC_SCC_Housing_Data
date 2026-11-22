@@ -140,11 +140,79 @@
           "src": [
             "SRC-001188"
           ]
+        },
+        {
+          "value": "Applicant letter: one unit dedicated to low-income residents under the BMR Housing Program",
+          "src": [
+            "SRC-004083"
+          ],
+          "note": "City page describes the BMR unit as moderate income"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 16537,
+          "src": [
+            "SRC-001188"
+          ],
+          "note": "Total gross floor area per city page"
+        },
+        {
+          "value": 16538,
+          "src": [
+            "SRC-004083"
+          ],
+          "note": "Livable floor area per applicant's project description"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 23,
+          "src": [
+            "SRC-001188"
+          ],
+          "note": "19 covered garage and 4 uncovered surface spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001188"
+          ],
+          "note": "Architectural Control, environmental review, BMR Housing Agreement"
         }
       ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "City page: demolish two existing apartment buildings with 8 units and build three 3-story townhome-style buildings with 10 units; 33 ft height, FAR 0.8, 8,577 sq ft open space; R-3 zoning near the El Camino Real/Downtown Specific Plan area; requires environmental review, Architectural Control, BMR Housing Agreement, heritage tree removal permits if required, and tenant relocation assistance.",
+      "src": [
+        "SRC-001188"
+      ]
+    },
+    {
+      "text": "Applicant project description: replaces two 1953 apartment buildings; Type V wood framing with rooftop photovoltaic panels; parking exceeds requirement by 8; at least 17 bicycle spaces; pedestrian link from Alice Lane to Mallet Court.",
+      "src": [
+        "SRC-004083"
+      ]
+    },
+    {
+      "text": "County parcel layer: APN 071-293-110, situs 980 Alice Ln, owner Zhang Properties LLC.",
+      "src": [
+        "SRC-004084"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -154,6 +222,24 @@
       "other_role": "Applicant",
       "src": [
         "SRC-001188"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Zhang Properties LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004084"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Wes Arola Landscape Architecture",
+      "contact": "Wes Arola",
+      "linkedin": null,
+      "src": [
+        "SRC-004085"
       ]
     }
   ],
@@ -175,6 +261,14 @@
       "src": [
         "SRC-001188"
       ]
+    },
+    {
+      "date": "2026-10-18",
+      "type": "Other",
+      "label": "Deadline to resubmit full formal application (90 days after incomplete letter)",
+      "src": [
+        "SRC-001188"
+      ]
     }
   ],
   "history": [
@@ -182,6 +276,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and applicant name: city page and its submittal documents.",
+      "src": [
+        "SRC-001188"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SMC Active Parcels APN 071-293-110: owner Zhang Properties LLC.",
+      "src": [
+        "SRC-004084"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Menlo Park project page, project description letter and plans (landscape sheet L-1.01 dated 2026-06-08).",
+      "src": [
+        "SRC-001188",
+        "SRC-004083",
+        "SRC-004085"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "APR Table A and A2 searched for Alice / APN 071-293-110 in Menlo Park: no row (application filed 2026).",
+      "src": [
+        "SRC-001149"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for Almanac and Palo Alto Online coverage: none on this project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for trade press: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for Alice Lane Townhomes or Zhang Properties LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Plans PDF: landscape plans by Wes Arola Landscape Architecture; architect sheets are image-only and name not readable.",
+      "src": [
+        "SRC-004085"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: none.",
+      "src": []
+    }
+  }
 }

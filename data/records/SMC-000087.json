@@ -174,6 +174,29 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004067"
+          ],
+          "note": "Site Plan and Architectural Review and Tentative Map; CEQA statutory exemption PRC 21080.66"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-004068"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -181,6 +204,22 @@
       "text": "Demolishes an existing office building; a modification application adds two exterior staircases and design changes",
       "src": [
         "SRC-001056"
+      ]
+    },
+    {
+      "text": "Project name on the plans and in SF YIMBY: Pioneer Vista Townhomes. The plan set describes the units as condominiums with separate entrances, six facing Pioneer Ct and four reached from the rear; lot size 19,321 sq ft; building height 43 ft 10 in; construction type V-A; unit 8 (TD1) is the BMR unit. SF YIMBY gives about 34,560 sq ft and calls the units apartments; the city page gives about 35,120 sq ft.",
+      "src": [
+        "SRC-004069",
+        "SRC-004068",
+        "SRC-001056"
+      ]
+    },
+    {
+      "text": "CEQA notice for PA-2025-040 names Jack Boyajian, President, The Hutton Group, as applicant; the notice for modification PA-2026-0067 names Jack Boyajian, President, 2015 Pioneer LLC. The STILL Property Group site says its conversion practice was pioneered by Jack Boyajian and continued through The Hutton Group; it does not list this project.",
+      "src": [
+        "SRC-004067",
+        "SRC-004070",
+        "SRC-004071"
       ]
     }
   ],
@@ -203,11 +242,62 @@
       "src": [
         "SRC-001057"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "Y.A. studio",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.ya-studio.com/",
+      "src": [
+        "SRC-004069",
+        "SRC-004068"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "The Hutton Group",
+      "contact": "Jack Boyajian, President",
+      "linkedin": null,
+      "other_role": "Applicant organization (CEQA notice of exemption)",
+      "src": [
+        "SRC-004067"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "EV Fund LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner team on plan cover sheet",
+      "src": [
+        "SRC-004069"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "STILL Property Group",
+      "contact": "Jack Boyajian",
+      "linkedin": null,
+      "website": "https://stillpg.com/",
+      "other_role": "Applicant's firm (SF YIMBY)",
+      "src": [
+        "SRC-004068"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-02",
+      "type": "Other",
+      "label": "Applicant-led neighborhood informational meeting",
+      "src": [
+        "SRC-001056"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-05",
       "type": "Application filed",
@@ -225,12 +315,30 @@
       ]
     },
     {
+      "date": "2026-05-11",
+      "type": "Other",
+      "label": "CEQA notice of exemption filed (PA-2025-040)",
+      "src": [
+        "SRC-004067"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-08-21",
       "type": "Other",
       "label": "Modification application (PA-2026-0067) submitted",
       "src": [
         "SRC-001056"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "type": "Other",
+      "label": "CEQA notice of exemption filed for modification (PA-2026-0067)",
+      "src": [
+        "SRC-004070"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -238,6 +346,97 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the City of San Mateo Current Development Projects list"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address, Pioneer Vista and Jack Boyajian; found CEQAnet notices and SF YIMBY",
+      "src": [
+        "SRC-004067",
+        "SRC-004068"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer APN 039-060-860: owner 2015 Pioneer LLC",
+      "src": [
+        "SRC-001057"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "City project page (neighborhood meeting Feb 2025); approved combined plan set cover and data sheets",
+      "src": [
+        "SRC-001056",
+        "SRC-004069"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet NOE 2026050402 (PA-2025-040) and 2026100279 (PA-2026-0067); HCD APR data San Mateo: no record",
+      "src": [
+        "SRC-004067",
+        "SRC-004070",
+        "SRC-000643"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "San Mateo Daily Journal article on the approval returned 403",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2026-05-14",
+      "src": [
+        "SRC-004068"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "stillpg.com home page; no project page for 2015 Pioneer Ct",
+      "src": [
+        "SRC-004071"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "ya-studio.com home page; no project page found for this project",
+      "src": [
+        "SRC-004072"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No public lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search only; no LinkedIn post found",
+      "src": []
+    }
+  }
 }
