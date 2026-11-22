@@ -67,8 +67,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Inactive pipeline",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City permit layer shows H23-046 status Inactive (record updated 2026-06-21); T23-017 and ER24-068 show Under Review"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -99,6 +107,13 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "H23-046, T23-017, ER23-185, ER24-068",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Site Development Permit, Tentative Map and environmental review files on the city permit layer"
         }
       ]
     },
@@ -112,6 +127,24 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.84,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "T23-017: approximately 0.84 gross acre"
+        },
+        {
+          "value": 0.82,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PRE22-018 preliminary review: 0.82 acre site"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -120,18 +153,99 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "City permit layer, H23-046 (filed 2024-02-28): Site Development Permit for six single-family homes on six lots, demolition of an existing 1,071-square-foot residence and removal of nine trees (five ordinance-size). Applicant Qui Son; owner name SON, QUI T. Status Inactive.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer, T23-017 (filed 2023-09-15): Tentative Map to subdivide one lot into 6 lots and demolish a single-family residence on an approximately 0.84-gross acre site. Applicant Drexyl Ekparian. Status Under Review. Earlier files list zoning R-1-8.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City permit layer, PRE17-135 (2017, complete 2018-01-22): enhanced preliminary review by DR Horton (applicant Eric Keller) of two density options for detached homes on a 2.39-acre property at this address and APN.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Qui Son",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city permit record)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Drexyl Ekparian",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city permit record)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "I-Mark Design Group",
+      "contact": "Qui Son",
+      "linkedin": null,
+      "other_role": "Applicant (city permit record)",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-01-28",
+      "type": "Other",
+      "label": "Focused preliminary review PRE22-018 filed (subdivide one lot into 6 for 6 homes)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2023-08-17",
+      "type": "Other",
+      "label": "Environmental review ER23-185 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2023-09-15",
+      "type": "Application filed",
+      "label": "Tentative Map T23-017 filed (one lot into 6 lots)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2024-02-28",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2024-03-21",
+      "type": "Other",
+      "label": "Environmental review ER24-068 (exemption) filed",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -140,6 +254,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 2492 McLaughlin Ave, H23-046 and T23-017: listing sites only; no project page.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "County parcel dataset, APN 499-19-029: situs 2492 McLaughlin Av, San Jose; owner not shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN: H23-046, T23-017, ER23-185, ER24-068, PRE22-018, PRE17-135. Expired building permit layer: no rows.",
+      "src": [
+        "SRC-001956",
+        "SRC-003493"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A 2024 row (H23-046, 6 SFD, owner tenure, pending, discretionary); no CEQAnet filing found by search.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news: no coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicants are individuals and I-Mark Design Group; no project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "I-Mark Design Group named as applicant on PRE22-018; no project page found by search.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no LinkedIn posts.",
+      "src": []
+    }
+  }
 }

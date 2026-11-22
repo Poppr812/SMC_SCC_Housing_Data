@@ -1,6 +1,6 @@
 {
   "id": "SCC-000448",
-  "name": "No Address",
+  "name": "Marcella Ave ag housing",
   "parcels": [
     {
       "apn": "835-16-020",
@@ -197,7 +197,15 @@
       ]
     }
   ],
-  "addresses": [],
+  "addresses": [
+    {
+      "text": "Marcella Ave, Gilroy, CA",
+      "role": "main",
+      "src": [
+        "SRC-001156"
+      ]
+    }
+  ],
   "images": [],
   "facts": {
     "product_type": {
@@ -304,6 +312,19 @@
           "note": "State report 2023, application stage: 6 deed-restricted units"
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Farmworker"
+          ],
+          "src": [
+            "SRC-001114"
+          ],
+          "note": "State report 2023 application row notes read \"Ag housing/ Planning Clearance\""
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -311,6 +332,18 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001114",
+        "SRC-001156"
+      ]
+    },
+    {
+      "text": "State report 2023, Table A (applications): APN 83516020, no street address, tracking ID PLN 23-223, unit category MH (mobile home), renter tenure, 6 units proposed, all very low income deed-restricted, application submitted 2023-12-05, status Pending, project type Ministerial, notes \"Ag housing/ Planning Clearance\".",
+      "src": [
+        "SRC-001114"
+      ]
+    },
+    {
+      "text": "State report 2023, Table A2: APN 83516020, address given as \"Marcella Ave, Gilroy\", tracking ID PLN23-223, category 5+, owner tenure, 1 above-moderate unit entitled 2023-12-05. The row's geocoded point falls on Marvell Ln, Santa Clara, not on this parcel.",
+      "src": [
         "SRC-001156"
       ]
     }
@@ -341,6 +374,84 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on Marcella Ave Gilroy, PLN23-223 and agricultural employee housing: no page names this project.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "County parcel dataset, APN 835-16-020: unincorporated, no situs address; owner not shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Unincorporated county parcel near Gilroy; no city role.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "County planning site plandev.santaclaracounty.gov returned 403; county planning document store has no PLN23_223 files.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "APR Table A and A2 (data.ca.gov CKAN) rows for APN 83516020: mobile-home category, ag housing note, Marcella Ave address.",
+      "src": [
+        "SRC-001114",
+        "SRC-001156"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news (San Jose Spotlight, Patch, Morgan Hill Times) found other county farmworker projects, none at Marcella Ave.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no trade press coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer or applicant named in any source found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No funder named in any source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

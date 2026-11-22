@@ -67,10 +67,13 @@
         {
           "value": "Proposed",
           "src": [
-            "SRC-001549"
+            "SRC-001549",
+            "SRC-004217",
+            "SRC-003790"
           ]
         }
-      ]
+      ],
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -99,11 +102,71 @@
           "src": [
             "SRC-001549"
           ]
+        },
+        {
+          "value": "PLN-2026-39, PLN-2025-134, BLD-2026-1685",
+          "src": [
+            "SRC-001549",
+            "SRC-001551",
+            "SRC-001552"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004217",
+            "SRC-001549"
+          ],
+          "note": "City letters describe six three-story townhomes; the applicant's 2026-03-30 project description says 2.5 story"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001549",
+            "SRC-004217"
+          ],
+          "note": "Zoning Clearance (ministerial review) and Tentative Subdivision Map under SB 1123"
         }
       ]
     }
   },
-  "construction_notes": [],
+  "construction_notes": [
+    {
+      "text": "Completeness letter 2026-10-29 (to Eugenia Huang): application of September 29, 2026 for six three-story townhomes and a six-lot subdivision under Gov. Code 65852.28 and 66499.41 remains incomplete; staff note the plans show three stories where the standard is 2.5 stories and that SB 1116 may allow three stories from January 1, 2027.",
+      "src": [
+        "SRC-004217"
+      ]
+    },
+    {
+      "text": "City letter to HCD of 2026-01-14 (HAU Case No. HAU0002778): the owner identified recorded restrictive private covenants, recorded in 1954 one day after the tract map, that would preclude the project; the city states it does not enforce such covenants and asked HCD for guidance.",
+      "src": [
+        "SRC-004218"
+      ]
+    },
+    {
+      "text": "City planning data describes PLN-2026-39 as submitted under SB 330 pre-application PLN-2025-134 with \"Preliminary App. Date: 3/31/2025\"; the city's completeness letter and HCD letter give the preliminary application date as October 1, 2025.",
+      "src": [
+        "SRC-001549",
+        "SRC-004217"
+      ]
+    },
+    {
+      "text": "Applicant project description 2026-03-30: demolish existing structure to build six new 2.5 story townhomes under SB 1123.",
+      "src": [
+        "SRC-004219"
+      ]
+    }
+  ],
   "parties": [
     {
       "role": "Other",
@@ -114,11 +177,42 @@
       "src": [
         "SRC-001549"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Cypress Lake Ventures",
+      "contact": "Eugenia Huang",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004218",
+        "SRC-004217"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Wong",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant (city permit record)",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-10-01",
+      "type": "Other",
+      "label": "SB 330 preliminary application PLN-2025-134 filed",
+      "src": [
+        "SRC-004217",
+        "SRC-004218",
+        "SRC-001551"
+      ]
+    },
     {
       "date": "2026-03-30",
       "type": "Application filed",
@@ -127,6 +221,22 @@
         "SRC-001549"
       ],
       "estimated": false
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Other",
+      "label": "Demolition application BLD-2026-1685 filed (single-family house, 1,072 sf)",
+      "src": [
+        "SRC-001552"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Other",
+      "label": "City completeness letter: application incomplete (third review)",
+      "src": [
+        "SRC-004217"
+      ]
     }
   ],
   "history": [
@@ -134,6 +244,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 1995 White Oaks Rd Campbell: listing sites only.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "County parcel dataset, APN 424-05-066: situs 1995 White Oaks Rd; owner not shown.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell planning and building permit data; Starter Home Projects page; MGO project files for PLN-2026-39 (completeness letter 2026-10-29, HCD letter 2026-01-14, project description).",
+      "src": [
+        "SRC-001549",
+        "SRC-001551",
+        "SRC-001552",
+        "SRC-003790",
+        "SRC-004217",
+        "SRC-004218",
+        "SRC-004219"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "City letter cites HCD Housing Accountability Unit case HAU0002778 on this property; Campbell APR Table A/A2 had no row for this address.",
+      "src": [
+        "SRC-004218"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news: no coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on Cypress Lake Ventures and Eugenia Huang: no company site found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in the documents read.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search: no LinkedIn posts.",
+      "src": []
+    }
+  }
 }

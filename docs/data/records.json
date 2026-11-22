@@ -42513,6 +42513,90 @@
    "wayback": null,
    "copyright": true,
    "sha256": null
+  },
+  "SRC-004213": {
+   "id": "SRC-004213",
+   "title": "PLN-2025-114 Approval Letter and SB-1123 Zoning Clearance and Tentative Subdivision Map approval, 1200 Smith Avenue",
+   "publisher": "City of Campbell",
+   "date": "2026-05-20",
+   "type": "Government document",
+   "url": "https://geodesy.net/campbell/mgopermitdocs.html?permitid=16263411#approval-letter-2026-05-20",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004214": {
+   "id": "SRC-004214",
+   "title": "PLN-2025-114 Project Description, New Privately-Owned Townhouses, 1200 Smith Ave (Alignment Architects Inc.)",
+   "publisher": "City of Campbell (applicant filing)",
+   "date": "2025-08-07",
+   "type": "Application document",
+   "url": "https://geodesy.net/campbell/mgopermitdocs.html?permitid=16263411#project-description-2025-08-07",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004215": {
+   "id": "SRC-004215",
+   "title": "PLN-2025-114 Affidavit regarding tenancy status, 900 & 920 S San Tomas Aquino Rd and 1200-1204 Smith Ave",
+   "publisher": "City of Campbell (applicant filing)",
+   "date": "2025-02-07",
+   "type": "Application document",
+   "url": "https://geodesy.net/campbell/mgopermitdocs.html?permitid=16263411#owner-affidavit",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004216": {
+   "id": "SRC-004216",
+   "title": "Alignment Architect (company homepage)",
+   "publisher": "Alignment Architects Inc.",
+   "date": null,
+   "type": "Developer web page",
+   "url": "https://www.alignmentarchitects.com",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004217": {
+   "id": "SRC-004217",
+   "title": "PLN-2026-39 Completeness Letter, 1995 White Oaks Road (Incomplete (3))",
+   "publisher": "City of Campbell",
+   "date": "2026-10-29",
+   "type": "Government document",
+   "url": "https://geodesy.net/campbell/mgopermitdocs.html?permitid=17684687#completeness-letter-2026-10-29",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004218": {
+   "id": "SRC-004218",
+   "title": "PLN-2026-39 letter to HCD re HAU Case No. HAU0002778, 1995 White Oaks Road",
+   "publisher": "City of Campbell",
+   "date": "2026-01-14",
+   "type": "Government document",
+   "url": "https://geodesy.net/campbell/mgopermitdocs.html?permitid=17684687#hcd-letter-2026-01-14",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
+  },
+  "SRC-004219": {
+   "id": "SRC-004219",
+   "title": "PLN-2026-39 Project Description, 1995 White Oaks Road",
+   "publisher": "City of Campbell (applicant filing)",
+   "date": "2026-03-30",
+   "type": "Application document",
+   "url": "https://geodesy.net/campbell/mgopermitdocs.html?permitid=17684687#project-description-2026-03-30",
+   "retrieved": "2026-11-21",
+   "wayback": null,
+   "copyright": false,
+   "sha256": null
   }
  },
  "records": [
@@ -297241,6 +297325,13 @@
      "src": []
     }
    },
+   "related": [
+    {
+     "id": "SCC-000458",
+     "relation": "adjacent",
+     "note": "Adjoining site under the same owner (6A Holdings LLC); shares a transformer location per the 2026 approval"
+    }
+   ],
    "srcLabels": {
     "SRC-001134": "S1",
     "SRC-001552": "S2",
@@ -298197,7 +298288,7 @@
   },
   {
    "id": "SCC-000448",
-   "name": "No Address",
+   "name": "Marcella Ave ag housing",
    "parcels": [
     {
      "apn": "835-16-020",
@@ -298394,7 +298485,15 @@
      ]
     }
    ],
-   "addresses": [],
+   "addresses": [
+    {
+     "text": "Marcella Ave, Gilroy, CA",
+     "role": "main",
+     "src": [
+      "SRC-001156"
+     ]
+    }
+   ],
    "images": [],
    "facts": {
     "product_type": {
@@ -298501,6 +298600,19 @@
        "note": "State report 2023, application stage: 6 deed-restricted units"
       }
      ]
+    },
+    "population": {
+     "claims": [
+      {
+       "value": [
+        "Farmworker"
+       ],
+       "src": [
+        "SRC-001114"
+       ],
+       "note": "State report 2023 application row notes read \"Ag housing/ Planning Clearance\""
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -298508,6 +298620,18 @@
      "text": "From the state Housing Element Annual Progress Report, through 2025.",
      "src": [
       "SRC-001114",
+      "SRC-001156"
+     ]
+    },
+    {
+     "text": "State report 2023, Table A (applications): APN 83516020, no street address, tracking ID PLN 23-223, unit category MH (mobile home), renter tenure, 6 units proposed, all very low income deed-restricted, application submitted 2023-12-05, status Pending, project type Ministerial, notes \"Ag housing/ Planning Clearance\".",
+     "src": [
+      "SRC-001114"
+     ]
+    },
+    {
+     "text": "State report 2023, Table A2: APN 83516020, address given as \"Marcella Ave, Gilroy\", tracking ID PLN23-223, category 5+, owner tenure, 1 above-moderate unit entitled 2023-12-05. The row's geocoded point falls on Marvell Ln, Santa Clara, not on this parcel.",
+     "src": [
       "SRC-001156"
      ]
     }
@@ -298538,11 +298662,89 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on Marcella Ave Gilroy, PLN23-223 and agricultural employee housing: no page names this project.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "County parcel dataset, APN 835-16-020: unincorporated, no situs address; owner not shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "Unincorporated county parcel near Gilroy; no city role.",
+     "src": []
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "blocked",
+     "note": "County planning site plandev.santaclaracounty.gov returned 403; county planning document store has no PLN23_223 files.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "APR Table A and A2 (data.ca.gov CKAN) rows for APN 83516020: mobile-home category, ag housing note, Marcella Ave address.",
+     "src": [
+      "SRC-001114",
+      "SRC-001156"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of local news (San Jose Spotlight, Patch, Morgan Hill Times) found other county farmworker projects, none at Marcella Ave.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search: no trade press coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No developer or applicant named in any source found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in any source found.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No funder named in any source found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search: no LinkedIn posts on this project.",
+     "src": []
+    }
+   },
    "srcLabels": {
-    "SRC-001114": "S1",
-    "SRC-001156": "S2",
+    "SRC-001156": "S1",
+    "SRC-001114": "S2",
     "SRC-001098": "S3"
    },
    "lat": 37.04207307777778,
@@ -298583,7 +298785,7 @@
     "stale_since": "",
     "part_of": ""
    },
-   "search": "no address other santa clara county unincorporated 835-16-020 apartments state category 5+ units, tenure not clear approved state report shows entitlement approval unincorporated other santa clara county community not stated in the state report 1 units reported in entitlement and permit rows 6 units in the application as reported pln, pln23-223 local tracking number as reported to the state [{\"count\": 6, \"ami\": 50}] state report 2023, application stage: deed-restricted units by state income category (ami is the category's upper limit) 100% affordable state report 2023, application stage: 6 deed-restricted units from the state housing element annual progress report, through 2025. application submitted entitlement approved"
+   "search": "marcella ave ag housing other santa clara county unincorporated 835-16-020 marcella ave, gilroy, ca apartments state category 5+ units, tenure not clear approved state report shows entitlement approval unincorporated other santa clara county community not stated in the state report 1 units reported in entitlement and permit rows 6 units in the application as reported pln, pln23-223 local tracking number as reported to the state [{\"count\": 6, \"ami\": 50}] state report 2023, application stage: deed-restricted units by state income category (ami is the category's upper limit) 100% affordable state report 2023, application stage: 6 deed-restricted units [\"farmworker\"] state report 2023 application row notes read \"ag housing/ planning clearance\" from the state housing element annual progress report, through 2025. state report 2023, table a (applications): apn 83516020, no street address, tracking id pln 23-223, unit category mh (mobile home), renter tenure, 6 units proposed, all very low income deed-restricted, application submitted 2023-12-05, status pending, project type ministerial, notes \"ag housing/ planning clearance\". state report 2023, table a2: apn 83516020, address given as \"marcella ave, gilroy\", tracking id pln23-223, category 5+, owner tenure, 1 above-moderate unit entitled 2023-12-05. the row's geocoded point falls on marvell ln, santa clara, not on this parcel. application submitted entitlement approved"
   },
   {
    "id": "SCC-000449",
@@ -298654,8 +298856,16 @@
         "SRC-001099"
        ],
        "note": "State report shows an application with no approval reported"
+      },
+      {
+       "value": "Inactive pipeline",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "City permit layer shows H23-046 status Inactive (record updated 2026-06-21); T23-017 and ER24-068 show Under Review"
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -298686,6 +298896,13 @@
         "SRC-001099"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "H23-046, T23-017, ER23-185, ER24-068",
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "Site Development Permit, Tentative Map and environmental review files on the city permit layer"
       }
      ]
     },
@@ -298699,6 +298916,24 @@
        "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
       }
      ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.84,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "T23-017: approximately 0.84 gross acre"
+      },
+      {
+       "value": 0.82,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "PRE22-018 preliminary review: 0.82 acre site"
+      }
+     ]
     }
    },
    "construction_notes": [
@@ -298707,18 +298942,99 @@
      "src": [
       "SRC-001099"
      ]
+    },
+    {
+     "text": "City permit layer, H23-046 (filed 2024-02-28): Site Development Permit for six single-family homes on six lots, demolition of an existing 1,071-square-foot residence and removal of nine trees (five ordinance-size). Applicant Qui Son; owner name SON, QUI T. Status Inactive.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "City permit layer, T23-017 (filed 2023-09-15): Tentative Map to subdivide one lot into 6 lots and demolish a single-family residence on an approximately 0.84-gross acre site. Applicant Drexyl Ekparian. Status Under Review. Earlier files list zoning R-1-8.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "City permit layer, PRE17-135 (2017, complete 2018-01-22): enhanced preliminary review by DR Horton (applicant Eric Keller) of two density options for detached homes on a 2.39-acre property at this address and APN.",
+     "src": [
+      "SRC-001956"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "Qui Son",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Drexyl Ekparian",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "I-Mark Design Group",
+     "contact": "Qui Son",
+     "linkedin": null,
+     "other_role": "Applicant (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2022-01-28",
+     "type": "Other",
+     "label": "Focused preliminary review PRE22-018 filed (subdivide one lot into 6 for 6 homes)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2023-08-17",
+     "type": "Other",
+     "label": "Environmental review ER23-185 filed",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2023-09-15",
+     "type": "Application filed",
+     "label": "Tentative Map T23-017 filed (one lot into 6 lots)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
     {
      "date": "2024-02-28",
      "type": "Application filed",
      "label": "Application submitted",
      "src": [
       "SRC-001099"
+     ]
+    },
+    {
+     "date": "2024-03-21",
+     "type": "Other",
+     "label": "Environmental review ER24-068 (exemption) filed",
+     "src": [
+      "SRC-001956"
      ]
     }
    ],
@@ -298727,11 +299043,92 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on 2492 McLaughlin Ave, H23-046 and T23-017: listing sites only; no project page.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "County parcel dataset, APN 499-19-029: situs 2492 McLaughlin Av, San Jose; owner not shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "San Jose Permits Planning GIS layer by APN: H23-046, T23-017, ER23-185, ER24-068, PRE22-018, PRE17-135. Expired building permit layer: no rows.",
+     "src": [
+      "SRC-001956",
+      "SRC-003493"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project; no county role found.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "APR Table A 2024 row (H23-046, 6 SFD, owner tenure, pending, discretionary); no CEQAnet filing found by search.",
+     "src": [
+      "SRC-001099"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of local news: no coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of trade press: no coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Applicants are individuals and I-Mark Design Group; no project page found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "I-Mark Design Group named as applicant on PRE22-018; no project page found by search.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search: no LinkedIn posts.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001099": "S1",
-    "SRC-001098": "S2"
+    "SRC-001956": "S2",
+    "SRC-001098": "S3"
    },
    "lat": 37.31326946,
    "lng": -121.83391996,
@@ -298741,7 +299138,7 @@
    ],
    "summary": {
     "product_type": "Single-family",
-    "status": "Proposed",
+    "status": "Inactive pipeline",
     "jurisdiction": "San Jose",
     "community": "",
     "county": "Santa Clara County",
@@ -298765,11 +299162,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2024-02-28",
+    "latest_event": "2024-03-21",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "2492 mclaughlin ave san jose 499-19-029 2492 mclaughlin ave, san jose, ca single-family state category: single-family detached proposed state report shows an application with no approval reported san jose 6 units in the application as reported h23-046 local tracking number as reported to the state market-rate state report (through 2024): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. application submitted"
+   "search": "2492 mclaughlin ave san jose 499-19-029 2492 mclaughlin ave, san jose, ca single-family state category: single-family detached proposed state report shows an application with no approval reported inactive pipeline city permit layer shows h23-046 status inactive (record updated 2026-06-21); t23-017 and er24-068 show under review san jose 6 units in the application as reported h23-046 local tracking number as reported to the state h23-046, t23-017, er23-185, er24-068 site development permit, tentative map and environmental review files on the city permit layer market-rate state report (through 2024): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 0.84 t23-017: approximately 0.84 gross acre 0.82 pre22-018 preliminary review: 0.82 acre site from the state housing element annual progress report, through 2025. city permit layer, h23-046 (filed 2024-02-28): site development permit for six single-family homes on six lots, demolition of an existing 1,071-square-foot residence and removal of nine trees (five ordinance-size). applicant qui son; owner name son, qui t. status inactive. city permit layer, t23-017 (filed 2023-09-15): tentative map to subdivide one lot into 6 lots and demolish a single-family residence on an approximately 0.84-gross acre site. applicant drexyl ekparian. status under review. earlier files list zoning r-1-8. city permit layer, pre17-135 (2017, complete 2018-01-22): enhanced preliminary review by dr horton (applicant eric keller) of two density options for detached homes on a 2.39-acre property at this address and apn. other applicant (city permit record) qui son other applicant (city permit record) drexyl ekparian other applicant (city permit record) i-mark design group qui son focused preliminary review pre22-018 filed (subdivide one lot into 6 for 6 homes) environmental review er23-185 filed tentative map t23-017 filed (one lot into 6 lots) application submitted environmental review er24-068 (exemption) filed"
   },
   {
    "id": "SCC-000450",
@@ -298884,6 +299281,12 @@
         "SRC-001107"
        ],
        "note": "Local tracking number as reported to the state"
+      },
+      {
+       "value": "H17-054, AD21-805, PRE26-333",
+       "src": [
+        "SRC-001956"
+       ]
       }
      ]
     },
@@ -298895,6 +299298,28 @@
         "SRC-001107"
        ],
        "note": "State report (through 2020): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "H17-054: three-story six-unit multi-family development"
+      }
+     ]
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 9887,
+       "src": [
+        "SRC-001956"
+       ],
+       "note": "H17-054: totaling approx. 9,887 sf"
       }
      ]
     }
@@ -298911,18 +299336,89 @@
      "src": [
       "SRC-001956"
      ]
+    },
+    {
+     "text": "City permit layer, PRE16-155 (2016, complete 2017-01-11): enhanced preliminary review of demolishing the single-family residence and building a 10,460 sq ft, three-story, 7-unit apartment building on a 0.27-gross acre site, R-M zoning. Applicant Wendy Chen (Rong Chang USA Corp.); owner name Rong Chang USA Corp.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "City permit layer: AD21-805 (issued 2022-01-12, applicant and owner name Wang Xiangzhou) is a permit adjustment extending H17-054 for a year until 1/29/23. PRE26-333, a focused preliminary review by Xiangzhou Wang, was filed 2026-11-16 with status New; it lists zoning MUN.",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "text": "City expired building permit layer: 2016-138959-RS, sub-trades permit for the single-family house issued 2016-10-20, applicant Wang Xiangzhou and Li Wenhua.",
+     "src": [
+      "SRC-003493"
+     ]
     }
    ],
-   "parties": [],
+   "parties": [
+    {
+     "role": "Other",
+     "company": "Xiangzhou Wang",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Rong Chang USA Corp.",
+     "contact": "Wendy Chen",
+     "linkedin": null,
+     "other_role": "Applicant (city permit record)",
+     "src": [
+      "SRC-001956"
+     ]
+    }
+   ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2016-09-15",
+     "type": "Other",
+     "label": "Enhanced preliminary review PRE16-155 filed (7-unit apartment concept)",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2017-09-26",
+     "type": "Application filed",
+     "label": "Site Development Permit H17-054 filed",
+     "src": [
+      "SRC-001956"
+     ]
+    },
     {
      "date": "2020-01-29",
      "type": "Approved",
      "label": "Entitlement approved",
      "src": [
       "SRC-001107"
+     ]
+    },
+    {
+     "date": "2022-01-12",
+     "type": "Other",
+     "label": "Permit adjustment AD21-805 extends H17-054 to 2023-01-29",
+     "src": [
+      "SRC-001956"
+     ]
+    },
+    {
+     "date": "2026-11-16",
+     "type": "Other",
+     "label": "Focused preliminary review PRE26-333 filed",
+     "src": [
+      "SRC-001956"
      ]
     }
    ],
@@ -298936,12 +299432,93 @@
      "date": "2026-11-08",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on 444 S Buena Vista Ave: only listings for neighboring addresses.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "County parcel dataset, APN 277-18-005: situs 444 S Buena Vista Av; owner not shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "San Jose Permits Planning GIS layer by APN: H17-054, AD21-805, PRE16-155, PRE26-333; expired building permit layer.",
+     "src": [
+      "SRC-001956",
+      "SRC-003493"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "APR Table A2 2020 row (H17-054, 6 units entitled 2020-01-29, 1 unit demolished).",
+     "src": [
+      "SRC-001107"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of local news: no coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of trade press: no coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Applicants are an individual and Rong Chang USA Corp.; no company site found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in sources found.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search: no LinkedIn posts.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001107": "S1",
     "SRC-001956": "S2",
-    "SRC-001098": "S3"
+    "SRC-003493": "S3",
+    "SRC-001098": "S4"
    },
    "lat": 37.320280483333335,
    "lng": -121.91847704999999,
@@ -298951,7 +299528,7 @@
    ],
    "summary": {
     "product_type": "Apartments",
-    "status": "Inactive pipeline",
+    "status": "Approved",
     "jurisdiction": "San Jose",
     "community": "",
     "county": "Santa Clara County",
@@ -298975,11 +299552,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2020-01-29",
-    "stale_since": "2020-01-29",
+    "latest_event": "2026-11-16",
+    "stale_since": "",
     "part_of": ""
    },
-   "search": "444 s buena vista av san jose 277-18-005 444 s buena vista ave, san jose, ca 444 s buena vista av, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 6 units reported in entitlement and permit rows h17-054 local tracking number as reported to the state market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. city of san jose permit h17-054 (site permit, folder year 2017), status approved, issue date 2020-01-29: \"site development permit to allow the demolition of existing structures (a single-family residence and a detached garage, approx. 1,400 sf) and the construction of a three-story six-unit multi-family residential development (totaling approx. 9887 sf) in tw\" (city text cut off at 255 characters) entitlement approved"
+   "search": "444 s buena vista av san jose 277-18-005 444 s buena vista ave, san jose, ca 444 s buena vista av, san jose, ca apartments state category 5+ units, rental tenure approved state report shows entitlement approval san jose 6 units reported in entitlement and permit rows h17-054 local tracking number as reported to the state h17-054, ad21-805, pre26-333 market-rate state report (through 2020): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 3 h17-054: three-story six-unit multi-family development 9887 h17-054: totaling approx. 9,887 sf from the state housing element annual progress report, through 2025. city of san jose permit h17-054 (site permit, folder year 2017), status approved, issue date 2020-01-29: \"site development permit to allow the demolition of existing structures (a single-family residence and a detached garage, approx. 1,400 sf) and the construction of a three-story six-unit multi-family residential development (totaling approx. 9887 sf) in tw\" (city text cut off at 255 characters) city permit layer, pre16-155 (2016, complete 2017-01-11): enhanced preliminary review of demolishing the single-family residence and building a 10,460 sq ft, three-story, 7-unit apartment building on a 0.27-gross acre site, r-m zoning. applicant wendy chen (rong chang usa corp.); owner name rong chang usa corp. city permit layer: ad21-805 (issued 2022-01-12, applicant and owner name wang xiangzhou) is a permit adjustment extending h17-054 for a year until 1/29/23. pre26-333, a focused preliminary review by xiangzhou wang, was filed 2026-11-16 with status new; it lists zoning mun. city expired building permit layer: 2016-138959-rs, sub-trades permit for the single-family house issued 2016-10-20, applicant wang xiangzhou and li wenhua. other applicant (city permit record) xiangzhou wang other applicant (city permit record) rong chang usa corp. wendy chen enhanced preliminary review pre16-155 filed (7-unit apartment concept) site development permit h17-054 filed entitlement approved permit adjustment ad21-805 extends h17-054 to 2023-01-29 focused preliminary review pre26-333 filed"
   },
   {
    "id": "SCC-000452",
@@ -300951,8 +301528,17 @@
         "SRC-001134"
        ],
        "note": "State report shows an application with no approval reported"
+      },
+      {
+       "value": "Approved",
+       "src": [
+        "SRC-004213",
+        "SRC-003790"
+       ],
+       "note": "Zoning Clearance and Vesting Tentative Subdivision Map approved 2026-05-20; building permit application under review"
       }
-     ]
+     ],
+     "best": 1
     },
     "jurisdiction": {
      "claims": [
@@ -300976,7 +301562,9 @@
       {
        "value": 6,
        "src": [
-        "SRC-001551"
+        "SRC-001551",
+        "SRC-004213",
+        "SRC-003790"
        ],
        "note": "City's description and building application"
       }
@@ -300997,6 +301585,13 @@
        "src": [
         "SRC-001552"
        ]
+      },
+      {
+       "value": "PLN-2025-114, PLN-2025-109, BLD-2024-1738, BLD-2026-1231, BLD-2026-1271",
+       "src": [
+        "SRC-001551",
+        "SRC-001552"
+       ]
       }
      ]
     },
@@ -301008,6 +301603,99 @@
         "SRC-001134"
        ],
        "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+      }
+     ]
+    },
+    "site_area_acres": {
+     "claims": [
+      {
+       "value": 0.22,
+       "src": [
+        "SRC-004213"
+       ],
+       "note": "0.22 gross acre (9,786 sq ft)"
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-004213",
+        "SRC-001552"
+       ]
+      }
+     ]
+    },
+    "avg_unit_sf": {
+     "claims": [
+      {
+       "value": 1515,
+       "src": [
+        "SRC-004213"
+       ],
+       "note": "Approximate average living area per unit as approved"
+      }
+     ]
+    },
+    "parking_spaces": {
+     "claims": [
+      {
+       "value": 12,
+       "src": [
+        "SRC-004213"
+       ],
+       "note": "Two covered spaces per unit for six units"
+      }
+     ]
+    },
+    "unit_mix": {
+     "claims": [
+      {
+       "value": {
+        "3br": 5,
+        "4br+": 1
+       },
+       "src": [
+        "SRC-001552"
+       ],
+       "note": "Building application BLD-2026-1231: five 3-bedroom and one 4-bedroom units"
+      },
+      {
+       "value": {
+        "3br": 4,
+        "4br+": 2
+       },
+       "src": [
+        "SRC-004214"
+       ],
+       "note": "Project description 2025-08-07: four 3-bedroom and two 4-bedroom units"
+      }
+     ],
+     "best": 0
+    },
+    "residential_sf": {
+     "claims": [
+      {
+       "value": 12860,
+       "src": [
+        "SRC-004214"
+       ],
+       "note": "Project description 2025-08-07: total floor area"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Streamlined / ministerial"
+       ],
+       "src": [
+        "SRC-004213"
+       ],
+       "note": "SB 1123 ministerial Zoning Clearance and Tentative Subdivision Map"
       }
      ]
     }
@@ -301024,6 +301712,51 @@
      "src": [
       "SRC-001552"
      ]
+    },
+    {
+     "text": "Approval of 2026-05-20 (Community Development Director, ministerial): APN 406-06-098, General Plan Neighborhood Commercial Mixed-Use (18-25 du/gr. acre), zoning NC-MU, form-based zone T4N.M, San Tomas Area Neighborhood Plan; applicant Alignment Architects INC., property owner STORYRD LLC; CEQA exempt per 15268; density 27.27 du/acre; units approximately 38 feet 3 inches tall; approval valid until May 20, 2028.",
+     "src": [
+      "SRC-004213"
+     ]
+    },
+    {
+     "text": "The approval letter states the project was submitted under preliminary application PLN-2025-103 filed July 25, 2025; the city's permit data lists the preliminary application as PLN-2025-109, created 2025-07-24.",
+     "src": [
+      "SRC-004213",
+      "SRC-001551"
+     ]
+    },
+    {
+     "text": "The approval states a transformer on this site is proposed to serve the adjoining development at 900 S. San Tomas Aquino Road, with an easement for that property.",
+     "src": [
+      "SRC-004213"
+     ]
+    },
+    {
+     "text": "The 2025 project description and tenancy affidavit list APNs 406-060-93, 406-060-07 and 406-060-09; the affidavit covers 900 & 920 S San Tomas Aquino Rd and 1200-1204 Smith Ave, states Eunjoo Beak owned the property until its sale to Chun Yi (6A Holdings LLC), owner since 07.17.2024, and states the Smith Ave house was rented for about a year in 2018-2019 and unoccupied since.",
+     "src": [
+      "SRC-004215",
+      "SRC-004214"
+     ]
+    },
+    {
+     "text": "Building application BLD-2026-1231 (applicant Storyrd LLC, pending review): six 3-story townhouses under SB 1123 with 0 affordable units; five units with 3 bedrooms, 3 baths and 2-car garage, one unit with 4 bedrooms, 3.5 baths and 2-car garage.",
+     "src": [
+      "SRC-001552"
+     ]
+    },
+    {
+     "text": "Project description 2025-08-07: two 4-bedroom units (2,359 and 2,345 sq ft) and four 3-bedroom units (2,039 sq ft), each with 2-car garage, total floor area 12,860 sq ft, 3 stories (30 ft 5 in grade-to-eave, 36 ft 11 in roof pitch); about 18 months of construction.",
+     "src": [
+      "SRC-004214"
+     ]
+    },
+    {
+     "text": "City Starter Home Projects page (updated 11/19/2026): PLN-2025-114, submitted 08/07/2025, 6 units, Mixed-Use zoning, status Approved. City planning data lists PLN-2025-114 as Project Closed (updated 2026-10-23).",
+     "src": [
+      "SRC-003790",
+      "SRC-001551"
+     ]
     }
    ],
    "parties": [
@@ -301036,17 +301769,127 @@
      "src": [
       "SRC-001551"
      ]
+    },
+    {
+     "role": "Recorded owner",
+     "company": "STORYRD LLC",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004213",
+      "SRC-001552"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "6A Holdings LLC",
+     "contact": "Chun Yi",
+     "linkedin": null,
+     "other_role": "Property owner",
+     "src": [
+      "SRC-004215",
+      "SRC-001552"
+     ]
+    },
+    {
+     "role": "Seller",
+     "company": "Eunjoo Beak",
+     "contact": null,
+     "linkedin": null,
+     "src": [
+      "SRC-004215"
+     ]
+    },
+    {
+     "role": "Buyer",
+     "company": "6A Holdings LLC",
+     "contact": "Chun Yi",
+     "linkedin": null,
+     "src": [
+      "SRC-004215"
+     ]
+    },
+    {
+     "role": "Architect",
+     "company": "Alignment Architects Inc.",
+     "contact": "Weiran Jia",
+     "linkedin": null,
+     "website": "https://www.alignmentarchitects.com",
+     "website_basis": "opened",
+     "src": [
+      "SRC-004214",
+      "SRC-004213",
+      "SRC-004216"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "De Nguyen",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-004213"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
     {
+     "date": "2024-07-17",
+     "type": "Sale",
+     "label": "Sale to 6A Holdings LLC (close of escrow, per owner affidavit)",
+     "src": [
+      "SRC-004215"
+     ]
+    },
+    {
+     "date": "2025-04-16",
+     "type": "Permit issued",
+     "label": "Demolition permit BLD-2024-1738 issued (existing buildings, 1,449 sf)",
+     "src": [
+      "SRC-001552"
+     ]
+    },
+    {
+     "date": "2025-07-24",
+     "type": "Other",
+     "label": "SB 330 preliminary application PLN-2025-109 filed",
+     "src": [
+      "SRC-001551"
+     ]
+    },
+    {
      "date": "2025-08-07",
      "type": "Application filed",
      "label": "Application submitted",
      "src": [
       "SRC-001134"
+     ]
+    },
+    {
+     "date": "2026-05-20",
+     "type": "Approved",
+     "label": "Zoning Clearance and Vesting Tentative Subdivision Map approved (SB 1123)",
+     "src": [
+      "SRC-004213"
+     ]
+    },
+    {
+     "date": "2026-07-29",
+     "type": "Other",
+     "label": "Building permit application BLD-2026-1231 filed (six 3-story townhouses)",
+     "src": [
+      "SRC-001552"
+     ]
+    },
+    {
+     "date": "2026-08-07",
+     "type": "Other",
+     "label": "Grading and site improvement application BLD-2026-1271 filed",
+     "src": [
+      "SRC-001552"
      ]
     }
    ],
@@ -301060,23 +301903,126 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Updated from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
+    }
+   ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Web search on 1200 Smith Ave Campbell led to the city Starter Home Projects page.",
+     "src": [
+      "SRC-003790"
+     ]
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "County parcel dataset, APN 406-06-098: situs 1200 Smith Av (2 situs addresses); owner not shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Campbell planning and building permit data (ArcGIS); Starter Home Projects page; MGO project files for PLN-2025-114 (approval letter 2026-05-20, project description, tenancy affidavit).",
+     "src": [
+      "SRC-001551",
+      "SRC-001552",
+      "SRC-003790",
+      "SRC-004213",
+      "SRC-004214",
+      "SRC-004215"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "APR Table A 2025 row (PLN-2025-114, 5 SFA units, pending, ministerial; APN 40606009); city approval cites CEQA exemption 15268, no CEQAnet filing found.",
+     "src": [
+      "SRC-001134"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of local news: no coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of trade press: no coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Owner entities STORYRD LLC and 6A Holdings LLC: no company site found by search.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Alignment Architects Inc. (Cupertino) named in project description and approval; homepage opened, no project page for this site.",
+     "src": [
+      "SRC-004216",
+      "SRC-004214"
+     ]
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search: no LinkedIn posts.",
+     "src": []
+    }
+   },
+   "related": [
+    {
+     "id": "SCC-000445",
+     "relation": "adjacent",
+     "note": "Adjoining site under the same owner (6A Holdings LLC); shares a transformer location per the 2026 approval"
     }
    ],
    "srcLabels": {
     "SRC-001134": "S1",
     "SRC-001552": "S2",
-    "SRC-001551": "S3",
-    "SRC-001098": "S4"
+    "SRC-004213": "S3",
+    "SRC-003790": "S4",
+    "SRC-001551": "S5",
+    "SRC-004214": "S6",
+    "SRC-004215": "S7",
+    "SRC-004216": "S8",
+    "SRC-001098": "S9"
    },
    "lat": 37.2738777,
    "lng": -121.97085589999999,
    "calcs": {},
    "kinds": [
-    "pipeline"
+    "pipeline",
+    "sale",
+    "transaction"
    ],
    "summary": {
     "product_type": "Townhomes",
-    "status": "Proposed",
+    "status": "Approved",
     "jurisdiction": "Campbell",
     "community": "",
     "county": "Santa Clara County",
@@ -301092,19 +302038,22 @@
     "aff_label": "Market (state report)",
     "aff_share": 0.0,
     "aff_levels": [],
-    "mix_types": [],
+    "mix_types": [
+     "3br",
+     "4br+"
+    ],
     "tax_credit": false,
-    "owner": "",
+    "owner": "STORYRD LLC",
     "developer": "",
     "cost_basis": "",
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2025-08-07",
+    "latest_event": "2026-08-07",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1200 smith ave campbell 406-06-098 1200 smith ave, campbell, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported campbell 5 units in the application as reported 6 city's description and building application pln-2025-114 local tracking number as reported to the state pln-2025-114, bld-2026-1231 market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. from the state housing element annual progress report, through 2025. building application pending review on the city's list. other applicant nguyen application submitted"
+   "search": "1200 smith ave campbell 406-06-098 1200 smith ave, campbell, ca townhomes state category: single-family attached proposed state report shows an application with no approval reported approved zoning clearance and vesting tentative subdivision map approved 2026-05-20; building permit application under review campbell 5 units in the application as reported 6 city's description and building application pln-2025-114 local tracking number as reported to the state pln-2025-114, bld-2026-1231 pln-2025-114, pln-2025-109, bld-2024-1738, bld-2026-1231, bld-2026-1271 market-rate state report (through 2025): no deed-restricted units reported at any stage. a later source showing restricted units would override this. 0.22 0.22 gross acre (9,786 sq ft) 3 1515 approximate average living area per unit as approved 12 two covered spaces per unit for six units {\"3br\": 5, \"4br+\": 1} building application bld-2026-1231: five 3-bedroom and one 4-bedroom units {\"3br\": 4, \"4br+\": 2} project description 2025-08-07: four 3-bedroom and two 4-bedroom units 12860 project description 2025-08-07: total floor area [\"streamlined / ministerial\"] sb 1123 ministerial zoning clearance and tentative subdivision map from the state housing element annual progress report, through 2025. building application pending review on the city's list. approval of 2026-05-20 (community development director, ministerial): apn 406-06-098, general plan neighborhood commercial mixed-use (18-25 du/gr. acre), zoning nc-mu, form-based zone t4n.m, san tomas area neighborhood plan; applicant alignment architects inc., property owner storyrd llc; ceqa exempt per 15268; density 27.27 du/acre; units approximately 38 feet 3 inches tall; approval valid until may 20, 2028. the approval letter states the project was submitted under preliminary application pln-2025-103 filed july 25, 2025; the city's permit data lists the preliminary application as pln-2025-109, created 2025-07-24. the approval states a transformer on this site is proposed to serve the adjoining development at 900 s. san tomas aquino road, with an easement for that property. the 2025 project description and tenancy affidavit list apns 406-060-93, 406-060-07 and 406-060-09; the affidavit covers 900 & 920 s san tomas aquino rd and 1200-1204 smith ave, states eunjoo beak owned the property until its sale to chun yi (6a holdings llc), owner since 07.17.2024, and states the smith ave house was rented for about a year in 2018-2019 and unoccupied since. building application bld-2026-1231 (applicant storyrd llc, pending review): six 3-story townhouses under sb 1123 with 0 affordable units; five units with 3 bedrooms, 3 baths and 2-car garage, one unit with 4 bedrooms, 3.5 baths and 2-car garage. project description 2025-08-07: two 4-bedroom units (2,359 and 2,345 sq ft) and four 3-bedroom units (2,039 sq ft), each with 2-car garage, total floor area 12,860 sq ft, 3 stories (30 ft 5 in grade-to-eave, 36 ft 11 in roof pitch); about 18 months of construction. city starter home projects page (updated 11/19/2026): pln-2025-114, submitted 08/07/2025, 6 units, mixed-use zoning, status approved. city planning data lists pln-2025-114 as project closed (updated 2026-10-23). other applicant nguyen recorded owner storyrd llc other property owner 6a holdings llc chun yi seller eunjoo beak buyer 6a holdings llc chun yi architect alignment architects inc. weiran jia other applicant de nguyen sale to 6a holdings llc (close of escrow, per owner affidavit) demolition permit bld-2024-1738 issued (existing buildings, 1,449 sf) sb 330 preliminary application pln-2025-109 filed application submitted zoning clearance and vesting tentative subdivision map approved (sb 1123) building permit application bld-2026-1231 filed (six 3-story townhouses) grading and site improvement application bld-2026-1271 filed"
   },
   {
    "id": "SCC-000459",
@@ -350397,10 +351346,13 @@
       {
        "value": "Proposed",
        "src": [
-        "SRC-001549"
+        "SRC-001549",
+        "SRC-004217",
+        "SRC-003790"
        ]
       }
-     ]
+     ],
+     "best": 0
     },
     "jurisdiction": {
      "claims": [
@@ -350429,11 +351381,71 @@
        "src": [
         "SRC-001549"
        ]
+      },
+      {
+       "value": "PLN-2026-39, PLN-2025-134, BLD-2026-1685",
+       "src": [
+        "SRC-001549",
+        "SRC-001551",
+        "SRC-001552"
+       ]
+      }
+     ]
+    },
+    "stories": {
+     "claims": [
+      {
+       "value": 3,
+       "src": [
+        "SRC-004217",
+        "SRC-001549"
+       ],
+       "note": "City letters describe six three-story townhomes; the applicant's 2026-03-30 project description says 2.5 story"
+      }
+     ]
+    },
+    "approval_type": {
+     "claims": [
+      {
+       "value": [
+        "Streamlined / ministerial"
+       ],
+       "src": [
+        "SRC-001549",
+        "SRC-004217"
+       ],
+       "note": "Zoning Clearance (ministerial review) and Tentative Subdivision Map under SB 1123"
       }
      ]
     }
    },
-   "construction_notes": [],
+   "construction_notes": [
+    {
+     "text": "Completeness letter 2026-10-29 (to Eugenia Huang): application of September 29, 2026 for six three-story townhomes and a six-lot subdivision under Gov. Code 65852.28 and 66499.41 remains incomplete; staff note the plans show three stories where the standard is 2.5 stories and that SB 1116 may allow three stories from January 1, 2027.",
+     "src": [
+      "SRC-004217"
+     ]
+    },
+    {
+     "text": "City letter to HCD of 2026-01-14 (HAU Case No. HAU0002778): the owner identified recorded restrictive private covenants, recorded in 1954 one day after the tract map, that would preclude the project; the city states it does not enforce such covenants and asked HCD for guidance.",
+     "src": [
+      "SRC-004218"
+     ]
+    },
+    {
+     "text": "City planning data describes PLN-2026-39 as submitted under SB 330 pre-application PLN-2025-134 with \"Preliminary App. Date: 3/31/2025\"; the city's completeness letter and HCD letter give the preliminary application date as October 1, 2025.",
+     "src": [
+      "SRC-001549",
+      "SRC-004217"
+     ]
+    },
+    {
+     "text": "Applicant project description 2026-03-30: demolish existing structure to build six new 2.5 story townhomes under SB 1123.",
+     "src": [
+      "SRC-004219"
+     ]
+    }
+   ],
    "parties": [
     {
      "role": "Other",
@@ -350444,11 +351456,42 @@
      "src": [
       "SRC-001549"
      ]
+    },
+    {
+     "role": "Other",
+     "company": "Cypress Lake Ventures",
+     "contact": "Eugenia Huang",
+     "linkedin": null,
+     "other_role": "Applicant",
+     "src": [
+      "SRC-004218",
+      "SRC-004217"
+     ]
+    },
+    {
+     "role": "Other",
+     "company": "Wong",
+     "contact": null,
+     "linkedin": null,
+     "other_role": "Applicant (city permit record)",
+     "src": [
+      "SRC-001551"
+     ]
     }
    ],
    "financing": [],
    "groups": {},
    "events": [
+    {
+     "date": "2025-10-01",
+     "type": "Other",
+     "label": "SB 330 preliminary application PLN-2025-134 filed",
+     "src": [
+      "SRC-004217",
+      "SRC-004218",
+      "SRC-001551"
+     ]
+    },
     {
      "date": "2026-03-30",
      "type": "Application filed",
@@ -350457,6 +351500,22 @@
       "SRC-001549"
      ],
      "estimated": false
+    },
+    {
+     "date": "2026-10-26",
+     "type": "Other",
+     "label": "Demolition application BLD-2026-1685 filed (single-family house, 1,072 sf)",
+     "src": [
+      "SRC-001552"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "type": "Other",
+     "label": "City completeness letter: application incomplete (third review)",
+     "src": [
+      "SRC-004217"
+     ]
     }
    ],
    "history": [
@@ -350464,11 +351523,102 @@
      "date": "2026-11-03",
      "by": "Paul via Claude",
      "action": "Record created from city, state and news sources"
+    },
+    {
+     "date": "2026-11-21",
+     "by": "Paul via Claude",
+     "action": "Updated from city, state and news sources"
     }
    ],
+   "research": {
+    "search": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on 1995 White Oaks Rd Campbell: listing sites only.",
+     "src": []
+    },
+    "parcel": {
+     "date": "2026-11-21",
+     "result": "nothing new",
+     "note": "County parcel dataset, APN 424-05-066: situs 1995 White Oaks Rd; owner not shown.",
+     "src": [
+      "SRC-001098"
+     ]
+    },
+    "city": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "Campbell planning and building permit data; Starter Home Projects page; MGO project files for PLN-2026-39 (completeness letter 2026-10-29, HCD letter 2026-01-14, project description).",
+     "src": [
+      "SRC-001549",
+      "SRC-001551",
+      "SRC-001552",
+      "SRC-003790",
+      "SRC-004217",
+      "SRC-004218",
+      "SRC-004219"
+     ]
+    },
+    "county": {
+     "date": "2026-11-21",
+     "result": "not applicable",
+     "note": "City project; no county role.",
+     "src": []
+    },
+    "state": {
+     "date": "2026-11-21",
+     "result": "found",
+     "note": "City letter cites HCD Housing Accountability Unit case HAU0002778 on this property; Campbell APR Table A/A2 had no row for this address.",
+     "src": [
+      "SRC-004218"
+     ]
+    },
+    "news": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of local news: no coverage.",
+     "src": []
+    },
+    "trade": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search of trade press: no coverage.",
+     "src": []
+    },
+    "developer": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search on Cypress Lake Ventures and Eugenia Huang: no company site found.",
+     "src": []
+    },
+    "architect": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No architect named in the documents read.",
+     "src": []
+    },
+    "finance": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "No lender or funder found.",
+     "src": []
+    },
+    "linkedin": {
+     "date": "2026-11-21",
+     "result": "nothing found",
+     "note": "Web search: no LinkedIn posts.",
+     "src": []
+    }
+   },
    "srcLabels": {
     "SRC-001549": "S1",
-    "SRC-001098": "S2"
+    "SRC-004217": "S2",
+    "SRC-003790": "S3",
+    "SRC-001551": "S4",
+    "SRC-001552": "S5",
+    "SRC-004218": "S6",
+    "SRC-004219": "S7",
+    "SRC-001098": "S8"
    },
    "lat": 37.258765516666664,
    "lng": -121.94937033333333,
@@ -350502,11 +351652,11 @@
     "cost": null,
     "per_unit": null,
     "main_lender": "",
-    "latest_event": "2026-03-30",
+    "latest_event": "2026-10-29",
     "stale_since": "",
     "part_of": ""
    },
-   "search": "1995 white oaks rd campbell 424-05-066 1995 white oaks rd, campbell, ca townhomes proposed campbell 6 pln-2026-39 other applicant huang zoning clearance under sb 1123"
+   "search": "1995 white oaks rd campbell 424-05-066 1995 white oaks rd, campbell, ca townhomes proposed campbell 6 pln-2026-39 pln-2026-39, pln-2025-134, bld-2026-1685 3 city letters describe six three-story townhomes; the applicant's 2026-03-30 project description says 2.5 story [\"streamlined / ministerial\"] zoning clearance (ministerial review) and tentative subdivision map under sb 1123 completeness letter 2026-10-29 (to eugenia huang): application of september 29, 2026 for six three-story townhomes and a six-lot subdivision under gov. code 65852.28 and 66499.41 remains incomplete; staff note the plans show three stories where the standard is 2.5 stories and that sb 1116 may allow three stories from january 1, 2027. city letter to hcd of 2026-01-14 (hau case no. hau0002778): the owner identified recorded restrictive private covenants, recorded in 1954 one day after the tract map, that would preclude the project; the city states it does not enforce such covenants and asked hcd for guidance. city planning data describes pln-2026-39 as submitted under sb 330 pre-application pln-2025-134 with \"preliminary app. date: 3/31/2025\"; the city's completeness letter and hcd letter give the preliminary application date as october 1, 2025. applicant project description 2026-03-30: demolish existing structure to build six new 2.5 story townhomes under sb 1123. other applicant huang other applicant cypress lake ventures eugenia huang other applicant (city permit record) wong sb 330 preliminary application pln-2025-134 filed zoning clearance under sb 1123 demolition application bld-2026-1685 filed (single-family house, 1,072 sf) city completeness letter: application incomplete (third review)"
   },
   {
    "id": "SCC-000549",
