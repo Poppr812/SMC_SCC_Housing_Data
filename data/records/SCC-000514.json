@@ -145,6 +145,41 @@
           ]
         }
       ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 221,
+          "src": [
+            "SRC-004258"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 1500,
+          "src": [
+            "SRC-004258"
+          ],
+          "note": "City: about 1,500 sq ft of retail"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004258",
+            "SRC-002065"
+          ],
+          "note": "City: proposal made under the Housing Accountability Act and State Density Bonus law; Major Residential Projects table lists it as not a builder's remedy project, SB 330 vested"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -152,6 +187,13 @@
       "text": "92 for-sale townhomes and 17 for-rent apartments, about 1,500 sq ft of retail. City page does not state a total.",
       "src": [
         "SRC-001461"
+      ]
+    },
+    {
+      "text": "City page: replaces an existing two-story office building mid-block on Stevens Creek Blvd between Portal Ave and Blaney Ave; zoning P(CG, Res); about 10,000 sq ft of common open space; applicant requests density bonus waivers and concessions for setbacks, parking, common and private open space, BMR unit size and dispersal, and floor area ratio. Major Residential Projects table (as of 2026-08-11): status In Review, not a Housing Element site.",
+      "src": [
+        "SRC-004258",
+        "SRC-002065"
       ]
     }
   ],
@@ -180,6 +222,16 @@
   "groups": {},
   "events": [
     {
+      "date": "2025-06-26",
+      "type": "Other",
+      "label": "SB 330 preliminary application vesting date",
+      "src": [
+        "SRC-004258",
+        "SRC-002065"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-07-02",
       "type": "Application filed",
       "label": "Formal application filed",
@@ -199,6 +251,11 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "related": [
@@ -207,5 +264,78 @@
       "relation": "adjacent",
       "note": "Dividend Homes II and III, neighboring Stevens Creek Blvd sites"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web search on 19925 Stevens Creek / Dividend Homes III: city pages only",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API (ubcd-cewv) for 31621089: situs 19925 Stevens Creek Bl, Cupertino; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Cupertino project page (parking, retail, density bonus, SB 330 vesting) and Major Residential Projects table as of 2026-08-11",
+      "src": [
+        "SRC-004258",
+        "SRC-002065"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "data.ca.gov APR searched by APN 31621089 and address: no rows; CEQAnet shows filings for Dividend Homes I, II and IV sites, none for 19925",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of local news for 19925 Stevens Creek: none",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "SF YIMBY covers Dividend Homes II (20045 Stevens Creek) only; nothing for 19925",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "dividendhomes.com lists Cayman, Kenison, Sundara and 3200 Park; no Cupertino project page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Dahlin Group search: Cupertino project news for other sites only, nothing for 19925",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: none",
+      "src": []
+    }
+  }
 }
