@@ -55,6 +55,48 @@
           37.3001008
         ]
       ]
+    },
+    {
+      "apn": "377-25-055",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001098"
+      ],
+      "outline": [
+        [
+          -122.013973,
+          37.2998682
+        ],
+        [
+          -122.0139692,
+          37.2996119
+        ],
+        [
+          -122.0141582,
+          37.2996101
+        ],
+        [
+          -122.0143473,
+          37.2996083
+        ],
+        [
+          -122.0145364,
+          37.2996065
+        ],
+        [
+          -122.0148621,
+          37.2996035
+        ],
+        [
+          -122.0148659,
+          37.2998598
+        ],
+        [
+          -122.013973,
+          37.2998682
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -73,6 +115,14 @@
             "SRC-001107"
           ]
         }
+      ]
+    },
+    {
+      "text": "1348 Miller Ave, San Jose, CA",
+      "role": "other",
+      "src": [
+        "SRC-004182",
+        "SRC-004183"
       ]
     }
   ],
@@ -128,6 +178,14 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 9,
+          "src": [
+            "SRC-004182",
+            "SRC-004183"
+          ],
+          "note": "Nine residential units plus five attached ADUs (14 with ADUs)"
         }
       ],
       "best": 1
@@ -161,6 +219,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PDC21-032, PD21-017, PT21-039, ER21-148",
+          "src": [
+            "SRC-004182"
+          ],
+          "note": "File numbers on the IS/MND documents"
         }
       ]
     },
@@ -179,6 +244,30 @@
           "note": "State report 2024, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.07,
+          "src": [
+            "SRC-004182",
+            "SRC-004183"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004182"
+          ],
+          "note": "Rezoning R-1-8 to R-1-8(PD), Planned Development Permit, tentative map"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -188,9 +277,54 @@
         "SRC-001099",
         "SRC-001107"
       ]
+    },
+    {
+      "text": "CEQAnet: project at 1334 and 1348 Miller Avenue (APNs 377-25-053 and 377-25-055) subdivides two lots into eight residential lots and one common access lot; demolishes two single-family homes; builds five single-family homes with attached ADUs, two attached single-family homes and two deed-restricted affordable stacked-flat condominiums.",
+      "src": [
+        "SRC-004182"
+      ]
+    },
+    {
+      "text": "SF YIMBY: maximum height 31 feet; private garages on the first floor of the single-family homes; private open space about 400 to 1,530 sq ft per unit; construction expected to take 11 months.",
+      "src": [
+        "SRC-004183"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Hestia Real Estate, LLC",
+      "contact": "Melanie Griswold",
+      "linkedin": null,
+      "email": "mg@hestia-re.com",
+      "phone": "(415) 265-1086",
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004182"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "AL Financial Management LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (per SF YIMBY)",
+      "src": [
+        "SRC-004183"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "CDK Investment LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (per SF YIMBY)",
+      "src": [
+        "SRC-004183"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -201,6 +335,24 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2023-10-27",
+      "type": "Other",
+      "label": "Initial Study / Mitigated Negative Declaration circulated (SCH 2023100847)",
+      "src": [
+        "SRC-004182"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-08-14",
+      "type": "Other",
+      "label": "Planning Commission hearing",
+      "src": [
+        "SRC-004183"
+      ],
+      "estimated": false
     },
     {
       "date": "2024-09-24",
@@ -221,6 +373,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Parcels corrected: dropped APNs from the state report that don't match the project address"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 1334 Miller Ave and PD21-017; CEQAnet and SF YIMBY opened",
+      "src": [
+        "SRC-004182",
+        "SRC-004183"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SCC parcel dataset: APN 37725053 situs 1334 Miller Av, APN 37725055 situs 1348 Miller Av; dataset has no owner field",
+      "src": [
+        "SRC-001098",
+        "SRC-004182"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "sanjoseca.gov project page, staff report and response-to-comments documents refuse automated access",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2023100847 IS/MND, received 2023-10-27; no NOD listed",
+      "src": [
+        "SRC-004182"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searches returned no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2024-08-07",
+      "src": [
+        "SRC-004183"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No Hestia Real Estate project page found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources opened",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }

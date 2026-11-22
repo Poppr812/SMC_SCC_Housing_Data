@@ -174,6 +174,65 @@
           "note": "State report 2021, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.0,
+          "src": [
+            "SRC-001526",
+            "SRC-004178"
+          ],
+          "note": "1.0-acre site; existing lot 43,560 sq ft"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004178",
+            "SRC-001526"
+          ],
+          "note": "Six two-story homes"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 28,
+          "src": [
+            "SRC-004178"
+          ],
+          "note": "Project data table: 12 private covered, 12 private uncovered, 4 unassigned spaces"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2244,
+          "src": [
+            "SRC-004179"
+          ],
+          "note": "Notice of Exemption: homes average about 2,244 sq ft, about 49% average FAR"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001526"
+          ],
+          "note": "Special Development Permit and Vesting Tentative Map, Planning Commission"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -182,6 +241,26 @@
       "src": [
         "SRC-001118",
         "SRC-001119"
+      ]
+    },
+    {
+      "text": "Staff report: zoning R-0/PD; six single-family lots of 4,350 to 5,105 sq ft plus a 13,528 sq ft common lot; private road maintained by an HOA. Planning Commission approved the Special Development Permit and Vesting Tentative Map on 2025-01-13 with added findings on the 60 dBA exterior noise standard (General Plan Policy SN-8.9).",
+      "src": [
+        "SRC-001526",
+        "SRC-004178",
+        "SRC-001527"
+      ]
+    },
+    {
+      "text": "Plan sheets show homes with about 1,792 to 1,878 sq ft of living area plus attached garages.",
+      "src": [
+        "SRC-004181"
+      ]
+    },
+    {
+      "text": "SF YIMBY: the site held the Lakehaven Apartments, built as early as 1939, destroyed by fire in late 2019 and demolished in 2021; the vacant lot was listed for sale in late October 2024 at $5.8 million.",
+      "src": [
+        "SRC-004180"
       ]
     }
   ],
@@ -196,11 +275,52 @@
         "SRC-001526"
       ],
       "website": "https://www.sdgarchitectsinc.com/"
+    },
+    {
+      "role": "Other",
+      "company": "GSJ & 2LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner (per city staff report)",
+      "src": [
+        "SRC-001526",
+        "SRC-004180"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "SDG Architects, Inc.",
+      "contact": "Thad Triplett (Project Manager)",
+      "linkedin": null,
+      "website": "https://www.sdgarchitectsinc.com/",
+      "website_basis": "search",
+      "src": [
+        "SRC-004180",
+        "SRC-001527"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "R3 Studios",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004180"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2016",
+      "type": "Sale",
+      "label": "Site last sold for $3.4 million",
+      "src": [
+        "SRC-004180"
+      ],
+      "estimated": false
+    },
     {
       "date": "2021-12-06",
       "type": "Application filed",
@@ -210,12 +330,30 @@
       ]
     },
     {
+      "date": "2023-03",
+      "type": "Application filed",
+      "label": "Current application submitted (SF YIMBY)",
+      "src": [
+        "SRC-004180"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-01-13",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001119"
       ]
+    },
+    {
+      "date": "2025-01-14",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill, SCH 2025010394)",
+      "src": [
+        "SRC-004179"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -233,6 +371,95 @@
       "date": "2026-11-17",
       "by": "Paul via Claude",
       "action": "Linked developer website / project page"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 640 Lakehaven Drive; SF YIMBY and CEQAnet NOE opened",
+      "src": [
+        "SRC-004180",
+        "SRC-004179"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset, APN 11016040: situs 640 Lakehaven Dr, Sunnyvale; dataset has no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Legistar file 25-0162: matter, action history, project data table, plans, conditions of approval (PC 2025-01-13)",
+      "src": [
+        "SRC-001526",
+        "SRC-001527",
+        "SRC-004178",
+        "SRC-004181"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2025010394 Notice of Exemption, 2025-01-14; APR rows already on record",
+      "src": [
+        "SRC-004179"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searches returned no local news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2025-01-19",
+      "src": [
+        "SRC-004180"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for owner GSJ & 2LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SDG Architects website already on record; no project page found",
+      "src": [
+        "SRC-004180"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts on the project",
+      "src": []
+    }
+  }
 }
