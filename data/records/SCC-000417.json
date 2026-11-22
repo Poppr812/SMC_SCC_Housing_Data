@@ -71,8 +71,17 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001956",
+            "SRC-004122"
+          ],
+          "note": "PD permit PD24-004 and tentative map T24-011 approved, issued 2025-11-18; CEQA NOD lists approval 2025-11-18"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -110,6 +119,13 @@
             "SRC-001956"
           ],
           "note": "City folder 080238, PD Zoning (permit type: Zonings (Legacy)); city permit status: Approved. Matched by APN."
+        },
+        {
+          "value": "PD24-004, T24-011, PDC24-039, ER24-088",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Planned Development Permit, Tentative Map, PD rezoning and environmental review folders"
         }
       ]
     },
@@ -121,6 +137,85 @@
             "SRC-001099"
           ],
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 1.09,
+          "src": [
+            "SRC-004123",
+            "SRC-004124"
+          ],
+          "note": "CEQA filings: approximately 1.09-acre site"
+        },
+        {
+          "value": 1.06,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City file PDC24-039: 1.06 gross acres"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004124"
+          ],
+          "note": "Detached two-story homes"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "4br+": 8
+          },
+          "src": [
+            "SRC-004124"
+          ],
+          "note": "Each home has five bedrooms and three bathrooms"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2167,
+          "src": [
+            "SRC-004124"
+          ],
+          "note": "All eight homes use one plan: 942 sq ft first floor plus 1,225 sq ft second floor, plus a 493 sq ft two-car garage (IS states about 2,660 sq ft including garage)"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 32,
+          "src": [
+            "SRC-004124"
+          ],
+          "note": "Four per home: two-car garage and two-car driveway"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001956",
+            "SRC-004122"
+          ],
+          "note": "PD rezoning, PD permit and tentative map with an MND"
         }
       ]
     }
@@ -137,9 +232,88 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Rezoning from R-1-8 to R-1-8(PD) and eight two-story detached homes on eight lots with a new private street off Roberts Avenue; demolition of an approximately 1,300 sq ft home previously damaged by fire; about 18,160 sq ft of green space and landscaping.",
+      "src": [
+        "SRC-004124",
+        "SRC-004122"
+      ]
+    },
+    {
+      "text": "IS/MND list of preparers names Pan-Cal Corporation (David S. Chui, President; Benjamin Chui, Vice President) as applicant, Dahlin Group as architect, Wood Rodgers as civil engineer and Greg Ing & Associates as landscape architect.",
+      "src": [
+        "SRC-004124"
+      ]
+    },
+    {
+      "text": "Earlier city files on this parcel: PRE15-085 (10 attached and detached homes, applicant Marvin Bamburg, MBA Architects), PRE22-065 (eight-lot subdivision, Marvin Bamburg Associates) and PRE23-174 (eight detached homes, applicant David Chui, Fremont Center Plaza LLC).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "City environmental folder ER24-088 states the project was submitted on two adjacent parcels and 1170 and 1190 Roberts Avenue are part of the same project; folder ER24-092 states the review was split back into two separate IS/MNDs as of May 23, 2025.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Pan-Cal Corporation",
+      "contact": "David Chui",
+      "linkedin": null,
+      "email": "dschui@pancal.com",
+      "phone": "(408) 248-6600",
+      "website": "https://www.pancal.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004123",
+        "SRC-004124"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Fremont Center Plaza LLC",
+      "contact": "David Chui",
+      "linkedin": null,
+      "other_role": "Owner listed on city planning permits",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group, Inc.",
+      "contact": "Lauri Moffet-Fehlberg",
+      "linkedin": null,
+      "website": "https://www.dahlingroup.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004124"
+      ]
+    },
+    {
+      "role": "Civil engineer",
+      "company": "Wood Rodgers, Inc.",
+      "contact": "Colt Alvernaz",
+      "linkedin": null,
+      "src": [
+        "SRC-004124"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "Greg Ing & Associates",
+      "contact": "Greg Ing",
+      "linkedin": null,
+      "src": [
+        "SRC-004124"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -150,6 +324,34 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2025-07-03",
+      "type": "Other",
+      "label": "Draft IS/MND filed with State Clearinghouse (SCH 2025070234); review 2025-07-08 to 2025-07-28",
+      "src": [
+        "SRC-004123"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-11-18",
+      "type": "Approved",
+      "label": "PD permit PD24-004, tentative map T24-011 and MND approved",
+      "src": [
+        "SRC-001956",
+        "SRC-004122"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-12-01",
+      "type": "Other",
+      "label": "CEQA Notice of Determination filed",
+      "src": [
+        "SRC-004122"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -162,6 +364,96 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    }
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address, file numbers and Pan-Cal; found CEQAnet filings; Crexi listing for 1170-1190 Roberts returned 403",
+      "src": [
+        "SRC-004123"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 47711003: situs 1170 Roberts Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN (PD24-004, T24-011, PDC24-039, ER24-088, PRE files); sanjoseca.gov pages blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2025070234 MND and NOD; IS/MND PDF",
+      "src": [
+        "SRC-004123",
+        "SRC-004122",
+        "SRC-004124"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched San Jose Spotlight and Mercury News coverage via web search; nothing on this project",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "Crexi listing (1170-1190 Roberts Ave, 16 SFH) returned 403",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "pancal.com homepage opened; no Roberts Avenue page",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Dahlin Group homepage opened; no Roberts Avenue project shown",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in city or CEQA sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for Pan-Cal / David Chui LinkedIn; nothing on this project",
+      "src": []
+    }
+  },
+  "related": [
+    {
+      "id": "SCC-000418",
+      "relation": "adjacent",
+      "note": "Adjacent Pan-Cal Corporation site on Roberts Ave; city combined and later separated the environmental reviews"
     }
   ]
 }

@@ -99,8 +99,16 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Ministerial tentative map T25-007 (SB 1123) approved, issued 2026-04-30"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -131,6 +139,13 @@
             "SRC-001099"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "T25-007, PRE25-007, ER25-079",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Ministerial tentative map, enhanced preliminary review and environmental review folders"
         }
       ]
     },
@@ -144,6 +159,48 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Ministerial tentative map under the Starter Home Revitalization Act (SB 1123)"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PRE25-007: two three-story buildings"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.4,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "T25-007: approximately 0.40 gross acres"
+        },
+        {
+          "value": 0.59,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "PRE25-007: 0.59 gross acres"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -152,12 +209,73 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "City file PRE25-007: demolition of an existing single-family house and an accessory building and removal of multiple trees for two three-story buildings with eight townhome units on a 0.59-gross-acre site. File T25-007: ministerial tentative map subdividing one lot into nine lots (eight residential, one common) under SB 1123 on about 0.40 gross acres. Applicant on both: Ron Jones, Hunt Hale Jones Architects. Zoning MUN.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "MLSListings ML81977845 shows 479 Boynton Ave as a 16,000 sq ft MUN-zoned lot, status Closed, price shown $1,999,998, 814 days on market; listing brokerage Christie's International Real Estate Sereno.",
+      "src": [
+        "SRC-004128"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Architect",
+      "company": "Hunt Hale Jones Architects",
+      "contact": "Ron Jones",
+      "linkedin": null,
+      "website": "https://www.hunthalejones.com/",
+      "website_basis": "opened",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hunt Hale Jones Architects",
+      "contact": "Ronald Jones",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Christie's International Real Estate Sereno",
+      "contact": "Josh Pulpan",
+      "linkedin": null,
+      "src": [
+        "SRC-004128"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-01-09",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE25-007 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-04-21",
+      "type": "Other",
+      "label": "Environmental review ER25-079 filed",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-05-05",
       "type": "Application filed",
@@ -165,6 +283,15 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "date": "2026-04-30",
+      "type": "Approved",
+      "label": "Ministerial tentative map T25-007 approved (SB 1123)",
+      "src": [
+        "SRC-001956"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -172,6 +299,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and H25-011; found MLS land listing",
+      "src": [
+        "SRC-004128"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 30348020: situs 479 Boynton Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose Permits Planning GIS layer by APN (PRE25-007, ER25-079, T25-007); H25-011 not in that layer; sanjoseca.gov blocked",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated San Jose project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR already on record; no CEQAnet filing found; no CTCAC/HCD role",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for 479 Boynton townhomes; no news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLSListings ML81977845 land listing",
+      "src": [
+        "SRC-004128"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named beyond the architect-applicant",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "hunthalejones.com homepage opened; no Boynton project listed",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no public post on this project",
+      "src": []
+    }
+  }
 }

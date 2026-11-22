@@ -137,6 +137,13 @@
             "SRC-001134"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2025-2",
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "SB 330 preliminary application for 7 units under SB 684 (closed)"
         }
       ]
     },
@@ -166,6 +173,42 @@
           "note": "State report 2025, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001552"
+          ],
+          "note": "Master permits BLD-2025-1824 and -1825: two 3-story 4-unit townhouse buildings"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 13872,
+          "src": [
+            "SRC-001552"
+          ],
+          "note": "Habitable space on master permits: 7,024 sq ft north building plus 6,848 sq ft south building; garages 2,164 and 1,852 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus",
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "PLN-2025-57: Zoning Clearance and Tentative Subdivision Map with State Density Bonus Law, subdivision under SB 684"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -173,6 +216,18 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001134"
+      ]
+    },
+    {
+      "text": "City file PLN-2025-57: demolition of an existing single-family dwelling and construction of eight attached townhome units, with subdivision into eight residential lots and one common lot under SB 684, using the State Density Bonus Law.",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "City building permits: BLD-2025-1824 (north building, 7,024 sq ft habitable, 2,164 sq ft garages, 366 sq ft balconies/decks) and BLD-2025-1825 (south building, 6,848 sq ft habitable, 1,852 sq ft garages), titled '8-unit condominium project-City Connect Partners'; grading permit BLD-2025-2255 titled 'Grading and Site Improvement-HACIENDA CC LLC' for the 8 new condo subdivision.",
+      "src": [
+        "SRC-001552"
       ]
     }
   ],
@@ -186,11 +241,50 @@
       "src": [
         "SRC-001551"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "City Connect Partners",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named on city building permits",
+      "src": [
+        "SRC-001552"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Hacienda CC LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named on city grading permit",
+      "src": [
+        "SRC-001552"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Wilson",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Preliminary application name",
+      "src": [
+        "SRC-001551"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2025-01-09",
+      "type": "Other",
+      "label": "SB 330 preliminary application PLN-2025-2 filed (7 units under SB 684)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
     {
       "date": "2025-04-24",
       "type": "Application filed",
@@ -198,6 +292,15 @@
       "src": [
         "SRC-001134"
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Permit issued",
+      "label": "Grading and site improvement permit BLD-2025-2255",
+      "src": [
+        "SRC-001552"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-09-08",
@@ -219,6 +322,86 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "Web search on address and file number; listing sites (MLS, LoopNet, Coldwell Banker) did not load or returned 404",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 40616083: situs 1236 Hacienda Av; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell Inactive Planning and Active Building permit layers queried by address (PLN-2025-57, PLN-2025-2, BLD-2025-1824/1825/2255)",
+      "src": [
+        "SRC-001551",
+        "SRC-001552"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated Campbell project",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR already on record; no CEQAnet filing found; no CTCAC/HCD role",
+      "src": [
+        "SRC-001134"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for 1236 W Hacienda Campbell townhomes; no news coverage",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "MLSListings page did not render listing data; Coldwell Banker page 404",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched City Connect Partners and Hacienda CC LLC; no company site found",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in city permit data",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in public sources",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search; no public post on this project",
+      "src": []
+    }
+  }
 }
