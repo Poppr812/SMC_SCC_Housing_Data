@@ -128,8 +128,16 @@
             "SRC-001130"
           ],
           "note": "State category 5+ units, rental tenure"
+        },
+        {
+          "value": "Townhomes",
+          "src": [
+            "SRC-003579"
+          ],
+          "note": "City summary: addition of townhomes in area of existing parking lot"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -209,6 +217,19 @@
           "note": "State report 2022, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Specific / master plan"
+          ],
+          "src": [
+            "SRC-003579"
+          ],
+          "note": "Listed at Base development level in the El Camino Real/Downtown Specific Plan project summary"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -216,6 +237,12 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001130"
+      ]
+    },
+    {
+      "text": "Menlo Park El Camino Real/Downtown Specific Plan project summary (2026-03-16): addition of townhomes in area of existing parking lot; development level Base; entitlement status Approved; building permit status plans not yet submitted; 8 net new residential units; 0 net new non-residential sq ft.",
+      "src": [
+        "SRC-003579"
       ]
     }
   ],
@@ -247,6 +274,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and owner: Menlo Park ECR/D project summary 2026-03-16.",
+      "src": [
+        "SRC-003579"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer: 061-422-400 owner of record BELTRAMO ENTERPRISES INC, already on record.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Menlo Park ECR/D Specific Plan project summary 2026-03-16. 2022-01-24 PC packet has no item for this site; 2022-01-10 packet URL returned 404.",
+      "src": [
+        "SRC-003579"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A2 (Menlo Park) already on record; no CEQAnet filing found by search.",
+      "src": [
+        "SRC-001130"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search of Almanac for 1550 El Camino Real townhouses found no article on this site.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web searches found no trade press coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Owner Beltramo Enterprises Inc; no project page found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in any source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no LinkedIn posts for this site.",
+      "src": []
+    }
+  }
 }

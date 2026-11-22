@@ -110,6 +110,13 @@
             "SRC-001212"
           ],
           "note": "City project page; the state report said 6"
+        },
+        {
+          "value": 7,
+          "src": [
+            "SRC-004139"
+          ],
+          "note": "Earlier on-site Notice of Development Proposal; the city project page and 2023 hearing notice say 8"
         }
       ],
       "best": 1
@@ -157,6 +164,70 @@
           "note": "State report 2020, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-001212",
+            "SRC-004138"
+          ]
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.263,
+          "src": [
+            "SRC-004138"
+          ]
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 7,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004139"
+          ],
+          "note": "Earlier seven-unit proposal: all three-bedroom"
+        },
+        {
+          "value": {
+            "studio": 0,
+            "1br": 0,
+            "2br": 0,
+            "3br": 8,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004140"
+          ],
+          "note": "Sale listing describes 8 three-bedroom, three-bath homes of about 1,341 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004138"
+          ],
+          "note": "Vesting condominium tentative map and design review permit; CEQA Class 32 infill exemption"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -164,6 +235,24 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001111"
+      ]
+    },
+    {
+      "text": "Planning Commission notice (May 22, 2023): vesting condominium tentative map TTM21-001 and design review DR20-020 for a one-lot subdivision with eight air-space condominium units, eight three-story single-family attached units on 0.263 acres; owner/applicant Youngsin Lee/Jim Goring; CEQA exemption under Section 15332 infill.",
+      "src": [
+        "SRC-004138"
+      ]
+    },
+    {
+      "text": "Earlier Notice of Development Proposal (DR20-020) describes seven three-bedroom, three-story townhomes in two plans: four units of 1,348 sq ft with a one-car garage and three units of 1,681 sq ft with a two-car garage. Zoning R-MD-2.",
+      "src": [
+        "SRC-004139"
+      ]
+    },
+    {
+      "text": "MLSListings shows the site listed for sale, status Active as of 2026-07-02, asking $1,788,000, described as fully entitled for 8 townhome condominiums; existing 1926 house, 2 bed 1 bath, 1,070 sq ft, on an 11,466 sq ft lot.",
+      "src": [
+        "SRC-004140"
       ]
     }
   ],
@@ -175,6 +264,18 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jim Goring",
+      "contact": "Jim Goring",
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001212",
+        "SRC-004138",
+        "SRC-004139"
       ]
     }
   ],
@@ -188,6 +289,15 @@
       "src": [
         "SRC-001111"
       ]
+    },
+    {
+      "date": "2023-05-08",
+      "type": "Other",
+      "label": "Planning Commission hearing continued to May 22, 2023",
+      "src": [
+        "SRC-004138"
+      ],
+      "estimated": false
     },
     {
       "date": "2023-05-22",
@@ -208,6 +318,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address: city project page and attachments, MLS listing SF425029297.",
+      "src": [
+        "SRC-001212",
+        "SRC-004140"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer: 063-253-410 owner of record LEE SAMUEL & LEE YOUNGSIN, already on record.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "EPA project page plus Notice of Development Proposal and May 22, 2023 PC continuance notice. Project plans PDF is image-only.",
+      "src": [
+        "SRC-001212",
+        "SRC-004139",
+        "SRC-004138"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A (East Palo Alto) already on record; no CTCAC or HCD role.",
+      "src": [
+        "SRC-001111"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLSListings sale listing SF425029297.",
+      "src": [
+        "SRC-004140"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant Jim Goring and owners are individuals; no project website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in the city page or notices.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in any source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com for 2340 Cooley returned no relevant posts.",
+      "src": []
+    }
+  }
 }

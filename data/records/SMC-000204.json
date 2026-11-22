@@ -153,6 +153,76 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 8554,
+          "src": [
+            "SRC-004131",
+            "SRC-004132",
+            "SRC-004133"
+          ],
+          "note": "Approximate gross floor area per the Notice of Exemption"
+        },
+        {
+          "value": 10316,
+          "src": [
+            "SRC-004134"
+          ],
+          "note": "Primary use area shared by units and building support spaces, per SF YIMBY 2025; plus 1,897 sq ft carport and 555 sq ft storage"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 13,
+          "src": [
+            "SRC-004131",
+            "SRC-004132",
+            "SRC-004133"
+          ]
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 7,
+          "src": [
+            "SRC-004131",
+            "SRC-004135"
+          ],
+          "note": "Six market-rate units plus one additional market-rate unit under State Density Bonus Law"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary",
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004135",
+            "SRC-004131"
+          ],
+          "note": "Use permit, architectural control, major subdivision and BMR agreement; filed under State Density Bonus Law (Gov. Code 65915)"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.25,
+          "src": [
+            "SRC-004131"
+          ],
+          "note": "Notice of Exemption gives the site as 10,995 sq ft"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -160,6 +230,26 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001130"
+      ]
+    },
+    {
+      "text": "Notice of Exemption: demolition of two existing detached residences and construction of an eight-unit condominium project, about 8,554 sq ft of gross floor area and 13 parking spaces; six market-rate units, one below-market-rate unit and one additional market-rate unit under State Density Bonus Law. Site is 10,995 sq ft, zoned R-3. Applicant and person carrying out the project: Farzad Ghafari.",
+      "src": [
+        "SRC-004131",
+        "SRC-004132"
+      ]
+    },
+    {
+      "text": "Planning Commission notice (2024-04-15): substandard lot width; waivers requested for maximum FAR, maximum height and maximum driveway/parking paving; one lot to be subdivided into eight condominium parcels and one common area parcel. The Commission was the final decision-maker on the use permit, architectural control and BMR agreement and recommended to the City Council on the major subdivision.",
+      "src": [
+        "SRC-004135"
+      ]
+    },
+    {
+      "text": "SF YIMBY (2022-01-15) describes the applicant as a Sunnyvale-based individual and the project as filed under SB 330 and the State Density Bonus Law. SF YIMBY (2025-07-12) reports building permits filed, naming LPMD Architects; its body text gives the address as 1120 Hoover Street.",
+      "src": [
+        "SRC-004136",
+        "SRC-004134"
       ]
     }
   ],
@@ -172,11 +262,51 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "Farzad Ghafari",
+      "contact": "Farzad Ghafari",
+      "linkedin": null,
+      "src": [
+        "SRC-004131",
+        "SRC-004135"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "LPMD Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004136",
+        "SRC-004137",
+        "SRC-004134"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-04-15",
+      "type": "Other",
+      "label": "Planning Commission public hearing (use permit, architectural control, BMR agreement; recommendation on major subdivision)",
+      "src": [
+        "SRC-004135"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2024-04-19",
+      "type": "Other",
+      "label": "CEQA Notice of Exemption filed (Class 32 infill)",
+      "src": [
+        "SRC-004131",
+        "SRC-004133"
+      ],
+      "estimated": false
+    },
     {
       "date": "2024-07-09",
       "type": "Approved",
@@ -184,6 +314,25 @@
       "src": [
         "SRC-001130"
       ]
+    },
+    {
+      "date": "2024-07-12",
+      "type": "Other",
+      "label": "Second CEQA Notice of Exemption filed",
+      "src": [
+        "SRC-004132",
+        "SRC-004133"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2025-07",
+      "type": "Other",
+      "label": "Building permit applications reported filed",
+      "src": [
+        "SRC-004134"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -191,6 +340,95 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address: CEQAnet SCH 2024040911, Menlo Park PC notice, three SF YIMBY articles.",
+      "src": [
+        "SRC-004133",
+        "SRC-004135"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer: 071-103-420 owner of record NIKA PROJECT LLC, already on record.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Menlo Park public notice for the 2024-04-15 Planning Commission hearing. No city project page or council staff report found by search.",
+      "src": [
+        "SRC-004135"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; county role limited to clerk filing of the CEQA notice.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "CEQAnet SCH 2024040911: two Notices of Exemption (posted 2024-04-22 and 2024-07-17). APR Table A2 already on record.",
+      "src": [
+        "SRC-004133",
+        "SRC-004131",
+        "SRC-004132",
+        "SRC-001130"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web searches found no local news coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2022-01-15, 2024-07-09 and 2025-07-12.",
+      "src": [
+        "SRC-004136",
+        "SRC-004137",
+        "SRC-004134"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant is an individual (Farzad Ghafari); no developer website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "LPMD Architects named by SF YIMBY; web search found no firm project page for this site.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in any source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search restricted to linkedin.com for 1220 Hoover returned no relevant posts.",
+      "src": []
+    }
+  }
 }
