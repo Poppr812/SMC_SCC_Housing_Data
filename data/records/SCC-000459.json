@@ -96,6 +96,13 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City preliminary reviews PRE24-275 (2-story multifamily building with 6 units) and PRE26-238 (3 detached residential buildings with 6 units)"
         }
       ]
     },
@@ -114,6 +121,13 @@
             "SRC-001956"
           ],
           "note": "City folder 115435, Tentative Map (permit type: Subdivision); city permit status: Under Review. Matched by APN."
+        },
+        {
+          "value": "PRE24-275, ER25-123, PRE26-238",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "City preliminary review and environmental review folders for the site"
         }
       ]
     },
@@ -125,6 +139,44 @@
             "SRC-001099"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.25,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per H25-017 and T25-013"
+        },
+        {
+          "value": 0.15,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per PRE24-275"
+        },
+        {
+          "value": 0.16,
+          "src": [
+            "SRC-004238"
+          ],
+          "note": "Lot size in MLS listing"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H25-017 description cites a density bonus waiver for commercial use in the MUC zoning district"
         }
       ]
     }
@@ -141,18 +193,82 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permit GIS: H25-017 Site Development Permit, \"construction of (5) 2-story condos with on-site parking with a density bonus waiver for commercial use in the MUC Zoning District, on a 0.25-gross-acre vacant site,\" applicant De Nguyen, status Inactive. T25-013 and ER25-123 show Under Review. PRE26-238, filed July 2026 by De Nguyen (Speed Construction and Development Inc), proposes 3 detached residential buildings with a total of 6 units and shows Under Review.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "text": "MLS listing ML81959920 shows the lot sold for $790,000 as a vacant development site zoned Mixed Use Commercial, listed by Marcus & Millichap; the listing does not show a sale date.",
+      "src": [
+        "SRC-004238"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Recorded owner",
+      "company": "Speed Construction and Development Inc",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Developer",
+      "company": "Speed Construction and Development Inc",
+      "contact": "De Nguyen",
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Broker",
+      "company": "Marcus & Millichap",
+      "contact": "Sam Runco; Philip Batlin",
+      "linkedin": null,
+      "src": [
+        "SRC-004238"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-10-16",
+      "type": "Other",
+      "label": "Preliminary focused review PRE24-275 filed (6-unit 2-story multifamily building); complete",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2025-06-17",
+      "type": "Application filed",
+      "label": "Vesting Tentative Map T25-013 and environmental review ER25-123 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2025-06-23",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE26-238 filed (3 detached buildings, 6 units)",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -166,6 +282,89 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 905 Almaden Ave San Jose: MLS land listing ML81959920 (sold $790,000).",
+      "src": [
+        "SRC-004238"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 264-38-053 situs 905 Almaden Av, San Jose; no owner field. Owner name taken from city permit GIS.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose permit GIS layer queried by APN 26438053: PRE24-275, T25-013, ER25-123, H25-017, PRE26-238. sanjoseca.gov pages not opened (blocked to automated access).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated city project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR Table A for San Jose already on the record; no CEQAnet, CTCAC/CDLAC or HCD entries found.",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of SJ Spotlight and Mercury News: no coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "MLSListings land listing for the site.",
+      "src": [
+        "SRC-004238"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no website or project page for Speed Construction and Development Inc.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any public source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: none.",
+      "src": []
+    }
+  }
 }

@@ -131,6 +131,29 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "population": {
+      "claims": [
+        {
+          "value": [
+            "Farmworker"
+          ],
+          "src": [
+            "SRC-004239"
+          ],
+          "note": "County letter describes agriculture worker housing units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 7.38,
+          "src": [
+            "SRC-004239"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -139,12 +162,50 @@
       "src": [
         "SRC-001114"
       ]
+    },
+    {
+      "text": "County file PLN24-020 covers Building Site Approval, Grading Approval and Planning Clearance for a new single-family residence and ADU, \"development of five (5) new and conversion of the existing residence to a total of six (5) agriculture worker housing units,\" and a small-scale winery with wine tasting on a 7.38-acre lot. The letter gives both six and five as the agriculture worker unit total.",
+      "src": [
+        "SRC-004239"
+      ]
+    },
+    {
+      "text": "The county letter notes Santa Teresa Blvd is a designated scenic road, so structures within 100 feet of the right of way are subject to design review, and records a historic resource on the site (P-43-002845).",
+      "src": [
+        "SRC-004239"
+      ]
+    },
+    {
+      "text": "The county letter is dated February 29, 2024; the state APR reports the application date as October 10, 2025.",
+      "src": [
+        "SRC-004239"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "David Faria",
+      "contact": "David Faria",
+      "linkedin": null,
+      "email": "david@fariaengineering.com",
+      "other_role": "Applicant contact (addressee of county letter)",
+      "src": [
+        "SRC-004239"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-02-29",
+      "type": "Other",
+      "label": "County Planning letter on policy issues for PLN24-020",
+      "src": [
+        "SRC-004239"
+      ]
+    },
     {
       "date": "2025-10-10",
       "type": "Application filed",
@@ -159,6 +220,87 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 13375 Santa Teresa Blvd and PLN24-020 led to the county planning letter.",
+      "src": [
+        "SRC-004239"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 779-18-019 situs 13375 Santa Teresa Bl, San Martin, unincorporated; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Unincorporated San Martin; no city role.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "County Planning document store: PLN24-020 policy issues letter dated 2024-02-29.",
+      "src": [
+        "SRC-004239"
+      ]
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR Table A for Santa Clara County already on the record; no CEQAnet, HCD farmworker housing or CTCAC entries found for the address.",
+      "src": [
+        "SRC-001114"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of Morgan Hill Times, Gilroy Dispatch and SJ Spotlight: no coverage of this site.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No owner or developer company named in public sources found; letter names only the applicant contact.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in any public source found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: none.",
+      "src": []
+    }
+  }
 }

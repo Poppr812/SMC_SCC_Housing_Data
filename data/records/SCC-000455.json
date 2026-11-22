@@ -140,8 +140,18 @@
             "SRC-001110"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 6,
+          "src": [
+            "SRC-004234",
+            "SRC-004235",
+            "SRC-004236"
+          ],
+          "note": "City Council approved a six-unit rowhouse development and a vesting tentative map for six residential condominium units"
         }
-      ]
+      ],
+      "best": 1
     },
     "planning_file": {
       "claims": [
@@ -152,6 +162,14 @@
             "SRC-001110"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PL-2019-144 (PUD and Development Review Permit), PL-2019-146 (Vesting Tentative Map), Tract No. 10395",
+          "src": [
+            "SRC-004235",
+            "SRC-004236"
+          ],
+          "note": "City application numbers"
         }
       ]
     },
@@ -165,6 +183,53 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.39,
+          "src": [
+            "SRC-004234"
+          ],
+          "note": "0.39-acre project site"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 6
+          },
+          "src": [
+            "SRC-004234"
+          ],
+          "note": "Each unit has three bedrooms, about 1,900 to 2,300 sq ft"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004234"
+          ],
+          "note": "Planned Unit Development Permit and Development Review Permit approved by City Council"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Subject to the City's BMR Ordinance, Phase I; BMR in-lieu fee of 3 percent of the gross sales price of each unit, paid at close of escrow. Staff estimated about $270,000 total at an expected average price of about $1.5 million per unit.",
+          "src": [
+            "SRC-004234"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -174,12 +239,75 @@
         "SRC-001101",
         "SRC-001110"
       ]
+    },
+    {
+      "text": "City records call the project the Rowhouse Development at 1958 Latham Street: six ownership rowhome units in two three-unit buildings facing Latham Street, with a rear one-way driveway to private garages and guest parking, preserving two Heritage coast live oaks. The 2016 approval expired after a one-year extension when utility design issues kept the applicant from completing the building permit process.",
+      "src": [
+        "SRC-004234"
+      ]
+    },
+    {
+      "text": "The May 2023 Council report states the developer, Jason Kim LLC, paid $229,178 in subdivision fees.",
+      "src": [
+        "SRC-004236"
+      ]
+    },
+    {
+      "text": "The state APR reports 5 units; city approvals are for 6 units.",
+      "src": [
+        "SRC-004234"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Jason Kim, LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004235",
+        "SRC-004236"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Rong Chang USA Corporation",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Name on plan title block",
+      "src": [
+        "SRC-004237"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2016-03-15",
+      "type": "Approved",
+      "label": "Earlier City Council approval of the project; permit later expired",
+      "src": [
+        "SRC-004234"
+      ]
+    },
+    {
+      "date": "2018-02",
+      "type": "Other",
+      "label": "Existing house, garage and 2,500 sq ft warehouse demolished",
+      "src": [
+        "SRC-004234"
+      ]
+    },
+    {
+      "date": "2019-11-13",
+      "type": "Other",
+      "label": "Zoning Administrator and Subdivision Committee recommend approval",
+      "src": [
+        "SRC-004234"
+      ]
+    },
     {
       "date": "2019-12-10",
       "type": "Application filed",
@@ -197,6 +325,14 @@
       ]
     },
     {
+      "date": "2023-05-23",
+      "type": "Other",
+      "label": "City Council final map approval, Tract No. 10395",
+      "src": [
+        "SRC-004236"
+      ]
+    },
+    {
       "date": "2024-05-22",
       "type": "Permit issued",
       "label": "Building permit issued",
@@ -210,6 +346,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 1954/1958 Latham St Mountain View led to City Legistar matters for 1958 Latham Street.",
+      "src": [
+        "SRC-004234"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset: APN 154-21-017 situs 1958 Latham St, Mountain View; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Mountain View Legistar: Council 2016-03-15 (matter 16-431), Council 2019-12-10 report, resolution and plans (matter 190690), Council 2023-05-23 final map report (matter 203026).",
+      "src": [
+        "SRC-004234",
+        "SRC-004235",
+        "SRC-004237",
+        "SRC-004236"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated city project; no county role found.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR Tables A and A2 for Mountain View already on the record; city report cites CEQA categorical exemption 15332; no CEQAnet filing found.",
+      "src": [
+        "SRC-001101",
+        "SRC-001110"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of Mountain View Voice and other local news: no coverage of this project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search of trade press: no coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for Jason Kim, LLC.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Plan title block shows Rong Chang USA Corporation; web search found no company website or project page.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in any public source found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project: none.",
+      "src": []
+    }
+  }
 }
