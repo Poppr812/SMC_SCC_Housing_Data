@@ -100,8 +100,17 @@
             "SRC-001106"
           ],
           "note": "State category 5+ units, for-sale tenure"
+        },
+        {
+          "value": "Single-family",
+          "src": [
+            "SRC-004205",
+            "SRC-004206"
+          ],
+          "note": "Six detached single-family homes as a common interest development of six condominium lots with a common access easement"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -143,6 +152,13 @@
             "SRC-001106"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PRE23-00102, PLN24-00034, PLN24-00044",
+          "src": [
+            "SRC-004206"
+          ],
+          "note": "SB 330 preliminary application, Architectural Review, Vesting Tentative Map"
         }
       ]
     },
@@ -172,6 +188,92 @@
           "note": "State report 2024, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.44,
+          "src": [
+            "SRC-004205"
+          ],
+          "note": "18,651 sq ft corner lot at Cheeney Street and Third Street"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004206"
+          ],
+          "note": "Two-story homes"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 6
+          },
+          "src": [
+            "SRC-004205"
+          ],
+          "note": "DRH report: each home three bedrooms, 2.5 baths"
+        },
+        {
+          "value": {
+            "4br+": 6
+          },
+          "src": [
+            "SRC-004206"
+          ],
+          "note": "Council report: each home four bedrooms, 2.5 baths"
+        }
+      ]
+    },
+    "avg_unit_sf": {
+      "claims": [
+        {
+          "value": 2275,
+          "src": [
+            "SRC-004206"
+          ],
+          "note": "Council report: 2,275 sq ft of living area per home"
+        },
+        {
+          "value": 2772,
+          "src": [
+            "SRC-004205"
+          ],
+          "note": "DRH report: about 2,772 sq ft per home including a 410 sq ft two-car garage"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004205",
+            "SRC-004206"
+          ],
+          "note": "SB 330 project; state density bonus law used for waivers (setbacks, building coverage, landscaping) and one concession (six-foot fence in street side setback)"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "One of the six homes deed-restricted at moderate income",
+          "src": [
+            "SRC-004206"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -180,18 +282,104 @@
       "src": [
         "SRC-001106"
       ]
+    },
+    {
+      "text": "Existing single-family home built about 1963 to be demolished. Single driveway from Third Street serves all six homes, each with a two-car garage. City found the project categorically exempt from CEQA under Class 32 (infill).",
+      "src": [
+        "SRC-004205",
+        "SRC-004209"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Valley Oak Partners",
+      "contact": "Jeff Aguilar",
+      "linkedin": null,
+      "src": [
+        "SRC-004206"
+      ]
+    },
+    {
+      "role": "Recorded owner",
+      "company": "Kathleen Daudistel Trustee & Et Al",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004205"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Dahlin Group",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.dahlingroup.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004207"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2023-09-13",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted (PRE23-00102)",
+      "src": [
+        "SRC-004206"
+      ]
+    },
     {
       "date": "2024-01-17",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001106"
+      ]
+    },
+    {
+      "date": "2024-09-24",
+      "type": "Other",
+      "label": "Architectural Review application PLN24-00034 deemed complete",
+      "src": [
+        "SRC-004206"
+      ]
+    },
+    {
+      "date": "2024-11-13",
+      "type": "Other",
+      "label": "Community meeting",
+      "src": [
+        "SRC-004205"
+      ]
+    },
+    {
+      "date": "2024-12-11",
+      "type": "Approved",
+      "label": "Architectural Review PLN24-00034 approved at Development Review Hearing",
+      "src": [
+        "SRC-004206"
+      ]
+    },
+    {
+      "date": "2025-10-08",
+      "type": "Other",
+      "label": "Planning Commission recommends approval of vesting tentative map (7-0)",
+      "src": [
+        "SRC-004208",
+        "SRC-004206"
+      ]
+    },
+    {
+      "date": "2025-12-16",
+      "type": "Approved",
+      "label": "City Council approves vesting tentative map PLN24-00044 (Resolution 25-9518)",
+      "src": [
+        "SRC-004209"
       ]
     }
   ],
@@ -200,6 +388,92 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address and developer: SF YIMBY 2024-12-11 article names Dahlin Group as designer",
+      "src": [
+        "SRC-004207"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 10409034: situs 4503 Cheeney St, Santa Clara; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Santa Clara Legistar: DRH 2024-12-11 report (24-1140), PC 2025-10-08 (25-937), Council 2025-11-18 (25-868) and 2025-12-16 (25-1660). santaclaraca.gov notice pages refuse automated access",
+      "src": [
+        "SRC-004205",
+        "SRC-004208",
+        "SRC-004206",
+        "SRC-004209"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; CEQAnet search for the address returned no match (city used a Class 32 exemption)",
+      "src": [
+        "SRC-001106"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for local news on 4503 Cheeney returned only listing pages",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2024-12-11; LoopNet land listing returned 403; broker PDF page returned 500",
+      "src": [
+        "SRC-004207"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Valley Oak Partners site did not load a page for this project",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "dahlingroup.com homepage opened; no page for this project found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in city reports or press",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

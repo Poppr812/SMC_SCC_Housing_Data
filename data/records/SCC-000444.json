@@ -1,6 +1,6 @@
 {
   "id": "SCC-000444",
-  "name": "300 Redding Rd",
+  "name": "Mercury Lane",
   "parcels": [
     {
       "apn": "414-39-010",
@@ -76,9 +76,16 @@
             "SRC-001552"
           ],
           "note": "Master permit BLD-2025-1836 issued 2026-09-17"
+        },
+        {
+          "value": "Under construction",
+          "src": [
+            "SRC-004210"
+          ],
+          "note": "Groundbreaking the week before the 2026-03-11 article"
         }
       ],
-      "best": 1
+      "best": 2
     },
     "jurisdiction": {
       "claims": [
@@ -109,6 +116,12 @@
             "SRC-001134"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "PLN-2024-136, PLN-2024-160, PLN-2024-172, PLN-2025-113, BLD-2025-1836, ENG-2025-362-TM (Tract 10690)",
+          "src": [
+            "SRC-004211"
+          ]
         }
       ]
     },
@@ -122,6 +135,56 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "3br": 2,
+            "4br+": 4
+          },
+          "src": [
+            "SRC-004211"
+          ],
+          "note": "PLN-2024-172: four 4-bedroom/3.5-bath units and two 3-bedroom/3-bath units, each with a two-car garage"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 12041,
+          "src": [
+            "SRC-004211"
+          ],
+          "note": "BLD-2025-1836: habitable space 12,041 sq ft; garages 3,218 sq ft and porch/deck/balcony 442 sq ft not included"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004211"
+          ],
+          "note": "PLN-2024-172 describes three-story townhomes; building permit BLD-2025-1836 describes 2.5-story townhomes"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-004211",
+            "SRC-004210"
+          ],
+          "note": "SB 684 project; zoning clearance PLN-2024-160. Preliminary application PLN-2024-136 text cited SB 330 builder's remedy"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -129,6 +192,18 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001134"
+      ]
+    },
+    {
+      "text": "City permit data: tract map ENG-2025-362-TM (Tract 10690) to subdivide one parcel into six residential lots and one common lot, status Recorded. Private street named Mercury Ln. Agreement for Private Improvements in the Public Right-of-Way recorded 2026-07-17 as Document No. 26018944.",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    {
+      "text": "SF YIMBY reports units of about 1,400 to 2,000 sq ft and starting prices expected more than 30% below Campbell's median single-family home price.",
+      "src": [
+        "SRC-004210"
       ]
     }
   ],
@@ -142,17 +217,102 @@
       "src": [
         "SRC-001551"
       ]
+    },
+    {
+      "role": "Developer",
+      "company": "AlphaX RE Capital",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004210"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Jia",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant named on planning cases PLN-2024-136, PLN-2024-172 and PLN-2025-113",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Alignment Architects Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Named on sewer encroachment permit ENG-2026-248",
+      "src": [
+        "SRC-004211"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
     {
+      "date": "2024-09-10",
+      "type": "Other",
+      "label": "Preliminary application PLN-2024-136 filed",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    {
       "date": "2024-10-31",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001134"
+      ]
+    },
+    {
+      "date": "2024-11-15",
+      "type": "Other",
+      "label": "Variance application PLN-2024-172 filed (new utility pole, overhead line to remain)",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    {
+      "date": "2025-06-20",
+      "type": "Permit issued",
+      "label": "Demolition permit BLD-2025-95 for existing 1,252 sq ft house",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    {
+      "date": "2025-08-05",
+      "type": "Other",
+      "label": "Modification PLN-2025-113 filed to allow facade change",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "type": "Permit issued",
+      "label": "Site grading and improvement permit BLD-2026-201",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    {
+      "date": "2026-03",
+      "type": "Construction start",
+      "label": "Groundbreaking",
+      "src": [
+        "SRC-004210"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Permit issued",
+      "label": "Interim driveway encroachment permit ENG-2026-42-LD (Tract 10690)",
+      "src": [
+        "SRC-004211"
       ]
     },
     {
@@ -175,6 +335,89 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address: SF YIMBY 2026-03-11 groundbreaking article",
+      "src": [
+        "SRC-004210"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 41439010: situs 300 Redding Rd, Campbell; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell permits dataset (CampbellPermits layer): planning, building and engineering records 2024-2026. Campbell has no Legistar API client",
+      "src": [
+        "SRC-004211"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; no CEQAnet filing found for a ministerial SB 684 project",
+      "src": [
+        "SRC-001134"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "ABC7 2026-03-06 covers six SB 684 townhouses in Campbell but gives no street address, so not cited",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2026-03-11: developer AlphaX RE Capital, project name Mercury Lane",
+      "src": [
+        "SRC-004210"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No AlphaX RE Capital website found; profile pages only",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Architect not named in press; Alignment Architects Inc. appears on a city sewer permit, no firm site found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named in city data or press",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts on this project",
+      "src": []
+    }
+  }
 }

@@ -92,6 +92,13 @@
             "SRC-001099"
           ],
           "note": "Units in the application as reported"
+        },
+        {
+          "value": 4,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H25-016 Site Development Permit text: four residential units, one affordable. PRE25-272 and T25-015 describe six units"
         }
       ]
     },
@@ -117,6 +124,13 @@
             "SRC-001956"
           ],
           "note": "City folder 116082, Tentative Map (permit type: Subdivision); city permit status: Under Review. Matched by APN."
+        },
+        {
+          "value": "PRE24-214, ER25-083",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Enhanced preliminary review (complete 2024-11-01) and environmental review (under review)"
         }
       ]
     },
@@ -146,6 +160,30 @@
           "note": "State report 2025, application stage: 1 deed-restricted units"
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.21,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Approximately 0.21 gross acres (T25-015, PRE24-214)"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "H25-016: waivers to reduce setbacks and lot frontages under the State Density Bonus Law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -172,12 +210,63 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City planning data: PRE24-214 sought feedback on rezoning the site from R-2 Two-Family Residence to R-M Multiple Residence and demolishing an existing approximately 1,044 sq ft structure. T25-015 would create six residential condominiums and one common lot for a private driveway.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Alejandro Carrillo",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner and applicant named on city planning permits",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Michaelle Williams",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant named on preliminary review PRE24-214",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2024-09-06",
+      "type": "Other",
+      "label": "Enhanced preliminary review PRE24-214 filed (rezoning R-2 to R-M)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2025-04-24",
+      "type": "Other",
+      "label": "Environmental review ER25-083 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2025-06-18",
+      "type": "Other",
+      "label": "SB 330 preliminary application PRE25-272 filed",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2025-07-09",
       "type": "Application filed",
@@ -197,6 +286,85 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on address returned only listings for other Empire St addresses",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 24934016: situs 415 E Empire St, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose planning GIS layer 23 by APN: PRE24-214, ER25-083, PRE25-272, H25-016, T25-015. sanjoseca.gov web pages refuse automated access",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A row already on record; no CEQAnet filing found",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "SF YIMBY search found no article on 415 E Empire",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Owner-applicant is an individual; no company site",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Architect not named in any public source found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts",
+      "src": []
+    }
+  }
 }

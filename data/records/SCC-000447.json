@@ -54,8 +54,17 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFD"
+        },
+        {
+          "value": "Apartments",
+          "src": [
+            "SRC-001956",
+            "SRC-002624"
+          ],
+          "note": "H25-005: one two-story apartment building; building permit subtype Apartment"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -66,8 +75,16 @@
             "SRC-001107"
           ],
           "note": "State report shows entitlement approval"
+        },
+        {
+          "value": "Permitted",
+          "src": [
+            "SRC-002624"
+          ],
+          "note": "Building permit 2026-124514-MF issued 2026-06-29"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -85,7 +102,9 @@
         {
           "value": 6,
           "src": [
-            "SRC-001107"
+            "SRC-001107",
+            "SRC-002624",
+            "SRC-001956"
           ],
           "note": "Units reported in entitlement and permit rows"
         },
@@ -96,7 +115,8 @@
           ],
           "note": "Units in the application as reported"
         }
-      ]
+      ],
+      "best": 0
     },
     "affordability_type": {
       "claims": [
@@ -127,6 +147,13 @@
             "SRC-001107"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "HP25-001, ER25-025, AD25-657, HPAD26-003, building permit 2026-124514-MF",
+          "src": [
+            "SRC-001956",
+            "SRC-002624"
+          ]
         }
       ]
     },
@@ -149,6 +176,53 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-001956",
+            "SRC-004212"
+          ]
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 5728,
+          "src": [
+            "SRC-002624"
+          ],
+          "note": "Square footage on building permit 2026-124514-MF"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.16,
+          "src": [
+            "SRC-001956",
+            "SRC-004212"
+          ],
+          "note": "Approximately 0.16 gross acres, vacant lot in the Hensley City Landmark District"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Density bonus"
+          ],
+          "src": [
+            "SRC-004212"
+          ],
+          "note": "Two deed-restricted units allow use of the State Density Bonus law"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -164,9 +238,53 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Building permit 2026-124514-MF lists a permit valuation of $879,706 and 5,728 sq ft.",
+      "src": [
+        "SRC-002624"
+      ]
+    },
+    {
+      "text": "Earlier preliminary reviews on this parcel by other applicants: PRE17-197 (condos for public employees, Alavi Setayesh, 2017), PRE24-026 (three-story duplex and 1,200 sq ft ADU, J&P House Design, 2024) and PRE24-203 (two-story six-unit building, Xinxin Nong, 2024).",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "ALDN Ventures LLC",
+      "contact": "Danny Nguyen Pham",
+      "linkedin": null,
+      "other_role": "Owner and applicant named on city permits",
+      "src": [
+        "SRC-001956",
+        "SRC-004212"
+      ]
+    },
+    {
+      "role": "General contractor",
+      "company": "ALDN Ventures LLC",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-002624"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Rabit Design",
+      "contact": null,
+      "linkedin": null,
+      "website": "https://www.rabitdesign.com",
+      "website_basis": "opened",
+      "src": [
+        "SRC-004212"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -179,11 +297,51 @@
       ]
     },
     {
+      "date": "2025-02-20",
+      "type": "Other",
+      "label": "Historic Preservation Permit HP25-001 filed (later approved)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
       "date": "2025-09-17",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001107"
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "type": "Other",
+      "label": "Planning Director hearing on the project",
+      "src": [
+        "SRC-004212"
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "type": "Other",
+      "label": "Historic Preservation Permit Adjustment HPAD26-003 approved (facade changes)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "type": "Other",
+      "label": "Regulatory Agreement for H25-005 approved (AD25-657)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "type": "Permit issued",
+      "label": "Building permit 2026-124514-MF for six-unit apartment building",
+      "src": [
+        "SRC-002624"
       ]
     }
   ],
@@ -197,6 +355,90 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on address: SF YIMBY 2025-09-12 article; MLS land listing ML81966639 shows a sold bare lot with no sale date",
+      "src": [
+        "SRC-004212"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel dataset APN 24947025: situs 445 N 6th St, San Jose; no owner field",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose planning GIS layer 23 and building permit layer 8 by APN. sanjoseca.gov web pages refuse automated access",
+      "src": [
+        "SRC-001956",
+        "SRC-002624"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role found",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "APR Table A and A2 rows already on record; no CEQAnet filing found",
+      "src": [
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no local news",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2025-09-12: owner ALDN Ventures LLC, architect Rabit Design",
+      "src": [
+        "SRC-004212"
+      ]
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for ALDN Ventures LLC",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "rabitdesign.com homepage opened; no page for this project found",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder named",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search showed no public LinkedIn posts",
+      "src": []
+    }
+  }
 }
