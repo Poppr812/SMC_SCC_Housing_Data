@@ -97,12 +97,38 @@
           ]
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Streamlined / ministerial"
+          ],
+          "src": [
+            "SRC-001551"
+          ],
+          "note": "City record: Zoning Clearance (Ministerial Review) and Vesting Tentative Subdivision Map under SB 1123"
+        }
+      ]
     }
   },
   "construction_notes": [
     {
       "text": "The city moved this case to its inactive list and shows it as Project Closed, last updated 2026-10-28. The city's data does not say how it was decided.",
       "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "City record for PLN-2026-40 describes six two-story single-family dwellings on six lots, with a vesting tentative subdivision map, filed under SB 1123 and submitted under SB 330 preliminary application PLN-2025-136 (preliminary application date 10/2/2025).",
+      "src": [
+        "SRC-001551"
+      ]
+    },
+    {
+      "text": "Campbell's Starter Home Projects table, last updated 2026-11-19, lists 127 Budd Ave (PLN-2026-40, submitted 03/31/2026, 6 units, single-family zoning) as Under Review. The city's Inactive Planning dataset shows the same case as Project Closed.",
+      "src": [
+        "SRC-003790",
         "SRC-001551"
       ]
     }
@@ -123,6 +149,15 @@
   "groups": {},
   "events": [
     {
+      "date": "2025-10-02",
+      "type": "Other",
+      "label": "SB 330 preliminary application filed (PLN-2025-136)",
+      "src": [
+        "SRC-001551"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2026-03-31",
       "type": "Application filed",
       "label": "Zoning clearance under SB 1123",
@@ -137,6 +172,84 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 127 Budd Ave, Campbell, SB 1123 and applicant Nemati: only a resident-run site and general SB 1123 coverage.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API apn=30534011: situs 127 Budd Av, Campbell; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Campbell Inactive Planning dataset (PLN-2026-40 and PLN-2025-136 rows) and Starter Home Projects page; project files page on geodesy.net loads no documents without scripts.",
+      "src": [
+        "SRC-001551",
+        "SRC-003790"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated city project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "data.ca.gov APR Tables A and A2, Campbell, search for 127 Budd: no rows.",
+      "src": []
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched SJ Spotlight and local news for 127 Budd: Campbell starter-home coverage does not name this address.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for trade coverage of 127 Budd Ave: none.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant shown only as Nemati in city records; no company or website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in city records or search results.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on 127 Budd Ave.",
+      "src": []
+    }
+  }
 }

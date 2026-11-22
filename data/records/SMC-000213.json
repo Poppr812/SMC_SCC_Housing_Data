@@ -67,6 +67,36 @@
           37.5960423
         ]
       ]
+    },
+    {
+      "apn": "023-013-020",
+      "from": null,
+      "to": null,
+      "src": [
+        "SRC-001103"
+      ],
+      "outline": [
+        [
+          -122.5090691,
+          37.596144
+        ],
+        [
+          -122.5092024,
+          37.595988
+        ],
+        [
+          -122.5092738,
+          37.5960266
+        ],
+        [
+          -122.5091444,
+          37.5961779
+        ],
+        [
+          -122.5090691,
+          37.596144
+        ]
+      ]
     }
   ],
   "addresses": [
@@ -75,15 +105,16 @@
       "role": "main",
       "src": [
         "SRC-001136",
-        "SRC-001148"
-      ]
-    },
-    {
-      "text": "1200 Danmann Ave, Pacifica, CA",
-      "role": "other",
-      "src": [
-        "SRC-001136",
-        "SRC-001148"
+        "SRC-001148",
+        "SRC-004233"
+      ],
+      "written_as": [
+        {
+          "text": "1300 Danmann Ave, Pacifica, CA",
+          "src": [
+            "SRC-004233"
+          ]
+        }
       ]
     }
   ],
@@ -104,12 +135,11 @@
     "status": {
       "claims": [
         {
-          "value": "Under construction",
+          "value": "Permitted",
           "src": [
-            "SRC-001136",
             "SRC-001148"
           ],
-          "note": "State report shows certificates of occupancy for some of the units, not all"
+          "note": "State report: building permit issued 2022-06-23; no later rows for this project"
         }
       ]
     },
@@ -132,6 +162,13 @@
             "SRC-001148"
           ],
           "note": "Units reported in entitlement and permit rows"
+        },
+        {
+          "value": 4,
+          "src": [
+            "SRC-004233"
+          ],
+          "note": "Coastal Commission: City Council approved a revised two-story project with four residential units (reduced from three stories and six units)"
         }
       ]
     },
@@ -144,6 +181,13 @@
             "SRC-001148"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "CDP-409-19",
+          "src": [
+            "SRC-004233"
+          ],
+          "note": "City coastal development permit; Coastal Commission appeal A-2-PAC-20-0073"
         }
       ]
     },
@@ -157,6 +201,65 @@
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 0,
+            "1br": 2,
+            "2br": 2,
+            "3br": 0,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004233"
+          ]
+        }
+      ]
+    },
+    "commercial_sf": {
+      "claims": [
+        {
+          "value": 2292,
+          "src": [
+            "SRC-004233"
+          ]
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 2,
+          "src": [
+            "SRC-004233"
+          ]
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 19,
+          "src": [
+            "SRC-004233"
+          ],
+          "note": "Plus five bicycle parking spaces"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004233"
+          ]
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -165,6 +268,24 @@
       "src": [
         "SRC-001136",
         "SRC-001148"
+      ]
+    },
+    {
+      "text": "Coastal Commission staff report: two-story mixed-use building on a 14,551 sq ft site (APNs 023-013-010 and 023-013-020) in the Pedro Point area, 2,292 sq ft ground-floor commercial space and four apartments on the second floor; two unused barns to be demolished. The Planning Commission approved CDP-409-19 on 2020-05-04; on appeal the applicant reduced the project from three stories and six units to two stories and four units, which the City Council approved on 2020-11-09.",
+      "src": [
+        "SRC-004233"
+      ]
+    },
+    {
+      "text": "The state report lists building permits for 6 units under 1300 Danmann issued 2022-06-23 (2022 to 2024 rows; 2023 note: inspections in progress; 2024 note: permit ready to be issued). Its 2025 permit (2025-02-20) and certificate of occupancy (2025-05-14) rows are for a separate ADU at 1200 Danmann Ave, tracking number 59871-25, on the same parcel.",
+      "src": [
+        "SRC-001148"
+      ]
+    },
+    {
+      "text": "County parcel layer: APN 023-013-020 is owned by SAN PEDRO VALLEY LLC, the same owner as APN 023-013-010.",
+      "src": [
+        "SRC-001103"
       ]
     }
   ],
@@ -176,6 +297,26 @@
       "linkedin": null,
       "src": [
         "SRC-001103"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "San Pedro Valley LLC",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-004233"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Brian Brinkman Drafting & Design Inc.",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Plan preparer",
+      "src": [
+        "SRC-004233"
       ]
     }
   ],
@@ -199,20 +340,40 @@
       ]
     },
     {
-      "date": "2025-02-20",
-      "type": "Permit issued",
-      "label": "Building permit issued",
+      "date": "2020-11-09",
+      "type": "Approved",
+      "label": "City Council denied appeal and approved revised four-unit project (CDP-409-19)",
       "src": [
-        "SRC-001148"
-      ]
+        "SRC-004233"
+      ],
+      "estimated": false
     },
     {
-      "date": "2025-05-14",
+      "date": "2020-12-08",
       "type": "Other",
-      "label": "Certificate of occupancy reported for some units",
+      "label": "Appeal to Coastal Commission filed (A-2-PAC-20-0073)",
+      "src": [
+        "SRC-004233"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-10-15",
+      "type": "Other",
+      "label": "Coastal Commission hearing on appeal; staff recommended substantial issue and approval with conditions",
+      "src": [
+        "SRC-004233"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2022-06-23",
+      "type": "Permit issued",
+      "label": "Building permit issued (state report, 6 units)",
       "src": [
         "SRC-001148"
-      ]
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -220,6 +381,91 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Removed the 2025 building permit, occupancy, Under construction status and 1200 Danmann Ave address: they came from a separate one-unit ADU row (59871-25); status set to Permitted from the 2022 permit row"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 1300 Danmann, Pacifica led to the Coastal Commission appeal file A-2-PAC-20-0073.",
+      "src": [
+        "SRC-004233"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SMC parcel layer APNs 023013010 and 023013020: both owned by SAN PEDRO VALLEY LLC.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "cityofpacifica.org resolution documents for 1300 Danmann returned 403 Access Denied.",
+      "src": []
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated city project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Coastal Commission staff report for appeal A-2-PAC-20-0073 (hearing 2021-10-15); data.ca.gov APR Table A2, Pacifica, APN 023-013-010 rows.",
+      "src": [
+        "SRC-004233",
+        "SRC-001148"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no news coverage of 1300 Danmann.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Applicant San Pedro Valley LLC; no company website found.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Plans by Brian Brinkman Drafting & Design Inc. per Coastal Commission; no firm website or project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }

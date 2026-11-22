@@ -173,7 +173,8 @@
         {
           "value": 6,
           "src": [
-            "SRC-001152"
+            "SRC-001152",
+            "SRC-004230"
           ],
           "note": "Units in the application as reported"
         }
@@ -200,6 +201,46 @@
             "SRC-001153"
           ],
           "note": "State report (through 2025): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        },
+        {
+          "value": "Mixed-income",
+          "src": [
+            "SRC-004230"
+          ],
+          "note": "Staff report: two deed-restricted low-income units and four market-rate units"
+        }
+      ]
+    },
+    "affordability_notes": {
+      "claims": [
+        {
+          "value": "Two deed-restricted affordable ADUs at 700 Monte Vista Ln; an affordable housing agreement must be recorded before building permits (Condition B2). Measure D transfer allocations were awarded on the basis that the project would include two affordable units.",
+          "src": [
+            "SRC-004230"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004230"
+          ],
+          "note": "Coastal Development Permit and Architectural Review by the Community Development Director"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 4,
+          "src": [
+            "SRC-004230"
+          ]
         }
       ]
     }
@@ -210,6 +251,30 @@
       "src": [
         "SRC-001152",
         "SRC-001153"
+      ]
+    },
+    {
+      "text": "Staff report: 700 Monte Vista (17,780 sq ft flag lot) converts the existing 5,219 sq ft commercial building to a duplex with a 250 sq ft addition, adds a two-story detached structure with two two-car garages, a 400 sq ft ground-floor efficiency ADU and a 749 sq ft two-bedroom ADU above; 704 Monte Vista (6,000 sq ft lot) gets a new one-story 1,464 sq ft single-family home with an attached 719 sq ft ADU. Zoning C-R, land use C-G; CEQA exempt under Section 15303.",
+      "src": [
+        "SRC-004230"
+      ]
+    },
+    {
+      "text": "Staff report parking: 700 Monte Vista provides 4 covered and 7 uncovered spaces; 704 Monte Vista provides 1 covered and 1 uncovered.",
+      "src": [
+        "SRC-004230"
+      ]
+    },
+    {
+      "text": "The state report's 2025 entitlement rows split the six units as two ADUs and a two-unit building at 700 Monte Vista Lane and one single-family home and one ADU at 704 Monte Vista Lane, all approved 2025-12-10; the two-unit row notes 2 units deed restricted.",
+      "src": [
+        "SRC-001153"
+      ]
+    },
+    {
+      "text": "Plan set title block: plans designed and drawn by Bob Williamson, owner/builder.",
+      "src": [
+        "SRC-004232"
       ]
     }
   ],
@@ -222,11 +287,41 @@
       "src": [
         "SRC-001103"
       ]
+    },
+    {
+      "role": "Other",
+      "company": "Bob Williamson",
+      "contact": "Bob Williamson",
+      "linkedin": null,
+      "other_role": "Applicant and property owner; plan designer and builder",
+      "src": [
+        "SRC-004230",
+        "SRC-004231",
+        "SRC-004232"
+      ]
     }
   ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2021-09",
+      "type": "Other",
+      "label": "Measure D transfer allocations granted (Resolution C-2021-77)",
+      "src": [
+        "SRC-004230"
+      ],
+      "estimated": false
+    },
+    {
+      "date": "2021-11",
+      "type": "Other",
+      "label": "Measure D transfer allocations granted (Resolution C-2021-95)",
+      "src": [
+        "SRC-004230"
+      ],
+      "estimated": false
+    },
     {
       "date": "2023-10-12",
       "type": "Application filed",
@@ -242,6 +337,16 @@
       "src": [
         "SRC-001153"
       ]
+    },
+    {
+      "date": "2025-12-10",
+      "type": "Other",
+      "label": "Community Development Director hearing on PDP-23-077",
+      "src": [
+        "SRC-004231",
+        "SRC-004230"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -249,6 +354,93 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 700-704 Monte Vista Lane and PDP-23-077 led to the Director Hearing agenda and its staff report and plans.",
+      "src": [
+        "SRC-004231"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SMC parcel layer APNs 056210370 and 056210380: owner MONTE VISTA LANE PROPERTIES LLC, situs 700 Monte Vista Ln.",
+      "src": [
+        "SRC-001103"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Half Moon Bay Director Hearing 2025-12-10: agenda, staff report, plan set.",
+      "src": [
+        "SRC-004231",
+        "SRC-004230",
+        "SRC-004232"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Incorporated city project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "data.ca.gov APR Table A2, Half Moon Bay, PDP-23-077 rows (2025).",
+      "src": [
+        "SRC-001153"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Searched Half Moon Bay Review and Daily Journal coverage: no article on this project.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no trade coverage.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Applicant is the individual owner/builder Bob Williamson; no company website.",
+      "src": [
+        "SRC-004230"
+      ]
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Plans drawn by the owner/builder; no architect firm named.",
+      "src": [
+        "SRC-004232"
+      ]
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found in public sources.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search found no public LinkedIn posts on this project.",
+      "src": []
+    }
+  }
 }
