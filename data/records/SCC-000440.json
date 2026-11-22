@@ -87,8 +87,17 @@
             "SRC-001099"
           ],
           "note": "State report shows an application with no approval reported"
+        },
+        {
+          "value": "Approved",
+          "src": [
+            "SRC-001956",
+            "SRC-004187"
+          ],
+          "note": "PD19-022 PD permit, PDC17-046 rezoning and PT17-047 tentative map shown as approved/issued 2020-12-01 after the 2020-12-01 Council hearing; a one-year PD permit extension to 2027-07-02 is under review"
         }
-      ]
+      ],
+      "best": 1
     },
     "jurisdiction": {
       "claims": [
@@ -126,6 +135,28 @@
             "SRC-001956"
           ],
           "note": "City folder 041007, PD Zoning (permit type: Zonings (Legacy)); city permit status: Approved. Matched by APN."
+        },
+        {
+          "value": "PT17-047",
+          "src": [
+            "SRC-001956",
+            "SRC-004187"
+          ],
+          "note": "Vesting tentative map"
+        },
+        {
+          "value": "T26-010",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "New vesting tentative map filed 2026-06-03, under review"
+        },
+        {
+          "value": "AD26-356",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Permit adjustment for one-year extension of PD19-022"
         }
       ]
     },
@@ -137,6 +168,51 @@
             "SRC-001099"
           ],
           "note": "State report (through 2019): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.46,
+          "src": [
+            "SRC-004188"
+          ],
+          "note": "Gross acres"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 18,
+          "src": [
+            "SRC-004189"
+          ],
+          "note": "12 garage spaces and 6 guest spaces"
+        }
+      ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004189"
+          ]
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-004188"
+          ],
+          "note": "Planned Development rezoning, permit and tentative map; CEQA exemption 15303(b)"
         }
       ]
     }
@@ -153,18 +229,138 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "Council resolution (draft, item 10.2(b), 2020-12-01): two 3-story buildings of three attached townhomes each, maximum height 34 ft 2 in, about 13 units per acre, minimum lot size 1,300 sq ft, at least 400 sq ft private open space per unit, new private street; replaces a 2,400 sq ft single-family house, garage and shed. Tentative map application filed by Margaret Pham of Berryessa Homes Development on behalf of William and Nancy Hoang.",
+      "src": [
+        "SRC-004189"
+      ]
+    },
+    {
+      "text": "Planning Commission date differs by source: the Commission memorandum gives November 18, 2020; the draft resolution gives November 17, 2020.",
+      "src": [
+        "SRC-004188",
+        "SRC-004189"
+      ]
+    },
+    {
+      "text": "City permits layer, 2026: AD26-356 (filed 2026-05-28, under review) for a one-year extension of PD19-022 to July 2, 2027; T26-010 vesting tentative map for six residential parcels and one common parcel and ER26-089 environmental review (both filed 2026-06-03, under review), applicant Margaret Pham (Elite Realty Services).",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Berryessa Homes Development",
+      "contact": "Margaret Pham",
+      "linkedin": null,
+      "src": [
+        "SRC-001956",
+        "SRC-004189"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "William and Nancy Hoang",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Property owner",
+      "src": [
+        "SRC-004189"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Lucas Nguyen",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Owner named on PD19-022 city record",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Elite Realty Services",
+      "contact": "Margaret Pham",
+      "linkedin": null,
+      "other_role": "Applicant/owner named on 2026 tentative map T26-010",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "role": "Other",
+      "company": "Berryesa Home Development",
+      "contact": "Dustin Nguyen",
+      "linkedin": null,
+      "other_role": "Applicant on extension AD26-356",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2014-10-16",
+      "type": "Other",
+      "label": "Preliminary review PRE14-150 filed (proposed 6-unit townhouses)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2017-10-26",
+      "type": "Application filed",
+      "label": "PDC17-046 rezoning and PT17-047 tentative map filed",
+      "src": [
+        "SRC-001956",
+        "SRC-004189"
+      ]
+    },
     {
       "date": "2019-06-25",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001099"
+      ]
+    },
+    {
+      "date": "2020-11-18",
+      "type": "Other",
+      "label": "Planning Commission recommends approval 7-0-0 (consent calendar)",
+      "src": [
+        "SRC-004188"
+      ]
+    },
+    {
+      "date": "2020-12-01",
+      "type": "Approved",
+      "label": "City Council hearing; rezoning, PD permit and tentative map shown approved/issued",
+      "src": [
+        "SRC-004187",
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "type": "Other",
+      "label": "Permit adjustment AD26-356 filed to extend PD19-022 to 2027-07-02",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "type": "Application filed",
+      "label": "New vesting tentative map T26-010 and environmental review ER26-089 filed",
+      "src": [
+        "SRC-001956"
       ]
     }
   ],
@@ -178,6 +374,88 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 907 N Capitol Ave and Berryessa Homes Development: only nearby projects (905 N Capitol, Trumark).",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 25429029: situs 907 N Capitol Av, 2 situs addresses; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose permits GIS by APN (PRE14-150, PDC17-046, PT17-047, PD19-022, AD26-356, T26-010, ER26-089); Legistar matter 20-1547 with PC memo and draft resolution.",
+      "src": [
+        "SRC-001956",
+        "SRC-004187",
+        "SRC-004188",
+        "SRC-004189"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR data already on record (PD19-022, application 2019-06-25).",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search of local news for 907 N Capitol Ave: nothing.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search of trade press: nothing.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No website found for Berryessa Homes Development.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Architect not named in sources reviewed.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: nothing.",
+      "src": []
+    }
+  }
 }

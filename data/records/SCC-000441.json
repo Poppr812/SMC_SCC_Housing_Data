@@ -67,8 +67,16 @@
             "SRC-001107"
           ],
           "note": "State categories: 5+, SFA"
+        },
+        {
+          "value": "Condominiums",
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "CP18-019: conversion of an existing fourplex apartment building into four condominium units"
         }
-      ]
+      ],
+      "best": 1
     },
     "status": {
       "claims": [
@@ -141,6 +149,30 @@
           "note": "State report (through 2022): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.29,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres per CP18-019; T18-024 gives 0.288"
+        }
+      ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Discretionary"
+          ],
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Conditional Use Permit for condominium conversion"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -162,12 +194,37 @@
       "src": [
         "SRC-001956"
       ]
+    },
+    {
+      "text": "City permits layer: PRE15-210 (filed 2015-11-19, complete 2015-12-17), applicant Victor Tran: \"Enhanced Preliminary Review to add two new units to the existing fourplex and to convert the six units to condos on a 0.288 gross acre site.\" The later CP18-019 and T18-024 cover four condominium units. Zoning R-M.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Other",
+      "company": "Victor Tran",
+      "contact": null,
+      "linkedin": null,
+      "other_role": "Applicant",
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2015-11-19",
+      "type": "Other",
+      "label": "Preliminary review PRE15-210 filed (add two units to the fourplex and convert six units to condos)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2018-06-13",
       "type": "Application filed",
@@ -195,6 +252,86 @@
       "date": "2026-11-08",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 829 Hillsdale Ave condominium conversion: nothing project-specific.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 45526007: situs 829 Hillsdale Av, 95136; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose permits GIS by APN: PRE15-210, CP18-019, T18-024; applicant Victor Tran.",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR data already on record (CP18-019).",
+      "src": [
+        "SRC-001099",
+        "SRC-001107"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search of local news: nothing.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search of trade press: nothing.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Individual applicant; no developer site.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No architect named in sources.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: nothing.",
+      "src": []
+    }
+  }
 }

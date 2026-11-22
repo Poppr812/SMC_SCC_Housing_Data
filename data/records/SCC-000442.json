@@ -186,6 +186,13 @@
             "SRC-001100"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "TM-2025-001, EXC-2025-001, ASA-2025-001, TR-2025-001",
+          "src": [
+            "SRC-001512"
+          ],
+          "note": "Tentative Map, Hillside Exception, Architectural and Site Approval, Tree Removal Permit"
         }
       ]
     },
@@ -225,6 +232,20 @@
           "note": "State report 2024, application stage: 2 deed-restricted units"
         }
       ]
+    },
+    "approval_type": {
+      "claims": [
+        {
+          "value": [
+            "Builder's remedy"
+          ],
+          "src": [
+            "SRC-001512",
+            "SRC-002065"
+          ],
+          "note": "Filed under the Builder's Remedy provisions of the Housing Accountability Act"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -232,6 +253,18 @@
       "text": "From the state Housing Element Annual Progress Report, through 2025.",
       "src": [
         "SRC-001100"
+      ]
+    },
+    {
+      "text": "City project page: six single-family homes, two affordable, on vacant hillside property with average slopes greater than 30%, proposed under the Builder's Remedy provisions of the Housing Accountability Act; under review with no final actions and no meetings scheduled.",
+      "src": [
+        "SRC-001512"
+      ]
+    },
+    {
+      "text": "Major Residential Projects table: not a Housing Element site; Builder's Remedy project; SB 330 preapplication \"Yes. Vested to 1/11/2025\"; formal application submitted (as of 8/11/2026); status In Review.",
+      "src": [
+        "SRC-002065"
       ]
     }
   ],
@@ -260,11 +293,51 @@
   "groups": {},
   "events": [
     {
+      "date": "2024-07-15",
+      "type": "Other",
+      "label": "SB 330 preliminary application submitted",
+      "src": [
+        "SRC-001512"
+      ]
+    },
+    {
       "date": "2025-01-10",
       "type": "Application filed",
       "label": "Application submitted",
       "src": [
         "SRC-001100"
+      ]
+    },
+    {
+      "date": "2025-02-07",
+      "type": "Other",
+      "label": "City incomplete letter #1",
+      "src": [
+        "SRC-001512"
+      ]
+    },
+    {
+      "date": "2025-06-06",
+      "type": "Other",
+      "label": "City incomplete letter #2",
+      "src": [
+        "SRC-001512"
+      ]
+    },
+    {
+      "date": "2025-07-01",
+      "type": "Other",
+      "label": "Applicant notice of Housing Accountability Act violation",
+      "src": [
+        "SRC-001512"
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "type": "Other",
+      "label": "City written findings response",
+      "src": [
+        "SRC-001512"
       ]
     }
   ],
@@ -278,6 +351,88 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 11841 Upland Way and builder's remedy led to the city project page.",
+      "src": [
+        "SRC-001512"
+      ]
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 36603062: geometry only; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Cupertino project page (dates, file numbers, architect contact) and Major Residential Projects table.",
+      "src": [
+        "SRC-001512",
+        "SRC-002065"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR data already on record (application 2025-01-10, 2 units at 80% AMI).",
+      "src": [
+        "SRC-001100"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search of local news for Upland Way builder's remedy: only general Cupertino builder's remedy coverage.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "The Real Deal Cupertino builder's remedy coverage in results does not name this project.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "Individual applicant; no developer site.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "acadiaarchitecture.com shows only a Coming Soon page.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts: nothing.",
+      "src": []
+    }
+  }
 }

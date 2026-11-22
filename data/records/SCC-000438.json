@@ -124,6 +124,17 @@
           "note": "State report (through 2024): no deed-restricted units reported at any stage. A later source showing restricted units would override this."
         }
       ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.39,
+          "src": [
+            "SRC-001956"
+          ],
+          "note": "Gross acres, per city preliminary review PRE22-139"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -132,12 +143,36 @@
       "src": [
         "SRC-001099"
       ]
+    },
+    {
+      "text": "City of San Jose preliminary review PRE22-139 (filed 2022-07-05, status Complete 2022-08-25), applicant Chad Nguyen (LPMD Architects), zoning R-2: \"Focused Preliminary Review for the construction of two 2-story duplexes on a 0.39-gross acre lot with an existing single-family house (to be retained)\". The city permits layer shows no record for PD23-015 on this parcel.",
+      "src": [
+        "SRC-001956"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Architect",
+      "company": "LPMD Architects",
+      "contact": "Chad Nguyen",
+      "linkedin": null,
+      "src": [
+        "SRC-001956"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
+    {
+      "date": "2022-07-05",
+      "type": "Other",
+      "label": "Focused preliminary review PRE22-139 filed (completed 2022-08-25)",
+      "src": [
+        "SRC-001956"
+      ]
+    },
     {
       "date": "2023-08-28",
       "type": "Application filed",
@@ -152,6 +187,85 @@
       "date": "2026-11-03",
       "by": "Paul via Claude",
       "action": "Record created from the state Annual Progress Report data"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
-  ]
+  ],
+  "research": {
+    "search": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search on 270 Southside Dr, PD23-015 and LPMD Architects: no project coverage found.",
+      "src": []
+    },
+    "parcel": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "SCC parcel API, APN 49716048: situs 270 Southside Dr, San Jose 95111; no owner field.",
+      "src": [
+        "SRC-001098"
+      ]
+    },
+    "city": {
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "San Jose planning permits GIS layer by APN: PRE22-139 preliminary review (two duplexes, existing house retained). sanjoseca.gov project pages not used (blocked).",
+      "src": [
+        "SRC-001956"
+      ]
+    },
+    "county": {
+      "date": "2026-11-21",
+      "result": "not applicable",
+      "note": "City project; no county role.",
+      "src": []
+    },
+    "state": {
+      "date": "2026-11-21",
+      "result": "nothing new",
+      "note": "State APR data already on record (PD23-015, 6 units, application 2023-08-28).",
+      "src": [
+        "SRC-001099"
+      ]
+    },
+    "news": {
+      "date": "2026-11-21",
+      "result": "blocked",
+      "note": "Local News Matters story on a South San Jose duplex plan (2026-09-03) returned 403; the snippet does not name the street.",
+      "src": []
+    },
+    "trade": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search of SF YIMBY and trade press for Southside Dr: nothing.",
+      "src": []
+    },
+    "developer": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No developer named in public sources; city record lists the architect as applicant.",
+      "src": []
+    },
+    "architect": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Search for LPMD Architects site and project page: no project page found.",
+      "src": []
+    },
+    "finance": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "No lender or funder found.",
+      "src": []
+    },
+    "linkedin": {
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for LinkedIn posts on the project: nothing.",
+      "src": []
+    }
+  }
 }
