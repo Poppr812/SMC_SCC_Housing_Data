@@ -117,6 +117,12 @@
           "src": [
             "SRC-001127"
           ]
+        },
+        {
+          "value": "2 BMR units: one low-income, one moderate-income (SF YIMBY)",
+          "src": [
+            "SRC-004273"
+          ]
         }
       ]
     },
@@ -129,6 +135,12 @@
             "SRC-001127"
           ],
           "note": "Local tracking number as reported to the state"
+        },
+        {
+          "value": "24PLN-00095 (PHZ rezoning and building); 25PLN-00034 (tentative map); earlier 23PLN-00291 (preliminary ARB), 22PLN-00198 (council prescreening, 20 units)",
+          "src": [
+            "SRC-004274"
+          ]
         }
       ]
     },
@@ -147,6 +159,73 @@
           "note": "State report 2025, entitlement stage: deed-restricted units by state income category (AMI is the category's upper limit)"
         }
       ]
+    },
+    "stories": {
+      "claims": [
+        {
+          "value": 3,
+          "src": [
+            "SRC-004272",
+            "SRC-004273"
+          ],
+          "note": "Three-story building"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "claims": [
+        {
+          "value": 16,
+          "src": [
+            "SRC-004273"
+          ],
+          "note": "16 spaces in 10 private garages off the courtyard"
+        }
+      ]
+    },
+    "residential_sf": {
+      "claims": [
+        {
+          "value": 22355,
+          "src": [
+            "SRC-004274"
+          ],
+          "note": "City page, 24PLN-00095: three-story, 22,355 sq ft building with ten condominium units"
+        }
+      ]
+    },
+    "site_area_acres": {
+      "claims": [
+        {
+          "value": 0.278,
+          "src": [
+            "SRC-004275"
+          ],
+          "note": "MLS listing: 0.278-acre site; city page gives the merged parcel as 12,119 sq ft"
+        }
+      ]
+    },
+    "market_rate_units": {
+      "claims": [
+        {
+          "value": 8,
+          "src": [
+            "SRC-004275"
+          ],
+          "note": "MLS listing: eight market-rate units, two below-market-rate units"
+        }
+      ]
+    },
+    "sale_price": {
+      "claims": [
+        {
+          "value": 4995500,
+          "src": [
+            "SRC-004275"
+          ],
+          "note": "MLS ML82017280 shows $4,995,500, sold March 27, 2026 (entitled land)"
+        }
+      ]
     }
   },
   "construction_notes": [
@@ -162,9 +241,57 @@
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "text": "Stormland first proposed a five-story, 20-condominium building in 2022 (22PLN-00198); after council direction it was reduced to a three-story, 10-unit building around a central courtyard.",
+      "src": [
+        "SRC-004272",
+        "SRC-004276",
+        "SRC-004274"
+      ]
+    },
+    {
+      "text": "The Architectural Review Board supported the plan 4-1 in fall 2024 and the Planning and Transportation Commission forwarded it in February 2025. Ellis Partners, owner of adjacent Town & Country Village, opposed the project.",
+      "src": [
+        "SRC-004276",
+        "SRC-004272"
+      ]
+    },
+    {
+      "text": "Tentative map 25PLN-00034 merges two lots for a ten-unit condominium subdivision on a 12,119 sq ft parcel; hearings listed: PTC 8/27/25 and Council tentative map 9/29/25. CEQA review relied on Section 15183 consistency with the Comprehensive Plan EIR (SCH 2014052101).",
+      "src": [
+        "SRC-004274"
+      ]
+    },
+    {
+      "text": "In November 2025 Ellis Partners filed a pre-application for 158 apartments in two seven-story buildings at 44 and 88 Encina Ave, flanking this site.",
+      "src": [
+        "SRC-004277"
+      ]
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "role": "Developer",
+      "company": "Stormland, LLC",
+      "contact": "Ed Storm",
+      "linkedin": null,
+      "src": [
+        "SRC-004272",
+        "SRC-004276"
+      ]
+    },
+    {
+      "role": "Architect",
+      "company": "Hayes Group Architects",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004272",
+        "SRC-004273"
+      ]
+    }
+  ],
   "financing": [],
   "groups": {},
   "events": [
@@ -177,12 +304,31 @@
       ]
     },
     {
+      "date": "2025-04-14",
+      "type": "Approved",
+      "label": "City Council unanimously approved Planned Home Zoning rezoning (24PLN-00095)",
+      "src": [
+        "SRC-004272",
+        "SRC-004274"
+      ],
+      "estimated": false
+    },
+    {
       "date": "2025-05-08",
       "type": "Approved",
       "label": "Entitlement approved",
       "src": [
         "SRC-001127"
       ]
+    },
+    {
+      "date": "2026-03-27",
+      "type": "Sale",
+      "label": "Entitled site sold (MLS ML82017280)",
+      "src": [
+        "SRC-004275"
+      ],
+      "estimated": false
     }
   ],
   "history": [
@@ -200,14 +346,24 @@
       "date": "2026-11-20",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-21",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
     }
   ],
   "research": {
     "search": {
-      "date": "2026-11-20",
-      "result": "blocked",
-      "note": "Web search tool returned a usage-limit error; DuckDuckGo HTML refused the automated request.",
-      "src": []
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Web search on 70 Encina Palo Alto: city project page, Palo Alto Online 2025 articles, SF YIMBY, MLS ML82017280 opened.",
+      "src": [
+        "SRC-004274",
+        "SRC-004272",
+        "SRC-004273",
+        "SRC-004275"
+      ]
     },
     "parcel": {
       "date": "2026-11-20",
@@ -218,10 +374,12 @@
       ]
     },
     "city": {
-      "date": "2026-11-20",
-      "result": "nothing found",
-      "note": "paloalto.gov Current Planning Projects, Staff Level Decisions, ARB and Director's Hearing pages: no 70 Encina entry. Palo Alto is not a Legistar Web API client.",
-      "src": []
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "paloalto.gov project page 70-Encina-Ave: 25PLN-00034, 24PLN-00095, 23PLN-00291, 22PLN-00198 and hearing list.",
+      "src": [
+        "SRC-004274"
+      ]
     },
     "county": {
       "date": "2026-11-20",
@@ -239,16 +397,23 @@
       ]
     },
     "news": {
-      "date": "2026-11-20",
-      "result": "nothing found",
-      "note": "Palo Alto Online site search for \"70 Encina\": 0 results.",
-      "src": []
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "Palo Alto Online 2025-04-04 and 2025-04-15 (Gennady Sheyner) and 2025-11-13 articles opened.",
+      "src": [
+        "SRC-004276",
+        "SRC-004272",
+        "SRC-004277"
+      ]
     },
     "trade": {
-      "date": "2026-11-20",
-      "result": "blocked",
-      "note": "Web search tool unavailable (usage limit).",
-      "src": []
+      "date": "2026-11-21",
+      "result": "found",
+      "note": "SF YIMBY 2025-04-25 NOD article; MLS ML82017280 listing.",
+      "src": [
+        "SRC-004273",
+        "SRC-004275"
+      ]
     },
     "developer": {
       "date": "2026-11-20",
@@ -271,9 +436,9 @@
       ]
     },
     "linkedin": {
-      "date": "2026-11-20",
-      "result": "blocked",
-      "note": "Web search tool returned a usage-limit error when this row was run; no LinkedIn pages opened.",
+      "date": "2026-11-21",
+      "result": "nothing found",
+      "note": "Web search for Stormland / Ed Storm on LinkedIn: no matching profile or post.",
       "src": []
     }
   }
