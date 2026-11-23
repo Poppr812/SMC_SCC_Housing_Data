@@ -138,7 +138,8 @@
           "value": "Approved",
           "src": [
             "SRC-001101",
-            "SRC-001110"
+            "SRC-001110",
+            "SRC-004288"
           ],
           "note": "State report shows entitlement approval"
         },
@@ -150,7 +151,7 @@
           "note": "New Essex project following an SB 330 preliminary application; Notice of Exemption filed 2026-11-13; source does not state an approval"
         }
       ],
-      "best": 1
+      "best": 0
     },
     "jurisdiction": {
       "claims": [
@@ -219,6 +220,13 @@
           "src": [
             "SRC-002082"
           ]
+        },
+        {
+          "value": "460 market-rate and 116 deed-restricted affordable units, per SF YIMBY, Nov. 23, 2026",
+          "src": [
+            "SRC-004288"
+          ],
+          "note": ""
         }
       ]
     },
@@ -259,7 +267,8 @@
         {
           "value": 609,
           "src": [
-            "SRC-002082"
+            "SRC-002082",
+            "SRC-004288"
           ]
         }
       ]
@@ -283,6 +292,23 @@
             "SRC-002082"
           ],
           "note": "About"
+        }
+      ]
+    },
+    "unit_mix": {
+      "claims": [
+        {
+          "value": {
+            "studio": 57,
+            "1br": 279,
+            "2br": 207,
+            "3br": 33,
+            "4br+": 0
+          },
+          "src": [
+            "SRC-004288"
+          ],
+          "note": "Essex 576-unit project"
         }
       ]
     }
@@ -336,6 +362,24 @@
       "src": [
         "SRC-002082"
       ]
+    },
+    {
+      "role": "Architect",
+      "company": "BDE Architecture",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004288"
+      ]
+    },
+    {
+      "role": "Landscape architect",
+      "company": "The Guzzardo Partnership",
+      "contact": null,
+      "linkedin": null,
+      "src": [
+        "SRC-004288"
+      ]
     }
   ],
   "financing": [],
@@ -356,6 +400,15 @@
       "src": [
         "SRC-001110"
       ]
+    },
+    {
+      "date": "2026-11",
+      "type": "Approved",
+      "label": "Approval of the 576-unit Essex project reported (no approving body or date given)",
+      "src": [
+        "SRC-004288"
+      ],
+      "estimated": false
     },
     {
       "date": "2026-11-13",
@@ -390,6 +443,11 @@
     },
     {
       "date": "2026-11-18",
+      "by": "Paul via Claude",
+      "action": "Updated from city, state and news sources"
+    },
+    {
+      "date": "2026-11-23",
       "by": "Paul via Claude",
       "action": "Updated from city, state and news sources"
     }
