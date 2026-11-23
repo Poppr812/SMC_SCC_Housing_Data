@@ -288,54 +288,43 @@ def check_link(url):
 
 
 def check_wayback(src, state):
-    """Status of the Wayback Machine copy: opens the same link the site gives readers."""
+    """Status of the Wayback Machine copy. Asks the Wayback Machine's index first; the index sometimes
+    comes back empty for a snapshot that exists, so a miss is settled by opening the snapshot itself."""
     if not src.get("wayback"):
         return "none"
     if state["stop"]:
         return "not checked this run"
-    time.sleep(2)
+    time.sleep(1.5)
     try:
+        if wayback_lookup(src):
+            state["fails"] = 0
+            return "working"
+        time.sleep(3)
         get(wayback_url(src), timeout=60, limit=2048)
+        state["fails"] = 0
         return "working"
     except urllib.error.HTTPError as e:
         if e.code == 404:
             return "gone: snapshot not found"
-        if e.code == 429:
-            state["stop"] = True  # the service asked us to slow down
-            return "not checked this run"
-        return f"not checked: Wayback error (HTTP {e.code})"
     except Exception:
-        return "not checked: no answer from the Wayback Machine"
+        pass
+    state["fails"] += 1
+    if state["fails"] >= 5:  # the service is not answering: leave it alone for this run
+        state["stop"] = True
+    return "not checked: no answer from the Wayback Machine"
 
 
-def links():
-    """Monthly check of every source link and its Wayback copy. Writes data/source_links.csv."""
+def write_link_list(rows):
     import csv
-    newly, back, rows, state = [], 0, [], {"stop": False}
-    for n, sid in enumerate(all_ids(), 1):
-        src = load(sid)
-        status, gone = check_link(src["url"])
-        if gone and not src.get("link_gone"):
-            src["link_gone"] = TODAY
-            save_source(src)
-            newly.append(src)
-        elif status == "working" and src.get("link_gone"):
-            src.pop("link_gone")
-            save_source(src)
-            back += 1
-        elif src.get("link_gone") and not gone:
-            status += f"; recorded gone {src['link_gone']}"
-        wb = check_wayback(src, state)
-        rows.append([sid, src["publisher"], src["title"], src["url"], status,
-                     wayback_url(src) if src.get("wayback") else "", wb, TODAY])
-        if n % 250 == 0:
-            print(f"  checked {n}", flush=True)
     with open(os.path.join(ROOT, "data", "source_links.csv"), "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
         w.writerow(["Source", "Publisher", "Title", "Link", "Link status", "Wayback copy", "Wayback status", "Checked"])
         w.writerows(rows)
+
+
+def link_summary(rows, newly, back):
     count = lambda col, word: sum(1 for r in rows if r[col].startswith(word))
-    print(f"Links: {count(4, 'working')} working, {count(4, 'gone')} gone ({len(newly)} new), "
+    print(f"Links: {count(4, 'working')} working, {count(4, 'gone')} gone ({newly} new), "
           f"{count(4, 'not checked')} could not be checked, {back} working again")
     print(f"Wayback copies: {count(6, 'working')} working, {count(6, 'gone')} gone, "
           f"{count(6, 'not checked')} not checked, {count(6, 'none')} sources with no copy")
@@ -344,6 +333,38 @@ def links():
     for r in rows:
         if r[4].startswith("gone") or r[6].startswith("gone"):
             print(f"  {r[0]}  link {r[4]} | Wayback {r[6]}  {r[1]}: {r[2][:60]}")
+
+
+def links():
+    """Monthly check of every source link and its Wayback copy. Writes data/source_links.csv.
+    A link is recorded as gone only if it fails twice: once in the main pass and again at the end
+    of the run, since sites sometimes answer "not found" for a moment."""
+    newly, back, rows, state = 0, 0, [], {"stop": False, "fails": 0}
+    for n, sid in enumerate(all_ids(), 1):
+        src = load(sid)
+        status, gone = check_link(src["url"])
+        rows.append([sid, src["publisher"], src["title"], src["url"], status,
+                     wayback_url(src) if src.get("wayback") else "", check_wayback(src, state), TODAY])
+        if n % 250 == 0:
+            print(f"  checked {n}", flush=True)
+    for row in rows:
+        src = load(row[0])
+        gone = row[4].startswith("gone")
+        if gone:  # second look before recording it
+            time.sleep(5)
+            row[4], gone = check_link(src["url"])
+        if gone and not src.get("link_gone"):
+            src["link_gone"] = TODAY
+            save_source(src)
+            newly += 1
+        elif row[4] == "working" and src.get("link_gone"):
+            src.pop("link_gone")
+            save_source(src)
+            back += 1
+        elif src.get("link_gone") and not gone:
+            row[4] += f"; recorded gone {src['link_gone']}"
+    write_link_list(rows)
+    link_summary(rows, newly, back)
 
 
 if __name__ == "__main__":
