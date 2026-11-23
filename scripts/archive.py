@@ -7,6 +7,7 @@ Usage (from the repo root):
         find an existing Wayback Machine snapshot for every source that has none; with --save,
         ask the Wayback Machine to capture up to N sources that still have none
   python scripts/archive.py --text-only        convert older copies of web pages to text only
+  python scripts/archive.py --links            monthly check of every source link; records links that are gone
 
 The Wayback snapshot is the backup anyone can check: the site links to it on every source, and
 if a link later breaks, the snapshot still shows what the source said.
@@ -27,6 +28,7 @@ import hashlib
 import html.parser
 import json
 import os
+import socket
 import sys
 import time
 import urllib.error
@@ -255,9 +257,42 @@ def wayback(save_limit):
         print(f"Wayback: {saved} new snapshots captured")
 
 
+def links():
+    """Record a link as gone only when the site says so (404, 410) or the address no longer exists.
+    A site that refuses automated checks, times out or errors is not marked."""
+    newly, back = [], 0
+    for sid in all_ids():
+        src = load(sid)
+        state = None
+        try:
+            get(src["url"], timeout=30, limit=2048)
+            state = "ok"
+        except urllib.error.HTTPError as e:
+            state = "gone" if e.code in (404, 410) else None
+        except urllib.error.URLError as e:
+            state = "gone" if isinstance(e.reason, socket.gaierror) else None
+        except Exception:
+            state = None
+        if state == "gone" and not src.get("link_gone"):
+            src["link_gone"] = TODAY
+            save_source(src)
+            newly.append(src)
+        elif state == "ok" and src.get("link_gone"):
+            src.pop("link_gone")
+            save_source(src)
+            back += 1
+    total = sum(1 for i in all_ids() if load(i).get("link_gone"))
+    print(f"Links: {len(newly)} newly gone, {back} working again, {total} gone in all")
+    for src in newly:
+        print(f"  {src['id']}  Wayback: {src.get('wayback') or 'none'}  {src['publisher']}: {src['title'][:60]}")
+
+
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
     args = sys.argv[1:]
+    if args == ["--links"]:
+        links()
+        sys.exit()
     if args[:1] == ["--wayback"]:
         wayback(int(args[2]) if args[1:2] == ["--save"] else 0)
     elif args == ["--text-only"]:
