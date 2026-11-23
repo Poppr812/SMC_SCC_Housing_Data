@@ -7,7 +7,8 @@ Usage (from the repo root):
         find an existing Wayback Machine snapshot for every source that has none; with --save,
         ask the Wayback Machine to capture up to N sources that still have none
   python scripts/archive.py --text-only        convert older copies of web pages to text only
-  python scripts/archive.py --links            monthly check of every source link; records links that are gone
+  python scripts/archive.py --links            monthly check of every source link and its Wayback copy;
+        records links that are gone and writes the status list data/source_links.csv
 
 The Wayback snapshot is the backup anyone can check: the site links to it on every source, and
 if a link later breaks, the snapshot still shows what the source said.
@@ -257,34 +258,92 @@ def wayback(save_limit):
         print(f"Wayback: {saved} new snapshots captured")
 
 
+def wayback_url(src):
+    return f"https://web.archive.org/web/{src['wayback'].replace('-', '')}/{src['url']}"
+
+
+def check_link(url):
+    """(status text, gone?) for a source link. Gone only when the site says so (404, 410), the address
+    no longer exists, or a page address now lands on the site's home page. A site that refuses
+    automated checks, times out or errors is reported as such and not marked gone."""
+    try:
+        r = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=30)
+        r.read(2048)
+        asked, got = urllib.parse.urlsplit(url), urllib.parse.urlsplit(r.geturl())
+        if asked.path.strip("/") and not got.path.strip("/") and not got.query:
+            return "gone: now lands on the site's home page", True
+        return "working", False
+    except urllib.error.HTTPError as e:
+        if e.code in (404, 410):
+            return f"gone: page not found (HTTP {e.code})", True
+        if e.code in REFUSED:
+            return f"not checked: site refuses automated checks (HTTP {e.code})", False
+        return f"not checked: site error (HTTP {e.code})", False
+    except urllib.error.URLError as e:
+        if isinstance(e.reason, socket.gaierror):
+            return "gone: web address no longer exists", True
+        return "not checked: no answer from the site", False
+    except Exception:
+        return "not checked: no answer from the site", False
+
+
+def check_wayback(src, state):
+    """Status of the Wayback Machine copy: opens the same link the site gives readers."""
+    if not src.get("wayback"):
+        return "none"
+    if state["stop"]:
+        return "not checked this run"
+    time.sleep(2)
+    try:
+        get(wayback_url(src), timeout=60, limit=2048)
+        return "working"
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return "gone: snapshot not found"
+        if e.code == 429:
+            state["stop"] = True  # the service asked us to slow down
+            return "not checked this run"
+        return f"not checked: Wayback error (HTTP {e.code})"
+    except Exception:
+        return "not checked: no answer from the Wayback Machine"
+
+
 def links():
-    """Record a link as gone only when the site says so (404, 410) or the address no longer exists.
-    A site that refuses automated checks, times out or errors is not marked."""
-    newly, back = [], 0
-    for sid in all_ids():
+    """Monthly check of every source link and its Wayback copy. Writes data/source_links.csv."""
+    import csv
+    newly, back, rows, state = [], 0, [], {"stop": False}
+    for n, sid in enumerate(all_ids(), 1):
         src = load(sid)
-        state = None
-        try:
-            get(src["url"], timeout=30, limit=2048)
-            state = "ok"
-        except urllib.error.HTTPError as e:
-            state = "gone" if e.code in (404, 410) else None
-        except urllib.error.URLError as e:
-            state = "gone" if isinstance(e.reason, socket.gaierror) else None
-        except Exception:
-            state = None
-        if state == "gone" and not src.get("link_gone"):
+        status, gone = check_link(src["url"])
+        if gone and not src.get("link_gone"):
             src["link_gone"] = TODAY
             save_source(src)
             newly.append(src)
-        elif state == "ok" and src.get("link_gone"):
+        elif status == "working" and src.get("link_gone"):
             src.pop("link_gone")
             save_source(src)
             back += 1
-    total = sum(1 for i in all_ids() if load(i).get("link_gone"))
-    print(f"Links: {len(newly)} newly gone, {back} working again, {total} gone in all")
-    for src in newly:
-        print(f"  {src['id']}  Wayback: {src.get('wayback') or 'none'}  {src['publisher']}: {src['title'][:60]}")
+        elif src.get("link_gone") and not gone:
+            status += f"; recorded gone {src['link_gone']}"
+        wb = check_wayback(src, state)
+        rows.append([sid, src["publisher"], src["title"], src["url"], status,
+                     wayback_url(src) if src.get("wayback") else "", wb, TODAY])
+        if n % 250 == 0:
+            print(f"  checked {n}", flush=True)
+    with open(os.path.join(ROOT, "data", "source_links.csv"), "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["Source", "Publisher", "Title", "Link", "Link status", "Wayback copy", "Wayback status", "Checked"])
+        w.writerows(rows)
+    count = lambda col, word: sum(1 for r in rows if r[col].startswith(word))
+    print(f"Links: {count(4, 'working')} working, {count(4, 'gone')} gone ({len(newly)} new), "
+          f"{count(4, 'not checked')} could not be checked, {back} working again")
+    print(f"Wayback copies: {count(6, 'working')} working, {count(6, 'gone')} gone, "
+          f"{count(6, 'not checked')} not checked, {count(6, 'none')} sources with no copy")
+    no_backup = [r for r in rows if r[4].startswith("gone") and not r[6].startswith("working")]
+    print(f"Gone with no working Wayback copy: {len(no_backup)}")
+    for r in rows:
+        if r[4].startswith("gone") or r[6].startswith("gone"):
+            print(f"  {r[0]}  link {r[4]} | Wayback {r[6]}  {r[1]}: {r[2][:60]}")
 
 
 if __name__ == "__main__":
