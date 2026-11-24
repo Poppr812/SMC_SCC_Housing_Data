@@ -237,6 +237,13 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 .wgrid h3{margin:0 0 8px;font-size:15px;color:var(--navy)}
 .wgrid p{margin:0 0 8px;font-size:14px;line-height:1.55}.wgrid p:last-child{margin:0}
 .wfoot{margin-top:28px;font-size:12px;color:var(--gray)}
+.whero{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:center}
+.wthumb{position:relative;height:236px;border:1px solid var(--rule);border-radius:10px;background:#fff;overflow:hidden;cursor:pointer;box-shadow:0 4px 16px rgba(20,28,40,.12);transition:transform .15s,box-shadow .15s}
+.wthumb:hover,.wthumb:focus-visible{transform:translateY(-2px);box-shadow:0 8px 22px rgba(20,28,40,.2);outline:2px solid var(--teal)}
+.wthumbin{width:480px;transform:scale(.625);transform-origin:0 0;pointer-events:none}
+.wthumbin .tpage{border:none;box-shadow:none;border-radius:0}
+.wthumbcap{position:absolute;left:0;right:0;bottom:0;padding:30px 12px 11px;background:linear-gradient(rgba(255,255,255,0),#fff 50%);font-size:14px;font-weight:700;color:var(--teal);text-align:center}
+@media(max-width:860px){.whero{grid-template-columns:1fr}.wthumb{max-width:300px}}
 /* example project tour */
 #tour .box{width:min(920px,94vw)}
 .tgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;margin-top:12px;align-items:start}
@@ -263,7 +270,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <button class="btn ghost" type="button" id="wIn2">Sign in</button>
   </div>
   <div class="wmain">
-    <div class="whero">
+    <div class="whero"><div>
       <div class="wkick">Housing Comps <span class="badge">BETA</span></div>
       <div class="wby">by Montara Ventures, a Montara Proptech initiative</div>
       <h2>Every housing project in San Mateo and Santa Clara Counties, with the source behind every fact.</h2>
@@ -273,9 +280,8 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
         <button class="btn" type="button" id="wUp">Create a free account</button>
         <button class="btn ghost" type="button" id="wIn">Sign in</button>
         <button class="wgo" type="button" id="wGo">Explore the map without an account →</button>
-        <button class="wgo" type="button" id="wEx">See an example project →</button>
       </div>
-    </div>
+    </div><div class="wthumb" id="wEx" role="button" tabindex="0" aria-label="See an example project"></div></div>
     <div class="wgrid">
       <section><h3>What it is</h3>
         <p>A map and database of housing that is proposed, approved, under construction, leasing or recently sold.</p>
@@ -1507,9 +1513,12 @@ function renderReport(all){
 function welcome(show){$("#welcome").hidden=!show;if(!show)store("hc_welcomed",1)}
 $("#wCounts").textContent=`${RECORDS.length.toLocaleString()} projects · ${new Set(RECORDS.flatMap(r=>Object.keys(r.srcLabels))).size.toLocaleString()} public sources · updated ${new Date(DATA.built+"T12:00:00").toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})}`;
 $("#wUp").onclick=()=>acctView("signup");$("#wIn").onclick=$("#wIn2").onclick=()=>acctView("signin");
-$("#wGo").onclick=()=>welcome(false);$("#wEx").onclick=openTour;
-function openTour(){
-  const ID="SMC-000033",r=RECORDS.find(x=>x.id===ID);if(!r)return;
+$("#wGo").onclick=()=>welcome(false);(function(){const T=tourSteps(),el=$("#wEx");if(!T){el.remove();return}
+  el.innerHTML=`<div class="wthumbin"><div class="tpage">${T.steps.map((s,i)=>`<div class="tsec">${T.n(i+1)}${s[2]}</div>`).join("")}</div></div><div class="wthumbcap">See an example project →</div>`;
+  el.onclick=openTour;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openTour()}};
+})();
+function tourSteps(){
+  const ID="SMC-000033",r=RECORDS.find(x=>x.id===ID);if(!r)return null;
   const m=r.summary,n=i=>`<span class="tn">${i}</span>`;
   const tag=s=>(s||[]).slice(0,3).map(k=>`<span class="ttag">${esc(r.srcLabels[k]||"S")}</span>`).join("");
   const fr=k=>{const f=r.facts[k];if(!f)return "";const c=f.claims.find(x=>x.best)||f.claims[0];return `<tr><td>${esc(REG.facts[k].label)}</td><td>${fmtValue(k,c.value)}${tag(c.src)}</td></tr>`};
@@ -1531,6 +1540,10 @@ function openTour(){
    ["Sources","The full list of sources with links. Print or save the page as a PDF and the links stay live.",
     `<h4>Sources (${srcs.length})</h4>${srcs.slice(0,3).map(k=>`<span class="ttag" style="margin:0 4px 0 0">${esc(r.srcLabels[k])}</span>${esc(SOURCES[k].publisher)}: ${esc(SOURCES[k].title)}`).join("<br>")}`]
   ].filter(s=>s[2]);
+  return {ID,r,m,n,steps};
+}
+function openTour(){
+  const T=tourSteps();if(!T)return;const {ID,r,m,n,steps}=T;
   $("#tourBox").innerHTML=`<h3>What a project page shows</h3>
    <div class="muted" style="font-size:13px">Example: ${esc(r.name)}, ${esc(m.jurisdiction)}. Drawn from the live record, shortened to fit.</div>
    <div class="tgrid"><div class="tpage">${steps.map((s,i)=>`<div class="tsec">${n(i+1)}${s[2]}</div>`).join("")}</div>
