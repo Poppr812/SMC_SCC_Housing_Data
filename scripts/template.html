@@ -18,6 +18,7 @@ body{margin:0;font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-seri
 a{color:var(--teal)}
 header{background:var(--navy);color:#fff;padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 header h1{font-size:17px;margin:0;font-weight:600}
+header .hlogo{display:flex;background:#fff;border-radius:6px;padding:2px;flex:none}header .hlogo img{width:34px;height:34px;display:block}
 .badge{background:var(--gold);color:var(--ink);font-size:12px;font-weight:600;padding:2px 8px;border-radius:10px}
 header .sub{font-size:12px;opacity:.8}
 .bar{background:var(--card);border-bottom:1px solid var(--rule);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
@@ -305,6 +306,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 </div>
 
 <header>
+  <a class="hlogo" href="https://www.montarav.com/" target="_blank" rel="noopener" title="Montara Ventures"><img src="montara-ventures-logo.png" alt="Montara Ventures" onerror="this.parentNode.remove()"></a>
   <h1>Housing Comps</h1>
   <span class="badge">v1 PREVIEW</span>
   <span class="sub" id="headSub"></span>
