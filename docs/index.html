@@ -426,7 +426,7 @@ function syncGroup(all,kids){const st=[...document.querySelectorAll(kids)],n=st.
 function syncPipeAll(){syncGroup("#pipeAll","#showMenu .st");syncGroup("#txAll","#showMenu .tx")}
 $("#pipeAll").addEventListener("change",e=>{document.querySelectorAll("#showMenu .st").forEach(i=>i.checked=e.target.checked)});
 $("#txAll").addEventListener("change",e=>{document.querySelectorAll("#showMenu .tx").forEach(i=>i.checked=e.target.checked)});
-document.querySelectorAll(".dd>button").forEach(b=>b.onclick=e=>{e.stopPropagation();const d=b.parentElement;document.querySelectorAll(".dd").forEach(x=>x!==d&&x.classList.remove("open"));d.classList.toggle("open")});
+document.querySelectorAll(".dd>button").forEach(b=>b.onclick=e=>{e.stopPropagation();const d=b.parentElement;document.querySelectorAll(".dd").forEach(x=>x!==d&&x.classList.remove("open"));d.classList.toggle("open");if(d.id==="ddSel"&&d.classList.contains("open"))$("#radAddr").focus()});
 document.addEventListener("click",e=>{if(!e.target.closest(".dd"))document.querySelectorAll(".dd").forEach(x=>x.classList.remove("open"))});
 
 let SHAPE=null; /* {t:"c",lat,lng,mi,addr} radius | {t:"p",pts:[[lat,lng],...]} boundary */
