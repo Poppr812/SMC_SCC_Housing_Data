@@ -24,6 +24,20 @@ PIPELINE_STATUSES = {"Proposed", "Approved", "Permitted", "Under construction", 
 STALE_YEARS = 5  # no recorded movement for this long: shown as Inactive pipeline
 STALE_STATUSES = {"Proposed", "Approved", "Permitted"}
 SHORT_TERM = {"Predevelopment loan", "Construction loan", "Bridge loan"}
+
+
+def short_term(x):
+    """Construction-period money that is repaid at conversion, so it is not part of the permanent total."""
+    text = f"{x.get('provider') or ''} {x.get('program') or ''}".lower()
+    return x["type"] in SHORT_TERM or "construction period" in text or "construction-period" in text
+
+
+def bond_authority(x):
+    """A bond allocation or issuance cap: permission to issue the bonds that fund a listed loan."""
+    if x["type"] != "Tax-exempt bonds":
+        return False
+    text = f"{x.get('provider') or ''} {x.get('program') or ''}".lower()
+    return any(k in text for k in ("cdlac", "bond cap", "tefra", "not to exceed", "allocation"))
 EQUITY = {"Tax-credit equity (4%)", "Tax-credit equity (9%)", "State tax-credit equity",
           "Sponsor / GP equity", "Private equity", "Deferred developer fee"}
 APN_RE = {"SMC": re.compile(r"^\d{3}-\d{3}-\d{3}$"), "SCC": re.compile(r"^\d{3}-\d{2}-\d{3}$")}
@@ -323,11 +337,14 @@ def process(r, sources):
         calcs["price_per_unit"] = {"value": round(price / units), "how": f"Sale price {m(price)} ÷ {units:,} total units"}
     if price and rsf:
         calcs["price_per_sf"] = {"value": round(price / rsf), "how": f"Sale price {m(price)} ÷ {rsf:,} sq ft"}
-    long_term = [x for x in r.get("financing", []) if x.get("amount") and x["type"] not in SHORT_TERM]
+    fin_amt = [x for x in r.get("financing", []) if x.get("amount")]
+    long_term = [x for x in fin_amt if not short_term(x) and not bond_authority(x)]
     if len(long_term) >= 2:
         tot = sum(x["amount"] for x in long_term)
         basis = f"; compares with a {m(price)} sale price" if price else (f"; compares with a {m(tdc)} total development cost" if tdc else "")
-        excl = " (excludes short-term construction, bridge and predevelopment loans)" if any(x["type"] in SHORT_TERM for x in r["financing"]) else ""
+        excl = " (excludes short-term construction, bridge and predevelopment financing)" if any(short_term(x) for x in fin_amt) else ""
+        if any(bond_authority(x) for x in fin_amt):
+            excl += " (excludes the tax-exempt bond allocation, which is the authority behind the bond-funded loans, not added money)"
         calcs["financing_total"] = {"value": tot, "how": " + ".join(m(x["amount"]) for x in long_term) + excl + basis}
 
     statuses = best(facts["status"])
