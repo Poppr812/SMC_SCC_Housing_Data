@@ -23,6 +23,7 @@ DOCS = ROOT / "docs"
 PIPELINE_STATUSES = {"Proposed", "Approved", "Permitted", "Under construction", "Lease-up / selling", "Inactive pipeline"}
 STALE_YEARS = 5  # no recorded movement for this long: shown as Inactive pipeline
 STALE_STATUSES = {"Proposed", "Approved", "Permitted"}
+FIN_CHECK = []  # filled during the build; printed with --financing-check
 SHORT_TERM = {"Predevelopment loan", "Construction loan", "Bridge loan"}
 
 
@@ -339,13 +340,12 @@ def process(r, sources):
         calcs["price_per_sf"] = {"value": round(price / rsf), "how": f"Sale price {m(price)} ÷ {rsf:,} sq ft"}
     fin_amt = [x for x in r.get("financing", []) if x.get("amount")]
     long_term = [x for x in fin_amt if not short_term(x) and not bond_authority(x)]
-    if len(long_term) >= 2:
+    # Maintenance check only (not shown on the site): do the listed permanent sources add up to the cost?
+    costs = [c["value"] for c in facts.get("total_development_cost", {}).get("claims", []) if isinstance(c.get("value"), (int, float))]
+    if len(long_term) >= 2 and costs:
         tot = sum(x["amount"] for x in long_term)
-        basis = f"; compares with a {m(price)} sale price" if price else (f"; compares with a {m(tdc)} total development cost" if tdc else "")
-        excl = " (excludes short-term construction, bridge and predevelopment financing)" if any(short_term(x) for x in fin_amt) else ""
-        if any(bond_authority(x) for x in fin_amt):
-            excl += " (excludes the tax-exempt bond allocation, which is the authority behind the bond-funded loans, not added money)"
-        calcs["financing_total"] = {"value": tot, "how": " + ".join(m(x["amount"]) for x in long_term) + excl + basis}
+        if not any(abs(tot - c) <= 2 for c in costs):
+            FIN_CHECK.append((r["id"], r["name"], tot, tdc or costs[0]))
 
     statuses = best(facts["status"])
     dated = [e["date"] for e in r.get("events", []) if not e.get("estimated")]
@@ -486,6 +486,10 @@ def main():
     (DOCS / "data" / "records.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Built {len(processed)} records from {len(sources)} sources -> docs/index.html")
+    if "--financing-check" in sys.argv:
+        print(f"Financing check: {len(FIN_CHECK)} projects where the listed permanent sources do not add up to the development cost")
+        for rid, name, tot, cost in sorted(FIN_CHECK, key=lambda x: -abs(x[2] - x[3])):
+            print(f"  {rid}  sources ${tot:,.0f}  cost ${cost:,.0f}  difference ${tot - cost:+,.0f}  {name}")
     for r in processed:
         s = r["summary"]
         print(f"  {r['id']}  {r['name']}: {s['status']}, {s['total_units']} units, {', '.join(r['kinds'])}")

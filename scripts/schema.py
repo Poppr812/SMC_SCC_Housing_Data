@@ -182,7 +182,6 @@ CALCS = {
     "cost_per_sf":    ("Financing & transactions", "Cost per sq ft"),
     "price_per_unit": ("Financing & transactions", "Price per unit"),
     "price_per_sf":   ("Financing & transactions", "Price per sq ft"),
-    "financing_total": ("Financing & transactions", "Reported financing total"),
 }
 
 # Fields required before a record can be created (PLAN/FIELDS minimum).
