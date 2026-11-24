@@ -1054,7 +1054,7 @@ function acctView(mode,reason){
     <label class="f">Password (8+ characters)<input type="password" id="aPass" autocomplete="new-password"></label>
     <div class="row2"><label class="f">Name<input type="text" id="aName" autocomplete="name"></label><label class="f">Alias (shown on credits)<input type="text" id="aAlias"></label></div>
     <div class="row2"><label class="f">Company<input type="text" id="aCo" autocomplete="organization"></label><label class="f">Role<select id="aRole">${roleOpts("")}</select></label></div>
-    <label class="chk"><input type="checkbox" id="aPriv"><span>I've read the <a href="#" onclick="$('#priv').classList.add('show');return false">privacy note</a>: the site logs sign-ins, searches, records opened and exports.</span></label>
+    <label class="chk"><input type="checkbox" id="aPriv"><span>I agree to the <a href="#" onclick="$('#terms').classList.add('show');return false">terms of use</a> and have read the <a href="#" onclick="$('#priv').classList.add('show');return false">privacy note</a>: the site logs sign-ins, searches, records opened and exports.</span></label>
     <div class="acts"><button class="btn ghost" type="button" id="aCancel">Cancel</button><button class="btn" type="button" id="aGo">Create account</button></div>
     <div class="msg" id="acctMsg"></div>
     <p style="font-size:13px;margin:14px 0 0">Already have an account? <button class="lnk" type="button" id="aToIn">Sign in</button></p>`;
@@ -1073,7 +1073,7 @@ function acctView(mode,reason){
   on("aGo",()=>busy("aGo",mode==="signup"?"Creating account…":"Signing in…",async()=>{const email=val("aEmail"),password=$("#aPass").value;if(!email||!password){acctMsg("Enter your email and password.");return}
     if(mode==="signup"){
       if(password.length<8){acctMsg("Use at least 8 characters for the password.");return}
-      if(!$("#aPriv").checked){acctMsg("Please confirm you've read the privacy note.");return}
+      if(!$("#aPriv").checked){acctMsg("Please tick the box to agree to the terms of use and privacy note.");return}
       const {data,error}=await sb.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname,data:{name:val("aName"),alias:val("aAlias"),company:val("aCo"),role:val("aRole")}}});
       if(error){acctMsg(error.message);return}
       if(data.user&&Array.isArray(data.user.identities)&&!data.user.identities.length){acctMsg("That email already has an account. Sign in, or use Forgot password.");return}
