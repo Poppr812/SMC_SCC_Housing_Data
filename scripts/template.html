@@ -225,8 +225,8 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 .wlogo img{height:44px;width:44px}
 .wmain{max-width:980px;margin:0 auto;padding:44px 20px 30px}
 .wby{font-size:13px;color:var(--gray);margin-top:3px}
-.wkick{font-size:14px;font-weight:700;color:var(--navy);letter-spacing:.04em;display:flex;gap:8px;align-items:center}
-.whero h2{font-size:clamp(26px,4.2vw,40px);line-height:1.15;margin:10px 0 12px;color:var(--navy);max-width:800px;font-weight:700}
+.wkick{font-size:22px;font-weight:700;color:var(--navy);letter-spacing:.01em;display:flex;gap:8px;align-items:center}
+.whero h2{font-size:clamp(24px,4vw,38px);line-height:1.15;margin:18px 0 12px;color:var(--navy);max-width:800px;font-weight:700}
 .wlead{font-size:15px;color:var(--gray);margin:0 0 22px}
 .wacts{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .wacts .btn{font-size:15px;padding:10px 18px}
@@ -270,7 +270,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
         <p><b>Free during the beta.</b> The map and project pages stay free.</p>
         <p>Later, pipeline reports are planned at $1 each, sold in packs of 10. That covers the database, keeping up with news and filings, hosting, and adding new cities.</p></section>
     </div>
-    <p class="wfoot">Housing Comps by Montara Ventures, a Montara Proptech initiative. Data from public records, each fact linked to its source. <a href="#" id="wTerms">Terms of use</a></p>
+    <p class="wfoot">Data from public records, each fact linked to its source. <a href="#" id="wTerms">Terms of use</a> · <a href="#" id="wPriv">Privacy</a></p>
   </div>
 </div>
 
@@ -1097,6 +1097,7 @@ function acctView(mode,reason){
 }
 $("#acctBtn").onclick=()=>USER?acctView("profile"):acctView("signin");
 $("#privLink").onclick=e=>{e.preventDefault();$("#priv").classList.add("show")};
+$("#wPriv").onclick=e=>{e.preventDefault();$("#priv").classList.add("show")};
 document.querySelectorAll("#termsLink,#wTerms").forEach(a=>a.onclick=e=>{e.preventDefault();$("#terms").classList.add("show")});
 if(sb)sb.auth.onAuthStateChange((ev,session)=>{
   USER=session?session.user:null;
@@ -1485,7 +1486,7 @@ function renderReport(all){
 
 /* ---------- welcome page ---------- */
 function welcome(show){$("#welcome").hidden=!show;if(!show)store("hc_welcomed",1)}
-$("#wCounts").textContent=`${RECORDS.length.toLocaleString()} projects · ${new Set(RECORDS.flatMap(r=>Object.keys(r.srcLabels))).size.toLocaleString()} public sources · updated ${DATA.built}`;
+$("#wCounts").textContent=`${RECORDS.length.toLocaleString()} projects · ${new Set(RECORDS.flatMap(r=>Object.keys(r.srcLabels))).size.toLocaleString()} public sources · updated ${new Date(DATA.built+"T12:00:00").toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})}`;
 $("#wUp").onclick=()=>acctView("signup");$("#wIn").onclick=$("#wIn2").onclick=()=>acctView("signin");
 $("#wGo").onclick=()=>welcome(false);$("#aboutBtn").onclick=()=>{$("#welcome").hidden=false;$("#welcome").scrollTop=0};
 /* ---------- start ---------- */
