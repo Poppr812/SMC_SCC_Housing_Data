@@ -216,15 +216,67 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   a{color:var(--ink)}
   .src a::after{content:" (" attr(href) ")";font-size:10px;color:#555;word-break:break-all}
 }
+/* welcome page */
+#welcome{position:fixed;inset:0;z-index:2100;background:var(--bg);overflow:auto}
+#welcome[hidden]{display:none}
+.wbar{display:flex;align-items:center;gap:12px;padding:10px 20px;background:#fff;border-bottom:1px solid var(--rule)}
+.wlogo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+.wlogo img{height:44px;width:44px}
+.wmain{max-width:980px;margin:0 auto;padding:44px 20px 30px}
+.wkick{font-size:14px;font-weight:700;color:var(--navy);letter-spacing:.04em;display:flex;gap:8px;align-items:center}
+.whero h2{font-size:clamp(26px,4.2vw,40px);line-height:1.15;margin:10px 0 12px;color:var(--navy);max-width:800px;font-weight:700}
+.wlead{font-size:15px;color:var(--gray);margin:0 0 22px}
+.wacts{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.wacts .btn{font-size:15px;padding:10px 18px}
+.wgo{background:none;border:none;color:var(--teal);font:inherit;font-size:14px;cursor:pointer;text-decoration:underline;padding:8px 4px}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:40px}
+.wgrid section{background:#fff;border:1px solid var(--rule);border-top:3px solid var(--gold);border-radius:10px;padding:18px 20px}
+.wgrid h3{margin:0 0 8px;font-size:15px;color:var(--navy)}
+.wgrid p{margin:0 0 8px;font-size:14px;line-height:1.55}.wgrid p:last-child{margin:0}
+.wfoot{margin-top:28px;font-size:12px;color:var(--gray)}
+@media print{#welcome{display:none!important}}
 </style>
 </head>
 <body>
+
+<div id="welcome" hidden>
+  <div class="wbar">
+    <a class="wlogo" href="https://www.montarav.com/" target="_blank" rel="noopener"><img src="https://cdn.prod.website-files.com/66da5f11edeb119e8592e2b0/6786a02ae560a1677260510f_02_MV_Logo_V2_NO%20BACKGROUND_TRANSPARENT-01.png" alt="" onerror="this.remove()"><span>Montara Ventures</span></a>
+    <span class="spacer"></span>
+    <button class="btn ghost" type="button" id="wIn2">Sign in</button>
+  </div>
+  <div class="wmain">
+    <div class="whero">
+      <div class="wkick">Housing Comps <span class="badge">BETA</span></div>
+      <h2>Every housing project in San Mateo and Santa Clara Counties, with the source behind every fact.</h2>
+      <p class="wlead" id="wCounts"></p>
+      <div class="wacts">
+        <button class="btn" type="button" id="wUp">Create a free account</button>
+        <button class="btn ghost" type="button" id="wIn">Sign in</button>
+        <button class="wgo" type="button" id="wGo">Explore the map without an account →</button>
+      </div>
+    </div>
+    <div class="wgrid">
+      <section><h3>What it is</h3>
+        <p>A map and database of housing that is proposed, approved, under construction, leasing or recently sold.</p>
+        <p>Each project has its own page: units, affordability, developer, timeline and financing. Every fact links to the public record or article it came from. Where sources disagree, you see both.</p></section>
+      <section><h3>Why it's here</h3>
+        <p>Montara Ventures is a real estate development and investment company. Knowing what is in the local housing pipeline meant piecing it together from city agendas, staff reports and news stories.</p>
+        <p>We built the tool we wanted and opened it to everyone who works on housing here.</p></section>
+      <section><h3>What it costs</h3>
+        <p><b>Free during the beta.</b> The map and project pages stay free.</p>
+        <p>Later, pipeline reports are planned at $1 each, sold in packs of 10. That covers the database, keeping up with news and filings, hosting, and adding new cities.</p></section>
+    </div>
+    <p class="wfoot">Housing Comps is a project of Montara Ventures. Data from public records, each fact linked to its source.</p>
+  </div>
+</div>
 
 <header>
   <h1>Housing Comps</h1>
   <span class="badge">v1 PREVIEW</span>
   <span class="sub" id="headSub"></span>
   <span class="spacer"></span>
+  <button class="hbtn" type="button" id="aboutBtn">About</button>
   <button class="hbtn" type="button" id="contribTop">Add or correct info</button>
   <button class="hbtn" type="button" id="acctBtn">Sign in</button>
 </header>
@@ -1029,7 +1081,7 @@ if(sb)sb.auth.onAuthStateChange((ev,session)=>{
   if(ev==="PASSWORD_RECOVERY"){RECOVERING=true;acctView("recover")}
   if(OLD_CODE){OLD_CODE=false;safeReplace(location.pathname+location.hash);if(!session)acctView("signin",BAD_LINK)}
   setTimeout(async()=>{ /* outside the auth callback, per supabase-js guidance */
-    await loadProfile();acctLabel();loadSaved();
+    await loadProfile();acctLabel();loadSaved();if(USER)welcome(false);
     if(ev==="SIGNED_IN"){
       if($("#acct").classList.contains("show")&&!RECOVERING){$("#acct").classList.remove("show");toast("Signed in as "+(who(PROFILE)||USER.email))}
       if(PENDING){const f=PENDING;PENDING=null;f()}
@@ -1392,12 +1444,18 @@ function renderReport(all){
   $("#rec").classList.add("show");$("#rec").scrollTop=0;
 }
 
+/* ---------- welcome page ---------- */
+function welcome(show){$("#welcome").hidden=!show;if(!show)store("hc_welcomed",1)}
+$("#wCounts").textContent=`${RECORDS.length.toLocaleString()} projects · ${new Set(RECORDS.flatMap(r=>Object.keys(r.srcLabels))).size.toLocaleString()} public sources · updated ${DATA.built}`;
+$("#wUp").onclick=()=>acctView("signup");$("#wIn").onclick=$("#wIn2").onclick=()=>acctView("signin");
+$("#wGo").onclick=()=>welcome(false);$("#aboutBtn").onclick=()=>{$("#welcome").hidden=false;$("#welcome").scrollTop=0};
 /* ---------- start ---------- */
 loadSaved();
 const hash0=location.hash; /* render rewrites the URL, so read record and report links first */
 const s0=hashToState();if(s0)setState(s0);
 render();
 if(AUTH_ERR)acctView("signin",BAD_LINK);
+if(!hash0&&!AUTH_ERR&&!store("hc_welcomed"))$("#welcome").hidden=false; /* first visit to the bare address; shared links skip it */
 const rm=hash0.match(/r=((?:SMC|SCC)-\d{6})/);if(rm)openRecord(rm[1]);
 if(/[#&]rep=1/.test(hash0))openPipeline(true);
 track("visit",{referrer:document.referrer||undefined});
