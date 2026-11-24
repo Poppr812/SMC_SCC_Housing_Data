@@ -340,12 +340,16 @@ def process(r, sources):
         calcs["price_per_sf"] = {"value": round(price / rsf), "how": f"Sale price {m(price)} ÷ {rsf:,} sq ft"}
     fin_amt = [x for x in r.get("financing", []) if x.get("amount")]
     long_term = [x for x in fin_amt if not short_term(x) and not bond_authority(x)]
-    # Maintenance check only (not shown on the site): do the listed permanent sources add up to the cost?
-    costs = [c["value"] for c in facts.get("total_development_cost", {}).get("claims", []) if isinstance(c.get("value"), (int, float))]
-    if len(long_term) >= 2 and costs:
-        tot = sum(x["amount"] for x in long_term)
-        if not any(abs(tot - c) <= 2 for c in costs):
-            FIN_CHECK.append((r["id"], r["name"], tot, tdc or costs[0]))
+    # Maintenance check only (not shown on the site): for each source that states a development cost,
+    # do the permanent financing lines taken from that same source add up to it? Lines from other
+    # sources (a later award, a news report) are left out, since they sit beside the report's own list.
+    for c in facts.get("total_development_cost", {}).get("claims", []):
+        cost = c.get("value")
+        own = [x for x in long_term if set(x.get("src") or []) & set(c.get("src") or [])]
+        if isinstance(cost, (int, float)) and len(own) >= 3:
+            tot = sum(x["amount"] for x in own)
+            if abs(tot - cost) > 2:
+                FIN_CHECK.append((r["id"], r["name"], tot, cost, ", ".join(c.get("src") or [])))
 
     statuses = best(facts["status"])
     dated = [e["date"] for e in r.get("events", []) if not e.get("estimated")]
@@ -487,9 +491,9 @@ def main():
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Built {len(processed)} records from {len(sources)} sources -> docs/index.html")
     if "--financing-check" in sys.argv:
-        print(f"Financing check: {len(FIN_CHECK)} projects where the listed permanent sources do not add up to the development cost")
-        for rid, name, tot, cost in sorted(FIN_CHECK, key=lambda x: -abs(x[2] - x[3])):
-            print(f"  {rid}  sources ${tot:,.0f}  cost ${cost:,.0f}  difference ${tot - cost:+,.0f}  {name}")
+        print(f"Financing check: {len(FIN_CHECK)} cases where a source's permanent financing lines do not add up to its development cost")
+        for rid, name, tot, cost, src in sorted(FIN_CHECK, key=lambda x: -abs(x[2] - x[3])):
+            print(f"  {rid}  {src}  lines ${tot:,.0f}  cost ${cost:,.0f}  difference ${tot - cost:+,.0f}  {name}")
     for r in processed:
         s = r["summary"]
         print(f"  {r['id']}  {r['name']}: {s['status']}, {s['total_units']} units, {', '.join(r['kinds'])}")
