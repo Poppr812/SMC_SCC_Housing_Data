@@ -186,6 +186,7 @@ details summary{cursor:pointer;color:var(--navy);font-weight:600;font-size:13px;
 .lnum{display:inline-block;min-width:20px;margin-right:6px;color:var(--gray);font-variant-numeric:tabular-nums}
 .rpin span{display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px #5B6570;font:700 11px/1 system-ui,sans-serif}
 .adm .legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin:6px 0 0}.adm .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle;box-shadow:0 0 0 1px #5B6570}
+.credit{margin-top:18px;padding-top:8px;border-top:1px solid var(--rule);font-size:11px;line-height:1.5;color:var(--gray)}
 .adm .foot{font-size:12px}.adm .foot p{margin:0 0 6px}
 .adm .kpi{background:#F6F7F4;border-radius:6px;padding:8px 12px;font-size:12px;color:var(--gray)}.adm .kpi b{display:block;font-size:20px;color:var(--ink)}
 footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);border-top:1px solid var(--rule)}
@@ -267,7 +268,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
         <p><b>Free during the beta.</b> The map and project pages stay free.</p>
         <p>Later, pipeline reports are planned at $1 each, sold in packs of 10. That covers the database, keeping up with news and filings, hosting, and adding new cities.</p></section>
     </div>
-    <p class="wfoot">Housing Comps is a project of Montara Ventures. Data from public records, each fact linked to its source.</p>
+    <p class="wfoot">Housing Comps is a project of Montara Ventures. Data from public records, each fact linked to its source. <a href="#" id="wTerms">Terms of use</a></p>
   </div>
 </div>
 
@@ -329,7 +330,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div id="list"></div>
   </aside>
 </main>
-<footer>Data: public records, each fact linked to its source · Data license ODbL · Code license MIT · Parcel data: County of San Mateo, provided as-is · <a href="https://github.com/Poppr812/SMC_SCC_Housing_Data" target="_blank" rel="noopener">GitHub</a> · <a href="#" id="privLink">Privacy</a></footer>
+<footer>Data: public records, each fact linked to its source · Data license ODbL · Code license MIT · Parcel data: County of San Mateo, provided as-is · <a href="https://github.com/Poppr812/SMC_SCC_Housing_Data" target="_blank" rel="noopener">GitHub</a> · <a href="#" id="privLink">Privacy</a> · <a href="#" id="termsLink">Terms</a></footer>
 
 <div id="rec"><div class="sheet" id="sheet"></div></div>
 
@@ -415,6 +416,18 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <div class="acts"><button class="btn" type="button" onclick="$('#priv').classList.remove('show')">Close</button></div>
 </div></div>
 
+<div class="modal" id="terms"><div class="box" style="width:min(580px,92vw)">
+  <h3>Terms of use</h3>
+  <p style="font-size:13px"><b>What this is.</b> Housing Comps is a project of Montara Ventures. It is in beta and free to use. It is a record of what public sources say about housing projects in San Mateo and Santa Clara Counties.</p>
+  <p style="font-size:13px"><b>No warranty.</b> The data is provided as is. Sources can be wrong, out of date or in conflict, and the site shows them as found. Check the linked source before relying on any fact. Nothing here is investment, legal, appraisal or lending advice.</p>
+  <p style="font-size:13px"><b>What you may do.</b> The database is licensed under the <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">Open Database License (ODbL)</a>. You may copy, use and build on it, including commercially, if you give credit and release any adapted database you publish under the same license. The site's code is under the MIT License.</p>
+  <p style="font-size:13px"><b>How to give credit.</b> Credit "Housing Comps, Montara Ventures" and link to this site. <b>Press and publications:</b> when you use a figure, map, table or report from Housing Comps, cite it by that name with a link, alongside the original public source if you name one.</p>
+  <p style="font-size:13px"><b>What stays ours.</b> The Montara Ventures name and logo, the Housing Comps name, and the design of the site and its reports are not covered by the open licenses. Don't present a report as your own work or suggest Montara Ventures endorses yours.</p>
+  <p style="font-size:13px"><b>What belongs to others.</b> Linked articles, documents and images belong to their publishers and creators. An image is removed on request from its owner.</p>
+  <p style="font-size:13px"><b>Changes.</b> These terms may change as the beta develops. Questions: email the site owner.</p>
+  <div class="acts"><button class="btn" type="button" onclick="$('#terms').classList.remove('show')">Close</button></div>
+</div></div>
+
 <div class="toast" id="toast"></div>
 
 <script>
@@ -432,6 +445,13 @@ const whiteEdge = c=>c==="#FFFFFF"?`;box-shadow:inset 0 0 0 1px ${WHITE_EDGE}`:"
 
 /* ---------- helpers ---------- */
 const $=s=>document.querySelector(s);
+const CREDIT_AS="Housing Comps, Montara Ventures";
+function creditLines(url){const d=new Date().toLocaleDateString("en-CA");return [
+  `© ${new Date().getFullYear()} Montara Ventures. Housing Comps: data as of ${DATA.built}, generated ${d}.`,
+  `Compiled from public records; each fact links to its source. Database licensed under ODbL.`,
+  `When you use this, credit "${CREDIT_AS}" and link ${url||SITE_URL}`]}
+function creditHtml(url){return `<div class="credit">${creditLines(url).map(esc).join("<br>")}</div>`}
+function aboutSheet(wb){const ws=wb.addWorksheet("About");ws.getColumn(1).width=110;creditLines().concat(["Terms of use: "+SITE_URL+" (Terms link at the bottom of the page)"]).forEach(l=>{ws.addRow([l]).font={name:"Arial",size:10}})}
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const money=n=>"$"+Math.round(n).toLocaleString("en-US");
 const num=n=>(+n).toLocaleString("en-US");
@@ -857,7 +877,7 @@ function openRecord(id){
    <details><summary>Edit history</summary>
      <div class="hist" style="margin-top:6px">${r.history.map(h=>`${esc(h.date)} · ${esc(h.action)} · entered by <b>${esc(h.by)}</b>`).join("<br>")}</div>
    </details>
-   <div class="note">Every fact links to the public source behind it. Where sources differ, each is shown. Data license: ODbL.</div>`;
+   <div class="note">Every fact links to the public source behind it. Where sources differ, each is shown. Data license: ODbL.</div>${creditHtml(SITE_URL+"#r="+r.id)}`;
   $("#rec").classList.add("show");$("#rec").scrollTop=0;miniMap(r);track("record_view",{id:r.id,name:r.name});
   safeReplace(location.pathname+location.search+stateToHash()+"&r="+id);
 }
@@ -958,7 +978,7 @@ async function buildXlsx(rows,cols,srcRows,fname,scope){
     ws.views=[{state:"frozen",xSplit:1,ySplit:1}];
   }
   const sc=["ID","Title","Publisher","Date","Type","URL","Retrieved","Wayback","Used by"];
-  const ss=wb.addWorksheet("Sources");styleSheet(ss,sc,srcRows,["URL"]);ss.views=[{state:"frozen",xSplit:1,ySplit:1}];
+  const ss=wb.addWorksheet("Sources");styleSheet(ss,sc,srcRows,["URL"]);ss.views=[{state:"frozen",xSplit:1,ySplit:1}];aboutSheet(wb);
   const buf=await wb.xlsx.writeBuffer();
   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=fname+".xlsx";a.click();
 }
@@ -978,7 +998,7 @@ $("#expGo").onclick=()=>{
   }else{
     const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
     const extra=scope==="standard"?[{},...compSummary(rows,cols).map(s=>{const o={...s};COMP_STATS.forEach(c=>{if(typeof o[c]==="number")o[c]=+o[c].toFixed(c==="Distance (mi)"?1:0)});return o}),...(centerNote()?[{},{Name:centerNote()}]:[])]:[];
-    const csv=[cols.map(q).join(","),...rows.concat(extra).map(r=>cols.map(c=>q(r[c])).join(","))].join("\r\n");
+    const csv=[cols.map(q).join(","),...rows.concat(extra).map(r=>cols.map(c=>q(r[c])).join(",")),"",...creditLines().map(q)].join("\r\n");
     const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+csv],{type:"text/csv"}));a.download=fname+".csv";a.click();
   }
   $("#exp").classList.remove("show");toast("Export downloaded");
@@ -1075,6 +1095,7 @@ function acctView(mode,reason){
 }
 $("#acctBtn").onclick=()=>USER?acctView("profile"):acctView("signin");
 $("#privLink").onclick=e=>{e.preventDefault();$("#priv").classList.add("show")};
+document.querySelectorAll("#termsLink,#wTerms").forEach(a=>a.onclick=e=>{e.preventDefault();$("#terms").classList.add("show")});
 if(sb)sb.auth.onAuthStateChange((ev,session)=>{
   USER=session?session.user:null;
   if(AUTH_PENDING){AUTH_PENDING=false;if(!session){safeReplace(location.pathname);acctView("signin",BAD_LINK)}}
@@ -1232,7 +1253,7 @@ function pipelineXlsx(rs,radius,area){
   const rows=rs.map(r=>{const m=r.summary,u=m.units_range;return {"Project":r.name,"Stage":m.status,"Affordability":affText(r),"Units":u&&u[0]===u[1]?u[0]:m.units_display||"","Type":short(m.product_type),"Developer / applicant":developerOf(r),"Delivery (source-stated)":deliveryOf(r),"Your delivery date":"","Last movement":m.latest_event||"",...(radius?{"Distance (mi)":+miles(SHAPE,r).toFixed(1)}:{}),"Record URL":SITE_URL+"#r="+r.id}});
   const wb=new ExcelJS.Workbook();wb.creator="Housing Comps";
   const ws=wb.addWorksheet("Pipeline");styleSheet(ws,Object.keys(rows[0]),rows,["Record URL"]);ws.views=[{state:"frozen",xSplit:1,ySplit:1}];
-  track("export",{scope:"pipeline",fmt:"xlsx",count:rows.length,area});
+  aboutSheet(wb);track("export",{scope:"pipeline",fmt:"xlsx",count:rows.length,area});
   wb.xlsx.writeBuffer().then(buf=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buf],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}));a.download=repFileName()+".xlsx";a.click()});
 }
 const developerOf=r=>r.summary.developer||(r.parties.find(x=>x.other_role==="Applicant")||{}).company||"";
@@ -1360,6 +1381,7 @@ function openPipeline(silent){
      ${places.map(j=>{const d=((cov[j]||"").match(/\d{4}-\d{2}-\d{2}/)||[])[0];return `<p><b>${esc(j)}:</b> ${cov[j]?`checked against the city's published project list${d?" on "+d:""}.`:"from state housing reports, funding reports and news."}</p>`}).join("")}
      <p class="muted">Market: up to 25% of units deed-restricted (inclusionary or density bonus). Affordable: more than 25% deed-restricted, or applying for tax credits; 100% includes projects whose only unrestricted units are managers' units. Outside apartments, restricted units are treated as a market project's inclusionary share unless the project has tax credits or an affordable housing developer. Where no source states affordability, "implied by developer focus" means the developer or owner builds or owns only one kind, and "by product type" means townhomes, condominiums or single-family homes. TC/bonds: tax credits or tax-exempt bonds in the project's funding records.</p>
      <p class="muted">Stages are working labels, not legal status. Unit counts and delivery dates are as stated by sources; "est." marks a source's estimate. Each project links to its sources.</p></div>
+   ${creditHtml()}
   </div>`;
   $("#repXlsx").onclick=()=>pipelineXlsx([...active,...inactive],radius,area);
   $("#rec").classList.add("show");$("#rec").scrollTop=0;
