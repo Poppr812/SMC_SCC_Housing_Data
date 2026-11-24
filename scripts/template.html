@@ -1402,6 +1402,16 @@ async function openReport(){
 const tally=arr=>{const m={};arr.forEach(k=>{if(k)m[k]=(m[k]||0)+1});return Object.entries(m).sort((a,b)=>b[1]-a[1])};
 function barTable(head,rows,empty){const max=rows.length?rows[0][1]:1;
   return `<div class="wrap"><table><tr><th>${head}</th><th style="width:45%">Count</th></tr>${rows.map(([k,n])=>`<tr><td>${esc(k)}</td><td><span class="bar" style="width:${Math.max(3,n/max*70)}%"></span>${n}</td></tr>`).join("")||`<tr><td colspan="2" class="muted">${empty||"None this week"}</td></tr>`}</table></div>`}
+async function ghStats(){
+  const api="https://api.github.com/repos/Poppr812/SMC_SCC_Housing_Data",web="https://github.com/Poppr812/SMC_SCC_Housing_Data";
+  try{const [r,f]=await Promise.all([fetch(api).then(x=>x.json()),fetch(api+"/forks?per_page=100").then(x=>x.json())]);
+    const el=$("#ghStats");if(!el||typeof r.stargazers_count!=="number")throw 0;
+    el.className="";el.innerHTML=`<table><tr><td>Stars</td><td><b>${r.stargazers_count}</b></td></tr><tr><td>Watchers</td><td><b>${r.subscribers_count}</b></td></tr>
+     <tr><td>Copies (forks)</td><td><b>${r.forks_count}</b>${Array.isArray(f)&&f.length?": "+f.map(x=>`<a href="${esc(x.html_url)}" target="_blank" rel="noopener">${esc(x.full_name)}</a> (${esc((x.created_at||"").slice(0,10))})`).join(", "):""}</td></tr>
+     <tr><td>Open issues and pull requests</td><td><b>${r.open_issues_count}</b></td></tr></table>
+     <p class="muted">Page views, downloads of the data (clones) and referring sites are on <a href="${web}/graphs/traffic" target="_blank" rel="noopener">GitHub's traffic page</a>, visible only when you're signed in to GitHub. It keeps 14 days.</p>`;
+  }catch(e){const el=$("#ghStats");if(el)el.textContent="GitHub didn't answer. Try Refresh later."}
+}
 function shapeLabel(sh){return !sh?"":sh.t==="c"?`${sh.mi} mi from ${sh.addr||sh.lat.toFixed(3)+", "+sh.lng.toFixed(3)}`:"Drawn fence"}
 function renderReport(all){
   const {users,contribs,sum,dt,actor}=ADM,now=Date.now(),day=864e5;
@@ -1444,6 +1454,10 @@ function renderReport(all){
    <h4>Visitors by day</h4><table>${days.map(([d,n])=>`<tr><td style="width:90px">${d}</td><td><span class="bar" style="width:${n/maxDay*70}%"></span>${n}</td></tr>`).join("")}</table>
    <h4>Where visitors came from</h4>${barTable("Source",referrers)}
    <h3>Most popular records</h3>${barTable("Record",tally(ev(cur,"record_view").map(a=>{const d=a.detail||{};return d.id+" · "+d.name})))}
+   <h3>Reports and exports</h3>
+   <h4>Pipeline reports by area</h4>${barTable("Area",tally(ev(cur,"pipeline_report").map(a=>(a.detail||{}).area||"")))}
+   <h4>Exports by type</h4>${barTable("Export",tally(ev(cur,"export").map(a=>{const d=a.detail||{};return [d.scope,d.fmt].filter(Boolean).join(" · ")})))}
+   <h3>GitHub</h3><div id="ghStats" class="muted">Loading…</div>
    <h3>Searches</h3>
    <h4>Addresses and boundaries</h4>${barTable("Search",tally(details.map(d=>shapeLabel(d.shape))))}
    <h4>Keywords</h4>${barTable("Keyword",tally(details.map(d=>(d.kw||"").toLowerCase())))}
@@ -1463,6 +1477,7 @@ function renderReport(all){
    <h3>Leads (<a href="https://github.com/Poppr812/SMC_SCC_Housing_Data/blob/main/INTAKE.md" target="_blank" rel="noopener">INTAKE.md</a>)</h3>
    <div class="wrap"><table><tr><th>Lead</th><th>List</th><th>State</th></tr>${[...open,...entered].map(l=>`<tr><td>${esc(l.text)}</td><td>${esc(l.section)}</td><td>${l.entered?`Looks entered: ${esc(l.entered)}`:"Open"}</td></tr>`).join("")||'<tr><td colspan="3" class="muted">None</td></tr>'}</table></div>
   </div>`;
+  ghStats();
   $("#rec").classList.add("show");$("#rec").scrollTop=0;
 }
 
