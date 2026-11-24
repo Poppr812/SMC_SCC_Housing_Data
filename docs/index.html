@@ -227,7 +227,8 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 .wby{font-size:13px;color:var(--gray);margin-top:3px}
 .wkick{font-size:22px;font-weight:700;color:var(--navy);letter-spacing:.01em;display:flex;gap:8px;align-items:center}
 .whero h2{font-size:clamp(24px,4vw,38px);line-height:1.15;margin:18px 0 12px;color:var(--navy);max-width:800px;font-weight:700}
-.wlead{font-size:15px;color:var(--gray);margin:0 0 22px}
+.wlead{font-size:15px;color:var(--gray);margin:0 0 6px}
+.wfor{font-size:15px;color:var(--ink);margin:0 0 22px}
 .wacts{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .wacts .btn{font-size:15px;padding:10px 18px}
 .wgo{background:none;border:none;color:var(--teal);font:inherit;font-size:14px;cursor:pointer;text-decoration:underline;padding:8px 4px}
@@ -253,10 +254,12 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
       <div class="wby">by Montara Ventures, a Montara Proptech initiative</div>
       <h2>Every housing project in San Mateo and Santa Clara Counties, with the source behind every fact.</h2>
       <p class="wlead" id="wCounts"></p>
+      <p class="wfor">For developers, lenders, brokers, appraisers, city staff and housing advocates.</p>
       <div class="wacts">
         <button class="btn" type="button" id="wUp">Create a free account</button>
         <button class="btn ghost" type="button" id="wIn">Sign in</button>
         <button class="wgo" type="button" id="wGo">Explore the map without an account →</button>
+        <button class="wgo" type="button" id="wEx">See an example project →</button>
       </div>
     </div>
     <div class="wgrid">
@@ -1488,7 +1491,7 @@ function renderReport(all){
 function welcome(show){$("#welcome").hidden=!show;if(!show)store("hc_welcomed",1)}
 $("#wCounts").textContent=`${RECORDS.length.toLocaleString()} projects · ${new Set(RECORDS.flatMap(r=>Object.keys(r.srcLabels))).size.toLocaleString()} public sources · updated ${new Date(DATA.built+"T12:00:00").toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})}`;
 $("#wUp").onclick=()=>acctView("signup");$("#wIn").onclick=$("#wIn2").onclick=()=>acctView("signin");
-$("#wGo").onclick=()=>welcome(false);$("#aboutBtn").onclick=()=>{$("#welcome").hidden=false;$("#welcome").scrollTop=0};
+$("#wGo").onclick=()=>welcome(false);$("#wEx").onclick=()=>{$("#welcome").hidden=true;openRecord("SMC-000033")};$("#aboutBtn").onclick=()=>{$("#welcome").hidden=false;$("#welcome").scrollTop=0};
 /* ---------- start ---------- */
 loadSaved();
 const hash0=location.hash; /* render rewrites the URL, so read record and report links first */
