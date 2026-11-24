@@ -258,6 +258,9 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
     <div class="dd" id="ddViews"><button type="button" id="viewsBtn">Pipeline, Transactions, Existing</button>
       <div class="menu" id="showMenu"></div></div>
   </div>
+  <div class="ctl kwctl">Keyword
+    <input type="search" id="kw" placeholder="e.g. podium, Pyatok, MHP" style="width:190px">
+  </div>
   <div class="ctl"><span>&nbsp;</span><button type="button" class="btn ghost" id="advBtn">Advanced filters</button></div>
   <div class="spacer"></div>
   <div class="hov" id="ddSave"><button class="btn ghost" id="saveBtn" type="button">Save search ▾</button>
@@ -265,9 +268,6 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
   <button class="btn ghost" id="filtBtn" type="button" style="display:none" onclick="this.parentElement.classList.toggle('open');this.textContent=this.parentElement.classList.contains('open')?'Hide filters':'Filters'">Filters</button>
   <button class="btn" id="repBtn" type="button" style="font-weight:600">Pipeline report</button>
   <button class="btn ghost" id="expBtn" type="button">Export…</button>
-  <div class="ctl kwctl">Keyword
-    <input type="search" id="kw" placeholder="e.g. podium, Pyatok, MHP" style="width:190px">
-  </div>
 </div>
 
 <main>
