@@ -237,13 +237,13 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 .wgrid h3{margin:0 0 8px;font-size:15px;color:var(--navy)}
 .wgrid p{margin:0 0 8px;font-size:14px;line-height:1.55}.wgrid p:last-child{margin:0}
 .wfoot{margin-top:28px;font-size:12px;color:var(--gray)}
-.whero{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:center}
+.wexh{margin:34px 0 12px;font-size:15px;color:var(--navy)}
+.wex{display:flex;gap:20px;flex-wrap:wrap}.wex .wthumb{width:300px;max-width:100%;flex:none}
 .wthumb{position:relative;height:236px;border:1px solid var(--rule);border-radius:10px;background:#fff;overflow:hidden;cursor:pointer;box-shadow:0 4px 16px rgba(20,28,40,.12);transition:transform .15s,box-shadow .15s}
 .wthumb:hover,.wthumb:focus-visible{transform:translateY(-2px);box-shadow:0 8px 22px rgba(20,28,40,.2);outline:2px solid var(--teal)}
 .wthumbin{width:480px;transform:scale(.625);transform-origin:0 0;pointer-events:none}
 .wthumbin .tpage{border:none;box-shadow:none;border-radius:0}
 .wthumbcap{position:absolute;left:0;right:0;bottom:0;padding:30px 12px 11px;background:linear-gradient(rgba(255,255,255,0),#fff 50%);font-size:14px;font-weight:700;color:var(--teal);text-align:center}
-@media(max-width:860px){.whero{grid-template-columns:1fr}.wthumb{max-width:300px}}
 /* example project tour */
 #tour .box{width:min(920px,94vw)}
 .tgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;margin-top:12px;align-items:start}
@@ -255,6 +255,11 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
 .tn{position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;background:var(--navy);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
 .ttag{display:inline-block;font-size:9px;line-height:13px;border:1px solid var(--teal);color:var(--teal);border-radius:3px;padding:0 3px;margin-left:3px;vertical-align:1px}
 .tpill{display:inline-block;font-size:10px;font-weight:700;border-radius:9px;padding:1px 8px;margin-left:6px;color:#fff;vertical-align:2px}
+.tmap{position:relative;height:120px;background:#EEF1EC;border:1px solid var(--rule);border-radius:6px;margin-top:2px}
+.tmap i{position:absolute;width:9px;height:9px;margin:-5px 0 0 -5px;border-radius:50%;border:1px solid #fff;box-shadow:0 0 0 1px rgba(20,28,40,.35)}
+.tmap i.num{width:16px;height:16px;margin:-8px 0 0 -8px;font-size:9px;font-style:normal;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:center;text-shadow:0 0 2px rgba(0,0,0,.6);z-index:1}
+.tsec table.trep td,.tsec table.trep th{padding:1px 6px 1px 0;text-align:left;color:inherit;width:auto}.tsec table.trep th{font-size:10px;color:var(--gray);font-weight:600}
+.tbtn{display:inline-block;border:1px solid var(--rule);border-radius:5px;padding:1px 8px;margin-right:6px;font-size:11px}
 .tleg{list-style:none;margin:0;padding:0}.tleg li{position:relative;padding:0 0 12px 30px;font-size:13px;line-height:1.45}
 .tleg .tn{top:0}.tleg b{color:var(--navy)}
 @media(max-width:720px){.tgrid{grid-template-columns:1fr}}
@@ -281,7 +286,7 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
         <button class="btn ghost" type="button" id="wIn">Sign in</button>
         <button class="wgo" type="button" id="wGo">Explore the map without an account →</button>
       </div>
-    </div><div class="wthumb" id="wEx" role="button" tabindex="0" aria-label="See an example project"></div></div>
+    </div></div>
     <div class="wgrid">
       <section><h3>What it is</h3>
         <p>A map and database of housing that is proposed, approved, under construction, leasing or recently sold.</p>
@@ -293,6 +298,8 @@ footer{font-size:11px;color:var(--gray);padding:6px 16px;background:var(--card);
         <p><b>Free during the beta.</b> The map and project pages stay free.</p>
         <p>Later, pipeline reports are planned at $1 each, sold in packs of 10. That covers the database, keeping up with news and filings, hosting, and adding new cities.</p></section>
     </div>
+    <h3 class="wexh">See what you get</h3>
+    <div class="wex"><div class="wthumb" id="wEx" role="button" tabindex="0" aria-label="Example project page"></div><div class="wthumb" id="wExRep" role="button" tabindex="0" aria-label="Example pipeline report"></div></div>
     <p class="wfoot">Data from public records, each fact linked to its source. <a href="#" id="wTerms">Terms of use</a> · <a href="#" id="wPriv">Privacy</a></p>
   </div>
 </div>
@@ -1513,13 +1520,14 @@ function renderReport(all){
 function welcome(show){$("#welcome").hidden=!show;if(!show)store("hc_welcomed",1)}
 $("#wCounts").textContent=`${RECORDS.length.toLocaleString()} projects · ${new Set(RECORDS.flatMap(r=>Object.keys(r.srcLabels))).size.toLocaleString()} public sources · updated ${new Date(DATA.built+"T12:00:00").toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})}`;
 $("#wUp").onclick=()=>acctView("signup");$("#wIn").onclick=$("#wIn2").onclick=()=>acctView("signin");
-$("#wGo").onclick=()=>welcome(false);(function(){const T=tourSteps(),el=$("#wEx");if(!T){el.remove();return}
-  el.innerHTML=`<div class="wthumbin"><div class="tpage">${T.steps.map((s,i)=>`<div class="tsec">${T.n(i+1)}${s[2]}</div>`).join("")}</div></div><div class="wthumbcap">See an example project →</div>`;
-  el.onclick=openTour;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openTour()}};
-})();
-function tourSteps(){
+$("#wGo").onclick=()=>welcome(false);[["#wEx",projSteps,"Example project page"],["#wExRep",repSteps,"Example pipeline report"]].forEach(([sel,fn,cap])=>{const T=fn(),el=$(sel);if(!T){el.remove();return}
+  el.innerHTML=`<div class="wthumbin"><div class="tpage">${T.steps.map((s,i)=>`<div class="tsec">${tourN(i+1)}${s[2]}</div>`).join("")}</div></div><div class="wthumbcap">${cap} →</div>`;
+  const go=()=>openTour(fn);el.onclick=go;el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}};
+});
+function tourN(i){return `<span class="tn">${i}</span>`}
+function projSteps(){
   const ID="SMC-000033",r=RECORDS.find(x=>x.id===ID);if(!r)return null;
-  const m=r.summary,n=i=>`<span class="tn">${i}</span>`;
+  const m=r.summary;
   const tag=s=>(s||[]).slice(0,3).map(k=>`<span class="ttag">${esc(r.srcLabels[k]||"S")}</span>`).join("");
   const fr=k=>{const f=r.facts[k];if(!f)return "";const c=f.claims.find(x=>x.best)||f.claims[0];return `<tr><td>${esc(REG.facts[k].label)}</td><td>${fmtValue(k,c.value)}${tag(c.src)}</td></tr>`};
   const dk=Object.keys(r.facts).find(k=>r.facts[k].claims.length>1&&typeof r.facts[k].claims[0].value!=="object");
@@ -1540,18 +1548,44 @@ function tourSteps(){
    ["Sources","The full list of sources with links. Print or save the page as a PDF and the links stay live.",
     `<h4>Sources (${srcs.length})</h4>${srcs.slice(0,3).map(k=>`<span class="ttag" style="margin:0 4px 0 0">${esc(r.srcLabels[k])}</span>${esc(SOURCES[k].publisher)}: ${esc(SOURCES[k].title)}`).join("<br>")}`]
   ].filter(s=>s[2]);
-  return {ID,r,m,n,steps};
+  return {steps,title:"What a project page shows",sub:`Example: ${r.name}, ${m.jurisdiction}. Drawn from the live record, shortened to fit.`,
+    openLabel:"Open the full page",open:()=>{$("#welcome").hidden=true;openRecord(ID)}};
 }
-function openTour(){
-  const T=tourSteps();if(!T)return;const {ID,r,m,n,steps}=T;
-  $("#tourBox").innerHTML=`<h3>What a project page shows</h3>
-   <div class="muted" style="font-size:13px">Example: ${esc(r.name)}, ${esc(m.jurisdiction)}. Drawn from the live record, shortened to fit.</div>
-   <div class="tgrid"><div class="tpage">${steps.map((s,i)=>`<div class="tsec">${n(i+1)}${s[2]}</div>`).join("")}</div>
-   <ol class="tleg">${steps.map((s,i)=>`<li>${n(i+1)}<b>${s[0]}.</b> ${s[1]}</li>`).join("")}</ol></div>
-   <div class="acts"><button class="btn ghost" type="button" id="tourOpen">Open the full page</button><button class="btn" type="button" onclick="$('#tour').classList.remove('show')">Close</button></div>`;
-  $("#tourOpen").onclick=()=>{$("#tour").classList.remove("show");$("#welcome").hidden=true;openRecord(ID)};
+function repSteps(){
+  const AREA="Redwood City",rs=RECORDS.filter(r=>isPipe(r)&&r.summary.status!=="Inactive pipeline"&&r.summary.jurisdiction===AREA).sort((a,b)=>(b.summary.total_units||0)-(a.summary.total_units||0));
+  if(rs.length<4)return null;
+  const u=x=>unitsOf(x).text,st=l=>rs.filter(r=>l.includes(r.summary.status));
+  const parts=[[st(["Under construction"]),"under construction"],[st(["Approved","Permitted"]),"approved or permitted"],[st(["Proposed"]),"proposed"],[st(["Lease-up / selling"]),"in lease-up or selling"]].filter(x=>x[0].length).map(([x,l])=>`${u(x)} ${l}`);
+  const mk=rs.filter(r=>r.summary.aff_bucket==="Market"),af=rs.filter(r=>r.summary.aff_bucket==="Affordable");
+  const geo=rs.filter(r=>r.lat&&r.lng),la=geo.map(r=>r.lat),ln=geo.map(r=>r.lng),a0=Math.min(...la),a1=Math.max(...la),n0=Math.min(...ln),n1=Math.max(...ln);
+  const dots=geo.map(r=>{const k=rs.indexOf(r),x=6+88*(r.lng-n0)/((n1-n0)||1),y=10+80*(a1-r.lat)/((a1-a0)||1);return `<i${k<4?' class="num"':""} style="left:${x.toFixed(1)}%;top:${y.toFixed(1)}%;background:${STATUS_COLOR[r.summary.status]||"#888"}">${k<4?k+1:""}</i>`}).reverse().join("");
+  const steps=[
+   ["Your area and filters","The report covers whatever you searched: a city, a radius around an address, or a boundary you draw, with your filters applied.",
+    `<div class="tname">Pipeline report</div>${esc(AREA)} · all product types · all pipeline stages · data as of ${esc(DATA.built)}`],
+   ["Summary","The headline numbers: projects and units, split by stage, in a sentence you can paste into a memo.",
+    `<h4>Summary</h4><b>${rs.length} projects, ${u(rs)} units.</b> ${esc(parts.join(", "))}.`],
+   ["Market and affordable","How the pipeline splits between market-rate and affordable projects, and how many use tax credits or bonds.",
+    `<h4>Affordability</h4>Market ${mk.length} (${u(mk)} units) · Affordable ${af.length} (${u(af)} units)`],
+   ["Map","Every project numbered and colored by stage. The numbers match the project list.",
+    `<h4>Map</h4><div class="tmap">${dots}</div>`],
+   ["Project list","One row per project: stage, affordability, units, type, developer, delivery and last movement. Each name links to its project page.",
+    `<h4>Projects (${rs.length})</h4><table class="trep"><tr><th>#</th><th>Project</th><th>Stage</th><th>Units</th></tr>${rs.slice(0,4).map((r,i)=>`<tr><td><b>${i+1}</b></td><td>${esc(r.name.length>34?r.name.slice(0,32)+"…":r.name)}</td><td>${esc(r.summary.status)}</td><td>${esc(r.summary.units_display||"")}</td></tr>`).join("")}</table><span class="muted">and ${rs.length-4} more</span>`],
+   ["Excel and PDF","Download the list as a spreadsheet, or print the whole report to PDF with links that stay live.",
+    `<span class="tbtn">Download Excel</span><span class="tbtn">Print / PDF</span>`]
+  ];
+  return {steps,title:"What a pipeline report shows",sub:`Example: ${AREA}. Drawn from the live data, shortened to fit; the map is a sketch of the real one.`};
+}
+function openTour(fn){
+  const T=fn();if(!T)return;const {steps}=T;
+  $("#tourBox").innerHTML=`<h3>${esc(T.title)}</h3>
+   <div class="muted" style="font-size:13px">${esc(T.sub)}</div>
+   <div class="tgrid"><div class="tpage">${steps.map((s,i)=>`<div class="tsec">${tourN(i+1)}${s[2]}</div>`).join("")}</div>
+   <ol class="tleg">${steps.map((s,i)=>`<li>${tourN(i+1)}<b>${s[0]}.</b> ${s[1]}</li>`).join("")}</ol></div>
+   <div class="acts">${T.open?`<button class="btn ghost" type="button" id="tourOpen">${esc(T.openLabel)}</button>`:""}<button class="btn" type="button" onclick="$('#tour').classList.remove('show')">Close</button></div>`;
+  if(T.open)$("#tourOpen").onclick=()=>{$("#tour").classList.remove("show");T.open()};
   $("#tour").classList.add("show");$("#tourBox").scrollTop=0;
-}$("#aboutBtn").onclick=()=>{$("#welcome").hidden=false;$("#welcome").scrollTop=0};
+}
+$("#aboutBtn").onclick=()=>{$("#welcome").hidden=false;$("#welcome").scrollTop=0};
 /* ---------- start ---------- */
 loadSaved();
 const hash0=location.hash; /* render rewrites the URL, so read record and report links first */
